@@ -1,4 +1,8 @@
-# ISO 19115-3:2018 schema plugin
+# ---------------------------   WIP  ---------------------------
+# ---- not intended to be used at this point ----
+
+
+# ISO 19115-3:2018 schema plugin, swiss specialisation
 
 This is the ISO19115-3:2018 schema plugin included in core-geonetwork.
 
