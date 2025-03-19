@@ -1,3 +1,6 @@
+SWISS SPECIALISATION, WORK IN PROGRESS
+
+
 # ISO 19115-3:2018 schema plugin
 
 This is the ISO19115-3:2018 schema plugin included in core-geonetwork.
