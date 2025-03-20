@@ -35,9 +35,12 @@
                 <!-- Deal with attributes (may be in the old gco namespace -->
                 <xsl:apply-templates select="$nodeWithStringToWrite/@*[name() != 'xsi:type']"
                                      mode="from19139to19115-3.2018"/>
-                <xsl:if test="$isMultilingual">
-                    <xsl:attribute name="xsi:type" select="'lan:PT_FreeText_PropertyType'"/>
-                </xsl:if>
+                <xsl:choose>
+                    <xsl:when test="$isMultilingual">
+                        <xsl:attribute name="xsi:type" select="'lan:PT_FreeText_PropertyType'"/>
+                    </xsl:when>
+                </xsl:choose>
+
                 <xsl:if test="$hasChildNode">
                     <!--
                             This could be any substitution for gco:CharacterString.

@@ -36,6 +36,16 @@ import org.xmlunit.builder.Input;
 import org.xmlunit.diff.DefaultNodeMatcher;
 import org.xmlunit.diff.Diff;
 import org.xmlunit.diff.ElementSelectors;
+import javax.xml.XMLConstants;
+import javax.xml.transform.Source;
+import javax.xml.transform.stream.StreamSource;
+import javax.xml.validation.Schema;
+import javax.xml.validation.SchemaFactory;
+import javax.xml.validation.Validator;
+import java.io.File;
+import java.io.IOException;
+import org.xml.sax.SAXException;
+
 
 public class XslConversionTest extends XslProcessTest {
 
@@ -71,5 +81,22 @@ public class XslConversionTest extends XslProcessTest {
         assertFalse(
             String.format("Differences: %s", diff.toString()),
             diff.hasDifferences());
+    }
+
+
+    @Test
+    public void validateSchema() throws IOException, SAXException {
+        new XmlValidator().isValid();
+    }
+
+    public class XmlValidator {
+        public boolean isValid() throws IOException, SAXException {
+            SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+            Source schemaFile = new StreamSource(new File("/home/cmangeat/sources/eCH-0271/eCH-0271-1-0-0/standards.iso.org/iso/19115/-3/eCH-0271-1-0-0.xsd"));
+            Schema schema = factory.newSchema(schemaFile);
+            Validator validator = schema.newValidator();
+            validator.validate(new StreamSource(new File("/home/cmangeat/sources/saxon/tmp/amphibiens-19115.che.xml")));
+            return true;
+        }
     }
 }
