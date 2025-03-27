@@ -22,7 +22,7 @@
  */
 package org.fao.geonet.schema;
 
-import org.fao.geonet.schema.iso19115_3_2018.ISO19115_3_2018SchemaPlugin;
+import org.fao.geonet.schema.iso19115_3_2018_che.ISO19115_3_2018SchemaPlugin;
 import org.fao.geonet.schemas.XslProcessTest;
 import org.fao.geonet.utils.Xml;
 import org.jdom.Element;
