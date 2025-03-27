@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<schema elementFormDefault="qualified" targetNamespace="http://geocat.ch/che" version="1.0.0"
+	
+	xmlns="http://www.w3.org/2001/XMLSchema" 
+    xmlns:che="http://geocat.ch/che"	
+	xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0"
+	xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"	
+	xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"	
+	xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0"
+	xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0"
+	xmlns:gmw="http://standards.iso.org/iso/19115/-3/gmw/1.0"	
+	xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0"	
+	xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0"
+	xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0"
+	xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" 
+	xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0"
+	xmlns:md1="http://standards.iso.org/iso/19115/-3/md1/2.0"
+	xmlns:md2="http://standards.iso.org/iso/19115/-3/md2/2.0"
+	xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/2.0"
+	xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0"
+	xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0"
+	xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0"
+	xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0"
+	xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0"	
+	xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0"
+	xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0"
+	xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0"
+	xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0"
+	xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0"
+	xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0"
+	xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0"
+	xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0"	>
+	
+	<import namespace="http://standards.iso.org/iso/19115/-3/cit/2.0" schemaLocation="cit/2.0/cit.xsd"/>
+	<import namespace="http://standards.iso.org/iso/19115/-3/cat/1.0" schemaLocation="cat/1.0/cat.xsd"/>		
+	<import namespace="http://standards.iso.org/iso/19115/-3/gco/1.0" schemaLocation="gco/1.0/gco.xsd"/>
+	<import namespace="http://standards.iso.org/iso/19115/-3/gcx/1.0" schemaLocation="gcx/1.0/gcx.xsd"/>
+	<import namespace="http://standards.iso.org/iso/19115/-3/gex/1.0" schemaLocation="gex/1.0/gex.xsd"/>
+	<import namespace="http://standards.iso.org/iso/19115/-3/gmw/1.0" schemaLocation="gmw/1.0/gmw.xsd"/>
+    <import namespace="http://standards.iso.org/iso/19115/-3/lan/1.0" schemaLocation="lan/1.0/lan.xsd"/>
+    <import namespace="http://standards.iso.org/iso/19115/-3/mac/2.0" schemaLocation="mac/2.0/mac.xsd"/>
+    <import namespace="http://standards.iso.org/iso/19115/-3/mas/1.0" schemaLocation="mas/1.0/mas.xsd"/>
+    <import namespace="http://standards.iso.org/iso/19115/-3/mcc/1.0" schemaLocation="mcc/1.0/mcc.xsd"/>
+    <import namespace="http://standards.iso.org/iso/19115/-3/mco/1.0" schemaLocation="mco/1.0/mco.xsd"/>
+	<import namespace="http://standards.iso.org/iso/19115/-3/md1/2.0" schemaLocation="md1/2.0/md1.xsd "/>  
+    <import namespace="http://standards.iso.org/iso/19115/-3/md2/2.0" schemaLocation="md2/2.0/md2.xsd "/>
+    <import namespace="http://standards.iso.org/iso/19115/-3/mda/2.0" schemaLocation="mda/2.0/mda.xsd"/>
+    <import namespace="http://standards.iso.org/iso/19115/-3/mdb/2.0" schemaLocation="mdb/2.0/mdb.xsd"/>
+	<import namespace="http://standards.iso.org/iso/19115/-3/mds/2.0" schemaLocation="mds/2.0/mds.xsd"/>
+	<import namespace="http://standards.iso.org/iso/19115/-3/mdt/2.0" schemaLocation="mdt/2.0/mdt.xsd"/>
+	<import namespace="http://standards.iso.org/iso/19115/-3/mex/1.0" schemaLocation="mex/1.0/mex.xsd"/>
+	<import namespace="http://standards.iso.org/iso/19115/-3/mmi/1.0" schemaLocation="mmi/1.0/mmi.xsd"/>
+	<import namespace="http://standards.iso.org/iso/19115/-3/mpc/1.0" schemaLocation="mpc/1.0/mpc.xsd"/>
+	<import namespace="http://standards.iso.org/iso/19115/-3/mrc/2.0" schemaLocation="mrc/2.0/mrc.xsd"/>
+	<import namespace="http://standards.iso.org/iso/19115/-3/mrd/1.0" schemaLocation="mrd/1.0/mrd.xsd"/>
+	<import namespace="http://standards.iso.org/iso/19115/-3/mri/1.0" schemaLocation="mri/1.0/mri.xsd"/>		
+    <import namespace="http://standards.iso.org/iso/19115/-3/mrl/2.0" schemaLocation="mrl/2.0/mrl.xsd"/>
+    <import namespace="http://standards.iso.org/iso/19115/-3/mrs/1.0" schemaLocation="mrs/1.0/mrs.xsd"/>
+    <import namespace="http://standards.iso.org/iso/19115/-3/msr/2.0" schemaLocation="msr/2.0/msr.xsd"/>
+    <import namespace="http://standards.iso.org/iso/19115/-3/srv/2.0" schemaLocation="srv/2.0/srv.xsd"/>    
+  
+  <!-- MD Metadata extension. New role legislationInformation -->
+  
+  <complexType name="CHE_MD_Metadata_PropertyType">
+    <sequence minOccurs="0">
+      <element ref="che:CHE_MD_Metadata"/>
+    </sequence>
+    <attributeGroup ref="gco:ObjectReference"/>
+    <attribute ref="gco:nilReason"/>
+  </complexType>  
+  
+  <element name="CHE_MD_Metadata" substitutionGroup="mdb:MD_Metadata" type="che:CHE_MD_Metadata_Type"/>
+  
+  <complexType name="CHE_MD_Metadata_Type">
+    <complexContent>
+      <extension base="mdb:MD_Metadata_Type">
+        <sequence>
+          <element name="legislationInformation" type="che:CHE_MD_Legislation_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+        </sequence>
+        <attribute ref="gco:isoType" use="required" fixed="mdb:MD_Metadata"/>
+      </extension>
+    </complexContent>
+  </complexType>
+
+<!-- Extension MD_Legislation -->
+  
+  <complexType name="CHE_MD_Legislation_PropertyType">
+    <sequence minOccurs="0">
+      <element ref="che:CHE_MD_Legislation"/>
+    </sequence>
+    <attributeGroup ref="gco:ObjectReference"/>
+    <attribute ref="gco:nilReason"/>
+  </complexType>
+  
+  <element name="CHE_MD_Legislation" substitutionGroup="gco:AbstractObject" type="che:CHE_MD_Legislation_Type">
+    <annotation>
+      <documentation>Legislation</documentation>
+    </annotation>
+  </element>
+  
+  <complexType name="CHE_MD_Legislation_Type">
+    <complexContent>
+      <extension base="gco:AbstractObject_Type">
+        <sequence>
+          <element name="country" type="lan:CountryCode_PropertyType"/>
+          <element name="language" type="lan:LanguageCode_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+          <element name="legislationType" type="che:CHE_CI_LegislationType_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+          <element name="legislationLevel" type="che:CHE_MD_LevelCode_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+          <element name="internalReference" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+          <element name="legislationAcronym" type="gco:CharacterString_PropertyType" minOccurs="0"/>
+          <element name="legislationCitation" type="cit:CI_Citation_PropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  
+  <complexType name="CHE_CI_LegislationType_PropertyType">
+    <sequence minOccurs="0">
+      <element ref="che:CHE_CI_LegislationTypeCode"/>
+    </sequence>
+    <attribute ref="gco:nilReason"/>
+  </complexType>
+
+  <element name="CHE_CI_LegislationTypeCode" substitutionGroup="gco:CharacterString" type="gco:CodeListValue_Type">
+    <annotation>
+      <documentation>Type of legislation</documentation>
+    </annotation>
+  </element>
+
+  
+  <!-- CHE_MD_LevelCode -->
+
+  <complexType name="CHE_MD_LevelCode_PropertyType">
+    <sequence minOccurs="0">
+      <element ref="che:CHE_MD_LevelCode"/>
+    </sequence>
+    <attribute ref="gco:nilReason"/>
+  </complexType>
+  
+  <element name="CHE_MD_LevelCode" substitutionGroup="gco:CharacterString" type="gco:CodeListValue_Type">
+    <annotation>
+      <documentation>Administration Level</documentation>
+    </annotation>
+  </element>
+  
+  <!-- MD LegalConstraints extension. legislationConstraints -->
+  
+  <complexType name="CHE_MD_LegalConstraints_PropertyType">
+    <sequence minOccurs="0">
+      <element ref="che:CHE_MD_LegalConstraints"/>
+    </sequence>
+    <attributeGroup ref="gco:ObjectReference"/>
+    <attribute ref="gco:nilReason"/>
+  </complexType>  
+  
+  <element name="CHE_MD_LegalConstraints" substitutionGroup="mco:MD_LegalConstraints" type="che:CHE_MD_LegalConstraints_Type"/>
+  
+  <complexType name="CHE_MD_LegalConstraints_Type">
+    <complexContent>
+      <extension base="mco:MD_LegalConstraints_Type">
+        <sequence>
+          <element name="legislationConstraints" type="che:CHE_MD_Legislation_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+        </sequence>
+        <attribute ref="gco:isoType" use="required" fixed="mco:MD_LegalConstraints"/>
+      </extension>
+    </complexContent>
+  </complexType>  
+
+  <!-- Extension DataIdentification class -->
+  
+  <complexType name="CHE_MD_DataIdentification_PropertyType">
+    <sequence minOccurs="0">
+      <element ref="che:CHE_MD_DataIdentification"/>
+    </sequence>
+    <attributeGroup ref="gco:ObjectReference"/>
+    <attribute ref="gco:nilReason"/>
+  </complexType>  
+  
+  <element name="CHE_MD_DataIdentification" substitutionGroup="mri:MD_DataIdentification" type="che:CHE_MD_DataIdentification_Type">
+    <annotation>
+      <documentation>Data Identification</documentation>
+    </annotation>
+  </element>
+  
+  <complexType name="CHE_MD_DataIdentification_Type">
+    <complexContent>
+      <extension base="mri:MD_DataIdentification_Type">
+        <sequence>
+          <element name="subTopicCategory" type="che:CHE_MD_SubTopicCategory_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+		  <element name="basicGeodata" type="gco:Boolean_PropertyType" minOccurs="0"/>	          
+          <element name="basicGeodataInformation" type="che:CHE_MD_BasicGeodataInformation_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+        </sequence>
+        <attribute ref="gco:isoType" use="required" fixed="mri:MD_DataIdentification"/>
+      </extension>
+    </complexContent>
+  </complexType>  
+  
+  <complexType name="CHE_MD_SubTopicCategory_PropertyType">
+    <sequence minOccurs="0">
+      <element ref="che:CHE_MD_SubTopicCategoryCode"/>
+    </sequence>
+    <attribute ref="gco:nilReason"/>
+  </complexType>
+  
+  <element name="CHE_MD_SubTopicCategoryCode" type="gco:CodeListValue_Type" substitutionGroup="gco:CharacterString"/>
+  
+  <!-- CHE_MD_BasicGeodataInformation -->
+
+  <complexType name="CHE_MD_BasicGeodataInformation_PropertyType">
+    <sequence minOccurs="0">
+      <element ref="che:CHE_MD_BasicGeodataInformation"/>
+    </sequence>
+    <attributeGroup ref="gco:ObjectReference"/>
+    <attribute ref="gco:nilReason"/>
+  </complexType>
+  
+  <element name="CHE_MD_BasicGeodataInformation" substitutionGroup="gco:AbstractObject" type="che:CHE_MD_BasicGeodataInformation_Type">
+    <annotation>
+      <documentation>Basic geodata information</documentation>
+    </annotation>
+  </element>
+  
+  <complexType name="CHE_MD_BasicGeodataInformation_Type">
+    <complexContent>
+      <extension base="gco:AbstractObject_Type">
+        <sequence>	  
+          <element name="basicGeodataID" type="gco:CharacterString_PropertyType"/>
+          <element name="basicGeodataLegalLevel" type="che:CHE_MD_LevelCode_PropertyType" minOccurs="0"/>
+          <element name="basicGeodataResponsibilityLevel" type="che:CHE_MD_LevelCode_PropertyType" minOccurs="0"/>
+          <element name="basicGeodataAccessLevel" type="che:CHE_MD_BasicGeodataAccessLevelCode_PropertyType" minOccurs="0"/>
+          <element name="basicGeodataType" type="che:CHE_MD_BasicGeodataTypeCode_PropertyType" minOccurs="0" maxOccurs="unbounded"/>          
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+
+  <element name="CHE_MD_BasicGeodataAccessLevelCode" type="gco:CodeListValue_Type" substitutionGroup="gco:CharacterString"/>
+  
+  <complexType name="CHE_MD_BasicGeodataAccessLevelCode_PropertyType">
+    <sequence minOccurs="0">
+      <element ref="che:CHE_MD_BasicGeodataAccessLevelCode"/>
+    </sequence>
+    <attribute ref="gco:nilReason"/>
+  </complexType>
+  
+  <element name="CHE_MD_BasicGeodataTypeCode" type="gco:CodeListValue_Type" substitutionGroup="gco:CharacterString"/>
+  
+  <complexType name="CHE_MD_BasicGeodataTypeCode_PropertyType">
+    <sequence minOccurs="0">
+      <element ref="che:CHE_MD_BasicGeodataTypeCode"/>
+    </sequence>
+    <attribute ref="gco:nilReason"/>
+  </complexType>
+
+
+  <!-- Extension CI_Organisation. New elements: acronym and parent organisation. -->
+    
+  <complexType name="CHE_CI_Organisation_PropertyType">
+    <sequence minOccurs="0">
+      <element ref="che:CHE_CI_Organisation"/>
+    </sequence>
+    <attributeGroup ref="gco:ObjectReference"/>
+    <attribute ref="gco:nilReason"/>
+  </complexType>  
+  
+  <element name="CHE_CI_Organisation" substitutionGroup="cit:CI_Organisation" type="che:CHE_CI_Organisation_Type">
+    <annotation>
+      <documentation>Add acronym and parent organisation</documentation>
+    </annotation>
+  </element>
+  
+  <complexType name="CHE_CI_Organisation_Type">
+    <complexContent>
+      <extension base="cit:CI_Organisation_Type">
+        <sequence>
+          <element name="organisationAcronym" type="gco:CharacterString_PropertyType" minOccurs="0"/>
+	      <element name="parentOrganisation" type="cit:CI_Responsibility_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+        </sequence>
+        <attribute ref="gco:isoType" use="required" fixed="cit:CI_Organisation"/>
+      </extension>
+    </complexContent>
+  </complexType>
+  
+  <!-- Extension MD_MaintenananceInformation, AAP, -->
+  
+  <complexType name="CHE_MD_MaintenanceInformation_PropertyType">
+    <sequence minOccurs="0">
+      <element ref="che:CHE_MD_MaintenanceInformation"/>
+    </sequence>
+    <attributeGroup ref="gco:ObjectReference"/>
+    <attribute ref="gco:nilReason"/>
+  </complexType>
+  
+  <element name="CHE_MD_MaintenanceInformation" substitutionGroup="mmi:MD_MaintenanceInformation" type="che:CHE_MD_MaintenanceInformation_Type">
+    <annotation>
+      <documentation>Maintenance information</documentation>
+    </annotation>
+  </element>
+  
+  <complexType name="CHE_MD_MaintenanceInformation_Type">
+    <complexContent>
+      <extension base="mmi:MD_MaintenanceInformation_Type">
+        <sequence>
+          <element name="appraisal" type="che:CHE_MD_Appraisal_AAP_PropertyType" minOccurs="0" maxOccurs="1"/>
+        </sequence>
+        <attribute ref="gco:isoType" use="required" fixed="mmi:MD_MaintenanceInformation"/>
+      </extension>
+    </complexContent>
+  </complexType>
+  
+  <!-- AAP -->
+  <complexType name="CHE_MD_Appraisal_AAP_PropertyType">
+    <sequence minOccurs="0">
+      <element ref="che:CHE_MD_Appraisal_AAP"/>
+    </sequence>
+    <attributeGroup ref="gco:ObjectReference"/>
+    <attribute ref="gco:nilReason"/>
+  </complexType>
+
+  <element name="CHE_MD_Appraisal_AAP" type="che:CHE_MD_Appraisal_AAP_Type" substitutionGroup="gco:AbstractObject"/>
+
+  <complexType name="CHE_MD_Appraisal_AAP_Type">
+    <complexContent>
+      <extension base="gco:AbstractObject_Type">
+        <annotation>
+          <documentation>AAP</documentation>
+        </annotation>
+        <sequence>
+          <element name="durationOfConservation" type="gco:Integer_PropertyType" minOccurs="1" maxOccurs="1"/>
+          <element name="commentOnDurationOfConservation" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="1"/>
+          <element name="appraisalOfArchivalValue" type="che:CHE_AppraisalOfArchivalValue_Type" minOccurs="1" maxOccurs="1"/>
+          <element name="reasonForArchivingValue" type="che:CHE_ReasonForArchivingValue_Type" minOccurs="0" maxOccurs="1"/>
+          <element name="commentOnArchivalValue" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="1"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+
+  <element name="CHE_AppraisalOfArchivalValueCode" type="gco:CodeListValue_Type" substitutionGroup="gco:CharacterString"/>
+  <element name="CHE_ReasonForArchivingValueCode" type="gco:CodeListValue_Type" substitutionGroup="gco:CharacterString"/>
+  <complexType name="CHE_AppraisalOfArchivalValue_Type">
+    <sequence minOccurs="1" maxOccurs="1">
+      <element ref="che:CHE_AppraisalOfArchivalValueCode"/>
+    </sequence>
+  </complexType>
+  <complexType name="CHE_ReasonForArchivingValue_Type">
+    <sequence minOccurs="1" maxOccurs="1">
+      <element ref="che:CHE_ReasonForArchivingValueCode"/>
+    </sequence>
+  </complexType>
+  
+</schema>
