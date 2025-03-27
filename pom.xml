@@ -7,10 +7,11 @@
    <artifactId>gn-schemas</artifactId>
    <groupId>org.geonetwork-opensource.schemas</groupId>
    <version>4.4.8-0</version>
+   <relativePath></relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>gn-schema-iso19115-3.2018</artifactId>
+  <artifactId>gn-schema-iso19115-3.2018.che</artifactId>
   <name>GeoNetwork schema plugin for ISO19115-3:2018 standard</name>
 
   <dependencies>
@@ -81,7 +82,7 @@
                  <mkdir dir="target/sample-data"/>
                  <defaultexcludes add="**/.DS_Store"/>
                  <zip destfile="target/sample-data/service_record.mef"
-                   basedir="src/main/plugin/iso19115-3.2018/sample-data/service_record"
+                   basedir="src/main/plugin/iso19115-3.2018.che/sample-data/service_record"
                    whenempty="create"
                    excludes="**/.keepme"/>
               </target>
