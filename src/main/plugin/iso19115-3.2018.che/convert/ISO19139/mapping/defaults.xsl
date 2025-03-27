@@ -44,6 +44,9 @@
                 xmlns:gml="http://www.opengis.net/gml/3.2"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+                xmlns:che="http://geocat.ch/che"
+                xmlns:oldche="http://www.geocat.ch/2008/che"
+                xmlns:xls="http://www.w3.org/1999/XSL/Transform"
                 exclude-result-prefixes="#all">
 
   <xsl:template match="gml30:*|gml:*" mode="from19139to19115-3.2018">
@@ -75,7 +78,20 @@
     </xsl:variable>
     <xsl:element name="{concat($nameSpacePrefix,':',local-name(.))}">
       <!-- copy all attributes -->
-      <xsl:apply-templates select="@*" mode="from19139to19115-3.2018"/>
+      <xsl:variable name="isMultilingual" select="count(./*:PT_FreeText) > 0"/>
+      <xsl:variable name="withIso19139cheMultilingualAttribute" select="count(.[@xsi:type='gmd:PT_FreeText_PropertyType']) > 0"/>
+      <xsl:variable name="withIso19139cheMultilingualAttributeUrl" select="count(.[@xsi:type='che:PT_FreeURL_PropertyType']) > 0"/>
+
+      <xsl:choose>
+        <xsl:when test="not(starts-with(name(.),'che:'))">
+          <xsl:apply-templates select="@*" mode="from19139to19115-3.2018"/>
+        </xsl:when>
+      </xsl:choose>
+
+<!--      <xsl:apply-templates select="@*['oldche:*']" mode="from19139to19115-3.2018"/>-->
+      <xsl:if test="$isMultilingual or $withIso19139cheMultilingualAttribute or $withIso19139cheMultilingualAttributeUrl">
+        <xsl:attribute name="xsi:type" select="'lan:PT_FreeText_PropertyType'"/>
+      </xsl:if>
       <xsl:apply-templates mode="from19139to19115-3.2018"/>
     </xsl:element>
   </xsl:template>
@@ -87,6 +103,9 @@
       <xsl:choose>
         <xsl:when test="name()='gmi:MI_Metadata'">
           <xsl:text>mdb</xsl:text>
+        </xsl:when>
+        <xsl:when test="starts-with(name(),'che:')">
+          <xsl:text>che</xsl:text>
         </xsl:when>
         <xsl:when test="name() = 'gfc:name' or name() = 'gmx:name'
                      or name() = 'gfc:scope' or name() = 'gmx:scope'
@@ -201,7 +220,7 @@
         <xsl:when test="ancestor-or-self::gmd:MD_MaintenanceInformation">
           <xsl:text>mmi</xsl:text>
         </xsl:when>
-        <xsl:when test="ancestor-or-self::gmd:MD_DataIdentification or ancestor-or-self::srvold:SV_ServiceIdentification">
+        <xsl:when test="ancestor-or-self::gmd:MD_DataIdentification or ancestor-or-self::srvold:SV_ServiceIdentification or ancestor-or-self::oldche:CHE_MD_DataIdentification">
           <!-- or ancestor-or-self::gmd:MD_SpatialRepresentationTypeCode"> this test is not necessary -->
           <xsl:text>mri</xsl:text>
         </xsl:when>
@@ -236,6 +255,19 @@
     <gco:CharacterString>
       <xsl:value-of select="."/>
     </gco:CharacterString>
+  </xsl:template>
+
+  <xsl:template match="oldche:PT_FreeURL" mode="from19139to19115-3.2018">
+    <lan:PT_FreeText>
+      <xsl:for-each select="oldche:URLGroup">
+        <lan:textGroup>
+          <lan:LocalisedCharacterString>
+            <xsl:apply-templates select="oldche:LocalisedURL/@*" mode="from19139to19115-3.2018"/>
+            <xsl:value-of select="oldche:LocalisedURL"/>
+          </lan:LocalisedCharacterString>
+        </lan:textGroup>
+      </xsl:for-each>
+    </lan:PT_FreeText>
   </xsl:template>
 
   <xsl:template match="gmd:MD_Format" mode="from19139to19115-3.2018">
