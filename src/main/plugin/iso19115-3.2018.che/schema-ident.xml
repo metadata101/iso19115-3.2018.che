@@ -84,13 +84,15 @@ Ce schéma est également composé des normes :
               xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0"
               xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0"
               xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0"
-              xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">
+              xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
+              xmlns:che="http://geocat.ch/che">
     <!-- ISO19115-3 identification is based on the
     root element of the record. It could be a MD_Metadata
     element (for a metadata recocrd) or some other eleement
     when used as a subtemplate (cf. directory support).
     -->
     <elements type="root">
+      <che:CHE_MD_Metadata/>
       <mdb:MD_Metadata/>
       <cit:CI_Responsibility/>
       <cit:CI_Organisation/>

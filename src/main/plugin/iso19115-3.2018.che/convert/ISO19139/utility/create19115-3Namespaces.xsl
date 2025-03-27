@@ -63,5 +63,6 @@
     <!-- external namespaces -->
     <xsl:namespace name="gml" select="'http://www.opengis.net/gml/3.2'"/>
     <xsl:namespace name="xlink" select="'http://www.w3.org/1999/xlink'"/>
+    <xsl:namespace name="che" select="'http://geocat.ch/che'"/>
   </xsl:template>
 </xsl:stylesheet>
