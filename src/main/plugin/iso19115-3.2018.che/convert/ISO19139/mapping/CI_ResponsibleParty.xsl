@@ -41,6 +41,8 @@
                 xmlns:mai="http://standards.iso.org/iso/19115/-3/mai/1.0"
                 xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0"
                 xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
+                xmlns:che="http://geocat.ch/che"
+                xmlns:oldche="http://www.geocat.ch/2008/che"
                 exclude-result-prefixes="#all">
     
     <xsl:import href="../utility/multiLingualCharacterStrings.xsl"/>
@@ -60,7 +62,7 @@
         </xd:desc>
     </xd:doc>
 
-    <xsl:template match="gmd:CI_ResponsibleParty" mode="from19139to19115-3.2018">
+    <xsl:template match="oldche:CHE_CI_ResponsibleParty" mode="from19139to19115-3.2018">
         <xsl:choose>
             <xsl:when test="count(gmd:individualName/gcoold:CharacterString) + count(gmd:organisationName/gcoold:CharacterString) + count(gmd:positionName/gcoold:CharacterString) > 0">
                 <!-- 
@@ -90,7 +92,8 @@
                     <cit:party>
                         <xsl:choose>
                             <xsl:when test="gmd:organisationName">
-                                <cit:CI_Organisation>
+                                <che:CHE_CI_Organisation>
+                                    <xsl:attribute name="gco:isoType" select="'cit:CI_Organisation'"/>
                                     <xsl:call-template name="writeCharacterStringElement">
                                         <xsl:with-param name="elementName" select="'cit:name'"/>
                                         <xsl:with-param name="nodeWithStringToWrite" select="gmd:organisationName"/>
@@ -115,7 +118,7 @@
                                             </cit:CI_Individual>
                                         </cit:individual>
                                     </xsl:if>
-                                </cit:CI_Organisation>
+                                </che:CHE_CI_Organisation>
                             </xsl:when>
                             <xsl:otherwise>
                                 <cit:CI_Individual>
