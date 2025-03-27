@@ -20,7 +20,7 @@
  * Contact: Jeroen Ticheler - FAO - Viale delle Terme di Caracalla 2,
  * Rome - Italy. email: geonetwork@osgeo.org
  */
-package org.fao.geonet.schema.iso19115_3_2018;
+package org.fao.geonet.schema.iso19115_3_2018_che;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableSet;
@@ -41,7 +41,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-import static org.fao.geonet.schema.iso19115_3_2018.ISO19115_3_2018Namespaces.XLINK;
+import static org.fao.geonet.schema.iso19115_3_2018_che.ISO19115_3_2018Namespaces.XLINK;
 
 
 public class ISO19115_3_2018SchemaPlugin
