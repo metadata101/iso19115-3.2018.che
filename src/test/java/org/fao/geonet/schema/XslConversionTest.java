@@ -27,12 +27,17 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
+
 import org.fao.geonet.schema.iso19115_3_2018_che.ISO19115_3_2018SchemaPlugin;
 import org.fao.geonet.schemas.XslProcessTest;
 import org.fao.geonet.utils.Xml;
 import org.jdom.Element;
+
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
+import org.jdom.Namespace;
 import org.junit.Test;
 import org.xmlunit.builder.DiffBuilder;
 import org.xmlunit.builder.Input;
@@ -103,6 +108,14 @@ public class XslConversionTest extends XslProcessTest {
         Schema schema = factory.newSchema(schemaFile);
         Validator validator = schema.newValidator();
         validator.validate(new StreamSource(new ByteArrayInputStream(Xml.getString(amphibiensIso19115che).getBytes(StandardCharsets.UTF_8))));
+
+        List<Namespace> namespaces = amphibiensIso19115che.getAdditionalNamespaces();
+
+        assertEquals("http://standards.iso.org/iso/19115/-3/md1/2.0", namespaces.stream().filter(n -> "md1".equals(n.getPrefix())).findFirst().get().getURI());
+        assertEquals("http://standards.iso.org/iso/19115/-3/md2/2.0", namespaces.stream().filter(n -> "md2".equals(n.getPrefix())).findFirst().get().getURI());
+        assertEquals("http://standards.iso.org/iso/19115/-3/mda/2.0", namespaces.stream().filter(n -> "mda".equals(n.getPrefix())).findFirst().get().getURI());
+        assertEquals("http://standards.iso.org/iso/19115/-3/mds/2.0", namespaces.stream().filter(n -> "mds".equals(n.getPrefix())).findFirst().get().getURI());
+        assertEquals("http://standards.iso.org/iso/19115/-3/mdt/2.0", namespaces.stream().filter(n -> "mdt".equals(n.getPrefix())).findFirst().get().getURI());
 
         //Xml.validate(Path.of(testClass.getClassLoader().getResource("schema/standards.iso.org/19115/-3/eCH-0271-1-0-0.xsd").toURI()), amphibiensIso19115che);
         return true;
