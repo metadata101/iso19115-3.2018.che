@@ -26,8 +26,12 @@
     <xsl:namespace name="mcc" select="'http://standards.iso.org/iso/19115/-3/mcc/1.0'"/>
     <!-- Metadata for COnstraints (ISO 19115-3) -->
     <xsl:namespace name="mco" select="'http://standards.iso.org/iso/19115/-3/mco/1.0'"/>
+    <!-- metadata with extended type-->
+    <xsl:namespace name="md1" select="'http://standards.iso.org/iso/19115/-3/md1/2.0'"/>
+    <!-- metadata with extensions-->
+    <xsl:namespace name="md2" select="'http://standards.iso.org/iso/19115/-3/md2/2.0'"/>
     <!-- MetaData Application (ISO 19115-3) -->
-    <xsl:namespace name="mda" select="'http://standards.iso.org/iso/19115/-3/mda/1.0'"/>
+    <xsl:namespace name="mda" select="'http://standards.iso.org/iso/19115/-3/mda/2.0'"/>
     <!-- MetaDataBase (ISO 19115-3) -->
     <xsl:namespace name="mdb" select="'http://standards.iso.org/iso/19115/-3/mdb/2.0'"/>
     <!-- Metadata for Data and Services (ISO 19115-3) -->
