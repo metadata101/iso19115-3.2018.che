@@ -44,6 +44,7 @@
                 xmlns:gml="http://www.opengis.net/gml/3.2"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+                xmlns:che="http://geocat.ch/che"
                 exclude-result-prefixes="#all">
 
     <xsl:import href="utility/create19115-3Namespaces.xsl"/>
@@ -111,8 +112,9 @@
                           select="local-name() = 'FC_FeatureCatalogue'"
                           as="xs:boolean"/>
 
-            <xsl:element name="mdb:MD_Metadata">
+            <xsl:element name="che:CHE_MD_Metadata">
                 <!-- new namespaces -->
+                <xsl:attribute name="gco:isoType" select="'mdb:MD_Metadata'"/>
                 <xsl:call-template name="add-iso19115-3.2018-namespaces"/>
 
                 <xsl:apply-templates select="gmd:fileIdentifier|@uuid" mode="from19139to19115-3.2018"/>
@@ -229,6 +231,7 @@
     <xsl:include href="mapping/CI_Citation.xsl"/>
     <xsl:include href="mapping/SRV.xsl"/>
     <xsl:include href="mapping/DQ.xsl"/>
+    <xsl:include href="mapping/CHE_MD_LegalConstraints.xsl"/>
 
 
 

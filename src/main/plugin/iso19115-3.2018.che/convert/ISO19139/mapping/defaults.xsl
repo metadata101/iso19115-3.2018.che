@@ -44,6 +44,7 @@
                 xmlns:gml="http://www.opengis.net/gml/3.2"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+                xmlns:che="http://geocat.ch/che" xmlns:xls="http://www.w3.org/1999/XSL/Transform"
                 exclude-result-prefixes="#all">
 
   <xsl:template match="gml30:*|gml:*" mode="from19139to19115-3.2018">
@@ -75,7 +76,12 @@
     </xsl:variable>
     <xsl:element name="{concat($nameSpacePrefix,':',local-name(.))}">
       <!-- copy all attributes -->
+      <xsl:variable name="isMultilingual" select="count(./*:PT_FreeText) > 0"/>
+      <xsl:variable name="withIso19139cheMultilingualAttribute" select="count(.[@xsi:type='gmd:PT_FreeText_PropertyType']) > 0"/>
       <xsl:apply-templates select="@*" mode="from19139to19115-3.2018"/>
+      <xsl:if test="$isMultilingual or $withIso19139cheMultilingualAttribute">
+        <xsl:attribute name="xsi:type" select="'lan:PT_FreeText_PropertyType'"/>
+      </xsl:if>
       <xsl:apply-templates mode="from19139to19115-3.2018"/>
     </xsl:element>
   </xsl:template>
