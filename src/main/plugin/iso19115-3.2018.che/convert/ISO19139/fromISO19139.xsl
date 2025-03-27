@@ -44,6 +44,8 @@
                 xmlns:gml="http://www.opengis.net/gml/3.2"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+                xmlns:che="http://geocat.ch/che"
+                xmlns:oldche="http://www.geocat.ch/2008/che"
                 exclude-result-prefixes="#all">
 
     <xsl:import href="utility/create19115-3Namespaces.xsl"/>
@@ -102,13 +104,16 @@
         <!--
         root element (MD_Metadata or MI_Metadata)
         -->
-        <xsl:for-each select="//(gmd:MD_Metadata|gmi:MI_Metadata|gfcold:FC_FeatureCatalogue)">
+        <xsl:for-each select="//(gmd:MD_Metadata|gmi:MI_Metadata|gfcold:FC_FeatureCatalogue|oldche:CHE_MD_Metadata)">
+            <xsl:variable name="nameSpacePrefix">
+                <xsl:call-template name="getNamespacePrefix"/>
+            </xsl:variable>
             <xsl:variable name="isFeatureCatalogue"
                           select="local-name() = 'FC_FeatureCatalogue'"
                           as="xs:boolean"/>
-
-            <xsl:element name="mdb:MD_Metadata">
+            <xsl:element name="che:CHE_MD_Metadata">
                 <!-- new namespaces -->
+                <xsl:attribute name="gco:isoType" select="'mdb:MD_Metadata'"/>
                 <xsl:call-template name="add-iso19115-3.2018-namespaces"/>
 
                 <xsl:apply-templates select="gmd:fileIdentifier|@uuid" mode="from19139to19115-3.2018"/>
