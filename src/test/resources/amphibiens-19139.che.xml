@@ -1,19 +1,20 @@
-<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd">
-  <gmd:fileIdentifier xmlns:che="http://www.geocat.ch/2008/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">
+<?xml version="1.0" encoding="UTF-8"?>
+<che:CHE_MD_Metadata xmlns:che="http://www.geocat.ch/2008/che" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gco:isoType="gmd:MD_Metadata" xsi:schemaLocation="http://www.geocat.ch/2008/che https://www.geocat.ch/geonetwork/xml/schemas/iso19139.che/schema/che/che.xsd">
+  <gmd:fileIdentifier>
     <gco:CharacterString>9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce</gco:CharacterString>
   </gmd:fileIdentifier>
-  <gmd:language xmlns:che="http://www.geocat.ch/2008/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <gmd:language>
     <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
   </gmd:language>
-  <gmd:characterSet xmlns:che="http://www.geocat.ch/2008/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <gmd:characterSet>
     <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
   </gmd:characterSet>
-  <gmd:hierarchyLevel xmlns:che="http://www.geocat.ch/2008/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <gmd:hierarchyLevel>
     <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
   </gmd:hierarchyLevel>
-  <gmd:contact xmlns:che="http://www.geocat.ch/2008/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="local://srv/api/registries/entries/f0ce917d-9b40-4e18-96aa-64b6c88af8f0?lang=ger,fre,ita,eng,roh&amp;process=gmd:role/gmd:CI_RoleCode/@codeListValue~owner&amp;schema=iso19139.che">
-    <gmd:CI_ResponsibleParty uuid="f0ce917d-9b40-4e18-96aa-64b6c88af8f0">
-      <gmd:organisationName xmlns:geonet="http://www.fao.org/geonetwork" xsi:type="gmd:PT_FreeText_PropertyType">
+  <gmd:contact>
+    <che:CHE_CI_ResponsibleParty xmlns:geonet="http://www.fao.org/geonetwork" gco:isoType="gmd:CI_ResponsibleParty" uuid="f0ce917d-9b40-4e18-96aa-64b6c88af8f0">
+      <gmd:organisationName xsi:type="gmd:PT_FreeText_PropertyType">
         <gco:CharacterString>Agroscope Metadaten</gco:CharacterString>
         <gmd:PT_FreeText>
           <gmd:textGroup>
@@ -30,7 +31,7 @@
           </gmd:textGroup>
         </gmd:PT_FreeText>
       </gmd:organisationName>
-      <gmd:positionName xmlns:geonet="http://www.fao.org/geonetwork" xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmd:positionName xsi:type="gmd:PT_FreeText_PropertyType">
         <gco:CharacterString>GIS-Koordination</gco:CharacterString>
         <gmd:PT_FreeText>
           <gmd:textGroup>
@@ -47,17 +48,17 @@
           </gmd:textGroup>
         </gmd:PT_FreeText>
       </gmd:positionName>
-      <gmd:contactInfo xmlns:geonet="http://www.fao.org/geonetwork">
+      <gmd:contactInfo>
         <gmd:CI_Contact>
           <gmd:phone>
-            <gmd:CI_Telephone>
+            <che:CHE_CI_Telephone gco:isoType="gmd:CI_Telephone">
               <gmd:facsimile>
                 <gco:CharacterString />
               </gmd:facsimile>
-            </gmd:CI_Telephone>
+            </che:CHE_CI_Telephone>
           </gmd:phone>
           <gmd:address>
-            <gmd:CI_Address>
+            <che:CHE_CI_Address gco:isoType="gmd:CI_Address">
               <gmd:city>
                 <gco:CharacterString>Zürich</gco:CharacterString>
               </gmd:city>
@@ -70,12 +71,32 @@
               <gmd:electronicMailAddress>
                 <gco:CharacterString>GIS@agroscope.admin.ch</gco:CharacterString>
               </gmd:electronicMailAddress>
-            </gmd:CI_Address>
+              <che:streetName>
+                <gco:CharacterString>Reckenholzstrasse</gco:CharacterString>
+              </che:streetName>
+              <che:streetNumber>
+                <gco:CharacterString>191</gco:CharacterString>
+              </che:streetNumber>
+            </che:CHE_CI_Address>
           </gmd:address>
           <gmd:onlineResource>
             <gmd:CI_OnlineResource>
-              <gmd:linkage>
+              <gmd:linkage xsi:type="che:PT_FreeURL_PropertyType">
                 <gmd:URL>http://www.agroscope.admin.ch</gmd:URL>
+                <che:PT_FreeURL>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#DE">http://www.agroscope.admin.ch</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#FR">http://www.agroscope.admin.ch</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#IT">http://www.agroscope.admin.ch</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#EN">http://www.agroscope.admin.ch</che:LocalisedURL>
+                  </che:URLGroup>
+                </che:PT_FreeURL>
               </gmd:linkage>
               <gmd:protocol>
                 <gco:CharacterString>WWW:LINK</gco:CharacterString>
@@ -84,18 +105,41 @@
           </gmd:onlineResource>
         </gmd:CI_Contact>
       </gmd:contactInfo>
-      <gmd:role xmlns:geonet="http://www.fao.org/geonetwork">
+      <gmd:role>
         <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode" codeListValue="owner" />
       </gmd:role>
-    </gmd:CI_ResponsibleParty>
+      <che:individualFirstName>
+        <gco:CharacterString />
+      </che:individualFirstName>
+      <che:individualLastName>
+        <gco:CharacterString />
+      </che:individualLastName>
+      <che:organisationAcronym xsi:type="gmd:PT_FreeText_PropertyType">
+        <gco:CharacterString>Agroscope</gco:CharacterString>
+        <gmd:PT_FreeText>
+          <gmd:textGroup>
+            <gmd:LocalisedCharacterString locale="#DE">Agroscope</gmd:LocalisedCharacterString>
+          </gmd:textGroup>
+          <gmd:textGroup>
+            <gmd:LocalisedCharacterString locale="#FR">Agroscope</gmd:LocalisedCharacterString>
+          </gmd:textGroup>
+          <gmd:textGroup>
+            <gmd:LocalisedCharacterString locale="#IT">Agroscope</gmd:LocalisedCharacterString>
+          </gmd:textGroup>
+          <gmd:textGroup>
+            <gmd:LocalisedCharacterString locale="#EN">Agroscope</gmd:LocalisedCharacterString>
+          </gmd:textGroup>
+        </gmd:PT_FreeText>
+      </che:organisationAcronym>
+    </che:CHE_CI_ResponsibleParty>
   </gmd:contact>
-  <gmd:dateStamp xmlns:che="http://www.geocat.ch/2008/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <gco:DateTime>2025-02-13T16:46:18.461Z</gco:DateTime>
+  <gmd:dateStamp>
+    <gco:DateTime>2025-03-17T16:04:56.559Z</gco:DateTime>
   </gmd:dateStamp>
   <gmd:metadataStandardName>
-    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">ISO 19115/19119</gco:CharacterString>
+    <gco:CharacterString>GM03_2</gco:CharacterString>
   </gmd:metadataStandardName>
-  <gmd:locale xmlns:che="http://www.geocat.ch/2008/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <gmd:locale>
     <gmd:PT_Locale id="FR">
       <gmd:languageCode>
         <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="fre" />
@@ -105,7 +149,7 @@
       </gmd:characterEncoding>
     </gmd:PT_Locale>
   </gmd:locale>
-  <gmd:locale xmlns:che="http://www.geocat.ch/2008/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <gmd:locale>
     <gmd:PT_Locale id="IT">
       <gmd:languageCode>
         <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ita" />
@@ -115,7 +159,7 @@
       </gmd:characterEncoding>
     </gmd:PT_Locale>
   </gmd:locale>
-  <gmd:locale xmlns:che="http://www.geocat.ch/2008/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <gmd:locale>
     <gmd:PT_Locale id="EN">
       <gmd:languageCode>
         <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng" />
@@ -125,7 +169,7 @@
       </gmd:characterEncoding>
     </gmd:PT_Locale>
   </gmd:locale>
-  <gmd:locale xmlns:che="http://www.geocat.ch/2008/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <gmd:locale>
     <gmd:PT_Locale id="RM">
       <gmd:languageCode>
         <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="roh" />
@@ -135,7 +179,7 @@
       </gmd:characterEncoding>
     </gmd:PT_Locale>
   </gmd:locale>
-  <gmd:locale xmlns:che="http://www.geocat.ch/2008/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <gmd:locale>
     <gmd:PT_Locale id="DE">
       <gmd:languageCode>
         <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
@@ -145,7 +189,7 @@
       </gmd:characterEncoding>
     </gmd:PT_Locale>
   </gmd:locale>
-  <gmd:spatialRepresentationInfo xmlns:che="http://www.geocat.ch/2008/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <gmd:spatialRepresentationInfo>
     <gmd:MD_VectorSpatialRepresentation>
       <gmd:geometricObjects>
         <gmd:MD_GeometricObjects>
@@ -156,7 +200,7 @@
       </gmd:geometricObjects>
     </gmd:MD_VectorSpatialRepresentation>
   </gmd:spatialRepresentationInfo>
-  <gmd:referenceSystemInfo xmlns:che="http://www.geocat.ch/2008/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <gmd:referenceSystemInfo>
     <gmd:MD_ReferenceSystem>
       <gmd:referenceSystemIdentifier>
         <gmd:RS_Identifier>
@@ -172,8 +216,8 @@
       </gmd:referenceSystemIdentifier>
     </gmd:MD_ReferenceSystem>
   </gmd:referenceSystemInfo>
-  <gmd:identificationInfo xmlns:che="http://www.geocat.ch/2008/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <gmd:MD_DataIdentification>
+  <gmd:identificationInfo>
+    <che:CHE_MD_DataIdentification gco:isoType="gmd:MD_DataIdentification">
       <gmd:citation>
         <gmd:CI_Citation>
           <gmd:title xsi:type="gmd:PT_FreeText_PropertyType">
@@ -256,9 +300,9 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
       <gmd:status>
         <gmd:MD_ProgressCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ProgressCode" codeListValue="completed" />
       </gmd:status>
-      <gmd:pointOfContact xlink:href="local://srv/api/registries/entries/f0ce917d-9b40-4e18-96aa-64b6c88af8f0?lang=ger,fre,ita,eng,roh&amp;process=gmd:role/gmd:CI_RoleCode/@codeListValue~author&amp;schema=iso19139.che">
-        <gmd:CI_ResponsibleParty uuid="f0ce917d-9b40-4e18-96aa-64b6c88af8f0">
-          <gmd:organisationName xmlns:geonet="http://www.fao.org/geonetwork" xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmd:pointOfContact>
+        <che:CHE_CI_ResponsibleParty xmlns:geonet="http://www.fao.org/geonetwork" gco:isoType="gmd:CI_ResponsibleParty" uuid="f0ce917d-9b40-4e18-96aa-64b6c88af8f0">
+          <gmd:organisationName xsi:type="gmd:PT_FreeText_PropertyType">
             <gco:CharacterString>Agroscope Metadaten</gco:CharacterString>
             <gmd:PT_FreeText>
               <gmd:textGroup>
@@ -275,7 +319,7 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
               </gmd:textGroup>
             </gmd:PT_FreeText>
           </gmd:organisationName>
-          <gmd:positionName xmlns:geonet="http://www.fao.org/geonetwork" xsi:type="gmd:PT_FreeText_PropertyType">
+          <gmd:positionName xsi:type="gmd:PT_FreeText_PropertyType">
             <gco:CharacterString>GIS-Koordination</gco:CharacterString>
             <gmd:PT_FreeText>
               <gmd:textGroup>
@@ -292,17 +336,17 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
               </gmd:textGroup>
             </gmd:PT_FreeText>
           </gmd:positionName>
-          <gmd:contactInfo xmlns:geonet="http://www.fao.org/geonetwork">
+          <gmd:contactInfo>
             <gmd:CI_Contact>
               <gmd:phone>
-                <gmd:CI_Telephone>
+                <che:CHE_CI_Telephone gco:isoType="gmd:CI_Telephone">
                   <gmd:facsimile>
                     <gco:CharacterString />
                   </gmd:facsimile>
-                </gmd:CI_Telephone>
+                </che:CHE_CI_Telephone>
               </gmd:phone>
               <gmd:address>
-                <gmd:CI_Address>
+                <che:CHE_CI_Address gco:isoType="gmd:CI_Address">
                   <gmd:city>
                     <gco:CharacterString>Zürich</gco:CharacterString>
                   </gmd:city>
@@ -315,12 +359,32 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
                   <gmd:electronicMailAddress>
                     <gco:CharacterString>GIS@agroscope.admin.ch</gco:CharacterString>
                   </gmd:electronicMailAddress>
-                </gmd:CI_Address>
+                  <che:streetName>
+                    <gco:CharacterString>Reckenholzstrasse</gco:CharacterString>
+                  </che:streetName>
+                  <che:streetNumber>
+                    <gco:CharacterString>191</gco:CharacterString>
+                  </che:streetNumber>
+                </che:CHE_CI_Address>
               </gmd:address>
               <gmd:onlineResource>
                 <gmd:CI_OnlineResource>
-                  <gmd:linkage>
+                  <gmd:linkage xsi:type="che:PT_FreeURL_PropertyType">
                     <gmd:URL>http://www.agroscope.admin.ch</gmd:URL>
+                    <che:PT_FreeURL>
+                      <che:URLGroup>
+                        <che:LocalisedURL locale="#DE">http://www.agroscope.admin.ch</che:LocalisedURL>
+                      </che:URLGroup>
+                      <che:URLGroup>
+                        <che:LocalisedURL locale="#FR">http://www.agroscope.admin.ch</che:LocalisedURL>
+                      </che:URLGroup>
+                      <che:URLGroup>
+                        <che:LocalisedURL locale="#IT">http://www.agroscope.admin.ch</che:LocalisedURL>
+                      </che:URLGroup>
+                      <che:URLGroup>
+                        <che:LocalisedURL locale="#EN">http://www.agroscope.admin.ch</che:LocalisedURL>
+                      </che:URLGroup>
+                    </che:PT_FreeURL>
                   </gmd:linkage>
                   <gmd:protocol>
                     <gco:CharacterString>WWW:LINK</gco:CharacterString>
@@ -329,14 +393,37 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
               </gmd:onlineResource>
             </gmd:CI_Contact>
           </gmd:contactInfo>
-          <gmd:role xmlns:geonet="http://www.fao.org/geonetwork">
+          <gmd:role>
             <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode" codeListValue="author" />
           </gmd:role>
-        </gmd:CI_ResponsibleParty>
+          <che:individualFirstName>
+            <gco:CharacterString />
+          </che:individualFirstName>
+          <che:individualLastName>
+            <gco:CharacterString />
+          </che:individualLastName>
+          <che:organisationAcronym xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Agroscope</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE">Agroscope</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#FR">Agroscope</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#IT">Agroscope</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#EN">Agroscope</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </che:organisationAcronym>
+        </che:CHE_CI_ResponsibleParty>
       </gmd:pointOfContact>
-      <gmd:pointOfContact xlink:href="local://srv/api/registries/entries/7bcf8196-bfd6-43dd-9ab5-60d1908d71ef?lang=ger,fre,ita,eng,roh&amp;process=gmd:role/gmd:CI_RoleCode/@codeListValue~principalInvestigator&amp;schema=iso19139.che">
-        <gmd:CI_ResponsibleParty>
-          <gmd:organisationName xmlns:geonet="http://www.fao.org/geonetwork" xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmd:pointOfContact>
+        <che:CHE_CI_ResponsibleParty xmlns:geonet="http://www.fao.org/geonetwork" gco:isoType="gmd:CI_ResponsibleParty">
+          <gmd:organisationName xsi:type="gmd:PT_FreeText_PropertyType">
             <gco:CharacterString>Info_Fauna_Karch</gco:CharacterString>
             <gmd:PT_FreeText>
               <gmd:textGroup>
@@ -353,7 +440,7 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
               </gmd:textGroup>
             </gmd:PT_FreeText>
           </gmd:organisationName>
-          <gmd:positionName xmlns:geonet="http://www.fao.org/geonetwork" xsi:type="gmd:PT_FreeText_PropertyType">
+          <gmd:positionName xsi:type="gmd:PT_FreeText_PropertyType">
             <gco:CharacterString>Information Karch Amphibien</gco:CharacterString>
             <gmd:PT_FreeText>
               <gmd:textGroup>
@@ -370,13 +457,17 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
               </gmd:textGroup>
             </gmd:PT_FreeText>
           </gmd:positionName>
-          <gmd:contactInfo xmlns:geonet="http://www.fao.org/geonetwork">
+          <gmd:contactInfo>
             <gmd:CI_Contact>
               <gmd:phone>
-                <gmd:CI_Telephone />
+                <che:CHE_CI_Telephone gco:isoType="gmd:CI_Telephone">
+                  <che:directNumber>
+                    <gco:CharacterString />
+                  </che:directNumber>
+                </che:CHE_CI_Telephone>
               </gmd:phone>
               <gmd:address>
-                <gmd:CI_Address>
+                <che:CHE_CI_Address gco:isoType="gmd:CI_Address">
                   <gmd:city>
                     <gco:CharacterString>Neuchâtel</gco:CharacterString>
                   </gmd:city>
@@ -389,12 +480,32 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
                   <gmd:electronicMailAddress>
                     <gco:CharacterString>contact@infofauna.ch</gco:CharacterString>
                   </gmd:electronicMailAddress>
-                </gmd:CI_Address>
+                  <che:streetName>
+                    <gco:CharacterString>Belleveaus</gco:CharacterString>
+                  </che:streetName>
+                  <che:streetNumber>
+                    <gco:CharacterString>51</gco:CharacterString>
+                  </che:streetNumber>
+                </che:CHE_CI_Address>
               </gmd:address>
               <gmd:onlineResource>
                 <gmd:CI_OnlineResource>
-                  <gmd:linkage>
+                  <gmd:linkage xsi:type="che:PT_FreeURL_PropertyType">
                     <gmd:URL>https://www.infofauna.ch/de/beratungsstellen/amphibien-karch</gmd:URL>
+                    <che:PT_FreeURL>
+                      <che:URLGroup>
+                        <che:LocalisedURL locale="#DE">https://www.infofauna.ch/de/beratungsstellen/amphibien-karch</che:LocalisedURL>
+                      </che:URLGroup>
+                      <che:URLGroup>
+                        <che:LocalisedURL locale="#FR">https://www.agroscope.admin.ch/agroscope/fr/home.html</che:LocalisedURL>
+                      </che:URLGroup>
+                      <che:URLGroup>
+                        <che:LocalisedURL locale="#IT">https://www.agroscope.admin.ch/agroscope/it/home.html</che:LocalisedURL>
+                      </che:URLGroup>
+                      <che:URLGroup>
+                        <che:LocalisedURL locale="#EN">https://www.agroscope.admin.ch/agroscope/en/home.html</che:LocalisedURL>
+                      </che:URLGroup>
+                    </che:PT_FreeURL>
                   </gmd:linkage>
                   <gmd:protocol>
                     <gco:CharacterString>WWW:LINK</gco:CharacterString>
@@ -403,14 +514,37 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
               </gmd:onlineResource>
             </gmd:CI_Contact>
           </gmd:contactInfo>
-          <gmd:role xmlns:geonet="http://www.fao.org/geonetwork">
+          <gmd:role>
             <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode" codeListValue="principalInvestigator" />
           </gmd:role>
-        </gmd:CI_ResponsibleParty>
+          <che:individualFirstName>
+            <gco:CharacterString />
+          </che:individualFirstName>
+          <che:individualLastName>
+            <gco:CharacterString />
+          </che:individualLastName>
+          <che:organisationAcronym xsi:type="gmd:PT_FreeText_PropertyType" gco:nilReason="missing">
+            <gco:CharacterString />
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE" />
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#FR">ART</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#IT">ART</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#EN">ART</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </che:organisationAcronym>
+        </che:CHE_CI_ResponsibleParty>
       </gmd:pointOfContact>
-      <gmd:pointOfContact xlink:href="local://srv/api/registries/entries/890dc812-8524-4864-bd05-3a0af86a5770?lang=ger,fre,ita,eng,roh&amp;process=gmd:role/gmd:CI_RoleCode/@codeListValue~pointOfContact&amp;schema=iso19139.che">
-        <gmd:CI_ResponsibleParty>
-          <gmd:organisationName xmlns:geonet="http://www.fao.org/geonetwork" xsi:type="gmd:PT_FreeText_PropertyType">
+      <gmd:pointOfContact>
+        <che:CHE_CI_ResponsibleParty xmlns:geonet="http://www.fao.org/geonetwork" gco:isoType="gmd:CI_ResponsibleParty">
+          <gmd:organisationName xsi:type="gmd:PT_FreeText_PropertyType">
             <gco:CharacterString>Bundesamt für Umwelt / Abteilung Biodiversität und Landschaft</gco:CharacterString>
             <gmd:PT_FreeText>
               <gmd:textGroup>
@@ -430,20 +564,20 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
               </gmd:textGroup>
             </gmd:PT_FreeText>
           </gmd:organisationName>
-          <gmd:contactInfo xmlns:geonet="http://www.fao.org/geonetwork">
+          <gmd:contactInfo>
             <gmd:CI_Contact>
               <gmd:phone>
-                <gmd:CI_Telephone>
+                <che:CHE_CI_Telephone gco:isoType="gmd:CI_Telephone">
                   <gmd:voice>
                     <gco:CharacterString>+41 58 462 93 89</gco:CharacterString>
                   </gmd:voice>
                   <gmd:facsimile>
                     <gco:CharacterString>+41 58 463 89 74</gco:CharacterString>
                   </gmd:facsimile>
-                </gmd:CI_Telephone>
+                </che:CHE_CI_Telephone>
               </gmd:phone>
               <gmd:address>
-                <gmd:CI_Address>
+                <che:CHE_CI_Address gco:isoType="gmd:CI_Address">
                   <gmd:city>
                     <gco:CharacterString>Bern</gco:CharacterString>
                   </gmd:city>
@@ -456,12 +590,26 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
                   <gmd:electronicMailAddress>
                     <gco:CharacterString>bnl@bafu.admin.ch</gco:CharacterString>
                   </gmd:electronicMailAddress>
-                </gmd:CI_Address>
+                </che:CHE_CI_Address>
               </gmd:address>
               <gmd:onlineResource>
                 <gmd:CI_OnlineResource>
-                  <gmd:linkage>
+                  <gmd:linkage xsi:type="che:PT_FreeURL_PropertyType">
                     <gmd:URL>https://www.bafu.admin.ch/bafu/de/home/amt/abteilungen-sektionen/abteilung-biodiversitaet-und-landschaft.html</gmd:URL>
+                    <che:PT_FreeURL>
+                      <che:URLGroup>
+                        <che:LocalisedURL locale="#DE">https://www.bafu.admin.ch/bafu/de/home/amt/abteilungen-sektionen/abteilung-biodiversitaet-und-landschaft.html</che:LocalisedURL>
+                      </che:URLGroup>
+                      <che:URLGroup>
+                        <che:LocalisedURL locale="#FR">https://www.bafu.admin.ch/bafu/fr/home/office/divisions-sections/division-biodiversite-et-paysage.html</che:LocalisedURL>
+                      </che:URLGroup>
+                      <che:URLGroup>
+                        <che:LocalisedURL locale="#IT">https://www.bafu.admin.ch/bafu/it/home/ufficio/divisioni-sezioni/divisione-biodiversita-e-paesaggio.html</che:LocalisedURL>
+                      </che:URLGroup>
+                      <che:URLGroup>
+                        <che:LocalisedURL locale="#EN">https://www.bafu.admin.ch/bafu/en/home/office/divisions-sections/biodiversity-and-landscape-division.html</che:LocalisedURL>
+                      </che:URLGroup>
+                    </che:PT_FreeURL>
                   </gmd:linkage>
                   <gmd:protocol>
                     <gco:CharacterString>WWW:LINK</gco:CharacterString>
@@ -470,17 +618,43 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
               </gmd:onlineResource>
             </gmd:CI_Contact>
           </gmd:contactInfo>
-          <gmd:role xmlns:geonet="http://www.fao.org/geonetwork">
+          <gmd:role>
             <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode" codeListValue="pointOfContact" />
           </gmd:role>
-        </gmd:CI_ResponsibleParty>
+          <che:individualLastName>
+            <gco:CharacterString>BAFU BNL</gco:CharacterString>
+          </che:individualLastName>
+          <che:organisationAcronym xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>BAFU</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE">BAFU</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#FR">OFEV</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#IT">UFAM</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#EN">FOEN</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#RM">BAFU</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </che:organisationAcronym>
+        </che:CHE_CI_ResponsibleParty>
       </gmd:pointOfContact>
       <gmd:resourceMaintenance>
-        <gmd:MD_MaintenanceInformation>
+        <che:CHE_MD_MaintenanceInformation gco:isoType="gmd:MD_MaintenanceInformation">
           <gmd:maintenanceAndUpdateFrequency>
             <gmd:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="notPlanned" />
           </gmd:maintenanceAndUpdateFrequency>
-        </gmd:MD_MaintenanceInformation>
+          <che:archiveConcept>
+            <che:CHE_MD_ArchiveConcept />
+          </che:archiveConcept>
+        </che:CHE_MD_MaintenanceInformation>
       </gmd:resourceMaintenance>
       <gmd:graphicOverview>
         <gmd:MD_BrowseGraphic>
@@ -489,7 +663,7 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
           </gmd:fileName>
         </gmd:MD_BrowseGraphic>
       </gmd:graphicOverview>
-      <gmd:resourceFormat xlink:href="local://srv/api/registries/entries/4ff0a6bc-9186-4336-9467-d3a1d4931285?lang=ger,fre,ita,eng,roh&amp;schema=iso19139.che">
+      <gmd:resourceFormat>
         <gmd:MD_Format>
           <gmd:name>
             <gco:CharacterString>Tagged Image File Format (TIFF)</gco:CharacterString>
@@ -497,7 +671,7 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
           <gmd:version gco:nilReason="unknown" />
         </gmd:MD_Format>
       </gmd:resourceFormat>
-      <gmd:resourceFormat xlink:href="local://srv/api/registries/entries/4d61e0e1-59f1-44e1-aa0f-fb30429a7373?lang=ger,fre,ita,eng,roh&amp;schema=iso19139.che">
+      <gmd:resourceFormat>
         <gmd:MD_Format xmlns:geonet="http://www.fao.org/geonetwork" uuid="4d61e0e1-59f1-44e1-aa0f-fb30429a7373">
           <gmd:name>
             <gco:CharacterString>Cloud Optimized GeoTIFF (TIFF / TIF)</gco:CharacterString>
@@ -507,7 +681,7 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
           </gmd:version>
         </gmd:MD_Format>
       </gmd:resourceFormat>
-      <gmd:descriptiveKeywords xlink:href="local://srv/api/registries/vocabularies/keyword?skipdescriptivekeywords=true&amp;thesaurus=local.theme.geocat.ch&amp;id=http%3A%2F%2Fcustom.shared.obj.ch%2Fconcept%237a6dd485-5aa6-4a48-b36c-ea13cba0b2dc%2Chttp%3A%2F%2Fgeocat.ch%2Fconcept%23e6485c01-fe69-485e-b194-035f682463db&amp;lang=ger,fre,ita,eng,roh">
+      <gmd:descriptiveKeywords>
         <gmd:MD_Keywords>
           <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
             <gco:CharacterString>Bund</gco:CharacterString>
@@ -578,28 +752,8 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
           </gmd:thesaurusName>
         </gmd:MD_Keywords>
       </gmd:descriptiveKeywords>
-      <gmd:descriptiveKeywords xlink:href="local://srv/api/registries/vocabularies/keyword?skipdescriptivekeywords=true&amp;thesaurus=external.theme.gemet-theme&amp;id=http%3A%2F%2Fwww.eionet.europa.eu%2Fgemet%2Ftheme%2F2%2Chttp%3A%2F%2Fwww.eionet.europa.eu%2Fgemet%2Ftheme%2F23&amp;lang=ger,fre,ita,eng,roh">
+      <gmd:descriptiveKeywords>
         <gmd:MD_Keywords>
-          <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
-            <gco:CharacterString>Landwirtschaft</gco:CharacterString>
-            <gmd:PT_FreeText>
-              <gmd:textGroup>
-                <gmd:LocalisedCharacterString locale="#DE">Landwirtschaft</gmd:LocalisedCharacterString>
-              </gmd:textGroup>
-              <gmd:textGroup>
-                <gmd:LocalisedCharacterString locale="#FR">agriculture</gmd:LocalisedCharacterString>
-              </gmd:textGroup>
-              <gmd:textGroup>
-                <gmd:LocalisedCharacterString locale="#IT">agricoltura</gmd:LocalisedCharacterString>
-              </gmd:textGroup>
-              <gmd:textGroup>
-                <gmd:LocalisedCharacterString locale="#EN">agriculture</gmd:LocalisedCharacterString>
-              </gmd:textGroup>
-              <gmd:textGroup>
-                <gmd:LocalisedCharacterString locale="#RM" />
-              </gmd:textGroup>
-            </gmd:PT_FreeText>
-          </gmd:keyword>
           <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
             <gco:CharacterString>Natürliche Lebensräume, Landschaft, Ökosysteme</gco:CharacterString>
             <gmd:PT_FreeText>
@@ -614,6 +768,26 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
               </gmd:textGroup>
               <gmd:textGroup>
                 <gmd:LocalisedCharacterString locale="#EN">natural areas, landscape, ecosystems</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#RM" />
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:keyword>
+          <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Landwirtschaft</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE">Landwirtschaft</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#FR">agriculture</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#IT">agricoltura</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#EN">agriculture</gmd:LocalisedCharacterString>
               </gmd:textGroup>
               <gmd:textGroup>
                 <gmd:LocalisedCharacterString locale="#RM" />
@@ -649,7 +823,7 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
           </gmd:thesaurusName>
         </gmd:MD_Keywords>
       </gmd:descriptiveKeywords>
-      <gmd:descriptiveKeywords xlink:href="local://srv/api/registries/vocabularies/keyword?skipdescriptivekeywords=true&amp;thesaurus=external.theme.gemet&amp;id=http%3A%2F%2Fwww.eionet.europa.eu%2Fgemet%2Fconcept%2F3138%2Chttp%3A%2F%2Fwww.eionet.europa.eu%2Fgemet%2Ftheme%2F2%2Chttp%3A%2F%2Fwww.eionet.europa.eu%2Fgemet%2Fconcept%2F387%2Chttp%3A%2F%2Fwww.eionet.europa.eu%2Fgemet%2Fconcept%2F5537&amp;lang=ger,fre,ita,eng,roh">
+      <gmd:descriptiveKeywords>
         <gmd:MD_Keywords>
           <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
             <gco:CharacterString>Fauna</gco:CharacterString>
@@ -672,26 +846,6 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
             </gmd:PT_FreeText>
           </gmd:keyword>
           <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
-            <gco:CharacterString>Landwirtschaft</gco:CharacterString>
-            <gmd:PT_FreeText>
-              <gmd:textGroup>
-                <gmd:LocalisedCharacterString locale="#DE">Landwirtschaft</gmd:LocalisedCharacterString>
-              </gmd:textGroup>
-              <gmd:textGroup>
-                <gmd:LocalisedCharacterString locale="#FR">agriculture</gmd:LocalisedCharacterString>
-              </gmd:textGroup>
-              <gmd:textGroup>
-                <gmd:LocalisedCharacterString locale="#IT">agricoltura</gmd:LocalisedCharacterString>
-              </gmd:textGroup>
-              <gmd:textGroup>
-                <gmd:LocalisedCharacterString locale="#EN">agriculture</gmd:LocalisedCharacterString>
-              </gmd:textGroup>
-              <gmd:textGroup>
-                <gmd:LocalisedCharacterString locale="#RM" />
-              </gmd:textGroup>
-            </gmd:PT_FreeText>
-          </gmd:keyword>
-          <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
             <gco:CharacterString>Amphibien</gco:CharacterString>
             <gmd:PT_FreeText>
               <gmd:textGroup>
@@ -705,6 +859,26 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
               </gmd:textGroup>
               <gmd:textGroup>
                 <gmd:LocalisedCharacterString locale="#EN">amphibian</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#RM" />
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:keyword>
+          <gmd:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Landwirtschaft</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE">Landwirtschaft</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#FR">agriculture</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#IT">agricoltura</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#EN">agriculture</gmd:LocalisedCharacterString>
               </gmd:textGroup>
               <gmd:textGroup>
                 <gmd:LocalisedCharacterString locale="#RM" />
@@ -818,10 +992,14 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
       <gmd:topicCategory>
         <gmd:MD_TopicCategoryCode>environment</gmd:MD_TopicCategoryCode>
       </gmd:topicCategory>
+      <!-- TODO where does this code come from ??? -->
+      <!--      <gmd:topicCategory>-->
+      <!--        <gmd:MD_TopicCategoryCode>environment_NatureProtection</gmd:MD_TopicCategoryCode>-->
+      <!--      </gmd:topicCategory>-->
       <gmd:topicCategory>
         <gmd:MD_TopicCategoryCode>farming</gmd:MD_TopicCategoryCode>
       </gmd:topicCategory>
-      <gmd:extent xlink:href="local://srv/api/registries/entries/geocatch-subtpl-extent-landesgebiet-CH?lang=ger,fre,ita,eng,roh&amp;schema=iso19139.che">
+      <gmd:extent>
         <gmd:EX_Extent>
           <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
             <gco:CharacterString>Schweiz</gco:CharacterString>
@@ -878,11 +1056,20 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
           </gmd:geographicElement>
         </gmd:EX_Extent>
       </gmd:extent>
-    </gmd:MD_DataIdentification>
+      <che:basicGeodataID gco:nilReason="missing">
+        <gco:CharacterString />
+      </che:basicGeodataID>
+      <che:basicGeodataIDType>
+        <che:basicGeodataIDTypeCode codeList="#basicGeodataIDTypeCode" codeListValue="federal" />
+      </che:basicGeodataIDType>
+      <che:geodataType>
+        <che:MD_geodataTypeCode codeList="#MD_geodataTypeCode" codeListValue="openData" />
+      </che:geodataType>
+    </che:CHE_MD_DataIdentification>
   </gmd:identificationInfo>
-  <gmd:distributionInfo xmlns:java="java:org.fao.geonet.util.XslUtil" xmlns:che="http://www.geocat.ch/2008/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <gmd:distributionInfo xmlns:java="java:org.fao.geonet.util.XslUtil">
     <gmd:MD_Distribution>
-      <gmd:distributionFormat xlink:href="local://srv/api/registries/entries/4d61e0e1-59f1-44e1-aa0f-fb30429a7373?lang=ger,fre,ita,eng,roh&amp;schema=iso19139.che">
+      <gmd:distributionFormat>
         <gmd:MD_Format xmlns:geonet="http://www.fao.org/geonetwork" uuid="4d61e0e1-59f1-44e1-aa0f-fb30429a7373">
           <gmd:name>
             <gco:CharacterString>Cloud Optimized GeoTIFF (TIFF / TIF)</gco:CharacterString>
@@ -894,9 +1081,9 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
       </gmd:distributionFormat>
       <gmd:distributor>
         <gmd:MD_Distributor>
-          <gmd:distributorContact xlink:href="local://srv/api/registries/entries/f0ce917d-9b40-4e18-96aa-64b6c88af8f0?lang=ger,fre,ita,eng,roh&amp;process=gmd:role/gmd:CI_RoleCode/@codeListValue~owner&amp;schema=iso19139.che">
-            <gmd:CI_ResponsibleParty uuid="f0ce917d-9b40-4e18-96aa-64b6c88af8f0">
-              <gmd:organisationName xmlns:geonet="http://www.fao.org/geonetwork" xsi:type="gmd:PT_FreeText_PropertyType">
+          <gmd:distributorContact>
+            <che:CHE_CI_ResponsibleParty xmlns:geonet="http://www.fao.org/geonetwork" gco:isoType="gmd:CI_ResponsibleParty" uuid="f0ce917d-9b40-4e18-96aa-64b6c88af8f0">
+              <gmd:organisationName xsi:type="gmd:PT_FreeText_PropertyType">
                 <gco:CharacterString>Agroscope Metadaten</gco:CharacterString>
                 <gmd:PT_FreeText>
                   <gmd:textGroup>
@@ -913,7 +1100,7 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
                   </gmd:textGroup>
                 </gmd:PT_FreeText>
               </gmd:organisationName>
-              <gmd:positionName xmlns:geonet="http://www.fao.org/geonetwork" xsi:type="gmd:PT_FreeText_PropertyType">
+              <gmd:positionName xsi:type="gmd:PT_FreeText_PropertyType">
                 <gco:CharacterString>GIS-Koordination</gco:CharacterString>
                 <gmd:PT_FreeText>
                   <gmd:textGroup>
@@ -930,17 +1117,17 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
                   </gmd:textGroup>
                 </gmd:PT_FreeText>
               </gmd:positionName>
-              <gmd:contactInfo xmlns:geonet="http://www.fao.org/geonetwork">
+              <gmd:contactInfo>
                 <gmd:CI_Contact>
                   <gmd:phone>
-                    <gmd:CI_Telephone>
+                    <che:CHE_CI_Telephone gco:isoType="gmd:CI_Telephone">
                       <gmd:facsimile>
                         <gco:CharacterString />
                       </gmd:facsimile>
-                    </gmd:CI_Telephone>
+                    </che:CHE_CI_Telephone>
                   </gmd:phone>
                   <gmd:address>
-                    <gmd:CI_Address>
+                    <che:CHE_CI_Address gco:isoType="gmd:CI_Address">
                       <gmd:city>
                         <gco:CharacterString>Zürich</gco:CharacterString>
                       </gmd:city>
@@ -953,12 +1140,32 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
                       <gmd:electronicMailAddress>
                         <gco:CharacterString>GIS@agroscope.admin.ch</gco:CharacterString>
                       </gmd:electronicMailAddress>
-                    </gmd:CI_Address>
+                      <che:streetName>
+                        <gco:CharacterString>Reckenholzstrasse</gco:CharacterString>
+                      </che:streetName>
+                      <che:streetNumber>
+                        <gco:CharacterString>191</gco:CharacterString>
+                      </che:streetNumber>
+                    </che:CHE_CI_Address>
                   </gmd:address>
                   <gmd:onlineResource>
                     <gmd:CI_OnlineResource>
-                      <gmd:linkage>
+                      <gmd:linkage xsi:type="che:PT_FreeURL_PropertyType">
                         <gmd:URL>http://www.agroscope.admin.ch</gmd:URL>
+                        <che:PT_FreeURL>
+                          <che:URLGroup>
+                            <che:LocalisedURL locale="#DE">http://www.agroscope.admin.ch</che:LocalisedURL>
+                          </che:URLGroup>
+                          <che:URLGroup>
+                            <che:LocalisedURL locale="#FR">http://www.agroscope.admin.ch</che:LocalisedURL>
+                          </che:URLGroup>
+                          <che:URLGroup>
+                            <che:LocalisedURL locale="#IT">http://www.agroscope.admin.ch</che:LocalisedURL>
+                          </che:URLGroup>
+                          <che:URLGroup>
+                            <che:LocalisedURL locale="#EN">http://www.agroscope.admin.ch</che:LocalisedURL>
+                          </che:URLGroup>
+                        </che:PT_FreeURL>
                       </gmd:linkage>
                       <gmd:protocol>
                         <gco:CharacterString>WWW:LINK</gco:CharacterString>
@@ -967,18 +1174,41 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
                   </gmd:onlineResource>
                 </gmd:CI_Contact>
               </gmd:contactInfo>
-              <gmd:role xmlns:geonet="http://www.fao.org/geonetwork">
+              <gmd:role>
                 <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode" codeListValue="owner" />
               </gmd:role>
-            </gmd:CI_ResponsibleParty>
+              <che:individualFirstName>
+                <gco:CharacterString />
+              </che:individualFirstName>
+              <che:individualLastName>
+                <gco:CharacterString />
+              </che:individualLastName>
+              <che:organisationAcronym xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Agroscope</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">Agroscope</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Agroscope</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#IT">Agroscope</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Agroscope</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </che:organisationAcronym>
+            </che:CHE_CI_ResponsibleParty>
           </gmd:distributorContact>
         </gmd:MD_Distributor>
       </gmd:distributor>
       <gmd:distributor>
         <gmd:MD_Distributor>
-          <gmd:distributorContact xlink:href="local://srv/api/registries/entries/890dc812-8524-4864-bd05-3a0af86a5770?lang=ger,fre,ita,eng,roh&amp;process=gmd:role/gmd:CI_RoleCode/@codeListValue~distributor&amp;schema=iso19139.che">
-            <gmd:CI_ResponsibleParty>
-              <gmd:organisationName xmlns:geonet="http://www.fao.org/geonetwork" xsi:type="gmd:PT_FreeText_PropertyType">
+          <gmd:distributorContact>
+            <che:CHE_CI_ResponsibleParty xmlns:geonet="http://www.fao.org/geonetwork" gco:isoType="gmd:CI_ResponsibleParty">
+              <gmd:organisationName xsi:type="gmd:PT_FreeText_PropertyType">
                 <gco:CharacterString>Bundesamt für Umwelt / Abteilung Biodiversität und Landschaft</gco:CharacterString>
                 <gmd:PT_FreeText>
                   <gmd:textGroup>
@@ -998,20 +1228,20 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
                   </gmd:textGroup>
                 </gmd:PT_FreeText>
               </gmd:organisationName>
-              <gmd:contactInfo xmlns:geonet="http://www.fao.org/geonetwork">
+              <gmd:contactInfo>
                 <gmd:CI_Contact>
                   <gmd:phone>
-                    <gmd:CI_Telephone>
+                    <che:CHE_CI_Telephone gco:isoType="gmd:CI_Telephone">
                       <gmd:voice>
                         <gco:CharacterString>+41 58 462 93 89</gco:CharacterString>
                       </gmd:voice>
                       <gmd:facsimile>
                         <gco:CharacterString>+41 58 463 89 74</gco:CharacterString>
                       </gmd:facsimile>
-                    </gmd:CI_Telephone>
+                    </che:CHE_CI_Telephone>
                   </gmd:phone>
                   <gmd:address>
-                    <gmd:CI_Address>
+                    <che:CHE_CI_Address gco:isoType="gmd:CI_Address">
                       <gmd:city>
                         <gco:CharacterString>Bern</gco:CharacterString>
                       </gmd:city>
@@ -1024,12 +1254,26 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
                       <gmd:electronicMailAddress>
                         <gco:CharacterString>bnl@bafu.admin.ch</gco:CharacterString>
                       </gmd:electronicMailAddress>
-                    </gmd:CI_Address>
+                    </che:CHE_CI_Address>
                   </gmd:address>
                   <gmd:onlineResource>
                     <gmd:CI_OnlineResource>
-                      <gmd:linkage>
+                      <gmd:linkage xsi:type="che:PT_FreeURL_PropertyType">
                         <gmd:URL>https://www.bafu.admin.ch/bafu/de/home/amt/abteilungen-sektionen/abteilung-biodiversitaet-und-landschaft.html</gmd:URL>
+                        <che:PT_FreeURL>
+                          <che:URLGroup>
+                            <che:LocalisedURL locale="#DE">https://www.bafu.admin.ch/bafu/de/home/amt/abteilungen-sektionen/abteilung-biodiversitaet-und-landschaft.html</che:LocalisedURL>
+                          </che:URLGroup>
+                          <che:URLGroup>
+                            <che:LocalisedURL locale="#FR">https://www.bafu.admin.ch/bafu/fr/home/office/divisions-sections/division-biodiversite-et-paysage.html</che:LocalisedURL>
+                          </che:URLGroup>
+                          <che:URLGroup>
+                            <che:LocalisedURL locale="#IT">https://www.bafu.admin.ch/bafu/it/home/ufficio/divisioni-sezioni/divisione-biodiversita-e-paesaggio.html</che:LocalisedURL>
+                          </che:URLGroup>
+                          <che:URLGroup>
+                            <che:LocalisedURL locale="#EN">https://www.bafu.admin.ch/bafu/en/home/office/divisions-sections/biodiversity-and-landscape-division.html</che:LocalisedURL>
+                          </che:URLGroup>
+                        </che:PT_FreeURL>
                       </gmd:linkage>
                       <gmd:protocol>
                         <gco:CharacterString>WWW:LINK</gco:CharacterString>
@@ -1038,10 +1282,33 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
                   </gmd:onlineResource>
                 </gmd:CI_Contact>
               </gmd:contactInfo>
-              <gmd:role xmlns:geonet="http://www.fao.org/geonetwork">
+              <gmd:role>
                 <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode" codeListValue="distributor" />
               </gmd:role>
-            </gmd:CI_ResponsibleParty>
+              <che:individualLastName>
+                <gco:CharacterString>BAFU BNL</gco:CharacterString>
+              </che:individualLastName>
+              <che:organisationAcronym xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>BAFU</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">BAFU</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">OFEV</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#IT">UFAM</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">FOEN</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#RM">BAFU</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </che:organisationAcronym>
+            </che:CHE_CI_ResponsibleParty>
           </gmd:distributorContact>
         </gmd:MD_Distributor>
       </gmd:distributor>
@@ -1049,8 +1316,25 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
         <gmd:MD_DigitalTransferOptions>
           <gmd:onLine>
             <gmd:CI_OnlineResource>
-              <gmd:linkage>
-                <gmd:URL>https://www.geocat.ch/geonetwork/srv/api/records/89ec47fa-79e1-4b89-b490-50d1f9e0069b/attachments/Datenbeschreibung_AmphibienAckerland.pdf</gmd:URL>
+              <gmd:linkage xsi:type="che:PT_FreeURL_PropertyType">
+                <gmd:URL>https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf</gmd:URL>
+                <che:PT_FreeURL>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#DE">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#FR">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#IT">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#EN">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#RM">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                </che:PT_FreeURL>
               </gmd:linkage>
               <gmd:protocol>
                 <gco:CharacterString>WWW:DOWNLOAD-URL</gco:CharacterString>
@@ -1065,6 +1349,11 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
               </gmd:name>
               <gmd:description gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
                 <gco:CharacterString />
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE" />
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
               </gmd:description>
               <gmd:function>
                 <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download" />
@@ -1073,8 +1362,25 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
           </gmd:onLine>
           <gmd:onLine>
             <gmd:CI_OnlineResource>
-              <gmd:linkage>
-                <gmd:URL>https://www.geocat.ch/geonetwork/srv/api/records/2d6ab7a3-3e71-4074-bd51-16a9223dd8bd/attachments/DescriptionDonnees_BatrachiensAgricole.pdf</gmd:URL>
+              <gmd:linkage xsi:type="che:PT_FreeURL_PropertyType">
+                <gmd:URL>https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf</gmd:URL>
+                <che:PT_FreeURL>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#DE">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#FR">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#IT">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#EN">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#RM">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                </che:PT_FreeURL>
               </gmd:linkage>
               <gmd:protocol>
                 <gco:CharacterString>WWW:DOWNLOAD-URL</gco:CharacterString>
@@ -1099,11 +1405,12 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
       </gmd:transferOptions>
     </gmd:MD_Distribution>
   </gmd:distributionInfo>
-  <gmd:metadataMaintenance xmlns:che="http://www.geocat.ch/2008/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <gmd:MD_MaintenanceInformation>
+  <gmd:metadataMaintenance>
+    <che:CHE_MD_MaintenanceInformation gco:isoType="gmd:MD_MaintenanceInformation">
       <gmd:maintenanceAndUpdateFrequency>
         <gmd:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded" />
       </gmd:maintenanceAndUpdateFrequency>
-    </gmd:MD_MaintenanceInformation>
+    </che:CHE_MD_MaintenanceInformation>
   </gmd:metadataMaintenance>
-</gmd:MD_Metadata>
+</che:CHE_MD_Metadata>
+
