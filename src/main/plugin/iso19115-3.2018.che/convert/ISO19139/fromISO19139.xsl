@@ -245,6 +245,8 @@
     <xsl:include href="mapping/SRV.xsl"/>
     <xsl:include href="mapping/DQ.xsl"/>
     <xsl:include href="mapping/CHE_MD_LegalConstraints.xsl"/>
+    <xsl:include href="mapping/CHE_MD_MaintenanceInformation.xsl"/>
+    <xsl:include href="mapping/CHE_MD_discarded.xsl"/>
 
 
 
