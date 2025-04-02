@@ -80,8 +80,16 @@
       <!-- copy all attributes -->
       <xsl:variable name="isMultilingual" select="count(./*:PT_FreeText) > 0"/>
       <xsl:variable name="withIso19139cheMultilingualAttribute" select="count(.[@xsi:type='gmd:PT_FreeText_PropertyType']) > 0"/>
-      <xsl:apply-templates select="@*" mode="from19139to19115-3.2018"/>
-      <xsl:if test="$isMultilingual or $withIso19139cheMultilingualAttribute">
+      <xsl:variable name="withIso19139cheMultilingualAttributeUrl" select="count(.[@xsi:type='che:PT_FreeURL_PropertyType']) > 0"/>
+
+      <xsl:choose>
+        <xsl:when test="not(starts-with(name(.),'che:'))">
+          <xsl:apply-templates select="@*" mode="from19139to19115-3.2018"/>
+        </xsl:when>
+      </xsl:choose>
+
+<!--      <xsl:apply-templates select="@*['oldche:*']" mode="from19139to19115-3.2018"/>-->
+      <xsl:if test="$isMultilingual or $withIso19139cheMultilingualAttribute or $withIso19139cheMultilingualAttributeUrl">
         <xsl:attribute name="xsi:type" select="'lan:PT_FreeText_PropertyType'"/>
       </xsl:if>
       <xsl:apply-templates mode="from19139to19115-3.2018"/>
@@ -212,7 +220,7 @@
         <xsl:when test="ancestor-or-self::gmd:MD_MaintenanceInformation">
           <xsl:text>mmi</xsl:text>
         </xsl:when>
-        <xsl:when test="ancestor-or-self::gmd:MD_DataIdentification or ancestor-or-self::srvold:SV_ServiceIdentification">
+        <xsl:when test="ancestor-or-self::gmd:MD_DataIdentification or ancestor-or-self::srvold:SV_ServiceIdentification or ancestor-or-self::oldche:CHE_MD_DataIdentification">
           <!-- or ancestor-or-self::gmd:MD_SpatialRepresentationTypeCode"> this test is not necessary -->
           <xsl:text>mri</xsl:text>
         </xsl:when>
@@ -247,6 +255,19 @@
     <gco:CharacterString>
       <xsl:value-of select="."/>
     </gco:CharacterString>
+  </xsl:template>
+
+  <xsl:template match="oldche:PT_FreeURL" mode="from19139to19115-3.2018">
+    <lan:PT_FreeText>
+      <xsl:for-each select="oldche:URLGroup">
+        <lan:textGroup>
+          <lan:LocalisedCharacterString>
+            <xsl:apply-templates select="oldche:LocalisedURL/@*" mode="from19139to19115-3.2018"/>
+            <xsl:value-of select="oldche:LocalisedURL"/>
+          </lan:LocalisedCharacterString>
+        </lan:textGroup>
+      </xsl:for-each>
+    </lan:PT_FreeText>
   </xsl:template>
 
   <xsl:template match="gmd:MD_Format" mode="from19139to19115-3.2018">

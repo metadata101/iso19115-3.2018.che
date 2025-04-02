@@ -323,9 +323,8 @@
         <xsl:variable name="nameSpacePrefix">
           <xsl:call-template name="getNamespacePrefix"/>
         </xsl:variable>
-        <xsl:element name="{concat($nameSpacePrefix,':',local-name(.))}">
+        <xsl:element name="che:CHE_MD_DataIdentification">
           <xsl:attribute name="gco:isoType" select="'mri:MD_DataIdentification'"/>
-          <xsl:apply-templates select="@*" mode="from19139to19115-3.2018"/>
           <xsl:apply-templates select="gmd:citation" mode="from19139to19115-3.2018"/>
           <xsl:call-template name="writeCharacterStringElement">
             <xsl:with-param name="elementName" select="'mri:abstract'"/>

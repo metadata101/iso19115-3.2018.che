@@ -112,7 +112,7 @@
             <xsl:variable name="isFeatureCatalogue"
                           select="local-name() = 'FC_FeatureCatalogue'"
                           as="xs:boolean"/>
-            <xsl:element name="mdb:MD_Metadata">
+            <xsl:element name="che:CHE_MD_Metadata">
                 <!-- new namespaces -->
                 <xsl:attribute name="gco:isoType" select="'mdb:MD_Metadata'"/>
                 <xsl:call-template name="add-iso19115-3.2018-namespaces"/>
