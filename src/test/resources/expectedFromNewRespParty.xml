@@ -1,9 +1,9 @@
-<cit:CI_Responsibility xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" uuid="f0ce917d-9b40-4e18-96aa-64b6c88af8f0">
+<cit:CI_Responsibility xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" uuid="f0ce917d-9b40-4e18-96aa-64b6c88af8f0">
   <cit:role>
     <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="owner">owner</cit:CI_RoleCode>
   </cit:role>
   <cit:party>
-    <che:CHE_CI_Organisation xmlns:che="http://geocat.ch/che" gco:isoType="cit:CI_Organisation">
+    <che:CHE_CI_Organisation xmlns:che="http://geocat.ch/che" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" gco:isoType="cit:CI_Organisation">
       <cit:name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
         <gco:CharacterString>Agroscope Metadaten</gco:CharacterString>
         <lan:PT_FreeText xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
@@ -64,7 +64,7 @@
           </cit:address>
           <cit:onlineResource>
             <cit:CI_OnlineResource>
-              <cit:linkage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="che:PT_FreeURL_PropertyType">
+              <cit:linkage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
                 <gco:CharacterString>http://www.agroscope.admin.ch</gco:CharacterString>
                 <lan:PT_FreeText xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
                   <lan:textGroup>

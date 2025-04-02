@@ -43,6 +43,8 @@ import static org.junit.Assert.assertFalse;
 
 import org.jdom.JDOMException;
 import org.jdom.Namespace;
+import org.jdom.output.Format;
+import org.jdom.output.XMLOutputter;
 import org.junit.Test;
 import org.xmlunit.builder.DiffBuilder;
 import org.xmlunit.builder.Input;
@@ -135,7 +137,7 @@ public class XslConversionTest extends XslProcessTest {
         Element newRespParty = Xml.transform(amphibiens, xslFile);
 
         byte[] expected = testClass.getClassLoader().getResourceAsStream("expectedFromNewRespParty.xml").readAllBytes();
-        byte[] actual = Xml.getString(newRespParty).getBytes(StandardCharsets.UTF_8);
+        byte[] actual = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n")).outputString(newRespParty).getBytes(StandardCharsets.UTF_8);
         assertArrayEquals(expected, actual);
     }
 }
