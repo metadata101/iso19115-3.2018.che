@@ -359,7 +359,7 @@
           <xsl:apply-templates select="gmd:spatialResolution" mode="from19139to19115-3.2018"/>
           <!-- This is here to handle early adopters of temporalResolution -->
           <xsl:apply-templates select="gmd:temporalResolution" mode="from19139to19115-3.2018"/>
-          <xsl:apply-templates select="gmd:topicCategory" mode="from19139to19115-3.2018"/>
+          <xsl:apply-templates select="gmd:topicCategory[.//gmd:MD_TopicCategoryCode[not(contains(.,'_'))]]" mode="from19139to19115-3.2018"/>
           <xsl:apply-templates select="gmd:extent | srvold:extent" mode="from19139to19115-3.2018"/>
           <xsl:apply-templates select="gmd:resourceMaintenance" mode="from19139to19115-3.2018"/>
           <xsl:apply-templates select="gmd:graphicOverview" mode="from19139to19115-3.2018"/>
@@ -400,6 +400,7 @@
             <xsl:apply-templates select="srvold:containsOperations" mode="from19139to19115-3.2018"/>
             <xsl:apply-templates select="srvold:operatesOn" mode="from19139to19115-3.2018"/>
           </xsl:if>
+          <xsl:apply-templates select="gmd:topicCategory[.//gmd:MD_TopicCategoryCode[contains(.,'_')]]" mode="from19139to19115-3.2018"/>
         </xsl:element>
       </xsl:for-each>
     </mdb:identificationInfo>
