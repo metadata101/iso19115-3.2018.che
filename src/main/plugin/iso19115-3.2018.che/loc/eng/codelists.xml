@@ -2938,4 +2938,61 @@
       <label>Unknown</label>
     </entry>
   </codelist>
+  <codelist name="che:CHE_MD_SubTopicCategoryCode" alias="subTopicCategory">
+    <entry>
+      <code>imageryBaseMapsEarthCover_BaseMaps</code>
+      <label>A1 Base Maps, Landscape Models</label>
+    </entry>
+    <entry>
+      <code>imageryBaseMapsEarthCover_EarthCover</code>
+      <label>A2 Land Cover, Land Use</label>
+    </entry>
+    <entry>
+      <code>imageryBaseMapsEarthCover_Imagery</code>
+      <label>A3 Aerial and Satellite Imagery</label>
+    </entry>
+    <entry>
+      <code>planningCadastre_Planning</code>
+      <label>E1 Spatial Planning, Spatial Development</label>
+    </entry>
+    <entry>
+      <code>planningCadastre_Cadastre</code>
+      <label>E2 Cadastre, Land Registry</label>
+    </entry>
+    <entry>
+      <code>geoscientificInformation_Geology</code>
+      <label>F1 Geology</label>
+    </entry>
+    <entry>
+      <code>geoscientificInformation_Soils</code>
+      <label>F2 Soils</label>
+    </entry>
+    <entry>
+      <code>geoscientificInformation_NaturalHazards</code>
+      <label>F3 Natural Hazards</label>
+    </entry>
+    <entry>
+      <code>environment_EnvironmentalProtection</code>
+      <label>L1 Environmental protection, Noise</label>
+    </entry>
+    <entry>
+      <code>environment_NatureProtection</code>
+      <label>L2 Nature and Landscape protection</label>
+    </entry>
+    <entry>
+      <code>utilitiesCommunication_Energy</code>
+      <label>Q1 Energy</label>
+      <description></description>
+    </entry>
+    <entry>
+      <code>utilitiesCommunication_Utilities</code>
+      <label>Q2 Water and Waste Systems</label>
+      <description></description>
+    </entry>
+    <entry>
+      <code>utilitiesCommunication_Communication</code>
+      <label>Q3 Communication</label>
+      <description></description>
+    </entry>
+  </codelist>
 </codelists>
