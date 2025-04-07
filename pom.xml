@@ -3,37 +3,48 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
- <parent>
-   <artifactId>gn-schemas</artifactId>
-   <groupId>org.geonetwork-opensource.schemas</groupId>
-   <version>4.4.9-0</version>
-   <relativePath></relativePath>
-  </parent>
   <modelVersion>4.0.0</modelVersion>
 
+  <groupId>org.geonetwork-opensource</groupId>
   <artifactId>gn-schema-iso19115-3.2018.che</artifactId>
+  <version>4.4.9-0.1-SNAPSHOT</version>
   <name>GeoNetwork schema plugin for ISO19115-3:2018 standard</name>
+
+  <properties>
+    <xmlunit.version>2.10.0</xmlunit.version>
+    <gn.version>4.4.9-0</gn.version>
+  </properties>
 
   <dependencies>
     <dependency>
       <groupId>org.geonetwork-opensource.schemas</groupId>
       <artifactId>gn-schema-core</artifactId>
-      <version>${project.version}</version>
+      <version>${gn.version}</version>
     </dependency>
     <dependency>
       <groupId>org.geonetwork-opensource.schemas</groupId>
       <artifactId>gn-schema-core</artifactId>
-      <version>${project.version}</version>
+      <version>${gn.version}</version>
       <type>test-jar</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.xmlunit</groupId>
       <artifactId>xmlunit-core</artifactId>
+      <version>${xmlunit.version}</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.xmlunit</groupId>
       <artifactId>xmlunit-matchers</artifactId>
+      <version>${xmlunit.version}</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 
@@ -58,6 +69,18 @@
 
     <plugins>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.14.0</version>
+        <configuration>
+          <release>11</release>
+          <debug>true</debug>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>2.5</version>
         <executions>
@@ -71,7 +94,9 @@
       </plugin>
 
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-antrun-plugin</artifactId>
+        <version>3.1.0</version>
         <executions>
           <execution>
             <id>sample-data</id>
@@ -92,9 +117,10 @@
         </executions>
       </plugin>
 
-
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-assembly-plugin</artifactId>
+        <version>3.3.0</version>
         <executions>
           <execution>
             <id>plugin-assembly</id>
@@ -110,25 +136,28 @@
           </execution>
         </executions>
       </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>3.3.1</version>
+        <configuration>
+          <encoding>UTF-8</encoding>
+          <propertiesEncoding>ISO-8859-1</propertiesEncoding>
+        </configuration>
+      </plugin>
+
     </plugins>
   </build>
 
-  <profiles>
-    <profile>
-      <id>run-static-analysis</id>
-      <activation>
-        <property>
-          <name>!skipTests</name>
-        </property>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>findbugs-maven-plugin</artifactId>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
+  <repositories>
+    <repository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>osgeo</id>
+      <name>OSGeo Release repository</name>
+      <url>https://repo.osgeo.org/repository/release/</url>
+    </repository>
+  </repositories>
 </project>
