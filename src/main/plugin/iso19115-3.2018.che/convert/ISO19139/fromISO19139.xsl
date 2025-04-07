@@ -99,8 +99,22 @@
 
     <xsl:variable name="stylesheetVersion" select="'0.1'"/>
 
+    <xsl:template match="/">
+        <xsl:choose>
+            <xsl:when test="oldche:CHE_CI_ResponsibleParty|gmd:EX_Extent|gmd:MD_Format">
+                <xsl:call-template name="to-iso19115-3-subtemplate"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:call-template name="to-iso19115-3"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
 
-    <xsl:template match="/" name="to-iso19115-3">
+    <xsl:template match="*" name="to-iso19115-3-subtemplate">
+        <xsl:apply-templates select="." mode="from19139to19115-3.2018"/>
+    </xsl:template>
+
+    <xsl:template match="*" name="to-iso19115-3">
         <!--
         root element (MD_Metadata or MI_Metadata)
         -->
