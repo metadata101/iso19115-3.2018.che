@@ -23,8 +23,11 @@
 package org.fao.geonet.schema;
 
 import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
@@ -34,10 +37,14 @@ import org.fao.geonet.schemas.XslProcessTest;
 import org.fao.geonet.utils.Xml;
 import org.jdom.Element;
 
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
+import org.jdom.JDOMException;
 import org.jdom.Namespace;
+import org.jdom.output.Format;
+import org.jdom.output.XMLOutputter;
 import org.junit.Test;
 import org.xmlunit.builder.DiffBuilder;
 import org.xmlunit.builder.Input;
@@ -119,5 +126,18 @@ public class XslConversionTest extends XslProcessTest {
 
         //Xml.validate(Path.of(testClass.getClassLoader().getResource("schema/standards.iso.org/19115/-3/eCH-0271-1-0-0.xsd").toURI()), amphibiensIso19115che);
         return true;
+    }
+
+    @Test
+    public void convertResponsibleParty() throws Exception {
+        xslFile = Paths.get(testClass.getClassLoader().getResource("convert/ISO19139/mapping/CI_ResponsibleParty.xsl").toURI());
+        xmlFile = Paths.get(testClass.getClassLoader().getResource("responsible_party_agroscope_iso19139_che.xml").toURI());
+        Element amphibiens = Xml.loadFile(xmlFile);
+
+        Element newRespParty = Xml.transform(amphibiens, xslFile);
+
+        byte[] expected = testClass.getClassLoader().getResourceAsStream("expectedFromNewRespParty.xml").readAllBytes();
+        byte[] actual = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n")).outputString(newRespParty).getBytes(StandardCharsets.UTF_8);
+        assertArrayEquals(expected, actual);
     }
 }
