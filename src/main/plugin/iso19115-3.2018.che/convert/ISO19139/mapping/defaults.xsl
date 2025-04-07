@@ -161,7 +161,7 @@
         <xsl:when test="ancestor-or-self::gmd:MD_BrowseGraphic">
           <xsl:text>mcc</xsl:text>
         </xsl:when>
-        <xsl:when test="ancestor-or-self::gmd:CI_ResponsibleParty or ancestor-or-self::gmd:CI_OnlineResource">
+        <xsl:when test="ancestor-or-self::oldche:CHE_CI_ResponsibleParty or ancestor-or-self::gmd:CI_OnlineResource">
           <xsl:text>cit</xsl:text>
         </xsl:when>
         <xsl:when test="ancestor-or-self::gmd:MD_ScopeCode or ancestor-or-self::gmx:MX_ScopeCode

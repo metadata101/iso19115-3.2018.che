@@ -41,9 +41,12 @@
                 xmlns:mai="http://standards.iso.org/iso/19115/-3/mai/1.0"
                 xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0"
                 xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
+                xmlns:che="http://geocat.ch/che"
+                xmlns:oldche="http://www.geocat.ch/2008/che"
                 exclude-result-prefixes="#all">
 
     <xsl:import href="../utility/multiLingualCharacterStrings.xsl"/>
+    <xsl:import href="./defaults.xsl" />
 
     <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" scope="stylesheet">
         <xd:desc>
@@ -60,7 +63,7 @@
         </xd:desc>
     </xd:doc>
 
-    <xsl:template match="gmd:CI_ResponsibleParty" mode="from19139to19115-3.2018">
+    <xsl:template match="oldche:CHE_CI_ResponsibleParty" mode="from19139to19115-3.2018">
         <xsl:choose>
             <xsl:when test="count(gmd:individualName/gcoold:CharacterString) + count(gmd:organisationName/(gcoold:CharacterString|gmx:Anchor)) + count(gmd:positionName/gcoold:CharacterString) > 0">
                 <!--
@@ -69,7 +72,7 @@
                 using the CI_ResponsiblePartyToOnlineResource template
                 -->
                <xsl:element name="cit:CI_Responsibility">
-                   <xsl:apply-templates select="./@*" mode="from19139to19115-3.2018"/>
+                   <xsl:apply-templates select="./@uuid" mode="from19139to19115-3.2018"/>
                     <xsl:choose>
                         <xsl:when test="./gmd:role/gmd:CI_RoleCode">
                             <xsl:call-template name="writeCodelistElement">
@@ -90,7 +93,8 @@
                     <cit:party>
                         <xsl:choose>
                             <xsl:when test="gmd:organisationName">
-                                <cit:CI_Organisation>
+                                <che:CHE_CI_Organisation>
+                                    <xsl:attribute name="gco:isoType" select="'cit:CI_Organisation'"/>
                                     <xsl:call-template name="writeCharacterStringElement">
                                         <xsl:with-param name="elementName" select="'cit:name'"/>
                                         <xsl:with-param name="nodeWithStringToWrite" select="gmd:organisationName"/>
@@ -115,7 +119,7 @@
                                             </cit:CI_Individual>
                                         </cit:individual>
                                     </xsl:if>
-                                </cit:CI_Organisation>
+                                </che:CHE_CI_Organisation>
                             </xsl:when>
                             <xsl:otherwise>
                                 <cit:CI_Individual>
@@ -152,7 +156,7 @@
     </xsl:template>
 
     <xsl:template match="gmd:contactInfo/gmd:CI_Contact/gmd:phone" mode="from19139to19115-3.2018">
-      <xsl:for-each select="gmd:CI_Telephone/*">
+      <xsl:for-each select="oldche:CHE_CI_Telephone/*">
         <cit:phone>
           <cit:CI_Telephone>
             <cit:number>
@@ -165,11 +169,11 @@
               <xsl:with-param name="codeListName" select="'cit:CI_TelephoneTypeCode'"/>
               <xsl:with-param name="codeListValue">
                 <xsl:choose>
-                  <xsl:when test="local-name()='voice'">
-                    <xsl:value-of select="'voice'"/>
+                  <xsl:when test="local-name()='facsimile'">
+                    <xsl:value-of select="'facsimile'"/>
                   </xsl:when>
                   <xsl:otherwise>
-                    <xsl:value-of select="'facsimile'"/>
+                    <xsl:value-of select="'voice'"/>
                   </xsl:otherwise>
                 </xsl:choose>
               </xsl:with-param>
@@ -192,5 +196,14 @@
                 <xsl:apply-templates mode="from19139to19115-3.2018"/>
             </cit:contactInfo>
         </xsl:for-each>
+    </xsl:template>
+
+    <xsl:template match="oldche:CHE_CI_Address" mode="from19139to19115-3.2018">
+        <cit:CI_Address>
+            <cit:deliveryPoint>
+                <gco:CharacterString><xsl:value-of select="oldche:streetNumber/gcoold:CharacterString"/>, <xsl:value-of select="oldche:streetName/gcoold:CharacterString"/></gco:CharacterString>
+            </cit:deliveryPoint>
+            <xsl:apply-templates select="*[not(self::oldche:*)]" mode="from19139to19115-3.2018"/>
+        </cit:CI_Address>
     </xsl:template>
 </xsl:stylesheet>
