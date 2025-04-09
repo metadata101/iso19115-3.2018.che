@@ -220,7 +220,7 @@
         <xsl:when test="ancestor-or-self::gmd:MD_MaintenanceInformation or ancestor-or-self::oldche:CHE_MD_MaintenanceInformation">
           <xsl:text>mmi</xsl:text>
         </xsl:when>
-        <xsl:when test="ancestor-or-self::gmd:MD_DataIdentification or ancestor-or-self::srvold:SV_ServiceIdentification or ancestor-or-self::oldche:CHE_MD_DataIdentification">
+        <xsl:when test="ancestor-or-self::gmd:MD_DataIdentification or ancestor-or-self::srvold:SV_ServiceIdentification or ancestor-or-self::oldche:CHE_MD_DataIdentification or ancestor-or-self::oldche:CHE_SV_ServiceIdentification">
           <!-- or ancestor-or-self::gmd:MD_SpatialRepresentationTypeCode"> this test is not necessary -->
           <xsl:text>mri</xsl:text>
         </xsl:when>
