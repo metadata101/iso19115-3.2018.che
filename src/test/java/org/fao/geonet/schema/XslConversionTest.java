@@ -103,6 +103,11 @@ public class XslConversionTest extends XslProcessTest {
         isValid(amphibiansIso19115che);
         //TODO CMT/SRT activate
         //isGNValid(amphibiansIso19115che);
+
+        byte[] expected = testClass.getClassLoader().getResourceAsStream("amphibians-19115-3.che.xml").readAllBytes();
+        byte[] actual = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n")).outputString(amphibiansIso19115che).getBytes(StandardCharsets.UTF_8);
+        assertArrayEquals(expected, actual);
+
     }
 
     private void isValid(Element xmlIso19115che) throws SAXException, IOException {
