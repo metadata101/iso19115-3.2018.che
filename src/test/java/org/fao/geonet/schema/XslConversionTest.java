@@ -23,11 +23,9 @@
 package org.fao.geonet.schema;
 
 import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.FileOutputStream;
+import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
-import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
@@ -41,11 +39,12 @@ import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
-import org.jdom.JDOMException;
 import org.jdom.Namespace;
 import org.jdom.output.Format;
 import org.jdom.output.XMLOutputter;
+import org.jdom.xpath.XPath;
 import org.junit.Test;
+import org.xml.sax.SAXException;
 import org.xmlunit.builder.DiffBuilder;
 import org.xmlunit.builder.Input;
 import org.xmlunit.diff.DefaultNodeMatcher;
@@ -57,7 +56,6 @@ import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
-
 
 public class XslConversionTest extends XslProcessTest {
 
@@ -95,49 +93,66 @@ public class XslConversionTest extends XslProcessTest {
             diff.hasDifferences());
     }
 
-
     @Test
-    public void validateSchema() throws Exception {
+    public void validateAmphibiansSchema() throws Exception {
         xslFile = Paths.get(testClass.getClassLoader().getResource("convert/fromISO19139.xsl").toURI());
-        xmlFile = Paths.get(testClass.getClassLoader().getResource("amphibiens-19139.che.xml").toURI());
-        Element amphibiens = Xml.loadFile(xmlFile);
+        xmlFile = Paths.get(testClass.getClassLoader().getResource("amphibians-19139.che.xml").toURI());
+        Element amphibians = Xml.loadFile(xmlFile);
 
-
-        Element amphibiensIso19115che = Xml.transform(amphibiens, xslFile);
-        isValid(amphibiensIso19115che);
+        Element amphibiansIso19115che = Xml.transform(amphibians, xslFile);
+        isValid(amphibiansIso19115che);
+        //TODO CMT/SRT activate
+        //isGNValid(amphibiansIso19115che);
     }
 
-
-    public boolean isValid(Element amphibiensIso19115che) throws Exception {
+    private void isValid(Element xmlIso19115che) throws SAXException, IOException {
         SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
         Source schemaFile = new StreamSource(testClass.getClassLoader().getResource("schema/standards.iso.org/19115/-3/eCH-0271-1-0-0.xsd").getFile());
 
         Schema schema = factory.newSchema(schemaFile);
         Validator validator = schema.newValidator();
-        validator.validate(new StreamSource(new ByteArrayInputStream(Xml.getString(amphibiensIso19115che).getBytes(StandardCharsets.UTF_8))));
+        validator.validate(new StreamSource(new ByteArrayInputStream(Xml.getString(xmlIso19115che).getBytes(StandardCharsets.UTF_8))));
 
-        List<Namespace> namespaces = amphibiensIso19115che.getAdditionalNamespaces();
+        List<Namespace> namespaces = xmlIso19115che.getAdditionalNamespaces();
 
         assertEquals("http://standards.iso.org/iso/19115/-3/md1/2.0", namespaces.stream().filter(n -> "md1".equals(n.getPrefix())).findFirst().get().getURI());
         assertEquals("http://standards.iso.org/iso/19115/-3/md2/2.0", namespaces.stream().filter(n -> "md2".equals(n.getPrefix())).findFirst().get().getURI());
         assertEquals("http://standards.iso.org/iso/19115/-3/mda/2.0", namespaces.stream().filter(n -> "mda".equals(n.getPrefix())).findFirst().get().getURI());
         assertEquals("http://standards.iso.org/iso/19115/-3/mds/2.0", namespaces.stream().filter(n -> "mds".equals(n.getPrefix())).findFirst().get().getURI());
         assertEquals("http://standards.iso.org/iso/19115/-3/mdt/2.0", namespaces.stream().filter(n -> "mdt".equals(n.getPrefix())).findFirst().get().getURI());
+    }
 
-        //Xml.validate(Path.of(testClass.getClassLoader().getResource("schema/standards.iso.org/19115/-3/eCH-0271-1-0-0.xsd").toURI()), amphibiensIso19115che);
-        return true;
+    private void isGNValid(Element amphibiansIso19115che) throws Exception {
+        Xml.validate(Path.of(testClass.getClassLoader().getResource("schema/standards.iso.org/19115/-3/eCH-0271-1-0-0.xsd").toURI()), amphibiansIso19115che);
     }
 
     @Test
     public void convertResponsibleParty() throws Exception {
         xslFile = Paths.get(testClass.getClassLoader().getResource("convert/ISO19139/mapping/CI_ResponsibleParty.xsl").toURI());
         xmlFile = Paths.get(testClass.getClassLoader().getResource("responsible_party_agroscope_iso19139_che.xml").toURI());
-        Element amphibiens = Xml.loadFile(xmlFile);
+        Element amphibians = Xml.loadFile(xmlFile);
 
-        Element newRespParty = Xml.transform(amphibiens, xslFile);
+        Element newRespParty = Xml.transform(amphibians, xslFile);
 
         byte[] expected = testClass.getClassLoader().getResourceAsStream("expectedFromNewRespParty.xml").readAllBytes();
         byte[] actual = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n")).outputString(newRespParty).getBytes(StandardCharsets.UTF_8);
         assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void validateGruenflaechenSchema() throws Exception {
+        xslFile = Paths.get(testClass.getClassLoader().getResource("convert/fromISO19139.xsl").toURI());
+        xmlFile = Paths.get(testClass.getClassLoader().getResource("gruenflaechen-19139.che.xml").toURI());
+        Element gruenflaechen = Xml.loadFile(xmlFile);
+
+        Element gruenflaechenIso19115che = Xml.transform(gruenflaechen, xslFile);
+        isValid(gruenflaechenIso19115che);
+        XPath xPath = XPath.newInstance(".//srv:serviceType");
+        xPath.addNamespace("srv", "http://standards.iso.org/iso/19115/-3/srv/2.0");
+        List<?> nodes = xPath.selectNodes(gruenflaechenIso19115che);
+        assertEquals(1, nodes.size());
+        assertEquals("OGC:WFS", ((Element)((Element) nodes.get(0)).getChildren().get(0)).getText());
+        //TODO CMT/SRT activate
+        //isGNValid(gruenflaechenIso19115che);
     }
 }
