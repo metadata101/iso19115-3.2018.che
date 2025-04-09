@@ -53,7 +53,7 @@ public class ISO19115_3_2018SchemaPlugin
     ExportablePlugin,
     ISOPlugin,
     LinkAwareSchemaPlugin {
-    public static final String IDENTIFIER = "iso19115-3";
+    public static final String IDENTIFIER = "iso19115-3.che";
 
     private static final Pattern RECORD_ID_PATTERN  = Pattern.compile(".*[i|I][d|D]=([_\\w\\-\\.\\{{\\}}]*).*");
     public static ImmutableSet<Namespace> allNamespaces;
