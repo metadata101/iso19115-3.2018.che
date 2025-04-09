@@ -2,9 +2,10 @@
 <xsl:stylesheet version="2.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
   xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0"
   xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0"
-  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:che="http://geocat.ch/che">
 
-  <xsl:template match="mdb:MD_Metadata">
+  <xsl:template match="che:CHE_MD_Metadata">
     <uuid>
       <xsl:value-of
         select="mdb:metadataIdentifier[position() = 1]/mcc:MD_Identifier
