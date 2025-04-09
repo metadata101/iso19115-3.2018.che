@@ -58,10 +58,17 @@
   <xsl:template match="srvold:containsOperations" mode="from19139to19115-3.2018">
     <srv:containsOperations>
       <srv:SV_OperationMetadata>
-        <xsl:call-template name="writeCharacterStringElement">
-          <xsl:with-param name="elementName" select="'srv:operationName'"/>
-          <xsl:with-param name="nodeWithStringToWrite" select="srvold:SV_OperationMetadata/srvold:operationName"/>
-        </xsl:call-template>
+        <xsl:choose>
+          <xsl:when test="srvold:SV_OperationMetadata/srvold:operationName">
+            <xsl:call-template name="writeCharacterStringElement">
+              <xsl:with-param name="elementName" select="'srv:operationName'"/>
+              <xsl:with-param name="nodeWithStringToWrite" select="srvold:SV_OperationMetadata/srvold:operationName"/>
+            </xsl:call-template>
+          </xsl:when>
+          <xsl:otherwise>
+            <srv:operationName gco:nilReason="missing"/>
+          </xsl:otherwise>
+        </xsl:choose>
         <xsl:choose>
           <xsl:when test="srvold:SV_OperationMetadata/srvold:DCP/srvold:DCPList">
             <xsl:call-template name="writeCodelistElement">
@@ -79,7 +86,14 @@
           <xsl:with-param name="elementName" select="'srv:invocationName'"/>
           <xsl:with-param name="nodeWithStringToWrite" select="srvold:SV_OperationMetadata/srvold:invocationName"/>
         </xsl:call-template>
-        <xsl:apply-templates select="srvold:SV_OperationMetadata/srvold:connectPoint" mode="from19139to19115-3.2018"/>
+        <xsl:choose>
+          <xsl:when test="srvold:SV_OperationMetadata/srvold:connectPoint">
+            <xsl:apply-templates select="srvold:SV_OperationMetadata/srvold:connectPoint" mode="from19139to19115-3.2018"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <srv:connectPoint gco:nilReason="missing"/>
+          </xsl:otherwise>
+        </xsl:choose>
         <xsl:apply-templates select="srvold:SV_OperationMetadata/srvold:parameters" mode="from19139to19115-3.2018"/>
       </srv:SV_OperationMetadata>
     </srv:containsOperations>

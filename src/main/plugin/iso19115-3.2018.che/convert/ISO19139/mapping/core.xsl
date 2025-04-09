@@ -330,11 +330,16 @@
     <mdb:identificationInfo>
       <xsl:apply-templates select="@*" mode="from19139to19115-3.2018"/>
       <xsl:for-each select="./*">
-        <xsl:variable name="nameSpacePrefix">
-          <xsl:call-template name="getNamespacePrefix"/>
+        <xsl:variable name="elementName">
+          <xsl:choose>
+            <xsl:when test="local-name()='CHE_SV_ServiceIdentification'">srv:SV_ServiceIdentification</xsl:when>
+            <xsl:otherwise>che:CHE_MD_DataIdentification</xsl:otherwise>
+          </xsl:choose>
         </xsl:variable>
-        <xsl:element name="che:CHE_MD_DataIdentification">
-          <xsl:attribute name="gco:isoType" select="'mri:MD_DataIdentification'"/>
+        <xsl:element name="{$elementName}">
+          <xsl:if test="local-name()!='CHE_SV_ServiceIdentification'">
+            <xsl:attribute name="gco:isoType" select="'mri:MD_DataIdentification'"/>
+          </xsl:if>
           <xsl:apply-templates select="gmd:citation" mode="from19139to19115-3.2018"/>
           <xsl:call-template name="writeCharacterStringElement">
             <xsl:with-param name="elementName" select="'mri:abstract'"/>
@@ -380,7 +385,7 @@
             <xsl:with-param name="nodeWithStringToWrite" select="gmd:supplementalInformation"/>
           </xsl:call-template>
           <!-- Service Identification Information -->
-          <xsl:if test="local-name()='SV_ServiceIdentification'">
+          <xsl:if test="local-name()='CHE_SV_ServiceIdentification'">
             <xsl:if test="srvold:serviceType">
               <srv:serviceType>
                 <gco:ScopedName>
