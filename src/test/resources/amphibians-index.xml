@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+  <docType>metadata</docType>
+  <document />
+  <metadataIdentifier>9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce</metadataIdentifier>
+  <standardNameObject type="object">{"default":"GM03_2", "langger":"GM03_2"}</standardNameObject>
+  <indexingDate>2025-04-11T17:46:21+02:00</indexingDate>
+  <dateStamp>2025-03-17T16:04:56.559Z</dateStamp>
+  <mainLanguage>ger</mainLanguage>
+  <otherLanguage>fre</otherLanguage>
+  <otherLanguageId>FR</otherLanguageId>
+  <otherLanguage>ita</otherLanguage>
+  <otherLanguageId>IT</otherLanguageId>
+  <otherLanguage>eng</otherLanguage>
+  <otherLanguageId>EN</otherLanguageId>
+  <otherLanguage>roh</otherLanguage>
+  <otherLanguageId>RM</otherLanguageId>
+  <otherLanguage>ger</otherLanguage>
+  <otherLanguageId>DE</otherLanguageId>
+  <cl_characterSet type="object">{"key":"utf8","default":"utf8","langger":"utf8","langfre":"utf8","langita":"utf8","langeng":"utf8","langroh":"utf8","langger":"utf8","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_CharacterSetCode","text":"utf8"}</cl_characterSet>
+  <resourceType>dataset</resourceType>
+  <contact type="object">{
+      
+      "role":"owner",
+      "email":"GIS@agroscope.admin.ch",
+      "website":"http:\/\/www.agroscope.admin.ch",
+      "logo":"",
+      "individual":"",
+      "position":"GIS-Koordination",
+      "phone":"",
+      "address":"191, Reckenholzstrasse, Z\u00FCrich, 8046, CH"
+      
+      }</contact>
+  <cl_resourceScope type="object">{"key":"dataset","default":"dataset","langger":"dataset","langfre":"dataset","langita":"dataset","langeng":"dataset","langroh":"dataset","langger":"dataset","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_ScopeCode","text":"dataset"}</cl_resourceScope>
+  <cl_numberType type="object">{"key":"facsimile","default":"facsimile","langger":"facsimile","langfre":"facsimile","langita":"facsimile","langeng":"facsimile","langroh":"facsimile","langger":"facsimile","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#CI_TelephoneTypeCode","text":"facsimile"}</cl_numberType>
+  <cl_geometricObjectType type="object">{"key":"surface","default":"surface","langger":"surface","langfre":"surface","langita":"surface","langeng":"surface","langroh":"surface","langger":"surface","link":"http:\/\/standards.iso.org\/ittf\/PubliclyAvailableStandards\/ISO_19139_Schemas\/resources\/codelist\/ML_gmxCodelists.xml#MD_GeometricObjectTypeCode"}</cl_geometricObjectType>
+  <cl_status type="object">{"key":"completed","default":"completed","langger":"completed","langfre":"completed","langita":"completed","langeng":"completed","langroh":"completed","langger":"completed","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_ProgressCode","text":"completed"}</cl_status>
+  <cl_numberType type="object">{"key":"voice","default":"voice","langger":"voice","langfre":"voice","langita":"voice","langeng":"voice","langroh":"voice","langger":"voice","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#CI_TelephoneTypeCode","text":"voice"}</cl_numberType>
+  <cl_spatialRepresentationType type="object">{"key":"grid","default":"grid","langger":"grid","langfre":"grid","langita":"grid","langeng":"grid","langroh":"grid","langger":"grid","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_SpatialRepresentationTypeCode","text":"grid"}</cl_spatialRepresentationType>
+  <cl_maintenanceAndUpdateFrequency type="object">{"key":"notPlanned","default":"notPlanned","langger":"notPlanned","langfre":"notPlanned","langita":"notPlanned","langeng":"notPlanned","langroh":"notPlanned","langger":"notPlanned","link":"http:\/\/standards.iso.org\/ittf\/PubliclyAvailableStandards\/ISO_19139_Schemas\/resources\/codelist\/ML_gmxCodelists.xml#MD_MaintenanceFrequencyCode"}</cl_maintenanceAndUpdateFrequency>
+  <cl_type type="object">{"key":"theme","default":"theme","langger":"theme","langfre":"theme","langita":"theme","langeng":"theme","langroh":"theme","langger":"theme","link":"http:\/\/www.isotc211.org\/2005\/resources\/codeList.xml#MD_KeywordTypeCode"}</cl_type>
+  <cl_accessConstraints type="object">{"key":"copyright","default":"copyright","langger":"copyright","langfre":"copyright","langita":"copyright","langeng":"copyright","langroh":"copyright","langger":"copyright","link":"http:\/\/standards.iso.org\/ittf\/PubliclyAvailableStandards\/ISO_19139_Schemas\/resources\/codelist\/ML_gmxCodelists.xml#MD_RestrictionCode"}</cl_accessConstraints>
+  <cl_associationType type="object">{"key":"largerWorkCitation","default":"largerWorkCitation","langger":"largerWorkCitation","langfre":"largerWorkCitation","langita":"largerWorkCitation","langeng":"largerWorkCitation","langroh":"largerWorkCitation","langger":"largerWorkCitation","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#DS_AssociationTypeCode","text":"largerWorkCitation"}</cl_associationType>
+  <cl_subTopicCategory type="object">{"key":"environment_NatureProtection","default":"environment_NatureProtection","langger":"environment_NatureProtection","langfre":"environment_NatureProtection","langita":"environment_NatureProtection","langeng":"environment_NatureProtection","langroh":"environment_NatureProtection","langger":"environment_NatureProtection","link":"subTopicCategory"}</cl_subTopicCategory>
+  <cl_function type="object">{"key":"download","default":"download","langger":"download","langfre":"download","langita":"download","langeng":"download","langroh":"download","langger":"download","link":"http:\/\/standards.iso.org\/ittf\/PubliclyAvailableStandards\/ISO_19139_Schemas\/resources\/codelist\/ML_gmxCodelists.xml#CI_OnLineFunctionCode"}</cl_function>
+  <cl_maintenanceAndUpdateFrequency type="object">{"key":"asNeeded","default":"asNeeded","langger":"asNeeded","langfre":"asNeeded","langita":"asNeeded","langeng":"asNeeded","langroh":"asNeeded","langger":"asNeeded","link":"http:\/\/standards.iso.org\/ittf\/PubliclyAvailableStandards\/ISO_19139_Schemas\/resources\/codelist\/ML_gmxCodelists.xml#MD_MaintenanceFrequencyCode"}</cl_maintenanceAndUpdateFrequency>
+  <resourceTitleObject type="object">{"default":"Amphibien Ausbreitungskarten - Ichthyosaura alpestris", "langger":"Amphibien Ausbreitungskarten - Ichthyosaura alpestris", "langfre":"Cartes de dispersion des amphibiens - Ichthyosaura alpestris", "langeng":"Amphibian dispersal maps - Ichthyosaura alpestris"}</resourceTitleObject>
+  <publicationDateForResource>2024-02-23</publicationDateForResource>
+  <publicationYearForResource>2024</publicationYearForResource>
+  <publicationMonthForResource>2024-02</publicationMonthForResource>
+  <resourceDate type="object">{"type": "publication", "date": "2024-02-23T00:00:00.000Z"}</resourceDate>
+  <resourceTemporalDateRange type="object">{
+                  "gte": "2024-02-23T00:00:00.000Z",
+                  "lte": "2024-02-23T00:00:00.000Z"
+                  }</resourceTemporalDateRange>
+  <resourceIdentifier type="object">{
+              "code": "ADN06",
+              "codeSpace": "",
+              "link": ""
+              }</resourceIdentifier>
+  <resourceAbstractObject type="object">{"default":"Schweizweite Karte, die die Ausbreitungs-Wahrscheinlichkeit der Bergmolch (Ichthyosaura alpestris) darstellt. Jede Rasterzelle gibt die relative Wahrscheinlichkeit an, dass sich wandernde Individuen auf ihrem Weg zwischen bekannten Amphibienlaichgebiete durch diesen Hektar wandern. Die Karte zeigt die Ausbreitungs-Wahrscheinlichkeit, die entlang einer Skala von Blau \u00FCber Gelb bis Rot zunimmt.\nDiese Karten sollten als Heatmaps f\u00FCr die Ausbreitungsaktivit\u00E4t bestehender Populationen betrachtet werden. In der Praxis zeigen diese Karten auch Orte, an denen potenzielle neue Amphibienlaichgebiete die h\u00F6chsten Chancen haben, besiedelt zu werden. \nGebiete mit vielen Populationen in unmittelbarer N\u00E4he erscheinen dunkler rot, was die h\u00F6here Wahrscheinlichkeit einer Ausbreitung widerspiegelt, da sich mehrere Ausbreitungsrouten zwischen den Populationen \u00FCberschneiden. Diese Eigenschaft der Karten verdient besondere Aufmerksamkeit. Hellere Schattierungen an den R\u00E4ndern der Artenverbreitung bedeuten nicht unbedingt eine schw\u00E4chere Verbindung zwischen den Populationen, sondern sind eher eine Folge der geringeren Dichte an Amphibienlaichgebieten an den R\u00E4ndern der Verbreitung. Die Farbskala soll im Kontext der unmittelbaren Umgebung betrachtet werden. \nDie Ausbreitungskarte wurde mit Circuitscape berechnet und basiert auf einer Landschaftswiderstandsmatrix, die aus dem am besten bewerteten Verbreitungsmodell f\u00FCr jede Art abgeleitet wurde.\nF\u00FCr Details, siehe die beigef\u00FCgte Datenbeschreibung.", "langger":"Schweizweite Karte, die die Ausbreitungs-Wahrscheinlichkeit der Bergmolch (Ichthyosaura alpestris) darstellt. Jede Rasterzelle gibt die relative Wahrscheinlichkeit an, dass sich wandernde Individuen auf ihrem Weg zwischen bekannten Amphibienlaichgebiete durch diesen Hektar wandern. Die Karte zeigt die Ausbreitungs-Wahrscheinlichkeit, die entlang einer Skala von Blau \u00FCber Gelb bis Rot zunimmt.\nDiese Karten sollten als Heatmaps f\u00FCr die Ausbreitungsaktivit\u00E4t bestehender Populationen betrachtet werden. In der Praxis zeigen diese Karten auch Orte, an denen potenzielle neue Amphibienlaichgebiete die h\u00F6chsten Chancen haben, besiedelt zu werden. \nGebiete mit vielen Populationen in unmittelbarer N\u00E4he erscheinen dunkler rot, was die h\u00F6here Wahrscheinlichkeit einer Ausbreitung widerspiegelt, da sich mehrere Ausbreitungsrouten zwischen den Populationen \u00FCberschneiden. Diese Eigenschaft der Karten verdient besondere Aufmerksamkeit. Hellere Schattierungen an den R\u00E4ndern der Artenverbreitung bedeuten nicht unbedingt eine schw\u00E4chere Verbindung zwischen den Populationen, sondern sind eher eine Folge der geringeren Dichte an Amphibienlaichgebieten an den R\u00E4ndern der Verbreitung. Die Farbskala soll im Kontext der unmittelbaren Umgebung betrachtet werden. \nDie Ausbreitungskarte wurde mit Circuitscape berechnet und basiert auf einer Landschaftswiderstandsmatrix, die aus dem am besten bewerteten Verbreitungsmodell f\u00FCr jede Art abgeleitet wurde.\nF\u00FCr Details, siehe die beigef\u00FCgte Datenbeschreibung.", "langfre":"Carte de la Suisse montrant la probabilit\u00E9 de dispersion du Triton alpestre (Ichthyosaura alpestris). Chaque cellule de la grille indique la probabilit\u00E9 relative que des individus traversent cet hectare sur leur trajet entre des sites de reproduction connus. La carte montre la probabilit\u00E9 de dispersion qui augmente le long d'une \u00E9chelle allant du bleu au rouge en passant par le jaune. \nCes cartes devraient \u00EAtre consid\u00E9r\u00E9es comme des cartes de chaleur de l'activit\u00E9 de dispersion des populations existantes. En pratique, ces cartes indiquent \u00E9galement les endroits o\u00F9 les nouveaux sites de reproduction d'amphibiens potentiels ont le plus de chances d'\u00EAtre colonis\u00E9s. \nLes zones avec de nombreuses populations \u00E0 proximit\u00E9 imm\u00E9diate apparaissent en rouge plus fonc\u00E9, ce qui refl\u00E8te une plus grande probabilit\u00E9 de dispersion, car plusieurs voies de dispersion entre les populations se chevauchent. Cette caract\u00E9ristique des cartes m\u00E9rite une attention particuli\u00E8re. Des nuances plus claires sur les bords de la distribution des esp\u00E8ces ne signifient pas n\u00E9cessairement un lien plus faible entre les populations, mais sont plut\u00F4t la cons\u00E9quence d'une densit\u00E9 plus faible de sites de reproduction d'amphibiens sur les bords de la distribution. L'\u00E9chelle de couleurs doit \u00EAtre consid\u00E9r\u00E9e dans le contexte de l'environnement imm\u00E9diat.\nLa carte de dispersion a \u00E9t\u00E9 calcul\u00E9e avec Circuitscape et se base sur une matrice de r\u00E9sistance du paysage d\u00E9riv\u00E9e du MDS le mieux \u00E9valu\u00E9 pour chaque esp\u00E8ce.\nPour plus de d\u00E9tails, voir la description des donn\u00E9es ci-jointe.", "langeng":"Swiss-wide map depicting the dispersal probability of the Alpine newt (Ichthyosaura alpestris). Each grid cell indicates the relative probability that dispersing individuals will pass through that hectare on their way between known amphibian breeding sites. The map shows dispersal probability increasing along a scale from blue to yellow to red.\nThese maps should be thought of as heatmaps for dispersal activity of existing populations. In practical terms, these maps also show locations where potential new amphibian breeding sites have the highest chances of being colonized. \nAreas with many populations in close proximity appear a darker red, reflecting the higher probability of dispersal as multiple dispersal routes between populations intersect. This feature of the maps deserves special attention. Lighter shades at the edges of the species' range do not necessarily indicate a weaker connection between populations, but rather a consequence of the lower density of breeding sites at the edges of the range. The color scale should be considered in the context of the immediate surroundings.\nThe dispersal map was calculated using Circuitscape and is based on a landscape resistance matrix derived from the best-ranked dispersal model for each species.\nFor details, see the attached data description."}</resourceAbstractObject>
+  <cl_resourceCharacterSet type="object">{"key":"utf8","default":"utf8","langger":"utf8","langfre":"utf8","langita":"utf8","langeng":"utf8","langroh":"utf8","langger":"utf8","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_CharacterSetCode","text":"utf8"}</cl_resourceCharacterSet>
+  <contactForResource type="object">{
+      
+      "role":"author",
+      "email":"GIS@agroscope.admin.ch",
+      "website":"http:\/\/www.agroscope.admin.ch",
+      "logo":"",
+      "individual":"",
+      "position":"GIS-Koordination",
+      "phone":"",
+      "address":"191, Reckenholzstrasse, Z\u00FCrich, 8046, CH"
+      
+      }</contactForResource>
+  <contactForResource type="object">{
+      
+      "role":"principalInvestigator",
+      "email":"contact@infofauna.ch",
+      "website":"https:\/\/www.infofauna.ch\/de\/beratungsstellen\/amphibien-karch",
+      "logo":"",
+      "individual":"",
+      "position":"Information Karch Amphibien",
+      "phone":"",
+      "address":"51, Belleveaus, Neuch\u00E2tel, 2000, CH"
+      
+      }</contactForResource>
+  <contactForResource type="object">{
+      
+      "role":"pointOfContact",
+      "email":"bnl@bafu.admin.ch",
+      "website":"https:\/\/www.bafu.admin.ch\/bafu\/de\/home\/amt\/abteilungen-sektionen\/abteilung-biodiversitaet-und-landschaft.html",
+      "logo":"",
+      "individual":"",
+      "position":"",
+      "phone":"",
+      "address":",, Bern, 3003, CH"
+      
+      }</contactForResource>
+  <hasOverview>true</hasOverview>
+  <overview type="object">{
+            "url": "https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/records\/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce\/attachments\/ICAL.png"
+            
+            }</overview>
+  <resourceLanguage>ger</resourceLanguage>
+  <inspireThemeNumber>0</inspireThemeNumber>
+  <hasInspireTheme>false</hasInspireTheme>
+  <tag type="object">[
+      {
+      "default":"Nat\u00FCrliche Lebensr\u00E4ume, Landschaft, \u00D6kosysteme", "langger":"Nat\u00FCrliche Lebensr\u00E4ume, Landschaft, \u00D6kosysteme", "langfre":"zones naturelles, paysages, \u00E9cosyst\u00E8mes", "langita":"aree naturali, paesaggio, ecosistemi", "langeng":"natural areas, landscape, ecosystems"
+      }
+      ,
+      {
+      "default":"Landwirtschaft", "langger":"Landwirtschaft", "langfre":"agriculture", "langita":"agricoltura", "langeng":"agriculture"
+      }
+      ,
+      {
+      "default":"Fauna", "langger":"Fauna", "langfre":"faune", "langita":"fauna", "langeng":"fauna"
+      }
+      ,
+      {
+      "default":"Amphibien", "langger":"Amphibien", "langfre":"batracien", "langita":"anfibi", "langeng":"amphibian"
+      }
+      ,
+      {
+      "default":"Landwirtschaft", "langger":"Landwirtschaft", "langfre":"agriculture", "langita":"agricoltura", "langeng":"agriculture"
+      }
+      ,
+      {
+      "default":"Naturschutz", "langger":"Naturschutz", "langfre":"pr\u00E9servation de la nature", "langita":"conservazione della natura", "langeng":"nature conservation"
+      }
+      ,
+      {
+      "default":"Bund", "langger":"Bund", "langfre":"conf\u00E9d\u00E9ration", "langita":"confederazione", "langeng":"confederation"
+      }
+      ,
+      {
+      "default":"opendata.swiss", "langger":"opendata.swiss", "langfre":"opendata.swiss", "langita":"opendata.swiss", "langeng":"opendata.swiss", "langroh":"opendata.swiss"
+      }
+      ,
+      {
+      "default":"Schweiz", "langger":"Schweiz", "langfre":"Suisse", "langita":"Svizzera", "langeng":"Switzerland", "langroh":"Svizra"
+      }
+      ]</tag>
+  <tagNumber>9</tagNumber>
+  <isOpenData>true</isOpenData>
+  <keywordType-theme type="object">[
+          {
+          "default":"Nat\u00FCrliche Lebensr\u00E4ume, Landschaft, \u00D6kosysteme", "langger":"Nat\u00FCrliche Lebensr\u00E4ume, Landschaft, \u00D6kosysteme", "langfre":"zones naturelles, paysages, \u00E9cosyst\u00E8mes", "langita":"aree naturali, paesaggio, ecosistemi", "langeng":"natural areas, landscape, ecosystems"
+          }
+          ,
+          {
+          "default":"Landwirtschaft", "langger":"Landwirtschaft", "langfre":"agriculture", "langita":"agricoltura", "langeng":"agriculture"
+          }
+          ,
+          {
+          "default":"Fauna", "langger":"Fauna", "langfre":"faune", "langita":"fauna", "langeng":"fauna"
+          }
+          ,
+          {
+          "default":"Amphibien", "langger":"Amphibien", "langfre":"batracien", "langita":"anfibi", "langeng":"amphibian"
+          }
+          ,
+          {
+          "default":"Landwirtschaft", "langger":"Landwirtschaft", "langfre":"agriculture", "langita":"agricoltura", "langeng":"agriculture"
+          }
+          ,
+          {
+          "default":"Naturschutz", "langger":"Naturschutz", "langfre":"pr\u00E9servation de la nature", "langita":"conservazione della natura", "langeng":"nature conservation"
+          }
+          ,
+          {
+          "default":"Bund", "langger":"Bund", "langfre":"conf\u00E9d\u00E9ration", "langita":"confederazione", "langeng":"confederation"
+          }
+          ,
+          {
+          "default":"opendata.swiss", "langger":"opendata.swiss", "langfre":"opendata.swiss", "langita":"opendata.swiss", "langeng":"opendata.swiss", "langroh":"opendata.swiss"
+          }
+          ]</keywordType-theme>
+  <keywordType-place type="object">[
+          {
+          "default":"Schweiz", "langger":"Schweiz", "langfre":"Suisse", "langita":"Svizzera", "langeng":"Switzerland", "langroh":"Svizra"
+          }
+          ]</keywordType-place>
+  <th_gemet-themeNumber>2</th_gemet-themeNumber>
+  <th_gemet-theme type="object">[
+        {
+        "default":"Nat\u00FCrliche Lebensr\u00E4ume, Landschaft, \u00D6kosysteme", "langger":"Nat\u00FCrliche Lebensr\u00E4ume, Landschaft, \u00D6kosysteme", "langfre":"zones naturelles, paysages, \u00E9cosyst\u00E8mes", "langita":"aree naturali, paesaggio, ecosistemi", "langeng":"natural areas, landscape, ecosystems"
+        }
+        ,
+        {
+        "default":"Landwirtschaft", "langger":"Landwirtschaft", "langfre":"agriculture", "langita":"agricoltura", "langeng":"agriculture"
+        }
+        ]</th_gemet-theme>
+  <th_gemetNumber>4</th_gemetNumber>
+  <th_gemet type="object">[
+        {
+        "default":"Fauna", "langger":"Fauna", "langfre":"faune", "langita":"fauna", "langeng":"fauna"
+        }
+        ,
+        {
+        "default":"Amphibien", "langger":"Amphibien", "langfre":"batracien", "langita":"anfibi", "langeng":"amphibian"
+        }
+        ,
+        {
+        "default":"Landwirtschaft", "langger":"Landwirtschaft", "langfre":"agriculture", "langita":"agricoltura", "langeng":"agriculture"
+        }
+        ,
+        {
+        "default":"Naturschutz", "langger":"Naturschutz", "langfre":"pr\u00E9servation de la nature", "langita":"conservazione della natura", "langeng":"nature conservation"
+        }
+        ]</th_gemet>
+  <th_geocat-chNumber>2</th_geocat-chNumber>
+  <th_geocat-ch type="object">[
+        {
+        "default":"Bund", "langger":"Bund", "langfre":"conf\u00E9d\u00E9ration", "langita":"confederazione", "langeng":"confederation"
+        }
+        ,
+        {
+        "default":"opendata.swiss", "langger":"opendata.swiss", "langfre":"opendata.swiss", "langita":"opendata.swiss", "langeng":"opendata.swiss", "langroh":"opendata.swiss"
+        }
+        ]</th_geocat-ch>
+  <allKeywords type="object">{
+      
+        "th_gemet-theme": {
+        
+          "id": "geonetwork.thesaurus.external.theme.gemet-theme",
+        
+            "multilingualTitle": {
+              "default":"GEMET themes", "langger":"GEMET themes"
+            },
+          
+        "theme": "theme",
+        
+          "link": "https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/registries\/vocabularies\/external.theme.gemet-theme",
+        
+        "keywords": [
+        
+          {
+          "default":"Nat\u00FCrliche Lebensr\u00E4ume, Landschaft, \u00D6kosysteme", "langger":"Nat\u00FCrliche Lebensr\u00E4ume, Landschaft, \u00D6kosysteme", "langfre":"zones naturelles, paysages, \u00E9cosyst\u00E8mes", "langita":"aree naturali, paesaggio, ecosistemi", "langeng":"natural areas, landscape, ecosystems"
+          }
+          ,
+          {
+          "default":"Landwirtschaft", "langger":"Landwirtschaft", "langfre":"agriculture", "langita":"agricoltura", "langeng":"agriculture"
+          }
+          
+        ]}
+        ,
+        "th_gemet": {
+        
+          "id": "geonetwork.thesaurus.external.theme.gemet",
+        
+            "multilingualTitle": {
+              "default":"GEMET", "langger":"GEMET"
+            },
+          
+        "theme": "theme",
+        
+          "link": "https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/registries\/vocabularies\/external.theme.gemet",
+        
+        "keywords": [
+        
+          {
+          "default":"Fauna", "langger":"Fauna", "langfre":"faune", "langita":"fauna", "langeng":"fauna"
+          }
+          ,
+          {
+          "default":"Amphibien", "langger":"Amphibien", "langfre":"batracien", "langita":"anfibi", "langeng":"amphibian"
+          }
+          ,
+          {
+          "default":"Landwirtschaft", "langger":"Landwirtschaft", "langfre":"agriculture", "langita":"agricoltura", "langeng":"agriculture"
+          }
+          ,
+          {
+          "default":"Naturschutz", "langger":"Naturschutz", "langfre":"pr\u00E9servation de la nature", "langita":"conservazione della natura", "langeng":"nature conservation"
+          }
+          
+        ]}
+        ,
+        "th_geocat-ch": {
+        
+          "id": "geonetwork.thesaurus.local.theme.geocat.ch",
+        
+            "multilingualTitle": {
+              "default":"geocat.ch", "langger":"geocat.ch"
+            },
+          
+        "theme": "theme",
+        
+          "link": "https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/registries\/vocabularies\/local.theme.geocat.ch",
+        
+        "keywords": [
+        
+          {
+          "default":"Bund", "langger":"Bund", "langfre":"conf\u00E9d\u00E9ration", "langita":"confederazione", "langeng":"confederation"
+          }
+          ,
+          {
+          "default":"opendata.swiss", "langger":"opendata.swiss", "langfre":"opendata.swiss", "langita":"opendata.swiss", "langeng":"opendata.swiss", "langroh":"opendata.swiss"
+          }
+          
+        ]}
+        
+      }</allKeywords>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Nat\u00FCrliche Lebensr\u00E4ume, Landschaft, \u00D6kosysteme",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.gemet-theme"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Landwirtschaft",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.gemet-theme"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Fauna",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.gemet"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Amphibien",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.gemet"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Landwirtschaft",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.gemet"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Naturschutz",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.gemet"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Bund",
+                              "thesaurus": "geonetwork.thesaurus.local.theme.geocat.ch"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "opendata.swiss",
+                              "thesaurus": "geonetwork.thesaurus.local.theme.geocat.ch"
+                            }
+                          }</indexingErrorMsg>
+  <cl_topic type="object">{"key":"biota","default":"biota","langger":"biota","langfre":"biota","langita":"biota","langeng":"biota","langroh":"biota","langger":"biota"}</cl_topic>
+  <cl_topic type="object">{"key":"environment","default":"environment","langger":"environment","langfre":"environment","langita":"environment","langeng":"environment","langroh":"environment","langger":"environment"}</cl_topic>
+  <cl_topic type="object">{"key":"farming","default":"farming","langger":"farming","langfre":"farming","langita":"farming","langeng":"farming","langroh":"farming","langger":"farming"}</cl_topic>
+  <resolutionDistance>100 m</resolutionDistance>
+  <spatialRepresentationType>grid</spatialRepresentationType>
+  <maintenance type="object">{
+            "frequency": "notPlanned"
+            
+            }</maintenance>
+  <CHE_MD_LegalConstraintsOtherConstraintsObject type="object">{"default":"Opendata OPEN: Freie Nutzung.", "langger":"Opendata OPEN: Freie Nutzung.", "langfre":"Opendata OPEN: Utilisation libre.", "langita":"Opendata OPEN: Libero utilizzo.", "langeng":"Opendata OPEN: Open use.", "link":"https:\/\/opendata.swiss\/en\/terms-of-use\/#terms_open"}</CHE_MD_LegalConstraintsOtherConstraintsObject>
+  <hasBoundingPolygon>true</hasBoundingPolygon>
+  <extentDescriptionObject type="object">{"default":"Schweiz", "langger":"Schweiz", "langfre":"Suisse", "langita":"Svizzera", "langeng":"Switzerland", "langroh":"Svizra"}</extentDescriptionObject>
+  <geom type="object">{"type": "Polygon","coordinates": [[[5.956088,45.817970],[10.492036,45.817970],[10.492036,47.808488],[5.956088,47.808488],[5.956088,45.817970]]]}</geom>
+  <location>46.813229,8.224062</location>
+  <coordinateSystem>LV95 EPSG:2056</coordinateSystem>
+  <crsDetails type="object">{
+            "code": "LV95 EPSG:2056",
+            "codeSpace": "",
+            "name": "LV95 EPSG:2056",
+            "url": ""
+            }</crsDetails>
+  <featureTypes type="object">[
+        
+        ]</featureTypes>
+  <format>Cloud Optimized GeoTIFF (TIFF / TIF)</format>
+  <contactForDistribution type="object">{
+      
+      "role":"owner",
+      "email":"GIS@agroscope.admin.ch",
+      "website":"http:\/\/www.agroscope.admin.ch",
+      "logo":"",
+      "individual":"",
+      "position":"GIS-Koordination",
+      "phone":"",
+      "address":"191, Reckenholzstrasse, Z\u00FCrich, 8046, CH"
+      
+      }</contactForDistribution>
+  <contactForDistribution type="object">{
+      
+      "role":"distributor",
+      "email":"bnl@bafu.admin.ch",
+      "website":"https:\/\/www.bafu.admin.ch\/bafu\/de\/home\/amt\/abteilungen-sektionen\/abteilung-biodiversitaet-und-landschaft.html",
+      "logo":"",
+      "individual":"",
+      "position":"",
+      "phone":"",
+      "address":",, Bern, 3003, CH"
+      
+      }</contactForDistribution>
+  <linkUrl>https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf</linkUrl>
+  <linkProtocol>WWW:DOWNLOAD-URL</linkProtocol>
+  <linkUrlProtocolWWWDOWNLOADURL>https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf</linkUrlProtocolWWWDOWNLOADURL>
+  <link type="object">{
+            "protocol":"WWW:DOWNLOAD-URL",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/records\/0916243e-68d9-41c5-95f7-0f657e2ee07f\/attachments\/Datenbeschreibung_AmphibienAckerland.pdf", "langger":"https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/records\/0916243e-68d9-41c5-95f7-0f657e2ee07f\/attachments\/Datenbeschreibung_AmphibienAckerland.pdf", "langfre":"https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/records\/0916243e-68d9-41c5-95f7-0f657e2ee07f\/attachments\/Datenbeschreibung_AmphibienAckerland.pdf", "langita":"https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/records\/0916243e-68d9-41c5-95f7-0f657e2ee07f\/attachments\/Datenbeschreibung_AmphibienAckerland.pdf", "langeng":"https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/records\/0916243e-68d9-41c5-95f7-0f657e2ee07f\/attachments\/Datenbeschreibung_AmphibienAckerland.pdf", "langroh":"https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/records\/0916243e-68d9-41c5-95f7-0f657e2ee07f\/attachments\/Datenbeschreibung_AmphibienAckerland.pdf"}
+            ,
+            
+              "nameObject": 
+            {"default":"Datenbeschreibung_AmphibienAckerland.pdf", "langger":"Datenbeschreibung_AmphibienAckerland.pdf"}
+            ,
+            
+            "function":"download",
+            "applicationProfile":"",
+            "group": 0
+            }</link>
+  <linkUrl>https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf</linkUrl>
+  <linkProtocol>WWW:DOWNLOAD-URL</linkProtocol>
+  <linkUrlProtocolWWWDOWNLOADURL>https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf</linkUrlProtocolWWWDOWNLOADURL>
+  <link type="object">{
+            "protocol":"WWW:DOWNLOAD-URL",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/records\/0916243e-68d9-41c5-95f7-0f657e2ee07f\/attachments\/DescriptionDonnees_BatrachiensAgricole.pdf", "langger":"https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/records\/0916243e-68d9-41c5-95f7-0f657e2ee07f\/attachments\/DescriptionDonnees_BatrachiensAgricole.pdf", "langfre":"https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/records\/0916243e-68d9-41c5-95f7-0f657e2ee07f\/attachments\/DescriptionDonnees_BatrachiensAgricole.pdf", "langita":"https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/records\/0916243e-68d9-41c5-95f7-0f657e2ee07f\/attachments\/DescriptionDonnees_BatrachiensAgricole.pdf", "langeng":"https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/records\/0916243e-68d9-41c5-95f7-0f657e2ee07f\/attachments\/DescriptionDonnees_BatrachiensAgricole.pdf", "langroh":"https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/records\/0916243e-68d9-41c5-95f7-0f657e2ee07f\/attachments\/DescriptionDonnees_BatrachiensAgricole.pdf"}
+            ,
+            
+              "nameObject": 
+            {"default":"DescriptionDonnees_BatrachiensAgricole.pdf", "langger":"DescriptionDonnees_BatrachiensAgricole.pdf"}
+            ,
+            
+            "function":"download",
+            "applicationProfile":"",
+            "group": 0
+            }</link>
+  <recordGroup>9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce</recordGroup>
+</doc>
+

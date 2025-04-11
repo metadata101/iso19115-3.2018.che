@@ -22,11 +22,66 @@
  */
 package org.fao.geonet.util;
 
+import org.apache.commons.text.StringEscapeUtils;
+import org.w3c.dom.Node;
+
+import java.util.List;
+
 public class XslUtil {
     public static String twoCharLangCode(String iso3code) {
         return iso3code.substring(0, 2);
     }
+
     public static String threeCharLangCode(String iso2code) {
         return "fre";
     }
+
+    public static String getJsonSettingValue(String key, String path) {
+        return "true";
+    }
+
+    public static String getSettingValue(String key) {
+        return "true";
+    }
+
+    public static String getSiteUrl() {
+        return "";
+    }
+
+    public static String escapeForJson(String value) {
+        return StringEscapeUtils.escapeJson(value);
+    }
+
+    public static String getCodelistTranslation(Object codelist, Object value, Object langCode) {
+        return (String) value;
+    }
+
+    public static List<String> getKeywordHierarchy(String keyword, String thesaurusId, String langCode) {
+        return List.of();
+    }
+
+    public static String getKeywordUri(String keyword, String thesaurusId, String langCode) {
+        return "";
+    }
+
+    public static String getThesaurusIdByTitle(String title) {
+        return "";
+    }
+
+    public static Node getUrlContent(String surl) {
+        return null;
+    }
+
+    public static Node getRecord(String uuid) {
+        return null;
+    }
+
+    public static String gmlToGeoJson(String gml, Boolean applyPrecisionModel, Integer numberOfDecimals) {
+        return "";
+    }
+
+    public static String getIndexField(Object appName, Object uuid, Object field, Object lang) {
+        return "";
+    }
+
 }
