@@ -19,7 +19,7 @@ public class ExtractUUIDTest extends XslProcessTest {
 
     @Test
     public void extractUUID() throws Exception {
-        xslFile = Paths.get(testClass.getClassLoader().getResource("extract-uuid.xsl").toURI());
+        xslFile = Paths.get(testClass.getClassLoader().getResource("gn-site/WEB-INF/data/config/schema_plugins/iso19115-3.2018.che/extract-uuid.xsl").toURI());
         xmlFile = Paths.get(testClass.getClassLoader().getResource("amphibians-19115-3.che.xml").toURI());
         Element amphibians = Xml.loadFile(xmlFile);
 

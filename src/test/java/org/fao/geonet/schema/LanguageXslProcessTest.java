@@ -40,7 +40,7 @@ public class LanguageXslProcessTest extends XslProcessTest {
 
     public LanguageXslProcessTest() {
         super();
-        this.setXslFilename("process/languages-refactor.xsl");
+        this.setXslFilename("gn-site/WEB-INF/data/config/schema_plugins/iso19115-3.2018.che/process/languages-refactor.xsl");
         this.setXmlFilename("metadata.xml");
         this.setNs(ISO19115_3_2018SchemaPlugin.allNamespaces);
     }
