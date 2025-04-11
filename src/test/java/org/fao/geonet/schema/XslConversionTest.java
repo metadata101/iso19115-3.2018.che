@@ -33,6 +33,7 @@ import java.util.List;
 import org.fao.geonet.schema.iso19115_3_2018_che.ISO19115_3_2018SchemaPlugin;
 import org.fao.geonet.schemas.XslProcessTest;
 import org.fao.geonet.utils.Xml;
+import org.jdom.Document;
 import org.jdom.Element;
 
 import static org.junit.Assert.assertArrayEquals;
@@ -66,7 +67,7 @@ public class XslConversionTest extends XslProcessTest {
 
     @Test
     public void testOdsConversion() throws Exception {
-        xslFile = Paths.get(testClass.getClassLoader().getResource("convert/fromJsonOpenDataSoft.xsl").toURI());
+        xslFile = Paths.get(testClass.getClassLoader().getResource("gn-site/WEB-INF/data/config/schema_plugins/iso19115-3.2018.che/convert/fromJsonOpenDataSoft.xsl").toURI());
         xmlFile = Paths.get(testClass.getClassLoader().getResource("ods.xml").toURI());
         Path jsonFile = Paths.get(testClass.getClassLoader().getResource("ods.json").toURI());
         String jsonString = Files.readString(jsonFile);
@@ -95,7 +96,7 @@ public class XslConversionTest extends XslProcessTest {
 
     @Test
     public void validateAmphibiansSchema() throws Exception {
-        xslFile = Paths.get(testClass.getClassLoader().getResource("convert/fromISO19139.xsl").toURI());
+        xslFile = Paths.get(testClass.getClassLoader().getResource("gn-site/WEB-INF/data/config/schema_plugins/iso19115-3.2018.che/convert/fromISO19139.xsl").toURI());
         xmlFile = Paths.get(testClass.getClassLoader().getResource("amphibians-19139.che.xml").toURI());
         Element amphibians = Xml.loadFile(xmlFile);
 
@@ -105,14 +106,16 @@ public class XslConversionTest extends XslProcessTest {
         //isGNValid(amphibiansIso19115che);
 
         byte[] expected = testClass.getClassLoader().getResourceAsStream("amphibians-19115-3.che.xml").readAllBytes();
-        byte[] actual = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n")).outputString(amphibiansIso19115che).getBytes(StandardCharsets.UTF_8);
+        byte[] actual = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n")) //
+                .outputString(new Document(amphibiansIso19115che)) //
+                .getBytes(StandardCharsets.UTF_8);
         assertArrayEquals(expected, actual);
 
     }
 
     private void isValid(Element xmlIso19115che) throws SAXException, IOException {
         SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-        Source schemaFile = new StreamSource(testClass.getClassLoader().getResource("schema/standards.iso.org/19115/-3/eCH-0271-1-0-0.xsd").getFile());
+        Source schemaFile = new StreamSource(testClass.getClassLoader().getResource("gn-site/WEB-INF/data/config/schema_plugins/iso19115-3.2018.che/schema/standards.iso.org/19115/-3/eCH-0271-1-0-0.xsd").getFile());
 
         Schema schema = factory.newSchema(schemaFile);
         Validator validator = schema.newValidator();
@@ -133,7 +136,7 @@ public class XslConversionTest extends XslProcessTest {
 
     @Test
     public void convertResponsibleParty() throws Exception {
-        xslFile = Paths.get(testClass.getClassLoader().getResource("convert/ISO19139/mapping/CI_ResponsibleParty.xsl").toURI());
+        xslFile = Paths.get(testClass.getClassLoader().getResource("gn-site/WEB-INF/data/config/schema_plugins/iso19115-3.2018.che/convert/ISO19139/mapping/CI_ResponsibleParty.xsl").toURI());
         xmlFile = Paths.get(testClass.getClassLoader().getResource("responsible_party_agroscope_iso19139_che.xml").toURI());
         Element amphibians = Xml.loadFile(xmlFile);
 
@@ -146,7 +149,7 @@ public class XslConversionTest extends XslProcessTest {
 
     @Test
     public void validateGruenflaechenSchema() throws Exception {
-        xslFile = Paths.get(testClass.getClassLoader().getResource("convert/fromISO19139.xsl").toURI());
+        xslFile = Paths.get(testClass.getClassLoader().getResource("gn-site/WEB-INF/data/config/schema_plugins/iso19115-3.2018.che/convert/fromISO19139.xsl").toURI());
         xmlFile = Paths.get(testClass.getClassLoader().getResource("gruenflaechen-19139.che.xml").toURI());
         Element gruenflaechen = Xml.loadFile(xmlFile);
 
