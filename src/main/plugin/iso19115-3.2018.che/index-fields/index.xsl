@@ -49,6 +49,7 @@
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns:daobs="http://daobs.org"
                 xmlns:saxon="http://saxon.sf.net/"
+                xmlns:che="http://geocat.ch/che"
                 extension-element-prefixes="saxon"
                 exclude-result-prefixes="#all"
                 version="2.0">
@@ -110,7 +111,7 @@
   </xsl:template>
 
 
-  <xsl:template match="mdb:MD_Metadata"
+  <xsl:template match="che:CHE_MD_Metadata"
                 mode="extract-uuid">
     <xsl:value-of
       select="mdb:metadataIdentifier/mcc:MD_Identifier/mcc:code/gco:CharacterString[. != '']"/>
@@ -123,7 +124,7 @@
 
 
 
-  <xsl:template match="mdb:MD_Metadata" mode="index">
+  <xsl:template match="che:CHE_MD_Metadata" mode="index">
     <!-- Main variables for the document -->
     <xsl:variable name="identifier" as="xs:string"
                   select="mdb:metadataIdentifier/mcc:MD_Identifier/mcc:code/gco:CharacterString[. != '']"/>
@@ -1732,7 +1733,7 @@
   <!-- For each record, the main mode 'index' is called,
   -  then in the document node the mode 'index-extra-fields'
   -  could be used to index more fields. -->
-  <xsl:template mode="index-extra-fields" match="mdb:MD_Metadata">
+  <xsl:template mode="index-extra-fields" match="che:CHE_MD_Metadata">
 
   </xsl:template>
 </xsl:stylesheet>
