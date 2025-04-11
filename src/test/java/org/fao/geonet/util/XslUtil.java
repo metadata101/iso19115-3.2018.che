@@ -39,6 +39,7 @@ public class XslUtil {
     public static String twoCharLangCode(String iso3code) {
         return twoCharLangCode(iso3code, iso3code.substring(0, 2));
     }
+
     public static String threeCharLangCode(String iso2code) {
         return "fre";
     }
@@ -85,6 +86,10 @@ public class XslUtil {
 
     public static String getDefaultUrl(String uuid, String language) {
         return "www.geonet.org";
+    }
+
+    public static String getJsonSettingValue(String key, String path) {
+        return "true";
     }
 
     public static String getSiteUrl() {
