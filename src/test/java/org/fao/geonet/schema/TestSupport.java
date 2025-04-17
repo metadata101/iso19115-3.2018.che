@@ -17,7 +17,7 @@ public class TestSupport {
     }
 
     public static Path getResourceInsideSchema(String pathToResourceInsideSchema) throws URISyntaxException {
-        return getResource(pathToResourceInsideSchema);
+        return getResource("gn-site/WEB-INF/data/config/schema_plugins/iso19115-3.2018.che/" + pathToResourceInsideSchema);
     }
 
     public static void assertGeneratedDataByteMatchExpected(String expectedFileName, String actual, boolean generateExpectedFile) throws IOException, URISyntaxException {
