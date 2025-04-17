@@ -24,10 +24,10 @@ package org.fao.geonet.schema;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.List;
 
 import org.fao.geonet.utils.TransformerFactoryFactory;
@@ -35,6 +35,8 @@ import org.fao.geonet.utils.Xml;
 import org.jdom.Document;
 import org.jdom.Element;
 
+import static org.fao.geonet.schema.TestSupport.getResource;
+import static org.fao.geonet.schema.TestSupport.getResourceInsideSchema;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -67,23 +69,18 @@ public class XslConversionTest {
 
     @Test
     public void testOdsConversion() throws Exception {
-        Path xslFile = Paths.get(getClass().getClassLoader().getResource("gn-site/WEB-INF/data/config/schema_plugins/iso19115-3.2018.che/convert/fromJsonOpenDataSoft.xsl").toURI());
-        Path xmlFile = Paths.get(getClass().getClassLoader().getResource("ods.xml").toURI());
-        Path jsonFile = Paths.get(getClass().getClassLoader().getResource("ods.json").toURI());
-        String jsonString = Files.readString(jsonFile);
-        Element xmlFromJSON = Xml.getXmlFromJSON(jsonString);
+        Element xmlFromJSON = Xml.getXmlFromJSON(Files.readString(getResource("ods.json")));
         xmlFromJSON.setName("record");
         xmlFromJSON.addContent(new Element("nodeUrl").setText("https://www.odwb.be"));
-
-        Element inputElement = Xml.loadFile(xmlFile);
-        String expectedXml = Xml.getString(inputElement);
+        Path xslFile = getResourceInsideSchema("convert/fromJsonOpenDataSoft.xsl");
 
         Element resultElement = Xml.transform(xmlFromJSON, xslFile);
-        String resultOfConversion = Xml.getString(resultElement);
 
+        String actual = Xml.getString(resultElement);
+        Path expected = getResource("ods.xml");
         Diff diff = DiffBuilder
-            .compare(Input.fromString(resultOfConversion))
-            .withTest(Input.fromString(expectedXml))
+            .compare(Input.fromString(actual))
+            .withTest(Input.fromPath(expected))
             .withNodeMatcher(new DefaultNodeMatcher(ElementSelectors.byName))
             .normalizeWhitespace()
             .ignoreComments()
@@ -96,8 +93,8 @@ public class XslConversionTest {
 
     @Test
     public void validateAmphibiansSchema() throws Exception {
-        Path xslFile = Paths.get(getClass().getClassLoader().getResource("gn-site/WEB-INF/data/config/schema_plugins/iso19115-3.2018.che/convert/fromISO19139.xsl").toURI());
-        Path xmlFile = Paths.get(getClass().getClassLoader().getResource("amphibians-19139.che.xml").toURI());
+        Path xslFile = getResourceInsideSchema("convert/fromISO19139.xsl");
+        Path xmlFile = getResource("amphibians-19139.che.xml");
         Element amphibians = Xml.loadFile(xmlFile);
 
         Element amphibiansIso19115che = Xml.transform(amphibians, xslFile);
@@ -105,17 +102,12 @@ public class XslConversionTest {
         //TODO CMT/SRT activate
         //isGNValid(amphibiansIso19115che);
 
-        byte[] expected = getClass().getClassLoader().getResourceAsStream("amphibians-19115-3.che.xml").readAllBytes();
-        byte[] actual = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n")) //
-                .outputString(new Document(amphibiansIso19115che)) //
-                .getBytes(StandardCharsets.UTF_8);
-        assertArrayEquals(expected, actual);
-
+        assertStrictByteEquality("amphibians-19115-3.che.xml", amphibiansIso19115che, true);
     }
 
-    private void isValid(Element xmlIso19115che) throws SAXException, IOException {
+    private void isValid(Element xmlIso19115che) throws SAXException, IOException, URISyntaxException {
         SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-        Source schemaFile = new StreamSource(getClass().getClassLoader().getResource("gn-site/WEB-INF/data/config/schema_plugins/iso19115-3.2018.che/schema/standards.iso.org/19115/-3/eCH-0271-1-0-0.xsd").getFile());
+        Source schemaFile = new StreamSource(getResourceInsideSchema("schema/standards.iso.org/19115/-3/eCH-0271-1-0-0.xsd").toString());
 
         Schema schema = factory.newSchema(schemaFile);
         Validator validator = schema.newValidator();
@@ -123,11 +115,11 @@ public class XslConversionTest {
 
         List<Namespace> namespaces = xmlIso19115che.getAdditionalNamespaces();
 
-        assertEquals("http://standards.iso.org/iso/19115/-3/md1/2.0", namespaces.stream().filter(n -> "md1".equals(n.getPrefix())).findFirst().get().getURI());
-        assertEquals("http://standards.iso.org/iso/19115/-3/md2/2.0", namespaces.stream().filter(n -> "md2".equals(n.getPrefix())).findFirst().get().getURI());
-        assertEquals("http://standards.iso.org/iso/19115/-3/mda/2.0", namespaces.stream().filter(n -> "mda".equals(n.getPrefix())).findFirst().get().getURI());
-        assertEquals("http://standards.iso.org/iso/19115/-3/mds/2.0", namespaces.stream().filter(n -> "mds".equals(n.getPrefix())).findFirst().get().getURI());
-        assertEquals("http://standards.iso.org/iso/19115/-3/mdt/2.0", namespaces.stream().filter(n -> "mdt".equals(n.getPrefix())).findFirst().get().getURI());
+        assertNamespacePresent(namespaces, "http://standards.iso.org/iso/19115/-3/md1/2.0", "md1");
+        assertNamespacePresent(namespaces, "http://standards.iso.org/iso/19115/-3/md2/2.0", "md2");
+        assertNamespacePresent(namespaces, "http://standards.iso.org/iso/19115/-3/mda/2.0", "mda");
+        assertNamespacePresent(namespaces, "http://standards.iso.org/iso/19115/-3/mds/2.0", "mds");
+        assertNamespacePresent(namespaces, "http://standards.iso.org/iso/19115/-3/mdt/2.0", "mdt");
     }
 
     private void isGNValid(Element amphibiansIso19115che) throws Exception {
@@ -136,21 +128,19 @@ public class XslConversionTest {
 
     @Test
     public void convertResponsibleParty() throws Exception {
-        Path xslFile = Paths.get(getClass().getClassLoader().getResource("gn-site/WEB-INF/data/config/schema_plugins/iso19115-3.2018.che/convert/ISO19139/mapping/CI_ResponsibleParty.xsl").toURI());
-        Path xmlFile = Paths.get(getClass().getClassLoader().getResource("responsible_party_agroscope_iso19139_che.xml").toURI());
+        Path xslFile = getResourceInsideSchema("convert/ISO19139/mapping/CI_ResponsibleParty.xsl");
+        Path xmlFile = getResource("responsible_party_agroscope_iso19139_che.xml");
         Element amphibians = Xml.loadFile(xmlFile);
 
         Element newRespParty = Xml.transform(amphibians, xslFile);
 
-        byte[] expected = getClass().getClassLoader().getResourceAsStream("expectedFromNewRespParty.xml").readAllBytes();
-        byte[] actual = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n")).outputString(newRespParty).getBytes(StandardCharsets.UTF_8);
-        assertArrayEquals(expected, actual);
+        assertStrictByteEquality("expectedFromNewRespParty.xml", newRespParty, false);
     }
 
     @Test
     public void validateGruenflaechenSchema() throws Exception {
-        Path xslFile = Paths.get(getClass().getClassLoader().getResource("gn-site/WEB-INF/data/config/schema_plugins/iso19115-3.2018.che/convert/fromISO19139.xsl").toURI());
-        Path xmlFile = Paths.get(getClass().getClassLoader().getResource("gruenflaechen-19139.che.xml").toURI());
+        Path xslFile = getResourceInsideSchema("convert/fromISO19139.xsl");
+        Path xmlFile = getResource("gruenflaechen-19139.che.xml");
         Element gruenflaechen = Xml.loadFile(xmlFile);
 
         Element gruenflaechenIso19115che = Xml.transform(gruenflaechen, xslFile);
@@ -162,5 +152,25 @@ public class XslConversionTest {
         assertEquals("OGC:WFS", ((Element)((Element) nodes.get(0)).getChildren().get(0)).getText());
         //TODO CMT/SRT activate
         //isGNValid(gruenflaechenIso19115che);
+    }
+
+    private void assertNamespacePresent(List<Namespace> namespaces, String nsLocation, String prefix) {
+        assertEquals(nsLocation, namespaces.stream() //
+                        .filter(n -> prefix.equals(n.getPrefix())) //
+                        .findFirst() //
+                        .orElseThrow(() -> new AssertionError(String.format("prefix not found: %s", prefix))) //
+                        .getURI());
+    }
+
+    private void assertStrictByteEquality(String expectedFileName, Element element, boolean requireXmlHeader) throws IOException, URISyntaxException {
+        byte[] expected = Files.readAllBytes(getResource(expectedFileName));
+        XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
+        String actual;
+        if (requireXmlHeader) {
+            actual = xmlOutputter.outputString(new Document(element));
+        } else {
+            actual = xmlOutputter.outputString(element);
+        }
+        assertArrayEquals(expected, actual.getBytes(StandardCharsets.UTF_8));
     }
 }
