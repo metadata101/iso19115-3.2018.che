@@ -19,7 +19,13 @@
   <otherLanguageId>DE</otherLanguageId>
   <cl_characterSet type="object">{"key":"utf8","default":"utf8","langger":"utf8","langfre":"utf8","langita":"utf8","langeng":"utf8","langroh":"utf8","langger":"utf8","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_CharacterSetCode","text":"utf8"}</cl_characterSet>
   <resourceType>dataset</resourceType>
+  <OrgObject type="object">{"default":"Agroscope Metadaten", "langger":"Agroscope Metadaten", "langfre":"Agroscope M\u00E9tadonn\u00E9es", "langita":"Agroscope Metadati", "langeng":"Agroscope meta data"}</OrgObject>
+  <ownerOrgObject type="object">{"default":"Agroscope Metadaten", "langger":"Agroscope Metadaten", "langfre":"Agroscope M\u00E9tadonn\u00E9es", "langita":"Agroscope Metadati", "langeng":"Agroscope meta data"}</ownerOrgObject>
   <contact type="object">{
+      
+        "organisationObject": 
+            {"default":"Agroscope Metadaten", "langger":"Agroscope Metadaten", "langfre":"Agroscope M\u00E9tadonn\u00E9es", "langita":"Agroscope Metadati", "langeng":"Agroscope meta data"}
+            ,
       
       "role":"owner",
       "email":"GIS@agroscope.admin.ch",
@@ -60,7 +66,13 @@
               }</resourceIdentifier>
   <resourceAbstractObject type="object">{"default":"Schweizweite Karte, die die Ausbreitungs-Wahrscheinlichkeit der Bergmolch (Ichthyosaura alpestris) darstellt. Jede Rasterzelle gibt die relative Wahrscheinlichkeit an, dass sich wandernde Individuen auf ihrem Weg zwischen bekannten Amphibienlaichgebiete durch diesen Hektar wandern. Die Karte zeigt die Ausbreitungs-Wahrscheinlichkeit, die entlang einer Skala von Blau \u00FCber Gelb bis Rot zunimmt.\nDiese Karten sollten als Heatmaps f\u00FCr die Ausbreitungsaktivit\u00E4t bestehender Populationen betrachtet werden. In der Praxis zeigen diese Karten auch Orte, an denen potenzielle neue Amphibienlaichgebiete die h\u00F6chsten Chancen haben, besiedelt zu werden. \nGebiete mit vielen Populationen in unmittelbarer N\u00E4he erscheinen dunkler rot, was die h\u00F6here Wahrscheinlichkeit einer Ausbreitung widerspiegelt, da sich mehrere Ausbreitungsrouten zwischen den Populationen \u00FCberschneiden. Diese Eigenschaft der Karten verdient besondere Aufmerksamkeit. Hellere Schattierungen an den R\u00E4ndern der Artenverbreitung bedeuten nicht unbedingt eine schw\u00E4chere Verbindung zwischen den Populationen, sondern sind eher eine Folge der geringeren Dichte an Amphibienlaichgebieten an den R\u00E4ndern der Verbreitung. Die Farbskala soll im Kontext der unmittelbaren Umgebung betrachtet werden. \nDie Ausbreitungskarte wurde mit Circuitscape berechnet und basiert auf einer Landschaftswiderstandsmatrix, die aus dem am besten bewerteten Verbreitungsmodell f\u00FCr jede Art abgeleitet wurde.\nF\u00FCr Details, siehe die beigef\u00FCgte Datenbeschreibung.", "langger":"Schweizweite Karte, die die Ausbreitungs-Wahrscheinlichkeit der Bergmolch (Ichthyosaura alpestris) darstellt. Jede Rasterzelle gibt die relative Wahrscheinlichkeit an, dass sich wandernde Individuen auf ihrem Weg zwischen bekannten Amphibienlaichgebiete durch diesen Hektar wandern. Die Karte zeigt die Ausbreitungs-Wahrscheinlichkeit, die entlang einer Skala von Blau \u00FCber Gelb bis Rot zunimmt.\nDiese Karten sollten als Heatmaps f\u00FCr die Ausbreitungsaktivit\u00E4t bestehender Populationen betrachtet werden. In der Praxis zeigen diese Karten auch Orte, an denen potenzielle neue Amphibienlaichgebiete die h\u00F6chsten Chancen haben, besiedelt zu werden. \nGebiete mit vielen Populationen in unmittelbarer N\u00E4he erscheinen dunkler rot, was die h\u00F6here Wahrscheinlichkeit einer Ausbreitung widerspiegelt, da sich mehrere Ausbreitungsrouten zwischen den Populationen \u00FCberschneiden. Diese Eigenschaft der Karten verdient besondere Aufmerksamkeit. Hellere Schattierungen an den R\u00E4ndern der Artenverbreitung bedeuten nicht unbedingt eine schw\u00E4chere Verbindung zwischen den Populationen, sondern sind eher eine Folge der geringeren Dichte an Amphibienlaichgebieten an den R\u00E4ndern der Verbreitung. Die Farbskala soll im Kontext der unmittelbaren Umgebung betrachtet werden. \nDie Ausbreitungskarte wurde mit Circuitscape berechnet und basiert auf einer Landschaftswiderstandsmatrix, die aus dem am besten bewerteten Verbreitungsmodell f\u00FCr jede Art abgeleitet wurde.\nF\u00FCr Details, siehe die beigef\u00FCgte Datenbeschreibung.", "langfre":"Carte de la Suisse montrant la probabilit\u00E9 de dispersion du Triton alpestre (Ichthyosaura alpestris). Chaque cellule de la grille indique la probabilit\u00E9 relative que des individus traversent cet hectare sur leur trajet entre des sites de reproduction connus. La carte montre la probabilit\u00E9 de dispersion qui augmente le long d'une \u00E9chelle allant du bleu au rouge en passant par le jaune. \nCes cartes devraient \u00EAtre consid\u00E9r\u00E9es comme des cartes de chaleur de l'activit\u00E9 de dispersion des populations existantes. En pratique, ces cartes indiquent \u00E9galement les endroits o\u00F9 les nouveaux sites de reproduction d'amphibiens potentiels ont le plus de chances d'\u00EAtre colonis\u00E9s. \nLes zones avec de nombreuses populations \u00E0 proximit\u00E9 imm\u00E9diate apparaissent en rouge plus fonc\u00E9, ce qui refl\u00E8te une plus grande probabilit\u00E9 de dispersion, car plusieurs voies de dispersion entre les populations se chevauchent. Cette caract\u00E9ristique des cartes m\u00E9rite une attention particuli\u00E8re. Des nuances plus claires sur les bords de la distribution des esp\u00E8ces ne signifient pas n\u00E9cessairement un lien plus faible entre les populations, mais sont plut\u00F4t la cons\u00E9quence d'une densit\u00E9 plus faible de sites de reproduction d'amphibiens sur les bords de la distribution. L'\u00E9chelle de couleurs doit \u00EAtre consid\u00E9r\u00E9e dans le contexte de l'environnement imm\u00E9diat.\nLa carte de dispersion a \u00E9t\u00E9 calcul\u00E9e avec Circuitscape et se base sur une matrice de r\u00E9sistance du paysage d\u00E9riv\u00E9e du MDS le mieux \u00E9valu\u00E9 pour chaque esp\u00E8ce.\nPour plus de d\u00E9tails, voir la description des donn\u00E9es ci-jointe.", "langeng":"Swiss-wide map depicting the dispersal probability of the Alpine newt (Ichthyosaura alpestris). Each grid cell indicates the relative probability that dispersing individuals will pass through that hectare on their way between known amphibian breeding sites. The map shows dispersal probability increasing along a scale from blue to yellow to red.\nThese maps should be thought of as heatmaps for dispersal activity of existing populations. In practical terms, these maps also show locations where potential new amphibian breeding sites have the highest chances of being colonized. \nAreas with many populations in close proximity appear a darker red, reflecting the higher probability of dispersal as multiple dispersal routes between populations intersect. This feature of the maps deserves special attention. Lighter shades at the edges of the species' range do not necessarily indicate a weaker connection between populations, but rather a consequence of the lower density of breeding sites at the edges of the range. The color scale should be considered in the context of the immediate surroundings.\nThe dispersal map was calculated using Circuitscape and is based on a landscape resistance matrix derived from the best-ranked dispersal model for each species.\nFor details, see the attached data description."}</resourceAbstractObject>
   <cl_resourceCharacterSet type="object">{"key":"utf8","default":"utf8","langger":"utf8","langfre":"utf8","langita":"utf8","langeng":"utf8","langroh":"utf8","langger":"utf8","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_CharacterSetCode","text":"utf8"}</cl_resourceCharacterSet>
+  <OrgForResourceObject type="object">{"default":"Agroscope Metadaten", "langger":"Agroscope Metadaten", "langfre":"Agroscope M\u00E9tadonn\u00E9es", "langita":"Agroscope Metadati", "langeng":"Agroscope meta data"}</OrgForResourceObject>
+  <authorOrgForResourceObject type="object">{"default":"Agroscope Metadaten", "langger":"Agroscope Metadaten", "langfre":"Agroscope M\u00E9tadonn\u00E9es", "langita":"Agroscope Metadati", "langeng":"Agroscope meta data"}</authorOrgForResourceObject>
   <contactForResource type="object">{
+      
+        "organisationObject": 
+            {"default":"Agroscope Metadaten", "langger":"Agroscope Metadaten", "langfre":"Agroscope M\u00E9tadonn\u00E9es", "langita":"Agroscope Metadati", "langeng":"Agroscope meta data"}
+            ,
       
       "role":"author",
       "email":"GIS@agroscope.admin.ch",
@@ -72,7 +84,13 @@
       "address":"191, Reckenholzstrasse, Z\u00FCrich, 8046, CH"
       
       }</contactForResource>
+  <OrgForResourceObject type="object">{"default":"Info_Fauna_Karch", "langger":"Info_Fauna_Karch", "langfre":"Information_Fauna_Karch", "langita":"Informatione_Fauna_Karch", "langeng":"Info_Fauna_Karch"}</OrgForResourceObject>
+  <principalInvestigatorOrgForResourceObject type="object">{"default":"Info_Fauna_Karch", "langger":"Info_Fauna_Karch", "langfre":"Information_Fauna_Karch", "langita":"Informatione_Fauna_Karch", "langeng":"Info_Fauna_Karch"}</principalInvestigatorOrgForResourceObject>
   <contactForResource type="object">{
+      
+        "organisationObject": 
+            {"default":"Info_Fauna_Karch", "langger":"Info_Fauna_Karch", "langfre":"Information_Fauna_Karch", "langita":"Informatione_Fauna_Karch", "langeng":"Info_Fauna_Karch"}
+            ,
       
       "role":"principalInvestigator",
       "email":"contact@infofauna.ch",
@@ -84,7 +102,13 @@
       "address":"51, Belleveaus, Neuch\u00E2tel, 2000, CH"
       
       }</contactForResource>
+  <OrgForResourceObject type="object">{"default":"Bundesamt f\u00FCr Umwelt \/ Abteilung Biodiversit\u00E4t und Landschaft", "langger":"Bundesamt f\u00FCr Umwelt \/ Abteilung Biodiversit\u00E4t und Landschaft", "langfre":"Office f\u00E9d\u00E9ral de l'environnement \/ Division Biodiversit\u00E9 et paysage", "langita":"Ufficio federale dell'ambiente \/ Divisione Biodiversit\u00E0 e paesaggio", "langeng":"Federal Office for the Environment \/ Biodiversity and Landscape Division", "langroh":"Bundesamt f\u00FCr Umwelt"}</OrgForResourceObject>
+  <pointOfContactOrgForResourceObject type="object">{"default":"Bundesamt f\u00FCr Umwelt \/ Abteilung Biodiversit\u00E4t und Landschaft", "langger":"Bundesamt f\u00FCr Umwelt \/ Abteilung Biodiversit\u00E4t und Landschaft", "langfre":"Office f\u00E9d\u00E9ral de l'environnement \/ Division Biodiversit\u00E9 et paysage", "langita":"Ufficio federale dell'ambiente \/ Divisione Biodiversit\u00E0 e paesaggio", "langeng":"Federal Office for the Environment \/ Biodiversity and Landscape Division", "langroh":"Bundesamt f\u00FCr Umwelt"}</pointOfContactOrgForResourceObject>
   <contactForResource type="object">{
+      
+        "organisationObject": 
+            {"default":"Bundesamt f\u00FCr Umwelt \/ Abteilung Biodiversit\u00E4t und Landschaft", "langger":"Bundesamt f\u00FCr Umwelt \/ Abteilung Biodiversit\u00E4t und Landschaft", "langfre":"Office f\u00E9d\u00E9ral de l'environnement \/ Division Biodiversit\u00E9 et paysage", "langita":"Ufficio federale dell'ambiente \/ Divisione Biodiversit\u00E0 e paesaggio", "langeng":"Federal Office for the Environment \/ Biodiversity and Landscape Division", "langroh":"Bundesamt f\u00FCr Umwelt"}
+            ,
       
       "role":"pointOfContact",
       "email":"bnl@bafu.admin.ch",
@@ -391,7 +415,13 @@
         
         ]</featureTypes>
   <format>Cloud Optimized GeoTIFF (TIFF / TIF)</format>
+  <OrgForDistributionObject type="object">{"default":"Agroscope Metadaten", "langger":"Agroscope Metadaten", "langfre":"Agroscope M\u00E9tadonn\u00E9es", "langita":"Agroscope Metadati", "langeng":"Agroscope meta data"}</OrgForDistributionObject>
+  <ownerOrgForDistributionObject type="object">{"default":"Agroscope Metadaten", "langger":"Agroscope Metadaten", "langfre":"Agroscope M\u00E9tadonn\u00E9es", "langita":"Agroscope Metadati", "langeng":"Agroscope meta data"}</ownerOrgForDistributionObject>
   <contactForDistribution type="object">{
+      
+        "organisationObject": 
+            {"default":"Agroscope Metadaten", "langger":"Agroscope Metadaten", "langfre":"Agroscope M\u00E9tadonn\u00E9es", "langita":"Agroscope Metadati", "langeng":"Agroscope meta data"}
+            ,
       
       "role":"owner",
       "email":"GIS@agroscope.admin.ch",
@@ -403,7 +433,13 @@
       "address":"191, Reckenholzstrasse, Z\u00FCrich, 8046, CH"
       
       }</contactForDistribution>
+  <OrgForDistributionObject type="object">{"default":"Bundesamt f\u00FCr Umwelt \/ Abteilung Biodiversit\u00E4t und Landschaft", "langger":"Bundesamt f\u00FCr Umwelt \/ Abteilung Biodiversit\u00E4t und Landschaft", "langfre":"Office f\u00E9d\u00E9ral de l'environnement \/ Division Biodiversit\u00E9 et paysage", "langita":"Ufficio federale dell'ambiente \/ Divisione Biodiversit\u00E0 e paesaggio", "langeng":"Federal Office for the Environment \/ Biodiversity and Landscape Division", "langroh":"Bundesamt f\u00FCr Umwelt"}</OrgForDistributionObject>
+  <distributorOrgForDistributionObject type="object">{"default":"Bundesamt f\u00FCr Umwelt \/ Abteilung Biodiversit\u00E4t und Landschaft", "langger":"Bundesamt f\u00FCr Umwelt \/ Abteilung Biodiversit\u00E4t und Landschaft", "langfre":"Office f\u00E9d\u00E9ral de l'environnement \/ Division Biodiversit\u00E9 et paysage", "langita":"Ufficio federale dell'ambiente \/ Divisione Biodiversit\u00E0 e paesaggio", "langeng":"Federal Office for the Environment \/ Biodiversity and Landscape Division", "langroh":"Bundesamt f\u00FCr Umwelt"}</distributorOrgForDistributionObject>
   <contactForDistribution type="object">{
+      
+        "organisationObject": 
+            {"default":"Bundesamt f\u00FCr Umwelt \/ Abteilung Biodiversit\u00E4t und Landschaft", "langger":"Bundesamt f\u00FCr Umwelt \/ Abteilung Biodiversit\u00E4t und Landschaft", "langfre":"Office f\u00E9d\u00E9ral de l'environnement \/ Division Biodiversit\u00E9 et paysage", "langita":"Ufficio federale dell'ambiente \/ Divisione Biodiversit\u00E0 e paesaggio", "langeng":"Federal Office for the Environment \/ Biodiversity and Landscape Division", "langroh":"Bundesamt f\u00FCr Umwelt"}
+            ,
       
       "role":"distributor",
       "email":"bnl@bafu.admin.ch",
