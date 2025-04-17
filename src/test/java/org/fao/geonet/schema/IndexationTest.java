@@ -13,11 +13,13 @@ import org.junit.Test;
 import org.xmlunit.assertj.XmlAssert;
 
 import java.lang.reflect.Field;
-import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Map;
 import java.util.TimeZone;
+
+import static org.fao.geonet.schema.TestSupport.getResource;
+import static org.fao.geonet.schema.TestSupport.getResourceInsideSchema;
 
 public class IndexationTest {
 
@@ -47,7 +49,7 @@ public class IndexationTest {
 
         String actual = indexAmphibians();
 
-        String expected = new String(getClass().getClassLoader().getResourceAsStream("amphibians-index.xml").readAllBytes(), StandardCharsets.UTF_8);
+        String expected = Files.readString(getResource("amphibians-index.xml"));
         XmlAssert.assertThat(actual).isEqualTo(expected);
     }
 
@@ -65,8 +67,8 @@ public class IndexationTest {
     }
 
     private String indexAmphibians() throws Exception {
-        Path xslFile = Paths.get(getClass().getClassLoader().getResource("gn-site/WEB-INF/data/config/schema_plugins/iso19115-3.2018.che/index-fields/index.xsl").toURI());
-        Path xmlFile = Paths.get(getClass().getClassLoader().getResource("amphibians-19115-3.che.xml").toURI());
+        Path xslFile = getResourceInsideSchema("index-fields/index.xsl");
+        Path xmlFile = getResource("amphibians-19115-3.che.xml");
         Element amphibians = Xml.loadFile(xmlFile);
 
         Element amphibiansIndex = Xml.transform(amphibians, xslFile);
