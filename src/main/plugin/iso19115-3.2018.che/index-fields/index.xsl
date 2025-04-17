@@ -1438,7 +1438,7 @@
     <xsl:param name="languages" as="node()?"/>
 
     <xsl:variable name="organisationName"
-                  select="(.//cit:CI_Organisation/cit:name)[1]"
+                  select="(.//che:CHE_CI_Organisation/cit:name)[1]"
                   as="node()?"/>
     <xsl:variable name="uuid" select="@uuid"/>
     <xsl:variable name="elementName" select="name()"/>
