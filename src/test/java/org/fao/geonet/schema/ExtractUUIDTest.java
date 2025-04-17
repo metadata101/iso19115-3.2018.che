@@ -5,16 +5,17 @@ import org.jdom.Element;
 import org.junit.Test;
 
 import java.nio.file.Path;
-import java.nio.file.Paths;
 
+import static org.fao.geonet.schema.TestSupport.getResource;
+import static org.fao.geonet.schema.TestSupport.getResourceInsideSchema;
 import static org.junit.Assert.assertEquals;
 
 public class ExtractUUIDTest {
 
     @Test
     public void extractUUID() throws Exception {
-        Path xslFile = Paths.get(getClass().getClassLoader().getResource("gn-site/WEB-INF/data/config/schema_plugins/iso19115-3.2018.che/extract-uuid.xsl").toURI());
-        Path xmlFile = Paths.get(getClass().getClassLoader().getResource("amphibians-19115-3.che.xml").toURI());
+        Path xslFile = getResourceInsideSchema("extract-uuid.xsl");
+        Path xmlFile = getResource("amphibians-19115-3.che.xml");
         Element amphibians = Xml.loadFile(xmlFile);
 
         Element extractedUUID = Xml.transform(amphibians, xslFile);
