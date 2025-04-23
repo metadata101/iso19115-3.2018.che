@@ -125,7 +125,7 @@
       "individual":"BAFU BNL",
       "position":"",
       "phone":"",
-      "address":",, Bern, 3003, CH"
+      "address":"Bern, 3003, CH"
       
       }</contactForResource>
   <hasOverview>true</hasOverview>
@@ -461,7 +461,7 @@
       "individual":"BAFU BNL",
       "position":"",
       "phone":"",
-      "address":",, Bern, 3003, CH"
+      "address":"Bern, 3003, CH"
       
       }</contactForDistribution>
   <linkUrl>https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf</linkUrl>
