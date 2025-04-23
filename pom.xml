@@ -8,7 +8,8 @@
   <groupId>org.geonetwork-opensource</groupId>
   <artifactId>gn-schema-iso19115-3.2018.che</artifactId>
   <version>4.4.9-0.1-SNAPSHOT</version>
-  <name>GeoNetwork schema plugin for ISO19115-3:2018 standard</name>
+  <name>GeoNetwork schema plugin for ISO19115-3:2018.che standard</name>
+  <packaging>jar</packaging>
 
   <properties>
     <xmlunit.version>2.10.0</xmlunit.version>
@@ -47,16 +48,22 @@
       <scope>test</scope>
     </dependency>
     <dependency>
+      <groupId>org.xmlunit</groupId>
+      <artifactId>xmlunit-assertj</artifactId>
+      <version>${xmlunit.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
       <groupId>org.geonetwork-opensource</groupId>
       <artifactId>gn-web-app</artifactId>
-      <version>4.4.6-0</version>
+      <version>${gn.version}</version>
       <type>war</type>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.geonetwork-opensource</groupId>
       <artifactId>gn-web-app</artifactId>
-      <version>4.4.6-0</version>
+      <version>${gn.version}</version>
       <classifier>classes</classifier>
       <exclusions>
         <exclusion>
@@ -65,12 +72,6 @@
           <artifactId>hibernate-jpamodelgen</artifactId>
         </exclusion>
       </exclusions>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.xmlunit</groupId>
-      <artifactId>xmlunit-assertj</artifactId>
-      <version>2.10.0</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -137,7 +138,7 @@
                 <artifactItem>
                   <groupId>org.geonetwork-opensource</groupId>
                   <artifactId>gn-web-app</artifactId>
-                  <version>4.4.6-0</version>
+                  <version>${gn.version}</version>
                   <type>war</type>
                   <overWrite>false</overWrite>
                   <outputDirectory>${project.build.testOutputDirectory}/gn-site</outputDirectory>
