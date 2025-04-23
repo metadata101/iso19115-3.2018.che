@@ -399,7 +399,8 @@
             "frequency": "notPlanned"
             
             }</maintenance>
-  <CHE_MD_LegalConstraintsOtherConstraintsObject type="object">{"default":"Opendata OPEN: Freie Nutzung.", "langger":"Opendata OPEN: Freie Nutzung.", "langfre":"Opendata OPEN: Utilisation libre.", "langita":"Opendata OPEN: Libero utilizzo.", "langeng":"Opendata OPEN: Open use.", "link":"https:\/\/opendata.swiss\/en\/terms-of-use\/#terms_open"}</CHE_MD_LegalConstraintsOtherConstraintsObject>
+  <MD_LegalConstraintsOtherConstraintsObject type="object">{"default":"Opendata OPEN: Freie Nutzung.", "langger":"Opendata OPEN: Freie Nutzung.", "langfre":"Opendata OPEN: Utilisation libre.", "langita":"Opendata OPEN: Libero utilizzo.", "langeng":"Opendata OPEN: Open use.", "link":"https:\/\/opendata.swiss\/en\/terms-of-use\/#terms_open"}</MD_LegalConstraintsOtherConstraintsObject>
+  <licenseObject type="object">{"default":"Opendata OPEN: Freie Nutzung.", "langger":"Opendata OPEN: Freie Nutzung.", "langfre":"Opendata OPEN: Utilisation libre.", "langita":"Opendata OPEN: Libero utilizzo.", "langeng":"Opendata OPEN: Open use.", "link":"https:\/\/opendata.swiss\/en\/terms-of-use\/#terms_open"}</licenseObject>
   <hasBoundingPolygon>true</hasBoundingPolygon>
   <extentDescriptionObject type="object">{"default":"Schweiz", "langger":"Schweiz", "langfre":"Suisse", "langita":"Svizzera", "langeng":"Switzerland", "langroh":"Svizra"}</extentDescriptionObject>
   <geom type="object">{"type": "Polygon","coordinates": [[[5.956088,45.817970],[10.492036,45.817970],[10.492036,47.808488],[5.956088,47.808488],[5.956088,45.817970]]]}</geom>
