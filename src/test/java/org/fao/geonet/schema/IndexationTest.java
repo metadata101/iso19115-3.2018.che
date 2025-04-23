@@ -46,10 +46,10 @@ public class IndexationTest {
     @Test
     public void index() throws Exception {
         TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
-
         String actual = indexAmphibians();
 
         String expected = Files.readString(getResource("amphibians-index.xml"));
+
         XmlAssert.assertThat(actual).isEqualTo(expected);
     }
 
