@@ -8,6 +8,7 @@
         class="org.fao.geonet.schema.iso19115_3_2018_che.ISO19115_3_2018SchemaPlugin">
     <property name="outputSchemas">
       <util:map key-type="java.lang.String" value-type="java.lang.String">
+        <!-- TODO CMT/SRT Add test to ensure the class of bean iso19115-3.2018SchemaPlugin do exist and is called -->
         <entry key="csw" value="http://www.opengis.net/cat/csw/2.0.2"/>
         <entry key="mdb" value="http://standards.iso.org/iso/19115/-3/mdb/2.0"/>
         <entry key="gmd" value="http://www.isotc211.org/2005/gmd"/>
