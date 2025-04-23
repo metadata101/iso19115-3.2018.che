@@ -113,7 +113,7 @@ public class XslConversionTest {
         Validator validator = schema.newValidator();
         validator.validate(new StreamSource(new ByteArrayInputStream(Xml.getString(xmlIso19115che).getBytes(StandardCharsets.UTF_8))));
 
-        List<Namespace> namespaces = xmlIso19115che.getAdditionalNamespaces();
+        List<?> namespaces = xmlIso19115che.getAdditionalNamespaces();
 
         assertNamespacePresent(namespaces, "http://standards.iso.org/iso/19115/-3/md1/2.0", "md1");
         assertNamespacePresent(namespaces, "http://standards.iso.org/iso/19115/-3/md2/2.0", "md2");
@@ -154,12 +154,13 @@ public class XslConversionTest {
         //isGNValid(gruenflaechenIso19115che);
     }
 
-    private void assertNamespacePresent(List<Namespace> namespaces, String nsLocation, String prefix) {
-        assertEquals(nsLocation, namespaces.stream() //
-                        .filter(n -> prefix.equals(n.getPrefix())) //
-                        .findFirst() //
-                        .orElseThrow(() -> new AssertionError(String.format("prefix not found: %s", prefix))) //
-                        .getURI());
+    private void assertNamespacePresent(List<?> namespaces, String nsLocation, String prefix) {
+        Namespace ns = namespaces.stream() //
+                .filter(n -> prefix.equals(((Namespace) n).getPrefix()))
+                .map(Namespace.class::cast)//
+                .findFirst() //
+                .orElseThrow(() -> new AssertionError(String.format("prefix not found: %s", prefix)));
+        assertEquals(nsLocation, ns.getURI());
     }
 
     private void assertStrictByteEquality(String expectedFileName, Element element, boolean requireXmlHeader) throws IOException, URISyntaxException {
