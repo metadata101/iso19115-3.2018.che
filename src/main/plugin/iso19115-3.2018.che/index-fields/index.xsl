@@ -1447,7 +1447,10 @@
                   select="replace(*[1]/cit:role/*/@codeListValue, ' ', '')"
                   as="xs:string?"/>
     <xsl:variable name="logo" select="(.//cit:logo/*/mcc:fileName/*)[1]"/>
-    <xsl:variable name="website" select="(.//cit:onlineResource/*/cit:linkage/gco:CharacterString)[1]"/>
+
+    <xsl:variable name="website"
+                  select="(.//cit:onlineResource/*/cit:linkage)[1]"
+                  as="node()?"/>
     <xsl:variable name="email"
                   select="(.//cit:contactInfo/*/cit:address/*/cit:electronicMailAddress/gco:CharacterString)[1]"/>
     <xsl:variable name="phone"
@@ -1492,7 +1495,8 @@
       </xsl:if>
       "role":"<xsl:value-of select="$role"/>",
       "email":"<xsl:value-of select="util:escapeForJson($email)"/>",
-      "website":"<xsl:value-of select="util:escapeForJson($website)"/>",
+      <xsl:if test="$website">"websiteObject": <xsl:value-of select="gn-fn-index:add-multilingual-field(
+                                'website', $website, $languages, true())"/>,</xsl:if>
       "logo":"<xsl:value-of select="util:escapeForJson($logo)"/>",
       "individual":"<xsl:value-of select="util:escapeForJson($individualName)"/>",
       "position":"<xsl:value-of select="util:escapeForJson($positionName)"/>",
