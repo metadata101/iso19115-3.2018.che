@@ -202,7 +202,7 @@
     <xsl:template match="oldche:CHE_CI_Address" mode="from19139to19115-3.2018">
         <cit:CI_Address>
             <cit:deliveryPoint>
-                <gco:CharacterString><xsl:value-of select="oldche:streetNumber/gcoold:CharacterString"/>, <xsl:value-of select="oldche:streetName/gcoold:CharacterString"/></gco:CharacterString>
+                <gco:CharacterString><xsl:value-of select="string-join((oldche:streetNumber/gcoold:CharacterString, oldche:streetName/gcoold:CharacterString)[. != ''], ', ')"/></gco:CharacterString>
             </cit:deliveryPoint>
             <xsl:apply-templates select="*[not(self::oldche:*)]" mode="from19139to19115-3.2018"/>
         </cit:CI_Address>
