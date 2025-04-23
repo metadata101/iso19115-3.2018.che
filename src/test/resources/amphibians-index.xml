@@ -29,7 +29,9 @@
       
       "role":"owner",
       "email":"GIS@agroscope.admin.ch",
-      "website":"http:\/\/www.agroscope.admin.ch",
+      "websiteObject": 
+            {"default":"http:\/\/www.agroscope.admin.ch", "langger":"http:\/\/www.agroscope.admin.ch", "langfre":"http:\/\/www.agroscope.admin.ch", "langita":"http:\/\/www.agroscope.admin.ch", "langeng":"http:\/\/www.agroscope.admin.ch"}
+            ,
       "logo":"",
       "individual":"",
       "position":"GIS-Koordination",
@@ -76,7 +78,9 @@
       
       "role":"author",
       "email":"GIS@agroscope.admin.ch",
-      "website":"http:\/\/www.agroscope.admin.ch",
+      "websiteObject": 
+            {"default":"http:\/\/www.agroscope.admin.ch", "langger":"http:\/\/www.agroscope.admin.ch", "langfre":"http:\/\/www.agroscope.admin.ch", "langita":"http:\/\/www.agroscope.admin.ch", "langeng":"http:\/\/www.agroscope.admin.ch"}
+            ,
       "logo":"",
       "individual":"",
       "position":"GIS-Koordination",
@@ -94,7 +98,9 @@
       
       "role":"principalInvestigator",
       "email":"contact@infofauna.ch",
-      "website":"https:\/\/www.infofauna.ch\/de\/beratungsstellen\/amphibien-karch",
+      "websiteObject": 
+            {"default":"https:\/\/www.infofauna.ch\/de\/beratungsstellen\/amphibien-karch", "langger":"https:\/\/www.infofauna.ch\/de\/beratungsstellen\/amphibien-karch", "langfre":"https:\/\/www.agroscope.admin.ch\/agroscope\/fr\/home.html", "langita":"https:\/\/www.agroscope.admin.ch\/agroscope\/it\/home.html", "langeng":"https:\/\/www.agroscope.admin.ch\/agroscope\/en\/home.html"}
+            ,
       "logo":"",
       "individual":"",
       "position":"Information Karch Amphibien",
@@ -112,7 +118,9 @@
       
       "role":"pointOfContact",
       "email":"bnl@bafu.admin.ch",
-      "website":"https:\/\/www.bafu.admin.ch\/bafu\/de\/home\/amt\/abteilungen-sektionen\/abteilung-biodiversitaet-und-landschaft.html",
+      "websiteObject": 
+            {"default":"https:\/\/www.bafu.admin.ch\/bafu\/de\/home\/amt\/abteilungen-sektionen\/abteilung-biodiversitaet-und-landschaft.html", "langger":"https:\/\/www.bafu.admin.ch\/bafu\/de\/home\/amt\/abteilungen-sektionen\/abteilung-biodiversitaet-und-landschaft.html", "langfre":"https:\/\/www.bafu.admin.ch\/bafu\/fr\/home\/office\/divisions-sections\/division-biodiversite-et-paysage.html", "langita":"https:\/\/www.bafu.admin.ch\/bafu\/it\/home\/ufficio\/divisioni-sezioni\/divisione-biodiversita-e-paesaggio.html", "langeng":"https:\/\/www.bafu.admin.ch\/bafu\/en\/home\/office\/divisions-sections\/biodiversity-and-landscape-division.html"}
+            ,
       "logo":"",
       "individual":"",
       "position":"",
@@ -426,7 +434,9 @@
       
       "role":"owner",
       "email":"GIS@agroscope.admin.ch",
-      "website":"http:\/\/www.agroscope.admin.ch",
+      "websiteObject": 
+            {"default":"http:\/\/www.agroscope.admin.ch", "langger":"http:\/\/www.agroscope.admin.ch", "langfre":"http:\/\/www.agroscope.admin.ch", "langita":"http:\/\/www.agroscope.admin.ch", "langeng":"http:\/\/www.agroscope.admin.ch"}
+            ,
       "logo":"",
       "individual":"",
       "position":"GIS-Koordination",
@@ -444,7 +454,9 @@
       
       "role":"distributor",
       "email":"bnl@bafu.admin.ch",
-      "website":"https:\/\/www.bafu.admin.ch\/bafu\/de\/home\/amt\/abteilungen-sektionen\/abteilung-biodiversitaet-und-landschaft.html",
+      "websiteObject": 
+            {"default":"https:\/\/www.bafu.admin.ch\/bafu\/de\/home\/amt\/abteilungen-sektionen\/abteilung-biodiversitaet-und-landschaft.html", "langger":"https:\/\/www.bafu.admin.ch\/bafu\/de\/home\/amt\/abteilungen-sektionen\/abteilung-biodiversitaet-und-landschaft.html", "langfre":"https:\/\/www.bafu.admin.ch\/bafu\/fr\/home\/office\/divisions-sections\/division-biodiversite-et-paysage.html", "langita":"https:\/\/www.bafu.admin.ch\/bafu\/it\/home\/ufficio\/divisioni-sezioni\/divisione-biodiversita-e-paesaggio.html", "langeng":"https:\/\/www.bafu.admin.ch\/bafu\/en\/home\/office\/divisions-sections\/biodiversity-and-landscape-division.html"}
+            ,
       "logo":"",
       "individual":"",
       "position":"",
