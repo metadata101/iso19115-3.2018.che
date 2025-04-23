@@ -333,9 +333,10 @@ public class ISO19115_3_2018SchemaPlugin
     public Element removeTranslationFromElement(Element element, List<String> langs) throws JDOMException {
         String mainLanguage = langs != null && !langs.isEmpty() ? langs.get(0) : "#EN";
 
-        List<Element> nodesWithStrings = (List<Element>) Xml.selectNodes(element, "*//lan:PT_FreeText", Arrays.asList(ISO19115_3_2018Namespaces.LAN));
+        List<?> nodesWithStrings = Xml.selectNodes(element, "*//lan:PT_FreeText", List.of(ISO19115_3_2018Namespaces.LAN));
 
-        for (Element e : nodesWithStrings) {
+        for (Object o : nodesWithStrings) {
+            Element e = (Element) o;
             // Retrieve or create the main language element
             Element mainCharacterString = ((Element) e.getParent()).getChild("CharacterString", ISO19115_3_2018Namespaces.GCO);
             if (mainCharacterString == null) {
@@ -345,14 +346,14 @@ public class ISO19115_3_2018SchemaPlugin
             }
 
             // Retrieve the main language value if exist
-            List<Element> mainLangElement = (List<Element>) Xml.selectNodes(
+            List<?> mainLangElement = Xml.selectNodes(
                 e,
                 "*//lan:LocalisedCharacterString[@locale='" + mainLanguage + "']",
-                Arrays.asList(ISO19115_3_2018Namespaces.LAN));
+                    List.of(ISO19115_3_2018Namespaces.LAN));
 
             // Set the main language value
             if (mainLangElement.size() == 1) {
-                String mainLangString = mainLangElement.get(0).getText();
+                String mainLangString = ((Element)mainLangElement.get(0)).getText();
 
                 if (StringUtils.isNotEmpty(mainLangString)) {
                     mainCharacterString.setText(mainLangString);
@@ -365,8 +366,9 @@ public class ISO19115_3_2018SchemaPlugin
         }
 
         // Remove unused lang entries
-        List<Element> translationNodes = (List<Element>) Xml.selectNodes(element, "*//node()[@locale]");
-        for (Element el : translationNodes) {
+        List<?> translationNodes = Xml.selectNodes(element, "*//node()[@locale]");
+        for (Object ol : translationNodes) {
+            Element el = (Element) ol;
             // Remove all translations if there is no or only one language requested
             if (langs.size() <= 1 ||
                 !langs.contains(el.getAttribute("locale").getValue())) {
@@ -376,7 +378,8 @@ public class ISO19115_3_2018SchemaPlugin
         }
 
         // Remove PT_FreeText which might be emptied by above processing
-        for (Element el : nodesWithStrings) {
+        for (Object ol : nodesWithStrings) {
+            Element el = (Element) ol;
             if (el.getChildren().isEmpty()) {
                 el.detach();
             }
@@ -618,7 +621,7 @@ public class ISO19115_3_2018SchemaPlugin
     }
 
     public <L, M> RawLinkPatternStreamer<L, M> createLinkStreamer(ILinkBuilder<L, M> linkbuilder, String excludePattern) {
-        RawLinkPatternStreamer patternStreamer = new RawLinkPatternStreamer(linkbuilder, excludePattern);
+        RawLinkPatternStreamer<L,M> patternStreamer = new RawLinkPatternStreamer<>(linkbuilder, excludePattern);
         patternStreamer.setNamespaces(ISO19115_3_2018SchemaPlugin.allNamespaces.asList());
         // TODO: Add xlink:href ?
         patternStreamer.setRawTextXPath(".//*[name() = 'gco:CharacterString' or name() = 'lan:LocalisedCharacterString']");
