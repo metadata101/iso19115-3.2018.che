@@ -58,6 +58,13 @@
       <artifactId>gn-web-app</artifactId>
       <version>4.4.6-0</version>
       <classifier>classes</classifier>
+      <exclusions>
+        <exclusion>
+          <!-- Excluded to avoid pulling unused persistence.xml -->
+          <groupId>org.hibernate</groupId>
+          <artifactId>hibernate-jpamodelgen</artifactId>
+        </exclusion>
+      </exclusions>
       <scope>test</scope>
     </dependency>
     <dependency>
