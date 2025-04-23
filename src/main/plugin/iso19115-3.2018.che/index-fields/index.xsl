@@ -756,14 +756,14 @@
         </xsl:for-each>
 
         <xsl:for-each select="mri:resourceConstraints/*">
-          <xsl:variable name="fieldPrefix" select="local-name()"/>
+          <xsl:variable name="fieldPrefix" select="'MD_LegalConstraints'"/>
 
           <xsl:copy-of select="gn-fn-index:add-multilingual-field(concat($fieldPrefix, 'OtherConstraints'), mco:otherConstraints , $allLanguages)"/>
 
           <xsl:copy-of select="gn-fn-index:add-multilingual-field(concat($fieldPrefix, 'UseLimitation'), mco:useLimitation, $allLanguages)"/>
         </xsl:for-each>
 
-        <xsl:for-each select="mri:resourceConstraints/mco:MD_LegalConstraints/mco:otherConstraints">
+        <xsl:for-each select="mri:resourceConstraints/che:CHE_MD_LegalConstraints/mco:otherConstraints">
           <xsl:copy-of select="gn-fn-index:add-multilingual-field('license', ., $allLanguages)"/>
         </xsl:for-each>
 
