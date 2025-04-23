@@ -91,6 +91,7 @@
                         </xsl:otherwise>
                     </xsl:choose>
                     <cit:party>
+                        <xsl:variable name="individualName" select="string-join((oldche:individualFirstName/gcoold:CharacterString, oldche:individualLastName/gcoold:CharacterString)[. != ''], ' ')"/>
                         <xsl:choose>
                             <xsl:when test="gmd:organisationName">
                                 <che:CHE_CI_Organisation>
@@ -99,16 +100,17 @@
                                         <xsl:with-param name="elementName" select="'cit:name'"/>
                                         <xsl:with-param name="nodeWithStringToWrite" select="gmd:organisationName"/>
                                     </xsl:call-template>
-                                    <!-- contactInformation comes before indivudual/position -->
+                                    <!-- contactInformation comes before individual/position -->
                                     <xsl:call-template name="writeContactInformation"/>
-                                    <xsl:if test="gmd:individualName | gmd:positionName">
+                                    <xsl:if test="$individualName or gmd:positionName">
                                         <cit:individual>
                                             <cit:CI_Individual>
-                                                <xsl:if test="gmd:individualName">
-                                                    <xsl:call-template name="writeCharacterStringElement">
-                                                        <xsl:with-param name="elementName" select="'cit:name'"/>
-                                                        <xsl:with-param name="nodeWithStringToWrite" select="gmd:individualName"/>
-                                                    </xsl:call-template>
+                                                <xsl:if test="$individualName">
+                                                    <cit:name>
+                                                        <gco:CharacterString>
+                                                            <xsl:value-of select="$individualName"/>
+                                                        </gco:CharacterString>
+                                                    </cit:name>
                                                 </xsl:if>
                                                 <xsl:if test="gmd:positionName">
                                                     <xsl:call-template name="writeCharacterStringElement">
@@ -123,11 +125,10 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <cit:CI_Individual>
-                                    <xsl:if test="gmd:individualName">
-                                        <xsl:call-template name="writeCharacterStringElement">
-                                            <xsl:with-param name="elementName" select="'cit:name'"/>
-                                            <xsl:with-param name="nodeWithStringToWrite" select="gmd:individualName"/>
-                                        </xsl:call-template>
+                                    <xsl:if test="$individualName">
+                                        <cit:name>
+                                            <xsl:value-of select="$individualName"/>
+                                        </cit:name>
                                     </xsl:if>
                                     <xsl:call-template name="writeContactInformation"/>
                                     <xsl:if test="gmd:positionName">

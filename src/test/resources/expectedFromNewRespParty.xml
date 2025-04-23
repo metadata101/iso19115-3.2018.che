@@ -90,6 +90,9 @@
       </cit:contactInfo>
       <cit:individual>
         <cit:CI_Individual>
+          <cit:name>
+            <gco:CharacterString>Jeannot Lapin</gco:CharacterString>
+          </cit:name>
           <cit:positionName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
             <gco:CharacterString>GIS-Koordination</gco:CharacterString>
             <lan:PT_FreeText xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
