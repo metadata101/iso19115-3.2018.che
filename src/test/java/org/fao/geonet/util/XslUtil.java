@@ -100,7 +100,6 @@ public class XslUtil {
         return String.format("%s--%s--%s", codelist, value, langCode);
     }
 
-
     public static List<String> getKeywordHierarchy(String keyword, String thesaurusId, String langCode) {
         return List.of();
     }
