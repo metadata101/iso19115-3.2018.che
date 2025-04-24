@@ -709,7 +709,9 @@
                                 'cl_topic', $value, $allLanguages)"/>
         </xsl:for-each>
 
-
+        <xsl:for-each select="che:subTopicCategory/che:CHE_MD_SubTopicCategoryCode">
+          <xsl:copy-of select="gn-fn-index:add-codelist-field('cl_topic', ., $allLanguages)"/>
+        </xsl:for-each>
 
         <xsl:for-each select="mri:spatialResolution/mri:MD_Resolution">
           <xsl:for-each

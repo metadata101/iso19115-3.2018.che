@@ -23,6 +23,11 @@
 package org.fao.geonet.util;
 
 import org.apache.commons.text.StringEscapeUtils;
+import org.fao.geonet.ApplicationContextHolder;
+import org.fao.geonet.kernel.SchemaManager;
+import org.fao.geonet.kernel.search.CodeListTranslator;
+import org.fao.geonet.kernel.search.Translator;
+import org.fao.geonet.utils.Log;
 import org.w3c.dom.Node;
 
 import java.util.List;
@@ -75,7 +80,7 @@ public class XslUtil {
     }
 
     public static String getCodelistTranslation(Object codelist, Object value, Object langCode) {
-        return (String) value;
+        return String.format("%s--%s--%s", codelist, value, langCode);
     }
 
     public static List<String> getKeywordHierarchy(String keyword, String thesaurusId, String langCode) {
