@@ -1,5 +1,6 @@
 package org.fao.geonet.schema;
 
+import org.fao.geonet.util.XslUtil;
 import org.fao.geonet.utils.ResolverWrapper;
 import org.fao.geonet.utils.TransformerFactoryFactory;
 import org.fao.geonet.utils.Xml;
@@ -44,9 +45,10 @@ public class IndexationTest {
     }
 
     @Test
-    public void index() throws Exception {
+    public void indexAmphibians() throws Exception {
         TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
-        String actual = indexAmphibians();
+        XslUtil.IS_INSPIRE_ENABLED = true;
+        String actual = indexResource("amphibians-19115-3.che.xml");
 
         String expected = Files.readString(getResource("amphibians-index.xml"));
 
@@ -54,10 +56,21 @@ public class IndexationTest {
     }
 
     @Test
+    public void indexServiceGruenflaechen() throws Exception {
+        TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
+        XslUtil.IS_INSPIRE_ENABLED = false;
+        String actual = indexResource("gruenflaechen-19115-3.che.xml");
+
+        String expected = Files.readString(getResource("gruenflaechen-index.xml"));
+
+        XmlAssert.assertThat(actual).isEqualTo(expected);
+    }
+
+    @Test
     public void useIncorrectTimeZone() throws Exception {
         TimeZone.setDefault(TimeZone.getTimeZone("GMT+2"));
-
-        String actual = indexAmphibians();
+        XslUtil.IS_INSPIRE_ENABLED = true;
+        String actual = indexResource("amphibians-19115-3.che.xml");
 
         try {
             XmlAssert.assertThat(actual).valueByXPath("//resourceTemporalDateRange").contains("2024-02-22T22:00:00.000Z");
@@ -66,15 +79,15 @@ public class IndexationTest {
         }
     }
 
-    private String indexAmphibians() throws Exception {
+    private String indexResource(String resourceToIndex) throws Exception {
         Path xslFile = getResourceInsideSchema("index-fields/index.xsl");
-        Path xmlFile = getResource("amphibians-19115-3.che.xml");
-        Element amphibians = Xml.loadFile(xmlFile);
+        Path xmlFile = getResource(resourceToIndex);
+        Element toIndex = Xml.loadFile(xmlFile);
 
-        Element amphibiansIndex = Xml.transform(amphibians, xslFile);
+        Element index = Xml.transform(toIndex, xslFile);
 
         return new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n")) //
-                .outputString(new Document(amphibiansIndex)) //
+                .outputString(new Document(index)) //
                 .replaceAll("<indexingDate>.*</indexingDate>", "<indexingDate>2025-04-11T17:46:21+02:00</indexingDate>");
     }
 }
