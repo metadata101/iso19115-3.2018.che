@@ -155,6 +155,7 @@
         <xsl:when test="ancestor-or-self::gmd:MD_Constraints
           or ancestor-or-self::gmd:MD_SecurityConstraints
           or ancestor-or-self::gmd:MD_LegalConstraints
+          or ancestor-or-self::oldche:CHE_MD_LegalConstraints
           ">
           <xsl:text>mco</xsl:text>
         </xsl:when>
