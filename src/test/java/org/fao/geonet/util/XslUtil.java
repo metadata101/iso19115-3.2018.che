@@ -33,6 +33,8 @@ import org.w3c.dom.Node;
 import java.util.List;
 
 public class XslUtil {
+    public static Boolean IS_INSPIRE_ENABLED = false;
+
     public static String twoCharLangCode(String iso3code) {
         return iso3code.substring(0, 2);
     }
@@ -45,6 +47,8 @@ public class XslUtil {
         switch (key) {
             case "system/metadata/validation/removeSchemaLocation":
                 return "false";
+            case "system/inspire/enable":
+                return IS_INSPIRE_ENABLED.toString();
             default:
                 return "true";
         }
