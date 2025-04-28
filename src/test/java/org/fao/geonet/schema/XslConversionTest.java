@@ -105,6 +105,21 @@ public class XslConversionTest {
         assertStrictByteEquality("amphibians-19115-3.che.xml", amphibiansIso19115che, true);
     }
 
+
+    @Test
+    public void validateVeterinarians() throws Exception {
+        Path xslFile = getResourceInsideSchema("convert/fromISO19139.xsl");
+        Path xmlFile = getResource("veterinarians-19139.che.xml");
+        Element veterinarians = Xml.loadFile(xmlFile);
+
+        Element veterinariansIso19115che = Xml.transform(veterinarians, xslFile);
+        isValid(veterinariansIso19115che);
+        //TODO CMT/SRT activate
+        //isGNValid(amphibiansIso19115che);
+
+        assertStrictByteEquality("veterinarians-19115-3.che.xml", veterinariansIso19115che, true);
+    }
+
     private void isValid(Element xmlIso19115che) throws SAXException, IOException, URISyntaxException {
         SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
         Source schemaFile = new StreamSource(getResourceInsideSchema("schema/standards.iso.org/19115/-3/eCH-0271-1-0-0.xsd").toString());
