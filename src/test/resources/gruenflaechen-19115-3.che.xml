@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<che:CHE_MD_Metadata xmlns:che="http://geocat.ch/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0" xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0" xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:md1="http://standards.iso.org/iso/19115/-3/md1/2.0" xmlns:md2="http://standards.iso.org/iso/19115/-3/md2/2.0" xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/2.0" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0" xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0" xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0" xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0" xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0" xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0" xmlns:dqm="http://standards.iso.org/iso/19157/-2/dqm/1.0" xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" gco:isoType="mdb:MD_Metadata">
+  <mdb:metadataIdentifier>
+    <mcc:MD_Identifier>
+      <mcc:code>
+        <gco:CharacterString>e10cc786-f76f-4171-99ab-68d911627f31-8371</gco:CharacterString>
+      </mcc:code>
+    </mcc:MD_Identifier>
+  </mdb:metadataIdentifier>
+  <mdb:defaultLocale>
+    <lan:PT_Locale>
+      <lan:language>
+        <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="ger">ger</lan:LanguageCode>
+      </lan:language>
+      <lan:characterEncoding>
+        <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
+      </lan:characterEncoding>
+    </lan:PT_Locale>
+  </mdb:defaultLocale>
+  <mdb:metadataScope>
+    <mdb:MD_MetadataScope>
+      <mdb:resourceScope>
+        <mcc:MD_ScopeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ScopeCode" codeListValue="service">service</mcc:MD_ScopeCode>
+      </mdb:resourceScope>
+    </mdb:MD_MetadataScope>
+  </mdb:metadataScope>
+  <mdb:contact xlink:show="embed">
+    <cit:CI_Responsibility>
+      <cit:role>
+        <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="resourceProvider">resourceProvider</cit:CI_RoleCode>
+      </cit:role>
+      <cit:party>
+        <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
+          <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Geoinformationszentrum (GIS) Stadt Luzern</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN" />
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Geoinformationszentrum (GIS) Stadt Luzern</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:name>
+          <cit:contactInfo>
+            <cit:CI_Contact>
+              <cit:phone>
+                <cit:CI_Telephone>
+                  <cit:number>
+                    <gco:CharacterString>+41 41 208 74 00</gco:CharacterString>
+                  </cit:number>
+                  <cit:numberType>
+                    <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+                  </cit:numberType>
+                </cit:CI_Telephone>
+              </cit:phone>
+              <cit:address>
+                <cit:CI_Address>
+                  <cit:deliveryPoint>
+                    <gco:CharacterString>6, Industriestrasse</gco:CharacterString>
+                  </cit:deliveryPoint>
+                  <cit:city>
+                    <gco:CharacterString>Luzern</gco:CharacterString>
+                  </cit:city>
+                  <cit:postalCode>
+                    <gco:CharacterString>6005</gco:CharacterString>
+                  </cit:postalCode>
+                  <cit:country>
+                    <gco:CharacterString>CH</gco:CharacterString>
+                  </cit:country>
+                  <cit:electronicMailAddress>
+                    <gco:CharacterString>gis@stadtluzern.ch</gco:CharacterString>
+                  </cit:electronicMailAddress>
+                </cit:CI_Address>
+              </cit:address>
+              <cit:onlineResource>
+                <cit:CI_OnlineResource>
+                  <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                    <gco:CharacterString>https://www.stadtluzern.ch/politikverwaltung/stadtverwaltung/dienstabteilungenbereiche/7768</gco:CharacterString>
+                    <lan:PT_FreeText>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#DE">https://www.stadtluzern.ch/politikverwaltung/stadtverwaltung/dienstabteilungenbereiche/7768</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                    </lan:PT_FreeText>
+                  </cit:linkage>
+                  <cit:protocol>
+                    <gco:CharacterString>text/html</gco:CharacterString>
+                  </cit:protocol>
+                  <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+                    <gco:CharacterString>Homepage</gco:CharacterString>
+                    <lan:PT_FreeText>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#EN" />
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#DE">Homepage</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                    </lan:PT_FreeText>
+                  </cit:name>
+                </cit:CI_OnlineResource>
+              </cit:onlineResource>
+              <cit:hoursOfService>
+                <gco:CharacterString>Mo. - Fr. von 8:00 - 17:00 Uhr</gco:CharacterString>
+              </cit:hoursOfService>
+            </cit:CI_Contact>
+          </cit:contactInfo>
+          <cit:individual>
+            <cit:CI_Individual>
+              <cit:name>
+                <gco:CharacterString>gis@stadtluzern.ch</gco:CharacterString>
+              </cit:name>
+            </cit:CI_Individual>
+          </cit:individual>
+        </che:CHE_CI_Organisation>
+      </cit:party>
+    </cit:CI_Responsibility>
+  </mdb:contact>
+  <mdb:dateInfo>
+    <cit:CI_Date>
+      <cit:date>
+        <gco:DateTime>2025-04-07T05:30:33+02:00</gco:DateTime>
+      </cit:date>
+      <cit:dateType>
+        <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision">revision</cit:CI_DateTypeCode>
+      </cit:dateType>
+    </cit:CI_Date>
+  </mdb:dateInfo>
+  <mdb:metadataStandard>
+    <cit:CI_Citation>
+      <cit:title>
+        <gco:CharacterString>GM03 2+</gco:CharacterString>
+      </cit:title>
+    </cit:CI_Citation>
+  </mdb:metadataStandard>
+  <mdb:identificationInfo>
+    <srv:SV_ServiceIdentification>
+      <mri:citation>
+        <cit:CI_Citation>
+          <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Grünflächen (WFS)</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN" />
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Grünflächen (WFS)</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:title>
+          <cit:date>
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2023-07-03</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:date>
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2024-02-21</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision">revision</cit:CI_DateTypeCode>
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:otherCitationDetails>
+            <gco:CharacterString>eCH-Geokategorie: G Wald, Flora, Fauna</gco:CharacterString>
+          </cit:otherCitationDetails>
+        </cit:CI_Citation>
+      </mri:citation>
+      <mri:abstract xsi:type="lan:PT_FreeText_PropertyType">
+        <gco:CharacterString>Grünflächen mit Standort</gco:CharacterString>
+        <lan:PT_FreeText>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#EN" />
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#DE">Grünflächen mit Standort</lan:LocalisedCharacterString>
+          </lan:textGroup>
+        </lan:PT_FreeText>
+      </mri:abstract>
+      <mri:purpose xsi:type="lan:PT_FreeText_PropertyType">
+        <gco:CharacterString>Einbindung in verschiedene GIS Viewer oder Applikationen mit WMS/WFS Unterstützung.</gco:CharacterString>
+        <lan:PT_FreeText>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#EN" />
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#DE">Einbindung in verschiedene GIS Viewer oder Applikationen mit WMS/WFS Unterstützung.</lan:LocalisedCharacterString>
+          </lan:textGroup>
+        </lan:PT_FreeText>
+      </mri:purpose>
+      <mri:pointOfContact xlink:show="embed">
+        <cit:CI_Responsibility>
+          <cit:role>
+            <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="partner">partner</cit:CI_RoleCode>
+          </cit:role>
+          <cit:party>
+            <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>Geoinformationszentrum (GIS) Stadt Luzern</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN" />
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Geoinformationszentrum (GIS) Stadt Luzern</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:name>
+              <cit:contactInfo>
+                <cit:CI_Contact>
+                  <cit:phone>
+                    <cit:CI_Telephone>
+                      <cit:number>
+                        <gco:CharacterString>+41 41 208 74 00</gco:CharacterString>
+                      </cit:number>
+                      <cit:numberType>
+                        <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+                      </cit:numberType>
+                    </cit:CI_Telephone>
+                  </cit:phone>
+                  <cit:address>
+                    <cit:CI_Address>
+                      <cit:deliveryPoint>
+                        <gco:CharacterString>6, Industriestrasse</gco:CharacterString>
+                      </cit:deliveryPoint>
+                      <cit:city>
+                        <gco:CharacterString>Luzern</gco:CharacterString>
+                      </cit:city>
+                      <cit:postalCode>
+                        <gco:CharacterString>6005</gco:CharacterString>
+                      </cit:postalCode>
+                      <cit:country>
+                        <gco:CharacterString>CH</gco:CharacterString>
+                      </cit:country>
+                      <cit:electronicMailAddress>
+                        <gco:CharacterString>gis@stadtluzern.ch</gco:CharacterString>
+                      </cit:electronicMailAddress>
+                    </cit:CI_Address>
+                  </cit:address>
+                  <cit:onlineResource>
+                    <cit:CI_OnlineResource>
+                      <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                        <gco:CharacterString>https://www.stadtluzern.ch/politikverwaltung/stadtverwaltung/dienstabteilungenbereiche/7768</gco:CharacterString>
+                        <lan:PT_FreeText>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#DE">https://www.stadtluzern.ch/politikverwaltung/stadtverwaltung/dienstabteilungenbereiche/7768</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                        </lan:PT_FreeText>
+                      </cit:linkage>
+                      <cit:protocol>
+                        <gco:CharacterString>text/html</gco:CharacterString>
+                      </cit:protocol>
+                      <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+                        <gco:CharacterString>Homepage</gco:CharacterString>
+                        <lan:PT_FreeText>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#EN" />
+                          </lan:textGroup>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#DE">Homepage</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                        </lan:PT_FreeText>
+                      </cit:name>
+                    </cit:CI_OnlineResource>
+                  </cit:onlineResource>
+                  <cit:hoursOfService>
+                    <gco:CharacterString>Mo. - Fr. von 8:00 - 17:00 Uhr</gco:CharacterString>
+                  </cit:hoursOfService>
+                </cit:CI_Contact>
+              </cit:contactInfo>
+              <cit:individual>
+                <cit:CI_Individual>
+                  <cit:name>
+                    <gco:CharacterString>gis@stadtluzern.ch</gco:CharacterString>
+                  </cit:name>
+                </cit:CI_Individual>
+              </cit:individual>
+            </che:CHE_CI_Organisation>
+          </cit:party>
+        </cit:CI_Responsibility>
+      </mri:pointOfContact>
+      <mri:pointOfContact xlink:show="embed">
+        <cit:CI_Responsibility>
+          <cit:role>
+            <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="publisher">publisher</cit:CI_RoleCode>
+          </cit:role>
+          <cit:party>
+            <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>Geoinformationszentrum (GIS) Stadt Luzern</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN" />
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Geoinformationszentrum (GIS) Stadt Luzern</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:name>
+              <cit:contactInfo>
+                <cit:CI_Contact>
+                  <cit:phone>
+                    <cit:CI_Telephone>
+                      <cit:number>
+                        <gco:CharacterString>+41 41 208 74 00</gco:CharacterString>
+                      </cit:number>
+                      <cit:numberType>
+                        <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+                      </cit:numberType>
+                    </cit:CI_Telephone>
+                  </cit:phone>
+                  <cit:address>
+                    <cit:CI_Address>
+                      <cit:deliveryPoint>
+                        <gco:CharacterString>6, Industriestrasse</gco:CharacterString>
+                      </cit:deliveryPoint>
+                      <cit:city>
+                        <gco:CharacterString>Luzern</gco:CharacterString>
+                      </cit:city>
+                      <cit:postalCode>
+                        <gco:CharacterString>6005</gco:CharacterString>
+                      </cit:postalCode>
+                      <cit:country>
+                        <gco:CharacterString>CH</gco:CharacterString>
+                      </cit:country>
+                      <cit:electronicMailAddress>
+                        <gco:CharacterString>gis@stadtluzern.ch</gco:CharacterString>
+                      </cit:electronicMailAddress>
+                    </cit:CI_Address>
+                  </cit:address>
+                  <cit:onlineResource>
+                    <cit:CI_OnlineResource>
+                      <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                        <gco:CharacterString>https://www.stadtluzern.ch/politikverwaltung/stadtverwaltung/dienstabteilungenbereiche/7768</gco:CharacterString>
+                        <lan:PT_FreeText>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#DE">https://www.stadtluzern.ch/politikverwaltung/stadtverwaltung/dienstabteilungenbereiche/7768</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                        </lan:PT_FreeText>
+                      </cit:linkage>
+                      <cit:protocol>
+                        <gco:CharacterString>text/html</gco:CharacterString>
+                      </cit:protocol>
+                      <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+                        <gco:CharacterString>Homepage</gco:CharacterString>
+                        <lan:PT_FreeText>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#EN" />
+                          </lan:textGroup>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#DE">Homepage</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                        </lan:PT_FreeText>
+                      </cit:name>
+                    </cit:CI_OnlineResource>
+                  </cit:onlineResource>
+                  <cit:hoursOfService>
+                    <gco:CharacterString>Mo. - Fr. von 8:00 - 17:00 Uhr</gco:CharacterString>
+                  </cit:hoursOfService>
+                </cit:CI_Contact>
+              </cit:contactInfo>
+              <cit:individual>
+                <cit:CI_Individual>
+                  <cit:name>
+                    <gco:CharacterString>gis@stadtluzern.ch</gco:CharacterString>
+                  </cit:name>
+                </cit:CI_Individual>
+              </cit:individual>
+            </che:CHE_CI_Organisation>
+          </cit:party>
+        </cit:CI_Responsibility>
+      </mri:pointOfContact>
+      <mri:extent xlink:show="embed">
+        <gex:EX_Extent>
+          <gex:description xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Stadt Luzern</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN" />
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Stadt Luzern</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </gex:description>
+          <gex:geographicElement>
+            <gex:EX_GeographicBoundingBox>
+              <gex:westBoundLongitude>
+                <gco:Decimal>8.205869750233564</gco:Decimal>
+              </gex:westBoundLongitude>
+              <gex:eastBoundLongitude>
+                <gco:Decimal>8.358712950488526</gco:Decimal>
+              </gex:eastBoundLongitude>
+              <gex:southBoundLatitude>
+                <gco:Decimal>47.02711649581723</gco:Decimal>
+              </gex:southBoundLatitude>
+              <gex:northBoundLatitude>
+                <gco:Decimal>47.08253965253858</gco:Decimal>
+              </gex:northBoundLatitude>
+            </gex:EX_GeographicBoundingBox>
+          </gex:geographicElement>
+        </gex:EX_Extent>
+      </mri:extent>
+      <mri:graphicOverview>
+        <mcc:MD_BrowseGraphic>
+          <mcc:fileName>
+            <gco:CharacterString>https://map.stadtluzern.ch/ogd/vorschaubild/gruenraum/Gruenflaechen/GRUENFLAECHE.jpg</gco:CharacterString>
+          </mcc:fileName>
+          <mcc:fileDescription xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Vorschaubild</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN" />
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Vorschaubild</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mcc:fileDescription>
+          <mcc:fileType>
+            <gco:CharacterString>jpg</gco:CharacterString>
+          </mcc:fileType>
+        </mcc:MD_BrowseGraphic>
+      </mri:graphicOverview>
+      <mri:descriptiveKeywords>
+        <mri:MD_Keywords>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>opendata.swiss</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN" />
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">opendata.swiss</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:thesaurusName>
+            <cit:CI_Citation>
+              <cit:title>
+                <gco:CharacterString>geocat.ch</gco:CharacterString>
+              </cit:title>
+              <cit:date>
+                <cit:CI_Date>
+                  <cit:date>
+                    <gco:Date>2019-02-26</gco:Date>
+                  </cit:date>
+                  <cit:dateType>
+                    <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</cit:CI_DateTypeCode>
+                  </cit:dateType>
+                </cit:CI_Date>
+              </cit:date>
+              <cit:identifier>
+                <mcc:MD_Identifier>
+                  <mcc:code>
+                    <gcx:Anchor xlink:href="https://www.geocat.ch:443/geonetwork/srv/eng/thesaurus.download?ref=local.theme.geocat.ch">geonetwork.thesaurus.local.theme.geocat.ch</gcx:Anchor>
+                  </mcc:code>
+                </mcc:MD_Identifier>
+              </cit:identifier>
+            </cit:CI_Citation>
+          </mri:thesaurusName>
+        </mri:MD_Keywords>
+      </mri:descriptiveKeywords>
+      <mri:descriptiveKeywords>
+        <mri:MD_Keywords>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Grünfläche</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN" />
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Grünfläche</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Vegetation</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN" />
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Vegetation</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Pflanze</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN" />
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Pflanze</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:thesaurusName>
+            <cit:CI_Citation>
+              <cit:title>
+                <gco:CharacterString>GEMET</gco:CharacterString>
+              </cit:title>
+              <cit:date>
+                <cit:CI_Date>
+                  <cit:date>
+                    <gco:Date>2017-12-07</gco:Date>
+                  </cit:date>
+                  <cit:dateType>
+                    <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</cit:CI_DateTypeCode>
+                  </cit:dateType>
+                </cit:CI_Date>
+              </cit:date>
+              <cit:identifier>
+                <mcc:MD_Identifier>
+                  <mcc:code>
+                    <gcx:Anchor xlink:href="https://www.geocat.ch:443/geonetwork/srv/eng/thesaurus.download?ref=external.theme.gemet">geonetwork.thesaurus.external.theme.gemet</gcx:Anchor>
+                  </mcc:code>
+                </mcc:MD_Identifier>
+              </cit:identifier>
+            </cit:CI_Citation>
+          </mri:thesaurusName>
+        </mri:MD_Keywords>
+      </mri:descriptiveKeywords>
+      <srv:serviceType>
+        <gco:ScopedName>OGC:WFS</gco:ScopedName>
+      </srv:serviceType>
+      <srv:couplingType>
+        <srv:SV_CouplingType codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#SV_CouplingType" codeListValue="tight">tight</srv:SV_CouplingType>
+      </srv:couplingType>
+      <srv:containsOperations>
+        <srv:SV_OperationMetadata>
+          <srv:operationName gco:nilReason="missing" />
+          <srv:distributedComputingPlatform gco:nilReason="missing" />
+          <srv:connectPoint gco:nilReason="missing" />
+        </srv:SV_OperationMetadata>
+      </srv:containsOperations>
+    </srv:SV_ServiceIdentification>
+  </mdb:identificationInfo>
+  <mdb:contentInfo>
+    <mrc:MD_CoverageDescription>
+      <mrc:attributeDescription>
+        <gco:RecordType />
+      </mrc:attributeDescription>
+    </mrc:MD_CoverageDescription>
+  </mdb:contentInfo>
+  <mdb:distributionInfo>
+    <mrd:MD_Distribution>
+      <mrd:distributor>
+        <mrd:MD_Distributor>
+          <mrd:distributorContact xlink:show="embed">
+            <cit:CI_Responsibility>
+              <cit:role>
+                <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="partner">partner</cit:CI_RoleCode>
+              </cit:role>
+              <cit:party>
+                <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
+                  <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+                    <gco:CharacterString>Geoinformationszentrum (GIS) Stadt Luzern</gco:CharacterString>
+                    <lan:PT_FreeText>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#EN" />
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#DE">Geoinformationszentrum (GIS) Stadt Luzern</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                    </lan:PT_FreeText>
+                  </cit:name>
+                  <cit:contactInfo>
+                    <cit:CI_Contact>
+                      <cit:phone>
+                        <cit:CI_Telephone>
+                          <cit:number>
+                            <gco:CharacterString>+41 41 208 74 00</gco:CharacterString>
+                          </cit:number>
+                          <cit:numberType>
+                            <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+                          </cit:numberType>
+                        </cit:CI_Telephone>
+                      </cit:phone>
+                      <cit:address>
+                        <cit:CI_Address>
+                          <cit:deliveryPoint>
+                            <gco:CharacterString>6, Industriestrasse</gco:CharacterString>
+                          </cit:deliveryPoint>
+                          <cit:city>
+                            <gco:CharacterString>Luzern</gco:CharacterString>
+                          </cit:city>
+                          <cit:postalCode>
+                            <gco:CharacterString>6005</gco:CharacterString>
+                          </cit:postalCode>
+                          <cit:country>
+                            <gco:CharacterString>CH</gco:CharacterString>
+                          </cit:country>
+                          <cit:electronicMailAddress>
+                            <gco:CharacterString>gis@stadtluzern.ch</gco:CharacterString>
+                          </cit:electronicMailAddress>
+                        </cit:CI_Address>
+                      </cit:address>
+                      <cit:onlineResource>
+                        <cit:CI_OnlineResource>
+                          <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                            <gco:CharacterString>https://www.stadtluzern.ch/politikverwaltung/stadtverwaltung/dienstabteilungenbereiche/7768</gco:CharacterString>
+                            <lan:PT_FreeText>
+                              <lan:textGroup>
+                                <lan:LocalisedCharacterString locale="#DE">https://www.stadtluzern.ch/politikverwaltung/stadtverwaltung/dienstabteilungenbereiche/7768</lan:LocalisedCharacterString>
+                              </lan:textGroup>
+                            </lan:PT_FreeText>
+                          </cit:linkage>
+                          <cit:protocol>
+                            <gco:CharacterString>text/html</gco:CharacterString>
+                          </cit:protocol>
+                          <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+                            <gco:CharacterString>Homepage</gco:CharacterString>
+                            <lan:PT_FreeText>
+                              <lan:textGroup>
+                                <lan:LocalisedCharacterString locale="#EN" />
+                              </lan:textGroup>
+                              <lan:textGroup>
+                                <lan:LocalisedCharacterString locale="#DE">Homepage</lan:LocalisedCharacterString>
+                              </lan:textGroup>
+                            </lan:PT_FreeText>
+                          </cit:name>
+                        </cit:CI_OnlineResource>
+                      </cit:onlineResource>
+                      <cit:hoursOfService>
+                        <gco:CharacterString>Mo. - Fr. von 8:00 - 17:00 Uhr</gco:CharacterString>
+                      </cit:hoursOfService>
+                    </cit:CI_Contact>
+                  </cit:contactInfo>
+                  <cit:individual>
+                    <cit:CI_Individual>
+                      <cit:name>
+                        <gco:CharacterString>gis@stadtluzern.ch</gco:CharacterString>
+                      </cit:name>
+                    </cit:CI_Individual>
+                  </cit:individual>
+                </che:CHE_CI_Organisation>
+              </cit:party>
+            </cit:CI_Responsibility>
+          </mrd:distributorContact>
+        </mrd:MD_Distributor>
+      </mrd:distributor>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
+          <mrd:onLine>
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://www.stadtluzern.ch/politikverwaltung/stadtverwaltung/dienstabteilungenbereiche/7768</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">https://www.stadtluzern.ch/politikverwaltung/stadtverwaltung/dienstabteilungenbereiche/7768</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+              </cit:protocol>
+              <cit:description xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>Stadt Luzern - Geoinformationszentrum (GIS)</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN" />
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Stadt Luzern - Geoinformationszentrum (GIS)</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:description>
+              <cit:function>
+                <cit:CI_OnLineFunctionCode codeListValue="information" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode" />
+              </cit:function>
+            </cit:CI_OnlineResource>
+          </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
+          <mrd:onLine>
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://map.stadtluzern.ch/server/services/OGD/gruenflaechen/MapServer/WFSServer?request=GetCapabilities&amp;service=WFS</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">https://map.stadtluzern.ch/server/services/OGD/gruenflaechen/MapServer/WFSServer?request=GetCapabilities&amp;service=WFS</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>OGC:WFS-http-get-capabilities</gco:CharacterString>
+              </cit:protocol>
+              <cit:description xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>WFS GetCapabilities Grünflächen</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN" />
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">WFS GetCapabilities Grünflächen</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:description>
+              <cit:function>
+                <cit:CI_OnLineFunctionCode codeListValue="download" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode" />
+              </cit:function>
+            </cit:CI_OnlineResource>
+          </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+    </mrd:MD_Distribution>
+  </mdb:distributionInfo>
+</che:CHE_MD_Metadata>
+
