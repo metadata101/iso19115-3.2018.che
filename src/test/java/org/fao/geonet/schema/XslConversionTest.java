@@ -120,27 +120,6 @@ public class XslConversionTest {
         assertStrictByteEquality("veterinarians-19115-3.che.xml", veterinariansIso19115che, true);
     }
 
-    private void isValid(Element xmlIso19115che) throws SAXException, IOException, URISyntaxException {
-        SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-        Source schemaFile = new StreamSource(getResourceInsideSchema("schema/standards.iso.org/19115/-3/eCH-0271-1-0-0.xsd").toString());
-
-        Schema schema = factory.newSchema(schemaFile);
-        Validator validator = schema.newValidator();
-        validator.validate(new StreamSource(new ByteArrayInputStream(Xml.getString(xmlIso19115che).getBytes(StandardCharsets.UTF_8))));
-
-        List<?> namespaces = xmlIso19115che.getAdditionalNamespaces();
-
-        assertNamespacePresent(namespaces, "http://standards.iso.org/iso/19115/-3/md1/2.0", "md1");
-        assertNamespacePresent(namespaces, "http://standards.iso.org/iso/19115/-3/md2/2.0", "md2");
-        assertNamespacePresent(namespaces, "http://standards.iso.org/iso/19115/-3/mda/2.0", "mda");
-        assertNamespacePresent(namespaces, "http://standards.iso.org/iso/19115/-3/mds/2.0", "mds");
-        assertNamespacePresent(namespaces, "http://standards.iso.org/iso/19115/-3/mdt/2.0", "mdt");
-    }
-
-    private void isGNValid(Element amphibiansIso19115che) throws Exception {
-        Xml.validate(Path.of(getClass().getClassLoader().getResource("schema/standards.iso.org/19115/-3/eCH-0271-1-0-0.xsd").toURI()), amphibiansIso19115che);
-    }
-
     @Test
     public void convertResponsibleParty() throws Exception {
         Path xslFile = getResourceInsideSchema("convert/ISO19139/mapping/CI_ResponsibleParty.xsl");
@@ -188,5 +167,26 @@ public class XslConversionTest {
             actual = xmlOutputter.outputString(element);
         }
         assertArrayEquals(expected, actual.getBytes(StandardCharsets.UTF_8));
+    }
+
+    private void isValid(Element xmlIso19115che) throws SAXException, IOException, URISyntaxException {
+        SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+        Source schemaFile = new StreamSource(getResourceInsideSchema("schema/standards.iso.org/19115/-3/eCH-0271-1-0-0.xsd").toString());
+
+        Schema schema = factory.newSchema(schemaFile);
+        Validator validator = schema.newValidator();
+        validator.validate(new StreamSource(new ByteArrayInputStream(Xml.getString(xmlIso19115che).getBytes(StandardCharsets.UTF_8))));
+
+        List<?> namespaces = xmlIso19115che.getAdditionalNamespaces();
+
+        assertNamespacePresent(namespaces, "http://standards.iso.org/iso/19115/-3/md1/2.0", "md1");
+        assertNamespacePresent(namespaces, "http://standards.iso.org/iso/19115/-3/md2/2.0", "md2");
+        assertNamespacePresent(namespaces, "http://standards.iso.org/iso/19115/-3/mda/2.0", "mda");
+        assertNamespacePresent(namespaces, "http://standards.iso.org/iso/19115/-3/mds/2.0", "mds");
+        assertNamespacePresent(namespaces, "http://standards.iso.org/iso/19115/-3/mdt/2.0", "mdt");
+    }
+
+    private void isGNValid(Element amphibiansIso19115che) throws Exception {
+        Xml.validate(Path.of(getClass().getClassLoader().getResource("schema/standards.iso.org/19115/-3/eCH-0271-1-0-0.xsd").toURI()), amphibiansIso19115che);
     }
 }
