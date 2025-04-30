@@ -248,6 +248,7 @@
     <xsl:include href="mapping/CHE_MD_MaintenanceInformation.xsl"/>
     <xsl:include href="mapping/CHE_MD_discarded.xsl"/>
     <xsl:include href="mapping/CHE_MD_SubTopicCategoryCode.xsl" />
+    <xsl:include href="mapping/centrePoint.xsl" />
 
 
 
