@@ -105,7 +105,7 @@
 
     <xsl:template match="gmd:CI_Citation/gmd:editionDate" mode="from19139to19115-3.2018">
         <cit:editionDate>
-            <xsl:call-template name="writeDateTime"/>
+            <gco:DateTime><xsl:value-of select="concat(., 'T00:00:00')" /></gco:DateTime>
         </cit:editionDate>
     </xsl:template>
 
