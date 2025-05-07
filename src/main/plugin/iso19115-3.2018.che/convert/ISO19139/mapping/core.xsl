@@ -374,7 +374,7 @@
           <xsl:apply-templates select="gmd:resourceConstraints" mode="from19139to19115-3.2018"/>
           <xsl:apply-templates select="gmd:aggregationInfo" mode="from19139to19115-3.2018"/>
           <xsl:call-template name="collectiveTitle"/>
-          <xsl:apply-templates select="gmd:language" mode="from19139to19115-3.2018"/>
+          <xsl:apply-templates select="gmd:language[1]" mode="from19139to19115-3.2018"/>
           <xsl:apply-templates select="gmd:characterSet" mode="from19139to19115-3.2018"/>
           <xsl:call-template name="writeCharacterStringElement">
             <xsl:with-param name="elementName" select="'mri:environmentDescription'"/>
