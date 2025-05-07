@@ -171,7 +171,7 @@ public class XslConversionTest {
 
     private void isValid(Element xmlIso19115che) throws SAXException, IOException, URISyntaxException {
         SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-        Source schemaFile = new StreamSource(getResourceInsideSchema("schema/standards.iso.org/19115/-3/eCH-0271-1-0-0.xsd").toString());
+        Source schemaFile = new StreamSource(getResourceInsideSchema("schema.xsd").toString());
 
         Schema schema = factory.newSchema(schemaFile);
         Validator validator = schema.newValidator();
