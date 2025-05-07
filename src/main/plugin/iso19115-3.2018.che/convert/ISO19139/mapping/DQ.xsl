@@ -97,7 +97,6 @@
                         </xsl:call-template>
                       </mdq:DQ_FullInspection>
                     </mdq:evaluationMethod>
-                    <xsl:apply-templates select="gmd:result" mode="from19139to19115-3.2018"/>
                   </xsl:if>
                   <!-- gmd:result uses default templates -->
                   <xsl:apply-templates select="gmd:result" mode="from19139to19115-3.2018"/>
