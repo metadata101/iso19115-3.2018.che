@@ -140,9 +140,8 @@
                                           $dataQualityScopeObject//gmx:MX_ScopeCode/@codeListValue"/>
                 </xsl:call-template>
                 <xsl:for-each select="$dataQualityScopeObject//gmd:EX_Extent">
-                  <mcc:extent>
-                    <xsl:apply-templates select="." mode="from19139to19115-3.2018"/>
-                  </mcc:extent>
+                  <xsl:message>gml needs a unique id on MultiSurface for example; duplicating id is not possible; gmd:DQ_DataQuality's scope has not been replicated at transformation time.</xsl:message>
+                  <mcc:extent gco:nilReason="other: gml needs a unique id on MultiSurface for example; duplicating id is not possible; gmd:DQ_DataQuality's scope has not been replicated at transformation time." />
                 </xsl:for-each>
                 <xsl:if test="$dataQualityScopeObject//gmd:MD_ScopeDescription">
                   <mcc:levelDescription>

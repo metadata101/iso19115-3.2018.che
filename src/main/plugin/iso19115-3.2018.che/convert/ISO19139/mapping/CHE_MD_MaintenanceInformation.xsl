@@ -6,6 +6,7 @@
                 xmlns:gmd="http://www.isotc211.org/2005/gmd"
                 xmlns:che="http://geocat.ch/che"
                 xmlns:oldche="http://www.geocat.ch/2008/che"
+                xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
                 exclude-result-prefixes="#all">
 
     <xsl:template match="oldche:CHE_MD_MaintenanceInformation" mode="from19139to19115-3.2018">
@@ -19,7 +20,14 @@
 
             <xsl:for-each select="gmd:dateOfNextUpdate">
                 <mmi:maintenanceDate>
-                    <xsl:apply-templates  select="./*" mode="from19139to19115-3.2018"/>
+                    <cit:CI_Date>
+                        <cit:date>
+                            <xsl:apply-templates  select="./*" mode="from19139to19115-3.2018"/>
+                        </cit:date>
+                        <cit:dateType>
+                            <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="nextUpdate ">nextUpdate</cit:CI_DateTypeCode>
+                        </cit:dateType>
+                    </cit:CI_Date>
                 </mmi:maintenanceDate>
             </xsl:for-each>
 
