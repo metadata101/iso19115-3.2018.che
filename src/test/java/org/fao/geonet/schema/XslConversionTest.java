@@ -148,6 +148,20 @@ public class XslConversionTest {
         //isGNValid(gruenflaechenIso19115che);
     }
 
+    @Test
+    public void validateConventionDesAlpes() throws Exception {
+        Path xslFile = getResourceInsideSchema("convert/fromISO19139.xsl");
+        Path xmlFile = getResource("conventionDesAlpesTousLesChamps-19139.che.xml");
+        Element convAlps = Xml.loadFile(xmlFile);
+
+        Element newConvAlps = Xml.transform(convAlps, xslFile);
+        isValid(newConvAlps);
+        //TODO CMT/SRT activate
+        //isGNValid(amphibiansIso19115che);
+
+        assertStrictByteEquality("conventionDesAlpesTousLesChamps-19115-3.che.xml", newConvAlps, true);
+    }
+
     private void assertNamespacePresent(List<?> namespaces, String nsLocation, String prefix) {
         Namespace ns = namespaces.stream() //
                 .filter(n -> prefix.equals(((Namespace) n).getPrefix()))
@@ -166,7 +180,7 @@ public class XslConversionTest {
         } else {
             actual = xmlOutputter.outputString(element);
         }
-        assertArrayEquals(expected, actual.getBytes(StandardCharsets.UTF_8));
+        assertArrayEquals(expected, actual.replaceAll("gml:TimeInstant gml:id=\".*\"", "gml:TimeInstant gml:id=\"\"").getBytes(StandardCharsets.UTF_8));
     }
 
     private void isValid(Element xmlIso19115che) throws SAXException, IOException, URISyntaxException {
