@@ -72,7 +72,6 @@
       "address":"6, Industriestrasse, Luzern, 6005, CH"
       
       }</contactForResource>
-  <OrgForResourceObject type="object">{"default":"Geoinformationszentrum (GIS) Stadt Luzern", "langger":"Geoinformationszentrum (GIS) Stadt Luzern"}</OrgForResourceObject>
   <publisherOrgForResourceObject type="object">{"default":"Geoinformationszentrum (GIS) Stadt Luzern", "langger":"Geoinformationszentrum (GIS) Stadt Luzern"}</publisherOrgForResourceObject>
   <contactForResource type="object">{
       
