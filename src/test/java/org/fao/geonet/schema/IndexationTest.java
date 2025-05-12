@@ -67,6 +67,17 @@ public class IndexationTest {
     }
 
     @Test
+    public void indexconventionDesAlpesTousLesChamps() throws Exception {
+        TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
+        XslUtil.IS_INSPIRE_ENABLED = false;
+        String actual = indexResource("conventionDesAlpesTousLesChamps-19115-3.che.xml");
+
+        String expected = Files.readString(getResource("conventionDesAlpesTousLesChamps-index.xml"));
+
+        XmlAssert.assertThat(actual).isEqualTo(expected);
+    }
+
+    @Test
     public void useIncorrectTimeZone() throws Exception {
         TimeZone.setDefault(TimeZone.getTimeZone("GMT+2"));
         XslUtil.IS_INSPIRE_ENABLED = true;
