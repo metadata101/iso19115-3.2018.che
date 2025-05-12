@@ -1208,7 +1208,7 @@
             ]
 
             <xsl:variable name="processor"
-                          select="mrl:processor/*[.//cit:CI_Organisation/cit:name != '']"/>
+                          select="mrl:processor/*[.//che:CHE_CI_Organisation/cit:name != '']"/>
             <xsl:if test="count($processor) > 0">
               ,"processor": [
               <xsl:for-each select="$processor">
@@ -1217,7 +1217,7 @@
                 {
                   "organisationObject": <xsl:value-of
                 select="gn-fn-index:add-multilingual-field(
-                                            'description', .//cit:CI_Organisation/cit:name,
+                                            'description', .//che:CHE_CI_Organisation/cit:name,
                                              $allLanguages, true())"/>
                 <xsl:if test="$individualName != ''">
                   ,"individual":"<xsl:value-of select="util:escapeForJson($individualName)"/>"
@@ -1230,8 +1230,8 @@
             }</processSteps>
         </xsl:for-each>
 
-        <xsl:for-each-group select="mrl:processStep//mrl:processor[.//cit:CI_Organisation/cit:name != '']"
-                            group-by=".//cit:CI_Organisation/cit:name/gco:CharacterString">
+        <xsl:for-each-group select="mrl:processStep//mrl:processor[.//che:CHE_CI_Organisation/cit:name != '']"
+                            group-by=".//che:CHE_CI_Organisation/cit:name/gco:CharacterString">
           <xsl:apply-templates mode="index-contact"
                                select=".">
             <xsl:with-param name="fieldSuffix" select="'ForProcessing'"/>
@@ -1470,13 +1470,13 @@
 
     <xsl:if test="normalize-space($organisationName) != ''">
       <xsl:if test="count(preceding-sibling::*[name() = $elementName
-                        and .//cit:CI_Organisation/cit:name/gco:CharacterString = $organisationName/gco:CharacterString]) = 0">
+                        and .//che:CHE_CI_Organisation/cit:name/gco:CharacterString = $organisationName/gco:CharacterString]) = 0">
         <xsl:copy-of select="gn-fn-index:add-multilingual-field(
                               $orgField, $organisationName, $languages)"/>
       </xsl:if>
 
       <xsl:if test="count(preceding-sibling::*[name() = $elementName
-                      and .//cit:CI_Organisation/cit:name/gco:CharacterString = $organisationName/gco:CharacterString
+                      and .//che:CHE_CI_Organisation/cit:name/gco:CharacterString = $organisationName/gco:CharacterString
                       and .//cit:role/*/@codeListValue = $role]) = 0">
         <xsl:copy-of select="gn-fn-index:add-multilingual-field(
                               $roleField, $organisationName, $languages)"/>
