@@ -23,6 +23,8 @@
 package org.fao.geonet.schema;
 
 import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
@@ -61,6 +63,8 @@ import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
 public class XslConversionTest {
+
+    private static boolean generateExpectedFile = false;
 
     @BeforeClass
     public static void initSaxon() {
@@ -162,6 +166,22 @@ public class XslConversionTest {
         assertStrictByteEquality("conventionDesAlpesTousLesChamps-19115-3.che.xml", newConvAlps, true);
     }
 
+    @Test
+    public void validateTrees() throws Exception {
+        Path xslFile = getResourceInsideSchema("convert/fromISO19139.xsl");
+        Path xmlFile = getResource("trees-19139.che.xml");
+        Element convAlps = Xml.loadFile(xmlFile);
+
+        Element newConvAlps = Xml.transform(convAlps, xslFile);
+        isValid(newConvAlps);
+        //TODO CMT/SRT activate
+        //isGNValid(amphibiansIso19115che);
+
+        assertStrictByteEquality("trees-19115-3.che.xml", newConvAlps, true);
+    }
+
+
+
     private void assertNamespacePresent(List<?> namespaces, String nsLocation, String prefix) {
         Namespace ns = namespaces.stream() //
                 .filter(n -> prefix.equals(((Namespace) n).getPrefix()))
@@ -171,8 +191,7 @@ public class XslConversionTest {
         assertEquals(nsLocation, ns.getURI());
     }
 
-    private void assertStrictByteEquality(String expectedFileName, Element element, boolean requireXmlHeader) throws IOException, URISyntaxException {
-        byte[] expected = Files.readAllBytes(getResource(expectedFileName));
+    private String assertStrictByteEquality(String expectedFileName, Element element, boolean requireXmlHeader) throws IOException, URISyntaxException {
         XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
         String actual;
         if (requireXmlHeader) {
@@ -180,7 +199,18 @@ public class XslConversionTest {
         } else {
             actual = xmlOutputter.outputString(element);
         }
-        assertArrayEquals(expected, actual.replaceAll("gml:TimeInstant gml:id=\".*\"", "gml:TimeInstant gml:id=\"\"").getBytes(StandardCharsets.UTF_8));
+        byte[] expected;
+        if (generateExpectedFile) {
+            FileWriter fw = new FileWriter(new File("/home/cmangeat/sources/war-overlay/iso19115-3.2018.che/src/test/resources/" + expectedFileName));
+            fw.write(actual.replaceAll("gml:TimeInstant gml:id=\".*\"", "gml:TimeInstant gml:id=\"\""));
+            fw.flush();
+            expected = actual.getBytes(StandardCharsets.UTF_8);
+            assertArrayEquals(expected, actual.getBytes(StandardCharsets.UTF_8));
+        } else {
+            expected = Files.readAllBytes(getResource(expectedFileName));
+            assertArrayEquals(expected, actual.replaceAll("gml:TimeInstant gml:id=\".*\"", "gml:TimeInstant gml:id=\"\"").getBytes(StandardCharsets.UTF_8));
+        }
+        return actual;
     }
 
     private void isValid(Element xmlIso19115che) throws SAXException, IOException, URISyntaxException {
