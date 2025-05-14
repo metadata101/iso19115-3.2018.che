@@ -227,7 +227,7 @@
         </xsl:when>
         <xsl:when
           test="ancestor-or-self::gmd:MD_CoverageDescription or ancestor-or-self::gmi:MI_CoverageDescription
-          or ancestor-or-self::gmd:MD_FeatureCatalogueDescription or ancestor-or-self::gmd:MD_ImageDescription">
+          or ancestor-or-self::oldche:CHE_MD_FeatureCatalogueDescription or ancestor-or-self::gmd:MD_ImageDescription">
           <xsl:text>mrc</xsl:text>
         </xsl:when>
         <xsl:when test="ancestor-or-self::gmi:QE_CoverageResult">
