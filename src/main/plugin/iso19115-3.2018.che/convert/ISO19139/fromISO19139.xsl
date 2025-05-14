@@ -251,6 +251,7 @@
     <xsl:include href="mapping/centrePoint.xsl" />
     <xsl:include href="mapping/InsideLegislationConstraints.xsl" />
     <xsl:include href="mapping/MD_ApplicationSchemaInformation.xsl" />
+    <xsl:include href="mapping/CHE_MD_FeatureCatalogueDescription.xsl" />
 
 
     <!-- Depending on the function of online source in ISO19139,

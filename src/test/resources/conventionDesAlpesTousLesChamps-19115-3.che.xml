@@ -2128,11 +2128,84 @@
     </che:CHE_MD_DataIdentification>
   </mdb:identificationInfo>
   <mdb:contentInfo>
-    <mrc:MD_CoverageDescription>
-      <mrc:attributeDescription>
-        <gco:RecordType />
-      </mrc:attributeDescription>
-    </mrc:MD_CoverageDescription>
+    <mrc:MD_FeatureCatalogue>
+      <mrc:featureCatalogue>
+        <gfc:FC_FeatureCatalogue>
+          <cat:name xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Alpenkonvention (INTERLIS 2)</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Alpenkonvention (INTERLIS 2)</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cat:name>
+          <cat:scope gco:nilReason="missing" />
+          <cat:versionNumber gco:nilReason="missing" />
+          <cat:versionDate gco:nilReason="missing" />
+          <gfc:producer gco:nilReason="missing" />
+        </gfc:FC_FeatureCatalogue>
+      </mrc:featureCatalogue>
+    </mrc:MD_FeatureCatalogue>
+  </mdb:contentInfo>
+  <mdb:contentInfo>
+    <mrc:MD_FeatureCatalogue>
+      <mrc:featureCatalogue>
+        <gfc:FC_FeatureCatalogue>
+          <cat:name xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Alpenkonvention (INTERLIS 1)</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Alpenkonvention (INTERLIS 1)</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cat:name>
+          <cat:scope gco:nilReason="missing" />
+          <cat:versionNumber gco:nilReason="missing" />
+          <cat:versionDate gco:nilReason="missing" />
+          <gfc:producer gco:nilReason="missing" />
+        </gfc:FC_FeatureCatalogue>
+      </mrc:featureCatalogue>
+    </mrc:MD_FeatureCatalogue>
+  </mdb:contentInfo>
+  <mdb:contentInfo>
+    <mrc:MD_FeatureCatalogue>
+      <mrc:featureCatalogue>
+        <gfc:FC_FeatureCatalogue>
+          <cat:name xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Alpenkonvention (UML)</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Alpenkonvention (UML)</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cat:name>
+          <cat:scope gco:nilReason="missing" />
+          <cat:versionNumber gco:nilReason="missing" />
+          <cat:versionDate gco:nilReason="missing" />
+          <gfc:producer gco:nilReason="missing" />
+        </gfc:FC_FeatureCatalogue>
+      </mrc:featureCatalogue>
+    </mrc:MD_FeatureCatalogue>
+  </mdb:contentInfo>
+  <mdb:contentInfo>
+    <mrc:MD_FeatureCatalogue>
+      <mrc:featureCatalogue>
+        <gfc:FC_FeatureCatalogue>
+          <cat:name xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Alpenkonvention (Objektkatalog)</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Alpenkonvention (Objektkatalog)</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cat:name>
+          <cat:scope gco:nilReason="missing" />
+          <cat:versionNumber gco:nilReason="missing" />
+          <cat:versionDate gco:nilReason="missing" />
+          <gfc:producer gco:nilReason="missing" />
+        </gfc:FC_FeatureCatalogue>
+      </mrc:featureCatalogue>
+    </mrc:MD_FeatureCatalogue>
   </mdb:contentInfo>
   <mdb:distributionInfo>
     <mrd:MD_Distribution>

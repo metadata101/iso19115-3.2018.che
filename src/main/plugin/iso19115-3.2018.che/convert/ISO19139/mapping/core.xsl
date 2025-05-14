@@ -14,7 +14,7 @@
   xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0"
   xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:mai="http://standards.iso.org/iso/19115/-3/mai/1.0"
   xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:gml="http://www.opengis.net/gml/3.2"
-  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:che="http://geocat.ch/che" exclude-result-prefixes="#all">
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:che="http://geocat.ch/che" xmlns:oldche="http://www.geocat.ch/2008/che" exclude-result-prefixes="#all">
   <xsl:import href="../utility/multiLingualCharacterStrings.xsl"/>
   <xsl:import href="../utility/dateTime.xsl"/>
   <!-- Define if parent identifier should be defined using a uuidref
@@ -410,7 +410,7 @@
       </xsl:for-each>
     </mdb:identificationInfo>
   </xsl:template>
-  <xsl:template match="gmd:contentInfo[not(gmd:MD_FeatureCatalogueDescription) and
+  <xsl:template match="gmd:contentInfo[not(oldche:CHE_MD_FeatureCatalogueDescription) and
                                            not(gmd:MD_ImageDescription)]" mode="from19139to19115-3.2018">
     <xsl:if test="not(preceding-sibling::gmd:contentInfo)">
       <!-- ********************************************************************** -->
@@ -451,12 +451,12 @@
     </xsl:if>
   </xsl:template>
   <!-- transform contentInfo sections with Feature Catalogues -->
-  <xsl:template match="gmd:contentInfo[gmd:MD_FeatureCatalogueDescription] | gmd:contentInfo[gmd:MD_ImageDescription]" mode="from19139to19115-3.2018">
+  <xsl:template match="gmd:contentInfo[oldche:CHE_MD_FeatureCatalogueDescription] | gmd:contentInfo[gmd:MD_ImageDescription]" mode="from19139to19115-3.2018">
     <xsl:element name="mdb:contentInfo">
       <xsl:apply-templates mode="from19139to19115-3.2018"/>
     </xsl:element>
   </xsl:template>
-  <xsl:template match="//gmd:MD_FeatureCatalogueDescription/gmd:featureTypes" mode="from19139to19115-3.2018">
+  <xsl:template match="//oldche:CHE_MD_FeatureCatalogueDescription/gmd:featureTypes" mode="from19139to19115-3.2018">
     <mrc:featureTypes>
       <mrc:MD_FeatureTypeInfo>
         <mrc:featureTypeName>
