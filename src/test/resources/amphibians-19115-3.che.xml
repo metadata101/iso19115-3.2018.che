@@ -63,7 +63,7 @@
               <cit:address>
                 <cit:CI_Address>
                   <cit:deliveryPoint>
-                    <gco:CharacterString>191, Reckenholzstrasse</gco:CharacterString>
+                    <gco:CharacterString>Reckenholzstrasse 191</gco:CharacterString>
                   </cit:deliveryPoint>
                   <cit:city>
                     <gco:CharacterString>Zürich</gco:CharacterString>
@@ -333,7 +333,7 @@ For details, see the attached data description.</lan:LocalisedCharacterString>
                   <cit:address>
                     <cit:CI_Address>
                       <cit:deliveryPoint>
-                        <gco:CharacterString>191, Reckenholzstrasse</gco:CharacterString>
+                        <gco:CharacterString>Reckenholzstrasse 191</gco:CharacterString>
                       </cit:deliveryPoint>
                       <cit:city>
                         <gco:CharacterString>Zürich</gco:CharacterString>
@@ -439,7 +439,7 @@ For details, see the attached data description.</lan:LocalisedCharacterString>
                   <cit:address>
                     <cit:CI_Address>
                       <cit:deliveryPoint>
-                        <gco:CharacterString>51, Belleveaus</gco:CharacterString>
+                        <gco:CharacterString>Belleveaus 51</gco:CharacterString>
                       </cit:deliveryPoint>
                       <cit:city>
                         <gco:CharacterString>Neuchâtel</gco:CharacterString>
@@ -1116,7 +1116,7 @@ For details, see the attached data description.</lan:LocalisedCharacterString>
                       <cit:address>
                         <cit:CI_Address>
                           <cit:deliveryPoint>
-                            <gco:CharacterString>191, Reckenholzstrasse</gco:CharacterString>
+                            <gco:CharacterString>Reckenholzstrasse 191</gco:CharacterString>
                           </cit:deliveryPoint>
                           <cit:city>
                             <gco:CharacterString>Zürich</gco:CharacterString>
