@@ -36,7 +36,7 @@
       "individual":"",
       "position":"GIS-Koordination",
       "phone":"",
-      "address":"191, Reckenholzstrasse, Z\u00FCrich, 8046, CH"
+      "address":"Reckenholzstrasse 191, Z\u00FCrich, 8046, CH"
       
       }</contact>
   <cl_resourceScope type="object">{"key":"dataset","default":"mcc:MD_ScopeCode--dataset--ger","langger":"mcc:MD_ScopeCode--dataset--ger","langfre":"mcc:MD_ScopeCode--dataset--fre","langita":"mcc:MD_ScopeCode--dataset--ita","langeng":"mcc:MD_ScopeCode--dataset--eng","langroh":"mcc:MD_ScopeCode--dataset--roh","langger":"mcc:MD_ScopeCode--dataset--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_ScopeCode","text":"dataset"}</cl_resourceScope>
@@ -85,7 +85,7 @@
       "individual":"",
       "position":"GIS-Koordination",
       "phone":"",
-      "address":"191, Reckenholzstrasse, Z\u00FCrich, 8046, CH"
+      "address":"Reckenholzstrasse 191, Z\u00FCrich, 8046, CH"
       
       }</contactForResource>
   <OrgForResourceObject type="object">{"default":"Info_Fauna_Karch", "langger":"Info_Fauna_Karch", "langfre":"Information_Fauna_Karch", "langita":"Informatione_Fauna_Karch", "langeng":"Info_Fauna_Karch"}</OrgForResourceObject>
@@ -105,7 +105,7 @@
       "individual":"",
       "position":"Information Karch Amphibien",
       "phone":"",
-      "address":"51, Belleveaus, Neuch\u00E2tel, 2000, CH"
+      "address":"Belleveaus 51, Neuch\u00E2tel, 2000, CH"
       
       }</contactForResource>
   <OrgForResourceObject type="object">{"default":"Bundesamt f\u00FCr Umwelt \/ Abteilung Biodiversit\u00E4t und Landschaft", "langger":"Bundesamt f\u00FCr Umwelt \/ Abteilung Biodiversit\u00E4t und Landschaft", "langfre":"Office f\u00E9d\u00E9ral de l'environnement \/ Division Biodiversit\u00E9 et paysage", "langita":"Ufficio federale dell'ambiente \/ Divisione Biodiversit\u00E0 e paesaggio", "langeng":"Federal Office for the Environment \/ Biodiversity and Landscape Division", "langroh":"Bundesamt f\u00FCr Umwelt"}</OrgForResourceObject>
@@ -442,7 +442,7 @@
       "individual":"",
       "position":"GIS-Koordination",
       "phone":"",
-      "address":"191, Reckenholzstrasse, Z\u00FCrich, 8046, CH"
+      "address":"Reckenholzstrasse 191, Z\u00FCrich, 8046, CH"
       
       }</contactForDistribution>
   <OrgForDistributionObject type="object">{"default":"Bundesamt f\u00FCr Umwelt \/ Abteilung Biodiversit\u00E4t und Landschaft", "langger":"Bundesamt f\u00FCr Umwelt \/ Abteilung Biodiversit\u00E4t und Landschaft", "langfre":"Office f\u00E9d\u00E9ral de l'environnement \/ Division Biodiversit\u00E9 et paysage", "langita":"Ufficio federale dell'ambiente \/ Divisione Biodiversit\u00E0 e paesaggio", "langeng":"Federal Office for the Environment \/ Biodiversity and Landscape Division", "langroh":"Bundesamt f\u00FCr Umwelt"}</OrgForDistributionObject>

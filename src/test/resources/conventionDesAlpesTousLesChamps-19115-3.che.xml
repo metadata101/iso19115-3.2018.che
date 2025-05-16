@@ -80,7 +80,7 @@
               <cit:address>
                 <cit:CI_Address>
                   <cit:deliveryPoint>
-                    <gco:CharacterString>264, Seftigenstrasse</gco:CharacterString>
+                    <gco:CharacterString>Seftigenstrasse 264</gco:CharacterString>
                   </cit:deliveryPoint>
                   <cit:city>
                     <gco:CharacterString>Wabern</gco:CharacterString>
@@ -411,7 +411,7 @@
                           <cit:address>
                             <cit:CI_Address>
                               <cit:deliveryPoint>
-                                <gco:CharacterString>264, Seftigenstrasse</gco:CharacterString>
+                                <gco:CharacterString>Seftigenstrasse 264</gco:CharacterString>
                               </cit:deliveryPoint>
                               <cit:city>
                                 <gco:CharacterString>Wabern</gco:CharacterString>
@@ -821,7 +821,7 @@
                               <cit:address>
                                 <cit:CI_Address>
                                   <cit:deliveryPoint>
-                                    <gco:CharacterString>264, Seftigenstrasse</gco:CharacterString>
+                                    <gco:CharacterString>Seftigenstrasse 264</gco:CharacterString>
                                   </cit:deliveryPoint>
                                   <cit:city>
                                     <gco:CharacterString>Wabern</gco:CharacterString>
@@ -1058,7 +1058,7 @@
                   <cit:address>
                     <cit:CI_Address>
                       <cit:deliveryPoint>
-                        <gco:CharacterString>2, Peter-Kaiser-Platz</gco:CharacterString>
+                        <gco:CharacterString>Peter-Kaiser-Platz 2</gco:CharacterString>
                       </cit:deliveryPoint>
                       <cit:city>
                         <gco:CharacterString>Vaduz</gco:CharacterString>
@@ -1472,7 +1472,7 @@
                       <cit:address>
                         <cit:CI_Address>
                           <cit:deliveryPoint>
-                            <gco:CharacterString>7, Gufergasse</gco:CharacterString>
+                            <gco:CharacterString>Gufergasse 7</gco:CharacterString>
                           </cit:deliveryPoint>
                           <cit:city>
                             <gco:CharacterString>Frutigen</gco:CharacterString>
@@ -1766,7 +1766,7 @@
                           <cit:address>
                             <cit:CI_Address>
                               <cit:deliveryPoint>
-                                <gco:CharacterString>264, Seftigenstrasse</gco:CharacterString>
+                                <gco:CharacterString>Seftigenstrasse 264</gco:CharacterString>
                               </cit:deliveryPoint>
                               <cit:city>
                                 <gco:CharacterString>Wabern</gco:CharacterString>
@@ -3138,7 +3138,7 @@
                       <cit:address>
                         <cit:CI_Address>
                           <cit:deliveryPoint>
-                            <gco:CharacterString>264, Seftigenstrasse</gco:CharacterString>
+                            <gco:CharacterString>Seftigenstrasse 264</gco:CharacterString>
                           </cit:deliveryPoint>
                           <cit:city>
                             <gco:CharacterString>Wabern</gco:CharacterString>
@@ -3518,7 +3518,7 @@
                   <cit:address>
                     <cit:CI_Address>
                       <cit:deliveryPoint>
-                        <gco:CharacterString>264, Seftigenstrasse</gco:CharacterString>
+                        <gco:CharacterString>Seftigenstrasse 264</gco:CharacterString>
                       </cit:deliveryPoint>
                       <cit:city>
                         <gco:CharacterString>Wabern</gco:CharacterString>

@@ -67,7 +67,7 @@
               <cit:address>
                 <cit:CI_Address>
                   <cit:deliveryPoint>
-                    <gco:CharacterString>31, Rte de Grangeneuve</gco:CharacterString>
+                    <gco:CharacterString>Rte de Grangeneuve 31</gco:CharacterString>
                   </cit:deliveryPoint>
                   <cit:city>
                     <gco:CharacterString>Posieux</gco:CharacterString>
