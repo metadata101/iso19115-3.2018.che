@@ -43,8 +43,8 @@
     <import namespace="http://standards.iso.org/iso/19115/-3/mas/1.0" schemaLocation="mas/1.0/mas.xsd"/>
     <import namespace="http://standards.iso.org/iso/19115/-3/mcc/1.0" schemaLocation="mcc/1.0/mcc.xsd"/>
     <import namespace="http://standards.iso.org/iso/19115/-3/mco/1.0" schemaLocation="mco/1.0/mco.xsd"/>
-	<import namespace="http://standards.iso.org/iso/19115/-3/md1/2.0" schemaLocation="md1/2.0/md1.xsd "/>  
-    <import namespace="http://standards.iso.org/iso/19115/-3/md2/2.0" schemaLocation="md2/2.0/md2.xsd "/>
+	<import namespace="http://standards.iso.org/iso/19115/-3/md1/2.0" schemaLocation="md1/2.0/md1.xsd"/>
+    <import namespace="http://standards.iso.org/iso/19115/-3/md2/2.0" schemaLocation="md2/2.0/md2.xsd"/>
     <import namespace="http://standards.iso.org/iso/19115/-3/mda/2.0" schemaLocation="mda/2.0/mda.xsd"/>
     <import namespace="http://standards.iso.org/iso/19115/-3/mdb/2.0" schemaLocation="mdb/2.0/mdb.xsd"/>
 	<import namespace="http://standards.iso.org/iso/19115/-3/mds/2.0" schemaLocation="mds/2.0/mds.xsd"/>
