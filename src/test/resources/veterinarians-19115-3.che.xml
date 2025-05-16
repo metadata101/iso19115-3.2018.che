@@ -57,7 +57,7 @@
               <cit:address>
                 <cit:CI_Address>
                   <cit:deliveryPoint>
-                    <gco:CharacterString>4, Impasse de la Colline</gco:CharacterString>
+                    <gco:CharacterString>Impasse de la Colline 4</gco:CharacterString>
                   </cit:deliveryPoint>
                   <cit:city>
                     <gco:CharacterString>Givisiez</gco:CharacterString>
@@ -236,7 +236,7 @@
                   <cit:address>
                     <cit:CI_Address>
                       <cit:deliveryPoint>
-                        <gco:CharacterString>4, Impasse de la Colline</gco:CharacterString>
+                        <gco:CharacterString>Impasse de la Colline 4</gco:CharacterString>
                       </cit:deliveryPoint>
                       <cit:city>
                         <gco:CharacterString>Givisiez</gco:CharacterString>

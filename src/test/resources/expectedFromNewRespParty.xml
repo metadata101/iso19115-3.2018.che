@@ -46,7 +46,7 @@
           <cit:address>
             <cit:CI_Address>
               <cit:deliveryPoint>
-                <gco:CharacterString>191, Reckenholzstrasse</gco:CharacterString>
+                <gco:CharacterString>Reckenholzstrasse 191</gco:CharacterString>
               </cit:deliveryPoint>
               <cit:city>
                 <gco:CharacterString>Zürich</gco:CharacterString>
