@@ -620,8 +620,28 @@
           <xsl:variable name="uuidref"
                         select="gmd:MD_AggregateInformation/gmd:aggregateDataSetIdentifier/*/gmd:code/*/@uuidref"/>
           <mri:metadataReference>
-            <xsl:copy-of select="gmd:MD_AggregateInformation/gmd:aggregateDataSetIdentifier/*/gmd:code/gmx:Anchor/@xlink:href"/>
-            <xsl:copy-of select="if ($uuidref != '') then $uuidref else gmd:MD_AggregateInformation/gmd:aggregateDataSetIdentifier/*/gmd:code/*/text()"/>
+            <cit:CI_Citation>
+              <cit:title gco:nilReason="missing"/>
+              <cit:identifier>
+                <mcc:MD_Identifier>
+                  <mcc:code>
+                    <xsl:choose>
+                      <xsl:when test="gmd:MD_AggregateInformation/gmd:aggregateDataSetIdentifier/*/gmd:code/gmx:Anchor/@xlink:href">
+                        <gcx:Anchor>
+                          <xsl:copy-of select="gmd:MD_AggregateInformation/gmd:aggregateDataSetIdentifier/*/gmd:code/gmx:Anchor/@xlink:href"/>
+                          <xsl:copy-of select="if ($uuidref != '') then $uuidref else gmd:MD_AggregateInformation/gmd:aggregateDataSetIdentifier/*/gmd:code/*/text()"/>
+                        </gcx:Anchor>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <gco:CharacterString>
+                          <xsl:copy-of select="if ($uuidref != '') then $uuidref else gmd:MD_AggregateInformation/gmd:aggregateDataSetIdentifier/*/gmd:code/*/text()"/>
+                        </gco:CharacterString>
+                      </xsl:otherwise>
+                    </xsl:choose>
+                  </mcc:code>
+                </mcc:MD_Identifier>
+              </cit:identifier>
+            </cit:CI_Citation>
           </mri:metadataReference>
         </xsl:if>
 
