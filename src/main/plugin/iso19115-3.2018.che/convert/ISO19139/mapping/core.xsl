@@ -94,8 +94,20 @@
     <xsl:variable name="nameSpacePrefix">
       <xsl:call-template name="getNamespacePrefix"/>
     </xsl:variable>
-    <xsl:variable name="elementName" select="if (local-name() = 'language') then 'defaultLocale' else 'otherLocale'"/>
-    <xsl:element name="{concat($nameSpacePrefix, ':', $elementName)}">
+    <xsl:variable name="elementName">
+      <xsl:choose>
+        <xsl:when test="ancestor-or-self::oldche:CHE_MD_FeatureCatalogueDescription">
+          <xsl:value-of select="'mrc:locale'"/>
+        </xsl:when>
+        <xsl:when test="local-name() = 'language'">
+          <xsl:value-of select="concat($nameSpacePrefix, ':defaultLocale')"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="concat($nameSpacePrefix, ':otherLocale')"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:element name="{$elementName}">
       <!--<xsl:element name="{'mdb:defaultLocale'}">-->
       <xsl:apply-templates select="@*" mode="from19139to19115-3.2018"/>
       <lan:PT_Locale>
