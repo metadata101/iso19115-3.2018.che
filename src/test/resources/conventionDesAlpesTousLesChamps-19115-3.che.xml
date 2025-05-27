@@ -2141,7 +2141,9 @@
           </cat:name>
           <cat:scope gco:nilReason="missing" />
           <cat:versionNumber gco:nilReason="missing" />
-          <cat:versionDate gco:nilReason="missing" />
+          <cat:versionDate>
+            <gco:Date>2009-09-18</gco:Date>
+          </cat:versionDate>
           <gfc:producer gco:nilReason="missing" />
         </gfc:FC_FeatureCatalogue>
       </mrc:featureCatalogue>
@@ -2161,7 +2163,9 @@
           </cat:name>
           <cat:scope gco:nilReason="missing" />
           <cat:versionNumber gco:nilReason="missing" />
-          <cat:versionDate gco:nilReason="missing" />
+          <cat:versionDate>
+            <gco:Date>2009-09-18</gco:Date>
+          </cat:versionDate>
           <gfc:producer gco:nilReason="missing" />
         </gfc:FC_FeatureCatalogue>
       </mrc:featureCatalogue>
@@ -2181,7 +2185,9 @@
           </cat:name>
           <cat:scope gco:nilReason="missing" />
           <cat:versionNumber gco:nilReason="missing" />
-          <cat:versionDate gco:nilReason="missing" />
+          <cat:versionDate>
+            <gco:Date>2009-09-18</gco:Date>
+          </cat:versionDate>
           <gfc:producer gco:nilReason="missing" />
         </gfc:FC_FeatureCatalogue>
       </mrc:featureCatalogue>
@@ -2201,7 +2207,9 @@
           </cat:name>
           <cat:scope gco:nilReason="missing" />
           <cat:versionNumber gco:nilReason="missing" />
-          <cat:versionDate gco:nilReason="missing" />
+          <cat:versionDate>
+            <gco:Date>2009-09-18</gco:Date>
+          </cat:versionDate>
           <gfc:producer gco:nilReason="missing" />
         </gfc:FC_FeatureCatalogue>
       </mrc:featureCatalogue>
