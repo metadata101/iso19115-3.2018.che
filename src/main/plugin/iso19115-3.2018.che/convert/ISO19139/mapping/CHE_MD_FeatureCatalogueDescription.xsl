@@ -32,9 +32,20 @@
                     <xsl:element name="cat:versionNumber">
                         <xsl:attribute name="gco:nilReason">missing</xsl:attribute>
                     </xsl:element>
-                    <xsl:element name="cat:versionDate">
-                        <xsl:attribute name="gco:nilReason">missing</xsl:attribute>
-                    </xsl:element>
+                    <xsl:choose>
+                        <xsl:when test="./gmd:featureCatalogueCitation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gcoold:Date">
+                            <xsl:element name="cat:versionDate">
+                                <xsl:element name="gco:Date">
+                                    <xsl:copy-of select="./gmd:featureCatalogueCitation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gcoold:Date/text()" />
+                                </xsl:element>
+                            </xsl:element>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:element name="cat:versionDate">
+                                <xsl:attribute name="gco:nilReason">missing</xsl:attribute>
+                            </xsl:element>
+                        </xsl:otherwise>
+                    </xsl:choose>
                     <xsl:element name="gfc:producer" >
                         <xsl:attribute name="gco:nilReason">missing</xsl:attribute>
                     </xsl:element>
