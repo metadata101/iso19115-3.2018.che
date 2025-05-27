@@ -2064,7 +2064,18 @@
           <mri:associationType>
             <mri:DS_AssociationTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#DS_AssociationTypeCode" codeListValue="isDescriptionOf">isDescriptionOf</mri:DS_AssociationTypeCode>
           </mri:associationType>
-          <mri:metadataReference />
+          <mri:metadataReference>
+            <cit:CI_Citation>
+              <cit:title gco:nilReason="missing" />
+              <cit:identifier>
+                <mcc:MD_Identifier>
+                  <mcc:code>
+                    <gco:CharacterString />
+                  </mcc:code>
+                </mcc:MD_Identifier>
+              </cit:identifier>
+            </cit:CI_Citation>
+          </mri:metadataReference>
         </mri:MD_AssociatedResource>
       </mri:associatedResource>
       <mri:associatedResource>
