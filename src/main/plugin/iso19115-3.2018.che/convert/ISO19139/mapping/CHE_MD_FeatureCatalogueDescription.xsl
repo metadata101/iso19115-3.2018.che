@@ -65,9 +65,13 @@
                     <xsl:with-param name="elementName" select="'gfc:definition'"/>
                     <xsl:with-param name="nodeWithStringToWrite" select="./oldche:description"/>
                 </xsl:call-template>
-                <xsl:element name="gfc:isAbstract" />
+                <xsl:element name="gfc:isAbstract" >
+                    <xsl:attribute name="gco:nilReason">missing</xsl:attribute>
+                </xsl:element>
                 <xsl:apply-templates select="./oldche:attribute" mode="from19139to19115-3.2018" />
-                <xsl:element name="gfc:featureCatalogue" />
+                <xsl:element name="gfc:featureCatalogue" >
+                    <xsl:attribute name="gco:nilReason">missing</xsl:attribute>
+                </xsl:element>
             </xsl:element>
         </xsl:element>
     </xsl:template>
