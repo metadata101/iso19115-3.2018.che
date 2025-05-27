@@ -1395,9 +1395,9 @@
                               else mri:metadataReference/cit:CI_Citation/cit:identifier/mcc:MD_Identifier/mcc:code/*/text()"/>
         <xsl:if test="$code != ''">
           <xsl:variable name="xlink"
-                        select="mri:metadataReference/@xlink:href"/>
+                        select="mri:metadataReference/cit:CI_Citation/cit:identifier/mcc:MD_Identifier/mcc:code/gcx:Anchor/@xlink:href"/>
           <xsl:variable name="associationType"
-                        select="mri:associationType/*/@codeListValue"/>
+                        select="replace(mri:associationType/*/@codeListValue, '/', '_')"/>
           <xsl:if test="$associationType = $parentAssociatedResourceType">
             <parentUuid><xsl:value-of select="$code"/></parentUuid>
             <xsl:copy-of select="gn-fn-index:build-record-link(
