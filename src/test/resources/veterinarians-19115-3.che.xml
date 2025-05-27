@@ -542,12 +542,14 @@
           </cat:name>
           <cat:scope gco:nilReason="missing" />
           <cat:versionNumber gco:nilReason="missing" />
-          <cat:versionDate gco:nilReason="missing" />
+          <cat:versionDate>
+            <gco:Date>2023-05-26</gco:Date>
+          </cat:versionDate>
           <gfc:producer gco:nilReason="missing" />
           <gfc:featureType>
             <gfc:FC_FeatureType>
               <gfc:typeName>SAV5001P_CABINET_VETERINAIRE</gfc:typeName>
-              <gfc:isAbstract />
+              <gfc:isAbstract gco:nilReason="missing" />
               <gfc:carrierOfCharacteristics>
                 <gfc:FC_FeatureAttribute>
                   <gfc:memberName>CABINET</gfc:memberName>
@@ -629,7 +631,7 @@
                   <gfc:cardinality gco:nilReason="missing" />
                 </gfc:FC_FeatureAttribute>
               </gfc:carrierOfCharacteristics>
-              <gfc:featureCatalogue />
+              <gfc:featureCatalogue gco:nilReason="missing" />
             </gfc:FC_FeatureType>
           </gfc:featureType>
         </gfc:FC_FeatureCatalogue>
