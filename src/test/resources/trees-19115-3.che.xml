@@ -567,7 +567,7 @@
               <gfc:definition>
                 <gco:CharacterString>Localisation des arbres annoncés dans les exploitations agricoles. Ce modèle est valable pour les données archivées.</gco:CharacterString>
               </gfc:definition>
-              <gfc:isAbstract />
+              <gfc:isAbstract gco:nilReason="missing" />
               <gfc:carrierOfCharacteristics>
                 <gfc:FC_FeatureAttribute>
                   <gfc:memberName>KULCD</gfc:memberName>
@@ -753,7 +753,7 @@
                   <gfc:cardinality gco:nilReason="missing" />
                 </gfc:FC_FeatureAttribute>
               </gfc:carrierOfCharacteristics>
-              <gfc:featureCatalogue />
+              <gfc:featureCatalogue gco:nilReason="missing" />
             </gfc:FC_FeatureType>
           </gfc:featureType>
         </gfc:FC_FeatureCatalogue>
