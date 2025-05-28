@@ -72,6 +72,41 @@ public class XslConversionTest {
     }
 
     @Test
+    public void validateAmphibiansSchema() throws Exception {
+        transformValidateAndCompare("amphibians");
+    }
+
+    @Test
+    public void validateVeterinarians() throws Exception {
+        transformValidateAndCompare("veterinarians");
+    }
+
+    @Test
+    public void validateConventionDesAlpes() throws Exception {
+        transformValidateAndCompare("conventionDesAlpesTousLesChamps");
+    }
+
+    @Test
+    public void validateTrees() throws Exception {
+        transformValidateAndCompare("trees");
+    }
+
+    @Test
+    public void validateGrundWasserSchutzZonen() throws Exception {
+        transformValidateAndCompare("grundwasserschutzzonen");
+    }
+
+    @Test
+    public void validateAsiatischeHornisse() throws Exception {
+        transformValidateAndCompare("asiatischeHornisse");
+    }
+
+    @Test
+    public void validateZonesDeTranquillite() throws Exception {
+        transformValidateAndCompare("zonesDeTranquillite");
+    }
+
+    @Test
     public void testOdsConversion() throws Exception {
         Element xmlFromJSON = Xml.getXmlFromJSON(Files.readString(getResource("ods.json")));
         xmlFromJSON.setName("record");
@@ -83,45 +118,16 @@ public class XslConversionTest {
         String actual = Xml.getString(resultElement);
         Path expected = getResource("ods.xml");
         Diff diff = DiffBuilder
-            .compare(Input.fromString(actual))
-            .withTest(Input.fromPath(expected))
-            .withNodeMatcher(new DefaultNodeMatcher(ElementSelectors.byName))
-            .normalizeWhitespace()
-            .ignoreComments()
-            .checkForSimilar()
-            .build();
+                .compare(Input.fromString(actual))
+                .withTest(Input.fromPath(expected))
+                .withNodeMatcher(new DefaultNodeMatcher(ElementSelectors.byName))
+                .normalizeWhitespace()
+                .ignoreComments()
+                .checkForSimilar()
+                .build();
         assertFalse(
-            String.format("Differences: %s", diff.toString()),
-            diff.hasDifferences());
-    }
-
-    @Test
-    public void validateAmphibiansSchema() throws Exception {
-        Path xslFile = getResourceInsideSchema("convert/fromISO19139.xsl");
-        Path xmlFile = getResource("amphibians-19139.che.xml");
-        Element amphibians = Xml.loadFile(xmlFile);
-
-        Element amphibiansIso19115che = Xml.transform(amphibians, xslFile);
-        isValid(amphibiansIso19115che);
-        //TODO CMT/SRT activate
-        //isGNValid(amphibiansIso19115che);
-
-        assertStrictByteEquality("amphibians-19115-3.che.xml", amphibiansIso19115che, true);
-    }
-
-
-    @Test
-    public void validateVeterinarians() throws Exception {
-        Path xslFile = getResourceInsideSchema("convert/fromISO19139.xsl");
-        Path xmlFile = getResource("veterinarians-19139.che.xml");
-        Element veterinarians = Xml.loadFile(xmlFile);
-
-        Element veterinariansIso19115che = Xml.transform(veterinarians, xslFile);
-        isValid(veterinariansIso19115che);
-        //TODO CMT/SRT activate
-        //isGNValid(amphibiansIso19115che);
-
-        assertStrictByteEquality("veterinarians-19115-3.che.xml", veterinariansIso19115che, true);
+                String.format("Differences: %s", diff.toString()),
+                diff.hasDifferences());
     }
 
     @Test
@@ -150,76 +156,6 @@ public class XslConversionTest {
         assertEquals("OGC:WFS", ((Element)((Element) nodes.get(0)).getChildren().get(0)).getText());
         //TODO CMT/SRT activate
         //isGNValid(gruenflaechenIso19115che);
-    }
-
-    @Test
-    public void validateConventionDesAlpes() throws Exception {
-        Path xslFile = getResourceInsideSchema("convert/fromISO19139.xsl");
-        Path xmlFile = getResource("conventionDesAlpesTousLesChamps-19139.che.xml");
-        Element convAlps = Xml.loadFile(xmlFile);
-
-        Element newConvAlps = Xml.transform(convAlps, xslFile);
-        isValid(newConvAlps);
-        //TODO CMT/SRT activate
-        //isGNValid(amphibiansIso19115che);
-
-        assertStrictByteEquality("conventionDesAlpesTousLesChamps-19115-3.che.xml", newConvAlps, true);
-    }
-
-    @Test
-    public void validateTrees() throws Exception {
-        Path xslFile = getResourceInsideSchema("convert/fromISO19139.xsl");
-        Path xmlFile = getResource("trees-19139.che.xml");
-        Element convAlps = Xml.loadFile(xmlFile);
-
-        Element newConvAlps = Xml.transform(convAlps, xslFile);
-        isValid(newConvAlps);
-        //TODO CMT/SRT activate
-        //isGNValid(amphibiansIso19115che);
-
-        assertStrictByteEquality("trees-19115-3.che.xml", newConvAlps, true);
-    }
-
-    @Test
-    public void validateGrundWasserSchutzZonen() throws Exception {
-        Path xslFile = getResourceInsideSchema("convert/fromISO19139.xsl");
-        Path xmlFile = getResource("grundwasserschutzzonen-19139.che.xml");
-        Element convAlps = Xml.loadFile(xmlFile);
-
-        Element newConvAlps = Xml.transform(convAlps, xslFile);
-        isValid(newConvAlps);
-        //TODO CMT/SRT activate
-        //isGNValid(amphibiansIso19115che);
-
-        assertStrictByteEquality("grundwasserschutzzonen-19115-3.che.xml", newConvAlps, true);
-    }
-
-    @Test
-    public void validateAsiatischeHornisse() throws Exception {
-        Path xslFile = getResourceInsideSchema("convert/fromISO19139.xsl");
-        Path xmlFile = getResource("asiatischeHornisse-19139.che.xml");
-        Element convAlps = Xml.loadFile(xmlFile);
-
-        Element newConvAlps = Xml.transform(convAlps, xslFile);
-        isValid(newConvAlps);
-        //TODO CMT/SRT activate
-        //isGNValid(amphibiansIso19115che);
-
-        assertStrictByteEquality("asiatischeHornisse-19115-3.che.xml", newConvAlps, true);
-    }
-
-    @Test
-    public void validateZonesDeTranquillite() throws Exception {
-        Path xslFile = getResourceInsideSchema("convert/fromISO19139.xsl");
-        Path xmlFile = getResource("zonesDeTranquillite-iso19139.che.xml");
-        Element convAlps = Xml.loadFile(xmlFile);
-
-        Element newConvAlps = Xml.transform(convAlps, xslFile);
-        isValid(newConvAlps);
-        //TODO CMT/SRT activate
-        //isGNValid(amphibiansIso19115che);
-
-        assertStrictByteEquality("zonesDeTranquillite-iso19115-3.che.xml", newConvAlps, true);
     }
 
     private void assertNamespacePresent(List<?> namespaces, String nsLocation, String prefix) {
@@ -272,5 +208,19 @@ public class XslConversionTest {
 
     private void isGNValid(Element amphibiansIso19115che) throws Exception {
         Xml.validate(Path.of(getClass().getClassLoader().getResource("schema/standards.iso.org/19115/-3/eCH-0271-1-0-0.xsd").toURI()), amphibiansIso19115che);
+    }
+
+    private void transformValidateAndCompare(String veterinarians1) throws Exception {
+        Path xslFile = getResourceInsideSchema("convert/fromISO19139.xsl");
+
+        Path xmlFile = getResource(veterinarians1 + "-19139.che.xml");
+        Element veterinarians = Xml.loadFile(xmlFile);
+
+        Element veterinariansIso19115che = Xml.transform(veterinarians, xslFile);
+        isValid(veterinariansIso19115che);
+        //TODO CMT/SRT activate
+        //isGNValid(amphibiansIso19115che);
+
+        assertStrictByteEquality(veterinarians1 + "-19115-3.che.xml", veterinariansIso19115che, true);
     }
 }
