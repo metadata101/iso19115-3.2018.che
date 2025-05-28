@@ -194,6 +194,19 @@ public class XslConversionTest {
         assertStrictByteEquality("grundwasserschutzzonen-19115-3.che.xml", newConvAlps, true);
     }
 
+    @Test
+    public void validateAsiatischeHornisse() throws Exception {
+        Path xslFile = getResourceInsideSchema("convert/fromISO19139.xsl");
+        Path xmlFile = getResource("asiatischeHornisse-19139.che.xml");
+        Element convAlps = Xml.loadFile(xmlFile);
+
+        Element newConvAlps = Xml.transform(convAlps, xslFile);
+        isValid(newConvAlps);
+        //TODO CMT/SRT activate
+        //isGNValid(amphibiansIso19115che);
+
+        assertStrictByteEquality("asiatischeHornisse-19115-3.che.xml", newConvAlps, true);
+    }
 
     private void assertNamespacePresent(List<?> namespaces, String nsLocation, String prefix) {
         Namespace ns = namespaces.stream() //
