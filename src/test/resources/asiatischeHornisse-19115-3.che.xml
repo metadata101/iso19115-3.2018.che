@@ -661,5 +661,48 @@
       </mrd:transferOptions>
     </mrd:MD_Distribution>
   </mdb:distributionInfo>
+  <che:legislationInformation>
+    <che:CHE_MD_Legislation>
+      <che:country>
+        <lan:CountryCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#Country" codeListValue="CH" />
+      </che:country>
+      <che:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
+      </che:language>
+      <che:legislationType>
+        <che:CHE_CI_LegislationTypeCode codeList="#CHE_CI_LegislationCode" codeListValue="nationalDecree" />
+      </che:legislationType>
+      <che:legislationCitation>
+        <cit:CI_Citation>
+          <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Verordnung über den Umgang mit Organismen in der Umwelt</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Verordnung über den Umgang mit Organismen in der Umwelt</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:title>
+          <cit:alternateTitle xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Freisetzungsverordnung, FrSV</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Freisetzungsverordnung, FrSV</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:alternateTitle>
+          <cit:date>
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2024-04-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</cit:CI_DateTypeCode>
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+        </cit:CI_Citation>
+      </che:legislationCitation>
+    </che:CHE_MD_Legislation>
+  </che:legislationInformation>
 </che:CHE_MD_Metadata>
 
