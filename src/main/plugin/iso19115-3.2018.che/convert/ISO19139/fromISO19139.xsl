@@ -234,6 +234,7 @@
                 <xsl:apply-templates select="gmd:applicationSchemaInfo" mode="from19139to19115-3.2018"/>
                 <xsl:apply-templates select="gmd:metadataMaintenance" mode="from19139to19115-3.2018"/>
                 <xsl:apply-templates select="gmi:acquisitionInformation" mode="from19139to19115-3.2018"/>
+                <xsl:apply-templates select="oldche:legislationInformation" mode="from19139to19115-3.2018"/>
             </xsl:element>
         </xsl:for-each>
     </xsl:template>
@@ -252,6 +253,7 @@
     <xsl:include href="mapping/InsideLegislationConstraints.xsl" />
     <xsl:include href="mapping/MD_ApplicationSchemaInformation.xsl" />
     <xsl:include href="mapping/CHE_MD_FeatureCatalogueDescription.xsl" />
+    <xsl:include href="mapping/CHE_MD_Legislation.xsl" />
 
 
     <!-- Depending on the function of online source in ISO19139,
