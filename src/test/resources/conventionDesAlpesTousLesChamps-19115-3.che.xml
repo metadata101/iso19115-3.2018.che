@@ -3411,7 +3411,40 @@
               </lan:textGroup>
             </lan:PT_FreeText>
           </che:internalReference>
-          <che:legislationCitation />
+          <che:legislationCitation>
+            <cit:CI_Citation>
+              <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>Ref FR</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Ref FR</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">Ref IT</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">Ref EN</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">Ref RM</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#RM">Ref AL</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:title>
+              <cit:date>
+                <cit:CI_Date>
+                  <cit:date>
+                    <gco:Date>2021-10-06</gco:Date>
+                  </cit:date>
+                  <cit:dateType>
+                    <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</cit:CI_DateTypeCode>
+                  </cit:dateType>
+                </cit:CI_Date>
+              </cit:date>
+            </cit:CI_Citation>
+          </che:legislationCitation>
         </che:CHE_MD_Legislation>
       </che:legislationConstraints>
     </che:CHE_MD_LegalConstraints>
@@ -3638,5 +3671,153 @@
       </mmi:contact>
     </che:CHE_MD_MaintenanceInformation>
   </mdb:metadataMaintenance>
+  <che:legislationInformation>
+    <che:CHE_MD_Legislation>
+      <che:country>
+        <lan:CountryCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#Country" codeListValue="CH" />
+      </che:country>
+      <che:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
+      </che:language>
+      <che:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="fre" />
+      </che:language>
+      <che:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ita" />
+      </che:language>
+      <che:legislationType>
+        <che:CHE_CI_LegislationTypeCode codeList="#CHE_CI_LegislationCode" codeListValue="internationalObligation" />
+      </che:legislationType>
+      <che:internalReference xsi:type="lan:PT_FreeText_PropertyType">
+        <gco:CharacterString>0.700.1</gco:CharacterString>
+        <lan:PT_FreeText>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#DE">0.700.1</lan:LocalisedCharacterString>
+          </lan:textGroup>
+        </lan:PT_FreeText>
+      </che:internalReference>
+      <che:legislationCitation>
+        <cit:CI_Citation>
+          <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Übereinkommen zum Schutz der Alpen</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Übereinkommen zum Schutz der Alpen</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">Convention sur la protection des Alpes</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">Convenzione per la protezione delle Alpi</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:title>
+          <cit:alternateTitle xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Alpenkonvention</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Alpenkonvention</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">Convention alpine</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">Convenzione delle Alpi</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:alternateTitle>
+          <cit:date>
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>1991-11-07</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+        </cit:CI_Citation>
+      </che:legislationCitation>
+    </che:CHE_MD_Legislation>
+  </che:legislationInformation>
+  <che:legislationInformation>
+    <che:CHE_MD_Legislation>
+      <che:country>
+        <lan:CountryCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#Country" codeListValue="CH" />
+      </che:country>
+      <che:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
+      </che:language>
+      <che:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="fre" />
+      </che:language>
+      <che:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ita" />
+      </che:language>
+      <che:legislationType>
+        <che:CHE_CI_LegislationTypeCode codeList="#CHE_CI_LegislationCode" codeListValue="nationalDecree" />
+      </che:legislationType>
+      <che:internalReference xsi:type="lan:PT_FreeText_PropertyType">
+        <gco:CharacterString>510.620</gco:CharacterString>
+        <lan:PT_FreeText>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#DE">510.620</lan:LocalisedCharacterString>
+          </lan:textGroup>
+        </lan:PT_FreeText>
+      </che:internalReference>
+      <che:legislationCitation>
+        <cit:CI_Citation>
+          <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Verordnung über Geoinformation : Anhang 1, Katalog der Geobasisdaten des Bundesrechts</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Verordnung über Geoinformation : Anhang 1, Katalog der Geobasisdaten des Bundesrechts</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">Ordonnance sur la géoinformation : Annexe 1, Catalogue des géodonnées de base relevant du droit fédéral</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">Ordinanza sulla geoinformazione : Allegato 1, Catalogo dei geodati di base del diritto federale</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:title>
+          <cit:alternateTitle xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Geoinformationsverordnung GeoIV</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Geoinformationsverordnung GeoIV</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">OGéo</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">OGI</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:alternateTitle>
+          <cit:date>
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2008-05-21</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:date>
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2008-07-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</cit:CI_DateTypeCode>
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+        </cit:CI_Citation>
+      </che:legislationCitation>
+    </che:CHE_MD_Legislation>
+  </che:legislationInformation>
 </che:CHE_MD_Metadata>
 
