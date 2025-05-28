@@ -89,6 +89,17 @@ public class IndexationTest {
     }
 
     @Test
+    public void indexAsiatischeHornisse() throws Exception {
+        TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
+        XslUtil.IS_INSPIRE_ENABLED = false;
+        String actual = indexResource("asiatischeHornisse-19115-3.che.xml");
+
+        String expected = Files.readString(getResource("asiatischeHornisse-index.xml"));
+
+        XmlAssert.assertThat(actual).isEqualTo(expected);
+    }
+
+    @Test
     public void useIncorrectTimeZone() throws Exception {
         TimeZone.setDefault(TimeZone.getTimeZone("GMT+2"));
         XslUtil.IS_INSPIRE_ENABLED = true;
