@@ -46,68 +46,38 @@ public class IndexationTest {
 
     @Test
     public void indexAmphibians() throws Exception {
-        TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
         XslUtil.IS_INSPIRE_ENABLED = true;
-        String actual = indexResource("amphibians-19115-3.che.xml");
-
-        String expected = Files.readString(getResource("amphibians-index.xml"));
-
-        XmlAssert.assertThat(actual).isEqualTo(expected);
+        indexAndCompareWithExpected("amphibians");
     }
 
     @Test
     public void indexServiceGruenflaechen() throws Exception {
-        TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
         XslUtil.IS_INSPIRE_ENABLED = false;
-        String actual = indexResource("gruenflaechen-19115-3.che.xml");
-
-        String expected = Files.readString(getResource("gruenflaechen-index.xml"));
-
-        XmlAssert.assertThat(actual).isEqualTo(expected);
+        indexAndCompareWithExpected("gruenflaechen");
     }
 
     @Test
-    public void indexconventionDesAlpesTousLesChamps() throws Exception {
-        TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
+    public void indexConventionDesAlpesTousLesChamps() throws Exception {
         XslUtil.IS_INSPIRE_ENABLED = false;
-        String actual = indexResource("conventionDesAlpesTousLesChamps-19115-3.che.xml");
-
-        String expected = Files.readString(getResource("conventionDesAlpesTousLesChamps-index.xml"));
-
-        XmlAssert.assertThat(actual).isEqualTo(expected);
+        indexAndCompareWithExpected("conventionDesAlpesTousLesChamps");
     }
 
     @Test
     public void indexGrundWasserSchutzZonen() throws Exception {
-        TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
         XslUtil.IS_INSPIRE_ENABLED = false;
-        String actual = indexResource("grundwasserschutzzonen-19115-3.che.xml");
-
-        String expected = Files.readString(getResource("grundwasserschutzzonen-index.xml"));
-
-        XmlAssert.assertThat(actual).isEqualTo(expected);
+        indexAndCompareWithExpected("grundwasserschutzzonen");
     }
 
     @Test
     public void indexAsiatischeHornisse() throws Exception {
-        TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
         XslUtil.IS_INSPIRE_ENABLED = false;
-        String actual = indexResource("asiatischeHornisse-19115-3.che.xml");
-
-        String expected = Files.readString(getResource("asiatischeHornisse-index.xml"));
-
-        XmlAssert.assertThat(actual).isEqualTo(expected);
+        indexAndCompareWithExpected("asiatischeHornisse");
     }
 
     @Test
     public void indexZonesDeTranquillite() throws Exception {
-        TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
         XslUtil.IS_INSPIRE_ENABLED = false;
-        String actual = indexResource("zonesDeTranquillite-iso19115-3.che.xml");
-
-        String expected = Files.readString(getResource("zonesDeTranquillite-index.xml"));
-
-        XmlAssert.assertThat(actual).isEqualTo(expected);
+        indexAndCompareWithExpected("zonesDeTranquillite");
     }
 
     @Test
@@ -121,6 +91,15 @@ public class IndexationTest {
         } catch (AssertionError e) {
             throw new AssertionError("The date is no longer shifted to previous day according to system timezone (there might be no need to force system timezone to utc anymore).", e);
         }
+    }
+
+    private void indexAndCompareWithExpected(String fileRoot) throws Exception {
+        TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
+        String expected = Files.readString(getResource(fileRoot + "-index.xml"));
+
+        String actual = indexResource(fileRoot + "-19115-3.che.xml");
+
+        XmlAssert.assertThat(actual).isEqualTo(expected);
     }
 
     private String indexResource(String resourceToIndex) throws Exception {
