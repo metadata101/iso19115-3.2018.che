@@ -810,6 +810,19 @@
       <che:subTopicCategory>
         <che:CHE_MD_SubTopicCategoryCode codeList="subTopicCategory" codeListValue="environment_NatureProtection" />
       </che:subTopicCategory>
+      <che:basicGeodata>
+        <gco:Boolean>true</gco:Boolean>
+      </che:basicGeodata>
+      <che:basicGeodataInformation>
+        <che:CHE_MD_BasicGeodataInformation>
+          <che:basicGeodataID>
+            <gco:CharacterString>131.1</gco:CharacterString>
+          </che:basicGeodataID>
+          <che:basicGeodataLegalLevel>
+            <che:CHE_MD_LevelCode codeList="mdLevelCode" codeListValue="cantonal" />
+          </che:basicGeodataLegalLevel>
+        </che:CHE_MD_BasicGeodataInformation>
+      </che:basicGeodataInformation>
     </che:CHE_MD_DataIdentification>
   </mdb:identificationInfo>
   <mdb:contentInfo>
