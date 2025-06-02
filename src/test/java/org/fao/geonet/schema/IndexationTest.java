@@ -102,6 +102,12 @@ public class IndexationTest {
     }
 
     @Test
+    public void indexVALTRALOC() throws Exception {
+        XslUtil.IS_INSPIRE_ENABLED = false;
+        indexAndCompareWithExpected("VALTRALOC");
+    }
+
+    @Test
     public void useIncorrectTimeZone() throws Exception {
         TimeZone.setDefault(TimeZone.getTimeZone("GMT+2"));
         XslUtil.IS_INSPIRE_ENABLED = true;
