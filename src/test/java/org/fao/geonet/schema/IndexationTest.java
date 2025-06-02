@@ -13,7 +13,6 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.xmlunit.assertj.XmlAssert;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.lang.reflect.Field;
 import java.nio.file.Files;
@@ -88,6 +87,12 @@ public class IndexationTest {
     public void indexGrundWasserVorkommen() throws Exception {
         XslUtil.IS_INSPIRE_ENABLED = false;
         indexAndCompareWithExpected("grundwasservorkommen");
+    }
+
+    @Test
+    public void indexSwissTLM3D() throws Exception {
+        XslUtil.IS_INSPIRE_ENABLED = false;
+        indexAndCompareWithExpected("swissTLM3D");
     }
 
     @Test
