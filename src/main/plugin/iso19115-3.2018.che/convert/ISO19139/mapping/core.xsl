@@ -418,6 +418,7 @@
             <xsl:apply-templates select="srvold:operatesOn" mode="from19139to19115-3.2018"/>
           </xsl:if>
           <xsl:apply-templates select="gmd:topicCategory[.//gmd:MD_TopicCategoryCode[contains(.,'_')]]" mode="from19139to19115-3.2018"/>
+          <xsl:apply-templates select=".[oldche:basicGeodataID|oldche:geodataType|oldche:basicGeodataIDType]" mode="from19139to19115-3.2018-CHE_MD_BasicGeodataInformation" />
         </xsl:element>
       </xsl:for-each>
     </mdb:identificationInfo>

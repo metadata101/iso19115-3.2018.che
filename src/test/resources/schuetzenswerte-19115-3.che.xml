@@ -3,7 +3,7 @@
   <mdb:metadataIdentifier>
     <mcc:MD_Identifier>
       <mcc:code>
-        <gco:CharacterString>4a0c8bc7-89d1-484e-a34a-454a31267c41</gco:CharacterString>
+        <gco:CharacterString>b9c1d690-008f-494c-a47f-ec96d9a8d84f</gco:CharacterString>
       </mcc:code>
     </mcc:MD_Identifier>
   </mdb:metadataIdentifier>
@@ -17,6 +17,7 @@
       </lan:characterEncoding>
     </lan:PT_Locale>
   </mdb:defaultLocale>
+  <mdb:parentMetadata uuidref="12bcf72d-6ef6-4486-a71f-25c37044392b" />
   <mdb:metadataScope>
     <mdb:MD_MetadataScope>
       <mdb:resourceScope>
@@ -24,7 +25,6 @@
       </mdb:resourceScope>
     </mdb:MD_MetadataScope>
   </mdb:metadataScope>
-  <mdb:contact xlink:show="embed" xlink:href="local://srv/api/registries/entries/e898da60-6d82-4dcc-b4a3-5f6fe97e6394?lang=ger,fre,ita,eng,roh&amp;process=*//gmd:CI_RoleCode/@codeListValue~pointOfContact" />
   <mdb:contact xlink:show="embed">
     <cit:CI_Responsibility>
       <cit:role>
@@ -33,22 +33,22 @@
       <cit:party>
         <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
           <cit:name xsi:type="lan:PT_FreeText_PropertyType">
-            <gco:CharacterString>Bundesamt für Umwelt / Abteilung Biodiversität und Landschaft</gco:CharacterString>
+            <gco:CharacterString>Bundesamt für Kultur - ISOS</gco:CharacterString>
             <lan:PT_FreeText>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#DE">Bundesamt für Umwelt / Abteilung Biodiversität und Landschaft</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#DE">Bundesamt für Kultur - ISOS</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#FR">Office fédéral de l'environnement / Division Biodiversité et paysage</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#FR">Office fédéral de la culture - ISOS</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#IT">Ufficio federale dell'ambiente / Divisione Biodiversità e paesaggio</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#IT">Ufficio federale della cultura - ISOS</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#EN">Federal Office for the Environment / Biodiversity and Landscape Division</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#EN">Federal Office of Culture - ISOS</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#RM">Bundesamt für Umwelt</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#RM">Bundesamt für Kultur - ISOS</lan:LocalisedCharacterString>
               </lan:textGroup>
             </lan:PT_FreeText>
           </cit:name>
@@ -57,27 +57,17 @@
               <cit:phone>
                 <cit:CI_Telephone>
                   <cit:number>
-                    <gco:CharacterString>+41 58 462 93 89</gco:CharacterString>
+                    <gco:CharacterString>+41 58 462 86 26</gco:CharacterString>
                   </cit:number>
                   <cit:numberType>
                     <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
                   </cit:numberType>
                 </cit:CI_Telephone>
               </cit:phone>
-              <cit:phone>
-                <cit:CI_Telephone>
-                  <cit:number>
-                    <gco:CharacterString>+41 58 463 89 74</gco:CharacterString>
-                  </cit:number>
-                  <cit:numberType>
-                    <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="facsimile">facsimile</cit:CI_TelephoneTypeCode>
-                  </cit:numberType>
-                </cit:CI_Telephone>
-              </cit:phone>
               <cit:address>
                 <cit:CI_Address>
                   <cit:deliveryPoint>
-                    <gco:CharacterString />
+                    <gco:CharacterString>Hallwylstrasse 15</gco:CharacterString>
                   </cit:deliveryPoint>
                   <cit:city>
                     <gco:CharacterString>Bern</gco:CharacterString>
@@ -89,7 +79,7 @@
                     <gco:CharacterString>CH</gco:CharacterString>
                   </cit:country>
                   <cit:electronicMailAddress>
-                    <gco:CharacterString>bnl@bafu.admin.ch</gco:CharacterString>
+                    <gco:CharacterString>isos@bak.admin.ch</gco:CharacterString>
                   </cit:electronicMailAddress>
                 </cit:CI_Address>
               </cit:address>
@@ -98,16 +88,19 @@
                   <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
                     <lan:PT_FreeText>
                       <lan:textGroup>
-                        <lan:LocalisedCharacterString locale="#EN">https://www.bafu.admin.ch/bafu/en/home/office/divisions-sections/biodiversity-and-landscape-division.html</lan:LocalisedCharacterString>
+                        <lan:LocalisedCharacterString locale="#EN" />
                       </lan:textGroup>
                       <lan:textGroup>
-                        <lan:LocalisedCharacterString locale="#DE">https://www.bafu.admin.ch/bafu/de/home/amt/abteilungen-sektionen/abteilung-biodiversitaet-und-landschaft.html</lan:LocalisedCharacterString>
+                        <lan:LocalisedCharacterString locale="#DE">https://www.bak.admin.ch/bak/de/home/baukultur/isos-und-ortsbildschutz/ortsbildaufnahmen/geodaten.html</lan:LocalisedCharacterString>
                       </lan:textGroup>
                       <lan:textGroup>
-                        <lan:LocalisedCharacterString locale="#FR">https://www.bafu.admin.ch/bafu/fr/home/office/divisions-sections/division-biodiversite-et-paysage.html</lan:LocalisedCharacterString>
+                        <lan:LocalisedCharacterString locale="#FR">https://www.bak.admin.ch/bak/fr/home/baukultur/isos-und-ortsbildschutz/ortsbildaufnahmen/geodaten.html</lan:LocalisedCharacterString>
                       </lan:textGroup>
                       <lan:textGroup>
-                        <lan:LocalisedCharacterString locale="#IT">https://www.bafu.admin.ch/bafu/it/home/ufficio/divisioni-sezioni/divisione-biodiversita-e-paesaggio.html</lan:LocalisedCharacterString>
+                        <lan:LocalisedCharacterString locale="#IT">https://www.bak.admin.ch/bak/it/home/baukultur/isos-und-ortsbildschutz/ortsbildaufnahmen/geodaten.html</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#RM" />
                       </lan:textGroup>
                     </lan:PT_FreeText>
                   </cit:linkage>
@@ -121,8 +114,28 @@
           <cit:individual>
             <cit:CI_Individual>
               <cit:name>
-                <gco:CharacterString>BAFU BNL</gco:CharacterString>
+                <gco:CharacterString>Marcia Haldemann</gco:CharacterString>
               </cit:name>
+              <cit:positionName xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>Sektion Baukultur</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Sektion Baukultur</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">Section Culture du bâti</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">Sezione Cultura della costruzione</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">Section Baukultur</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#RM">Secziun Cultura da construcsziun</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:positionName>
             </cit:CI_Individual>
           </cit:individual>
         </che:CHE_CI_Organisation>
@@ -132,7 +145,7 @@
   <mdb:dateInfo>
     <cit:CI_Date>
       <cit:date>
-        <gco:DateTime>2025-05-06T06:36:45.649Z</gco:DateTime>
+        <gco:DateTime>2022-11-28T11:12:16</gco:DateTime>
       </cit:date>
       <cit:dateType>
         <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision">revision</cit:CI_DateTypeCode>
@@ -201,7 +214,7 @@
       <msr:geometricObjects>
         <msr:MD_GeometricObjects>
           <msr:geometricObjectType>
-            <msr:MD_GeometricObjectTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_GeometricObjectTypeCode" codeListValue="surface" />
+            <msr:MD_GeometricObjectTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_GeometricObjectTypeCode" codeListValue="composite" />
           </msr:geometricObjectType>
         </msr:MD_GeometricObjects>
       </msr:geometricObjects>
@@ -217,6 +230,9 @@
               <lan:textGroup>
                 <lan:LocalisedCharacterString locale="#DE">EPSG:2056</lan:LocalisedCharacterString>
               </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">EPSG:2056</lan:LocalisedCharacterString>
+              </lan:textGroup>
             </lan:PT_FreeText>
           </mcc:code>
         </mcc:MD_Identifier>
@@ -228,85 +244,192 @@
       <mri:citation>
         <cit:CI_Citation>
           <cit:title xsi:type="lan:PT_FreeText_PropertyType">
-            <gco:CharacterString>Wildruhezonen</gco:CharacterString>
+            <gco:CharacterString>ISOS - Bundesinventar der schützenswerten Ortsbilder der Schweiz von nationaler Bedeutung ab 2021 - Bilder</gco:CharacterString>
             <lan:PT_FreeText>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#DE">Wildruhezonen</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#DE">ISOS - Bundesinventar der schützenswerten Ortsbilder der Schweiz von nationaler Bedeutung ab 2021 - Bilder</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#FR">Zones de tranquillité</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#FR">ISOS - Inventaire fédéral des sites construits d'importance nationale à protéger en Suisse dès 2021 - Photos</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#IT">Zone di tranquillità</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#IT">ISOS - Inventario federale degli insediamenti svizzeri da proteggere d’importanza nazionale dal 2021 - Foto</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#EN">Designated wildlife areas</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#EN">ISOS - Federal Inventory of Swiss heritage sites of national importance since 2021 - Photos</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#RM">Zonas da paus per la selvaschina</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#RM">ISOS - Inventari federal dals lieus svizzers d'impurtanza naziunala degns da protecziun a partir da l’onn 2021 - Fotografias</lan:LocalisedCharacterString>
               </lan:textGroup>
             </lan:PT_FreeText>
           </cit:title>
           <cit:alternateTitle xsi:type="lan:PT_FreeText_PropertyType">
-            <gco:CharacterString>Wildruhezonen</gco:CharacterString>
+            <gco:CharacterString>ISOS - Bilder</gco:CharacterString>
             <lan:PT_FreeText>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#DE">Wildruhezonen</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#DE">ISOS - Bilder</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#FR">Zones de tranquillité</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#FR">ISOS - Photos</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#IT">Zone di tranquillità</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#IT">ISOS - Foto</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#EN">Designated wildlife areas</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#EN">ISOS - Photos</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#RM">Zonas da paus per la selvaschina</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#RM">ISOS - Fotografias</lan:LocalisedCharacterString>
               </lan:textGroup>
             </lan:PT_FreeText>
           </cit:alternateTitle>
           <cit:date>
             <cit:CI_Date>
               <cit:date>
-                <gco:Date>2024-11-19</gco:Date>
+                <gco:Date>2021-02-22</gco:Date>
               </cit:date>
               <cit:dateType>
-                <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision">revision</cit:CI_DateTypeCode>
+                <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
               </cit:dateType>
             </cit:CI_Date>
           </cit:date>
           <cit:identifier>
             <mcc:MD_Identifier>
               <mcc:code>
-                <gco:CharacterString>ch.bafu.wrz-wildruhezonen_portal</gco:CharacterString>
+                <gco:CharacterString>ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</gco:CharacterString>
               </mcc:code>
             </mcc:MD_Identifier>
           </cit:identifier>
           <cit:identifier />
+          <cit:otherCitationDetails xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Die Daten stehen als Geodaten und/oder als PDF zur Verfügung.</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Die Daten stehen als Geodaten und/oder als PDF zur Verfügung.</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">Les relevés ISOS sont disponibles sous forme de géodonnées et/ou de PDF.</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:otherCitationDetails>
         </cit:CI_Citation>
       </mri:citation>
       <mri:abstract xsi:type="lan:PT_FreeText_PropertyType">
-        <gco:CharacterString>Wildtiere brauchen Rückzugsgebiete in welchen sie nicht gestört werden. Die Ausscheidung von Wildruhezonen dient der Vermeidung übermässiger Störung gemäss Art. 7 Abs 4 des JSG als Antwort auf die zunehmende Freizeitnutzung. Es gibt heute rechtsverbindliche Wildruhezonen und Schutzgebiete, die über den Rechtssetzungsprozess ausgeschieden sind (kantonales Jagdrecht, kommunale Zonenplanung, etc.), wie auch empfohlene Gebiete. Innerhalb von rechtsverbindlichen Wildruhezonen und Wildtierschutzgebieten dürfen nur die in der Karte eingezeichneten erlaubten Routen und Wege begangen werden. Nicht eingezeichnet sind präparierte (Langlauf-)Loipen, Winterwanderwege und im Winter geräumte oder befahrbare Strassen. Diese dürfen von Schneesportlern selbstverständlich begangen werden. In empfohlenen Wildruhezonen sind die erlaubten Routen und Wege als Empfehlungen zu verstehen. Der Stand der Arbeiten in den Kantonen ist zur Zeit sehr unterschiedlich, weshalb der Datensatz Lücken aufweist. Die Karte wird mindestens jährlich (zu Winterbeginn) aktualisiert. Bitte beachten Sie die allgemeinen Hinweise und Änderungen (z.B. Perimeteranpassungen) unten, welche in der Karte noch nicht berücksichtigt werden konnten. Die Kampagne "Respektiere deine Grenzen" setzt sich für den Schutz der Wildtiere und die Bekanntmachung der Wildruhezonen in der Bevölkerung ein.</gco:CharacterString>
+        <gco:CharacterString>Das Bundesinventar der schützenswerten Ortsbilder der Schweiz von nationaler Bedeutung (ISOS) bezeichnet die wertvollsten, landesweit bedeutenden Ortsbilder und dokumentiert sie.
+Die Arbeiten am ISOS begannen 1973 mit der Entwicklung einer für die Inventarisierung von Ortsbildern geeigneten Methode –  der ISOS-Methode. Im Jahr 2016 hat das Bundesamt für Kultur (BAK) diese Methode aktualisiert und die Darstellung des Bundesinventars an die GIS-Technologie angepasst. Die ursprüngliche Methode (ISOS I) und die angepasste Methode (ISOS II) beruhen auf denselben Grundprinzipien und Regeln. 
+Dieses  Portal präsentiert die ISOS-Aufnahmen, die zurzeit in Kraft sind. Es gibt zwei Arten von Daten:
+1. die nach Methode ISOS I erarbeiteten Aufnahmen, die lediglich als PDF verfügbar sind;
+2. die nach Methode ISOS II erarbeiteten Aufnahmen, die als PDF und vektorielle Geodaten verfügbar sind. Bitte beachten Sie: Nur die PDF sind rechtsgültig. Die Geodaten dienen lediglich der Information. Ihr Detaillierungsgrad nimmt mit wachsendem Massstab zu. 
+Das ISOS wird zurzeit revidiert. Die Revision erfolgt etappenweise. Folglich werden während einer gewissen Zeit Aufnahmen, die nach der Methode ISOS I erarbeitet wurden, und Aufnahmen, die mit der Methode ISOS II erstellt wurden, auf diesem Portal koexistieren. Nach Abschluss der Revision in der ganzen Schweiz werden nur noch Aufnahmen verfügbar sein, die nach der Methode ISOS II erarbeitet wurden.
+
+Dieser Layer präsentiert die Fotos zu den nach der Methode ISOS II aktualisierten Aufnahmen. Er wird jährlich aktualisiert. Die beste Übersichtlichkeit der Informationen wird erreicht, wenn er über dem Layer "Ortsbildaufnahmen" liegt. 
+
+Die Fotos sind ab dem Massstab 1: 50'000 zu sehen. 
+
+Alle ISOS-Daten (Pläne, Texte, Fotos) sind geistiges Eigentum der Bundesregierung (© BAK, Bern)
+
+Für detaillierte Informationen zum ISOS siehe www.isos.ch.</gco:CharacterString>
         <lan:PT_FreeText>
           <lan:textGroup>
-            <lan:LocalisedCharacterString locale="#DE">Wildtiere brauchen Rückzugsgebiete in welchen sie nicht gestört werden. Die Ausscheidung von Wildruhezonen dient der Vermeidung übermässiger Störung gemäss Art. 7 Abs 4 des JSG als Antwort auf die zunehmende Freizeitnutzung. Es gibt heute rechtsverbindliche Wildruhezonen und Schutzgebiete, die über den Rechtssetzungsprozess ausgeschieden sind (kantonales Jagdrecht, kommunale Zonenplanung, etc.), wie auch empfohlene Gebiete. Innerhalb von rechtsverbindlichen Wildruhezonen und Wildtierschutzgebieten dürfen nur die in der Karte eingezeichneten erlaubten Routen und Wege begangen werden. Nicht eingezeichnet sind präparierte (Langlauf-)Loipen, Winterwanderwege und im Winter geräumte oder befahrbare Strassen. Diese dürfen von Schneesportlern selbstverständlich begangen werden. In empfohlenen Wildruhezonen sind die erlaubten Routen und Wege als Empfehlungen zu verstehen. Der Stand der Arbeiten in den Kantonen ist zur Zeit sehr unterschiedlich, weshalb der Datensatz Lücken aufweist. Die Karte wird mindestens jährlich (zu Winterbeginn) aktualisiert. Bitte beachten Sie die allgemeinen Hinweise und Änderungen (z.B. Perimeteranpassungen) unten, welche in der Karte noch nicht berücksichtigt werden konnten. Die Kampagne "Respektiere deine Grenzen" setzt sich für den Schutz der Wildtiere und die Bekanntmachung der Wildruhezonen in der Bevölkerung ein.</lan:LocalisedCharacterString>
+            <lan:LocalisedCharacterString locale="#DE">Das Bundesinventar der schützenswerten Ortsbilder der Schweiz von nationaler Bedeutung (ISOS) bezeichnet die wertvollsten, landesweit bedeutenden Ortsbilder und dokumentiert sie.
+Die Arbeiten am ISOS begannen 1973 mit der Entwicklung einer für die Inventarisierung von Ortsbildern geeigneten Methode –  der ISOS-Methode. Im Jahr 2016 hat das Bundesamt für Kultur (BAK) diese Methode aktualisiert und die Darstellung des Bundesinventars an die GIS-Technologie angepasst. Die ursprüngliche Methode (ISOS I) und die angepasste Methode (ISOS II) beruhen auf denselben Grundprinzipien und Regeln. 
+Dieses  Portal präsentiert die ISOS-Aufnahmen, die zurzeit in Kraft sind. Es gibt zwei Arten von Daten:
+1. die nach Methode ISOS I erarbeiteten Aufnahmen, die lediglich als PDF verfügbar sind;
+2. die nach Methode ISOS II erarbeiteten Aufnahmen, die als PDF und vektorielle Geodaten verfügbar sind. Bitte beachten Sie: Nur die PDF sind rechtsgültig. Die Geodaten dienen lediglich der Information. Ihr Detaillierungsgrad nimmt mit wachsendem Massstab zu. 
+Das ISOS wird zurzeit revidiert. Die Revision erfolgt etappenweise. Folglich werden während einer gewissen Zeit Aufnahmen, die nach der Methode ISOS I erarbeitet wurden, und Aufnahmen, die mit der Methode ISOS II erstellt wurden, auf diesem Portal koexistieren. Nach Abschluss der Revision in der ganzen Schweiz werden nur noch Aufnahmen verfügbar sein, die nach der Methode ISOS II erarbeitet wurden.
+
+Dieser Layer präsentiert die Fotos zu den nach der Methode ISOS II aktualisierten Aufnahmen. Er wird jährlich aktualisiert. Die beste Übersichtlichkeit der Informationen wird erreicht, wenn er über dem Layer "Ortsbildaufnahmen" liegt. 
+
+Die Fotos sind ab dem Massstab 1: 50'000 zu sehen. 
+
+Alle ISOS-Daten (Pläne, Texte, Fotos) sind geistiges Eigentum der Bundesregierung (© BAK, Bern)
+
+Für detaillierte Informationen zum ISOS siehe www.isos.ch.</lan:LocalisedCharacterString>
           </lan:textGroup>
           <lan:textGroup>
-            <lan:LocalisedCharacterString locale="#FR">Les animaux sauvages ont besoin de sites de repli dans lesquels ils ne sont pas dérangés. Selon la loi fédérale sur la chasse (art. 7, al. 4 LChP) les zones de tranquillité pour la faune sauvage servent à éviter des dérangements excessifs causés par l’augmentation des activités de loisirs. Il existe des zones de tranquillité contraignantes et des zones de tranquillité recommandées. Les zones de tranquillité contraignantes sont délimitées par le biais d’un processus législatif (p. ex. via la loi cantonale sur la chasse ou le plan directeur communal). A l'intérieur des zones de tranquillité et des sites de protection contraignantes, seuls les routes et les chemins figurant sur la carte peuvent être empruntés. Les pistes (de ski de fond), les sentiers de randonnées hivernales et les itinéraires dégagés ou accessibles en hiver ne sont pas représentés. Naturellement, ceux-ci peuvent être empruntés par les randonneurs. Dans les zones de tranquillité recommandées, les routes et les chemins autorisés sont à comprendre comme recommandés. L'avancement de la saisie des données varient considérablement d'un canton à l'autre. C'est pourquoi le jeu de données actuel présente quelques lacunes. La carte est actualisée au moins une fois par an (au début de l’hiver).Merci de respecter les remarques générales ainsi que les modifications ci-dessous (ex. modification de périmètre) qui n'ont pas encore pu être prises en compte sur la carte. La campagne "Respecter, c'est protéger" s'engage pour la protection de la faune et pour faire connaître les zones de tranquillité au grand public.</lan:LocalisedCharacterString>
+            <lan:LocalisedCharacterString locale="#FR">L’Inventaire fédéral des sites construits d’importance nationale à protéger en Suisse (ISOS) recense les sites construits les plus précieux et les plus importants du pays et les documente. 
+Les travaux relatifs à l’Inventaire ISOS ont commencé en 1973 avec le développement d’une méthode appropriée au recensement des sites construits – la méthode ISOS. En 2016, l’Office fédéral de la culture (OFC) a actualisé cette méthode et a adapté la présentation de l'Inventaire fédéral aux technologies SIG. La méthode originelle (ISOS I) et la méthode adaptée (ISOS II) reposent sur les mêmes principes et les mêmes règles de base.
+Le présent portail présente les relevés ISOS actuellement en vigueur. Ces derniers se composent de deux types de données: 
+1. les relevés élaborés selon la méthode ISOS I, uniquement disponibles sous forme de PDF;
+2. les relevés établis selon la méthode ISOS II, disponibles sous forme de PDF et de géodonnées vectorielles. Attention: seuls les PDFs ont  valeur légale. Les géodonnées ont uniquement une valeur informative. Leur degré de détail augmente avec l'échelle. 
+L'ISOS est actuellement en cours de révision. Cette révision s’effectue par étapes. Pendant un certain temps, les relevés élaborés selon la méthode ISOS I et les relevés établis selon la méthode ISOS II coexisteront donc sur le géoportail. Une fois l’ISOS révisé dans toute la Suisse, seuls les relevés établis selon la méthode ISOS II seront disponibles. 
+
+Cette couche présente les photos des sites actualisés selon la méthode ISOS II. Elle est mise à jour une fois par année. Pour une lisibilité optimale des informations, il est conseillé de la placer au-dessus de la couche "relevés de sites". 
+
+Les photos sont visibles à partir de l'échelle 1 : 50'000.  
+
+Toutes les données ISOS (plans, textes, photos) sont la propriété intellectuelle du gouvernement fédéral (© OFC, Berne ).
+
+Pour des informations détaillées sur l'ISOS, voir www.isos.ch.</lan:LocalisedCharacterString>
           </lan:textGroup>
           <lan:textGroup>
-            <lan:LocalisedCharacterString locale="#IT">La fauna selvatica ha bisogno di zone in cui ritirarsi per poter vivere indisturbata. Conformemente alla legge sulla caccia (art. 7 cpv. 4 LCP), lo scopo di queste zone è prevenire un eccessivo disturbo della fauna selvatica a fronte della crescente utilizzazione del territorio per le attività del tempo libero. Esistono zone vincolanti e zone raccomandate. Le zone vincolanti sono istituite mediante processo legislativo (p. es. legislazione cantonale sulla caccia, pianificazione comunale delle zone). All’interno delle zone di tranquillità e delle siti de protezione vincolanti, solo strade e sentieri segnalate sulla carta possono essere percorsi. Non sono invece segnalati le piste per lo sci di fondo, i percorsi escursionistici invernali e le strade sgomberate dalla neve o rese percorribili d’inverno. L’accesso è consentito alle persone che praticano sport invernali. Nelle zone di tranquillità raccomandate, le strade e i percorsi autorizzati sono da ritenere come raccomandate. Lo stato dell’inserimento dei dati varia notevolmente da un cantone all'altro. Per questo motivo il set di dati attuale presenta alcune lacune. La carta viene aggiornata almeno una volta l’anno (a inizio della stagione invernale).Vi preghiamo di rispettare le osservazioni generali e le modifiche qui di seguito (per esempio modifica del perimetro) che non sono ancora state prese in considerazione sulla carta. La campagna "Chi rispetta protegge" è concepita per proteggere la fauna e per l'informazione alla popolazione in merito alle zone di tranquillità.</lan:LocalisedCharacterString>
+            <lan:LocalisedCharacterString locale="#IT">L’Inventario federale degli insediamenti svizzeri da proteggere d’importanza nazionale (ISOS) rileva e documenta gli insediamenti di maggior valore  e importanza del paese. 
+L’avvio dei lavori per l’allestimento dell’ISOS risale al 1973 con lo sviluppo di un metodo adeguato per l’inventariazione di insediamenti – il metodo ISOS. Nel 2016, l'Ufficio federale della cultura (UFC) ha rielaborato tale metodo e adeguato la rappresentazione dell'Inventario federale alle tecnologie GIS. Il metodo originario (ISOS I) e il suo aggiornamento (ISOS II) hanno gli stessi principi e le stesse regole di base.
+Questo portale presenta i rilevamenti ISOS attualmente in vigore che consistono in due tipi di dati: 
+1. rilevamenti allestiti secondo il metodo ISOS I, disponibili unicamente sotto forma di PDF
+2. rilevamenti allestiti secondo il metodo ISOS II, disponibili sotto forma di  PDF e di geodati vettoriali. Attenzione: solo i PDF hanno forza giuridica. I geodati sono a solo titolo informativo. Il loro livello di dettaglio cresce con l'aumentare della scala di rappresentazione.
+Attualmente, l'ISOS è in fase di revisione che avviene per tappe. Di conseguenza, per un certo periodo di tempo, i rilevamenti elaborati secondo il metodo ISOS I e i rilevamenti allestiti secondo il metodo ISOS II coesisteranno su questo portale. Una volta che l'ISOS sarà stato rivisto in tutta la Svizzera, saranno disponibili solo i rilevamenti realizzati secondo il metodo ISOS II.
+
+Questo livello presenta le foto relative ai rilevamenti degli insediamenti aggiornati secondo il metodo ISOS II. Sarà aggiornato una volta all'anno. Per una leggibilità ottimale delle informazioni è consigliabile porlo al di sopra del livello "rilevamenti degli insediamenti". 
+
+Le foto sono visibili dalla scala 1 : 50'000. 
+
+Tutti i dati ISOS (piani, testi, foto) sono proprietà intellettuale della Confederazione (© UFC, Berna).
+
+Per informazioni approfondite sull'ISOS, si vada su www.isos.ch.</lan:LocalisedCharacterString>
           </lan:textGroup>
           <lan:textGroup>
-            <lan:LocalisedCharacterString locale="#EN">Wildlife requires areas of refuge in which it will not be disturbed. In accordance with Article 7 Paragraph 4 of the Swiss Hunting Act (HuntA), designated wildlife areas are designed to prevent excessive interference due the increase in recreational activities. There are now statutory wildlife areas and reserves which are delineated through a legislative process (cantonal hunting law, municipal zone planning, etc.), as well as recommended wildlife areas and reserves. Within statutory designated wildlife areas and wildlife reserves, only permitted paths and trails marked on the map may be accessed. Prepared cross-country skiing trails, winter hiking trails and roads that are cleared or passable in winter are not shown on the map. Participants in winter sports may, of course, use these routes. In recommended wildlife areas, the permitted paths and trails are to be understood as suggestions. The status of the work currently varies significantly between cantons, which is why the dataset is incomplete. The map is updated at least once a year (at the start of winter). Please take note of the general information and changes below (e.g. perimeter adjustments), which have not yet been incorporated into the map. The campaign “Respektiere deine Grenzen” ("Respect your limits") is committed to protecting wildlife and raising public awareness of wildlife reserves.</lan:LocalisedCharacterString>
+            <lan:LocalisedCharacterString locale="#EN">The Inventory of Swiss Heritage Sites (ISOS) designates and documents the most valuable sites of national importance.
+Work on the ISOS began in 1973 with the development of a suitable method for cataloguing sites – the ISOS method. In 2016, the Federal Office of Culture (FOC) updated this method and adapted the presentation of the inventory in line with GIS technology. The original method (ISOS I) and the adapted method (ISOS II) are based on the same basic principles and rules. 
+This portal presents the ISOS site records currently in use. There are two kinds of data:
+1. the site records prepared using the ISOS I method, which are only available as PDFs;
+2. the site records updated using the ISOS II method, which are available as PDFs and geodata. Please be aware that only the PDFs are legally valid. The geodata are for information purposes only. The level of detail increases as the scale increases. 
+The ISOS is currently being revised and the revision is taking place in stages. This means that for a certain period of time, site records compiled using the ISOS I method and those updated using the ISOS II method will coexist on this portal. Once the revision for the whole of Switzerland has been completed, only the site records compiled using the ISOS II method will be available.
+
+This layer presents the photos for the site records updated using the ISOS II method. It is updated once a year. The information is clearest when this layer is placed over the “site records” layer. 
+
+The photos can be viewed from a scale of 1: 50,000. 
+
+All ISOS data (plans, texts, photos) are the intellectual property of the Swiss federal government (© FOC, Bern).
+
+For detailed information on ISOS, see www.isos.ch.</lan:LocalisedCharacterString>
           </lan:textGroup>
           <lan:textGroup>
-            <lan:LocalisedCharacterString locale="#RM">Ils animals selvadis dovran refugis, nua ch'els na vegnan betg disturbads. La determinaziun da zonas da paus per la selvaschina serva ad evitar disturbis memia gronds tenor l'art. 7 al. 4 LChP sco resposta a l'augment da l'utilisaziun da temp liber. Oz datti zonas da paus per la selvaschina e territoris protegids giuridicamain liants ch'èn vegnids determinads sin basa d'in process legislativ (dretg da chatscha chantunal, planisaziun communala da zonas e.u.v.) sco er territoris recumandads. Entaifer las zonas da paus per la selvaschina ed ils asils da selvaschina giuridicamain liants dastgan ins chaminar mo sin las rutas e sendas permessas ch'èn inditgadas sin la charta. Betg inditgadas èn loipas (da passlung) preparadas, sendas da viandar l'enviern sco er vias rumidas da la naiv u charrablas l'enviern. Quellas dastgan natiralmain vegnir duvradas dals sportists d'enviern. En zonas da paus per la selvaschina recumandadas ston las rutas e sendas permessas vegnir chapidas sco recumandaziuns. Il stadi da las lavurs en ils chantuns è actualmain fitg different, perquai ha l'unitad da datas largias. La charta vegn actualisada almain ina giada l'onn (il cumenzament da l'enviern). Resguardai per plaschair las infurmaziuns generalas e las midadas (p.ex. adattaziuns dal perimeter) che n'han anc betg pudì vegnir resguardadas en la charta. La campagna "Respecta tes cunfins – er en la natira" s'engascha per la protecziun da la selvaschina e vul er render enconuschentas a la populaziun las zonas da paus per la selvaschina.</lan:LocalisedCharacterString>
+            <lan:LocalisedCharacterString locale="#RM">L'Inventari federal dals lieus svizzers d'impurtanza naziunala degns da protecziun (ISOS) designescha e documentescha ils lieus impurtants ils pli prezius da la Svizra. Las lavurs vi dal ISOS han cumenzà l'onn 1973 cun sviluppar ina metoda ch'è adattada per inventarisar lieus – la metoda ISOS. L'onn 2016 ha l'Uffizi federal da cultura (UFC) actualisà questa metoda ed adattà la preschentaziun da l'Inventari federal a la tecnologia SIG. La metoda oriunda (ISOS I) e la metoda adattada (ISOS II) sa basan sin ils medems princips fundamentals e sin las medemas reglas. 
+Quest portal preschenta ils relevaments ISOS ch'èn actualmain en vigur. I dat duas sorts da datas: 
+1. ils relevaments elavurads tenor la metoda ISOS I ch'èn disponibels mo sco PDF; 
+2. ils relevaments actualisads tenor la metoda ISOS II ch'èn disponibels sco PDF e sco geodatas. Resguardai per plaschair: mo ils documents da PDF han valur legala. Las geodatas servan mo a l'infurmaziun. Il grad da precisaziun s'augmenta cun la scala che crescha.  Actualmain vegn il ISOS revedì. La revisiun vegn fatga en etappas. Durant in tschert temp vegnan pia a coexister sin quest portal relevaments ch'èn vegnids fatgs tenor la metoda ISOS I, e  relevaments ch'èn vegnids actualisads cun la metoda ISOS II. Cura che la revisiun è terminada en tut la Svizra, vegnan ad esser disponibels mo pli relevaments ch'èn vegnids elavurads tenor la metoda ISOS II. 
+
+Quest layer preschenta las fotografias dals relevaments actualisads tenor la metoda ISOS II. El vegn actualisà mintga onn. La meglra survesaivladad da las infurmaziuns vegn cuntanschida, sch'il layer sa chatta sur il layer "Relevaments da lieus". 
+
+Las fotografias vegnan preschentadas en la scala 1:50'000. 
+
+Tut las datas ISOS (plans, texts, fotografias) èn la proprietad intellectuala da la Regenza federala (© UFC, Berna). 
+
+Per infurmaziuns detagliadas davart il ISOS guardar www.isos.ch.</lan:LocalisedCharacterString>
           </lan:textGroup>
         </lan:PT_FreeText>
       </mri:abstract>
+      <mri:purpose xsi:type="lan:PT_FreeText_PropertyType">
+        <gco:CharacterString>Gemäss Artikel 78 der Bundesverfassung ist der Bund verpflichtet, bei der Erfüllung seiner Aufgaben Rücksicht auf die Anliegen des Natur- und Heimatschutzes zu nehmen. "Er schont Landschaften, Ortsbilder, geschichtliche Stätten sowie Natur- und Kulturdenkmäler; er erhält sie ungeschmälert, wenn das öffentliche Interesse es gebietet". Um diese Pflicht, die Interessenabwägung zwischen dem Natur- und Heimatschutz und den vielfältigen Aufgaben des Bundes, seiner Anstalten und Betriebe sachgerecht wahrnehmen zu können, wird als eine Entscheidgrundlage das ISOS erarbeitet.</gco:CharacterString>
+        <lan:PT_FreeText>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#DE">Gemäss Artikel 78 der Bundesverfassung ist der Bund verpflichtet, bei der Erfüllung seiner Aufgaben Rücksicht auf die Anliegen des Natur- und Heimatschutzes zu nehmen. "Er schont Landschaften, Ortsbilder, geschichtliche Stätten sowie Natur- und Kulturdenkmäler; er erhält sie ungeschmälert, wenn das öffentliche Interesse es gebietet". Um diese Pflicht, die Interessenabwägung zwischen dem Natur- und Heimatschutz und den vielfältigen Aufgaben des Bundes, seiner Anstalten und Betriebe sachgerecht wahrnehmen zu können, wird als eine Entscheidgrundlage das ISOS erarbeitet.</lan:LocalisedCharacterString>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#FR">Selon l'art. 78 de la Constitution fédérale, la protection de la nature et du patrimoine fait partie des tâches de la Confédération: "Elle ménage les paysages, la physionomie des localités, les sites historiques et les monuments naturels et culturels; elle les conserve dans leur intégralité si l'intérêt public l'exige". Pour faciliter l'accomplissement de cette tâche et trouver l'équilibre à maintenir entre les nouvelles installations et les intérêts de la protection de la nature et du patrimoine, l'ISOS est établi comme base de décision.</lan:LocalisedCharacterString>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#IT">In base all'articolo 78 della Costituzione "Nell'adempimento dei suoi compiti, la Confederazione prende in considerazione gli obiettivi della protezione della natura e del paesaggio. Ha cura dei paesaggi, dei siti caratteristici, dei luoghi storici nonché dei monumenti naturali e culturali; quando l'interesse pubblico lo richieda, li conserva integri". Per fare meglio fronte a tale compito, e per potere decidere al meglio, nel delicato equilibrio tra esigenza di protezione della natura e del paesaggio da un lato e necessità di realizzazione di opere e lavori da parte della Confederazione, dei suoi enti e istituzioni dall'altro, viene elaborato l'Inventario.</lan:LocalisedCharacterString>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#EN">According to Article 78 of the Federal Constitution, the Confederation is obliged to take account of concerns for the protection of natural and cultural heritage in the fulfilment of its duties. “It shall protect the countryside and places of architectural, historical, natural or cultural interest; it shall preserve such places intact if required to do so in the public interest”. In order to be able to properly fulfil this duty of balancing the interests of the protection of natural and cultural heritage with the diverse duties of the Confederation, its institutions and enterprises, the ISOS is being developed as a basis for decision-making.</lan:LocalisedCharacterString>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#RM">Tenor l'art. 78 da la Constituziun federala è la Confederaziun obligada – ademplind sias incumbensas – da resguardar ils interess da la protecziun da la natira e da la patria. "Ella ha quità da cuntradas, da maletgs dal lieu, da lieus istorics sco er da monuments da natira e da cultura; ella mantegna quels en lur furma integrala, sche l'interess public pretenda quai". Per pudair observar adequatamain questa obligaziun – la consideraziun dals interess tranter la protecziun da la natira e da la patria e las incumbensas multifaras da la Confederaziun, da ses instituts e da ses manaschis – vegn elavurà il ISOS sco ina da las basas da decisiun.</lan:LocalisedCharacterString>
+          </lan:textGroup>
+        </lan:PT_FreeText>
+      </mri:purpose>
       <mri:pointOfContact xlink:show="embed">
         <cit:CI_Responsibility>
           <cit:role>
@@ -315,22 +438,22 @@
           <cit:party>
             <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
               <cit:name xsi:type="lan:PT_FreeText_PropertyType">
-                <gco:CharacterString>Bundesamt für Umwelt / Abteilung Biodiversität und Landschaft</gco:CharacterString>
+                <gco:CharacterString>Bundesamt für Kultur - ISOS</gco:CharacterString>
                 <lan:PT_FreeText>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#DE">Bundesamt für Umwelt / Abteilung Biodiversität und Landschaft</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#DE">Bundesamt für Kultur - ISOS</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#FR">Office fédéral de l'environnement / Division Biodiversité et paysage</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#FR">Office fédéral de la culture - ISOS</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#IT">Ufficio federale dell'ambiente / Divisione Biodiversità e paesaggio</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#IT">Ufficio federale della cultura - ISOS</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#EN">Federal Office for the Environment / Biodiversity and Landscape Division</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#EN">Federal Office of Culture - ISOS</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#RM">Bundesamt für Umwelt</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#RM">Bundesamt für Kultur - ISOS</lan:LocalisedCharacterString>
                   </lan:textGroup>
                 </lan:PT_FreeText>
               </cit:name>
@@ -339,27 +462,17 @@
                   <cit:phone>
                     <cit:CI_Telephone>
                       <cit:number>
-                        <gco:CharacterString>+41 58 462 93 89</gco:CharacterString>
+                        <gco:CharacterString>+41 58 462 86 26</gco:CharacterString>
                       </cit:number>
                       <cit:numberType>
                         <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
                       </cit:numberType>
                     </cit:CI_Telephone>
                   </cit:phone>
-                  <cit:phone>
-                    <cit:CI_Telephone>
-                      <cit:number>
-                        <gco:CharacterString>+41 58 463 89 74</gco:CharacterString>
-                      </cit:number>
-                      <cit:numberType>
-                        <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="facsimile">facsimile</cit:CI_TelephoneTypeCode>
-                      </cit:numberType>
-                    </cit:CI_Telephone>
-                  </cit:phone>
                   <cit:address>
                     <cit:CI_Address>
                       <cit:deliveryPoint>
-                        <gco:CharacterString />
+                        <gco:CharacterString>Hallwylstrasse 15</gco:CharacterString>
                       </cit:deliveryPoint>
                       <cit:city>
                         <gco:CharacterString>Bern</gco:CharacterString>
@@ -371,7 +484,7 @@
                         <gco:CharacterString>CH</gco:CharacterString>
                       </cit:country>
                       <cit:electronicMailAddress>
-                        <gco:CharacterString>bnl@bafu.admin.ch</gco:CharacterString>
+                        <gco:CharacterString>isos@bak.admin.ch</gco:CharacterString>
                       </cit:electronicMailAddress>
                     </cit:CI_Address>
                   </cit:address>
@@ -380,16 +493,19 @@
                       <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
                         <lan:PT_FreeText>
                           <lan:textGroup>
-                            <lan:LocalisedCharacterString locale="#EN">https://www.bafu.admin.ch/bafu/en/home/office/divisions-sections/biodiversity-and-landscape-division.html</lan:LocalisedCharacterString>
+                            <lan:LocalisedCharacterString locale="#EN" />
                           </lan:textGroup>
                           <lan:textGroup>
-                            <lan:LocalisedCharacterString locale="#DE">https://www.bafu.admin.ch/bafu/de/home/amt/abteilungen-sektionen/abteilung-biodiversitaet-und-landschaft.html</lan:LocalisedCharacterString>
+                            <lan:LocalisedCharacterString locale="#DE">https://www.bak.admin.ch/bak/de/home/baukultur/isos-und-ortsbildschutz/ortsbildaufnahmen/geodaten.html</lan:LocalisedCharacterString>
                           </lan:textGroup>
                           <lan:textGroup>
-                            <lan:LocalisedCharacterString locale="#FR">https://www.bafu.admin.ch/bafu/fr/home/office/divisions-sections/division-biodiversite-et-paysage.html</lan:LocalisedCharacterString>
+                            <lan:LocalisedCharacterString locale="#FR">https://www.bak.admin.ch/bak/fr/home/baukultur/isos-und-ortsbildschutz/ortsbildaufnahmen/geodaten.html</lan:LocalisedCharacterString>
                           </lan:textGroup>
                           <lan:textGroup>
-                            <lan:LocalisedCharacterString locale="#IT">https://www.bafu.admin.ch/bafu/it/home/ufficio/divisioni-sezioni/divisione-biodiversita-e-paesaggio.html</lan:LocalisedCharacterString>
+                            <lan:LocalisedCharacterString locale="#IT">https://www.bak.admin.ch/bak/it/home/baukultur/isos-und-ortsbildschutz/ortsbildaufnahmen/geodaten.html</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#RM" />
                           </lan:textGroup>
                         </lan:PT_FreeText>
                       </cit:linkage>
@@ -403,16 +519,177 @@
               <cit:individual>
                 <cit:CI_Individual>
                   <cit:name>
-                    <gco:CharacterString>BAFU BNL</gco:CharacterString>
+                    <gco:CharacterString>Marcia Haldemann</gco:CharacterString>
                   </cit:name>
+                  <cit:positionName xsi:type="lan:PT_FreeText_PropertyType">
+                    <gco:CharacterString>Sektion Baukultur</gco:CharacterString>
+                    <lan:PT_FreeText>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#DE">Sektion Baukultur</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#FR">Section Culture du bâti</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#IT">Sezione Cultura della costruzione</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#EN">Section Baukultur</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#RM">Secziun Cultura da construcsziun</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                    </lan:PT_FreeText>
+                  </cit:positionName>
                 </cit:CI_Individual>
               </cit:individual>
             </che:CHE_CI_Organisation>
           </cit:party>
         </cit:CI_Responsibility>
       </mri:pointOfContact>
+      <mri:pointOfContact xlink:show="embed">
+        <cit:CI_Responsibility>
+          <cit:role>
+            <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="owner">owner</cit:CI_RoleCode>
+          </cit:role>
+          <cit:party>
+            <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>Bundesamt für Kultur</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Bundesamt für Kultur</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">Office fédéral de la culture</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">Ufficio federale della cultura</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">Federal Office of Culture</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#RM">Bundesamt für Kultur</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:name>
+              <cit:contactInfo>
+                <cit:CI_Contact>
+                  <cit:phone>
+                    <cit:CI_Telephone>
+                      <cit:number>
+                        <gco:CharacterString>+41 58 462 92 66</gco:CharacterString>
+                      </cit:number>
+                      <cit:numberType>
+                        <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+                      </cit:numberType>
+                    </cit:CI_Telephone>
+                  </cit:phone>
+                  <cit:address>
+                    <cit:CI_Address>
+                      <cit:deliveryPoint>
+                        <gco:CharacterString>Hallwylstrasse 15</gco:CharacterString>
+                      </cit:deliveryPoint>
+                      <cit:city>
+                        <gco:CharacterString>Bern</gco:CharacterString>
+                      </cit:city>
+                      <cit:postalCode>
+                        <gco:CharacterString />
+                      </cit:postalCode>
+                      <cit:country>
+                        <gco:CharacterString>CH</gco:CharacterString>
+                      </cit:country>
+                      <cit:electronicMailAddress>
+                        <gco:CharacterString>info@bak.admin.ch</gco:CharacterString>
+                      </cit:electronicMailAddress>
+                    </cit:CI_Address>
+                  </cit:address>
+                  <cit:onlineResource>
+                    <cit:CI_OnlineResource>
+                      <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                        <lan:PT_FreeText>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#IT">http://www.bak.admin.ch/index.html?lang=it</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#RM">http://www.bak.admin.ch/</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#FR">http://www.bak.admin.ch/index.html?lang=fr</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#EN">http://www.bak.admin.ch/</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#DE">http://www.bak.admin.ch/</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                        </lan:PT_FreeText>
+                      </cit:linkage>
+                      <cit:protocol>
+                        <gco:CharacterString>WWW:LINK</gco:CharacterString>
+                      </cit:protocol>
+                      <cit:name xsi:type="lan:PT_FreeText_PropertyType" gco:nilReason="missing">
+                        <gco:CharacterString />
+                        <lan:PT_FreeText>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#EN" />
+                          </lan:textGroup>
+                        </lan:PT_FreeText>
+                      </cit:name>
+                      <cit:description xsi:type="lan:PT_FreeText_PropertyType" gco:nilReason="missing">
+                        <gco:CharacterString />
+                        <lan:PT_FreeText>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#EN" />
+                          </lan:textGroup>
+                        </lan:PT_FreeText>
+                      </cit:description>
+                    </cit:CI_OnlineResource>
+                  </cit:onlineResource>
+                </cit:CI_Contact>
+              </cit:contactInfo>
+              <cit:individual>
+                <cit:CI_Individual>
+                  <cit:positionName xsi:type="lan:PT_FreeText_PropertyType">
+                    <gco:CharacterString>Kontakt</gco:CharacterString>
+                    <lan:PT_FreeText>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#DE">Kontakt</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#FR">Contact</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#IT">Contatto</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#EN">Contact</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                    </lan:PT_FreeText>
+                  </cit:positionName>
+                </cit:CI_Individual>
+              </cit:individual>
+            </che:CHE_CI_Organisation>
+          </cit:party>
+        </cit:CI_Responsibility>
+      </mri:pointOfContact>
+      <mri:spatialRepresentationType>
+        <mcc:MD_SpatialRepresentationTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="textTable">textTable</mcc:MD_SpatialRepresentationTypeCode>
+      </mri:spatialRepresentationType>
+      <mri:spatialResolution>
+        <mri:MD_Resolution>
+          <mri:equivalentScale>
+            <mri:MD_RepresentativeFraction>
+              <mri:denominator>
+                <gco:Integer>5000</gco:Integer>
+              </mri:denominator>
+            </mri:MD_RepresentativeFraction>
+          </mri:equivalentScale>
+        </mri:MD_Resolution>
+      </mri:spatialResolution>
       <mri:topicCategory>
-        <mri:MD_TopicCategoryCode>environment</mri:MD_TopicCategoryCode>
+        <mri:MD_TopicCategoryCode>society</mri:MD_TopicCategoryCode>
       </mri:topicCategory>
       <mri:extent xlink:show="embed">
         <gex:EX_Extent>
@@ -476,24 +753,154 @@
           <mmi:maintenanceAndUpdateFrequency>
             <mmi:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="annually" />
           </mmi:maintenanceAndUpdateFrequency>
+          <che:appraisal>
+            <che:CHE_MD_Appraisal_AAP>
+              <che:durationOfConservation>
+                <gco:Integer>1</gco:Integer>
+              </che:durationOfConservation>
+              <che:appraisalOfArchivalValue>
+                <che:CHE_AppraisalOfArchivalValueCode codeList="#CHE_AppraisalOfArchivalValueCode" codeListValue="" />
+              </che:appraisalOfArchivalValue>
+            </che:CHE_MD_Appraisal_AAP>
+          </che:appraisal>
         </che:CHE_MD_MaintenanceInformation>
       </mri:resourceMaintenance>
       <mri:descriptiveKeywords>
         <mri:MD_Keywords>
           <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
-            <gco:CharacterString>Schutzgebiete</gco:CharacterString>
+            <gco:CharacterString>opendata.swiss</gco:CharacterString>
             <lan:PT_FreeText>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#DE">Schutzgebiete</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#DE">opendata.swiss</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#FR">Sites protégés</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#FR">opendata.swiss</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#IT">Siti protetti</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#IT">opendata.swiss</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#EN">Protected sites</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#EN">opendata.swiss</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#RM">opendata.swiss</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Geobasisdienst</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Geobasisdienst</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">géoservice de base</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">geoservizio di base</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">official geoservice</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#RM" />
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Ortsbild</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Ortsbild</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">site construit</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">insediamento</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">heritage site</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#RM" />
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>BGDI Bundesgeodaten-Infrastruktur</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">BGDI Bundesgeodaten-Infrastruktur</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">IFDG l’Infrastructure Fédérale de données géographiques</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">IFDG Infrastruttura federale dei dati geografici</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">FSDI Federal Spatial Data Infrastructure</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#RM" />
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>ISOS</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">ISOS</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">ISOS</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">ISOS</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">ISOS</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#RM" />
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Bundesinventar</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Bundesinventar</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">inventaire fédéral</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">inventario federale</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">federal inventory</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#RM" />
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Aufbewahrungs- und Archivierungsplanung AAP - Bund</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Aufbewahrungs- und Archivierungsplanung AAP - Bund</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">Planification de la conservation et de l'archivage AAP - Conféderation</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">Pianificazione della conservazione e dell’archiviazione AAP - Confederazione</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">Conservation and archiving planning AAP - Confederation</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
                 <lan:LocalisedCharacterString locale="#RM" />
@@ -506,12 +913,12 @@
           <mri:thesaurusName>
             <cit:CI_Citation>
               <cit:title>
-                <gco:CharacterString>GEMET - INSPIRE themes, version 1.0</gco:CharacterString>
+                <gco:CharacterString>geocat.ch</gco:CharacterString>
               </cit:title>
               <cit:date>
                 <cit:CI_Date>
                   <cit:date>
-                    <gco:Date>2008-06-01</gco:Date>
+                    <gco:Date>2024-06-13</gco:Date>
                   </cit:date>
                   <cit:dateType>
                     <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</cit:CI_DateTypeCode>
@@ -521,7 +928,7 @@
               <cit:identifier>
                 <mcc:MD_Identifier>
                   <mcc:code>
-                    <gcx:Anchor xlink:href="https://www.geocat.ch/geonetwork/srv/api/registries/vocabularies/external.theme.httpinspireeceuropaeutheme-theme">geonetwork.thesaurus.external.theme.httpinspireeceuropaeutheme-theme</gcx:Anchor>
+                    <gcx:Anchor xlink:href="https://www.geocat.ch/geonetwork/srv/api/registries/vocabularies/local.theme.geocat.ch">geonetwork.thesaurus.local.theme.geocat.ch</gcx:Anchor>
                   </mcc:code>
                 </mcc:MD_Identifier>
               </cit:identifier>
@@ -532,19 +939,19 @@
       <mri:descriptiveKeywords>
         <mri:MD_Keywords>
           <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
-            <gco:CharacterString>Wildfauna</gco:CharacterString>
+            <gco:CharacterString>Baudenkmal</gco:CharacterString>
             <lan:PT_FreeText>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#DE">Wildfauna</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#DE">Baudenkmal</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#FR">faune sauvage</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#FR">monument historique</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#IT">fauna selvatica</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#IT">monumento di valore storico</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#EN">wild fauna</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#EN">historical monument</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
                 <lan:LocalisedCharacterString locale="#RM" />
@@ -552,19 +959,19 @@
             </lan:PT_FreeText>
           </mri:keyword>
           <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
-            <gco:CharacterString>Habitat wildlebender Tiere und Pflanzen</gco:CharacterString>
+            <gco:CharacterString>Historischer Standort</gco:CharacterString>
             <lan:PT_FreeText>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#DE">Habitat wildlebender Tiere und Pflanzen</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#DE">Historischer Standort</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#FR">habitat de la faune sauvage</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#FR">site historique</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#IT">habitat di flora e fauna selvatiche</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#IT">sito di valore storico</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#EN">wildlife habitat</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#EN">historical site</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
                 <lan:LocalisedCharacterString locale="#RM" />
@@ -572,19 +979,19 @@
             </lan:PT_FreeText>
           </mri:keyword>
           <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
-            <gco:CharacterString>Biologisches Schutzgebiet</gco:CharacterString>
+            <gco:CharacterString>Denkmalerhaltung</gco:CharacterString>
             <lan:PT_FreeText>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#DE">Biologisches Schutzgebiet</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#DE">Denkmalerhaltung</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#FR">réserve biologique</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#FR">conservation des monuments</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#IT">riserve biologiche</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#IT">conservazione dei monumenti</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#EN">biological reserve</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#EN">conservation of monuments</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
                 <lan:LocalisedCharacterString locale="#RM" />
@@ -592,19 +999,19 @@
             </lan:PT_FreeText>
           </mri:keyword>
           <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
-            <gco:CharacterString>Wildtier</gco:CharacterString>
+            <gco:CharacterString>Kulturgut</gco:CharacterString>
             <lan:PT_FreeText>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#DE">Wildtier</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#DE">Kulturgut</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#FR">animal sauvage</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#FR">bien culturel</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#IT">animale selvatico</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#IT">beni culturali</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#EN">wild animal</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#EN">cultural goods</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
                 <lan:LocalisedCharacterString locale="#RM" />
@@ -643,59 +1050,19 @@
       <mri:descriptiveKeywords>
         <mri:MD_Keywords>
           <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
-            <gco:CharacterString>Skitour</gco:CharacterString>
+            <gco:CharacterString>Bewirtschaftungsgebiete/Schutzgebiete/geregelte Gebiete und Berichterstattungseinheiten</gco:CharacterString>
             <lan:PT_FreeText>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#DE">Skitour</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#DE">Bewirtschaftungsgebiete/Schutzgebiete/geregelte Gebiete und Berichterstattungseinheiten</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#FR">randonnée à ski</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#FR">Zones de gestion, de restriction ou de réglementation et unités de déclaration</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#IT">escursione con gli sci</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#IT">Zone sottoposte a gestione/limitazioni/regolamentazione e unità con obbligo di comunicare dati</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#EN">ski tour</lan:LocalisedCharacterString>
-              </lan:textGroup>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#RM" />
-              </lan:textGroup>
-            </lan:PT_FreeText>
-          </mri:keyword>
-          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
-            <gco:CharacterString>Schneesport</gco:CharacterString>
-            <lan:PT_FreeText>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#DE">Schneesport</lan:LocalisedCharacterString>
-              </lan:textGroup>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#FR">sport de neige</lan:LocalisedCharacterString>
-              </lan:textGroup>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#IT">sport della neve</lan:LocalisedCharacterString>
-              </lan:textGroup>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#EN">snowsport</lan:LocalisedCharacterString>
-              </lan:textGroup>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#RM" />
-              </lan:textGroup>
-            </lan:PT_FreeText>
-          </mri:keyword>
-          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
-            <gco:CharacterString>Jagdbanngebiet</gco:CharacterString>
-            <lan:PT_FreeText>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#DE">Jagdbanngebiet</lan:LocalisedCharacterString>
-              </lan:textGroup>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#FR">district franc</lan:LocalisedCharacterString>
-              </lan:textGroup>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#IT">bandita di caccia</lan:LocalisedCharacterString>
-              </lan:textGroup>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#EN">game reserve</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#EN">Area management/restriction/regulation zones and reporting units</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
                 <lan:LocalisedCharacterString locale="#RM" />
@@ -708,12 +1075,12 @@
           <mri:thesaurusName>
             <cit:CI_Citation>
               <cit:title>
-                <gco:CharacterString>geocat.ch</gco:CharacterString>
+                <gco:CharacterString>GEMET - INSPIRE themes, version 1.0</gco:CharacterString>
               </cit:title>
               <cit:date>
                 <cit:CI_Date>
                   <cit:date>
-                    <gco:Date>2024-06-13</gco:Date>
+                    <gco:Date>2008-06-01</gco:Date>
                   </cit:date>
                   <cit:dateType>
                     <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</cit:CI_DateTypeCode>
@@ -723,60 +1090,7 @@
               <cit:identifier>
                 <mcc:MD_Identifier>
                   <mcc:code>
-                    <gcx:Anchor xlink:href="https://www.geocat.ch/geonetwork/srv/api/registries/vocabularies/local.theme.geocat.ch">geonetwork.thesaurus.local.theme.geocat.ch</gcx:Anchor>
-                  </mcc:code>
-                </mcc:MD_Identifier>
-              </cit:identifier>
-            </cit:CI_Citation>
-          </mri:thesaurusName>
-        </mri:MD_Keywords>
-      </mri:descriptiveKeywords>
-      <mri:descriptiveKeywords>
-        <mri:MD_Keywords>
-          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
-            <gco:CharacterString>BGDI Bundesgeodaten-Infrastruktur</gco:CharacterString>
-            <lan:PT_FreeText>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#DE">BGDI Bundesgeodaten-Infrastruktur</lan:LocalisedCharacterString>
-              </lan:textGroup>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#FR">IFDG l’Infrastructure Fédérale de données géographiques</lan:LocalisedCharacterString>
-              </lan:textGroup>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#IT">IFDG Infrastruttura federale dei dati geografici</lan:LocalisedCharacterString>
-              </lan:textGroup>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#EN">FSDI Federal Spatial Data Infrastructure</lan:LocalisedCharacterString>
-              </lan:textGroup>
-            </lan:PT_FreeText>
-          </mri:keyword>
-          <mri:type>
-            <mri:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" />
-          </mri:type>
-          <mri:thesaurusName>
-            <cit:CI_Citation>
-              <cit:title xsi:type="lan:PT_FreeText_PropertyType">
-                <gco:CharacterString>geocat.ch</gco:CharacterString>
-                <lan:PT_FreeText>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#DE">geocat.ch</lan:LocalisedCharacterString>
-                  </lan:textGroup>
-                </lan:PT_FreeText>
-              </cit:title>
-              <cit:date>
-                <cit:CI_Date>
-                  <cit:date>
-                    <gco:Date>2024-06-13</gco:Date>
-                  </cit:date>
-                  <cit:dateType>
-                    <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</cit:CI_DateTypeCode>
-                  </cit:dateType>
-                </cit:CI_Date>
-              </cit:date>
-              <cit:identifier>
-                <mcc:MD_Identifier>
-                  <mcc:code>
-                    <gcx:Anchor xlink:href="https://www.geocat.ch/geonetwork/srv/api/registries/vocabularies/local.theme.geocat.ch">geonetwork.thesaurus.local.theme.geocat.ch</gcx:Anchor>
+                    <gcx:Anchor xlink:href="https://www.geocat.ch/geonetwork/srv/api/registries/vocabularies/external.theme.httpinspireeceuropaeutheme-theme">geonetwork.thesaurus.external.theme.httpinspireeceuropaeutheme-theme</gcx:Anchor>
                   </mcc:code>
                 </mcc:MD_Identifier>
               </cit:identifier>
@@ -787,21 +1101,58 @@
       <mri:resourceConstraints>
         <che:CHE_MD_LegalConstraints gco:isoType="mco:MD_LegalConstraints">
           <mco:useConstraints>
-            <mco:MD_RestrictionCode codeListValue="otherRestrictions" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode" />
+            <mco:MD_RestrictionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions" />
           </mco:useConstraints>
           <mco:otherConstraints xsi:type="lan:PT_FreeText_PropertyType">
-            <gco:CharacterString>Rechtsverbindlichkeit: Rechtskräftige Ruhezonen: gemäss der kantonalen Rechtsgrundlage, empfohlene Ruhezonen: keine</gco:CharacterString>
+            <gcx:Anchor xlink:href="https://opendata.swiss/en/terms-of-use/#terms_by_ask">Opendata BY ASK: Freie Nutzung. Quellenangabe ist Pflicht. Kommerzielle Nutzung nur mit Bewilligung des Datenlieferanten zulässig.</gcx:Anchor>
             <lan:PT_FreeText>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#DE">Rechtsverbindlichkeit: Rechtskräftige Ruhezonen: gemäss der kantonalen Rechtsgrundlage, empfohlene Ruhezonen: keine</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#DE">Opendata BY ASK: Freie Nutzung. Quellenangabe ist Pflicht. Kommerzielle Nutzung nur mit Bewilligung des Datenlieferanten zulässig.</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#FR">Bases juridiques: zones de tranquillité légalement délimitées selon les bases juridiques cantonales, zones de tranquillité recommandées: aucune</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#FR">Opendata BY ASK: Utilisation libre. Obligation d’indiquer la source. Utilisation commerciale uniquement avec l’autorisation du fournisseur des données.</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">Opendata BY ASK: Libero utilizzo. Indicazione della fonte obbligatoria. Utilizzo a fini commerciali ammesso soltanto previo consenso del titolare dei dati.</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">Opendata BY ASK: Open use. Must provide the source. Use for commercial purposes requires permission of the data owner.</lan:LocalisedCharacterString>
               </lan:textGroup>
             </lan:PT_FreeText>
           </mco:otherConstraints>
         </che:CHE_MD_LegalConstraints>
       </mri:resourceConstraints>
+      <mri:associatedResource>
+        <mri:MD_AssociatedResource>
+          <mri:name>
+            <cit:CI_Citation>
+              <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>Bundesinventar der schützenswerten Ortsbilder der Schweiz (ISOS)</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Bundesinventar der schützenswerten Ortsbilder der Schweiz (ISOS)</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">Inventaire fédéral des sites construits à protéger en Suisse (ISOS)</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">Inventario federale degli insediamenti svizzeri da proteggere (ISOS)</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">Federal Inventory of Swiss heritage sites (ISOS)</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#RM">Inventari federal dals lieus svizzers d'impurtanza naziunala degns da protecziun (ISOS)</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:title>
+            </cit:CI_Citation>
+          </mri:name>
+          <mri:associationType>
+            <mri:DS_AssociationTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#DS_AssociationTypeCode" codeListValue="largerWorkCitation">largerWorkCitation</mri:DS_AssociationTypeCode>
+          </mri:associationType>
+        </mri:MD_AssociatedResource>
+      </mri:associatedResource>
       <mri:defaultLocale>
         <lan:PT_Locale>
           <lan:language>
@@ -812,16 +1163,13 @@
           </lan:characterEncoding>
         </lan:PT_Locale>
       </mri:defaultLocale>
-      <che:subTopicCategory>
-        <che:CHE_MD_SubTopicCategoryCode codeList="subTopicCategory" codeListValue="environment_NatureProtection" />
-      </che:subTopicCategory>
       <che:basicGeodata>
         <gco:Boolean>true</gco:Boolean>
       </che:basicGeodata>
       <che:basicGeodataInformation>
         <che:CHE_MD_BasicGeodataInformation>
           <che:basicGeodataID>
-            <gco:CharacterString>195</gco:CharacterString>
+            <gco:CharacterString>25.1</gco:CharacterString>
           </che:basicGeodataID>
           <che:basicGeodataLegalLevel>
             <che:CHE_MD_LevelCode codeList="mdLevelCode" codeListValue="federal" />
@@ -832,12 +1180,27 @@
   </mdb:identificationInfo>
   <mdb:distributionInfo>
     <mrd:MD_Distribution>
-      <mrd:distributionFormat xlink:show="embed">
+      <mrd:distributionFormat>
         <mrd:MD_Format>
           <mrd:formatSpecificationCitation>
             <cit:CI_Citation>
               <cit:title>
-                <gco:CharacterString>ESRI Shapefile (SHP)</gco:CharacterString>
+                <gco:CharacterString>INTERLIS</gco:CharacterString>
+              </cit:title>
+              <cit:date gco:nilReason="unknown" />
+              <cit:edition>
+                <gco:CharacterString>-</gco:CharacterString>
+              </cit:edition>
+            </cit:CI_Citation>
+          </mrd:formatSpecificationCitation>
+        </mrd:MD_Format>
+      </mrd:distributionFormat>
+      <mrd:distributionFormat>
+        <mrd:MD_Format>
+          <mrd:formatSpecificationCitation>
+            <cit:CI_Citation>
+              <cit:title>
+                <gco:CharacterString>Portable Document Format (PDF)</gco:CharacterString>
               </cit:title>
               <cit:date gco:nilReason="unknown" />
               <cit:edition gco:nilReason="unknown" />
@@ -850,62 +1213,39 @@
           <mrd:onLine>
             <cit:CI_OnlineResource>
               <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
-                <gco:CharacterString>https://map.geo.admin.ch/?layers=ch.bafu.wrz-wildruhezonen_portal</gco:CharacterString>
+                <gco:CharacterString>https://www.bak.admin.ch/bak/de/home/baukultur/isos-und-ortsbildschutz.html</gco:CharacterString>
                 <lan:PT_FreeText>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#DE">https://map.geo.admin.ch/?layers=ch.bafu.wrz-wildruhezonen_portal</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#DE">https://www.bak.admin.ch/bak/de/home/baukultur/isos-und-ortsbildschutz.html</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#FR">https://map.geo.admin.ch/?layers=ch.bafu.wrz-wildruhezonen_portal</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#FR">https://www.bak.admin.ch/bak/fr/home/baukultur/isos-und-ortsbildschutz.html</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#IT">https://map.geo.admin.ch/?layers=ch.bafu.wrz-wildruhezonen_portal</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#IT">https://www.bak.admin.ch/bak/it/home/baukultur/isos-und-ortsbildschutz.html</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#EN">https://map.geo.admin.ch/?layers=ch.bafu.wrz-wildruhezonen_portal</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#EN">https://www.bak.admin.ch/bak/en/home/baukultur/isos-und-ortsbildschutz.html</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#RM">https://map.geo.admin.ch/?layers=ch.bafu.wrz-wildruhezonen_portal</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#RM">https://www.bak.admin.ch/bak/rm/home/baukultur/isos-und-ortsbildschutz.html</lan:LocalisedCharacterString>
                   </lan:textGroup>
                 </lan:PT_FreeText>
               </cit:linkage>
               <cit:protocol>
-                <gco:CharacterString>MAP:Preview</gco:CharacterString>
+                <gco:CharacterString>WWW:LINK</gco:CharacterString>
               </cit:protocol>
-              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
-                <gco:CharacterString>Vorschau map.geo.admin.ch</gco:CharacterString>
-                <lan:PT_FreeText>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#DE">Vorschau map.geo.admin.ch</lan:LocalisedCharacterString>
-                  </lan:textGroup>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#FR">Aperçu map.geo.admin.ch</lan:LocalisedCharacterString>
-                  </lan:textGroup>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#IT">Previsione map.geo.admin.ch</lan:LocalisedCharacterString>
-                  </lan:textGroup>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#EN">Preview map.geo.admin.ch</lan:LocalisedCharacterString>
-                  </lan:textGroup>
-                </lan:PT_FreeText>
-              </cit:name>
               <cit:description xsi:type="lan:PT_FreeText_PropertyType">
-                <gco:CharacterString>Vorschau map.geo.admin.ch</gco:CharacterString>
+                <gco:CharacterString>Lien sur la description détaillée</gco:CharacterString>
                 <lan:PT_FreeText>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#DE">Vorschau map.geo.admin.ch</lan:LocalisedCharacterString>
-                  </lan:textGroup>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#FR">Aperçu map.geo.admin.ch</lan:LocalisedCharacterString>
-                  </lan:textGroup>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#IT">Previsione map.geo.admin.ch</lan:LocalisedCharacterString>
-                  </lan:textGroup>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#EN">Preview map.geo.admin.ch</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#DE">Lien sur la description détaillée</lan:LocalisedCharacterString>
                   </lan:textGroup>
                 </lan:PT_FreeText>
               </cit:description>
+              <cit:function>
+                <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information" />
+              </cit:function>
             </cit:CI_OnlineResource>
           </mrd:onLine>
           <mrd:onLine>
@@ -934,42 +1274,42 @@
                 <gco:CharacterString>OGC:WMS</gco:CharacterString>
               </cit:protocol>
               <cit:name xsi:type="lan:PT_FreeText_PropertyType">
-                <gco:CharacterString>ch.bafu.wrz-wildruhezonen_portal</gco:CharacterString>
+                <gco:CharacterString>ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</gco:CharacterString>
                 <lan:PT_FreeText>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#DE">ch.bafu.wrz-wildruhezonen_portal</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#DE">ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#FR">ch.bafu.wrz-wildruhezonen_portal</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#FR">ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#IT">ch.bafu.wrz-wildruhezonen_portal</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#IT">ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#EN">ch.bafu.wrz-wildruhezonen_portal</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#EN">ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#RM">ch.bafu.wrz-wildruhezonen_portal</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#RM">ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</lan:LocalisedCharacterString>
                   </lan:textGroup>
                 </lan:PT_FreeText>
               </cit:name>
               <cit:description xsi:type="lan:PT_FreeText_PropertyType">
-                <gco:CharacterString>WMS-BGDI Dienst, Layer "Wildruhezonen"</gco:CharacterString>
+                <gco:CharacterString>WMS-BGDI Dienst, Layer "ISOS - Bilder"</gco:CharacterString>
                 <lan:PT_FreeText>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#DE">WMS-BGDI Dienst, Layer "Wildruhezonen"</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#DE">WMS-BGDI Dienst, Layer "ISOS - Bilder"</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#FR">Service WMS-IFDG, couche "Zones de tranquillité"</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#FR">Service WMS-IFDG, couche "ISOS - Photos"</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#IT">Servizio WMS-IFDG, strato "Zone di tranquillità"</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#IT">Servizio WMS-IFDG, strato "ISOS - Foto"</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#EN">WMS-FSDI service, layer "Designated wildlife areas"</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#EN">WMS-FSDI service, layer "ISOS - Photos"</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#RM">WMS-BGDI Dienst, Layer "Wildruhezonen"</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#RM">WMS-BGDI Dienst, Layer "ISOS - Bilder"</lan:LocalisedCharacterString>
                   </lan:textGroup>
                 </lan:PT_FreeText>
               </cit:description>
@@ -1001,93 +1341,92 @@
                 <gco:CharacterString>OGC:WMTS</gco:CharacterString>
               </cit:protocol>
               <cit:name xsi:type="lan:PT_FreeText_PropertyType">
-                <gco:CharacterString>ch.bafu.wrz-wildruhezonen_portal</gco:CharacterString>
+                <gco:CharacterString>ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</gco:CharacterString>
                 <lan:PT_FreeText>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#DE">ch.bafu.wrz-wildruhezonen_portal</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#DE">ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#FR">ch.bafu.wrz-wildruhezonen_portal</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#FR">ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#IT">ch.bafu.wrz-wildruhezonen_portal</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#IT">ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#EN">ch.bafu.wrz-wildruhezonen_portal</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#EN">ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#RM">ch.bafu.wrz-wildruhezonen_portal</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#RM">ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</lan:LocalisedCharacterString>
                   </lan:textGroup>
                 </lan:PT_FreeText>
               </cit:name>
               <cit:description xsi:type="lan:PT_FreeText_PropertyType">
-                <gco:CharacterString>WMTS-BGDI Dienst, Layer "Wildruhezonen"</gco:CharacterString>
+                <gco:CharacterString>WMTS-BGDI Dienst, Layer "ISOS - Bilder"</gco:CharacterString>
                 <lan:PT_FreeText>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#DE">WMTS-BGDI Dienst, Layer "Wildruhezonen"</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#DE">WMTS-BGDI Dienst, Layer "ISOS - Bilder"</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#FR">Service WMTS-IFDG, couche , Layer "Zones de tranquillité"</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#FR">Service WMTS-IFDG, couche , Layer "ISOS - Photos"</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#IT">Servizio WMTS-IFDG, strato "Zone di tranquillità"</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#IT">Servizio WMTS-IFDG, strato "ISOS - Foto"</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#EN">WMTS-FSDI service, layer "Designated wildlife areas"</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#EN">WMTS-FSDI service, layer "ISOS - Photos"</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#RM">WMTS-BGDI Dienst, Layer "Wildruhezonen"</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#RM">WMTS-BGDI Dienst, Layer "ISOS - Bilder"</lan:LocalisedCharacterString>
                   </lan:textGroup>
                 </lan:PT_FreeText>
               </cit:description>
             </cit:CI_OnlineResource>
           </mrd:onLine>
-        </mrd:MD_DigitalTransferOptions>
-      </mrd:transferOptions>
-      <mrd:transferOptions>
-        <mrd:MD_DigitalTransferOptions>
           <mrd:onLine>
             <cit:CI_OnlineResource>
               <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
-                <gco:CharacterString>https://www.wildruhezonen.ch/news/aenderungen-und-allgemeine-hinweise</gco:CharacterString>
+                <gco:CharacterString>https://map.geo.admin.ch/?layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</gco:CharacterString>
                 <lan:PT_FreeText>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#DE">https://www.wildruhezonen.ch/news/aenderungen-und-allgemeine-hinweise</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#DE">https://map.geo.admin.ch/?layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#FR">https://www.wildruhezonen.ch/news/aenderungen-und-allgemeine-hinweise</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#FR">https://map.geo.admin.ch/?layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#IT">https://www.wildruhezonen.ch/news/aenderungen-und-allgemeine-hinweise</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#IT">https://map.geo.admin.ch/?layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#EN">https://www.wildruhezonen.ch/news/aenderungen-und-allgemeine-hinweise</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#EN">https://map.geo.admin.ch/?layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#RM">https://www.wildruhezonen.ch/news/aenderungen-und-allgemeine-hinweise</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#RM">https://map.geo.admin.ch/?layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</lan:LocalisedCharacterString>
                   </lan:textGroup>
                 </lan:PT_FreeText>
               </cit:linkage>
               <cit:protocol>
-                <gco:CharacterString>WWW:LINK</gco:CharacterString>
+                <gco:CharacterString>MAP:Preview</gco:CharacterString>
               </cit:protocol>
-              <cit:description xsi:type="lan:PT_FreeText_PropertyType">
-                <gco:CharacterString>Änderungen &amp; allgemeine Hinweise</gco:CharacterString>
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>Vorschau map.geo.admin.ch</gco:CharacterString>
                 <lan:PT_FreeText>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#DE">Änderungen &amp; allgemeine Hinweise</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#DE">Vorschau map.geo.admin.ch</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#FR">Modifications et remarques générales</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#FR">Aperçu map.geo.admin.ch</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#IT">Modifiche e indicazioni generali</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#IT">Previsione map.geo.admin.ch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">Preview map.geo.admin.ch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#RM">Vorschau map.geo.admin.ch</lan:LocalisedCharacterString>
                   </lan:textGroup>
                 </lan:PT_FreeText>
-              </cit:description>
-              <cit:function>
-                <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information" />
-              </cit:function>
+              </cit:name>
             </cit:CI_OnlineResource>
           </mrd:onLine>
         </mrd:MD_DigitalTransferOptions>
@@ -1097,55 +1436,22 @@
           <mrd:onLine>
             <cit:CI_OnlineResource>
               <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
-                <gco:CharacterString>http://www.wildruhezonen.ch</gco:CharacterString>
+                <gco:CharacterString>https://data.geo.admin.ch/browser/index.html#/collections/ch.bak.bundesinventar-schuetzenswerte-ortsbilder/items/bundesinventar-schuetzenswerte-ortsbilder</gco:CharacterString>
                 <lan:PT_FreeText>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#DE">http://www.wildruhezonen.ch</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#DE">https://data.geo.admin.ch/browser/index.html#/collections/ch.bak.bundesinventar-schuetzenswerte-ortsbilder/items/bundesinventar-schuetzenswerte-ortsbilder</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#FR">http://www.zones-de-tranquillite.ch/</lan:LocalisedCharacterString>
-                  </lan:textGroup>
-                </lan:PT_FreeText>
-              </cit:linkage>
-              <cit:protocol>
-                <gco:CharacterString>CHTOPO:specialised-geoportal</gco:CharacterString>
-              </cit:protocol>
-              <cit:description xsi:type="lan:PT_FreeText_PropertyType">
-                <gco:CharacterString>Fachportal Wildruhezonen</gco:CharacterString>
-                <lan:PT_FreeText>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#DE">Fachportal Wildruhezonen</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#FR">https://data.geo.admin.ch/browser/index.html#/collections/ch.bak.bundesinventar-schuetzenswerte-ortsbilder/items/bundesinventar-schuetzenswerte-ortsbilder</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#FR">Portail zones de tranquilité</lan:LocalisedCharacterString>
-                  </lan:textGroup>
-                </lan:PT_FreeText>
-              </cit:description>
-              <cit:function>
-                <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information" />
-              </cit:function>
-            </cit:CI_OnlineResource>
-          </mrd:onLine>
-        </mrd:MD_DigitalTransferOptions>
-      </mrd:transferOptions>
-      <mrd:transferOptions>
-        <mrd:MD_DigitalTransferOptions>
-          <mrd:onLine>
-            <cit:CI_OnlineResource>
-              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
-                <gco:CharacterString>https://www.geodienste.ch/services/wildruhezonen</gco:CharacterString>
-                <lan:PT_FreeText>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#DE">https://www.geodienste.ch/services/wildruhezonen</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#IT">https://data.geo.admin.ch/browser/index.html#/collections/ch.bak.bundesinventar-schuetzenswerte-ortsbilder/items/bundesinventar-schuetzenswerte-ortsbilder</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#FR">https://www.geodienste.ch/services/wildruhezonen?locale=fr</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#EN">https://data.geo.admin.ch/browser/index.html#/collections/ch.bak.bundesinventar-schuetzenswerte-ortsbilder/items/bundesinventar-schuetzenswerte-ortsbilder</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#IT">https://www.geodienste.ch/services/wildruhezonen?locale=it</lan:LocalisedCharacterString>
-                  </lan:textGroup>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#EN">https://www.geodienste.ch/services/wildruhezonen?locale=it</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#RM">https://data.geo.admin.ch/browser/index.html#/collections/ch.bak.bundesinventar-schuetzenswerte-ortsbilder/items/bundesinventar-schuetzenswerte-ortsbilder</lan:LocalisedCharacterString>
                   </lan:textGroup>
                 </lan:PT_FreeText>
               </cit:linkage>
@@ -1153,43 +1459,83 @@
                 <gco:CharacterString>WWW:DOWNLOAD-URL</gco:CharacterString>
               </cit:protocol>
               <cit:description xsi:type="lan:PT_FreeText_PropertyType">
-                <gco:CharacterString>Abteilung Biodiversität und Landschaft</gco:CharacterString>
+                <gco:CharacterString>Link zum Datenbezug</gco:CharacterString>
                 <lan:PT_FreeText>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#DE">Abteilung Biodiversität und Landschaft</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#DE">Link zum Datenbezug</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#FR">Division Biodiversité et paysage</lan:LocalisedCharacterString>
-                  </lan:textGroup>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#IT">Divisione Biodiversità e paesaggio</lan:LocalisedCharacterString>
-                  </lan:textGroup>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#EN">Biodiversity and Landscape Division</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#FR">Lien vers la distribution des données</lan:LocalisedCharacterString>
                   </lan:textGroup>
                 </lan:PT_FreeText>
               </cit:description>
+              <cit:function>
+                <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download" />
+              </cit:function>
             </cit:CI_OnlineResource>
           </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
           <mrd:onLine>
             <cit:CI_OnlineResource>
               <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
-                <gco:CharacterString>https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.wrz-wildruhezonen_portal</gco:CharacterString>
+                <gco:CharacterString>http://map.geo.admin.ch/?selectedNode=node_ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos1&amp;Y=660000&amp;X=190000&amp;zoom=1&amp;bgLayer=ch.swisstopo.pixelkarte-farbe&amp;layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder&amp;layers_opacity=1&amp;layers_visibility=true&amp;lan</gco:CharacterString>
                 <lan:PT_FreeText>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#DE">https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.wrz-wildruhezonen_portal</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#DE">http://map.geo.admin.ch/?selectedNode=node_ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos1&amp;Y=660000&amp;X=190000&amp;zoom=1&amp;bgLayer=ch.swisstopo.pixelkarte-farbe&amp;layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder&amp;layers_opacity=1&amp;layers_visibility=true&amp;lan</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>CHTOPO:specialised-geoportal</gco:CharacterString>
+              </cit:protocol>
+              <cit:description xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>Thematisches Geoportal</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Thematisches Geoportal</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#FR">https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.wrz-wildruhezonen_portal</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#FR">Géoportail thématique</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#IT">https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.wrz-wildruhezonen_portal</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#IT">Geoportale tematico</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#EN">https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.wrz-wildruhezonen_portal</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#EN">Thematic geoportal</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:description>
+              <cit:function>
+                <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information" />
+              </cit:function>
+            </cit:CI_OnlineResource>
+          </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
+          <mrd:onLine>
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#RM">https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.wrz-wildruhezonen_portal</lan:LocalisedCharacterString>
+                    <lan:LocalisedCharacterString locale="#FR">https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#RM">https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</lan:LocalisedCharacterString>
                   </lan:textGroup>
                 </lan:PT_FreeText>
               </cit:linkage>
@@ -1242,45 +1588,5 @@
       </mrd:transferOptions>
     </mrd:MD_Distribution>
   </mdb:distributionInfo>
-  <mdb:resourceLineage>
-    <mrl:LI_Lineage>
-      <mrl:statement xsi:type="lan:PT_FreeText_PropertyType">
-        <gco:CharacterString>Der Datensatz enthält die von den kantonalen Jagdverwaltungen ausgewiesenen offiziellen Wildruhezonen. Die Objekte wurden vom BAFU, den kantonalen Jagdverwaltungen resp. von der swisstopo in digitaler Form übernommen.
-Die Genauigkeit entspricht derjenigen der verwendeten kantonalen Datensätze resp. des Layers der Skitourenkarte der swisstopo.</gco:CharacterString>
-        <lan:PT_FreeText>
-          <lan:textGroup>
-            <lan:LocalisedCharacterString locale="#DE">Der Datensatz enthält die von den kantonalen Jagdverwaltungen ausgewiesenen offiziellen Wildruhezonen. Die Objekte wurden vom BAFU, den kantonalen Jagdverwaltungen resp. von der swisstopo in digitaler Form übernommen.
-Die Genauigkeit entspricht derjenigen der verwendeten kantonalen Datensätze resp. des Layers der Skitourenkarte der swisstopo.</lan:LocalisedCharacterString>
-          </lan:textGroup>
-          <lan:textGroup>
-            <lan:LocalisedCharacterString locale="#FR">La couche contient les zones de tranquillités officiellement délimitées, en novembre 2012, par les services cantonaux de la chasse. Les objets ont été repris et copiés des enregistrements numériques existants de l’OVEF, des services cantonaux de la chasse et de swisstopo.
-La précision correspond à celle de la saisie des couches originales utilisées : données cantonales et carte de randonnées à ski de swisstopo.</lan:LocalisedCharacterString>
-          </lan:textGroup>
-        </lan:PT_FreeText>
-      </mrl:statement>
-      <mrl:scope>
-        <mcc:MD_Scope>
-          <mcc:level>
-            <mcc:MD_ScopeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</mcc:MD_ScopeCode>
-          </mcc:level>
-        </mcc:MD_Scope>
-      </mrl:scope>
-      <mrl:source>
-        <mrl:LI_Source>
-          <mrl:description xsi:type="lan:PT_FreeText_PropertyType">
-            <gco:CharacterString>Kantonale Grundlagen; Pixelkarten PK25, PK50; Skitourenkarte 1:50000</gco:CharacterString>
-            <lan:PT_FreeText>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#DE">Kantonale Grundlagen; Pixelkarten PK25, PK50; Skitourenkarte 1:50000</lan:LocalisedCharacterString>
-              </lan:textGroup>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#FR">Données cantonales, cartes-pixel PK25 et PK50, cartes de randonnées à ski 1:50000</lan:LocalisedCharacterString>
-              </lan:textGroup>
-            </lan:PT_FreeText>
-          </mrl:description>
-        </mrl:LI_Source>
-      </mrl:source>
-    </mrl:LI_Lineage>
-  </mdb:resourceLineage>
 </che:CHE_MD_Metadata>
 

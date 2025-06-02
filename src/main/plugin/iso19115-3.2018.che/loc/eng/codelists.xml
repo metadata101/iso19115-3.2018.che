@@ -2995,4 +2995,52 @@
       <description></description>
     </entry>
   </codelist>
+
+  <codelist name="che:CHE_MD_LevelCode" alias="mdLevelCode">
+    <entry>
+      <code>communal</code>
+      <label>Communal</label>
+    </entry>
+    <entry>
+      <code>cantonal</code>
+      <label>Cantonal</label>
+    </entry>
+    <entry>
+      <code>federal</code>
+      <label>Federal</label>
+      <description>Set of geodata ID at federal level (Collection of geodata on federal law)</description>
+    </entry>
+    <entry>
+      <code>other</code>
+      <label>Other</label>
+    </entry>
+  </codelist>
+
+  <codelist name="che:MD_geodataTypeCode" alias="geodataType">
+    <entry>
+      <code>basicGeodata</code>
+      <label>Basic Geodata</label>
+    </entry>
+    <entry>
+      <code>oereb</code>
+      <label>oereb</label>
+    </entry>
+    <entry>
+      <code>oerebRegister</code>
+      <label>oereb Register</label>
+    </entry>
+    <entry>
+      <code>openGovernmentData</code>
+      <label>Open Government Data</label>
+    </entry>
+    <entry>
+      <code>openData</code>
+      <label>Open Data</label>
+    </entry>
+    <entry>
+      <code>referenceGeodata</code>
+      <label>Reference Geodata</label>
+    </entry>
+  </codelist>
+
 </codelists>
