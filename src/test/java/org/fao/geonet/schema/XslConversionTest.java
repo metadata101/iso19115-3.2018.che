@@ -116,6 +116,11 @@ public class XslConversionTest {
     }
 
     @Test
+    public void validateModellDokumentationSwissTLM3D() throws Exception {
+        transformValidateAndCompare("modellDokumentationSwissTLM3D");
+    }
+
+    @Test
     public void testOdsConversion() throws Exception {
         Element xmlFromJSON = Xml.getXmlFromJSON(Files.readString(getResource("ods.json")));
         xmlFromJSON.setName("record");
