@@ -13,6 +13,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.xmlunit.assertj.XmlAssert;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.lang.reflect.Field;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -25,6 +27,8 @@ import static org.fao.geonet.schema.TestSupport.getResourceInsideSchema;
 public class IndexationTest {
 
     private static Field resolverMapField;
+
+    private static final boolean GENERATE_EXPECTED_FILE = false;
 
     @BeforeClass
     public static void initOasis() throws NoSuchFieldException, IllegalAccessException {
@@ -81,6 +85,12 @@ public class IndexationTest {
     }
 
     @Test
+    public void indexGrundWasserVorkommen() throws Exception {
+        XslUtil.IS_INSPIRE_ENABLED = false;
+        indexAndCompareWithExpected("grundwasservorkommen");
+    }
+
+    @Test
     public void useIncorrectTimeZone() throws Exception {
         TimeZone.setDefault(TimeZone.getTimeZone("GMT+2"));
         XslUtil.IS_INSPIRE_ENABLED = true;
@@ -95,10 +105,18 @@ public class IndexationTest {
 
     private void indexAndCompareWithExpected(String fileRoot) throws Exception {
         TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
-        String expected = Files.readString(getResource(fileRoot + "-index.xml"));
 
         String actual = indexResource(fileRoot + "-19115-3.che.xml");
 
+        String expected;
+        if (GENERATE_EXPECTED_FILE) {
+            FileWriter fw = new FileWriter("/home/cmangeat/sources/war-overlay/iso19115-3.2018.che/src/test/resources/" + fileRoot + "-index.xml");
+            fw.write(actual);
+            fw.flush();
+            expected = actual;
+        } else {
+            expected = Files.readString(getResource(fileRoot + "-index.xml"));
+        }
         XmlAssert.assertThat(actual).isEqualTo(expected);
     }
 
