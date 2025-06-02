@@ -23,7 +23,6 @@
 package org.fao.geonet.schema;
 
 import java.io.ByteArrayInputStream;
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -110,6 +109,11 @@ public class XslConversionTest {
     @Test
     public void validateGrundwasserVorkommen() throws Exception {
         transformValidateAndCompare("grundwasservorkommen");
+    }
+
+    @Test
+    public void validateSwissTLM3D() throws Exception {
+        transformValidateAndCompare("swissTLM3D");
     }
 
     @Test
