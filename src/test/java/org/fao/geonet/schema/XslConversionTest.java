@@ -121,6 +121,11 @@ public class XslConversionTest {
     }
 
     @Test
+    public void validateVALTRALOC() throws Exception {
+        transformValidateAndCompare("VALTRALOC");
+    }
+
+    @Test
     public void testOdsConversion() throws Exception {
         Element xmlFromJSON = Xml.getXmlFromJSON(Files.readString(getResource("ods.json")));
         xmlFromJSON.setName("record");
