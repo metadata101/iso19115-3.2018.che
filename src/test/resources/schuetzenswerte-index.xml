@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+  <docType>metadata</docType>
+  <document />
+  <metadataIdentifier>b9c1d690-008f-494c-a47f-ec96d9a8d84f</metadataIdentifier>
+  <standardNameObject type="object">{"default":"GM03 2+", "langger":"GM03 2+"}</standardNameObject>
+  <indexingDate>2025-04-11T17:46:21+02:00</indexingDate>
+  <dateStamp>2022-11-28T11:12:16.000Z</dateStamp>
+  <mainLanguage>ger</mainLanguage>
+  <otherLanguage>fre</otherLanguage>
+  <otherLanguageId>FR</otherLanguageId>
+  <otherLanguage>ita</otherLanguage>
+  <otherLanguageId>IT</otherLanguageId>
+  <otherLanguage>eng</otherLanguage>
+  <otherLanguageId>EN</otherLanguageId>
+  <otherLanguage>roh</otherLanguage>
+  <otherLanguageId>RM</otherLanguageId>
+  <otherLanguage>ger</otherLanguage>
+  <otherLanguageId>DE</otherLanguageId>
+  <cl_characterSet type="object">{"key":"utf8","default":"lan:MD_CharacterSetCode--utf8--ger","langger":"lan:MD_CharacterSetCode--utf8--ger","langfre":"lan:MD_CharacterSetCode--utf8--fre","langita":"lan:MD_CharacterSetCode--utf8--ita","langeng":"lan:MD_CharacterSetCode--utf8--eng","langroh":"lan:MD_CharacterSetCode--utf8--roh","langger":"lan:MD_CharacterSetCode--utf8--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_CharacterSetCode","text":"utf8"}</cl_characterSet>
+  <resourceType>dataset</resourceType>
+  <OrgObject type="object">{"default":"Bundesamt f\u00FCr Kultur - ISOS", "langger":"Bundesamt f\u00FCr Kultur - ISOS", "langfre":"Office f\u00E9d\u00E9ral de la culture - ISOS", "langita":"Ufficio federale della cultura - ISOS", "langeng":"Federal Office of Culture - ISOS", "langroh":"Bundesamt f\u00FCr Kultur - ISOS"}</OrgObject>
+  <pointOfContactOrgObject type="object">{"default":"Bundesamt f\u00FCr Kultur - ISOS", "langger":"Bundesamt f\u00FCr Kultur - ISOS", "langfre":"Office f\u00E9d\u00E9ral de la culture - ISOS", "langita":"Ufficio federale della cultura - ISOS", "langeng":"Federal Office of Culture - ISOS", "langroh":"Bundesamt f\u00FCr Kultur - ISOS"}</pointOfContactOrgObject>
+  <contact type="object">{
+      
+        "organisationObject": 
+            {"default":"Bundesamt f\u00FCr Kultur - ISOS", "langger":"Bundesamt f\u00FCr Kultur - ISOS", "langfre":"Office f\u00E9d\u00E9ral de la culture - ISOS", "langita":"Ufficio federale della cultura - ISOS", "langeng":"Federal Office of Culture - ISOS", "langroh":"Bundesamt f\u00FCr Kultur - ISOS"}
+            ,
+      
+      "role":"pointOfContact",
+      "email":"isos@bak.admin.ch",
+      "websiteObject": 
+            {"default":"https:\/\/www.bak.admin.ch\/bak\/de\/home\/baukultur\/isos-und-ortsbildschutz\/ortsbildaufnahmen\/geodaten.html", "langger":"https:\/\/www.bak.admin.ch\/bak\/de\/home\/baukultur\/isos-und-ortsbildschutz\/ortsbildaufnahmen\/geodaten.html", "langfre":"https:\/\/www.bak.admin.ch\/bak\/fr\/home\/baukultur\/isos-und-ortsbildschutz\/ortsbildaufnahmen\/geodaten.html", "langita":"https:\/\/www.bak.admin.ch\/bak\/it\/home\/baukultur\/isos-und-ortsbildschutz\/ortsbildaufnahmen\/geodaten.html"}
+            ,
+      "logo":"",
+      "individual":"Marcia Haldemann",
+      "position":"Sektion Baukultur",
+      "phone":"+41 58 462 86 26",
+      "address":"Hallwylstrasse 15, Bern, 3003, CH"
+      
+      }</contact>
+  <cl_resourceScope type="object">{"key":"dataset","default":"mcc:MD_ScopeCode--dataset--ger","langger":"mcc:MD_ScopeCode--dataset--ger","langfre":"mcc:MD_ScopeCode--dataset--fre","langita":"mcc:MD_ScopeCode--dataset--ita","langeng":"mcc:MD_ScopeCode--dataset--eng","langroh":"mcc:MD_ScopeCode--dataset--roh","langger":"mcc:MD_ScopeCode--dataset--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_ScopeCode","text":"dataset"}</cl_resourceScope>
+  <cl_numberType type="object">{"key":"voice","default":"cit:CI_TelephoneTypeCode--voice--ger","langger":"cit:CI_TelephoneTypeCode--voice--ger","langfre":"cit:CI_TelephoneTypeCode--voice--fre","langita":"cit:CI_TelephoneTypeCode--voice--ita","langeng":"cit:CI_TelephoneTypeCode--voice--eng","langroh":"cit:CI_TelephoneTypeCode--voice--roh","langger":"cit:CI_TelephoneTypeCode--voice--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#CI_TelephoneTypeCode","text":"voice"}</cl_numberType>
+  <cl_geometricObjectType type="object">{"key":"composite","default":"msr:MD_GeometricObjectTypeCode--composite--ger","langger":"msr:MD_GeometricObjectTypeCode--composite--ger","langfre":"msr:MD_GeometricObjectTypeCode--composite--fre","langita":"msr:MD_GeometricObjectTypeCode--composite--ita","langeng":"msr:MD_GeometricObjectTypeCode--composite--eng","langroh":"msr:MD_GeometricObjectTypeCode--composite--roh","langger":"msr:MD_GeometricObjectTypeCode--composite--ger","link":"http:\/\/standards.iso.org\/ittf\/PubliclyAvailableStandards\/ISO_19139_Schemas\/resources\/codelist\/ML_gmxCodelists.xml#MD_GeometricObjectTypeCode"}</cl_geometricObjectType>
+  <cl_spatialRepresentationType type="object">{"key":"textTable","default":"mcc:MD_SpatialRepresentationTypeCode--textTable--ger","langger":"mcc:MD_SpatialRepresentationTypeCode--textTable--ger","langfre":"mcc:MD_SpatialRepresentationTypeCode--textTable--fre","langita":"mcc:MD_SpatialRepresentationTypeCode--textTable--ita","langeng":"mcc:MD_SpatialRepresentationTypeCode--textTable--eng","langroh":"mcc:MD_SpatialRepresentationTypeCode--textTable--roh","langger":"mcc:MD_SpatialRepresentationTypeCode--textTable--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_SpatialRepresentationTypeCode","text":"textTable"}</cl_spatialRepresentationType>
+  <cl_maintenanceAndUpdateFrequency type="object">{"key":"annually","default":"mmi:MD_MaintenanceFrequencyCode--annually--ger","langger":"mmi:MD_MaintenanceFrequencyCode--annually--ger","langfre":"mmi:MD_MaintenanceFrequencyCode--annually--fre","langita":"mmi:MD_MaintenanceFrequencyCode--annually--ita","langeng":"mmi:MD_MaintenanceFrequencyCode--annually--eng","langroh":"mmi:MD_MaintenanceFrequencyCode--annually--roh","langger":"mmi:MD_MaintenanceFrequencyCode--annually--ger","link":"http:\/\/standards.iso.org\/ittf\/PubliclyAvailableStandards\/ISO_19139_Schemas\/resources\/codelist\/ML_gmxCodelists.xml#MD_MaintenanceFrequencyCode"}</cl_maintenanceAndUpdateFrequency>
+  <cl_type type="object">{"key":"theme","default":"mri:MD_KeywordTypeCode--theme--ger","langger":"mri:MD_KeywordTypeCode--theme--ger","langfre":"mri:MD_KeywordTypeCode--theme--fre","langita":"mri:MD_KeywordTypeCode--theme--ita","langeng":"mri:MD_KeywordTypeCode--theme--eng","langroh":"mri:MD_KeywordTypeCode--theme--roh","langger":"mri:MD_KeywordTypeCode--theme--ger","link":"http:\/\/www.isotc211.org\/2005\/resources\/codeList.xml#MD_KeywordTypeCode"}</cl_type>
+  <cl_useConstraints type="object">{"key":"otherRestrictions","default":"mco:MD_RestrictionCode--otherRestrictions--ger","langger":"mco:MD_RestrictionCode--otherRestrictions--ger","langfre":"mco:MD_RestrictionCode--otherRestrictions--fre","langita":"mco:MD_RestrictionCode--otherRestrictions--ita","langeng":"mco:MD_RestrictionCode--otherRestrictions--eng","langroh":"mco:MD_RestrictionCode--otherRestrictions--roh","langger":"mco:MD_RestrictionCode--otherRestrictions--ger","link":"http:\/\/standards.iso.org\/ittf\/PubliclyAvailableStandards\/ISO_19139_Schemas\/resources\/codelist\/ML_gmxCodelists.xml#MD_RestrictionCode"}</cl_useConstraints>
+  <cl_associationType type="object">{"key":"largerWorkCitation","default":"mri:DS_AssociationTypeCode--largerWorkCitation--ger","langger":"mri:DS_AssociationTypeCode--largerWorkCitation--ger","langfre":"mri:DS_AssociationTypeCode--largerWorkCitation--fre","langita":"mri:DS_AssociationTypeCode--largerWorkCitation--ita","langeng":"mri:DS_AssociationTypeCode--largerWorkCitation--eng","langroh":"mri:DS_AssociationTypeCode--largerWorkCitation--roh","langger":"mri:DS_AssociationTypeCode--largerWorkCitation--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#DS_AssociationTypeCode","text":"largerWorkCitation"}</cl_associationType>
+  <cl_basicGeodataLegalLevel type="object">{"key":"federal","default":"che:CHE_MD_LevelCode--federal--ger","langger":"che:CHE_MD_LevelCode--federal--ger","langfre":"che:CHE_MD_LevelCode--federal--fre","langita":"che:CHE_MD_LevelCode--federal--ita","langeng":"che:CHE_MD_LevelCode--federal--eng","langroh":"che:CHE_MD_LevelCode--federal--roh","langger":"che:CHE_MD_LevelCode--federal--ger","link":"mdLevelCode"}</cl_basicGeodataLegalLevel>
+  <cl_function type="object">{"key":"information","default":"cit:CI_OnLineFunctionCode--information--ger","langger":"cit:CI_OnLineFunctionCode--information--ger","langfre":"cit:CI_OnLineFunctionCode--information--fre","langita":"cit:CI_OnLineFunctionCode--information--ita","langeng":"cit:CI_OnLineFunctionCode--information--eng","langroh":"cit:CI_OnLineFunctionCode--information--roh","langger":"cit:CI_OnLineFunctionCode--information--ger","link":"http:\/\/standards.iso.org\/ittf\/PubliclyAvailableStandards\/ISO_19139_Schemas\/resources\/codelist\/ML_gmxCodelists.xml#CI_OnLineFunctionCode"}</cl_function>
+  <cl_function type="object">{"key":"download","default":"cit:CI_OnLineFunctionCode--download--ger","langger":"cit:CI_OnLineFunctionCode--download--ger","langfre":"cit:CI_OnLineFunctionCode--download--fre","langita":"cit:CI_OnLineFunctionCode--download--ita","langeng":"cit:CI_OnLineFunctionCode--download--eng","langroh":"cit:CI_OnLineFunctionCode--download--roh","langger":"cit:CI_OnLineFunctionCode--download--ger","link":"http:\/\/standards.iso.org\/ittf\/PubliclyAvailableStandards\/ISO_19139_Schemas\/resources\/codelist\/ML_gmxCodelists.xml#CI_OnLineFunctionCode"}</cl_function>
+  <resourceTitleObject type="object">{"default":"ISOS - Bundesinventar der sch\u00FCtzenswerten Ortsbilder der Schweiz von nationaler Bedeutung ab 2021 - Bilder", "langger":"ISOS - Bundesinventar der sch\u00FCtzenswerten Ortsbilder der Schweiz von nationaler Bedeutung ab 2021 - Bilder", "langfre":"ISOS - Inventaire f\u00E9d\u00E9ral des sites construits d'importance nationale \u00E0 prot\u00E9ger en Suisse d\u00E8s 2021 - Photos", "langita":"ISOS - Inventario federale degli insediamenti svizzeri da proteggere d\u2019importanza nazionale dal 2021 - Foto", "langeng":"ISOS - Federal Inventory of Swiss heritage sites of national importance since 2021 - Photos", "langroh":"ISOS - Inventari federal dals lieus svizzers d'impurtanza naziunala degns da protecziun a partir da l\u2019onn 2021 - Fotografias"}</resourceTitleObject>
+  <resourceAltTitleObject type="object">{"default":"ISOS - Bilder", "langger":"ISOS - Bilder", "langfre":"ISOS - Photos", "langita":"ISOS - Foto", "langeng":"ISOS - Photos", "langroh":"ISOS - Fotografias"}</resourceAltTitleObject>
+  <creationDateForResource>2021-02-22</creationDateForResource>
+  <creationYearForResource>2021</creationYearForResource>
+  <creationMonthForResource>2021-02</creationMonthForResource>
+  <resourceDate type="object">{"type": "creation", "date": "2021-02-22T00:00:00.000Z"}</resourceDate>
+  <resourceTemporalDateRange type="object">{
+                  "gte": "2021-02-22T00:00:00.000Z",
+                  "lte": "2021-02-22T00:00:00.000Z"
+                  }</resourceTemporalDateRange>
+  <resourceIdentifier type="object">{
+              "code": "ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos",
+              "codeSpace": "",
+              "link": ""
+              }</resourceIdentifier>
+  <resourceAbstractObject type="object">{"default":"Das Bundesinventar der sch\u00FCtzenswerten Ortsbilder der Schweiz von nationaler Bedeutung (ISOS) bezeichnet die wertvollsten, landesweit bedeutenden Ortsbilder und dokumentiert sie.\nDie Arbeiten am ISOS begannen 1973 mit der Entwicklung einer f\u00FCr die Inventarisierung von Ortsbildern geeigneten Methode \u2013  der ISOS-Methode. Im Jahr 2016 hat das Bundesamt f\u00FCr Kultur (BAK) diese Methode aktualisiert und die Darstellung des Bundesinventars an die GIS-Technologie angepasst. Die urspr\u00FCngliche Methode (ISOS I) und die angepasste Methode (ISOS II) beruhen auf denselben Grundprinzipien und Regeln. \nDieses  Portal pr\u00E4sentiert die ISOS-Aufnahmen, die zurzeit in Kraft sind. Es gibt zwei Arten von Daten:\n1. die nach Methode ISOS I erarbeiteten Aufnahmen, die lediglich als PDF verf\u00FCgbar sind;\n2. die nach Methode ISOS II erarbeiteten Aufnahmen, die als PDF und vektorielle Geodaten verf\u00FCgbar sind. Bitte beachten Sie: Nur die PDF sind rechtsg\u00FCltig. Die Geodaten dienen lediglich der Information. Ihr Detaillierungsgrad nimmt mit wachsendem Massstab zu. \nDas ISOS wird zurzeit revidiert. Die Revision erfolgt etappenweise. Folglich werden w\u00E4hrend einer gewissen Zeit Aufnahmen, die nach der Methode ISOS I erarbeitet wurden, und Aufnahmen, die mit der Methode ISOS II erstellt wurden, auf diesem Portal koexistieren. Nach Abschluss der Revision in der ganzen Schweiz werden nur noch Aufnahmen verf\u00FCgbar sein, die nach der Methode ISOS II erarbeitet wurden.\n\nDieser Layer pr\u00E4sentiert die Fotos zu den nach der Methode ISOS II aktualisierten Aufnahmen. Er wird j\u00E4hrlich aktualisiert. Die beste \u00DCbersichtlichkeit der Informationen wird erreicht, wenn er \u00FCber dem Layer \"Ortsbildaufnahmen\" liegt. \n\nDie Fotos sind ab dem Massstab 1: 50'000 zu sehen. \n\nAlle ISOS-Daten (Pl\u00E4ne, Texte, Fotos) sind geistiges Eigentum der Bundesregierung (\u00A9 BAK, Bern)\n\nF\u00FCr detaillierte Informationen zum ISOS siehe www.isos.ch.", "langger":"Das Bundesinventar der sch\u00FCtzenswerten Ortsbilder der Schweiz von nationaler Bedeutung (ISOS) bezeichnet die wertvollsten, landesweit bedeutenden Ortsbilder und dokumentiert sie.\nDie Arbeiten am ISOS begannen 1973 mit der Entwicklung einer f\u00FCr die Inventarisierung von Ortsbildern geeigneten Methode \u2013  der ISOS-Methode. Im Jahr 2016 hat das Bundesamt f\u00FCr Kultur (BAK) diese Methode aktualisiert und die Darstellung des Bundesinventars an die GIS-Technologie angepasst. Die urspr\u00FCngliche Methode (ISOS I) und die angepasste Methode (ISOS II) beruhen auf denselben Grundprinzipien und Regeln. \nDieses  Portal pr\u00E4sentiert die ISOS-Aufnahmen, die zurzeit in Kraft sind. Es gibt zwei Arten von Daten:\n1. die nach Methode ISOS I erarbeiteten Aufnahmen, die lediglich als PDF verf\u00FCgbar sind;\n2. die nach Methode ISOS II erarbeiteten Aufnahmen, die als PDF und vektorielle Geodaten verf\u00FCgbar sind. Bitte beachten Sie: Nur die PDF sind rechtsg\u00FCltig. Die Geodaten dienen lediglich der Information. Ihr Detaillierungsgrad nimmt mit wachsendem Massstab zu. \nDas ISOS wird zurzeit revidiert. Die Revision erfolgt etappenweise. Folglich werden w\u00E4hrend einer gewissen Zeit Aufnahmen, die nach der Methode ISOS I erarbeitet wurden, und Aufnahmen, die mit der Methode ISOS II erstellt wurden, auf diesem Portal koexistieren. Nach Abschluss der Revision in der ganzen Schweiz werden nur noch Aufnahmen verf\u00FCgbar sein, die nach der Methode ISOS II erarbeitet wurden.\n\nDieser Layer pr\u00E4sentiert die Fotos zu den nach der Methode ISOS II aktualisierten Aufnahmen. Er wird j\u00E4hrlich aktualisiert. Die beste \u00DCbersichtlichkeit der Informationen wird erreicht, wenn er \u00FCber dem Layer \"Ortsbildaufnahmen\" liegt. \n\nDie Fotos sind ab dem Massstab 1: 50'000 zu sehen. \n\nAlle ISOS-Daten (Pl\u00E4ne, Texte, Fotos) sind geistiges Eigentum der Bundesregierung (\u00A9 BAK, Bern)\n\nF\u00FCr detaillierte Informationen zum ISOS siehe www.isos.ch.", "langfre":"L\u2019Inventaire f\u00E9d\u00E9ral des sites construits d\u2019importance nationale \u00E0 prot\u00E9ger en Suisse (ISOS) recense les sites construits les plus pr\u00E9cieux et les plus importants du pays et les documente. \nLes travaux relatifs \u00E0 l\u2019Inventaire ISOS ont commenc\u00E9 en 1973 avec le d\u00E9veloppement d\u2019une m\u00E9thode appropri\u00E9e au recensement des sites construits \u2013 la m\u00E9thode ISOS. En 2016, l\u2019Office f\u00E9d\u00E9ral de la culture (OFC) a actualis\u00E9 cette m\u00E9thode et a adapt\u00E9 la pr\u00E9sentation de l'Inventaire f\u00E9d\u00E9ral aux technologies SIG. La m\u00E9thode originelle (ISOS I) et la m\u00E9thode adapt\u00E9e (ISOS II) reposent sur les m\u00EAmes principes et les m\u00EAmes r\u00E8gles de base.\nLe pr\u00E9sent portail pr\u00E9sente les relev\u00E9s ISOS actuellement en vigueur. Ces derniers se composent de deux types de donn\u00E9es: \n1. les relev\u00E9s \u00E9labor\u00E9s selon la m\u00E9thode ISOS I, uniquement disponibles sous forme de PDF;\n2. les relev\u00E9s \u00E9tablis selon la m\u00E9thode ISOS II, disponibles sous forme de PDF et de g\u00E9odonn\u00E9es vectorielles. Attention: seuls les PDFs ont  valeur l\u00E9gale. Les g\u00E9odonn\u00E9es ont uniquement une valeur informative. Leur degr\u00E9 de d\u00E9tail augmente avec l'\u00E9chelle. \nL'ISOS est actuellement en cours de r\u00E9vision. Cette r\u00E9vision s\u2019effectue par \u00E9tapes. Pendant un certain temps, les relev\u00E9s \u00E9labor\u00E9s selon la m\u00E9thode ISOS I et les relev\u00E9s \u00E9tablis selon la m\u00E9thode ISOS II coexisteront donc sur le g\u00E9oportail. Une fois l\u2019ISOS r\u00E9vis\u00E9 dans toute la Suisse, seuls les relev\u00E9s \u00E9tablis selon la m\u00E9thode ISOS II seront disponibles. \n\nCette couche pr\u00E9sente les photos des sites actualis\u00E9s selon la m\u00E9thode ISOS II. Elle est mise \u00E0 jour une fois par ann\u00E9e. Pour une lisibilit\u00E9 optimale des informations, il est conseill\u00E9 de la placer au-dessus de la couche \"relev\u00E9s de sites\". \n\nLes photos sont visibles \u00E0 partir de l'\u00E9chelle 1 : 50'000.  \n\nToutes les donn\u00E9es ISOS (plans, textes, photos) sont la propri\u00E9t\u00E9 intellectuelle du gouvernement f\u00E9d\u00E9ral (\u00A9 OFC, Berne ).\n\nPour des informations d\u00E9taill\u00E9es sur l'ISOS, voir www.isos.ch.", "langita":"L\u2019Inventario federale degli insediamenti svizzeri da proteggere d\u2019importanza nazionale (ISOS) rileva e documenta gli insediamenti di maggior valore  e importanza del paese. \nL\u2019avvio dei lavori per l\u2019allestimento dell\u2019ISOS risale al 1973 con lo sviluppo di un metodo adeguato per l\u2019inventariazione di insediamenti \u2013 il metodo ISOS. Nel 2016, l'Ufficio federale della cultura (UFC) ha rielaborato tale metodo e adeguato la rappresentazione dell'Inventario federale alle tecnologie GIS. Il metodo originario (ISOS I) e il suo aggiornamento (ISOS II) hanno gli stessi principi e le stesse regole di base.\nQuesto portale presenta i rilevamenti ISOS attualmente in vigore che consistono in due tipi di dati: \n1. rilevamenti allestiti secondo il metodo ISOS I, disponibili unicamente sotto forma di PDF\n2. rilevamenti allestiti secondo il metodo ISOS II, disponibili sotto forma di  PDF e di geodati vettoriali. Attenzione: solo i PDF hanno forza giuridica. I geodati sono a solo titolo informativo. Il loro livello di dettaglio cresce con l'aumentare della scala di rappresentazione.\nAttualmente, l'ISOS \u00E8 in fase di revisione che avviene per tappe. Di conseguenza, per un certo periodo di tempo, i rilevamenti elaborati secondo il metodo ISOS I e i rilevamenti allestiti secondo il metodo ISOS II coesisteranno su questo portale. Una volta che l'ISOS sar\u00E0 stato rivisto in tutta la Svizzera, saranno disponibili solo i rilevamenti realizzati secondo il metodo ISOS II.\n\nQuesto livello presenta le foto relative ai rilevamenti degli insediamenti aggiornati secondo il metodo ISOS II. Sar\u00E0 aggiornato una volta all'anno. Per una leggibilit\u00E0 ottimale delle informazioni \u00E8 consigliabile porlo al di sopra del livello \"rilevamenti degli insediamenti\". \n\nLe foto sono visibili dalla scala 1 : 50'000. \n\nTutti i dati ISOS (piani, testi, foto) sono propriet\u00E0 intellettuale della Confederazione (\u00A9 UFC, Berna).\n\nPer informazioni approfondite sull'ISOS, si vada su www.isos.ch.", "langeng":"The Inventory of Swiss Heritage Sites (ISOS) designates and documents the most valuable sites of national importance.\nWork on the ISOS began in 1973 with the development of a suitable method for cataloguing sites \u2013 the ISOS method. In 2016, the Federal Office of Culture (FOC) updated this method and adapted the presentation of the inventory in line with GIS technology. The original method (ISOS I) and the adapted method (ISOS II) are based on the same basic principles and rules. \nThis portal presents the ISOS site records currently in use. There are two kinds of data:\n1. the site records prepared using the ISOS I method, which are only available as PDFs;\n2. the site records updated using the ISOS II method, which are available as PDFs and geodata. Please be aware that only the PDFs are legally valid. The geodata are for information purposes only. The level of detail increases as the scale increases. \nThe ISOS is currently being revised and the revision is taking place in stages. This means that for a certain period of time, site records compiled using the ISOS I method and those updated using the ISOS II method will coexist on this portal. Once the revision for the whole of Switzerland has been completed, only the site records compiled using the ISOS II method will be available.\n\nThis layer presents the photos for the site records updated using the ISOS II method. It is updated once a year. The information is clearest when this layer is placed over the \u201Csite records\u201D layer. \n\nThe photos can be viewed from a scale of 1: 50,000. \n\nAll ISOS data (plans, texts, photos) are the intellectual property of the Swiss federal government (\u00A9 FOC, Bern).\n\nFor detailed information on ISOS, see www.isos.ch.", "langroh":"L'Inventari federal dals lieus svizzers d'impurtanza naziunala degns da protecziun (ISOS) designescha e documentescha ils lieus impurtants ils pli prezius da la Svizra. Las lavurs vi dal ISOS han cumenz\u00E0 l'onn 1973 cun sviluppar ina metoda ch'\u00E8 adattada per inventarisar lieus \u2013 la metoda ISOS. L'onn 2016 ha l'Uffizi federal da cultura (UFC) actualis\u00E0 questa metoda ed adatt\u00E0 la preschentaziun da l'Inventari federal a la tecnologia SIG. La metoda oriunda (ISOS I) e la metoda adattada (ISOS II) sa basan sin ils medems princips fundamentals e sin las medemas reglas. \nQuest portal preschenta ils relevaments ISOS ch'\u00E8n actualmain en vigur. I dat duas sorts da datas: \n1. ils relevaments elavurads tenor la metoda ISOS I ch'\u00E8n disponibels mo sco PDF; \n2. ils relevaments actualisads tenor la metoda ISOS II ch'\u00E8n disponibels sco PDF e sco geodatas. Resguardai per plaschair: mo ils documents da PDF han valur legala. Las geodatas servan mo a l'infurmaziun. Il grad da precisaziun s'augmenta cun la scala che crescha.  Actualmain vegn il ISOS reved\u00EC. La revisiun vegn fatga en etappas. Durant in tschert temp vegnan pia a coexister sin quest portal relevaments ch'\u00E8n vegnids fatgs tenor la metoda ISOS I, e  relevaments ch'\u00E8n vegnids actualisads cun la metoda ISOS II. Cura che la revisiun \u00E8 terminada en tut la Svizra, vegnan ad esser disponibels mo pli relevaments ch'\u00E8n vegnids elavurads tenor la metoda ISOS II. \n\nQuest layer preschenta las fotografias dals relevaments actualisads tenor la metoda ISOS II. El vegn actualis\u00E0 mintga onn. La meglra survesaivladad da las infurmaziuns vegn cuntanschida, sch'il layer sa chatta sur il layer \"Relevaments da lieus\". \n\nLas fotografias vegnan preschentadas en la scala 1:50'000. \n\nTut las datas ISOS (plans, texts, fotografias) \u00E8n la proprietad intellectuala da la Regenza federala (\u00A9 UFC, Berna). \n\nPer infurmaziuns detagliadas davart il ISOS guardar www.isos.ch."}</resourceAbstractObject>
+  <cl_resourceCharacterSet type="object">{"key":"utf8","default":"lan:MD_CharacterSetCode--utf8--ger","langger":"lan:MD_CharacterSetCode--utf8--ger","langfre":"lan:MD_CharacterSetCode--utf8--fre","langita":"lan:MD_CharacterSetCode--utf8--ita","langeng":"lan:MD_CharacterSetCode--utf8--eng","langroh":"lan:MD_CharacterSetCode--utf8--roh","langger":"lan:MD_CharacterSetCode--utf8--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_CharacterSetCode","text":"utf8"}</cl_resourceCharacterSet>
+  <OrgForResourceObject type="object">{"default":"Bundesamt f\u00FCr Kultur - ISOS", "langger":"Bundesamt f\u00FCr Kultur - ISOS", "langfre":"Office f\u00E9d\u00E9ral de la culture - ISOS", "langita":"Ufficio federale della cultura - ISOS", "langeng":"Federal Office of Culture - ISOS", "langroh":"Bundesamt f\u00FCr Kultur - ISOS"}</OrgForResourceObject>
+  <pointOfContactOrgForResourceObject type="object">{"default":"Bundesamt f\u00FCr Kultur - ISOS", "langger":"Bundesamt f\u00FCr Kultur - ISOS", "langfre":"Office f\u00E9d\u00E9ral de la culture - ISOS", "langita":"Ufficio federale della cultura - ISOS", "langeng":"Federal Office of Culture - ISOS", "langroh":"Bundesamt f\u00FCr Kultur - ISOS"}</pointOfContactOrgForResourceObject>
+  <contactForResource type="object">{
+      
+        "organisationObject": 
+            {"default":"Bundesamt f\u00FCr Kultur - ISOS", "langger":"Bundesamt f\u00FCr Kultur - ISOS", "langfre":"Office f\u00E9d\u00E9ral de la culture - ISOS", "langita":"Ufficio federale della cultura - ISOS", "langeng":"Federal Office of Culture - ISOS", "langroh":"Bundesamt f\u00FCr Kultur - ISOS"}
+            ,
+      
+      "role":"pointOfContact",
+      "email":"isos@bak.admin.ch",
+      "websiteObject": 
+            {"default":"https:\/\/www.bak.admin.ch\/bak\/de\/home\/baukultur\/isos-und-ortsbildschutz\/ortsbildaufnahmen\/geodaten.html", "langger":"https:\/\/www.bak.admin.ch\/bak\/de\/home\/baukultur\/isos-und-ortsbildschutz\/ortsbildaufnahmen\/geodaten.html", "langfre":"https:\/\/www.bak.admin.ch\/bak\/fr\/home\/baukultur\/isos-und-ortsbildschutz\/ortsbildaufnahmen\/geodaten.html", "langita":"https:\/\/www.bak.admin.ch\/bak\/it\/home\/baukultur\/isos-und-ortsbildschutz\/ortsbildaufnahmen\/geodaten.html"}
+            ,
+      "logo":"",
+      "individual":"Marcia Haldemann",
+      "position":"Sektion Baukultur",
+      "phone":"+41 58 462 86 26",
+      "address":"Hallwylstrasse 15, Bern, 3003, CH"
+      
+      }</contactForResource>
+  <OrgForResourceObject type="object">{"default":"Bundesamt f\u00FCr Kultur", "langger":"Bundesamt f\u00FCr Kultur", "langfre":"Office f\u00E9d\u00E9ral de la culture", "langita":"Ufficio federale della cultura", "langeng":"Federal Office of Culture", "langroh":"Bundesamt f\u00FCr Kultur"}</OrgForResourceObject>
+  <ownerOrgForResourceObject type="object">{"default":"Bundesamt f\u00FCr Kultur", "langger":"Bundesamt f\u00FCr Kultur", "langfre":"Office f\u00E9d\u00E9ral de la culture", "langita":"Ufficio federale della cultura", "langeng":"Federal Office of Culture", "langroh":"Bundesamt f\u00FCr Kultur"}</ownerOrgForResourceObject>
+  <contactForResource type="object">{
+      
+        "organisationObject": 
+            {"default":"Bundesamt f\u00FCr Kultur", "langger":"Bundesamt f\u00FCr Kultur", "langfre":"Office f\u00E9d\u00E9ral de la culture", "langita":"Ufficio federale della cultura", "langeng":"Federal Office of Culture", "langroh":"Bundesamt f\u00FCr Kultur"}
+            ,
+      
+      "role":"owner",
+      "email":"info@bak.admin.ch",
+      "websiteObject": 
+            {"default":"http:\/\/www.bak.admin.ch\/index.html?lang=it", "langita":"http:\/\/www.bak.admin.ch\/index.html?lang=it", "langroh":"http:\/\/www.bak.admin.ch\/", "langfre":"http:\/\/www.bak.admin.ch\/index.html?lang=fr", "langeng":"http:\/\/www.bak.admin.ch\/", "langger":"http:\/\/www.bak.admin.ch\/"}
+            ,
+      "logo":"",
+      "individual":"",
+      "position":"Kontakt",
+      "phone":"+41 58 462 92 66",
+      "address":"Hallwylstrasse 15, Bern, CH"
+      
+      }</contactForResource>
+  <purposeObject type="object">{"default":"Gem\u00E4ss Artikel 78 der Bundesverfassung ist der Bund verpflichtet, bei der Erf\u00FCllung seiner Aufgaben R\u00FCcksicht auf die Anliegen des Natur- und Heimatschutzes zu nehmen. \"Er schont Landschaften, Ortsbilder, geschichtliche St\u00E4tten sowie Natur- und Kulturdenkm\u00E4ler; er erh\u00E4lt sie ungeschm\u00E4lert, wenn das \u00F6ffentliche Interesse es gebietet\". Um diese Pflicht, die Interessenabw\u00E4gung zwischen dem Natur- und Heimatschutz und den vielf\u00E4ltigen Aufgaben des Bundes, seiner Anstalten und Betriebe sachgerecht wahrnehmen zu k\u00F6nnen, wird als eine Entscheidgrundlage das ISOS erarbeitet.", "langger":"Gem\u00E4ss Artikel 78 der Bundesverfassung ist der Bund verpflichtet, bei der Erf\u00FCllung seiner Aufgaben R\u00FCcksicht auf die Anliegen des Natur- und Heimatschutzes zu nehmen. \"Er schont Landschaften, Ortsbilder, geschichtliche St\u00E4tten sowie Natur- und Kulturdenkm\u00E4ler; er erh\u00E4lt sie ungeschm\u00E4lert, wenn das \u00F6ffentliche Interesse es gebietet\". Um diese Pflicht, die Interessenabw\u00E4gung zwischen dem Natur- und Heimatschutz und den vielf\u00E4ltigen Aufgaben des Bundes, seiner Anstalten und Betriebe sachgerecht wahrnehmen zu k\u00F6nnen, wird als eine Entscheidgrundlage das ISOS erarbeitet.", "langfre":"Selon l'art. 78 de la Constitution f\u00E9d\u00E9rale, la protection de la nature et du patrimoine fait partie des t\u00E2ches de la Conf\u00E9d\u00E9ration: \"Elle m\u00E9nage les paysages, la physionomie des localit\u00E9s, les sites historiques et les monuments naturels et culturels; elle les conserve dans leur int\u00E9gralit\u00E9 si l'int\u00E9r\u00EAt public l'exige\". Pour faciliter l'accomplissement de cette t\u00E2che et trouver l'\u00E9quilibre \u00E0 maintenir entre les nouvelles installations et les int\u00E9r\u00EAts de la protection de la nature et du patrimoine, l'ISOS est \u00E9tabli comme base de d\u00E9cision.", "langita":"In base all'articolo 78 della Costituzione \"Nell'adempimento dei suoi compiti, la Confederazione prende in considerazione gli obiettivi della protezione della natura e del paesaggio. Ha cura dei paesaggi, dei siti caratteristici, dei luoghi storici nonch\u00E9 dei monumenti naturali e culturali; quando l'interesse pubblico lo richieda, li conserva integri\". Per fare meglio fronte a tale compito, e per potere decidere al meglio, nel delicato equilibrio tra esigenza di protezione della natura e del paesaggio da un lato e necessit\u00E0 di realizzazione di opere e lavori da parte della Confederazione, dei suoi enti e istituzioni dall'altro, viene elaborato l'Inventario.", "langeng":"According to Article 78 of the Federal Constitution, the Confederation is obliged to take account of concerns for the protection of natural and cultural heritage in the fulfilment of its duties. \u201CIt shall protect the countryside and places of architectural, historical, natural or cultural interest; it shall preserve such places intact if required to do so in the public interest\u201D. In order to be able to properly fulfil this duty of balancing the interests of the protection of natural and cultural heritage with the diverse duties of the Confederation, its institutions and enterprises, the ISOS is being developed as a basis for decision-making.", "langroh":"Tenor l'art. 78 da la Constituziun federala \u00E8 la Confederaziun obligada \u2013 ademplind sias incumbensas \u2013 da resguardar ils interess da la protecziun da la natira e da la patria. \"Ella ha quit\u00E0 da cuntradas, da maletgs dal lieu, da lieus istorics sco er da monuments da natira e da cultura; ella mantegna quels en lur furma integrala, sche l'interess public pretenda quai\". Per pudair observar adequatamain questa obligaziun \u2013 la consideraziun dals interess tranter la protecziun da la natira e da la patria e las incumbensas multifaras da la Confederaziun, da ses instituts e da ses manaschis \u2013 vegn elavur\u00E0 il ISOS sco ina da las basas da decisiun."}</purposeObject>
+  <hasOverview>false</hasOverview>
+  <resourceLanguage>ger</resourceLanguage>
+  <tag type="object">[
+      {
+      "default":"Bewirtschaftungsgebiete\/Schutzgebiete\/geregelte Gebiete und Berichterstattungseinheiten", "langger":"Bewirtschaftungsgebiete\/Schutzgebiete\/geregelte Gebiete und Berichterstattungseinheiten", "langfre":"Zones de gestion, de restriction ou de r\u00E9glementation et unit\u00E9s de d\u00E9claration", "langita":"Zone sottoposte a gestione\/limitazioni\/regolamentazione e unit\u00E0 con obbligo di comunicare dati", "langeng":"Area management\/restriction\/regulation zones and reporting units"
+      }
+      ,
+      {
+      "default":"Baudenkmal", "langger":"Baudenkmal", "langfre":"monument historique", "langita":"monumento di valore storico", "langeng":"historical monument"
+      }
+      ,
+      {
+      "default":"Historischer Standort", "langger":"Historischer Standort", "langfre":"site historique", "langita":"sito di valore storico", "langeng":"historical site"
+      }
+      ,
+      {
+      "default":"Denkmalerhaltung", "langger":"Denkmalerhaltung", "langfre":"conservation des monuments", "langita":"conservazione dei monumenti", "langeng":"conservation of monuments"
+      }
+      ,
+      {
+      "default":"Kulturgut", "langger":"Kulturgut", "langfre":"bien culturel", "langita":"beni culturali", "langeng":"cultural goods"
+      }
+      ,
+      {
+      "default":"opendata.swiss", "langger":"opendata.swiss", "langfre":"opendata.swiss", "langita":"opendata.swiss", "langeng":"opendata.swiss", "langroh":"opendata.swiss"
+      }
+      ,
+      {
+      "default":"Geobasisdienst", "langger":"Geobasisdienst", "langfre":"g\u00E9oservice de base", "langita":"geoservizio di base", "langeng":"official geoservice"
+      }
+      ,
+      {
+      "default":"Ortsbild", "langger":"Ortsbild", "langfre":"site construit", "langita":"insediamento", "langeng":"heritage site"
+      }
+      ,
+      {
+      "default":"BGDI Bundesgeodaten-Infrastruktur", "langger":"BGDI Bundesgeodaten-Infrastruktur", "langfre":"IFDG l\u2019Infrastructure F\u00E9d\u00E9rale de donn\u00E9es g\u00E9ographiques", "langita":"IFDG Infrastruttura federale dei dati geografici", "langeng":"FSDI Federal Spatial Data Infrastructure"
+      }
+      ,
+      {
+      "default":"ISOS", "langger":"ISOS", "langfre":"ISOS", "langita":"ISOS", "langeng":"ISOS"
+      }
+      ,
+      {
+      "default":"Bundesinventar", "langger":"Bundesinventar", "langfre":"inventaire f\u00E9d\u00E9ral", "langita":"inventario federale", "langeng":"federal inventory"
+      }
+      ,
+      {
+      "default":"Aufbewahrungs- und Archivierungsplanung AAP - Bund", "langger":"Aufbewahrungs- und Archivierungsplanung AAP - Bund", "langfre":"Planification de la conservation et de l'archivage AAP - Conf\u00E9deration", "langita":"Pianificazione della conservazione e dell\u2019archiviazione AAP - Confederazione", "langeng":"Conservation and archiving planning AAP - Confederation"
+      }
+      ,
+      {
+      "default":"Schweiz", "langger":"Schweiz", "langfre":"Suisse", "langita":"Svizzera", "langeng":"Switzerland", "langroh":"Svizra"
+      }
+      ]</tag>
+  <tagNumber>13</tagNumber>
+  <isOpenData>true</isOpenData>
+  <keywordType-theme type="object">[
+          {
+          "default":"Bewirtschaftungsgebiete\/Schutzgebiete\/geregelte Gebiete und Berichterstattungseinheiten", "langger":"Bewirtschaftungsgebiete\/Schutzgebiete\/geregelte Gebiete und Berichterstattungseinheiten", "langfre":"Zones de gestion, de restriction ou de r\u00E9glementation et unit\u00E9s de d\u00E9claration", "langita":"Zone sottoposte a gestione\/limitazioni\/regolamentazione e unit\u00E0 con obbligo di comunicare dati", "langeng":"Area management\/restriction\/regulation zones and reporting units"
+          }
+          ,
+          {
+          "default":"Baudenkmal", "langger":"Baudenkmal", "langfre":"monument historique", "langita":"monumento di valore storico", "langeng":"historical monument"
+          }
+          ,
+          {
+          "default":"Historischer Standort", "langger":"Historischer Standort", "langfre":"site historique", "langita":"sito di valore storico", "langeng":"historical site"
+          }
+          ,
+          {
+          "default":"Denkmalerhaltung", "langger":"Denkmalerhaltung", "langfre":"conservation des monuments", "langita":"conservazione dei monumenti", "langeng":"conservation of monuments"
+          }
+          ,
+          {
+          "default":"Kulturgut", "langger":"Kulturgut", "langfre":"bien culturel", "langita":"beni culturali", "langeng":"cultural goods"
+          }
+          ,
+          {
+          "default":"opendata.swiss", "langger":"opendata.swiss", "langfre":"opendata.swiss", "langita":"opendata.swiss", "langeng":"opendata.swiss", "langroh":"opendata.swiss"
+          }
+          ,
+          {
+          "default":"Geobasisdienst", "langger":"Geobasisdienst", "langfre":"g\u00E9oservice de base", "langita":"geoservizio di base", "langeng":"official geoservice"
+          }
+          ,
+          {
+          "default":"Ortsbild", "langger":"Ortsbild", "langfre":"site construit", "langita":"insediamento", "langeng":"heritage site"
+          }
+          ,
+          {
+          "default":"BGDI Bundesgeodaten-Infrastruktur", "langger":"BGDI Bundesgeodaten-Infrastruktur", "langfre":"IFDG l\u2019Infrastructure F\u00E9d\u00E9rale de donn\u00E9es g\u00E9ographiques", "langita":"IFDG Infrastruttura federale dei dati geografici", "langeng":"FSDI Federal Spatial Data Infrastructure"
+          }
+          ,
+          {
+          "default":"ISOS", "langger":"ISOS", "langfre":"ISOS", "langita":"ISOS", "langeng":"ISOS"
+          }
+          ,
+          {
+          "default":"Bundesinventar", "langger":"Bundesinventar", "langfre":"inventaire f\u00E9d\u00E9ral", "langita":"inventario federale", "langeng":"federal inventory"
+          }
+          ,
+          {
+          "default":"Aufbewahrungs- und Archivierungsplanung AAP - Bund", "langger":"Aufbewahrungs- und Archivierungsplanung AAP - Bund", "langfre":"Planification de la conservation et de l'archivage AAP - Conf\u00E9deration", "langita":"Pianificazione della conservazione e dell\u2019archiviazione AAP - Confederazione", "langeng":"Conservation and archiving planning AAP - Confederation"
+          }
+          ]</keywordType-theme>
+  <keywordType-place type="object">[
+          {
+          "default":"Schweiz", "langger":"Schweiz", "langfre":"Suisse", "langita":"Svizzera", "langeng":"Switzerland", "langroh":"Svizra"
+          }
+          ]</keywordType-place>
+  <th_httpinspireeceuropaeutheme-themeNumber>1</th_httpinspireeceuropaeutheme-themeNumber>
+  <th_httpinspireeceuropaeutheme-theme type="object">[
+        {
+        "default":"Bewirtschaftungsgebiete\/Schutzgebiete\/geregelte Gebiete und Berichterstattungseinheiten", "langger":"Bewirtschaftungsgebiete\/Schutzgebiete\/geregelte Gebiete und Berichterstattungseinheiten", "langfre":"Zones de gestion, de restriction ou de r\u00E9glementation et unit\u00E9s de d\u00E9claration", "langita":"Zone sottoposte a gestione\/limitazioni\/regolamentazione e unit\u00E0 con obbligo di comunicare dati", "langeng":"Area management\/restriction\/regulation zones and reporting units"
+        }
+        ]</th_httpinspireeceuropaeutheme-theme>
+  <th_gemetNumber>4</th_gemetNumber>
+  <th_gemet type="object">[
+        {
+        "default":"Baudenkmal", "langger":"Baudenkmal", "langfre":"monument historique", "langita":"monumento di valore storico", "langeng":"historical monument"
+        }
+        ,
+        {
+        "default":"Historischer Standort", "langger":"Historischer Standort", "langfre":"site historique", "langita":"sito di valore storico", "langeng":"historical site"
+        }
+        ,
+        {
+        "default":"Denkmalerhaltung", "langger":"Denkmalerhaltung", "langfre":"conservation des monuments", "langita":"conservazione dei monumenti", "langeng":"conservation of monuments"
+        }
+        ,
+        {
+        "default":"Kulturgut", "langger":"Kulturgut", "langfre":"bien culturel", "langita":"beni culturali", "langeng":"cultural goods"
+        }
+        ]</th_gemet>
+  <th_geocat-chNumber>7</th_geocat-chNumber>
+  <th_geocat-ch type="object">[
+        {
+        "default":"opendata.swiss", "langger":"opendata.swiss", "langfre":"opendata.swiss", "langita":"opendata.swiss", "langeng":"opendata.swiss", "langroh":"opendata.swiss"
+        }
+        ,
+        {
+        "default":"Geobasisdienst", "langger":"Geobasisdienst", "langfre":"g\u00E9oservice de base", "langita":"geoservizio di base", "langeng":"official geoservice"
+        }
+        ,
+        {
+        "default":"Ortsbild", "langger":"Ortsbild", "langfre":"site construit", "langita":"insediamento", "langeng":"heritage site"
+        }
+        ,
+        {
+        "default":"BGDI Bundesgeodaten-Infrastruktur", "langger":"BGDI Bundesgeodaten-Infrastruktur", "langfre":"IFDG l\u2019Infrastructure F\u00E9d\u00E9rale de donn\u00E9es g\u00E9ographiques", "langita":"IFDG Infrastruttura federale dei dati geografici", "langeng":"FSDI Federal Spatial Data Infrastructure"
+        }
+        ,
+        {
+        "default":"ISOS", "langger":"ISOS", "langfre":"ISOS", "langita":"ISOS", "langeng":"ISOS"
+        }
+        ,
+        {
+        "default":"Bundesinventar", "langger":"Bundesinventar", "langfre":"inventaire f\u00E9d\u00E9ral", "langita":"inventario federale", "langeng":"federal inventory"
+        }
+        ,
+        {
+        "default":"Aufbewahrungs- und Archivierungsplanung AAP - Bund", "langger":"Aufbewahrungs- und Archivierungsplanung AAP - Bund", "langfre":"Planification de la conservation et de l'archivage AAP - Conf\u00E9deration", "langita":"Pianificazione della conservazione e dell\u2019archiviazione AAP - Confederazione", "langeng":"Conservation and archiving planning AAP - Confederation"
+        }
+        ]</th_geocat-ch>
+  <allKeywords type="object">{
+      
+        "th_httpinspireeceuropaeutheme-theme": {
+        
+          "id": "geonetwork.thesaurus.external.theme.httpinspireeceuropaeutheme-theme",
+        
+            "multilingualTitle": {
+              "default":"GEMET - INSPIRE themes, version 1.0", "langger":"GEMET - INSPIRE themes, version 1.0"
+            },
+          
+        "theme": "theme",
+        
+          "link": "https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/registries\/vocabularies\/external.theme.httpinspireeceuropaeutheme-theme",
+        
+        "keywords": [
+        
+          {
+          "default":"Bewirtschaftungsgebiete\/Schutzgebiete\/geregelte Gebiete und Berichterstattungseinheiten", "langger":"Bewirtschaftungsgebiete\/Schutzgebiete\/geregelte Gebiete und Berichterstattungseinheiten", "langfre":"Zones de gestion, de restriction ou de r\u00E9glementation et unit\u00E9s de d\u00E9claration", "langita":"Zone sottoposte a gestione\/limitazioni\/regolamentazione e unit\u00E0 con obbligo di comunicare dati", "langeng":"Area management\/restriction\/regulation zones and reporting units"
+          }
+          
+        ]}
+        ,
+        "th_gemet": {
+        
+          "id": "geonetwork.thesaurus.external.theme.gemet",
+        
+            "multilingualTitle": {
+              "default":"GEMET", "langger":"GEMET"
+            },
+          
+        "theme": "theme",
+        
+          "link": "https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/registries\/vocabularies\/external.theme.gemet",
+        
+        "keywords": [
+        
+          {
+          "default":"Baudenkmal", "langger":"Baudenkmal", "langfre":"monument historique", "langita":"monumento di valore storico", "langeng":"historical monument"
+          }
+          ,
+          {
+          "default":"Historischer Standort", "langger":"Historischer Standort", "langfre":"site historique", "langita":"sito di valore storico", "langeng":"historical site"
+          }
+          ,
+          {
+          "default":"Denkmalerhaltung", "langger":"Denkmalerhaltung", "langfre":"conservation des monuments", "langita":"conservazione dei monumenti", "langeng":"conservation of monuments"
+          }
+          ,
+          {
+          "default":"Kulturgut", "langger":"Kulturgut", "langfre":"bien culturel", "langita":"beni culturali", "langeng":"cultural goods"
+          }
+          
+        ]}
+        ,
+        "th_geocat-ch": {
+        
+          "id": "geonetwork.thesaurus.local.theme.geocat.ch",
+        
+            "multilingualTitle": {
+              "default":"geocat.ch", "langger":"geocat.ch"
+            },
+          
+        "theme": "theme",
+        
+          "link": "https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/registries\/vocabularies\/local.theme.geocat.ch",
+        
+        "keywords": [
+        
+          {
+          "default":"opendata.swiss", "langger":"opendata.swiss", "langfre":"opendata.swiss", "langita":"opendata.swiss", "langeng":"opendata.swiss", "langroh":"opendata.swiss"
+          }
+          ,
+          {
+          "default":"Geobasisdienst", "langger":"Geobasisdienst", "langfre":"g\u00E9oservice de base", "langita":"geoservizio di base", "langeng":"official geoservice"
+          }
+          ,
+          {
+          "default":"Ortsbild", "langger":"Ortsbild", "langfre":"site construit", "langita":"insediamento", "langeng":"heritage site"
+          }
+          ,
+          {
+          "default":"BGDI Bundesgeodaten-Infrastruktur", "langger":"BGDI Bundesgeodaten-Infrastruktur", "langfre":"IFDG l\u2019Infrastructure F\u00E9d\u00E9rale de donn\u00E9es g\u00E9ographiques", "langita":"IFDG Infrastruttura federale dei dati geografici", "langeng":"FSDI Federal Spatial Data Infrastructure"
+          }
+          ,
+          {
+          "default":"ISOS", "langger":"ISOS", "langfre":"ISOS", "langita":"ISOS", "langeng":"ISOS"
+          }
+          ,
+          {
+          "default":"Bundesinventar", "langger":"Bundesinventar", "langfre":"inventaire f\u00E9d\u00E9ral", "langita":"inventario federale", "langeng":"federal inventory"
+          }
+          ,
+          {
+          "default":"Aufbewahrungs- und Archivierungsplanung AAP - Bund", "langger":"Aufbewahrungs- und Archivierungsplanung AAP - Bund", "langfre":"Planification de la conservation et de l'archivage AAP - Conf\u00E9deration", "langita":"Pianificazione della conservazione e dell\u2019archiviazione AAP - Confederazione", "langeng":"Conservation and archiving planning AAP - Confederation"
+          }
+          
+        ]}
+        
+      }</allKeywords>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Bewirtschaftungsgebiete\/Schutzgebiete\/geregelte Gebiete und Berichterstattungseinheiten",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.httpinspireeceuropaeutheme-theme"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Baudenkmal",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.gemet"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Historischer Standort",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.gemet"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Denkmalerhaltung",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.gemet"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Kulturgut",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.gemet"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "opendata.swiss",
+                              "thesaurus": "geonetwork.thesaurus.local.theme.geocat.ch"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Geobasisdienst",
+                              "thesaurus": "geonetwork.thesaurus.local.theme.geocat.ch"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Ortsbild",
+                              "thesaurus": "geonetwork.thesaurus.local.theme.geocat.ch"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "BGDI Bundesgeodaten-Infrastruktur",
+                              "thesaurus": "geonetwork.thesaurus.local.theme.geocat.ch"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "ISOS",
+                              "thesaurus": "geonetwork.thesaurus.local.theme.geocat.ch"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Bundesinventar",
+                              "thesaurus": "geonetwork.thesaurus.local.theme.geocat.ch"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Aufbewahrungs- und Archivierungsplanung AAP - Bund",
+                              "thesaurus": "geonetwork.thesaurus.local.theme.geocat.ch"
+                            }
+                          }</indexingErrorMsg>
+  <cl_topic type="object">{"key":"society","default":"mri:MD_TopicCategoryCode--society--ger","langger":"mri:MD_TopicCategoryCode--society--ger","langfre":"mri:MD_TopicCategoryCode--society--fre","langita":"mri:MD_TopicCategoryCode--society--ita","langeng":"mri:MD_TopicCategoryCode--society--eng","langroh":"mri:MD_TopicCategoryCode--society--roh","langger":"mri:MD_TopicCategoryCode--society--ger"}</cl_topic>
+  <resolutionScaleDenominator>5000</resolutionScaleDenominator>
+  <spatialRepresentationType>textTable</spatialRepresentationType>
+  <maintenance type="object">{
+            "frequency": "annually"
+            
+            }</maintenance>
+  <MD_LegalConstraintsOtherConstraintsObject type="object">{"default":"Opendata BY ASK: Freie Nutzung. Quellenangabe ist Pflicht. Kommerzielle Nutzung nur mit Bewilligung des Datenlieferanten zul\u00E4ssig.", "langger":"Opendata BY ASK: Freie Nutzung. Quellenangabe ist Pflicht. Kommerzielle Nutzung nur mit Bewilligung des Datenlieferanten zul\u00E4ssig.", "langfre":"Opendata BY ASK: Utilisation libre. Obligation d\u2019indiquer la source. Utilisation commerciale uniquement avec l\u2019autorisation du fournisseur des donn\u00E9es.", "langita":"Opendata BY ASK: Libero utilizzo. Indicazione della fonte obbligatoria. Utilizzo a fini commerciali ammesso soltanto previo consenso del titolare dei dati.", "langeng":"Opendata BY ASK: Open use. Must provide the source. Use for commercial purposes requires permission of the data owner.", "link":"https:\/\/opendata.swiss\/en\/terms-of-use\/#terms_by_ask"}</MD_LegalConstraintsOtherConstraintsObject>
+  <licenseObject type="object">{"default":"Opendata BY ASK: Freie Nutzung. Quellenangabe ist Pflicht. Kommerzielle Nutzung nur mit Bewilligung des Datenlieferanten zul\u00E4ssig.", "langger":"Opendata BY ASK: Freie Nutzung. Quellenangabe ist Pflicht. Kommerzielle Nutzung nur mit Bewilligung des Datenlieferanten zul\u00E4ssig.", "langfre":"Opendata BY ASK: Utilisation libre. Obligation d\u2019indiquer la source. Utilisation commerciale uniquement avec l\u2019autorisation du fournisseur des donn\u00E9es.", "langita":"Opendata BY ASK: Libero utilizzo. Indicazione della fonte obbligatoria. Utilizzo a fini commerciali ammesso soltanto previo consenso del titolare dei dati.", "langeng":"Opendata BY ASK: Open use. Must provide the source. Use for commercial purposes requires permission of the data owner.", "link":"https:\/\/opendata.swiss\/en\/terms-of-use\/#terms_by_ask"}</licenseObject>
+  <hasBoundingPolygon>true</hasBoundingPolygon>
+  <extentDescriptionObject type="object">{"default":"Schweiz", "langger":"Schweiz", "langfre":"Suisse", "langita":"Svizzera", "langeng":"Switzerland", "langroh":"Svizra"}</extentDescriptionObject>
+  <geom type="object">{"type": "Polygon","coordinates": [[[5.956088,45.817970],[10.492036,45.817970],[10.492036,47.808488],[5.956088,47.808488],[5.956088,45.817970]]]}</geom>
+  <location>46.813229,8.224062</location>
+  <coordinateSystem>EPSG:2056</coordinateSystem>
+  <crsDetails type="object">{
+            "code": "EPSG:2056",
+            "codeSpace": "",
+            "name": "EPSG:2056",
+            "url": ""
+            }</crsDetails>
+  <featureTypes type="object">[
+        
+        ]</featureTypes>
+  <format>INTERLIS</format>
+  <format>Portable Document Format (PDF)</format>
+  <linkUrl>https://www.bak.admin.ch/bak/de/home/baukultur/isos-und-ortsbildschutz.html</linkUrl>
+  <linkProtocol>WWW:LINK</linkProtocol>
+  <linkUrlProtocolWWWLINK>https://www.bak.admin.ch/bak/de/home/baukultur/isos-und-ortsbildschutz.html</linkUrlProtocolWWWLINK>
+  <link type="object">{
+            "protocol":"WWW:LINK",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"https:\/\/www.bak.admin.ch\/bak\/de\/home\/baukultur\/isos-und-ortsbildschutz.html", "langger":"https:\/\/www.bak.admin.ch\/bak\/de\/home\/baukultur\/isos-und-ortsbildschutz.html", "langfre":"https:\/\/www.bak.admin.ch\/bak\/fr\/home\/baukultur\/isos-und-ortsbildschutz.html", "langita":"https:\/\/www.bak.admin.ch\/bak\/it\/home\/baukultur\/isos-und-ortsbildschutz.html", "langeng":"https:\/\/www.bak.admin.ch\/bak\/en\/home\/baukultur\/isos-und-ortsbildschutz.html", "langroh":"https:\/\/www.bak.admin.ch\/bak\/rm\/home\/baukultur\/isos-und-ortsbildschutz.html"}
+            ,
+            
+              "descriptionObject": 
+            {"default":"Lien sur la description d\u00E9taill\u00E9e", "langger":"Lien sur la description d\u00E9taill\u00E9e"}
+            ,
+            
+            "function":"information",
+            "applicationProfile":"",
+            "group": 0
+            }</link>
+  <linkUrl>https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=de</linkUrl>
+  <linkProtocol>OGC:WMS</linkProtocol>
+  <linkUrlProtocolOGCWMS>https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=de</linkUrlProtocolOGCWMS>
+  <link type="object">{
+            "protocol":"OGC:WMS",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"https:\/\/wms.geo.admin.ch\/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=de", "langger":"https:\/\/wms.geo.admin.ch\/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=de", "langfre":"https:\/\/wms.geo.admin.ch\/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=fr", "langita":"https:\/\/wms.geo.admin.ch\/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=it", "langeng":"https:\/\/wms.geo.admin.ch\/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=en", "langroh":"https:\/\/wms.geo.admin.ch\/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=de"}
+            ,
+            
+              "nameObject": 
+            {"default":"ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos", "langger":"ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos", "langfre":"ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos", "langita":"ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos", "langeng":"ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos", "langroh":"ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos"}
+            ,
+            
+              "descriptionObject": 
+            {"default":"WMS-BGDI Dienst, Layer \"ISOS - Bilder\"", "langger":"WMS-BGDI Dienst, Layer \"ISOS - Bilder\"", "langfre":"Service WMS-IFDG, couche \"ISOS - Photos\"", "langita":"Servizio WMS-IFDG, strato \"ISOS - Foto\"", "langeng":"WMS-FSDI service, layer \"ISOS - Photos\"", "langroh":"WMS-BGDI Dienst, Layer \"ISOS - Bilder\""}
+            ,
+            
+            "function":"",
+            "applicationProfile":"",
+            "group": 0
+            }</link>
+  <linkUrl>https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=de</linkUrl>
+  <linkProtocol>OGC:WMTS</linkProtocol>
+  <linkUrlProtocolOGCWMTS>https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=de</linkUrlProtocolOGCWMTS>
+  <link type="object">{
+            "protocol":"OGC:WMTS",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"https:\/\/wmts.geo.admin.ch\/EPSG\/3857\/1.0.0\/WMTSCapabilities.xml?lang=de", "langger":"https:\/\/wmts.geo.admin.ch\/EPSG\/3857\/1.0.0\/WMTSCapabilities.xml?lang=de", "langfre":"https:\/\/wmts.geo.admin.ch\/EPSG\/3857\/1.0.0\/WMTSCapabilities.xml?lang=fr", "langita":"https:\/\/wmts.geo.admin.ch\/EPSG\/3857\/1.0.0\/WMTSCapabilities.xml?lang=it", "langeng":"https:\/\/wmts.geo.admin.ch\/EPSG\/3857\/1.0.0\/WMTSCapabilities.xml?lang=en", "langroh":"https:\/\/wmts.geo.admin.ch\/EPSG\/3857\/1.0.0\/WMTSCapabilities.xml?lang=de"}
+            ,
+            
+              "nameObject": 
+            {"default":"ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos", "langger":"ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos", "langfre":"ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos", "langita":"ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos", "langeng":"ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos", "langroh":"ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos"}
+            ,
+            
+              "descriptionObject": 
+            {"default":"WMTS-BGDI Dienst, Layer \"ISOS - Bilder\"", "langger":"WMTS-BGDI Dienst, Layer \"ISOS - Bilder\"", "langfre":"Service WMTS-IFDG, couche , Layer \"ISOS - Photos\"", "langita":"Servizio WMTS-IFDG, strato \"ISOS - Foto\"", "langeng":"WMTS-FSDI service, layer \"ISOS - Photos\"", "langroh":"WMTS-BGDI Dienst, Layer \"ISOS - Bilder\""}
+            ,
+            
+            "function":"",
+            "applicationProfile":"",
+            "group": 0
+            }</link>
+  <linkUrl>https://map.geo.admin.ch/?layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</linkUrl>
+  <linkProtocol>MAP:Preview</linkProtocol>
+  <linkUrlProtocolMAPPreview>https://map.geo.admin.ch/?layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</linkUrlProtocolMAPPreview>
+  <link type="object">{
+            "protocol":"MAP:Preview",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"https:\/\/map.geo.admin.ch\/?layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos", "langger":"https:\/\/map.geo.admin.ch\/?layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos", "langfre":"https:\/\/map.geo.admin.ch\/?layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos", "langita":"https:\/\/map.geo.admin.ch\/?layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos", "langeng":"https:\/\/map.geo.admin.ch\/?layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos", "langroh":"https:\/\/map.geo.admin.ch\/?layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos"}
+            ,
+            
+              "nameObject": 
+            {"default":"Vorschau map.geo.admin.ch", "langger":"Vorschau map.geo.admin.ch", "langfre":"Aper\u00E7u map.geo.admin.ch", "langita":"Previsione map.geo.admin.ch", "langeng":"Preview map.geo.admin.ch", "langroh":"Vorschau map.geo.admin.ch"}
+            ,
+            
+            "function":"",
+            "applicationProfile":"",
+            "group": 0
+            }</link>
+  <linkUrl>https://data.geo.admin.ch/browser/index.html#/collections/ch.bak.bundesinventar-schuetzenswerte-ortsbilder/items/bundesinventar-schuetzenswerte-ortsbilder</linkUrl>
+  <linkProtocol>WWW:DOWNLOAD-URL</linkProtocol>
+  <linkUrlProtocolWWWDOWNLOADURL>https://data.geo.admin.ch/browser/index.html#/collections/ch.bak.bundesinventar-schuetzenswerte-ortsbilder/items/bundesinventar-schuetzenswerte-ortsbilder</linkUrlProtocolWWWDOWNLOADURL>
+  <link type="object">{
+            "protocol":"WWW:DOWNLOAD-URL",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"https:\/\/data.geo.admin.ch\/browser\/index.html#\/collections\/ch.bak.bundesinventar-schuetzenswerte-ortsbilder\/items\/bundesinventar-schuetzenswerte-ortsbilder", "langger":"https:\/\/data.geo.admin.ch\/browser\/index.html#\/collections\/ch.bak.bundesinventar-schuetzenswerte-ortsbilder\/items\/bundesinventar-schuetzenswerte-ortsbilder", "langfre":"https:\/\/data.geo.admin.ch\/browser\/index.html#\/collections\/ch.bak.bundesinventar-schuetzenswerte-ortsbilder\/items\/bundesinventar-schuetzenswerte-ortsbilder", "langita":"https:\/\/data.geo.admin.ch\/browser\/index.html#\/collections\/ch.bak.bundesinventar-schuetzenswerte-ortsbilder\/items\/bundesinventar-schuetzenswerte-ortsbilder", "langeng":"https:\/\/data.geo.admin.ch\/browser\/index.html#\/collections\/ch.bak.bundesinventar-schuetzenswerte-ortsbilder\/items\/bundesinventar-schuetzenswerte-ortsbilder", "langroh":"https:\/\/data.geo.admin.ch\/browser\/index.html#\/collections\/ch.bak.bundesinventar-schuetzenswerte-ortsbilder\/items\/bundesinventar-schuetzenswerte-ortsbilder"}
+            ,
+            
+              "descriptionObject": 
+            {"default":"Link zum Datenbezug", "langger":"Link zum Datenbezug", "langfre":"Lien vers la distribution des donn\u00E9es"}
+            ,
+            
+            "function":"download",
+            "applicationProfile":"",
+            "group": 1
+            }</link>
+  <linkUrl>http://map.geo.admin.ch/?selectedNode=node_ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos1&amp;Y=660000&amp;X=190000&amp;zoom=1&amp;bgLayer=ch.swisstopo.pixelkarte-farbe&amp;layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder&amp;layers_opacity=1&amp;layers_visibility=true&amp;lan</linkUrl>
+  <linkProtocol>CHTOPO:specialised-geoportal</linkProtocol>
+  <linkUrlProtocolCHTOPOspecialisedgeoportal>http://map.geo.admin.ch/?selectedNode=node_ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos1&amp;Y=660000&amp;X=190000&amp;zoom=1&amp;bgLayer=ch.swisstopo.pixelkarte-farbe&amp;layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder&amp;layers_opacity=1&amp;layers_visibility=true&amp;lan</linkUrlProtocolCHTOPOspecialisedgeoportal>
+  <link type="object">{
+            "protocol":"CHTOPO:specialised-geoportal",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"http:\/\/map.geo.admin.ch\/?selectedNode=node_ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos1&amp;Y=660000&amp;X=190000&amp;zoom=1&amp;bgLayer=ch.swisstopo.pixelkarte-farbe&amp;layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder&amp;layers_opacity=1&amp;layers_visibility=true&amp;lan", "langger":"http:\/\/map.geo.admin.ch\/?selectedNode=node_ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos1&amp;Y=660000&amp;X=190000&amp;zoom=1&amp;bgLayer=ch.swisstopo.pixelkarte-farbe&amp;layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder&amp;layers_opacity=1&amp;layers_visibility=true&amp;lan"}
+            ,
+            
+              "descriptionObject": 
+            {"default":"Thematisches Geoportal", "langger":"Thematisches Geoportal", "langfre":"G\u00E9oportail th\u00E9matique", "langita":"Geoportale tematico", "langeng":"Thematic geoportal"}
+            ,
+            
+            "function":"information",
+            "applicationProfile":"",
+            "group": 2
+            }</link>
+  <linkUrl>https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</linkUrl>
+  <linkProtocol>ESRI:REST</linkProtocol>
+  <linkUrlProtocolESRIREST>https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</linkUrlProtocolESRIREST>
+  <link type="object">{
+            "protocol":"ESRI:REST",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"https:\/\/api3.geo.admin.ch\/rest\/services\/api\/MapServer\/ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos", "langger":"https:\/\/api3.geo.admin.ch\/rest\/services\/api\/MapServer\/ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos", "langfre":"https:\/\/api3.geo.admin.ch\/rest\/services\/api\/MapServer\/ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos", "langita":"https:\/\/api3.geo.admin.ch\/rest\/services\/api\/MapServer\/ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos", "langeng":"https:\/\/api3.geo.admin.ch\/rest\/services\/api\/MapServer\/ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos", "langroh":"https:\/\/api3.geo.admin.ch\/rest\/services\/api\/MapServer\/ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos"}
+            ,
+            
+              "nameObject": 
+            {"default":"RESTful API von geo.admin.ch", "langger":"RESTful API von geo.admin.ch", "langfre":"RESTful API de geo.admin.ch", "langita":"RESTful API da geo.admin.ch", "langeng":"RESTful API from geo.admin.ch", "langroh":"RESTful API dad geo.admin.ch"}
+            ,
+            
+              "descriptionObject": 
+            {"default":"RESTful API von geo.admin.ch", "langger":"RESTful API von geo.admin.ch", "langfre":"RESTful API de geo.admin.ch", "langita":"RESTful API da geo.admin.ch", "langeng":"RESTful API from geo.admin.ch", "langroh":"RESTful API dad geo.admin.ch"}
+            ,
+            
+            "function":"",
+            "applicationProfile":"",
+            "group": 3
+            }</link>
+  <parentUuid>12bcf72d-6ef6-4486-a71f-25c37044392b</parentUuid>
+  <recordGroup>12bcf72d-6ef6-4486-a71f-25c37044392b</recordGroup>
+  <recordLink type="object">{
+      "type": "parent",
+      
+      "to": "12bcf72d-6ef6-4486-a71f-25c37044392b",
+      "url": "",
+      "title": "",
+      "origin": "catalog"
+      }</recordLink>
+  <recordLink_parent />
+  <recordLink_parent_uuid>12bcf72d-6ef6-4486-a71f-25c37044392b</recordLink_parent_uuid>
+  <recordLink_parent_url />
+</doc>
+
