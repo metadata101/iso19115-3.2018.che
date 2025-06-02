@@ -96,6 +96,12 @@ public class IndexationTest {
     }
 
     @Test
+    public void indexModellDokumentationSwissTLM3D() throws Exception {
+        XslUtil.IS_INSPIRE_ENABLED = false;
+        indexAndCompareWithExpected("modellDokumentationSwissTLM3D");
+    }
+
+    @Test
     public void useIncorrectTimeZone() throws Exception {
         TimeZone.setDefault(TimeZone.getTimeZone("GMT+2"));
         XslUtil.IS_INSPIRE_ENABLED = true;
