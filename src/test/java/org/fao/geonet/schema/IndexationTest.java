@@ -108,6 +108,12 @@ public class IndexationTest {
     }
 
     @Test
+    public void indexOrganischenBodenInDerSchweiz() throws Exception {
+        XslUtil.IS_INSPIRE_ENABLED = false;
+        indexAndCompareWithExpected("organischenBodenInDerSchweiz");
+    }
+
+    @Test
     public void useIncorrectTimeZone() throws Exception {
         TimeZone.setDefault(TimeZone.getTimeZone("GMT+2"));
         XslUtil.IS_INSPIRE_ENABLED = true;
