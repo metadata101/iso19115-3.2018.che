@@ -2136,6 +2136,22 @@
       <che:subTopicCategory>
         <che:CHE_MD_SubTopicCategoryCode codeList="subTopicCategory" codeListValue="planningCadastre_Planning" />
       </che:subTopicCategory>
+      <che:basicGeodata>
+        <gco:Boolean>true</gco:Boolean>
+      </che:basicGeodata>
+      <che:basicGeodataInformation>
+        <che:CHE_MD_BasicGeodataInformation>
+          <che:basicGeodataID>
+            <gco:CharacterString>3.1</gco:CharacterString>
+          </che:basicGeodataID>
+          <che:basicGeodataLegalLevel>
+            <che:CHE_MD_LevelCode codeList="mdLevelCode" codeListValue="federal" />
+          </che:basicGeodataLegalLevel>
+          <che:basicGeodataType>
+            <che:CHE_MD_BasicGeodataTypeCode codeList="geodataType" codeListValue="basicGeodata" />
+          </che:basicGeodataType>
+        </che:CHE_MD_BasicGeodataInformation>
+      </che:basicGeodataInformation>
     </che:CHE_MD_DataIdentification>
   </mdb:identificationInfo>
   <mdb:contentInfo>

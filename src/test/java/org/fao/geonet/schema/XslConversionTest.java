@@ -132,6 +132,11 @@ public class XslConversionTest {
     }
 
     @Test
+    public void validateSchuetzenswerte() throws Exception {
+        transformValidateAndCompare("schuetzenswerte");
+    }
+
+    @Test
     public void testOdsConversion() throws Exception {
         Element xmlFromJSON = Xml.getXmlFromJSON(Files.readString(getResource("ods.json")));
         xmlFromJSON.setName("record");

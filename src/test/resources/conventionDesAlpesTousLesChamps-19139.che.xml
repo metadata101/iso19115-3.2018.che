@@ -2308,6 +2308,9 @@
       <che:basicGeodataIDType>
         <che:basicGeodataIDTypeCode codeList="#basicGeodataIDTypeCode" codeListValue="federal" />
       </che:basicGeodataIDType>
+      <che:geodataType>
+        <che:MD_geodataTypeCode codeList="#MD_geodataTypeCode" codeListValue="basicGeodata"/>
+      </che:geodataType>
     </che:CHE_MD_DataIdentification>
   </gmd:identificationInfo>
   <gmd:contentInfo xmlns:geonet="http://www.fao.org/geonetwork">
