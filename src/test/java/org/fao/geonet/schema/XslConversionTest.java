@@ -126,6 +126,11 @@ public class XslConversionTest {
     }
 
     @Test
+    public void validateOrganischenBodenInDerSchweiz() throws Exception {
+        transformValidateAndCompare("organischenBodenInDerSchweiz");
+    }
+
+    @Test
     public void testOdsConversion() throws Exception {
         Element xmlFromJSON = Xml.getXmlFromJSON(Files.readString(getResource("ods.json")));
         xmlFromJSON.setName("record");
