@@ -64,7 +64,7 @@ import javax.xml.validation.Validator;
 
 public class XslConversionTest {
 
-    private static boolean generateExpectedFile = false;
+    private static final boolean GENERATE_EXPECTED_FILE = false;
 
     @BeforeClass
     public static void initSaxon() {
@@ -104,6 +104,11 @@ public class XslConversionTest {
     @Test
     public void validateZonesDeTranquillite() throws Exception {
         transformValidateAndCompare("zonesDeTranquillite");
+    }
+
+    @Test
+    public void validateGrundwasserVorkommen() throws Exception {
+        transformValidateAndCompare("grundwasservorkommen");
     }
 
     @Test
@@ -176,8 +181,8 @@ public class XslConversionTest {
             actual = xmlOutputter.outputString(element);
         }
         byte[] expected;
-        if (generateExpectedFile) {
-            FileWriter fw = new FileWriter(new File("/home/cmangeat/sources/war-overlay/iso19115-3.2018.che/src/test/resources/" + expectedFileName));
+        if (GENERATE_EXPECTED_FILE) {
+            FileWriter fw = new FileWriter("/home/cmangeat/sources/war-overlay/iso19115-3.2018.che/src/test/resources/" + expectedFileName);
             fw.write(actual.replaceAll("gml:TimeInstant gml:id=\".*\"", "gml:TimeInstant gml:id=\"\""));
             fw.flush();
             expected = actual.getBytes(StandardCharsets.UTF_8);
