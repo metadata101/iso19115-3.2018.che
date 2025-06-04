@@ -1,0 +1,13 @@
+<mrd:MD_Format xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geocat.ch/2008/che https://www.geocat.ch/geonetwork/xml/schemas/iso19139.che/schema/che/che.xsd">
+  <mrd:formatSpecificationCitation>
+    <cit:CI_Citation xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
+      <cit:title>
+        <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">INTERLIS</gco:CharacterString>
+      </cit:title>
+      <cit:date xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" gco:nilReason="unknown" />
+      <cit:edition>
+        <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">-</gco:CharacterString>
+      </cit:edition>
+    </cit:CI_Citation>
+  </mrd:formatSpecificationCitation>
+</mrd:MD_Format>

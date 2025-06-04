@@ -28,6 +28,7 @@ import org.fao.geonet.domain.MetadataResourceContainer;
 
 import org.fao.geonet.utils.Xml;
 import org.owasp.esapi.reference.DefaultEncoder;
+import org.fao.geonet.constants.Geonet;
 import org.w3c.dom.Node;
 
 import java.io.IOException;
@@ -200,10 +201,6 @@ public class XslUtil {
 
     public static String getLanguage() {
         return getDefaultLangCode();
-    }
-
-    public static String getDefaultLangCode() {
-        return "eng";
     }
 
     public static String toUiConfigArg(String config)  { return config; }
