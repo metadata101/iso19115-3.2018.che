@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+  <docType>metadata</docType>
+  <document />
+  <metadataIdentifier>ffc0267e-aca8-49ac-8f3e-86c9beca51f2</metadataIdentifier>
+  <standardNameObject type="object">{"default":"GM03 2+", "langger":"GM03 2+"}</standardNameObject>
+  <indexingDate>2025-04-11T17:46:21+02:00</indexingDate>
+  <dateStamp>2025-03-04T14:56:05.532Z</dateStamp>
+  <mainLanguage>ger</mainLanguage>
+  <otherLanguage>fre</otherLanguage>
+  <otherLanguageId>FR</otherLanguageId>
+  <otherLanguage>ita</otherLanguage>
+  <otherLanguageId>IT</otherLanguageId>
+  <otherLanguage>eng</otherLanguage>
+  <otherLanguageId>EN</otherLanguageId>
+  <otherLanguage>roh</otherLanguage>
+  <otherLanguageId>RM</otherLanguageId>
+  <otherLanguage>ger</otherLanguage>
+  <otherLanguageId>DE</otherLanguageId>
+  <cl_characterSet type="object">{"key":"utf8","default":"lan:MD_CharacterSetCode--utf8--ger","langger":"lan:MD_CharacterSetCode--utf8--ger","langfre":"lan:MD_CharacterSetCode--utf8--fre","langita":"lan:MD_CharacterSetCode--utf8--ita","langeng":"lan:MD_CharacterSetCode--utf8--eng","langroh":"lan:MD_CharacterSetCode--utf8--roh","langger":"lan:MD_CharacterSetCode--utf8--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_CharacterSetCode","text":"utf8"}</cl_characterSet>
+  <resourceType>dataset</resourceType>
+  <OrgObject type="object">{"default":"Bundesamt f\u00FCr Landestopografie swisstopo", "langger":"Bundesamt f\u00FCr Landestopografie swisstopo", "langfre":"Office f\u00E9d\u00E9ral de topographie swisstopo", "langita":"Ufficio federale di topografia swisstopo", "langeng":"Federal Office of Topography swisstopo", "langroh":"Uffizi federal da topografia swisstopo"}</OrgObject>
+  <pointOfContactOrgObject type="object">{"default":"Bundesamt f\u00FCr Landestopografie swisstopo", "langger":"Bundesamt f\u00FCr Landestopografie swisstopo", "langfre":"Office f\u00E9d\u00E9ral de topographie swisstopo", "langita":"Ufficio federale di topografia swisstopo", "langeng":"Federal Office of Topography swisstopo", "langroh":"Uffizi federal da topografia swisstopo"}</pointOfContactOrgObject>
+  <contact type="object">{
+      
+        "organisationObject": 
+            {"default":"Bundesamt f\u00FCr Landestopografie swisstopo", "langger":"Bundesamt f\u00FCr Landestopografie swisstopo", "langfre":"Office f\u00E9d\u00E9ral de topographie swisstopo", "langita":"Ufficio federale di topografia swisstopo", "langeng":"Federal Office of Topography swisstopo", "langroh":"Uffizi federal da topografia swisstopo"}
+            ,
+      
+      "role":"pointOfContact",
+      "email":"geocat@swisstopo.ch",
+      "websiteObject": 
+            {"default":"http:\/\/www.swisstopo.admin.ch", "langeng":"http:\/\/www.swisstopo.admin.ch", "langger":"http:\/\/www.swisstopo.admin.ch", "langfre":"http:\/\/www.swisstopo.admin.ch", "langita":"http:\/\/www.swisstopo.admin.ch", "langroh":"http:\/\/www.swisstopo.admin.ch"}
+            ,
+      "logo":"",
+      "individual":"metadata",
+      "position":"Metadaten",
+      "phone":"+41 58 469 01 11",
+      "address":"Seftigenstrasse 264, Wabern, 3084, CH"
+      
+      }</contact>
+  <cl_resourceScope type="object">{"key":"dataset","default":"mcc:MD_ScopeCode--dataset--ger","langger":"mcc:MD_ScopeCode--dataset--ger","langfre":"mcc:MD_ScopeCode--dataset--fre","langita":"mcc:MD_ScopeCode--dataset--ita","langeng":"mcc:MD_ScopeCode--dataset--eng","langroh":"mcc:MD_ScopeCode--dataset--roh","langger":"mcc:MD_ScopeCode--dataset--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_ScopeCode","text":"dataset"}</cl_resourceScope>
+  <cl_numberType type="object">{"key":"voice","default":"cit:CI_TelephoneTypeCode--voice--ger","langger":"cit:CI_TelephoneTypeCode--voice--ger","langfre":"cit:CI_TelephoneTypeCode--voice--fre","langita":"cit:CI_TelephoneTypeCode--voice--ita","langeng":"cit:CI_TelephoneTypeCode--voice--eng","langroh":"cit:CI_TelephoneTypeCode--voice--roh","langger":"cit:CI_TelephoneTypeCode--voice--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#CI_TelephoneTypeCode","text":"voice"}</cl_numberType>
+  <cl_status type="object">{"key":"onGoing","default":"mcc:MD_ProgressCode--onGoing--ger","langger":"mcc:MD_ProgressCode--onGoing--ger","langfre":"mcc:MD_ProgressCode--onGoing--fre","langita":"mcc:MD_ProgressCode--onGoing--ita","langeng":"mcc:MD_ProgressCode--onGoing--eng","langroh":"mcc:MD_ProgressCode--onGoing--roh","langger":"mcc:MD_ProgressCode--onGoing--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_ProgressCode","text":"onGoing"}</cl_status>
+  <cl_numberType type="object">{"key":"facsimile","default":"cit:CI_TelephoneTypeCode--facsimile--ger","langger":"cit:CI_TelephoneTypeCode--facsimile--ger","langfre":"cit:CI_TelephoneTypeCode--facsimile--fre","langita":"cit:CI_TelephoneTypeCode--facsimile--ita","langeng":"cit:CI_TelephoneTypeCode--facsimile--eng","langroh":"cit:CI_TelephoneTypeCode--facsimile--roh","langger":"cit:CI_TelephoneTypeCode--facsimile--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#CI_TelephoneTypeCode","text":"facsimile"}</cl_numberType>
+  <cl_spatialRepresentationType type="object">{"key":"vector","default":"mcc:MD_SpatialRepresentationTypeCode--vector--ger","langger":"mcc:MD_SpatialRepresentationTypeCode--vector--ger","langfre":"mcc:MD_SpatialRepresentationTypeCode--vector--fre","langita":"mcc:MD_SpatialRepresentationTypeCode--vector--ita","langeng":"mcc:MD_SpatialRepresentationTypeCode--vector--eng","langroh":"mcc:MD_SpatialRepresentationTypeCode--vector--roh","langger":"mcc:MD_SpatialRepresentationTypeCode--vector--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_SpatialRepresentationTypeCode","text":"vector"}</cl_spatialRepresentationType>
+  <cl_maintenanceAndUpdateFrequency type="object">{"key":"annually","default":"mmi:MD_MaintenanceFrequencyCode--annually--ger","langger":"mmi:MD_MaintenanceFrequencyCode--annually--ger","langfre":"mmi:MD_MaintenanceFrequencyCode--annually--fre","langita":"mmi:MD_MaintenanceFrequencyCode--annually--ita","langeng":"mmi:MD_MaintenanceFrequencyCode--annually--eng","langroh":"mmi:MD_MaintenanceFrequencyCode--annually--roh","langger":"mmi:MD_MaintenanceFrequencyCode--annually--ger","link":"http:\/\/standards.iso.org\/ittf\/PubliclyAvailableStandards\/ISO_19139_Schemas\/resources\/codelist\/ML_gmxCodelists.xml#MD_MaintenanceFrequencyCode"}</cl_maintenanceAndUpdateFrequency>
+  <cl_type type="object">{"key":"theme","default":"mri:MD_KeywordTypeCode--theme--ger","langger":"mri:MD_KeywordTypeCode--theme--ger","langfre":"mri:MD_KeywordTypeCode--theme--fre","langita":"mri:MD_KeywordTypeCode--theme--ita","langeng":"mri:MD_KeywordTypeCode--theme--eng","langroh":"mri:MD_KeywordTypeCode--theme--roh","langger":"mri:MD_KeywordTypeCode--theme--ger","link":"http:\/\/www.isotc211.org\/2005\/resources\/codeList.xml#MD_KeywordTypeCode"}</cl_type>
+  <cl_useConstraints type="object">{"key":"otherRestrictions","default":"mco:MD_RestrictionCode--otherRestrictions--ger","langger":"mco:MD_RestrictionCode--otherRestrictions--ger","langfre":"mco:MD_RestrictionCode--otherRestrictions--fre","langita":"mco:MD_RestrictionCode--otherRestrictions--ita","langeng":"mco:MD_RestrictionCode--otherRestrictions--eng","langroh":"mco:MD_RestrictionCode--otherRestrictions--roh","langger":"mco:MD_RestrictionCode--otherRestrictions--ger","link":"http:\/\/standards.iso.org\/ittf\/PubliclyAvailableStandards\/ISO_19139_Schemas\/resources\/codelist\/ML_gmxCodelists.xml#MD_RestrictionCode"}</cl_useConstraints>
+  <cl_associationType type="object">{"key":"largerWorkCitation","default":"mri:DS_AssociationTypeCode--largerWorkCitation--ger","langger":"mri:DS_AssociationTypeCode--largerWorkCitation--ger","langfre":"mri:DS_AssociationTypeCode--largerWorkCitation--fre","langita":"mri:DS_AssociationTypeCode--largerWorkCitation--ita","langeng":"mri:DS_AssociationTypeCode--largerWorkCitation--eng","langroh":"mri:DS_AssociationTypeCode--largerWorkCitation--roh","langger":"mri:DS_AssociationTypeCode--largerWorkCitation--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#DS_AssociationTypeCode","text":"largerWorkCitation"}</cl_associationType>
+  <cl_subTopicCategory type="object">{"key":"imageryBaseMapsEarthCover_BaseMaps","default":"che:CHE_MD_SubTopicCategoryCode--imageryBaseMapsEarthCover_BaseMaps--ger","langger":"che:CHE_MD_SubTopicCategoryCode--imageryBaseMapsEarthCover_BaseMaps--ger","langfre":"che:CHE_MD_SubTopicCategoryCode--imageryBaseMapsEarthCover_BaseMaps--fre","langita":"che:CHE_MD_SubTopicCategoryCode--imageryBaseMapsEarthCover_BaseMaps--ita","langeng":"che:CHE_MD_SubTopicCategoryCode--imageryBaseMapsEarthCover_BaseMaps--eng","langroh":"che:CHE_MD_SubTopicCategoryCode--imageryBaseMapsEarthCover_BaseMaps--roh","langger":"che:CHE_MD_SubTopicCategoryCode--imageryBaseMapsEarthCover_BaseMaps--ger","link":"subTopicCategory"}</cl_subTopicCategory>
+  <cl_basicGeodataLegalLevel type="object">{"key":"federal","default":"che:CHE_MD_LevelCode--federal--ger","langger":"che:CHE_MD_LevelCode--federal--ger","langfre":"che:CHE_MD_LevelCode--federal--fre","langita":"che:CHE_MD_LevelCode--federal--ita","langeng":"che:CHE_MD_LevelCode--federal--eng","langroh":"che:CHE_MD_LevelCode--federal--roh","langger":"che:CHE_MD_LevelCode--federal--ger","link":"mdLevelCode"}</cl_basicGeodataLegalLevel>
+  <cl_basicGeodataType type="object">{"key":"referenceGeodata","default":"che:CHE_MD_BasicGeodataTypeCode--referenceGeodata--ger","langger":"che:CHE_MD_BasicGeodataTypeCode--referenceGeodata--ger","langfre":"che:CHE_MD_BasicGeodataTypeCode--referenceGeodata--fre","langita":"che:CHE_MD_BasicGeodataTypeCode--referenceGeodata--ita","langeng":"che:CHE_MD_BasicGeodataTypeCode--referenceGeodata--eng","langroh":"che:CHE_MD_BasicGeodataTypeCode--referenceGeodata--roh","langger":"che:CHE_MD_BasicGeodataTypeCode--referenceGeodata--ger","link":"geodataType"}</cl_basicGeodataType>
+  <resourceTitleObject type="object">{"default":"swissTLM3D \u00DCbrige Bahn", "langger":"swissTLM3D \u00DCbrige Bahn", "langfre":"swissTLM3D Autres transports", "langita":"swissTLM3D Altri trasporti", "langeng":"swissTLM3D Other transportations", "langroh":"swissTLM3D Auters transports"}</resourceTitleObject>
+  <resourceAltTitleObject type="object">{"default":"Seilbahnen swissTLM3D", "langger":"Seilbahnen swissTLM3D", "langfre":"Transports \u00E0 c\u00E2ble swissTLM3D", "langita":"Trasporti a fune swissTLM3D", "langeng":"Cableways swissTLM3D", "langroh":"Auters transports swissTLM3D"}</resourceAltTitleObject>
+  <creationDateForResource>2011-04-01</creationDateForResource>
+  <creationYearForResource>2011</creationYearForResource>
+  <creationMonthForResource>2011-04</creationMonthForResource>
+  <revisionDateForResource>2025-03-05</revisionDateForResource>
+  <revisionYearForResource>2025</revisionYearForResource>
+  <revisionMonthForResource>2025-03</revisionMonthForResource>
+  <resourceDate type="object">{"type": "creation", "date": "2011-04-01T00:00:00.000Z"}</resourceDate>
+  <resourceDate type="object">{"type": "revision", "date": "2025-03-05T00:00:00.000Z"}</resourceDate>
+  <resourceTemporalDateRange type="object">{
+                  "gte": "2011-04-01T00:00:00.000Z",
+                  "lte": "2011-04-01T00:00:00.000Z"
+                  }</resourceTemporalDateRange>
+  <resourceTemporalDateRange type="object">{
+                  "gte": "2025-03-05T00:00:00.000Z",
+                  "lte": "2025-03-05T00:00:00.000Z"
+                  }</resourceTemporalDateRange>
+  <resourceIdentifier type="object">{
+              "code": "ch.swisstopo.swisstlm3d-uebrigerverkehr",
+              "codeSpace": "",
+              "link": ""
+              }</resourceIdentifier>
+  <resourceEdition>Version 2.3</resourceEdition>
+  <resourceAbstractObject type="object">{"default":"swissTLM3D \u00FCbrige Bahnen beinhaltet verschiedene Seilbahnarten sowie andere mechanische Transportsysteme. Es ist Bestandteil des Datensatzes swissTLM3D. Mit seiner hohen Genauigkeit und dem Einbezug der dritten Dimension ist swissTLM3D der umfassendste 3D-Vektordatensatz der Schweiz. Im Geoportal des Bundes werden die Objekte der Ebene \"\u00FCbrige Bahnen\" entsprechend der ausgew\u00E4hlten Zoomstufe schrittweise dargestellt.", "langger":"swissTLM3D \u00FCbrige Bahnen beinhaltet verschiedene Seilbahnarten sowie andere mechanische Transportsysteme. Es ist Bestandteil des Datensatzes swissTLM3D. Mit seiner hohen Genauigkeit und dem Einbezug der dritten Dimension ist swissTLM3D der umfassendste 3D-Vektordatensatz der Schweiz. Im Geoportal des Bundes werden die Objekte der Ebene \"\u00FCbrige Bahnen\" entsprechend der ausgew\u00E4hlten Zoomstufe schrittweise dargestellt.", "langfre":"swissTLM3D autres transports comprend les diff\u00E9rents transports \u00E0 c\u00E2ble ainsi que d'autres types de transport m\u00E9canique. Il fait partie du jeu de donn\u00E9es swissTLM3D. Avec une haute pr\u00E9cision et l'int\u00E9gration de la troisi\u00E8me dimension, swissTLM3D constitue le jeu de donn\u00E9es vectorielles en 3D le plus complet de la Suisse. Dans le g\u00E9oportail f\u00E9d\u00E9ral, les objets de la couche \" autres transports\" sont affich\u00E9s progressivement en fonction des niveaux de zoom.", "langita":"swissTLM3D altri trasporti comprende i differenti tipi di trasporto a fune e altri tipi di trasporto meccanico. Fa parte del set di dati swissTLM3D. Il prodotto swissTLM3D offre un'alta precisione e include anche la terza dimensione, si tratta della raccolta dati vettoriali in 3D pi\u00F9 completa del territorio svizzero. All'interno del geoportale federale, gli oggetti del layer \"altri trasporti \" sono visualizzabili progressivamente, in funzione del livello di zoom selezionato.", "langeng":"swissTLM3D other transportations contains the different types of cable railway and other types of mechanical transport. It is part of the dataset swissTLM3D. With a high accuracy and the incorporation of a third dimension, swissTLM3D is the most extensive 3D vector data set of Switzerland. In the federal geoportal the objects of the layer \"other transportations\" are displayed gradually according to the different zoomlevels.", "langroh":"swissTLM3D Auters transports cuntegna differents geners da telefericas sco er auters sistems da transport mecanics. Ella \u00E8 ina part integrala da l'unitad da datas swissTLM3D. Cun sia auta precisiun e cun l'integraziun da la terza dimensiun \u00E8 swissTLM3D l'unitad da datas vectorialas en 3D la pli cumplessiva da la Svizra. En il geoportal da la Confederaziun vegnan ils objects dad \"Auters transports\" preschentads progressivamain, tut tenor il stgalim da zoom tschern\u00EC."}</resourceAbstractObject>
+  <cl_resourceCharacterSet type="object">{"key":"utf8","default":"lan:MD_CharacterSetCode--utf8--ger","langger":"lan:MD_CharacterSetCode--utf8--ger","langfre":"lan:MD_CharacterSetCode--utf8--fre","langita":"lan:MD_CharacterSetCode--utf8--ita","langeng":"lan:MD_CharacterSetCode--utf8--eng","langroh":"lan:MD_CharacterSetCode--utf8--roh","langger":"lan:MD_CharacterSetCode--utf8--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_CharacterSetCode","text":"utf8"}</cl_resourceCharacterSet>
+  <OrgForResourceObject type="object">{"default":"Bundesamt f\u00FCr Landestopografie swisstopo", "langger":"Bundesamt f\u00FCr Landestopografie swisstopo", "langfre":"Office f\u00E9d\u00E9ral de topographie swisstopo", "langita":"Ufficio federale di topografia swisstopo", "langeng":"Federal Office of Topography swisstopo", "langroh":"Uffizi federal da topografia swisstopo"}</OrgForResourceObject>
+  <pointOfContactOrgForResourceObject type="object">{"default":"Bundesamt f\u00FCr Landestopografie swisstopo", "langger":"Bundesamt f\u00FCr Landestopografie swisstopo", "langfre":"Office f\u00E9d\u00E9ral de topographie swisstopo", "langita":"Ufficio federale di topografia swisstopo", "langeng":"Federal Office of Topography swisstopo", "langroh":"Uffizi federal da topografia swisstopo"}</pointOfContactOrgForResourceObject>
+  <contactForResource type="object">{
+      
+        "organisationObject": 
+            {"default":"Bundesamt f\u00FCr Landestopografie swisstopo", "langger":"Bundesamt f\u00FCr Landestopografie swisstopo", "langfre":"Office f\u00E9d\u00E9ral de topographie swisstopo", "langita":"Ufficio federale di topografia swisstopo", "langeng":"Federal Office of Topography swisstopo", "langroh":"Uffizi federal da topografia swisstopo"}
+            ,
+      
+      "role":"pointOfContact",
+      "email":"geodata@swisstopo.ch",
+      "websiteObject": 
+            {"default":"http:\/\/www.swisstopo.ch", "langeng":"http:\/\/www.swisstopo.ch", "langger":"http:\/\/www.swisstopo.ch", "langfre":"http:\/\/www.swisstopo.ch", "langita":"http:\/\/www.swisstopo.ch", "langroh":"http:\/\/www.swisstopo.ch"}
+            ,
+      "logo":"",
+      "individual":"geodata",
+      "position":"Geodatenabgabe",
+      "phone":"+41 58 469 01 11",
+      "address":"Seftigenstrasse 264, Wabern, 3084, CH"
+      
+      }</contactForResource>
+  <ownerOrgForResourceObject type="object">{"default":"Bundesamt f\u00FCr Landestopografie swisstopo", "langger":"Bundesamt f\u00FCr Landestopografie swisstopo", "langfre":"Office f\u00E9d\u00E9ral de topographie swisstopo", "langita":"Ufficio federale di topografia swisstopo", "langeng":"Federal Office of Topography swisstopo", "langroh":"Uffizi federal da topografia swisstopo"}</ownerOrgForResourceObject>
+  <contactForResource type="object">{
+      
+        "organisationObject": 
+            {"default":"Bundesamt f\u00FCr Landestopografie swisstopo", "langger":"Bundesamt f\u00FCr Landestopografie swisstopo", "langfre":"Office f\u00E9d\u00E9ral de topographie swisstopo", "langita":"Ufficio federale di topografia swisstopo", "langeng":"Federal Office of Topography swisstopo", "langroh":"Uffizi federal da topografia swisstopo"}
+            ,
+      
+      "role":"owner",
+      "email":"info@swisstopo.ch",
+      "websiteObject": 
+            {"default":"https:\/\/www.swisstopo.ch", "langeng":"https:\/\/www.swisstopo.ch", "langger":"https:\/\/www.swisstopo.ch", "langfre":"https:\/\/www.swisstopo.ch", "langita":"https:\/\/www.swisstopo.ch", "langroh":"https:\/\/www.swisstopo.ch"}
+            ,
+      "logo":"",
+      "individual":"",
+      "position":"Kontakt",
+      "phone":"0041 58 469 01 11",
+      "address":"Seftigenstrasse 264, Wabern, 3084"
+      
+      }</contactForResource>
+  <hasOverview>true</hasOverview>
+  <overview type="object">{
+            "url": "https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/records\/ffc0267e-aca8-49ac-8f3e-86c9beca51f2\/attachments\/swissTLM3D_Uebrige_Bahnen.png"
+            
+            }</overview>
+  <resourceLanguage>ger</resourceLanguage>
+  <tag type="object">[
+      {
+      "default":"Geografische Bezeichnungen", "langger":"Geografische Bezeichnungen", "langfre":"D\u00E9nominations g\u00E9ographiques", "langita":"Nomi geografici", "langeng":"Geographical names"
+      }
+      ,
+      {
+      "default":"Verkehrsnetze", "langger":"Verkehrsnetze", "langfre":"R\u00E9seaux de transport", "langita":"Reti di trasporto", "langeng":"Transport networks"
+      }
+      ,
+      {
+      "default":"Verkehrsnetz", "langger":"Verkehrsnetz", "langfre":"r\u00E9seau de transport", "langita":"rete di trasporto", "langeng":"traffic network"
+      }
+      ,
+      {
+      "default":"Einzelobjekt", "langger":"Einzelobjekt", "langfre":"objet divers", "langita":"oggetto singolo", "langeng":"single object"
+      }
+      ,
+      {
+      "default":"Aufbewahrungs- und Archivierungsplanung AAP - Bund", "langger":"Aufbewahrungs- und Archivierungsplanung AAP - Bund", "langfre":"Planification de la conservation et de l'archivage AAP - Conf\u00E9deration", "langita":"Pianificazione della conservazione e dell\u2019archiviazione AAP - Confederazione", "langeng":"Conservation and archiving planning AAP - Confederation"
+      }
+      ,
+      {
+      "default":"Landschaftsmodell", "langger":"Landschaftsmodell", "langfre":"mod\u00E8le du territoire", "langita":"modello del territorio", "langeng":"landscape model"
+      }
+      ,
+      {
+      "default":"Geobasisdaten", "langger":"Geobasisdaten", "langfre":"g\u00E9odonn\u00E9es de base", "langita":"geodati di base", "langeng":"official geodata"
+      }
+      ,
+      {
+      "default":"opendata.swiss", "langger":"opendata.swiss", "langfre":"opendata.swiss", "langita":"opendata.swiss", "langeng":"opendata.swiss", "langroh":"opendata.swiss"
+      }
+      ,
+      {
+      "default":"GIS (Geografisches Informationssystem)", "langger":"GIS (Geografisches Informationssystem)", "langfre":"SIG (Syst\u00E8me d'Information G\u00E9ographique)", "langita":"SIG (Sistema Informativo Geografico)", "langeng":"GIS (Geographic Information System)"
+      }
+      ,
+      {
+      "default":"BGDI Bundesgeodaten-Infrastruktur", "langger":"BGDI Bundesgeodaten-Infrastruktur", "langfre":"IFDG l\u2019Infrastructure F\u00E9d\u00E9rale de donn\u00E9es g\u00E9ographiques", "langita":"IFDG Infrastruttura federale dei dati geografici", "langeng":"FSDI Federal Spatial Data Infrastructure"
+      }
+      ,
+      {
+      "default":"Schweiz", "langger":"Schweiz", "langfre":"Suisse", "langita":"Svizzera", "langeng":"Switzerland", "langroh":"Svizra"
+      }
+      ,
+      {
+      "default":"Liechtenstein", "langger":"Liechtenstein", "langfre":"Liechtenstein", "langita":"Liechtenstein", "langeng":"Liechtenstein", "langroh":"Liechtenstein"
+      }
+      ]</tag>
+  <tagNumber>12</tagNumber>
+  <isOpenData>true</isOpenData>
+  <keywordType-theme type="object">[
+          {
+          "default":"Geografische Bezeichnungen", "langger":"Geografische Bezeichnungen", "langfre":"D\u00E9nominations g\u00E9ographiques", "langita":"Nomi geografici", "langeng":"Geographical names"
+          }
+          ,
+          {
+          "default":"Verkehrsnetze", "langger":"Verkehrsnetze", "langfre":"R\u00E9seaux de transport", "langita":"Reti di trasporto", "langeng":"Transport networks"
+          }
+          ,
+          {
+          "default":"Verkehrsnetz", "langger":"Verkehrsnetz", "langfre":"r\u00E9seau de transport", "langita":"rete di trasporto", "langeng":"traffic network"
+          }
+          ,
+          {
+          "default":"Einzelobjekt", "langger":"Einzelobjekt", "langfre":"objet divers", "langita":"oggetto singolo", "langeng":"single object"
+          }
+          ,
+          {
+          "default":"Aufbewahrungs- und Archivierungsplanung AAP - Bund", "langger":"Aufbewahrungs- und Archivierungsplanung AAP - Bund", "langfre":"Planification de la conservation et de l'archivage AAP - Conf\u00E9deration", "langita":"Pianificazione della conservazione e dell\u2019archiviazione AAP - Confederazione", "langeng":"Conservation and archiving planning AAP - Confederation"
+          }
+          ,
+          {
+          "default":"Landschaftsmodell", "langger":"Landschaftsmodell", "langfre":"mod\u00E8le du territoire", "langita":"modello del territorio", "langeng":"landscape model"
+          }
+          ,
+          {
+          "default":"Geobasisdaten", "langger":"Geobasisdaten", "langfre":"g\u00E9odonn\u00E9es de base", "langita":"geodati di base", "langeng":"official geodata"
+          }
+          ,
+          {
+          "default":"opendata.swiss", "langger":"opendata.swiss", "langfre":"opendata.swiss", "langita":"opendata.swiss", "langeng":"opendata.swiss", "langroh":"opendata.swiss"
+          }
+          ,
+          {
+          "default":"GIS (Geografisches Informationssystem)", "langger":"GIS (Geografisches Informationssystem)", "langfre":"SIG (Syst\u00E8me d'Information G\u00E9ographique)", "langita":"SIG (Sistema Informativo Geografico)", "langeng":"GIS (Geographic Information System)"
+          }
+          ,
+          {
+          "default":"BGDI Bundesgeodaten-Infrastruktur", "langger":"BGDI Bundesgeodaten-Infrastruktur", "langfre":"IFDG l\u2019Infrastructure F\u00E9d\u00E9rale de donn\u00E9es g\u00E9ographiques", "langita":"IFDG Infrastruttura federale dei dati geografici", "langeng":"FSDI Federal Spatial Data Infrastructure"
+          }
+          ]</keywordType-theme>
+  <keywordType-place type="object">[
+          {
+          "default":"Schweiz", "langger":"Schweiz", "langfre":"Suisse", "langita":"Svizzera", "langeng":"Switzerland", "langroh":"Svizra"
+          }
+          ,
+          {
+          "default":"Liechtenstein", "langger":"Liechtenstein", "langfre":"Liechtenstein", "langita":"Liechtenstein", "langeng":"Liechtenstein", "langroh":"Liechtenstein"
+          }
+          ]</keywordType-place>
+  <th_httpinspireeceuropaeutheme-themeNumber>2</th_httpinspireeceuropaeutheme-themeNumber>
+  <th_httpinspireeceuropaeutheme-theme type="object">[
+        {
+        "default":"Geografische Bezeichnungen", "langger":"Geografische Bezeichnungen", "langfre":"D\u00E9nominations g\u00E9ographiques", "langita":"Nomi geografici", "langeng":"Geographical names"
+        }
+        ,
+        {
+        "default":"Verkehrsnetze", "langger":"Verkehrsnetze", "langfre":"R\u00E9seaux de transport", "langita":"Reti di trasporto", "langeng":"Transport networks"
+        }
+        ]</th_httpinspireeceuropaeutheme-theme>
+  <th_geocat-chNumber>8</th_geocat-chNumber>
+  <th_geocat-ch type="object">[
+        {
+        "default":"Verkehrsnetz", "langger":"Verkehrsnetz", "langfre":"r\u00E9seau de transport", "langita":"rete di trasporto", "langeng":"traffic network"
+        }
+        ,
+        {
+        "default":"Einzelobjekt", "langger":"Einzelobjekt", "langfre":"objet divers", "langita":"oggetto singolo", "langeng":"single object"
+        }
+        ,
+        {
+        "default":"Aufbewahrungs- und Archivierungsplanung AAP - Bund", "langger":"Aufbewahrungs- und Archivierungsplanung AAP - Bund", "langfre":"Planification de la conservation et de l'archivage AAP - Conf\u00E9deration", "langita":"Pianificazione della conservazione e dell\u2019archiviazione AAP - Confederazione", "langeng":"Conservation and archiving planning AAP - Confederation"
+        }
+        ,
+        {
+        "default":"Landschaftsmodell", "langger":"Landschaftsmodell", "langfre":"mod\u00E8le du territoire", "langita":"modello del territorio", "langeng":"landscape model"
+        }
+        ,
+        {
+        "default":"Geobasisdaten", "langger":"Geobasisdaten", "langfre":"g\u00E9odonn\u00E9es de base", "langita":"geodati di base", "langeng":"official geodata"
+        }
+        ,
+        {
+        "default":"opendata.swiss", "langger":"opendata.swiss", "langfre":"opendata.swiss", "langita":"opendata.swiss", "langeng":"opendata.swiss", "langroh":"opendata.swiss"
+        }
+        ,
+        {
+        "default":"GIS (Geografisches Informationssystem)", "langger":"GIS (Geografisches Informationssystem)", "langfre":"SIG (Syst\u00E8me d'Information G\u00E9ographique)", "langita":"SIG (Sistema Informativo Geografico)", "langeng":"GIS (Geographic Information System)"
+        }
+        ,
+        {
+        "default":"BGDI Bundesgeodaten-Infrastruktur", "langger":"BGDI Bundesgeodaten-Infrastruktur", "langfre":"IFDG l\u2019Infrastructure F\u00E9d\u00E9rale de donn\u00E9es g\u00E9ographiques", "langita":"IFDG Infrastruttura federale dei dati geografici", "langeng":"FSDI Federal Spatial Data Infrastructure"
+        }
+        ]</th_geocat-ch>
+  <allKeywords type="object">{
+      
+        "th_httpinspireeceuropaeutheme-theme": {
+        
+          "id": "geonetwork.thesaurus.external.theme.httpinspireeceuropaeutheme-theme",
+        
+            "multilingualTitle": {
+              "default":"GEMET - INSPIRE themes, version 1.0", "langger":"GEMET - INSPIRE themes, version 1.0"
+            },
+          
+        "theme": "theme",
+        
+          "link": "https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/registries\/vocabularies\/external.theme.httpinspireeceuropaeutheme-theme",
+        
+        "keywords": [
+        
+          {
+          "default":"Geografische Bezeichnungen", "langger":"Geografische Bezeichnungen", "langfre":"D\u00E9nominations g\u00E9ographiques", "langita":"Nomi geografici", "langeng":"Geographical names"
+          }
+          ,
+          {
+          "default":"Verkehrsnetze", "langger":"Verkehrsnetze", "langfre":"R\u00E9seaux de transport", "langita":"Reti di trasporto", "langeng":"Transport networks"
+          }
+          
+        ]}
+        ,
+        "th_geocat-ch": {
+        
+          "id": "geonetwork.thesaurus.local.theme.geocat.ch",
+        
+            "multilingualTitle": {
+              "default":"geocat.ch", "langger":"geocat.ch"
+            },
+          
+        "theme": "theme",
+        
+          "link": "https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/registries\/vocabularies\/local.theme.geocat.ch",
+        
+        "keywords": [
+        
+          {
+          "default":"Verkehrsnetz", "langger":"Verkehrsnetz", "langfre":"r\u00E9seau de transport", "langita":"rete di trasporto", "langeng":"traffic network"
+          }
+          ,
+          {
+          "default":"Einzelobjekt", "langger":"Einzelobjekt", "langfre":"objet divers", "langita":"oggetto singolo", "langeng":"single object"
+          }
+          ,
+          {
+          "default":"Aufbewahrungs- und Archivierungsplanung AAP - Bund", "langger":"Aufbewahrungs- und Archivierungsplanung AAP - Bund", "langfre":"Planification de la conservation et de l'archivage AAP - Conf\u00E9deration", "langita":"Pianificazione della conservazione e dell\u2019archiviazione AAP - Confederazione", "langeng":"Conservation and archiving planning AAP - Confederation"
+          }
+          ,
+          {
+          "default":"Landschaftsmodell", "langger":"Landschaftsmodell", "langfre":"mod\u00E8le du territoire", "langita":"modello del territorio", "langeng":"landscape model"
+          }
+          ,
+          {
+          "default":"Geobasisdaten", "langger":"Geobasisdaten", "langfre":"g\u00E9odonn\u00E9es de base", "langita":"geodati di base", "langeng":"official geodata"
+          }
+          ,
+          {
+          "default":"opendata.swiss", "langger":"opendata.swiss", "langfre":"opendata.swiss", "langita":"opendata.swiss", "langeng":"opendata.swiss", "langroh":"opendata.swiss"
+          }
+          ,
+          {
+          "default":"GIS (Geografisches Informationssystem)", "langger":"GIS (Geografisches Informationssystem)", "langfre":"SIG (Syst\u00E8me d'Information G\u00E9ographique)", "langita":"SIG (Sistema Informativo Geografico)", "langeng":"GIS (Geographic Information System)"
+          }
+          ,
+          {
+          "default":"BGDI Bundesgeodaten-Infrastruktur", "langger":"BGDI Bundesgeodaten-Infrastruktur", "langfre":"IFDG l\u2019Infrastructure F\u00E9d\u00E9rale de donn\u00E9es g\u00E9ographiques", "langita":"IFDG Infrastruttura federale dei dati geografici", "langeng":"FSDI Federal Spatial Data Infrastructure"
+          }
+          
+        ]}
+        
+      }</allKeywords>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Geografische Bezeichnungen",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.httpinspireeceuropaeutheme-theme"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Verkehrsnetze",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.httpinspireeceuropaeutheme-theme"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Verkehrsnetz",
+                              "thesaurus": "geonetwork.thesaurus.local.theme.geocat.ch"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Einzelobjekt",
+                              "thesaurus": "geonetwork.thesaurus.local.theme.geocat.ch"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Aufbewahrungs- und Archivierungsplanung AAP - Bund",
+                              "thesaurus": "geonetwork.thesaurus.local.theme.geocat.ch"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Landschaftsmodell",
+                              "thesaurus": "geonetwork.thesaurus.local.theme.geocat.ch"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Geobasisdaten",
+                              "thesaurus": "geonetwork.thesaurus.local.theme.geocat.ch"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "opendata.swiss",
+                              "thesaurus": "geonetwork.thesaurus.local.theme.geocat.ch"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "GIS (Geografisches Informationssystem)",
+                              "thesaurus": "geonetwork.thesaurus.local.theme.geocat.ch"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "BGDI Bundesgeodaten-Infrastruktur",
+                              "thesaurus": "geonetwork.thesaurus.local.theme.geocat.ch"
+                            }
+                          }</indexingErrorMsg>
+  <cl_topic type="object">{"key":"imageryBaseMapsEarthCover","default":"mri:MD_TopicCategoryCode--imageryBaseMapsEarthCover--ger","langger":"mri:MD_TopicCategoryCode--imageryBaseMapsEarthCover--ger","langfre":"mri:MD_TopicCategoryCode--imageryBaseMapsEarthCover--fre","langita":"mri:MD_TopicCategoryCode--imageryBaseMapsEarthCover--ita","langeng":"mri:MD_TopicCategoryCode--imageryBaseMapsEarthCover--eng","langroh":"mri:MD_TopicCategoryCode--imageryBaseMapsEarthCover--roh","langger":"mri:MD_TopicCategoryCode--imageryBaseMapsEarthCover--ger"}</cl_topic>
+  <cl_topic type="object">{"key":"transportation","default":"mri:MD_TopicCategoryCode--transportation--ger","langger":"mri:MD_TopicCategoryCode--transportation--ger","langfre":"mri:MD_TopicCategoryCode--transportation--fre","langita":"mri:MD_TopicCategoryCode--transportation--ita","langeng":"mri:MD_TopicCategoryCode--transportation--eng","langroh":"mri:MD_TopicCategoryCode--transportation--roh","langger":"mri:MD_TopicCategoryCode--transportation--ger"}</cl_topic>
+  <cl_topic type="object">{"key":"imageryBaseMapsEarthCover_BaseMaps","default":"che:CHE_MD_SubTopicCategoryCode--imageryBaseMapsEarthCover_BaseMaps--ger","langger":"che:CHE_MD_SubTopicCategoryCode--imageryBaseMapsEarthCover_BaseMaps--ger","langfre":"che:CHE_MD_SubTopicCategoryCode--imageryBaseMapsEarthCover_BaseMaps--fre","langita":"che:CHE_MD_SubTopicCategoryCode--imageryBaseMapsEarthCover_BaseMaps--ita","langeng":"che:CHE_MD_SubTopicCategoryCode--imageryBaseMapsEarthCover_BaseMaps--eng","langroh":"che:CHE_MD_SubTopicCategoryCode--imageryBaseMapsEarthCover_BaseMaps--roh","langger":"che:CHE_MD_SubTopicCategoryCode--imageryBaseMapsEarthCover_BaseMaps--ger","link":"subTopicCategory"}</cl_topic>
+  <resolutionScaleDenominator>5000</resolutionScaleDenominator>
+  <resolutionScaleDenominator>25000</resolutionScaleDenominator>
+  <spatialRepresentationType>vector</spatialRepresentationType>
+  <maintenance type="object">{
+            "frequency": "annually"
+            
+              ,"noteObject":
+              
+            {"default":"Als Grundlage wurden die bestehenden Daten in das TLM migriert. Nun werden sie gem\u00E4ss einem Nachf\u00FChrungszyklus von 3 Jahren aktualisiert und es werden Verbesserungen und Erg\u00E4nzungen von Geometrien und Attributen gemacht. Parallel zur der dreij\u00E4hrigen Nachf\u00FChrung soll mit der Integration von Daten sogenannter Referenzpartner f\u00FCr ausgew\u00E4hlte Themen eine j\u00E4hrliche Aktualisierung erreicht werden. Diese j\u00E4hrliche Aktualisierung ist vorderhand f\u00FCr die Hoheitsgrenzen, die Geb\u00E4ude und die Strassenachsen implementiert. Dabei nimmt die Amtliche Vermessung eine wichtige Rolle ein. Von der Amtlichen Vermessung werden zudem die Nomenklatur f\u00FCr die Nachf\u00FChrung des Themas Namen integriert.", "langger":"Als Grundlage wurden die bestehenden Daten in das TLM migriert. Nun werden sie gem\u00E4ss einem Nachf\u00FChrungszyklus von 3 Jahren aktualisiert und es werden Verbesserungen und Erg\u00E4nzungen von Geometrien und Attributen gemacht. Parallel zur der dreij\u00E4hrigen Nachf\u00FChrung soll mit der Integration von Daten sogenannter Referenzpartner f\u00FCr ausgew\u00E4hlte Themen eine j\u00E4hrliche Aktualisierung erreicht werden. Diese j\u00E4hrliche Aktualisierung ist vorderhand f\u00FCr die Hoheitsgrenzen, die Geb\u00E4ude und die Strassenachsen implementiert. Dabei nimmt die Amtliche Vermessung eine wichtige Rolle ein. Von der Amtlichen Vermessung werden zudem die Nomenklatur f\u00FCr die Nachf\u00FChrung des Themas Namen integriert.", "langfre":"Les donn\u00E9es existantes ont \u00E9t\u00E9 migr\u00E9es dans le MTP afin de servir de base. Elles sont d\u00E9sormais actualis\u00E9es selon un cycle de trois ans et des am\u00E9liorations et compl\u00E9ments sont apport\u00E9s pour les g\u00E9om\u00E9tries et les attributs. Parall\u00E8lement \u00E0 la mise \u00E0 jour tous les trois ans, on vise de plus \u00E0 une actualisation annuelle par l'int\u00E9gration de donn\u00E9es de partenaires dits de r\u00E9f\u00E9rence pour des th\u00E8mes choisis. Celle-ci est pour le moment r\u00E9alis\u00E9e pour les limites territoriales, les b\u00E2timents et les axes routiers. La mensuration officielle joue un r\u00F4le majeur dans ce contexte, en tant que partenaire de r\u00E9f\u00E9rence. Par ailleurs, la nomenclature pour la mise \u00E0 jour du th\u00E8me Noms provient \u00E9galement de la mensuration officielle.", "langita":"I dati disponibili sono stati presi come base e trasferiti nel MTP. In seguito vengono attualizzati ogni tre anni, migliorati e completati con geometrie e attributi. Parallelamente all\u2019aggiornamento previsto ogni tre anni, con l\u2019integrazione dei dati dei cosiddetti partner di riferimento per un certo numero di temi prescelti, si intende procedere a un\u2019attualizzazione annuale. Questa viene effettuata anzitutto per i confini territoriali, gli edifici e gli assi stradali e in tale contesto la Misurazione ufficiale svolge un ruolo di primo piano come partner di riferimento. Dalla Misurazione ufficiale viene ripresa anche la nomenclatura per l\u2019aggiornamento del tema Nomi.", "langeng":"The existing data was migrated into the TLM as a basis. TThe data is now updated based on an update cycle of 3 years and improvements and additions are made to the geometries and attributes. Parallel to the three-year update process, an annual update is carried out through the integration of data from so-called reference partners for selected topics. Initially, this annual update is implemented mainly for the administrative boundaries, buildings and road links. The official cadastral survey plays an important role as a reference partner in this process. The nomenclature for updating names are also integrated from the official cadastral survey."}
+            
+            }</maintenance>
+  <MD_LegalConstraintsOtherConstraintsObject type="object">{"default":"Freie Nutzung. Quellenangabe ist Pflicht.", "langger":"Freie Nutzung. Quellenangabe ist Pflicht.", "langfre":"Utilisation libre. Obligation d\u2019indiquer la source.", "langita":"Libero utilizzo. Indicazione della fonte obbligatoria.", "langeng":"NonCommercialAllowed-CommercialAllowed-ReferenceRequired"}</MD_LegalConstraintsOtherConstraintsObject>
+  <licenseObject type="object">{"default":"Freie Nutzung. Quellenangabe ist Pflicht.", "langger":"Freie Nutzung. Quellenangabe ist Pflicht.", "langfre":"Utilisation libre. Obligation d\u2019indiquer la source.", "langita":"Libero utilizzo. Indicazione della fonte obbligatoria.", "langeng":"NonCommercialAllowed-CommercialAllowed-ReferenceRequired"}</licenseObject>
+  <hasBoundingPolygon>true</hasBoundingPolygon>
+  <extentDescriptionObject type="object">{"default":"Schweiz", "langger":"Schweiz", "langfre":"Suisse", "langita":"Svizzera", "langeng":"Switzerland", "langroh":"Svizra"}</extentDescriptionObject>
+  <geom type="object">{"type": "Polygon","coordinates": [[[5.956088,45.817970],[10.492036,45.817970],[10.492036,47.808488],[5.956088,47.808488],[5.956088,45.817970]]]}</geom>
+  <location>46.813229,8.224062</location>
+  <extentDescriptionObject type="object">{"default":"Liechtenstein", "langger":"Liechtenstein", "langfre":"Liechtenstein", "langita":"Liechtenstein", "langeng":"Liechtenstein", "langroh":"Liechtenstein"}</extentDescriptionObject>
+  <geom type="object">{"type": "Polygon","coordinates": [[[9.471683,47.048427],[9.635694,47.048427],[9.635694,47.270575],[9.471683,47.270575],[9.471683,47.048427]]]}</geom>
+  <location>47.159501,9.5536885</location>
+  <coordinateSystem>EPSG:21781</coordinateSystem>
+  <crsDetails type="object">{
+            "code": "EPSG:21781",
+            "codeSpace": "",
+            "name": "EPSG:21781",
+            "url": ""
+            }</crsDetails>
+  <coordinateSystem>EPSG:2056</coordinateSystem>
+  <crsDetails type="object">{
+            "code": "EPSG:2056",
+            "codeSpace": "",
+            "name": "EPSG:2056",
+            "url": ""
+            }</crsDetails>
+  <coordinateSystem>EPSG:5728</coordinateSystem>
+  <crsDetails type="object">{
+            "code": "EPSG:5728",
+            "codeSpace": "",
+            "name": "EPSG:5728",
+            "url": ""
+            }</crsDetails>
+  <featureTypes type="object">[
+        
+        ]</featureTypes>
+  <lineageObject type="object">{"default":"Geometrische Genauigkeit: von 0.2 -1.5 m in allen drei Dimensionen f\u00FCr gut definierte Objekte wie z.B. Strassen und Geb\u00E4ude, 1 - 3 m in allen drei Dimensionen f\u00FCr nicht klar abgrenzbare Objekte wie z.B. Wald", "langger":"Geometrische Genauigkeit: von 0.2 -1.5 m in allen drei Dimensionen f\u00FCr gut definierte Objekte wie z.B. Strassen und Geb\u00E4ude, 1 - 3 m in allen drei Dimensionen f\u00FCr nicht klar abgrenzbare Objekte wie z.B. Wald", "langfre":"Pr\u00E9cision g\u00E9om\u00E9trique: de 0,2 -1,5 m dans les trois dimensions pour des objets bien d\u00E9finis, par ex. routes et b\u00E2timents, 1 - 3 m dans les trois dimensions pour les objets non d\u00E9limitables clairement, par ex. for\u00EAts", "langita":"Precisione geometrica:  da 0.2 -1.5 m in ognuna delle tre dimensioni per oggetti ben definiti quali ad es. strade e edifici, 1 - 3 m in ognuna delle tre dimensioni per oggetti dai contorni meno netti quali ad es. le foreste", "langeng":"Geometric accuracy: from 0.2 -1.5 m in all three dimensions for well-defined landscape features such as roads and buildings, 1 - 3 m in all three dimensions for landscape features which are not clearly defined such as forests"}</lineageObject>
+  <format>ESRI File Geodatabase FileGDB (GDB)</format>
+  <format>ESRI Shapefile (SHP)</format>
+  <format>AutoCAD DXF (DXF)</format>
+  <format>INTERLIS 1 (ITF)</format>
+  <format>INTERLIS 2 (XTF)</format>
+  <format>OGC Geopackage (GPKG)</format>
+  <linkUrl>https://map.geo.admin.ch/?layers=ch.swisstopo.swisstlm3d-uebrigerverkehr</linkUrl>
+  <linkProtocol>MAP:Preview</linkProtocol>
+  <linkUrlProtocolMAPPreview>https://map.geo.admin.ch/?layers=ch.swisstopo.swisstlm3d-uebrigerverkehr</linkUrlProtocolMAPPreview>
+  <link type="object">{
+            "protocol":"MAP:Preview",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"https:\/\/map.geo.admin.ch\/?layers=ch.swisstopo.swisstlm3d-uebrigerverkehr", "langger":"https:\/\/map.geo.admin.ch\/?layers=ch.swisstopo.swisstlm3d-uebrigerverkehr", "langfre":"https:\/\/map.geo.admin.ch\/?layers=ch.swisstopo.swisstlm3d-uebrigerverkehr", "langita":"https:\/\/map.geo.admin.ch\/?layers=ch.swisstopo.swisstlm3d-uebrigerverkehr", "langeng":"https:\/\/map.geo.admin.ch\/?layers=ch.swisstopo.swisstlm3d-uebrigerverkehr", "langroh":"https:\/\/map.geo.admin.ch\/?layers=ch.swisstopo.swisstlm3d-uebrigerverkehr"}
+            ,
+            
+              "nameObject": 
+            {"default":"Vorschau map.geo.admin.ch", "langger":"Vorschau map.geo.admin.ch", "langfre":"Aper\u00E7u map.geo.admin.ch", "langita":"Previsione map.geo.admin.ch", "langeng":"Preview map.geo.admin.ch"}
+            ,
+            
+              "descriptionObject": 
+            {"default":"Vorschau map.geo.admin.ch", "langger":"Vorschau map.geo.admin.ch", "langfre":"Aper\u00E7u map.geo.admin.ch", "langita":"Previsione map.geo.admin.ch", "langeng":"Preview map.geo.admin.ch"}
+            ,
+            
+            "function":"",
+            "applicationProfile":"",
+            "group": 0
+            }</link>
+  <linkUrl>https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=de</linkUrl>
+  <linkProtocol>OGC:WMTS</linkProtocol>
+  <linkUrlProtocolOGCWMTS>https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=de</linkUrlProtocolOGCWMTS>
+  <link type="object">{
+            "protocol":"OGC:WMTS",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"https:\/\/wmts.geo.admin.ch\/EPSG\/3857\/1.0.0\/WMTSCapabilities.xml?lang=de", "langger":"https:\/\/wmts.geo.admin.ch\/EPSG\/3857\/1.0.0\/WMTSCapabilities.xml?lang=de", "langfre":"https:\/\/wmts.geo.admin.ch\/EPSG\/3857\/1.0.0\/WMTSCapabilities.xml?lang=fr", "langita":"https:\/\/wmts.geo.admin.ch\/EPSG\/3857\/1.0.0\/WMTSCapabilities.xml?lang=it", "langeng":"https:\/\/wmts.geo.admin.ch\/EPSG\/3857\/1.0.0\/WMTSCapabilities.xml?lang=en", "langroh":"https:\/\/wmts.geo.admin.ch\/EPSG\/3857\/1.0.0\/WMTSCapabilities.xml?lang=de"}
+            ,
+            
+              "nameObject": 
+            {"default":"ch.swisstopo.swisstlm3d-uebrigerverkehr", "langger":"ch.swisstopo.swisstlm3d-uebrigerverkehr", "langfre":"ch.swisstopo.swisstlm3d-uebrigerverkehr", "langita":"ch.swisstopo.swisstlm3d-uebrigerverkehr", "langeng":"ch.swisstopo.swisstlm3d-uebrigerverkehr", "langroh":"ch.swisstopo.swisstlm3d-uebrigerverkehr"}
+            ,
+            
+              "descriptionObject": 
+            {"default":"WMTS-BGDI Dienst, Layer \"Seilbahnen swissTLM3D\"", "langger":"WMTS-BGDI Dienst, Layer \"Seilbahnen swissTLM3D\"", "langfre":"Service WMTS-IFDG, couche , Layer \"Transports \u00E0 c\u00E2ble swissTLM3D\"", "langita":"Servizio WMTS-IFDG, strato \"Trasporti a fune swissTLM3D\"", "langeng":"WMTS-FSDI service, layer \"Cableways swissTLM3D\"", "langroh":"WMTS-BGDI Dienst, Layer \"Seilbahnen swissTLM3D\""}
+            ,
+            
+            "function":"",
+            "applicationProfile":"",
+            "group": 0
+            }</link>
+  <linkUrl>https://www.swisstopo.admin.ch/de/landschaftsmodell-swisstlm3d</linkUrl>
+  <linkProtocol>WWW:LINK</linkProtocol>
+  <linkUrlProtocolWWWLINK>https://www.swisstopo.admin.ch/de/landschaftsmodell-swisstlm3d</linkUrlProtocolWWWLINK>
+  <link type="object">{
+            "protocol":"WWW:LINK",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"https:\/\/www.swisstopo.admin.ch\/de\/landschaftsmodell-swisstlm3d", "langger":"https:\/\/www.swisstopo.admin.ch\/de\/landschaftsmodell-swisstlm3d", "langfre":"https:\/\/www.swisstopo.admin.ch\/de\/landschaftsmodell-swisstlm3d", "langita":"https:\/\/www.swisstopo.admin.ch\/de\/landschaftsmodell-swisstlm3d", "langeng":"https:\/\/www.swisstopo.admin.ch\/de\/landschaftsmodell-swisstlm3d", "langroh":"https:\/\/www.swisstopo.admin.ch\/de\/landschaftsmodell-swisstlm3d"}
+            ,
+            
+              "descriptionObject": 
+            {"default":"swissTLM3D", "langger":"swissTLM3D"}
+            ,
+            
+            "function":"",
+            "applicationProfile":"",
+            "group": 1
+            }</link>
+  <linkUrl>https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities</linkUrl>
+  <linkProtocol>OGC:WMS</linkProtocol>
+  <linkUrlProtocolOGCWMS>https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities</linkUrlProtocolOGCWMS>
+  <link type="object">{
+            "protocol":"OGC:WMS",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"https:\/\/wms.geo.admin.ch\/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities", "langger":"https:\/\/wms.geo.admin.ch\/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities", "langfre":"https:\/\/wms.geo.admin.ch\/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities", "langita":"https:\/\/wms.geo.admin.ch\/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities", "langeng":"https:\/\/wms.geo.admin.ch\/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities", "langroh":"https:\/\/wms.geo.admin.ch\/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities"}
+            ,
+            
+              "nameObject": 
+            {"default":"ch.swisstopo.swisstlm3d-uebrigerverkehr", "langger":"ch.swisstopo.swisstlm3d-uebrigerverkehr"}
+            ,
+            
+              "descriptionObject": 
+            {"default":"Seilbahnen swissTLM3D", "langger":"Seilbahnen swissTLM3D"}
+            ,
+            
+            "function":"",
+            "applicationProfile":"",
+            "group": 1
+            }</link>
+  <linkUrl>https://www.swisstopo.admin.ch/de/landschaftsmodell-swisstlm3d</linkUrl>
+  <linkProtocol>WWW:DOWNLOAD-URL</linkProtocol>
+  <linkUrlProtocolWWWDOWNLOADURL>https://www.swisstopo.admin.ch/de/landschaftsmodell-swisstlm3d</linkUrlProtocolWWWDOWNLOADURL>
+  <link type="object">{
+            "protocol":"WWW:DOWNLOAD-URL",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"https:\/\/www.swisstopo.admin.ch\/de\/landschaftsmodell-swisstlm3d", "langger":"https:\/\/www.swisstopo.admin.ch\/de\/landschaftsmodell-swisstlm3d", "langfre":"https:\/\/www.swisstopo.admin.ch\/de\/landschaftsmodell-swisstlm3d", "langita":"https:\/\/www.swisstopo.admin.ch\/de\/landschaftsmodell-swisstlm3d", "langeng":"https:\/\/www.swisstopo.admin.ch\/de\/landschaftsmodell-swisstlm3d", "langroh":"https:\/\/www.swisstopo.admin.ch\/de\/landschaftsmodell-swisstlm3d"}
+            ,
+            
+              "descriptionObject": 
+            {"default":"Shop", "langger":"Shop", "langfre":"Shop", "langita":"Shop", "langeng":"Shop"}
+            ,
+            
+            "function":"",
+            "applicationProfile":"",
+            "group": 2
+            }</link>
+  <linkUrl>https://map.geo.admin.ch/?topic=swisstopo&amp;lang=de&amp;bgLayer=voidLayer&amp;catalogNodes=1436,1396,1397&amp;layers=ch.swisstopo.swisstlm3d-karte-farbe&amp;X=192000.00&amp;Y=622250.00&amp;zoom=2</linkUrl>
+  <linkProtocol>CHTOPO:specialised-geoportal</linkProtocol>
+  <linkUrlProtocolCHTOPOspecialisedgeoportal>https://map.geo.admin.ch/?topic=swisstopo&amp;lang=de&amp;bgLayer=voidLayer&amp;catalogNodes=1436,1396,1397&amp;layers=ch.swisstopo.swisstlm3d-karte-farbe&amp;X=192000.00&amp;Y=622250.00&amp;zoom=2</linkUrlProtocolCHTOPOspecialisedgeoportal>
+  <link type="object">{
+            "protocol":"CHTOPO:specialised-geoportal",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"https:\/\/map.geo.admin.ch\/?topic=swisstopo&amp;lang=de&amp;bgLayer=voidLayer&amp;catalogNodes=1436,1396,1397&amp;layers=ch.swisstopo.swisstlm3d-karte-farbe&amp;X=192000.00&amp;Y=622250.00&amp;zoom=2", "langger":"https:\/\/map.geo.admin.ch\/?topic=swisstopo&amp;lang=de&amp;bgLayer=voidLayer&amp;catalogNodes=1436,1396,1397&amp;layers=ch.swisstopo.swisstlm3d-karte-farbe&amp;X=192000.00&amp;Y=622250.00&amp;zoom=2", "langfre":"https:\/\/map.geo.admin.ch\/?topic=swisstopo&amp;lang=de&amp;bgLayer=voidLayer&amp;catalogNodes=1436,1396,1397&amp;layers=ch.swisstopo.swisstlm3d-karte-farbe&amp;X=192000.00&amp;Y=622250.00&amp;zoom=2", "langita":"https:\/\/map.geo.admin.ch\/?topic=swisstopo&amp;lang=de&amp;bgLayer=voidLayer&amp;catalogNodes=1436,1396,1397&amp;layers=ch.swisstopo.swisstlm3d-karte-farbe&amp;X=192000.00&amp;Y=622250.00&amp;zoom=2", "langeng":"https:\/\/map.geo.admin.ch\/?topic=swisstopo&amp;lang=de&amp;bgLayer=voidLayer&amp;catalogNodes=1436,1396,1397&amp;layers=ch.swisstopo.swisstlm3d-karte-farbe&amp;X=192000.00&amp;Y=622250.00&amp;zoom=2"}
+            ,
+            
+              "descriptionObject": 
+            {"default":"map.geo.admin.ch", "langger":"map.geo.admin.ch", "langfre":"map.geo.admin.ch", "langita":"map.geo.admin.ch", "langeng":"map.geo.admin.ch"}
+            ,
+            
+            "function":"",
+            "applicationProfile":"",
+            "group": 3
+            }</link>
+  <linkUrl>https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swisstlm3d-uebrigerverkehr</linkUrl>
+  <linkProtocol>ESRI:REST</linkProtocol>
+  <linkUrlProtocolESRIREST>https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swisstlm3d-uebrigerverkehr</linkUrlProtocolESRIREST>
+  <link type="object">{
+            "protocol":"ESRI:REST",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"https:\/\/api3.geo.admin.ch\/rest\/services\/api\/MapServer\/ch.swisstopo.swisstlm3d-uebrigerverkehr", "langger":"https:\/\/api3.geo.admin.ch\/rest\/services\/api\/MapServer\/ch.swisstopo.swisstlm3d-uebrigerverkehr", "langfre":"https:\/\/api3.geo.admin.ch\/rest\/services\/api\/MapServer\/ch.swisstopo.swisstlm3d-uebrigerverkehr", "langita":"https:\/\/api3.geo.admin.ch\/rest\/services\/api\/MapServer\/ch.swisstopo.swisstlm3d-uebrigerverkehr", "langeng":"https:\/\/api3.geo.admin.ch\/rest\/services\/api\/MapServer\/ch.swisstopo.swisstlm3d-uebrigerverkehr", "langroh":"https:\/\/api3.geo.admin.ch\/rest\/services\/api\/MapServer\/ch.swisstopo.swisstlm3d-uebrigerverkehr"}
+            ,
+            
+              "nameObject": 
+            {"default":"RESTful API von geo.admin.ch", "langger":"RESTful API von geo.admin.ch", "langfre":"RESTful API de geo.admin.ch", "langita":"RESTful API da geo.admin.ch", "langeng":"RESTful API from geo.admin.ch", "langroh":"RESTful API dad geo.admin.ch"}
+            ,
+            
+              "descriptionObject": 
+            {"default":"RESTful API von geo.admin.ch", "langger":"RESTful API von geo.admin.ch", "langfre":"RESTful API de geo.admin.ch", "langita":"RESTful API da geo.admin.ch", "langeng":"RESTful API from geo.admin.ch", "langroh":"RESTful API dad geo.admin.ch"}
+            ,
+            
+            "function":"",
+            "applicationProfile":"",
+            "group": 3
+            }</link>
+  <recordGroup>ffc0267e-aca8-49ac-8f3e-86c9beca51f2</recordGroup>
+  <recordLink type="object">{
+      "type": "siblings",
+      
+        "associationType": "largerWorkCitation",
+      
+        "initiativeType": "",
+      
+      "to": "73856ca2-f21d-4cc9-90f6-f3e8375555df",
+      "url": "",
+      "title": "",
+      "origin": "catalog"
+      }</recordLink>
+  <recordLink_siblingsassociationTypelargerWorkCitation_initiativeType />
+  <recordLink_siblingsassociationTypelargerWorkCitation_initiativeType_uuid>73856ca2-f21d-4cc9-90f6-f3e8375555df</recordLink_siblingsassociationTypelargerWorkCitation_initiativeType_uuid>
+  <recordLink_siblingsassociationTypelargerWorkCitation_initiativeType_url />
+  <agg_associated>73856ca2-f21d-4cc9-90f6-f3e8375555df</agg_associated>
+  <agg_associated_largerWorkCitation>73856ca2-f21d-4cc9-90f6-f3e8375555df</agg_associated_largerWorkCitation>
+</doc>
+
