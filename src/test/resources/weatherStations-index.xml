@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+  <docType>metadata</docType>
+  <document />
+  <metadataIdentifier>35323752-ed32-4cc1-8a75-898c749b777b</metadataIdentifier>
+  <standardNameObject type="object">{"default":"GM03_2", "langger":"GM03_2"}</standardNameObject>
+  <indexingDate>2025-04-11T17:46:21+02:00</indexingDate>
+  <dateStamp>2025-05-21T23:08:33.953Z</dateStamp>
+  <mainLanguage>ger</mainLanguage>
+  <otherLanguage>fre</otherLanguage>
+  <otherLanguageId>FR</otherLanguageId>
+  <otherLanguage>ita</otherLanguage>
+  <otherLanguageId>IT</otherLanguageId>
+  <otherLanguage>eng</otherLanguage>
+  <otherLanguageId>EN</otherLanguageId>
+  <otherLanguage>roh</otherLanguage>
+  <otherLanguageId>RM</otherLanguageId>
+  <otherLanguage>ger</otherLanguage>
+  <otherLanguageId>DE</otherLanguageId>
+  <cl_characterSet type="object">{"key":"utf8","default":"lan:MD_CharacterSetCode--utf8--ger","langger":"lan:MD_CharacterSetCode--utf8--ger","langfre":"lan:MD_CharacterSetCode--utf8--fre","langita":"lan:MD_CharacterSetCode--utf8--ita","langeng":"lan:MD_CharacterSetCode--utf8--eng","langroh":"lan:MD_CharacterSetCode--utf8--roh","langger":"lan:MD_CharacterSetCode--utf8--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_CharacterSetCode","text":"utf8"}</cl_characterSet>
+  <resourceType>dataset</resourceType>
+  <OrgObject type="object">{"default":"Bundesamt f\u00FCr Meteorologie und Klimatologie MeteoSchweiz", "langger":"Bundesamt f\u00FCr Meteorologie und Klimatologie MeteoSchweiz", "langfre":"Office f\u00E9d\u00E9ral de m\u00E9t\u00E9orologie et de climatologie M\u00E9t\u00E9oSuisse", "langita":"Ufficio federale di meteorologia e climatologia MeteoSvizzera", "langeng":"Federal Office of Meterology and Climatology MeteoSwiss"}</OrgObject>
+  <pointOfContactOrgObject type="object">{"default":"Bundesamt f\u00FCr Meteorologie und Klimatologie MeteoSchweiz", "langger":"Bundesamt f\u00FCr Meteorologie und Klimatologie MeteoSchweiz", "langfre":"Office f\u00E9d\u00E9ral de m\u00E9t\u00E9orologie et de climatologie M\u00E9t\u00E9oSuisse", "langita":"Ufficio federale di meteorologia e climatologia MeteoSvizzera", "langeng":"Federal Office of Meterology and Climatology MeteoSwiss"}</pointOfContactOrgObject>
+  <contact type="object">{
+      
+        "organisationObject": 
+            {"default":"Bundesamt f\u00FCr Meteorologie und Klimatologie MeteoSchweiz", "langger":"Bundesamt f\u00FCr Meteorologie und Klimatologie MeteoSchweiz", "langfre":"Office f\u00E9d\u00E9ral de m\u00E9t\u00E9orologie et de climatologie M\u00E9t\u00E9oSuisse", "langita":"Ufficio federale di meteorologia e climatologia MeteoSvizzera", "langeng":"Federal Office of Meterology and Climatology MeteoSwiss"}
+            ,
+      
+      "role":"pointOfContact",
+      "email":"opendata.en@meteoschweiz.ch",
+      "websiteObject": 
+            {"default":"https:\/\/www.meteoschweiz.admin.ch\/service-und-publikationen\/service\/open-data.html", "langger":"https:\/\/www.meteoschweiz.admin.ch\/service-und-publikationen\/service\/open-data.html", "langfre":"https:\/\/www.meteosuisse.admin.ch\/services-et-publications\/service\/open-data.html", "langita":"https:\/\/www.meteosvizzera.admin.ch\/servizi-e-pubblicazioni\/prestazioni\/open-data.html", "langeng":"https:\/\/www.meteoswiss.admin.ch\/services-and-publications\/service\/open-data.html"}
+            ,
+      "logo":"",
+      "individual":"",
+      "position":"Open Data Support",
+      "phone":"+41 58 460 99 99",
+      "address":"Z\u00FCrich-Flughafen, 8058, CH"
+      
+      }</contact>
+  <cl_resourceScope type="object">{"key":"dataset","default":"mcc:MD_ScopeCode--dataset--ger","langger":"mcc:MD_ScopeCode--dataset--ger","langfre":"mcc:MD_ScopeCode--dataset--fre","langita":"mcc:MD_ScopeCode--dataset--ita","langeng":"mcc:MD_ScopeCode--dataset--eng","langroh":"mcc:MD_ScopeCode--dataset--roh","langger":"mcc:MD_ScopeCode--dataset--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_ScopeCode","text":"dataset"}</cl_resourceScope>
+  <cl_numberType type="object">{"key":"voice","default":"cit:CI_TelephoneTypeCode--voice--ger","langger":"cit:CI_TelephoneTypeCode--voice--ger","langfre":"cit:CI_TelephoneTypeCode--voice--fre","langita":"cit:CI_TelephoneTypeCode--voice--ita","langeng":"cit:CI_TelephoneTypeCode--voice--eng","langroh":"cit:CI_TelephoneTypeCode--voice--roh","langger":"cit:CI_TelephoneTypeCode--voice--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#CI_TelephoneTypeCode","text":"voice"}</cl_numberType>
+  <cl_numberType type="object">{"key":"facsimile","default":"cit:CI_TelephoneTypeCode--facsimile--ger","langger":"cit:CI_TelephoneTypeCode--facsimile--ger","langfre":"cit:CI_TelephoneTypeCode--facsimile--fre","langita":"cit:CI_TelephoneTypeCode--facsimile--ita","langeng":"cit:CI_TelephoneTypeCode--facsimile--eng","langroh":"cit:CI_TelephoneTypeCode--facsimile--roh","langger":"cit:CI_TelephoneTypeCode--facsimile--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#CI_TelephoneTypeCode","text":"facsimile"}</cl_numberType>
+  <cl_geometricObjectType type="object">{"key":"point","default":"msr:MD_GeometricObjectTypeCode--point--ger","langger":"msr:MD_GeometricObjectTypeCode--point--ger","langfre":"msr:MD_GeometricObjectTypeCode--point--fre","langita":"msr:MD_GeometricObjectTypeCode--point--ita","langeng":"msr:MD_GeometricObjectTypeCode--point--eng","langroh":"msr:MD_GeometricObjectTypeCode--point--roh","langger":"msr:MD_GeometricObjectTypeCode--point--ger","link":"http:\/\/standards.iso.org\/ittf\/PubliclyAvailableStandards\/ISO_19139_Schemas\/resources\/codelist\/ML_gmxCodelists.xml#MD_GeometricObjectTypeCode"}</cl_geometricObjectType>
+  <cl_status type="object">{"key":"onGoing","default":"mcc:MD_ProgressCode--onGoing--ger","langger":"mcc:MD_ProgressCode--onGoing--ger","langfre":"mcc:MD_ProgressCode--onGoing--fre","langita":"mcc:MD_ProgressCode--onGoing--ita","langeng":"mcc:MD_ProgressCode--onGoing--eng","langroh":"mcc:MD_ProgressCode--onGoing--roh","langger":"mcc:MD_ProgressCode--onGoing--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_ProgressCode","text":"onGoing"}</cl_status>
+  <cl_maintenanceAndUpdateFrequency type="object">{"key":"continual","default":"mmi:MD_MaintenanceFrequencyCode--continual--ger","langger":"mmi:MD_MaintenanceFrequencyCode--continual--ger","langfre":"mmi:MD_MaintenanceFrequencyCode--continual--fre","langita":"mmi:MD_MaintenanceFrequencyCode--continual--ita","langeng":"mmi:MD_MaintenanceFrequencyCode--continual--eng","langroh":"mmi:MD_MaintenanceFrequencyCode--continual--roh","langger":"mmi:MD_MaintenanceFrequencyCode--continual--ger","link":"http:\/\/standards.iso.org\/ittf\/PubliclyAvailableStandards\/ISO_19139_Schemas\/resources\/codelist\/ML_gmxCodelists.xml#MD_MaintenanceFrequencyCode"}</cl_maintenanceAndUpdateFrequency>
+  <cl_type type="object">{"key":"theme","default":"mri:MD_KeywordTypeCode--theme--ger","langger":"mri:MD_KeywordTypeCode--theme--ger","langfre":"mri:MD_KeywordTypeCode--theme--fre","langita":"mri:MD_KeywordTypeCode--theme--ita","langeng":"mri:MD_KeywordTypeCode--theme--eng","langroh":"mri:MD_KeywordTypeCode--theme--roh","langger":"mri:MD_KeywordTypeCode--theme--ger","link":"http:\/\/www.isotc211.org\/2005\/resources\/codeList.xml#MD_KeywordTypeCode"}</cl_type>
+  <cl_country type="object">{"key":"CH","default":"lan:CountryCode--CH--ger","langger":"lan:CountryCode--CH--ger","langfre":"lan:CountryCode--CH--fre","langita":"lan:CountryCode--CH--ita","langeng":"lan:CountryCode--CH--eng","langroh":"lan:CountryCode--CH--roh","langger":"lan:CountryCode--CH--ger","link":"http:\/\/standards.iso.org\/ittf\/PubliclyAvailableStandards\/ISO_19139_Schemas\/resources\/codelist\/ML_gmxCodelists.xml#Country"}</cl_country>
+  <cl_associationType type="object">{"key":"largerWorkCitation","default":"mri:DS_AssociationTypeCode--largerWorkCitation--ger","langger":"mri:DS_AssociationTypeCode--largerWorkCitation--ger","langfre":"mri:DS_AssociationTypeCode--largerWorkCitation--fre","langita":"mri:DS_AssociationTypeCode--largerWorkCitation--ita","langeng":"mri:DS_AssociationTypeCode--largerWorkCitation--eng","langroh":"mri:DS_AssociationTypeCode--largerWorkCitation--roh","langger":"mri:DS_AssociationTypeCode--largerWorkCitation--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#DS_AssociationTypeCode","text":"largerWorkCitation"}</cl_associationType>
+  <cl_function type="object">{"key":"download","default":"cit:CI_OnLineFunctionCode--download--ger","langger":"cit:CI_OnLineFunctionCode--download--ger","langfre":"cit:CI_OnLineFunctionCode--download--fre","langita":"cit:CI_OnLineFunctionCode--download--ita","langeng":"cit:CI_OnLineFunctionCode--download--eng","langroh":"cit:CI_OnLineFunctionCode--download--roh","langger":"cit:CI_OnLineFunctionCode--download--ger","link":"http:\/\/standards.iso.org\/ittf\/PubliclyAvailableStandards\/ISO_19139_Schemas\/resources\/codelist\/ML_gmxCodelists.xml#CI_OnLineFunctionCode"}</cl_function>
+  <cl_function type="object">{"key":"information","default":"cit:CI_OnLineFunctionCode--information--ger","langger":"cit:CI_OnLineFunctionCode--information--ger","langfre":"cit:CI_OnLineFunctionCode--information--fre","langita":"cit:CI_OnLineFunctionCode--information--ita","langeng":"cit:CI_OnLineFunctionCode--information--eng","langroh":"cit:CI_OnLineFunctionCode--information--roh","langger":"cit:CI_OnLineFunctionCode--information--ger","link":"http:\/\/standards.iso.org\/ittf\/PubliclyAvailableStandards\/ISO_19139_Schemas\/resources\/codelist\/ML_gmxCodelists.xml#CI_OnLineFunctionCode"}</cl_function>
+  <resourceTitleObject type="object">{"default":"Automatische Wetterstationen \u2013 Messwerte", "langger":"Automatische Wetterstationen \u2013 Messwerte", "langfre":"Stations m\u00E9t\u00E9orologiques automatiques \u2013 Valeurs mesur\u00E9es", "langita":"Stazioni meteorologiche automatiche \u2013 Valori misurati", "langeng":"Automatic weather stations \u2013 Measured values"}</resourceTitleObject>
+  <resourceAltTitleObject type="object">{"default":"Automatische Wetterstationen", "langger":"Automatische Wetterstationen", "langfre":"Stations m\u00E9t\u00E9o automatiques", "langita":"Stazioni meteorologiche automatiche", "langeng":"Automatic weather stations"}</resourceAltTitleObject>
+  <creationDateForResource>2025-05-20</creationDateForResource>
+  <creationYearForResource>2025</creationYearForResource>
+  <creationMonthForResource>2025-05</creationMonthForResource>
+  <resourceDate type="object">{"type": "creation", "date": "2025-05-20T00:00:00.000Z"}</resourceDate>
+  <resourceTemporalDateRange type="object">{
+                  "gte": "2025-05-20T00:00:00.000Z",
+                  "lte": "2025-05-20T00:00:00.000Z"
+                  }</resourceTemporalDateRange>
+  <resourceIdentifier type="object">{
+              "code": "ch.meteoschweiz.ogd-smn",
+              "codeSpace": "",
+              "link": ""
+              }</resourceIdentifier>
+  <resourceAbstractObject type="object">{"default":"Temperatur, Niederschlag, Wind, Sonnenschein, Feuchte, Strahlung und Luftdruck \u2013 pro Station \u2013 Werte alle 10 Minuten ('t'), st\u00FCndlich ('h'), t\u00E4glich ('d'), monatlich ('m') und j\u00E4hrlich ('y') \u2013 seit Mitternacht ('now'), vom aktuellen Jahr bis gestern ('recent'), seit Messbeginn in Zehnjahresschritten ('historical'). Wenn Sie st\u00FCndliche, t\u00E4gliche, monatliche oder j\u00E4hrliche Werte ben\u00F6tigen, empfehlen wir Ihnen dringend, die entsprechende Aufl\u00F6sung herunterzuladen.", "langger":"Temperatur, Niederschlag, Wind, Sonnenschein, Feuchte, Strahlung und Luftdruck \u2013 pro Station \u2013 Werte alle 10 Minuten ('t'), st\u00FCndlich ('h'), t\u00E4glich ('d'), monatlich ('m') und j\u00E4hrlich ('y') \u2013 seit Mitternacht ('now'), vom aktuellen Jahr bis gestern ('recent'), seit Messbeginn in Zehnjahresschritten ('historical'). Wenn Sie st\u00FCndliche, t\u00E4gliche, monatliche oder j\u00E4hrliche Werte ben\u00F6tigen, empfehlen wir Ihnen dringend, die entsprechende Aufl\u00F6sung herunterzuladen.", "langfre":"Temp\u00E9rature, pr\u00E9cipitations, vent, ensoleillement, humidit\u00E9, rayonnement et pression \u2013 par station \u2013 valeurs toutes les 10 minutes ('t'), horaires ('h'), journali\u00E8res ('d'), mensuelles ('m') et annuelles ('y') \u2013 depuis minuit ('now'), de l'ann\u00E9e actuel jusqu'\u00E0 hier ('recent'), depuis le d\u00E9but de mesure par incr\u00E9ments de dix ans ('historical'). Si vous avez besoin de valeurs horaires, journali\u00E8res, mensuelles ou annuelles, nous vous recommandons vivement de t\u00E9l\u00E9charger la r\u00E9solution correspondante.", "langita":"Temperatura, precipitazioni, vento, soleggiamento, umidit\u00E0, radiazione e pressione \u2013 per stazione \u2013 valori ogni 10 minuti ('t'), orari ('h'), giornalieri ('d'), mensili ('m') e annuali ('y') \u2013 dalla mezzanotte ('now'), dall'anno corrente fino a ieri ('recent'), dall'inizio delle misurazioni in incrementi di dieci anni ('historical'). Se si necessitano valori orari, giornalieri, mensili o annuali, si consiglia vivamente di scaricare la risoluzione corrispondente.", "langeng":"Temperature, precipitation, wind, sunshine, humidity, radiation and pressure \u2013 per station \u2013 values every 10 minutes ('t'), hourly ('h'), daily ('d'), monthly ('m') and yearly ('y') \u2013 since midnight ('now'), from the current year up to yesterday ('recent'), since the beginning of the measurement in ten-year increments ('historical'). If you require hourly, daily, monthly or yearly values, we strongly recommend that you download the corresponding resolution."}</resourceAbstractObject>
+  <cl_resourceCharacterSet type="object">{"key":"utf8","default":"lan:MD_CharacterSetCode--utf8--ger","langger":"lan:MD_CharacterSetCode--utf8--ger","langfre":"lan:MD_CharacterSetCode--utf8--fre","langita":"lan:MD_CharacterSetCode--utf8--ita","langeng":"lan:MD_CharacterSetCode--utf8--eng","langroh":"lan:MD_CharacterSetCode--utf8--roh","langger":"lan:MD_CharacterSetCode--utf8--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_CharacterSetCode","text":"utf8"}</cl_resourceCharacterSet>
+  <OrgForResourceObject type="object">{"default":"Bundesamt f\u00FCr Meteorologie und Klimatologie MeteoSchweiz", "langger":"Bundesamt f\u00FCr Meteorologie und Klimatologie MeteoSchweiz", "langfre":"Office f\u00E9d\u00E9ral de m\u00E9t\u00E9orologie et de climatologie M\u00E9t\u00E9oSuisse", "langita":"Ufficio federale di meteorologia e climatologia MeteoSvizzera", "langeng":"Federal Office of Meterology and Climatology MeteoSwiss"}</OrgForResourceObject>
+  <ownerOrgForResourceObject type="object">{"default":"Bundesamt f\u00FCr Meteorologie und Klimatologie MeteoSchweiz", "langger":"Bundesamt f\u00FCr Meteorologie und Klimatologie MeteoSchweiz", "langfre":"Office f\u00E9d\u00E9ral de m\u00E9t\u00E9orologie et de climatologie M\u00E9t\u00E9oSuisse", "langita":"Ufficio federale di meteorologia e climatologia MeteoSvizzera", "langeng":"Federal Office of Meterology and Climatology MeteoSwiss"}</ownerOrgForResourceObject>
+  <contactForResource type="object">{
+      
+        "organisationObject": 
+            {"default":"Bundesamt f\u00FCr Meteorologie und Klimatologie MeteoSchweiz", "langger":"Bundesamt f\u00FCr Meteorologie und Klimatologie MeteoSchweiz", "langfre":"Office f\u00E9d\u00E9ral de m\u00E9t\u00E9orologie et de climatologie M\u00E9t\u00E9oSuisse", "langita":"Ufficio federale di meteorologia e climatologia MeteoSvizzera", "langeng":"Federal Office of Meterology and Climatology MeteoSwiss"}
+            ,
+      
+      "role":"owner",
+      "email":"opendata.en@meteoschweiz.ch",
+      "websiteObject": 
+            {"default":"https:\/\/www.meteoschweiz.admin.ch\/service-und-publikationen\/service\/open-data.html", "langger":"https:\/\/www.meteoschweiz.admin.ch\/service-und-publikationen\/service\/open-data.html", "langfre":"https:\/\/www.meteosuisse.admin.ch\/services-et-publications\/service\/open-data.html", "langita":"https:\/\/www.meteosvizzera.admin.ch\/servizi-e-pubblicazioni\/prestazioni\/open-data.html", "langeng":"https:\/\/www.meteoswiss.admin.ch\/services-and-publications\/service\/open-data.html"}
+            ,
+      "logo":"",
+      "individual":"",
+      "position":"Open Data Support",
+      "phone":"+41 58 460 99 99",
+      "address":"Z\u00FCrich-Flughafen, 8058, CH"
+      
+      }</contactForResource>
+  <pointOfContactOrgForResourceObject type="object">{"default":"Bundesamt f\u00FCr Meteorologie und Klimatologie MeteoSchweiz", "langger":"Bundesamt f\u00FCr Meteorologie und Klimatologie MeteoSchweiz", "langfre":"Office f\u00E9d\u00E9ral de m\u00E9t\u00E9orologie et de climatologie M\u00E9t\u00E9oSuisse", "langita":"Ufficio federale di meteorologia e climatologia MeteoSvizzera", "langeng":"Federal Office of Meterology and Climatology MeteoSwiss"}</pointOfContactOrgForResourceObject>
+  <contactForResource type="object">{
+      
+        "organisationObject": 
+            {"default":"Bundesamt f\u00FCr Meteorologie und Klimatologie MeteoSchweiz", "langger":"Bundesamt f\u00FCr Meteorologie und Klimatologie MeteoSchweiz", "langfre":"Office f\u00E9d\u00E9ral de m\u00E9t\u00E9orologie et de climatologie M\u00E9t\u00E9oSuisse", "langita":"Ufficio federale di meteorologia e climatologia MeteoSvizzera", "langeng":"Federal Office of Meterology and Climatology MeteoSwiss"}
+            ,
+      
+      "role":"pointOfContact",
+      "email":"opendata.en@meteoschweiz.ch",
+      "websiteObject": 
+            {"default":"https:\/\/www.meteoschweiz.admin.ch\/service-und-publikationen\/service\/open-data.html", "langger":"https:\/\/www.meteoschweiz.admin.ch\/service-und-publikationen\/service\/open-data.html", "langfre":"https:\/\/www.meteosuisse.admin.ch\/services-et-publications\/service\/open-data.html", "langita":"https:\/\/www.meteosvizzera.admin.ch\/servizi-e-pubblicazioni\/prestazioni\/open-data.html", "langeng":"https:\/\/www.meteoswiss.admin.ch\/services-and-publications\/service\/open-data.html"}
+            ,
+      "logo":"",
+      "individual":"",
+      "position":"Open Data Support",
+      "phone":"+41 58 460 99 99",
+      "address":"Z\u00FCrich-Flughafen, 8058, CH"
+      
+      }</contactForResource>
+  <hasOverview>false</hasOverview>
+  <resourceLanguage>ger</resourceLanguage>
+  <tag type="object">[
+      {
+      "default":"Atmosph\u00E4rische Bedingungen", "langger":"Atmosph\u00E4rische Bedingungen", "langfre":"Conditions atmosph\u00E9riques", "langita":"Condizioni atmosferiche", "langeng":"Atmospheric conditions"
+      }
+      ,
+      {
+      "default":"Meteorologisch-geografische Kennwerte", "langger":"Meteorologisch-geografische Kennwerte", "langfre":"Caract\u00E9ristiques g\u00E9ographiques m\u00E9t\u00E9orologiques", "langita":"Elementi geografici meteorologici", "langeng":"Meteorological geographical features"
+      }
+      ,
+      {
+      "default":"Niederschlag", "langger":"Niederschlag", "langfre":"pr\u00E9cipitation atmosph\u00E9rique", "langita":"precipitazione atmosferica", "langeng":"atmospheric precipitation"
+      }
+      ,
+      {
+      "default":"Strahlung", "langger":"Strahlung", "langfre":"rayonnement", "langita":"radiazione", "langeng":"radiation"
+      }
+      ,
+      {
+      "default":"Luftfeuchtigkeit", "langger":"Luftfeuchtigkeit", "langfre":"humidit\u00E9 de l'air", "langita":"umidit\u00E0 atmosferica", "langeng":"atmospheric humidity"
+      }
+      ,
+      {
+      "default":"Wind", "langger":"Wind", "langfre":"vent", "langita":"vento", "langeng":"wind"
+      }
+      ,
+      {
+      "default":"Druck", "langger":"Druck", "langfre":"pression", "langita":"pressione", "langeng":"pressure"
+      }
+      ,
+      {
+      "default":"Meteorologie", "langger":"Meteorologie", "langfre":"m\u00E9t\u00E9orologie", "langita":"meteorologia", "langeng":"meteorology"
+      }
+      ,
+      {
+      "default":"Klimatologie", "langger":"Klimatologie", "langfre":"climatologie", "langita":"climatologia", "langeng":"climatology"
+      }
+      ,
+      {
+      "default":"Lufttemperatur", "langger":"Lufttemperatur", "langfre":"temp\u00E9rature de l'air", "langita":"temperatura dell'aria", "langeng":"air temperature"
+      }
+      ,
+      {
+      "default":"Sonnenscheindauer", "langger":"Sonnenscheindauer", "langfre":"dur\u00E9e de l'ensoleillement", "langita":"durata dell'insolazione", "langeng":"duration of sunshine"
+      }
+      ,
+      {
+      "default":"Wetter", "langger":"Wetter", "langfre":"temps (m\u00E9t\u00E9o)", "langita":"tempo", "langeng":"weather"
+      }
+      ,
+      {
+      "default":"Luft, Atmosph\u00E4re", "langger":"Luft, Atmosph\u00E4re", "langfre":"air", "langita":"aria", "langeng":"air"
+      }
+      ,
+      {
+      "default":"Meteorologischer Parameter", "langger":"Meteorologischer Parameter", "langfre":"param\u00E8tre m\u00E9t\u00E9orologique", "langita":"parametro meteorologico", "langeng":"meteorological parameter"
+      }
+      ,
+      {
+      "default":"BGDI Bundesgeodaten-Infrastruktur", "langger":"BGDI Bundesgeodaten-Infrastruktur", "langfre":"IFDG l\u2019Infrastructure F\u00E9d\u00E9rale de donn\u00E9es g\u00E9ographiques", "langita":"IFDG Infrastruttura federale dei dati geografici", "langeng":"FSDI Federal Spatial Data Infrastructure"
+      }
+      ,
+      {
+      "default":"opendata.swiss", "langger":"opendata.swiss", "langfre":"opendata.swiss", "langita":"opendata.swiss", "langeng":"opendata.swiss", "langroh":"opendata.swiss"
+      }
+      ,
+      {
+      "default":"OpenData", "langger":"OpenData", "langfre":"OpenData", "langita":"OpenData", "langeng":"OpenData"
+      }
+      ,
+      {
+      "default":"Schweiz", "langger":"Schweiz", "langfre":"Suisse", "langita":"Svizzera", "langeng":"Switzerland", "langroh":"Svizra"
+      }
+      ,
+      {
+      "default":"Liechtenstein", "langger":"Liechtenstein", "langfre":"Liechtenstein", "langita":"Liechtenstein", "langeng":"Liechtenstein", "langroh":"Liechtenstein"
+      }
+      ]</tag>
+  <tagNumber>19</tagNumber>
+  <isOpenData>true</isOpenData>
+  <keywordType-theme type="object">[
+          {
+          "default":"Atmosph\u00E4rische Bedingungen", "langger":"Atmosph\u00E4rische Bedingungen", "langfre":"Conditions atmosph\u00E9riques", "langita":"Condizioni atmosferiche", "langeng":"Atmospheric conditions"
+          }
+          ,
+          {
+          "default":"Meteorologisch-geografische Kennwerte", "langger":"Meteorologisch-geografische Kennwerte", "langfre":"Caract\u00E9ristiques g\u00E9ographiques m\u00E9t\u00E9orologiques", "langita":"Elementi geografici meteorologici", "langeng":"Meteorological geographical features"
+          }
+          ,
+          {
+          "default":"Niederschlag", "langger":"Niederschlag", "langfre":"pr\u00E9cipitation atmosph\u00E9rique", "langita":"precipitazione atmosferica", "langeng":"atmospheric precipitation"
+          }
+          ,
+          {
+          "default":"Strahlung", "langger":"Strahlung", "langfre":"rayonnement", "langita":"radiazione", "langeng":"radiation"
+          }
+          ,
+          {
+          "default":"Luftfeuchtigkeit", "langger":"Luftfeuchtigkeit", "langfre":"humidit\u00E9 de l'air", "langita":"umidit\u00E0 atmosferica", "langeng":"atmospheric humidity"
+          }
+          ,
+          {
+          "default":"Wind", "langger":"Wind", "langfre":"vent", "langita":"vento", "langeng":"wind"
+          }
+          ,
+          {
+          "default":"Druck", "langger":"Druck", "langfre":"pression", "langita":"pressione", "langeng":"pressure"
+          }
+          ,
+          {
+          "default":"Meteorologie", "langger":"Meteorologie", "langfre":"m\u00E9t\u00E9orologie", "langita":"meteorologia", "langeng":"meteorology"
+          }
+          ,
+          {
+          "default":"Klimatologie", "langger":"Klimatologie", "langfre":"climatologie", "langita":"climatologia", "langeng":"climatology"
+          }
+          ,
+          {
+          "default":"Lufttemperatur", "langger":"Lufttemperatur", "langfre":"temp\u00E9rature de l'air", "langita":"temperatura dell'aria", "langeng":"air temperature"
+          }
+          ,
+          {
+          "default":"Sonnenscheindauer", "langger":"Sonnenscheindauer", "langfre":"dur\u00E9e de l'ensoleillement", "langita":"durata dell'insolazione", "langeng":"duration of sunshine"
+          }
+          ,
+          {
+          "default":"Wetter", "langger":"Wetter", "langfre":"temps (m\u00E9t\u00E9o)", "langita":"tempo", "langeng":"weather"
+          }
+          ,
+          {
+          "default":"Luft, Atmosph\u00E4re", "langger":"Luft, Atmosph\u00E4re", "langfre":"air", "langita":"aria", "langeng":"air"
+          }
+          ,
+          {
+          "default":"Meteorologischer Parameter", "langger":"Meteorologischer Parameter", "langfre":"param\u00E8tre m\u00E9t\u00E9orologique", "langita":"parametro meteorologico", "langeng":"meteorological parameter"
+          }
+          ,
+          {
+          "default":"BGDI Bundesgeodaten-Infrastruktur", "langger":"BGDI Bundesgeodaten-Infrastruktur", "langfre":"IFDG l\u2019Infrastructure F\u00E9d\u00E9rale de donn\u00E9es g\u00E9ographiques", "langita":"IFDG Infrastruttura federale dei dati geografici", "langeng":"FSDI Federal Spatial Data Infrastructure"
+          }
+          ,
+          {
+          "default":"opendata.swiss", "langger":"opendata.swiss", "langfre":"opendata.swiss", "langita":"opendata.swiss", "langeng":"opendata.swiss", "langroh":"opendata.swiss"
+          }
+          ,
+          {
+          "default":"OpenData", "langger":"OpenData", "langfre":"OpenData", "langita":"OpenData", "langeng":"OpenData"
+          }
+          ]</keywordType-theme>
+  <keywordType-place type="object">[
+          {
+          "default":"Schweiz", "langger":"Schweiz", "langfre":"Suisse", "langita":"Svizzera", "langeng":"Switzerland", "langroh":"Svizra"
+          }
+          ,
+          {
+          "default":"Liechtenstein", "langger":"Liechtenstein", "langfre":"Liechtenstein", "langita":"Liechtenstein", "langeng":"Liechtenstein", "langroh":"Liechtenstein"
+          }
+          ]</keywordType-place>
+  <th_httpinspireeceuropaeutheme-themeNumber>2</th_httpinspireeceuropaeutheme-themeNumber>
+  <th_httpinspireeceuropaeutheme-theme type="object">[
+        {
+        "default":"Atmosph\u00E4rische Bedingungen", "langger":"Atmosph\u00E4rische Bedingungen", "langfre":"Conditions atmosph\u00E9riques", "langita":"Condizioni atmosferiche", "langeng":"Atmospheric conditions"
+        }
+        ,
+        {
+        "default":"Meteorologisch-geografische Kennwerte", "langger":"Meteorologisch-geografische Kennwerte", "langfre":"Caract\u00E9ristiques g\u00E9ographiques m\u00E9t\u00E9orologiques", "langita":"Elementi geografici meteorologici", "langeng":"Meteorological geographical features"
+        }
+        ]</th_httpinspireeceuropaeutheme-theme>
+  <th_gemetNumber>12</th_gemetNumber>
+  <th_gemet type="object">[
+        {
+        "default":"Niederschlag", "langger":"Niederschlag", "langfre":"pr\u00E9cipitation atmosph\u00E9rique", "langita":"precipitazione atmosferica", "langeng":"atmospheric precipitation"
+        }
+        ,
+        {
+        "default":"Strahlung", "langger":"Strahlung", "langfre":"rayonnement", "langita":"radiazione", "langeng":"radiation"
+        }
+        ,
+        {
+        "default":"Luftfeuchtigkeit", "langger":"Luftfeuchtigkeit", "langfre":"humidit\u00E9 de l'air", "langita":"umidit\u00E0 atmosferica", "langeng":"atmospheric humidity"
+        }
+        ,
+        {
+        "default":"Wind", "langger":"Wind", "langfre":"vent", "langita":"vento", "langeng":"wind"
+        }
+        ,
+        {
+        "default":"Druck", "langger":"Druck", "langfre":"pression", "langita":"pressione", "langeng":"pressure"
+        }
+        ,
+        {
+        "default":"Meteorologie", "langger":"Meteorologie", "langfre":"m\u00E9t\u00E9orologie", "langita":"meteorologia", "langeng":"meteorology"
+        }
+        ,
+        {
+        "default":"Klimatologie", "langger":"Klimatologie", "langfre":"climatologie", "langita":"climatologia", "langeng":"climatology"
+        }
+        ,
+        {
+        "default":"Lufttemperatur", "langger":"Lufttemperatur", "langfre":"temp\u00E9rature de l'air", "langita":"temperatura dell'aria", "langeng":"air temperature"
+        }
+        ,
+        {
+        "default":"Sonnenscheindauer", "langger":"Sonnenscheindauer", "langfre":"dur\u00E9e de l'ensoleillement", "langita":"durata dell'insolazione", "langeng":"duration of sunshine"
+        }
+        ,
+        {
+        "default":"Wetter", "langger":"Wetter", "langfre":"temps (m\u00E9t\u00E9o)", "langita":"tempo", "langeng":"weather"
+        }
+        ,
+        {
+        "default":"Luft, Atmosph\u00E4re", "langger":"Luft, Atmosph\u00E4re", "langfre":"air", "langita":"aria", "langeng":"air"
+        }
+        ,
+        {
+        "default":"Meteorologischer Parameter", "langger":"Meteorologischer Parameter", "langfre":"param\u00E8tre m\u00E9t\u00E9orologique", "langita":"parametro meteorologico", "langeng":"meteorological parameter"
+        }
+        ]</th_gemet>
+  <th_geocat-chNumber>3</th_geocat-chNumber>
+  <th_geocat-ch type="object">[
+        {
+        "default":"BGDI Bundesgeodaten-Infrastruktur", "langger":"BGDI Bundesgeodaten-Infrastruktur", "langfre":"IFDG l\u2019Infrastructure F\u00E9d\u00E9rale de donn\u00E9es g\u00E9ographiques", "langita":"IFDG Infrastruttura federale dei dati geografici", "langeng":"FSDI Federal Spatial Data Infrastructure"
+        }
+        ,
+        {
+        "default":"opendata.swiss", "langger":"opendata.swiss", "langfre":"opendata.swiss", "langita":"opendata.swiss", "langeng":"opendata.swiss", "langroh":"opendata.swiss"
+        }
+        ,
+        {
+        "default":"OpenData", "langger":"OpenData", "langfre":"OpenData", "langita":"OpenData", "langeng":"OpenData"
+        }
+        ]</th_geocat-ch>
+  <allKeywords type="object">{
+      
+        "th_httpinspireeceuropaeutheme-theme": {
+        
+          "id": "geonetwork.thesaurus.external.theme.httpinspireeceuropaeutheme-theme",
+        
+            "multilingualTitle": {
+              "default":"GEMET - INSPIRE themes, version 1.0", "langger":"GEMET - INSPIRE themes, version 1.0"
+            },
+          
+        "theme": "theme",
+        
+          "link": "https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/registries\/vocabularies\/external.theme.httpinspireeceuropaeutheme-theme",
+        
+        "keywords": [
+        
+          {
+          "default":"Atmosph\u00E4rische Bedingungen", "langger":"Atmosph\u00E4rische Bedingungen", "langfre":"Conditions atmosph\u00E9riques", "langita":"Condizioni atmosferiche", "langeng":"Atmospheric conditions"
+          }
+          ,
+          {
+          "default":"Meteorologisch-geografische Kennwerte", "langger":"Meteorologisch-geografische Kennwerte", "langfre":"Caract\u00E9ristiques g\u00E9ographiques m\u00E9t\u00E9orologiques", "langita":"Elementi geografici meteorologici", "langeng":"Meteorological geographical features"
+          }
+          
+        ]}
+        ,
+        "th_gemet": {
+        
+          "id": "geonetwork.thesaurus.external.theme.gemet",
+        
+            "multilingualTitle": {
+              "default":"GEMET", "langger":"GEMET"
+            },
+          
+        "theme": "theme",
+        
+          "link": "https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/registries\/vocabularies\/external.theme.gemet",
+        
+        "keywords": [
+        
+          {
+          "default":"Niederschlag", "langger":"Niederschlag", "langfre":"pr\u00E9cipitation atmosph\u00E9rique", "langita":"precipitazione atmosferica", "langeng":"atmospheric precipitation"
+          }
+          ,
+          {
+          "default":"Strahlung", "langger":"Strahlung", "langfre":"rayonnement", "langita":"radiazione", "langeng":"radiation"
+          }
+          ,
+          {
+          "default":"Luftfeuchtigkeit", "langger":"Luftfeuchtigkeit", "langfre":"humidit\u00E9 de l'air", "langita":"umidit\u00E0 atmosferica", "langeng":"atmospheric humidity"
+          }
+          ,
+          {
+          "default":"Wind", "langger":"Wind", "langfre":"vent", "langita":"vento", "langeng":"wind"
+          }
+          ,
+          {
+          "default":"Druck", "langger":"Druck", "langfre":"pression", "langita":"pressione", "langeng":"pressure"
+          }
+          ,
+          {
+          "default":"Meteorologie", "langger":"Meteorologie", "langfre":"m\u00E9t\u00E9orologie", "langita":"meteorologia", "langeng":"meteorology"
+          }
+          ,
+          {
+          "default":"Klimatologie", "langger":"Klimatologie", "langfre":"climatologie", "langita":"climatologia", "langeng":"climatology"
+          }
+          ,
+          {
+          "default":"Lufttemperatur", "langger":"Lufttemperatur", "langfre":"temp\u00E9rature de l'air", "langita":"temperatura dell'aria", "langeng":"air temperature"
+          }
+          ,
+          {
+          "default":"Sonnenscheindauer", "langger":"Sonnenscheindauer", "langfre":"dur\u00E9e de l'ensoleillement", "langita":"durata dell'insolazione", "langeng":"duration of sunshine"
+          }
+          ,
+          {
+          "default":"Wetter", "langger":"Wetter", "langfre":"temps (m\u00E9t\u00E9o)", "langita":"tempo", "langeng":"weather"
+          }
+          ,
+          {
+          "default":"Luft, Atmosph\u00E4re", "langger":"Luft, Atmosph\u00E4re", "langfre":"air", "langita":"aria", "langeng":"air"
+          }
+          ,
+          {
+          "default":"Meteorologischer Parameter", "langger":"Meteorologischer Parameter", "langfre":"param\u00E8tre m\u00E9t\u00E9orologique", "langita":"parametro meteorologico", "langeng":"meteorological parameter"
+          }
+          
+        ]}
+        ,
+        "th_geocat-ch": {
+        
+          "id": "geonetwork.thesaurus.local.theme.geocat.ch",
+        
+            "multilingualTitle": {
+              "default":"geocat.ch", "langger":"geocat.ch"
+            },
+          
+        "theme": "theme",
+        
+          "link": "https:\/\/www.geocat.ch\/geonetwork\/srv\/api\/registries\/vocabularies\/local.theme.geocat.ch",
+        
+        "keywords": [
+        
+          {
+          "default":"BGDI Bundesgeodaten-Infrastruktur", "langger":"BGDI Bundesgeodaten-Infrastruktur", "langfre":"IFDG l\u2019Infrastructure F\u00E9d\u00E9rale de donn\u00E9es g\u00E9ographiques", "langita":"IFDG Infrastruttura federale dei dati geografici", "langeng":"FSDI Federal Spatial Data Infrastructure"
+          }
+          ,
+          {
+          "default":"opendata.swiss", "langger":"opendata.swiss", "langfre":"opendata.swiss", "langita":"opendata.swiss", "langeng":"opendata.swiss", "langroh":"opendata.swiss"
+          }
+          ,
+          {
+          "default":"OpenData", "langger":"OpenData", "langfre":"OpenData", "langita":"OpenData", "langeng":"OpenData"
+          }
+          
+        ]}
+        
+      }</allKeywords>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Atmosph\u00E4rische Bedingungen",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.httpinspireeceuropaeutheme-theme"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Meteorologisch-geografische Kennwerte",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.httpinspireeceuropaeutheme-theme"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Niederschlag",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.gemet"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Strahlung",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.gemet"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Luftfeuchtigkeit",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.gemet"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Wind",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.gemet"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Druck",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.gemet"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Meteorologie",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.gemet"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Klimatologie",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.gemet"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Lufttemperatur",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.gemet"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Sonnenscheindauer",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.gemet"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Wetter",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.gemet"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Luft, Atmosph\u00E4re",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.gemet"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "Meteorologischer Parameter",
+                              "thesaurus": "geonetwork.thesaurus.external.theme.gemet"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "BGDI Bundesgeodaten-Infrastruktur",
+                              "thesaurus": "geonetwork.thesaurus.local.theme.geocat.ch"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "opendata.swiss",
+                              "thesaurus": "geonetwork.thesaurus.local.theme.geocat.ch"
+                            }
+                          }</indexingErrorMsg>
+  <indexingErrorMsg type="object">{
+                            "string": "indexingErrorMsg-keywordNotFoundInThesaurus",
+                            "type": "warning",
+                            "values": {
+                              "keyword": "OpenData",
+                              "thesaurus": "geonetwork.thesaurus.local.theme.geocat.ch"
+                            }
+                          }</indexingErrorMsg>
+  <cl_topic type="object">{"key":"climatologyMeteorologyAtmosphere","default":"mri:MD_TopicCategoryCode--climatologyMeteorologyAtmosphere--ger","langger":"mri:MD_TopicCategoryCode--climatologyMeteorologyAtmosphere--ger","langfre":"mri:MD_TopicCategoryCode--climatologyMeteorologyAtmosphere--fre","langita":"mri:MD_TopicCategoryCode--climatologyMeteorologyAtmosphere--ita","langeng":"mri:MD_TopicCategoryCode--climatologyMeteorologyAtmosphere--eng","langroh":"mri:MD_TopicCategoryCode--climatologyMeteorologyAtmosphere--roh","langger":"mri:MD_TopicCategoryCode--climatologyMeteorologyAtmosphere--ger"}</cl_topic>
+  <maintenance type="object">{
+            "frequency": "continual"
+            
+              ,"userDefinedFrequency": "P0Y0M0DT0H10M0S"
+            
+            }</maintenance>
+  <MD_LegalConstraintsOtherConstraintsObject type="object">{"default":"Opendata BY: Freie Nutzung. Quellenangabe ist Pflicht.", "langger":"Opendata BY: Freie Nutzung. Quellenangabe ist Pflicht.", "langfre":"Opendata BY: Utilisation libre. Obligation d\u2019indiquer la source.", "langita":"Opendata BY: Libero utilizzo. Indicazione della fonte obbligatoria.", "langeng":"Opendata BY: Open use. Must provide the source.", "link":"https:\/\/opendata.swiss\/terms-of-use#terms_by"}</MD_LegalConstraintsOtherConstraintsObject>
+  <MD_LegalConstraintsOtherConstraintsObject type="object">{"default":"CC BY: Namensnennung 4.0 International", "langger":"CC BY: Namensnennung 4.0 International", "langfre":"CC BY: Attribution 4.0 International", "langita":"CC BY: Attribuzione 4.0 Internazionale", "langeng":"CC BY: Attribution 4.0 International", "link":"https:\/\/creativecommons.org\/licenses\/by\/4.0"}</MD_LegalConstraintsOtherConstraintsObject>
+  <licenseObject type="object">{"default":"Opendata BY: Freie Nutzung. Quellenangabe ist Pflicht.", "langger":"Opendata BY: Freie Nutzung. Quellenangabe ist Pflicht.", "langfre":"Opendata BY: Utilisation libre. Obligation d\u2019indiquer la source.", "langita":"Opendata BY: Libero utilizzo. Indicazione della fonte obbligatoria.", "langeng":"Opendata BY: Open use. Must provide the source.", "link":"https:\/\/opendata.swiss\/terms-of-use#terms_by"}</licenseObject>
+  <licenseObject type="object">{"default":"CC BY: Namensnennung 4.0 International", "langger":"CC BY: Namensnennung 4.0 International", "langfre":"CC BY: Attribution 4.0 International", "langita":"CC BY: Attribuzione 4.0 Internazionale", "langeng":"CC BY: Attribution 4.0 International", "link":"https:\/\/creativecommons.org\/licenses\/by\/4.0"}</licenseObject>
+  <hasBoundingPolygon>true</hasBoundingPolygon>
+  <extentDescriptionObject type="object">{"default":"Schweiz", "langger":"Schweiz", "langfre":"Suisse", "langita":"Svizzera", "langeng":"Switzerland", "langroh":"Svizra"}</extentDescriptionObject>
+  <geom type="object">{"type": "Polygon","coordinates": [[[5.956088,45.817970],[10.492036,45.817970],[10.492036,47.808488],[5.956088,47.808488],[5.956088,45.817970]]]}</geom>
+  <location>46.813229,8.224062</location>
+  <extentDescriptionObject type="object">{"default":"Liechtenstein", "langger":"Liechtenstein", "langfre":"Liechtenstein", "langita":"Liechtenstein", "langeng":"Liechtenstein", "langroh":"Liechtenstein"}</extentDescriptionObject>
+  <geom type="object">{"type": "Polygon","coordinates": [[[9.471683,47.048427],[9.635694,47.048427],[9.635694,47.270575],[9.471683,47.270575],[9.471683,47.048427]]]}</geom>
+  <location>47.159501,9.5536885</location>
+  <coordinateSystem>LV95:EPSG:2056</coordinateSystem>
+  <crsDetails type="object">{
+            "code": "LV95:EPSG:2056",
+            "codeSpace": "",
+            "name": "LV95:EPSG:2056",
+            "url": ""
+            }</crsDetails>
+  <featureTypes type="object">[
+        
+        ]</featureTypes>
+  <format>TEXT, semicolon separated (CSV)</format>
+  <linkUrl>https://data.geo.admin.ch/ch.meteoschweiz.messwerte-aktuell/VQHA80.csv</linkUrl>
+  <linkProtocol>WWW:DOWNLOAD-URL</linkProtocol>
+  <linkUrlProtocolWWWDOWNLOADURL>https://data.geo.admin.ch/ch.meteoschweiz.messwerte-aktuell/VQHA80.csv</linkUrlProtocolWWWDOWNLOADURL>
+  <link type="object">{
+            "protocol":"WWW:DOWNLOAD-URL",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"https:\/\/data.geo.admin.ch\/ch.meteoschweiz.messwerte-aktuell\/VQHA80.csv", "langger":"https:\/\/data.geo.admin.ch\/ch.meteoschweiz.messwerte-aktuell\/VQHA80.csv"}
+            ,
+            
+              "nameObject": 
+            {"default":"Hauptparameter aller Stationen \u2013 alle 10 Minuten, aktuellste Werte", "langger":"Hauptparameter aller Stationen \u2013 alle 10 Minuten, aktuellste Werte", "langfre":"Param\u00E8tres cl\u00E9s de toutes les stations \u2013 toutes les 10 minutes, valeurs les plus r\u00E9centes", "langita":"Parametri chiave di tutte le stazioni \u2013 ogni 10 minuti, valori pi\u00F9 recenti", "langeng":"Main parameters of all stations \u2013 every 10 minutes, most recent values"}
+            ,
+            
+              "descriptionObject": 
+            {"default":"Zeitangaben in UTC: 00:40 UTC = 02:40 lokale (CH) Sommerzeit, 01:40 Winterzeit. Hauptparameter: tre200s0; rre150z0; sre000z0; gre000z0; ure200s0; tde200s0; dkl010z0; fu3010z0; fu3010z1; prestas0; pp0qffs0; pp0qnhs0; ppz850s0; ppz700s0; dv1towz0; fu3towz0; u3towz1; ta1tows0; uretows0; tdetows0.", "langger":"Zeitangaben in UTC: 00:40 UTC = 02:40 lokale (CH) Sommerzeit, 01:40 Winterzeit. Hauptparameter: tre200s0; rre150z0; sre000z0; gre000z0; ure200s0; tde200s0; dkl010z0; fu3010z0; fu3010z1; prestas0; pp0qffs0; pp0qnhs0; ppz850s0; ppz700s0; dv1towz0; fu3towz0; u3towz1; ta1tows0; uretows0; tdetows0.", "langfre":"Indications horaires en UTC : 00:40 UTC = 02:40 heure d'\u00E9t\u00E9 locale (CH), 01:40 heure d'hiver. Param\u00E8tres cl\u00E9s: tre200s0; rre150z0; sre000z0; gre000z0; ure200s0; tde200s0; dkl010z0; fu3010z0; fu3010z1; prestas0; pp0qffs0; pp0qnhs0; ppz850s0; ppz700s0; dv1towz0; fu3towz0; u3towz1; ta1tows0; uretows0; tdetows0.", "langita":"Indicazioni temporali in UTC: 00:40 UTC = 02:40 orario estivo locale (CH), 01:40 orario invernale. Parametri chiave: tre200s0; rre150z0; sre000z0; gre000z0; ure200s0; tde200s0; dkl010z0; fu3010z0; fu3010z1; prestas0; pp0qffs0; pp0qnhs0; ppz850s0; ppz700s0; dv1towz0; fu3towz0; u3towz1; ta1tows0; uretows0; tdetows0.", "langeng":"Time in UTC: 00:40 UTC = 02:40 local (CH) summer time, 01:40 winter time. Main parameters: tre200s0; rre150z0; sre000z0; gre000z0; ure200s0; tde200s0; dkl010z0; fu3010z0; fu3010z1; prestas0; pp0qffs0; pp0qnhs0; ppz850s0; ppz700s0; dv1towz0; fu3towz0; u3towz1; ta1tows0; uretows0; tdetows0."}
+            ,
+            
+            "function":"download",
+            "applicationProfile":"",
+            "group": 0
+            }</link>
+  <linkUrl>https://data.geo.admin.ch/ch.meteoschweiz.ogd-smn/ogd-smn_meta_parameters.csv</linkUrl>
+  <linkProtocol>WWW:DOWNLOAD-URL</linkProtocol>
+  <linkUrlProtocolWWWDOWNLOADURL>https://data.geo.admin.ch/ch.meteoschweiz.ogd-smn/ogd-smn_meta_parameters.csv</linkUrlProtocolWWWDOWNLOADURL>
+  <link type="object">{
+            "protocol":"WWW:DOWNLOAD-URL",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"https:\/\/data.geo.admin.ch\/ch.meteoschweiz.ogd-smn\/ogd-smn_meta_parameters.csv", "langger":"https:\/\/data.geo.admin.ch\/ch.meteoschweiz.ogd-smn\/ogd-smn_meta_parameters.csv"}
+            ,
+            
+              "nameObject": 
+            {"default":"Parameter-Metadaten", "langger":"Parameter-Metadaten", "langfre":"M\u00E9tadonn\u00E9es des param\u00E8tres", "langita":"Metadati dei parametri", "langeng":"Parameter metadata"}
+            ,
+            
+              "descriptionObject": 
+            {"default":"Alle Parameter haben eine eindeutige Kennung, die von der zeitlichen Aufl\u00F6sung abh\u00E4ngig ist (z.B. \"dkl010z0\" f\u00FCr \"Windrichtung; Zehnminutenmittel\"). Diese Ressource enth\u00E4lt eine Liste aller Parameterkennungen mit Erl\u00E4uterung, Zeitintervall, Dezimalstellen, Datentyp und Masseinheit.", "langger":"Alle Parameter haben eine eindeutige Kennung, die von der zeitlichen Aufl\u00F6sung abh\u00E4ngig ist (z.B. \"dkl010z0\" f\u00FCr \"Windrichtung; Zehnminutenmittel\"). Diese Ressource enth\u00E4lt eine Liste aller Parameterkennungen mit Erl\u00E4uterung, Zeitintervall, Dezimalstellen, Datentyp und Masseinheit.", "langfre":"Tous les param\u00E8tres ont un identifiant unique qui d\u00E9pend de la r\u00E9solution temporelle (p. ex. \"dkl010z0\" pour \"direction du vent ; moyenne sur dix minutes\"). Cette ressource fournit une liste de tous les identificateurs de param\u00E8tres avec explication, intervalle de temps, d\u00E9cimales, type de donn\u00E9es et unit\u00E9 de mesure.", "langita":"Tutti i parametri hanno un identificatore unico che dipende dalla risoluzione temporale (ad esempio, \"dkl010z0\" per \"direzione del vento; media di dieci minuti\"). Questa risorsa fornisce un elenco di tutti gli identificatori dei parametri con spiegazione, intervallo di tempo, cifre decimali, tipo di dati e unit\u00E0 di misura.", "langeng":"All parameters have a unique identifier that depends on the time resolution (e.g. \"dkl010z0\" for \"wind direction; ten-minute average\"). This resource provides a list of all parameter identifiers with explanation, time interval, decimal places, data type and unit of measurement."}
+            ,
+            
+            "function":"download",
+            "applicationProfile":"",
+            "group": 0
+            }</link>
+  <linkUrl>https://data.geo.admin.ch/ch.meteoschweiz.ogd-smn/ogd-smn_meta_stations.csv</linkUrl>
+  <linkProtocol>WWW:DOWNLOAD-URL</linkProtocol>
+  <linkUrlProtocolWWWDOWNLOADURL>https://data.geo.admin.ch/ch.meteoschweiz.ogd-smn/ogd-smn_meta_stations.csv</linkUrlProtocolWWWDOWNLOADURL>
+  <link type="object">{
+            "protocol":"WWW:DOWNLOAD-URL",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"https:\/\/data.geo.admin.ch\/ch.meteoschweiz.ogd-smn\/ogd-smn_meta_stations.csv", "langger":"https:\/\/data.geo.admin.ch\/ch.meteoschweiz.ogd-smn\/ogd-smn_meta_stations.csv"}
+            ,
+            
+              "nameObject": 
+            {"default":"Stations-Metadaten", "langger":"Stations-Metadaten", "langfre":"M\u00E9tadonn\u00E9es des stations", "langita":"Metadati delle stazioni", "langeng":"Station metadata"}
+            ,
+            
+              "descriptionObject": 
+            {"default":"Alle Stationen haben eine aus drei Buchstaben bestehende Kennung (z.B. \"BER\" f\u00FCr \"Bern\/Zollikofen\" oder \"LUG\" f\u00FCr \"Lugano\"). Diese Ressource enth\u00E4lt eine Liste aller Stationskennungen mit Namen, Kanton, Wigos ID, Stationstyp, H\u00F6he, Koordinaten, Ausrichtung und URL der Stationsdetailseiten.", "langger":"Alle Stationen haben eine aus drei Buchstaben bestehende Kennung (z.B. \"BER\" f\u00FCr \"Bern\/Zollikofen\" oder \"LUG\" f\u00FCr \"Lugano\"). Diese Ressource enth\u00E4lt eine Liste aller Stationskennungen mit Namen, Kanton, Wigos ID, Stationstyp, H\u00F6he, Koordinaten, Ausrichtung und URL der Stationsdetailseiten.", "langfre":"Toutes les stations ont un identifiant compos\u00E9 de trois lettres (par exemple \"BER\" pour \"Bern\/Zollikofen\" ou \"LUG\" pour \"Lugano\"). Cette ressource fournit une liste de tous les identifiants des stations avec nom, Canton, Wigos ID, type de station, altitude, coordonn\u00E9es, orientation et URL de la page de d\u00E9tail des stations.", "langita":"Tutte le stazioni hanno un identificatore di tre lettere (ad esempio \"BER\" per \"Bern\/Zollikofen\" o \"LUG\" per \"Lugano\"). Questa risorsa fornisce un elenco di tutti gli identificatori delle stazioni con nome, Cantone, Wigos ID, tipo di stazione, altitudine, coordinate, orientamento e URL della pagina dei dettagli delle stazioni.", "langeng":"All stations have a three-letter identifier (e.g. \"BER\" for \"Bern\/Zollikofen\" or \"LUG\" for \"Lugano\"). This resource provides a list of all station identifiers with name, Canton, Wigos ID, station type, altitude, coordinates, orientation and URL of the station details pages."}
+            ,
+            
+            "function":"download",
+            "applicationProfile":"",
+            "group": 0
+            }</link>
+  <linkUrl>https://data.geo.admin.ch/api/stac/v1/collections/ch.meteoschweiz.ogd-smn</linkUrl>
+  <linkProtocol>WWW:DOWNLOAD:TEXT, semicolon separated (CSV)</linkProtocol>
+  <linkUrlProtocolWWWDOWNLOADTEXTsemicolonseparatedCSV>https://data.geo.admin.ch/api/stac/v1/collections/ch.meteoschweiz.ogd-smn</linkUrlProtocolWWWDOWNLOADTEXTsemicolonseparatedCSV>
+  <link type="object">{
+            "protocol":"WWW:DOWNLOAD:TEXT, semicolon separated (CSV)",
+            "mimeType":"TEXT, semicolon separated (CSV)",
+            
+              "urlObject": 
+            {"default":"https:\/\/data.geo.admin.ch\/api\/stac\/v1\/collections\/ch.meteoschweiz.ogd-smn", "langger":"https:\/\/data.geo.admin.ch\/api\/stac\/v1\/collections\/ch.meteoschweiz.ogd-smn"}
+            ,
+            
+              "nameObject": 
+            {"default":"Alle Parameter einer Station \u2013 alle Aufl\u00F6sungen und Zeitr\u00E4ume", "langger":"Alle Parameter einer Station \u2013 alle Aufl\u00F6sungen und Zeitr\u00E4ume", "langfre":"Tous les param\u00E8tres pour une station \u2013 toutes les r\u00E9solutions temporelles et p\u00E9riodes", "langita":"Tutti i parametri per una stazione \u2013 tutte le risoluzioni temporali e i periodi", "langeng":"All parameters for a station \u2013 all time resolutions and periods"}
+            ,
+            
+              "descriptionObject": 
+            {"default":"Temperatur, Niederschlag, Wind, Sonnenschein, Feuchte, Strahlung und Luftdruck \u2013 pro Station \u2013 Werte alle 10 Minuten ('t'), st\u00FCndlich ('h'), t\u00E4glich ('d'), monatlich ('m') und j\u00E4hrlich ('y') \u2013 seit Mitternacht ('now'), vom aktuellen Jahr bis gestern ('recent'), seit Messbeginn in Zehnjahresschritten ('historical'). Wenn Sie st\u00FCndliche, t\u00E4gliche, monatliche oder j\u00E4hrliche Werte ben\u00F6tigen, empfehlen wir Ihnen dringend, die entsprechende Aufl\u00F6sung herunterzuladen.", "langger":"Temperatur, Niederschlag, Wind, Sonnenschein, Feuchte, Strahlung und Luftdruck \u2013 pro Station \u2013 Werte alle 10 Minuten ('t'), st\u00FCndlich ('h'), t\u00E4glich ('d'), monatlich ('m') und j\u00E4hrlich ('y') \u2013 seit Mitternacht ('now'), vom aktuellen Jahr bis gestern ('recent'), seit Messbeginn in Zehnjahresschritten ('historical'). Wenn Sie st\u00FCndliche, t\u00E4gliche, monatliche oder j\u00E4hrliche Werte ben\u00F6tigen, empfehlen wir Ihnen dringend, die entsprechende Aufl\u00F6sung herunterzuladen.", "langfre":"Temp\u00E9rature, pr\u00E9cipitations, vent, ensoleillement, humidit\u00E9, rayonnement et pression \u2013 par station \u2013 valeurs toutes les 10 minutes ('t'), horaires ('h'), journali\u00E8res ('d'), mensuelles ('m') et annuelles ('y') \u2013 depuis minuit ('now'), de l'ann\u00E9e actuel jusqu'\u00E0 hier ('recent'), depuis le d\u00E9but de mesure par incr\u00E9ments de dix ans ('historical'). Si vous avez besoin de valeurs horaires, journali\u00E8res, mensuelles ou annuelles, nous vous recommandons vivement de t\u00E9l\u00E9charger la r\u00E9solution correspondante.", "langita":"Temperatura, precipitazioni, vento, soleggiamento, umidit\u00E0, radiazione e pressione \u2013 per stazione \u2013 valori ogni 10 minuti ('t'), orari ('h'), giornalieri ('d'), mensili ('m') e annuali ('y') \u2013 dalla mezzanotte ('now'), dall'anno corrente fino a ieri ('recent'), dall'inizio delle misurazioni in incrementi di dieci anni ('historical'). Se si necessitano valori orari, giornalieri, mensili o annuali, si consiglia vivamente di scaricare la risoluzione corrispondente.", "langeng":"Temperature, precipitation, wind, sunshine, humidity, radiation and pressure \u2013 per station \u2013 values every 10 minutes ('t'), hourly ('h'), daily ('d'), monthly ('m') and yearly ('y') \u2013 since midnight ('now'), from the current year up to yesterday ('recent'), since the beginning of the measurement in ten-year increments ('historical'). If you require hourly, daily, monthly or yearly values, we strongly recommend that you download the corresponding resolution."}
+            ,
+            
+            "function":"download",
+            "applicationProfile":"",
+            "group": 0
+            }</link>
+  <linkUrl>https://www.meteoschweiz.admin.ch/service-und-publikationen/applikationen/ext/daten-ohne-programmierkenntnisse-herunterladen.html#lang=de&amp;mdt=normal&amp;pgid=&amp;sid=&amp;col=&amp;di=&amp;tr=&amp;hdr=</linkUrl>
+  <linkUrlProtocol>https://www.meteoschweiz.admin.ch/service-und-publikationen/applikationen/ext/daten-ohne-programmierkenntnisse-herunterladen.html#lang=de&amp;mdt=normal&amp;pgid=&amp;sid=&amp;col=&amp;di=&amp;tr=&amp;hdr=</linkUrlProtocol>
+  <link type="object">{
+            "protocol":"",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"https:\/\/www.meteoschweiz.admin.ch\/service-und-publikationen\/applikationen\/ext\/daten-ohne-programmierkenntnisse-herunterladen.html#lang=de&amp;mdt=normal&amp;pgid=&amp;sid=&amp;col=&amp;di=&amp;tr=&amp;hdr=", "langger":"https:\/\/www.meteoschweiz.admin.ch\/service-und-publikationen\/applikationen\/ext\/daten-ohne-programmierkenntnisse-herunterladen.html#lang=de&amp;mdt=normal&amp;pgid=&amp;sid=&amp;col=&amp;di=&amp;tr=&amp;hdr=", "langfre":"https:\/\/www.meteosuisse.admin.ch\/services-et-publications\/applications\/ext\/telecharger-des-donnees-sans-savoir-coder.html#lang=fr&amp;mdt=normal&amp;pgid=&amp;sid=&amp;col=&amp;di=&amp;tr=&amp;hdr=", "langita":"https:\/\/www.meteosvizzera.admin.ch\/servizi-e-pubblicazioni\/applicazioni\/ext\/scaricare-dati-senza-sapere-programmare.html#lang=it&amp;mdt=normal&amp;pgid=&amp;sid=&amp;col=&amp;di=&amp;tr=&amp;hdr=", "langeng":"https:\/\/www.meteoswiss.admin.ch\/services-and-publications\/applications\/ext\/download-data-without-coding-skills.html#lang=en&amp;mdt=normal&amp;pgid=&amp;sid=&amp;col=&amp;di=&amp;tr=&amp;hdr="}
+            ,
+            
+              "nameObject": 
+            {"default":"Daten manuell herunterladen", "langger":"Daten manuell herunterladen", "langfre":"T\u00E9l\u00E9charger les donn\u00E9es manuellement", "langita":"Scaricare i dati manualmente", "langeng":"Download data manually"}
+            ,
+            
+              "descriptionObject": 
+            {"default":"\u00D6ffnet die 'Open Data Explorer'-Benutzeroberfl\u00E4che.", "langger":"\u00D6ffnet die 'Open Data Explorer'-Benutzeroberfl\u00E4che.", "langfre":"Ouvre l'interface utilisateur 'Open Data Explorer'.", "langita":"Apre l'interfaccia utente 'Open Data Explorer'.", "langeng":"Opens the \u2018Open Data Explorer\u2019 user interface."}
+            ,
+            
+            "function":"download",
+            "applicationProfile":"",
+            "group": 0
+            }</link>
+  <linkUrl>https://www.meteoschweiz.admin.ch/service-und-publikationen/service/open-data.html</linkUrl>
+  <linkProtocol>WWW:LINK</linkProtocol>
+  <linkUrlProtocolWWWLINK>https://www.meteoschweiz.admin.ch/service-und-publikationen/service/open-data.html</linkUrlProtocolWWWLINK>
+  <link type="object">{
+            "protocol":"WWW:LINK",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"https:\/\/www.meteoschweiz.admin.ch\/service-und-publikationen\/service\/open-data.html", "langger":"https:\/\/www.meteoschweiz.admin.ch\/service-und-publikationen\/service\/open-data.html", "langfre":"https:\/\/www.meteosuisse.admin.ch\/services-et-publications\/service\/open-data.html", "langita":"https:\/\/www.meteosvizzera.admin.ch\/servizi-e-pubblicazioni\/prestazioni\/open-data.html", "langeng":"https:\/\/www.meteoswiss.admin.ch\/services-and-publications\/service\/open-data.html"}
+            ,
+            
+              "nameObject": 
+            {"default":"Open Data Landingpage", "langger":"Open Data Landingpage", "langfre":"Page d'accueil Open Data", "langita":"Pagina iniziale Open Data", "langeng":"Open Data landing page"}
+            ,
+            
+            "function":"information",
+            "applicationProfile":"",
+            "group": 0
+            }</link>
+  <linkUrl>https://opendatadocs.meteoswiss.ch/de/a-data-groundbased/a1-automatic-weather-stations</linkUrl>
+  <linkProtocol>WWW:LINK</linkProtocol>
+  <linkUrlProtocolWWWLINK>https://opendatadocs.meteoswiss.ch/de/a-data-groundbased/a1-automatic-weather-stations</linkUrlProtocolWWWLINK>
+  <link type="object">{
+            "protocol":"WWW:LINK",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"https:\/\/opendatadocs.meteoswiss.ch\/de\/a-data-groundbased\/a1-automatic-weather-stations", "langger":"https:\/\/opendatadocs.meteoswiss.ch\/de\/a-data-groundbased\/a1-automatic-weather-stations", "langfre":"https:\/\/opendatadocs.meteoswiss.ch\/fr\/a-data-groundbased\/a1-automatic-weather-stations", "langita":"https:\/\/opendatadocs.meteoswiss.ch\/it\/a-data-groundbased\/a1-automatic-weather-stations", "langeng":"https:\/\/opendatadocs.meteoswiss.ch\/a-data-groundbased\/a1-automatic-weather-stations"}
+            ,
+            
+              "nameObject": 
+            {"default":"Open Data Dokumentation", "langger":"Open Data Dokumentation", "langfre":"Documentation Open Data", "langita":"Documentazione Open Data", "langeng":"Open Data Documentation"}
+            ,
+            
+              "descriptionObject": 
+            {"default":"Informationen zu den Daten, ihrer Struktur, ihrem Format, ihren Metadaten und ihrer Anwendung.", "langger":"Informationen zu den Daten, ihrer Struktur, ihrem Format, ihren Metadaten und ihrer Anwendung.", "langfre":"Informations sur les donn\u00E9es, leur structure, leur format, leurs m\u00E9tadonn\u00E9es et leur usage.", "langita":"Informazioni sui dati, sulla loro struttura, sul loro formato, sui loro metadati e sul loro uso.", "langeng":"Information about the data, its structure, format, metadata and usage."}
+            ,
+            
+            "function":"information",
+            "applicationProfile":"",
+            "group": 0
+            }</link>
+  <linkUrl>https://data.geo.admin.ch/ch.meteoschweiz.ogd-smn/ogd-smn_meta_datainventory.csv</linkUrl>
+  <linkProtocol>WWW:DOWNLOAD-URL</linkProtocol>
+  <linkUrlProtocolWWWDOWNLOADURL>https://data.geo.admin.ch/ch.meteoschweiz.ogd-smn/ogd-smn_meta_datainventory.csv</linkUrlProtocolWWWDOWNLOADURL>
+  <link type="object">{
+            "protocol":"WWW:DOWNLOAD-URL",
+            "mimeType":"",
+            
+              "urlObject": 
+            {"default":"https:\/\/data.geo.admin.ch\/ch.meteoschweiz.ogd-smn\/ogd-smn_meta_datainventory.csv", "langger":"https:\/\/data.geo.admin.ch\/ch.meteoschweiz.ogd-smn\/ogd-smn_meta_datainventory.csv"}
+            ,
+            
+              "nameObject": 
+            {"default":"Dateninventar-Metadaten", "langger":"Dateninventar-Metadaten", "langfre":"M\u00E9tadonn\u00E9es de l'inventaire des donn\u00E9es", "langita":"Metadati dell'inventario dei dati", "langeng":"Data inventory metadata"}
+            ,
+            
+              "descriptionObject": 
+            {"default":"Diese Ressource enth\u00E4lt eine Liste aller Stationen und Parameter mit Start- und Enddatum der Messungen.", "langger":"Diese Ressource enth\u00E4lt eine Liste aller Stationen und Parameter mit Start- und Enddatum der Messungen.", "langfre":"Cette resource fournit une liste de toutes les stations et param\u00E8tres avec les dates de d\u00E9but et de fin des mesures.", "langita":"Questa risorsa fornisce un elenco di tutti stazioni e parametri con la data di inizio e di fine delle misurazioni.", "langeng":"This resource provides a list of all stations and parameters with start and end date of the measurements."}
+            ,
+            
+            "function":"download",
+            "applicationProfile":"",
+            "group": 0
+            }</link>
+  <recordGroup>35323752-ed32-4cc1-8a75-898c749b777b</recordGroup>
+  <recordLink type="object">{
+      "type": "siblings",
+      
+        "associationType": "largerWorkCitation",
+      
+        "initiativeType": "",
+      
+      "to": "1663f219-2da9-4a3c-8ba9-251250c82751",
+      "url": "",
+      "title": "",
+      "origin": "catalog"
+      }</recordLink>
+  <recordLink_siblingsassociationTypelargerWorkCitation_initiativeType />
+  <recordLink_siblingsassociationTypelargerWorkCitation_initiativeType_uuid>1663f219-2da9-4a3c-8ba9-251250c82751</recordLink_siblingsassociationTypelargerWorkCitation_initiativeType_uuid>
+  <recordLink_siblingsassociationTypelargerWorkCitation_initiativeType_url />
+  <agg_associated>1663f219-2da9-4a3c-8ba9-251250c82751</agg_associated>
+  <agg_associated_largerWorkCitation>1663f219-2da9-4a3c-8ba9-251250c82751</agg_associated_largerWorkCitation>
+  <recordLink type="object">{
+      "type": "siblings",
+      
+        "associationType": "largerWorkCitation",
+      
+        "initiativeType": "",
+      
+      "to": "1663f219-2da9-4a3c-8ba9-251250c82751",
+      "url": "",
+      "title": "",
+      "origin": "catalog"
+      }</recordLink>
+  <recordLink_siblingsassociationTypelargerWorkCitation_initiativeType />
+  <recordLink_siblingsassociationTypelargerWorkCitation_initiativeType_uuid>1663f219-2da9-4a3c-8ba9-251250c82751</recordLink_siblingsassociationTypelargerWorkCitation_initiativeType_uuid>
+  <recordLink_siblingsassociationTypelargerWorkCitation_initiativeType_url />
+  <agg_associated>1663f219-2da9-4a3c-8ba9-251250c82751</agg_associated>
+  <agg_associated_largerWorkCitation>1663f219-2da9-4a3c-8ba9-251250c82751</agg_associated_largerWorkCitation>
+</doc>
+
