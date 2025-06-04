@@ -132,6 +132,12 @@ public class IndexationTest {
     }
 
     @Test
+    public void indexFiktiverDarstellungskatalogMitURL() throws Exception {
+        XslUtil.IS_INSPIRE_ENABLED = false;
+        indexAndCompareWithExpected("fiktiverDarstellungskatalogMitURL");
+    }
+
+    @Test
     public void useIncorrectTimeZone() throws Exception {
         TimeZone.setDefault(TimeZone.getTimeZone("GMT+2"));
         XslUtil.IS_INSPIRE_ENABLED = true;
