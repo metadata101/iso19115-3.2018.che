@@ -23,11 +23,7 @@
 package org.fao.geonet.util;
 
 import org.apache.commons.text.StringEscapeUtils;
-import org.fao.geonet.ApplicationContextHolder;
-import org.fao.geonet.kernel.SchemaManager;
-import org.fao.geonet.kernel.search.CodeListTranslator;
-import org.fao.geonet.kernel.search.Translator;
-import org.fao.geonet.utils.Log;
+import org.fao.geonet.constants.Geonet;
 import org.w3c.dom.Node;
 
 import java.util.List;
@@ -113,5 +109,13 @@ public class XslUtil {
 
     public static String getIndexField(Object appName, Object uuid, Object field, Object lang) {
         return "";
+    }
+
+    public static String getDefaultLangCode() {
+        return Geonet.DEFAULT_LANGUAGE;
+    }
+
+    public static String getLanguage() {
+        return getDefaultLangCode();
     }
 }
