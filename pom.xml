@@ -68,6 +68,7 @@
     <dependency>
       <groupId>net.sf.saxon</groupId>
       <artifactId>saxon-dom</artifactId>
+      <version>9.1.0.8b</version>
     </dependency>
     <dependency>
       <groupId>org.xmlunit</groupId>

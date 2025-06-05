@@ -9,6 +9,7 @@ import org.jdom.Element;
 import org.jdom.output.Format;
 import org.jdom.output.XMLOutputter;
 import org.junit.AfterClass;
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.xmlunit.assertj.XmlAssert;
@@ -37,8 +38,8 @@ public class IndexationTest {
         ResolverWrapper.createResolverForSchema("DEFAULT", Path.of(IndexationTest.class.getClassLoader().getResource("gn-site/WEB-INF/oasis-catalog.xml").getPath()));
     }
 
-    @BeforeClass
-    public static void initSaxon() {
+    @Before
+    public void initSaxon() {
         TransformerFactoryFactory.init("net.sf.saxon.TransformerFactoryImpl");
     }
 
@@ -138,10 +139,28 @@ public class IndexationTest {
     }
 
     @Test
+    public void indexInterlis() throws Exception {
+        XslUtil.IS_INSPIRE_ENABLED = false;
+        indexAndCompareWithExpected("subtemplates/interlis", "index-subtemplate.xsl");
+    }
+
+    @Test
+    public void indexLiechtenstein() throws Exception {
+        XslUtil.IS_INSPIRE_ENABLED = false;
+        indexAndCompareWithExpected("subtemplates/liechtenstein", "index-subtemplate.xsl");
+    }
+
+    @Test
+    public void indexResponsiblePartyAgroscope() throws Exception {
+        XslUtil.IS_INSPIRE_ENABLED = false;
+        indexAndCompareWithExpected("subtemplates/responsiblePartyAgroscope", "index-subtemplate.xsl");
+    }
+
+    @Test
     public void useIncorrectTimeZone() throws Exception {
         TimeZone.setDefault(TimeZone.getTimeZone("GMT+2"));
         XslUtil.IS_INSPIRE_ENABLED = true;
-        String actual = indexResource("amphibians-19115-3.che.xml");
+        String actual = indexResource("amphibians-19115-3.che.xml", "index.xsl");
 
         try {
             XmlAssert.assertThat(actual).valueByXPath("//resourceTemporalDateRange").contains("2024-02-22T22:00:00.000Z");
@@ -151,9 +170,13 @@ public class IndexationTest {
     }
 
     private void indexAndCompareWithExpected(String fileRoot) throws Exception {
+        indexAndCompareWithExpected(fileRoot, "index.xsl");
+    }
+
+    private void indexAndCompareWithExpected(String fileRoot, String xslProcess) throws Exception {
         TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
 
-        String actual = indexResource(fileRoot + "-19115-3.che.xml");
+        String actual = indexResource(fileRoot + "-19115-3.che.xml", xslProcess);
 
         String expected;
         if (GENERATE_EXPECTED_FILE) {
@@ -167,8 +190,8 @@ public class IndexationTest {
         XmlAssert.assertThat(actual).isEqualTo(expected);
     }
 
-    private String indexResource(String resourceToIndex) throws Exception {
-        Path xslFile = getResourceInsideSchema("index-fields/index.xsl");
+    private String indexResource(String resourceToIndex, String xslProcess) throws Exception {
+        Path xslFile = getResourceInsideSchema("index-fields/" + xslProcess);
         Path xmlFile = getResource(resourceToIndex);
         Element toIndex = Xml.loadFile(xmlFile);
 
