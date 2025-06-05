@@ -227,6 +227,19 @@
     <xsl:call-template name="subtemplate-common-fields"/>
   </xsl:template>
 
+  <xsl:template mode="index" match="mrd:MD_Format[count(ancestor::node()) =  1]">
+    <xsl:variable name="name" select="mrd:formatSpecificationCitation/cit:CI_Citation/cit:title/gco:CharacterString"/>
+    <xsl:variable name="version" select="mrd:formatSpecificationCitation/cit:CI_Citation/cit:edition/gco:CharacterString"/>
+    <xsl:variable name="title"
+                  select="if ($version = '' or $version = '-')
+                        then $name
+                        else concat($name, ' ', version)"/>
+    <resourceTitleObject type="object">{
+      "default": "<xsl:value-of select="gn-fn-index:json-escape($title)"/>"
+      }</resourceTitleObject>
+
+    <xsl:call-template name="subtemplate-common-fields"/>
+  </xsl:template>
 
   <!-- Indexing constraints -->
   <xsl:template mode="index"

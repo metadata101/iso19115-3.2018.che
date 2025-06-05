@@ -151,6 +151,21 @@ public class XslConversionTest {
     }
 
     @Test
+    public void convertResponsibleParty() throws Exception {
+        transformAndCompare("subtemplates/responsiblePartyAgroscope", false);
+    }
+
+    @Test
+    public void convertExtent() throws Exception {
+        transformAndCompare("subtemplates/liechtenstein", false);
+    }
+
+    @Test
+    public void convertInterlis() throws Exception {
+        transformAndCompare("subtemplates/interlis", false);
+    }
+
+    @Test
     public void testOdsConversion() throws Exception {
         Element xmlFromJSON = Xml.getXmlFromJSON(Files.readString(getResource("ods.json")));
         xmlFromJSON.setName("record");
@@ -172,17 +187,6 @@ public class XslConversionTest {
         assertFalse(
                 String.format("Differences: %s", diff.toString()),
                 diff.hasDifferences());
-    }
-
-    @Test
-    public void convertResponsibleParty() throws Exception {
-        Path xslFile = getResourceInsideSchema("convert/ISO19139/mapping/CI_ResponsibleParty.xsl");
-        Path xmlFile = getResource("responsible_party_agroscope_iso19139_che.xml");
-        Element amphibians = Xml.loadFile(xmlFile);
-
-        Element newRespParty = Xml.transform(amphibians, xslFile);
-
-        assertStrictByteEquality("expectedFromNewRespParty.xml", newRespParty, false);
     }
 
     @Test
@@ -254,17 +258,20 @@ public class XslConversionTest {
         Xml.validate(Path.of(getClass().getClassLoader().getResource("schema/standards.iso.org/19115/-3/eCH-0271-1-0-0.xsd").toURI()), amphibiansIso19115che);
     }
 
-    private void transformValidateAndCompare(String veterinarians1) throws Exception {
+    private Element transformAndCompare(String mdNameRoot, boolean requireXmlHeader) throws Exception {
         Path xslFile = getResourceInsideSchema("convert/fromISO19139.xsl");
+        Path xmlFile = getResource(mdNameRoot + "-19139.che.xml");
+        Element source = Xml.loadFile(xmlFile);
 
-        Path xmlFile = getResource(veterinarians1 + "-19139.che.xml");
-        Element veterinarians = Xml.loadFile(xmlFile);
+        Element transformed = Xml.transform(source, xslFile);
 
-        Element veterinariansIso19115che = Xml.transform(veterinarians, xslFile);
-        isValid(veterinariansIso19115che);
+        assertStrictByteEquality(mdNameRoot + "-19115-3.che.xml", transformed, requireXmlHeader);
+        return transformed;
+    }
+
+    private void transformValidateAndCompare(String mdNameRoot) throws Exception {
+        isValid(transformAndCompare(mdNameRoot, true));
         //TODO CMT/SRT activate
         //isGNValid(amphibiansIso19115che);
-
-        assertStrictByteEquality(veterinarians1 + "-19115-3.che.xml", veterinariansIso19115che, true);
     }
 }
