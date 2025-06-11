@@ -156,6 +156,11 @@ public class XslConversionTest {
     }
 
     @Test
+    public void convertResponsiblePartyWithNoDefaultOrgName() throws Exception {
+        transformAndCompare("subtemplates/responsiblePartyIngenieureUndGeometer", false);
+    }
+
+    @Test
     public void convertExtent() throws Exception {
         transformAndCompare("subtemplates/liechtenstein", false);
     }
