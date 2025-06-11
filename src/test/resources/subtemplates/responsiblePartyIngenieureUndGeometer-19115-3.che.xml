@@ -1,0 +1,69 @@
+<cit:CI_Responsibility xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
+  <cit:role>
+    <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</cit:CI_RoleCode>
+  </cit:role>
+  <cit:party>
+    <che:CHE_CI_Organisation xmlns:che="http://geocat.ch/che" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" gco:isoType="cit:CI_Organisation">
+      <cit:name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
+        <lan:PT_FreeText xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#EN" />
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#DE">Emch + Berger WSB AG</lan:LocalisedCharacterString>
+          </lan:textGroup>
+        </lan:PT_FreeText>
+      </cit:name>
+      <cit:contactInfo>
+        <cit:CI_Contact>
+          <cit:phone>
+            <cit:CI_Telephone>
+              <cit:number>
+                <gco:CharacterString>041 269 40 07</gco:CharacterString>
+              </cit:number>
+              <cit:numberType>
+                <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+              </cit:numberType>
+            </cit:CI_Telephone>
+          </cit:phone>
+          <cit:address>
+            <cit:CI_Address>
+              <cit:deliveryPoint>
+                <gco:CharacterString>Rüeggisingerstrasse 29</gco:CharacterString>
+              </cit:deliveryPoint>
+              <cit:city>
+                <gco:CharacterString>Emmenbrücke</gco:CharacterString>
+              </cit:city>
+              <cit:postalCode>
+                <gco:CharacterString>6020</gco:CharacterString>
+              </cit:postalCode>
+              <cit:country>
+                <gco:CharacterString>CH</gco:CharacterString>
+              </cit:country>
+              <cit:electronicMailAddress>
+                <gco:CharacterString>erwin.vogel@emchberger.ch</gco:CharacterString>
+              </cit:electronicMailAddress>
+            </cit:CI_Address>
+          </cit:address>
+        </cit:CI_Contact>
+      </cit:contactInfo>
+      <cit:individual>
+        <cit:CI_Individual>
+          <cit:name>
+            <gco:CharacterString>Erwin Vogel</gco:CharacterString>
+          </cit:name>
+          <cit:positionName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
+            <lan:PT_FreeText xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN" />
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Ingenieure u. Geometer</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:positionName>
+        </cit:CI_Individual>
+      </cit:individual>
+    </che:CHE_CI_Organisation>
+  </cit:party>
+</cit:CI_Responsibility>
