@@ -65,8 +65,8 @@
 
     <xsl:template match="oldche:CHE_CI_ResponsibleParty" mode="from19139to19115-3.2018">
         <xsl:choose>
-            <xsl:when test="count(gmd:individualName/gcoold:CharacterString) + count(gmd:organisationName/(gcoold:CharacterString|gmx:Anchor)) + count(gmd:positionName/gcoold:CharacterString) > 0">
-                <!--
+            <xsl:when test="count(gmd:individualName/gcoold:CharacterString) + count(gmd:organisationName/gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString) + count(gmd:organisationName/(gcoold:CharacterString|gmx:Anchor)) + count(gmd:positionName/gcoold:CharacterString) > 0">
+                <!-- 
                 CI_ResponsibleParties that include name elements (individualName, organisationName, or positionName) are translated to CI_Responsibilities.
                 CI_ResponsibleParties without name elements are assummed to be placeholders for CI_OnlineResources. They are transformed later in the process
                 using the CI_ResponsiblePartyToOnlineResource template
