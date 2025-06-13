@@ -85,6 +85,7 @@ Ce schéma est également composé des normes :
               xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0"
               xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0"
               xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
+              xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0"
               xmlns:che="http://geocat.ch/che">
     <!-- ISO19115-3 identification is based on the
     root element of the record. It could be a MD_Metadata
@@ -96,6 +97,7 @@ Ce schéma est également composé des normes :
       <mdb:MD_Metadata/>
       <cit:CI_Responsibility/>
       <cit:CI_Organisation/>
+      <gex:EX_Extent/>
       <mcc:MD_BrowseGraphic/>
       <mrs:MD_ReferenceSystem/>
       <mrd:MD_Format/>
