@@ -171,6 +171,16 @@ public class XslConversionTest {
     }
 
     @Test
+    public void convertKonservatorinBotanik() throws Exception {
+        transformAndCompare("subtemplates/konservatorinBotanik", false);
+    }
+
+    @Test
+    public void convertGeoprosuisse() throws Exception {
+        transformAndCompare("subtemplates/geoprosuisse", false);
+    }
+
+    @Test
     public void testOdsConversion() throws Exception {
         Element xmlFromJSON = Xml.getXmlFromJSON(Files.readString(getResource("ods.json")));
         xmlFromJSON.setName("record");
