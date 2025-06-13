@@ -1,0 +1,34 @@
+<cit:CI_Responsibility xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
+  <cit:role>
+    <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</cit:CI_RoleCode>
+  </cit:role>
+  <cit:party>
+    <cit:CI_Individual>
+      <cit:name>Elisabeth Danner</cit:name>
+      <cit:contactInfo>
+        <cit:CI_Contact>
+          <cit:address>
+            <cit:CI_Address>
+              <cit:deliveryPoint>
+                <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" />
+              </cit:deliveryPoint>
+              <cit:electronicMailAddress>
+                <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">elisabeth.danner@lu.ch</gco:CharacterString>
+              </cit:electronicMailAddress>
+            </cit:CI_Address>
+          </cit:address>
+        </cit:CI_Contact>
+      </cit:contactInfo>
+      <cit:positionName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
+        <lan:PT_FreeText xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#EN" />
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#DE">Konservatorin Botanik</lan:LocalisedCharacterString>
+          </lan:textGroup>
+        </lan:PT_FreeText>
+      </cit:positionName>
+    </cit:CI_Individual>
+  </cit:party>
+</cit:CI_Responsibility>
