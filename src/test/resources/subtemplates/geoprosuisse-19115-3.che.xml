@@ -1,0 +1,70 @@
+<cit:CI_Responsibility xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
+  <cit:role>
+    <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</cit:CI_RoleCode>
+  </cit:role>
+  <cit:party>
+    <cit:CI_Individual>
+      <cit:name>Hans Stamm</cit:name>
+      <cit:contactInfo>
+        <cit:CI_Contact>
+          <cit:phone>
+            <cit:CI_Telephone>
+              <cit:number>
+                <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">+41 56 634 10 46</gco:CharacterString>
+              </cit:number>
+              <cit:numberType>
+                <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+              </cit:numberType>
+            </cit:CI_Telephone>
+          </cit:phone>
+          <cit:phone>
+            <cit:CI_Telephone>
+              <cit:number>
+                <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">+41 56 634 47 46</gco:CharacterString>
+              </cit:number>
+              <cit:numberType>
+                <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="facsimile">facsimile</cit:CI_TelephoneTypeCode>
+              </cit:numberType>
+            </cit:CI_Telephone>
+          </cit:phone>
+          <cit:address>
+            <cit:CI_Address>
+              <cit:deliveryPoint>
+                <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">Chälmatt 6</gco:CharacterString>
+              </cit:deliveryPoint>
+              <cit:city>
+                <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">Arni</gco:CharacterString>
+              </cit:city>
+              <cit:administrativeArea>
+                <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">Elektra Genossenschaft Arni-Islisberg</gco:CharacterString>
+              </cit:administrativeArea>
+              <cit:postalCode>
+                <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">8905</gco:CharacterString>
+              </cit:postalCode>
+              <cit:country>
+                <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">CH</gco:CharacterString>
+              </cit:country>
+              <cit:electronicMailAddress>
+                <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">hans.stamm@egai.ch</gco:CharacterString>
+              </cit:electronicMailAddress>
+            </cit:CI_Address>
+          </cit:address>
+          <cit:onlineResource>
+            <cit:CI_OnlineResource>
+              <cit:linkage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
+                <lan:PT_FreeText xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">https://geoprosuisse.ch/</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">WWW:LINK</gco:CharacterString>
+              </cit:protocol>
+            </cit:CI_OnlineResource>
+          </cit:onlineResource>
+        </cit:CI_Contact>
+      </cit:contactInfo>
+    </cit:CI_Individual>
+  </cit:party>
+</cit:CI_Responsibility>
