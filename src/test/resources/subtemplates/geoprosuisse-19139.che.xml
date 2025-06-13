@@ -1,0 +1,64 @@
+<che:CHE_CI_ResponsibleParty xmlns:che="http://www.geocat.ch/2008/che" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gco:isoType="gmd:CI_ResponsibleParty" xsi:schemaLocation="http://www.geocat.ch/2008/che https://www.geocat.ch/geonetwork/xml/schemas/iso19139.che/schema/che/che.xsd">
+    <gmd:contactInfo xmlns:gmd="http://www.isotc211.org/2005/gmd">
+        <gmd:CI_Contact>
+            <gmd:phone>
+                <che:CHE_CI_Telephone gco:isoType="gmd:CI_Telephone">
+                    <gmd:voice>
+                        <gco:CharacterString>+41 56 634 10 46</gco:CharacterString>
+                    </gmd:voice>
+                    <gmd:facsimile>
+                        <gco:CharacterString>+41 56 634 47 46</gco:CharacterString>
+                    </gmd:facsimile>
+                </che:CHE_CI_Telephone>
+            </gmd:phone>
+            <gmd:address>
+                <che:CHE_CI_Address gco:isoType="gmd:CI_Address">
+                    <gmd:city>
+                        <gco:CharacterString>Arni</gco:CharacterString>
+                    </gmd:city>
+                    <gmd:administrativeArea>
+                        <gco:CharacterString>Elektra Genossenschaft Arni-Islisberg</gco:CharacterString>
+                    </gmd:administrativeArea>
+                    <gmd:postalCode>
+                        <gco:CharacterString>8905</gco:CharacterString>
+                    </gmd:postalCode>
+                    <gmd:country>
+                        <gco:CharacterString>CH</gco:CharacterString>
+                    </gmd:country>
+                    <gmd:electronicMailAddress>
+                        <gco:CharacterString>hans.stamm@egai.ch</gco:CharacterString>
+                    </gmd:electronicMailAddress>
+                    <che:streetName>
+                        <gco:CharacterString>Chälmatt</gco:CharacterString>
+                    </che:streetName>
+                    <che:streetNumber>
+                        <gco:CharacterString>6</gco:CharacterString>
+                    </che:streetNumber>
+                </che:CHE_CI_Address>
+            </gmd:address>
+            <gmd:onlineResource>
+                <gmd:CI_OnlineResource>
+                    <gmd:linkage xsi:type="che:PT_FreeURL_PropertyType">
+                        <che:PT_FreeURL>
+                            <che:URLGroup>
+                                <che:LocalisedURL locale="#DE">https://geoprosuisse.ch/</che:LocalisedURL>
+                            </che:URLGroup>
+                        </che:PT_FreeURL>
+                    </gmd:linkage>
+                    <gmd:protocol>
+                        <gco:CharacterString>WWW:LINK</gco:CharacterString>
+                    </gmd:protocol>
+                </gmd:CI_OnlineResource>
+            </gmd:onlineResource>
+        </gmd:CI_Contact>
+    </gmd:contactInfo>
+    <gmd:role xmlns:gmd="http://www.isotc211.org/2005/gmd">
+        <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode" codeListValue="pointOfContact" />
+    </gmd:role>
+    <che:individualFirstName>
+        <gco:CharacterString>Hans</gco:CharacterString>
+    </che:individualFirstName>
+    <che:individualLastName>
+        <gco:CharacterString>Stamm</gco:CharacterString>
+    </che:individualLastName>
+</che:CHE_CI_ResponsibleParty>
