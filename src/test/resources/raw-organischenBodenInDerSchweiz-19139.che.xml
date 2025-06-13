@@ -1,0 +1,869 @@
+<che:CHE_MD_Metadata xmlns:che="http://www.geocat.ch/2008/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" gco:isoType="gmd:MD_Metadata">
+  <gmd:fileIdentifier>
+    <gco:CharacterString>0572e842-7e34-409a-90d9-526d012a1c2d</gco:CharacterString>
+  </gmd:fileIdentifier>
+  <gmd:language xmlns:geonet="http://www.fao.org/geonetwork">
+    <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
+  </gmd:language>
+  <gmd:characterSet xmlns:geonet="http://www.fao.org/geonetwork">
+    <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+  </gmd:characterSet>
+  <gmd:hierarchyLevel xmlns:geonet="http://www.fao.org/geonetwork">
+    <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+  </gmd:hierarchyLevel>
+  <gmd:contact xmlns:geonet="http://www.fao.org/geonetwork" xlink:href="local://srv/api/registries/entries/f0ce917d-9b40-4e18-96aa-64b6c88af8f0?lang=ger,fre,ita,eng,roh&amp;process=gmd:role/gmd:CI_RoleCode/@codeListValue~custodian&amp;schema=iso19139.che" />
+  <gmd:dateStamp xmlns:geonet="http://www.fao.org/geonetwork">
+    <gco:DateTime>2025-06-11T09:54:12.883Z</gco:DateTime>
+  </gmd:dateStamp>
+  <gmd:metadataStandardName xmlns:geonet="http://www.fao.org/geonetwork">
+    <gco:CharacterString>GM03_2</gco:CharacterString>
+  </gmd:metadataStandardName>
+  <gmd:locale xmlns:geonet="http://www.fao.org/geonetwork">
+    <gmd:PT_Locale id="FR">
+      <gmd:languageCode>
+        <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="fre" />
+      </gmd:languageCode>
+      <gmd:characterEncoding>
+        <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+      </gmd:characterEncoding>
+    </gmd:PT_Locale>
+  </gmd:locale>
+  <gmd:locale xmlns:geonet="http://www.fao.org/geonetwork">
+    <gmd:PT_Locale id="IT">
+      <gmd:languageCode>
+        <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ita" />
+      </gmd:languageCode>
+      <gmd:characterEncoding>
+        <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+      </gmd:characterEncoding>
+    </gmd:PT_Locale>
+  </gmd:locale>
+  <gmd:locale xmlns:geonet="http://www.fao.org/geonetwork">
+    <gmd:PT_Locale id="EN">
+      <gmd:languageCode>
+        <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng" />
+      </gmd:languageCode>
+      <gmd:characterEncoding>
+        <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+      </gmd:characterEncoding>
+    </gmd:PT_Locale>
+  </gmd:locale>
+  <gmd:locale xmlns:geonet="http://www.fao.org/geonetwork">
+    <gmd:PT_Locale id="RM">
+      <gmd:languageCode>
+        <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="roh" />
+      </gmd:languageCode>
+      <gmd:characterEncoding>
+        <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+      </gmd:characterEncoding>
+    </gmd:PT_Locale>
+  </gmd:locale>
+  <gmd:locale>
+    <gmd:PT_Locale id="DE">
+      <gmd:languageCode>
+        <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
+      </gmd:languageCode>
+      <gmd:characterEncoding>
+        <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+      </gmd:characterEncoding>
+    </gmd:PT_Locale>
+  </gmd:locale>
+  <gmd:spatialRepresentationInfo xmlns:geonet="http://www.fao.org/geonetwork">
+    <gmd:MD_VectorSpatialRepresentation>
+      <gmd:topologyLevel>
+        <gmd:MD_TopologyLevelCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_TopologyLevelCode" codeListValue="fullPlanarGraph" />
+      </gmd:topologyLevel>
+      <gmd:geometricObjects>
+        <gmd:MD_GeometricObjects>
+          <gmd:geometricObjectType>
+            <gmd:MD_GeometricObjectTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_GeometricObjectTypeCode" codeListValue="surface" />
+          </gmd:geometricObjectType>
+        </gmd:MD_GeometricObjects>
+      </gmd:geometricObjects>
+    </gmd:MD_VectorSpatialRepresentation>
+  </gmd:spatialRepresentationInfo>
+  <gmd:spatialRepresentationInfo xmlns:geonet="http://www.fao.org/geonetwork">
+    <gmd:MD_GridSpatialRepresentation>
+      <gmd:numberOfDimensions>
+        <gco:Integer>2</gco:Integer>
+      </gmd:numberOfDimensions>
+      <gmd:cellGeometry>
+        <gmd:MD_CellGeometryCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CellGeometryCode" codeListValue="area" />
+      </gmd:cellGeometry>
+      <gmd:transformationParameterAvailability gco:nilReason="unknown" />
+    </gmd:MD_GridSpatialRepresentation>
+  </gmd:spatialRepresentationInfo>
+  <gmd:referenceSystemInfo xmlns:geonet="http://www.fao.org/geonetwork">
+    <gmd:MD_ReferenceSystem>
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>LV95 EPSG:2056</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE">LV95 EPSG:2056</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:code>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:identificationInfo xmlns:geonet="http://www.fao.org/geonetwork">
+    <che:CHE_MD_DataIdentification gco:isoType="gmd:MD_DataIdentification">
+      <gmd:citation>
+        <gmd:CI_Citation>
+          <gmd:title xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Abschätzung der organischen Böden in der Schweiz 2024</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE">Abschätzung der organischen Böden in der Schweiz 2024</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#FR">Estimation des sols organiques en Suisse 2024</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#EN">Estimate of Switzerland’s Organic Soil Surface, 2025</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:title>
+          <gmd:alternateTitle xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Organische Böden CH 2024</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE">Organische Böden CH 2024</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#FR">Sols organiques CH 2024</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#EN">Organic soils CH 2024</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:alternateTitle>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>2024-08</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation" />
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>2025-04</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" />
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+          <gmd:identifier>
+            <gmd:MD_Identifier>
+              <gmd:code>
+                <gco:CharacterString>ch.agroscope.abschaetzung-organische_boeden</gco:CharacterString>
+              </gmd:code>
+            </gmd:MD_Identifier>
+          </gmd:identifier>
+        </gmd:CI_Citation>
+      </gmd:citation>
+      <gmd:abstract xsi:type="gmd:PT_FreeText_PropertyType">
+        <gco:CharacterString>Die Abschätzung der organischen Bodenfläche der Schweiz aus dem Jahr 2025 ist eine Aktualisierung der Abschätzung der organischen Böden aus dem Jahr 2015. Wie in der Karte von 2015 wurde der Ansatz der Zusammenstellung vorhandener Informationsquellen (z. B. Bodenkarten, geologische Karten, Waldlebensraumkarten, historische Beobachtungen von Mooren sowie Verzeichnisse von Niedermooren und Hochmooren) verwendet, um eine Schätzung des aktuellen Umfangs der organischen Böden zu erstellen. In einem ersten Schritt wurden vier wichtige Datensätze aktualisiert: Bodenkarten, geologische Karten, das nationale Inventar der Hoch- und Übergangsmoore und die Waldbiotopkarten. In einem zweiten Schritt wurden alle Datensätze harmonisiert und in ein Datenmodell eingefügt, das die halbautomatische Kombination der verschiedenen Datensätze ermöglicht. In einem dritten Schritt wurden die Datensätze kombiniert (genauer gesagt überlagert) und eine regelbasierte Methode wurde verwendet, um die resultierenden Flächen als organischen oder nicht organischen Boden zu charakterisieren. In einem vierten Schritt wurden Informationen über die mineralische Bodenoberfläche verwendet, um Flächen zu löschen, für die der Nachweis für mineralischen Boden stärker war. als jener für organischen Boden. Die für die meisten Anwendungen empfohlene Fläche der organischen Böden beträgt 32.702 ha, was der „weniger konservativen“ Schätzung oder organischen Böden entspricht.
+
+Aufgrund der heterogenen Natur der Informationsquellen, die zur Erstellung dieser Indikatorkarte verwendet wurden, ist es nicht möglich, den Maßstab zu definieren, für den diese Karte geeignet ist. Es kann jedoch folgende Empfehlung ausgesprochen werden: Die Karte eignet sich nur für die Verwendung auf regionaler Ebene (z. B. Kanton oder Bezirk, ca. 1:100.000) und in größerem Maßstab; sie ist für die Verwendung im Feldmaßstab ungeeignet.
+
+Die beiden Publikationen (Wüst-Galley, C. and J. Leifeld (2025) “The distribution and (future) use of Switzerland’s organic soils” Mires and Peat 32(4): 1-17, DOI: 10.19189/001c.130819 and Wüst-Galley, C., A. Grünig and J. Leifeld (2015) “Locating organic soils for the greenhouse gas inventory” Agroscope Science 26, 100 pp.) beschreiben die Methoden und die aktualisierten Datensätze im Detail. Es wird wärmstens empfohlen beide Publikationen vor der Nutzung der Datensätze zu lesen.
+Teile der Daten sind mit einer Lizenz belegt. Bitte die zusätzlich verfügbare Dokumentation beachten.</gco:CharacterString>
+        <gmd:PT_FreeText>
+          <gmd:textGroup>
+            <gmd:LocalisedCharacterString locale="#DE">Die Abschätzung der organischen Bodenfläche der Schweiz aus dem Jahr 2025 ist eine Aktualisierung der Abschätzung der organischen Böden aus dem Jahr 2015. Wie in der Karte von 2015 wurde der Ansatz der Zusammenstellung vorhandener Informationsquellen (z. B. Bodenkarten, geologische Karten, Waldlebensraumkarten, historische Beobachtungen von Mooren sowie Verzeichnisse von Niedermooren und Hochmooren) verwendet, um eine Schätzung des aktuellen Umfangs der organischen Böden zu erstellen. In einem ersten Schritt wurden vier wichtige Datensätze aktualisiert: Bodenkarten, geologische Karten, das nationale Inventar der Hoch- und Übergangsmoore und die Waldbiotopkarten. In einem zweiten Schritt wurden alle Datensätze harmonisiert und in ein Datenmodell eingefügt, das die halbautomatische Kombination der verschiedenen Datensätze ermöglicht. In einem dritten Schritt wurden die Datensätze kombiniert (genauer gesagt überlagert) und eine regelbasierte Methode wurde verwendet, um die resultierenden Flächen als organischen oder nicht organischen Boden zu charakterisieren. In einem vierten Schritt wurden Informationen über die mineralische Bodenoberfläche verwendet, um Flächen zu löschen, für die der Nachweis für mineralischen Boden stärker war. als jener für organischen Boden. Die für die meisten Anwendungen empfohlene Fläche der organischen Böden beträgt 32.702 ha, was der „weniger konservativen“ Schätzung oder organischen Böden entspricht.
+
+Aufgrund der heterogenen Natur der Informationsquellen, die zur Erstellung dieser Indikatorkarte verwendet wurden, ist es nicht möglich, den Maßstab zu definieren, für den diese Karte geeignet ist. Es kann jedoch folgende Empfehlung ausgesprochen werden: Die Karte eignet sich nur für die Verwendung auf regionaler Ebene (z. B. Kanton oder Bezirk, ca. 1:100.000) und in größerem Maßstab; sie ist für die Verwendung im Feldmaßstab ungeeignet.
+
+Die beiden Publikationen (Wüst-Galley, C. and J. Leifeld (2025) “The distribution and (future) use of Switzerland’s organic soils” Mires and Peat 32(4): 1-17, DOI: 10.19189/001c.130819 and Wüst-Galley, C., A. Grünig and J. Leifeld (2015) “Locating organic soils for the greenhouse gas inventory” Agroscope Science 26, 100 pp.) beschreiben die Methoden und die aktualisierten Datensätze im Detail. Es wird wärmstens empfohlen beide Publikationen vor der Nutzung der Datensätze zu lesen.
+Teile der Daten sind mit einer Lizenz belegt. Bitte die zusätzlich verfügbare Dokumentation beachten.</gmd:LocalisedCharacterString>
+          </gmd:textGroup>
+          <gmd:textGroup>
+            <gmd:LocalisedCharacterString locale="#FR">L'estimation de la surface des sols organiques de la Suisse en 2025 est une mise à jour de l'estimation des sols organiques de 2015. Comme dans la carte de 2015, elle a utilisé l'approche consistant à rassembler les sources d'information existantes (par exemple, les cartes des sols, les cartes géologiques, les cartes des habitats forestiers, les observations historiques des tourbières, ainsi que les inventaires des marais et des tourbières hautes) pour générer une estimation de l'étendue actuelle des sols organiques. Dans un premier étape, quatre ensembles de données importants ont été mis à jour : les cartes des sols, les cartes géologiques, l'inventaire national des tourbières hautes et des tourbières de transition, et les cartes des habitats forestiers. Dans un deuxième étape, tous les ensembles de données ont été harmonisés et insérés dans un modèle de données, permettant la combinaison semi-automatique des différents ensembles de données. Dans un troisième étape, les ensembles de données ont été combinés (plus précisément, superposés) et une méthode basée sur des règles a été utilisée pour caractériser les surfaces résultantes comme étant des sols organiques ou non organiques. Dans une quatrième étape, les informations sur la surface du sol minéral ont été utilisées pour supprimer les surfaces pour lesquelles la preuve de sol minéral était plus forte. La surface de sol recommandée pour la plupart des applications est de 32 702 ha, ce qui correspond à l'estimation « moins conservatrice » ou aux sols organiques.
+
+En raison de la nature hétérogène des sources d'information utilisées pour générer cette carte d'indicateurs, il n'est pas possible de définir l'échelle pour laquelle cette carte est appropriée. La recommandation suivante peut toutefois être faite : la carte ne peut être utilisée qu'à l'échelle régionale (par exemple, cantonale ou régionale, environ 1:100 000) et à une échelle plus grande ; elle ne convient pas à une utilisation à l'échelle du terrain.
+
+Les deux publications (Wüst-Galley, C. and J. Leifeld (2025) “The distribution and (future) use of Switzerland’s organic soils” Mires and Peat 32(4): 1-17, DOI: 10.19189/001c.130819 and Wüst-Galley, C., A. Grünig and J. Leifeld (2015) “Locating organic soils for the greenhouse gas inventory” Agroscope Science 26, 100 pp.) décrivent en détail la méthodologie et les ensembles de données mis à jour, et il est fortement recommandé à toute personne souhaitant utiliser cet ensemble de données de lire ces deux publications.
+Une partie des données est soumise à une licence. Consultez s'il vous plaît la documentation aditionelle.</gmd:LocalisedCharacterString>
+          </gmd:textGroup>
+          <gmd:textGroup>
+            <gmd:LocalisedCharacterString locale="#EN">Estimate of Switzerland’s Organic Soil Surface, 2025
+The 2025 estimate of Switzerland’s organic soil surface is an update of the 2015 estimate of organic soils. As in the 2015 map, it used the approach of collating existing information sources (e.g., soil maps, geology maps, forest habitat maps, historical observations of peatlands, as well as inventories of fens and raised bogs) to generate an estimate or the current extent of organic soils. In a first step, four important data sets were updated: Soil maps, geology maps, the national inventory of raised and transitional bogs, and the forest habitat maps. In a second step, all data sets were harmonized and inserted into a data model, allowing the semi-automatic combination of the various data sets. In a third step, the data sets were combined (more specifically, overlain) and a rule-based method was used to characterise the resulting surfaces as organic soil, or not organic soil. In a fourth step, information on the mineral soil surface was used to delete surfaces for which the evidence of mineral soil was stronger. The soil surface recommended for use in most applications is 32,702 ha, which corresponds to the ‘less conservative’ estimate or organic soils.
+
+Because of the heterogeneous nature of the information sources that were used to generate this indicator map, it is not possible to define the scale for which this map is appropriate. The following recommendation can however be made: The map is suitable for use at the regional scale (e.g., cantonal or district, ca. 1:100,000) and larger scale only; it is unsuitable for field-scale use.
+
+The two publications (Wüst-Galley, C. and J. Leifeld (2025) “The distribution and (future) use of Switzerland’s organic soils” Mires and Peat 32(4): 1-17, DOI: 10.19189/001c.130819 and Wüst-Galley, C., A. Grünig and J. Leifeld (2015) “Locating organic soils for the greenhouse gas inventory” Agroscope Science 26, 100 pp.) describe the methodology and updated data sets in detail, and it is strongly recommended that both publications should be read by anybody wanting to use this data set.
+Parts of the data are subject to a licence. Please read the additional documentation.</gmd:LocalisedCharacterString>
+          </gmd:textGroup>
+        </gmd:PT_FreeText>
+      </gmd:abstract>
+      <gmd:status>
+        <gmd:MD_ProgressCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ProgressCode" codeListValue="completed" />
+      </gmd:status>
+      <gmd:pointOfContact xlink:href="local://srv/api/registries/entries/925d1120-720d-4a2f-bb93-cac0a154fb65?lang=ger,fre,ita,eng,roh&amp;process=gmd:role/gmd:CI_RoleCode/@codeListValue~author&amp;schema=iso19139.che" />
+      <gmd:resourceMaintenance>
+        <che:CHE_MD_MaintenanceInformation gco:isoType="gmd:MD_MaintenanceInformation">
+          <gmd:maintenanceAndUpdateFrequency>
+            <gmd:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="unknown" />
+          </gmd:maintenanceAndUpdateFrequency>
+          <che:archiveConcept>
+            <che:CHE_MD_ArchiveConcept />
+          </che:archiveConcept>
+        </che:CHE_MD_MaintenanceInformation>
+      </gmd:resourceMaintenance>
+      <gmd:graphicOverview>
+        <gmd:MD_BrowseGraphic>
+          <gmd:fileName>
+            <gco:CharacterString>https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/MapOrganicSoil4geocat.png</gco:CharacterString>
+          </gmd:fileName>
+        </gmd:MD_BrowseGraphic>
+      </gmd:graphicOverview>
+      <gmd:descriptiveKeywords xlink:href="local://srv/api/registries/vocabularies/keyword?skipdescriptivekeywords=true&amp;thesaurus=local.theme.geocat.ch&amp;id=http%3A%2F%2Fcustom.shared.obj.ch%2Fconcept%237a6dd485-5aa6-4a48-b36c-ea13cba0b2dc%2Chttp%3A%2F%2Fcustom.shared.obj.ch%2Fconcept%23ae677a16-f81a-4533-9243-a87831115079&amp;lang=ger,fre,ita,eng,roh" />
+      <gmd:descriptiveKeywords xlink:href="local://srv/api/registries/vocabularies/keyword?skipdescriptivekeywords=true&amp;thesaurus=external.theme.gemet&amp;id=http%3A%2F%2Fwww.eionet.europa.eu%2Fgemet%2Fconcept%2F1466%2Chttp%3A%2F%2Fwww.eionet.europa.eu%2Fgemet%2Fconcept%2F5013%2Chttp%3A%2F%2Fwww.eionet.europa.eu%2Fgemet%2Fconcept%2F5013%2Chttp%3A%2F%2Fwww.eionet.europa.eu%2Fgemet%2Fconcept%2F12161%2Chttp%3A%2F%2Fwww.eionet.europa.eu%2Fgemet%2Fconcept%2F12161%2Chttp%3A%2F%2Fwww.eionet.europa.eu%2Fgemet%2Fconcept%2F9193%2Chttp%3A%2F%2Fwww.eionet.europa.eu%2Fgemet%2Fconcept%2F3763%2Chttp%3A%2F%2Fwww.eionet.europa.eu%2Fgemet%2Fconcept%2F3763&amp;lang=ger,fre,ita,eng,roh" />
+      <gmd:descriptiveKeywords xlink:href="local://srv/api/registries/vocabularies/keyword?skipdescriptivekeywords=true&amp;thesaurus=external.theme.gemet-theme&amp;id=http%3A%2F%2Fwww.eionet.europa.eu%2Fgemet%2Ftheme%2F35&amp;lang=ger,fre,ita,eng,roh" />
+      <gmd:resourceSpecificUsage>
+        <gmd:MD_Usage>
+          <gmd:specificUsage gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString />
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE" />
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:specificUsage>
+          <gmd:userDeterminedLimitations gco:nilReason="missing">
+            <gco:CharacterString />
+          </gmd:userDeterminedLimitations>
+          <gmd:userContactInfo />
+        </gmd:MD_Usage>
+      </gmd:resourceSpecificUsage>
+      <gmd:resourceConstraints>
+        <gmd:MD_SecurityConstraints>
+          <gmd:classification>
+            <gmd:MD_ClassificationCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ClassificationCode" codeListValue="unclassified" />
+          </gmd:classification>
+          <gmd:userNote xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Teile der Daten sind mit einer Lizenz belegt.</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE">Teile der Daten sind mit einer Lizenz belegt.</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#FR">Une partie des données est soumise à une licence.</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#EN">Parts of the data are subject to a licence.</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:userNote>
+          <gmd:classificationSystem gco:nilReason="missing">
+            <gco:CharacterString />
+          </gmd:classificationSystem>
+        </gmd:MD_SecurityConstraints>
+      </gmd:resourceConstraints>
+      <gmd:resourceConstraints>
+        <gmd:MD_LegalConstraints>
+          <gmd:useLimitation xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Zitat Publikation</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE">Zitat Publikation</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:useLimitation>
+          <gmd:accessConstraints>
+            <gmd:MD_RestrictionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode" codeListValue="license" />
+          </gmd:accessConstraints>
+          <gmd:useConstraints>
+            <gmd:MD_RestrictionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode" codeListValue="license" />
+          </gmd:useConstraints>
+          <gmd:otherConstraints xsi:type="gmd:PT_FreeText_PropertyType">
+            <gmx:Anchor xlink:href="https://opendata.swiss/en/terms-of-use/#terms_open">Opendata OPEN: Freie Nutzung.</gmx:Anchor>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE">Opendata OPEN: Freie Nutzung.</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#FR">Opendata OPEN: Utilisation libre.</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#IT">Opendata OPEN: Libero utilizzo.</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#EN">Opendata OPEN: Open use.</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:otherConstraints>
+          <gmd:otherConstraints xsi:type="gmd:PT_FreeText_PropertyType">
+            <gmx:Anchor xlink:href="https://creativecommons.org/licenses/by-sa/4.0/">Lizenzpflichtig (CC BY-SA).</gmx:Anchor>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE">Lizenzpflichtig (CC BY-SA).</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#FR">Sous licence (CC BY-SA).</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#EN">Subject to license (CC BY-SA).</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:otherConstraints>
+        </gmd:MD_LegalConstraints>
+      </gmd:resourceConstraints>
+      <gmd:spatialRepresentationType>
+        <gmd:MD_SpatialRepresentationTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector" />
+      </gmd:spatialRepresentationType>
+      <gmd:spatialResolution>
+        <gmd:MD_Resolution>
+          <gmd:equivalentScale>
+            <gmd:MD_RepresentativeFraction>
+              <gmd:denominator>
+                <gco:Integer>100000</gco:Integer>
+              </gmd:denominator>
+            </gmd:MD_RepresentativeFraction>
+          </gmd:equivalentScale>
+        </gmd:MD_Resolution>
+      </gmd:spatialResolution>
+      <gmd:language>
+        <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
+      </gmd:language>
+      <gmd:characterSet>
+        <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+      </gmd:characterSet>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>geoscientificInformation</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>geoscientificInformation_Soils</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:extent xlink:href="local://srv/api/registries/entries/geocatch-subtpl-extent-landesgebiet-CH?lang=ger,fre,ita,eng,roh&amp;schema=iso19139.che" />
+    </che:CHE_MD_DataIdentification>
+  </gmd:identificationInfo>
+  <gmd:distributionInfo xmlns:java="java:org.fao.geonet.util.XslUtil" xmlns:geonet="http://www.fao.org/geonetwork">
+    <gmd:MD_Distribution>
+      <gmd:distributionFormat xlink:href="local://srv/api/registries/entries/8399cf65-576a-4287-9812-8012a1fbe2a3?lang=ger,fre,ita,eng,roh&amp;schema=iso19139.che" />
+      <gmd:distributionFormat xlink:href="local://srv/api/registries/entries/aaa0c6ab-6005-44d8-bb09-aa75da2ccae3?lang=ger,fre,ita,eng,roh&amp;schema=iso19139.che" />
+      <gmd:distributor />
+      <gmd:transferOptions>
+        <gmd:MD_DigitalTransferOptions>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage xsi:type="che:PT_FreeURL_PropertyType">
+                <gmd:URL>https://www.agroscope.admin.ch/agroscope/de/home/themen/umwelt-ressourcen/klima-lufthygiene/co2-treibhausgase-landwirtschaftliche-boeden/organische-boeden/flaeche.html</gmd:URL>
+                <che:PT_FreeURL>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#DE">https://www.agroscope.admin.ch/agroscope/de/home/themen/umwelt-ressourcen/klima-lufthygiene/co2-treibhausgase-landwirtschaftliche-boeden/organische-boeden/flaeche.html</che:LocalisedURL>
+                  </che:URLGroup>
+                </che:PT_FreeURL>
+              </gmd:linkage>
+              <gmd:protocol>
+                <gco:CharacterString>WWW:LINK</gco:CharacterString>
+              </gmd:protocol>
+              <gmd:name xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Link zum Projekt</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">Link zum Projekt</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Liens vers le project</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Link to the project</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:name>
+              <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Link zum Projekt</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">Link zum Projekt</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Liens vers le projet</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Link to the project</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:description>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage xsi:type="che:PT_FreeURL_PropertyType">
+                <gmd:URL>https://data.geo.admin.ch/browser/index.html#/collections/ch.agroscope.abschaetzung-organische_boeden</gmd:URL>
+                <che:PT_FreeURL>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#DE">https://data.geo.admin.ch/browser/index.html#/collections/ch.agroscope.abschaetzung-organische_boeden</che:LocalisedURL>
+                  </che:URLGroup>
+                </che:PT_FreeURL>
+              </gmd:linkage>
+              <gmd:protocol>
+                <gco:CharacterString>WWW:DOWNLOAD-URL</gco:CharacterString>
+              </gmd:protocol>
+              <gmd:name xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>STAC Browser</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">STAC Browser</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Lien vers les données à télécharger</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:name>
+              <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Link zum Datenbezug</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">Link zum Datenbezug</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Lien vers la distribution des données</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#IT">Link per le fonti dei dati</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Link for data download</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:description>
+              <gmd:function>
+                <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download" />
+              </gmd:function>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage xsi:type="che:PT_FreeURL_PropertyType">
+                <gmd:URL>https://map.geo.admin.ch/?layers=ch.agroscope.abschaetzung-organische_boeden</gmd:URL>
+                <che:PT_FreeURL>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#DE">https://map.geo.admin.ch/?layers=ch.agroscope.abschaetzung-organische_boeden</che:LocalisedURL>
+                  </che:URLGroup>
+                </che:PT_FreeURL>
+              </gmd:linkage>
+              <gmd:protocol>
+                <gco:CharacterString>MAP:Preview</gco:CharacterString>
+              </gmd:protocol>
+              <gmd:name xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Vorschau der Karte</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">Vorschau der Karte</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Prévie da la carte</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Map preview</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:name>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage xsi:type="che:PT_FreeURL_PropertyType">
+                <gmd:URL>https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map.pdf</gmd:URL>
+                <che:PT_FreeURL>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#DE">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#FR">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#IT">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#EN">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#RM">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                </che:PT_FreeURL>
+              </gmd:linkage>
+              <gmd:protocol>
+                <gco:CharacterString>WWW:LINK</gco:CharacterString>
+              </gmd:protocol>
+              <gmd:name xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Wüst-Galley Leifeld 2025 org soils map.pdf</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">Wüst-Galley Leifeld 2025 org soils map.pdf</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Wüst-Galley Leifeld 2025 org soils map.pdf</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#IT">Wüst-Galley Leifeld 2025 org soils map.pdf</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Wüst-Galley Leifeld 2025 org soils map.pdf</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#RM">Wüst-Galley Leifeld 2025 org soils map.pdf</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:name>
+              <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Link zur Publikation</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">Link zur Publikation</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:description>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage xsi:type="che:PT_FreeURL_PropertyType">
+                <gmd:URL>https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20et%20al%202015%20LocatingOrganicSoilsForTheSwissGreenhouseGasInventory.pdf</gmd:URL>
+                <che:PT_FreeURL>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#DE">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20et%20al%202015%20LocatingOrganicSoilsForTheSwissGreenhouseGasInventory.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#FR">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20et%20al%202015%20LocatingOrganicSoilsForTheSwissGreenhouseGasInventory.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#IT">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20et%20al%202015%20LocatingOrganicSoilsForTheSwissGreenhouseGasInventory.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#EN">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20et%20al%202015%20LocatingOrganicSoilsForTheSwissGreenhouseGasInventory.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#RM">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20et%20al%202015%20LocatingOrganicSoilsForTheSwissGreenhouseGasInventory.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                </che:PT_FreeURL>
+              </gmd:linkage>
+              <gmd:protocol>
+                <gco:CharacterString>WWW:LINK</gco:CharacterString>
+              </gmd:protocol>
+              <gmd:name xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Wüst-Galley et al 2015 LocatingOrganicSoilsForTheSwissGreenhouseGasInventory.pdf</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">Wüst-Galley et al 2015 LocatingOrganicSoilsForTheSwissGreenhouseGasInventory.pdf</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Wüst-Galley et al 2015 LocatingOrganicSoilsForTheSwissGreenhouseGasInventory.pdf</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#IT">Wüst-Galley et al 2015 LocatingOrganicSoilsForTheSwissGreenhouseGasInventory.pdf</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Wüst-Galley et al 2015 LocatingOrganicSoilsForTheSwissGreenhouseGasInventory.pdf</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#RM">Wüst-Galley et al 2015 LocatingOrganicSoilsForTheSwissGreenhouseGasInventory.pdf</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:name>
+              <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Publikation zu den Daten von 2015</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">Publikation zu den Daten von 2015</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Publication expliquant les données de 2015</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Publication explaining the data of 2015</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:description>
+              <gmd:function>
+                <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download" />
+              </gmd:function>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage xsi:type="che:PT_FreeURL_PropertyType">
+                <gmd:URL>https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map%20SI.pdf</gmd:URL>
+                <che:PT_FreeURL>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#DE">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map%20SI.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#FR">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map%20SI.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#IT">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map%20SI.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#EN">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map%20SI.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#RM">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map%20SI.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                </che:PT_FreeURL>
+              </gmd:linkage>
+              <gmd:protocol>
+                <gco:CharacterString>WWW:DOWNLOAD</gco:CharacterString>
+              </gmd:protocol>
+              <gmd:name xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Wüst-Galley Leifeld 2025 org soils map SI.pdf</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">Wüst-Galley Leifeld 2025 org soils map SI.pdf</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Wüst-Galley Leifeld 2025 org soils map SI.pdf</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#IT">Wüst-Galley Leifeld 2025 org soils map SI.pdf</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Wüst-Galley Leifeld 2025 org soils map SI.pdf</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#RM">Wüst-Galley Leifeld 2025 org soils map SI.pdf</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:name>
+              <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Publikation zu den Daten von 2024</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">Publikation zu den Daten von 2024</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Publication expliquant les données de 2024</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Publication explaining the data of 2024</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:description>
+              <gmd:function>
+                <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download" />
+              </gmd:function>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage xsi:type="che:PT_FreeURL_PropertyType">
+                <gmd:URL>https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/Soil_Legende_BGDI_Arial12_DE.png</gmd:URL>
+                <che:PT_FreeURL>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#DE">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/Soil_Legende_BGDI_Arial12_DE.png</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#FR">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/Soil_Legende_BGDI_Arial12_Fr.png</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#IT">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/Soil_Legende_BGDI_Arial12_Fr.png</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#EN">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/Soil_Legende_BGDI_Arial12_DE.png</che:LocalisedURL>
+                  </che:URLGroup>
+                </che:PT_FreeURL>
+              </gmd:linkage>
+              <gmd:protocol>
+                <gco:CharacterString>LEGEND:PNG</gco:CharacterString>
+              </gmd:protocol>
+              <gmd:name xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Legende (Deutsch)</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">Legende (Deutsch)</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Légende (française)</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#IT">Legenda (francese)</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Legend (German)</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:name>
+              <gmd:function>
+                <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information" />
+              </gmd:function>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage xsi:type="che:PT_FreeURL_PropertyType">
+                <gmd:URL>https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/Abstract_de_engl_fr_def.pdf</gmd:URL>
+                <che:PT_FreeURL>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#DE">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/Abstract_de_engl_fr_def.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#FR">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/Abstract_de_engl_fr_def.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#IT">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/Abstract_de_engl_fr_def.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#EN">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/Abstract_de_engl_fr_def.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#RM">https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/Abstract_de_engl_fr_def.pdf</che:LocalisedURL>
+                  </che:URLGroup>
+                </che:PT_FreeURL>
+              </gmd:linkage>
+              <gmd:protocol>
+                <gco:CharacterString>WWW:DOWNLOAD</gco:CharacterString>
+              </gmd:protocol>
+              <gmd:name xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Abstract_de_engl_fr_def.pdf</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">Abstract_de_engl_fr_def.pdf</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Abstract_de_engl_fr_def.pdf</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#IT">Abstract_de_engl_fr_def.pdf</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Abstract_de_engl_fr_def.pdf</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#RM">Abstract_de_engl_fr_def.pdf</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:name>
+              <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Zusätzliche Beschreibung der Daten</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">Zusätzliche Beschreibung der Daten</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Description aditionelle des données</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Additional description of the data</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:description>
+              <gmd:function>
+                <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download" />
+              </gmd:function>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage xsi:type="che:PT_FreeURL_PropertyType">
+                <gmd:URL />
+              </gmd:linkage>
+              <gmd:protocol>
+                <gco:CharacterString>OGC:WMS</gco:CharacterString>
+              </gmd:protocol>
+              <gmd:name xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>ch.agroscope.abschaetzung-organische_boeden</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">ch.agroscope.abschaetzung-organische_boeden</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">ch.agroscope.abschaetzung-organische_boeden</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">ch.agroscope.abschaetzung-organische_boeden</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:name>
+              <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>WMS-BGDI Dienst, Layer "Organische Boeden CH 2024"</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">WMS-BGDI Dienst, Layer "Organische Boeden CH 2024"</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Service WMS-BGDI, couche "Sols organiques CH 2024</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">WMS-BGDI service, layer "Organic soils CH 2024"</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:description>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage xsi:type="che:PT_FreeURL_PropertyType">
+                <che:PT_FreeURL>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#FR" />
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#IT" />
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#EN" />
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#RM" />
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#DE" />
+                  </che:URLGroup>
+                </che:PT_FreeURL>
+              </gmd:linkage>
+              <gmd:protocol>
+                <gco:CharacterString>OGC:WMTS</gco:CharacterString>
+              </gmd:protocol>
+              <gmd:name xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>ch.agroscope.abschaetzung-organische_boeden</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">ch.agroscope.abschaetzung-organische_boeden</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">ch.agroscope.abschaetzung-organische_boeden</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">ch.agroscope.abschaetzung-organische_boeden</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:name>
+              <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>WMTS-BGDI Dienst, Layer "Organische Boeden CH 2024"</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">WMTS-BGDI Dienst, Layer "Organische Boeden CH 2024"</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Service WMTS-BGDI, couche "Sols organiques CH 2024</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">WMTS-BGDI service, layer "Organic soils CH 2024"</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:description>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+        </gmd:MD_DigitalTransferOptions>
+      </gmd:transferOptions>
+    </gmd:MD_Distribution>
+  </gmd:distributionInfo>
+  <gmd:metadataMaintenance xmlns:geonet="http://www.fao.org/geonetwork">
+    <che:CHE_MD_MaintenanceInformation gco:isoType="gmd:MD_MaintenanceInformation">
+      <gmd:maintenanceAndUpdateFrequency>
+        <gmd:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="notPlanned" />
+      </gmd:maintenanceAndUpdateFrequency>
+    </che:CHE_MD_MaintenanceInformation>
+  </gmd:metadataMaintenance>
+</che:CHE_MD_Metadata>
