@@ -302,7 +302,9 @@
           "definition" :"Grundwasserschutzzonen",
           "code" :"",
           "isAbstract" :"",
-          "aliases" : ""
+          "aliases" : [
+          
+          ]
           
           
           
