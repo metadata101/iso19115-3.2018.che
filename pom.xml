@@ -13,7 +13,7 @@
 
   <properties>
     <xmlunit.version>2.10.0</xmlunit.version>
-    <gn.version>4.4.9-0</gn.version>
+    <gn.version>4.4.10-SEBR72-SNAPSHOT</gn.version>
   </properties>
 
   <dependencies>
@@ -217,6 +217,23 @@
       <id>osgeo</id>
       <name>OSGeo Release repository</name>
       <url>https://repo.osgeo.org/repository/release/</url>
+    </repository>
+    <repository>
+      <id>central</id>
+      <name>Maven Repository Switchboard</name>
+      <layout>default</layout>
+      <url>https://repo1.maven.org/maven2</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <id>sebr72</id>
+      <name>C2C commit specifics Repository</name>
+      <url>https://maven.pkg.github.com/sebr72/core-geonetwork</url>
     </repository>
   </repositories>
 </project>
