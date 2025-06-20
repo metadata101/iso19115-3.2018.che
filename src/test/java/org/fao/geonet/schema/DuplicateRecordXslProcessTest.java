@@ -34,7 +34,7 @@ public class DuplicateRecordXslProcessTest extends XslProcessTest {
 
     public DuplicateRecordXslProcessTest() {
         super();
-        this.setXslFilename("duplicate-metadata.xsl");
+        this.setXslFilename("gn-site/WEB-INF/data/config/schema_plugins/iso19115-3.2018.che/duplicate-metadata.xsl");
         this.setXmlFilename("metadata.xml");
         this.setNs(ISO19115_3_2018SchemaPlugin.allNamespaces);
     }
