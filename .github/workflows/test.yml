@@ -23,5 +23,7 @@ jobs:
         cache: maven
 
     - name: "Run test"
+      env:
+        SEBR72_TOKEN: ${{ secrets.SEBR72_TOKEN }}
       run: |
-        mvn clean install
+        mvn clean install -U -s settings.xml
