@@ -211,7 +211,7 @@ public class XslConversionTest {
 
     @Test
     public void validateGruenflaechenSchema() throws Exception {
-        Path xslFile = getResourceInsideSchema("convert/fromISO19139.xsl");
+        Path xslFile = getResourceInsideSchema("convert/fromISO19139.che.xsl");
         Path xmlFile = getResource("gruenflaechen-19139.che.xml");
         Element gruenflaechen = Xml.loadFile(xmlFile);
 
@@ -279,7 +279,7 @@ public class XslConversionTest {
     }
 
     private Element transformAndCompare(String mdNameRoot, boolean requireXmlHeader) throws Exception {
-        Path xslFile = getResourceInsideSchema("convert/fromISO19139.xsl");
+        Path xslFile = getResourceInsideSchema("convert/fromISO19139.che.xsl");
         Path xmlFile = getResource(mdNameRoot + "-19139.che.xml");
         Element source = Xml.loadFile(xmlFile);
 
