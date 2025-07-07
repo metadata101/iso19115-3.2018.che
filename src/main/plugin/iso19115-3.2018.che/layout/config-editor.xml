@@ -24,6 +24,7 @@
         xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0"
         xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1"
         xmlns:gml="http://www.opengis.net/gml/3.2"
+        xmlns:che="http://geocat.ch/che"
         xmlns:xlink="http://www.w3.org/1999/xlink">
 
   <!-- Form field type configuration. Default is text. -->
@@ -453,6 +454,7 @@
     <name>mdb:extent</name>
     <name>mdb:identificationInfo</name>
     <name>mdb:MD_Metadata</name>
+    <name>che:CHE_MD_Metadata</name>
     <name>mdb:metadataConstraints</name>
     <name>mdb:metadataLinkage</name>
     <name>mdb:metadataScope</name>
@@ -698,37 +700,37 @@
       </sidePanel>
 
       <tab id="default" default="true" mode="flat">
-        <section xpath="/mdb:MD_Metadata/mdb:identificationInfo" collapsible="false"/>
-        <section xpath="/mdb:MD_Metadata/mdb:contentInfo" collapsible="false"/>
-        <section xpath="/mdb:MD_Metadata/mdb:distributionInfo"/>
-        <section xpath="/mdb:MD_Metadata/mdb:dataQualityInfo"/>
-        <section xpath="/mdb:MD_Metadata/mdb:resourceLineage"/>
-        <section xpath="/mdb:MD_Metadata/mdb:spatialRepresentationInfo"/>
-        <section xpath="/mdb:MD_Metadata/mdb:referenceSystemInfo"/>
-        <section xpath="/mdb:MD_Metadata/mdb:acquisitionInformation"/>
-        <section xpath="/mdb:MD_Metadata/mdb:portrayalCatalogueInfo"/>
-        <section xpath="/mdb:MD_Metadata/mdb:metadataConstraints"/>
-        <section xpath="/mdb:MD_Metadata/mdb:metadataMaintenance"/>
-        <section xpath="/mdb:MD_Metadata/mdb:applicationSchemaInfo"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:identificationInfo" collapsible="false"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:contentInfo" collapsible="false"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:distributionInfo"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:dataQualityInfo"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:resourceLineage"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:spatialRepresentationInfo"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:referenceSystemInfo"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:acquisitionInformation"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:portrayalCatalogueInfo"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:metadataConstraints"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:metadataMaintenance"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:applicationSchemaInfo"/>
         <section name="metadata" collapsed="true">
-          <field xpath="/mdb:MD_Metadata/mdb:metadataIdentifier"/>
-          <field xpath="/mdb:MD_Metadata/mdb:defaultLocale" or="defaultLocale"
-                 in="/mdb:MD_Metadata"/>
-          <field xpath="/mdb:MD_Metadata/mdb:otherLocale" or="otherLocale"
-                 in="/mdb:MD_Metadata"/>
-          <field xpath="/mdb:MD_Metadata/mdb:contact" or="contact"
-                 in="/mdb:MD_Metadata"/>
-          <field xpath="/mdb:MD_Metadata/mdb:parentMetadata" or="parentMetadata"
-                 in="/mdb:MD_Metadata"/>
-          <field xpath="/mdb:MD_Metadata/mdb:metadataScope" or="metadataScope"
-                 in="/mdb:MD_Metadata"/>
-          <field xpath="/mdb:MD_Metadata/mdb:alternativeMetadataReference" or="alternativeMetadataReference"
-                 in="/mdb:MD_Metadata"/>
-          <field xpath="/mdb:MD_Metadata/mdb:metadataLinkage" or="metadataLinkage"
-                 in="/mdb:MD_Metadata"/>
-          <field xpath="/mdb:MD_Metadata/mdb:dateInfo"/>
-          <field xpath="/mdb:MD_Metadata/mdb:metadataStandard"/>
-          <field xpath="/mdb:MD_Metadata/mdb:metadataProfile"/>
+          <field xpath="/che:CHE_MD_Metadata/mdb:metadataIdentifier"/>
+          <field xpath="/che:CHE_MD_Metadata/mdb:defaultLocale" or="defaultLocale"
+                 in="/che:CHE_MD_Metadata"/>
+          <field xpath="/che:CHE_MD_Metadata/mdb:otherLocale" or="otherLocale"
+                 in="/che:CHE_MD_Metadata"/>
+          <field xpath="/che:CHE_MD_Metadata/mdb:contact" or="contact"
+                 in="/che:CHE_MD_Metadata"/>
+          <field xpath="/che:CHE_MD_Metadata/mdb:parentMetadata" or="parentMetadata"
+                 in="/che:CHE_MD_Metadata"/>
+          <field xpath="/che:CHE_MD_Metadata/mdb:metadataScope" or="metadataScope"
+                 in="/che:CHE_MD_Metadata"/>
+          <field xpath="/che:CHE_MD_Metadata/mdb:alternativeMetadataReference" or="alternativeMetadataReference"
+                 in="/che:CHE_MD_Metadata"/>
+          <field xpath="/che:CHE_MD_Metadata/mdb:metadataLinkage" or="metadataLinkage"
+                 in="/che:CHE_MD_Metadata"/>
+          <field xpath="/che:CHE_MD_Metadata/mdb:dateInfo"/>
+          <field xpath="/che:CHE_MD_Metadata/mdb:metadataStandard"/>
+          <field xpath="/che:CHE_MD_Metadata/mdb:metadataProfile"/>
         </section>
       </tab>
 
@@ -805,86 +807,86 @@
       </sidePanel>
 
       <tab id="identificationInfo" default="true">
-        <section xpath="/mdb:MD_Metadata/mdb:identificationInfo" or="identificationInfo"
-                 in="/mdb:MD_Metadata"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:identificationInfo" or="identificationInfo"
+                 in="/che:CHE_MD_Metadata"/>
       </tab>
       <tab id="contentInfo">
-        <section xpath="/mdb:MD_Metadata/mdb:contentInfo" or="contentInfo" in="/mdb:MD_Metadata"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:contentInfo" or="contentInfo" in="/che:CHE_MD_Metadata"/>
       </tab>
       <tab id="distributionInfo">
-        <section xpath="/mdb:MD_Metadata/mdb:distributionInfo" or="distributionInfo"
-                 in="/mdb:MD_Metadata"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:distributionInfo" or="distributionInfo"
+                 in="/che:CHE_MD_Metadata"/>
       </tab>
       <!--
       mdb:distributionInfo/mrd:MD_Distribution/mrd:transferOptions/mrd:MD_DigitalTransferOptions
       -->
       <tab id="dataQualityInfo">
-        <section xpath="/mdb:MD_Metadata/mdb:dataQualityInfo" or="dataQualityInfo"
-                 in="/mdb:MD_Metadata"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:dataQualityInfo" or="dataQualityInfo"
+                 in="/che:CHE_MD_Metadata"/>
       </tab>
       <!--
       Example to display a table view of quality measures.
       <tab id="qualityMeasures">
         <section>
-          <xsl xpath="/mdb:MD_Metadata/mdb:dataQualityInfo"
+          <xsl xpath="/che:CHE_MD_Metadata/mdb:dataQualityInfo"
                or="report"
                mode="iso19115-3.2018-qm"/>
         </section>
       </tab>-->
       <tab id="resourceLineage">
-        <section xpath="/mdb:MD_Metadata/mdb:resourceLineage" or="resourceLineage"
-                 in="/mdb:MD_Metadata"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:resourceLineage" or="resourceLineage"
+                 in="/che:CHE_MD_Metadata"/>
       </tab>
       <tab id="spatialRepresentationInfo">
-        <section xpath="/mdb:MD_Metadata/mdb:spatialRepresentationInfo"
-                 or="spatialRepresentationInfo" in="/mdb:MD_Metadata"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:spatialRepresentationInfo"
+                 or="spatialRepresentationInfo" in="/che:CHE_MD_Metadata"/>
       </tab>
       <tab id="referenceSystemInfo">
-        <section xpath="/mdb:MD_Metadata/mdb:referenceSystemInfo" or="referenceSystemInfo"
-                 in="/mdb:MD_Metadata"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:referenceSystemInfo" or="referenceSystemInfo"
+                 in="/che:CHE_MD_Metadata"/>
       </tab>
       <tab id="acquisitionInformation">
-        <section xpath="/mdb:MD_Metadata/mdb:acquisitionInformation" or="acquisitionInformation"
-                 in="/mdb:MD_Metadata"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:acquisitionInformation" or="acquisitionInformation"
+                 in="/che:CHE_MD_Metadata"/>
       </tab>
       <tab id="metadata">
         <section name="metadata">
-          <field xpath="/mdb:MD_Metadata/mdb:metadataIdentifier"/>
-          <field xpath="/mdb:MD_Metadata/mdb:defaultLocale" or="defaultLocale"
-                 in="/mdb:MD_Metadata"/>
-          <field xpath="/mdb:MD_Metadata/mdb:otherLocale" or="otherLocale"
-                 in="/mdb:MD_Metadata"/>
-          <field xpath="/mdb:MD_Metadata/mdb:contact" or="contact"
-                 in="/mdb:MD_Metadata"/>
-          <field xpath="/mdb:MD_Metadata/mdb:parentMetadata" or="parentMetadata"
-                 in="/mdb:MD_Metadata"/>
-          <field xpath="/mdb:MD_Metadata/mdb:metadataScope" or="metadataScope"
-                 in="/mdb:MD_Metadata"/>
-          <field xpath="/mdb:MD_Metadata/mdb:alternativeMetadataReference" or="alternativeMetadataReference"
-                 in="/mdb:MD_Metadata"/>
-          <field xpath="/mdb:MD_Metadata/mdb:metadataLinkage" or="metadataLinkage"
-                 in="/mdb:MD_Metadata"/>
-          <field xpath="/mdb:MD_Metadata/mdb:dateInfo" or="dateInfo"
-                 in="/mdb:MD_Metadata"/>
-          <field xpath="/mdb:MD_Metadata/mdb:metadataStandard"/>
-          <field xpath="/mdb:MD_Metadata/mdb:metadataProfile"/>
+          <field xpath="/che:CHE_MD_Metadata/mdb:metadataIdentifier"/>
+          <field xpath="/che:CHE_MD_Metadata/mdb:defaultLocale" or="defaultLocale"
+                 in="/che:CHE_MD_Metadata"/>
+          <field xpath="/che:CHE_MD_Metadata/mdb:otherLocale" or="otherLocale"
+                 in="/che:CHE_MD_Metadata"/>
+          <field xpath="/che:CHE_MD_Metadata/mdb:contact" or="contact"
+                 in="/che:CHE_MD_Metadata"/>
+          <field xpath="/che:CHE_MD_Metadata/mdb:parentMetadata" or="parentMetadata"
+                 in="/che:CHE_MD_Metadata"/>
+          <field xpath="/che:CHE_MD_Metadata/mdb:metadataScope" or="metadataScope"
+                 in="/che:CHE_MD_Metadata"/>
+          <field xpath="/che:CHE_MD_Metadata/mdb:alternativeMetadataReference" or="alternativeMetadataReference"
+                 in="/che:CHE_MD_Metadata"/>
+          <field xpath="/che:CHE_MD_Metadata/mdb:metadataLinkage" or="metadataLinkage"
+                 in="/che:CHE_MD_Metadata"/>
+          <field xpath="/che:CHE_MD_Metadata/mdb:dateInfo" or="dateInfo"
+                 in="/che:CHE_MD_Metadata"/>
+          <field xpath="/che:CHE_MD_Metadata/mdb:metadataStandard"/>
+          <field xpath="/che:CHE_MD_Metadata/mdb:metadataProfile"/>
         </section>
       </tab>
       <tab id="portrayalCatalogueInfo" toggle="true">
-        <section xpath="/mdb:MD_Metadata/mdb:portrayalCatalogueInfo" or="portrayalCatalogueInfo"
-                 in="/mdb:MD_Metadata"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:portrayalCatalogueInfo" or="portrayalCatalogueInfo"
+                 in="/che:CHE_MD_Metadata"/>
       </tab>
       <tab id="metadataConstraints" toggle="true">
-        <section xpath="/mdb:MD_Metadata/mdb:metadataConstraints" or="metadataConstraints"
-                 in="/mdb:MD_Metadata"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:metadataConstraints" or="metadataConstraints"
+                 in="/che:CHE_MD_Metadata"/>
       </tab>
       <tab id="metadataMaintenance" toggle="true">
-        <section xpath="/mdb:MD_Metadata/mdb:metadataMaintenance" or="metadataMaintenance"
-                 in="/mdb:MD_Metadata"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:metadataMaintenance" or="metadataMaintenance"
+                 in="/che:CHE_MD_Metadata"/>
       </tab>
       <tab id="applicationSchemaInfo" toggle="true">
-        <section xpath="/mdb:MD_Metadata/mdb:applicationSchemaInfo" or="applicationSchemaInfo"
-                 in="/mdb:MD_Metadata"/>
+        <section xpath="/che:CHE_MD_Metadata/mdb:applicationSchemaInfo" or="applicationSchemaInfo"
+                 in="/che:CHE_MD_Metadata"/>
       </tab>
 
       <thesaurusList defaultTransformation="to-iso19115-3.2018-keyword-with-anchor"/>
