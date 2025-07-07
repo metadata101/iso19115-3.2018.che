@@ -73,7 +73,7 @@
   <xsl:variable name="langId" select="gn-fn-iso19115-3.2018:getLangId($metadata, $language)"/>
 
   <xsl:variable name="allLanguages">
-    <xsl:call-template name="get-iso19115-3.2018-other-languages"/>
+    <xsl:call-template name="get-iso19115-3.2018.che-other-languages"/>
   </xsl:variable>
 
   <xsl:variable name="isOnlyFeatureCatalog"
