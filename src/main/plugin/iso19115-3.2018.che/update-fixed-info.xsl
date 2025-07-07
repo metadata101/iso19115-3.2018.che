@@ -23,11 +23,12 @@
   xmlns:java="java:org.fao.geonet.util.XslUtil"
   xmlns:mime="java:org.fao.geonet.util.MimeTypeFinder"
   xmlns:gn="http://www.fao.org/geonetwork"
+  xmlns:che="http://geocat.ch/che"
   exclude-result-prefixes="#all">
 
   <xsl:import href="convert/ISO19139/utility/create19115-3Namespaces.xsl"/>
 
-  <xsl:include href="convert/functions.xsl"/>
+  <xsl:include href="../iso19139/convert/functions.xsl"/>
   <xsl:include href="layout/utility-fn.xsl"/>
 
   <xsl:variable name="editorConfig"
@@ -61,7 +62,7 @@
   <xsl:variable name="uuid" select="/root/env/uuid"/>
 
   <xsl:template match="/root">
-    <xsl:apply-templates select="mdb:MD_Metadata"/>
+    <xsl:apply-templates select="mdb:MD_Metadata|che:CHE_MD_Metadata"/>
   </xsl:template>
 
   <xsl:template match="@xsi:schemaLocation">
@@ -70,7 +71,7 @@
     </xsl:if>
   </xsl:template>
 
-  <xsl:template match="mdb:MD_Metadata">
+  <xsl:template match="mdb:MD_Metadata|che:CHE_MD_Metadata">
     <xsl:copy copy-namespaces="no">
       <xsl:apply-templates select="@*"/>
 
