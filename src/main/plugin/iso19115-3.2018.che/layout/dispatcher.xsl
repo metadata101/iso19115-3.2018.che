@@ -29,13 +29,13 @@
     Load the schema configuration for the editor.
     Same configuration as ISO19139 here.
       -->
-  <xsl:template name="get-iso19115-3.2018-configuration">
+  <xsl:template name="get-iso19115-3.2018.che-configuration">
     <xsl:copy-of select="document('config-editor.xml')"/>
   </xsl:template>
 
 
   <!-- Dispatch to the current profile mode -->
-  <xsl:template name="dispatch-iso19115-3.2018">
+  <xsl:template name="dispatch-iso19115-3.2018.che">
     <xsl:param name="base" as="node()"/>
     <xsl:param name="overrideLabel" as="xs:string?" required="no" select="''"/>
     <xsl:param name="refToDelete" as="node()?" required="no"/>
