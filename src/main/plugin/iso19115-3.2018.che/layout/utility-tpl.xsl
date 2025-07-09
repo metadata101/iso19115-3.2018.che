@@ -21,6 +21,7 @@
   xmlns:gn-fn-index="http://geonetwork-opensource.org/xsl/functions/index"
   xmlns:util="java:org.fao.geonet.util.XslUtil"
   xmlns:gn="http://www.fao.org/geonetwork"
+  xmlns:che="http://geocat.ch/che"
   xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="#all">
 
   <xsl:import href="common/index-utils.xsl"/>
@@ -38,7 +39,7 @@
 "/>
   </xsl:template>
 
-  <xsl:template mode="get-formats-as-json" match="mdb:MD_Metadata">
+  <xsl:template mode="get-formats-as-json" match="che:CHE_MD_Metadata">
     [
     <xsl:for-each select="mdb:distributionInfo/*/mrd:distributionFormat/*/mrd:formatSpecificationCitation/*/cit:title/*/text()">{
       "value": "WWW:DOWNLOAD:<xsl:value-of select="util:escapeForJson(.)"/>",
