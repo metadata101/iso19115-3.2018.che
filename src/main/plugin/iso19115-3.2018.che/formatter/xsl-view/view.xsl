@@ -31,6 +31,7 @@
                 xmlns:gn-fn-iso19115-3.2018="http://geonetwork-opensource.org/xsl/functions/profiles/iso19115-3.2018"
                 xmlns:gn-fn-metadata="http://geonetwork-opensource.org/xsl/functions/metadata"
                 xmlns:saxon="http://saxon.sf.net/"
+                xmlns:che="http://geocat.ch/che"
                 extension-element-prefixes="saxon"
                 exclude-result-prefixes="#all">
   <!-- This formatter render an ISO19115-3 record based on the
@@ -69,7 +70,7 @@
 
   <!-- Define the metadata to be loaded for this schema plugin-->
   <xsl:variable name="metadata"
-                select="/root/mdb:MD_Metadata"/>
+                select="/root/che:CHE_MD_Metadata"/>
 
   <xsl:variable name="langId" select="gn-fn-iso19115-3.2018:getLangId($metadata, $language)"/>
 
