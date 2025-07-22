@@ -13,7 +13,7 @@
 
   <properties>
     <xmlunit.version>2.10.0</xmlunit.version>
-    <gn.version>4.4.8-0</gn.version>
+    <gn.version>4.4.8-SEBR72-SNAPSHOT</gn.version>
   </properties>
 
   <dependencies>
