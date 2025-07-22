@@ -23,9 +23,15 @@
 package org.fao.geonet.util;
 
 import org.apache.commons.text.StringEscapeUtils;
+import org.fao.geonet.api.records.attachments.Store;
 import org.fao.geonet.constants.Geonet;
+import org.fao.geonet.domain.MetadataResourceContainer;
+import org.fao.geonet.languages.IsoLanguagesMapper;
+import org.fao.geonet.utils.Xml;
+import org.owasp.esapi.reference.DefaultEncoder;
 import org.w3c.dom.Node;
 
+import java.io.IOException;
 import java.util.List;
 
 public class XslUtil {
@@ -68,6 +74,7 @@ public class XslUtil {
                 return "true";
         }
     }
+
     public static String getSiteUrl() {
         return "";
     }
@@ -115,4 +122,58 @@ public class XslUtil {
     public static String getLanguage() {
         return getDefaultLangCode();
     }
+
+    public static String getUiConfigurationJsonProperty(String key, String path) {
+        return key + "-" + path;
+    }
+
+    public static String getBuildNumber() {
+        return "buildNumber-666";
+    }
+
+    public static String encodeForJavaScript(String str) {
+        return DefaultEncoder.getInstance().encodeForJavaScript(str);
+    }
+
+    public static boolean isDisableLoginForm() {
+        return false;
+    }
+
+    public static boolean isShowLoginAsLink() {
+        return false;
+    }
+
+    public static boolean isUserProfileUpdateEnabled() {
+        return true;
+    }
+
+    public static boolean isUserGroupUpdateEnabled() {
+        return true;
+    }
+
+    public static MetadataResourceContainer getResourceContainerDescription(String metadataUuid, Boolean approved) throws Exception {
+        return null;
+    }
+
+    public static Store.ResourceManagementExternalProperties getResourceManagementExternalProperties() {
+        return null;
+    }
+
+    public static String escapeForEcmaScript(String value) {
+        return StringEscapeUtils.escapeEcmaScript(value);
+    }
+
+    public static String iso639_2T_to_iso639_2B(String iso639_2T) {
+        return IsoLanguagesMapper.iso639_2T_to_iso639_2B(iso639_2T);
+    }
+
+    public static String xmlToJson(Object xml) {
+        try {
+            return Xml.getJSON(xml.toString());
+        } catch (IOException e) {
+           e.printStackTrace();
+        }
+        return "";
+    }
+
 }
