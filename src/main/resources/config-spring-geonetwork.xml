@@ -4,7 +4,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
-  <bean id="iso19115-3.2018SchemaPlugin"
+  <bean id="iso19115-3.2018.cheSchemaPlugin"
         class="org.fao.geonet.schema.iso19115_3_2018_che.ISO19115_3_2018SchemaPlugin">
     <property name="outputSchemas">
       <util:map key-type="java.lang.String" value-type="java.lang.String">
