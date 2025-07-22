@@ -1,5 +1,7 @@
 package org.fao.geonet.schema;
 
+import org.xmlunit.assertj.XmlAssert;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -36,5 +38,16 @@ public class TestSupport {
             fw.write(actual);
             fw.flush();
         }
+    }
+
+    static void assertGeneratedDataXmlMatchExpected(String expectedFilename, String actual, boolean generateExpectedFile) throws IOException, URISyntaxException {
+        String expected;
+        if (generateExpectedFile) {
+            generateFileWithData(expectedFilename, actual);
+            expected = actual;
+        } else {
+            expected = Files.readString(getResource(expectedFilename));
+        }
+        XmlAssert.assertThat(actual).isEqualTo(expected);
     }
 }

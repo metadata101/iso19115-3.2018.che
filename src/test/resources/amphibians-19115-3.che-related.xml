@@ -1,0 +1,60 @@
+<related>
+  <thumbnails>
+    <item>
+      <id>https://www.geocat.ch/geonetwork/srv/api/records/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce/attachments/ICAL.png</id>
+      <url>
+        <value lang="eng">https://www.geocat.ch/geonetwork/srv/api/records/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce/attachments/ICAL.png</value>
+      </url>
+      <title />
+      <type>thumbnail</type>
+    </item>
+  </thumbnails>
+  <onlines>
+    <item>
+      <id>https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf</id>
+      <title>
+        <value lang="eng">Datenbeschreibung_AmphibienAckerland.pdf</value>
+        <value lang="">Datenbeschreibung_AmphibienAckerland.pdf</value>
+      </title>
+      <url>
+        <value lang="eng">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf</value>
+        <value lang="">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf</value>
+        <value lang="">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf</value>
+        <value lang="">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf</value>
+        <value lang="">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf</value>
+        <value lang="">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf</value>
+      </url>
+      <function>download</function>
+      <applicationProfile />
+      <description>
+        <value lang="eng" />
+      </description>
+      <protocol>WWW:DOWNLOAD-URL</protocol>
+      <mimeType />
+      <type>onlinesrc</type>
+    </item>
+    <item>
+      <id>https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf</id>
+      <title>
+        <value lang="eng">DescriptionDonnees_BatrachiensAgricole.pdf</value>
+        <value lang="">DescriptionDonnees_BatrachiensAgricole.pdf</value>
+      </title>
+      <url>
+        <value lang="eng">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf</value>
+        <value lang="">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf</value>
+        <value lang="">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf</value>
+        <value lang="">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf</value>
+        <value lang="">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf</value>
+        <value lang="">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf</value>
+      </url>
+      <function>download</function>
+      <applicationProfile />
+      <description>
+        <value lang="eng" />
+      </description>
+      <protocol>WWW:DOWNLOAD-URL</protocol>
+      <mimeType />
+      <type>onlinesrc</type>
+    </item>
+  </onlines>
+</related>

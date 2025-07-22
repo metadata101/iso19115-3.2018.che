@@ -23,7 +23,6 @@
 package org.fao.geonet.schema;
 
 import java.io.ByteArrayInputStream;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
@@ -38,7 +37,6 @@ import org.jdom.Element;
 
 import static org.fao.geonet.schema.TestSupport.getResource;
 import static org.fao.geonet.schema.TestSupport.getResourceInsideSchema;
-import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
@@ -235,7 +233,7 @@ public class XslConversionTest {
         assertEquals(nsLocation, ns.getURI());
     }
 
-    private String assertStrictByteEquality(String expectedFileName, Element element, boolean requireXmlHeader) throws IOException, URISyntaxException {
+    private void assertStrictByteEquality(String expectedFileName, Element element, boolean requireXmlHeader) throws IOException, URISyntaxException {
         XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
         String actual;
         if (requireXmlHeader) {
@@ -243,18 +241,8 @@ public class XslConversionTest {
         } else {
             actual = xmlOutputter.outputString(element);
         }
-        byte[] expected;
-        if (GENERATE_EXPECTED_FILE) {
-            FileWriter fw = new FileWriter("/home/cmangeat/sources/war-overlay/iso19115-3.2018.che/src/test/resources/" + expectedFileName);
-            fw.write(actual.replaceAll("gml:TimeInstant gml:id=\".*\"", "gml:TimeInstant gml:id=\"\""));
-            fw.flush();
-            expected = actual.getBytes(StandardCharsets.UTF_8);
-            assertArrayEquals(expected, actual.getBytes(StandardCharsets.UTF_8));
-        } else {
-            expected = Files.readAllBytes(getResource(expectedFileName));
-            assertArrayEquals(expected, actual.replaceAll("gml:TimeInstant gml:id=\".*\"", "gml:TimeInstant gml:id=\"\"").getBytes(StandardCharsets.UTF_8));
-        }
-        return actual;
+        String actualReplaced = actual.replaceAll("gml:TimeInstant gml:id=\".*\"", "gml:TimeInstant gml:id=\"\"");
+        TestSupport.assertGeneratedDataByteMatchExpected(expectedFileName, actualReplaced, GENERATE_EXPECTED_FILE);
     }
 
     private void isValid(Element xmlIso19115che) throws SAXException, IOException, URISyntaxException {
