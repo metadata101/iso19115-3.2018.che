@@ -14,9 +14,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.xmlunit.assertj.XmlAssert;
 
-import java.io.FileWriter;
 import java.lang.reflect.Field;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Map;
 import java.util.TimeZone;
@@ -178,16 +176,7 @@ public class IndexationTest {
 
         String actual = indexResource(fileRoot + "-19115-3.che.xml", xslProcess);
 
-        String expected;
-        if (GENERATE_EXPECTED_FILE) {
-            FileWriter fw = new FileWriter("/home/cmangeat/sources/war-overlay/iso19115-3.2018.che/src/test/resources/" + fileRoot + "-index.xml");
-            fw.write(actual);
-            fw.flush();
-            expected = actual;
-        } else {
-            expected = Files.readString(getResource(fileRoot + "-index.xml"));
-        }
-        XmlAssert.assertThat(actual).isEqualTo(expected);
+        TestSupport.assertGeneratedDataXmlMatchExpected(fileRoot + "-index.xml", actual, GENERATE_EXPECTED_FILE);
     }
 
     private String indexResource(String resourceToIndex, String xslProcess) throws Exception {

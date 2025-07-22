@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2001-2026 Food and Agriculture Organization of the
+ * Copyright (C) 2001-2025 Food and Agriculture Organization of the
  * United Nations (FAO-UN), United Nations World Food Programme (WFP)
  * and United Nations Environment Programme (UNEP)
  *
@@ -23,7 +23,6 @@
 
 package org.fao.geonet.schema;
 
-
 import org.fao.geonet.utils.ResolverWrapper;
 import org.fao.geonet.utils.TransformerFactoryFactory;
 import org.fao.geonet.utils.Xml;
@@ -31,7 +30,6 @@ import org.jdom.Element;
 import org.jdom.output.Format;
 import org.jdom.output.XMLOutputter;
 import org.junit.AfterClass;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -48,8 +46,8 @@ public class BuildEditorFormTest {
 
 	private static Field resolverMapField;
 
-	@Before
-	public void initSaxon() {
+	@BeforeClass
+	public static void initSaxon() {
 		TransformerFactoryFactory.init("net.sf.saxon.TransformerFactoryImpl");
 	}
 
@@ -71,9 +69,9 @@ public class BuildEditorFormTest {
 	}
 
 	@Test
-	public void rawUpperRhineCastlesEdit() throws Exception {
+	public void amphibiansEdit() throws Exception {
 		Path xslFile = getResource("gn-site/xslt/ui-metadata/edit/edit.xsl");
-		Path xmlFile = getResource("raw-UpperRhineCastles-inflated-for-edition.xml");
+		Path xmlFile = getResource("amphibians-19115-3.che-raw-french-inflated-for-edition.xml");
 		Element inflatedMd = Xml.loadFile(xmlFile);
 
 		Element editorForm = Xml.transform(inflatedMd, xslFile);
@@ -81,7 +79,21 @@ public class BuildEditorFormTest {
 		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
 		String actual = xmlOutputter.outputString(editorForm);
 
-		TestSupport.assertGeneratedDataByteMatchExpected("raw-UpperRhineCastles-editor-form.xml", actual, GENERATE_EXPECTED_FILE);
+		TestSupport.assertGeneratedDataByteMatchExpected("amphibians-19115-3.che-editor-form.xml", actual, GENERATE_EXPECTED_FILE);
+	}
+
+	@Test
+	public void amphibiansRelations() throws Exception {
+		Path xslFile = getResource("gn-site/xslt/services/metadata/relation.xsl");
+		Path xmlFile = getResource("amphibians-19115-3.che-raw-french-inflated-for-getRelatedResources.xml");
+		Element inflatedMd = Xml.loadFile(xmlFile);
+
+		Element related = Xml.transform(inflatedMd, xslFile);
+
+		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
+		String actual = xmlOutputter.outputString(related);
+
+		TestSupport.assertGeneratedDataByteMatchExpected("amphibians-19115-3.che-related.xml", actual, GENERATE_EXPECTED_FILE);
 	}
 
 	private static Path addRequiredSchemasAndDisableConflictingOne() throws URISyntaxException {
