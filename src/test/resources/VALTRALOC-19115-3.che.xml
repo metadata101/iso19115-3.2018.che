@@ -8,7 +8,7 @@
     </mcc:MD_Identifier>
   </mdb:metadataIdentifier>
   <mdb:defaultLocale>
-    <lan:PT_Locale>
+    <lan:PT_Locale id="FR">
       <lan:language>
         <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="fre">fre</lan:LanguageCode>
       </lan:language>
@@ -127,14 +127,6 @@
     <lan:PT_Locale id="DE">
       <lan:language>
         <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="ger">ger</lan:LanguageCode>
-      </lan:language>
-      <lan:characterEncoding gco:nilReason="unknown" />
-    </lan:PT_Locale>
-  </mdb:otherLocale>
-  <mdb:otherLocale>
-    <lan:PT_Locale id="FR">
-      <lan:language>
-        <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="fre">fre</lan:LanguageCode>
       </lan:language>
       <lan:characterEncoding gco:nilReason="unknown" />
     </lan:PT_Locale>

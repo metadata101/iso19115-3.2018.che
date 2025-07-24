@@ -14,9 +14,7 @@
   <otherLanguageId>EN</otherLanguageId>
   <otherLanguage>ita</otherLanguage>
   <otherLanguageId>IT</otherLanguageId>
-  <otherLanguage>ger</otherLanguage>
-  <otherLanguageId>DE</otherLanguageId>
-  <cl_characterSet type="object">{"key":"utf8","default":"lan:MD_CharacterSetCode--utf8--ger","langger":"lan:MD_CharacterSetCode--utf8--ger","langfre":"lan:MD_CharacterSetCode--utf8--fre","langeng":"lan:MD_CharacterSetCode--utf8--eng","langita":"lan:MD_CharacterSetCode--utf8--ita","langger":"lan:MD_CharacterSetCode--utf8--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_CharacterSetCode","text":"utf8"}</cl_characterSet>
+  <cl_characterSet type="object">{"key":"utf8","default":"lan:MD_CharacterSetCode--utf8--ger","langger":"lan:MD_CharacterSetCode--utf8--ger","langfre":"lan:MD_CharacterSetCode--utf8--fre","langeng":"lan:MD_CharacterSetCode--utf8--eng","langita":"lan:MD_CharacterSetCode--utf8--ita","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_CharacterSetCode","text":"utf8"}</cl_characterSet>
   <resourceType>service</resourceType>
   <resourceTypeNameObject type="object">{"default":"Service", "langger":"Service"}</resourceTypeNameObject>
   <OrgObject type="object">{"default":"KGK-CGC", "langger":"KGK-CGC", "langfre":"KGK-CGC", "langeng":"KGK-CGC", "langita":"KGK-CGC"}</OrgObject>
@@ -39,9 +37,9 @@
       "address":"Speichergasse 6, Bern, 3001, CH"
       
       }</contact>
-  <cl_resourceScope type="object">{"key":"service","default":"mcc:MD_ScopeCode--service--ger","langger":"mcc:MD_ScopeCode--service--ger","langfre":"mcc:MD_ScopeCode--service--fre","langeng":"mcc:MD_ScopeCode--service--eng","langita":"mcc:MD_ScopeCode--service--ita","langger":"mcc:MD_ScopeCode--service--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_ScopeCode","text":"service"}</cl_resourceScope>
-  <cl_numberType type="object">{"key":"voice","default":"cit:CI_TelephoneTypeCode--voice--ger","langger":"cit:CI_TelephoneTypeCode--voice--ger","langfre":"cit:CI_TelephoneTypeCode--voice--fre","langeng":"cit:CI_TelephoneTypeCode--voice--eng","langita":"cit:CI_TelephoneTypeCode--voice--ita","langger":"cit:CI_TelephoneTypeCode--voice--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#CI_TelephoneTypeCode","text":"voice"}</cl_numberType>
-  <cl_type type="object">{"key":"theme","default":"mri:MD_KeywordTypeCode--theme--ger","langger":"mri:MD_KeywordTypeCode--theme--ger","langfre":"mri:MD_KeywordTypeCode--theme--fre","langeng":"mri:MD_KeywordTypeCode--theme--eng","langita":"mri:MD_KeywordTypeCode--theme--ita","langger":"mri:MD_KeywordTypeCode--theme--ger","link":"http:\/\/www.isotc211.org\/2005\/resources\/codeList.xml#MD_KeywordTypeCode"}</cl_type>
+  <cl_resourceScope type="object">{"key":"service","default":"mcc:MD_ScopeCode--service--ger","langger":"mcc:MD_ScopeCode--service--ger","langfre":"mcc:MD_ScopeCode--service--fre","langeng":"mcc:MD_ScopeCode--service--eng","langita":"mcc:MD_ScopeCode--service--ita","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_ScopeCode","text":"service"}</cl_resourceScope>
+  <cl_numberType type="object">{"key":"voice","default":"cit:CI_TelephoneTypeCode--voice--ger","langger":"cit:CI_TelephoneTypeCode--voice--ger","langfre":"cit:CI_TelephoneTypeCode--voice--fre","langeng":"cit:CI_TelephoneTypeCode--voice--eng","langita":"cit:CI_TelephoneTypeCode--voice--ita","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#CI_TelephoneTypeCode","text":"voice"}</cl_numberType>
+  <cl_type type="object">{"key":"theme","default":"mri:MD_KeywordTypeCode--theme--ger","langger":"mri:MD_KeywordTypeCode--theme--ger","langfre":"mri:MD_KeywordTypeCode--theme--fre","langeng":"mri:MD_KeywordTypeCode--theme--eng","langita":"mri:MD_KeywordTypeCode--theme--ita","link":"http:\/\/www.isotc211.org\/2005\/resources\/codeList.xml#MD_KeywordTypeCode"}</cl_type>
   <resourceTitleObject type="object">{"default":"geodienste.ch WMS Grundwasservorkommen", "langger":"geodienste.ch WMS Grundwasservorkommen", "langfre":"geodienste.ch WMS Nappes souterraines", "langita":"geodienste.ch WMS Risorse idriche sotterranee"}</resourceTitleObject>
   <creationDateForResource>2024-11-27</creationDateForResource>
   <creationYearForResource>2024</creationYearForResource>
