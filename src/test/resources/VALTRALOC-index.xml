@@ -8,8 +8,6 @@
   <mainLanguage>fre</mainLanguage>
   <otherLanguage>ger</otherLanguage>
   <otherLanguageId>DE</otherLanguageId>
-  <otherLanguage>fre</otherLanguage>
-  <otherLanguageId>FR</otherLanguageId>
   <resourceType>dataset</resourceType>
   <resourceType>featureCatalog</resourceType>
   <OrgObject type="object">{"default":"Service des ponts et chauss\u00E9es du canton de Fribourg", "langfre":"Service des ponts et chauss\u00E9es du canton de Fribourg", "langger":"Service des ponts et chauss\u00E9es du canton de Fribourg"}</OrgObject>
@@ -32,13 +30,13 @@
       "address":"Rue des Chanoines 17, Fribourg, 1701, CH"
       
       }</contact>
-  <cl_resourceScope type="object">{"key":"dataset","default":"mcc:MD_ScopeCode--dataset--fre","langfre":"mcc:MD_ScopeCode--dataset--fre","langger":"mcc:MD_ScopeCode--dataset--ger","langfre":"mcc:MD_ScopeCode--dataset--fre","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_ScopeCode","text":"dataset"}</cl_resourceScope>
-  <cl_numberType type="object">{"key":"voice","default":"cit:CI_TelephoneTypeCode--voice--fre","langfre":"cit:CI_TelephoneTypeCode--voice--fre","langger":"cit:CI_TelephoneTypeCode--voice--ger","langfre":"cit:CI_TelephoneTypeCode--voice--fre","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#CI_TelephoneTypeCode","text":"voice"}</cl_numberType>
-  <cl_geometricObjectType type="object">{"key":"curve","default":"msr:MD_GeometricObjectTypeCode--curve--fre","langfre":"msr:MD_GeometricObjectTypeCode--curve--fre","langger":"msr:MD_GeometricObjectTypeCode--curve--ger","langfre":"msr:MD_GeometricObjectTypeCode--curve--fre","link":"http:\/\/standards.iso.org\/ittf\/PubliclyAvailableStandards\/ISO_19139_Schemas\/resources\/codelist\/ML_gmxCodelists.xml#MD_GeometricObjectTypeCode"}</cl_geometricObjectType>
-  <cl_status type="object">{"key":"completed","default":"mcc:MD_ProgressCode--completed--fre","langfre":"mcc:MD_ProgressCode--completed--fre","langger":"mcc:MD_ProgressCode--completed--ger","langfre":"mcc:MD_ProgressCode--completed--fre","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_ProgressCode","text":"completed"}</cl_status>
-  <cl_spatialRepresentationType type="object">{"key":"vector","default":"mcc:MD_SpatialRepresentationTypeCode--vector--fre","langfre":"mcc:MD_SpatialRepresentationTypeCode--vector--fre","langger":"mcc:MD_SpatialRepresentationTypeCode--vector--ger","langfre":"mcc:MD_SpatialRepresentationTypeCode--vector--fre","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_SpatialRepresentationTypeCode","text":"vector"}</cl_spatialRepresentationType>
-  <cl_maintenanceAndUpdateFrequency type="object">{"key":"asNeeded","default":"mmi:MD_MaintenanceFrequencyCode--asNeeded--fre","langfre":"mmi:MD_MaintenanceFrequencyCode--asNeeded--fre","langger":"mmi:MD_MaintenanceFrequencyCode--asNeeded--ger","langfre":"mmi:MD_MaintenanceFrequencyCode--asNeeded--fre","link":"http:\/\/standards.iso.org\/ittf\/PubliclyAvailableStandards\/ISO_19139_Schemas\/resources\/codelist\/ML_gmxCodelists.xml#MD_MaintenanceFrequencyCode"}</cl_maintenanceAndUpdateFrequency>
-  <cl_type type="object">{"key":"theme","default":"mri:MD_KeywordTypeCode--theme--fre","langfre":"mri:MD_KeywordTypeCode--theme--fre","langger":"mri:MD_KeywordTypeCode--theme--ger","langfre":"mri:MD_KeywordTypeCode--theme--fre","link":"http:\/\/www.isotc211.org\/2005\/resources\/codeList.xml#MD_KeywordTypeCode"}</cl_type>
+  <cl_resourceScope type="object">{"key":"dataset","default":"mcc:MD_ScopeCode--dataset--fre","langfre":"mcc:MD_ScopeCode--dataset--fre","langger":"mcc:MD_ScopeCode--dataset--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_ScopeCode","text":"dataset"}</cl_resourceScope>
+  <cl_numberType type="object">{"key":"voice","default":"cit:CI_TelephoneTypeCode--voice--fre","langfre":"cit:CI_TelephoneTypeCode--voice--fre","langger":"cit:CI_TelephoneTypeCode--voice--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#CI_TelephoneTypeCode","text":"voice"}</cl_numberType>
+  <cl_geometricObjectType type="object">{"key":"curve","default":"msr:MD_GeometricObjectTypeCode--curve--fre","langfre":"msr:MD_GeometricObjectTypeCode--curve--fre","langger":"msr:MD_GeometricObjectTypeCode--curve--ger","link":"http:\/\/standards.iso.org\/ittf\/PubliclyAvailableStandards\/ISO_19139_Schemas\/resources\/codelist\/ML_gmxCodelists.xml#MD_GeometricObjectTypeCode"}</cl_geometricObjectType>
+  <cl_status type="object">{"key":"completed","default":"mcc:MD_ProgressCode--completed--fre","langfre":"mcc:MD_ProgressCode--completed--fre","langger":"mcc:MD_ProgressCode--completed--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_ProgressCode","text":"completed"}</cl_status>
+  <cl_spatialRepresentationType type="object">{"key":"vector","default":"mcc:MD_SpatialRepresentationTypeCode--vector--fre","langfre":"mcc:MD_SpatialRepresentationTypeCode--vector--fre","langger":"mcc:MD_SpatialRepresentationTypeCode--vector--ger","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_SpatialRepresentationTypeCode","text":"vector"}</cl_spatialRepresentationType>
+  <cl_maintenanceAndUpdateFrequency type="object">{"key":"asNeeded","default":"mmi:MD_MaintenanceFrequencyCode--asNeeded--fre","langfre":"mmi:MD_MaintenanceFrequencyCode--asNeeded--fre","langger":"mmi:MD_MaintenanceFrequencyCode--asNeeded--ger","link":"http:\/\/standards.iso.org\/ittf\/PubliclyAvailableStandards\/ISO_19139_Schemas\/resources\/codelist\/ML_gmxCodelists.xml#MD_MaintenanceFrequencyCode"}</cl_maintenanceAndUpdateFrequency>
+  <cl_type type="object">{"key":"theme","default":"mri:MD_KeywordTypeCode--theme--fre","langfre":"mri:MD_KeywordTypeCode--theme--fre","langger":"mri:MD_KeywordTypeCode--theme--ger","link":"http:\/\/www.isotc211.org\/2005\/resources\/codeList.xml#MD_KeywordTypeCode"}</cl_type>
   <resourceTitleObject type="object">{"default":"Projets VALTRALOC", "langfre":"Projets VALTRALOC", "langger":"VALTRALOC-Projekte"}</resourceTitleObject>
   <revisionDateForResource>2019-06-01</revisionDateForResource>
   <revisionYearForResource>2019</revisionYearForResource>
@@ -60,7 +58,7 @@
       "role":"pointOfContact",
       "email":"christophe.emery@fr.ch",
       "websiteObject": 
-            {"default":"http:\/\/www.fr.ch\/spc", "langger":"http:\/\/www.fr.ch\/spc", "langfre":"http:\/\/www.fr.ch\/spc"}
+            {"default":"http:\/\/www.fr.ch\/spc", "langger":"http:\/\/www.fr.ch\/spc"}
             ,
       "logo":"",
       "individual":"Christophe Emery",
@@ -133,7 +131,7 @@
                               "thesaurus": "geonetwork.thesaurus.local.theme.geocat.ch"
                             }
                           }</indexingErrorMsg>
-  <cl_topic type="object">{"key":"transportation","default":"mri:MD_TopicCategoryCode--transportation--fre","langfre":"mri:MD_TopicCategoryCode--transportation--fre","langger":"mri:MD_TopicCategoryCode--transportation--ger","langfre":"mri:MD_TopicCategoryCode--transportation--fre"}</cl_topic>
+  <cl_topic type="object">{"key":"transportation","default":"mri:MD_TopicCategoryCode--transportation--fre","langfre":"mri:MD_TopicCategoryCode--transportation--fre","langger":"mri:MD_TopicCategoryCode--transportation--ger"}</cl_topic>
   <spatialRepresentationType>vector</spatialRepresentationType>
   <maintenance type="object">{
             "frequency": "asNeeded"
