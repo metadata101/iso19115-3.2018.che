@@ -5,7 +5,7 @@
 
 <xsl:template match="@xlink:href" mode="from19139to19115-3.2018">
     <xsl:attribute name="xlink:href">
-        <xsl:copy-of select="replace(.,'gmd:role/gmd:CI_RoleCode', 'cit:role/cit:CI_RoleCode')"/>
+        <xsl:copy-of select="replace(.,'process=.*/gmd:CI_RoleCode', 'process=cit:role/cit:CI_RoleCode')"/>
     </xsl:attribute>
 </xsl:template>
 

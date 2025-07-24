@@ -24,7 +24,7 @@
       </mdb:resourceScope>
     </mdb:MD_MetadataScope>
   </mdb:metadataScope>
-  <mdb:contact xlink:show="embed" xlink:href="local://srv/api/registries/entries/e898da60-6d82-4dcc-b4a3-5f6fe97e6394?lang=ger,fre,ita,eng,roh&amp;process=*//gmd:CI_RoleCode/@codeListValue~pointOfContact" />
+  <mdb:contact xlink:show="embed" xlink:href="local://srv/api/registries/entries/e898da60-6d82-4dcc-b4a3-5f6fe97e6394?lang=ger,fre,ita,eng,roh&amp;process=cit:role/cit:CI_RoleCode/@codeListValue~pointOfContact" />
   <mdb:contact xlink:show="embed">
     <cit:CI_Responsibility>
       <cit:role>
