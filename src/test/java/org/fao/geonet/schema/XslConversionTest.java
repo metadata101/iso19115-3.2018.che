@@ -185,6 +185,11 @@ public class XslConversionTest {
     }
 
     @Test
+    public void convertRawZonesDeTranquillite() throws Exception {
+        transformAndCompare("raw-zonesDeTranquillite", false);
+    }
+
+    @Test
     public void testOdsConversion() throws Exception {
         Element xmlFromJSON = Xml.getXmlFromJSON(Files.readString(getResource("ods.json")));
         xmlFromJSON.setName("record");
