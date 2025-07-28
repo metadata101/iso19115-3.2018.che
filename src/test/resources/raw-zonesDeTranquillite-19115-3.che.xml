@@ -23,7 +23,7 @@
       </mdb:resourceScope>
     </mdb:MD_MetadataScope>
   </mdb:metadataScope>
-  <mdb:contact xlink:show="embed" xlink:href="local://srv/api/registries/entries/890dc812-8524-4864-bd05-3a0af86a5770?lang=ger,fre,ita,eng,roh&amp;process=cit:role/cit:CI_RoleCode/@codeListValue~pointOfContact" />
+  <mdb:contact xlink:show="embed" xlink:href="local://srv/api/registries/entries/890dc812-8524-4864-bd05-3a0af86a5770?lang=ger,fre,ita,eng,roh&amp;process=cit:role/cit:CI_RoleCode/@codeListValue~pointOfContact&amp;schema=iso19115-3.2018.che" />
   <mdb:dateInfo>
     <cit:CI_Date>
       <cit:date>
@@ -192,11 +192,11 @@
           </lan:textGroup>
         </lan:PT_FreeText>
       </mri:abstract>
-      <mri:pointOfContact xlink:show="embed" xlink:href="local://srv/api/registries/entries/890dc812-8524-4864-bd05-3a0af86a5770?lang=ger,fre,ita,eng,roh&amp;process=cit:role/cit:CI_RoleCode/@codeListValue~pointOfContact" />
+      <mri:pointOfContact xlink:show="embed" xlink:href="local://srv/api/registries/entries/890dc812-8524-4864-bd05-3a0af86a5770?lang=ger,fre,ita,eng,roh&amp;process=cit:role/cit:CI_RoleCode/@codeListValue~pointOfContact&amp;schema=iso19115-3.2018.che" />
       <mri:topicCategory>
         <mri:MD_TopicCategoryCode>environment</mri:MD_TopicCategoryCode>
       </mri:topicCategory>
-      <mri:extent xlink:href="local://srv/api/registries/entries/geocatch-subtpl-extent-landesgebiet-CH?lang=ger,fre,ita,eng,roh&amp;" xlink:show="embed" />
+      <mri:extent xlink:href="local://srv/api/registries/entries/geocatch-subtpl-extent-landesgebiet-CH?lang=ger,fre,ita,eng,roh&amp;schema=iso19115-3.2018.che" xlink:show="embed" />
       <mri:resourceMaintenance>
         <che:CHE_MD_MaintenanceInformation gco:isoType="mmi:MD_MaintenanceInformation">
           <mmi:maintenanceAndUpdateFrequency>
@@ -308,7 +308,7 @@
   </mdb:identificationInfo>
   <mdb:distributionInfo>
     <mrd:MD_Distribution>
-      <mrd:distributionFormat xlink:show="embed" xlink:href="local://srv/api/registries/entries/5533f00e-57f9-4f4d-b2a2-560fee4b32ad?lang=ger,fre,ita,eng,roh&amp;" />
+      <mrd:distributionFormat xlink:show="embed" xlink:href="local://srv/api/registries/entries/5533f00e-57f9-4f4d-b2a2-560fee4b32ad?lang=ger,fre,ita,eng,roh&amp;schema=iso19115-3.2018.che" />
       <mrd:transferOptions>
         <mrd:MD_DigitalTransferOptions>
           <mrd:onLine>
