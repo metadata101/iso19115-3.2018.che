@@ -23,7 +23,7 @@
       </mdb:resourceScope>
     </mdb:MD_MetadataScope>
   </mdb:metadataScope>
-  <mdb:contact xlink:href="local://srv/api/registries/entries/f0ce917d-9b40-4e18-96aa-64b6c88af8f0?lang=ger,fre,ita,eng,roh&amp;process=cit:role/cit:CI_RoleCode/@codeListValue~custodian&amp;schema=iso19139.che" />
+  <mdb:contact xlink:href="local://srv/api/registries/entries/f0ce917d-9b40-4e18-96aa-64b6c88af8f0?lang=ger,fre,ita,eng,roh&amp;process=cit:role/cit:CI_RoleCode/@codeListValue~custodian&amp;schema=iso19115-3.2018.che" />
   <mdb:dateInfo>
     <cit:CI_Date>
       <cit:date>
@@ -221,7 +221,7 @@ Parts of the data are subject to a licence. Please read the additional documenta
       <mri:status>
         <mcc:MD_ProgressCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ProgressCode" codeListValue="completed">completed</mcc:MD_ProgressCode>
       </mri:status>
-      <mri:pointOfContact xlink:href="local://srv/api/registries/entries/925d1120-720d-4a2f-bb93-cac0a154fb65?lang=ger,fre,ita,eng,roh&amp;process=cit:role/cit:CI_RoleCode/@codeListValue~author&amp;schema=iso19139.che" />
+      <mri:pointOfContact xlink:href="local://srv/api/registries/entries/925d1120-720d-4a2f-bb93-cac0a154fb65?lang=ger,fre,ita,eng,roh&amp;process=cit:role/cit:CI_RoleCode/@codeListValue~author&amp;schema=iso19115-3.2018.che" />
       <mri:spatialRepresentationType>
         <mcc:MD_SpatialRepresentationTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector">vector</mcc:MD_SpatialRepresentationTypeCode>
       </mri:spatialRepresentationType>
@@ -239,7 +239,7 @@ Parts of the data are subject to a licence. Please read the additional documenta
       <mri:topicCategory>
         <mri:MD_TopicCategoryCode>geoscientificInformation</mri:MD_TopicCategoryCode>
       </mri:topicCategory>
-      <mri:extent xlink:href="local://srv/api/registries/entries/geocatch-subtpl-extent-landesgebiet-CH?lang=ger,fre,ita,eng,roh&amp;schema=iso19139.che" />
+      <mri:extent xlink:href="local://srv/api/registries/entries/geocatch-subtpl-extent-landesgebiet-CH?lang=ger,fre,ita,eng,roh&amp;schema=iso19115-3.2018.che" />
       <mri:resourceMaintenance>
         <che:CHE_MD_MaintenanceInformation gco:isoType="mmi:MD_MaintenanceInformation">
           <mmi:maintenanceAndUpdateFrequency>
@@ -363,8 +363,8 @@ Parts of the data are subject to a licence. Please read the additional documenta
   </mdb:identificationInfo>
   <mdb:distributionInfo>
     <mrd:MD_Distribution>
-      <mrd:distributionFormat xlink:href="local://srv/api/registries/entries/8399cf65-576a-4287-9812-8012a1fbe2a3?lang=ger,fre,ita,eng,roh&amp;schema=iso19139.che" />
-      <mrd:distributionFormat xlink:href="local://srv/api/registries/entries/aaa0c6ab-6005-44d8-bb09-aa75da2ccae3?lang=ger,fre,ita,eng,roh&amp;schema=iso19139.che" />
+      <mrd:distributionFormat xlink:href="local://srv/api/registries/entries/8399cf65-576a-4287-9812-8012a1fbe2a3?lang=ger,fre,ita,eng,roh&amp;schema=iso19115-3.2018.che" />
+      <mrd:distributionFormat xlink:href="local://srv/api/registries/entries/aaa0c6ab-6005-44d8-bb09-aa75da2ccae3?lang=ger,fre,ita,eng,roh&amp;schema=iso19115-3.2018.che" />
       <mrd:distributor />
       <mrd:transferOptions>
         <mrd:MD_DigitalTransferOptions>
