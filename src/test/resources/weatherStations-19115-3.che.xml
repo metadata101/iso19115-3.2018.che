@@ -24,7 +24,7 @@
       </mdb:resourceScope>
     </mdb:MD_MetadataScope>
   </mdb:metadataScope>
-  <mdb:contact xlink:href="local://srv/api/registries/entries/37750e6f-6f61-49c7-b7b0-de25c683e50f?lang=ger,fre,ita,eng,roh&amp;process=cit:role/cit:CI_RoleCode/@codeListValue~pointOfContact&amp;schema=iso19139.che" />
+  <mdb:contact xlink:href="local://srv/api/registries/entries/37750e6f-6f61-49c7-b7b0-de25c683e50f?lang=ger,fre,ita,eng,roh&amp;process=cit:role/cit:CI_RoleCode/@codeListValue~pointOfContact&amp;schema=iso19115-3.2018.che" />
   <mdb:contact>
     <cit:CI_Responsibility uuid="14e13864-686f-4c05-96da-82698496907a">
       <cit:role>
@@ -312,7 +312,7 @@
       <mri:status>
         <mcc:MD_ProgressCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ProgressCode" codeListValue="onGoing">onGoing</mcc:MD_ProgressCode>
       </mri:status>
-      <mri:pointOfContact xlink:href="local://srv/api/registries/entries/37750e6f-6f61-49c7-b7b0-de25c683e50f?lang=ger,fre,ita,eng,roh&amp;process=cit:role/cit:CI_RoleCode/@codeListValue~pointOfContact&amp;schema=iso19139.che" />
+      <mri:pointOfContact xlink:href="local://srv/api/registries/entries/37750e6f-6f61-49c7-b7b0-de25c683e50f?lang=ger,fre,ita,eng,roh&amp;process=cit:role/cit:CI_RoleCode/@codeListValue~pointOfContact&amp;schema=iso19115-3.2018.che" />
       <mri:pointOfContact>
         <cit:CI_Responsibility uuid="14e13864-686f-4c05-96da-82698496907a">
           <cit:role>
