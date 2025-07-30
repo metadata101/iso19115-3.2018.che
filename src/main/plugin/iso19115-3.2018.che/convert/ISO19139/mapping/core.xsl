@@ -123,7 +123,7 @@
       </xsl:variable>
       <lan:PT_Locale>
         <xsl:if test="parent::oldche:CHE_MD_Metadata">
-          <xsl:attribute name="id" select="util:twoCharLangCode($codeListValue)" />
+          <xsl:attribute name="id" select="upper-case(util:twoCharLangCode($codeListValue))" />
         </xsl:if>
         <xsl:copy-of select="gmd:PT_Locale/@*"/>
         <xsl:call-template name="writeCodelistElement">
