@@ -40,13 +40,13 @@ public class XslUtil {
     public static String twoCharLangCode(String iso3code, String defaultValue) {
         switch (iso3code) {
             case "fre":
-                return "FR";
+                return "fr";
             case "ita":
-                return "IT";
+                return "it";
             case "eng":
-                return "EN";
+                return "en";
             case "ger":
-                return "DE";
+                return "de";
             default:
                 return defaultValue;
         }
