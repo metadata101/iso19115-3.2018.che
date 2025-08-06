@@ -30,6 +30,7 @@ import org.jdom.Element;
 import org.jdom.output.Format;
 import org.jdom.output.XMLOutputter;
 import org.junit.AfterClass;
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -46,8 +47,8 @@ public class BuildEditorFormTest {
 
 	private static Field resolverMapField;
 
-	@BeforeClass
-	public static void initSaxon() {
+	@Before
+	public void initSaxon() {
 		TransformerFactoryFactory.init("net.sf.saxon.TransformerFactoryImpl");
 	}
 
@@ -81,6 +82,21 @@ public class BuildEditorFormTest {
 
 		TestSupport.assertGeneratedDataByteMatchExpected("amphibians-19115-3.che-editor-form.xml", actual, GENERATE_EXPECTED_FILE);
 	}
+
+	@Test
+	public void secretariatIbatEdit() throws Exception {
+		Path xslFile = getResource("gn-site/xslt/ui-metadata/edit/edit.xsl");
+		Path xmlFile = getResource("subtemplates/secretariat-ibat-19115-3.che-raw-inflated-for-edition.xml");
+		Element inflatedMd = Xml.loadFile(xmlFile);
+
+		Element editorForm = Xml.transform(inflatedMd, xslFile);
+
+		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
+		String actual = xmlOutputter.outputString(editorForm);
+
+		TestSupport.assertGeneratedDataByteMatchExpected("subtemplates/secretariat-ibat-19115-3.che-editor-form.xml", actual, GENERATE_EXPECTED_FILE);
+	}
+
 
 	@Test
 	public void amphibiansRelations() throws Exception {
