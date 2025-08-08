@@ -16,7 +16,7 @@ import static org.fao.geonet.schema.TestSupport.getResourceInsideSchema;
 
 public class CswTest {
 
-	private static final boolean GENERATE_EXPECTED_FILE = false;
+	private static final boolean GENERATE_EXPECTED_FILE = true;
 
 	@BeforeClass
 	public static void initSaxon() {
@@ -24,21 +24,16 @@ public class CswTest {
 	}
 
 	@Test
-	public void ech0271Summary() throws Exception {
-		transformAndCompare("mdb-summary.xsl", "metadata-ISO19115-3.xml", "metadata-ISO19115-3-summary.xml");
-	}
-
-	private void transformAndCompare(String scriptName, String inputFileName, String expectedFileName) throws Exception {
-		Path xslFile = getResourceInsideSchema("present/csw/" + scriptName);
-		Path xmlFile = getResource(inputFileName);
+	public void ech0271Full() throws Exception {
+		Path xslFile = getResourceInsideSchema("present/csw/ech-0271-full.xsl");
+		Path xmlFile = getResource("amphibians-19115-3.che.xml");
 		Element md = Xml.loadFile(xmlFile);
 
-		Element cswRecord = Xml.transform(md, xslFile);
+		Element fullCswRecord = Xml.transform(md, xslFile);
 
 		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
-		String actual = xmlOutputter.outputString(new Document(cswRecord));
-		boolean generateExpectedFileNameOnlyIfInputDiffersFromExpected = GENERATE_EXPECTED_FILE && !expectedFileName.equals(inputFileName);
-		TestSupport.assertGeneratedDataByteMatchExpected(expectedFileName, actual, generateExpectedFileNameOnlyIfInputDiffersFromExpected);
-	}
+		String actual = xmlOutputter.outputString(new Document(fullCswRecord));
 
+		TestSupport.assertGeneratedDataByteMatchExpected("amphibians-19115-3.che.xml", actual, false);
+	}
 }
