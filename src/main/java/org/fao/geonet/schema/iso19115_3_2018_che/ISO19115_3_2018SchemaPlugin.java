@@ -78,6 +78,7 @@ public class ISO19115_3_2018SchemaPlugin
 
         allTypenames = ImmutableMap.<String, Namespace>builder()
             .put("csw:Record", Namespace.getNamespace("csw", "http://www.opengis.net/cat/csw/2.0.2"))
+            .put("che:CHE_MD_Metadata", Namespace.getNamespace("che", "http://geocat.ch/che"))
             .put("mdb:MD_Metadata", Namespace.getNamespace("mdb", "http://standards.iso.org/iso/19115/-3/mdb/2.0"))
             .put("gmd:MD_Metadata", Namespace.getNamespace("gmd", "http://www.isotc211.org/2005/gmd"))
             .build();
