@@ -16,7 +16,7 @@ import static org.fao.geonet.schema.TestSupport.getResourceInsideSchema;
 
 public class CswTest {
 
-	private static final boolean GENERATE_EXPECTED_FILE = true;
+	private static final boolean GENERATE_EXPECTED_FILE = false;
 
 	@BeforeClass
 	public static void initSaxon() {
@@ -35,5 +35,19 @@ public class CswTest {
 		String actual = xmlOutputter.outputString(new Document(fullCswRecord));
 
 		TestSupport.assertGeneratedDataByteMatchExpected("amphibians-19115-3.che.xml", actual, false);
+	}
+
+	@Test
+	public void ech0271Summary() throws Exception {
+		Path xslFile = getResourceInsideSchema("present/csw/ech-0271-summary.xsl");
+		Path xmlFile = getResource("amphibians-19115-3.che.xml");
+		Element md = Xml.loadFile(xmlFile);
+
+		Element fullCswRecord = Xml.transform(md, xslFile);
+
+		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
+		String actual = xmlOutputter.outputString(new Document(fullCswRecord));
+
+		TestSupport.assertGeneratedDataByteMatchExpected("amphibians-19115-3.che-summary.xml", actual, GENERATE_EXPECTED_FILE);
 	}
 }
