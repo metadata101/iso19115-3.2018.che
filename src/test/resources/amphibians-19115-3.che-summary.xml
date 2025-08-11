@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<che:CHE_MD_Metadata xmlns:che="http://geocat.ch/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0" xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0" xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:md1="http://standards.iso.org/iso/19115/-3/md1/2.0" xmlns:md2="http://standards.iso.org/iso/19115/-3/md2/2.0" xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/2.0" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0" xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0" xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0" xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0" xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0" xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0" xmlns:dqm="http://standards.iso.org/iso/19157/-2/dqm/1.0" xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <mdb:metadataIdentifier>
+    <mcc:MD_Identifier>
+      <mcc:code>
+        <gco:CharacterString>9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce</gco:CharacterString>
+      </mcc:code>
+    </mcc:MD_Identifier>
+  </mdb:metadataIdentifier>
+  <mdb:defaultLocale>
+    <lan:PT_Locale id="DE">
+      <lan:language>
+        <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="ger">ger</lan:LanguageCode>
+      </lan:language>
+      <lan:characterEncoding>
+        <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
+      </lan:characterEncoding>
+    </lan:PT_Locale>
+  </mdb:defaultLocale>
+  <mdb:metadataScope>
+    <mdb:MD_MetadataScope>
+      <mdb:resourceScope>
+        <mcc:MD_ScopeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</mcc:MD_ScopeCode>
+      </mdb:resourceScope>
+    </mdb:MD_MetadataScope>
+  </mdb:metadataScope>
+  <mdb:dateInfo>
+    <cit:CI_Date>
+      <cit:date>
+        <gco:DateTime>2025-03-17T16:04:56.559Z</gco:DateTime>
+      </cit:date>
+      <cit:dateType>
+        <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision">revision</cit:CI_DateTypeCode>
+      </cit:dateType>
+    </cit:CI_Date>
+  </mdb:dateInfo>
+  <mdb:metadataStandard>
+    <cit:CI_Citation>
+      <cit:title>
+        <gco:CharacterString>GM03_2</gco:CharacterString>
+      </cit:title>
+    </cit:CI_Citation>
+  </mdb:metadataStandard>
+  <mdb:referenceSystemInfo>
+    <mrs:MD_ReferenceSystem>
+      <mrs:referenceSystemIdentifier>
+        <mcc:MD_Identifier>
+          <mcc:code xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>LV95 EPSG:2056</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">LV95 EPSG:2056</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mcc:code>
+        </mcc:MD_Identifier>
+      </mrs:referenceSystemIdentifier>
+    </mrs:MD_ReferenceSystem>
+  </mdb:referenceSystemInfo>
+  <mdb:identificationInfo>
+    <che:CHE_MD_DataIdentification>
+      <mri:citation>
+        <cit:CI_Citation>
+          <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Amphibien Ausbreitungskarten - Ichthyosaura alpestris</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Amphibien Ausbreitungskarten - Ichthyosaura alpestris</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">Cartes de dispersion des amphibiens - Ichthyosaura alpestris</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">Amphibian dispersal maps - Ichthyosaura alpestris</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:title>
+          <cit:identifier>
+            <mcc:MD_Identifier>
+              <mcc:code>
+                <gco:CharacterString>ADN06</gco:CharacterString>
+              </mcc:code>
+            </mcc:MD_Identifier>
+          </cit:identifier>
+        </cit:CI_Citation>
+      </mri:citation>
+      <mri:abstract xsi:type="lan:PT_FreeText_PropertyType">
+        <gco:CharacterString>Schweizweite Karte, die die Ausbreitungs-Wahrscheinlichkeit der Bergmolch (Ichthyosaura alpestris) darstellt. Jede Rasterzelle gibt die relative Wahrscheinlichkeit an, dass sich wandernde Individuen auf ihrem Weg zwischen bekannten Amphibienlaichgebiete durch diesen Hektar wandern. Die Karte zeigt die Ausbreitungs-Wahrscheinlichkeit, die entlang einer Skala von Blau über Gelb bis Rot zunimmt.
+Diese Karten sollten als Heatmaps für die Ausbreitungsaktivität bestehender Populationen betrachtet werden. In der Praxis zeigen diese Karten auch Orte, an denen potenzielle neue Amphibienlaichgebiete die höchsten Chancen haben, besiedelt zu werden. 
+Gebiete mit vielen Populationen in unmittelbarer Nähe erscheinen dunkler rot, was die höhere Wahrscheinlichkeit einer Ausbreitung widerspiegelt, da sich mehrere Ausbreitungsrouten zwischen den Populationen überschneiden. Diese Eigenschaft der Karten verdient besondere Aufmerksamkeit. Hellere Schattierungen an den Rändern der Artenverbreitung bedeuten nicht unbedingt eine schwächere Verbindung zwischen den Populationen, sondern sind eher eine Folge der geringeren Dichte an Amphibienlaichgebieten an den Rändern der Verbreitung. Die Farbskala soll im Kontext der unmittelbaren Umgebung betrachtet werden. 
+Die Ausbreitungskarte wurde mit Circuitscape berechnet und basiert auf einer Landschaftswiderstandsmatrix, die aus dem am besten bewerteten Verbreitungsmodell für jede Art abgeleitet wurde.
+Für Details, siehe die beigefügte Datenbeschreibung.</gco:CharacterString>
+        <lan:PT_FreeText>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#DE">Schweizweite Karte, die die Ausbreitungs-Wahrscheinlichkeit der Bergmolch (Ichthyosaura alpestris) darstellt. Jede Rasterzelle gibt die relative Wahrscheinlichkeit an, dass sich wandernde Individuen auf ihrem Weg zwischen bekannten Amphibienlaichgebiete durch diesen Hektar wandern. Die Karte zeigt die Ausbreitungs-Wahrscheinlichkeit, die entlang einer Skala von Blau über Gelb bis Rot zunimmt.
+Diese Karten sollten als Heatmaps für die Ausbreitungsaktivität bestehender Populationen betrachtet werden. In der Praxis zeigen diese Karten auch Orte, an denen potenzielle neue Amphibienlaichgebiete die höchsten Chancen haben, besiedelt zu werden. 
+Gebiete mit vielen Populationen in unmittelbarer Nähe erscheinen dunkler rot, was die höhere Wahrscheinlichkeit einer Ausbreitung widerspiegelt, da sich mehrere Ausbreitungsrouten zwischen den Populationen überschneiden. Diese Eigenschaft der Karten verdient besondere Aufmerksamkeit. Hellere Schattierungen an den Rändern der Artenverbreitung bedeuten nicht unbedingt eine schwächere Verbindung zwischen den Populationen, sondern sind eher eine Folge der geringeren Dichte an Amphibienlaichgebieten an den Rändern der Verbreitung. Die Farbskala soll im Kontext der unmittelbaren Umgebung betrachtet werden. 
+Die Ausbreitungskarte wurde mit Circuitscape berechnet und basiert auf einer Landschaftswiderstandsmatrix, die aus dem am besten bewerteten Verbreitungsmodell für jede Art abgeleitet wurde.
+Für Details, siehe die beigefügte Datenbeschreibung.</lan:LocalisedCharacterString>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#FR">Carte de la Suisse montrant la probabilité de dispersion du Triton alpestre (Ichthyosaura alpestris). Chaque cellule de la grille indique la probabilité relative que des individus traversent cet hectare sur leur trajet entre des sites de reproduction connus. La carte montre la probabilité de dispersion qui augmente le long d'une échelle allant du bleu au rouge en passant par le jaune. 
+Ces cartes devraient être considérées comme des cartes de chaleur de l'activité de dispersion des populations existantes. En pratique, ces cartes indiquent également les endroits où les nouveaux sites de reproduction d'amphibiens potentiels ont le plus de chances d'être colonisés. 
+Les zones avec de nombreuses populations à proximité immédiate apparaissent en rouge plus foncé, ce qui reflète une plus grande probabilité de dispersion, car plusieurs voies de dispersion entre les populations se chevauchent. Cette caractéristique des cartes mérite une attention particulière. Des nuances plus claires sur les bords de la distribution des espèces ne signifient pas nécessairement un lien plus faible entre les populations, mais sont plutôt la conséquence d'une densité plus faible de sites de reproduction d'amphibiens sur les bords de la distribution. L'échelle de couleurs doit être considérée dans le contexte de l'environnement immédiat.
+La carte de dispersion a été calculée avec Circuitscape et se base sur une matrice de résistance du paysage dérivée du MDS le mieux évalué pour chaque espèce.
+Pour plus de détails, voir la description des données ci-jointe.</lan:LocalisedCharacterString>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#EN">Swiss-wide map depicting the dispersal probability of the Alpine newt (Ichthyosaura alpestris). Each grid cell indicates the relative probability that dispersing individuals will pass through that hectare on their way between known amphibian breeding sites. The map shows dispersal probability increasing along a scale from blue to yellow to red.
+These maps should be thought of as heatmaps for dispersal activity of existing populations. In practical terms, these maps also show locations where potential new amphibian breeding sites have the highest chances of being colonized. 
+Areas with many populations in close proximity appear a darker red, reflecting the higher probability of dispersal as multiple dispersal routes between populations intersect. This feature of the maps deserves special attention. Lighter shades at the edges of the species' range do not necessarily indicate a weaker connection between populations, but rather a consequence of the lower density of breeding sites at the edges of the range. The color scale should be considered in the context of the immediate surroundings.
+The dispersal map was calculated using Circuitscape and is based on a landscape resistance matrix derived from the best-ranked dispersal model for each species.
+For details, see the attached data description.</lan:LocalisedCharacterString>
+          </lan:textGroup>
+        </lan:PT_FreeText>
+      </mri:abstract>
+      <mri:graphicOverview>
+        <mcc:MD_BrowseGraphic>
+          <mcc:fileName>
+            <gco:CharacterString>https://www.geocat.ch/geonetwork/srv/api/records/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce/attachments/ICAL.png</gco:CharacterString>
+          </mcc:fileName>
+        </mcc:MD_BrowseGraphic>
+      </mri:graphicOverview>
+      <mri:pointOfContact>
+        <cit:CI_Responsibility />
+      </mri:pointOfContact>
+      <mri:pointOfContact>
+        <cit:CI_Responsibility>
+          <cit:role>
+            <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="principalInvestigator">principalInvestigator</cit:CI_RoleCode>
+          </cit:role>
+          <cit:party>
+            <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>Info_Fauna_Karch</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Info_Fauna_Karch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">Information_Fauna_Karch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">Informatione_Fauna_Karch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">Info_Fauna_Karch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:name>
+              <cit:contactInfo>
+                <cit:CI_Contact>
+                  <cit:phone>
+                    <cit:CI_Telephone>
+                      <cit:number>
+                        <gco:CharacterString />
+                      </cit:number>
+                      <cit:numberType>
+                        <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+                      </cit:numberType>
+                    </cit:CI_Telephone>
+                  </cit:phone>
+                  <cit:address>
+                    <cit:CI_Address>
+                      <cit:deliveryPoint>
+                        <gco:CharacterString>Belleveaus 51</gco:CharacterString>
+                      </cit:deliveryPoint>
+                      <cit:city>
+                        <gco:CharacterString>Neuchâtel</gco:CharacterString>
+                      </cit:city>
+                      <cit:postalCode>
+                        <gco:CharacterString>2000</gco:CharacterString>
+                      </cit:postalCode>
+                      <cit:country>
+                        <gco:CharacterString>CH</gco:CharacterString>
+                      </cit:country>
+                      <cit:electronicMailAddress>
+                        <gco:CharacterString>contact@infofauna.ch</gco:CharacterString>
+                      </cit:electronicMailAddress>
+                    </cit:CI_Address>
+                  </cit:address>
+                  <cit:onlineResource>
+                    <cit:CI_OnlineResource>
+                      <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                        <gco:CharacterString>https://www.infofauna.ch/de/beratungsstellen/amphibien-karch</gco:CharacterString>
+                        <lan:PT_FreeText>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#DE">https://www.infofauna.ch/de/beratungsstellen/amphibien-karch</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#FR">https://www.agroscope.admin.ch/agroscope/fr/home.html</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#IT">https://www.agroscope.admin.ch/agroscope/it/home.html</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#EN">https://www.agroscope.admin.ch/agroscope/en/home.html</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                        </lan:PT_FreeText>
+                      </cit:linkage>
+                    </cit:CI_OnlineResource>
+                  </cit:onlineResource>
+                </cit:CI_Contact>
+              </cit:contactInfo>
+              <cit:individual>
+                <cit:CI_Individual>
+                  <cit:positionName xsi:type="lan:PT_FreeText_PropertyType">
+                    <gco:CharacterString>Information Karch Amphibien</gco:CharacterString>
+                    <lan:PT_FreeText>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#DE">Information Karch Amphibien</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#FR">Information amphibiens karch</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#IT">Informatione anfibi karch</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#EN">Information amphibianss karch</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                    </lan:PT_FreeText>
+                  </cit:positionName>
+                </cit:CI_Individual>
+              </cit:individual>
+            </che:CHE_CI_Organisation>
+          </cit:party>
+        </cit:CI_Responsibility>
+      </mri:pointOfContact>
+      <mri:pointOfContact>
+        <cit:CI_Responsibility>
+          <cit:role>
+            <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</cit:CI_RoleCode>
+          </cit:role>
+          <cit:party>
+            <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>Bundesamt für Umwelt / Abteilung Biodiversität und Landschaft</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Bundesamt für Umwelt / Abteilung Biodiversität und Landschaft</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">Office fédéral de l'environnement / Division Biodiversité et paysage</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">Ufficio federale dell'ambiente / Divisione Biodiversità e paesaggio</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">Federal Office for the Environment / Biodiversity and Landscape Division</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#RM">Bundesamt für Umwelt</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:name>
+              <cit:contactInfo>
+                <cit:CI_Contact>
+                  <cit:phone>
+                    <cit:CI_Telephone>
+                      <cit:number>
+                        <gco:CharacterString>+41 58 462 93 89</gco:CharacterString>
+                      </cit:number>
+                      <cit:numberType>
+                        <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+                      </cit:numberType>
+                    </cit:CI_Telephone>
+                  </cit:phone>
+                  <cit:phone>
+                    <cit:CI_Telephone>
+                      <cit:number>
+                        <gco:CharacterString>+41 58 463 89 74</gco:CharacterString>
+                      </cit:number>
+                      <cit:numberType>
+                        <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="facsimile">facsimile</cit:CI_TelephoneTypeCode>
+                      </cit:numberType>
+                    </cit:CI_Telephone>
+                  </cit:phone>
+                  <cit:address>
+                    <cit:CI_Address>
+                      <cit:deliveryPoint>
+                        <gco:CharacterString />
+                      </cit:deliveryPoint>
+                      <cit:city>
+                        <gco:CharacterString>Bern</gco:CharacterString>
+                      </cit:city>
+                      <cit:postalCode>
+                        <gco:CharacterString>3003</gco:CharacterString>
+                      </cit:postalCode>
+                      <cit:country>
+                        <gco:CharacterString>CH</gco:CharacterString>
+                      </cit:country>
+                      <cit:electronicMailAddress>
+                        <gco:CharacterString>bnl@bafu.admin.ch</gco:CharacterString>
+                      </cit:electronicMailAddress>
+                    </cit:CI_Address>
+                  </cit:address>
+                  <cit:onlineResource>
+                    <cit:CI_OnlineResource>
+                      <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                        <gco:CharacterString>https://www.bafu.admin.ch/bafu/de/home/amt/abteilungen-sektionen/abteilung-biodiversitaet-und-landschaft.html</gco:CharacterString>
+                        <lan:PT_FreeText>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#DE">https://www.bafu.admin.ch/bafu/de/home/amt/abteilungen-sektionen/abteilung-biodiversitaet-und-landschaft.html</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#FR">https://www.bafu.admin.ch/bafu/fr/home/office/divisions-sections/division-biodiversite-et-paysage.html</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#IT">https://www.bafu.admin.ch/bafu/it/home/ufficio/divisioni-sezioni/divisione-biodiversita-e-paesaggio.html</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#EN">https://www.bafu.admin.ch/bafu/en/home/office/divisions-sections/biodiversity-and-landscape-division.html</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                        </lan:PT_FreeText>
+                      </cit:linkage>
+                    </cit:CI_OnlineResource>
+                  </cit:onlineResource>
+                </cit:CI_Contact>
+              </cit:contactInfo>
+              <cit:individual>
+                <cit:CI_Individual>
+                  <cit:name>
+                    <gco:CharacterString>BAFU BNL</gco:CharacterString>
+                  </cit:name>
+                </cit:CI_Individual>
+              </cit:individual>
+            </che:CHE_CI_Organisation>
+          </cit:party>
+        </cit:CI_Responsibility>
+      </mri:pointOfContact>
+      <mri:resourceConstraints>
+        <che:CHE_MD_LegalConstraints gco:isoType="mco:MD_LegalConstraints">
+          <mco:useLimitation gco:nilReason="missing" xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString />
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE" />
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mco:useLimitation>
+          <mco:accessConstraints>
+            <mco:MD_RestrictionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode" codeListValue="copyright" />
+          </mco:accessConstraints>
+          <mco:useConstraints>
+            <mco:MD_RestrictionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode" codeListValue="copyright" />
+          </mco:useConstraints>
+          <mco:otherConstraints xsi:type="lan:PT_FreeText_PropertyType">
+            <gcx:Anchor xlink:href="https://opendata.swiss/en/terms-of-use/#terms_open">Opendata OPEN: Freie Nutzung.</gcx:Anchor>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Opendata OPEN: Freie Nutzung.</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">Opendata OPEN: Utilisation libre.</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">Opendata OPEN: Libero utilizzo.</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">Opendata OPEN: Open use.</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mco:otherConstraints>
+        </che:CHE_MD_LegalConstraints>
+      </mri:resourceConstraints>
+      <mri:resourceConstraints />
+      <mri:spatialRepresentationType>
+        <mcc:MD_SpatialRepresentationTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="grid">grid</mcc:MD_SpatialRepresentationTypeCode>
+      </mri:spatialRepresentationType>
+      <mri:spatialResolution>
+        <mri:MD_Resolution>
+          <mri:distance>
+            <gco:Distance uom="m">100</gco:Distance>
+          </mri:distance>
+        </mri:MD_Resolution>
+      </mri:spatialResolution>
+      <mri:defaultLocale>
+        <lan:PT_Locale>
+          <lan:language>
+            <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="ger">ger</lan:LanguageCode>
+          </lan:language>
+          <lan:characterEncoding>
+            <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
+          </lan:characterEncoding>
+        </lan:PT_Locale>
+      </mri:defaultLocale>
+      <mri:topicCategory>
+        <mri:MD_TopicCategoryCode>biota</mri:MD_TopicCategoryCode>
+      </mri:topicCategory>
+      <mri:topicCategory>
+        <mri:MD_TopicCategoryCode>environment</mri:MD_TopicCategoryCode>
+      </mri:topicCategory>
+      <mri:topicCategory>
+        <mri:MD_TopicCategoryCode>farming</mri:MD_TopicCategoryCode>
+      </mri:topicCategory>
+      <mri:extent>
+        <gex:EX_Extent>
+          <gex:geographicElement>
+            <gex:EX_GeographicBoundingBox>
+              <gex:westBoundLongitude>
+                <gco:Decimal>5.956088</gco:Decimal>
+              </gex:westBoundLongitude>
+              <gex:southBoundLatitude>
+                <gco:Decimal>45.817970</gco:Decimal>
+              </gex:southBoundLatitude>
+              <gex:eastBoundLongitude>
+                <gco:Decimal>10.492036</gco:Decimal>
+              </gex:eastBoundLongitude>
+              <gex:northBoundLatitude>
+                <gco:Decimal>47.808488</gco:Decimal>
+              </gex:northBoundLatitude>
+            </gex:EX_GeographicBoundingBox>
+          </gex:geographicElement>
+        </gex:EX_Extent>
+      </mri:extent>
+    </che:CHE_MD_DataIdentification>
+  </mdb:identificationInfo>
+  <mdb:distributionInfo>
+    <mrd:MD_Distribution>
+      <mrd:distributionFormat>
+        <mrd:MD_Format />
+      </mrd:distributionFormat>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
+          <mrd:onLine>
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#RM">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+            </cit:CI_OnlineResource>
+          </mrd:onLine>
+          <mrd:onLine>
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#RM">https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+            </cit:CI_OnlineResource>
+          </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+    </mrd:MD_Distribution>
+  </mdb:distributionInfo>
+</che:CHE_MD_Metadata>
+
