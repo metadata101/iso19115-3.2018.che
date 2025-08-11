@@ -15,6 +15,7 @@
                 xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
                 xmlns:ows="http://www.opengis.net/ows"
                 xmlns:gn="http://www.fao.org/geonetwork"
+                xmlns:che="http://geocat.ch/che"
                 exclude-result-prefixes="#all">
 
   <xsl:template match="mdb:MD_Metadata|*[contains(@gco:isoType,'MD_Metadata')]">
@@ -98,7 +99,7 @@
     cit:role/cit:CI_RoleCode/@codeListValue='author' or
     cit:role/cit:CI_RoleCode/@codeListValue='publisher']">
     <xsl:copy>
-      <xsl:apply-templates select="cit:party/cit:CI_Organisation/cit:name"/>
+      <xsl:apply-templates select="cit:party/che:CHE_CI_Organisation/cit:name"/>
     </xsl:copy>
   </xsl:template>
 

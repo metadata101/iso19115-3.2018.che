@@ -122,7 +122,25 @@ For details, see the attached data description.</lan:LocalisedCharacterString>
         </mcc:MD_BrowseGraphic>
       </mri:graphicOverview>
       <mri:pointOfContact>
-        <cit:CI_Responsibility />
+        <cit:CI_Responsibility>
+          <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Agroscope Metadaten</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Agroscope Metadaten</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">Agroscope Métadonnées</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">Agroscope Metadati</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">Agroscope meta data</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:name>
+        </cit:CI_Responsibility>
       </mri:pointOfContact>
       <mri:pointOfContact>
         <cit:CI_Responsibility>
