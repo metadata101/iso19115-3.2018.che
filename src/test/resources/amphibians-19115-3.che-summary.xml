@@ -418,9 +418,7 @@ For details, see the attached data description.</lan:LocalisedCharacterString>
   </mdb:identificationInfo>
   <mdb:distributionInfo>
     <mrd:MD_Distribution>
-      <mrd:distributionFormat>
-        <mrd:MD_Format />
-      </mrd:distributionFormat>
+      <mrd:distributionFormat />
       <mrd:transferOptions>
         <mrd:MD_DigitalTransferOptions>
           <mrd:onLine>
