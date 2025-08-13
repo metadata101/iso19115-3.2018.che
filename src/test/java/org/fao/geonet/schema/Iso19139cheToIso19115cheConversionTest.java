@@ -59,7 +59,7 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
-public class XslConversionTest {
+public class Iso19139cheToIso19115cheConversionTest {
 
     private static final boolean GENERATE_EXPECTED_FILE = false;
 
