@@ -170,7 +170,7 @@
     </lan:PT_Locale>
   </mdb:otherLocale>
   <mdb:identificationInfo>
-    <che:CHE_MD_DataIdentification gco:isoType="mri:MD_DataIdentification">
+    <srv:SV_ServiceIdentification>
       <mri:citation>
         <cit:CI_Citation>
           <cit:title xsi:type="lan:PT_FreeText_PropertyType">
@@ -593,7 +593,110 @@ I dati si basano sul modello di geodati minimo (MGDM) «Inventario dei prelievi 
           </mri:thesaurusName>
         </mri:MD_Keywords>
       </mri:descriptiveKeywords>
-    </che:CHE_MD_DataIdentification>
+      <srv:serviceType>
+        <gco:ScopedName>OGC:WMS</gco:ScopedName>
+      </srv:serviceType>
+      <srv:serviceTypeVersion>
+        <gco:CharacterString>1.3.0</gco:CharacterString>
+      </srv:serviceTypeVersion>
+      <srv:couplingType>
+        <srv:SV_CouplingType codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#SV_CouplingType" codeListValue="tight">tight</srv:SV_CouplingType>
+      </srv:couplingType>
+      <srv:containsOperations>
+        <srv:SV_OperationMetadata>
+          <srv:operationName>
+            <gco:CharacterString>GetCapabilities</gco:CharacterString>
+          </srv:operationName>
+          <srv:distributedComputingPlatform>
+            <srv:DCPList codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#DCPList" codeListValue="WebServices">WebServices</srv:DCPList>
+          </srv:distributedComputingPlatform>
+          <srv:connectPoint>
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://geodienste.ch/db/grundwasservorkommen_v2_0/deu?</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">https://geodienste.ch/db/grundwasservorkommen_v2_0/deu?</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">https://geodienste.ch/db/grundwasservorkommen_v2_0/fra?</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">https://geodienste.ch/db/grundwasservorkommen_v2_0/ita?</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>OGC:WMS</gco:CharacterString>
+              </cit:protocol>
+            </cit:CI_OnlineResource>
+          </srv:connectPoint>
+        </srv:SV_OperationMetadata>
+      </srv:containsOperations>
+      <srv:containsOperations>
+        <srv:SV_OperationMetadata>
+          <srv:operationName>
+            <gco:CharacterString>GetMap</gco:CharacterString>
+          </srv:operationName>
+          <srv:distributedComputingPlatform>
+            <srv:DCPList codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#DCPList" codeListValue="WebServices">WebServices</srv:DCPList>
+          </srv:distributedComputingPlatform>
+          <srv:connectPoint>
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://geodienste.ch/db/grundwasservorkommen_v2_0/deu?</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">https://geodienste.ch/db/grundwasservorkommen_v2_0/deu?</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">https://geodienste.ch/db/grundwasservorkommen_v2_0/fra?</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">https://geodienste.ch/db/grundwasservorkommen_v2_0/ita?</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>OGC:WMS</gco:CharacterString>
+              </cit:protocol>
+            </cit:CI_OnlineResource>
+          </srv:connectPoint>
+        </srv:SV_OperationMetadata>
+      </srv:containsOperations>
+      <srv:containsOperations>
+        <srv:SV_OperationMetadata>
+          <srv:operationName>
+            <gco:CharacterString>GetFeatureInfo</gco:CharacterString>
+          </srv:operationName>
+          <srv:distributedComputingPlatform>
+            <srv:DCPList codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#DCPList" codeListValue="WebServices">WebServices</srv:DCPList>
+          </srv:distributedComputingPlatform>
+          <srv:connectPoint>
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://geodienste.ch/db/grundwasservorkommen_v2_0/deu?</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">https://geodienste.ch/db/grundwasservorkommen_v2_0/deu?</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">https://geodienste.ch/db/grundwasservorkommen_v2_0/fra?</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">https://geodienste.ch/db/grundwasservorkommen_v2_0/ita?</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>OGC:WMS</gco:CharacterString>
+              </cit:protocol>
+            </cit:CI_OnlineResource>
+          </srv:connectPoint>
+        </srv:SV_OperationMetadata>
+      </srv:containsOperations>
+      <srv:operatesOn uuidref="7cb578f8-ca6f-40ef-8d39-d27414cc3047" xlink:href="https://www.geocat.ch/geonetwork/srv/ger/csw?service=CSW&amp;request=GetRecordById&amp;version=2.0.2&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=7cb578f8-ca6f-40ef-8d39-d27414cc3047" />
+    </srv:SV_ServiceIdentification>
   </mdb:identificationInfo>
 </che:CHE_MD_Metadata>
 

@@ -94,10 +94,7 @@
   </xsl:template>
 
 
-  <xsl:template match="cit:CI_Responsibility[
-    cit:role/cit:CI_RoleCode/@codeListValue='originator' or
-    cit:role/cit:CI_RoleCode/@codeListValue='author' or
-    cit:role/cit:CI_RoleCode/@codeListValue='publisher']">
+  <xsl:template match="cit:CI_Responsibility">
     <xsl:copy>
       <xsl:apply-templates select="cit:party/che:CHE_CI_Organisation/cit:name"/>
     </xsl:copy>
