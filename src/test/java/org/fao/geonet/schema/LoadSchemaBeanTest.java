@@ -14,7 +14,7 @@ import static org.junit.Assert.assertNotNull;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:config-spring-geonetwork.xml"})
-public class LoadSchemaBean {
+public class LoadSchemaBeanTest {
 
 	@Autowired
 	ApplicationContext applicationContext;
