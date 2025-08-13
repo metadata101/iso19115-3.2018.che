@@ -50,4 +50,32 @@ public class CswTest {
 
 		TestSupport.assertGeneratedDataByteMatchExpected("amphibians-19115-3.che-summary.xml", actual, GENERATE_EXPECTED_FILE);
 	}
+
+	@Test
+	public void ech0271Brief() throws Exception {
+		Path xslFile = getResourceInsideSchema("present/csw/ech-0271-brief.xsl");
+		Path xmlFile = getResource("amphibians-19115-3.che.xml");
+		Element md = Xml.loadFile(xmlFile);
+
+		Element fullCswRecord = Xml.transform(md, xslFile);
+
+		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
+		String actual = xmlOutputter.outputString(new Document(fullCswRecord));
+
+		TestSupport.assertGeneratedDataByteMatchExpected("amphibians-19115-3.che-brief.xml", actual, GENERATE_EXPECTED_FILE);
+	}
+
+	@Test
+	public void ech0271BriefForService() throws Exception {
+		Path xslFile = getResourceInsideSchema("present/csw/ech-0271-brief.xsl");
+		Path xmlFile = getResource("grundwasservorkommen-19115-3.che.xml");
+		Element md = Xml.loadFile(xmlFile);
+
+		Element fullCswRecord = Xml.transform(md, xslFile);
+
+		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
+		String actual = xmlOutputter.outputString(new Document(fullCswRecord));
+
+		TestSupport.assertGeneratedDataByteMatchExpected("grundwasservorkommen-19115-3.che-brief.xml", actual, GENERATE_EXPECTED_FILE);
+	}
 }
