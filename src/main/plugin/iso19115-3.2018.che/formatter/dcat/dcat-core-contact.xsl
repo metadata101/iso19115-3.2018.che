@@ -47,7 +47,7 @@
                   select="$isoContactRoleToDcatCommonNames[. = $role]"/>
 
     <xsl:variable name="allIndividualOrOrganisationWithoutIndividual"
-                  select="*/cit:party//(che:CHE_CI_Organisation[not(cit:individual)]|cit:CI_Individual)"
+                  select="*/cit:party//(che:CHE_CI_Organisation|cit:CI_Individual[not(ancestor::che:CHE_CI_Organisation)])"
                   as="node()*"/>
 
     <xsl:choose>
