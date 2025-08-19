@@ -19,6 +19,7 @@
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
                 xmlns:foaf="http://xmlns.com/foaf/0.1/"
+                xmlns:che="http://geocat.ch/che"
                 exclude-result-prefixes="#all">
 
   <xsl:variable name="nodeUrl"
@@ -34,7 +35,7 @@
    -->
   <xsl:template mode="iso19115-3-to-dcat-resource"
                 name="iso19115-3-to-dcat-resource"
-                match="mdb:MD_Metadata">
+                match="che:CHE_MD_Metadata">
     <xsl:apply-templates mode="iso19115-3-to-dcat"
                          select="mdb:identificationInfo/*/mri:citation/*/cit:title
                                   |mdb:identificationInfo/*/mri:abstract

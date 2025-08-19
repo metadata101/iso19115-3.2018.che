@@ -5,6 +5,7 @@
                 xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0"
                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                 xmlns:dct="http://purl.org/dc/terms/"
+                xmlns:che="http://geocat.ch/che"
                 exclude-result-prefixes="#all">
   <!-- https://www.w3.org/TR/vocab-dcat-3/ -->
 
@@ -14,7 +15,7 @@
     <rdf:RDF>
       <xsl:call-template name="create-namespaces"/>
       <xsl:apply-templates mode="iso19115-3-to-dcat"
-                           select="root/mdb:MD_Metadata|mdb:MD_Metadata"/>
+                           select="root/che:CHE_MD_Metadata|che:CHE_MD_Metadata"/>
     </rdf:RDF>
   </xsl:template>
 </xsl:stylesheet>

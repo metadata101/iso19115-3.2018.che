@@ -21,6 +21,7 @@
                 xmlns:util="java:org.fao.geonet.util.XslUtil"
                 xmlns:gn-fn-dcat="http://geonetwork-opensource.org/xsl/functions/dcat"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:che="http://geocat.ch/che"
                 exclude-result-prefixes="#all">
 
   <xsl:template name="create-node-with-info">
@@ -118,7 +119,7 @@
   <xsl:function name="gn-fn-dcat:rdf-object-ref" as="xs:string?">
     <xsl:param name="node" as="node()"/>
 
-    <xsl:value-of select="if (name($node) = 'cit:CI_Organisation')
+    <xsl:value-of select="if (name($node) = 'che:CHE_CI_Organisation')
                           then $node/(cit:partyIdentifier/*/mcc:code/*/text(),
                            cit:contactInfo/*/cit:onlineResource/*/cit:linkage/gco:CharacterString/text(),
                            cit:name/gcx:Anchor/@xlink:href,
