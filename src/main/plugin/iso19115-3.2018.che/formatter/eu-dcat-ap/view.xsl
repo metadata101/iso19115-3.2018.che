@@ -7,6 +7,7 @@
                 xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                 xmlns:dct="http://purl.org/dc/terms/"
+                xmlns:che="http://geocat.ch/che"
                 exclude-result-prefixes="#all">
 
   <xsl:import href="eu-dcat-ap-core.xsl"/>
@@ -21,7 +22,7 @@
     <rdf:RDF>
       <xsl:call-template name="create-namespaces-eu-dcat-ap"/>
       <xsl:apply-templates mode="iso19115-3-to-dcat"
-                           select="root/mdb:MD_Metadata|mdb:MD_Metadata"/>
+                           select="root/che:CHE_MD_Metadata|che:CHE_MD_Metadata"/>
     </rdf:RDF>
   </xsl:template>
 

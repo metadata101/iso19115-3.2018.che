@@ -21,6 +21,7 @@
                 xmlns:dct="http://purl.org/dc/terms/"
                 xmlns:dcat="http://www.w3.org/ns/dcat#"
                 xmlns:foaf="http://xmlns.com/foaf/0.1/"
+                xmlns:che="http://geocat.ch/che"
                 exclude-result-prefixes="#all">
 
   <!--
@@ -149,7 +150,7 @@
     <xsl:variable name="pointsToService" select="false()"/>
 
     <xsl:variable name="isServiceMetadata"
-                  select="exists(//mdb:MD_Metadata/mdb:identificationInfo/srv:SV_ServiceIdentification)" />
+                  select="exists(//che:CHE_MD_Metadata/mdb:identificationInfo/srv:SV_ServiceIdentification)" />
 
     <xsl:choose>
       <xsl:when test="normalize-space($url) = ''"/>
@@ -202,7 +203,7 @@
              Definition:	Date of formal issuance (e.g., publication) of the distribution.
             -->
             <xsl:for-each select="ancestor::mrd:MD_Distributor/mrd:distributionOrderProcess/*/mrd:plannedAvailableDateTime|
-                                               ancestor::mdb:MD_Metadata/mdb:identificationInfo/*/mri:citation/*/cit:date/*[cit:dateType/*/@codeListValue = 'publication']">
+                                               ancestor::che:CHE_MD_Metadata/mdb:identificationInfo/*/mri:citation/*/cit:date/*[cit:dateType/*/@codeListValue = 'publication']">
               <xsl:apply-templates mode="iso19115-3-to-dcat"
                                    select=".">
                 <xsl:with-param name="dateType" select="'publication'"/>
@@ -214,7 +215,7 @@
             Definition:	Most recent date on which the distribution was changed, updated or modified.
             Range:	rdfs:Literal encoded using the relevant ISO 8601 Date and Time compliant string [DATETIME] and typed using the appropriate XML Schema datatype [XMLSCHEMA11-2] (xsd:gYear, xsd:gYearMonth, xsd:date, or xsd:dateTime).
             -->
-            <xsl:for-each select="ancestor::mdb:MD_Metadata/mdb:identificationInfo/*/mri:citation/*/cit:date/*[cit:dateType/*/@codeListValue = 'revision']">
+            <xsl:for-each select="ancestor::che:CHE_MD_Metadata/mdb:identificationInfo/*/mri:citation/*/cit:date/*[cit:dateType/*/@codeListValue = 'revision']">
               <xsl:apply-templates mode="iso19115-3-to-dcat"
                                    select=".">
                 <xsl:with-param name="dateType" select="'revision'"/>
@@ -397,7 +398,7 @@
              Usage note:	Information about licenses and rights MAY be provided for the Distribution. See also guidance at 9. License and rights statements.
              -->
               <xsl:apply-templates mode="iso19115-3-to-dcat"
-                                   select="ancestor::mdb:MD_Metadata/mdb:identificationInfo/*/mri:resourceConstraints/*"/>
+                                   select="ancestor::che:CHE_MD_Metadata/mdb:identificationInfo/*/mri:resourceConstraints/*"/>
 
               <!--
               RDF Property:	dcterms:rights
@@ -419,8 +420,8 @@
               Usage note:	Alternative spatial resolutions might be provided as different dataset distributions
               -->
               <xsl:apply-templates mode="iso19115-3-to-dcat"
-                                   select="ancestor::mdb:MD_Metadata/mdb:identificationInfo/*/mri:spatialResolution/*/mri:distance
-                                          |ancestor::mdb:MD_Metadata/mdb:identificationInfo/*/mri:temporalResolution/*"/>
+                                   select="ancestor::che:CHE_MD_Metadata/mdb:identificationInfo/*/mri:spatialResolution/*/mri:distance
+                                          |ancestor::che:CHE_MD_Metadata/mdb:identificationInfo/*/mri:temporalResolution/*"/>
 
               <!--
               RDF Property:	odrl:hasPolicy
@@ -438,10 +439,10 @@
               Usage note:	This property SHOULD be used to indicate the model, schema, ontology, view or profile that this representation of a dataset conforms to. This is (generally) a complementary concern to the media-type or format.
               -->
               <xsl:apply-templates mode="iso19115-3-to-dcat"
-                                   select="ancestor::mdb:MD_Metadata/mdb:dataQualityInfo/*/mdq:report/*/mdq:result[mdq:DQ_ConformanceResult and mdq:DQ_ConformanceResult/mdq:pass/*/text() = 'true']"/>
+                                   select="ancestor::che:CHE_MD_Metadata/mdb:dataQualityInfo/*/mdq:report/*/mdq:result[mdq:DQ_ConformanceResult and mdq:DQ_ConformanceResult/mdq:pass/*/text() = 'true']"/>
 
               <xsl:apply-templates mode="iso19115-3-to-dcat"
-                                   select="ancestor::mdb:MD_Metadata/mdb:identificationInfo/*/mri:defaultLocale"/>
+                                   select="ancestor::che:CHE_MD_Metadata/mdb:identificationInfo/*/mri:defaultLocale"/>
             </xsl:if>
 
             <xsl:copy-of select="$additionalProperties"/>

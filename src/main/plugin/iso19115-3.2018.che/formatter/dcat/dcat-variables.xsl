@@ -32,27 +32,27 @@
   <!-- Mapping ISO element path to corresponding DCAT names -->
   <xsl:variable name="isoToDcatCommonNames"
                 as="node()*">
-    <entry key="dct:title">mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:citation/cit:CI_Citation/cit:title</entry>
-    <entry key="dct:title">mdb:MD_Metadata/mdb:identificationInfo/srv:SV_ServiceIdentification/mri:citation/cit:CI_Citation/cit:title</entry>
-    <entry key="dct:title">mdb:MD_Metadata/mdb:metadataStandard/cit:CI_Citation/cit:title</entry>
-    <entry key="dcat:version" isMultilingual="false">mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:citation/cit:CI_Citation/cit:edition</entry>
-    <entry key="dcat:version" isMultilingual="false">mdb:MD_Metadata/mdb:identificationInfo/srv:SV_ServiceIdentification/mri:citation/cit:CI_Citation/cit:edition</entry>
-    <entry key="dct:description">mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:abstract</entry>
-    <entry key="dct:description">mdb:MD_Metadata/mdb:identificationInfo/srv:SV_ServiceIdentification/mri:abstract</entry>
-    <entry key="dct:description">mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:graphicOverview/mcc:MD_BrowseGraphic/mcc:fileDescription</entry>
-    <entry key="dct:description">mdb:MD_Metadata/mdb:identificationInfo/srv:SV_ServiceIdentification/mri:graphicOverview/mcc:MD_BrowseGraphic/mcc:fileDescription</entry>
-    <entry key="dct:title">mdb:MD_Metadata/mdb:distributionInfo/mrd:MD_Distribution/mrd:transferOptions/mrd:MD_DigitalTransferOptions/mrd:onLine/cit:CI_OnlineResource/cit:name</entry>
-    <entry key="dct:description">mdb:MD_Metadata/mdb:distributionInfo/mrd:MD_Distribution/mrd:transferOptions/mrd:MD_DigitalTransferOptions/mrd:onLine/cit:CI_OnlineResource/cit:description</entry>
-    <entry key="dct:title">mdb:MD_Metadata/mdb:contentInfo/mrc:MD_FeatureCatalogueDescription/mrc:featureCatalogueCitation/cit:CI_Citation/cit:onlineResource/cit:CI_OnlineResource/cit:name</entry>
-    <entry key="dct:description">mdb:MD_Metadata/mdb:contentInfo/mrc:MD_FeatureCatalogueDescription/mrc:featureCatalogueCitation/cit:CI_Citation/cit:onlineResource/cit:CI_OnlineResource/cit:description</entry>
-    <entry key="dct:title">mdb:MD_Metadata/mdb:resourceLineage/mrl:LI_Lineage/mrl:additionalDocumentation/cit:CI_Citation/cit:onlineResource/cit:CI_OnlineResource/cit:name</entry>
-    <entry key="dct:description">mdb:MD_Metadata/mdb:resourceLineage/mrl:LI_Lineage/mrl:additionalDocumentation/cit:CI_Citation/cit:onlineResource/cit:CI_OnlineResource/cit:description</entry>
-    <entry key="dct:title">mdb:MD_Metadata/mdb:portrayalCatalogueInfo/mpc:MD_PortrayalCatalogueReference/mpc:portrayalCatalogueCitation/cit:CI_Citation/cit:onlineResource/cit:CI_OnlineResource/cit:name</entry>
-    <entry key="dct:description">mdb:MD_Metadata/mdb:portrayalCatalogueInfo/mpc:MD_PortrayalCatalogueReference/mpc:portrayalCatalogueCitation/cit:CI_Citation/cit:onlineResource/cit:CI_OnlineResource/cit:description</entry>
-    <entry key="dct:title">mdb:MD_Metadata/mdb:distributionInfo/mrd:MD_Distribution/mrd:distributor/mrd:MD_Distributor/mrd:distributorTransferOptions/mrd:MD_DigitalTransferOptions/mrd:onLine/cit:CI_OnlineResource/cit:name</entry>
-    <entry key="dct:description">mdb:MD_Metadata/mdb:distributionInfo/mrd:MD_Distribution/mrd:distributor/mrd:MD_Distributor/mrd:distributorTransferOptions/mrd:MD_DigitalTransferOptions/mrd:onLine/cit:CI_OnlineResource/cit:description</entry>
-    <entry key="owl:versionInfo">mdb:MD_Metadata/mdb:metadataStandard/cit:CI_Citation/cit:edition</entry>
-    <entry key="adms:versionNotes">mdb:MD_Metadata/mdb:resourceLineage/mrl:LI_Lineage/mrl:statement</entry>
+    <entry key="dct:title">che:CHE_MD_Metadata/mdb:identificationInfo/che:CHE_MD_DataIdentification/mri:citation/cit:CI_Citation/cit:title</entry>
+    <entry key="dct:title">che:CHE_MD_Metadata/mdb:identificationInfo/srv:SV_ServiceIdentification/mri:citation/cit:CI_Citation/cit:title</entry>
+    <entry key="dct:title">che:CHE_MD_Metadata/mdb:metadataStandard/cit:CI_Citation/cit:title</entry>
+    <entry key="dcat:version" isMultilingual="false">che:CHE_MD_Metadata/mdb:identificationInfo/che:CHE_MD_DataIdentification/mri:citation/cit:CI_Citation/cit:edition</entry>
+    <entry key="dcat:version" isMultilingual="false">che:CHE_MD_Metadata/mdb:identificationInfo/srv:SV_ServiceIdentification/mri:citation/cit:CI_Citation/cit:edition</entry>
+    <entry key="dct:description">che:CHE_MD_Metadata/mdb:identificationInfo/che:CHE_MD_DataIdentification/mri:abstract</entry>
+    <entry key="dct:description">che:CHE_MD_Metadata/mdb:identificationInfo/srv:SV_ServiceIdentification/mri:abstract</entry>
+    <entry key="dct:description">che:CHE_MD_Metadata/mdb:identificationInfo/che:CHE_MD_DataIdentification/mri:graphicOverview/mcc:MD_BrowseGraphic/mcc:fileDescription</entry>
+    <entry key="dct:description">che:CHE_MD_Metadata/mdb:identificationInfo/srv:SV_ServiceIdentification/mri:graphicOverview/mcc:MD_BrowseGraphic/mcc:fileDescription</entry>
+    <entry key="dct:title">che:CHE_MD_Metadata/mdb:distributionInfo/mrd:MD_Distribution/mrd:transferOptions/mrd:MD_DigitalTransferOptions/mrd:onLine/cit:CI_OnlineResource/cit:name</entry>
+    <entry key="dct:description">che:CHE_MD_Metadata/mdb:distributionInfo/mrd:MD_Distribution/mrd:transferOptions/mrd:MD_DigitalTransferOptions/mrd:onLine/cit:CI_OnlineResource/cit:description</entry>
+    <entry key="dct:title">che:CHE_MD_Metadata/mdb:contentInfo/mrc:MD_FeatureCatalogueDescription/mrc:featureCatalogueCitation/cit:CI_Citation/cit:onlineResource/cit:CI_OnlineResource/cit:name</entry>
+    <entry key="dct:description">che:CHE_MD_Metadata/mdb:contentInfo/mrc:MD_FeatureCatalogueDescription/mrc:featureCatalogueCitation/cit:CI_Citation/cit:onlineResource/cit:CI_OnlineResource/cit:description</entry>
+    <entry key="dct:title">che:CHE_MD_Metadata/mdb:resourceLineage/mrl:LI_Lineage/mrl:additionalDocumentation/cit:CI_Citation/cit:onlineResource/cit:CI_OnlineResource/cit:name</entry>
+    <entry key="dct:description">che:CHE_MD_Metadata/mdb:resourceLineage/mrl:LI_Lineage/mrl:additionalDocumentation/cit:CI_Citation/cit:onlineResource/cit:CI_OnlineResource/cit:description</entry>
+    <entry key="dct:title">che:CHE_MD_Metadata/mdb:portrayalCatalogueInfo/mpc:MD_PortrayalCatalogueReference/mpc:portrayalCatalogueCitation/cit:CI_Citation/cit:onlineResource/cit:CI_OnlineResource/cit:name</entry>
+    <entry key="dct:description">che:CHE_MD_Metadata/mdb:portrayalCatalogueInfo/mpc:MD_PortrayalCatalogueReference/mpc:portrayalCatalogueCitation/cit:CI_Citation/cit:onlineResource/cit:CI_OnlineResource/cit:description</entry>
+    <entry key="dct:title">che:CHE_MD_Metadata/mdb:distributionInfo/mrd:MD_Distribution/mrd:distributor/mrd:MD_Distributor/mrd:distributorTransferOptions/mrd:MD_DigitalTransferOptions/mrd:onLine/cit:CI_OnlineResource/cit:name</entry>
+    <entry key="dct:description">che:CHE_MD_Metadata/mdb:distributionInfo/mrd:MD_Distribution/mrd:distributor/mrd:MD_Distributor/mrd:distributorTransferOptions/mrd:MD_DigitalTransferOptions/mrd:onLine/cit:CI_OnlineResource/cit:description</entry>
+    <entry key="owl:versionInfo">che:CHE_MD_Metadata/mdb:metadataStandard/cit:CI_Citation/cit:edition</entry>
+    <entry key="adms:versionNotes">che:CHE_MD_Metadata/mdb:resourceLineage/mrl:LI_Lineage/mrl:statement</entry>
   </xsl:variable>
 
   <xsl:variable name="isoDateTypeToDcatCommonNames"

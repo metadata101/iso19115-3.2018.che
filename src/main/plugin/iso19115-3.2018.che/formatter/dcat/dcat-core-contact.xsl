@@ -19,6 +19,7 @@
                 xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
                 xmlns:org="http://www.w3.org/ns/org#"
                 xmlns:gn-fn-dcat="http://geonetwork-opensource.org/xsl/functions/dcat"
+                xmlns:che="http://geocat.ch/che"
                 exclude-result-prefixes="#all">
 
   <!--
@@ -46,7 +47,7 @@
                   select="$isoContactRoleToDcatCommonNames[. = $role]"/>
 
     <xsl:variable name="allIndividualOrOrganisationWithoutIndividual"
-                  select="*/cit:party//(cit:CI_Organisation[not(cit:individual)]|cit:CI_Individual)"
+                  select="*/cit:party//(che:CHE_CI_Organisation[not(cit:individual)]|cit:CI_Individual)"
                   as="node()*"/>
 
     <xsl:choose>
@@ -107,7 +108,7 @@
                   select="if ($isindividual) then cit:name else ()"/>
     <xsl:variable name="organisation"
                   as="node()?"
-                  select="if ($isindividual) then ancestor::cit:CI_Organisation else ."/>
+                  select="if ($isindividual) then ancestor::che:CHE_CI_Organisation else ."/>
 
     <rdf:Description>
       <xsl:call-template name="rdf-object-ref-attribute"/>
@@ -188,7 +189,7 @@
                   select="if ($isindividual) then cit:name else ()"/>
     <xsl:variable name="organisation"
                   as="node()?"
-                  select="if ($isindividual) then ancestor::cit:CI_Organisation else ."/>
+                  select="if ($isindividual) then ancestor::che:CHE_CI_Organisation else ."/>
     <xsl:variable name="orgReference"
                   as="xs:string?"
                   select="gn-fn-dcat:rdf-object-ref($organisation)"/>
