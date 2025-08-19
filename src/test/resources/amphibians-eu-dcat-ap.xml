@@ -81,18 +81,14 @@ For details, see the attached data description.</dct:description>
       </skos:Concept>
     </adms:status>
     <dct:creator>
-      <rdf:Description>
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person" />
+      <rdf:Description rdf:about="http://www.agroscope.admin.ch">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization" />
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent" />
-        <foaf:name />
-        <org:memberOf>
-          <foaf:Organization>
-            <foaf:name xml:lang="ger">Agroscope Metadaten</foaf:name>
-            <foaf:name xml:lang="fre">Agroscope Métadonnées</foaf:name>
-            <foaf:name xml:lang="ita">Agroscope Metadati</foaf:name>
-            <foaf:name xml:lang="eng">Agroscope meta data</foaf:name>
-          </foaf:Organization>
-        </org:memberOf>
+        <foaf:name xml:lang="ger">Agroscope Metadaten</foaf:name>
+        <foaf:name xml:lang="fre">Agroscope Métadonnées</foaf:name>
+        <foaf:name xml:lang="ita">Agroscope Metadati</foaf:name>
+        <foaf:name xml:lang="eng">Agroscope meta data</foaf:name>
+        <foaf:mbox rdf:resource="mailto:GIS@agroscope.admin.ch" />
         <foaf:workplaceHomepage xml:lang="ger">http://www.agroscope.admin.ch</foaf:workplaceHomepage>
         <foaf:workplaceHomepage xml:lang="fre">http://www.agroscope.admin.ch</foaf:workplaceHomepage>
         <foaf:workplaceHomepage xml:lang="ita">http://www.agroscope.admin.ch</foaf:workplaceHomepage>
@@ -102,18 +98,14 @@ For details, see the attached data description.</dct:description>
     <prov:qualifiedAttribution>
       <prov:Attribution>
         <prov:agent>
-          <rdf:Description>
-            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person" />
+          <rdf:Description rdf:about="https://www.infofauna.ch/de/beratungsstellen/amphibien-karch">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization" />
             <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent" />
-            <foaf:name />
-            <org:memberOf>
-              <foaf:Organization>
-                <foaf:name xml:lang="ger">Info_Fauna_Karch</foaf:name>
-                <foaf:name xml:lang="fre">Information_Fauna_Karch</foaf:name>
-                <foaf:name xml:lang="ita">Informatione_Fauna_Karch</foaf:name>
-                <foaf:name xml:lang="eng">Info_Fauna_Karch</foaf:name>
-              </foaf:Organization>
-            </org:memberOf>
+            <foaf:name xml:lang="ger">Info_Fauna_Karch</foaf:name>
+            <foaf:name xml:lang="fre">Information_Fauna_Karch</foaf:name>
+            <foaf:name xml:lang="ita">Informatione_Fauna_Karch</foaf:name>
+            <foaf:name xml:lang="eng">Info_Fauna_Karch</foaf:name>
+            <foaf:mbox rdf:resource="mailto:contact@infofauna.ch" />
             <foaf:workplaceHomepage xml:lang="ger">https://www.infofauna.ch/de/beratungsstellen/amphibien-karch</foaf:workplaceHomepage>
             <foaf:workplaceHomepage xml:lang="fre">https://www.agroscope.admin.ch/agroscope/fr/home.html</foaf:workplaceHomepage>
             <foaf:workplaceHomepage xml:lang="ita">https://www.agroscope.admin.ch/agroscope/it/home.html</foaf:workplaceHomepage>
@@ -128,9 +120,8 @@ For details, see the attached data description.</dct:description>
       </prov:Attribution>
     </prov:qualifiedAttribution>
     <dcat:contactPoint>
-      <rdf:Description>
+      <rdf:Description rdf:about="https://www.bafu.admin.ch/bafu/de/home/amt/abteilungen-sektionen/abteilung-biodiversitaet-und-landschaft.html">
         <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization" />
-        <vcard:fn>BAFU BNL</vcard:fn>
         <vcard:org>
           <rdf:Description>
             <vcard:organisation-name xml:lang="ger">Bundesamt für Umwelt / Abteilung Biodiversität und Landschaft</vcard:organisation-name>
