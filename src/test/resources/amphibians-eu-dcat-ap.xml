@@ -80,6 +80,53 @@ For details, see the attached data description.</dct:description>
         <skos:prefLabel xml:lang="roh">cl_MD_ProgressCode#completed</skos:prefLabel>
       </skos:Concept>
     </adms:status>
+    <dct:creator>
+      <rdf:Description>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person" />
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent" />
+        <foaf:name />
+        <org:memberOf>
+          <foaf:Organization>
+            <foaf:name xml:lang="ger">Agroscope Metadaten</foaf:name>
+            <foaf:name xml:lang="fre">Agroscope Métadonnées</foaf:name>
+            <foaf:name xml:lang="ita">Agroscope Metadati</foaf:name>
+            <foaf:name xml:lang="eng">Agroscope meta data</foaf:name>
+          </foaf:Organization>
+        </org:memberOf>
+        <foaf:workplaceHomepage xml:lang="ger">http://www.agroscope.admin.ch</foaf:workplaceHomepage>
+        <foaf:workplaceHomepage xml:lang="fre">http://www.agroscope.admin.ch</foaf:workplaceHomepage>
+        <foaf:workplaceHomepage xml:lang="ita">http://www.agroscope.admin.ch</foaf:workplaceHomepage>
+        <foaf:workplaceHomepage xml:lang="eng">http://www.agroscope.admin.ch</foaf:workplaceHomepage>
+      </rdf:Description>
+    </dct:creator>
+    <prov:qualifiedAttribution>
+      <prov:Attribution>
+        <prov:agent>
+          <rdf:Description>
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person" />
+            <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent" />
+            <foaf:name />
+            <org:memberOf>
+              <foaf:Organization>
+                <foaf:name xml:lang="ger">Info_Fauna_Karch</foaf:name>
+                <foaf:name xml:lang="fre">Information_Fauna_Karch</foaf:name>
+                <foaf:name xml:lang="ita">Informatione_Fauna_Karch</foaf:name>
+                <foaf:name xml:lang="eng">Info_Fauna_Karch</foaf:name>
+              </foaf:Organization>
+            </org:memberOf>
+            <foaf:workplaceHomepage xml:lang="ger">https://www.infofauna.ch/de/beratungsstellen/amphibien-karch</foaf:workplaceHomepage>
+            <foaf:workplaceHomepage xml:lang="fre">https://www.agroscope.admin.ch/agroscope/fr/home.html</foaf:workplaceHomepage>
+            <foaf:workplaceHomepage xml:lang="ita">https://www.agroscope.admin.ch/agroscope/it/home.html</foaf:workplaceHomepage>
+            <foaf:workplaceHomepage xml:lang="eng">https://www.agroscope.admin.ch/agroscope/en/home.html</foaf:workplaceHomepage>
+          </rdf:Description>
+        </prov:agent>
+        <dcat:hadRole>
+          <dcat:Role rdf:about="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#principalInvestigator">
+            <skos:prefLabel>principalInvestigator</skos:prefLabel>
+          </dcat:Role>
+        </dcat:hadRole>
+      </prov:Attribution>
+    </prov:qualifiedAttribution>
     <dcat:contactPoint>
       <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization" />
