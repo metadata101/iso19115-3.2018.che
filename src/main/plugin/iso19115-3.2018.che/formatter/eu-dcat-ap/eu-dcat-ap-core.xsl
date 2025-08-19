@@ -8,6 +8,7 @@
                 xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0"
                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                 xmlns:dct="http://purl.org/dc/terms/"
+                xmlns:che="http://geocat.ch/che"
                 exclude-result-prefixes="#all">
 
   <xsl:import href="../dcat/dcat-core.xsl"/>
@@ -60,7 +61,7 @@
   -->
   <xsl:template mode="iso19115-3-to-dcat-catalog-record"
                 name="iso19115-3-to-eu-dcat-ap-catalog-record"
-                match="mdb:MD_Metadata">
+                match="che:CHE_MD_Metadata">
     <xsl:param name="additionalProperties"
                as="node()*"/>
 
@@ -100,15 +101,15 @@
    https://github.com/SEMICeu/DCAT-AP/issues/16
    -->
   <xsl:template mode="iso19115-3-to-eu-dcat-ap"
-                match="mdb:MD_Metadata/mdb:metadataLinkage">
+                match="che:CHE_MD_Metadata/mdb:metadataLinkage">
     <dct:source>
       <rdf:Description rdf:about="{*/cit:linkage/*/text()}">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
         <xsl:apply-templates mode="iso19115-3-to-dcat"
-                             select="ancestor::mdb:MD_Metadata/mdb:metadataStandard
+                             select="ancestor::che:CHE_MD_Metadata/mdb:metadataStandard
                                     |mdb:dateInfo/*[cit:dateType/*/@codeListValue = 'creation']/cit:date
                                     |mdb:dateInfo/*[cit:dateType/*/@codeListValue = 'revision']/cit:date
-                                    |ancestor::mdb:MD_Metadata/mdb:defaultLocale/*/lan:characterEncoding/*/@codeListValue"/>
+                                    |ancestor::che:CHE_MD_Metadata/mdb:defaultLocale/*/lan:characterEncoding/*/@codeListValue"/>
       </rdf:Description>
     </dct:source>
   </xsl:template>
@@ -116,7 +117,7 @@
   <!-- GeoDCAT-AP Optional properties (ignored in DCAT-AP)
   -->
   <xsl:template mode="iso19115-3-to-dcat"
-                match="mdb:MD_Metadata/mdb:defaultLocale/*/lan:characterEncoding/*/@codeListValue"/>
+                match="che:CHE_MD_Metadata/mdb:defaultLocale/*/lan:characterEncoding/*/@codeListValue"/>
 
 
 

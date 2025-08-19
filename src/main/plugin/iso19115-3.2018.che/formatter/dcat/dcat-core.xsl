@@ -35,6 +35,7 @@
                 xmlns:adms="http://www.w3.org/ns/adms#"
                 xmlns:gn-fn-dcat="http://geonetwork-opensource.org/xsl/functions/dcat"
                 xmlns:dct="http://purl.org/dc/terms/"
+                xmlns:che="http://geocat.ch/che"
                 exclude-result-prefixes="#all">
 
   <xsl:import href="dcat-commons.xsl"/>
@@ -57,10 +58,10 @@
   and can be an ISO19139 record before ISO19115-3 conversion. -->
   <xsl:variable name="metadata"
                 as="node()"
-                select="(/root/mdb:MD_Metadata|/mdb:MD_Metadata|/root/gmd:MD_Metadata|/gmd:MD_Metadata)"/>
+                select="(/root/che:CHE_MD_Metadata|/che:CHE_MD_Metadata|/root/gmd:MD_Metadata|/gmd:MD_Metadata)"/>
 
   <xsl:template mode="get-language"
-                match="mdb:MD_Metadata"
+                match="che:CHE_MD_Metadata"
                 as="node()*">
     <xsl:variable name="defaultLanguage"
                   select="$metadata/mdb:defaultLocale/*"/>
@@ -133,7 +134,7 @@
 
   <!-- Create resource -->
   <xsl:template mode="iso19115-3-to-dcat"
-                match="mdb:MD_Metadata">
+                match="che:CHE_MD_Metadata">
     <rdf:Description rdf:about="{gn-fn-dcat:getResourceUri(.)}">
       <xsl:apply-templates mode="iso19115-3-to-dcat"
                            select="mdb:metadataScope/*/mdb:resourceScope/*/@codeListValue"/>

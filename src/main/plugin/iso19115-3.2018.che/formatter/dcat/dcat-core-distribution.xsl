@@ -20,6 +20,7 @@
                 xmlns:dct="http://purl.org/dc/terms/"
                 xmlns:dcat="http://www.w3.org/ns/dcat#"
                 xmlns:foaf="http://xmlns.com/foaf/0.1/"
+                xmlns:che="http://geocat.ch/che"
                 exclude-result-prefixes="#all">
 
   <!--
@@ -360,7 +361,7 @@
               See also guidance at 9. License and rights statements.
               -->
               <xsl:apply-templates mode="iso19115-3-to-dcat"
-                                   select="ancestor::mdb:MD_Metadata/mdb:identificationInfo/*/mri:resourceConstraints/*[mco:useConstraints]"/>
+                                   select="ancestor::che:CHE_MD_Metadata/mdb:identificationInfo/*/mri:resourceConstraints/*[mco:useConstraints]"/>
 
               <!--
               RDF Property:	dcterms:accessRights
@@ -369,7 +370,7 @@
               Usage note:	Information about licenses and rights MAY be provided for the Distribution. See also guidance at 9. License and rights statements.
               -->
               <xsl:apply-templates mode="iso19115-3-to-dcat"
-                                   select="ancestor::mdb:MD_Metadata/mdb:identificationInfo/*/mri:resourceConstraints/*[mco:accessConstraints]"/>
+                                   select="ancestor::che:CHE_MD_Metadata/mdb:identificationInfo/*/mri:resourceConstraints/*[mco:accessConstraints]"/>
 
               <!--
               RDF Property:	dcterms:rights
@@ -391,8 +392,8 @@
               Usage note:	Alternative spatial resolutions might be provided as different dataset distributions
               -->
               <xsl:apply-templates mode="iso19115-3-to-dcat"
-                                   select="ancestor::mdb:MD_Metadata/mdb:identificationInfo/*/mri:spatialResolution/*/mri:distance
-                                          |ancestor::mdb:MD_Metadata/mdb:identificationInfo/*/mri:temporalResolution/*"/>
+                                   select="ancestor::che:CHE_MD_Metadata/mdb:identificationInfo/*/mri:spatialResolution/*/mri:distance
+                                          |ancestor::che:CHE_MD_Metadata/mdb:identificationInfo/*/mri:temporalResolution/*"/>
 
               <!--
               RDF Property:	odrl:hasPolicy
@@ -410,7 +411,7 @@
               Usage note:	This property SHOULD be used to indicate the model, schema, ontology, view or profile that this representation of a dataset conforms to. This is (generally) a complementary concern to the media-type or format.
               -->
               <xsl:apply-templates mode="iso19115-3-to-dcat"
-                                   select="ancestor::mdb:MD_Metadata/mdb:dataQualityInfo/*/mdq:report/*/mdq:result[mdq:DQ_ConformanceResult and mdq:DQ_ConformanceResult/mdq:pass/*/text() = 'true']"/>
+                                   select="ancestor::che:CHE_MD_Metadata/mdb:dataQualityInfo/*/mdq:report/*/mdq:result[mdq:DQ_ConformanceResult and mdq:DQ_ConformanceResult/mdq:pass/*/text() = 'true']"/>
             </xsl:if>
 
             <xsl:copy-of select="$additionalProperties"/>

@@ -8,12 +8,13 @@
                 xmlns:gn-fn-dcat="http://geonetwork-opensource.org/xsl/functions/dcat"
                 xmlns:foaf="http://xmlns.com/foaf/0.1/"
                 xmlns:dct="http://purl.org/dc/terms/"
+                xmlns:che="http://geocat.ch/che"
                 exclude-result-prefixes="#all">
 
   <!-- Create CatalogueRecord -->
   <xsl:template mode="iso19115-3-to-dcat-catalog-record"
                 name="iso19115-3-to-dcat-catalog-record"
-                match="mdb:MD_Metadata">
+                match="che:CHE_MD_Metadata">
     <xsl:param name="additionalProperties"
                as="node()*"/>
     <xsl:variable name="properties" as="node()*">
