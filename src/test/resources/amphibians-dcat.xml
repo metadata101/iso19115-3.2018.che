@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+  <rdf:Description rdf:about="ADN06">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
+    <dct:type>
+      <skos:Concept rdf:about="http://purl.org/dc/dcmitype/Dataset">
+        <skos:prefLabel>Dataset</skos:prefLabel>
+      </skos:Concept>
+    </dct:type>
+    <dct:type>
+      <skos:Concept rdf:about="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#dataset">
+        <skos:prefLabel>dataset</skos:prefLabel>
+      </skos:Concept>
+    </dct:type>
+    <foaf:isPrimaryTopicOf>
+      <rdf:Description rdf:about="9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord" />
+        <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce</dct:identifier>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-17T16:04:56.559Z</dct:modified>
+        <dct:title xml:lang="ger">Amphibien Ausbreitungskarten - Ichthyosaura alpestris</dct:title>
+        <dct:title xml:lang="fre">Cartes de dispersion des amphibiens - Ichthyosaura alpestris</dct:title>
+        <dct:title xml:lang="eng">Amphibian dispersal maps - Ichthyosaura alpestris</dct:title>
+        <dct:description xml:lang="ger">Schweizweite Karte, die die Ausbreitungs-Wahrscheinlichkeit der Bergmolch (Ichthyosaura alpestris) darstellt. Jede Rasterzelle gibt die relative Wahrscheinlichkeit an, dass sich wandernde Individuen auf ihrem Weg zwischen bekannten Amphibienlaichgebiete durch diesen Hektar wandern. Die Karte zeigt die Ausbreitungs-Wahrscheinlichkeit, die entlang einer Skala von Blau über Gelb bis Rot zunimmt.
+Diese Karten sollten als Heatmaps für die Ausbreitungsaktivität bestehender Populationen betrachtet werden. In der Praxis zeigen diese Karten auch Orte, an denen potenzielle neue Amphibienlaichgebiete die höchsten Chancen haben, besiedelt zu werden. 
+Gebiete mit vielen Populationen in unmittelbarer Nähe erscheinen dunkler rot, was die höhere Wahrscheinlichkeit einer Ausbreitung widerspiegelt, da sich mehrere Ausbreitungsrouten zwischen den Populationen überschneiden. Diese Eigenschaft der Karten verdient besondere Aufmerksamkeit. Hellere Schattierungen an den Rändern der Artenverbreitung bedeuten nicht unbedingt eine schwächere Verbindung zwischen den Populationen, sondern sind eher eine Folge der geringeren Dichte an Amphibienlaichgebieten an den Rändern der Verbreitung. Die Farbskala soll im Kontext der unmittelbaren Umgebung betrachtet werden. 
+Die Ausbreitungskarte wurde mit Circuitscape berechnet und basiert auf einer Landschaftswiderstandsmatrix, die aus dem am besten bewerteten Verbreitungsmodell für jede Art abgeleitet wurde.
+Für Details, siehe die beigefügte Datenbeschreibung.</dct:description>
+        <dct:description xml:lang="fre">Carte de la Suisse montrant la probabilité de dispersion du Triton alpestre (Ichthyosaura alpestris). Chaque cellule de la grille indique la probabilité relative que des individus traversent cet hectare sur leur trajet entre des sites de reproduction connus. La carte montre la probabilité de dispersion qui augmente le long d'une échelle allant du bleu au rouge en passant par le jaune. 
+Ces cartes devraient être considérées comme des cartes de chaleur de l'activité de dispersion des populations existantes. En pratique, ces cartes indiquent également les endroits où les nouveaux sites de reproduction d'amphibiens potentiels ont le plus de chances d'être colonisés. 
+Les zones avec de nombreuses populations à proximité immédiate apparaissent en rouge plus foncé, ce qui reflète une plus grande probabilité de dispersion, car plusieurs voies de dispersion entre les populations se chevauchent. Cette caractéristique des cartes mérite une attention particulière. Des nuances plus claires sur les bords de la distribution des espèces ne signifient pas nécessairement un lien plus faible entre les populations, mais sont plutôt la conséquence d'une densité plus faible de sites de reproduction d'amphibiens sur les bords de la distribution. L'échelle de couleurs doit être considérée dans le contexte de l'environnement immédiat.
+La carte de dispersion a été calculée avec Circuitscape et se base sur une matrice de résistance du paysage dérivée du MDS le mieux évalué pour chaque espèce.
+Pour plus de détails, voir la description des données ci-jointe.</dct:description>
+        <dct:description xml:lang="eng">Swiss-wide map depicting the dispersal probability of the Alpine newt (Ichthyosaura alpestris). Each grid cell indicates the relative probability that dispersing individuals will pass through that hectare on their way between known amphibian breeding sites. The map shows dispersal probability increasing along a scale from blue to yellow to red.
+These maps should be thought of as heatmaps for dispersal activity of existing populations. In practical terms, these maps also show locations where potential new amphibian breeding sites have the highest chances of being colonized. 
+Areas with many populations in close proximity appear a darker red, reflecting the higher probability of dispersal as multiple dispersal routes between populations intersect. This feature of the maps deserves special attention. Lighter shades at the edges of the species' range do not necessarily indicate a weaker connection between populations, but rather a consequence of the lower density of breeding sites at the edges of the range. The color scale should be considered in the context of the immediate surroundings.
+The dispersal map was calculated using Circuitscape and is based on a landscape resistance matrix derived from the best-ranked dispersal model for each species.
+For details, see the attached data description.</dct:description>
+        <foaf:primaryTopic rdf:resource="ADN06" />
+      </rdf:Description>
+    </foaf:isPrimaryTopicOf>
+    <dct:title xml:lang="ger">Amphibien Ausbreitungskarten - Ichthyosaura alpestris</dct:title>
+    <dct:title xml:lang="fre">Cartes de dispersion des amphibiens - Ichthyosaura alpestris</dct:title>
+    <dct:title xml:lang="eng">Amphibian dispersal maps - Ichthyosaura alpestris</dct:title>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-23</dct:issued>
+    <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADN06</dct:identifier>
+    <dct:description xml:lang="ger">Schweizweite Karte, die die Ausbreitungs-Wahrscheinlichkeit der Bergmolch (Ichthyosaura alpestris) darstellt. Jede Rasterzelle gibt die relative Wahrscheinlichkeit an, dass sich wandernde Individuen auf ihrem Weg zwischen bekannten Amphibienlaichgebiete durch diesen Hektar wandern. Die Karte zeigt die Ausbreitungs-Wahrscheinlichkeit, die entlang einer Skala von Blau über Gelb bis Rot zunimmt.
+Diese Karten sollten als Heatmaps für die Ausbreitungsaktivität bestehender Populationen betrachtet werden. In der Praxis zeigen diese Karten auch Orte, an denen potenzielle neue Amphibienlaichgebiete die höchsten Chancen haben, besiedelt zu werden. 
+Gebiete mit vielen Populationen in unmittelbarer Nähe erscheinen dunkler rot, was die höhere Wahrscheinlichkeit einer Ausbreitung widerspiegelt, da sich mehrere Ausbreitungsrouten zwischen den Populationen überschneiden. Diese Eigenschaft der Karten verdient besondere Aufmerksamkeit. Hellere Schattierungen an den Rändern der Artenverbreitung bedeuten nicht unbedingt eine schwächere Verbindung zwischen den Populationen, sondern sind eher eine Folge der geringeren Dichte an Amphibienlaichgebieten an den Rändern der Verbreitung. Die Farbskala soll im Kontext der unmittelbaren Umgebung betrachtet werden. 
+Die Ausbreitungskarte wurde mit Circuitscape berechnet und basiert auf einer Landschaftswiderstandsmatrix, die aus dem am besten bewerteten Verbreitungsmodell für jede Art abgeleitet wurde.
+Für Details, siehe die beigefügte Datenbeschreibung.</dct:description>
+    <dct:description xml:lang="fre">Carte de la Suisse montrant la probabilité de dispersion du Triton alpestre (Ichthyosaura alpestris). Chaque cellule de la grille indique la probabilité relative que des individus traversent cet hectare sur leur trajet entre des sites de reproduction connus. La carte montre la probabilité de dispersion qui augmente le long d'une échelle allant du bleu au rouge en passant par le jaune. 
+Ces cartes devraient être considérées comme des cartes de chaleur de l'activité de dispersion des populations existantes. En pratique, ces cartes indiquent également les endroits où les nouveaux sites de reproduction d'amphibiens potentiels ont le plus de chances d'être colonisés. 
+Les zones avec de nombreuses populations à proximité immédiate apparaissent en rouge plus foncé, ce qui reflète une plus grande probabilité de dispersion, car plusieurs voies de dispersion entre les populations se chevauchent. Cette caractéristique des cartes mérite une attention particulière. Des nuances plus claires sur les bords de la distribution des espèces ne signifient pas nécessairement un lien plus faible entre les populations, mais sont plutôt la conséquence d'une densité plus faible de sites de reproduction d'amphibiens sur les bords de la distribution. L'échelle de couleurs doit être considérée dans le contexte de l'environnement immédiat.
+La carte de dispersion a été calculée avec Circuitscape et se base sur une matrice de résistance du paysage dérivée du MDS le mieux évalué pour chaque espèce.
+Pour plus de détails, voir la description des données ci-jointe.</dct:description>
+    <dct:description xml:lang="eng">Swiss-wide map depicting the dispersal probability of the Alpine newt (Ichthyosaura alpestris). Each grid cell indicates the relative probability that dispersing individuals will pass through that hectare on their way between known amphibian breeding sites. The map shows dispersal probability increasing along a scale from blue to yellow to red.
+These maps should be thought of as heatmaps for dispersal activity of existing populations. In practical terms, these maps also show locations where potential new amphibian breeding sites have the highest chances of being colonized. 
+Areas with many populations in close proximity appear a darker red, reflecting the higher probability of dispersal as multiple dispersal routes between populations intersect. This feature of the maps deserves special attention. Lighter shades at the edges of the species' range do not necessarily indicate a weaker connection between populations, but rather a consequence of the lower density of breeding sites at the edges of the range. The color scale should be considered in the context of the immediate surroundings.
+The dispersal map was calculated using Circuitscape and is based on a landscape resistance matrix derived from the best-ranked dispersal model for each species.
+For details, see the attached data description.</dct:description>
+    <adms:status>
+      <skos:Concept rdf:about="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#completed">
+        <skos:prefLabel xml:lang="ger">cl_MD_ProgressCode#completed</skos:prefLabel>
+        <skos:prefLabel xml:lang="fre">cl_MD_ProgressCode#completed</skos:prefLabel>
+        <skos:prefLabel xml:lang="ita">cl_MD_ProgressCode#completed</skos:prefLabel>
+        <skos:prefLabel xml:lang="eng">cl_MD_ProgressCode#completed</skos:prefLabel>
+        <skos:prefLabel xml:lang="roh">cl_MD_ProgressCode#completed</skos:prefLabel>
+      </skos:Concept>
+    </adms:status>
+    <dct:creator>
+      <rdf:Description rdf:about="http://www.agroscope.admin.ch">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization" />
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent" />
+        <foaf:name xml:lang="ger">Agroscope Metadaten</foaf:name>
+        <foaf:name xml:lang="fre">Agroscope Métadonnées</foaf:name>
+        <foaf:name xml:lang="ita">Agroscope Metadati</foaf:name>
+        <foaf:name xml:lang="eng">Agroscope meta data</foaf:name>
+        <foaf:mbox rdf:resource="mailto:GIS@agroscope.admin.ch" />
+        <foaf:workplaceHomepage xml:lang="ger">http://www.agroscope.admin.ch</foaf:workplaceHomepage>
+        <foaf:workplaceHomepage xml:lang="fre">http://www.agroscope.admin.ch</foaf:workplaceHomepage>
+        <foaf:workplaceHomepage xml:lang="ita">http://www.agroscope.admin.ch</foaf:workplaceHomepage>
+        <foaf:workplaceHomepage xml:lang="eng">http://www.agroscope.admin.ch</foaf:workplaceHomepage>
+      </rdf:Description>
+    </dct:creator>
+    <prov:qualifiedAttribution>
+      <prov:Attribution>
+        <prov:agent>
+          <rdf:Description rdf:about="https://www.infofauna.ch/de/beratungsstellen/amphibien-karch">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization" />
+            <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent" />
+            <foaf:name xml:lang="ger">Info_Fauna_Karch</foaf:name>
+            <foaf:name xml:lang="fre">Information_Fauna_Karch</foaf:name>
+            <foaf:name xml:lang="ita">Informatione_Fauna_Karch</foaf:name>
+            <foaf:name xml:lang="eng">Info_Fauna_Karch</foaf:name>
+            <foaf:mbox rdf:resource="mailto:contact@infofauna.ch" />
+            <foaf:workplaceHomepage xml:lang="ger">https://www.infofauna.ch/de/beratungsstellen/amphibien-karch</foaf:workplaceHomepage>
+            <foaf:workplaceHomepage xml:lang="fre">https://www.agroscope.admin.ch/agroscope/fr/home.html</foaf:workplaceHomepage>
+            <foaf:workplaceHomepage xml:lang="ita">https://www.agroscope.admin.ch/agroscope/it/home.html</foaf:workplaceHomepage>
+            <foaf:workplaceHomepage xml:lang="eng">https://www.agroscope.admin.ch/agroscope/en/home.html</foaf:workplaceHomepage>
+          </rdf:Description>
+        </prov:agent>
+        <dcat:hadRole>
+          <dcat:Role rdf:about="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#principalInvestigator">
+            <skos:prefLabel>principalInvestigator</skos:prefLabel>
+          </dcat:Role>
+        </dcat:hadRole>
+      </prov:Attribution>
+    </prov:qualifiedAttribution>
+    <dcat:contactPoint>
+      <rdf:Description rdf:about="https://www.bafu.admin.ch/bafu/de/home/amt/abteilungen-sektionen/abteilung-biodiversitaet-und-landschaft.html">
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization" />
+        <vcard:org>
+          <rdf:Description>
+            <vcard:organisation-name xml:lang="ger">Bundesamt für Umwelt / Abteilung Biodiversität und Landschaft</vcard:organisation-name>
+            <vcard:organisation-name xml:lang="fre">Office fédéral de l'environnement / Division Biodiversité et paysage</vcard:organisation-name>
+            <vcard:organisation-name xml:lang="ita">Ufficio federale dell'ambiente / Divisione Biodiversità e paesaggio</vcard:organisation-name>
+            <vcard:organisation-name xml:lang="eng">Federal Office for the Environment / Biodiversity and Landscape Division</vcard:organisation-name>
+            <vcard:organisation-name xml:lang="roh">Bundesamt für Umwelt</vcard:organisation-name>
+          </rdf:Description>
+        </vcard:org>
+        <vcard:hasEmail rdf:resource="mailto:bnl@bafu.admin.ch" />
+        <vcard:hasAddress>
+          <vcard:Address>
+            <vcard:country-name xml:lang="ger">CH</vcard:country-name>
+            <vcard:locality xml:lang="ger">Bern</vcard:locality>
+            <vcard:postal-code xml:lang="ger">3003</vcard:postal-code>
+          </vcard:Address>
+        </vcard:hasAddress>
+      </rdf:Description>
+    </dcat:contactPoint>
+    <dcat:keyword xml:lang="ger">Bund</dcat:keyword>
+    <dcat:keyword xml:lang="fre">confédération</dcat:keyword>
+    <dcat:keyword xml:lang="ita">confederazione</dcat:keyword>
+    <dcat:keyword xml:lang="eng">confederation</dcat:keyword>
+    <dcat:keyword xml:lang="ger">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="fre">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="ita">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="eng">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="roh">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="ger">Natürliche Lebensräume, Landschaft, Ökosysteme</dcat:keyword>
+    <dcat:keyword xml:lang="fre">zones naturelles, paysages, écosystèmes</dcat:keyword>
+    <dcat:keyword xml:lang="ita">aree naturali, paesaggio, ecosistemi</dcat:keyword>
+    <dcat:keyword xml:lang="eng">natural areas, landscape, ecosystems</dcat:keyword>
+    <dcat:keyword xml:lang="ger">Landwirtschaft</dcat:keyword>
+    <dcat:keyword xml:lang="fre">agriculture</dcat:keyword>
+    <dcat:keyword xml:lang="ita">agricoltura</dcat:keyword>
+    <dcat:keyword xml:lang="eng">agriculture</dcat:keyword>
+    <dcat:keyword xml:lang="ger">Fauna</dcat:keyword>
+    <dcat:keyword xml:lang="fre">faune</dcat:keyword>
+    <dcat:keyword xml:lang="ita">fauna</dcat:keyword>
+    <dcat:keyword xml:lang="eng">fauna</dcat:keyword>
+    <dcat:keyword xml:lang="ger">Amphibien</dcat:keyword>
+    <dcat:keyword xml:lang="fre">batracien</dcat:keyword>
+    <dcat:keyword xml:lang="ita">anfibi</dcat:keyword>
+    <dcat:keyword xml:lang="eng">amphibian</dcat:keyword>
+    <dcat:keyword xml:lang="ger">Landwirtschaft</dcat:keyword>
+    <dcat:keyword xml:lang="fre">agriculture</dcat:keyword>
+    <dcat:keyword xml:lang="ita">agricoltura</dcat:keyword>
+    <dcat:keyword xml:lang="eng">agriculture</dcat:keyword>
+    <dcat:keyword xml:lang="ger">Naturschutz</dcat:keyword>
+    <dcat:keyword xml:lang="fre">préservation de la nature</dcat:keyword>
+    <dcat:keyword xml:lang="ita">conservazione della natura</dcat:keyword>
+    <dcat:keyword xml:lang="eng">nature conservation</dcat:keyword>
+    <dct:accessRights>
+      <dct:RightsStatement rdf:about="https://opendata.swiss/en/terms-of-use/#terms_open" />
+    </dct:accessRights>
+    <dct:license>
+      <dct:LicenseDocument rdf:about="https://opendata.swiss/en/terms-of-use/#terms_open" />
+    </dct:license>
+    <dct:rights>
+      <dct:RightsStatement>
+        <dct:description xml:lang="ger" />
+      </dct:RightsStatement>
+    </dct:rights>
+    <dct:relation />
+    <dct:language>
+      <dct:LinguisticSystem rdf:about="http://publications.europa.eu/resource/authority/language/DEU" />
+    </dct:language>
+    <dcat:spatialResolutionInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100</dcat:spatialResolutionInMeters>
+    <dct:spatial>
+      <rdf:Description>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/Location" />
+        <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral">{"type":"Polygon","coordinates":[[[5.956088,47.808488],[10.492036,47.808488],[10.492036,45.817970],[5.956088,45.817970],[5.956088,47.808488]]]}</dcat:bbox>
+      </rdf:Description>
+    </dct:spatial>
+    <dct:accrualPeriodicity>
+      <dct:Frequency rdf:about="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#notPlanned" />
+    </dct:accrualPeriodicity>
+    <foaf:page>
+      <foaf:Document rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce/attachments/ICAL.png" />
+    </foaf:page>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dct:title xml:lang="ger">Datenbeschreibung_AmphibienAckerland.pdf</dct:title>
+        <dcat:accessURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf" />
+        <dcat:downloadURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf" />
+        <dcat:accessService>
+          <rdf:Description>
+            <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DataService" />
+            <dct:title xml:lang="ger">Datenbeschreibung_AmphibienAckerland.pdf</dct:title>
+            <dcat:endpointURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf" />
+          </rdf:Description>
+        </dcat:accessService>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dct:title xml:lang="ger">DescriptionDonnees_BatrachiensAgricole.pdf</dct:title>
+        <dcat:accessURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf" />
+        <dcat:downloadURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf" />
+        <dcat:accessService>
+          <rdf:Description>
+            <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DataService" />
+            <dct:title xml:lang="ger">DescriptionDonnees_BatrachiensAgricole.pdf</dct:title>
+            <dcat:endpointURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf" />
+          </rdf:Description>
+        </dcat:accessService>
+      </dcat:Distribution>
+    </dcat:distribution>
+  </rdf:Description>
+</rdf:RDF>
+
