@@ -16,6 +16,7 @@
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns:skos="http://www.w3.org/2004/02/skos/core#"
                 xmlns:mobilitydcatap="https://w3id.org/mobilitydcat-ap"
+                xmlns:che="http://geocat.ch/che"
                 exclude-result-prefixes="#all">
 
   <!-- Import related templates -->
@@ -28,7 +29,7 @@
 
   <xsl:template mode="iso19115-3-to-dcat-resource"
                 name="iso19115-3-to-eu-dcat-ap-mobility-resource"
-                match="mdb:MD_Metadata"
+                match="che:CHE_MD_Metadata"
                 priority="2">
     <xsl:call-template name="iso19115-3-to-dcat-ap-resource"/>
 
