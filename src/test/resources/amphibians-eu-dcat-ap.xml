@@ -229,6 +229,11 @@ For details, see the attached data description.</dct:description>
             <dcat:endpointURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf" />
           </rdf:Description>
         </dcat:accessService>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>Cloud Optimized GeoTIFF (TIFF / TIF)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
       </dcat:Distribution>
     </dcat:distribution>
     <dcat:distribution>
@@ -243,6 +248,11 @@ For details, see the attached data description.</dct:description>
             <dcat:endpointURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf" />
           </rdf:Description>
         </dcat:accessService>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>Cloud Optimized GeoTIFF (TIFF / TIF)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
       </dcat:Distribution>
     </dcat:distribution>
   </rdf:Description>
