@@ -214,6 +214,36 @@
         <dct:description xml:lang="ita">Previsione map.geo.admin.ch</dct:description>
         <dct:description xml:lang="eng">Preview map.geo.admin.ch</dct:description>
         <dcat:accessURL rdf:resource="https://map.geo.admin.ch/?layers=ch.swisstopo.swisstlm3d-uebrigerverkehr" />
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>ESRI File Geodatabase FileGDB (GDB)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>ESRI Shapefile (SHP)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>AutoCAD DXF (DXF)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>INTERLIS 1 (ITF)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>INTERLIS 2 (XTF)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>OGC Geopackage (GPKG)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
       </dcat:Distribution>
     </dcat:distribution>
     <dcat:distribution>
@@ -229,6 +259,36 @@
         <dct:description xml:lang="eng">WMTS-FSDI service, layer "Cableways swissTLM3D"</dct:description>
         <dct:description xml:lang="roh">WMTS-BGDI Dienst, Layer "Seilbahnen swissTLM3D"</dct:description>
         <dcat:accessURL rdf:resource="https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=de" />
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>ESRI File Geodatabase FileGDB (GDB)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>ESRI Shapefile (SHP)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>AutoCAD DXF (DXF)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>INTERLIS 1 (ITF)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>INTERLIS 2 (XTF)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>OGC Geopackage (GPKG)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
       </dcat:Distribution>
     </dcat:distribution>
     <foaf:page>
@@ -251,6 +311,36 @@
             </dct:conformsTo>
           </rdf:Description>
         </dcat:accessService>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>ESRI File Geodatabase FileGDB (GDB)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>ESRI Shapefile (SHP)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>AutoCAD DXF (DXF)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>INTERLIS 1 (ITF)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>INTERLIS 2 (XTF)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>OGC Geopackage (GPKG)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
       </dcat:Distribution>
     </dcat:distribution>
     <dcat:distribution>
@@ -261,6 +351,36 @@
         <dct:description xml:lang="eng">Shop</dct:description>
         <dcat:accessURL rdf:resource="https://www.swisstopo.admin.ch/de/landschaftsmodell-swisstlm3d" />
         <dcat:downloadURL rdf:resource="https://www.swisstopo.admin.ch/de/landschaftsmodell-swisstlm3d" />
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>ESRI File Geodatabase FileGDB (GDB)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>ESRI Shapefile (SHP)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>AutoCAD DXF (DXF)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>INTERLIS 1 (ITF)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>INTERLIS 2 (XTF)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>OGC Geopackage (GPKG)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
       </dcat:Distribution>
     </dcat:distribution>
     <dcat:distribution>
@@ -270,6 +390,36 @@
         <dct:description xml:lang="ita">map.geo.admin.ch</dct:description>
         <dct:description xml:lang="eng">map.geo.admin.ch</dct:description>
         <dcat:accessURL rdf:resource="https://map.geo.admin.ch/?topic=swisstopo&amp;lang=de&amp;bgLayer=voidLayer&amp;catalogNodes=1436,1396,1397&amp;layers=ch.swisstopo.swisstlm3d-karte-farbe&amp;X=192000.00&amp;Y=622250.00&amp;zoom=2" />
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>ESRI File Geodatabase FileGDB (GDB)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>ESRI Shapefile (SHP)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>AutoCAD DXF (DXF)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>INTERLIS 1 (ITF)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>INTERLIS 2 (XTF)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>OGC Geopackage (GPKG)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
       </dcat:Distribution>
     </dcat:distribution>
     <dcat:distribution>
@@ -296,6 +446,36 @@
             <dcat:endpointURL rdf:resource="https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swisstlm3d-uebrigerverkehr" />
           </rdf:Description>
         </dcat:accessService>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>ESRI File Geodatabase FileGDB (GDB)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>ESRI Shapefile (SHP)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>AutoCAD DXF (DXF)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>INTERLIS 1 (ITF)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>INTERLIS 2 (XTF)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
+        <dct:format>
+          <dct:MediaTypeOrExtent>
+            <rdfs:label>OGC Geopackage (GPKG)</rdfs:label>
+          </dct:MediaTypeOrExtent>
+        </dct:format>
       </dcat:Distribution>
     </dcat:distribution>
   </rdf:Description>
