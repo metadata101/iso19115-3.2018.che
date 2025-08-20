@@ -15,6 +15,7 @@
                 xmlns:dct="http://purl.org/dc/terms/"
                 xmlns:cnt="http://www.w3.org/2011/content#"
                 xmlns:geodcatap="http://data.europa.eu/930/"
+                xmlns:che="http://geocat.ch/che"
                 exclude-result-prefixes="#all">
     <!-- http://data.europa.eu/930/ -->
 
@@ -72,7 +73,7 @@
 
     <xsl:template mode="iso19115-3-to-dcat-catalog-record"
                   name="iso19115-3-to-eu-geodcat-ap-catalog-record"
-                  match="mdb:MD_Metadata">
+                  match="che:CHE_MD_Metadata">
         <xsl:param name="additionalProperties"
                    as="node()*"/>
 
@@ -94,7 +95,7 @@
 
     <xsl:template mode="iso19115-3-to-dcat-resource"
                   name="iso19115-3-to-eu-geodcat-ap-resource"
-                  match="mdb:MD_Metadata"
+                  match="che:CHE_MD_Metadata"
                   priority="2">
         <xsl:call-template name="iso19115-3-to-dcat-ap-resource"/>
 
@@ -184,7 +185,7 @@
     0..n
     -->
     <xsl:template mode="iso19115-3-to-dcat"
-                  match="mdb:MD_Metadata/mdb:defaultLocale/*/lan:characterEncoding/*/@codeListValue">
+                  match="che:CHE_MD_Metadata/mdb:defaultLocale/*/lan:characterEncoding/*/@codeListValue">
         <xsl:variable name="characterEncoding"
                       select="$ianaCharsetToIso[text() = current()]/@key"/>
         <xsl:if test="$characterEncoding">
