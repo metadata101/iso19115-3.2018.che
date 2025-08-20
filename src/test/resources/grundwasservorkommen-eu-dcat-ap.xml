@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatap="http://data.europa.eu/r5r/" xmlns:eli="http://data.europa.eu/eli/ontology">
+  <rdf:Description rdf:about="f8ca237a-882b-4e72-8b81-81378fb9e85c#resource">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DataService" />
+    <dct:type>
+      <skos:Concept rdf:about="http://purl.org/dc/dcmitype/Service">
+        <skos:prefLabel>Service</skos:prefLabel>
+      </skos:Concept>
+    </dct:type>
+    <foaf:isPrimaryTopicOf>
+      <rdf:Description rdf:about="f8ca237a-882b-4e72-8b81-81378fb9e85c">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord" />
+        <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">f8ca237a-882b-4e72-8b81-81378fb9e85c</dct:identifier>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-12T12:56:53.929Z</dct:modified>
+        <dct:title xml:lang="ger">geodienste.ch WMS Grundwasservorkommen</dct:title>
+        <dct:title xml:lang="fre">geodienste.ch WMS Nappes souterraines</dct:title>
+        <dct:title xml:lang="ita">geodienste.ch WMS Risorse idriche sotterranee</dct:title>
+        <dct:description xml:lang="ger">Das Angebot bildet die Ausdehnung und Mächtigkeit der Grundwasservorkommen im Lockergestein und im Festgestein ab. Ergänzend werden Isohypsen, Quellhorizonte und undurchlässige Deckschichten dargestellt. Die Daten basieren auf dem MGDM Grundwasservorkommen (ID 139.1, Version 2.0).</dct:description>
+        <dct:description xml:lang="fre">L’offerta mostra l'estensione e lo spessore delle falde freatiche in materiale sciolto e in rocce coerenti. Sono indicati anche le isoipse, gli orizzonti sorgivi e gli strati di copertura poco permeabili. I dati si basano sulle MGDM Falde freatiche (ID 139.1, versione 2.0).</dct:description>
+        <dct:description xml:lang="ita">In questa offerta sono presentati gli inventari dei prelievi d’acqua esistenti che i Cantoni hanno dovuto compilare come base per il risanamento dei deflussi residuali. Gli inventari vengono aggiornati e resi accessibili al pubblico. 
+
+I dati si basano sul modello di geodati minimo (MGDM) «Inventario dei prelievi d’acqua esistenti» (ID 140, versione 1.1).</dct:description>
+        <dct:language>
+          <dct:LinguisticSystem rdf:about="http://publications.europa.eu/resource/authority/language/DEU" />
+        </dct:language>
+        <dct:language>
+          <dct:LinguisticSystem rdf:about="http://publications.europa.eu/resource/authority/language/FRA" />
+        </dct:language>
+        <dct:language>
+          <dct:LinguisticSystem rdf:about="http://publications.europa.eu/resource/authority/language/ENG" />
+        </dct:language>
+        <dct:language>
+          <dct:LinguisticSystem rdf:about="http://publications.europa.eu/resource/authority/language/ITA" />
+        </dct:language>
+        <dct:conformsTo>
+          <dct:Standard rdf:about="http://data.europa.eu/r5r/" />
+        </dct:conformsTo>
+        <foaf:primaryTopic rdf:resource="f8ca237a-882b-4e72-8b81-81378fb9e85c#resource" />
+      </rdf:Description>
+    </foaf:isPrimaryTopicOf>
+    <dct:title xml:lang="ger">geodienste.ch WMS Grundwasservorkommen</dct:title>
+    <dct:title xml:lang="fre">geodienste.ch WMS Nappes souterraines</dct:title>
+    <dct:title xml:lang="ita">geodienste.ch WMS Risorse idriche sotterranee</dct:title>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-11-27</dct:issued>
+    <dct:description xml:lang="ger">Das Angebot bildet die Ausdehnung und Mächtigkeit der Grundwasservorkommen im Lockergestein und im Festgestein ab. Ergänzend werden Isohypsen, Quellhorizonte und undurchlässige Deckschichten dargestellt. Die Daten basieren auf dem MGDM Grundwasservorkommen (ID 139.1, Version 2.0).</dct:description>
+    <dct:description xml:lang="fre">L’offerta mostra l'estensione e lo spessore delle falde freatiche in materiale sciolto e in rocce coerenti. Sono indicati anche le isoipse, gli orizzonti sorgivi e gli strati di copertura poco permeabili. I dati si basano sulle MGDM Falde freatiche (ID 139.1, versione 2.0).</dct:description>
+    <dct:description xml:lang="ita">In questa offerta sono presentati gli inventari dei prelievi d’acqua esistenti che i Cantoni hanno dovuto compilare come base per il risanamento dei deflussi residuali. Gli inventari vengono aggiornati e resi accessibili al pubblico. 
+
+I dati si basano sul modello di geodati minimo (MGDM) «Inventario dei prelievi d’acqua esistenti» (ID 140, versione 1.1).</dct:description>
+    <prov:qualifiedAttribution>
+      <prov:Attribution>
+        <prov:agent>
+          <rdf:Description rdf:about="https://www.geodienste.ch/">
+            <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization" />
+            <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent" />
+            <foaf:name xml:lang="ger">KGK-CGC</foaf:name>
+            <foaf:name xml:lang="fre">KGK-CGC</foaf:name>
+            <foaf:name xml:lang="eng">KGK-CGC</foaf:name>
+            <foaf:name xml:lang="ita">KGK-CGC</foaf:name>
+            <foaf:mbox rdf:resource="mailto:geodienste@kgk-cgc.ch" />
+            <foaf:workplaceHomepage xml:lang="ger">https://www.geodienste.ch/</foaf:workplaceHomepage>
+            <foaf:workplaceHomepage xml:lang="fre">https://www.geodienste.ch/</foaf:workplaceHomepage>
+            <foaf:workplaceHomepage xml:lang="eng">https://www.geodienste.ch/</foaf:workplaceHomepage>
+            <foaf:workplaceHomepage xml:lang="ita">https://www.geodienste.ch/</foaf:workplaceHomepage>
+          </rdf:Description>
+        </prov:agent>
+        <dcat:hadRole>
+          <dcat:Role rdf:about="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#resourceProvider">
+            <skos:prefLabel>resourceProvider</skos:prefLabel>
+          </dcat:Role>
+        </dcat:hadRole>
+      </prov:Attribution>
+    </prov:qualifiedAttribution>
+    <dcat:keyword xml:lang="ger">Darstellungsdienst</dcat:keyword>
+    <dcat:keyword xml:lang="fre">service de consultation</dcat:keyword>
+    <dcat:keyword xml:lang="eng">presentation service</dcat:keyword>
+    <dcat:keyword xml:lang="ita">servizio di rappresentazione</dcat:keyword>
+    <dcat:keyword xml:lang="ger">Geodienst</dcat:keyword>
+    <dcat:keyword xml:lang="fre">géoservice</dcat:keyword>
+    <dcat:keyword xml:lang="eng">geoservice</dcat:keyword>
+    <dcat:keyword xml:lang="ita">geoservizio</dcat:keyword>
+    <dcat:keyword xml:lang="ger">Geobasisdienst</dcat:keyword>
+    <dcat:keyword xml:lang="fre">géoservice de base</dcat:keyword>
+    <dcat:keyword xml:lang="eng">official geoservice</dcat:keyword>
+    <dcat:keyword xml:lang="ita">geoservizio di base</dcat:keyword>
+    <dcat:keyword xml:lang="ger">Minimales Geodatenmodel MGDM</dcat:keyword>
+    <dcat:keyword xml:lang="fre">modèle de géodonnées minimal MGDM</dcat:keyword>
+    <dcat:keyword xml:lang="eng">minimum geodata model MGDM</dcat:keyword>
+    <dcat:keyword xml:lang="ita">modello di geodati minimi MGDM</dcat:keyword>
+    <dcat:keyword xml:lang="ger">Geobasisdaten</dcat:keyword>
+    <dcat:keyword xml:lang="fre">géodonnées de base</dcat:keyword>
+    <dcat:keyword xml:lang="eng">official geodata</dcat:keyword>
+    <dcat:keyword xml:lang="ita">geodati di base</dcat:keyword>
+    <dcat:keyword xml:lang="ger">geodienste.ch</dcat:keyword>
+    <dcat:keyword xml:lang="fre">geodienste.ch</dcat:keyword>
+    <dcat:keyword xml:lang="eng">geodienste.ch</dcat:keyword>
+    <dcat:keyword xml:lang="ita">geodienste.ch</dcat:keyword>
+    <dcat:keyword xml:lang="ger">Kanton</dcat:keyword>
+    <dcat:keyword xml:lang="fre">canton</dcat:keyword>
+    <dcat:keyword xml:lang="eng">canton</dcat:keyword>
+    <dcat:keyword xml:lang="ita">cantone</dcat:keyword>
+    <dcat:keyword xml:lang="ger">WMS</dcat:keyword>
+    <dcat:keyword xml:lang="fre">WMS</dcat:keyword>
+    <dcat:keyword xml:lang="eng">WMS</dcat:keyword>
+    <dcat:keyword xml:lang="ita">WMS</dcat:keyword>
+    <dcat:keyword xml:lang="ger">Wasserkraftwerk</dcat:keyword>
+    <dcat:keyword xml:lang="fre">centrale hydroélectrique</dcat:keyword>
+    <dcat:keyword xml:lang="eng">hydroelectric power plant</dcat:keyword>
+    <dcat:keyword xml:lang="ita">centrale idroelettrica</dcat:keyword>
+    <dcat:keyword xml:lang="ger">Grundwasser</dcat:keyword>
+    <dcat:keyword xml:lang="fre">eaux souterraines</dcat:keyword>
+    <dcat:keyword xml:lang="eng">groundwater</dcat:keyword>
+    <dcat:keyword xml:lang="ita">acqua sotterranea</dcat:keyword>
+    <dct:spatial>
+      <rdf:Description>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/Location" />
+        <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral">{"type":"Polygon","coordinates":[[[5.956088,47.808488],[10.492036,47.808488],[10.492036,45.817970],[5.956088,45.817970],[5.956088,47.808488]]]}</dcat:bbox>
+      </rdf:Description>
+    </dct:spatial>
+    <dcat:endpointURL rdf:resource="https://geodienste.ch/db/grundwasservorkommen_v2_0/deu?" />
+    <dcat:endpointURL rdf:resource="https://geodienste.ch/db/grundwasservorkommen_v2_0/deu?" />
+    <dcat:endpointURL rdf:resource="https://geodienste.ch/db/grundwasservorkommen_v2_0/deu?" />
+    <dcat:servesDataset>
+      <dcat:Dataset rdf:about="https://www.geocat.ch/geonetwork/srv/ger/csw?service=CSW&amp;request=GetRecordById&amp;version=2.0.2&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=7cb578f8-ca6f-40ef-8d39-d27414cc3047" />
+    </dcat:servesDataset>
+  </rdf:Description>
+</rdf:RDF>
+

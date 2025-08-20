@@ -37,4 +37,18 @@ public class DCatFormatterTest {
 		TestSupport.assertGeneratedDataByteMatchExpected("amphibians-eu-dcat-ap.xml", actual, GENERATE_EXPECTED_FILE);
 	}
 
+	@Test
+	public void euDcatApForService() throws Exception {
+		Path xslFile = getResourceInsideSchema("formatter/eu-dcat-ap/view.xsl");
+		Path xmlFile = getResource("grundwasservorkommen-19115-3.che.xml");
+		Element md = Xml.loadFile(xmlFile);
+
+		Element fullCswRecord = Xml.transform(md, xslFile);
+
+		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
+		String actual = xmlOutputter.outputString(new Document(fullCswRecord));
+
+		TestSupport.assertGeneratedDataByteMatchExpected("grundwasservorkommen-eu-dcat-ap.xml", actual, GENERATE_EXPECTED_FILE);
+	}
+
 }
