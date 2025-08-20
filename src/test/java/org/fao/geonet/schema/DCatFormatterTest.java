@@ -44,6 +44,16 @@ public class DCatFormatterTest {
 	}
 
 	@Test
+	public void euGeoDcatAp() throws Exception {
+		transformToEuDCatApAndCompare("eu-geodcat-ap","amphibians");
+	}
+
+	@Test
+	public void euGeoDcatApSemiceu() throws Exception {
+		transformToEuDCatApAndCompare("eu-geodcat-ap-semiceu","amphibians");
+	}
+
+	@Test
 	public void euDcatApForService() throws Exception {
 		transformToEuDCatApAndCompare("eu-dcat-ap", "grundwasservorkommen");
 	}
