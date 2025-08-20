@@ -25,57 +25,36 @@ public class CswTest {
 
 	@Test
 	public void ech0271Full() throws Exception {
-		Path xslFile = getResourceInsideSchema("present/csw/ech-0271-full.xsl");
-		Path xmlFile = getResource("amphibians-19115-3.che.xml");
-		Element md = Xml.loadFile(xmlFile);
-
-		Element fullCswRecord = Xml.transform(md, xslFile);
-
-		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
-		String actual = xmlOutputter.outputString(new Document(fullCswRecord));
-
-		TestSupport.assertGeneratedDataByteMatchExpected("amphibians-19115-3.che.xml", actual, false);
+		transformAndCompare("ech-0271-full.xsl", "amphibians-19115-3.che.xml", "amphibians-19115-3.che.xml");
 	}
+
 
 	@Test
 	public void ech0271Summary() throws Exception {
-		Path xslFile = getResourceInsideSchema("present/csw/ech-0271-summary.xsl");
-		Path xmlFile = getResource("amphibians-19115-3.che.xml");
-		Element md = Xml.loadFile(xmlFile);
-
-		Element fullCswRecord = Xml.transform(md, xslFile);
-
-		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
-		String actual = xmlOutputter.outputString(new Document(fullCswRecord));
-
-		TestSupport.assertGeneratedDataByteMatchExpected("amphibians-19115-3.che-summary.xml", actual, GENERATE_EXPECTED_FILE);
+		transformAndCompare("ech-0271-summary.xsl", "amphibians-19115-3.che.xml", "amphibians-19115-3.che-summary.xml");
 	}
 
 	@Test
 	public void ech0271Brief() throws Exception {
-		Path xslFile = getResourceInsideSchema("present/csw/ech-0271-brief.xsl");
-		Path xmlFile = getResource("amphibians-19115-3.che.xml");
-		Element md = Xml.loadFile(xmlFile);
-
-		Element fullCswRecord = Xml.transform(md, xslFile);
-
-		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
-		String actual = xmlOutputter.outputString(new Document(fullCswRecord));
-
-		TestSupport.assertGeneratedDataByteMatchExpected("amphibians-19115-3.che-brief.xml", actual, GENERATE_EXPECTED_FILE);
+		transformAndCompare("ech-0271-brief.xsl", "amphibians-19115-3.che.xml", "amphibians-19115-3.che-brief.xml");
 	}
 
 	@Test
 	public void ech0271BriefForService() throws Exception {
-		Path xslFile = getResourceInsideSchema("present/csw/ech-0271-brief.xsl");
-		Path xmlFile = getResource("grundwasservorkommen-19115-3.che.xml");
+		transformAndCompare("ech-0271-brief.xsl", "grundwasservorkommen-19115-3.che.xml", "grundwasservorkommen-19115-3.che-brief.xml");
+	}
+
+	private void transformAndCompare(String scriptName, String inputFileName, String expectedFileName) throws Exception {
+		Path xslFile = getResourceInsideSchema("present/csw/" + scriptName);
+		Path xmlFile = getResource(inputFileName);
 		Element md = Xml.loadFile(xmlFile);
 
-		Element fullCswRecord = Xml.transform(md, xslFile);
+		Element cswRecord = Xml.transform(md, xslFile);
 
 		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
-		String actual = xmlOutputter.outputString(new Document(fullCswRecord));
-
-		TestSupport.assertGeneratedDataByteMatchExpected("grundwasservorkommen-19115-3.che-brief.xml", actual, GENERATE_EXPECTED_FILE);
+		String actual = xmlOutputter.outputString(new Document(cswRecord));
+		boolean generateExpectedFileNameOnlyIfInputDiffersFromExpected = GENERATE_EXPECTED_FILE && !expectedFileName.equals(inputFileName);
+		TestSupport.assertGeneratedDataByteMatchExpected(expectedFileName, actual, generateExpectedFileNameOnlyIfInputDiffersFromExpected);
 	}
+
 }
