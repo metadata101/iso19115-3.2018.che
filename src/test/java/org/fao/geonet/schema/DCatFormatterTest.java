@@ -24,6 +24,11 @@ public class DCatFormatterTest {
 	}
 
 	@Test
+	public void dcat() throws Exception {
+		transformToDCatAndCompare("dcat", "amphibians");
+	}
+
+	@Test
 	public void euDcatAp() throws Exception {
 		transformToDCatAndCompare("eu-dcat-ap", "amphibians");
 	}
