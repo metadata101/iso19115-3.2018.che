@@ -25,30 +25,25 @@ public class DCatFormatterTest {
 
 	@Test
 	public void euDcatAp() throws Exception {
-		Path xslFile = getResourceInsideSchema("formatter/eu-dcat-ap/view.xsl");
-		Path xmlFile = getResource("amphibians-19115-3.che.xml");
-		Element md = Xml.loadFile(xmlFile);
-
-		Element fullCswRecord = Xml.transform(md, xslFile);
-
-		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
-		String actual = xmlOutputter.outputString(new Document(fullCswRecord));
-
-		TestSupport.assertGeneratedDataByteMatchExpected("amphibians-eu-dcat-ap.xml", actual, GENERATE_EXPECTED_FILE);
+		transformToEuDCatApAndCompare("amphibians");
 	}
+
 
 	@Test
 	public void euDcatApForService() throws Exception {
+		transformToEuDCatApAndCompare("grundwasservorkommen");
+	}
+
+	private void transformToEuDCatApAndCompare(String mdNameRoot) throws Exception {
 		Path xslFile = getResourceInsideSchema("formatter/eu-dcat-ap/view.xsl");
-		Path xmlFile = getResource("grundwasservorkommen-19115-3.che.xml");
+		Path xmlFile = getResource(mdNameRoot + "-19115-3.che.xml");
 		Element md = Xml.loadFile(xmlFile);
 
-		Element fullCswRecord = Xml.transform(md, xslFile);
+		Element euDcatApView = Xml.transform(md, xslFile);
 
 		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
-		String actual = xmlOutputter.outputString(new Document(fullCswRecord));
-
-		TestSupport.assertGeneratedDataByteMatchExpected("grundwasservorkommen-eu-dcat-ap.xml", actual, GENERATE_EXPECTED_FILE);
+		String actual = xmlOutputter.outputString(new Document(euDcatApView));
+		TestSupport.assertGeneratedDataByteMatchExpected(mdNameRoot + "-eu-dcat-ap.xml", actual, GENERATE_EXPECTED_FILE);
 	}
 
 }
