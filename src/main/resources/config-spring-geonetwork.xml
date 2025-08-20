@@ -13,7 +13,6 @@
         <entry key="csw" value="http://www.opengis.net/cat/csw/2.0.2"/>
         <entry key="mdb" value="http://standards.iso.org/iso/19115/-3/mdb/2.0"/>
         <entry key="gmd" value="http://www.isotc211.org/2005/gmd"/>
-        <entry key="dcat" value="http://www.w3.org/ns/dcat#"/>
         <entry key="dcat-core" value="http://www.w3.org/ns/dcat#core"/>
         <entry key="eu-dcat-ap" value="http://data.europa.eu/r5r/"/>
         <!-- EU DCAT HVD does not define a particular namespace -->
