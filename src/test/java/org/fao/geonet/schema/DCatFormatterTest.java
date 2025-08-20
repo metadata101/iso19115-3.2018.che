@@ -34,6 +34,16 @@ public class DCatFormatterTest {
 	}
 
 	@Test
+	public void euDcatApHvd() throws Exception {
+		transformToEuDCatApAndCompare("eu-dcat-ap-hvd","amphibians");
+	}
+
+	@Test
+	public void euDcatApHvdWithLegalConstraints() throws Exception {
+		transformToEuDCatApAndCompare("eu-dcat-ap-hvd","hoheitsgrenzpunkteLV");
+	}
+
+	@Test
 	public void euDcatApForService() throws Exception {
 		transformToEuDCatApAndCompare("eu-dcat-ap", "grundwasservorkommen");
 	}
