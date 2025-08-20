@@ -174,7 +174,7 @@
   -->
   <xsl:template mode="iso19115-3-to-dcat-resource"
                 name="iso19115-3-to-dcat-ap-resource"
-                match="mdb:MD_Metadata"
+                match="che:CHE_MD_Metadata"
                 priority="2">
     <xsl:call-template name="iso19115-3-to-dcat-resource"/>
 
