@@ -18,6 +18,7 @@
                 xmlns:adms="http://www.w3.org/ns/adms#"
                 xmlns:dcatap="http://data.europa.eu/r5r/"
                 xmlns:dct="http://purl.org/dc/terms/"
+                xmlns:che="http://geocat.ch/che"
                 exclude-result-prefixes="#all">
 
 
@@ -222,7 +223,7 @@
   </xsl:template>
 
   <xsl:template mode="iso19115-3-to-dcat"
-                match="mri:resourceConstraints/mco:MD_LegalConstraints/mco:reference">
+                match="mri:resourceConstraints/che:CHE_MD_LegalConstraints/mco:reference">
     <xsl:variable name="href"
                   select="*/cit:title/*/@xlink:href"/>
     <xsl:if test="$href">

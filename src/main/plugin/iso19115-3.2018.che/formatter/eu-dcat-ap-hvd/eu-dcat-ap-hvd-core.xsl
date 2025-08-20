@@ -14,6 +14,7 @@
                 xmlns:eli="http://data.europa.eu/eli/ontology"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns:dct="http://purl.org/dc/terms/"
+                xmlns:che="http://geocat.ch/che"
                 exclude-result-prefixes="#all">
   <xsl:import href="../eu-dcat-ap/eu-dcat-ap-core.xsl"/>
 
@@ -24,11 +25,11 @@
                 select="document('vocabularies/high-value-dataset-category.rdf')"/>
 
   <xsl:template mode="iso19115-3-to-dcat-resource"
-                match="mdb:MD_Metadata">
+                match="che:CHE_MD_Metadata">
     <xsl:call-template name="iso19115-3-to-dcat-ap-resource"/>
 
     <xsl:apply-templates mode="iso19115-3-to-dcat"
-                         select="mdb:identificationInfo/*/mri:resourceConstraints/mco:MD_LegalConstraints/mco:reference"/>
+                         select="mdb:identificationInfo/*/mri:resourceConstraints/che:CHE_MD_LegalConstraints/mco:reference"/>
   </xsl:template>
 
 
