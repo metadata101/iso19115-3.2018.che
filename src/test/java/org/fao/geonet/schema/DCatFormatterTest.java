@@ -25,40 +25,40 @@ public class DCatFormatterTest {
 
 	@Test
 	public void euDcatAp() throws Exception {
-		transformToEuDCatApAndCompare("eu-dcat-ap", "amphibians");
+		transformToDCatAndCompare("eu-dcat-ap", "amphibians");
 	}
 
 	@Test
 	public void euDcatApMobility() throws Exception {
-		transformToEuDCatApAndCompare("eu-dcat-ap-mobility","amphibians");
+		transformToDCatAndCompare("eu-dcat-ap-mobility","amphibians");
 	}
 
 	@Test
 	public void euDcatApHvd() throws Exception {
-		transformToEuDCatApAndCompare("eu-dcat-ap-hvd","amphibians");
+		transformToDCatAndCompare("eu-dcat-ap-hvd","amphibians");
 	}
 
 	@Test
 	public void euDcatApHvdWithLegalConstraints() throws Exception {
-		transformToEuDCatApAndCompare("eu-dcat-ap-hvd","hoheitsgrenzpunkteLV");
+		transformToDCatAndCompare("eu-dcat-ap-hvd","hoheitsgrenzpunkteLV");
 	}
 
 	@Test
 	public void euGeoDcatAp() throws Exception {
-		transformToEuDCatApAndCompare("eu-geodcat-ap","amphibians");
+		transformToDCatAndCompare("eu-geodcat-ap","amphibians");
 	}
 
 	@Test
 	public void euGeoDcatApSemiceu() throws Exception {
-		transformToEuDCatApAndCompare("eu-geodcat-ap-semiceu","amphibians");
+		transformToDCatAndCompare("eu-geodcat-ap-semiceu","amphibians");
 	}
 
 	@Test
 	public void euDcatApForService() throws Exception {
-		transformToEuDCatApAndCompare("eu-dcat-ap", "grundwasservorkommen");
+		transformToDCatAndCompare("eu-dcat-ap", "grundwasservorkommen");
 	}
 
-	private void transformToEuDCatApAndCompare(String profile, String mdNameRoot) throws Exception {
+	private void transformToDCatAndCompare(String profile, String mdNameRoot) throws Exception {
 		Path xslFile = getResourceInsideSchema("formatter/" + profile + "/view.xsl");
 		Path xmlFile = getResource(mdNameRoot + "-19115-3.che.xml");
 		Element md = Xml.loadFile(xmlFile);
