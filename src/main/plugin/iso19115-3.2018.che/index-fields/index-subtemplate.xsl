@@ -45,6 +45,7 @@
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
                 xmlns:gn-fn-index="http://geonetwork-opensource.org/xsl/functions/index"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:che="http://geocat.ch/che"
                 xmlns:skos="http://www.w3.org/2004/02/skos/core#">
 
 
@@ -99,7 +100,7 @@
                 match="cit:CI_Responsibility[count(ancestor::node()) =  1]">
 
     <xsl:variable name="org"
-                  select="normalize-space(cit:party/cit:CI_Organisation/cit:name/gco:CharacterString)"/>
+                  select="normalize-space(cit:party/che:CHE_CI_Organisation/cit:name/gco:CharacterString)"/>
     <xsl:variable name="name"
                   select="string-join(.//cit:individual/cit:CI_Individual/cit:name/gco:CharacterString, ', ')"/>
     <xsl:variable name="mail"
@@ -116,7 +117,7 @@
       "default": "<xsl:value-of select="util:escapeForJson(
                                           concat($org, $orgContactInfoSuffix))"/>"
       <xsl:for-each
-        select="cit:party/cit:CI_Organisation/cit:name/lan:PT_FreeText/*/lan:LocalisedCharacterString[. != '']">
+        select="cit:party/che:CHE_CI_Organisation/cit:name/lan:PT_FreeText/*/lan:LocalisedCharacterString[. != '']">
         ,"lang<xsl:value-of select="$allLanguages/lang[
                                       @id = current()/@locale/substring(., 2, 2)
                                     ]/@value"/>": "<xsl:value-of select="util:escapeForJson(
@@ -140,7 +141,7 @@
   </xsl:template>
 
 
-  <xsl:template mode="index" match="cit:CI_Organisation">
+  <xsl:template mode="index" match="che:CHE_CI_Organisation">
     <xsl:variable name="org" select="normalize-space(cit:name/gco:CharacterString)"/>
 
     <resourceTitleObject type="object">{
