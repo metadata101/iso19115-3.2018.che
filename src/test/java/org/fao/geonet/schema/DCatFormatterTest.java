@@ -25,6 +25,7 @@ public class DCatFormatterTest {
 
 	@Test
 	public void dcat() throws Exception {
+		// warning, two online resources in amphibians-19139.che.xml#L1327-L1371, with incorrect translations
 		transformToDCatAndCompare("dcat", "amphibians");
 	}
 
