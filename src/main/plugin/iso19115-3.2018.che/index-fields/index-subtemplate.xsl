@@ -246,7 +246,7 @@
                 match="gex:EX_Extent[count(ancestor::node()) =  1]">
 
     <xsl:variable name="desc"
-                  select="gex:description"/>
+                  select="gex:description/gco:CharacterString"/>
     <xsl:variable name="name"
                   select="concat('S:', .//gex:southBoundLatitude/*/text(), ', W:', .//gex:westBoundLongitude/*/text(), ', N:', .//gex:northBoundLatitude/*/text(), ', E:',.//gex:eastBoundLongitude/*/text())"/>
 
@@ -255,6 +255,9 @@
                     if ($desc != '')
                     then $desc
                     else $name)"/>"
+      <xsl:for-each select="gex:description/lan:PT_FreeText/*/lan:LocalisedCharacterString[. != '']">
+      ,"lang<xsl:value-of select="$allLanguages/lang[@id = current()/@locale/substring(., 2, 2)]/@value"/>": "<xsl:value-of select="util:escapeForJson(.)"/>"
+      </xsl:for-each>
       }
     </resourceTitleObject>
     <xsl:call-template name="subtemplate-common-fields"/>

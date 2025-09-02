@@ -137,19 +137,19 @@ public class IndexationTest {
     }
 
     @Test
-    public void indexInterlis() throws Exception {
+    public void indexInterlisFormat() throws Exception {
         XslUtil.IS_INSPIRE_ENABLED = false;
         indexAndCompareWithExpected("subtemplates/interlis", "index-subtemplate.xsl");
     }
 
     @Test
-    public void indexLiechtenstein() throws Exception {
+    public void indexLiechtensteinExtent() throws Exception {
         XslUtil.IS_INSPIRE_ENABLED = false;
         indexAndCompareWithExpected("subtemplates/liechtenstein", "index-subtemplate.xsl");
     }
 
     @Test
-    public void indexResponsiblePartyAgroscope() throws Exception {
+    public void indexAgroscopeResponsibleParty() throws Exception {
         XslUtil.IS_INSPIRE_ENABLED = false;
         indexAndCompareWithExpected("subtemplates/responsiblePartyAgroscope", "index-subtemplate.xsl");
     }
