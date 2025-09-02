@@ -47,6 +47,8 @@ public class XslUtil {
                 return "en";
             case "ger":
                 return "de";
+            case "roh":
+                return "rm";
             default:
                 return defaultValue;
         }
@@ -57,7 +59,20 @@ public class XslUtil {
     }
 
     public static String threeCharLangCode(String iso2code) {
-        return "fre";
+        switch (iso2code) {
+            case "FR":
+                return "fre";
+            case "IT":
+                return "ita";
+            case "EN":
+                return "eng";
+            case "DE":
+                return "ger";
+            case "RM":
+                return "roh";
+            default:
+                return "fre";
+        }
     }
 
     public static String getJsonSettingValue(String key, String path) {
