@@ -708,8 +708,13 @@ For details, see the attached data description.</lan:LocalisedCharacterString>
         <mrd:MD_Format uuid="4d61e0e1-59f1-44e1-aa0f-fb30429a7373">
           <mrd:formatSpecificationCitation>
             <cit:CI_Citation>
-              <cit:title>
+              <cit:title xsi:type="lan:PT_FreeText_PropertyType">
                 <gco:CharacterString>Cloud Optimized GeoTIFF (TIFF / TIF)</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Cloud Optimized GeoTIFF (TIFF / TIF)</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
               </cit:title>
               <cit:date gco:nilReason="unknown" />
               <cit:edition gco:nilReason="unknown">
@@ -1070,8 +1075,13 @@ For details, see the attached data description.</lan:LocalisedCharacterString>
         <mrd:MD_Format uuid="4d61e0e1-59f1-44e1-aa0f-fb30429a7373">
           <mrd:formatSpecificationCitation>
             <cit:CI_Citation>
-              <cit:title>
+              <cit:title xsi:type="lan:PT_FreeText_PropertyType">
                 <gco:CharacterString>Cloud Optimized GeoTIFF (TIFF / TIF)</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Cloud Optimized GeoTIFF (TIFF / TIF)</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
               </cit:title>
               <cit:date gco:nilReason="unknown" />
               <cit:edition gco:nilReason="unknown">

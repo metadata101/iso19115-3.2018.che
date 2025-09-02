@@ -426,7 +426,7 @@
   <xsl:template mode="iso19115-3-to-dcat-distribution"
                 match="mrd:distributionFormat/*/mrd:formatSpecificationCitation">
     <xsl:call-template name="rdf-format-as-mediatype">
-      <xsl:with-param name="format" select="*/cit:title/*/text()"/>
+      <xsl:with-param name="format" select="*/cit:title/gco:CharacterString/text()"/>
     </xsl:call-template>
   </xsl:template>
 

@@ -1288,7 +1288,7 @@
 
       <xsl:for-each select="mdb:distributionInfo/*">
         <xsl:for-each select="mrd:distributionFormat/*/
-                                mrd:formatSpecificationCitation/*/cit:title/*/text()[. != '']">
+                                mrd:formatSpecificationCitation/*/cit:title/gco:CharacterString/text()[. != '']">
           <xsl:copy-of select="gn-fn-index:add-field('format', .)"/>
         </xsl:for-each>
 
