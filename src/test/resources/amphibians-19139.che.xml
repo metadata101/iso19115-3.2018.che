@@ -675,6 +675,11 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
         <gmd:MD_Format xmlns:geonet="http://www.fao.org/geonetwork" uuid="4d61e0e1-59f1-44e1-aa0f-fb30429a7373">
           <gmd:name>
             <gco:CharacterString>Cloud Optimized GeoTIFF (TIFF / TIF)</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE">Cloud Optimized GeoTIFF (TIFF / TIF)</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
           </gmd:name>
           <gmd:version gco:nilReason="unknown">
             <gco:CharacterString>-</gco:CharacterString>
@@ -1072,6 +1077,11 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
         <gmd:MD_Format xmlns:geonet="http://www.fao.org/geonetwork" uuid="4d61e0e1-59f1-44e1-aa0f-fb30429a7373">
           <gmd:name>
             <gco:CharacterString>Cloud Optimized GeoTIFF (TIFF / TIF)</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE">Cloud Optimized GeoTIFF (TIFF / TIF)</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
           </gmd:name>
           <gmd:version gco:nilReason="unknown">
             <gco:CharacterString>-</gco:CharacterString>
