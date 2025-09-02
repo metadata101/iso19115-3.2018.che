@@ -173,7 +173,6 @@
         <skos:prefLabel xml:lang="en">Regions and cities</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Régions et villes</skos:prefLabel>
         <skos:prefLabel xml:lang="it">Regioni e città</skos:prefLabel>
-        <skos:prefLabel xml:lang="ro">Regiuni şi orașe</skos:prefLabel>
       </skos:Concept>
     </dcat:theme>
     <dcat:theme>
@@ -182,7 +181,6 @@
         <skos:prefLabel xml:lang="en">Transport</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Transports</skos:prefLabel>
         <skos:prefLabel xml:lang="it">Trasporti</skos:prefLabel>
-        <skos:prefLabel xml:lang="ro">Transport</skos:prefLabel>
       </skos:Concept>
     </dcat:theme>
     <dct:spatial>

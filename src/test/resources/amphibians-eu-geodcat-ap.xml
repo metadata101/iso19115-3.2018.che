@@ -209,7 +209,6 @@ For details, see the attached data description.</dct:description>
         <skos:prefLabel xml:lang="en">Agriculture, fisheries, forestry and food</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Agriculture, pêche, sylviculture et alimentation</skos:prefLabel>
         <skos:prefLabel xml:lang="it">Agricoltura, pesca, silvicoltura e prodotti alimentari</skos:prefLabel>
-        <skos:prefLabel xml:lang="ro">Agricultură, pescuit, silvicultură şi hrană</skos:prefLabel>
       </skos:Concept>
     </dcat:theme>
     <dcat:theme>
@@ -218,7 +217,6 @@ For details, see the attached data description.</dct:description>
         <skos:prefLabel xml:lang="en">Environment</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Environnement</skos:prefLabel>
         <skos:prefLabel xml:lang="it">Ambiente</skos:prefLabel>
-        <skos:prefLabel xml:lang="ro">Mediu</skos:prefLabel>
       </skos:Concept>
     </dcat:theme>
     <geodcatap:topicCategory rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/biota" />

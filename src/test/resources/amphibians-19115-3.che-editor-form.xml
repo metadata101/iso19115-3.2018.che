@@ -174,11 +174,11 @@
             <div class="col-sm-1 col-xs-1 gn-control" />
           </div>
         </fieldset>
-        <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e26161" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+        <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e17389" data-gn-cardinality="0-10000" data-gn-field-highlight="">
           <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|cit:citedResponsibleParty|cit:CI_Citation|">Responsable</label>
           <div class="col-sm-9">
-            <div data-gn-directory-entry-selector="" data-dom-id="d67e26161" data-element-name="cit:citedResponsibleParty" data-element-ref="151" data-template-add-snippet="&lt;cit:CI_Responsibility                    xmlns:cit='http://standards.iso.org/iso/19115/-3/cit/2.0'                    xmlns:gco='http://standards.iso.org/iso/19115/-3/gco/1.0'&gt;                     &lt;cit:role&gt;                       &lt;cit:CI_RoleCode codeList='http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode'                       codeListValue='author'/&gt;                     &lt;/cit:role&gt;                     &lt;cit:party&gt;                       &lt;cit:CI_Organisation&gt;                         &lt;cit:name&gt;                           &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                         &lt;/cit:name&gt;                         &lt;cit:contactInfo&gt;                           &lt;cit:CI_Contact&gt;                             &lt;cit:address&gt;                               &lt;cit:CI_Address&gt;                                 &lt;cit:electronicMailAddress&gt;                                   &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                                 &lt;/cit:electronicMailAddress&gt;                               &lt;/cit:CI_Address&gt;                             &lt;/cit:address&gt;                           &lt;/cit:CI_Contact&gt;                         &lt;/cit:contactInfo&gt;                         &lt;cit:individual&gt;                           &lt;cit:CI_Individual&gt;                             &lt;cit:name&gt;                               &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                             &lt;/cit:name&gt;                           &lt;/cit:CI_Individual&gt;                         &lt;/cit:individual&gt;                       &lt;/cit:CI_Organisation&gt;                     &lt;/cit:party&gt;                   &lt;/cit:CI_Responsibility&gt;" data-default-role="author" data-search-action="true" data-popup-action="true" data-template-type="contact" data-filter="{&quot;root&quot;: &quot;cit:CI_Responsibility&quot;}" data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}">
-              <a class="btn btn-default" title=" Responsable" data-gn-click-and-spin="add(151, 'cit:citedResponsibleParty', 'd67e26161', 'before');">
+            <div data-gn-directory-entry-selector="" data-dom-id="d67e17389" data-element-name="cit:citedResponsibleParty" data-element-ref="151" data-template-add-snippet="&lt;cit:CI_Responsibility                    xmlns:cit='http://standards.iso.org/iso/19115/-3/cit/2.0'                    xmlns:gco='http://standards.iso.org/iso/19115/-3/gco/1.0'&gt;                     &lt;cit:role&gt;                       &lt;cit:CI_RoleCode codeList='http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode'                       codeListValue='author'/&gt;                     &lt;/cit:role&gt;                     &lt;cit:party&gt;                       &lt;cit:CI_Organisation&gt;                         &lt;cit:name&gt;                           &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                         &lt;/cit:name&gt;                         &lt;cit:contactInfo&gt;                           &lt;cit:CI_Contact&gt;                             &lt;cit:address&gt;                               &lt;cit:CI_Address&gt;                                 &lt;cit:electronicMailAddress&gt;                                   &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                                 &lt;/cit:electronicMailAddress&gt;                               &lt;/cit:CI_Address&gt;                             &lt;/cit:address&gt;                           &lt;/cit:CI_Contact&gt;                         &lt;/cit:contactInfo&gt;                         &lt;cit:individual&gt;                           &lt;cit:CI_Individual&gt;                             &lt;cit:name&gt;                               &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                             &lt;/cit:name&gt;                           &lt;/cit:CI_Individual&gt;                         &lt;/cit:individual&gt;                       &lt;/cit:CI_Organisation&gt;                     &lt;/cit:party&gt;                   &lt;/cit:CI_Responsibility&gt;" data-default-role="author" data-search-action="true" data-popup-action="true" data-template-type="contact" data-filter="{&quot;root&quot;: &quot;cit:CI_Responsibility&quot;}" data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}">
+              <a class="btn btn-default" title=" Responsable" data-gn-click-and-spin="add(151, 'cit:citedResponsibleParty', 'd67e17389', 'before');">
                 <i class="fa fa-plus gn-add" />
               </a>
             </div>
@@ -239,7 +239,7 @@
             </a>
           </div>
         </div>
-        <fieldset id="gn-el-d67e26732" data-gn-field-highlight="" class=" gn-pointOfContact">
+        <fieldset id="gn-el-d67e17925" data-gn-field-highlight="" class=" gn-pointOfContact">
           <legend class="pointOfContact" data-gn-field-tooltip="iso19115-3.2018.che|mri:pointOfContact|che:CHE_MD_DataIdentification|" data-gn-slide-toggle="false">Contact pour la ressource </legend>
           <table class="table table-striped gn-table">
             <thead>
@@ -478,11 +478,11 @@
             </tbody>
           </table>
         </fieldset>
-        <div class="form-group gn-field  gn-extra-field gn-add-field  " id="gn-el-d67e32334" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+        <div class="form-group gn-field  gn-extra-field gn-add-field  " id="gn-el-d67e23238" data-gn-cardinality="0-10000" data-gn-field-highlight="">
           <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:pointOfContact|che:CHE_MD_DataIdentification|">Contact pour la ressource</label>
           <div class="col-sm-9">
-            <div data-gn-directory-entry-selector="" data-dom-id="d67e32334" data-element-name="mri:pointOfContact" data-element-ref="149" data-template-add-snippet="&lt;cit:CI_Responsibility                    xmlns:cit='http://standards.iso.org/iso/19115/-3/cit/2.0'                    xmlns:gco='http://standards.iso.org/iso/19115/-3/gco/1.0'&gt;                     &lt;cit:role&gt;                       &lt;cit:CI_RoleCode codeList='http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode'                       codeListValue='pointOfContact'/&gt;                     &lt;/cit:role&gt;                     &lt;cit:party&gt;                       &lt;cit:CI_Organisation&gt;                         &lt;cit:name&gt;                           &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                         &lt;/cit:name&gt;                         &lt;cit:contactInfo&gt;                           &lt;cit:CI_Contact&gt;                             &lt;cit:address&gt;                               &lt;cit:CI_Address&gt;                                 &lt;cit:electronicMailAddress&gt;                                   &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                                 &lt;/cit:electronicMailAddress&gt;                               &lt;/cit:CI_Address&gt;                             &lt;/cit:address&gt;                           &lt;/cit:CI_Contact&gt;                         &lt;/cit:contactInfo&gt;                         &lt;cit:individual&gt;                           &lt;cit:CI_Individual&gt;                             &lt;cit:name&gt;                               &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                             &lt;/cit:name&gt;                           &lt;/cit:CI_Individual&gt;                         &lt;/cit:individual&gt;                       &lt;/cit:CI_Organisation&gt;                     &lt;/cit:party&gt;                   &lt;/cit:CI_Responsibility&gt;" data-default-role="pointOfContact" data-search-action="true" data-popup-action="true" data-template-type="contact" data-filter="{&quot;root&quot;: &quot;cit:CI_Responsibility&quot;}" data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}">
-              <a class="btn btn-default" title=" Responsabilité" data-gn-click-and-spin="addChoice(149, 'mri:pointOfContact', 'cit:CI_Responsibility', 'd67e32334', 'replaceWith');">
+            <div data-gn-directory-entry-selector="" data-dom-id="d67e23238" data-element-name="mri:pointOfContact" data-element-ref="149" data-template-add-snippet="&lt;cit:CI_Responsibility                    xmlns:cit='http://standards.iso.org/iso/19115/-3/cit/2.0'                    xmlns:gco='http://standards.iso.org/iso/19115/-3/gco/1.0'&gt;                     &lt;cit:role&gt;                       &lt;cit:CI_RoleCode codeList='http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode'                       codeListValue='pointOfContact'/&gt;                     &lt;/cit:role&gt;                     &lt;cit:party&gt;                       &lt;cit:CI_Organisation&gt;                         &lt;cit:name&gt;                           &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                         &lt;/cit:name&gt;                         &lt;cit:contactInfo&gt;                           &lt;cit:CI_Contact&gt;                             &lt;cit:address&gt;                               &lt;cit:CI_Address&gt;                                 &lt;cit:electronicMailAddress&gt;                                   &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                                 &lt;/cit:electronicMailAddress&gt;                               &lt;/cit:CI_Address&gt;                             &lt;/cit:address&gt;                           &lt;/cit:CI_Contact&gt;                         &lt;/cit:contactInfo&gt;                         &lt;cit:individual&gt;                           &lt;cit:CI_Individual&gt;                             &lt;cit:name&gt;                               &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                             &lt;/cit:name&gt;                           &lt;/cit:CI_Individual&gt;                         &lt;/cit:individual&gt;                       &lt;/cit:CI_Organisation&gt;                     &lt;/cit:party&gt;                   &lt;/cit:CI_Responsibility&gt;" data-default-role="pointOfContact" data-search-action="true" data-popup-action="true" data-template-type="contact" data-filter="{&quot;root&quot;: &quot;cit:CI_Responsibility&quot;}" data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}">
+              <a class="btn btn-default" title=" Responsabilité" data-gn-click-and-spin="addChoice(149, 'mri:pointOfContact', 'cit:CI_Responsibility', 'd67e23238', 'replaceWith');">
                 <i type="button" class="fa fa-plus gn-add" title="Type de données pour l'informations concernant l’acteur et son rôle" />
               </a>
             </div>
@@ -586,10 +586,10 @@
             </a>
           </div>
         </div>
-        <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e32505" data-gn-cardinality="0-1" data-gn-field-highlight="">
+        <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e23401" data-gn-cardinality="0-1" data-gn-field-highlight="">
           <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|:|gex:EX_Extent|">Description</label>
           <div class="col-sm-9">
-            <a class="btn btn-default" title=" Description" data-gn-click-and-spin="add(408, 'gex:description', 'd67e32505', 'before');">
+            <a class="btn btn-default" title=" Description" data-gn-click-and-spin="add(408, 'gex:description', 'd67e23401', 'before');">
               <i class="fa fa-plus gn-add" />
             </a>
           </div>
@@ -652,10 +652,10 @@
             </a>
           </div>
         </div>
-        <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e33008" data-gn-cardinality="0-1" data-gn-field-highlight="">
+        <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e23891" data-gn-cardinality="0-1" data-gn-field-highlight="">
           <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|:|che:CHE_MD_MaintenanceInformation|">Fréquence de mise à jour</label>
           <div class="col-sm-9">
-            <a class="btn btn-default" title=" Fréquence de mise à jour" data-gn-click-and-spin="add(445, 'mmi:maintenanceAndUpdateFrequency', 'd67e33008', 'before');">
+            <a class="btn btn-default" title=" Fréquence de mise à jour" data-gn-click-and-spin="add(445, 'mmi:maintenanceAndUpdateFrequency', 'd67e23891', 'before');">
               <i class="fa fa-plus gn-add" />
             </a>
           </div>
@@ -754,11 +754,11 @@
             </div>
             <div class="col-sm-1 col-xs-1 gn-control" />
           </div>
-          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e33534" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e24390" data-gn-cardinality="0-10000" data-gn-field-highlight="">
             <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|cit:citedResponsibleParty|cit:CI_Citation|">Responsable</label>
             <div class="col-sm-9">
-              <div data-gn-directory-entry-selector="" data-dom-id="d67e33534" data-element-name="cit:citedResponsibleParty" data-element-ref="455" data-template-add-snippet="&lt;cit:CI_Responsibility                    xmlns:cit='http://standards.iso.org/iso/19115/-3/cit/2.0'                    xmlns:gco='http://standards.iso.org/iso/19115/-3/gco/1.0'&gt;                     &lt;cit:role&gt;                       &lt;cit:CI_RoleCode codeList='http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode'                       codeListValue='author'/&gt;                     &lt;/cit:role&gt;                     &lt;cit:party&gt;                       &lt;cit:CI_Organisation&gt;                         &lt;cit:name&gt;                           &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                         &lt;/cit:name&gt;                         &lt;cit:contactInfo&gt;                           &lt;cit:CI_Contact&gt;                             &lt;cit:address&gt;                               &lt;cit:CI_Address&gt;                                 &lt;cit:electronicMailAddress&gt;                                   &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                                 &lt;/cit:electronicMailAddress&gt;                               &lt;/cit:CI_Address&gt;                             &lt;/cit:address&gt;                           &lt;/cit:CI_Contact&gt;                         &lt;/cit:contactInfo&gt;                         &lt;cit:individual&gt;                           &lt;cit:CI_Individual&gt;                             &lt;cit:name&gt;                               &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                             &lt;/cit:name&gt;                           &lt;/cit:CI_Individual&gt;                         &lt;/cit:individual&gt;                       &lt;/cit:CI_Organisation&gt;                     &lt;/cit:party&gt;                   &lt;/cit:CI_Responsibility&gt;" data-default-role="author" data-search-action="true" data-popup-action="true" data-template-type="contact" data-filter="{&quot;root&quot;: &quot;cit:CI_Responsibility&quot;}" data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}">
-                <a class="btn btn-default" title=" Responsable" data-gn-click-and-spin="add(455, 'cit:citedResponsibleParty', 'd67e33534', 'before');">
+              <div data-gn-directory-entry-selector="" data-dom-id="d67e24390" data-element-name="cit:citedResponsibleParty" data-element-ref="455" data-template-add-snippet="&lt;cit:CI_Responsibility                    xmlns:cit='http://standards.iso.org/iso/19115/-3/cit/2.0'                    xmlns:gco='http://standards.iso.org/iso/19115/-3/gco/1.0'&gt;                     &lt;cit:role&gt;                       &lt;cit:CI_RoleCode codeList='http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode'                       codeListValue='author'/&gt;                     &lt;/cit:role&gt;                     &lt;cit:party&gt;                       &lt;cit:CI_Organisation&gt;                         &lt;cit:name&gt;                           &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                         &lt;/cit:name&gt;                         &lt;cit:contactInfo&gt;                           &lt;cit:CI_Contact&gt;                             &lt;cit:address&gt;                               &lt;cit:CI_Address&gt;                                 &lt;cit:electronicMailAddress&gt;                                   &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                                 &lt;/cit:electronicMailAddress&gt;                               &lt;/cit:CI_Address&gt;                             &lt;/cit:address&gt;                           &lt;/cit:CI_Contact&gt;                         &lt;/cit:contactInfo&gt;                         &lt;cit:individual&gt;                           &lt;cit:CI_Individual&gt;                             &lt;cit:name&gt;                               &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                             &lt;/cit:name&gt;                           &lt;/cit:CI_Individual&gt;                         &lt;/cit:individual&gt;                       &lt;/cit:CI_Organisation&gt;                     &lt;/cit:party&gt;                   &lt;/cit:CI_Responsibility&gt;" data-default-role="author" data-search-action="true" data-popup-action="true" data-template-type="contact" data-filter="{&quot;root&quot;: &quot;cit:CI_Responsibility&quot;}" data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}">
+                <a class="btn btn-default" title=" Responsable" data-gn-click-and-spin="add(455, 'cit:citedResponsibleParty', 'd67e24390', 'before');">
                   <i class="fa fa-plus gn-add" />
                 </a>
               </div>
@@ -854,19 +854,19 @@
               </a>
             </div>
           </div>
-          <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e34169" data-gn-cardinality="0-1" data-gn-field-highlight="">
+          <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e24986" data-gn-cardinality="0-1" data-gn-field-highlight="">
             <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|:|cit:CI_Citation|">Edition</label>
             <div class="col-sm-9">
-              <a class="btn btn-default" title=" Edition" data-gn-click-and-spin="add(466, 'cit:edition', 'd67e34169', 'before');">
+              <a class="btn btn-default" title=" Edition" data-gn-click-and-spin="add(466, 'cit:edition', 'd67e24986', 'before');">
                 <i class="fa fa-plus gn-add" />
               </a>
             </div>
           </div>
-          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e34182" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e24998" data-gn-cardinality="0-10000" data-gn-field-highlight="">
             <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|cit:citedResponsibleParty|cit:CI_Citation|">Responsable</label>
             <div class="col-sm-9">
-              <div data-gn-directory-entry-selector="" data-dom-id="d67e34182" data-element-name="cit:citedResponsibleParty" data-element-ref="466" data-template-add-snippet="&lt;cit:CI_Responsibility                    xmlns:cit='http://standards.iso.org/iso/19115/-3/cit/2.0'                    xmlns:gco='http://standards.iso.org/iso/19115/-3/gco/1.0'&gt;                     &lt;cit:role&gt;                       &lt;cit:CI_RoleCode codeList='http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode'                       codeListValue='author'/&gt;                     &lt;/cit:role&gt;                     &lt;cit:party&gt;                       &lt;cit:CI_Organisation&gt;                         &lt;cit:name&gt;                           &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                         &lt;/cit:name&gt;                         &lt;cit:contactInfo&gt;                           &lt;cit:CI_Contact&gt;                             &lt;cit:address&gt;                               &lt;cit:CI_Address&gt;                                 &lt;cit:electronicMailAddress&gt;                                   &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                                 &lt;/cit:electronicMailAddress&gt;                               &lt;/cit:CI_Address&gt;                             &lt;/cit:address&gt;                           &lt;/cit:CI_Contact&gt;                         &lt;/cit:contactInfo&gt;                         &lt;cit:individual&gt;                           &lt;cit:CI_Individual&gt;                             &lt;cit:name&gt;                               &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                             &lt;/cit:name&gt;                           &lt;/cit:CI_Individual&gt;                         &lt;/cit:individual&gt;                       &lt;/cit:CI_Organisation&gt;                     &lt;/cit:party&gt;                   &lt;/cit:CI_Responsibility&gt;" data-default-role="author" data-search-action="true" data-popup-action="true" data-template-type="contact" data-filter="{&quot;root&quot;: &quot;cit:CI_Responsibility&quot;}" data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}">
-                <a class="btn btn-default" title=" Responsable" data-gn-click-and-spin="add(466, 'cit:citedResponsibleParty', 'd67e34182', 'before');">
+              <div data-gn-directory-entry-selector="" data-dom-id="d67e24998" data-element-name="cit:citedResponsibleParty" data-element-ref="466" data-template-add-snippet="&lt;cit:CI_Responsibility                    xmlns:cit='http://standards.iso.org/iso/19115/-3/cit/2.0'                    xmlns:gco='http://standards.iso.org/iso/19115/-3/gco/1.0'&gt;                     &lt;cit:role&gt;                       &lt;cit:CI_RoleCode codeList='http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode'                       codeListValue='author'/&gt;                     &lt;/cit:role&gt;                     &lt;cit:party&gt;                       &lt;cit:CI_Organisation&gt;                         &lt;cit:name&gt;                           &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                         &lt;/cit:name&gt;                         &lt;cit:contactInfo&gt;                           &lt;cit:CI_Contact&gt;                             &lt;cit:address&gt;                               &lt;cit:CI_Address&gt;                                 &lt;cit:electronicMailAddress&gt;                                   &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                                 &lt;/cit:electronicMailAddress&gt;                               &lt;/cit:CI_Address&gt;                             &lt;/cit:address&gt;                           &lt;/cit:CI_Contact&gt;                         &lt;/cit:contactInfo&gt;                         &lt;cit:individual&gt;                           &lt;cit:CI_Individual&gt;                             &lt;cit:name&gt;                               &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                             &lt;/cit:name&gt;                           &lt;/cit:CI_Individual&gt;                         &lt;/cit:individual&gt;                       &lt;/cit:CI_Organisation&gt;                     &lt;/cit:party&gt;                   &lt;/cit:CI_Responsibility&gt;" data-default-role="author" data-search-action="true" data-popup-action="true" data-template-type="contact" data-filter="{&quot;root&quot;: &quot;cit:CI_Responsibility&quot;}" data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}">
+                <a class="btn btn-default" title=" Responsable" data-gn-click-and-spin="add(466, 'cit:citedResponsibleParty', 'd67e24998', 'before');">
                   <i class="fa fa-plus gn-add" />
                 </a>
               </div>
@@ -876,11 +876,11 @@
         <div data-gn-keyword-selector="tagsinput" data-metadata-id="3648" data-element-ref="_X475_replace" data-thesaurus-title="geocat.ch" data-thesaurus-key="local.theme.geocat.ch" data-keywords="Bund,opendata.swiss" data-transformations="to-iso19115-3.2018-keyword-with-anchor" data-current-transformation="to-iso19115-3.2018-keyword-with-anchor" data-max-tags="" data-browsable="true" data-order-by-id="false" data-lang="{&quot;ger&quot;:&quot;#&quot;,&quot;fre&quot;:&quot;#FR&quot;,&quot;ita&quot;:&quot;#IT&quot;,&quot;eng&quot;:&quot;#EN&quot;,&quot;roh&quot;:&quot;#RM&quot;}" data-textgroup-only="false" />
         <div data-gn-keyword-selector="tagsinput" data-metadata-id="3648" data-element-ref="_X522_replace" data-thesaurus-title="GEMET themes" data-thesaurus-key="external.theme.gemet-theme" data-keywords="Natürliche Lebensräume,, Landschaft,, Ökosysteme,Landwirtschaft" data-transformations="to-iso19115-3.2018-keyword-with-anchor" data-current-transformation="to-iso19115-3.2018-keyword-with-anchor" data-max-tags="" data-browsable="true" data-order-by-id="false" data-lang="{&quot;ger&quot;:&quot;#&quot;,&quot;fre&quot;:&quot;#FR&quot;,&quot;ita&quot;:&quot;#IT&quot;,&quot;eng&quot;:&quot;#EN&quot;,&quot;roh&quot;:&quot;#RM&quot;}" data-textgroup-only="false" />
         <div data-gn-keyword-selector="tagsinput" data-metadata-id="3648" data-element-ref="_X569_replace" data-thesaurus-title="GEMET" data-thesaurus-key="external.theme.gemet" data-keywords="Fauna,Amphibien,Landwirtschaft,Naturschutz" data-transformations="to-iso19115-3.2018-keyword-with-anchor" data-current-transformation="to-iso19115-3.2018-keyword-with-anchor" data-max-tags="" data-browsable="true" data-order-by-id="false" data-lang="{&quot;ger&quot;:&quot;#&quot;,&quot;fre&quot;:&quot;#FR&quot;,&quot;ita&quot;:&quot;#IT&quot;,&quot;eng&quot;:&quot;#EN&quot;,&quot;roh&quot;:&quot;#RM&quot;}" data-textgroup-only="false" />
-        <div class="form-group gn-field  gn-extra-field gn-add-field  " id="gn-el-d67e39197" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+        <div class="form-group gn-field  gn-extra-field gn-add-field  " id="gn-el-d67e29763" data-gn-cardinality="0-10000" data-gn-field-highlight="">
           <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:descriptiveKeywords|che:CHE_MD_DataIdentification|">Mots clés</label>
           <div class="col-sm-9">
-            <div data-gn-thesaurus-selector="" data-dom-id="d67e39197" data-element-name="mri:descriptiveKeywords" data-element-ref="149" data-freekeyword-element-ref="149" data-freekeyword-element-name="mri:descriptiveKeywords" data-transformation="to-iso19115-3.2018-keyword" data-include="-local.theme.geocat.ch,-external.theme.gemet-theme,-external.theme.gemet">
-              <a class="btn btn-default" title=" Mots clés" data-gn-click-and-spin="add(149, 'mri:descriptiveKeywords', 'd67e39197', 'before');">
+            <div data-gn-thesaurus-selector="" data-dom-id="d67e29763" data-element-name="mri:descriptiveKeywords" data-element-ref="149" data-freekeyword-element-ref="149" data-freekeyword-element-name="mri:descriptiveKeywords" data-transformation="to-iso19115-3.2018-keyword" data-include="-local.theme.geocat.ch,-external.theme.gemet-theme,-external.theme.gemet">
+              <a class="btn btn-default" title=" Mots clés" data-gn-click-and-spin="add(149, 'mri:descriptiveKeywords', 'd67e29763', 'before');">
                 <i class="fa fa-plus gn-add" />
               </a>
             </div>
@@ -1136,11 +1136,11 @@
             </div>
             <div class="col-sm-1 col-xs-1 gn-control" />
           </div>
-          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e39953" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e30485" data-gn-cardinality="0-10000" data-gn-field-highlight="">
             <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|cit:citedResponsibleParty|cit:CI_Citation|">Responsable</label>
             <div class="col-sm-9">
-              <div data-gn-directory-entry-selector="" data-dom-id="d67e39953" data-element-name="cit:citedResponsibleParty" data-element-ref="665" data-template-add-snippet="&lt;cit:CI_Responsibility                    xmlns:cit='http://standards.iso.org/iso/19115/-3/cit/2.0'                    xmlns:gco='http://standards.iso.org/iso/19115/-3/gco/1.0'&gt;                     &lt;cit:role&gt;                       &lt;cit:CI_RoleCode codeList='http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode'                       codeListValue='author'/&gt;                     &lt;/cit:role&gt;                     &lt;cit:party&gt;                       &lt;cit:CI_Organisation&gt;                         &lt;cit:name&gt;                           &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                         &lt;/cit:name&gt;                         &lt;cit:contactInfo&gt;                           &lt;cit:CI_Contact&gt;                             &lt;cit:address&gt;                               &lt;cit:CI_Address&gt;                                 &lt;cit:electronicMailAddress&gt;                                   &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                                 &lt;/cit:electronicMailAddress&gt;                               &lt;/cit:CI_Address&gt;                             &lt;/cit:address&gt;                           &lt;/cit:CI_Contact&gt;                         &lt;/cit:contactInfo&gt;                         &lt;cit:individual&gt;                           &lt;cit:CI_Individual&gt;                             &lt;cit:name&gt;                               &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                             &lt;/cit:name&gt;                           &lt;/cit:CI_Individual&gt;                         &lt;/cit:individual&gt;                       &lt;/cit:CI_Organisation&gt;                     &lt;/cit:party&gt;                   &lt;/cit:CI_Responsibility&gt;" data-default-role="author" data-search-action="true" data-popup-action="true" data-template-type="contact" data-filter="{&quot;root&quot;: &quot;cit:CI_Responsibility&quot;}" data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}">
-                <a class="btn btn-default" title=" Responsable" data-gn-click-and-spin="add(665, 'cit:citedResponsibleParty', 'd67e39953', 'before');">
+              <div data-gn-directory-entry-selector="" data-dom-id="d67e30485" data-element-name="cit:citedResponsibleParty" data-element-ref="665" data-template-add-snippet="&lt;cit:CI_Responsibility                    xmlns:cit='http://standards.iso.org/iso/19115/-3/cit/2.0'                    xmlns:gco='http://standards.iso.org/iso/19115/-3/gco/1.0'&gt;                     &lt;cit:role&gt;                       &lt;cit:CI_RoleCode codeList='http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode'                       codeListValue='author'/&gt;                     &lt;/cit:role&gt;                     &lt;cit:party&gt;                       &lt;cit:CI_Organisation&gt;                         &lt;cit:name&gt;                           &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                         &lt;/cit:name&gt;                         &lt;cit:contactInfo&gt;                           &lt;cit:CI_Contact&gt;                             &lt;cit:address&gt;                               &lt;cit:CI_Address&gt;                                 &lt;cit:electronicMailAddress&gt;                                   &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                                 &lt;/cit:electronicMailAddress&gt;                               &lt;/cit:CI_Address&gt;                             &lt;/cit:address&gt;                           &lt;/cit:CI_Contact&gt;                         &lt;/cit:contactInfo&gt;                         &lt;cit:individual&gt;                           &lt;cit:CI_Individual&gt;                             &lt;cit:name&gt;                               &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                             &lt;/cit:name&gt;                           &lt;/cit:CI_Individual&gt;                         &lt;/cit:individual&gt;                       &lt;/cit:CI_Organisation&gt;                     &lt;/cit:party&gt;                   &lt;/cit:CI_Responsibility&gt;" data-default-role="author" data-search-action="true" data-popup-action="true" data-template-type="contact" data-filter="{&quot;root&quot;: &quot;cit:CI_Responsibility&quot;}" data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}">
+                <a class="btn btn-default" title=" Responsable" data-gn-click-and-spin="add(665, 'cit:citedResponsibleParty', 'd67e30485', 'before');">
                   <i class="fa fa-plus gn-add" />
                 </a>
               </div>
@@ -1259,10 +1259,10 @@
             </a>
           </div>
         </div>
-        <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e40515" data-gn-cardinality="0-1" data-gn-field-highlight="">
+        <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e31015" data-gn-cardinality="0-1" data-gn-field-highlight="">
           <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|:|che:CHE_MD_DataIdentification|">che:basicGeodata</label>
           <div class="col-sm-9">
-            <a class="btn btn-default" title=" che:basicGeodata" data-gn-click-and-spin="add(149, 'che:basicGeodata', 'd67e40515', 'before');">
+            <a class="btn btn-default" title=" che:basicGeodata" data-gn-click-and-spin="add(149, 'che:basicGeodata', 'd67e31015', 'before');">
               <i class="fa fa-plus gn-add" />
             </a>
           </div>
@@ -1317,10 +1317,10 @@
             </a>
           </div>
         </div>
-        <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e40538" data-gn-cardinality="0-1" data-gn-field-highlight="">
+        <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e31037" data-gn-cardinality="0-1" data-gn-field-highlight="">
           <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|:|che:CHE_MD_BasicGeodataInformation|">che:basicGeodataLegalLevel</label>
           <div class="col-sm-9">
-            <a class="btn btn-default" title=" che:basicGeodataLegalLevel" data-gn-click-and-spin="add(688, 'che:basicGeodataLegalLevel', 'd67e40538', 'before');">
+            <a class="btn btn-default" title=" che:basicGeodataLegalLevel" data-gn-click-and-spin="add(688, 'che:basicGeodataLegalLevel', 'd67e31037', 'before');">
               <i class="fa fa-plus gn-add" />
             </a>
           </div>
@@ -1453,26 +1453,26 @@
               </a>
             </div>
           </div>
-          <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e40897" data-gn-cardinality="0-1" data-gn-field-highlight="">
+          <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e31382" data-gn-cardinality="0-1" data-gn-field-highlight="">
             <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|:|cit:CI_Citation|">Edition</label>
             <div class="col-sm-9">
-              <a class="btn btn-default" title=" Edition" data-gn-click-and-spin="add(700, 'cit:edition', 'd67e40897', 'before');">
+              <a class="btn btn-default" title=" Edition" data-gn-click-and-spin="add(700, 'cit:edition', 'd67e31382', 'before');">
                 <i class="fa fa-plus gn-add" />
               </a>
             </div>
           </div>
-          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e40910" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e31394" data-gn-cardinality="0-10000" data-gn-field-highlight="">
             <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|cit:citedResponsibleParty|cit:CI_Citation|">Responsable</label>
             <div class="col-sm-9">
-              <div data-gn-directory-entry-selector="" data-dom-id="d67e40910" data-element-name="cit:citedResponsibleParty" data-element-ref="700" data-template-add-snippet="&lt;cit:CI_Responsibility                    xmlns:cit='http://standards.iso.org/iso/19115/-3/cit/2.0'                    xmlns:gco='http://standards.iso.org/iso/19115/-3/gco/1.0'&gt;                     &lt;cit:role&gt;                       &lt;cit:CI_RoleCode codeList='http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode'                       codeListValue='author'/&gt;                     &lt;/cit:role&gt;                     &lt;cit:party&gt;                       &lt;cit:CI_Organisation&gt;                         &lt;cit:name&gt;                           &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                         &lt;/cit:name&gt;                         &lt;cit:contactInfo&gt;                           &lt;cit:CI_Contact&gt;                             &lt;cit:address&gt;                               &lt;cit:CI_Address&gt;                                 &lt;cit:electronicMailAddress&gt;                                   &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                                 &lt;/cit:electronicMailAddress&gt;                               &lt;/cit:CI_Address&gt;                             &lt;/cit:address&gt;                           &lt;/cit:CI_Contact&gt;                         &lt;/cit:contactInfo&gt;                         &lt;cit:individual&gt;                           &lt;cit:CI_Individual&gt;                             &lt;cit:name&gt;                               &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                             &lt;/cit:name&gt;                           &lt;/cit:CI_Individual&gt;                         &lt;/cit:individual&gt;                       &lt;/cit:CI_Organisation&gt;                     &lt;/cit:party&gt;                   &lt;/cit:CI_Responsibility&gt;" data-default-role="author" data-search-action="true" data-popup-action="true" data-template-type="contact" data-filter="{&quot;root&quot;: &quot;cit:CI_Responsibility&quot;}" data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}">
-                <a class="btn btn-default" title=" Responsable" data-gn-click-and-spin="add(700, 'cit:citedResponsibleParty', 'd67e40910', 'before');">
+              <div data-gn-directory-entry-selector="" data-dom-id="d67e31394" data-element-name="cit:citedResponsibleParty" data-element-ref="700" data-template-add-snippet="&lt;cit:CI_Responsibility                    xmlns:cit='http://standards.iso.org/iso/19115/-3/cit/2.0'                    xmlns:gco='http://standards.iso.org/iso/19115/-3/gco/1.0'&gt;                     &lt;cit:role&gt;                       &lt;cit:CI_RoleCode codeList='http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode'                       codeListValue='author'/&gt;                     &lt;/cit:role&gt;                     &lt;cit:party&gt;                       &lt;cit:CI_Organisation&gt;                         &lt;cit:name&gt;                           &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                         &lt;/cit:name&gt;                         &lt;cit:contactInfo&gt;                           &lt;cit:CI_Contact&gt;                             &lt;cit:address&gt;                               &lt;cit:CI_Address&gt;                                 &lt;cit:electronicMailAddress&gt;                                   &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                                 &lt;/cit:electronicMailAddress&gt;                               &lt;/cit:CI_Address&gt;                             &lt;/cit:address&gt;                           &lt;/cit:CI_Contact&gt;                         &lt;/cit:contactInfo&gt;                         &lt;cit:individual&gt;                           &lt;cit:CI_Individual&gt;                             &lt;cit:name&gt;                               &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                             &lt;/cit:name&gt;                           &lt;/cit:CI_Individual&gt;                         &lt;/cit:individual&gt;                       &lt;/cit:CI_Organisation&gt;                     &lt;/cit:party&gt;                   &lt;/cit:CI_Responsibility&gt;" data-default-role="author" data-search-action="true" data-popup-action="true" data-template-type="contact" data-filter="{&quot;root&quot;: &quot;cit:CI_Responsibility&quot;}" data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}">
+                <a class="btn btn-default" title=" Responsable" data-gn-click-and-spin="add(700, 'cit:citedResponsibleParty', 'd67e31394', 'before');">
                   <i class="fa fa-plus gn-add" />
                 </a>
               </div>
             </div>
           </div>
         </fieldset>
-        <fieldset id="gn-el-d67e41379" data-gn-field-highlight="" class=" gn-distributorContact">
+        <fieldset id="gn-el-d67e31832" data-gn-field-highlight="" class=" gn-distributorContact">
           <legend class="distributorContact" data-gn-field-tooltip="iso19115-3.2018.che|mrd:distributorContact|mrd:MD_Distributor|" data-gn-slide-toggle="false">Contact </legend>
           <table class="table table-striped gn-table">
             <thead>
@@ -1565,7 +1565,7 @@
             </tbody>
           </table>
         </fieldset>
-        <fieldset id="gn-el-d67e43304" data-gn-field-highlight="" class=" gn-distributorContact">
+        <fieldset id="gn-el-d67e33660" data-gn-field-highlight="" class=" gn-distributorContact">
           <legend class="distributorContact" data-gn-field-tooltip="iso19115-3.2018.che|mrd:distributorContact|mrd:MD_Distributor|" data-gn-slide-toggle="false">Contact </legend>
           <table class="table table-striped gn-table">
             <thead>
@@ -1888,10 +1888,10 @@
               </a>
             </div>
           </div>
-          <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e45456" data-gn-cardinality="0-1" data-gn-field-highlight="">
+          <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e35705" data-gn-cardinality="0-1" data-gn-field-highlight="">
             <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|:|cit:CI_OnlineResource|">Protocole</label>
             <div class="col-sm-9">
-              <a class="btn btn-default" title=" Protocole" data-gn-click-and-spin="add(857, 'cit:protocol', 'd67e45456', 'before');">
+              <a class="btn btn-default" title=" Protocole" data-gn-click-and-spin="add(857, 'cit:protocol', 'd67e35705', 'before');">
                 <i class="fa fa-plus gn-add" />
               </a>
             </div>
@@ -1921,10 +1921,10 @@
               </a>
             </div>
           </div>
-          <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e45545" data-gn-cardinality="0-1" data-gn-field-highlight="">
+          <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e35787" data-gn-cardinality="0-1" data-gn-field-highlight="">
             <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|:|cit:CI_OnlineResource|">Nom</label>
             <div class="col-sm-9">
-              <a class="btn btn-default" title=" Nom" data-gn-click-and-spin="add(857, 'cit:name', 'd67e45545', 'before');">
+              <a class="btn btn-default" title=" Nom" data-gn-click-and-spin="add(857, 'cit:name', 'd67e35787', 'before');">
                 <i class="fa fa-plus gn-add" />
               </a>
             </div>
@@ -1966,10 +1966,10 @@
               </a>
             </div>
           </div>
-          <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e45598" data-gn-cardinality="0-1" data-gn-field-highlight="">
+          <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e35838" data-gn-cardinality="0-1" data-gn-field-highlight="">
             <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|:|cit:CI_OnlineResource|">Description</label>
             <div class="col-sm-9">
-              <a class="btn btn-default" title=" Description" data-gn-click-and-spin="add(857, 'cit:description', 'd67e45598', 'before');">
+              <a class="btn btn-default" title=" Description" data-gn-click-and-spin="add(857, 'cit:description', 'd67e35838', 'before');">
                 <i class="fa fa-plus gn-add" />
               </a>
             </div>
@@ -2002,10 +2002,10 @@
               </a>
             </div>
           </div>
-          <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e45608" data-gn-cardinality="0-1" data-gn-field-highlight="">
+          <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e35848" data-gn-cardinality="0-1" data-gn-field-highlight="">
             <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|:|cit:CI_OnlineResource|">Fonction</label>
             <div class="col-sm-9">
-              <a class="btn btn-default" title=" Fonction" data-gn-click-and-spin="add(857, 'cit:function', 'd67e45608', 'before');">
+              <a class="btn btn-default" title=" Fonction" data-gn-click-and-spin="add(857, 'cit:function', 'd67e35848', 'before');">
                 <i class="fa fa-plus gn-add" />
               </a>
             </div>
@@ -2241,10 +2241,10 @@
               </a>
             </div>
           </div>
-          <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e45936" data-gn-cardinality="0-1" data-gn-field-highlight="">
+          <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e36164" data-gn-cardinality="0-1" data-gn-field-highlight="">
             <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|:|cit:CI_OnlineResource|">Protocole</label>
             <div class="col-sm-9">
-              <a class="btn btn-default" title=" Protocole" data-gn-click-and-spin="add(883, 'cit:protocol', 'd67e45936', 'before');">
+              <a class="btn btn-default" title=" Protocole" data-gn-click-and-spin="add(883, 'cit:protocol', 'd67e36164', 'before');">
                 <i class="fa fa-plus gn-add" />
               </a>
             </div>
@@ -2274,10 +2274,10 @@
               </a>
             </div>
           </div>
-          <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e46025" data-gn-cardinality="0-1" data-gn-field-highlight="">
+          <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e36246" data-gn-cardinality="0-1" data-gn-field-highlight="">
             <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|:|cit:CI_OnlineResource|">Nom</label>
             <div class="col-sm-9">
-              <a class="btn btn-default" title=" Nom" data-gn-click-and-spin="add(883, 'cit:name', 'd67e46025', 'before');">
+              <a class="btn btn-default" title=" Nom" data-gn-click-and-spin="add(883, 'cit:name', 'd67e36246', 'before');">
                 <i class="fa fa-plus gn-add" />
               </a>
             </div>
@@ -2319,10 +2319,10 @@
               </a>
             </div>
           </div>
-          <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e46078" data-gn-cardinality="0-1" data-gn-field-highlight="">
+          <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e36297" data-gn-cardinality="0-1" data-gn-field-highlight="">
             <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|:|cit:CI_OnlineResource|">Description</label>
             <div class="col-sm-9">
-              <a class="btn btn-default" title=" Description" data-gn-click-and-spin="add(883, 'cit:description', 'd67e46078', 'before');">
+              <a class="btn btn-default" title=" Description" data-gn-click-and-spin="add(883, 'cit:description', 'd67e36297', 'before');">
                 <i class="fa fa-plus gn-add" />
               </a>
             </div>
@@ -2355,10 +2355,10 @@
               </a>
             </div>
           </div>
-          <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e46088" data-gn-cardinality="0-1" data-gn-field-highlight="">
+          <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e36307" data-gn-cardinality="0-1" data-gn-field-highlight="">
             <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|:|cit:CI_OnlineResource|">Fonction</label>
             <div class="col-sm-9">
-              <a class="btn btn-default" title=" Fonction" data-gn-click-and-spin="add(883, 'cit:function', 'd67e46088', 'before');">
+              <a class="btn btn-default" title=" Fonction" data-gn-click-and-spin="add(883, 'cit:function', 'd67e36307', 'before');">
                 <i class="fa fa-plus gn-add" />
               </a>
             </div>
@@ -2499,10 +2499,10 @@
           </a>
         </div>
       </div>
-      <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e46299" data-gn-cardinality="0-1" data-gn-field-highlight="">
+      <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e36511" data-gn-cardinality="0-1" data-gn-field-highlight="">
         <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|:|che:CHE_MD_MaintenanceInformation|">Fréquence de mise à jour</label>
         <div class="col-sm-9">
-          <a class="btn btn-default" title=" Fréquence de mise à jour" data-gn-click-and-spin="add(909, 'mmi:maintenanceAndUpdateFrequency', 'd67e46299', 'before');">
+          <a class="btn btn-default" title=" Fréquence de mise à jour" data-gn-click-and-spin="add(909, 'mmi:maintenanceAndUpdateFrequency', 'd67e36511', 'before');">
             <i class="fa fa-plus gn-add" />
           </a>
         </div>
@@ -2787,7 +2787,7 @@
           </div>
           <div class="col-sm-1 col-xs-1 gn-control" />
         </div>
-        <fieldset id="gn-el-d67e21899" data-gn-field-highlight="" class=" gn-contact">
+        <fieldset id="gn-el-d67e13347" data-gn-field-highlight="" class=" gn-contact">
           <legend class="contact" data-gn-field-tooltip="iso19115-3.2018.che|mdb:contact|che:CHE_MD_Metadata|" data-gn-slide-toggle="false">Point de contact des métadonnées </legend>
           <table class="table table-striped gn-table">
             <thead>
@@ -2880,11 +2880,11 @@
             </tbody>
           </table>
         </fieldset>
-        <div class="form-group gn-field gn-required gn-extra-field gn-add-field  " id="gn-el-d849e2364" data-gn-cardinality="1-10000" data-gn-field-highlight="">
+        <div class="form-group gn-field gn-required gn-extra-field gn-add-field  " id="gn-el-d963e2242" data-gn-cardinality="1-10000" data-gn-field-highlight="">
           <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mdb:contact|che:CHE_MD_Metadata|">Point de contact des métadonnées</label>
           <div class="col-sm-9">
-            <div data-gn-directory-entry-selector="" data-dom-id="d849e2364" data-element-name="mdb:contact" data-element-ref="1" data-template-add-snippet="&lt;cit:CI_Responsibility                    xmlns:cit='http://standards.iso.org/iso/19115/-3/cit/2.0'                    xmlns:gco='http://standards.iso.org/iso/19115/-3/gco/1.0'&gt;                     &lt;cit:role&gt;                       &lt;cit:CI_RoleCode codeList='http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode'                       codeListValue='pointOfContact'/&gt;                     &lt;/cit:role&gt;                     &lt;cit:party&gt;                       &lt;cit:CI_Organisation&gt;                         &lt;cit:name&gt;                           &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                         &lt;/cit:name&gt;                         &lt;cit:contactInfo&gt;                           &lt;cit:CI_Contact&gt;                             &lt;cit:address&gt;                               &lt;cit:CI_Address&gt;                                 &lt;cit:electronicMailAddress&gt;                                   &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                                 &lt;/cit:electronicMailAddress&gt;                               &lt;/cit:CI_Address&gt;                             &lt;/cit:address&gt;                           &lt;/cit:CI_Contact&gt;                         &lt;/cit:contactInfo&gt;                         &lt;cit:individual&gt;                           &lt;cit:CI_Individual&gt;                             &lt;cit:name&gt;                               &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                             &lt;/cit:name&gt;                           &lt;/cit:CI_Individual&gt;                         &lt;/cit:individual&gt;                       &lt;/cit:CI_Organisation&gt;                     &lt;/cit:party&gt;                   &lt;/cit:CI_Responsibility&gt;" data-default-role="pointOfContact" data-search-action="true" data-popup-action="true" data-template-type="contact" data-filter="{&quot;root&quot;: &quot;cit:CI_Responsibility&quot;}" data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}">
-              <a class="btn btn-default" title=" Responsabilité" data-gn-click-and-spin="addChoice(1, 'mdb:contact', 'cit:CI_Responsibility', 'd849e2364', 'replaceWith');">
+            <div data-gn-directory-entry-selector="" data-dom-id="d963e2242" data-element-name="mdb:contact" data-element-ref="1" data-template-add-snippet="&lt;cit:CI_Responsibility                    xmlns:cit='http://standards.iso.org/iso/19115/-3/cit/2.0'                    xmlns:gco='http://standards.iso.org/iso/19115/-3/gco/1.0'&gt;                     &lt;cit:role&gt;                       &lt;cit:CI_RoleCode codeList='http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode'                       codeListValue='pointOfContact'/&gt;                     &lt;/cit:role&gt;                     &lt;cit:party&gt;                       &lt;cit:CI_Organisation&gt;                         &lt;cit:name&gt;                           &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                         &lt;/cit:name&gt;                         &lt;cit:contactInfo&gt;                           &lt;cit:CI_Contact&gt;                             &lt;cit:address&gt;                               &lt;cit:CI_Address&gt;                                 &lt;cit:electronicMailAddress&gt;                                   &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                                 &lt;/cit:electronicMailAddress&gt;                               &lt;/cit:CI_Address&gt;                             &lt;/cit:address&gt;                           &lt;/cit:CI_Contact&gt;                         &lt;/cit:contactInfo&gt;                         &lt;cit:individual&gt;                           &lt;cit:CI_Individual&gt;                             &lt;cit:name&gt;                               &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                             &lt;/cit:name&gt;                           &lt;/cit:CI_Individual&gt;                         &lt;/cit:individual&gt;                       &lt;/cit:CI_Organisation&gt;                     &lt;/cit:party&gt;                   &lt;/cit:CI_Responsibility&gt;" data-default-role="pointOfContact" data-search-action="true" data-popup-action="true" data-template-type="contact" data-filter="{&quot;root&quot;: &quot;cit:CI_Responsibility&quot;}" data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}">
+              <a class="btn btn-default" title=" Responsabilité" data-gn-click-and-spin="addChoice(1, 'mdb:contact', 'cit:CI_Responsibility', 'd963e2242', 'replaceWith');">
                 <i type="button" class="fa fa-plus gn-add" title="Type de données pour l'informations concernant l’acteur et son rôle" />
               </a>
             </div>
@@ -3019,10 +3019,10 @@
               </a>
             </div>
           </div>
-          <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e24984" data-gn-cardinality="0-1" data-gn-field-highlight="">
+          <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e16274" data-gn-cardinality="0-1" data-gn-field-highlight="">
             <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|:|cit:CI_OnlineResource|">Fonction</label>
             <div class="col-sm-9">
-              <a class="btn btn-default" title=" Fonction" data-gn-click-and-spin="add(131, 'cit:function', 'd67e24984', 'before');">
+              <a class="btn btn-default" title=" Fonction" data-gn-click-and-spin="add(131, 'cit:function', 'd67e16274', 'before');">
                 <i class="fa fa-plus gn-add" />
               </a>
             </div>
@@ -3173,11 +3173,11 @@
             </div>
             <div class="col-sm-1 col-xs-1 gn-control" />
           </div>
-          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e24123" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e15458" data-gn-cardinality="0-10000" data-gn-field-highlight="">
             <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|cit:citedResponsibleParty|cit:CI_Citation|">Responsable</label>
             <div class="col-sm-9">
-              <div data-gn-directory-entry-selector="" data-dom-id="d67e24123" data-element-name="cit:citedResponsibleParty" data-element-ref="100" data-template-add-snippet="&lt;cit:CI_Responsibility                    xmlns:cit='http://standards.iso.org/iso/19115/-3/cit/2.0'                    xmlns:gco='http://standards.iso.org/iso/19115/-3/gco/1.0'&gt;                     &lt;cit:role&gt;                       &lt;cit:CI_RoleCode codeList='http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode'                       codeListValue='author'/&gt;                     &lt;/cit:role&gt;                     &lt;cit:party&gt;                       &lt;cit:CI_Organisation&gt;                         &lt;cit:name&gt;                           &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                         &lt;/cit:name&gt;                         &lt;cit:contactInfo&gt;                           &lt;cit:CI_Contact&gt;                             &lt;cit:address&gt;                               &lt;cit:CI_Address&gt;                                 &lt;cit:electronicMailAddress&gt;                                   &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                                 &lt;/cit:electronicMailAddress&gt;                               &lt;/cit:CI_Address&gt;                             &lt;/cit:address&gt;                           &lt;/cit:CI_Contact&gt;                         &lt;/cit:contactInfo&gt;                         &lt;cit:individual&gt;                           &lt;cit:CI_Individual&gt;                             &lt;cit:name&gt;                               &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                             &lt;/cit:name&gt;                           &lt;/cit:CI_Individual&gt;                         &lt;/cit:individual&gt;                       &lt;/cit:CI_Organisation&gt;                     &lt;/cit:party&gt;                   &lt;/cit:CI_Responsibility&gt;" data-default-role="author" data-search-action="true" data-popup-action="true" data-template-type="contact" data-filter="{&quot;root&quot;: &quot;cit:CI_Responsibility&quot;}" data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}">
-                <a class="btn btn-default" title=" Responsable" data-gn-click-and-spin="add(100, 'cit:citedResponsibleParty', 'd67e24123', 'before');">
+              <div data-gn-directory-entry-selector="" data-dom-id="d67e15458" data-element-name="cit:citedResponsibleParty" data-element-ref="100" data-template-add-snippet="&lt;cit:CI_Responsibility                    xmlns:cit='http://standards.iso.org/iso/19115/-3/cit/2.0'                    xmlns:gco='http://standards.iso.org/iso/19115/-3/gco/1.0'&gt;                     &lt;cit:role&gt;                       &lt;cit:CI_RoleCode codeList='http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode'                       codeListValue='author'/&gt;                     &lt;/cit:role&gt;                     &lt;cit:party&gt;                       &lt;cit:CI_Organisation&gt;                         &lt;cit:name&gt;                           &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                         &lt;/cit:name&gt;                         &lt;cit:contactInfo&gt;                           &lt;cit:CI_Contact&gt;                             &lt;cit:address&gt;                               &lt;cit:CI_Address&gt;                                 &lt;cit:electronicMailAddress&gt;                                   &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                                 &lt;/cit:electronicMailAddress&gt;                               &lt;/cit:CI_Address&gt;                             &lt;/cit:address&gt;                           &lt;/cit:CI_Contact&gt;                         &lt;/cit:contactInfo&gt;                         &lt;cit:individual&gt;                           &lt;cit:CI_Individual&gt;                             &lt;cit:name&gt;                               &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                             &lt;/cit:name&gt;                           &lt;/cit:CI_Individual&gt;                         &lt;/cit:individual&gt;                       &lt;/cit:CI_Organisation&gt;                     &lt;/cit:party&gt;                   &lt;/cit:CI_Responsibility&gt;" data-default-role="author" data-search-action="true" data-popup-action="true" data-template-type="contact" data-filter="{&quot;root&quot;: &quot;cit:CI_Responsibility&quot;}" data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}">
+                <a class="btn btn-default" title=" Responsable" data-gn-click-and-spin="add(100, 'cit:citedResponsibleParty', 'd67e15458', 'before');">
                   <i class="fa fa-plus gn-add" />
                 </a>
               </div>
