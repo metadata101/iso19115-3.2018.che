@@ -1,26 +1,3 @@
-/*
- * Copyright (C) 2001-2025 Food and Agriculture Organization of the
- * United Nations (FAO-UN), United Nations World Food Programme (WFP)
- * and United Nations Environment Programme (UNEP)
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or (at
- * your option) any later version.
- *
- * This program is distributed in the hope that it will be useful, but
- * WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- * General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
- *
- * Contact: Jeroen Ticheler - FAO - Viale delle Terme di Caracalla 2,
- * Rome - Italy. email: geonetwork@osgeo.org
- */
-
 package org.fao.geonet.schema;
 
 import org.fao.geonet.utils.IO;
@@ -44,12 +21,27 @@ import java.util.Map;
 
 import static org.fao.geonet.schema.TestSupport.getResource;
 import static org.fao.geonet.schema.TestSupport.getResourceInsideSchema;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class SchematronTest {
+
+	private static final boolean GENERATE_EXPECTED_FILE = false;
+
+	private static Path compiledSchematronFilePath;
+
 	@ClassRule
 	public static final TemporaryFolder temporaryFolder = new TemporaryFolder();
-	private static final boolean GENERATE_EXPECTED_FILE = false;
-	private static Path compiledSchematronFilePath;
+
+	@BeforeClass
+	public static void compileSchematron() throws Exception {
+		Element schematronSource = Xml.loadFile(getResourceInsideSchema("schematron/schematron-rules-iso.sch"));
+		Path schematronCompilation = getResource("gn-site/WEB-INF/classes/schematron/iso_svrl_for_xslt2.xsl");
+		Element compiledSchematron = Xml.transform(schematronSource, schematronCompilation);
+		compiledSchematronFilePath = temporaryFolder.getRoot().toPath().resolve("path/requiredtoFind/utilsfile/compiled-iso-schematron.xsl");
+		Files.createDirectories(compiledSchematronFilePath.getParent());
+		Files.write(compiledSchematronFilePath, Xml.getString(compiledSchematron).getBytes(StandardCharsets.UTF_8));
+	}
 
 	@BeforeClass
 	public static void makeUtilsFnAvailable() throws IOException, URISyntaxException {
@@ -59,63 +51,40 @@ public class SchematronTest {
 	}
 
 	@BeforeClass
-	public static void initSaxonAndCompileSchematron() throws Exception {
+	public static void initSaxon() {
 		TransformerFactoryFactory.init("net.sf.saxon.TransformerFactoryImpl");
-		Element schematronSource = Xml.loadFile(getResourceInsideSchema("schematron/schematron-rules-iso.sch"));
-		Path schematronCompilation = getResource("gn-site/WEB-INF/classes/schematron/iso_svrl_for_xslt2.xsl");
-		Element compiledSchematron = Xml.transform(schematronSource, schematronCompilation);
-		compiledSchematronFilePath = temporaryFolder.getRoot().toPath().resolve("path/requiredtoFind/utilsfile/compiled-iso-schematron.xsl");
-		Files.createDirectories(compiledSchematronFilePath.getParent());
-		Files.write(compiledSchematronFilePath, Xml.getString(compiledSchematron).getBytes(StandardCharsets.UTF_8));
 	}
 
 	@Test
-	public void isoSchematronTest() throws Exception {
-		applySchematronAndCompare( "UpperRhineCastles-iso19115-3.2018.xml", "UpperRhineCastles-schematron-rules-iso-report.xml");
+	public void amphibiansIsoSchematron() throws Exception {
+		String report = applySchematronAndCompare("amphibians");
+
+		assertTrue(report.contains("failure"));
 	}
 
 	@Test
-	public void createFreValidationReport() throws Exception {
-		createValidationReport("fre",
-				"UpperRhineCastles-schematron-rules-iso-report.xml",
-				"UpperRhineCastles-validation-report.xml");
+	public void veterinariansIsoSchematron() throws Exception {
+		String report = applySchematronAndCompare("veterinarians");
+
+		assertFalse(report.contains("failure"));
 	}
 
 	@Test
-	public void createGerValidationReport() throws Exception {
-		createValidationReport("ger",
-				"UpperRhineCastles-schematron-rules-iso-report-with-ia-based-german.xml",
-				"UpperRhineCastles-validation-report-with-ia-based-german.xml");
-	}
-	private void createValidationReport(String languageCode, String sourceFile, String controlFile) throws Exception {
-		Path xslFile = getResource("gn-site/xslt/services/metadata/validate.xsl");
+	public void fiktiverDarstellungskatalogIsoSchematron() throws Exception {
+		String report = applySchematronAndCompare("fiktiverDarstellungskatalogMitURL");
 
-		org.jdom.Namespace geonetNs = org.jdom.Namespace.getNamespace("geonet", "http://www.fao.org/geonetwork");
-		Element root = new Element("root");
-		Element language = new Element("language");
-		language.setText(languageCode);
-		Element rootReport = new Element("report", geonetNs);
-		Element schematronErrors = new Element("schematronerrors", geonetNs);
-		Element report = new Element("report", geonetNs);
-		Path xmlFile = getResourceInsideSchema(sourceFile);
-
-		Element source = Xml.loadFile(xmlFile);
-
-		root.addContent(rootReport);
-		root.addContent(language);
-		rootReport.addContent(schematronErrors);
-		schematronErrors.addContent(report);
-		report.addContent(source);
-
-		Element transformed = Xml.transform(root, xslFile);
-
-		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
-		String actual = xmlOutputter.outputString(new Document(transformed));
-		TestSupport.assertGeneratedDataByteMatchExpected(controlFile, actual, GENERATE_EXPECTED_FILE);
+		assertFalse(report.contains("failure"));
 	}
 
-	private void applySchematronAndCompare(String inputFileName, String expectedFileName) throws Exception {
-		Path xmlFile = getResource( inputFileName);
+	@Test
+	public void grundwasservorkommenServiceIsoSchematron() throws Exception {
+		String report = applySchematronAndCompare("grundwasservorkommen");
+
+		assertTrue(report.contains("failure"));
+	}
+
+	private String applySchematronAndCompare(String mdNameRoot) throws Exception {
+		Path xmlFile = getResource(mdNameRoot + "-19115-3.che.xml");
 		Element md = Xml.loadFile(xmlFile);
 
 		Element report = Xml.transform(md, compiledSchematronFilePath, Map.of(
@@ -126,7 +95,7 @@ public class SchematronTest {
 
 		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
 		String actual = xmlOutputter.outputString(new Document(report));
-		TestSupport.assertGeneratedDataByteMatchExpected(expectedFileName, actual, GENERATE_EXPECTED_FILE);
+		TestSupport.assertGeneratedDataByteMatchExpected(mdNameRoot + "-schematron-rules-iso-report.xml", actual, GENERATE_EXPECTED_FILE);
+		return actual;
 	}
-
 }
