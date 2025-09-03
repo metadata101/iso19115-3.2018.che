@@ -21,6 +21,7 @@
   <sch:ns prefix="geonet" uri="http://www.fao.org/geonetwork"/>
   <sch:ns prefix="xlink" uri="http://www.w3.org/1999/xlink"/>
   <sch:ns prefix="xsi" uri="http://www.w3.org/2001/XMLSchema"/>
+  <sch:ns prefix="che" uri="http://geocat.ch/che"/>
   <sch:diagnostics>
 
     <sch:diagnostic id="rule.cit.individualnameandposition-failure-en"
@@ -118,7 +119,7 @@
     </sch:title>
 
 
-    <sch:rule context="//cit:CI_Organisation">
+    <sch:rule context="//che:CHE_CI_Organisation">
 
 
       <sch:let name="name" value="cit:name"/>
@@ -439,7 +440,7 @@
     </sch:title>
 
 
-    <sch:rule context="//mco:MD_LegalConstraints">
+    <sch:rule context="//che:CHE_MD_LegalConstraints">
 
 
       <sch:let name="accessConstraints"
@@ -521,7 +522,7 @@
 
 
     <sch:rule
-            context="//mco:MD_LegalConstraints[       mco:accessConstraints/mco:MD_RestrictionCode/@codeListValue = 'otherRestrictions' or       mco:useConstraints/mco:MD_RestrictionCode/@codeListValue = 'otherRestrictions'       ]">
+            context="//che:CHE_MD_LegalConstraints[       mco:accessConstraints/mco:MD_RestrictionCode/@codeListValue = 'otherRestrictions' or       mco:useConstraints/mco:MD_RestrictionCode/@codeListValue = 'otherRestrictions'       ]">
 
 
       <sch:let name="otherConstraints"
@@ -546,21 +547,21 @@
   <sch:diagnostics>
 
     <sch:diagnostic id="rule.mdb.root-element-failure-en" xml:lang="en">The root
-      element must be MD_Metadata.
+      element must be CHE_MD_Metadata.
     </sch:diagnostic>
 
     <sch:diagnostic id="rule.mdb.root-element-failure-fr" xml:lang="fr">Modifier
       l'élément racine du document pour que ce
-      soit un élément MD_Metadata.
+      soit un élément CHE_MD_Metadata.
     </sch:diagnostic>
 
 
     <sch:diagnostic id="rule.mdb.root-element-success-en" xml:lang="en">Root
-      element MD_Metadata found.
+      element CHE_MD_Metadata found.
     </sch:diagnostic>
 
     <sch:diagnostic id="rule.mdb.root-element-success-fr" xml:lang="fr">Élément
-      racine MD_Metadata défini.
+      racine CHE_MD_Metadata défini.
     </sch:diagnostic>
 
   </sch:diagnostics>
@@ -572,19 +573,19 @@
 
 
     <sch:p xml:lang="en">A metadata instance document conforming to
-      this specification SHALL have a root MD_Metadata element
+      this specification SHALL have a root CHE_MD_Metadata element
       defined in the http://standards.iso.org/iso/19115/-3/mdb/2.0 namespace.
     </sch:p>
 
     <sch:p xml:lang="fr">Une fiche de métadonnées conforme au standard
-      ISO19115-1 DOIT avoir un élément racine MD_Metadata (défini dans l'espace
+      ISO19115-1 DOIT avoir un élément racine CHE_MD_Metadata (défini dans l'espace
       de nommage http://standards.iso.org/iso/19115/-3/mdb/2.0).
     </sch:p>
 
     <sch:rule context="/">
 
       <sch:let name="hasOneMD_MetadataElement"
-               value="count(/mdb:MD_Metadata) = 1"/>
+               value="count(/che:CHE_MD_Metadata) = 1"/>
 
 
       <sch:assert test="$hasOneMD_MetadataElement"
@@ -637,7 +638,7 @@
 
 
     <sch:rule
-            context="/mdb:MD_Metadata/mdb:defaultLocale|                        /mdb:MD_Metadata/mdb:identificationInfo/*/mri:defaultLocale">
+            context="/che:CHE_MD_Metadata/mdb:defaultLocale|                        /che:CHE_MD_Metadata/mdb:identificationInfo/*/mri:defaultLocale">
 
 
       <sch:let name="encoding"
@@ -708,7 +709,7 @@
 
 
     <sch:rule
-            context="/mdb:MD_Metadata/mdb:metadataScope/                           mdb:MD_MetadataScope[not(mdb:resourceScope/                             mcc:MD_ScopeCode/@codeListValue = 'dataset')]">
+            context="/che:CHE_MD_Metadata/mdb:metadataScope/                           mdb:MD_MetadataScope[not(mdb:resourceScope/                             mcc:MD_ScopeCode/@codeListValue = 'dataset')]">
 
 
       <sch:let name="scopeCode"
@@ -775,15 +776,15 @@
     </sch:p>
 
 
-    <sch:rule context="mdb:MD_Metadata">
+    <sch:rule context="che:CHE_MD_Metadata">
 
       <sch:let name="creationDates"
-               value="./mdb:dateInfo/cit:CI_Date[                     normalize-space(cit:date/gco:DateTime) != '' and                      cit:dateType/cit:CI_DateTypeCode/@codeListValue = 'creation']/                   cit:date/gco:DateTime"/>
+               value="./mdb:dateInfo/cit:CI_Date[                     normalize-space(cit:date[./gco:DateTime|./gco:Date]/*) != '' and                      cit:dateType/cit:CI_DateTypeCode/@codeListValue = 'creation']/                   cit:date[./gco:DateTime|./gco:Date]/*"/>
 
       <!-- Check at least one non empty creation date element is defined. -->
 
       <sch:let name="hasAtLeastOneCreationDate"
-               value="count(./mdb:dateInfo/cit:CI_Date[                     normalize-space(cit:date/gco:DateTime) != '' and                      cit:dateType/cit:CI_DateTypeCode/@codeListValue = 'creation']                     ) &gt; 0"/>
+               value="count(./mdb:dateInfo/cit:CI_Date[                     normalize-space(cit:date[./gco:DateTime|./gco:Date]/*) != '' and                      cit:dateType/cit:CI_DateTypeCode/@codeListValue = 'creation']                     ) &gt; 0"/>
 
 
       <sch:assert test="$hasAtLeastOneCreationDate"
@@ -1134,7 +1135,7 @@
     </sch:title>
 
 
-    <sch:rule context="//mmi:MD_MaintenanceInformation">
+    <sch:rule context="//che:CHE_MD_MaintenanceInformation">
 
 
       <sch:let name="userDefinedMaintenanceFrequency"
@@ -1416,7 +1417,7 @@
 
 
     <sch:rule
-            context="/mdb:MD_Metadata[mdb:metadataScope/                           mdb:MD_MetadataScope/mdb:resourceScope/                           mcc:MD_ScopeCode/@codeListValue = 'dataset']/                           mdb:identificationInfo/mri:MD_DataIdentification">
+            context="/che:CHE_MD_Metadata[mdb:metadataScope/                           mdb:MD_MetadataScope/mdb:resourceScope/                           mcc:MD_ScopeCode/@codeListValue = 'dataset']/                           mdb:identificationInfo/che:CHE_MD_DataIdentification">
 
 
       <sch:let name="geodescription"
@@ -1479,7 +1480,7 @@
 
 
     <sch:rule
-            context="/mdb:MD_Metadata[mdb:metadataScope/                          mdb:MD_MetadataScope/mdb:resourceScope/                          mcc:MD_ScopeCode/@codeListValue = 'dataset' or                           mdb:metadataScope/                          mdb:MD_MetadataScope/mdb:resourceScope/                          mcc:MD_ScopeCode/@codeListValue = 'series']/                          mdb:identificationInfo/mri:MD_DataIdentification">
+            context="/che:CHE_MD_Metadata[mdb:metadataScope/                          mdb:MD_MetadataScope/mdb:resourceScope/                          mcc:MD_ScopeCode/@codeListValue = 'dataset' or                           mdb:metadataScope/                          mdb:MD_MetadataScope/mdb:resourceScope/                          mcc:MD_ScopeCode/@codeListValue = 'series']/                          mdb:identificationInfo/che:CHE_MD_DataIdentification">
 
       <!-- The topic category is the enumeration value and
       not the human readable one. -->
@@ -1541,7 +1542,7 @@
 
 
     <sch:rule
-            context="//mri:MD_DataIdentification/mri:associatedResource/*[namespace-uri(.) != 'http://www.fao.org/geonetwork']|                        //srv:SV_ServiceIdentification/mri:associatedResource/*[namespace-uri(.) != 'http://www.fao.org/geonetwork']">
+            context="//che:CHE_MD_DataIdentification/mri:associatedResource/*[namespace-uri(.) != 'http://www.fao.org/geonetwork']|                        //srv:SV_ServiceIdentification/mri:associatedResource/*[namespace-uri(.) != 'http://www.fao.org/geonetwork']">
 
       <!-- May be a CharacterString or LocalisedCharacterString -->
 
@@ -1568,7 +1569,7 @@
                         and concat(
                             mri:associationType/*/@codeListValue,
                             mri:initiativeType/*/@codeListValue) =
-                            concat($association, $initiative)]) = 1"/>
+                            concat($association, $initiative)]) &lt;= 1"/>
 
 
       <!-- Concat ref assuming there is not both name and metadataReference -->
@@ -1631,7 +1632,7 @@
     -->
 
     <sch:rule
-            context="//mri:MD_DataIdentification[       ../../mdb:contentInfo/mrc:MD_FeatureCatalogue or       ../../mdb:contentInfo/mrc:MD_FeatureCatalogueDescription]">
+            context="//che:CHE_MD_DataIdentification[       ../../mdb:contentInfo/mrc:MD_FeatureCatalogue or       ../../mdb:contentInfo/mrc:MD_FeatureCatalogueDescription]">
 
 
       <sch:let name="resourceLanguages"

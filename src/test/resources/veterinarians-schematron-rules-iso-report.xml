@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svrl:schematron-output xmlns:svrl="http://purl.oclc.org/dsdl/svrl" schemaVersion="" title="Règles ISO">
+  <!--
+         
+        
+         
+        
+         
+        -->
+  <svrl:ns-prefix-in-attribute-values prefix="gml" uri="http://www.opengis.net/gml/3.2" />
+  <svrl:ns-prefix-in-attribute-values prefix="srv" uri="http://standards.iso.org/iso/19115/-3/srv/2.0" />
+  <svrl:ns-prefix-in-attribute-values prefix="cit" uri="http://standards.iso.org/iso/19115/-3/cit/2.0" />
+  <svrl:ns-prefix-in-attribute-values prefix="gex" uri="http://standards.iso.org/iso/19115/-3/gex/1.0" />
+  <svrl:ns-prefix-in-attribute-values prefix="mco" uri="http://standards.iso.org/iso/19115/-3/mco/1.0" />
+  <svrl:ns-prefix-in-attribute-values prefix="mdb" uri="http://standards.iso.org/iso/19115/-3/mdb/2.0" />
+  <svrl:ns-prefix-in-attribute-values prefix="mex" uri="http://standards.iso.org/iso/19115/-3/mex/1.0" />
+  <svrl:ns-prefix-in-attribute-values prefix="mmi" uri="http://standards.iso.org/iso/19115/-3/mmi/1.0" />
+  <svrl:ns-prefix-in-attribute-values prefix="gmw" uri="http://standards.iso.org/iso/19115/-3/gmw/1.0" />
+  <svrl:ns-prefix-in-attribute-values prefix="mrc" uri="http://standards.iso.org/iso/19115/-3/mrc/2.0" />
+  <svrl:ns-prefix-in-attribute-values prefix="mrd" uri="http://standards.iso.org/iso/19115/-3/mrd/1.0" />
+  <svrl:ns-prefix-in-attribute-values prefix="mri" uri="http://standards.iso.org/iso/19115/-3/mri/1.0" />
+  <svrl:ns-prefix-in-attribute-values prefix="mrs" uri="http://standards.iso.org/iso/19115/-3/mrs/1.0" />
+  <svrl:ns-prefix-in-attribute-values prefix="mcc" uri="http://standards.iso.org/iso/19115/-3/mcc/1.0" />
+  <svrl:ns-prefix-in-attribute-values prefix="lan" uri="http://standards.iso.org/iso/19115/-3/lan/1.0" />
+  <svrl:ns-prefix-in-attribute-values prefix="gco" uri="http://standards.iso.org/iso/19115/-3/gco/1.0" />
+  <svrl:ns-prefix-in-attribute-values prefix="geonet" uri="http://www.fao.org/geonetwork" />
+  <svrl:ns-prefix-in-attribute-values prefix="xlink" uri="http://www.w3.org/1999/xlink" />
+  <svrl:ns-prefix-in-attribute-values prefix="xsi" uri="http://www.w3.org/2001/XMLSchema" />
+  <svrl:ns-prefix-in-attribute-values prefix="che" uri="http://geocat.ch/che" />
+  <svrl:active-pattern document="" id="rule.cit.individualnameandposition" name_en="Individual MUST have a name or a position" name_fr="Une personne DOIT avoir un nom ou une fonction" name="Une personne DOIT avoir un nom ou une fonction" />
+  <svrl:fired-rule context="//cit:CI_Individual" />
+  <svrl:successful-report test="$hasName or $hasPosition" ref="#_" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='contact']/*[local-name()='CI_Responsibility']/*[local-name()='party']/*[local-name()='CHE_CI_Organisation']/*[local-name()='individual']/*[local-name()='CI_Individual']">
+    <svrl:text />
+    <svrl:diagnostic-reference diagnostic="rule.cit.individualnameandposition-success-en" ref="#_" xml:lang="en">Individual name is
+      "
+          Benoît Michel
+          "
+      and position
+      "
+          Inspecteur cantonal des denrées alimentaires Inspecteur cantonal des denrées alimentaires Kantonaler Lebensmittelinspektor
+          "
+      .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference diagnostic="rule.cit.individualnameandposition-success-fr" ref="#_" xml:lang="fr">Le nom de la personne est
+      "
+          Benoît Michel
+          "
+      ,sa fonction
+      "
+          Inspecteur cantonal des denrées alimentaires Inspecteur cantonal des denrées alimentaires Kantonaler Lebensmittelinspektor
+          "
+      .</svrl:diagnostic-reference>
+  </svrl:successful-report>
+  <svrl:fired-rule context="//cit:CI_Individual" />
+  <svrl:successful-report test="$hasName or $hasPosition" ref="#_" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='pointOfContact']/*[local-name()='CI_Responsibility']/*[local-name()='party']/*[local-name()='CHE_CI_Organisation']/*[local-name()='individual']/*[local-name()='CI_Individual']">
+    <svrl:text />
+    <svrl:diagnostic-reference diagnostic="rule.cit.individualnameandposition-success-en" ref="#_" xml:lang="en">Individual name is
+      "
+          Benoît Michel
+          "
+      and position
+      "
+          Inspecteur cantonal des denrées alimentaires Inspecteur cantonal des denrées alimentaires Kantonaler Lebensmittelinspektor
+          "
+      .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference diagnostic="rule.cit.individualnameandposition-success-fr" ref="#_" xml:lang="fr">Le nom de la personne est
+      "
+          Benoît Michel
+          "
+      ,sa fonction
+      "
+          Inspecteur cantonal des denrées alimentaires Inspecteur cantonal des denrées alimentaires Kantonaler Lebensmittelinspektor
+          "
+      .</svrl:diagnostic-reference>
+  </svrl:successful-report>
+  <svrl:active-pattern document="" id="rule.cit.organisationnameandlogo" name_en="Organisation MUST have a name or a logo" name_fr="Une organisation DOIT avoir un nom ou un logo" name="Une organisation DOIT avoir un nom ou un logo" />
+  <svrl:fired-rule context="//che:CHE_CI_Organisation" />
+  <svrl:successful-report test="$hasName or $hasLogo" ref="#_" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='contact']/*[local-name()='CI_Responsibility']/*[local-name()='party']/*[local-name()='CHE_CI_Organisation']">
+    <svrl:text />
+    <svrl:diagnostic-reference diagnostic="rule.cit.organisationnameandlogo-success-en" ref="#_" xml:lang="en">Organisation name is
+      "
+          Service de la sécurité alimentaire et des affaires vétérinaires Service de la sécurité alimentaire et des affaires vétérinaires Amt für Lebensmittelsicherheit und Veterinärwesen
+          "
+      and logo filename is
+      "
+          
+          "
+      .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference diagnostic="rule.cit.organisationnameandlogo-success-fr" ref="#_" xml:lang="fr">Le nom de l'organisation est
+      "
+          Service de la sécurité alimentaire et des affaires vétérinaires Service de la sécurité alimentaire et des affaires vétérinaires Amt für Lebensmittelsicherheit und Veterinärwesen
+          "
+      , son logo
+      "
+          
+          "
+      .</svrl:diagnostic-reference>
+  </svrl:successful-report>
+  <svrl:fired-rule context="//che:CHE_CI_Organisation" />
+  <svrl:successful-report test="$hasName or $hasLogo" ref="#_" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='pointOfContact']/*[local-name()='CI_Responsibility']/*[local-name()='party']/*[local-name()='CHE_CI_Organisation']">
+    <svrl:text />
+    <svrl:diagnostic-reference diagnostic="rule.cit.organisationnameandlogo-success-en" ref="#_" xml:lang="en">Organisation name is
+      "
+          Service de la sécurité alimentaire et des affaires vétérinaires Service de la sécurité alimentaire et des affaires vétérinaires Amt für Lebensmittelsicherheit und Veterinärwesen
+          "
+      and logo filename is
+      "
+          
+          "
+      .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference diagnostic="rule.cit.organisationnameandlogo-success-fr" ref="#_" xml:lang="fr">Le nom de l'organisation est
+      "
+          Service de la sécurité alimentaire et des affaires vétérinaires Service de la sécurité alimentaire et des affaires vétérinaires Amt für Lebensmittelsicherheit und Veterinärwesen
+          "
+      , son logo
+      "
+          
+          "
+      .</svrl:diagnostic-reference>
+  </svrl:successful-report>
+  <svrl:active-pattern document="" id="rule.gex.extenthasoneelement" name_en="Extent MUST have one description or one geographic,&#xA;      temporal or vertical element" name_fr="Une étendue DOIT avoir une description ou un&#xA;      élément géographique, temporel ou vertical" name="Une étendue DOIT avoir une description ou un&#xA;      élément géographique, temporel ou vertical" />
+  <svrl:fired-rule context="//gex:EX_Extent" />
+  <svrl:successful-report test="count($description)" ref="#_" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='extent']/*[local-name()='EX_Extent']">
+    <svrl:text />
+    <svrl:diagnostic-reference diagnostic="rule.gex.extenthasoneelement-desc-success-en" ref="#_" xml:lang="en">The extent contains a description.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference diagnostic="rule.gex.extenthasoneelement-desc-success-fr" ref="#_" xml:lang="fr">L'étendue contient une description.</svrl:diagnostic-reference>
+  </svrl:successful-report>
+  <svrl:successful-report test="count($geographicBox)" ref="#_" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='extent']/*[local-name()='EX_Extent']">
+    <svrl:text />
+    <svrl:diagnostic-reference diagnostic="rule.gex.extenthasoneelement-box-success-en" ref="#_" xml:lang="en">The extent contains a bounding box element.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference diagnostic="rule.gex.extenthasoneelement-box-success-fr" ref="#_" xml:lang="fr">L'étendue contient une emprise géographique.</svrl:diagnostic-reference>
+  </svrl:successful-report>
+  <svrl:successful-report test="count($geographicPoly)" ref="#_" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='extent']/*[local-name()='EX_Extent']">
+    <svrl:text />
+    <svrl:diagnostic-reference diagnostic="rule.gex.extenthasoneelement-poly-success-en" ref="#_" xml:lang="en">The extent contains a bounding polygon.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference diagnostic="rule.gex.extenthasoneelement-poly-success-fr" ref="#_" xml:lang="fr">L'étendue contient un polygone englobant.</svrl:diagnostic-reference>
+  </svrl:successful-report>
+  <svrl:active-pattern document="" id="rule.gex.verticalhascrsorcrsid" name_en="Vertical element MUST contains a CRS or CRS&#xA;      identifier" name_fr="Une étendue verticale DOIT contenir un CRS ou un&#xA;      identifiant de CRS" name="Une étendue verticale DOIT contenir un CRS ou un&#xA;      identifiant de CRS" />
+  <svrl:active-pattern document="" id="rule.mco-releasability" name_en="Releasability MUST&#xA;      specified an addresse or a statement" name_fr="La possibilité de divulgation&#xA;      DOIT définir un destinataire ou une indication" name="La possibilité de divulgation&#xA;      DOIT définir un destinataire ou une indication" />
+  <svrl:active-pattern document="" id="rule.mco-legalconstraintdetails" name_en="Legal constraint MUST&#xA;      specified an access, use or other constraint or&#xA;      use limitation or releasability" name_fr="Une contrainte légale DOIT&#xA;      définir un type de contrainte (d'accès, d'utilisation ou autre)&#xA;      ou bien une limite d'utilisation ou une possibilité de divulgation" name="Une contrainte légale DOIT&#xA;      définir un type de contrainte (d'accès, d'utilisation ou autre)&#xA;      ou bien une limite d'utilisation ou une possibilité de divulgation" />
+  <svrl:fired-rule context="//che:CHE_MD_LegalConstraints" />
+  <svrl:successful-report test="$hasDetails" ref="#_" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='resourceConstraints']/*[local-name()='CHE_MD_LegalConstraints']">
+    <svrl:text />
+    <svrl:diagnostic-reference diagnostic="rule.mco-legalconstraintdetails-success-en" ref="#_" xml:lang="en">The legal constraint is complete.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference diagnostic="rule.mco-legalconstraintdetails-success-fr" ref="#_" xml:lang="fr">La contrainte légale est complète.</svrl:diagnostic-reference>
+  </svrl:successful-report>
+  <svrl:active-pattern document="" id="rule.mco-legalconstraint-other" name_en="Legal constraint defining&#xA;      other restrictions for access or use constraint MUST&#xA;      specified other constraint." name_fr="Une contrainte légale indiquant&#xA;      d'autres restrictions d'utilisation ou d'accès DOIT&#xA;      préciser ces autres restrictions" name="Une contrainte légale indiquant&#xA;      d'autres restrictions d'utilisation ou d'accès DOIT&#xA;      préciser ces autres restrictions" />
+  <svrl:active-pattern document="" id="rule.mdb.root-element" name_en="Metadata document root element" name_fr="Élément racine du document" name="Élément racine du document">
+    <svrl:text>A metadata instance document conforming to
+      this specification SHALL have a root CHE_MD_Metadata element
+      defined in the http://standards.iso.org/iso/19115/-3/mdb/2.0 namespace.</svrl:text>
+    <svrl:text>Une fiche de métadonnées conforme au standard
+      ISO19115-1 DOIT avoir un élément racine CHE_MD_Metadata (défini dans l'espace
+      de nommage http://standards.iso.org/iso/19115/-3/mdb/2.0).</svrl:text>
+  </svrl:active-pattern>
+  <svrl:fired-rule context="/" />
+  <svrl:successful-report test="$hasOneMD_MetadataElement" ref="#_" location="/*[local-name()='CHE_MD_Metadata']">
+    <svrl:text />
+    <svrl:diagnostic-reference diagnostic="rule.mdb.root-element-success-en" ref="#_" xml:lang="en">Root
+      element CHE_MD_Metadata found.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference diagnostic="rule.mdb.root-element-success-fr" ref="#_" xml:lang="fr">Élément
+      racine CHE_MD_Metadata défini.</svrl:diagnostic-reference>
+  </svrl:successful-report>
+  <svrl:active-pattern document="" id="rule.mdb.defaultlocale" name_en="Default locale" name_fr="Langue du document" name="Langue du document">
+    <svrl:text>The default locale MUST be documented if
+      not defined by the encoding. The default value for the character
+      encoding is "UTF-8".</svrl:text>
+    <svrl:text>La langue doit être documentée
+      si non définie par l'encodage. L'encodage par défaut doit être "UTF-8".</svrl:text>
+  </svrl:active-pattern>
+  <svrl:fired-rule context="/che:CHE_MD_Metadata/mdb:defaultLocale|                        /che:CHE_MD_Metadata/mdb:identificationInfo/*/mri:defaultLocale" />
+  <svrl:successful-report test="$hasEncoding" ref="#_" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='defaultLocale']">
+    <svrl:text />
+    <svrl:diagnostic-reference diagnostic="rule.mdb.defaultlocale-success-en" ref="#_" xml:lang="en">The
+      characeter encoding is "
+          utf8
+          .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference diagnostic="rule.mdb.defaultlocale-success-fr" ref="#_" xml:lang="fr">L'encodage est "
+          utf8
+          .</svrl:diagnostic-reference>
+  </svrl:successful-report>
+  <svrl:fired-rule context="/che:CHE_MD_Metadata/mdb:defaultLocale|                        /che:CHE_MD_Metadata/mdb:identificationInfo/*/mri:defaultLocale" />
+  <svrl:successful-report test="$hasEncoding" ref="#_" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='defaultLocale']">
+    <svrl:text />
+    <svrl:diagnostic-reference diagnostic="rule.mdb.defaultlocale-success-en" ref="#_" xml:lang="en">The
+      characeter encoding is "
+          utf8
+          .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference diagnostic="rule.mdb.defaultlocale-success-fr" ref="#_" xml:lang="fr">L'encodage est "
+          utf8
+          .</svrl:diagnostic-reference>
+  </svrl:successful-report>
+  <svrl:active-pattern document="" id="rule.mdb.scope-name" name_en="Metadata scope Name" name_fr="Description du domaine d'application" name="Description du domaine d'application">
+    <svrl:text>If a MD_MetadataScope element is present,
+      the name property MUST have a value if resourceScope is not equal to
+      "dataset"</svrl:text>
+    <svrl:text>Si un élément domaine d'application (MD_MetadataScope)
+      est défini, sa description (name) DOIT avoir une valeur
+      si ce domaine n'est pas "jeu de données" (ie. "dataset").</svrl:text>
+  </svrl:active-pattern>
+  <svrl:active-pattern document="" id="rule.mdb.create-date" name_en="Metadata create date" name_fr="Date de création du document" name="Date de création du document">
+    <svrl:text>A dateInfo property value with data type = "creation"
+      MUST be present in every MD_Metadata instance.</svrl:text>
+    <svrl:text>Tout document DOIT avoir une date de création
+      définie (en utilisant un élément dateInfo avec un type de date
+      "creation").</svrl:text>
+  </svrl:active-pattern>
+  <svrl:fired-rule context="che:CHE_MD_Metadata" />
+  <svrl:successful-report test="$hasAtLeastOneCreationDate" ref="#_" location="/*[local-name()='CHE_MD_Metadata']">
+    <svrl:text />
+    <svrl:diagnostic-reference diagnostic="rule.mdb.create-date-success-en" ref="#_" xml:lang="en">
+      Metadata creation date:
+      <gco:Date xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:che="http://geocat.ch/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0" xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0" xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:md1="http://standards.iso.org/iso/19115/-3/md1/2.0" xmlns:md2="http://standards.iso.org/iso/19115/-3/md2/2.0" xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/2.0" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0" xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0" xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0" xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0" xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0" xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0" xmlns:dqm="http://standards.iso.org/iso/19157/-2/dqm/1.0" xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">2023-05-26</gco:Date>
+      .
+    </svrl:diagnostic-reference>
+    <svrl:diagnostic-reference diagnostic="rule.mdb.create-date-success-fr" ref="#_" xml:lang="fr">
+      Date de création du document :
+      <gco:Date xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:che="http://geocat.ch/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0" xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0" xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:md1="http://standards.iso.org/iso/19115/-3/md1/2.0" xmlns:md2="http://standards.iso.org/iso/19115/-3/md2/2.0" xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/2.0" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0" xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0" xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0" xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0" xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0" xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0" xmlns:dqm="http://standards.iso.org/iso/19157/-2/dqm/1.0" xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">2023-05-26</gco:Date>
+      .
+    </svrl:diagnostic-reference>
+  </svrl:successful-report>
+  <svrl:active-pattern document="" id="rule.mex.datatypedetails" name_en="Extended element information&#xA;      which are not codelist, enumeration or codelistElement&#xA;      MUST specified max occurence and domain value" name_fr="Un élément d'extension qui n'est&#xA;      ni une codelist, ni une énumération, ni un élément de codelist&#xA;      DOIT préciser le nombre maximum d'occurences&#xA;      ainsi que la valeur du domaine" name="Un élément d'extension qui n'est&#xA;      ni une codelist, ni une énumération, ni un élément de codelist&#xA;      DOIT préciser le nombre maximum d'occurences&#xA;      ainsi que la valeur du domaine" />
+  <svrl:active-pattern document="" id="rule.mex.conditional" name_en="Extended element information&#xA;      which are conditional MUST explained the condition" name_fr="Un élément d'extension conditionnel&#xA;      DOIT préciser les termes de la condition" name="Un élément d'extension conditionnel&#xA;      DOIT préciser les termes de la condition" />
+  <svrl:active-pattern document="" id="rule.mex.mandatorycode" name_en="Extended element information&#xA;      which are codelist, enumeration or codelistElement&#xA;      MUST specified a code and a concept name" name_fr="Un élément d'extension qui est&#xA;      une codelist, une énumération, un élément de codelist&#xA;      DOIT préciser un code et un nom de concept" name="Un élément d'extension qui est&#xA;      une codelist, une énumération, un élément de codelist&#xA;      DOIT préciser un code et un nom de concept" />
+  <svrl:active-pattern document="" id="rule.mmi-updatefrequency" name_en="Maintenance information MUST&#xA;      specified an update frequency" name_fr="L'information sur la maintenance&#xA;      DOIT définir une fréquence de mise à jour" name="L'information sur la maintenance&#xA;      DOIT définir une fréquence de mise à jour" />
+  <svrl:fired-rule context="//che:CHE_MD_MaintenanceInformation" />
+  <svrl:successful-report test="count($maintenanceAndUpdateFrequency)" ref="#_" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='resourceMaintenance']/*[local-name()='CHE_MD_MaintenanceInformation']">
+    <svrl:text />
+    <svrl:diagnostic-reference diagnostic="rule.mmi-updatefrequency-success-en" ref="#_" xml:lang="en">The update frequency is "
+          annually
+          ".</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference diagnostic="rule.mmi-updatefrequency-success-fr" ref="#_" xml:lang="fr">La fréquence de mise à jour est "
+          annually
+          ".</svrl:diagnostic-reference>
+  </svrl:successful-report>
+  <svrl:fired-rule context="//che:CHE_MD_MaintenanceInformation" />
+  <svrl:successful-report test="count($maintenanceAndUpdateFrequency)" ref="#_" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='metadataMaintenance']/*[local-name()='CHE_MD_MaintenanceInformation']">
+    <svrl:text />
+    <svrl:diagnostic-reference diagnostic="rule.mmi-updatefrequency-success-en" ref="#_" xml:lang="en">The update frequency is "
+          asNeeded
+          ".</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference diagnostic="rule.mmi-updatefrequency-success-fr" ref="#_" xml:lang="fr">La fréquence de mise à jour est "
+          asNeeded
+          ".</svrl:diagnostic-reference>
+  </svrl:successful-report>
+  <svrl:active-pattern document="" id="rule.mrc.sampledimension" name_en="Sample dimension MUST provide a max,&#xA;      a min or a mean value" name_fr="La dimension de l'échantillon DOIT préciser&#xA;      une valeur maximum, une valeur minimum ou une moyenne" name="La dimension de l'échantillon DOIT préciser&#xA;      une valeur maximum, une valeur minimum ou une moyenne" />
+  <svrl:active-pattern document="" id="rule.mrc.bandunit" name_en="Band MUST specified bounds units&#xA;      when a bound max or bound min is defined" name_fr="Une bande DOIT préciser l'unité&#xA;      lorsqu'une borne maximum ou minimum est définie" name="Une bande DOIT préciser l'unité&#xA;      lorsqu'une borne maximum ou minimum est définie" />
+  <svrl:active-pattern document="" id="rule.mrd.mediumunit" name_en="Medium having density MUST specified density&#xA;      units" name_fr="Un média précisant une densité DOIT préciser&#xA;      l'unité" name="Un média précisant une densité DOIT préciser&#xA;      l'unité" />
+  <svrl:active-pattern document="" id="rule.mri.datasetextent" name_en="Dataset extent" name_fr="Emprise du jeu de données" name="Emprise du jeu de données" />
+  <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/                           mdb:MD_MetadataScope/mdb:resourceScope/                           mcc:MD_ScopeCode/@codeListValue = 'dataset']/                           mdb:identificationInfo/che:CHE_MD_DataIdentification" />
+  <svrl:successful-report test="count($geobox) &gt; 0" ref="#_" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
+    <svrl:text />
+    <svrl:diagnostic-reference diagnostic="rule.mri.datasetextentbox-success-en" ref="#_" xml:lang="en">The
+      dataset geographic bounding box is:
+      [W:
+          6.742307
+          ,
+      S:
+          46.438047
+          ],
+      [E:
+          7.380268
+          ,
+      N:
+          47.006881
+          ],
+      .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference diagnostic="rule.mri.datasetextentbox-success-fr" ref="#_" xml:lang="fr">L'emprise géographique du jeu de données est
+      [W:
+          6.742307
+          ,
+      S:
+          46.438047
+          ],
+      [E:
+          7.380268
+          ,
+      N:
+          47.006881
+          ]
+      .</svrl:diagnostic-reference>
+  </svrl:successful-report>
+  <svrl:active-pattern document="" id="rule.mri.topicategoryfordsandseries" name_en="Topic category for dataset and series" name_fr="Thème principal d'un jeu de données ou d'une&#xA;      série" name="Thème principal d'un jeu de données ou d'une&#xA;      série" />
+  <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/                          mdb:MD_MetadataScope/mdb:resourceScope/                          mcc:MD_ScopeCode/@codeListValue = 'dataset' or                           mdb:metadataScope/                          mdb:MD_MetadataScope/mdb:resourceScope/                          mcc:MD_ScopeCode/@codeListValue = 'series']/                          mdb:identificationInfo/che:CHE_MD_DataIdentification" />
+  <svrl:successful-report test="$hasTopics" ref="#_" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
+    <svrl:text />
+    <svrl:diagnostic-reference diagnostic="rule.mri.topicategoryfordsandseries-success-en" ref="#_" xml:lang="en">Number of topic category identified:
+          1
+          .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference diagnostic="rule.mri.topicategoryfordsandseries-success-fr" ref="#_" xml:lang="fr">Nombre de thèmes :
+          1
+          .</svrl:diagnostic-reference>
+  </svrl:successful-report>
+  <svrl:active-pattern document="" id="rule.mri.associatedresource" name_en="Associated resource name" name_fr="Nom ou référence à une ressource associée" name="Nom ou référence à une ressource associée" />
+  <svrl:active-pattern document="" id="rule.mri.defaultlocalewhenhastext" name_en="Resource language" name_fr="Langue de la ressource" name="Langue de la ressource" />
+  <svrl:fired-rule context="//che:CHE_MD_DataIdentification[       ../../mdb:contentInfo/mrc:MD_FeatureCatalogue or       ../../mdb:contentInfo/mrc:MD_FeatureCatalogueDescription]" />
+  <svrl:successful-report test="$hasAtLeastOneLanguage" ref="#_" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
+    <svrl:text />
+    <svrl:diagnostic-reference diagnostic="rule.mri.defaultlocalewhenhastext-success-en" ref="#_" xml:lang="en">Number of resource language:
+          1
+          .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference diagnostic="rule.mri.defaultlocalewhenhastext-success-fr" ref="#_" xml:lang="fr">Nombre de langues de la ressource :
+          1
+          .</svrl:diagnostic-reference>
+  </svrl:successful-report>
+  <svrl:active-pattern document="" id="rule.srv.servicetaxonomy" name_en="Service taxonomy" name_fr="Taxonomie des services" name="Taxonomie des services" />
+</svrl:schematron-output>
+
