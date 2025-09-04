@@ -1691,17 +1691,17 @@
     <sch:rule context="//srv:SV_ServiceIdentification">
 
       <sch:let name="listOfTaxonomy"
-               value="'Geographic human interaction services,                         Geographic model/information management services,                         Geographic workflow/task management services,                         Geographic processing services,                         Geographic processing services — spatial,                        Geographic processing services — thematic,                        Geographic processing services — temporal,                         Geographic processing services — metadata,                         Geographic communication services'"/>
+               value="'Geographic human interaction services,Geographic model/information management services,Geographic workflow/task management services,Geographic processing services,Geographic processing services — spatial,Geographic processing services — thematic,Geographic processing services — temporal,Geographic processing services — metadata,Geographic communication services'"/>
 
       <sch:let name="serviceTaxonomies"
-               value="mri:descriptiveKeywords/mri:MD_Keywords/mri:keyword[         contains($listOfTaxonomy, */text())]"/>
+               value="mri:descriptiveKeywords/mri:MD_Keywords/mri:keyword[         geonet:contains-any-of(lan:PT_FreeText/lan:textGroup/lan:LocalisedCharacterString[@locale='#EN']/text(), tokenize($listOfTaxonomy, ','))]"/>
 
       <sch:let name="hasAtLeastOneTaxonomy"
                value="count($serviceTaxonomies) &gt; 0"/>
 
-      <!-- SHALL <sch:assert test="$hasAtLeastOneTaxonomy"
+      <sch:assert test="$hasAtLeastOneTaxonomy"
         diagnostics="rule.mri.servicetaxonomy-failure-en
-                     rule.mri.servicetaxonomy-failure-fr"/> -->
+                     rule.mri.servicetaxonomy-failure-fr"/>
 
 
       <sch:report test="$hasAtLeastOneTaxonomy"
