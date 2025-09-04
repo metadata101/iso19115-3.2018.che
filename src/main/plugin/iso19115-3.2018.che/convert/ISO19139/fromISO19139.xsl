@@ -162,6 +162,7 @@
                   </mdb:defaultLocale>
                 </xsl:if>
 
+                <xsl:apply-templates select="gmd:identificationInfo/oldche:CHE_MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date[./gmd:dateType/gmd:CI_DateTypeCode[@codeListValue='creation']]/gmd:date" mode="from19139to19115-3.2018-duplicateCreationDate"/>
                 <xsl:apply-templates select="gmd:dateStamp" mode="from19139to19115-3.2018"/>
                 <xsl:apply-templates select="gmd:metadataStandardName" mode="from19139to19115-3.2018"/>
 

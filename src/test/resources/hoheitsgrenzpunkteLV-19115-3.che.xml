@@ -147,6 +147,16 @@
   <mdb:dateInfo>
     <cit:CI_Date>
       <cit:date>
+        <gco:Date>2011-04-01</gco:Date>
+      </cit:date>
+      <cit:dateType>
+        <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
+      </cit:dateType>
+    </cit:CI_Date>
+  </mdb:dateInfo>
+  <mdb:dateInfo>
+    <cit:CI_Date>
+      <cit:date>
         <gco:DateTime>2025-03-04T14:56:05.532Z</gco:DateTime>
       </cit:date>
       <cit:dateType>

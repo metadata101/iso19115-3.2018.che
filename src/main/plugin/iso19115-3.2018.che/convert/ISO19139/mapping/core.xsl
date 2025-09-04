@@ -284,6 +284,21 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
+  <!-- cf. toISO19139.xsl#L187, datestamp from revision date being a standard transgression. To avoid iso schematron to fail, we choose to duplicate identification section creation date. -->
+  <xsl:template match="*" mode="from19139to19115-3.2018-duplicateCreationDate">
+    <mdb:dateInfo>
+      <cit:CI_Date>
+        <cit:date>
+          <xsl:call-template name="writeDateTime"/>
+        </cit:date>
+        <xsl:call-template name="writeCodelistElement">
+          <xsl:with-param name="elementName" select="'cit:dateType'"/>
+          <xsl:with-param name="codeListName" select="'cit:CI_DateTypeCode'"/>
+          <xsl:with-param name="codeListValue" select="'creation'"/>
+        </xsl:call-template>
+      </cit:CI_Date>
+    </mdb:dateInfo>
+  </xsl:template>
   <xsl:template match="gmd:metadataStandardName" priority="5"
                 mode="from19139to19115-3.2018">
     <mdb:metadataStandard>

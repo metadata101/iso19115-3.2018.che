@@ -11,6 +11,7 @@
       <rdf:Description rdf:about="ffc0267e-aca8-49ac-8f3e-86c9beca51f2">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord" />
         <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ffc0267e-aca8-49ac-8f3e-86c9beca51f2</dct:identifier>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-04-01</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-04T14:56:05.532Z</dct:modified>
         <dct:title xml:lang="ger">swissTLM3D Übrige Bahn</dct:title>
         <dct:title xml:lang="fre">swissTLM3D Autres transports</dct:title>

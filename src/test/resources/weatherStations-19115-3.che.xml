@@ -153,6 +153,16 @@
   <mdb:dateInfo>
     <cit:CI_Date>
       <cit:date>
+        <gco:Date>2025-05-20</gco:Date>
+      </cit:date>
+      <cit:dateType>
+        <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
+      </cit:dateType>
+    </cit:CI_Date>
+  </mdb:dateInfo>
+  <mdb:dateInfo>
+    <cit:CI_Date>
+      <cit:date>
         <gco:DateTime>2025-05-21T23:08:33.953Z</gco:DateTime>
       </cit:date>
       <cit:dateType>
