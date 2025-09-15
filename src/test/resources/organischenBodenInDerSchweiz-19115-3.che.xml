@@ -126,6 +126,23 @@
               </cit:positionName>
             </cit:CI_Individual>
           </cit:individual>
+          <che:organisationAcronym xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Agroscope Metadaten</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Agroscope Metadaten</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">Agroscope</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">Agroscope</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">Agroscope</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </che:organisationAcronym>
         </che:CHE_CI_Organisation>
       </cit:party>
     </cit:CI_Responsibility>
@@ -425,6 +442,14 @@ Parts of the data are subject to a licence. Please read the additional documenta
                   </cit:name>
                 </cit:CI_Individual>
               </cit:individual>
+              <che:organisationAcronym xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>Agroscope organische Boeden</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Agroscope organische Boeden</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </che:organisationAcronym>
             </che:CHE_CI_Organisation>
           </cit:party>
         </cit:CI_Responsibility>

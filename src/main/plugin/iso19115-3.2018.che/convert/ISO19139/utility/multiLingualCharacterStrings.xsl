@@ -9,6 +9,7 @@
     xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0"
     xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0"
     xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:gml32="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+    xmlns:che="http://geocat.ch/che"
     exclude-result-prefixes="#all">
     <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" scope="stylesheet">
         <xd:desc>

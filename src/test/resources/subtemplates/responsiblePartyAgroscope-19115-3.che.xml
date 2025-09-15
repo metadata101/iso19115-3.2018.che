@@ -112,6 +112,23 @@
           </cit:positionName>
         </cit:CI_Individual>
       </cit:individual>
+      <che:organisationAcronym xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
+        <gco:CharacterString>Agroscope</gco:CharacterString>
+        <lan:PT_FreeText xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#DE">Agroscope</lan:LocalisedCharacterString>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#FR">Agroscope</lan:LocalisedCharacterString>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#IT">Agroscope</lan:LocalisedCharacterString>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#EN">Agroscope</lan:LocalisedCharacterString>
+          </lan:textGroup>
+        </lan:PT_FreeText>
+      </che:organisationAcronym>
     </che:CHE_CI_Organisation>
   </cit:party>
 </cit:CI_Responsibility>
