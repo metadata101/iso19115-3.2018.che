@@ -33,8 +33,13 @@ public class SchematronTest {
 	@ClassRule
 	public static final TemporaryFolder temporaryFolder = new TemporaryFolder();
 
+	public static void mustInitSaxonFirst() {
+		TransformerFactoryFactory.init("net.sf.saxon.TransformerFactoryImpl");
+	}
+
 	@BeforeClass
-	public static void compileSchematron() throws Exception {
+	public static void initSaxonAndCompileSchematron() throws Exception {
+		mustInitSaxonFirst();
 		Element schematronSource = Xml.loadFile(getResourceInsideSchema("schematron/schematron-rules-iso.sch"));
 		Path schematronCompilation = getResource("gn-site/WEB-INF/classes/schematron/iso_svrl_for_xslt2.xsl");
 		Element compiledSchematron = Xml.transform(schematronSource, schematronCompilation);
@@ -48,11 +53,6 @@ public class SchematronTest {
 		Path targetUtilsFnFile = temporaryFolder.getRoot().toPath().resolve("xsl/utils-fn.xsl");
 		Files.createDirectories(targetUtilsFnFile.getParent());
 		IO.copyDirectoryOrFile( getResource("gn-site/xsl/utils-fn.xsl"), targetUtilsFnFile, false);
-	}
-
-	@BeforeClass
-	public static void initSaxon() {
-		TransformerFactoryFactory.init("net.sf.saxon.TransformerFactoryImpl");
 	}
 
 	@Test
