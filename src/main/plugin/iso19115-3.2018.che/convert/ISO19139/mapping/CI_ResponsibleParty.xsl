@@ -127,6 +127,10 @@
                                             </cit:CI_Individual>
                                         </cit:individual>
                                     </xsl:if>
+                                    <xsl:call-template name="writeCharacterStringElement">
+                                        <xsl:with-param name="elementName" select="'che:organisationAcronym'"/>
+                                        <xsl:with-param name="nodeWithStringToWrite" select="oldche:organisationAcronym"/>
+                                    </xsl:call-template>
                                 </che:CHE_CI_Organisation>
                             </xsl:when>
                             <xsl:otherwise>
