@@ -124,6 +124,23 @@
               </cit:name>
             </cit:CI_Individual>
           </cit:individual>
+          <che:organisationAcronym xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>AGI</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">AGI</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR" />
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT" />
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN" />
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </che:organisationAcronym>
         </che:CHE_CI_Organisation>
       </cit:party>
     </cit:CI_Responsibility>
@@ -341,6 +358,23 @@
                   </cit:name>
                 </cit:CI_Individual>
               </cit:individual>
+              <che:organisationAcronym xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>AFU</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">AFU</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR" />
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT" />
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN" />
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </che:organisationAcronym>
             </che:CHE_CI_Organisation>
           </cit:party>
         </cit:CI_Responsibility>
@@ -1092,6 +1126,23 @@
                       </cit:name>
                     </cit:CI_Individual>
                   </cit:individual>
+                  <che:organisationAcronym xsi:type="lan:PT_FreeText_PropertyType">
+                    <gco:CharacterString>AGI</gco:CharacterString>
+                    <lan:PT_FreeText>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#DE">AGI</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#FR" />
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#IT" />
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#EN" />
+                      </lan:textGroup>
+                    </lan:PT_FreeText>
+                  </che:organisationAcronym>
                 </che:CHE_CI_Organisation>
               </cit:party>
             </cit:CI_Responsibility>
