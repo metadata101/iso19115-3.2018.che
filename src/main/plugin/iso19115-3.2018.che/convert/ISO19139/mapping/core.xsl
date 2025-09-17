@@ -568,9 +568,6 @@
 
 
 
-  <xsl:variable name="associatedResourceAsMetadataReferenceOnly"
-                select="true()"/>
-
   <xsl:template match="gmd:aggregationInfo" priority="5" mode="from19139to19115-3.2018">
     <!--
    gmd:MD_AggregateInformation was renamed gmd:associatedResource in order
@@ -585,35 +582,15 @@
 					 clarify the fact that it identifies and gives the location of the metadata
 					 for the associated resources. -->
 
-        <xsl:if test="not($associatedResourceAsMetadataReferenceOnly)">
-          <xsl:choose>
-            <xsl:when test="exists(gmd:MD_AggregateInformation/gmd:aggregateDataSetName)
-              and exists(gmd:MD_AggregateInformation/gmd:aggregateDataSetIdentifier)">
-              <!-- both name an identifier exist - use standard template -->
-              <mri:name>
-                <xsl:apply-templates select="gmd:MD_AggregateInformation/gmd:aggregateDataSetName/gmd:CI_Citation" mode="from19139to19115-3.2018"/>
-              </mri:name>
-            </xsl:when>
-            <xsl:when test="exists(gmd:MD_AggregateInformation/gmd:aggregateDataSetName)">
-              <!-- only an name exists - write it into a CI_Citation -->
-              <mri:name>
-                <xsl:apply-templates select="gmd:MD_AggregateInformation/gmd:aggregateDataSetName/gmd:CI_Citation" mode="from19139to19115-3.2018"/>
-              </mri:name>
-            </xsl:when>
-            <xsl:when test="exists(gmd:MD_AggregateInformation/gmd:aggregateDataSetIdentifier)">
-              <!-- only an identifier exists - write it into a CI_Citation -->
-              <mri:name>
-                <cit:CI_Citation>
-                  <!-- No citation title or date exists -->
-                  <cit:title gco:nilReason="unknown"/>
-                  <cit:date gco:nilReason="unknown"/>
-                  <cit:identifier>
-                    <xsl:apply-templates select="gmd:MD_AggregateInformation/gmd:aggregateDataSetIdentifier/gmd:MD_Identifier" mode="from19139to19115-3.2018"/>
-                  </cit:identifier>
-                </cit:CI_Citation>
-              </mri:name>
-            </xsl:when>
-          </xsl:choose>
+        <xsl:if test="not(exists(gmd:MD_AggregateInformation/gmd:aggregateDataSetIdentifier))">
+          <mri:name>
+            <cit:CI_Citation>
+                <xsl:if test="not(gmd:MD_AggregateInformation/gmd:aggregateDataSetName/gmd:CI_Citation/gmd:title)">
+                  <cit:title gco:nilReason="missing"/>
+                </xsl:if>
+                <xsl:apply-templates select="gmd:MD_AggregateInformation/gmd:aggregateDataSetName/gmd:CI_Citation/*" mode="from19139to19115-3.2018"/>
+            </cit:CI_Citation>
+          </mri:name>
         </xsl:if>
 
         <xsl:call-template name="writeCodelistElement">
@@ -627,12 +604,15 @@
           <xsl:with-param name="codeListValue" select="gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue"/>
         </xsl:call-template>
 
-        <xsl:if test="$associatedResourceAsMetadataReferenceOnly">
+        <xsl:if test="exists(gmd:MD_AggregateInformation/gmd:aggregateDataSetIdentifier)">
           <xsl:variable name="uuidref"
                         select="gmd:MD_AggregateInformation/gmd:aggregateDataSetIdentifier/*/gmd:code/*/@uuidref"/>
           <mri:metadataReference>
             <cit:CI_Citation>
-              <cit:title gco:nilReason="missing"/>
+              <xsl:if test="not(gmd:MD_AggregateInformation/gmd:aggregateDataSetName/gmd:CI_Citation/gmd:title)">
+                <cit:title gco:nilReason="missing"/>
+              </xsl:if>
+              <xsl:apply-templates select="gmd:MD_AggregateInformation/gmd:aggregateDataSetName/gmd:CI_Citation/*" mode="from19139to19115-3.2018"/>
               <cit:identifier>
                 <mcc:MD_Identifier>
                   <mcc:code>
