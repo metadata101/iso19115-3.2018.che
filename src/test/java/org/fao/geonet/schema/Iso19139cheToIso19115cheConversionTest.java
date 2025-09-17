@@ -149,6 +149,11 @@ public class Iso19139cheToIso19115cheConversionTest {
     }
 
     @Test
+    public void validateWanderWege() throws Exception {
+        transformValidateAndCompare("wanderWege");
+    }
+
+    @Test
     public void convertResponsibleParty() throws Exception {
         transformAndCompare("subtemplates/responsiblePartyAgroscope", false);
     }
