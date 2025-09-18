@@ -5,6 +5,7 @@ import org.fao.geonet.utils.TransformerFactoryFactory;
 import org.fao.geonet.utils.Xml;
 import org.jdom.Document;
 import org.jdom.Element;
+import org.jdom.Namespace;
 import org.jdom.output.Format;
 import org.jdom.output.XMLOutputter;
 import org.junit.BeforeClass;
@@ -17,6 +18,7 @@ import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.List;
 import java.util.Map;
 
 import static org.fao.geonet.schema.TestSupport.getResource;
@@ -57,36 +59,59 @@ public class SchematronTest {
 
 	@Test
 	public void amphibiansIsoSchematron() throws Exception {
-		String report = applySchematronAndCompare("amphibians");
+		String report = applySchematronAndCompare("amphibians", false);
 
 		assertTrue(report.contains("failure"));
 	}
 
 	@Test
 	public void veterinariansIsoSchematron() throws Exception {
-		String report = applySchematronAndCompare("veterinarians");
+		String report = applySchematronAndCompare("veterinarians", true);
 
 		assertFalse(report.contains("failure"));
 	}
 
 	@Test
 	public void fiktiverDarstellungskatalogIsoSchematron() throws Exception {
-		String report = applySchematronAndCompare("fiktiverDarstellungskatalogMitURL");
+		String report = applySchematronAndCompare("fiktiverDarstellungskatalogMitURL", true);
 
 		assertFalse(report.contains("failure"));
 	}
 
 	@Test
 	public void grundwasservorkommenServiceIsoSchematron() throws Exception {
-		String report = applySchematronAndCompare("grundwasservorkommen");
+		String report = applySchematronAndCompare("grundwasservorkommen", true);
 
-		assertTrue(report.contains("failure"));
+		assertFalse(report.contains("failure"));
 	}
 
-	private String applySchematronAndCompare(String mdNameRoot) throws Exception {
+	@Test
+	public void schematronForEditor() throws Exception {
+		String report = applySchematronAndCompare("grundwasservorkommen", true);
+		Path xmlFile = getResource("amphibians-19115-3.che-raw-french-inflated-for-edition.xml");
+		Element md = Xml.selectElement(Xml.loadFile(xmlFile), "che:CHE_MD_Metadata", List.of(Namespace.getNamespace("che", "http://geocat.ch/che")));;
+
+		applySchematronAndCompare("amphibians-19115-3.che-raw-french-inflated-for-edition", true, md);
+
+		assertFalse(report.contains("failure"));
+	}
+
+
+	private String applySchematronAndCompare(String mdNameRoot, boolean forceCreationDate) throws Exception {
 		Path xmlFile = getResource(mdNameRoot + "-19115-3.che.xml");
 		Element md = Xml.loadFile(xmlFile);
+		return applySchematronAndCompare(mdNameRoot, forceCreationDate, md);
+	}
 
+	private static String applySchematronAndCompare(String mdNameRoot, boolean forceCreationDate, Element md) throws Exception {
+		if (forceCreationDate) {
+			Element revisionDate = Xml.selectElement(md, "mdb:dateInfo");
+			Element creationDate = (Element) revisionDate.clone();
+			Element creationDateType = Xml.selectElement(creationDate, "cit:CI_Date/cit:dateType/cit:CI_DateTypeCode", List.of(Namespace.getNamespace("cit", "http://standards.iso.org/iso/19115/-3/cit/2.0")));
+			creationDateType.setText("creation");
+			creationDateType.getAttribute("codeListValue").setValue("creation");
+			md.addContent(md.indexOf(revisionDate) + 1, creationDate);
+		}
 		Element report = Xml.transform(md, compiledSchematronFilePath, Map.of(
 				"rule", "schematron-rules-iso",
 				"thesaurusDir", getResource("gn-site/WEB-INF/data/config/codelist").toAbsolutePath().toString(),
@@ -98,4 +123,5 @@ public class SchematronTest {
 		TestSupport.assertGeneratedDataByteMatchExpected(mdNameRoot + "-schematron-rules-iso-report.xml", actual, GENERATE_EXPECTED_FILE);
 		return actual;
 	}
+
 }
