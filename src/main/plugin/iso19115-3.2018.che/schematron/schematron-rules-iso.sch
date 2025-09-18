@@ -1700,9 +1700,9 @@
       <sch:let name="hasAtLeastOneTaxonomy"
                value="count($serviceTaxonomies) &gt; 0"/>
 
-      <sch:assert test="$hasAtLeastOneTaxonomy"
+      <!-- <sch:assert test="$hasAtLeastOneTaxonomy"
         diagnostics="rule.mri.servicetaxonomy-failure-en
-                     rule.mri.servicetaxonomy-failure-fr"/>
+                     rule.mri.servicetaxonomy-failure-fr"/> -->
 
 
       <sch:report test="$hasAtLeastOneTaxonomy"
