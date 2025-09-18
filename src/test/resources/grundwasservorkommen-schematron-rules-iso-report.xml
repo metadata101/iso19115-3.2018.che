@@ -185,16 +185,5 @@
   <svrl:active-pattern document="" id="rule.mri.defaultlocalewhenhastext" name_en="Resource language" name_fr="Langue de la ressource" name="Langue de la ressource" />
   <svrl:active-pattern document="" id="rule.srv.servicetaxonomy" name_en="Service taxonomy" name_fr="Taxonomie des services" name="Taxonomie des services" />
   <svrl:fired-rule context="//srv:SV_ServiceIdentification" />
-  <svrl:failed-assert ref="#_" test="$hasAtLeastOneTaxonomy" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='SV_ServiceIdentification']">
-    <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.servicetaxonomy-failure-en" xml:lang="en">A
-      service metadata SHALL refer to the service
-      taxonomy defined in ISO19119 defining one or more value in the
-      keyword section.</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.servicetaxonomy-failure-fr" xml:lang="fr">Une
-      métadonnée de service DEVRAIT référencer
-      un type de service tel que défini dans l'ISO19119 dans la
-      section mot clé.</svrl:diagnostic-reference>
-  </svrl:failed-assert>
 </svrl:schematron-output>
 
