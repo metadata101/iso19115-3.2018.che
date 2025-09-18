@@ -779,12 +779,12 @@
     <sch:rule context="che:CHE_MD_Metadata">
 
       <sch:let name="creationDates"
-               value="./mdb:dateInfo/cit:CI_Date[                     normalize-space(cit:date[./gco:DateTime|./gco:Date]/*) != '' and                      cit:dateType/cit:CI_DateTypeCode/@codeListValue = 'creation']/                   cit:date[./gco:DateTime|./gco:Date]/*"/>
+               value="./mdb:dateInfo/cit:CI_Date[(normalize-space(cit:date/gco:DateTime) != '' or normalize-space(cit:date/gco:Date) != '') and                      cit:dateType/cit:CI_DateTypeCode/@codeListValue = 'creation']/                   cit:date[./gco:DateTime|./gco:Date]/*"/>
 
       <!-- Check at least one non empty creation date element is defined. -->
 
       <sch:let name="hasAtLeastOneCreationDate"
-               value="count(./mdb:dateInfo/cit:CI_Date[                     normalize-space(cit:date[./gco:DateTime|./gco:Date]/*) != '' and                      cit:dateType/cit:CI_DateTypeCode/@codeListValue = 'creation']                     ) &gt; 0"/>
+               value="count(./mdb:dateInfo/cit:CI_Date[(normalize-space(cit:date/gco:DateTime) != '' or normalize-space(cit:date/gco:Date) != '') and                      cit:dateType/cit:CI_DateTypeCode/@codeListValue = 'creation']                     ) &gt; 0"/>
 
 
       <sch:assert test="$hasAtLeastOneCreationDate"
