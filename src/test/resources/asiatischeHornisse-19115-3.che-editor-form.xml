@@ -1,0 +1,956 @@
+<div id="gn-editor-container-48610626" class="gn-view-advanced">
+  <form id="gn-editor-48610626" name="gnEditor" accept-charset="UTF-8" method="POST" novalidate="" class="form-horizontal gn-editor gn-tab-identificationInfo gn-editor-config-css gn-label-above-input gn-indent-bluescale" role="form" data-spy="scroll" data-target="#gn-editor-48610626-spy" autocomplete="off">
+    <div class="col-md-8">
+      <input type="hidden" id="schema" value="iso19115-3.2018.che" />
+      <input type="hidden" id="template" name="template" value="n" />
+      <input type="hidden" id="isService" name="type" value="false" />
+      <input type="hidden" id="uuid" value="786606bc-2b81-4426-8ccd-e3a2c76cdb14" />
+      <input type="hidden" name="id" value="48610626" />
+      <input type="hidden" id="title" value="Asiatische Hornisse" />
+      <input type="hidden" id="language" value="ger" />
+      <input type="hidden" id="otherLanguages" value="{&quot;ger&quot;:&quot;#DE&quot;,&quot;fre&quot;:&quot;#FR&quot;}" />
+      <input type="hidden" id="resourceContainerDescription" value="" />
+      <input type="hidden" id="resourceManagementExternalProperties" value="" />
+      <input type="hidden" id="version" name="version" value="14" />
+      <input type="hidden" id="currTab" name="currTab" value="identificationInfo" />
+      <input type="hidden" id="displayAttributes" name="displayAttributes" value="false" />
+      <input type="hidden" id="displayTooltips" name="displayTooltips" value="false" />
+      <input type="hidden" id="displayTooltipsMode" name="displayTooltipsMode" value="" />
+      <input type="hidden" id="minor" name="minor" value="" />
+      <input type="hidden" id="flat" name="flat" value="false" />
+      <input type="hidden" id="showvalidationerrors" name="showvalidationerrors" value="" />
+      <input type="hidden" id="extent" value="[ ]" />
+      <input type="hidden" id="dataformats" value="[ ]" />
+      <div class="gn-scroll-spy" data-gn-scroll-spy="gn-editor-48610626" data-watch="" data-all-depth="false" />
+      <div class="nav nav-tabs">
+        <span id="gn-view-menu-48610626" class="btn-group">
+          <button type="button" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" aria-label="" title="" aria-expanded="false">
+            <i class="fa fa-fw fa-eye" />
+            <span class="caret" />
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li role="menuitem">
+              <a data-ng-click="switchToTab('default', 'flat')" href="">Simple</a>
+            </li>
+            <li role="menuitem" class="disabled">
+              <a data-ng-click="switchToTab('identificationInfo', '')" href="">Complète</a>
+            </li>
+            <li role="menuitem">
+              <a data-ng-click="switchToTab('xml', '')" href="">XML</a>
+            </li>
+            <li class="divider" role="menuitem" />
+            <li role="menuitem">
+              <a data-ng-click="toggleAttributes(true)" href="">
+                <i class="fa" data-ng-class="gnCurrentEdit.displayAttributes ? 'fa-check-square-o' : 'fa-square-o'" />
+                 
+                <span data-translate="">toggleAttributes</span>
+              </a>
+            </li>
+            <li role="menuitem">
+              <a data-ng-click="toggleTooltips(true)" href="">
+                <i class="fa" data-ng-class="gnCurrentEdit.displayTooltips ? 'fa-check-square-o' : 'fa-square-o'" />
+                 
+                <span data-translate="">toggleTooltips</span>
+              </a>
+            </li>
+          </ul>
+        </span>
+        <li role="menuitem" class="active ">
+          <a href="">Identification</a>
+        </li>
+        <li role="menuitem" class=" ">
+          <a href="" data-ng-click="switchToTab('contentInfo', '')">Contenu</a>
+        </li>
+        <li role="menuitem" class=" ">
+          <a href="" data-ng-click="switchToTab('distributionInfo', '')">Distribution</a>
+        </li>
+        <li role="menuitem" class=" ">
+          <a href="" data-ng-click="switchToTab('dataQualityInfo', '')">Qualité</a>
+        </li>
+        <li role="menuitem" class=" ">
+          <a href="" data-ng-click="switchToTab('resourceLineage', '')">Généalogie</a>
+        </li>
+        <li role="menuitem" class=" ">
+          <a href="" data-ng-click="switchToTab('spatialRepresentationInfo', '')">Rep. spatiale</a>
+        </li>
+        <li role="menuitem" class=" ">
+          <a href="" data-ng-click="switchToTab('referenceSystemInfo', '')">Sys de référence</a>
+        </li>
+        <li role="menuitem" class=" ">
+          <a href="" data-ng-click="switchToTab('acquisitionInformation', '')">Acquisition</a>
+        </li>
+        <li role="menuitem" class=" ">
+          <a href="" data-ng-click="switchToTab('metadata', '')">Métadonnées</a>
+        </li>
+        <li class="dropdown" role="menuitem">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="" title="">
+            <i class="fa fa-ellipsis-h" />
+            <b class="caret" />
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li role="menuitem">
+              <a href="" data-ng-click="switchToTab('portrayalCatalogueInfo', '')">Représentation</a>
+            </li>
+            <li role="menuitem">
+              <a href="" data-ng-click="switchToTab('metadataConstraints', '')">Md. constraintes</a>
+            </li>
+            <li role="menuitem">
+              <a href="" data-ng-click="switchToTab('metadataMaintenance', '')">Md. maintenance</a>
+            </li>
+            <li role="menuitem">
+              <a href="" data-ng-click="switchToTab('applicationSchemaInfo', '')">Standard ext.</a>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div data-gn-toggle="" />
+      <fieldset id="gn-el-96" data-gn-field-highlight="" class=" gn-identificationInfo">
+        <legend class="identificationInfo" data-gn-field-tooltip="iso19115-3.2018.che|mdb:identificationInfo|che:CHE_MD_Metadata|" data-gn-slide-toggle="false">
+          Information de l'identification 
+          <a class="btn pull-right" data-gn-click-and-spin="remove(96, 1)" data-gn-field-highlight-remove="96" title="{{'deleteFieldSet' | translate}}">
+            <i class="fa fa-times text-danger" />
+          </a>
+          <div class="gn-move">
+            <a class="fa fa-angle-up hidden" data-gn-editor-control-move="96" data-domelement-to-move="96" data-direction="up" href="" tabindex="-1" />
+            <a class="fa fa-angle-down hidden" data-gn-editor-control-move="96" data-domelement-to-move="96" data-direction="down" href="" tabindex="-1" />
+          </div>
+        </legend>
+        <div class="well well-sm gn-attr hidden">
+          <button type="button" class="btn btn-default btn-xs btn-attr btn-xs gn-attr-gco_nilReason" id="gn-attr-add-button-gcoCOLONnilReason_96" data-gn-click-and-spin="add('96', 'gco:nilReason', '96', null, true)" title="">
+            <i class="fa fa-plus fa-fw" />
+            Raison de l'absence
+          </button>
+          <button type="button" class="btn btn-default btn-xs btn-attr btn-xs gn-attr-xlink_type" id="gn-attr-add-button-xlinkCOLONtype_96" data-gn-click-and-spin="add('96', 'xlink:type', '96', null, true)" title="">
+            <i class="fa fa-plus fa-fw" />
+            Type de lien
+          </button>
+        </div>
+        <fieldset id="gn-el-97" data-gn-field-highlight="" class=" gn-CHE_MD_DataIdentification">
+          <legend class="CHE_MD_DataIdentification" data-gn-field-tooltip="iso19115-3.2018.che|che:CHE_MD_DataIdentification|mdb:identificationInfo|" data-gn-slide-toggle="false">
+            che:CHE_MD_DataIdentification 
+            <a class="btn pull-right" data-gn-click-and-spin="remove(97, 96)" data-gn-field-highlight-remove="97" title="{{'deleteFieldSet' | translate}}">
+              <i class="fa fa-times text-danger" />
+            </a>
+            <div class="gn-move">
+              <a class="fa fa-angle-up hidden" data-gn-editor-control-move="97" data-domelement-to-move="97" data-direction="up" href="" tabindex="-1" />
+              <a class="fa fa-angle-down hidden" data-gn-editor-control-move="97" data-domelement-to-move="97" data-direction="down" href="" tabindex="-1" />
+            </div>
+          </legend>
+          <div class="well well-sm gn-attr hidden">
+            <div class="form-group  gn-attr-gco_isoType" id="gn-attr-_97_gcoCOLONisoType">
+              <label class="col-sm-4">gco:isoType</label>
+              <div class="col-sm-7">
+                <input type="text" class="" name="_97_gcoCOLONisoType" value="mri:MD_DataIdentification" text="" />
+              </div>
+              <div class="col-sm-1">
+                <a class="btn pull-right" data-gn-click-and-spin="removeAttribute('_97_gcoCOLONisoType')" data-toggle="tooltip" data-placement="top" title="{{'deleteField' | translate}}">
+                  <i class="fa fa-times text-danger" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <fieldset id="gn-el-98" data-gn-field-highlight="" class=" gn-citation">
+            <legend class="citation" data-gn-field-tooltip="iso19115-3.2018.che|mri:citation|che:CHE_MD_DataIdentification|" data-gn-slide-toggle="false">
+              Informations de référence 
+              <a class="btn pull-right" data-gn-click-and-spin="remove(98, 97)" data-gn-field-highlight-remove="98" title="{{'deleteFieldSet' | translate}}">
+                <i class="fa fa-times text-danger" />
+              </a>
+              <div class="gn-move">
+                <a class="fa fa-angle-up hidden" data-gn-editor-control-move="98" data-domelement-to-move="98" data-direction="up" href="" tabindex="-1" />
+                <a class="fa fa-angle-down hidden" data-gn-editor-control-move="98" data-domelement-to-move="98" data-direction="down" href="" tabindex="-1" />
+              </div>
+            </legend>
+            <div class="well well-sm gn-attr hidden">
+              <button type="button" class="btn btn-default btn-xs btn-attr btn-xs gn-attr-gco_nilReason" id="gn-attr-add-button-gcoCOLONnilReason_98" data-gn-click-and-spin="add('98', 'gco:nilReason', '98', null, true)" title="">
+                <i class="fa fa-plus fa-fw" />
+                Raison de l'absence
+              </button>
+              <button type="button" class="btn btn-default btn-xs btn-attr btn-xs gn-attr-xlink_type" id="gn-attr-add-button-xlinkCOLONtype_98" data-gn-click-and-spin="add('98', 'xlink:type', '98', null, true)" title="">
+                <i class="fa fa-plus fa-fw" />
+                Type de lien
+              </button>
+            </div>
+            <fieldset id="gn-el-99" data-gn-field-highlight="" class=" gn-CI_Citation">
+              <legend class="CI_Citation" data-gn-field-tooltip="iso19115-3.2018.che|cit:CI_Citation|mri:citation|" data-gn-slide-toggle="false">
+                Information de référence 
+                <a class="btn pull-right" data-gn-click-and-spin="remove(99, 98)" data-gn-field-highlight-remove="99" title="{{'deleteFieldSet' | translate}}">
+                  <i class="fa fa-times text-danger" />
+                </a>
+                <div class="gn-move">
+                  <a class="fa fa-angle-up hidden" data-gn-editor-control-move="99" data-domelement-to-move="99" data-direction="up" href="" tabindex="-1" />
+                  <a class="fa fa-angle-down hidden" data-gn-editor-control-move="99" data-domelement-to-move="99" data-direction="down" href="" tabindex="-1" />
+                </div>
+              </legend>
+              <div class="form-group gn-field gn-title gn-required gn-Obligatoire " id="gn-el-101" data-gn-field-highlight="">
+                <label for="gn-field-101" class="col-sm-2 control-label">Titre</label>
+                <div class="col-sm-9 col-xs-11 gn-value nopadding-in-table" data-gn-multilingual-field="{&quot;ger&quot;:&quot;#DE&quot;,&quot;fre&quot;:&quot;#FR&quot;}" data-main-language="ger" data-expanded="true">
+                  <input class="form-control hidden" id="gn-field-101" name="_104" data-gn-field-tooltip="iso19115-3.2018.che|cit:title|cit:CI_Citation|/che:CHE_MD_Metadata/mdb:identificationInfo/che:CHE_MD_DataIdentification/mri:citation/cit:CI_Citation/cit:title" required="required" data-gn-check="#gn-el-101" lang="DE" type="text" value="Asiatische Hornisse" />
+                  <input class="form-control hidden" id="gn-field-101" name="_lang_FR_100" data-gn-field-tooltip="iso19115-3.2018.che|cit:title|cit:CI_Citation|/che:CHE_MD_Metadata/mdb:identificationInfo/che:CHE_MD_DataIdentification/mri:citation/cit:CI_Citation/cit:title" required="required" lang="FR" type="text" value="" />
+                  <div class="gn-move">
+                    <a class="fa fa-angle-up hidden" data-gn-editor-control-move="100" data-domelement-to-move="101" data-direction="up" href="" tabindex="-1" />
+                    <a class="fa fa-angle-down hidden" data-gn-editor-control-move="100" data-domelement-to-move="101" data-direction="down" href="" tabindex="-1" />
+                  </div>
+                  <div class="well well-sm                 gn-attr                 hidden" id="gn-attr-div_101">
+                    <button type="button" class="btn btn-default btn-xs btn-attr btn-xs gn-attr-gco_nilReason" id="gn-attr-add-button-gcoCOLONnilReason_101" data-gn-click-and-spin="add('100', 'gco:nilReason', '101', null, true)" title="">
+                      <i class="fa fa-plus fa-fw" />
+                      Raison de l'absence
+                    </button>
+                  </div>
+                </div>
+                <div class="col-sm-1 col-xs-1 gn-control" />
+              </div>
+              <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14037" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+                <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|cit:alternateTitle|cit:CI_Citation|">Autres appellations ou acronymes</label>
+                <div class="col-sm-9">
+                  <a class="btn btn-default" title=" Autres appellations ou acronymes" data-gn-click-and-spin="add(99, 'cit:alternateTitle', 'd67e14037', 'before');">
+                    <i class="fa fa-plus gn-add" />
+                  </a>
+                </div>
+              </div>
+              <div class="form-group gn-field gn-date gn-required" id="gn-el-106" data-gn-field-highlight="">
+                <label class="col-sm-2 control-label">Date</label>
+                <div class="col-sm-3 gn-value">
+                  <select class="" id="gn-field-110" name="_110_codeListValue" required="required" lang="fre">
+                    <option value="adopted" title="Date à laquelle la ressource a été adoptée">Adopté</option>
+                    <option value="creation" title="Date à laquelle la ressource est créée">Création</option>
+                    <option value="deprecated" title="Date à laquelle la ressource a été mise dépréciée">Deprecated</option>
+                    <option value="lastUpdate" title="Date à laquelle la ressource a été mise à jour pour la dernière fois">Dernière mise à jour</option>
+                    <option value="lastRevision" title="Date à laquelle la ressource a été mise à jour pour la dernière fois">Dernière révision</option>
+                    <option value="distribution" title="Date à laquelle une instance de la ressource a été distribué">Distribution</option>
+                    <option value="validityBegins" title="Date à partir de laquelle la ressource a été considérée comme valide">Début de validité</option>
+                    <option value="expiry" title="Date à laquelle la ressource expire">Expiration</option>
+                    <option value="validityExpires" title="Date à partir de laquelle la ressource n'a plus été considérée comme valide">Fin de validité</option>
+                    <option value="inForce" title="Date identifies when the resource became in force">In Force</option>
+                    <option value="unavailable" title="Date à laquelle la ressource est devenue indisponible ou disponible">Indisponibilité</option>
+                    <option value="released" title="Date à laquelle la ressource est libérée pour l'accès du public">Mise en accès</option>
+                    <option value="nextUpdate" title="Date à laquelle la prochaine mise à jour de la ressource a été planifiée">Prochaine mise à jour</option>
+                    <option value="publication" title="Date à laquelle la ressource est publiée">Publication</option>
+                    <option value="revision" title="Date à laquelle la ressource est révisée" selected="">Révision</option>
+                    <option value="superseded" title="Date à laquelle la ressource a été remplacé ou remplacé par une autre ressource">Superseded</option>
+                  </select>
+                  <div class="gn-move">
+                    <a class="fa fa-angle-up hidden" data-gn-editor-control-move="105" data-domelement-to-move="106" data-direction="up" href="" tabindex="-1" />
+                    <a class="fa fa-angle-down hidden" data-gn-editor-control-move="105" data-domelement-to-move="106" data-direction="down" href="" tabindex="-1" />
+                  </div>
+                </div>
+                <div class="col-sm-6 gn-value">
+                  <div data-gn-date-picker="2025-03-07" data-label="" data-element-name="gco:Date" data-element-ref="_X107" data-hide-time="false" />
+                  <div class="well well-sm gn-attr hidden">
+                    <button type="button" class="btn btn-default btn-xs btn-attr btn-xs gn-attr-gco_nilReason" id="gn-attr-add-button-gcoCOLONnilReason_106" data-gn-click-and-spin="add('105', 'gco:nilReason', '106', null, true)" title="">
+                      <i class="fa fa-plus fa-fw" />
+                      Raison de l'absence
+                    </button>
+                    <button type="button" class="btn btn-default btn-xs btn-attr btn-xs gn-attr-xlink_type" id="gn-attr-add-button-xlinkCOLONtype_106" data-gn-click-and-spin="add('105', 'xlink:type', '106', null, true)" title="">
+                      <i class="fa fa-plus fa-fw" />
+                      Type de lien
+                    </button>
+                  </div>
+                </div>
+                <div class="col-sm-1 gn-control">
+                  <a class="btn pull-right" data-gn-click-and-spin="remove(105, 99, 106)" data-gn-field-highlight-remove="106" data-toggle="tooltip" data-placement="top" title="{{'deleteField' | translate}}">
+                    <i class="fa fa-times text-danger gn-control" />
+                  </a>
+                </div>
+              </div>
+              <div class="form-group gn-field  gn-extra-field gn-add-field  " id="gn-el-d67e14098" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+                <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|cit:date|cit:CI_Citation|">Date</label>
+                <div class="col-sm-9">
+                  <a class="btn btn-default" title=" Date" data-gn-click-and-spin="add(99, 'cit:date', 'd67e14098', 'before');">
+                    <i class="fa fa-plus gn-add" />
+                  </a>
+                </div>
+              </div>
+              <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14099" data-gn-cardinality="0-1" data-gn-field-highlight="">
+                <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|cit:edition|cit:CI_Citation|">Edition</label>
+                <div class="col-sm-9">
+                  <a class="btn btn-default" title=" Edition" data-gn-click-and-spin="add(99, 'cit:edition', 'd67e14099', 'before');">
+                    <i class="fa fa-plus gn-add" />
+                  </a>
+                </div>
+              </div>
+              <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14101" data-gn-cardinality="0-1" data-gn-field-highlight="">
+                <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|cit:editionDate|cit:CI_Citation|">Date d'édition</label>
+                <div class="col-sm-9">
+                  <a class="btn btn-default" title=" Date d'édition" data-gn-click-and-spin="add(99, 'cit:editionDate', 'd67e14101', 'before');">
+                    <i class="fa fa-plus gn-add" />
+                  </a>
+                </div>
+              </div>
+              <fieldset id="gn-el-111" data-gn-field-highlight="" class=" gn-identifier">
+                <legend class="identifier" data-gn-field-tooltip="iso19115-3.2018.che|cit:identifier|cit:CI_Citation|" data-gn-slide-toggle="false">
+                  Identificateur 
+                  <a class="btn pull-right" data-gn-click-and-spin="remove(111, 99)" data-gn-field-highlight-remove="111" title="{{'deleteFieldSet' | translate}}">
+                    <i class="fa fa-times text-danger" />
+                  </a>
+                  <div class="gn-move">
+                    <a class="fa fa-angle-up hidden" data-gn-editor-control-move="111" data-domelement-to-move="111" data-direction="up" href="" tabindex="-1" />
+                    <a class="fa fa-angle-down hidden" data-gn-editor-control-move="111" data-domelement-to-move="111" data-direction="down" href="" tabindex="-1" />
+                  </div>
+                </legend>
+                <div class="well well-sm gn-attr hidden">
+                  <button type="button" class="btn btn-default btn-xs btn-attr btn-xs gn-attr-gco_nilReason" id="gn-attr-add-button-gcoCOLONnilReason_111" data-gn-click-and-spin="add('111', 'gco:nilReason', '111', null, true)" title="">
+                    <i class="fa fa-plus fa-fw" />
+                    Raison de l'absence
+                  </button>
+                  <button type="button" class="btn btn-default btn-xs btn-attr btn-xs gn-attr-xlink_type" id="gn-attr-add-button-xlinkCOLONtype_111" data-gn-click-and-spin="add('111', 'xlink:type', '111', null, true)" title="">
+                    <i class="fa fa-plus fa-fw" />
+                    Type de lien
+                  </button>
+                </div>
+                <div class="form-group gn-field gn-required  gn-add-field  " id="gn-el-d67e14103" data-gn-cardinality="1-1" data-gn-field-highlight="">
+                  <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mcc:MD_Identifier|cit:identifier|">Identifiant</label>
+                  <div class="col-sm-9">
+                    <a class="btn btn-default" title=" Identifiant" data-gn-click-and-spin="add(111, 'mcc:MD_Identifier', 'd67e14103', 'before');">
+                      <i class="fa fa-plus gn-add" />
+                    </a>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="form-group gn-field  gn-extra-field gn-add-field  " id="gn-el-d67e14135" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+                <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|cit:identifier|cit:CI_Citation|">Identificateur</label>
+                <div class="col-sm-9">
+                  <a class="btn btn-default" title=" Identificateur" data-gn-click-and-spin="add(99, 'cit:identifier', 'd67e14135', 'before');">
+                    <i class="fa fa-plus gn-add" />
+                  </a>
+                </div>
+              </div>
+              <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14136" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+                <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|cit:citedResponsibleParty|cit:CI_Citation|">Responsable</label>
+                <div class="col-sm-9">
+                  <div data-gn-directory-entry-selector="" data-dom-id="d67e14136" data-element-name="cit:citedResponsibleParty" data-element-ref="99" data-template-add-snippet="&lt;cit:CI_Responsibility                    xmlns:cit='http://standards.iso.org/iso/19115/-3/cit/2.0'                    xmlns:gco='http://standards.iso.org/iso/19115/-3/gco/1.0'&gt;                     &lt;cit:role&gt;                       &lt;cit:CI_RoleCode codeList='http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode'                       codeListValue='author'/&gt;                     &lt;/cit:role&gt;                     &lt;cit:party&gt;                       &lt;cit:CI_Organisation&gt;                         &lt;cit:name&gt;                           &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                         &lt;/cit:name&gt;                         &lt;cit:contactInfo&gt;                           &lt;cit:CI_Contact&gt;                             &lt;cit:address&gt;                               &lt;cit:CI_Address&gt;                                 &lt;cit:electronicMailAddress&gt;                                   &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                                 &lt;/cit:electronicMailAddress&gt;                               &lt;/cit:CI_Address&gt;                             &lt;/cit:address&gt;                           &lt;/cit:CI_Contact&gt;                         &lt;/cit:contactInfo&gt;                         &lt;cit:individual&gt;                           &lt;cit:CI_Individual&gt;                             &lt;cit:name&gt;                               &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                             &lt;/cit:name&gt;                           &lt;/cit:CI_Individual&gt;                         &lt;/cit:individual&gt;                       &lt;/cit:CI_Organisation&gt;                     &lt;/cit:party&gt;                   &lt;/cit:CI_Responsibility&gt;" data-default-role="author" data-search-action="true" data-popup-action="true" data-template-type="contact" data-filter="{&quot;root&quot;: &quot;cit:CI_Responsibility&quot;}" data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}">
+                    <a class="btn btn-default" title=" Responsable" data-gn-click-and-spin="add(99, 'cit:citedResponsibleParty', 'd67e14136', 'before');">
+                      <i class="fa fa-plus gn-add" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14137" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+                <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|cit:presentationForm|cit:CI_Citation|">Forme de la présentation</label>
+                <div class="col-sm-9">
+                  <a class="btn btn-default" title=" Forme de la présentation" data-gn-click-and-spin="add(99, 'cit:presentationForm', 'd67e14137', 'before');">
+                    <i class="fa fa-plus gn-add" />
+                  </a>
+                </div>
+              </div>
+              <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14138" data-gn-cardinality="0-1" data-gn-field-highlight="">
+                <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|cit:series|cit:CI_Citation|">Séries</label>
+                <div class="col-sm-9">
+                  <a class="btn btn-default" title=" Séries" data-gn-click-and-spin="add(99, 'cit:series', 'd67e14138', 'before');">
+                    <i class="fa fa-plus gn-add" />
+                  </a>
+                </div>
+              </div>
+              <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14139" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+                <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|cit:otherCitationDetails|cit:CI_Citation|">Autres informations de référence</label>
+                <div class="col-sm-9">
+                  <a class="btn btn-default" title=" Autres informations de référence" data-gn-click-and-spin="add(99, 'cit:otherCitationDetails', 'd67e14139', 'before');">
+                    <i class="fa fa-plus gn-add" />
+                  </a>
+                </div>
+              </div>
+              <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14141" data-gn-cardinality="0-1" data-gn-field-highlight="">
+                <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|cit:ISBN|cit:CI_Citation|">ISBN</label>
+                <div class="col-sm-9">
+                  <a class="btn btn-default" title=" ISBN" data-gn-click-and-spin="add(99, 'cit:ISBN', 'd67e14141', 'before');">
+                    <i class="fa fa-plus gn-add" />
+                  </a>
+                </div>
+              </div>
+              <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14143" data-gn-cardinality="0-1" data-gn-field-highlight="">
+                <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|cit:ISSN|cit:CI_Citation|">ISSN</label>
+                <div class="col-sm-9">
+                  <a class="btn btn-default" title=" ISSN" data-gn-click-and-spin="add(99, 'cit:ISSN', 'd67e14143', 'before');">
+                    <i class="fa fa-plus gn-add" />
+                  </a>
+                </div>
+              </div>
+              <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14145" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+                <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|cit:onlineResource|cit:CI_Citation|">Ressource en ligne</label>
+                <div class="col-sm-9">
+                  <a class="btn btn-default" title=" Ressource en ligne" data-gn-click-and-spin="add(99, 'cit:onlineResource', 'd67e14145', 'before');">
+                    <i class="fa fa-plus gn-add" />
+                  </a>
+                </div>
+              </div>
+              <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14146" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+                <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|cit:graphic|cit:CI_Citation|">Graphique</label>
+                <div class="col-sm-9">
+                  <a class="btn btn-default" title=" Graphique" data-gn-click-and-spin="add(99, 'cit:graphic', 'd67e14146', 'before');">
+                    <i class="fa fa-plus gn-add" />
+                  </a>
+                </div>
+              </div>
+            </fieldset>
+          </fieldset>
+          <div class="form-group gn-field gn-abstract gn-required gn-Obligatoire " id="gn-el-113" data-gn-field-highlight="">
+            <label for="gn-field-113" class="col-sm-2 control-label">Résumé</label>
+            <div class="col-sm-9 col-xs-11 gn-value nopadding-in-table" data-gn-multilingual-field="{&quot;ger&quot;:&quot;#DE&quot;,&quot;fre&quot;:&quot;#FR&quot;}" data-main-language="ger" data-expanded="true">
+              <textarea class="form-control hidden" id="gn-field-113" name="_116" data-gn-autogrow="" required="required" data-gn-field-tooltip="iso19115-3.2018.che|mri:abstract|che:CHE_MD_DataIdentification|/che:CHE_MD_Metadata/mdb:identificationInfo/che:CHE_MD_DataIdentification/mri:abstract" lang="DE">Die Asiatische Hornisse wurde im Kanton Basel-Landschaft erstmals im Jahr 2022 nachgewiesen. Diese Art gilt als invasiv, da sie zur Ernährung ihrer Brut einheimische Wildbienen und Honigbienen in grossen Mengen jagt und diese Bestände so dezimiert. Die Bestandesdichte der Asiatischen Hornisse ist seit dem ersten Nachweis stark am Ansteigen. Mit dem Vernichten gefundener Nester wird versucht, deren Ausbreitung zu verlangsamen und die Populationsdichte zu senken.</textarea>
+              <textarea class="form-control hidden" id="gn-field-113" name="_lang_FR_112" data-gn-autogrow="" required="required" data-gn-field-tooltip="iso19115-3.2018.che|mri:abstract|che:CHE_MD_DataIdentification|/che:CHE_MD_Metadata/mdb:identificationInfo/che:CHE_MD_DataIdentification/mri:abstract" lang="FR" />
+              <div class="gn-move">
+                <a class="fa fa-angle-up hidden" data-gn-editor-control-move="112" data-domelement-to-move="113" data-direction="up" href="" tabindex="-1" />
+                <a class="fa fa-angle-down hidden" data-gn-editor-control-move="112" data-domelement-to-move="113" data-direction="down" href="" tabindex="-1" />
+              </div>
+              <div class="well well-sm                 gn-attr                 hidden" id="gn-attr-div_113">
+                <button type="button" class="btn btn-default btn-xs btn-attr btn-xs gn-attr-gco_nilReason" id="gn-attr-add-button-gcoCOLONnilReason_113" data-gn-click-and-spin="add('112', 'gco:nilReason', '113', null, true)" title="">
+                  <i class="fa fa-plus fa-fw" />
+                  Raison de l'absence
+                </button>
+              </div>
+            </div>
+            <div class="col-sm-1 col-xs-1 gn-control" />
+          </div>
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14232" data-gn-cardinality="0-1" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:purpose|che:CHE_MD_DataIdentification|">But</label>
+            <div class="col-sm-9">
+              <a class="btn btn-default" title=" But" data-gn-click-and-spin="add(97, 'mri:purpose', 'd67e14232', 'before');">
+                <i class="fa fa-plus gn-add" />
+              </a>
+            </div>
+          </div>
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14234" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:credit|che:CHE_MD_DataIdentification|">Reconnaissance</label>
+            <div class="col-sm-9">
+              <a class="btn btn-default" title=" Reconnaissance" data-gn-click-and-spin="add(97, 'mri:credit', 'd67e14234', 'before');">
+                <i class="fa fa-plus gn-add" />
+              </a>
+            </div>
+          </div>
+          <div class="form-group gn-field gn-status  gn- " id="gn-el-118" data-gn-field-highlight="">
+            <label for="gn-field-118" class="col-sm-2 control-label">Etat</label>
+            <div class="col-sm-9 col-xs-11 gn-value nopadding-in-table">
+              <select class="" id="gn-field-118" name="_118_codeListValue" data-gn-field-tooltip="iso19115-3.2018.che|mri:status|che:CHE_MD_DataIdentification|/che:CHE_MD_Metadata/mdb:identificationInfo/che:CHE_MD_DataIdentification/mri:status">
+                <option value="accepted" title="Convenu par le commanditaire">Accepté</option>
+                <option value="withdrawn" title="Retiré de toute considération">Annulé</option>
+                <option value="historicalArchive" title="Ressource archivée hors ligne">Archivé</option>
+                <option value="required" title="Ressource qui doit être générée ou mise à jour">Création ou mise à jour requise</option>
+                <option value="deprecated" title="ressource remplacée et deviendra obsolète, utilisation uniquement pour des besoins d’historiques">Déprecié</option>
+                <option value="pending" title="Engagé mais pas encore traité">En attente</option>
+                <option value="underDevelopment" title="Ressource en cours de création">En cours de création</option>
+                <option value="final" title="Progression conclue et aucun changement ne sera accepté">Final</option>
+                <option value="completed" title="Production de la ressource finalisée">Finalisé</option>
+                <option value="onGoing" title="Ressource continuellement mise à jour" selected="">Mis à jour continue</option>
+                <option value="notAccepted" title="Rejeté par le commanditaire">Non Accepté</option>
+                <option value="obsolete" title="Ressource obsolète">Obsolète</option>
+                <option value="planned" title="Ressource créée ou mise à jour sur base d'une date fixée">Planifié</option>
+                <option value="proposed" title="Suggéré qu’un développement nécessite d’être entrepris">Proposé</option>
+                <option value="superseded" title="Remplacé par un nouveau">Remplacé</option>
+                <option value="retired" title="L’utilisation de l’élément n’est plus recommandée. Il n’a pas été remplacé par un autre élément">Retired</option>
+                <option value="tentative" title="Changements à prévoir probablement avant que la ressource ne devienne la dernière ou ne soit achevée">Tentative</option>
+                <option value="valid" title="Admissible sous conditions spécifiques">Valide</option>
+              </select>
+              <div class="gn-move">
+                <a class="fa fa-angle-up hidden" data-gn-editor-control-move="117" data-domelement-to-move="118" data-direction="up" href="" tabindex="-1" />
+                <a class="fa fa-angle-down hidden" data-gn-editor-control-move="117" data-domelement-to-move="118" data-direction="down" href="" tabindex="-1" />
+              </div>
+            </div>
+            <div class="col-sm-1 col-xs-1 gn-control">
+              <a class="btn pull-right" data-gn-click-and-spin="remove(117, 97, 118)" data-gn-field-highlight-remove="118" data-toggle="tooltip" data-placement="top" title="{{'deleteField' | translate}}">
+                <i class="fa fa-times text-danger gn-control" />
+              </a>
+            </div>
+          </div>
+          <div class="form-group gn-field  gn-extra-field gn-add-field  " id="gn-el-d67e14249" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:status|che:CHE_MD_DataIdentification|">Etat</label>
+            <div class="col-sm-9">
+              <a class="btn btn-default" title=" Etat" data-gn-click-and-spin="add(97, 'mri:status', 'd67e14249', 'before');">
+                <i class="fa fa-plus gn-add" />
+              </a>
+            </div>
+          </div>
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14250" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:pointOfContact|che:CHE_MD_DataIdentification|">Contact pour la ressource</label>
+            <div class="col-sm-9">
+              <div data-gn-directory-entry-selector="" data-dom-id="d67e14250" data-element-name="mri:pointOfContact" data-element-ref="97" data-template-add-snippet="&lt;cit:CI_Responsibility                    xmlns:cit='http://standards.iso.org/iso/19115/-3/cit/2.0'                    xmlns:gco='http://standards.iso.org/iso/19115/-3/gco/1.0'&gt;                     &lt;cit:role&gt;                       &lt;cit:CI_RoleCode codeList='http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode'                       codeListValue='pointOfContact'/&gt;                     &lt;/cit:role&gt;                     &lt;cit:party&gt;                       &lt;cit:CI_Organisation&gt;                         &lt;cit:name&gt;                           &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                         &lt;/cit:name&gt;                         &lt;cit:contactInfo&gt;                           &lt;cit:CI_Contact&gt;                             &lt;cit:address&gt;                               &lt;cit:CI_Address&gt;                                 &lt;cit:electronicMailAddress&gt;                                   &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                                 &lt;/cit:electronicMailAddress&gt;                               &lt;/cit:CI_Address&gt;                             &lt;/cit:address&gt;                           &lt;/cit:CI_Contact&gt;                         &lt;/cit:contactInfo&gt;                         &lt;cit:individual&gt;                           &lt;cit:CI_Individual&gt;                             &lt;cit:name&gt;                               &lt;gco:CharacterString&gt;&lt;/gco:CharacterString&gt;                             &lt;/cit:name&gt;                           &lt;/cit:CI_Individual&gt;                         &lt;/cit:individual&gt;                       &lt;/cit:CI_Organisation&gt;                     &lt;/cit:party&gt;                   &lt;/cit:CI_Responsibility&gt;" data-default-role="pointOfContact" data-search-action="true" data-popup-action="true" data-template-type="contact" data-filter="{&quot;root&quot;: &quot;cit:CI_Responsibility&quot;}" data-variables="cit:role/cit:CI_RoleCode/@codeListValue~{role}">
+                <a class="btn btn-default" title=" Responsabilité" data-gn-click-and-spin="addChoice(97, 'mri:pointOfContact', 'cit:CI_Responsibility', 'd67e14250', 'replaceWith');">
+                  <i type="button" class="fa fa-plus gn-add" title="Type de données pour l'informations concernant l’acteur et son rôle" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="form-group gn-field gn-spatialRepresentationType  gn- " id="gn-el-120" data-gn-field-highlight="">
+            <label for="gn-field-120" class="col-sm-2 control-label">Type de représentation spatiale</label>
+            <div class="col-sm-9 col-xs-11 gn-value nopadding-in-table">
+              <select class="" id="gn-field-120" name="_120_codeListValue" data-gn-field-tooltip="iso19115-3.2018.che|mri:spatialRepresentationType|che:CHE_MD_DataIdentification|/che:CHE_MD_Metadata/mdb:identificationInfo/che:CHE_MD_DataIdentification/mri:spatialRepresentationType">
+                <option value="stereoModel" title="Vue tridimensionnelle formée par l'intersection des rayons homologues d'une paire d'images se recouvrant">Modèle stéréoscopique</option>
+                <option value="grid" title="Donnée raster ou matricielle">Raster</option>
+                <option value="tin" title="Réseau de triangle irrégulier (Triangulated Irregular Network)">TIN</option>
+                <option value="textTable" title="Fichier texte ou table">Tabulaire</option>
+                <option value="vector" title="Donnée vecteur (point, ligne, polygone)" selected="">Vecteur</option>
+                <option value="video" title="Enregistrement vidéo">Vidéo</option>
+              </select>
+              <div class="gn-move">
+                <a class="fa fa-angle-up hidden" data-gn-editor-control-move="119" data-domelement-to-move="120" data-direction="up" href="" tabindex="-1" />
+                <a class="fa fa-angle-down hidden" data-gn-editor-control-move="119" data-domelement-to-move="120" data-direction="down" href="" tabindex="-1" />
+              </div>
+            </div>
+            <div class="col-sm-1 col-xs-1 gn-control">
+              <a class="btn pull-right" data-gn-click-and-spin="remove(119, 97, 120)" data-gn-field-highlight-remove="120" data-toggle="tooltip" data-placement="top" title="{{'deleteField' | translate}}">
+                <i class="fa fa-times text-danger gn-control" />
+              </a>
+            </div>
+          </div>
+          <div class="form-group gn-field  gn-extra-field gn-add-field  " id="gn-el-d67e14265" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:spatialRepresentationType|che:CHE_MD_DataIdentification|">Type de représentation spatiale</label>
+            <div class="col-sm-9">
+              <a class="btn btn-default" title=" Type de représentation spatiale" data-gn-click-and-spin="add(97, 'mri:spatialRepresentationType', 'd67e14265', 'before');">
+                <i class="fa fa-plus gn-add" />
+              </a>
+            </div>
+          </div>
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14266" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:spatialResolution|che:CHE_MD_DataIdentification|">Résolution spatiale</label>
+            <div class="col-sm-9">
+              <a class="btn btn-default" title=" Résolution spatiale" data-gn-click-and-spin="add(97, 'mri:spatialResolution', 'd67e14266', 'before');">
+                <i class="fa fa-plus gn-add" />
+              </a>
+            </div>
+          </div>
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14267" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:temporalResolution|che:CHE_MD_DataIdentification|">Résolution temporelle</label>
+            <div class="col-sm-9">
+              <a class="btn btn-default" title=" Résolution temporelle" data-gn-click-and-spin="add(97, 'mri:temporalResolution', 'd67e14267', 'before');">
+                <i class="fa fa-plus gn-add" />
+              </a>
+            </div>
+          </div>
+          <div class="form-group gn-field" id="gn-el-121">
+            <span data-gn-topiccategory-selector-div="environment" data-ref="_121" data-parent-ref="_97" data-label="Catégorie ISO" data-element-name="mri:topicCategory" data-required="true" />
+            <div class="col-sm-1 gn-control" />
+          </div>
+          <div class="col-sm-offset-2" />
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14300" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:extent|che:CHE_MD_DataIdentification|">mri:extent</label>
+            <div class="col-sm-9">
+              <div data-gn-directory-entry-selector="" data-dom-id="d67e14300" data-element-name="mri:extent" data-element-ref="97" data-template-add-action="true" data-search-action="true" data-template-type="extent" data-filter="{&quot;root&quot;: &quot;gex:EX_Extent&quot;}" data-insert-modes="">
+                <a class="btn btn-default" title=" mri:extent" data-gn-click-and-spin="add(97, 'mri:extent', 'd67e14300', 'before');">
+                  <i class="fa fa-plus gn-add" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14301" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:additionalDocumentation|che:CHE_MD_DataIdentification|">Documentation supplémentaire</label>
+            <div class="col-sm-9">
+              <a class="btn btn-default" title=" Information de référence" data-gn-click-and-spin="addChoice(97, 'mri:additionalDocumentation', 'cit:CI_Citation', 'd67e14301', 'replaceWith');">
+                <i type="button" class="fa fa-plus gn-add" title="Type de données pour la description standardisée des informations de références de la ressource Référence normalisée à une ressource" />
+              </a>
+            </div>
+          </div>
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14303" data-gn-cardinality="0-1" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:processingLevel|che:CHE_MD_DataIdentification|">Niveau de traitement</label>
+            <div class="col-sm-9">
+              <a class="btn btn-default" title=" Niveau de traitement" data-gn-click-and-spin="add(97, 'mri:processingLevel', 'd67e14303', 'before');">
+                <i class="fa fa-plus gn-add" />
+              </a>
+            </div>
+          </div>
+          <fieldset id="gn-el-123" data-gn-field-highlight="" class=" gn-resourceMaintenance">
+            <legend class="resourceMaintenance" data-gn-field-tooltip="iso19115-3.2018.che|mri:resourceMaintenance|che:CHE_MD_DataIdentification|" data-gn-slide-toggle="false">
+              Mise à jour de la ressource 
+              <a class="btn pull-right" data-gn-click-and-spin="remove(123, 97)" data-gn-field-highlight-remove="123" title="{{'deleteFieldSet' | translate}}">
+                <i class="fa fa-times text-danger" />
+              </a>
+              <div class="gn-move">
+                <a class="fa fa-angle-up hidden" data-gn-editor-control-move="123" data-domelement-to-move="123" data-direction="up" href="" tabindex="-1" />
+                <a class="fa fa-angle-down hidden" data-gn-editor-control-move="123" data-domelement-to-move="123" data-direction="down" href="" tabindex="-1" />
+              </div>
+            </legend>
+            <div class="well well-sm gn-attr hidden">
+              <button type="button" class="btn btn-default btn-xs btn-attr btn-xs gn-attr-gco_nilReason" id="gn-attr-add-button-gcoCOLONnilReason_123" data-gn-click-and-spin="add('123', 'gco:nilReason', '123', null, true)" title="">
+                <i class="fa fa-plus fa-fw" />
+                Raison de l'absence
+              </button>
+              <button type="button" class="btn btn-default btn-xs btn-attr btn-xs gn-attr-xlink_type" id="gn-attr-add-button-xlinkCOLONtype_123" data-gn-click-and-spin="add('123', 'xlink:type', '123', null, true)" title="">
+                <i class="fa fa-plus fa-fw" />
+                Type de lien
+              </button>
+            </div>
+            <fieldset id="gn-el-124" data-gn-field-highlight="" class=" gn-CHE_MD_MaintenanceInformation">
+              <legend class="CHE_MD_MaintenanceInformation" data-gn-field-tooltip="iso19115-3.2018.che|che:CHE_MD_MaintenanceInformation|mri:resourceMaintenance|" data-gn-slide-toggle="false">
+                che:CHE_MD_MaintenanceInformation 
+                <a class="btn pull-right" data-gn-click-and-spin="remove(124, 123)" data-gn-field-highlight-remove="124" title="{{'deleteFieldSet' | translate}}">
+                  <i class="fa fa-times text-danger" />
+                </a>
+                <div class="gn-move">
+                  <a class="fa fa-angle-up hidden" data-gn-editor-control-move="124" data-domelement-to-move="124" data-direction="up" href="" tabindex="-1" />
+                  <a class="fa fa-angle-down hidden" data-gn-editor-control-move="124" data-domelement-to-move="124" data-direction="down" href="" tabindex="-1" />
+                </div>
+              </legend>
+              <div class="well well-sm gn-attr hidden">
+                <div class="form-group  gn-attr-gco_isoType" id="gn-attr-_124_gcoCOLONisoType">
+                  <label class="col-sm-4">gco:isoType</label>
+                  <div class="col-sm-7">
+                    <input type="text" class="" name="_124_gcoCOLONisoType" value="mmi:MD_MaintenanceInformation" text="" />
+                  </div>
+                  <div class="col-sm-1">
+                    <a class="btn pull-right" data-gn-click-and-spin="removeAttribute('_124_gcoCOLONisoType')" data-toggle="tooltip" data-placement="top" title="{{'deleteField' | translate}}">
+                      <i class="fa fa-times text-danger" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group gn-field gn-maintenanceAndUpdateFrequency  gn-Obligatoire " id="gn-el-126" data-gn-field-highlight="">
+                <label for="gn-field-126" class="col-sm-2 control-label">Fréquence de mise à jour</label>
+                <div class="col-sm-9 col-xs-11 gn-value nopadding-in-table">
+                  <select class="" id="gn-field-126" name="_126_codeListValue" data-gn-field-tooltip="iso19115-3.2018.che|mmi:maintenanceAndUpdateFrequency|che:CHE_MD_MaintenanceInformation|/che:CHE_MD_Metadata/mdb:identificationInfo/che:CHE_MD_DataIdentification/mri:resourceMaintenance/che:CHE_MD_MaintenanceInformation/mmi:maintenanceAndUpdateFrequency">
+                    <option value="annually" title="Mise à jour annuelle">Annuelle</option>
+                    <option value="biannually" title="Mise à jour bi-annuelle">Bi-annuelle</option>
+                    <option value="fortnightly" title="Mise à jour 2 fois par mois">Bi-mensuelle</option>
+                    <option value="biennially" title="La ressource est mise à jour tous les deux ans">Biennale</option>
+                    <option value="semimonthly" title="La ressource est mise à jour deux fois par mois">Bimensuelle</option>
+                    <option value="continual" title="Mise à jour continue" selected="">Continue</option>
+                    <option value="weekly" title="Mise à jour hebdomadaire">Hebdomadaire</option>
+                    <option value="unknown" title="Mise à jour inconnue">Inconnue</option>
+                    <option value="irregular" title="Mise à jour irrégulière">Irrégulière</option>
+                    <option value="daily" title="Mise à jour quotidienne">Journalière</option>
+                    <option value="asNeeded" title="Mise à jour lorsque cela est jugé nécessaire">Lorsque nécessaire</option>
+                    <option value="monthly" title="Mise à jour mensuelle">Mensuelle</option>
+                    <option value="notPlanned" title="Mise à jour non planifiée">Non planifiée</option>
+                    <option value="periodic" title="La ressource est mise à jour à des intervalles réguliers">Periodique</option>
+                    <option value="quarterly" title="Mise à jour trimestrielle">Trimestrielle</option>
+                  </select>
+                  <div class="gn-move">
+                    <a class="fa fa-angle-up hidden" data-gn-editor-control-move="125" data-domelement-to-move="126" data-direction="up" href="" tabindex="-1" />
+                    <a class="fa fa-angle-down hidden" data-gn-editor-control-move="125" data-domelement-to-move="126" data-direction="down" href="" tabindex="-1" />
+                  </div>
+                </div>
+                <div class="col-sm-1 col-xs-1 gn-control">
+                  <a class="btn pull-right" data-gn-click-and-spin="remove(125, 124, 126)" data-gn-field-highlight-remove="126" data-toggle="tooltip" data-placement="top" title="{{'deleteField' | translate}}">
+                    <i class="fa fa-times text-danger gn-control" />
+                  </a>
+                </div>
+              </div>
+              <div class="form-group gn-field  gn-extra-field gn-add-field hidden " id="gn-el-d67e14306" data-gn-cardinality="0-1" data-gn-field-highlight="">
+                <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|:|che:CHE_MD_MaintenanceInformation|">Fréquence de mise à jour</label>
+                <div class="col-sm-9">
+                  <a class="btn btn-default" title=" Fréquence de mise à jour" data-gn-click-and-spin="add(124, 'mmi:maintenanceAndUpdateFrequency', 'd67e14306', 'before');">
+                    <i class="fa fa-plus gn-add" />
+                  </a>
+                </div>
+              </div>
+              <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14319" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+                <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mmi:maintenanceDate|che:CHE_MD_MaintenanceInformation|">mmi:maintenanceDate</label>
+                <div class="col-sm-9">
+                  <a class="btn btn-default" title=" Date" data-gn-click-and-spin="addChoice(124, 'mmi:maintenanceDate', 'cit:CI_Date', 'd67e14319', 'replaceWith');">
+                    <i type="button" class="fa fa-plus gn-add" title="Type de données pour des dates de références et des événements avec lesquels la date est en relation date de référence et événement utilisés pour la décrire" />
+                  </a>
+                </div>
+              </div>
+              <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14321" data-gn-cardinality="0-1" data-gn-field-highlight="">
+                <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mmi:userDefinedMaintenanceFrequency|che:CHE_MD_MaintenanceInformation|">Autre fréquence de mise à jour</label>
+                <div class="col-sm-9">
+                  <a class="btn btn-default" title=" Autre fréquence de mise à jour" data-gn-click-and-spin="add(124, 'mmi:userDefinedMaintenanceFrequency', 'd67e14321', 'before');">
+                    <i class="fa fa-plus gn-add" />
+                  </a>
+                </div>
+              </div>
+              <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14322" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+                <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mmi:maintenanceScope|che:CHE_MD_MaintenanceInformation|">mmi:maintenanceScope</label>
+                <div class="col-sm-9">
+                  <a class="btn btn-default" title=" mmi:maintenanceScope" data-gn-click-and-spin="add(124, 'mmi:maintenanceScope', 'd67e14322', 'before');">
+                    <i class="fa fa-plus gn-add" />
+                  </a>
+                </div>
+              </div>
+              <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14323" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+                <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mmi:maintenanceNote|che:CHE_MD_MaintenanceInformation|">Remarque sur la mise à jour</label>
+                <div class="col-sm-9">
+                  <a class="btn btn-default" title=" Remarque sur la mise à jour" data-gn-click-and-spin="add(124, 'mmi:maintenanceNote', 'd67e14323', 'before');">
+                    <i class="fa fa-plus gn-add" />
+                  </a>
+                </div>
+              </div>
+              <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14325" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+                <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mmi:contact|che:CHE_MD_MaintenanceInformation|">mmi:contact</label>
+                <div class="col-sm-9">
+                  <a class="btn btn-default" title=" Responsabilité" data-gn-click-and-spin="addChoice(124, 'mmi:contact', 'cit:CI_Responsibility', 'd67e14325', 'replaceWith');">
+                    <i type="button" class="fa fa-plus gn-add" title="Type de données pour l'informations concernant l’acteur et son rôle" />
+                  </a>
+                </div>
+              </div>
+              <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14327" data-gn-cardinality="0-1" data-gn-field-highlight="">
+                <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|che:appraisal|che:CHE_MD_MaintenanceInformation|">che:appraisal</label>
+                <div class="col-sm-9">
+                  <a class="btn btn-default" title=" che:appraisal" data-gn-click-and-spin="add(124, 'che:appraisal', 'd67e14327', 'before');">
+                    <i class="fa fa-plus gn-add" />
+                  </a>
+                </div>
+              </div>
+            </fieldset>
+          </fieldset>
+          <div class="form-group gn-field  gn-extra-field gn-add-field  " id="gn-el-d67e14364" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:resourceMaintenance|che:CHE_MD_DataIdentification|">Mise à jour de la ressource</label>
+            <div class="col-sm-9">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle gn-add" data-toggle="dropdown" title=" Mise à jour de la ressource">
+                  <i class="fa fa-plus" />
+                  <span class="caret" />
+                </button>
+                <ul class="dropdown-menu">
+                  <li title="Classe sur la raison, l'étendue et la fréquence des mises à jour.">
+                    <a data-gn-click-and-spin="addChoice(97, 'mri:resourceMaintenance', 'mmi:MD_MaintenanceInformation', 'd67e14364', 'before');">Information de maintenance</a>
+                  </li>
+                  <li title="">
+                    <a data-gn-click-and-spin="addChoice(97, 'mri:resourceMaintenance', 'che:CHE_MD_MaintenanceInformation', 'd67e14364', 'before');">che:CHE_MD_MaintenanceInformation</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14367" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:graphicOverview|che:CHE_MD_DataIdentification|">Aperçus</label>
+            <div class="col-sm-9">
+              <a class="btn btn-default" title=" Aperçus" data-gn-click-and-spin="add(97, 'mri:graphicOverview', 'd67e14367', 'before');">
+                <i class="fa fa-plus gn-add" />
+              </a>
+            </div>
+          </div>
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14368" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:resourceFormat|che:CHE_MD_DataIdentification|">Format de la ressource</label>
+            <div class="col-sm-9">
+              <a class="btn btn-default" title=" Format de la ressource" data-gn-click-and-spin="add(97, 'mri:resourceFormat', 'd67e14368', 'before');">
+                <i class="fa fa-plus gn-add" />
+              </a>
+            </div>
+          </div>
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14369" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:descriptiveKeywords|che:CHE_MD_DataIdentification|">Mots clés</label>
+            <div class="col-sm-9">
+              <div data-gn-thesaurus-selector="" data-dom-id="d67e14369" data-element-name="mri:descriptiveKeywords" data-element-ref="97" data-transformation="to-iso19115-3.2018-keyword" data-include="">
+                <a class="btn btn-default" title=" Mots clés" data-gn-click-and-spin="add(97, 'mri:descriptiveKeywords', 'd67e14369', 'before');">
+                  <i class="fa fa-plus gn-add" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14370" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:resourceSpecificUsage|che:CHE_MD_DataIdentification|">Utilisation spécifique de la ressource</label>
+            <div class="col-sm-9">
+              <a class="btn btn-default" title=" Utilisation spécifique de la ressource" data-gn-click-and-spin="add(97, 'mri:resourceSpecificUsage', 'd67e14370', 'before');">
+                <i class="fa fa-plus gn-add" />
+              </a>
+            </div>
+          </div>
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14371" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:resourceConstraints|che:CHE_MD_DataIdentification|">Contraintes sur la ressource</label>
+            <div class="col-sm-9">
+              <div data-gn-directory-entry-selector="" data-dom-id="d67e14371" data-element-name="mri:resourceConstraints" data-element-ref="97" data-template-add-action="true" data-search-action="true" data-popup-action="false" data-template-type="resourceConstraints" data-filter="{&quot;root&quot;: &quot;mco:MD_*&quot;}">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle gn-add" data-toggle="dropdown" title=" Contraintes sur la ressource">
+                    <i class="fa fa-plus" />
+                    <span class="caret" />
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li title="Classe avec les restrictions de manipulation imposées sur les ressources où de métadonnées pour la sécurité nationale ou des situations de sécurité similaires">
+                      <a data-gn-click-and-spin="addChoice(97, 'mri:resourceConstraints', 'mco:MD_SecurityConstraints', 'd67e14371', 'before');">Contraintes de sécurité</a>
+                    </li>
+                    <li title="Classe pour les restrictions et conditions préalables légales pour accéder et utiliser les ressources où de métadonnées">
+                      <a data-gn-click-and-spin="addChoice(97, 'mri:resourceConstraints', 'mco:MD_LegalConstraints', 'd67e14371', 'before');">Contraintes légales</a>
+                    </li>
+                    <li title="Classe pour les restrictions sur l'accès et l'utilisation d'une ressource ou de métadonnées">
+                      <a data-gn-click-and-spin="addChoice(97, 'mri:resourceConstraints', 'mco:MD_Constraints', 'd67e14371', 'before');">Restrictions</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14375" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:associatedResource|che:CHE_MD_DataIdentification|">Ressource associée</label>
+            <div class="col-sm-9">
+              <a class="btn btn-default" title=" Ressource associée" data-gn-click-and-spin="add(97, 'mri:associatedResource', 'd67e14375', 'before');">
+                <i class="fa fa-plus gn-add" />
+              </a>
+            </div>
+          </div>
+          <fieldset id="gn-el-127" data-gn-field-highlight="" class=" gn-defaultLocale">
+            <legend class="defaultLocale" data-gn-field-tooltip="iso19115-3.2018.che|mri:defaultLocale|che:CHE_MD_DataIdentification|" data-gn-slide-toggle="false">
+              Paramétrage régional par défaut 
+              <a class="btn pull-right" data-gn-click-and-spin="remove(127, 97)" data-gn-field-highlight-remove="127" title="{{'deleteFieldSet' | translate}}">
+                <i class="fa fa-times text-danger" />
+              </a>
+              <div class="gn-move">
+                <a class="fa fa-angle-up hidden" data-gn-editor-control-move="127" data-domelement-to-move="127" data-direction="up" href="" tabindex="-1" />
+                <a class="fa fa-angle-down hidden" data-gn-editor-control-move="127" data-domelement-to-move="127" data-direction="down" href="" tabindex="-1" />
+              </div>
+            </legend>
+            <div class="well well-sm gn-attr hidden">
+              <button type="button" class="btn btn-default btn-xs btn-attr btn-xs gn-attr-gco_nilReason" id="gn-attr-add-button-gcoCOLONnilReason_127" data-gn-click-and-spin="add('127', 'gco:nilReason', '127', null, true)" title="">
+                <i class="fa fa-plus fa-fw" />
+                Raison de l'absence
+              </button>
+              <button type="button" class="btn btn-default btn-xs btn-attr btn-xs gn-attr-xlink_type" id="gn-attr-add-button-xlinkCOLONtype_127" data-gn-click-and-spin="add('127', 'xlink:type', '127', null, true)" title="">
+                <i class="fa fa-plus fa-fw" />
+                Type de lien
+              </button>
+            </div>
+            <fieldset id="gn-el-128" data-gn-field-highlight="" class=" gn-PT_Locale">
+              <legend class="PT_Locale" data-gn-field-tooltip="iso19115-3.2018.che|lan:PT_Locale|mri:defaultLocale|" data-gn-slide-toggle="false">
+                Langue 
+                <a class="btn pull-right" data-gn-click-and-spin="remove(128, 127)" data-gn-field-highlight-remove="128" title="{{'deleteFieldSet' | translate}}">
+                  <i class="fa fa-times text-danger" />
+                </a>
+                <div class="gn-move">
+                  <a class="fa fa-angle-up hidden" data-gn-editor-control-move="128" data-domelement-to-move="128" data-direction="up" href="" tabindex="-1" />
+                  <a class="fa fa-angle-down hidden" data-gn-editor-control-move="128" data-domelement-to-move="128" data-direction="down" href="" tabindex="-1" />
+                </div>
+              </legend>
+              <div class="form-group gn-field gn-language gn-required  " id="gn-el-130" data-gn-field-highlight="">
+                <label for="gn-field-130" class="col-sm-2 control-label">Langue</label>
+                <div class="col-sm-9 col-xs-11 gn-value nopadding-in-table">
+                  <input class="form-control " id="gn-field-130" name="_130_codeListValue" data-element-ref="_X129_replace" data-gn-language-picker="ger" data-gn-field-tooltip="iso19115-3.2018.che|lan:language|lan:PT_Locale|/che:CHE_MD_Metadata/mdb:identificationInfo/che:CHE_MD_DataIdentification/mri:defaultLocale/lan:PT_Locale/lan:language" required="required" data-gn-check="#gn-el-130" type="text" value="ger" />
+                  <div class="gn-move">
+                    <a class="fa fa-angle-up hidden" data-gn-editor-control-move="129" data-domelement-to-move="130" data-direction="up" href="" tabindex="-1" />
+                    <a class="fa fa-angle-down hidden" data-gn-editor-control-move="129" data-domelement-to-move="130" data-direction="down" href="" tabindex="-1" />
+                  </div>
+                </div>
+                <div class="col-sm-1 col-xs-1 gn-control" />
+              </div>
+              <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14391" data-gn-cardinality="0-1" data-gn-field-highlight="">
+                <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|lan:country|lan:PT_Locale|">Pays</label>
+                <div class="col-sm-9">
+                  <a class="btn btn-default" title=" Pays" data-gn-click-and-spin="add(128, 'lan:country', 'd67e14391', 'before');">
+                    <i class="fa fa-plus gn-add" />
+                  </a>
+                </div>
+              </div>
+              <div class="form-group gn-field gn-characterEncoding gn-required gn- " id="gn-el-132" data-gn-field-highlight="">
+                <label for="gn-field-132" class="col-sm-2 control-label">Encodage de caractères</label>
+                <div class="col-sm-9 col-xs-11 gn-value nopadding-in-table">
+                  <select class="" id="gn-field-132" name="_132_codeListValue" required="required" data-gn-field-tooltip="iso19115-3.2018.che|lan:characterEncoding|lan:PT_Locale|/che:CHE_MD_Metadata/mdb:identificationInfo/che:CHE_MD_DataIdentification/mri:defaultLocale/lan:PT_Locale/lan:characterEncoding">
+                    <option value="8859part1" title="ISO/IEC 8859-1, Information technology - 8-bit single byte coded graphic character sets - Part 1 : Latin alphabet No.1">8859part1</option>
+                    <option value="8859part10" title="ISO/IEC 8859-10, Information technology - 8-bit single byte coded graphic character sets - Part 10 : Latin alphabet No.6">8859part10</option>
+                    <option value="8859part11" title="ISO/IEC 8859-11, Information technology - 8-bit single byte coded graphic character sets - Part 11 : Latin/Thai alphabet">8859part11</option>
+                    <option value="8859part13" title="ISO/IEC 8859-13, Information technology - 8-bit single byte coded graphic character sets - Part 13 : Latin alphabet No.7">8859part13</option>
+                    <option value="8859part14" title="ISO/IEC 8859-14, Information technology - 8-bit single byte coded graphic character sets - Part 14 : Latin alphabet No.8 (Celtic)">8859part14</option>
+                    <option value="8859part15" title="ISO/IEC 8859-15, Information technology - 8-bit single byte coded graphic character sets - Part 15 : Latin alphabet No.9">8859part15</option>
+                    <option value="8859part16" title="ISO/IEC 8859-16, Information technology - 8-bit single byte coded graphic character sets - Part 16 : Latin alphabet No.10">8859part16</option>
+                    <option value="8859part2" title="ISO/IEC 8859-2, Information technology - 8-bit single byte coded graphic character sets - Part 2 : Latin alphabet No.2">8859part2</option>
+                    <option value="8859part3" title="ISO/IEC 8859-3, Information technology - 8-bit single byte coded graphic character sets - Part 3 : Latin alphabet No.3">8859part3</option>
+                    <option value="8859part4" title="ISO/IEC 8859-4, Information technology - 8-bit single byte coded graphic character sets - Part 4 : Latin alphabet No.4">8859part4</option>
+                    <option value="8859part5" title="ISO/IEC 8859-5, Information technology - 8-bit single byte coded graphic character sets - Part 5 : Latin/Cyrillic alphabet">8859part5</option>
+                    <option value="8859part6" title="ISO/IEC 8859-6, Information technology - 8-bit single byte coded graphic character sets - Part 6 : Latin/Arabic alphabet">8859part6</option>
+                    <option value="8859part7" title="ISO/IEC 8859-7, Information technology - 8-bit single byte coded graphic character sets - Part 7 : Latin/Greek alphabet">8859part7</option>
+                    <option value="8859part8" title="ISO/IEC 8859-8, Information technology - 8-bit single byte coded graphic character sets - Part 8 : Latin/Hebrew alphabet">8859part8</option>
+                    <option value="8859part9" title="ISO/IEC 8859-9, Information technology - 8-bit single byte coded graphic character sets - Part 9 : Latin alphabet No.5">8859part9</option>
+                    <option value="big5" title="Traditional Chinese code set used in Taiwan, Hong Kong of China and other areas">Big5</option>
+                    <option value="ebcdic" title="IBM mainframe code set">Ebcdic</option>
+                    <option value="eucJP" title="Japanese code set used on UNIX based machines">EucJP</option>
+                    <option value="eucKR" title="Korean code set">EucKR</option>
+                    <option value="GB2312" title="Simplified Chinese code set">GB2312</option>
+                    <option value="jis" title="Japanese code set used for electronic transmission">Jis</option>
+                    <option value="shiftJIS" title="Japanese code set used on MS-DOS machines">ShiftJIS</option>
+                    <option value="ucs2" title="16-bit fixed size Universal Character Set, based on ISO 10646">Ucs2</option>
+                    <option value="ucs4" title="32-bit fixed size Universal Character Set, based on ISO/IEC 10646">Ucs4</option>
+                    <option value="usAscii" title="United States ASCII code set (ISO 646 US)">UsAscii</option>
+                    <option value="utf16" title="16-bit variable size UCS Transfer Format, based on ISO/IEC 10646">Utf16</option>
+                    <option value="utf7" title="7-bit variable size UCS Transfer Format, based on ISO/IEC 10646">Utf7</option>
+                    <option value="utf8" title="8-bit variable size UCS Transfer Format, based on ISO/IEC 10646" selected="">Utf8</option>
+                  </select>
+                  <div class="gn-move">
+                    <a class="fa fa-angle-up hidden" data-gn-editor-control-move="131" data-domelement-to-move="132" data-direction="up" href="" tabindex="-1" />
+                    <a class="fa fa-angle-down hidden" data-gn-editor-control-move="131" data-domelement-to-move="132" data-direction="down" href="" tabindex="-1" />
+                  </div>
+                </div>
+                <div class="col-sm-1 col-xs-1 gn-control" />
+              </div>
+            </fieldset>
+          </fieldset>
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14439" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:otherLocale|che:CHE_MD_DataIdentification|">Autre paramétrage régional</label>
+            <div class="col-sm-9">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle gn-add" data-toggle="dropdown" title=" Autre paramétrage régional">
+                  <i class="fa fa-plus" />
+                  <span class="caret" />
+                </button>
+                <ul class="dropdown-menu">
+                  <li title="Conteneur de chaînes de caractères régionalisées. NOTE Il fournit un moyen pour isoler les chaînes «régionalisées» associées à un paramétrage régional donné.">
+                    <a data-gn-click-and-spin="addChoice(97, 'mri:otherLocale', 'lan:PT_LocaleContainer', 'd67e14439', 'before');">Conteneur de paramétrage régional</a>
+                  </li>
+                  <li title="Langue">
+                    <a data-gn-click-and-spin="addChoice(97, 'mri:otherLocale', 'lan:PT_Locale', 'd67e14439', 'before');">Langue</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14442" data-gn-cardinality="0-1" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:environmentDescription|che:CHE_MD_DataIdentification|">Description de l'environnement de travail</label>
+            <div class="col-sm-9">
+              <a class="btn btn-default" title=" Description de l'environnement de travail" data-gn-click-and-spin="add(97, 'mri:environmentDescription', 'd67e14442', 'before');">
+                <i class="fa fa-plus gn-add" />
+              </a>
+            </div>
+          </div>
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14444" data-gn-cardinality="0-1" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:supplementalInformation|che:CHE_MD_DataIdentification|">Informations supplémentaires</label>
+            <div class="col-sm-9">
+              <a class="btn btn-default" title=" Informations supplémentaires" data-gn-click-and-spin="add(97, 'mri:supplementalInformation', 'd67e14444', 'before');">
+                <i class="fa fa-plus gn-add" />
+              </a>
+            </div>
+          </div>
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14446" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|che:subTopicCategory|che:CHE_MD_DataIdentification|">che:subTopicCategory</label>
+            <div class="col-sm-9">
+              <a class="btn btn-default" title=" che:subTopicCategory" data-gn-click-and-spin="add(97, 'che:subTopicCategory', 'd67e14446', 'before');">
+                <i class="fa fa-plus gn-add" />
+              </a>
+            </div>
+          </div>
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14447" data-gn-cardinality="0-1" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|che:basicGeodata|che:CHE_MD_DataIdentification|">che:basicGeodata</label>
+            <div class="col-sm-9">
+              <a class="btn btn-default" title=" che:basicGeodata" data-gn-click-and-spin="add(97, 'che:basicGeodata', 'd67e14447', 'before');">
+                <i class="fa fa-plus gn-add" />
+              </a>
+            </div>
+          </div>
+          <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14448" data-gn-cardinality="0-10000" data-gn-field-highlight="">
+            <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|che:basicGeodataInformation|che:CHE_MD_DataIdentification|">che:basicGeodataInformation</label>
+            <div class="col-sm-9">
+              <a class="btn btn-default" title=" che:basicGeodataInformation" data-gn-click-and-spin="add(97, 'che:basicGeodataInformation', 'd67e14448', 'before');">
+                <i class="fa fa-plus gn-add" />
+              </a>
+            </div>
+          </div>
+        </fieldset>
+      </fieldset>
+      <div class="form-group gn-field gn-required gn-extra-field gn-add-field  " id="gn-el-d81e1627" data-gn-cardinality="1-10000" data-gn-field-highlight="">
+        <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mdb:identificationInfo|che:CHE_MD_Metadata|">Information de l'identification</label>
+        <div class="col-sm-9">
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle gn-add" data-toggle="dropdown" title=" Information de l'identification">
+              <i class="fa fa-plus" />
+              <span class="caret" />
+            </button>
+            <ul class="dropdown-menu">
+              <li title="Classe avec l'information utile pour identifier un jeu de données">
+                <a data-gn-click-and-spin="addChoice(1, 'mdb:identificationInfo', 'mri:MD_DataIdentification', 'd81e1627', 'before');">Identification des données</a>
+              </li>
+              <li title="Classe pour l'identification des prestations, disponibles auprès un fournisseur de services, via un ensemble d'interfaces définissant un comportement (cf. ISO 19119 pour obtenir plus d'information).">
+                <a data-gn-click-and-spin="addChoice(1, 'mdb:identificationInfo', 'srv:SV_ServiceIdentification', 'd81e1627', 'before');">Identification du service</a>
+              </li>
+              <li title="">
+                <a data-gn-click-and-spin="addChoice(1, 'mdb:identificationInfo', 'che:CHE_MD_DataIdentification', 'd81e1627', 'before');">che:CHE_MD_DataIdentification</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 gn-editor-sidebar">
+      <div class="gn-editor-tools-container">
+        <div data-gn-need-help="creating-metadata" />
+        <div data-gn-overview-manager="" data-file-types=".png,.gif,.jpeg,.jpg" />
+        <div data-gn-distribution-resources-panel="gnCurrentEdit.metadata" data-mode="viewConfig.distributionConfig.layout || ''" data-editor-config="default" data-related-config="[{                                              title: 'API',                                              filter: 'protocol:OGC:WMS|OGC:WMTS|ESRI:.*|atom.*|REST|OGC API Maps|OGC API Records',                                              editActions: ['addOnlinesrc#API']                                            }, {                                               title: 'download',                                               filter: 'protocol:OGC:WFS|OGC:WCS|.*DOWNLOAD.*|DB:.*|FILE:.*|OGC API Features|OGC API Coverages',                                               editActions: ['addOnlinesrc#onlineDownload|localNetwork']                                            }, {                                              title: 'map',                                              filter: 'protocol:OGC:OWS-C|PDF:MAP',                                              editActions: ['addOnlinesrc#onlineUseMap']                                            }, {                                              title: 'mapLegend',                                              filter: 'function:legend',                                              editActions: ['addOnlinesrc#onlineUseLegend']                                            }, {                                               title: 'links',                                               filter:'-protocol:OGC.*|REST|ESRI:.*|atom.*|.*DOWNLOAD.*|DB:.*|FILE:.*|PDF:MAP AND -function:legend|featureCatalogue|dataQualityReport',                                               editActions: ['addOnlinesrc#links']                                            }, {                                               title: 'quality',                                               filter: 'function:dataQualityReport',                                               editActions: ['addOnlinesrc#quality']                                            }, {                                               title: 'featureCatalog',                                               filter: 'function:featureCatalogue',                                               editActions: ['onlineUseFcats']                                            }]" />
+        <div data-gn-associated-resources-panel="gnCurrentEdit.metadata" />
+        <div gn-geo-publisher="" data-ng-if="gnCurrentEdit.geoPublisherConfig" data-config="{{gnCurrentEdit.geoPublisherConfig}}" data-lang="lang" />
+        <div data-gn-validation-report="" />
+        <div data-gn-suggestion-list="" />
+      </div>
+    </div>
+  </form>
+</div>
