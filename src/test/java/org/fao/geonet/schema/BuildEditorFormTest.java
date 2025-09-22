@@ -84,6 +84,20 @@ public class BuildEditorFormTest {
 	}
 
 	@Test
+	public void editFullViewIdentificationInfoTab() throws Exception {
+		Path xslFile = getResource("gn-site/xslt/ui-metadata/edit/edit.xsl");
+		Path xmlFile = getResource("asiatischeHornisse-19115-3.che-raw-french-inflated-for-edition.xml");
+		Element inflatedMd = Xml.loadFile(xmlFile);
+
+		Element editorForm = Xml.transform(inflatedMd, xslFile);
+
+		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
+		String actual = xmlOutputter.outputString(editorForm);
+
+		TestSupport.assertGeneratedDataByteMatchExpected("asiatischeHornisse-19115-3.che-editor-form.xml", actual, GENERATE_EXPECTED_FILE);
+	}
+
+	@Test
 	public void secretariatIbatEdit() throws Exception {
 		Path xslFile = getResource("gn-site/xslt/ui-metadata/edit/edit.xsl");
 		Path xmlFile = getResource("subtemplates/secretariat-ibat-19115-3.che-raw-inflated-for-edition.xml");
