@@ -3206,7 +3206,7 @@ de métadonnées de données « BD Carthage métropole »
   </element>
   <element name="cit:aggregationInfo" id="35.1">
     <label>Information sur les agrégations</label>
-    <description>Met à dispositionles les informations sur le jeu de données
+    <description>Met à disposition les informations sur le jeu de données
       rassemblé
     </description>
     <help>Informations concernant le jeu de données de rang supérieur et les
@@ -3772,7 +3772,6 @@ de métadonnées de données « BD Carthage métropole »
   </element>
   <element name="cit:country" id="508.0" context="cit:MD_Legislation">
     <label>Pays</label>
-    <description>Pays d'où provient la loi</description>
     <help>Pays dans lequel la loi a été promulguée, sélection dans la liste ISO
       des pays.
     </help>
