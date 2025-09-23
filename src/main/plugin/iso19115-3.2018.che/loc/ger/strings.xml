@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+  <!-- XSD error translation -->
+  <invalidElement>Ungültiger Inhalt im Element </invalidElement>
+  <onElementOf>Eines der folgenden Elemente: </onElementOf>
+  <isExpected> wird erwartet.</isExpected>
+  <isNotComplete>.</isNotComplete>
+  <elementLocated> Das übergeordnete Element ist </elementLocated>
+  <missingElement>Fehlendes Element in </missingElement>
+  <invalidValue>Fehlender oder ungültiger Wert. </invalidValue>
+  <notValidFor> ist kein gültiger Wert für </notValidFor>
+  <xsdErrorIs>Der Fehler ist: </xsdErrorIs>
+  <inElement> enthalten in </inElement>
+  <enum1>Der Wert </enum1>
+  <enum2> ist kein gültiger Wert für das Feld </enum2>
+  <enum3>Mögliche Werte sind: </enum3>
+  <selectFeaturetype>Attributtabelle auswählen</selectFeaturetype>
+  <missingFeatureTypeName>Neue Tabelle</missingFeatureTypeName>
+
+  <understandResource>Ressource verstehen</understandResource>
+  <relatedResources>Verfügbare Dienste und zugehörige Daten</relatedResources>
+  <techInfo>Technische Informationen</techInfo>
+  <contactInfo>Kontakte</contactInfo>
+  <mdContactInfo>Metadaten-Kontakte</mdContactInfo>
+  <temporalRef>Zeitliche Referenz(en)</temporalRef>
+  <refDate>Bezugsdatum/-daten</refDate>
+  <constraintInfo>Zugriffs- und Nutzungsbeschränkungen</constraintInfo>
+  <resourceLineageTab>Herkunft</resourceLineageTab>
+
+  <advanced>Vollständig</advanced>
+  <advanced-help>Die vollständige Ansicht ermöglicht das Hinzufügen aller im Standard definierten Deskriptoren. Die Felder sind nach Registerkarten gruppiert.</advanced-help>
+  <default>Einfach</default>
+  <simple>Einfach</simple>
+  <simple-help>Die einfache Ansicht zeigt alle in der Datei vorhandenen Informationen an.</simple-help>
+  <inspire>INSPIRE</inspire>
+  <inspireTheme>INSPIRE-Themen</inspireTheme>
+  <inspireThemeMandatory>INSPIRE-Themen*</inspireThemeMandatory>
+  <resource>Ressource</resource>
+  <xml>XML</xml>
+  <xml-help>Die XML-Ansicht ermöglicht die direkte Bearbeitung des XML der Datei.</xml-help>
+  <metadata>Metadaten</metadata>
+  <identificationInfo>Identifikation</identificationInfo>
+  <distributionInfo>Verteilung</distributionInfo>
+  <dataQualityInfo>Qualität</dataQualityInfo>
+  <resourceLineage>Herkunft</resourceLineage>
+  <spatialRepresentationInfo>Räumliche Darstellung</spatialRepresentationInfo>
+  <referenceSystemInfo>Referenzsystem</referenceSystemInfo>
+  <contentInfo>Inhalt</contentInfo>
+  <portrayalCatalogueInfo>Darstellung</portrayalCatalogueInfo>
+  <metadataConstraints>Metadaten-Beschränkungen</metadataConstraints>
+  <metadataMaintenance>Metadaten-Pflege</metadataMaintenance>
+  <applicationSchemaInfo>Erw. Standard</applicationSchemaInfo>
+  <acquisitionInformation>Erfassung</acquisitionInformation>
+  <bboxesSection>Geografischer Bereich</bboxesSection>
+  <citationProposal>Zitierempfehlung</citationProposal>
+  <citationProposal-help>Dieser Zitiervorschlag wurde automatisch gemäß dem von DataCite vorgeschlagenen Format generiert. Bitte überprüfen Sie in den Metadaten, ob die Autoren ein bestimmtes Zitierformat vorgegeben haben.</citationProposal-help>
+  <citationAdditional>Bitte zitieren Sie für jede Verwendung dieser Ressource in einer Publikation auch die folgenden Arbeiten:</citationAdditional>
+  <associatedResources>Zugehörige Ressourcen</associatedResources>
+
+
+
+  <add-resource-id>Identifikator generieren</add-resource-id>
+  <add-resource-idHelp>Erstellt einen Identifikator unter Verwendung der Katalog-URL
+    und der Datensatz-ID (z.B.
+    http://www.organization.org/catalogue/5391bf69-44bc-4ea0-8cc0-6cf6c3bc81ae).
+  </add-resource-idHelp>
+  <add-extent-from-geokeywords>Entsprechende Ausdehnungen hinzufügen</add-extent-from-geokeywords>
+  <add-one-extent-from-geokeywords>Globale Ausdehnung hinzufügen</add-one-extent-from-geokeywords>
+  <add-extent-from-geokeywordsHelp>Analysiert geografische Schlüsselwörter und
+    fügt die entsprechenden Ausdehnungen hinzu.
+  </add-extent-from-geokeywordsHelp>
+  <noThesaurusName>Schlüsselwörter</noThesaurusName>
+  <extent>Räumliche Ausdehnung</extent>
+  <spatialExtent>Räumliche Ausdehnung</spatialExtent>
+  <freeTextKeywords>Weitere Schlüsselwörter</freeTextKeywords>
+</strings>
