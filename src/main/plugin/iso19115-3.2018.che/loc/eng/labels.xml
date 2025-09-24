@@ -76,122 +76,136 @@
     </description>
     <condition></condition>
   </element>
-  <element name="mdb:acquisitionInformation">
-    <label>Acquisition information</label>
-    <description></description>
-    <condition></condition>
-  </element>
-  <element name="mac:MI_AcquisitionInformation">
-    <label>Acquisition information</label>
-    <description></description>
-    <condition></condition>
-  </element>
-  <element name="mac:instrument">
-    <label>Instrument</label>
-    <description></description>
-    <condition></condition>
-  </element>
-  <element name="mac:operation">
-    <label>Operation</label>
-    <description></description>
-    <condition></condition>
-  </element>
-  <element name="mac:platform">
-    <label>Platform</label>
-    <description></description>
-    <condition></condition>
-  </element>
-  <element name="mac:acquisitionPlan">
-    <label>Acquisition plan</label>
-    <description></description>
-    <condition></condition>
-  </element>
-  <element name="mac:objective">
-    <label>Objective</label>
-    <description></description>
-    <condition></condition>
-  </element>
-  <element name="mac:acquisitionRequirement">
-    <label>Acquisition requirement</label>
-    <description></description>
-    <condition></condition>
-  </element>
-  <element name="mac:environmentalConditions">
-    <label>Environmental conditions</label>
-    <description></description>
-    <condition></condition>
-  </element>
-  <element name="mac:averageAirTemperature">
-    <label>Air temperature average</label>
-    <description>Average air temperature along the flight pass during the photo flight.</description>
-    <condition></condition>
-  </element>
-  <element name="mac:maxRelativeHumidity">
-    <label>Maximum of relative humidity</label>
-    <description>Maximum relative humidity along the flight pass during the photo flight.</description>
-    <condition></condition>
-  </element>
-  <element name="mac:maxAltitude">
-    <label>Maximum altitude</label>
-    <description>Maximum altitude during the photo flight.</description>
-    <condition></condition>
-  </element>
-  <element name="mac:meterologicalConditions">
-    <label>Meterological conditions</label>
-    <description>Meteorological conditions in the photo flight area, in particular clouds, snow and wind.</description>
-    <condition></condition>
-  </element>
-  <element name="mac:MI_Instrument">
-    <label>Instrument</label>
-    <description>Characteristics of the measuring instrument</description>
-    <condition></condition>
-  </element>
-  <element name="mac:MI_Operation">
-    <label>Operation</label>
-    <description>Designations for the operation used to acquire the dataset
-    </description>
-    <condition></condition>
-  </element>
-  <element name="mac:status">
-    <label>Status</label>
-    <description></description>
-    <condition></condition>
-  </element>
-  <element name="mac:childOperation">
-    <label>Child operation</label>
-    <description></description>
-    <condition></condition>
-  </element>
-  <element name="mac:parentOperation">
-    <label>Parent operation</label>
-    <description></description>
-    <condition></condition>
-  </element>
-  <element name="mac:plan">
-    <label>Plan</label>
-    <description></description>
-    <condition></condition>
-  </element>
-  <element name="mac:significantEvent">
-    <label>Significant event</label>
-    <description></description>
-    <condition></condition>
-  </element>
-  <element name="mac:satisfiedRequirement">
-    <label>Satisfied requirement</label>
-    <description></description>
-    <condition></condition>
-  </element>
-  <element name="mac:citation">
-    <label>Citation</label>
-    <description></description>
-    <condition></condition>
-  </element>
-  <element name="mac:identifier">
-    <label>Identifier</label>
-    <description></description>
-    <condition></condition>
-  </element>
+  <element name="che:CHE_MD_DataIdentification">
+      <label>Data Identification</label>
+      <description>Data Identification</description>
+      <condition></condition>
+    </element>
+    <element name="che:CHE_CI_Organisation">
+      <label>Organisation</label>
+      <description>Organisation</description>
+      <condition></condition>
+    </element>
+    <element name="che:CHE_MD_MaintenanceInformation">
+      <label>Maintenance Information</label>
+      <description>Maintenance Information</description>
+      <condition></condition>
+      </element>
+      <element name="mmi:maintenanceDate">
+        <label>Maintenance Date</label>
+        <description>Maintenance Date</description>
+        <condition></condition>
+      </element>
+      <element name="mmi:maintenanceScope">
+        <label>Maintenance Scope</label>
+        <description>Maintenance Scope</description>
+        <condition></condition>
+      </element>
+      <element name="mmi:contact">
+        <label>Contact</label>
+        <description>Contact</description>
+        <condition></condition>
+      </element>
+      <element name="che:appraisal">
+        <label>Appraisal</label>
+        <description>Appraisal</description>
+        <condition></condition>
+      </element>
+      <element name="che:CHE_MD_Appraisal_AAP">
+        <label>Appraisal AAP</label>
+        <description>Appraisal AAP</description>
+        <condition></condition>
+      </element>
+      <element name="che:durationOfConservation">
+        <label>Duration of Conservation</label>
+        <description>Duration of Conservation</description>
+        <condition></condition>
+      </element>
+      <element name="che:commentOnDurationOfConservation">
+        <label>Comment on Duration of Conservation</label>
+        <description>Comment on Duration of Conservation</description>
+        <condition></condition>
+      </element>
+      <element name="che:appraisalOfArchivalValue">
+        <label>Appraisal of Archival Value</label>
+        <description>Appraisal of Archival Value</description>
+        <condition></condition>
+      </element>
+      <element name="che:reasonForArchivingValue">
+        <label>Reason for Archiving Value</label>
+        <description>Reason for Archiving Value</description>
+        <condition></condition>
+      </element>
+      <element name="che:commentOnArchivalValue">
+        <label>Comment on Archival Value</label>
+        <description>Comment on Archival Value</description>
+        <condition></condition>
+      </element>
+      <element name="che:CHE_MD_LegalConstraints">
+        <label>Legal Constraints</label>
+        <description>Legal Constraints</description>
+        <condition></condition>
+      </element>
+      <element name="che:legislationConstraints">
+        <label>Legislation Constraints</label>
+        <description>Legislation Constraints</description>
+        <condition></condition>
+      </element>
+      <element name="che:subTopicCategory">
+        <label>Subtopic Category</label>
+        <description>Subtopic Category</description>
+        <condition></condition>
+      </element>
+      <element name="che:basicGeodata">
+        <label>Basic Geodata</label>
+        <description>Basic Geodata</description>
+        <condition></condition>
+      </element>
+      <element name="che:basicGeodataInformation">
+        <label>Basic Geodata Information</label>
+        <description>Basic Geodata Information</description>
+        <condition></condition>
+      </element>
+      <element name="che:CHE_MD_BasicGeodataInformation">
+        <label>Basic Geodata Information</label>
+        <description>Basic Geodata Information</description>
+        <condition></condition>
+      </element>
+      <element name="che:basicGeodataID">
+        <label>Basic Geodata ID</label>
+        <description>Basic Geodata ID</description>
+        <condition></condition>
+      </element>
+      <element name="che:basicGeodataLegalLevel">
+        <label>Basic Geodata Legal Level</label>
+        <description>Basic Geodata Legal Level</description>
+        <condition></condition>
+      </element>
+      <element name="che:basicGeodataResponsibilityLevel">
+        <label>Basic Geodata Responsibility Level</label>
+        <description>Basic Geodata Responsibility Level</description>
+        <condition></condition>
+      </element>
+      <element name="che:basicGeodataAccessLevel">
+        <label>Basic Geodata Access Level</label>
+        <description>Basic Geodata Access Level</description>
+        <condition></condition>
+      </element>
+      <element name="che:basicGeodataType">
+        <label>Basic Geodata Type</label>
+        <description>Basic Geodata Type</description>
+        <condition></condition>
+      </element>
+      <element name="che:organisationAcronym">
+        <label>Organisation Acronym</label>
+        <description>Acronym of the organisation</description>
+        <condition></condition>
+      </element>
+      <element name="che:parentOrganisation">
+        <label>Parent Organisation</label>
+        <description>Parent organisation</description>
+        <condition></condition>
+      </element>
   <element name="mac:type">
     <label>Type</label>
     <description></description>
@@ -389,8 +403,6 @@
     <description></description>
     <condition></condition>
   </element>
-
-
   <element name="mdb:metadataStandard" id="21.0">
     <label>Metadata standard</label>
     <description iso="true">Citation for the standard to which the metadata
@@ -477,11 +489,10 @@
     <condition>optional</condition>
   </element>
   <element name="msr:centrePoint" id="157.0">
-    <label>Point central</label>
-    <description iso="true">Position terrestre dans le système de coordonnées
-      définie par le système de références spatiales et la coordonnée dans la
-      grille de la cellule située à mi-chemin entre les extrémités opposées de
-      la grille selon les dimensions spatiales.
+    <label>Centre point</label>
+    <description iso="true">earth location in the coordinate system defined by
+      the Spatial Reference System and the grid coordinate of the cell halfway
+      between opposite ends of the grid in the spatial dimensions
     </description>
     <condition>optional</condition>
   </element>
@@ -691,8 +702,6 @@
     </description>
     <condition></condition>
   </element>
-
-
   <element name="mrc:MD_FeatureCatalogue" id="189.0">
     <label>Feature catalogue</label>
     <description iso="true">A catalogue of feature types</description>
@@ -779,7 +788,6 @@
     <label>Source</label>
     <description></description>
   </element>
-
   <element name="mdq:standaloneQualityReport">
     <label>Standalone quality report</label>
     <description></description>
@@ -836,8 +844,6 @@
     <label>Measure description</label>
     <description></description>
   </element>
-
-
   <element name="mdq:DQ_DataInspection">
     <label>Data inspection</label>
     <description></description>
@@ -943,8 +949,6 @@
     <label>Related quality element</label>
     <description></description>
   </element>
-
-
   <element name="cit:CI_Individual" id="383.0">
     <label>Individual</label>
     <description iso="true">Class of information about the party if the party is
@@ -992,7 +996,7 @@
     <_condition>optional</_condition>
   </element>
   <element name="mdb:resourceLineage" id="37.0">
-    <label>Resource lineage</label>
+    <label>Data quality info</label>
     <description iso="true">Information about the provenance, source(s), and/or
       the production process(es) applied to the resource
     </description>
@@ -1304,7 +1308,7 @@
     <condition>mandatory</condition>
   </element>
   <element name="cit:party" id="379.0" context="cit:CI_Responsibility">
-    <label>Party</label>
+    <label>Responsible party</label>
     <description iso="true">Information about the party</description>
   </element>
   <element name="cit:extent" id="378.0" context="cit:CI_Responsibility">
@@ -1375,7 +1379,7 @@
     <condition/>
   </element>
   <element name="cit:number" id="418.0">
-    <label>Number</label>
+    <label>Direct number</label>
     <description iso="true">Telephone number by which individuals can contact
       responsible organisation or individual
     </description>
@@ -3018,7 +3022,7 @@
     </description>
   </element>
   <element name="cit:identifier" id="573.0" context="cit:CI_Citation">
-    <label>Citation identifier</label>
+    <label>Identifier</label>
     <description>Identifier of the citation</description>
   </element>
   <element name="mri:identifier" id="575.0" context="mri:MD_Authority">
