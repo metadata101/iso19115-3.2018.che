@@ -76,6 +76,163 @@
     </description>
     <condition></condition>
   </element>
+  <element name="che:CHE_MD_DataIdentification">
+    <label>Identification des données</label>
+    <description>Classe avec l'information utile pour identifier un jeu de données</description>
+    <help>Classe contenant des informations de base utilisées pour l'identification sans équivoque du
+      ou des jeux de données. Il s'agit de la description du jeu de données concret. La classe
+      MD_DataIdentification est la représentation de MD_Identification pour les données. Elle intègre
+      des informations relatives à la caractérisation spatiale et temporelle des données, au jeu de
+      caractères et à la langue utilisés, de même que d'autres informations descriptives. Une
+      extension spatiale minimale des données est à indiquer par l'intermédiaire de l'option
+      "geographicBox" (rectangle de délimitation géographique), de l'option "geographicDescription"
+      (description textuelle de l'extension) ou des deux simultanément. Il est en outre possible de
+      restreindre l'extension par le biais de l'attribut "extent", aussi bien au niveau spatial (via
+      un polygone) que temporel. La norme prévoit une liste internationale de 19 thèmes
+      (MD_TopicCategoryCode) pour la classification thématique des données, gérée par l'intermédiaire
+      de l'attribut "topicCategory". Une recherche standardisée par thèmes est de la sorte possible au
+      plan international.
+    </help>
+    <condition></condition>
+  </element>
+  <element name="che:CHE_CI_Organisation">
+    <label>Organisation</label>
+    <description>Organisation</description>
+    <condition></condition>
+  </element>
+  <element name="che:CHE_MD_MaintenanceInformation">
+    <label>Information de maintenance</label>
+    <description>Classe sur la raison, l'étendue et la fréquence des mises à jour.</description>
+    <help>Les informations concernant l'étendue, la fréquence et la date de mise à jour des données sont contenues dans
+      la classe MD_MaintenanceInformation. Cette classe recèle des attributs renseignant sur la fréquence et l'étendue
+      de la mise à jour et de la réactualisation des données du jeu. Seule l'indication de la fréquence est impérative
+      et doit être sélectionnée dans la liste MD_MaintenanceFrequencyCode. l'étendue de la mise à jour, les attributs
+      qu''elle concerne et les descriptions associées sont des informations qu''il est possible d'indiquer via les
+      attributs "updateScope" et "updateScopeDescription". Il n''est pas prévu d'indiquer l'extension spatiale de la
+      mise à jour. Si seules des parties d'un jeu de données sont mises à jour ou si toutes ses parties ne sont pas
+      mises à jour simultanément, alors les parties concernées par la description de la mise à jour peuvent être
+      précisées via "+updateScopeDescription" dans la classe MD_ScopeDescription.
+    </help>
+    <condition></condition>
+  </element>
+  <element name="mmi:maintenanceDate">
+    <label>Date de maintenance</label>
+    <description>Date de maintenance</description>
+    <condition></condition>
+  </element>
+  <element name="mmi:maintenanceScope">
+    <label>Étendue de la maintenance</label>
+    <description>Étendue de la maintenance</description>
+    <condition></condition>
+  </element>
+  <element name="mmi:contact">
+    <label>Contact</label>
+    <description>Contact</description>
+    <condition></condition>
+  </element>
+  <element name="che:appraisal">
+    <label>Évaluation</label>
+    <description>Évaluation</description>
+    <condition></condition>
+  </element>
+  <element name="che:CHE_MD_Appraisal_AAP">
+    <label>Évaluation AAP</label>
+    <description>Évaluation AAP</description>
+    <condition></condition>
+  </element>
+  <element name="che:durationOfConservation">
+    <label>Durée de conservation</label>
+    <description>Durée de conservation</description>
+    <condition></condition>
+  </element>
+  <element name="che:commentOnDurationOfConservation">
+    <label>Commentaire sur la durée de conservation</label>
+    <description>Commentaire sur la durée de conservation</description>
+    <condition></condition>
+  </element>
+  <element name="che:appraisalOfArchivalValue">
+    <label>Évaluation de la valeur archivistique</label>
+    <description>Évaluation de la valeur archivistique</description>
+    <condition></condition>
+  </element>
+  <element name="che:reasonForArchivingValue">
+    <label>Raison de la valeur d'archivage</label>
+    <description>Raison de la valeur d'archivage</description>
+    <condition></condition>
+  </element>
+  <element name="che:commentOnArchivalValue">
+    <label>Commentaire sur la valeur d'archivage</label>
+    <description>Commentaire sur la valeur d'archivage</description>
+    <condition></condition>
+  </element>
+  <element name="che:CHE_MD_LegalConstraints">
+    <label>Contraintes légales</label>
+    <description>Contraintes légales</description>
+    <condition></condition>
+  </element>
+  <element name="che:legislationConstraints">
+    <label>Contraintes législatives</label>
+    <description>Contraintes législatives</description>
+    <condition></condition>
+  </element>
+  <element name="che:subTopicCategory">
+    <label>Catégorie de sous-thème</label>
+    <description>Catégorie de sous-thème</description>
+    <condition></condition>
+  </element>
+  <element name="che:basicGeodata">
+    <label>Géodonnées de base</label>
+    <description>Géodonnées de base</description>
+    <condition></condition>
+  </element>
+  <element name="che:basicGeodataInformation">
+    <label>Informations sur les géodonnées de base</label>
+    <description>Informations sur les géodonnées de base</description>
+    <condition></condition>
+  </element>
+  <element name="che:CHE_MD_BasicGeodataInformation">
+    <label>Informations sur les géodonnées de base</label>
+    <description>Informations sur les géodonnées de base</description>
+    <condition></condition>
+  </element>
+  <element name="che:basicGeodataID">
+    <label>Identifiant Géodonnées de base</label>
+    <description>Identifiant de la géodonnée de base selon l'Annexe I de la OGéo, voire de la collection des géodonnées de base.</description>
+    <condition></condition>
+  </element>
+  <element name="che:basicGeodataLegalLevel">
+    <label>Niveau légal des géodonnées de base</label>
+    <description>Niveau légal des géodonnées de base</description>
+      <condition></condition>
+  </element>
+  <element name="che:basicGeodataResponsibilityLevel">
+    <label>Niveau de responsabilité des géodonnées de base</label>
+    <description>Niveau de responsabilité des géodonnées de base</description>
+    <condition></condition>
+  </element>
+  <element name="che:basicGeodataAccessLevel">
+      <label>Niveau d'accès des géodonnées de base</label>
+      <description>Niveau d'accès des géodonnées de base</description>
+      <condition></condition>
+  </element>
+  <element name="che:basicGeodataType">
+    <label>Type de géodonnées de base</label>
+    <description>Type de géodonnées de base</description>
+    <condition></condition>
+  </element>
+  <element name="che:organisationAcronym">
+    <label>Acronyme de l'organisation</label>
+    <description>Acronyme ou abréviation de l'organisation</description>
+    <help>Désignation abrégée ou abréviation de l'organisation. Ces informations sont du type
+        PT_FreeText et sont gérées dans la classe du même nom.
+    </help>
+    <condition></condition>
+  </element>
+  <element name="che:parentOrganisation">
+    <label>Organisation parente</label>
+    <description>Organisation parente</description>
+    <condition></condition>
+  </element>
   <element name="mdb:acquisitionInformation">
     <label>Information relative à l'acquisition</label>
     <description></description>
@@ -389,12 +546,12 @@
     <description>Citation du/des profil(s) de la norme de métadonnées</description>
   </element>
   <element name="mdb:resourceScope" id="40.0">
-    <label>Type de ressource</label>
+    <label>Domaine d'application de la ressource</label>
     <description iso="true">Code pour le domaine d’application.</description>
     <condition>mandatory</condition>
   </element>
   <element name="mdb:name" id="41.0" context="mdb:MD_MetadataScope">
-    <label>Précision sur le type de ressource</label>
+    <label>Nom</label>
     <description iso="true">Description du domaine d’application.</description>
     <condition>optional</condition>
   </element>
@@ -1310,7 +1467,7 @@
     </description>
   </element>
   <element name="cit:partyIdentifier">
-    <label>Identifier for the party</label>
+    <label>Identifiant de la partie concernée</label>
     <description/>
   </element>
   <element name="cit:number" id="418.0">
@@ -4414,7 +4571,7 @@ version en tant que mot-clé complémentaire(s). Le numéro de version doit comp
 
   </element>
   <element name="mri:equivalentScale" id="60.0">
-    <label>Echelle comparative</label>
+    <label>Fraction représentative</label>
     <description>Degré de détail exprimé avec l'échelle d'un graphique ou carte
       papier comparable
     </description>
@@ -4839,7 +4996,7 @@ période de temps couverte par le service.
 
   </element>
   <element name="cit:hierarchyLevel" id="6.0">
-    <label>Type de la ressource</label>
+    <label>Domaine d'application des métadonnées</label>
     <description>Domaine auquel les métadonnées s'appliquent (voir l'annexe C
       pour plus d'information au sujet des niveaux de hiérarchie des
       métadonnées)
@@ -6518,9 +6675,8 @@ la non-évaluation</b>, dans le cadre de métadonnées INSPIRE
     <condition>Condition</condition>
   </element>
   <element name="mrl:resolution" id="182.0">
-    <label>Résolution</label>
-    <description>Degré de détail dans le jeu de données de type raster
-    </description>
+    <label>Résolution spatiale</label>
+    <description>Degré de détail dans le jeu de données de type raster</description>
     <help>Degré de spécification de la trame, c.-à-d. description d'une
       extension, d'une dimension ou d'un nombre de cellules.
     </help>
