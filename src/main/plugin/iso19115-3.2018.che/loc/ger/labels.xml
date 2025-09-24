@@ -76,6 +76,150 @@
     </description>
     <Bedingung></Bedingung>
   </element>
+  <element name="che:CHE_MD_DataIdentification">
+    <label>Basisinformation zum Datenbestand</label>
+    <description>Klasse mit Informationen zur eindeutigen Identifizierung eines Datensatzes</description>
+    <help>Klasse, die grundlegende Informationen zur eindeutigen Identifizierung eines oder mehrerer Datensätze enthält. Es handelt sich um die Beschreibung des konkreten Datensatzes. Die Klasse
+      MD_DataIdentification ist die Darstellung von MD_Identification für Daten. Sie integriert
+      Informationen zur räumlichen und zeitlichen Charakterisierung der Daten, zum verwendeten Zeichensatz und zur verwendeten Sprache sowie weitere beschreibende Informationen. Eine
+      minimale räumliche Erweiterung der Daten ist über die Option
+      "geographicBox" (geografisches Begrenzungsrechteck), die Option "geographicDescription"
+      (textuelle Beschreibung der Erweiterung) oder beide gleichzeitig anzugeben. Es ist auch möglich,
+      die Erweiterung über das Attribut "extent" sowohl räumlich (über ein Polygon) als auch zeitlich einzuschränken. Der Standard sieht eine internationale Liste von 19 Themen
+      (MD_TopicCategoryCode) für die thematische Klassifizierung der Daten vor, die über das Attribut
+      "topicCategory" verwaltet wird. Eine standardisierte Suche nach Themen ist somit auf internationaler Ebene möglich.
+    </help>
+    <condition></condition>
+  </element>
+  <element name="che:CHE_CI_Organisation">
+    <label>Organisation</label>
+    <description>Organisation</description>
+    <condition></condition>
+  </element>
+  <element name="che:CHE_MD_MaintenanceInformation">
+    <label>Datenpflege</label>
+    <description>Information zu Umfang und Turnus der Aktualisierung</description>
+    <help>z.B. Nachführungsinformationen</help>
+    <condition></condition>
+  </element>
+  <element name="mmi:maintenanceDate">
+      <label>Wartungsdatum</label>
+      <description>Wartungsdatum</description>
+      <condition></condition>
+  </element>
+  <element name="mmi:maintenanceScope">
+      <label>Umfang der Wartung</label>
+      <description>Umfang der Wartung</description>
+      <condition></condition>
+    </element>
+    <element name="mmi:contact">
+      <label>Kontakt</label>
+      <description>Kontakt</description>
+      <condition></condition>
+    </element>
+    <element name="che:appraisal">
+      <label>Bewertung</label>
+      <description>Bewertung</description>
+      <condition></condition>
+    </element>
+    <element name="che:CHE_MD_Appraisal_AAP">
+      <label>Bewertung AAP</label>
+      <description>Bewertung AAP</description>
+      <condition></condition>
+    </element>
+    <element name="che:durationOfConservation">
+      <label>Aufbewahrungsdauer NV in Jahren</label>
+      <description>Aufbewahrungsdauer NV in Jahren</description>
+      <condition></condition>
+    </element>
+    <element name="che:commentOnDurationOfConservation">
+      <label>Bemerkung zur Aufbewahrungsdauer</label>
+      <description>Bemerkung zur Aufbewahrungsdauer</description>
+      <condition></condition>
+    </element>
+    <element name="che:appraisalOfArchivalValue">
+      <label>Bewertung Archivwürdigkeit</label>
+      <description>Bewertung Archivwürdigkeit</description>
+      <condition></condition>
+    </element>
+    <element name="che:reasonForArchivingValue">
+      <label>Begründung Archivwürdigkeit</label>
+      <description>Begründung der Archivwürdigkeit</description>
+      <condition></condition>
+    </element>
+    <element name="che:commentOnArchivalValue">
+      <label>Bemerkung zur Archivwürdigkeit</label>
+      <description>Bemerkung zur Archivwürdigkeit</description>
+      <condition></condition>
+    </element>
+    <element name="che:CHE_MD_LegalConstraints">
+      <label>Contraintes légales</label>
+      <description>Contraintes légales</description>
+      <condition></condition>
+    </element>
+    <element name="che:legislationConstraints">
+      <label>Rechtliche Einschränkungen</label>
+      <description>Einschränkungen und rechtliche Voraussetzungen für den Zugriff sowie die Verwendung
+      der Ressource oder der Metadaten</description>
+      <condition></condition>
+    </element>
+    <element name="che:subTopicCategory">
+      <label>Unterthemenkategorie</label>
+      <description>Unterthemenkategorie</description>
+      <condition></condition>
+    </element>
+    <element name="che:basicGeodata">
+      <label>Geobasisdaten</label>
+      <description>Geobasisdaten</description>
+      <condition></condition>
+    </element>
+    <element name="che:basicGeodataInformation">
+      <label>Informationen zu Geobasisdaten</label>
+      <description>Informationen zu Geobasisdaten</description>
+      <condition></condition>
+    </element>
+    <element name="che:CHE_MD_BasicGeodataInformation">
+      <label>Informationen zu Geobasisdaten</label>
+      <description>Informationen zu Geobasisdaten</description>
+      <condition></condition>
+    </element>
+    <element name="che:basicGeodataID">
+      <label>Identifikator des Geobasisdatensatzes</label>
+      <description>Identifikator des Geobasisdatensatzes nach Anhang I der Geoinformationsverordnung, bzw. der Sammlung
+      der Geobasisdaten.</description>
+      <condition></condition>
+    </element>
+    <element name="che:basicGeodataLegalLevel">
+      <label>Rechtlicher Status der Geobasisdaten</label>
+      <description>Rechtlicher Status der Geobasisdaten</description>
+      <condition></condition>
+    </element>
+    <element name="che:basicGeodataResponsibilityLevel">
+      <label>Geobasisdatenverantwortungsebene</label>
+      <description>Geobasisdatenverantwortungsebene</description>
+      <condition></condition>
+    </element>
+    <element name="che:basicGeodataAccessLevel">
+        <label>Geobasisdatenzugangsebene</label>
+        <description>Geobasisdatenzugangsebene</description>
+        <condition></condition>
+    </element>
+    <element name="che:basicGeodataType">
+      <label>Typ der Geobasisdaten</label>
+      <description>Typ der Geobasisdaten</description>
+      <condition></condition>
+    </element>
+    <element name="che:organisationAcronym">
+      <label>Abkürzung der Organisation</label>
+      <description>Acronyme oder Abkürzung der Organisation</description>
+      <help>z.B. BAFU, swisstopo...</help>
+      <condition></condition>
+    </element>
+    <element name="che:parentOrganisation">
+      <label>Übergeordnete Organisation</label>
+      <description>Übergeordnete Organisation</description>
+      <condition></condition>
+    </element>
   <element name="mdb:acquisitionInformation">
     <label>Informationen zum Erwerb</label>
     <description></description>
@@ -389,12 +533,12 @@
     <description>Zitat aus dem/den Metadaten-Standardprofil(en)</description>
   </element>
   <element name="mdb:resourceScope" id="40.0">
-    <label>Art der Ressource</label>
+    <label>Domäne der Ressourcenanwendung</label>
     <description iso="true">Code für den Anwendungsbereich.</description>
     <condition>mandatory</condition>
   </element>
   <element name="mdb:name" id="41.0" context="mdb:MD_MetadataScope">
-    <label>Angaben zum Ressourcentyp</label>
+    <label>Name</label>
     <description iso="true">Beschreibung des Anwendungsbereichs.</description>
     <condition>optional</condition>
   </element>
@@ -3941,18 +4085,11 @@ Datum der Online-Veröffentlichung des Dienstes als Veröffentlichungsdatum einz
     <description></description>
   </element>
   <element name="mri:denominator" id="57.0">
-    <label>Nenner</label>
-    <description>Der Nenner der Skala (die Zahl unter dem
-      )
-    </description>
-    <help>Der Wert unter dem Bruchstrich. Hier handelt es sich um
-      der Maßstab: Bei einer Karte im Maßstab 1:25000 wird nur der Begriff
-      „25000” eingegeben. Dieser Wert kann auch eine Angabe
-      Genauigkeit bei einem Vektordatensatz darstellen. Beispiel:
-      in einem Maßstab von 1:25'000 erfasste Grenzen mit dieser Genauigkeit
-      .
-    </help>
-    <Bedingung>Es muss entweder ein Maßstab oder eine Entfernung eingegeben werden</Bedingung>
+    <label>Massstabszahl</label>
+    <description>Angabe der Massstabszahl (mz) eines Massstabs 1 : mz</description>
+    <help>Empfehlung: Falls ein Massstabsbereich angegeben werden soll, ist die Klasse MD_Resolution
+      zweifach zu nutzen und jeweils die obere und untere Massstabszahl einzutragen.</help>
+    <condition>Soll ausgefüllt werden, falls keine Distanz (Bodenauflösung) angegeben wird</condition>
     <helper>
       <option value="1000">1:1 000</option>
       <option value="5000">1:5 000</option>
@@ -4414,19 +4551,13 @@ Version als zusätzliches(s) Schlüsselwort(e) an. Die Versionsnummer muss aus d
 
   </element>
   <element name="mri:equivalentScale" id="60.0">
-    <label>Vergleichsskala</label>
-    <description>Detaillierungsgrad, ausgedrückt anhand der Skala einer Grafik oder Karte
-      ausgedrückt wird
+    <label>Vergleichsmassstab</label>
+    <description>Detailliertheitsgrad, angegeben durch den Massstab einer vergleichbaren gedruckten
+      Karte
     </description>
-    <help>Der Detaillierungsgrad, ausgedrückt anhand des Maßstabs einer Karte oder
-      einer vergleichbaren analogen Grafik ausgedrückter Spezifikationsgrad.
-      Dieser Maßstab kann auch die Genauigkeit der Erfassung
-      eines Vektordatensatzes
-      Diese Information ist vom Typ MD_RepresentativeFraction und wird in
-      der gleichnamigen Klasse verwaltet, wo weitere Informationen
-      .
+    <help>
     </help>
-    <condition>Condition</condition>
+    <condition>auszufüllen, wenn keine Distanz (Bodenauflösung) angegeben wird</condition>
   </element>
   <element name="cit:errorStatistic" id="136.0">
     <label>Statistische Methode</label>
@@ -4839,7 +4970,7 @@ vom Dienst abgedeckten Zeitraum.
 
   </element>
   <element name="cit:hierarchyLevel" id="6.0">
-    <label>Art der Ressource</label>
+    <label>Anwendungsbereit von Metadaten</label>
     <description>Bereich, auf den sich die Metadaten beziehen (siehe Anhang C
       für weitere Informationen zu den Hierarchieebenen der
       Metadaten)
