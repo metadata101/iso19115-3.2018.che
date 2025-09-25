@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+
+  <!-- XSD error translation -->
+  <invalidElement>Contenuto non valido trovato nell'elemento </invalidElement>
+  <onElementOf>Uno dei seguenti elementi </onElementOf>
+  <isExpected> è atteso.</isExpected>
+  <isNotComplete> non è completo.</isNotComplete>
+  <elementLocated> L'elemento genitore è </elementLocated>
+  <missingElement>Elemento mancante in </missingElement>
+  <invalidValue>Valore non valido o mancante.</invalidValue>
+  <notValidFor> non è un valore valido per </notValidFor>
+  <xsdErrorIs>Errore XSD: </xsdErrorIs>
+  <inElement> nell'elemento </inElement>
+  <enum1>Valore </enum1>
+  <enum2> non è valido per il campo </enum2>
+  <enum3>I valori possibili sono: </enum3>
+  <selectFeaturetype>Seleziona un tipo di feature</selectFeaturetype>
+  <missingFeatureTypeName>Nuovo tipo di feature</missingFeatureTypeName>
+
+
+
+  <understandResource>Informazioni sul dataset</understandResource>
+  <relatedResources>Servizi correlati e dati collegati</relatedResources>
+  <techInfo>Informazioni tecniche</techInfo>
+  <contactInfo>Informazioni di contatto</contactInfo>
+  <mdContactInfo>Contatto metadati</mdContactInfo>
+  <refDate>Data di riferimento</refDate>
+  <temporalRef>Informazioni temporali</temporalRef>
+  <constraintInfo>Informazioni sulle restrizioni di accesso</constraintInfo>
+  <xml_iso19139>Salva questi metadati come file XML ISO19139</xml_iso19139>
+  <xml_iso19139Tooai_dc>Salva questi metadati come file XML OAI Dublin Core
+  </xml_iso19139Tooai_dc>
+  <resourceLineageTab>Provenienza</resourceLineageTab>
+
+  <advanced>Completo</advanced>
+  <default>Semplice</default>
+  <simple>Semplice</simple>
+  <inspire>INSPIRE</inspire>
+  <inspireTheme>Temi INSPIRE</inspireTheme>
+  <inspireThemeMandatory>Temi INSPIRE*</inspireThemeMandatory>
+  <resource>Risorsa</resource>
+  <xml>XML</xml>
+  <metadata>Metadati</metadata>
+  <identificationInfo>Identificazione</identificationInfo>
+  <distributionInfo>Distribuzione</distributionInfo>
+  <dataQualityInfo>Qualità</dataQualityInfo>
+  <resourceLineage>Provenienza</resourceLineage>
+  <spatialRepresentationInfo>Rappresentazione spaziale</spatialRepresentationInfo>
+  <referenceSystemInfo>Sistema di riferimento</referenceSystemInfo>
+  <contentInfo>Contenuto</contentInfo>
+  <portrayalCatalogueInfo>Rappresentazione</portrayalCatalogueInfo>
+  <metadataConstraints>Vincoli metadati</metadataConstraints>
+  <metadataMaintenance>Manutenzione metadati</metadataMaintenance>
+  <applicationSchemaInfo>Informazioni sullo schema</applicationSchemaInfo>
+  <acquisitionInformation>Informazioni sull'acquisizione</acquisitionInformation>
+  <qualityMeasures>Misure di qualità</qualityMeasures>
+
+  <bboxesSection>Copertura geografica</bboxesSection>
+  <overviews>Panoramiche</overviews>
+  <metadataInXML>XML</metadataInXML>
+  <providedBy>Fornito da</providedBy>
+  <shareOnSocialSite>Condividi sui social</shareOnSocialSite>
+  <viewMode>Viste</viewMode>
+  <linkToPortal>Accesso al catalogo</linkToPortal>
+  <linkToPortal-help>Leggi qui tutti i dettagli e accedi ai dati.</linkToPortal-help>
+  <citationProposal>Proposta di citazione</citationProposal>
+  <citationProposal-help>Questa proposta è stata generata automaticamente, verifica se gli autori dei metadati non hanno specificato requisiti di citazione personalizzati.</citationProposal-help>
+  <citationAdditional>Quando utilizzi questa risorsa in una pubblicazione, cita anche i lavori correlati con:</citationAdditional>
+  <associatedResources>Risorse associate</associatedResources>
+
+
+  <add-resource-id>Calcola identificatore risorsa</add-resource-id>
+  <add-resource-idHelp>Componi l'identificatore della risorsa usando l'URL del catalogo e l'identificatore dei metadati (es. http://www.organizzazione.org/catalogo/5391bf69-44bc-4ea0-8cc0-6cf6c3bc81ae).
+  </add-resource-idHelp>
+  <add-extent-from-geokeywords>Aggiungi estensione per ogni parola chiave</add-extent-from-geokeywords>
+  <add-one-extent-from-geokeywords>Aggiungi un'estensione da tutte le parole chiave</add-one-extent-from-geokeywords>
+  <add-extent-from-geokeywordsHelp>Analizza ogni parola chiave di tipo luogo e aggiungi l'estensione corrispondente.
+  </add-extent-from-geokeywordsHelp>
+  <extent>Rettangolo geografico</extent>
+  <spatialExtent>Estensione spaziale</spatialExtent>
+  <freeTextKeywords>Altre parole chiave</freeTextKeywords>
+  <noThesaurusName>Parole chiave</noThesaurusName>
+</strings>

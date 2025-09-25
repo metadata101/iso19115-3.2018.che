@@ -195,1002 +195,728 @@
   <codelist name="cit:CI_PresentationFormCode">
     <entry>
       <code>documentDigital</code>
-      <label>Document numérique</label>
-      <description>Document numérique contenant du texte et pouvant contenir des
-        illustrations
-      </description>
+      <label>Digitales Dokument</label>
+      <description>Digitales Dokument mit Text und möglicherweise Abbildungen</description>
     </entry>
     <entry>
       <code>imageDigital</code>
-      <label>Image numérique</label>
-      <description>Aspects à travers la télédétection, stocké sous format
-        numérique
-      </description>
+      <label>Digitales Bild</label>
+      <description>Aspekte durch Fernerkundung, im digitalen Format gespeichert</description>
     </entry>
     <entry>
       <code>documentHardcopy</code>
-      <label>Document papier</label>
-      <description>Document papier contenant du texte et pouvant contenir des
-        illustrations
-      </description>
+      <label>Papierdokument</label>
+      <description>Papierdokument mit Text und möglicherweise Abbildungen</description>
     </entry>
     <entry>
       <code>imageHardcopy</code>
-      <label>Image papier</label>
-      <description>Aspects à travers la télédétection, reproduit sur un support
-        utilisable par l’homme
-      </description>
+      <label>Papierbild</label>
+      <description>Aspekte durch Fernerkundung, auf einem vom Menschen nutzbaren Medium reproduziert</description>
     </entry>
     <entry>
       <code>mapDigital</code>
-      <label>Carte numérique</label>
-      <description>Carte numérique au format raster ou vecteur</description>
+      <label>Digitale Karte</label>
+      <description>Digitale Karte im Raster- oder Vektorformat</description>
     </entry>
     <entry>
       <code>mapHardcopy</code>
-      <label>Carte papier</label>
-      <description>Carte imprimée sur papier ou autre support utilisable par
-        l’homme
-      </description>
+      <label>Papierkarte</label>
+      <description>Karte, die auf Papier oder einem anderen vom Menschen nutzbaren Medium gedruckt ist</description>
     </entry>
     <entry>
       <code>modelDigital</code>
-      <label>Modèle numérique de terrain</label>
-      <description>Modèle numérique 3D sous forme digitale</description>
+      <label>Digitales Geländemodell</label>
+      <description>3D-Digitalmodell in digitaler Form</description>
     </entry>
     <entry>
       <code>modelHardcopy</code>
-      <label>Modèle numérique physique</label>
-      <description>Modèle numérique 3D physique</description>
+      <label>Physisches Modell</label>
+      <description>Physisches 3D-Digitalmodell</description>
     </entry>
     <entry>
       <code>profileDigital</code>
-      <label>Profil numérique</label>
-      <description>Profil vertical sous forme numérique</description>
+      <label>Digitales Profil</label>
+      <description>Vertikales Profil in digitaler Form</description>
     </entry>
     <entry>
       <code>profileHardcopy</code>
-      <label>Profil papier</label>
-      <description>Profil vertical sous forme papier</description>
+      <label>Papierprofil</label>
+      <description>Vertikales Profil in Papierform</description>
     </entry>
     <entry>
       <code>tableDigital</code>
-      <label>Table numérique</label>
-      <description>Représentation numérique d’informations sous forme de
-        colonnes
-      </description>
+      <label>Digitale Tabelle</label>
+      <description>Digitale Darstellung von Informationen in Spaltenform</description>
     </entry>
     <entry>
       <code>tableHardcopy</code>
-      <label>Table papier</label>
-      <description>Représentation d’informations sous forme de colonnes sur
-        papier ou autre support utilisable par l’homme
-      </description>
+      <label>Papiertabelle</label>
+      <description>Darstellung von Informationen in Spaltenform auf Papier oder anderem vom Menschen nutzbaren Medium</description>
     </entry>
     <entry>
       <code>videoDigital</code>
-      <label>Vidéo numérique</label>
-      <description>Vidéo numérique</description>
+      <label>Digitales Video</label>
+      <description>Digitales Video</description>
     </entry>
     <entry>
       <code>videoHardcopy</code>
-      <label>Vidéo magnétique</label>
-      <description>Vidéo enregistré sur bande</description>
+      <label>Magnetvideo</label>
+      <description>Auf Band aufgezeichnetes Video</description>
     </entry>
     <entry>
       <code>audioDigital</code>
-      <label>Audio numérique</label>
-      <description>Enregistrement audio numérique</description>
+      <label>Digitale Audioaufnahme</label>
+      <description>Digitale Audioaufnahme</description>
     </entry>
     <entry>
       <code>audioHardcopy</code>
-      <label>Audio analogique</label>
-      <description>Enregistrement audio délivré par support analogique, telle
-        qu’une bande magnétique
-      </description>
+      <label>Analoge Audioaufnahme</label>
+      <description>Audioaufnahme auf analogem Medium, zB. Magnetband</description>
     </entry>
     <entry>
       <code>multimediaDigital</code>
-      <label>Multimédia numérique</label>
-      <description>représentation d’informations utilisant simultanément des
-        modes numériques divers pour le texte, le son et l’image
-      </description>
+      <label>Digitales Multimedia</label>
+      <description>Darstellung von Informationen mit verschiedenen digitalen Modi für Text, Ton und Bild</description>
     </entry>
     <entry>
       <code>multimediaHardcopy</code>
-      <label>Multimédia analogique</label>
-      <description>Représentation d’informations utilisant simultanément divers
-        modes analogiques pour le texte, le son et l’image
-      </description>
+      <label>Analoges Multimedia</label>
+      <description>Darstellung von Informationen mit verschiedenen analogen Modi für Text, Ton und Bild</description>
     </entry>
     <entry>
       <code>physicalObject</code>
-      <label>Objet physique</label>
-      <description>objet physique. EXEMPLE Roche ou échantillon minéral, lame
-        pour microscope.
-      </description>
+      <label>Physisches Objekt</label>
+      <description>Physisches Objekt. BEISPIEL: Gestein oder Mineralprobe, Objektträger für Mikroskop.</description>
     </entry>
     <entry>
       <code>diagramDigital</code>
-      <label>Diagramme numérique</label>
-      <description>Informations représentées de manière graphique par des
-        graphes, tels que diagramme circulaire, diagramme à barres et tout autre
-        type de diagramme, et enregistrées sous format numérique
-      </description>
+      <label>Digitales Diagramm</label>
+      <description>Grafische Darstellung von Informationen durch Diagramme, wie Kreisdiagramm, Balkendiagramm usw., im digitalen Format gespeichert</description>
     </entry>
     <entry>
       <code>diagramHardcopy</code>
-      <label>Diagramme papier</label>
-      <description>Informations représentées de manière graphique par des
-        graphes, comme un diagramme circulaire, un diagramme à barres et tout
-        autre type de diagramme, et imprimées sur papier, support photographique
-        ou autre support
-      </description>
+      <label>Papierdiagramm</label>
+      <description>Grafische Darstellung von Informationen durch Diagramme, wie Kreisdiagramm, Balkendiagramm usw., auf Papier, Fotomedium oder anderem Medium gedruckt</description>
     </entry>
   </codelist>
   <codelist name="cit:CI_RoleCode" alias="roleCode">
     <entry>
       <code>resourceProvider</code>
-      <label>Fournisseur</label>
-      <description>Organisme qui fournit la ressource. Acteur qui délivre
-        physiquement la ressource, soit de manière directe au destinataire, soit
-        par l’intermédiaire d’un diffuseur
-      </description>
+      <label>Ressourcenanbieter</label>
+      <description>Organisation, die die Ressource bereitstellt. Akteur, der die Ressource physisch liefert, entweder direkt an den Empfänger oder über einen Verteiler.</description>
     </entry>
     <entry>
       <code>custodian</code>
-      <label>Gestionnaire</label>
-      <description>Acteur responsable de la gestion et de la mise à jour de la
-        ressource
-      </description>
+      <label>Verwalter</label>
+      <description>Akteur, der für die Verwaltung und Aktualisierung der Ressource verantwortlich ist.</description>
     </entry>
     <entry>
       <code>owner</code>
-      <label>Propriétaire</label>
-      <description>Organisme qui est propriétaire de la ressource / Acteur qui
-        détient les droits patrimoniaux de la ressource
-      </description>
+      <label>Eigentümer</label>
+      <description>Organisation, die Eigentümer der Ressource ist / Akteur, der die Eigentumsrechte an der Ressource besitzt.</description>
     </entry>
     <entry>
       <code>user</code>
-      <label>Utilisateur</label>
-      <description>Organisme qui utilise ou a utilisé la ressource</description>
+      <label>Nutzer</label>
+      <description>Organisation, die die Ressource nutzt oder genutzt hat.</description>
     </entry>
     <entry>
       <code>distributor</code>
-      <label>Distributeur</label>
-      <description>Organisme qui distribue la ressource. Diffuseur de second
-        niveau de la ressource
-      </description>
+      <label>Verteiler</label>
+      <description>Organisation, die die Ressource verteilt. Sekundärer Verteiler der Ressource.</description>
     </entry>
     <entry>
       <code>originator</code>
-      <label>Producteur</label>
-      <description>Organisme qui a commandé la ressource. Acteur qui a été
-        habilité à créer la ressource et qui a mis en place les moyens pour la
-        constituer
-      </description>
+      <label>Urheber</label>
+      <description>Organisation, die die Ressource in Auftrag gegeben hat. Akteur, der zur Erstellung der Ressource befugt war und die Mittel zu deren Erstellung bereitgestellt hat.</description>
     </entry>
     <entry>
       <code>pointOfContact</code>
-      <label>Point de contact</label>
-      <description>Organisme que l’on peut contacter pour avoir des
-        renseignements détaillés sur la ressource. Acteur à contacter en premier
-        lieu pour obtenir des informations relatives à la ressource
-      </description>
+      <label>Ansprechpartner</label>
+      <description>Organisation, die für detaillierte Auskünfte zur Ressource kontaktiert werden kann. Erster Ansprechpartner für Informationen zur Ressource.</description>
     </entry>
     <entry>
       <code>principalInvestigator</code>
-      <label>Investigateur principal</label>
-      <description>Personne clé pour obtenir des informations sur la ressource
-        et les recherches conduites autour de la ressource&#xA;Acteur qui a
-        assuré la réalisation de la ressource,éventuellement en faisant appel à
-        des co-traitants ou des sous traitants
-      </description>
+      <label>Hauptverantwortlicher</label>
+      <description>Schlüsselperson für Informationen zur Ressource und zu den damit verbundenen Forschungen. Akteur, der die Ressource erstellt hat, ggf. unter Einbeziehung von Subunternehmern.</description>
     </entry>
     <entry>
       <code>processor</code>
-      <label>Exécutant</label>
-      <description>Organisme qui a réalisé des traitements sur la ressource.
-        Acteur qui est intervenu lors de la réalisation de la ressource
-      </description>
+      <label>Bearbeiter</label>
+      <description>Organisation, die die Ressource bearbeitet hat. Akteur, der an der Erstellung der Ressource beteiligt war.</description>
     </entry>
     <entry>
       <code>publisher</code>
-      <label>Editeur (publication)</label>
-      <description>Organisme qui assure la publication de la ressource.
-      </description>
+      <label>Verleger (Publikation)</label>
+      <description>Organisation, die die Veröffentlichung der Ressource übernimmt.</description>
     </entry>
     <entry>
       <code>author</code>
-      <label>Auteur</label>
-      <description>Organisme ou personne qui est auteur. Acteur qui dispose des
-        droits moraux relatifs à la ressource
-      </description>
+      <label>Autor</label>
+      <description>Organisation oder Person, die Urheber ist. Akteur mit den moralischen Rechten an der Ressource.</description>
     </entry>
     <!-- ISO PROFIL CHE ONLY
 
 		<entry>
 			<code>partner</code>
-			<label>Partenaire</label>
+			<label>Partner</label>
 			<description></description>
 		</entry>-->
     <entry>
       <code>sponsor</code>
       <label>Sponsor</label>
-      <description>Partie qui parle pour la ressource</description>
+      <description>Partei, die für die Ressource spricht.</description>
     </entry>
     <entry>
       <code>coAuthor</code>
-      <label>Co-auteur</label>
-      <description>Partie qui est conjointement l’auteur de la ressource
-      </description>
+      <label>Mitautor</label>
+      <description>Partei, die gemeinsam Urheber der Ressource ist.</description>
     </entry>
     <entry>
       <code>collaborator</code>
-      <label>Collaborateur</label>
-      <description>partie qui contribue à la génération de la ressource autreque
-        l’auteur principal de la recherche
-      </description>
+      <label>Mitarbeiter</label>
+      <description>Partei, die zur Erstellung der Ressource beiträgt, außer dem Hauptautor der Forschung.</description>
     </entry>
     <entry>
       <code>editor</code>
-      <label>Editeur</label>
-      <description>Partie qui a réexaminé ou modifié la ressource pour améliorer
-        son contenu
-      </description>
+      <label>Redakteur</label>
+      <description>Partei, die die Ressource überprüft oder geändert hat, um ihren Inhalt zu verbessern.</description>
     </entry>
     <entry>
       <code>mediator</code>
-      <label>Mediateur</label>
-      <description>Une classe d’entité qui intervient pour l’accès à la
-        ressource et pour laquelle la ressource est destinée ou est utile
-      </description>
+      <label>Vermittler</label>
+      <description>Eine Entitätsklasse, die den Zugang zur Ressource vermittelt und für die die Ressource bestimmt oder nützlich ist.</description>
     </entry>
     <entry>
       <code>rightsHolder</code>
-      <label>Détenteur des droits</label>
-      <description>Droits de détention ou de gestion de la partie vis-à-vis de
-        la ressource
-      </description>
+      <label>Rechtsinhaber</label>
+      <description>Rechte zur Inhaberschaft oder Verwaltung der Partei in Bezug auf die Ressource.</description>
     </entry>
     <entry>
       <code>contributor</code>
-      <label>Contributeur</label>
-      <description>Partie contribuant à la ressource</description>
+      <label>Beitragender</label>
+      <description>Partei, die zur Ressource beiträgt.</description>
     </entry>
     <entry>
       <code>funder</code>
-      <label>Financeur</label>
-      <description>Partie offrant un soutien financier pour la ressource
-      </description>
+      <label>Förderer</label>
+      <description>Partei, die finanzielle Unterstützung für die Ressource bietet.</description>
     </entry>
     <entry>
       <code>stakeholder</code>
-      <label>Partie prenante</label>
-      <description>Partie qui a un intérêt dans la ressource ou dans
-        l’utilisation de la ressource
-      </description>
+      <label>Interessensvertreter</label>
+      <description>Partei, die ein Interesse an der Ressource oder deren Nutzung hat.</description>
     </entry>
   </codelist>
   <codelist name="mdq:DQ_EvaluationMethodTypeCode">
     <entry>
       <code>directInternal</code>
-      <label>Directe interne</label>
-      <description>Méthode d’évaluation de la qualité d’un jeu de données basée
-        sur l’analyse des données du jeu où toutes les données requises sont
-        internes au jeu de données
-      </description>
+      <label>Direkte interne</label>
+      <description>Qualitätsbewertungsmethode für einen Datensatz, die auf der Analyse der Daten des Datensatzes basiert, wobei alle erforderlichen Daten intern im Datensatz enthalten sind.</description>
     </entry>
     <entry>
       <code>directExternal</code>
-      <label>Directe externe</label>
-      <description>Méthode d’évaluation de la qualité d’un jeu de données basée
-        sur l’analyse des données du jeu où les références vers des données
-        externes sont requises.
-      </description>
+      <label>Direkte externe</label>
+      <description>Qualitätsbewertungsmethode für einen Datensatz, die auf der Analyse der Daten des Datensatzes basiert, bei der Verweise auf externe Daten erforderlich sind.</description>
     </entry>
     <entry>
       <code>indirect</code>
-      <label>Indirecte</label>
-      <description>Méthode d’évaluation de la qualité basée sur une connaissance
-        externe.
-      </description>
+      <label>Indirekte</label>
+      <description>Qualitätsbewertungsmethode, die auf externem Wissen basiert.</description>
     </entry>
   </codelist>
   <codelist name="mri:DS_AssociationTypeCode" alias="associationType">
     <entry>
       <code>crossReference</code>
-      <label>Référence croisée</label>
-      <description>Référence d’un jeu de données à un autre</description>
+      <label>Querverweis</label>
+      <description>Verweis eines Datensatzes auf einen anderen.</description>
     </entry>
     <entry>
       <code>largerWorkCitation</code>
-      <label>Référence mère</label>
-      <description>Référence à un jeu de données maître</description>
+      <label>Übergeordneter Verweis</label>
+      <description>Verweis auf einen übergeordneten Datensatz.</description>
     </entry>
     <entry>
       <code>partOfSeamlessDatabase</code>
-      <label>Partie d'une même base de données</label>
-      <description>Référence à un jeu de données stocké dans une même base de
-        données
-      </description>
+      <label>Teil derselben Datenbank</label>
+      <description>Verweis auf einen Datensatz, der in derselben Datenbank gespeichert ist.</description>
     </entry>
     <entry>
       <code>source</code>
-      <label>Source</label>
-      <description>Références vers la source des données qui a permis de
-        produire les cartes,…
-      </description>
+      <label>Quelle</label>
+      <description>Verweise auf die Quelle der Daten, die zur Erstellung der Karten verwendet wurden.</description>
     </entry>
     <entry>
       <code>stereoMate</code>
-      <label>Stéréo restitution</label>
-      <description>Partie d’un ensemble d’images qui, utilisé ensemble, fournit
-        une vision 3D de l’image.
-      </description>
+      <label>Stereo-Auswertung</label>
+      <description>Teil eines Bildsatzes, der zusammen verwendet eine 3D-Ansicht des Bildes liefert.</description>
     </entry>
     <entry>
       <code>isComposedOf</code>
-      <label>Est composé de</label>
-      <description>Référence à des ressources qui font partie de cette
-        ressource
-      </description>
+      <label>Besteht aus</label>
+      <description>Verweis auf Ressourcen, die Teil dieser Ressource sind.</description>
     </entry>
     <entry>
       <code>collectiveTitle</code>
-      <label>Titre commun</label>
-      <description>titre commun donné à une collecte de ressources NOTE Le titre
-        identifie les éléments d’une série collectivement, associés à des
-        informations concernant les volumes qui sont disponibles au niveau du
-        site de la source.
-      </description>
+      <label>Sammelbezeichnung</label>
+      <description>Sammelbezeichnung für eine Ressourcensammlung. Der Titel identifiziert die Elemente einer Serie gemeinsam, zusammen mit Informationen über die verfügbaren Bände am Quellstandort.</description>
     </entry>
     <entry>
       <code>series</code>
-      <label>Séries</label>
-      <description>Associée par un héritage commun, tel que celui créé pour une
-        spécification produit commune
-      </description>
+      <label>Serien</label>
+      <description>Verbunden durch eine gemeinsame Herkunft, wie sie für eine gemeinsame Produktspezifikation geschaffen wurde.</description>
     </entry>
     <entry>
       <code>dependency</code>
-      <label>Dépendance</label>
-      <description>Associé par l’intermédiaire d’une dépendance</description>
+      <label>Abhängigkeit</label>
+      <description>Verbunden durch eine Abhängigkeit.</description>
     </entry>
     <entry>
       <code>revisionOf</code>
-      <label>Révision de</label>
-      <description>La ressource est une révision de la ressource associée
-      </description>
+      <label>Überarbeitung von</label>
+      <description>Die Ressource ist eine Überarbeitung der zugehörigen Ressource.</description>
     </entry>
   </codelist>
   <codelist name="mri:DS_InitiativeTypeCode" alias="initiativeType">
     <entry>
       <code>campaign</code>
-      <label>Campagne</label>
-      <description>Séries d’actions planifiées</description>
+      <label>Kampagne</label>
+      <description>Reihe geplanter Aktionen.</description>
     </entry>
     <entry>
       <code>collection</code>
-      <label>Collection</label>
-      <description>Accumulation de données dans un but précis</description>
+      <label>Sammlung</label>
+      <description>Datensammlung zu einem bestimmten Zweck.</description>
     </entry>
     <entry>
       <code>exercise</code>
-      <label>Exercice</label>
-      <description>Action spécifique répondant à une ou des fonctions
-      </description>
+      <label>Übung</label>
+      <description>Spezifische Aktion, die einer oder mehreren Funktionen dient.</description>
     </entry>
     <entry>
       <code>experiment</code>
-      <label>Expérimentation</label>
-      <description>Recherche pour vérifier si une hypothèse est valide
-      </description>
+      <label>Experiment</label>
+      <description>Forschung zur Überprüfung einer Hypothese.</description>
     </entry>
     <entry>
       <code>investigation</code>
-      <label>Investigation</label>
-      <description>Recherche systématique</description>
+      <label>Untersuchung</label>
+      <description>Systematische Forschung.</description>
     </entry>
     <entry>
       <code>mission</code>
       <label>Mission</label>
-      <description>Spécifique opération d’une collecte de données</description>
+      <description>Spezifische Datensammlung.</description>
     </entry>
     <entry>
       <code>sensor</code>
-      <label>Capteur</label>
-      <description>Part d’un équipement qui détecte une information
-      </description>
+      <label>Sensor</label>
+      <description>Teil einer Ausrüstung, die eine Information erkennt.</description>
     </entry>
     <entry>
       <code>operation</code>
-      <label>Opération</label>
-      <description>Action qui est une partie d’une série d’action</description>
+      <label>Operation</label>
+      <description>Aktion, die Teil einer Aktionsreihe ist.</description>
     </entry>
     <entry>
       <code>platform</code>
-      <label>Plate-forme</label>
-      <description>Véhicule ou autre support supportant un capteur</description>
+      <label>Plattform</label>
+      <description>Fahrzeug oder andere Plattform, die einen Sensor trägt.</description>
     </entry>
     <entry>
       <code>process</code>
-      <label>Processus</label>
-      <description>Méthode pour faire quelque chose</description>
+      <label>Prozess</label>
+      <description>Methode, um etwas zu tun.</description>
     </entry>
     <entry>
       <code>program</code>
-      <label>Programme</label>
-      <description>Action spécifiquement planifiée</description>
+      <label>Programm</label>
+      <description>Spezifisch geplante Aktion.</description>
     </entry>
     <entry>
       <code>project</code>
-      <label>Projet</label>
-      <description>Recherche ou développement organisé</description>
+      <label>Projekt</label>
+      <description>Organisierte Forschung oder Entwicklung.</description>
     </entry>
     <entry>
       <code>study</code>
-      <label>Etude</label>
-      <description>Investigation</description>
+      <label>Studie</label>
+      <description>Untersuchung.</description>
     </entry>
     <entry>
       <code>task</code>
-      <label>Tâche</label>
-      <description>Partie d'un travail</description>
+      <label>Aufgabe</label>
+      <description>Teil einer Arbeit.</description>
     </entry>
     <entry>
       <code>trial</code>
-      <label>Essai</label>
-      <description>Processus visant à tester ou démontrer quelque chose
-      </description>
+      <label>Versuch</label>
+      <description>Prozess zum Testen oder Demonstrieren von etwas.</description>
     </entry>
   </codelist>
   <codelist name="gfc:FC_RoleType">
     <entry>
       <code>ordinary</code>
-      <label>Ordinary</label>
-      <description>Indicates an ordinary association.</description>
+      <label>Normal</label>
+      <description>Bezeichnet eine normale Beziehung.</description>
     </entry>
     <entry>
       <code>aggregation</code>
       <label>Aggregation</label>
-      <description>Indicates a UML aggregation (part role).</description>
+      <description>Bezeichnet eine UML-Aggregation (Teilrolle).</description>
     </entry>
     <entry>
       <code>composition</code>
-      <label>Composition</label>
-      <description>Indicates a UML composition (part role).</description>
+      <label>Komposition</label>
+      <description>Bezeichnet eine UML-Komposition (Teilrolle).</description>
     </entry>
   </codelist>
   <codelist name="mco:MD_ClassificationCode">
     <entry>
       <code>unclassified</code>
-      <label>Non classifié</label>
-      <description>La ressource ne revêt pas un caractère sensible</description>
+      <label>Nicht klassifiziert</label>
+      <description>Die Ressource ist nicht sensibel.</description>
     </entry>
     <entry>
       <code>restricted</code>
-      <label>Restreint</label>
-      <description>Le caractère sensible de la ressource restreint son
-        utilisation ou sa diffusion
-      </description>
+      <label>Eingeschränkt</label>
+      <description>Die Sensibilität der Ressource schränkt ihre Nutzung oder Verbreitung ein.</description>
     </entry>
     <entry>
       <code>confidential</code>
-      <label>Confidentiel</label>
-      <description>La ressource présente un caractère confidentiel.
-      </description>
+      <label>Vertraulich</label>
+      <description>Die Ressource ist vertraulich.</description>
     </entry>
     <entry>
       <code>secret</code>
-      <label>Secret</label>
-      <description>La confidentialité de la ressource implique des mesures de
-        protection particulière
-      </description>
+      <label>Geheim</label>
+      <description>Die Vertraulichkeit der Ressource erfordert besondere Schutzmaßnahmen.</description>
     </entry>
     <entry>
       <code>topSecret</code>
-      <label>Top secret</label>
-      <description>La confidentialité de la ressource implique des mesures de
-        protection extrêmes
-      </description>
+      <label>Streng geheim</label>
+      <description>Die Vertraulichkeit der Ressource erfordert höchste Schutzmaßnahmen.</description>
     </entry>
     <entry>
       <code>SBU</code>
-      <label>Sensible mais non classé</label>
-      <description>Bien que non classé, exige un strict contrôle concernant sa
-        divulgation
-      </description>
+      <label>Sensibel aber nicht klassifiziert</label>
+      <description>Obwohl nicht klassifiziert, ist eine strenge Kontrolle der Offenlegung erforderlich.</description>
     </entry>
     <entry>
       <code>forOfficialUseOnly</code>
-      <label>Pour utilisation officielle uniquement</label>
-      <description>Informations non classées qui doivent être utilisées
-        uniquement à des fins officielles déterminées par l’organisme compétent
-      </description>
+      <label>Nur für den amtlichen Gebrauch</label>
+      <description>Nicht klassifizierte Informationen, die nur für offizielle Zwecke verwendet werden dürfen, wie von der zuständigen Stelle bestimmt.</description>
     </entry>
     <entry>
       <code>protected</code>
-      <label>Protégé</label>
-      <description>Informations dont la violation pourrait entraîner des
-        dommages
-      </description>
+      <label>Geschützt</label>
+      <description>Informationen, deren Verletzung zu Schäden führen könnte.</description>
     </entry>
     <entry>
       <code>limitedDistribution</code>
-      <label>Diffusion restreinte</label>
-      <description>Diffusion limitée par l’organisme compétent</description>
+      <label>Beschränkte Verteilung</label>
+      <description>Verteilung nur durch die zuständige Stelle.</description>
     </entry>
 
   </codelist>
   <codelist name="mrc:MD_CoverageContentTypeCode">
     <entry>
       <code>image</code>
-      <label>Image</label>
-      <description>Représentation numérique significative d’un paramètre
-        physique qui n’est pas la valeur réelle du paramètre physique
-      </description>
+      <label>Bild</label>
+      <description>Digitale Darstellung eines physikalischen Parameters, der nicht der tatsächliche Wert des Parameters ist.</description>
     </entry>
     <entry>
       <code>thematicClassification</code>
-      <label>Classification thématique</label>
-      <description>Valeur de code n’ayant aucune signification quantitative,
-        utilisée pour représenter une valeur physique
-      </description>
+      <label>Thematische Klassifikation</label>
+      <description>Kodierter Wert ohne quantitative Bedeutung, verwendet zur Darstellung eines physikalischen Wertes.</description>
     </entry>
     <entry>
       <code>physicalMeasurement</code>
-      <label>Mesure physique</label>
-      <description>Valeur en unités physiques de la quantité qui est mesurée
-      </description>
+      <label>Physikalische Messung</label>
+      <description>Wert in physikalischen Einheiten der gemessenen Größe.</description>
     </entry>
     <entry>
       <code>auxillaryInformation</code>
-      <label>Informations auxiliaires</label>
-      <description>Données, habituellement une mesure physique, utiliséespour
-        prendre en charge le calcul des couvertures principales
-        physicalMeasurement dans le jeu de données EXEMPLE Grille d’une
-        épaisseur optique d’aérosol utilisée dans le calcul d’un contenu de
-        température de surface au niveau de la mer.
-      </description>
+      <label>Zusatzinformation</label>
+      <description>Daten, meist eine physikalische Messung, die zur Unterstützung der Berechnung der Hauptabdeckungen verwendet werden. Beispiel: Gitter einer Aerosol-Optikdicke zur Berechnung eines Oberflächentemperaturinhalts auf Meereshöhe.</description>
     </entry>
     <entry>
       <code>qualityInformation</code>
-      <label>Informations sur la qualité</label>
-      <description>Données utilisées pour caractériser la qualité des
-        couvertures physicalMeasurement dans le jeu de données. NOTE Comprises
-        en général dans un attribut gmi:QE_CoverageResult.
-      </description>
+      <label>Qualitätsinformation</label>
+      <description>Daten zur Charakterisierung der Qualität der physicalMeasurement-Abdeckungen im Datensatz. Hinweis: In der Regel in einem Attribut gmi:QE_CoverageResult enthalten.</description>
     </entry>
     <entry>
       <code>referenceInformation</code>
-      <label>Informations de référence</label>
-      <description>informations de référence utilisées pour prendre en charge le
-        calcul ou l’utilisation des couvertures physical- Measurement dans le
-        jeu de données. EXEMPLE Grilles de latitude/longitude utilisées pour
-        géolocaliser les mesurages physiques.
-      </description>
+      <label>Referenzinformation</label>
+      <description>Referenzinformationen zur Unterstützung der Berechnung oder Nutzung der physicalMeasurement-Abdeckungen im Datensatz. Beispiel: Gitter von Breiten-/Längengraden zur Geolokalisierung physikalischer Messungen.</description>
     </entry>
     <entry>
       <code>modelResult</code>
-      <label>Résultat du modèle</label>
-      <description>Ressources présentant des valeurs qui sont calculées à l’aide
-        d’un modèle plutôt qu’en étant observées ou calculées à partir
-        d’observations
-      </description>
+      <label>Modellergebnis</label>
+      <description>Ressourcen mit Werten, die mit einem Modell berechnet wurden, statt durch Beobachtung oder aus Beobachtungen berechnet zu werden.</description>
     </entry>
     <entry>
       <code>coordinate</code>
-      <label>Coordonnée</label>
-      <description>Données utilisées pour fournir les valeurs de l’axe de
-        coordonnées
-      </description>
+      <label>Koordinate</label>
+      <description>Daten zur Bereitstellung der Werte der Koordinatenachse.</description>
     </entry>
   </codelist>
   <codelist name="mex:MD_DatatypeCode">
     <entry>
       <code>class</code>
-      <label>Classe</label>
-      <description>Description d’un ensemble d’objet qui ont les mêmes
-        attributs, méthodes …
-      </description>
+      <label>Klasse</label>
+      <description>Beschreibung einer Menge von Objekten mit denselben Attributen, Methoden usw.</description>
     </entry>
     <entry>
       <code>codelist</code>
-      <label>Liste de codes</label>
-      <description>Enumération modifiable, utilisée pour exprimée une liste de
-        valeurs extensible
-      </description>
+      <label>Code-Liste</label>
+      <description>Bearbeitbare Aufzählung, verwendet um eine erweiterbare Liste von Werten auszudrücken</description>
     </entry>
     <entry>
       <code>enumeration</code>
-      <label>Enumération</label>
-      <description>Enumération, utilisée pour exprimée une liste de valeurs non
-        extensible
-      </description>
+      <label>Aufzählung</label>
+      <description>Aufzählung, verwendet um eine nicht erweiterbare Liste von Werten auszudrücken</description>
     </entry>
     <entry>
       <code>codelistElement</code>
-      <label>Elément d'une liste de codes</label>
-      <description>Valeur possible pour une liste de codes</description>
+      <label>Element einer Code-Liste</label>
+      <description>Möglicher Wert für eine Code-Liste</description>
     </entry>
     <entry>
       <code>abstractClass</code>
-      <label>Classe abstraite</label>
-      <description>Classe qui ne peut être directement instancée</description>
+      <label>Abstrakte Klasse</label>
+      <description>Klasse, die nicht direkt instanziiert werden kann</description>
     </entry>
     <entry>
       <code>aggregateClass</code>
-      <label>Classe agrégée</label>
-      <description>Classe qui est composé d’un ensemble de classes connecté par
-        une relation de type Agrégation.
-      </description>
+      <label>Aggregierte Klasse</label>
+      <description>Klasse, die aus einer Reihe von Klassen besteht, die durch eine Aggregationsbeziehung verbunden sind</description>
     </entry>
     <entry>
       <code>specifiedClass</code>
-      <label>Classe spécifique</label>
-      <description>Classe qui peut être substituée à une classe de niveau
-        supérieur
-      </description>
+      <label>Spezifische Klasse</label>
+      <description>Klasse, die für eine höhere Ebene Klasse ersetzt werden kann</description>
     </entry>
     <entry>
       <code>datatypeClass</code>
-      <label>Classe de type de donnée</label>
-      <description>Classe avec peu ou aucune opération dont le rôle est de gérer
-        l’état d’une autre classe pour les informations relevant de la
-        transmission, le stockage, l’encodage ou la persistance.
-      </description>
+      <label>Datentyp-Klasse</label>
+      <description>Klasse mit wenigen oder keinen Operationen, deren Rolle darin besteht, den Zustand einer anderen Klasse für Informationen im Zusammenhang mit Übertragung, Speicherung, Kodierung oder Persistenz zu verwalten</description>
     </entry>
     <entry>
       <code>interfaceClass</code>
-      <label>Classe d'interface</label>
-      <description>Noms des opérations qui caractérisent le comportement d’une
-        ressource
-      </description>
+      <label>Interface-Klasse</label>
+      <description>Namen der Operationen, die das Verhalten einer Ressource charakterisieren</description>
     </entry>
     <entry>
       <code>unionClass</code>
-      <label>Classe d'union</label>
-      <description>Classe décrivant une sélection d’un type spécifique
-      </description>
+      <label>Union-Klasse</label>
+      <description>Klasse, die eine Auswahl eines spezifischen Typs beschreibt</description>
     </entry>
     <entry>
       <code>metaClass</code>
-      <label>Méta-classe</label>
-      <description>Classe dont les instances sont des classes</description>
+      <label>Metaklasse</label>
+      <description>Klasse, deren Instanzen Klassen sind</description>
     </entry>
     <entry>
       <code>typeClass</code>
-      <label>Type de classe</label>
-      <description>Classe utilisée pour spécifier un domaine d’instance (objet)
-        en relation avec les opérations applicables à ces objets. Un type peut
-        avoir des attributs et des associations
-      </description>
+      <label>Klassentyp</label>
+      <description>Klasse, die verwendet wird, um eine Instanzdomäne (Objekt) in Bezug auf die anwendbaren Operationen für diese Objekte zu spezifizieren. Ein Typ kann Attribute und Assoziationen haben</description>
     </entry>
     <entry>
       <code>characterString</code>
-      <label>Chaîne de caractères</label>
-      <description>Texte libre</description>
+      <label>Zeichenkette</label>
+      <description>Freitext</description>
     </entry>
     <entry>
       <code>integer</code>
-      <label>Entier</label>
-      <description>Champ numérique</description>
+      <label>Ganzzahl</label>
+      <description>Numerisches Feld</description>
     </entry>
     <entry>
       <code>association</code>
-      <label>Association</label>
-      <description>Relation entre deux classes</description>
+      <label>Assoziation</label>
+      <description>Beziehung zwischen zwei Klassen</description>
     </entry>
   </codelist>
   <codelist name="msr:MD_DimensionNameTypeCode">
     <entry>
       <code>row</code>
-      <label>Axe - Y</label>
-      <description>Axe des ordonnées (axe - Y)</description>
+      <label>Y-Achse</label>
+      <description>Achse der Ordinate (Y-Achse)</description>
     </entry>
     <entry>
       <code>column</code>
-      <label>Axe - X</label>
-      <description>Axe des abscisses (axe X)</description>
+      <label>X-Achse</label>
+      <description>Achse der Abszisse (X-Achse)</description>
     </entry>
     <entry>
       <code>vertical</code>
-      <label>Axe - Z</label>
-      <description>Axe vertical (axe Z)</description>
+      <label>Z-Achse</label>
+      <description>Vertikale Achse (Z-Achse)</description>
     </entry>
     <entry>
       <code>track</code>
-      <label>Trajectoire</label>
-      <description>Suivant la direction de déplacement du point de balayage
-      </description>
+      <label>Spur</label>
+      <description>Entlang der Bewegungsrichtung des Abtastpunkts</description>
     </entry>
     <entry>
       <code>crossTrack</code>
-      <label>Trajectoire croisée</label>
-      <description>Perpendiculaire à la direction de déplacement du point de
-        balayage.
-      </description>
+      <label>Kreuzspur</label>
+      <description>Senkrecht zur Bewegungsrichtung des Abtastpunkts</description>
     </entry>
     <entry>
       <code>line</code>
-      <label>Ligne</label>
-      <description>Ligne de balayage d’un capteur</description>
+      <label>Linie</label>
+      <description>Abtastlinie eines Sensors</description>
     </entry>
     <entry>
       <code>sample</code>
-      <label>Echantillon</label>
-      <description>Elément le long d'une ligne de balayage</description>
+      <label>Stichprobe</label>
+      <description>Element entlang einer Abtastlinie</description>
     </entry>
     <entry>
       <code>time</code>
-      <label>Temps</label>
-      <description>Durée</description>
-    </entry>
-  </codelist>
-  <codelist name="msr:MD_GeometricObjectTypeCode">
-    <entry>
-      <code>complex</code>
-      <label>Complexe</label>
-      <description>Ensemble de primitives géométriques représentées comme
-        l'union d'autres primitives
-      </description>
-    </entry>
-    <entry>
-      <code>composite</code>
-      <label>Composite</label>
-      <description>Ensemble de lignes connectées entre elles</description>
-    </entry>
-    <entry>
-      <code>curve</code>
-      <label>Ligne</label>
-      <description>Primitive géométrique à une dimension représentant une image
-        continue d'une ligne
-      </description>
-    </entry>
-    <entry>
-      <code>point</code>
-      <label>Point</label>
-      <description>Primitive géométrique à zéro dimension représentant une
-        position sans étendue
-      </description>
-    </entry>
-    <entry>
-      <code>solid</code>
-      <label>Volume</label>
-      <description>Primitive géométrique à trois dimensions représentant un
-        volume (définition à revoir)
-      </description>
-    </entry>
-    <entry>
-      <code>surface</code>
-      <label>Polygone</label>
-      <description>Primitive géométrique à deux dimensions représentant une
-        surface
-      </description>
-    </entry>
-  </codelist>
-  <codelist name="mrc:MD_ImagingConditionCode">
-    <entry>
-      <code>blurredImage</code>
-      <label>Flou</label>
-      <description>Portion de l’image floue</description>
-    </entry>
-    <entry>
-      <code>cloud</code>
-      <label>Nuage</label>
-      <description>Portion de l’image partiellement occultée par des nuages
-      </description>
-    </entry>
-    <entry>
-      <code>degradingObliquity</code>
-      <label>Dégradation oblique</label>
-      <description>Due à l’angle entre le plan de l’écliptique et le plan
-        équatorial
-      </description>
-    </entry>
-    <entry>
-      <code>fog</code>
-      <label>Brouillard</label>
-      <description>Portion de l’image partiellement occultée par du brouillard
-      </description>
-    </entry>
-    <entry>
-      <code>heavySmokeOrDust</code>
-      <label>Fumée et poussière</label>
-      <description>Portion de l’image partiellement occultée des fumées ou des
-        poussières
-      </description>
-    </entry>
-    <entry>
-      <code>night</code>
-      <label>Nuit</label>
-      <description>Image prise la nuit</description>
-    </entry>
-    <entry>
-      <code>rain</code>
-      <label>Pluie</label>
-      <description>Image prise durant la pluie</description>
-    </entry>
-    <entry>
-      <code>semiDarkness</code>
-      <label>Semi obscurité</label>
-      <description>Image prise pendant une semi obscurité</description>
-    </entry>
-    <entry>
-      <code>shadow</code>
-      <label>Ombre</label>
-      <description>Image obscurcie par une ombre</description>
-    </entry>
-    <entry>
-      <code>snow</code>
-      <label>Neige</label>
-      <description>Image obscurcie par la neige</description>
-    </entry>
-    <entry>
-      <code>terrainMasking</code>
-      <label>Terrain masqué</label>
-      <description>Absence de données en raison des caractéristiques
-        topographiques qui masquent les informations recherchées
-      </description>
+      <label>Zeit</label>
+      <description>Dauer</description>
     </entry>
   </codelist>
   <codelist name="mri:MD_KeywordTypeCode">
     <entry>
       <code>discipline</code>
-      <label>Discipline</label>
-      <description>Mot-clé en relation avec une branche de la connaissance
-      </description>
+      <label>Fachgebiet</label>
+      <description>Schlüsselwort im Zusammenhang mit einem Wissenszweig</description>
     </entry>
     <entry>
       <code>place</code>
-      <label>Localisation</label>
-      <description>Mot-clé identifiant un lieu</description>
+      <label>Ort</label>
+      <description>Schlüsselwort, das einen Ort identifiziert</description>
     </entry>
     <entry>
       <code>stratum</code>
-      <label>Strate</label>
-      <description>Couche géologique</description>
+      <label>Schicht</label>
+      <description>Geologische Schicht</description>
     </entry>
     <entry>
       <code>temporal</code>
-      <label>Temps</label>
-      <description>Mot clef identifiant une période de temps</description>
+      <label>Zeitlich</label>
+      <description>Schlüsselwort, das einen Zeitraum identifiziert</description>
     </entry>
     <entry>
       <code>theme</code>
-      <label>Thème</label>
-      <description>Mot-clé identifiant un sujet particulier</description>
+      <label>Thema</label>
+      <description>Schlüsselwort, das ein bestimmtes Thema identifiziert</description>
     </entry>
     <entry>
       <code>dataCentre</code>
-      <label>Centre de données</label>
-      <description>Mot clé qui identifie un dépôt de données ou une archive qui
-        gère et répartit des données
-      </description>
+      <label>Datenzentrum</label>
+      <description>Schlüsselwort, das ein Datenarchiv oder eine Datenbank identifiziert, die Daten verwaltet und verteilt</description>
     </entry>
     <entry>
       <code>featureType</code>
-      <label>Type d’entité</label>
-      <description>Mot clé qui identifie une ressource contenant ou concernant
-        une collecte d’instances d’entités ayant des caractéristiques communes
-      </description>
+      <label>Entitätstyp</label>
+      <description>Schlüsselwort, das eine Ressource mit einer Sammlung von Entitäten mit gemeinsamen Merkmalen identifiziert</description>
     </entry>
     <entry>
       <code>instrument</code>
       <label>Instrument</label>
-      <description>Mot clé qui identifie un dispositif utilisé pour mesurer ou
-        comparer des propriétés physiques
-      </description>
+      <description>Schlüsselwort, das ein Gerät zur Messung oder zum Vergleich physikalischer Eigenschaften identifiziert</description>
     </entry>
     <entry>
       <code>platform</code>
-      <label>Plateforme</label>
-      <description>Mot clé qui identifie une structure sur laquelle un
-        instrument est monté
-      </description>
+      <label>Plattform</label>
+      <description>Schlüsselwort, das eine Struktur identifiziert, auf der ein Instrument montiert ist</description>
     </entry>
     <entry>
       <code>process</code>
-      <label>Procédé</label>
-      <description>Mot clé qui identifie une série d’actions ou des occurrences
-        naturelles
-      </description>
+      <label>Prozess</label>
+      <description>Schlüsselwort, das eine Reihe von Aktionen oder natürlichen Vorkommnissen identifiziert</description>
     </entry>
     <entry>
       <code>project</code>
-      <label>Project</label>
-      <description>Mot clé qui identifie une tentative entreprise dans le but de
-        créer ou modifier un produit ou un service
-      </description>
+      <label>Projekt</label>
+      <description>Schlüsselwort, das einen Versuch zur Erstellung oder Änderung eines Produkts oder einer Dienstleistung identifiziert</description>
     </entry>
     <entry>
       <code>service</code>
-      <label>Service</label>
-      <description>Mot clé qui identifie une activité exécutée par une partie
-        pour le compte d’une autre
-      </description>
+      <label>Dienst</label>
+      <description>Schlüsselwort, das eine von einer Partei für eine andere ausgeführte Aktivität identifiziert</description>
     </entry>
     <entry>
       <code>product</code>
-      <label>Produit</label>
-      <description>Mot clé qui identifie un type de produit</description>
+      <label>Produkt</label>
+      <description>Schlüsselwort, das einen Produkttyp identifiziert</description>
     </entry>
     <entry>
       <code>subTopicCategory</code>
-      <label>Catégorie de sous-thème</label>
-      <description>Perfectionnement d’une catégorie de sujets pour les besoins
-        d’une classification de données géographiques
-      </description>
+      <label>Unterthemenkategorie</label>
+      <description>Verfeinerung einer Themenkategorie für die Klassifizierung geografischer Daten</description>
     </entry>
     <entry>
       <code>taxon</code>
       <label>Taxon</label>
-      <description>Mot clé qui identifie une taxinomie de la ressource
-      </description>
+      <description>Schlüsselwort, das eine Taxonomie der Ressource identifiziert</description>
     </entry>
   </codelist>
   <codelist name="mmi:MD_MaintenanceFrequencyCode">
     <entry>
       <code>continual</code>
-      <label>Continue</label>
-      <description>Mise à jour continue</description>
+      <label>Kontinuierlich</label>
+      <description>Kontinuierliche Aktualisierung</description>
     </entry>
     <entry>
       <code>daily</code>
-      <label>Journalière</label>
-      <description>Mise à jour quotidienne</description>
+      <label>Täglich</label>
+      <description>Tägliche Aktualisierung</description>
     </entry>
     <entry>
       <code>weekly</code>
-      <label>Hebdomadaire</label>
-      <description>Mise à jour hebdomadaire</description>
+      <label>Wöchentlich</label>
+      <description>Wöchentliche Aktualisierung</description>
     </entry>
     <entry>
       <code>fortnightly</code>
-      <label>Bi-mensuelle</label>
-      <description>Mise à jour 2 fois par mois</description>
+      <label>Zweimal monatlich</label>
+      <description>Aktualisierung 2 mal pro Monat</description>
     </entry>
     <entry>
       <code>monthly</code>
-      <label>Mensuelle</label>
-      <description>Mise à jour mensuelle</description>
+      <label>Monatlich</label>
+      <description>Monatliche Aktualisierung</description>
     </entry>
     <entry>
       <code>quarterly</code>
-      <label>Trimestrielle</label>
-      <description>Mise à jour trimestrielle</description>
+      <label>Vierteljährlich</label>
+      <description>Vierteljährliche Aktualisierung</description>
     </entry>
     <entry>
       <code>biannually</code>
-      <label>Bi-annuelle</label>
-      <description>Mise à jour bi-annuelle</description>
+      <label>Halbjährlich</label>
+      <description>Halbjährliche Aktualisierung</description>
     </entry>
     <entry>
       <code>annually</code>
-      <label>Annuelle</label>
-      <description>Mise à jour annuelle</description>
+      <label>Jährlich</label>
+      <description>Jährliche Aktualisierung</description>
     </entry>
     <entry>
       <code>asNeeded</code>
-      <label>Lorsque nécessaire</label>
-      <description>Mise à jour lorsque cela est jugé nécessaire</description>
+      <label>Bei Bedarf</label>
+      <description>Aktualisierung wenn notwendig erachtet</description>
     </entry>
     <entry>
       <code>irregular</code>
-      <label>Irrégulière</label>
-      <description>Mise à jour irrégulière</description>
+      <label>Unregelmäßig</label>
+      <description>Unregelmäßige Aktualisierung</description>
     </entry>
     <entry>
       <code>notPlanned</code>
-      <label>Non planifiée</label>
-      <description>Mise à jour non planifiée</description>
+      <label>Nicht geplant</label>
+      <description>Nicht geplante Aktualisierung</description>
     </entry>
     <entry>
       <code>unknown</code>
-      <label>Inconnue</label>
-      <description>Mise à jour inconnue</description>
+      <label>Unbekannt</label>
+      <description>Unbekannte Aktualisierung</description>
     </entry>
     <!-- ISO PROFIL CHE ONLY
 		<entry>
@@ -1200,770 +926,748 @@
 		</entry>-->
     <entry>
       <code>periodic</code>
-      <label>Periodique</label>
-      <description>La ressource est mise à jour à des intervalles réguliers
-      </description>
+      <label>Periodisch</label>
+      <description>Die Ressource wird in regelmäßigen Abständen aktualisiert</description>
     </entry>
     <entry>
       <code>semimonthly</code>
-      <label>Bimensuelle</label>
-      <description>La ressource est mise à jour deux fois par mois</description>
+      <label>Zweimal monatlich</label>
+      <description>Die Ressource wird zweimal pro Monat aktualisiert</description>
     </entry>
     <entry>
       <code>biennially</code>
-      <label>Biennale</label>
-      <description>La ressource est mise à jour tous les deux ans</description>
+      <label>Zweijährlich</label>
+      <description>Die Ressource wird alle zwei Jahre aktualisiert</description>
     </entry>
   </codelist>
   <codelist name="mrd:MD_MediumFormatCode">
     <entry>
       <code>cpio</code>
       <label>Cpio</label>
-      <description>Copie en entrée /sortie (commande et fichier au format UNIX)
-      </description>
+      <description>Eingabe-/Ausgabekopie (Befehl und Datei im UNIX-Format)</description>
     </entry>
     <entry>
       <code>tar</code>
       <label>Tar</label>
-      <description>Format d’archivage sur bande</description>
+      <description>Bandarchivierungsformat</description>
     </entry>
     <entry>
       <code>highSierra</code>
       <label>High Sierra</label>
-      <description>Système de fichiers High Sierra</description>
+      <description>High Sierra-Dateisystem</description>
     </entry>
     <entry>
       <code>iso9660</code>
       <label>Iso9660</label>
-      <description>Système de fichier CD – ROM</description>
+      <description>CD-ROM-Dateisystem</description>
     </entry>
     <entry>
       <code>iso9660RockRidge</code>
       <label>Iso9660RockRidge</label>
-      <description>Protocole d’échange Rock Ridge (UNIX)</description>
+      <description>Rock Ridge-Austauschprotokoll (UNIX)</description>
     </entry>
     <entry>
       <code>iso9660AppleHFS</code>
       <label>Iso9660AppleHFS</label>
-      <description>Système hiérarchique de fichiers (Macintosh)</description>
+      <description>Hierarchisches Dateisystem (Macintosh)</description>
     </entry>
     <entry>
       <code>udf</code>
       <label>UDF</label>
-      <description>Format de disque universel</description>
+      <description>Universelles Diskformat</description>
     </entry>
   </codelist>
   <codelist name="mex:MD_ObligationCode">
     <entry>
       <code>mandatory</code>
-      <label>Obligatoire</label>
-      <description>Obligatoire</description>
+      <label>Verpflichtend</label>
+      <description>Verpflichtend</description>
     </entry>
     <entry>
       <code>optional</code>
-      <label>Optionnel</label>
-      <description>Optionnel</description>
+      <label>Optional</label>
+      <description>Optional</description>
     </entry>
     <entry>
       <code>conditional</code>
-      <label>Conditionnel</label>
-      <description>Conditionnel</description>
+      <label>Bedingt</label>
+      <description>Bedingt</description>
     </entry>
   </codelist>
   <codelist name="msr:MD_PixelOrientationCode">
     <entry>
       <code>center</code>
-      <label>Centre</label>
-      <description>Point intermédiaire entre la partie gauche inférieure et la
-        partie droite supérieure du pixel
-      </description>
+      <label>Zentrum</label>
+      <description>Punkt zwischen der linken unteren und der rechten oberen Ecke des Pixels</description>
     </entry>
     <entry>
       <code>lowerLeft</code>
-      <label>Bas gauche</label>
-      <description>Coin dans le pixel le plus proche de l’origine du systèm SRS;
-        si deux pixels se trouvent à la même distance de l’origine, celui ayant
-        la plus petite valeur suivant l’axe des x
-      </description>
+      <label>Unten links</label>
+      <description>Ecke im Pixel, die dem Ursprung des SRS am nächsten liegt; wenn zwei Pixel gleich weit vom Ursprung entfernt sind, die mit dem kleineren x-Wert</description>
     </entry>
     <entry>
       <code>lowerRight</code>
-      <label>Bas droit</label>
-      <description>Coin suivant dans le sens inverse des aiguilles d’une montre
-        à partir de la partie gauche inférieure
-      </description>
+      <label>Unten rechts</label>
+      <description>Nächste Ecke gegen den Uhrzeigersinn von der linken unteren Ecke aus</description>
     </entry>
     <entry>
       <code>upperRight</code>
-      <label>Haut droit</label>
-      <description>Coin suivant dans le sens inverse des aiguilles d’une montre
-        à partir de la partie droite inférieure
-      </description>
+      <label>Oben rechts</label>
+      <description>Nächste Ecke gegen den Uhrzeigersinn von der rechten unteren Ecke aus</description>
     </entry>
     <entry>
       <code>upperLeft</code>
-      <label>Haut gauche</label>
-      <description>Coin suivant dans le sens inverse des aiguilles d’une montre
-        à partir de la partie droite supérieure
-      </description>
+      <label>Oben links</label>
+      <description>Nächste Ecke gegen den Uhrzeigersinn von der rechten oberen Ecke aus</description>
     </entry>
   </codelist>
   <codelist name="mcc:MD_ProgressCode">
     <entry>
       <code>completed</code>
-      <label>Finalisé</label>
-      <description>Production de la ressource finalisée</description>
+      <label>Abgeschlossen</label>
+      <description>Fertige Ressource.</description>
     </entry>
     <entry>
       <code>historicalArchive</code>
-      <label>Archivé</label>
-      <description>Ressource archivée hors ligne</description>
+      <label>Archiviert</label>
+      <description>Ressource offline archiviert.</description>
     </entry>
     <entry>
       <code>obsolete</code>
-      <label>Obsolète</label>
-      <description>Ressource obsolète</description>
+      <label>Veraltet</label>
+      <description>Veraltete Ressource.</description>
     </entry>
     <entry>
       <code>onGoing</code>
-      <label>Mis à jour continue</label>
-      <description>Ressource continuellement mise à jour</description>
+      <label>Laufend aktualisiert</label>
+      <description>Ressource wird kontinuierlich aktualisiert.</description>
     </entry>
     <entry>
       <code>planned</code>
-      <label>Planifié</label>
-      <description>Ressource créée ou mise à jour sur base d'une date fixée
-      </description>
+      <label>Geplant</label>
+      <description>Ressource wird zu einem festgelegten Datum erstellt oder aktualisiert.</description>
     </entry>
     <entry>
       <code>required</code>
-      <label>Création ou mise à jour requise</label>
-      <description>Ressource qui doit être générée ou mise à jour</description>
+      <label>Erstellung oder Aktualisierung erforderlich</label>
+      <description>Ressource muss erstellt oder aktualisiert werden.</description>
     </entry>
     <entry>
       <code>underDevelopment</code>
-      <label>En cours de création</label>
-      <description>Ressource en cours de création</description>
+      <label>In Entwicklung</label>
+      <description>Ressource wird erstellt.</description>
     </entry>
     <entry>
       <code>final</code>
       <label>Final</label>
-      <description>Progression conclue et aucun changement ne sera accepté
-      </description>
+      <description>Abgeschlossener Fortschritt, keine weiteren Änderungen werden akzeptiert.</description>
     </entry>
     <entry>
       <code>pending</code>
-      <label>En attente</label>
-      <description>Engagé mais pas encore traité</description>
+      <label>Ausstehend</label>
+      <description>Beauftragt, aber noch nicht bearbeitet.</description>
     </entry>
     <entry>
       <code>retired</code>
-      <label>Retired</label>
-      <description>L’utilisation de l’élément n’est plus recommandée. Il n’a pas
-        été remplacé par un autre élément
-      </description>
+      <label>Zurückgezogen</label>
+      <description>Die Nutzung des Elements wird nicht mehr empfohlen. Es wurde nicht durch ein anderes Element ersetzt.</description>
     </entry>
     <entry>
       <code>superseded</code>
-      <label>Remplacé</label>
-      <description>Remplacé par un nouveau</description>
+      <label>Ersetzt</label>
+      <description>Durch eine neue Ressource ersetzt.</description>
     </entry>
     <entry>
       <code>tentative</code>
-      <label>Tentative</label>
-      <description>Changements à prévoir probablement avant que la ressource ne
-        devienne la dernière ou ne soit achevée
-      </description>
+      <label>Vorläufig</label>
+      <description>Änderungen sind wahrscheinlich zu erwarten, bevor die Ressource endgültig ist oder abgeschlossen wird.</description>
     </entry>
     <entry>
       <code>valid</code>
-      <label>Valide</label>
-      <description>Admissible sous conditions spécifiques</description>
+      <label>Gültig</label>
+      <description>Zulässig unter bestimmten Bedingungen.</description>
     </entry>
     <entry>
       <code>accepted</code>
-      <label>Accepté</label>
-      <description>Convenu par le commanditaire</description>
+      <label>Akzeptiert</label>
+      <description>Vom Auftraggeber vereinbart.</description>
     </entry>
     <entry>
       <code>notAccepted</code>
-      <label>Non Accepté</label>
-      <description>Rejeté par le commanditaire</description>
+      <label>Nicht akzeptiert</label>
+      <description>Vom Auftraggeber abgelehnt.</description>
     </entry>
     <entry>
       <code>withdrawn</code>
-      <label>Annulé</label>
-      <description>Retiré de toute considération</description>
+      <label>Zurückgezogen</label>
+      <description>Von jeglicher Berücksichtigung ausgeschlossen.</description>
     </entry>
     <entry>
       <code>proposed</code>
-      <label>Proposé</label>
-      <description>Suggéré qu’un développement nécessite d’être entrepris
-      </description>
+      <label>Vorgeschlagen</label>
+      <description>Es wird vorgeschlagen, dass eine Entwicklung durchgeführt werden sollte.</description>
     </entry>
     <entry>
       <code>deprecated</code>
-      <label>Déprecié</label>
-      <description>ressource remplacée et deviendra obsolète, utilisation
-        uniquement pour des besoins d’historiques
-      </description>
+      <label>Veraltet (deprecated)</label>
+      <description>Ressource ersetzt und wird veraltet, nur für historische Zwecke verwendet.</description>
     </entry>
     <entry hideInEditMode="true">
       <code>notobsolete</code>
-      <label>Non obsolète</label>
+      <label>Nicht veraltet</label>
       <description></description>
     </entry>
   </codelist>
   <codelist name="mco:MD_RestrictionCode">
     <entry>
       <code>copyright</code>
-      <label>Droit d’auteur / Droit moral (copyright)</label>
-      <description>Droit exclusif à la publication, production ou vente des
-        droits à une oeuvre littéraire, de cinéma, musicale ou artistique, ou à
-        l’utilisation de l’impression ou d’une étiquette commerciale, accordé
-        par la loi pendant une durée spécifiée à un auteur, un compositeur, un
-        artiste ou un distributeur
+      <label>Urheberrecht / Urheberpersönlichkeitsrecht (Copyright)</label>
+      <description>Ausschließliches Recht zur Veröffentlichung, Produktion oder zum Verkauf der
+        Rechte an einem literarischen, filmischen, musikalischen oder künstlerischen Werk oder
+        zur Verwendung eines Aufdrucks oder eines Handelszeichens, das
+        einem Autor, Komponisten, Künstler oder Vertreiber für einen bestimmten Zeitraum gesetzlich gewährt wird
+        Künstler oder Vertreiber gewährt wird
       </description>
     </entry>
     <entry>
       <code>patent</code>
-      <label>Brevet</label>
-      <description>Le gouvernement a accordé un droit exclusif à réaliser,
-        vendre, utiliser ou breveter une invention ou une découverte
+      <label>Patent</label>
+      <description>Die Regierung hat ein ausschließliches Recht zur Herstellung,
+        eine Erfindung oder Entdeckung herzustellen, zu verkaufen, zu nutzen oder zu patentieren
       </description>
     </entry>
     <entry>
       <code>patentPending</code>
-      <label>Brevet en instance</label>
-      <description>Informations créées ou vendues dans l’attente d’un brevet
+      <label>Patent angemeldet</label>
+      <description>Informationen erstellt oder verkauft, während ein Patent angemeldet ist
       </description>
     </entry>
     <entry>
       <code>trademark</code>
-      <label>Marque de commerce</label>
-      <description>Nom, symbole ou autre dispositif identifiant un produit,
-        enregistré officiellement et limité légalement à l’utilisation du
-        propriétaire ou du fabricant
+      <label>Marke</label>
+      <description>Name, Symbol oder anderes Kennzeichen, das ein Produkt identifiziert,
+        das offiziell registriert und gesetzlich auf die Verwendung durch den
+        Eigentümer oder des Herstellers
       </description>
     </entry>
     <entry>
       <code>license</code>
-      <label>Licence</label>
-      <description>Restriction induite par l’existence d’une licence
+      <label>Lizenz</label>
+      <description>Einschränkung aufgrund einer Lizenz
       </description>
     </entry>
     <entry>
       <code>intellectualPropertyRights</code>
-      <label>Droit de propriété intellectuelle / Droit patrimonial</label>
-      <description>Droits au bénéfice financier provenant d’une distribution
-        d’une propriété non matérielle et du contrôle de celle-ci qui est le
-        résultat d’une créativité
+      <label>Recht am geistigen Eigentum / Vermögensrecht</label>
+      <description>Rechte auf finanziellen Gewinn aus der Verbreitung
+        und der Kontrolle über immaterielles Eigentum, das das
+        Ergebnis einer kreativen Tätigkeit
       </description>
     </entry>
     <entry>
       <code>restricted</code>
-      <label>Restreint</label>
-      <description>Empêché d’une mise en circulation ou divulgation générale
+      <label>Eingeschränkt</label>
+      <description>Verbot der Verbreitung oder allgemeinen Veröffentlichung
       </description>
     </entry>
     <entry>
       <code>otherRestrictions</code>
-      <label>Autres restrictions</label>
-      <description>Limitation non établie</description>
+      <label>Sonstige Einschränkungen</label>
+      <description>Keine Einschränkung festgelegt</description>
     </entry>
     <entry>
       <code>unrestricted</code>
-      <label>Non restreint</label>
-      <description>Aucune contrainte n’existe</description>
+      <label>Keine Einschränkung</label>
+      <description>Es bestehen keine Einschränkungen</description>
     </entry>
     <entry>
       <code>licenceUnrestricted</code>
-      <label>Licence non restreinte</label>
-      <description>Autorisation formelle non obligatoire pour utiliser la
-        ressource
+      <label>Uneingeschränkte Lizenz</label>
+      <description>Keine formelle Genehmigung erforderlich, um die
+        Ressource
       </description>
     </entry>
     <entry>
       <code>licenceEndUser</code>
-      <label>Licence d’utilisateur final</label>
-      <description>Autorisation formelle requise pour une personne ou une entité
-        afin d’utiliser la ressource et qui peut différer de la personne qui
-        commande ou qui l’achète
+      <label>Endbenutzerlizenz</label>
+      <description>Formelle Genehmigung, die eine Person oder Organisation benötigt
+        zur Nutzung der Ressource und die sich von der Person unterscheiden kann, die
+        Besteller oder Käufer abweichen kann
       </description>
     </entry>
     <entry>
       <code>licenceDistributor</code>
-      <label>Licence de distributeur</label>
-      <description>Autorisation formelle requise pour une personne ou une entité
-        pour commercialiser ou distribuer la ressource
+      <label>Vertriebslizenz</label>
+      <description>Formelle Genehmigung, die für eine Person oder Organisation erforderlich ist
+        zum Vermarkten oder Vertreiben der Ressource
       </description>
     </entry>
     <entry>
       <code>private</code>
-      <label>Privé</label>
-      <description>Protège les droits d’un individu ou d’organisations vis-à-vis
-        d’une observation, d’une intrusion ou d’une attention émanant de tiers
+      <label>Privat</label>
+      <description>Schützt die Rechte einer Person oder Organisation in Bezug auf
+        Beobachtung, Eindringen oder Aufmerksamkeit durch Dritte
       </description>
     </entry>
     <entry>
       <code>statutory</code>
-      <label>Statutaire</label>
-      <description>Prescrit par la loi</description>
+      <label>Gesetzlich</label>
+      <description>Gesetzlich vorgeschrieben</description>
     </entry>
     <entry>
-      <code>confidential</code>
-      <label>Confidentiel</label>
-      <description>indisponible pour le public. NOTE Contient des informations
-        qui pourraient être préjudiciables à un intérêt commercial, industriel
-        ou national.
+      <code>vertraulich</code>
+      <label>Vertraulich</label>
+      <description>Für die Öffentlichkeit nicht zugänglich. HINWEIS Enthält Informationen
+        , die einem kommerziellen, industriellen
+        oder nationalen Interesse schaden könnten.
       </description>
     </entry>
     <entry>
       <code>SBU</code>
       <label>Sensitive But Unclassified</label>
-      <description>Bien que non classé, exige le contrôle strict concernant sa
-        distribution
+      <description>Obwohl nicht klassifiziert, erfordert es strenge Kontrollen hinsichtlich seiner
+        Verbreitung
       </description>
     </entry>
     <entry>
       <code>in-confidence</code>
-      <label>En toute confiance</label>
-      <description>En toute confiance</description>
+      <label>Vertraulich</label>
+      <description>Vertraulich</description>
     </entry>
   </codelist>
 
   <codelist name="mcc:MD_ScopeCode">
     <entry>
-      <code>attribute</code>
+      <code>attribut</code>
       <label>Attribut</label>
-      <description>Les informations appliquées aux caractéristiques de
-        l’attribut
+      <description>Informationen zu den Merkmalen des
+        Attributs
       </description>
     </entry>
     <entry>
       <code>attributeType</code>
-      <label>Type d'attribut</label>
-      <description>Les informations appliquées aux caractéristiques de
-        l’entité
+      <label>Attributtyp</label>
+      <description>Informationen zu den Merkmalen der
+        Entität
       </description>
     </entry>
     <entry>
       <code>collectionHardware</code>
-      <label>Collection matérielle</label>
-      <description>Les informations appliquées aux caractéristiques d’une
-        collection matérielle
+      <label>Hardware-Sammlung</label>
+      <description>Informationen zu den Merkmalen einer
+        Hardware-Sammlung
       </description>
     </entry>
     <entry>
       <code>collectionSession</code>
-      <label>Collection de session</label>
-      <description>Les informations appliquées aux caractéristiques d’une
-        collection de session
+      <label>Sitzungssammlung</label>
+      <description>Informationen zu den Merkmalen einer
+        Sitzungs-Sammlung
       </description>
     </entry>
     <entry>
       <code>dataset</code>
-      <label>Jeu de données</label>
-      <description>Les informations appliquées aux caractéristiques de jeu de
-        données
+      <label>Datensatz</label>
+      <description>Informationen zu den Merkmalen des Datensatzes
+        
       </description>
     </entry>
     <entry>
       <code>series</code>
-      <label>Collection de données</label>
-      <description>Les informations appliquées aux caractéristiques de la
-        collection de données
+      <label>Datensammlung</label>
+      <description>Informationen zu den Merkmalen der
+        Datensammlung
       </description>
     </entry>
     <entry>
       <code>nonGeographicDataset</code>
-      <label>Jeux de données non géographiques</label>
-      <description>Les informations appliquées aux caractéristiques de jeux de
-        données non géographiques
+      <label>Nicht-geografische Datensätze</label>
+      <description>Informationen zu den Merkmalen nicht-geografischer Datensätze
+        nicht-geografischen Datensätzen
       </description>
     </entry>
     <entry>
       <code>dimensionGroup</code>
-      <label>Dimension d'un groupe</label>
-      <description>Les informations appliquées à un groupe</description>
+      <label>Dimension einer Gruppe</label>
+      <description>Informationen, die für eine Gruppe gelten</description>
     </entry>
     <entry>
       <code>feature</code>
-      <label>Entité</label>
-      <description>Les informations appliquées à une entité</description>
+      <label>Entität</label>
+      <description>Informationen zu einer Entität</description>
     </entry>
     <entry>
       <code>featureType</code>
-      <label>Type d’entité</label>
-      <description>Les informations appliquées à un type d’entité</description>
+      <label>Entitätstyp</label>
+      <description>Informationen zu einem Entitätstyp</description>
     </entry>
     <entry>
       <code>propertyType</code>
-      <label>Type de propriété</label>
-      <description>Les informations appliquées à un type de propriété
+      <label>Eigenschaftstyp</label>
+      <description>Informationen, die für einen Eigenschaftstyp gelten
       </description>
     </entry>
     <entry>
       <code>fieldSession</code>
-      <label>Champ de session</label>
-      <description>Les informations appliquées aux caractéristiques d’un champ
-        de session
+      <label>Sitzungsfeld</label>
+      <description>Informationen zu den Merkmalen eines
+        anwenden
       </description>
     </entry>
     <entry>
       <code>software</code>
-      <label>Logiciel</label>
-      <description>Informations appliquées à programme ou à une routine
+      <label>Software</label>
+      <description>Informationen zu einem Programm oder einer Routine
       </description>
     </entry>
     <entry>
       <code>service</code>
-      <label>Service</label>
-      <description>Les informations s’appliquent à une possibilité qu’une entité
-        de fournisseur de services met à disposition pour une entité
-        d’utilisateur de services par l’intermédiaire d’un ensemble d’interfaces
-        qui définissent un comportement, tel qu’un cas d’utilisation
+      <label>Dienst</label>
+      <description>Die Informationen beziehen sich auf eine Möglichkeit, die ein
+        einem Dienstleistungsanbieter für eine
+        Dienstleistungsnutzer über eine Reihe von Schnittstellen
+        , die ein Verhalten definieren, wie z. B. einen Anwendungsfall
       </description>
     </entry>
     <entry>
       <code>model</code>
-      <label>Modèle</label>
-      <description>Les informations s’appliquent à une copie ou à une imitation
-        d’un objet existant ou hypothétique
+      <label>Modell</label>
+      <description>Die Informationen beziehen sich auf eine Kopie oder Nachahmung
+        eines bestehenden oder hypothetischen Objekts
       </description>
     </entry>
     <entry>
       <code>tile</code>
-      <label>Tuile</label>
-      <description>Les informations s’appliquent à une mosaïque, un sousensemble
-        spatial de données géographiques
+      <label>Fliese</label>
+      <description>Die Informationen beziehen sich auf ein Mosaik, eine räumliche Teilmenge
+        räumliche Teilmenge geografischer Daten
       </description>
     </entry>
     <entry>
       <code>metadata</code>
-      <label>Métadonnées</label>
-      <description>Les informations s’appliquent à des métadonnées</description>
+      <label>Metadaten</label>
+      <description>Die Informationen gelten für Metadaten</description>
     </entry>
     <entry>
       <code>initiative</code>
       <label>Initiative</label>
-      <description>Les informations s’appliquent à une initiativee</description>
+      <description>Die Informationen beziehen sich auf eine Initiative</description>
     </entry>
     <entry>
-      <code>sample</code>
-      <label>Echantillon</label>
-      <description>Les informations s’appliquent à un échantillone</description>
+      <code>Beispiel</code>
+      <label>Probe</label>
+      <description>Die Informationen gelten für eine Probe</description>
     </entry>
     <entry>
-      <code>document</code>
-      <label>Document</label>
-      <description>Les informations s’appliquent à un document</description>
+      <code>Dokument</code>
+      <label>Dokument</label>
+      <description>Die Informationen gelten für ein Dokument</description>
     </entry>
     <entry>
       <code>repository</code>
-      <label>Dépôt de données</label>
-      <description>Les informations s’appliquent à un dépôt de données
+      <label>Datenarchiv</label>
+      <description>Die Informationen beziehen sich auf ein Datenarchiv
       </description>
     </entry>
     <entry>
       <code>aggregate</code>
-      <label>Agrégat</label>
-      <description>Les informations s’appliquent à une ressource d’agrégat
+      <label>Aggregat</label>
+      <description>Die Informationen gelten für eine Aggregatressource.
       </description>
     </entry>
     <entry>
       <code>product</code>
-      <label>Produit</label>
-      <description>Les métadonnées décrivant une spécification de contenu
-        informationnel dans l’ISO 19131
+      <label>Produkt</label>
+      <description>Metadaten, die eine Informationsspezifikation
+        in ISO 19131
       </description>
     </entry>
     <entry>
       <code>collection</code>
-      <label>Ensemble</label>
-      <description>Les informations s’appliquent à un ensemble non structuré
+      <label>Sammlung</label>
+      <description>Die Informationen gelten für ein unstrukturiertes Ensemble
       </description>
     </entry>
     <entry>
       <code>coverage</code>
-      <label>Couverture</label>
-      <description>Les informations s’appliquent à une couverture</description>
+      <label>Abdeckung</label>
+      <description>Die Informationen gelten für eine Abdeckung</description>
     </entry>
     <entry>
-      <code>application</code>
-      <label>Application</label>
-      <description>Ressource d’informations hébergée dans un ensemble spécifique
-        de matériel et accessible sur un réseau
+      <code>Anwendung</code>
+      <label>Anwendung</label>
+      <description>Informationsquelle, die in einem bestimmten Materialkomplex
+        und über ein Netzwerk zugänglich ist
       </description>
     </entry>
     <entry hideInEditMode="true">
       <code>map</code>
-      <label>Carte</label>
+      <label>Karte</label>
       <description></description>
     </entry>
     <entry hideInEditMode="true">
       <code>map-static</code>
-      <label>Carte statique</label>
+      <label>Statische Karte</label>
       <description></description>
     </entry>
     <entry hideInEditMode="true">
       <code>map-interactive</code>
-      <label>Carte interactive</label>
+      <label>Interaktive Karte</label>
       <description></description>
     </entry>
   </codelist>
   <codelist name="mcc:MD_SpatialRepresentationTypeCode">
     <entry>
       <code>vector</code>
-      <label>Vecteur</label>
-      <description>Donnée vecteur (point, ligne, polygone)</description>
+      <label>Vektor</label>
+      <description>Vektordaten (Punkt, Linie, Polygon)</description>
     </entry>
     <entry>
-      <code>grid</code>
+      <code>Gitter</code>
       <label>Raster</label>
-      <description>Donnée raster ou matricielle</description>
+      <description>Raster- oder Matrixdaten</description>
     </entry>
     <entry>
       <code>textTable</code>
-      <label>Tabulaire</label>
-      <description>Fichier texte ou table</description>
+      <label>Tabellarisch</label>
+      <description>Textdatei oder Tabelle</description>
     </entry>
     <entry>
       <code>tin</code>
       <label>TIN</label>
-      <description>Réseau de triangle irrégulier (Triangulated Irregular
+      <description>Unregelmäßiges Dreiecksnetz (Triangulated Irregular
         Network)
       </description>
     </entry>
     <entry>
       <code>stereoModel</code>
-      <label>Modèle stéréoscopique</label>
-      <description>Vue tridimensionnelle formée par l'intersection des rayons
-        homologues d'une paire d'images se recouvrant
+      <label>Stereoskopisches Modell</label>
+      <description>Dreidimensionale Ansicht, die durch den Schnittpunkt der Strahlen
+        eines Paares sich überlappender Bilder
       </description>
     </entry>
     <entry>
       <code>video</code>
-      <label>Vidéo</label>
-      <description>Enregistrement vidéo</description>
+      <label>Video</label>
+      <description>Videoaufzeichnung</description>
     </entry>
     <!-- ISO PROFIL CHE ONLY
 		<entry>
 			<code>paperMap</code>
-			<label>Carte papier</label>
+			<label>Papierkarte</label>
 			<description></description>
 		</entry>-->
   </codelist>
   <codelist name="mri:MD_TopicCategoryCode" alias="topicCategory">
     <entry>
       <code>farming</code>
-      <label>Agriculture</label>
-      <description>Élevage et/ou cultures. Exemples : agriculture, irrigation,
-        aquaculture, plantations
+      <label>Landwirtschaft</label>
+      <description>Viehzucht und/oder Ackerbau. Beispiele: Landwirtschaft, Bewässerung,
+        Aquakultur, Plantagen
       </description>
     </entry>
     <entry>
       <code>biota</code>
-      <label>Biologie, faune et flore</label>
-      <description>Flore et faune dans un écosystème naturel. Exemples :
-        habitat, écologie, faune sauvage, faune aquatique, sciences biologiques,
-        zones humides, végétation, biodiversité
+      <label>Biologie, Fauna und Flora</label>
+      <description>Flora und Fauna in einem natürlichen Ökosystem. Beispiele:
+        Lebensraum, Ökologie, Wildtiere, Wasserfauna, Biowissenschaften,
+        Feuchtgebiete, Vegetation, Biodiversität
       </description>
     </entry>
     <entry>
       <code>boundaries</code>
-      <label>Limites politiques et administratives</label>
-      <description>Exemples : limites de pays, de provinces, de départements, de
-        communes
+      <label>Politische und administrative Grenzen</label>
+      <description>Beispiele: Grenzen von Ländern, Provinzen, Departements, Gemeinden
+        Gemeinden
       </description>
     </entry>
     <entry>
       <code>climatologyMeteorologyAtmosphere</code>
-      <label>Climatologie, météorologie</label>
-      <description>Processus et phénomènes atmosphériques. Exemples : climat,
-        météorologie, conditions atmosphériques, changements climatiques,
-        couverture nuageuse
+      <label>Klimatologie, Meteorologie</label>
+      <description>Atmosphärische Prozesse und Phänomene. Beispiele: Klima,
+        Wetter, atmosphärische Bedingungen, Klimawandel,
+        Bewölkung
       </description>
     </entry>
     <entry>
-      <code>economy</code>
-      <label>Economie</label>
-      <description>Activités économiques. Exemples : production, travail,
-        revenu, commerce, industrie, tourisme et éco-tourisme, foresterie,
-        pêche, chasse, exploration et exploitation des ressources minières,
-        pétrole, gaz naturel
+      <code>Wirtschaft</code>
+      <label>Wirtschaft</label>
+      <description>Wirtschaftliche Aktivitäten. Beispiele: Produktion, Arbeit,
+        Einkommen, Handel, Industrie, Tourismus und Ökotourismus, Forstwirtschaft,
+        Fischerei, Jagd, Exploration und Gewinnung von Bodenschätzen,
+        Erdöl, Erdgas
       </description>
     </entry>
     <entry>
       <code>elevation</code>
-      <label>Altimétrie</label>
-      <description>Hauteurs au dessous et dessus du niveau de la mer. Exemples :
-        altitude, bathymétrie, MNT, pentes et calculs dérivés de l’altitude
+      <label>Höhenmessung</label>
+      <description>Höhen unterhalb und oberhalb des Meeresspiegels. Beispiele:
+        Höhe, Bathymetrie, DTM, Neigungen und aus der Höhe abgeleitete Berechnungen
       </description>
     </entry>
     <entry>
-      <code>environment</code>
-      <label>Environnement</label>
-      <description>Ressources naturelles, protection, conservation des
-        ressources naturelles. Exemples : pollution, traitement et stockage des
-        déchets, suivi de l’environnement, gestion du risque, réserves
-        naturelles, paysage
+      <code>Umwelt</code>
+      <label>Umwelt</label>
+      <description>Natürliche Ressourcen, Schutz, Erhaltung der
+        . Beispiele: Umweltverschmutzung, Abfallbehandlung und -lagerung
+        , Umweltüberwachung, Risikomanagement, Naturschutzgebiete
+        , Landschaft
       </description>
     </entry>
     <entry>
       <code>geoscientificInformation</code>
-      <label>Sciences de la terre, géosciences</label>
-      <description>Informations relatives aux sciences de la terre. Exemples :
-        composants et processus géophysiques, géologie, minéralogie, tectonique,
-        risque sismique
+      <label>Geowissenschaften, Geowissenschaften</label>
+      <description>Informationen zu den Geowissenschaften. Beispiele:
+        geophysikalische Komponenten und Prozesse, Geologie, Mineralogie, Tektonik,
+        Erdbebenrisiko
       </description>
     </entry>
     <entry>
       <code>health</code>
-      <label>Santé</label>
-      <description>Santé, services de santé, épidémiologie. Exemples : maladies
-        et épidémie, facteurs affectant la santé, santé mentale et physique,
-        services de santé
+      <label>Gesundheit</label>
+      <description>Gesundheit, Gesundheitswesen, Epidemiologie. Beispiele: Krankheiten
+        und Epidemien, Faktoren, die die Gesundheit beeinflussen, geistige und körperliche Gesundheit,
+        Gesundheitsdienstleistungen
       </description>
     </entry>
     <entry>
       <code>imageryBaseMapsEarthCover</code>
-      <label>Carte de référence de la couverture terrestre</label>
-      <description>Carte de référence. Exemples : occupation des terres,
-        imagerie aérienne et satellitale, carte thématiques, carte
-        topographiques
+      <label>Referenzkarte der Landbedeckung</label>
+      <description>Referenzkarte. Beispiele: Landnutzung,
+        Luft- und Satellitenbilder, thematische Karten,
+        Topografische Karten
       </description>
     </entry>
     <entry>
       <code>intelligenceMilitary</code>
-      <label>Infrastructures militaires</label>
-      <description>Bases militaires et infrastructures</description>
+      <label>Militärische Infrastrukturen</label>
+      <description>Militärstützpunkte und Infrastruktur</description>
     </entry>
     <entry>
       <code>inlandWaters</code>
-      <label>Eaux intérieures, Hydrographie</label>
-      <description>Exemples : fleuves, rivières, glaciers, lacs salés, systèmes
-        hydrographiques, barrages, débits, qualité de l’eau
+      <label>Binnengewässer, Hydrographie</label>
+      <description>Beispiele: Flüsse, Gletscher, Salzseen, hydrografische Systeme
+        , Dämme, Durchflussmengen, Wasserqualität
       </description>
     </entry>
     <entry>
-      <code>location</code>
-      <label>Localisation</label>
-      <description>Exemples : zones postales, adresses, points de contrôle,
-        réseau géodésique
+      <code>Standort</code>
+      <label>Standort</label>
+      <description>Beispiele: Postleitzahlen, Adressen, Kontrollpunkte,
+        geodätisches Netz
       </description>
     </entry>
     <entry>
       <code>oceans</code>
-      <label>Océans</label>
-      <description>Composants et caractéristiques du milieu maritime. Exemples :
-        littoral, récifs, marée, etc.
+      <label>Ozeane</label>
+      <description>Bestandteile und Merkmale der Meeresumwelt. Beispiele:
+        Küste, Riffe, Gezeiten usw.
       </description>
     </entry>
     <entry>
       <code>planningCadastre</code>
-      <label>Cadastre, aménagement</label>
-      <description>Exemples : carte d’utilisation des terres, plan d’occupation
-        des sols, planification pour la prévention des risques
+      <label>Kataster, Raumplanung</label>
+      <description>Beispiele: Landnutzungskarte, Flächennutzungsplan
+        , Risikopräventionsplanung
       </description>
     </entry>
     <entry>
-      <code>society</code>
-      <label>Société</label>
-      <description>Caractéristiques des sociétés et des cultures. Exemples
-        : lois, anthropologie, éducation, données démographiques, archéologique,
-        suivi des systèmes sociaux, croyances, us et coutumes, crimes et
-        justices
+      <code>Gesellschaft</code>
+      <label>Gesellschaft</label>
+      <description>Merkmale von Gesellschaften und Kulturen. Beispiele
+        : Gesetze, Anthropologie, Bildung, Demografie, Archäologie,
+        Überwachung sozialer Systeme, Glaubenssätze, Sitten und Gebräuche, Verbrechen und
+        Justiz
       </description>
     </entry>
     <entry>
-      <code>structure</code>
-      <label>Constructions et ouvrages</label>
-      <description>Aménagements urbains. Exemples : musée, église, usines,
-        maisons, monuments, boutiques, immeubles
+      <code>Struktur</code>
+      <label>Bauwerke und Bauwerke</label>
+      <description>Städtebauliche Einrichtungen. Beispiele: Museum, Kirche, Fabriken,
+        Häuser, Denkmäler, Geschäfte, Gebäude
       </description>
     </entry>
     <entry>
       <code>transportation</code>
-      <label>Infrastructures de transport</label>
-      <description>Moyens de transports des personnes et des biens. Exemples :
-       routes, aéroports, tunnels, viaducs, ponts, chemin de fer
+      <label>Verkehrsinfrastruktur</label>
+      <description>Verkehrsmittel für Personen und Güter. Beispiele:
+       Straßen, Flughäfen, Tunnel, Viadukte, Brücken, Eisenbahn
       </description>
     </entry>
     <entry>
       <code>utilitiesCommunication</code>
-      <label>Télécommunication, approvisionnement et énergie</label>
-      <description>Systèmes de distribution de gestion ou de stockage de
-        l’énergie, de l’eau, des déchets. Infrastructures et services de
-        communication. Exemples : source d’énergie solaire, hydroélectrique,
-        nucléaire, épuration et distribution des eaux, réseau de distribution
-        électrique, de gaz, réseau de télécommunication, radio.
+      <label>Telekommunikation, Versorgung und Energie</label>
+      <description>Systeme für die Verteilung, Verwaltung oder Speicherung von
+        Energie, Wasser, Abfall. Kommunikationsinfrastrukturen und -dienste
+        . Beispiele: Solarenergie, Wasserkraft,
+        , Wasseraufbereitung und -verteilung, Strom- und Gasverteilungsnetze
+        , Gas, Telekommunikationsnetz, Radio.
       </description>
     </entry>
     <entry>
       <code>extraTerrestrial</code>
-      <label>Extra-terrestre</label>
-      <description>Zone de plus de 100 km au-dessus de la surface de la
-        Terre
+      <label>Außerirdisch</label>
+      <description>Gebiet von mehr als 100 km über der Erdoberfläche
+        Erdoberfläche
       </description>
     </entry>
     <entry>
-      <code>disaster</code>
-      <label>Catastrophe</label>
-      <description>Informations relatives aux catastrophes EXEMPLES Site de la
-        catastrophe, zone d’évacuation, installation de prévention des
-        catastrophes, activités de sauvetage.
+      <code>Katastrophe</code>
+      <label>Katastrophe</label>
+      <description>Informationen zu Katastrophen BEISPIELE Katastrophengebiet
+        Katastrophengebiet, Evakuierungszone, Einrichtung zur Katastrophenprävention
+        , Rettungsmaßnahmen.
       </description>
     </entry>
   </codelist>
   <codelist name="msr:MD_TopologyLevelCode">
     <entry>
       <code>geometryOnly</code>
-      <label>Géométrie seulement</label>
-      <description>Objets vecteurs sans aucune structure qui décrit la
-        topologie
-      </description>
+      <label>Nur Geometrie</label>
+      <description>Vektorobjekte ohne Struktur, die die
+        Topologie
+      beschreibt.</description>
     </entry>
     <entry>
       <code>topology1D</code>
-      <label>Topologie de réseau</label>
-      <description>Réseau sans surface (communément dénommée topologie réseau)
+      <label>Netzwerktopologie</label>
+      <description>Flächenloses Netzwerk (allgemein als Netzwerktopologie bezeichnet)
       </description>
     </entry>
     <entry>
       <code>planarGraph</code>
-      <label>Graphe planaire</label>
-      <description>Topologie 1D planaire</description>
+      <label>Planarer Graph</label>
+      <description>Planare 1D-Topologie</description>
     </entry>
     <entry>
       <code>fullPlanarGraph</code>
-      <label>Topologie de réseau complète</label>
-      <description>Topologie 2D planaire</description>
+      <label>Vollständige Netzwerktopologie</label>
+      <description>Planare 2D-Topologie</description>
     </entry>
     <entry>
       <code>surfaceGraph</code>
-      <label>Topologie de surface</label>
-      <description>Topologie 1D avec surfaces</description>
+      <label>Oberflächentopologie</label>
+      <description>1D-Topologie mit Oberflächen</description>
     </entry>
     <entry>
       <code>fullSurfaceGraph</code>
-      <label>Topologie de surface complète</label>
-      <description>Topologie 2D avec surfaces</description>
+      <label>Vollständige Oberflächentopologie</label>
+      <description>2D-Topologie mit Oberflächen</description>
     </entry>
     <entry>
       <code>topology3D</code>
-      <label>Topologie 3D</label>
-      <description>Topologie 3D</description>
+      <label>3D-Topologie</label>
+      <description>3D-Topologie</description>
     </entry>
     <entry>
       <code>fullTopology3D</code>
-      <label>Topologie 3D complète</label>
-      <description>Couverture complète d’un espace Euclidien 3D</description>
+      <label>Vollständige 3D-Topologie</label>
+      <description>Vollständige Abdeckung eines euklidischen 3D-Raums</description>
     </entry>
     <entry>
       <code>abstract</code>
       <label>Spaghetti</label>
-      <description>Objets géométriques sans description de la topologie
+      <description>Geometrische Objekte ohne Beschreibung der Topologie
       </description>
     </entry>
   </codelist>
@@ -1975,17 +1679,17 @@
     </entry>
     <entry>
       <code>halfMaximum</code>
-      <label>Half Maximum</label>
-      <description>Description: width of a distribution equal to the distance
-        between the outer two points on the distribution having power level half
-        of that at the peak
+      <label>Halbwertsbreite</label>
+      <description>Beschreibung: Breite einer Verteilung, die dem Abstand
+        zwischen den beiden äußeren Punkten der Verteilung, die die Hälfte der Leistung
+        des Spitzenwerts
       </description>
     </entry>
     <entry>
       <code>fiftyPercent</code>
       <label>Fifty Percent</label>
-      <description>Description: wavelength difference between the upper and
-        lower bounds at the 50% (-3db) points of the sensor spectral response
+      <description>Beschreibung: Wellenlängendifferenz zwischen den oberen und
+        unteren Grenze an den 50 % (-3 dB)-Punkten der spektralen Empfindlichkeit des Sensors
       </description>
     </entry>
     <entry>
@@ -1995,42 +1699,42 @@
     </entry>
     <entry>
       <code>equivalentWidth</code>
-      <label>Equivalent Width</label>
+      <label>Äquivalente Breite</label>
       <description>TBD</description>
     </entry>
   </codelist>
   <codelist name="mac:MI_ContextCode">
     <entry>
-      <code>acquisition</code>
-      <label>Acquisition</label>
-      <description>Event related to a specific collection</description>
+      <code>Erwerb</code>
+      <label>Erwerb</label>
+      <description>Ereignis im Zusammenhang mit einer bestimmten Sammlung</description>
     </entry>
     <entry>
       <code>pass</code>
       <label>Pass</label>
-      <description>Event related to general collection</description>
+      <description>Veranstaltung im Zusammenhang mit der allgemeinen Sammlung</description>
     </entry>
     <entry>
       <code>wayPoint</code>
-      <label>Way Point</label>
-      <description>Event related to general collection</description>
+      <label>Wegpunkt</label>
+      <description>Ereignis im Zusammenhang mit allgemeiner Sammlung</description>
     </entry>
   </codelist>
   <codelist name="mac:MI_ObjectiveTypeCode">
     <entry>
       <code>instantaneousCollection</code>
-      <label>Instantaneous Collection</label>
-      <description>Single instance of collection</description>
+      <label>Sofortige Erfassung</label>
+      <description>Einzelne Instanz der Erfassung</description>
     </entry>
     <entry>
       <code>persistentView</code>
-      <label>Persistent View</label>
-      <description>Multiple instances of collection</description>
+      <label>Persistente Ansicht</label>
+      <description>Mehrere Instanzen der Sammlung</description>
     </entry>
     <entry>
       <code>survey</code>
-      <label>Survey</label>
-      <description>Comparative collection</description>
+      <label>Umfrage</label>
+      <description>Vergleichende Sammlung</description>
     </entry>
   </codelist>
   <codelist name="mac:MI_OperationTypeCode">
@@ -2041,11 +1745,11 @@
     </entry>
     <entry>
       <code>simulated</code>
-      <label>Simulated</label>
+      <label>Simuliert</label>
       <description></description>
     </entry>
     <entry>
-      <code>synthetic</code>
+      <code>synthetisch</code>
       <label>Synthetic</label>
       <description></description>
     </entry>
@@ -2057,18 +1761,18 @@
       <description></description>
     </entry>
     <entry>
-      <code>vertical</code>
-      <label>Vertical</label>
+      <code>vertikal</code>
+      <label>Vertikal</label>
       <description></description>
     </entry>
     <entry>
       <code>leftCircular</code>
-      <label>Left Circular</label>
+      <label>Links kreisförmig</label>
       <description></description>
     </entry>
     <entry>
       <code>rightCircular</code>
-      <label>Right Circular</label>
+      <label>Rechts kreisförmig</label>
       <description></description>
     </entry>
     <entry>
@@ -2084,29 +1788,29 @@
   </codelist>
   <codelist name="mac:MI_PriorityCode">
     <entry>
-      <code>critical</code>
-      <label>Critical</label>
-      <description>Decisive importance</description>
+      <code>kritisch</code>
+      <label>Kritisch</label>
+      <description>Entscheidende Bedeutung</description>
     </entry>
     <entry>
       <code>highImportance</code>
-      <label>High Importance</label>
-      <description>Requires resources to be made available</description>
+      <label>Hohe Bedeutung</label>
+      <description>Erfordert die Bereitstellung von Ressourcen</description>
     </entry>
     <entry>
       <code>mediumImportance</code>
-      <label>Medium Importance</label>
-      <description>Normal operation priority</description>
+      <label>Mittlere Wichtigkeit</label>
+      <description>Normale Betriebspriorität</description>
     </entry>
     <entry>
       <code>lowImportance</code>
-      <label>Low Importance</label>
+      <label>Geringe Wichtigkeit</label>
       <description>To be completed when resources are available</description>
     </entry>
     <entry>
       <code>theta</code>
-      <label>theta</label>
-      <description></description>
+      <label>Theta</label>
+      <Beschreibung></Beschreibung>
     </entry>
     <entry>
       <code>phi</code>
@@ -2118,17 +1822,17 @@
     <entry>
       <code>start</code>
       <label>Start</label>
-      <description>Beginning of a collection</description>
+      <description>Beginn einer Sammlung</description>
     </entry>
     <entry>
       <code>end</code>
-      <label>End</label>
-      <description>End of a collection</description>
+      <label>Ende</label>
+      <description>Ende einer Sammlung</description>
     </entry>
     <entry>
       <code>instantaneous</code>
       <label>Instantaneous</label>
-      <description>Collection without a significant duration</description>
+      <description>Sammlung ohne nennenswerte Dauer</description>
     </entry>
   </codelist>
   <codelist name="mrc:MI_TransferFunctionTypeCode">
@@ -2138,8 +1842,8 @@
       <description></description>
     </entry>
     <entry>
-      <code>logarithmic</code>
-      <label>Logarithmic</label>
+      <code>logarithmisch</code>
+      <label>Logarithmisch</label>
       <description></description>
     </entry>
     <entry>
@@ -2151,41 +1855,41 @@
   <codelist name="mac:MI_TriggerCode">
     <entry>
       <code>automatic</code>
-      <label>Automatic</label>
-      <description>Event due to external stimuli</description>
+      <label>Automatisch</label>
+      <description>Ereignis aufgrund externer Reize</description>
     </entry>
     <entry>
-      <code>manual</code>
-      <label>Manual</label>
-      <description>Event manually instigated</description>
+      <code>manuell</code>
+      <label>Manuell</label>
+      <description>Manuell ausgelöstes Ereignis</description>
     </entry>
     <entry>
-      <code>preProgrammed</code>
-      <label>PreProgrammed</label>
-      <description>Event instigated by planned stimuli</description>
+      <code>vorprogrammiert</code>
+      <label>Vorprogrammiert</label>
+      <description>Ereignis durch geplante Reize ausgelöst</description>
     </entry>
   </codelist>
   <codelist name="reg:RE_AmendmentType">
     <entry>
       <code>supersession</code>
-      <label>Supersession</label>
+      <label>Ersetzung</label>
       <description></description>
     </entry>
     <entry>
       <code>retirement</code>
-      <label>Retirement</label>
+      <label>Rücknahme</label>
       <description></description>
     </entry>
   </codelist>
   <codelist name="reg:RE_DecisionStatus">
     <entry>
       <code>pending</code>
-      <label>Pending</label>
+      <label>Ausstehend</label>
       <description></description>
     </entry>
     <entry>
-      <code>tentative</code>
-      <label>Tentative</label>
+      <code>Versuch</code>
+      <label>Versuch</label>
       <description></description>
     </entry>
     <entry>
@@ -2197,334 +1901,334 @@
   <codelist name="reg:RE_Disposition">
     <entry>
       <code>withdrawn</code>
-      <label>Withdrawn</label>
+      <label>Zurückgezogen</label>
       <description></description>
     </entry>
     <entry>
       <code>accepted</code>
-      <label>Accepted</label>
+      <label>Akzeptiert</label>
       <description></description>
     </entry>
     <entry>
       <code>notAccepted</code>
-      <label>Not Accepted</label>
+      <label>Nicht akzeptiert</label>
       <description></description>
     </entry>
   </codelist>
   <codelist name="reg:RE_ItemStatus">
     <entry>
       <code>notValid</code>
-      <label>Not Valid</label>
+      <label>Nicht gültig</label>
       <description></description>
     </entry>
     <entry>
-      <code>valid</code>
-      <label>Valid</label>
+      <code>gültig</code>
+      <label>Gültig</label>
       <description></description>
     </entry>
     <entry>
       <code>superseded</code>
-      <label>Superseded</label>
+      <label>Ersetzt</label>
       <description></description>
     </entry>
     <entry>
       <code>retired</code>
-      <label>Retired</label>
+      <label>Ausgemustert</label>
       <description></description>
     </entry>
   </codelist>
   <codelist name="srv:SV_ParameterDirection">
     <entry>
       <code>in</code>
-      <label>Entrée</label>
-      <description>Le paramètre est un paramètre d’entrée pour l’instance de
-        service
+      <label>Eingabe</label>
+      <description>Der Parameter ist ein Eingabeparameter für die Instanz von
+        Dienstinstanz
       </description>
     </entry>
     <entry>
       <code>out</code>
-      <label>Sortie</label>
-      <description>Le paramètre est un paramètre de sortie pour l’instance de
-        service
+      <label>Ausgabe</label>
+      <description>Der Parameter ist ein Ausgabeparameter für die Instanz von
+        Dienstinstanz
       </description>
     </entry>
     <entry>
       <code>in/out</code>
-      <label>Entrée/Sortie</label>
-      <description>Le paramètre est à la fois un paramètre d’entrée et de sortie
-        pour l’instance de service
+      <label>Eingang/Ausgang</label>
+      <description>Der Parameter ist sowohl ein Eingangs- als auch ein Ausgangsparameter
+        für die Service-Instanz
       </description>
     </entry>
   </codelist>
   <codelist name="mrs:MD_ReferenceSystemTypeCode">
     <entry>
       <code>compoundEngineeringParametric</code>
-      <label>Paramétrique d’ingénierie combinée</label>
-      <description>système de références par coordonnées spatio-paramétriques
-        combiné contenant un système de références par coordonnées d’ingénierie
-        et un système de références paramétriques. EXEMPLE [local] x, y,
-        pression
+      <label>Kombinierte parametrische Konstruktion</label>
+      <description>Raum-parametrisches Koordinatenreferenzsystem
+        mit einem kombinierten technischen Koordinatenreferenzsystem
+        und ein parametrisches Referenzsystem. BEISPIEL [lokal] x, y,
+        Druck
       </description>
     </entry>
     <entry>
       <code>compoundEngineeringParametricTemporal</code>
-      <label>Temporel et paramétrique d’ingénierie combinée</label>
-      <description>Système de références par coordonnées spatio-paramétriques
-        temporelles combiné contenant des systèmes de références par coordonnées
-        d’ingénierie, paramétriques et temporelles EXEMPLE [local] x, y,
-        pression, temps
+      <label>Zeitlich und parametrisch kombinierte Technik</label>
+      <description>Kombiniertes zeitliches und parametrisches Koordinatenreferenzsystem
+        mit kombinierten zeitlichen Koordinatenreferenzsystemen
+        , parametrische und zeitliche Koordinatenbezugssysteme enthält BEISPIEL [lokal] x, y,
+        Druck, Zeit
       </description>
     </entry>
     <entry>
       <code>compoundEngineeringTemporal</code>
-      <label>Temporel d’ingénierie combinée</label>
-      <description>Système de références par coordonnées spatio-temporelles
-        combiné contenant un système de références par coordonnées d’ingénierie
-        et un système de références par coordonnées temporelles. EXEMPLE [local]
-        x, y, temps
+      <label>Kombinierte zeitliche Technik</label>
+      <description>Kombiniertes Raum-Zeit-Koordinatenreferenzsystem
+        mit einem kombinierten Koordinatensystem für technische Koordinaten
+        und ein zeitliches Koordinatenreferenzsystem. BEISPIEL [lokal]
+        x, y, Zeit
       </description>
     </entry>
     <entry>
       <code>compoundEngineeringVertical</code>
-      <label>Vertical d’ingénierie combinée</label>
-      <description>Système de références spatiales combiné contenant un système
-        de références par coordonnées d’ingénierie horizontales et un système de
-        références par coordonnées verticales. EXEMPLE [local] x, y, hauteur
+      <label>Vertikale kombinierte Technik</label>
+      <description>Kombiniertes räumliches Referenzsystem mit einem
+        Referenzsystem mit horizontalen technischen Koordinaten und ein
+        vertikalen Koordinatenbezugssystem. BEISPIEL [lokal] x, y, Höhe
       </description>
     </entry>
     <entry>
       <code>compoundEngineeringVerticalTemporal</code>
-      <label>Vertical et temporel d’ingénierie combinée</label>
-      <description>Système de références par coordonnées spatio-temporelles
-        combiné contenant des systèmes de références par coordonnées
-        d’ingénierie, verticales et temporelles. EXEMPLE [local] x, y, hauteur,
-        temps
+      <label>Vertikale und zeitliche kombinierte Technik</label>
+      <description>Kombiniertes Raum-Zeit-Koordinatenreferenzsystem
+        mit kombinierten vertikalen und zeitlichen Koordinatenreferenzsystemen
+        , vertikale und zeitliche Koordinatenreferenzsysteme. BEISPIEL [lokal] x, y, Höhe,
+        Zeit
       </description>
     </entry>
     <entry>
       <code>compoundGeographic2DParametric</code>
-      <label>Paramétrique géographique 2D combiné</label>
-      <description>Système de références par coordonnées spatio-paramétriques
-        combiné contenant un système de références par coordonnées horizontales
-        géographiques en 2 dimensions et un système de références paramétriques.
-        EXEMPLE latitude, longitude, pression
+      <label>Kombinierte parametrische 2D-Geografie</label>
+      <description>Kombiniertes räumlich-parametrisches Koordinatenreferenzsystem
+        mit einem kombinierten zweidimensionalen horizontalen geografischen Koordinatenreferenzsystem
+        und ein parametrisches Koordinatensystem.
+        BEISPIEL Breitengrad, Längengrad, Druck
       </description>
     </entry>
     <entry>
       <code>compoundGeographic2DParametricTemporal</code>
-      <label>Temporel et paramétrique 2D géométrique combiné</label>
-      <description>Système de références par coordonnées
-        spatio-paramétriques-temporelles combiné contenant un système de
-        références par coordonnées horizontales géographiques, un système de
-        références par coordonnées paramétriques et un système de références par
-        coordonnées temporelles en 2 dimensions. EXEMPLE latitude, longitude,
-        pression, temps
+      <label>Kombinierte zeitliche und parametrische 2D-Geometrie</label>
+      <description>Referenzsystem mit kombinierten räumlich-parametrischen-zeitlichen Koordinaten
+        , das ein System mit
+        Referenzsystem mit horizontalen geografischen Koordinaten, ein
+        parametrischen Koordinaten und ein Referenzsystem mit
+        zeitlichen Koordinaten in zwei Dimensionen. BEISPIEL: Breitengrad, Längengrad,
+        Druck, Zeit
       </description>
     </entry>
     <entry>
       <code>compoundGeographic2DTemporal</code>
-      <label>Temporel 2D géométrique combiné</label>
-      <description>Système de références par coordonnées spatio-temporelles
-        combiné contenant un système de références par coordonnées horizontales
-        géographiques en 2 dimensions et un système de références temporelles.
-        EXEMPLE latitude, longitude, temps
+      <label>Kombinierte geometrische 2D-Zeit</label>
+      <description>Kombiniertes Raum-Zeit-Koordinatenreferenzsystem
+        mit einem kombinierten Referenzsystem aus zweidimensionalen horizontalen geografischen Koordinaten
+        und ein zeitliches Koordinatensystem.
+        BEISPIEL Breitengrad, Längengrad, Zeit
       </description>
     </entry>
     <entry>
       <code>compoundGeographic2DVertical</code>
-      <label>Vertical 2D géographique combiné</label>
-      <description>système de références par coordonnées combiné dans lequel un
-        seul système de références par coordonnées constituant est un système de
-        références par coordonnées géodésiques horizontales et un seul système
-        est un système de références par coordonnées verticales. EXEMPLE
-        latitude, longitude, hauteur ou profondeur [liée à la gravité]
+      <label>Vertikale 2D-Geokombination</label>
+      <description>Kombiniertes Koordinatenreferenzsystem, bei dem ein
+        einziges konstituierendes Koordinatenbezugssystem ein System mit
+        horizontalen geodätischen Koordinatenbezugssystem und ein einziges System
+        ein vertikales Koordinatenreferenzsystem ist. BEISPIEL
+        Breitengrad, Längengrad, Höhe oder Tiefe [schwerkraftbezogen]
       </description>
     </entry>
     <entry>
       <code>compoundGeographic2DVerticalTemporal</code>
-      <label>Temporel et vertical 2D géométrique combiné</label>
-      <description>Système de références par coordonnées spatio-temporelles
-        combiné contenant un système de références par coordonnées horizontales
-        géographiques, un système de références par coordonnées verticales et un
-        système de références par coordonnées temporelles en 2 dimensions
-        EXEMPLE latitude, longitude, hauteur, temps
+      <label>Kombinierte zeitliche und vertikale 2D-Geometrie</label>
+      <description>Kombiniertes Raum-Zeit-Koordinatenreferenzsystem
+        mit einem kombinierten horizontalen geografischen Koordinatenreferenzsystem
+        , ein vertikales Koordinatenreferenzsystem und ein
+        Referenzsystem für zeitliche Koordinaten in zwei Dimensionen
+        BEISPIEL: Breitengrad, Längengrad, Höhe, Zeit
       </description>
     </entry>
     <entry>
       <code>compoundGeographic3DTemporal</code>
-      <label>Temporel 3D géométrique combiné</label>
-      <description>Système de références par coordonnées spatio-temporelles
-        combiné contenant un système de références par coordonnées géographiques
-        et un système de références par coordonnées temporelles en 3 dimensions.
-        EXEMPLE latitude, longitude, hauteur ellipsoïdale, temps
+      <label>Kombinierte geometrische 3D-Zeitangabe</label>
+      <description>Kombiniertes Raum-Zeit-Koordinatenreferenzsystem
+        mit einem geografischen Koordinatenreferenzsystem
+        und ein dreidimensionales zeitliches Koordinatenreferenzsystem.
+        BEISPIEL: Breitengrad, Längengrad, Ellipsoidhöhe, Zeit
       </description>
     </entry>
     <entry>
       <code>compoundProjected2DParametric</code>
-      <label>Paramétrique 2D projeté combiné</label>
-      <description>système de références par coordonnées spatio-paramétriques
-        combiné contenant un système de références par coordonnées horizontales
-        projeté et un système de références paramétriques. EXEMPLE abscisse,
-        ordonnée, densité
+      <label>Kombinierte parametrische 2D-Projektion</label>
+      <description>Raum-parametrisches Koordinatenreferenzsystem
+        mit einem kombinierten Referenzsystem aus horizontalen Projektionskoordinaten
+        und ein parametrisches Koordinatensystem. BEISPIEL x-Koordinate,
+        Ordinate, Dichte
       </description>
     </entry>
     <entry>
       <code>compoundProjected2DParametricTemporal</code>
-      <label>Temporel et paramétrique 2D projeté combiné</label>
-      <description>Système de références par coordonnées spatio-paramétriques
-        temporelles combiné contenant un système de références par coordonnées
-        horizontales projeté, un système de références paramétriques et un
-        système de références par coordonnées temporelles. EXEMPLE abscisse,
-        ordonnée, densité, temps
+      <label>Kombinierte zeitliche und parametrische 2D-Projektion</label>
+      <description>Kombiniertes zeitliches und parametrisches 2D-Koordinatenreferenzsystem
+        mit einem kombinierten zeitlichen Referenzsystem mit
+        , ein parametrisches Koordinatensystem und ein
+        Zeitreferenzsystem. BEISPIEL x-Achse,
+        Ordinate, Dichte, Zeit
       </description>
     </entry>
     <entry>
       <code>compoundProjectedTemporal</code>
-      <label>Temporel projeté combiné</label>
-      <description>système de références par coordonnées spatio-temporelles
-        combiné contenant un système de références par coordonnées horizontales
-        et un système de références par coordonnées horizontales projeté et un
-        système de références par coordonnées temporelles. EXEMPLE abscisse,
-        ordonnée, temps
+      <label>Kombinierte projizierte Zeit</label>
+      <description>Raum-Zeit-Koordinaten-Referenzsystem
+        mit einem Referenzsystem mit horizontalen Koordinaten
+        und ein projiziertes horizontales Koordinatenreferenzsystem und ein
+        Zeitreferenzsystem. BEISPIEL Abszisse,
+        Ordinate, Zeit
       </description>
     </entry>
     <entry>
       <code>compoundProjectedVertical</code>
-      <label>Vertical projeté combiné</label>
-      <description>Système de références spatiales combiné contenant un système
-        de références par coordonnées horizontales projeté et un système de
-        références par coordonnées verticales. EXEMPLE abscisse, ordonnée,
-        hauteur ou profondeur [liée à la gravité]
+      <label>Kombinierte projizierte Vertikale</label>
+      <description>Kombiniertes räumliches Referenzsystem, das ein
+        Referenzsystem mit projizierten horizontalen Koordinaten und ein
+        vertikalen Koordinatenbezugssystem. BEISPIEL Abszisse, Ordinate,
+        Höhe oder Tiefe [in Verbindung mit der Schwerkraft]
       </description>
     </entry>
     <entry>
       <code>compoundProjectedVerticalTemporal</code>
-      <label>Temporel et vertical projeté combiné</label>
-      <description>Système de références par coordonnées spatio-temporelles
-        combiné contenant un système de références par coordonnées horizontales
-        projeté, un système de références par coordonnées verticales et un
-        système de références par coordonnées temporelles. EXEMPLE abscisse,
-        ordonnée, hauteur, temps
+      <label>Kombinierte zeitliche und vertikale Projektion</label>
+      <description>Kombiniertes Raum-Zeit-Koordinatenreferenzsystem
+        mit einem kombinierten horizontalen Koordinatenreferenzsystem
+        , ein vertikales Koordinatenreferenzsystem und ein
+        Zeitreferenzsystem. BEISPIEL x-Koordinate,
+        Ordinate, Höhe, Zeit
       </description>
     </entry>
     <entry>
       <code>engineering</code>
-      <label>Ingénierie</label>
-      <description>système de références par coordonnées basé sur une référence
-        d’ingénierie (référence décrivant la relation d’un système de
-        coordonnées avec une référence locale). EXEMPLE [local] x,y
+      <label>Ingenieurwesen</label>
+      <description>Koordinatenreferenzsystem auf Basis einer technischen Referenz
+        (Referenz, die die Beziehung eines Koordinatensystems
+        mit einem lokalen Bezugssystem beschreibt). BEISPIEL [lokal] x,y
       </description>
     </entry>
     <entry>
       <code>engineeringDesign</code>
-      <label>Conception d’ingénierie</label>
-      <description>Système de références par coordonnées d’ingénierie dans
-        lequel la représentation de base d’un objet en mouvement est spécifiée.
-        EXEMPLE [local] x,y
+      <label>Technisches Design</label>
+      <description>Technisches Koordinatenreferenzsystem,
+        , in dem die grundlegende Darstellung eines sich bewegenden Objekts angegeben wird.
+        BEISPIEL [lokal] x,y
       </description>
     </entry>
     <entry>
       <code>engineeringImage</code>
-      <label>Image d’ingénierie</label>
-      <description>système de références par coordonnées sur la base d’une
-        référence d’image (référence d’ingénierie qui définit la relation d’un
-        système de coordonnées par rapport à une image). EXEMPLE rangée, colonne
+      <label>Technisches Bild</label>
+      <description>Koordinatenreferenzsystem auf der Grundlage einer
+        Bildreferenz (technische Referenz, die die Beziehung eines
+        Koordinatensystems in Bezug auf ein Bild definiert). BEISPIEL Zeile, Spalte
       </description>
     </entry>
     <entry>
       <code>geodeticGeocentric</code>
-      <label>Géocentrique géodésique</label>
-      <description>Système CRS géodésique comportant un système de coordonnées
-        en 3D cartésien. EXEMPLE [géocentrique] X,Y,Z
+      <label>Geozentrisch geodätisch</label>
+      <description>Geodätisches CRS-System mit einem kartesischen 3D-Koordinatensystem
+        . BEISPIEL [geozentrisch] X,Y,Z
       </description>
     </entry>
     <entry>
       <code>geodeticGeographic2D</code>
-      <label>2D géographique géodésique</label>
-      <description>système CRS géodésique comportant un système de coordonnées
-        en 2D ellipsoïdal. EXEMPLE latitude, longitude
+      <label>2D geodätisch geografisch</label>
+      <description>geodätisches CRS-System mit einem ellipsoidischen 2D-Koordinatensystem
+        . BEISPIEL: Breitengrad, Längengrad
       </description>
     </entry>
     <entry>
       <code>geodeticGeographic3D</code>
-      <label>3D géographique géodésique</label>
-      <description>système CRS géodésique comportant un système de coordonnées
-        en 3D ellipsoïdal. EXEMPLE latitude, longitude, hauteur ellipsoïdale
+      <label>3D geodätisch geografisch</label>
+      <description>Geodätisches CRS-System mit einem ellipsoidischen 3D-Koordinatensystem
+        . BEISPIEL: Breitengrad, Längengrad, ellipsoidische Höhe
       </description>
     </entry>
     <entry>
       <code>geographicIdentifier</code>
-      <label>Identifiant géographique</label>
-      <description>Référence spatiale sous la forme d’une étiquette ou d’un code
-        qui identifie une localisation. EXEMPLE code postal
+      <label>Geografische Kennung</label>
+      <description>Raumbezogene Referenz in Form einer Bezeichnung oder eines Codes
+        , die einen Standort identifiziert. BEISPIEL Postleitzahl
       </description>
     </entry>
     <entry>
       <code>linear</code>
-      <label>Linéaire</label>
-      <description>Système de références qui identifie une localisation par
-        référence à un segment d’une entité géographique linéaire et une
-        distance le long de ce segment à partir d’un point donné EXEMPLE x km le
-        long d’une route
+      <label>Linear</label>
+      <description>Referenzsystem, das einen Standort durch
+        Bezug auf ein Segment einer linearen geografischen Einheit und eine
+        Entfernung entlang dieses Abschnitts von einem bestimmten Punkt aus BEISPIEL x km
+        entlang einer Straße
       </description>
     </entry>
     <entry>
       <code>parametric</code>
-      <label>Paramétrique</label>
-      <description>système de références par coordonnées sur la base d’une
-        référence paramétrique (référence décrivant dans la relation d’un
-        système de coordonnées paramétriques vis-à-vis d’un objet). EXEMPLE
-        pression
+      <label>Parametrisch</label>
+      <description>Koordinatenreferenzsystem auf der Grundlage einer
+        parametrischen Bezug (Bezug, der die Beziehung eines
+        parametrischen Koordinatensystems in Bezug auf ein Objekt). BEISPIEL
+        Druck
       </description>
     </entry>
     <entry>
       <code>projected</code>
-      <label>Projeté</label>
-      <description>système de références par coordonnées dérivé d’un système de
-        références par coordonnées géodésiques en deux dimensions par
-        l’application d’une projection cartographique. EXEMPLE abscisse,
-        ordonnée
+      <label>Projiziert</label>
+      <description>Koordinatenreferenzsystem, abgeleitet von einem Referenzsystem
+        zweidimensionalen geodätischen Koordinatenreferenzsystem durch
+        Anwendung einer kartografischen Projektion abgeleitetes Koordinatenreferenzsystem. BEISPIEL Abszisse,
+        ordinate
       </description>
     </entry>
     <entry>
       <code>temporal</code>
-      <label>Temporel</label>
-      <description>système de références par rapport auquel le temps est mesuré.
-        EXEMPLE temps
+      <label>Zeitlich</label>
+      <description>Referenzsystem, anhand dessen die Zeit gemessen wird.
+        BEISPIEL Zeit
       </description>
     </entry>
     <entry>
-      <code>vertical</code>
-      <label>Vertical</label>
-      <description>Système de références par coordonnées en une dimension sur la
-        base d’une référence verticale (référence décrivant la relation de
-        hauteur ou de profondeur liée à la gravité par rapport à la Terre).
-        EXEMPLE hauteur ou profondeur [liée à la gravité]
+      <code>vertikal</code>
+      <label>Vertikal</label>
+      <description>Eindimensionales Koordinatenreferenzsystem auf der
+        Basis eines vertikalen Bezugssystems (Bezugssystem, das die Beziehung der
+        Höhe oder Tiefe in Bezug auf die Schwerkraft der Erde beschreibt).
+        BEISPIEL Höhe oder Tiefe [in Bezug auf die Schwerkraft]
       </description>
     </entry>
   </codelist>
   <codelist name="msr:MD_CellGeometryCode">
     <entry>
-      <code>point</code>
-      <label>Point</label>
-      <description>Chaque cellule représente un point</description>
+      <code>Punkt</code>
+      <label>Punkt</label>
+      <description>Jede Zelle stellt einen Punkt dar</description>
     </entry>
     <entry>
       <code>area</code>
-      <label>Surface</label>
-      <description>Chaque cellule représente une surface</description>
+      <label>Fläche</label>
+      <description>Jede Zelle steht für eine Fläche</description>
     </entry>
     <entry>
-      <code>voxel</code>
+      <code>Voxel</code>
       <label>Voxel</label>
-      <description>Chaque cellule représente un mesurage volumétrique sur une
-        grille normale dans un espace en trois dimensions
+      <description>Jede Zelle stellt eine Volumenmessung auf einem
+        normalen Gitter in einem dreidimensionalen Raum
       </description>
     </entry>
     <entry>
       <code>stratum</code>
-      <label>Strate</label>
-      <description>Plage de hauteur pour un profil vertical d’un seul point
+      <label>Stratum</label>
+      <description>Höhenbereich für ein vertikales Profil eines einzelnen Punktes
       </description>
     </entry>
   </codelist>
@@ -2532,201 +2236,201 @@
     <entry>
       <code>ucs2</code>
       <label>Ucs2</label>
-      <description>16-bit fixed size Universal Character Set, based on ISO
+      <description>16-Bit-Zeichensatz mit fester Größe, basierend auf ISO
         10646
       </description>
     </entry>
     <entry>
       <code>ucs4</code>
       <label>Ucs4</label>
-      <description>32-bit fixed size Universal Character Set, based on ISO/IEC
+      <description>32-Bit-Universalzeichensatz mit fester Größe, basierend auf ISO/IEC
         10646
       </description>
     </entry>
     <entry>
       <code>utf7</code>
       <label>Utf7</label>
-      <description>7-bit variable size UCS Transfer Format, based on ISO/IEC
+      <description>7-Bit-UCS-Übertragungsformat mit variabler Größe, basierend auf ISO/IEC
         10646
       </description>
     </entry>
     <entry>
       <code>utf8</code>
       <label>Utf8</label>
-      <description>8-bit variable size UCS Transfer Format, based on ISO/IEC
+      <description>8-Bit-UCS-Übertragungsformat mit variabler Größe, basierend auf ISO/IEC
         10646
       </description>
     </entry>
     <entry>
       <code>utf16</code>
       <label>Utf16</label>
-      <description>16-bit variable size UCS Transfer Format, based on ISO/IEC
+      <description>16-Bit-UCS-Übertragungsformat mit variabler Größe, basierend auf ISO/IEC
         10646
       </description>
     </entry>
     <entry>
       <code>8859part1</code>
       <label>8859part1</label>
-      <description>ISO/IEC 8859-1, Information technology - 8-bit single byte
-        coded graphic
-        character sets - Part 1 : Latin alphabet No.1
+      <description>ISO/IEC 8859-1, Informationstechnologie – 8-Bit-Einzelbyte
+        codierte Grafik
+        Zeichensätze – Teil 1: Lateinisches Alphabet Nr. 1
       </description>
     </entry>
     <entry>
       <code>8859part2</code>
       <label>8859part2</label>
-      <description>ISO/IEC 8859-2, Information technology - 8-bit single byte
-        coded graphic
-        character sets - Part 2 : Latin alphabet No.2
+      <description>ISO/IEC 8859-2, Informationstechnologie – 8-Bit-Einzelbyte
+        codierte Grafik
+        Zeichensätze – Teil 2: Lateinisches Alphabet Nr. 2
       </description>
     </entry>
     <entry>
       <code>8859part3</code>
       <label>8859part3</label>
-      <description>ISO/IEC 8859-3, Information technology - 8-bit single byte
-        coded graphic
-        character sets - Part 3 : Latin alphabet No.3
+      <description>ISO/IEC 8859-3, Informationstechnologie – 8-Bit-Einzelbyte
+        codierte Grafik
+        Zeichensätze – Teil 3: Lateinisches Alphabet Nr. 3
       </description>
     </entry>
     <entry>
       <code>8859part4</code>
       <label>8859part4</label>
-      <description>ISO/IEC 8859-4, Information technology - 8-bit single byte
-        coded graphic
-        character sets - Part 4 : Latin alphabet No.4
+      <description>ISO/IEC 8859-4, Informationstechnologie – 8-Bit-Einzelbyte
+        codierte Grafik
+        Zeichensätze – Teil 4: Lateinisches Alphabet Nr. 4
       </description>
     </entry>
     <entry>
       <code>8859part5</code>
       <label>8859part5</label>
-      <description>ISO/IEC 8859-5, Information technology - 8-bit single byte
-        coded graphic
-        character sets - Part 5 : Latin/Cyrillic alphabet
+      <description>ISO/IEC 8859-5, Informationstechnologie – 8-Bit-Einzelbyte
+        codierte Grafik
+        Zeichensätze – Teil 5: Lateinisches/kyrillisches Alphabet
       </description>
     </entry>
     <entry>
       <code>8859part6</code>
       <label>8859part6</label>
-      <description>ISO/IEC 8859-6, Information technology - 8-bit single byte
-        coded graphic
-        character sets - Part 6 : Latin/Arabic alphabet
+      <description>ISO/IEC 8859-6, Informationstechnologie – 8-Bit-Einzelbyte
+        codierte Grafik
+        Zeichensätze – Teil 6: Lateinisches/arabisches Alphabet
       </description>
     </entry>
     <entry>
       <code>8859part7</code>
       <label>8859part7</label>
-      <description>ISO/IEC 8859-7, Information technology - 8-bit single byte
-        coded graphic
-        character sets - Part 7 : Latin/Greek alphabet
+      <description>ISO/IEC 8859-7, Informationstechnologie – 8-Bit-Einzelbyte
+        codierte Grafik
+        Zeichensätze – Teil 7: Lateinisches/Griechisches Alphabet
       </description>
     </entry>
     <entry>
       <code>8859part8</code>
       <label>8859part8</label>
-      <description>ISO/IEC 8859-8, Information technology - 8-bit single byte
-        coded graphic
-        character sets - Part 8 : Latin/Hebrew alphabet
+      <description>ISO/IEC 8859-8, Informationstechnologie – 8-Bit-Einzelbyte
+        codierte Grafik
+        Zeichensätze – Teil 8: Lateinisches/hebräisches Alphabet
       </description>
     </entry>
     <entry>
       <code>8859part9</code>
       <label>8859part9</label>
-      <description>ISO/IEC 8859-9, Information technology - 8-bit single byte
-        coded graphic
-        character sets - Part 9 : Latin alphabet No.5
+      <description>ISO/IEC 8859-9, Informationstechnologie – 8-Bit-Einzelbyte
+        codierte Grafik
+        Zeichensätze – Teil 9: Lateinisches Alphabet Nr. 5
       </description>
     </entry>
     <entry>
       <code>8859part10</code>
       <label>8859part10</label>
-      <description>ISO/IEC 8859-10, Information technology - 8-bit single byte
-        coded graphic
-        character sets - Part 10 : Latin alphabet No.6
+      <description>ISO/IEC 8859-10, Informationstechnologie – 8-Bit-Einzelbyte
+        codierte Grafik
+        Zeichensätze – Teil 10: Lateinisches Alphabet Nr. 6
       </description>
     </entry>
     <entry>
       <code>8859part11</code>
       <label>8859part11</label>
-      <description>ISO/IEC 8859-11, Information technology - 8-bit single byte
-        coded graphic
-        character sets - Part 11 : Latin/Thai alphabet
+      <description>ISO/IEC 8859-11, Informationstechnologie – 8-Bit-Einzelbyte
+        codierte Grafik
+        Zeichensätze – Teil 11: Lateinisches/Thailändisches Alphabet
       </description>
     </entry>
     <entry>
       <code>8859part13</code>
       <label>8859part13</label>
-      <description>ISO/IEC 8859-13, Information technology - 8-bit single byte
-        coded graphic
-        character sets - Part 13 : Latin alphabet No.7
+      <description>ISO/IEC 8859-13, Informationstechnologie – 8-Bit-Einzelbyte
+        codierte Grafik
+        Zeichensätze – Teil 13: Lateinisches Alphabet Nr. 7
       </description>
     </entry>
     <entry>
       <code>8859part14</code>
       <label>8859part14</label>
-      <description>ISO/IEC 8859-14, Information technology - 8-bit single byte
-        coded graphic
-        character sets - Part 14 : Latin alphabet No.8 (Celtic)
+      <description>ISO/IEC 8859-14, Informationstechnologie – 8-Bit-Einzelbyte
+        codierte Grafik
+        Zeichensätze – Teil 14: Lateinisches Alphabet Nr. 8 (keltisch)
       </description>
     </entry>
     <entry>
       <code>8859part15</code>
       <label>8859part15</label>
-      <description>ISO/IEC 8859-15, Information technology - 8-bit single byte
-        coded graphic
-        character sets - Part 15 : Latin alphabet No.9
+      <description>ISO/IEC 8859-15, Informationstechnologie – 8-Bit-Einzelbyte
+        codierte Grafik
+        Zeichensätze – Teil 15: Lateinisches Alphabet Nr. 9
       </description>
     </entry>
     <entry>
       <code>8859part16</code>
       <label>8859part16</label>
-      <description>ISO/IEC 8859-16, Information technology - 8-bit single byte
-        coded graphic
-        character sets - Part 16 : Latin alphabet No.10
+      <description>ISO/IEC 8859-16, Informationstechnologie – 8-Bit-Einzelbyte
+        codierte Grafik
+        Zeichensätze – Teil 16: Lateinisches Alphabet Nr. 10
       </description>
     </entry>
     <entry>
       <code>jis</code>
       <label>Jis</label>
-      <description>Japanese code set used for electronic transmission
+      <description>Japanischer Zeichensatz für die elektronische Übertragung
       </description>
     </entry>
     <entry>
       <code>shiftJIS</code>
       <label>ShiftJIS</label>
-      <description>Japanese code set used on MS-DOS machines</description>
+      <description>Japanischer Zeichensatz, der auf MS-DOS-Rechnern verwendet wird</description>
     </entry>
     <entry>
       <code>eucJP</code>
       <label>EucJP</label>
-      <description>Japanese code set used on UNIX based machines</description>
+      <description>Japanischer Zeichensatz, der auf UNIX-basierten Rechnern verwendet wird</description>
     </entry>
     <entry>
       <code>usAscii</code>
       <label>UsAscii</label>
-      <description>United States ASCII code set (ISO 646 US)</description>
+      <description>United States ASCII-Zeichensatz (ISO 646 US)</description>
     </entry>
     <entry>
       <code>ebcdic</code>
       <label>Ebcdic</label>
-      <description>IBM mainframe code set</description>
+      <description>IBM-Mainframe-Zeichensatz</description>
     </entry>
     <entry>
       <code>eucKR</code>
       <label>EucKR</label>
-      <description>Korean code set</description>
+      <description>Koreanischer Zeichensatz</description>
     </entry>
     <entry>
       <code>big5</code>
       <label>Big5</label>
-      <description>Traditional Chinese code set used in Taiwan, Hong Kong of
-        China and other
-        areas
+      <description>Traditioneller chinesischer Zeichensatz, der in Taiwan, Hongkong und
+        China und anderen
+        Gebieten
       </description>
     </entry>
     <entry>
       <code>GB2312</code>
       <label>GB2312</label>
-      <description>Simplified Chinese code set</description>
+      <description>Vereinfachter chinesischer Zeichensatz</description>
     </entry>
   </codelist>
 
@@ -2735,127 +2439,127 @@
     <entry>
       <code>cdRom</code>
       <label>CD-ROM</label>
-      <description>Disque optique en lecture seule</description>
+      <description>Optische Nur-Lese-Disk</description>
     </entry>
     <entry>
       <code>dvd</code>
       <label>DVD</label>
-      <description>Disque numérique universel</description>
+      <description>Universal Digital Disc</description>
     </entry>
     <entry>
       <code>dvdRom</code>
       <label>DVD-ROM</label>
-      <description>Disque numérique universel en lecture seule</description>
+      <description>Nur-Lese-Universal-Digital-Disc</description>
     </entry>
     <entry>
       <code>3halfInchFloppy</code>
-      <label>Disquette 3.5 pouces</label>
-      <description>Disquette magnétique de 3.5 pouces</description>
+      <label>3,5-Zoll-Diskette</label>
+      <description>3,5-Zoll-Magnetdiskette</description>
     </entry>
     <entry>
       <code>5quarterInchFloppy</code>
-      <label>Disquette 5.25 pouces</label>
-      <description>Disquette magnétique de 5.25 pouces</description>
+      <label>5,25-Zoll-Diskette</label>
+      <description>5,25-Zoll-Magnetdiskette</description>
     </entry>
     <entry>
       <code>7trackTape</code>
-      <label>Bande magnétique 7 pistes</label>
-      <description>Bande magnétique</description>
+      <label>7-Spur-Magnetband</label>
+      <description>Magnetband</description>
     </entry>
     <entry>
       <code>9trackTape</code>
-      <label>Bande magnétique 9 pistes</label>
-      <description>Bande magnétique</description>
+      <label>9-Spur-Magnetband</label>
+      <description>Magnetband</description>
     </entry>
     <entry>
       <code>3480Cartridge</code>
-      <label>Cartouche 3480</label>
-      <description>Cartouche à bande magnétique 3480</description>
+      <label>Kassette 3480</label>
+      <description>Magnetbandkassette 3480</description>
     </entry>
     <entry>
       <code>3490Cartridge</code>
-      <label>Cartouche 3490</label>
-      <description>Cartouche à bande magnétique 3490</description>
+      <label>Kassette 3490</label>
+      <description>Magnetbandkassette 3490</description>
     </entry>
     <entry>
       <code>3580Cartridge</code>
-      <label>Cartouche 3580</label>
-      <description>Cartouche à bande magnétique 3580</description>
+      <label>Kassette 3580</label>
+      <description>Magnetbandkassette 3580</description>
     </entry>
     <entry>
       <code>4mmCartridgeTape</code>
-      <label>Bande magnétique 4 mm</label>
-      <description>Bande magnétique 4 mm</description>
+      <label>4-mm-Magnetband</label>
+      <description>4-mm-Magnetband</description>
     </entry>
     <entry>
       <code>8mmCartridgeTape</code>
-      <label>Bande magnétique 8 mm</label>
-      <description>Bande magnétique 8 mm</description>
+      <label>Magnetband 8 mm</label>
+      <description>8-mm-Magnetband</description>
     </entry>
     <entry>
       <code>1quarterInchCartridgeTape</code>
-      <label>Bande magnétique 0.25 pouces</label>
-      <description>Bande magnétique 0.25 pouces</description>
+      <label>0,25-Zoll-Magnetband</label>
+      <description>0,25-Zoll-Magnetband</description>
     </entry>
     <entry>
       <code>digitalLinearTape</code>
-      <label>Bande magnétique 0.5 pouces</label>
-      <description>Bande magnétique 0.5 pouces</description>
+      <label>Magnetband 0,5 Zoll</label>
+      <description>Magnetband 0,5 Zoll</description>
     </entry>
     <entry>
       <code>onLine</code>
-      <label>En ligne</label>
-      <description>En ligne</description>
+      <label>Online</label>
+      <description>Online</description>
     </entry>
     <entry>
-      <code>satellite</code>
-      <label>Satellite</label>
-      <description>Communication par satellite</description>
+      <code>Satellit</code>
+      <label>Satellit</label>
+      <description>Satellitenkommunikation</description>
     </entry>
     <entry>
       <code>telephoneLink</code>
-      <label>Communication téléphonique</label>
-      <description>Liens via un réseau téléphonique</description>
+      <label>Telefonische Kommunikation</label>
+      <description>Verbindungen über ein Telefonnetz</description>
     </entry>
     <entry>
       <code>hardcopy</code>
       <label>Papier</label>
-      <description>Document papier</description>
+      <description>Papierdokument</description>
     </entry>
   </codelist>
   <codelist name="srv:DCPList">
     <entry>
       <code>XML</code>
       <label>XML</label>
-      <description>Extensible Markup Language (Langage de balisage extensible)
+      <description>Extensible Markup Language (Erweiterbare Auszeichnungssprache)
       </description>
     </entry>
     <entry>
       <code>CORBA</code>
       <label>CORBA</label>
-      <description>Architecture pour un intermédiaire commun dans les requêtes
-        d’objet
+      <description>Architektur für einen gemeinsamen Vermittler bei Objektanfragen
+        von
       </description>
     </entry>
     <entry>
       <code>JAVA</code>
       <label>JAVA</label>
-      <description>Langage de programmation orientée objet</description>
+      <description>Objektorientierte Programmiersprache</description>
     </entry>
     <entry>
       <code>COM</code>
       <label>COM</label>
-      <description>Modèle de composant objet</description>
+      <description>Objektkomponentenmodell</description>
     </entry>
     <entry>
       <code>SQL</code>
       <label>SQL</label>
-      <description>Langage de requête structuré</description>
+      <description>Strukturierte Abfragesprache</description>
     </entry>
     <entry>
       <code>SOAP</code>
       <label>SOAP</label>
-      <description>Protocole simplifié d’accès aux objets</description>
+      <description>Vereinfachtes Protokoll für den Zugriff auf Objekte</description>
     </entry>
     <entry>
       <code>Z3950</code>
@@ -2865,85 +2569,85 @@
     <entry>
       <code>HTTP</code>
       <label>HTTP</label>
-      <description>Protocole de transfert hypertexte</description>
+      <description>Hypertext Transfer Protocol</description>
     </entry>
     <entry>
       <code>FTP</code>
       <label>FTP</label>
-      <description>Protocole de transfert de fichiers</description>
+      <description>Dateiübertragungsprotokoll</description>
     </entry>
     <entry>
       <code>WebServices</code>
       <label>WebServices</label>
-      <description>Protocole simplifié d’accès aux objets</description>
+      <description>Vereinfachtes Protokoll für den Zugriff auf Objekte</description>
     </entry>
   </codelist>
   <codelist name="srv:SV_CouplingType">
     <entry>
       <code>tight</code>
-      <label>Reserré</label>
-      <description>L’instance de service est fortement couplée à une instance de
-        données, c’est-à-dire que la classe MD_DataIdentification DOIT être
-        décrite
+      <label>Fest</label>
+      <description>Die Serviceinstanz ist eng mit einer Dateninstanz gekoppelt
+        , d. h. die Klasse MD_DataIdentification MUSS
+        beschrieben werden
       </description>
     </entry>
     <entry>
-      <code>mixed</code>
-      <label>Mixte</label>
-      <description>l’instance de service est couplée de façon mélangée avec une
-        instance de données, c’est-à-dire que la classe MD_DataIdentification
-        décrit l’instance de données associée et de plus l’instance de service
-        peut fonctionner avec d’autres instances de données externes
+      <code>gemischt</code>
+      <label>Gemischt</label>
+      <description>Die Service-Instanz ist gemischt mit einer
+        Dateninstanz gemischt gekoppelt, d. h. die Klasse MD_DataIdentification
+        beschreibt die zugehörige Dateninstanz und darüber hinaus kann die Serviceinstanz
+        kann mit anderen externen Dateninstanzen arbeiten
       </description>
     </entry>
     <entry>
       <code>loose</code>
-      <label>Libre</label>
-      <description>L’instance de service est légèrement couplée à une instance
-        de données, c’est-à-dire qu’aucune classe MD_DataIdentification ne doit
-        être décrite
+      <label>Lose</label>
+      <description>Die Service-Instanz ist leicht an eine Dateninstanz gekoppelt
+        Dateninstanz, d. h., es muss keine Klasse MD_DataIdentification
+        beschrieben werden
       </description>
     </entry>
   </codelist>
   <codelist name="gco:nilReason">
     <entry>
       <code>missing</code>
-      <label>Manquant</label>
+      <label>Fehlt</label>
     </entry>
     <entry>
-      <code>inapplicable</code>
-      <label>Non appliquable</label>
+      <code>nicht anwendbar</code>
+      <label>Nicht anwendbar</label>
     </entry>
     <entry>
-      <code>template</code>
-      <label>Modèle</label>
+      <code>Vorlage</code>
+      <label>Vorlage</label>
     </entry>
     <entry>
       <code>unknown</code>
-      <label>Inconnu</label>
+      <label>Unbekannt</label>
     </entry>
     <entry>
-      <code>withheld</code>
-      <label>Avec autorisation</label>
+      <code>zurückgehalten</code>
+      <label>Mit Genehmigung</label>
     </entry>
   </codelist>
 
   <codelist name="indeterminatePosition">
     <entry>
       <code>after</code>
-      <label>Après</label>
+      <label>Nach</label>
     </entry>
     <entry>
-      <code>before</code>
-      <label>Avant</label>
+      <code>vor</code>
+      <label>Vorher</label>
     </entry>
     <entry>
       <code>now</code>
-      <label>En cours</label>
+      <label>Aktuell</label>
     </entry>
     <entry>
       <code>unknown</code>
-      <label>Inconnu</label>
+      <label>Unbekannt</label>
     </entry>
   </codelist>
 </codelists>

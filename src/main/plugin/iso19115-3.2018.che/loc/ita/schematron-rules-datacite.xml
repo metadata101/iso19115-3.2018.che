@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (C) 2001-2016 Food and Agriculture Organization of the
+  ~ United Nations (FAO-UN), United Nations World Food Programme (WFP)
+  ~ and United Nations Environment Programme (UNEP)
+  ~
+  ~ This program is free software; you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation; either version 2 of the License, or (at
+  ~ your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful, but
+  ~ WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+  ~ General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program; if not, write to the Free Software
+  ~ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
+  ~
+  ~ Contact: Jeroen Ticheler - FAO - Viale delle Terme di Caracalla 2,
+  ~ Rome - Italy. email: geonetwork@osgeo.org
+  -->
+
+<strings>
+  <datacite.mandatory>Campi obbligatori</datacite.mandatory>
+
+  <datacite.identifier.missing>Manca l'identificatore. L'identificatore è una stringa unica che identifica una risorsa. Questo campo è obbligatorio.
+  </datacite.identifier.missing>
+  <datacite.identifier.present>L'identificatore è: </datacite.identifier.present>
+
+  <datacite.type.missing>Manca il tipo. Controlla la sezione dei metadati e imposta il livello di gerarchia. Questo campo è obbligatorio.
+  </datacite.type.missing>
+  <datacite.type.present>Il tipo di risorsa è: </datacite.type.present>
+
+  <datacite.title.missing>Manca il titolo. Un nome o titolo con cui una risorsa è conosciuta. Può essere il titolo di un dataset o il nome di un software. Questo campo è obbligatorio.
+  </datacite.title.missing>
+  <datacite.title.present>Il titolo è:</datacite.title.present>
+
+  <datacite.publicationDate.missing>Manca l'anno di pubblicazione. L'anno in cui i dati sono o saranno resi pubblici. Controlla la data di pubblicazione nell'identificazione della risorsa. Questo campo è obbligatorio.
+  </datacite.publicationDate.missing>
+  <datacite.publicationDate.present>La data di pubblicazione è: </datacite.publicationDate.present>
+
+  <datacite.creator.missing>Manca il creatore. I principali ricercatori coinvolti nella produzione dei dati, o gli autori della pubblicazione, in ordine di priorità. Per fornire più creatori, ripeti questa proprietà. Controlla il punto di contatto nell'identificazione della risorsa con ruolo 'pointOfContact' o 'custodian'. Questo campo è obbligatorio.
+  </datacite.creator.missing>
+  <datacite.creator.found> creatore/i trovato/i.</datacite.creator.found>
+
+  <datacite.publisher.missing>Manca l'editore. Il nome dell'entità che detiene, archivia, pubblica, stampa, distribuisce, rilascia, emette o produce la risorsa. Controlla la sezione distribuzione, l'editore è il primo contatto distributore. Questo campo è obbligatorio.
+  </datacite.publisher.missing>
+  <datacite.publisher.present>L'editore è: </datacite.publisher.present>
+</strings>
