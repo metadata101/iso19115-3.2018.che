@@ -5670,7 +5670,6 @@ période de temps couverte par le service.
     </description>
     <help/>
     <condition>Obligatoire</condition>
-
   </element>
   <element name="cit:nameOfMeasure" id="100.0">
     <label>Nom du test</label>
