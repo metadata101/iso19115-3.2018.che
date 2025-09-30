@@ -6,4 +6,39 @@
   <gmd:version>
     <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">-</gco:CharacterString>
   </gmd:version>
+  <geonet:info>
+    <id>3018268</id>
+    <schema>iso19115-3.2018.che</schema>
+    <createDate>2015-11-16T18:25:04Z</createDate>
+    <changeDate>2015-11-16T18:25:04Z</changeDate>
+    <isTemplate>s</isTemplate>
+    <title>INTERLIS</title>
+    <source>7ea582d4-9ddf-422e-b28f-29760a4c0147</source>
+    <uuid>cc671cab-198c-4ea5-abf3-42b6eed1c433</uuid>
+    <isHarvested>n</isHarvested>
+    <popularity>33</popularity>
+    <rating>0</rating>
+    <displayOrder>0</displayOrder>
+    <edit>true</edit>
+    <owner>true</owner>
+    <isPublishedToAll>false</isPublishedToAll>
+    <view>true</view>
+    <notify>true</notify>
+    <download>true</download>
+    <dynamic>true</dynamic>
+    <featured>true</featured>
+    <ownerId>1</ownerId>
+    <ownername>admin</ownername>
+    <groupOwnerName>all</groupOwnerName>
+    <valid_details>
+    <type>subtemplate</type>
+    <status>
+        1
+        <ratio>0/0</ratio>
+    </status>
+    </valid_details>
+    <valid>1</valid>
+    <baseUrl>http://localhost:8080/geonetwork</baseUrl>
+    <locService>/srv/en</locService>
+  </geonet:info>
 </gmd:MD_Format>
