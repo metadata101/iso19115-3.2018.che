@@ -37,27 +37,27 @@
   <element name="gco:Length">
     <label>Länge</label>
     <description>Länge</description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="gco:Angle">
     <label>Winkel</label>
     <description>Winkel</description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="gco:Measure">
     <label>Messung</label>
     <description>Messung</description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="gml:PointType">
     <label></label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="gml:pos">
     <label></label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="msr:MD_PixelOrientationCode">
     <label>Pixelausrichtungscode</label>
@@ -74,7 +74,7 @@
       und in der Internetdokumentation referenziert werden können. Diese Namen sind
       in ANSI_X3.4-1968, besser bekannt als US-ASCII oder einfach ASCII.
     </description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="che:CHE_MD_DataIdentification">
     <label>Basisinformation zum Datenbestand</label>
@@ -223,173 +223,173 @@
   <element name="mdb:acquisitionInformation">
     <label>Informationen zum Erwerb</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:MI_AcquisitionInformation">
     <label>Informationen zum Erwerb</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:instrument">
     <label>Instrument</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:operation">
     <label>Operation</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:platform">
     <label>Plattform</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:acquisitionPlan">
     <label>Erwerbsplan</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:objective">
     <label>Ziel</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:acquisitionRequirement">
     <label>Anforderungen im Zusammenhang mit der Beschaffung</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:environmentalConditions">
     <label>Umgebungsbedingungen</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:averageAirTemperature">
     <label>Durchschnittliche Lufttemperatur</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:maxRelativeHumidity">
     <label>Maximale relative Luftfeuchtigkeit</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:maxAltitude">
     <label>Maximale Höhe</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:meterologicalConditions">
     <label>Wetterbedingungen</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:MI_Instrument">
     <label>Instrument</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:MI_Operation">
     <label>Operation</label>
     <description>Bezeichnungen für den Vorgang, der zum Abrufen des Datensatzes verwendet wurde
     </description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:status">
     <label>Status</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:childOperation">
     <label>Unteroperation</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:parentOperation">
     <label>Übergeordneter Vorgang</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:plan">
     <label>Plan</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:significantEvent">
     <label>Bedeutendes Ereignis</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:citation">
     <label>Zitat</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:identifier">
     <label>Identifikator</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:type">
     <label>Typ</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:description">
     <label>Beschreibung</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:mountedOn">
     <label>Montiert auf</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:MI_Requirement">
     <label>Anforderungen</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:recipient">
     <label>Empfänger</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:requestor">
     <label>Anforderer</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:requestedDate">
     <label>Gewünschtes Datum</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:MI_RequestedDate">
     <label>Gewünschtes Datum</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:requestedDateOfCollection">
     <label>Gewünschtes Datum für die Abholung</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:latestAcceptableDate">
     <label>Letztes akzeptables Datum</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:expiryDate">
     <label>Ablaufdatum</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mac:satisifiedPlan">
     <label>Plan erfüllt die Anforderungen</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="gml:BaseUnit">
     <label>Einheit</label>
@@ -414,17 +414,17 @@
   <element name="gml:TimeEdgeType">
     <label>Informationen zum Abweichungstyp</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="gml:TimeNodeType">
     <label>Informationen zum Neoud-Typ</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="gml:TimeInstantType">
     <label>Informationen zum Zeitpunktstyp</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="dqc:dateTime">
     <label>Datum und Uhrzeit</label>
@@ -439,12 +439,12 @@
     <description>Ergebnis einer Datenqualitätsmessung, die die gemessenen Werte
       als Abdeckung
     </description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mrl:processedLevel">
     <label>Verarbeitungsstufe</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
 
   <element name="mdq:deductiveSource">
@@ -461,62 +461,62 @@
   <element name="mrl:LI_ProcessStep">
     <label>Ereignis im Prozess (Bilder)</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mrl:LE_ProcessStep">
     <label>Ereignis im Prozess (erweitert)</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mrl:LE_ProcessStepReport">
     <label>Bericht über das Ereignis im Prozess (erweitert)</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mrl:LE_Source">
     <label>Quelle (Bilder)</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mrl:name">
     <label>Name</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mrl:fileType">
     <label>Dateityp</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mrl:description">
     <label>Beschreibung</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mrl:stepDateTime">
     <label>Zeitliche Informationen zum Prozess</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mrl:report">
     <label>Bericht</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mrl:output">
     <label>Ergebnis</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mrl:reference">
     <label>Referenz</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mrl:processingInformation">
     <label>Informationen zum Prozess</label>
     <description></description>
-    <contition></contition>
+    <condition></condition>
   </element>
 
 
@@ -526,7 +526,7 @@
       entsprechen. ANMERKUNG: Die Verweise auf Metadatenstandards sollten
       eine Kennung enthalten
     </description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mdb:metadataProfile">
     <label>Metadatenprofil</label>
@@ -605,7 +605,7 @@
       anhand ihrer Koordinate im Gitter und
       des Gitterursprungs, des Zellabstands und der Ausrichtung geolokalisiert werden kann
     </description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="msr:checkPointAvailability" id="154.0">
     <label>Verfügbarkeit der Punkte überprüfen</label>
@@ -738,7 +738,7 @@
   <element name="msr:dimensionName" id="171.0">
     <label>Dimensionsname</label>
     <description iso="true">Name der Achse</description>
-    <contition>obligatorisch</contition>
+    <condition>obligatorisch</condition>
   </element>
   <element name="msr:dimensionSize" id="172.0">
     <label>Dimensionsgröße</label>
@@ -789,7 +789,7 @@
     <label>Referenzsystem</label>
     <description iso="true">Informationen zum Referenzsystem
     </description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="msr:referenceSystemIdentifier" id="180.0">
     <label>Kennung des Referenzsystems</label>
@@ -811,7 +811,7 @@
   <element name="msr:MD_ContentInformation" id="182.0">
     <label>Inhaltsinformationen</label>
     <description iso="true">Beschreibung des Inhalts einer Ressource</description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="msr:MD_FeatureCatalogueDescription" id="183.0">
     <label>Beschreibung des Objektkatalogs</label>
@@ -874,12 +874,12 @@
     <label>Informationen zum Entitätstyp</label>
     <description iso="true">Informationen zum Typ der beobachteten Entität
     </description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mrc:featureTypeName" id="233.0">
     <label>Name des Entitätstyps</label>
     <description iso="true">Name des Entitätstyps</description>
-    <contition>obligatorisch</contition>
+    <condition>obligatorisch</condition>
   </element>
   <element name="mrc:featureInstanceCount" id="234.0">
     <label>Anzahl der Entitätsinstanzen</label>
@@ -1556,7 +1556,7 @@
     <label>Themencode</label>
     <description></description>
     <help/>
-    <contition/>
+    <condition/>
   </element>
   <element name="code" id="207.0" context="cit:MD_Identifier">
     <label>Code</label>
@@ -1573,7 +1573,7 @@
     <label>Systemcode</label>
     <description>Code. Beispiel: Der Code epsg.</description>
     <help/>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="codeSpace" id="208.1">
@@ -1584,14 +1584,14 @@
     <help>Informationen über die Person oder Organisation, die für den
       oder der Kennung.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:Date" id="364.0" context="cit:CI_Citation">
     <label>Datum</label>
     <description>Referenzdatum für die zitierte Quelle</description>
     <help></help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="gco:Date" id="393.0">
@@ -1641,13 +1641,13 @@
     <label>Datum</label>
     <description>(JJJJ-MM-TTThh:mm:ss)</description>
     <help/>
-    <contition/>
+    <condition/>
   </element>-->
   <element name="gco:Measure" id="100.0" context="cit:DQ_Element">
     <label>Name des Tests</label>
     <description>Name der Tests, die auf die Daten angewendet wurden</description>
     <help>Name des auf die Daten angewendeten Tests.</help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="gco:Measure" id="357.0" context="cit:EX_VerticalExtent">
@@ -1693,7 +1693,7 @@
       „Citation”. CI_Citation ist eine Gruppierung von Klassen, die
       von mehreren Attributen der Norm aufgerufen werden können.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:CI_Contact" id="387.0">
@@ -1813,7 +1813,7 @@
     <help>Beispiel: Das für ein Verwaltungsverfahren angegebene Datum ist
       ungenau.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mdq:DQ_CompletenessCommission" id="109.0">
@@ -1888,7 +1888,7 @@
       , um ausdrückliche oder implizite Anforderungen
       implizierten Bedürfnisse zu erfüllen, gemäß der Norm EN ISO 19101.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mdq:DQ_DomainConsistency" id="113.0">
@@ -1915,7 +1915,7 @@
       Autocad-Farben werden in der Entität und nicht im Layer angegeben, ein
       Gebäudeobjekt ist in der Parzellenebene gespeichert.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mdq:DQ_GriddedDataPositionalAccuracy" id="118.0">
@@ -1998,7 +1998,7 @@
     <help>Beispiel: Das angegebene Datum der Genehmigung eines Verfahrens liegt
       vor dem Datum des Antrags liegt.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mdq:DQ_TemporalValidity" id="123.0">
@@ -2009,7 +2009,7 @@
     <help>Klasse zur Beschreibung der Gültigkeit der Daten, die
       im zugehörigen Qualitätsbereich.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mdq:DQ_ThematicClassificationCorrectness" id="125.0">
@@ -2021,7 +2021,7 @@
       von Attributen, die Objekten mit einer Vielzahl von Möglichkeiten zugewiesen sind.
       Beispiel: Ein Pfosten wurde der Klasse „Telefonmast” zugeordnet.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mdq:DQ_TopologicalConsistency" id="115.0">
@@ -2056,7 +2056,7 @@
     </ul>
     Die meisten Datensätze sind daher nicht betroffen.
     ]]></help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="gex:EX_BoundingPolygon" id="341.0">
@@ -2071,7 +2071,7 @@
       identisch. Weitere Informationen finden Sie unter
       EX_Extent und EX_GeographicExtent.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="gex:EX_Extent" id="334.0">
@@ -2093,7 +2093,7 @@
       handelt es sich um eine Gruppierung von Klassen, die von mehreren
       Attributen der Norm aufgerufen werden können.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="gex:EX_GeographicBoundingBox" id="343.0">
@@ -2148,7 +2148,7 @@
       <li>N: 50,79</li>
     </ul>
     ]]></help>
-    <contition>Obligatorisch</contition>
+    <condition>Obligatorisch</condition>
 
   </element>
   <element name="gex:EX_GeographicDescription" id="348.0">
@@ -2206,7 +2206,7 @@
     <label>ISBN</label>
     <description>Internationale Standardbuchnummer (ISBN)</description>
     <help></help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:ISSN" id="373.0">
@@ -2216,7 +2216,7 @@
     </description>
     <help>Internationale Standardnummer einer Publikationsreihe (ISSN)
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mrl:LI_Lineage" id="82.0">
@@ -2238,7 +2238,7 @@
       Beispiel: X % der Straßenlaternen stammen aus photogrammetrischen Wiederherstellungen, X %
       Straßenlaternen aus Vermessungen
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:LI_ProcessStep" id="86.0">
@@ -2329,7 +2329,7 @@
     <help>Klasse, die den Bereich der Wellenlängen angibt, die im
       elektromagnetischen Spektrum verwendeten Wellenlängenbereich festlegt.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mcc:MD_BrowseGraphic" id="437.0">
@@ -2348,7 +2348,7 @@
       für Datensätze gleicher Art (z. B. nationale Karten
       ).
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mco:MD_Constraints" id="98.0">
@@ -2448,7 +2448,7 @@
       (MD_DigitalTransferOptions) und Informationen zum Format der
       (MD_Format).
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mrd:MD_Distributor" id="279.0">
@@ -2506,7 +2506,7 @@
       in einer Datei, per E-Mail, auf einem Speichermedium
       oder einen Übertragungskanal übertragen werden kann.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:MD_GeometricObjects" id="183.0">
@@ -2577,7 +2577,7 @@
       Darstellung von MD_SpatialRepresentation. Weitere
       Informationen finden Sie unter MD_SpatialRepresentation.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mcc:MD_Identifier" id="431.0">
@@ -2596,7 +2596,7 @@
       die Darstellung RS_Identifier kann von mehreren Attributen
       der Norm aufgerufen werden.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mrc:MD_ImageDescription" id="243.0">
@@ -2618,7 +2618,7 @@
       , aus der sie stammen) sowie für ihre Referenz oder Herkunft.
       Die Schlüsselwörter werden als Suchargumente verwendet.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mco:MD_LegalConstraints" id="69.0">
@@ -2685,7 +2685,7 @@
       auch ein Attribut für den Kontakt mit der für weitere
       Informationen zu den Metadaten.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mdb:MD_MetadataScope">
@@ -2708,7 +2708,7 @@
     <help>Klasse mit Informationen zur Beschreibung der Erweiterungen der
       .
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mpc:MD_PortrayalCatalogueReference" id="268.0">
@@ -2723,7 +2723,7 @@
       erlaubt nur die Beschreibung der Randbedingungen der
       „kartografischen” Darstellung, ohne deren Umsetzung zu berücksichtigen.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mrc:MD_RangeDimension" id="256.0">
@@ -2787,7 +2787,7 @@
     <li>Falls der gregorianische Kalender nicht verwendet wird (z. B. in bestimmten Bereichen wie der Geologie), muss dieses Feld unbedingt ausgefüllt werden.</li>
     ]]></help>
 
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mri:MD_RepresentativeFraction" id="56.0">
@@ -2912,7 +2912,7 @@
       erfasst eine Lichtung mit einer Genauigkeit, konventionellen Zeichen und
       Attributen erfasst, die sich deutlich von denen unterscheiden, die ein Biologe verwenden würde.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:MD_VectorSpatialRepresentation" id="176.0">
@@ -2952,7 +2952,7 @@
     <label>Identifikator der Ressource</label>
     <description></description>
     <help></help>
-    <contition/>
+    <condition/>
   </element>
   <element name="cit:RS_Identifier" id="208.0">
     <label>Kennung des Referenzsystems</label>
@@ -3032,7 +3032,7 @@ die dieselben Praktiken anwenden,</li>
     </ul>
 
     ]]></help>
-    <contition/>
+    <condition/>
   </element>
   <element name="cit:abstract" id="25.0"
            context="/mdb:MD_Metadata/mdb:identificationInfo/srv:SV_ServiceIdentification/cit:abstract">
@@ -3096,7 +3096,7 @@ Wiederholung des Titels ohne weitere Erläuterungen: „Zugangsdienst zu den Nat
 Zusammenfassung der referenzierten Ressource, nicht des Dienstes: Die Zusammenfassung des
 „BD Carthage métropole”
     ]]></help>
-    <contition>Obligatorisch</contition>
+    <condition>Obligatorisch</condition>
 
   </element>
 
@@ -3140,7 +3140,7 @@ Zusammenfassung der referenzierten Ressource, nicht des Dienstes: Die Zusammenfa
       , Marke, Lizenz, geistiges Eigentum, eingeschränkte Verbreitung,
       sonstige Einschränkungen.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <!--<element name="cit:address" id="525.0" context="cit:CI_ResponsibleParty">
@@ -3166,7 +3166,7 @@ Zusammenfassung der referenzierten Ressource, nicht des Dienstes: Die Zusammenfa
     <label>Verwaltungsgliederung</label>
     <description>Kanton oder Departement des Standorts</description>
     <help>Kanton</help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:aggregateDataSetIdentifier" id="66.3">
@@ -3218,7 +3218,7 @@ Zusammenfassung der referenzierten Ressource, nicht des Dienstes: Die Zusammenfa
       , unter der die entsprechenden Informationen bekannt sind. Beispiel: DCW für
       „Digital Chart of the World”
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mrd:amendmentNumber" id="287.0">
@@ -3267,7 +3267,7 @@ Zusammenfassung der referenzierten Ressource, nicht des Dienstes: Die Zusammenfa
       identischer Datenstruktur, Verweis auf eine Quelle,
       .
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mrc:attributeDescription" id="240.0">
@@ -3284,7 +3284,7 @@ Zusammenfassung der referenzierten Ressource, nicht des Dienstes: Die Zusammenfa
     </description>
     <help>Attributvorkommen, auf die sich die Informationen beziehen.
     </help>
-    <contition/>
+    <condition/>
   </element>
   <element name="mcc:attributes" id="150.0">
     <label>Attribute</label>
@@ -3358,7 +3358,7 @@ Zusammenfassung der referenzierten Ressource, nicht des Dienstes: Die Zusammenfa
       , definiert durch die zentrale Zelle des Rasters und die entsprechenden Koordinaten
       im räumlichen Bezugssystem.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:characterSet" id="4.0" context="cit:MD_Metadata">
@@ -3483,7 +3483,7 @@ Zusammenfassung der referenzierten Ressource, nicht des Dienstes: Die Zusammenfa
     <label>Stadt</label>
     <description>Stadt des Standorts</description>
     <help>Stadt, Ort</help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mco:classification" id="74.0">
@@ -3514,7 +3514,7 @@ Zusammenfassung der referenzierten Ressource, nicht des Dienstes: Die Zusammenfa
     <help>Durch Wolken verdunkelte Fläche des Bilddatensatzes (als
       Prozent der Gesamtfläche).
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:code" id="207.0" context="cit:RS_Identifier">
@@ -3608,7 +3608,7 @@ Zusammenfassung der referenzierten Ressource, nicht des Dienstes: Die Zusammenfa
     </description>
     <help>Anzahl der Komprimierungszyklen (mit Verlusten), die auf das Bild angewendet wurden
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:condition" id="312.0">
@@ -3666,7 +3666,7 @@ Zusammenfassung der referenzierten Ressource, nicht des Dienstes: Die Zusammenfa
     </ul>
     ]]></help>
 
-    <contition>Obligatorisch</contition>
+    <condition>Obligatorisch</condition>
 
   </element>
   <element name="mmi:contact" id="148.1"
@@ -3843,7 +3843,7 @@ Zusammenfassung der referenzierten Ressource, nicht des Dienstes: Die Zusammenfa
     <description>Datensatz, auf den sich die Informationen beziehen
     </description>
     <help>Datensatz, auf den sich die Informationen beziehen.</help>
-    <contition/>
+    <condition/>
   </element>
 
   <!--<element name="cit:date" id="570.0">
@@ -3971,13 +3971,13 @@ Datum der Online-Veröffentlichung des Dienstes als Veröffentlichungsdatum einz
     ]]>
     </help>
 
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:date" id="362.0">
     <label>Datum</label>
     <description/>
-    <contition/>
+    <condition/>
   </element>
   <element name="cit:dateOfNextUpdate" id="144.0">
     <label>Datum der nächsten Aktualisierung</label>
@@ -4001,14 +4001,14 @@ Datum der Online-Veröffentlichung des Dienstes als Veröffentlichungsdatum einz
     ]]>
     </help>
 
-    <contition>Obligatorisch</contition>
+    <condition>Obligatorisch</condition>
 
   </element>
   <!--<element name="cit:dateTime" id="89.0">
     <label>Prozesszeitraum</label>
     <description>Datum und Uhrzeit oder Zeitraum, in dem der Prozessschritt durchgeführt wurde</description>
     <help>Datum oder Zeitraum, in dem der Bearbeitungsprozess durchgeführt wurde. Angabe im Zeitformat TT.MM.JJJJ/ hh.mm.ss</help>
-    <contition/>
+    <condition/>
 
   </element>-->
   <element name="cit:dateTime" id="89.0" context="cit:LI_ProcessStep">
@@ -4107,7 +4107,7 @@ Datum der Online-Veröffentlichung des Dienstes als Veröffentlichungsdatum einz
     <label>Dichte</label>
     <description>Schreibdichte auf dem Medium</description>
     <help>Schreibdichte auf dem betreffenden Medium.</help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mrd:densityUnits" id="294.0">
@@ -4120,7 +4120,7 @@ Datum der Online-Veröffentlichung des Dienstes als Veröffentlichungsdatum einz
     <label>Beschreibung</label>
     <description>Beschreibung des Attributs</description>
     <help></help>
-    <contition>optional</contition>
+    <condition>optional</condition>
   </element>
   <element name="mrl:description" id="133.0" context="mrl:LI_Source">
     <label>Beschreibung</label>
@@ -4132,7 +4132,7 @@ Datum der Online-Veröffentlichung des Dienstes als Veröffentlichungsdatum einz
     <label>Metadaten der Quelle</label>
     <description>Verweis auf die Metadaten der Quelle</description>
     <help></help>
-    <contition>optional</contition>
+    <condition>optional</condition>
   </element>
   <element name="mrl:sourceStep" id="133.0" context="mrl:LI_Source">
     <label>Quellschritt</label>
@@ -4212,7 +4212,7 @@ Datum der Online-Veröffentlichung des Dienstes als Veröffentlichungsdatum einz
     <label>Beschreibung</label>
     <description></description>
     <help></help>
-    <contition/>
+    <condition/>
   </element>
   <element name="mri:descriptiveKeywords" id="33.0">
     <label>Schlüsselwörter</label>
@@ -4231,7 +4231,7 @@ Datum der Online-Veröffentlichung des Dienstes als Veröffentlichungsdatum einz
       Ort, die Ebene, den Zeitraum oder das Thema bezieht. Diese Informationen werden
       in der Klasse MD_Keywords verwaltet.
     </help>
-    <contition/>
+    <condition/>
     <help for="inspire"><![CDATA[<b>INSPIRE-Anforderung:</b>
     Da die thematische Kategorie für detaillierte Suchanfragen zu ungenau ist,
     ermöglichen die Schlüsselwörter eine Verfeinerung der Volltextsuche und
@@ -4485,7 +4485,7 @@ Version als zusätzliches(s) Schlüsselwort(e) an. Die Versionsnummer muss aus d
     <description>Version der betreffenden Ressource</description>
     <description iso="true">Version der zitierten Ressource</description>
     <help>Version/Ausgabe der genannten Quelle</help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:editionDate" id="366.0">
@@ -4503,7 +4503,7 @@ Version als zusätzliches(s) Schlüsselwort(e) an. Die Versionsnummer muss aus d
     <help>E-Mail-Adresse der Organisation oder der verantwortlichen Person
       verantwortlichen Person
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mri:extent" id="45.0" context="mri:MD_DataIdentification">
@@ -4547,7 +4547,7 @@ Version als zusätzliches(s) Schlüsselwort(e) an. Die Versionsnummer muss aus d
       erstellt wurde, einschließlich der verwendeten Software, des
       Betriebssystem, Dateiname und Dateigröße.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mri:equivalentScale" id="60.0">
@@ -4565,7 +4565,7 @@ Version als zusätzliches(s) Schlüsselwort(e) an. Die Versionsnummer muss aus d
     </description>
     <help>Zur Ermittlung des Wertes verwendete statistische Methode.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:evaluationMethodDescription" id="104.0">
@@ -4581,7 +4581,7 @@ Version als zusätzliches(s) Schlüsselwort(e) an. Die Versionsnummer muss aus d
       angegeben
     </description>
     <help>Zur Bewertung der Qualität des Datensatzes verwendete Methode.</help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:evaluationProcedure" id="105.0">
@@ -4723,7 +4723,7 @@ vom Dienst abgedeckten Zeitraum.
     </description>
     <help>Vorkommen von Eigenschaften, auf die sich die Informationen beziehen.
     </help>
-    <contition/>
+    <condition/>
   </element>
   <element name="mrc:featureTypes" id="237.0">
     <label>Objekttypen</label>
@@ -4764,7 +4764,7 @@ vom Dienst abgedeckten Zeitraum.
       zum Lesen oder Erweitern der Ressource bei Komprimierung
       .
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mcc:fileDescription" id="439.0">
@@ -4777,7 +4777,7 @@ vom Dienst abgedeckten Zeitraum.
       gibt an, was dargestellt wird, den Grad der Anpassung an den ausgewählten Datensatz
       usw.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mdb:metadataIdentifier" id="2.0">
@@ -4819,7 +4819,7 @@ vom Dienst abgedeckten Zeitraum.
       <option value="TIFF">TIFF</option>
       <option value="PDF">PDF</option>
     </helper>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mrc:filmDistortionInformationAvailability" id="254.0">
@@ -4848,7 +4848,7 @@ vom Dienst abgedeckten Zeitraum.
       (hauptsächlich für POST-Anfragen zu verwenden)
     </description>
     <help></help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:function" id="411.0">
@@ -4861,7 +4861,7 @@ vom Dienst abgedeckten Zeitraum.
     <help>Rolle der Online-Quelle, Auswahl aus der folgenden Liste:
       Download, Information, Offline-Zugriff, Bestellung oder Suche.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="gex:geographicElement" id="336.0">
@@ -4905,7 +4905,7 @@ vom Dienst abgedeckten Zeitraum.
       Komplex, Kombination, offene Linie, Punkt, 3D-Primitive, geschlossene Linie
       geschlossene Linie.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:geometricObjects" id="178.0">
@@ -4938,7 +4938,7 @@ vom Dienst abgedeckten Zeitraum.
     <help>Grafische Übersicht über die Ressource (einschließlich Legende). Diese
       Informationen werden in der Klasse MD_BrowseGraphic verwaltet.
     </help>
-    <contition/>
+    <condition/>
   </element>
   <element name="mco:graphic" id="101.0">
     <label>Grafik</label>
@@ -4966,7 +4966,7 @@ vom Dienst abgedeckten Zeitraum.
     <help>Beschreibung der Art und Weise, wie die Einschränkung anzuwenden ist, der Fälle
       , in denen sie anzuwenden ist, und zu den festgestellten Ausnahmen.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:hierarchyLevel" id="6.0">
@@ -5162,7 +5162,7 @@ vom Dienst abgedeckten Zeitraum.
       mit der Erdoberfläche. Bei gescannten Bildern ist der Bezugspunkt
       das mittlere Pixel.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mrc:imageQualityCode" id="247.0">
@@ -5170,7 +5170,7 @@ vom Dienst abgedeckten Zeitraum.
     <description>Kenntnisse, die die Bildqualität bestimmen
     </description>
     <help>Kennzeichnung zur Angabe der Bildqualität</help>
-    <contition/>
+    <condition/>
 
   </element>
 
@@ -5187,7 +5187,7 @@ vom Dienst abgedeckten Zeitraum.
     <label>Bildbedingungen</label>
     <description>Bedingungen, die das Bild beeinflussen</description>
     <help>Einschränkungen, denen das Bild unterliegt.</help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:includedWithDataset" id="236.0">
@@ -5395,7 +5395,7 @@ vom Dienst abgedeckten Zeitraum.
   <element name="mcc:linkage" id="442.0" context="mcc:MD_BrowseGraphic">
     <label>Link</label>
     <description iso="true">Link zur Grafik</description>
-    <contition></contition>
+    <condition></condition>
   </element>
   <element name="mmi:maintenanceAndUpdateFrequency" id="143.0">
     <label>Aktualisierungshäufigkeit</label>
@@ -5419,7 +5419,7 @@ vom Dienst abgedeckten Zeitraum.
     <help>Informationen oder Hinweise zur Berücksichtigung spezifischer Anforderungen
       bei der Aktualisierung der Ressourcen.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mrc:maxValue" id="260.0">
@@ -5430,7 +5430,7 @@ vom Dienst abgedeckten Zeitraum.
     <help>Höchste Wellenlänge, bei der der Sensor
       innerhalb des angegebenen Bereichs messen kann.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="gex:maximumValue" id="356.0">
@@ -5446,7 +5446,7 @@ vom Dienst abgedeckten Zeitraum.
     <label>Beschreibung des Tests</label>
     <description>Beschreibung der Tests</description>
     <help>Beschreibung der Messung (Test).</help>
-    <contition/>
+    <condition/>
   </element>
   <element name="cit:measureIdentification" id="101.0">
     <label>Identifizierung des Tests</label>
@@ -5516,7 +5516,7 @@ vom Dienst abgedeckten Zeitraum.
     <help>Name des verwendeten Metadatenstandards, einschließlich Profil (Beispiel:
       GM03Core, GM03Profil).
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:metadataStandardVersion" id="11.0">
@@ -5535,7 +5535,7 @@ vom Dienst abgedeckten Zeitraum.
     <help>Kürzeste Wellenlänge, die der Sensor
       innerhalb des angegebenen Bereichs messen kann.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="gex:minimumValue" id="355.0">
@@ -6031,7 +6031,7 @@ vom Dienst abgedeckten Zeitraum.
     <help>Nördliche Grenze der Ausdehnung des Datensatzes, ausgedrückt als geografische Breite
       (Dezimalgrad), positiv nach Norden gezählt.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:numberOfDimensions" id="158.0">
@@ -6040,7 +6040,7 @@ vom Dienst abgedeckten Zeitraum.
       Dimensionen)
     </description>
     <help></help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:obligation" id="311.0">
@@ -6106,7 +6106,7 @@ vom Dienst abgedeckten Zeitraum.
     <help>Allgemeine Anweisungen, Lieferzeiten und Dienstleistungen des
       Vertriebshändler
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:orientationParameterAvailability" id="172.0">
@@ -6117,7 +6117,7 @@ vom Dienst abgedeckten Zeitraum.
     <help>Angabe zum Vorhandensein oder Fehlen von Orientierungsparametern
       für die Georeferenzierung.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:orientationParameterDescription" id="173.0">
@@ -6127,7 +6127,7 @@ vom Dienst abgedeckten Zeitraum.
     </description>
     <help>Beschreibung der für die Sensorausrichtung verwendeten Parameter.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mcc:other" id="155.0">
@@ -6138,7 +6138,7 @@ vom Dienst abgedeckten Zeitraum.
     <help>Beschreibung der Informationen, die sich keiner der
       anderen Auswahlmöglichkeiten zuordnen lassen.
     </help>
-    <contition/>
+    <condition/>
   </element>
   <element name="cit:otherCitationDetails" id="370.0">
     <label>Weitere Referenzinformationen</label>
@@ -6151,7 +6151,7 @@ vom Dienst abgedeckten Zeitraum.
     <help>Weitere Informationen, die für eine vollständige Beschreibung der Quelle erforderlich sind,
       die nicht in einem anderen Attribut erfasst sind oder erfasst werden können.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mco:otherConstraints" id="72.0">
@@ -6271,7 +6271,7 @@ eine Nichtbewertung</b> im Rahmen der INSPIRE-Metadaten.
     <help>Wellenlänge, bei der die Intensität der Antwort am stärksten ist
       .
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:phone" id="396.0">
@@ -6353,7 +6353,7 @@ eine Nichtbewertung</b> im Rahmen der INSPIRE-Metadaten.
     </ul>
     ]]></help>
 
-    <contition/>
+    <condition/>
   </element>
   <element name="gex:polygon" id="342.0">
     <label>Polygon</label>
@@ -6383,7 +6383,7 @@ eine Nichtbewertung</b> im Rahmen der INSPIRE-Metadaten.
     <help>Informationen zum Regelkatalog für die
       Darstellung von Ressourcen.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:positionName" id="377.0">
@@ -6431,7 +6431,7 @@ eine Nichtbewertung</b> im Rahmen der INSPIRE-Metadaten.
     <help>Identifikation des Bildverteilers, der die angewandte radiometrische und geometrische Verarbeitungsebene angibt
       angewandten radiometrischen und geometrischen Verarbeitungsstufe.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mrl:processor" id="90.0">
@@ -6553,7 +6553,7 @@ eine Nichtbewertung</b> im Rahmen der INSPIRE-Metadaten.
     <label>Grund</label>
     <description>Grund für die Erstellung des erweiterten Elements</description>
     <help>Grund für die Erweiterung der Norm durch das betreffende Element.</help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mrs:referenceSystemIdentifier" id="187.0">
@@ -6587,7 +6587,7 @@ eine Nichtbewertung</b> im Rahmen der INSPIRE-Metadaten.
       Angabe zum Urheberrecht, Lizenzvereinbarung usw.
     </description>
     <help></help>
-    <contition/>
+    <condition/>
   </element>
   <element name="mco:releasability" id="103.0">
     <label>Freigabemöglichkeit</label>
@@ -6635,7 +6635,7 @@ eine Nichtbewertung</b> im Rahmen der INSPIRE-Metadaten.
     <label>Indikation</label>
     <description iso="true">Hinweis zur Offenlegung</description>
     <help></help>
-    <contition/>
+    <condition/>
   </element>
   <element name="mco:disseminationConstraints" id="117.0"
            context="mco:MD_Releasability">
@@ -6737,7 +6737,7 @@ richten sich an Dienste, die auf bestimmte Nutzer beschränkt sind, die Daten mi
 eingeschränkter Verbreitung
 
     ]]></help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mri:resourceFormat" id="32.0">
@@ -6810,7 +6810,7 @@ eingeschränkter Verbreitung
     Wenn eine verantwortliche Partei mehrere Rollen hat, müssen beide Metadatenelemente für jede Rolle wiederholt werden.
     ]]></help>
 
-    <contition>Obligatorisch</contition>
+    <condition>Obligatorisch</condition>
 
   </element>
   <element name="cit:rule" id="317.0">
@@ -6839,7 +6839,7 @@ eingeschränkter Verbreitung
     <description>Auf den Zellenwert angewendeter Skalierungsfaktor
     </description>
     <help>Auf den Zellenwert angewendeter Skalierungsfaktor.</help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mas:schemaAscii" id="324.0">
@@ -6879,7 +6879,7 @@ eingeschränkter Verbreitung
     <help>Eine ganze Zahl, die eindeutig die Anzahl der Wellenlängenbereiche identifiziert
       , die von einem Sensor verwendet werden.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:series" id="369.0">
@@ -6926,7 +6926,7 @@ eingeschränkter Verbreitung
     <help>Softwareabhängiges Format, das für die Beschreibung des Anwendungsschemas
       in einer Softwareentwicklungsdatei verwendet wird.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mrl:source" id="85.0">
@@ -7035,7 +7035,7 @@ eingeschränkter Verbreitung
       Georeferenzierungsparameter usw. Bei Rasterdaten beziehen sich die Angaben
       Informationen werden in der Klasse MD_SpatialRepresentation verwaltet.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mri:spatialRepresentationType" id="37.0">
@@ -7047,7 +7047,7 @@ eingeschränkter Verbreitung
       durch Vektoren, Raster, Karten, Tabellen
       oder ähnlichen Mitteln.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mri:spatialResolution" id="38.0">
@@ -7101,7 +7101,7 @@ eingeschränkter Verbreitung
     (...) Der von INSPIRE vorgeschlagene Begriff des Maßstabs zur Beschreibung der räumlichen Auflösung eines Vektordatensatzes ist ebenfalls sehr subjektiv und interpretationsfähig.”
     Meistens bedeutet dies für Vektordaten, dass der Maßstab der Quelldatenserie angegeben wird. Andernfalls handelt es sich um den optimalen Maßstab für die Verwendung der Daten.
     ]]></help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mri:specificUsage" id="63.0">
@@ -7135,7 +7135,7 @@ eingeschränkter Verbreitung
     <help>Name einer Teilspezifikation, eines Profils oder eines Produkts des
       Formats.
     </help>
-    <contition>Obligatorisch</contition>
+    <condition>Obligatorisch</condition>
 
   </element>
 
@@ -7397,7 +7397,7 @@ die Austauschszenarien von Sandre, ist zusätzlich möglich.
     <li>Art des Datums: Veröffentlichung.</li>
     </ul>
     ]]></help>
-    <contition>Obligatorisch</contition>
+    <condition>Obligatorisch</condition>
   </element>
 
 
@@ -7522,7 +7522,7 @@ des IGN (WPS)
        
     <help><![CDATA[<b>Gegenbeispiel:</b> Nützliche Karten, Zoneneinteilung des PLU
     ]]></help>
-    <contition>Obligatorisch</contition>
+    <condition>Obligatorisch</condition>
 
   </element>
   <element name="mrc:toneGradation" id="265.0">
@@ -7555,13 +7555,13 @@ des IGN (WPS)
     Es müssen ein oder mehrere Werte aus den 19 ISO-Themenkategorien angegeben werden, die in Teil D.2 der INSPIRE-Metadatenverordnung aufgeführt sind (obligatorisches und wiederholbares Element).
     Dieses Metadatenelement stammt aus der Norm ISO 19115. Eine Entsprechung zwischen den ISO-Themenkategorien und den INSPIRE-Themen wurde in Teil D2 der Metadatenverordnung festgelegt.
     ]]></help>
-    <contition>Obligatorisch, wenn „Datensatz”</contition>
+    <condition>Obligatorisch, wenn „Datensatz”</condition>
   </element>
   <element name="mri:MD_TopicCategoryCode">
     <label>Thema</label>
     <description>Code der Themenkategorie</description>
     <help/>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:topologyLevel" id="177.0">
@@ -7574,7 +7574,7 @@ des IGN (WPS)
       geschlossene Ebenen, Flächen, Körper, dreidimensionale Flächen usw.
       usw.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mrd:transferOptions" id="273.0">
@@ -7597,7 +7597,7 @@ des IGN (WPS)
     <help>Ungefähre Größe einer Datei (ausgedrückt in Megabyte) im angegebenen Format
       . Die Übertragungsgröße ist &amp;gt; 0.0
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:transformationDimensionDescription" id="168.0">
@@ -7624,7 +7624,7 @@ des IGN (WPS)
     <help>Angabe zum Vorhandensein oder Fehlen von
       für eine Georeferenzierung des Rasters.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mrc:triangulationIndicator" id="251.0">
@@ -7635,7 +7635,7 @@ des IGN (WPS)
     <help>Angabe, ob eine Triangulation auf dem Bild durchgeführt wurde
       Bild durchgeführt wurde.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mrd:turnaround" id="302.0">
@@ -7683,7 +7683,7 @@ des IGN (WPS)
     <help>Aufteilung in Raster, Schichten, geografische Gebiete usw., die
       den Zugriff auf die Daten ermöglichen.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:updateScope" id="146.0">
@@ -7840,7 +7840,7 @@ des IGN (WPS)
     <help>Vom Benutzer angegebene Anwendungen, für die die Ressource
       und/oder die Reihe von Ressourcen nicht geeignet ist.
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mco:userNote" id="75.0">
@@ -7865,7 +7865,7 @@ des IGN (WPS)
     <label>Wert</label>
     <description></description>
     <help/>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mdq:valueRecordType" id="134.0">
@@ -7886,7 +7886,7 @@ des IGN (WPS)
         Einheit(en))
       </option>
     </helper>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="mdq:valueUnit" id="135.0">
@@ -7915,7 +7915,7 @@ des IGN (WPS)
     <help>Versionsnummer des Namensraums / der Kennung
       (alphanumerisch).
     </help>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:version" id="286.0">
@@ -8129,7 +8129,7 @@ des IGN (WPS)
   <element name="id">
     <label>Identifikationsnummer</label>
     <description/>
-    <contition/>
+    <condition/>
 
   </element>
 
@@ -8438,7 +8438,7 @@ http://www.sandre.eaufrance.fr/?urn=urn:sandre:ensembledonnees:BDCarthage:FXX:::
     <label>Sprache</label>
     <description>Sprache</description>
     <help/>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="lan:PT_LocaleContainer">
@@ -8553,7 +8553,7 @@ http://www.sandre.eaufrance.fr/?urn=urn:sandre:ensembledonnees:BDCarthage:FXX:::
     <label>Eindeutige Kennung</label>
     <description/>
     <help/>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="uom">
@@ -8568,21 +8568,21 @@ http://www.sandre.eaufrance.fr/?urn=urn:sandre:ensembledonnees:BDCarthage:FXX:::
     <label/>
     <description/>
     <help/>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="gco:Binary">
     <label/>
     <description/>
     <help/>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="gco:MemberName">
     <label/>
     <description/>
     <help/>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="gco:aName" context="gco:TypeName">
@@ -8608,48 +8608,48 @@ http://www.sandre.eaufrance.fr/?urn=urn:sandre:ensembledonnees:BDCarthage:FXX:::
     <label>Name</label>
     <description/>
     <help/>
-    <contition/>
+    <condition/>
   </element>
   <element name="gco:attributeType">
     <label>Attributtyp</label>
     <description/>
     <help/>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="gco:TypeName">
     <label>Name des Typs</label>
     <description/>
     <help/>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="gco:LocalName">
     <label>Wert</label>
     <description/>
     <help/>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="gco:ScopedName">
     <label>Name</label>
     <description/>
     <help/>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:has">
     <label>Hat</label>
     <description>Hat</description>
     <help/>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:MD_ObligationCode">
     <label>Verpflichtungscode</label>
     <description></description>
     <help/>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:maximumOccurrence">
@@ -8664,7 +8664,7 @@ http://www.sandre.eaufrance.fr/?urn=urn:sandre:ensembledonnees:BDCarthage:FXX:::
     <label>Lokaler Name</label>
     <description/>
     <help/>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:composedOf">
@@ -8692,7 +8692,7 @@ http://www.sandre.eaufrance.fr/?urn=urn:sandre:ensembledonnees:BDCarthage:FXX:::
     <label>Teilmenge</label>
     <description>Teilmenge</description>
     <help/>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="cit:superset">
@@ -8706,7 +8706,7 @@ http://www.sandre.eaufrance.fr/?urn=urn:sandre:ensembledonnees:BDCarthage:FXX:::
     <label>Funktion</label>
     <description></description>
     <help/>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="gco:TM_PeriodDuration">
@@ -8727,14 +8727,14 @@ http://www.sandre.eaufrance.fr/?urn=urn:sandre:ensembledonnees:BDCarthage:FXX:::
       * nS: Anzahl der Sekunden
     </description>
     <help/>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="gco:nilReason">
     <label>Grund für die Abwesenheit</label>
     <description/>
     <help/>
-    <contition/>
+    <condition/>
 
   </element>
   <element name="gex:verticalCRS">

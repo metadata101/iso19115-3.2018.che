@@ -34,162 +34,164 @@
   <codelist name="cit:CI_TelephoneTypeCode">
     <entry>
       <code>voice</code>
-  <label>Sprache</label>
-  <description>Das Telefon bietet einen Sprachdienst an</description>
+      <label>Sprachdienst</label>
+      <description>Telefon mit Sprachdienst</description>
     </entry>
     <entry>
       <code>facsimile</code>
-  <label>Fax</label>
-  <description>Das Telefon bietet einen Faxdienst an</description>
+      <label>Fax</label>
+      <description>Telefon mit Fax-Dienst</description>
     </entry>
     <entry>
       <code>sms</code>
-  <label>SMS</label>
-  <description>Das Telefon bietet einen SMS-Dienst an</description>
+      <label>SMS</label>
+      <description>Telefon mit SMS-Dienst</description>
     </entry>
   </codelist>
   <codelist name="cit:CI_DateTypeCode">
     <entry>
       <code>creation</code>
-  <label>Erstellung</label>
-  <description>Datum, an dem die Ressource erstellt wurde</description>
+      <label>Erstellung</label>
+      <description>das Datum gibt an, wann die Ressource erstmalig erstellt wurde</description>
     </entry>
     <entry>
       <code>publication</code>
-  <label>Veröffentlichung</label>
-  <description>Datum, an dem die Ressource veröffentlicht wurde</description>
+      <label>Publikation</label>
+      <description>das Datum gibt an, wann die Ressource erstmalig publiziert wurde</description>
     </entry>
     <entry>
       <code>revision</code>
-  <label>Überarbeitung</label>
-  <description>Datum, an dem die Ressource überarbeitet wurde</description>
+      <label>Aktualisierung</label>
+      <description>das Datum gibt an, wann die Ressource zuletzt überprüft/aktualisiert wurde</description>
     </entry>
     <entry>
       <code>expiry</code>
-  <label>Ablauf</label>
-  <description>Datum, an dem die Ressource abläuft</description>
+      <label>Ablaufdatum</label>
+      <description>das Datum gibt an, wann die Gültigkeit der Ressource verfällt</description>
     </entry>
     <entry>
       <code>lastUpdate</code>
-  <label>Letzte Aktualisierung</label>
-  <description>Datum, an dem die Ressource zuletzt aktualisiert wurde</description>
+      <label>Letzte Aktualisierung</label>
+      <description>das Datum gibt an, wann die Ressource das letzte Mal aktualisiert wurde</description>
     </entry>
     <entry>
       <code>lastRevision</code>
-  <label>Letzte Überarbeitung</label>
-  <description>Datum, an dem die Ressource zuletzt überarbeitet wurde</description>
+      <label>letzte Überprüfung</label>
+      <description>das Datum gibt an, wann die Ressource das letzte Mal überprüft wurde</description>
     </entry>
     <entry>
       <code>nextUpdate</code>
-  <label>Nächste Aktualisierung</label>
-  <description>Datum, an dem die nächste Aktualisierung der Ressource geplant ist</description>
+      <label>Nächste Aktualisierung</label>
+      <description>das Datum gibt an, wann die Ressource erneut aktualisiert wird</description>
     </entry>
     <entry>
       <code>unavailable</code>
-  <label>Verfügbarkeit</label>
-  <description>Datum, an dem die Ressource verfügbar oder nicht verfügbar wurde</description>
+      <label>keine Verfügbarkeit</label>
+      <description>das Datum gibt an, wann die Ressource nicht mehr verfügbar ist oder nicht mehr beschafft werden kann.</description>
     </entry>
     <entry>
       <code>inForce</code>
-  <label>In Kraft</label>
-  <description>Datum, an dem die Ressource in Kraft getreten ist</description>
+      <label>Inkraftsetzung</label>
+      <description>das Datum gibt an, wann die Ressource in Kraft gesetzt wurde</description>
     </entry>
     <entry>
       <code>adopted</code>
-  <label>Übernommen</label>
-  <description>Datum, an dem die Ressource übernommen wurde</description>
+      <label>Verabschiedung</label>
+      <description>das Datum gibt an, wann die Ressource angenommen wurde</description>
     </entry>
     <entry>
       <code>deprecated</code>
-  <label>Veraltet</label>
-  <description>Datum, an dem die Ressource als veraltet markiert wurde</description>
+      <label>Abgewertet</label>
+      <description>das Datum gibt an, wann die Ressource abgewertet wurde</description>
     </entry>
     <entry>
       <code>superseded</code>
-  <label>Ersetzt</label>
-  <description>Datum, an dem die Ressource ersetzt wurde oder durch eine andere Ressource ersetzt wurde</description>
+      <label>Ersetzt</label>
+      <description>das Datum gibt an, wann die Ressource ersetzt wurde</description>
     </entry>
     <entry>
       <code>validityBegins</code>
-  <label>Beginn der Gültigkeit</label>
-  <description>Datum, ab dem die Ressource als gültig betrachtet wird</description>
+      <label>Gültigkeitsbeginn</label>
+      <description>Zeitpunkt, zu dem die Daten als gültig betrachtet wurden.
+      ANMERKUNG: Es könnte eine Verzögerung zwischen der Erstellung und dem Beginn der Gültigkeit geben
+      </description>
     </entry>
     <entry>
       <code>validityExpires</code>
-  <label>Ende der Gültigkeit</label>
-  <description>Datum, ab dem die Ressource nicht mehr als gültig betrachtet wird</description>
+      <label>Gültigkeitsende</label>
+      <description>den Zeitpunkt, zu dem die Daten nicht mehr als gültig betrachtet werden</description>
     </entry>
     <entry>
       <code>released</code>
-  <label>Freigabe</label>
-  <description>Datum, an dem die Ressource für den öffentlichen Zugriff freigegeben wurde</description>
+      <label>Bereitstellung</label>
+      <description>das Datum, an dem die Ressource für den öffentlichen Zugang bereitgestellt werden soll</description>
     </entry>
     <entry>
       <code>distribution</code>
-  <label>Verteilung</label>
-  <description>Datum, an dem eine Instanz der Ressource verteilt wurde</description>
+      <label>Vertrieb</label>
+      <description>das Datum gibt an, wann eine Ressource verteilt wurde</description>
     </entry>
   </codelist>
   <codelist name="cit:CI_OnLineFunctionCode" alias="function">
     <entry>
       <code>download</code>
-  <label>Herunterladen</label>
-  <description>Herunterladen der Ressource</description>
+      <label>Datentransfer: Download</label>
+      <description>Anleitung zum Online-Datentransfer von einem Gerät oder Speichersystem auf ein anderes</description>
     </entry>
     <entry>
       <code>information</code>
-  <label>Information</label>
-  <description>Online-Informationen über die Ressource</description>
+      <label>Information</label>
+      <description>Online-Informationen zur Ressource</description>
     </entry>
     <entry>
       <code>offlineAccess</code>
-  <label>Offline-Bestellung</label>
-  <description>Anleitung für eine Bestellung beim Anbieter</description>
+      <label>Offline-Zugang</label>
+      <description>Online-Anleitung zum Offline-Bezug der Ressource</description>
     </entry>
     <entry>
       <code>order</code>
-  <label>Online-Bestellung</label>
-  <description>Online-Bestellung, um die Ressource zu erhalten</description>
+      <label>Bestellung</label>
+      <description>Online-Bestellung der Ressource</description>
     </entry>
     <entry>
       <code>search</code>
-  <label>Suchschnittstelle</label>
-  <description>Suchschnittstelle, um die Ressource zu finden</description>
+      <label>Suche</label>
+      <description>Online-Suche nach Informationen zur Ressource</description>
     </entry>
     <entry>
       <code>completeMetadata</code>
-  <label>Vollständige Metadaten</label>
-  <description>Vollständige Metadaten werden bereitgestellt</description>
+      <label>Vollständige Metadaten</label>
+      <description>Vollständig bereitgestellte Metadaten</description>
     </entry>
     <entry>
       <code>doi</code>
-  <label>Digital Object Identifier (DOI)</label>
-  <description></description>
+      <label>Digital Object Identifier (DOI)</label>
+      <description></description>
     </entry>
     <entry>
       <code>browseGraphic</code>
-  <label>Vorschaubild</label>
-  <description>Bereitgestelltes Vorschaubild</description>
+      <label>grafische Darstellung</label>
+      <description>zur Verfügung gestellte Grafik</description>
     </entry>
     <entry>
       <code>upload</code>
-  <label>Hochladen</label>
-  <description>Bereitstellung der Möglichkeit, Ressourcen online hochzuladen</description>
+      <label>Datentransfer: Upload</label>
+      <description>Bereitstellung der Möglichkeit zum Hochladen von Online-Ressourcen</description>
     </entry>
     <entry>
       <code>emailService</code>
-  <label>E-Mail-Dienst</label>
-  <description>Bereitgestellter Online-E-Mail-Dienst</description>
+      <label>Email-Service</label>
+      <description>bereitgestellter Online-Email-Dienst</description>
     </entry>
     <entry>
       <code>browsing</code>
-  <label>Online-Betrachtung</label>
-  <description>Online-Betrachtung wird bereitgestellt</description>
+      <label>Browsing</label>
+      <description>bereitgestelltes Online-Browsing</description>
     </entry>
     <entry>
       <code>fileAccess</code>
-  <label>Dateizugriff</label>
-  <description>Zugriff auf eine Online-Datei wird bereitgestellt</description>
+      <label>Datei-Zugriff</label>
+      <description>Zugriff auf eine bereitgestellte Online-Datei</description>
     </entry>
   </codelist>
   <codelist name="cit:CI_PresentationFormCode">
@@ -302,58 +304,60 @@
   <codelist name="cit:CI_RoleCode" alias="roleCode">
     <entry>
       <code>resourceProvider</code>
-      <label>Ressourcenanbieter</label>
-      <description>Organisation, die die Ressource bereitstellt. Akteur, der die Ressource physisch liefert, entweder direkt an den Empfänger oder über einen Verteiler.</description>
+      <label>Anbieter</label>
+      <description>Anbieter der Ressource</description>
     </entry>
     <entry>
       <code>custodian</code>
       <label>Verwalter</label>
-      <description>Akteur, der für die Verwaltung und Aktualisierung der Ressource verantwortlich ist.</description>
+      <description>Person oder Stelle, welche die Zuständigkeit für eine Ressource übernommen hat 
+        und seine sachgerechte Pflege und Wartung sichert
+      </description>
     </entry>
     <entry>
       <code>owner</code>
       <label>Eigentümer</label>
-      <description>Organisation, die Eigentümer der Ressource ist / Akteur, der die Eigentumsrechte an der Ressource besitzt.</description>
+      <description>Eigentümer der Ressource</description>
     </entry>
     <entry>
       <code>user</code>
       <label>Nutzer</label>
-      <description>Organisation, die die Ressource nutzt oder genutzt hat.</description>
+      <description>Nutzer der Ressource</description>
     </entry>
     <entry>
       <code>distributor</code>
       <label>Verteiler</label>
-      <description>Organisation, die die Ressource verteilt. Sekundärer Verteiler der Ressource.</description>
+      <description>Person oder Stelle für den Vertrieb</description>
     </entry>
     <entry>
       <code>originator</code>
       <label>Urheber</label>
-      <description>Organisation, die die Ressource in Auftrag gegeben hat. Akteur, der zur Erstellung der Ressource befugt war und die Mittel zu deren Erstellung bereitgestellt hat.</description>
+      <description>Erzeuger der Ressource</description>
     </entry>
     <entry>
       <code>pointOfContact</code>
       <label>Ansprechpartner</label>
-      <description>Organisation, die für detaillierte Auskünfte zur Ressource kontaktiert werden kann. Erster Ansprechpartner für Informationen zur Ressource.</description>
+      <description>Kontakt für Informationen zur Ressource oder deren Bezugsmöglichkeit</description>
     </entry>
     <entry>
       <code>principalInvestigator</code>
-      <label>Hauptverantwortlicher</label>
-      <description>Schlüsselperson für Informationen zur Ressource und zu den damit verbundenen Forschungen. Akteur, der die Ressource erstellt hat, ggf. unter Einbeziehung von Subunternehmern.</description>
+      <label>Projektleiter</label>
+      <description>Person oder Stelle, die verantwortlich für die Datenerhebung und -suche ist</description>
     </entry>
     <entry>
       <code>processor</code>
       <label>Bearbeiter</label>
-      <description>Organisation, die die Ressource bearbeitet hat. Akteur, der an der Erstellung der Ressource beteiligt war.</description>
+      <description>Person oder Stelle, die durch eine Datenbearbeitung die Ressourcen verändert</description>
     </entry>
     <entry>
       <code>publisher</code>
-      <label>Verleger (Publikation)</label>
-      <description>Organisation, die die Veröffentlichung der Ressource übernimmt.</description>
+      <label>Herausgeber</label>
+      <description>Person oder Stelle, welche die Ressource publiziert</description>
     </entry>
     <entry>
       <code>author</code>
       <label>Autor</label>
-      <description>Organisation oder Person, die Urheber ist. Akteur mit den moralischen Rechten an der Ressource.</description>
+      <description>Person oder Stelle, welche die Ressource verfasst</description>
     </entry>
     <!-- ISO PROFIL CHE ONLY
 
@@ -365,47 +369,53 @@
     <entry>
       <code>sponsor</code>
       <label>Sponsor</label>
-      <description>Partei, die für die Ressource spricht.</description>
+      <description>Person oder Stelle, welche die Ressource sponsert</description>
     </entry>
     <entry>
       <code>coAuthor</code>
-      <label>Mitautor</label>
-      <description>Partei, die gemeinsam Urheber der Ressource ist.</description>
+      <label>Co-Autor</label>
+      <description>Person oder Stelle, welche gemeinsam Autor der Ressource ist.</description>
     </entry>
     <entry>
       <code>collaborator</code>
       <label>Mitarbeiter</label>
-      <description>Partei, die zur Erstellung der Ressource beiträgt, außer dem Hauptautor der Forschung.</description>
+      <description>Person oder Stelle, welche einen anderen Beitrag zur Generierung 
+        der Ressource leistet als der Hauptautor der Forschung
+      </description>
     </entry>
     <entry>
       <code>editor</code>
-      <label>Redakteur</label>
-      <description>Partei, die die Ressource überprüft oder geändert hat, um ihren Inhalt zu verbessern.</description>
+      <label>Editor</label>
+      <description>Person oder Stelle, welche die Ressource überprüft 
+        oder verändert hat um ihren Inhalt zu verbessern
+      </description>
     </entry>
     <entry>
       <code>mediator</code>
-      <label>Vermittler</label>
-      <description>Eine Entitätsklasse, die den Zugang zur Ressource vermittelt und für die die Ressource bestimmt oder nützlich ist.</description>
+      <label>Mediator</label>
+      <description>Person oder Stelle, die den Zugang zu einer Ressource vermittelt 
+        und für wen die Ressource bestimmt oder nützlich ist
+      </description>
     </entry>
     <entry>
       <code>rightsHolder</code>
       <label>Rechtsinhaber</label>
-      <description>Rechte zur Inhaberschaft oder Verwaltung der Partei in Bezug auf die Ressource.</description>
+      <description>Person oder Stelle mit Besitz- oder Verwaltungsrechten gegenüber der Ressource</description>
     </entry>
     <entry>
       <code>contributor</code>
-      <label>Beitragender</label>
-      <description>Partei, die zur Ressource beiträgt.</description>
+      <label>Mitwirkender</label>
+      <description>Person oder Stelle, welche zur Ressource beiträgt</description>
     </entry>
     <entry>
       <code>funder</code>
-      <label>Förderer</label>
-      <description>Partei, die finanzielle Unterstützung für die Ressource bietet.</description>
+      <label>Investor</label>
+      <description>Person oder Stelle, welche finanzielle Unterstützung für die Ressource beiträgt</description>
     </entry>
     <entry>
       <code>stakeholder</code>
-      <label>Interessensvertreter</label>
-      <description>Partei, die ein Interesse an der Ressource oder deren Nutzung hat.</description>
+      <label>Stakeholder</label>
+      <description>Person oder Stelle, welche ein Interesse an der Ressource oder ihrer Nutzung hat</description>
     </entry>
   </codelist>
   <codelist name="mdq:DQ_EvaluationMethodTypeCode">
@@ -429,17 +439,17 @@
     <entry>
       <code>crossReference</code>
       <label>Querverweis</label>
-      <description>Verweis eines Datensatzes auf einen anderen.</description>
+      <description>Bezug eines Datenbestands zu einem anderen</description>
     </entry>
     <entry>
       <code>largerWorkCitation</code>
-      <label>Übergeordneter Verweis</label>
-      <description>Verweis auf einen übergeordneten Datensatz.</description>
+      <label>Übergeordneter Datenbestand</label>
+      <description>Bezug zu einem übergeordneten Datenbestand, von dem dieser Datenbestand Teil ist</description>
     </entry>
     <entry>
       <code>partOfSeamlessDatabase</code>
-      <label>Teil derselben Datenbank</label>
-      <description>Verweis auf einen Datensatz, der in derselben Datenbank gespeichert ist.</description>
+      <label>Komponente einer gleichen Datenstruktur</label>
+      <description>Teil von einem gleichstrukturierten Satz von Daten, die in einem Computer sind</description>
     </entry>
     <entry>
       <code>source</code>
@@ -448,23 +458,25 @@
     </entry>
     <entry>
       <code>stereoMate</code>
-      <label>Stereo-Auswertung</label>
-      <description>Teil eines Bildsatzes, der zusammen verwendet eine 3D-Ansicht des Bildes liefert.</description>
+      <label>Stereobild</label>
+      <description>Teil eines Bildpaketes, welches bei gleichzeitiger Verwendung, dreidimensionale Bilder liefert</description>
     </entry>
     <entry>
       <code>isComposedOf</code>
       <label>Besteht aus</label>
-      <description>Verweis auf Ressourcen, die Teil dieser Ressource sind.</description>
+      <description>Verweis auf Ressourcen, die Teil dieser Ressource sind</description>
     </entry>
     <entry>
       <code>collectiveTitle</code>
-      <label>Sammelbezeichnung</label>
-      <description>Sammelbezeichnung für eine Ressourcensammlung. Der Titel identifiziert die Elemente einer Serie gemeinsam, zusammen mit Informationen über die verfügbaren Bände am Quellstandort.</description>
+      <label>Gemeinsamer Titel</label>
+      <description>gemeinsamer Titel, der einer Ressourcensammlung gegeben wird.
+        ANMERKUNG: Der Titel identifiziert die Elemente einer Reihe gemeinsam, verbunden mit Informationen über den Umfang, welcher am Standort der Quelle verfügbar ist
+      </description>
     </entry>
     <entry>
       <code>series</code>
-      <label>Serien</label>
-      <description>Verbunden durch eine gemeinsame Herkunft, wie sie für eine gemeinsame Produktspezifikation geschaffen wurde.</description>
+      <label>Serie</label>
+      <description>verbunden zu einer Serie oder Datensammlung, wie z.B. einer gemeinsamen Produktspezifikation</description>
     </entry>
     <entry>
       <code>dependency</code>
@@ -474,7 +486,22 @@
     <entry>
       <code>revisionOf</code>
       <label>Überarbeitung von</label>
-      <description>Die Ressource ist eine Überarbeitung der zugehörigen Ressource.</description>
+      <description>die Ressource ist eine Überarbeitung der assoziierten Ressource</description>
+    </entry>
+    <entry>
+      <code>isTemporalStateOf</code>
+      <label>ist Zeitstand von</label>
+      <description>Bezug zu einem Datenbestand, von dem dieser Datenbestand einen bestimmten Zeitstand darstellt</description>
+    </entry>
+        <entry>
+      <code>isDescriptionOf</code>
+      <label>Ist Beschreibung von</label>
+      <description>Bezug zu einem Datenbestand, der von dieser Ressource/diesem Dokument beschrieben wird</description>
+    </entry>
+        <entry>
+      <code>isDescribedBy</code>
+      <label>Ist beschrieben durch</label>
+      <description>Bezug zu einer Ressource/einem Dokument, der diesen Datenbestand beschreibt</description>
     </entry>
   </codelist>
   <codelist name="mri:DS_InitiativeTypeCode" alias="initiativeType">
@@ -574,33 +601,33 @@
   <codelist name="mco:MD_ClassificationCode">
     <entry>
       <code>unclassified</code>
-      <label>Nicht klassifiziert</label>
-      <description>Die Ressource ist nicht sensibel.</description>
+      <label>nicht klassifiziert</label>
+      <description>zur allgemeinen Veröffentlichung verfügbar</description>
     </entry>
     <entry>
       <code>restricted</code>
-      <label>Eingeschränkt</label>
-      <description>Die Sensibilität der Ressource schränkt ihre Nutzung oder Verbreitung ein.</description>
+      <label>intern</label>
+      <description>nicht zur Veröffentlichung bestimmt</description>
     </entry>
     <entry>
       <code>confidential</code>
-      <label>Vertraulich</label>
-      <description>Die Ressource ist vertraulich.</description>
+      <label>vertraulich</label>
+      <description>nur für Vertrauenspersonen</description>
     </entry>
     <entry>
       <code>secret</code>
-      <label>Geheim</label>
-      <description>Die Vertraulichkeit der Ressource erfordert besondere Schutzmaßnahmen.</description>
+      <label>geheim</label>
+      <description>nur für einen ausgewählten Personenkreis</description>
     </entry>
     <entry>
       <code>topSecret</code>
-      <label>Streng geheim</label>
-      <description>Die Vertraulichkeit der Ressource erfordert höchste Schutzmaßnahmen.</description>
+      <label>streng geheim</label>
+      <description>höchste Geheimhaltung</description>
     </entry>
     <entry>
       <code>SBU</code>
-      <label>Sensibel aber nicht klassifiziert</label>
-      <description>Obwohl nicht klassifiziert, ist eine strenge Kontrolle der Offenlegung erforderlich.</description>
+      <label>sensibel, aber nicht klassifiziert</label>
+      <description>obwohl nicht klassifiziert, erfordert eine strenge Kontrolle bezüglich seiner Veröffentlichung</description>
     </entry>
     <entry>
       <code>forOfficialUseOnly</code>
@@ -609,13 +636,13 @@
     </entry>
     <entry>
       <code>protected</code>
-      <label>Geschützt</label>
-      <description>Informationen, deren Verletzung zu Schäden führen könnte.</description>
+      <label>geschützt</label>
+      <description>das Kompromittieren der Informationen, könnte zu Schäden führen</description>
     </entry>
     <entry>
       <code>limitedDistribution</code>
-      <label>Beschränkte Verteilung</label>
-      <description>Verteilung nur durch die zuständige Stelle.</description>
+      <label>eingeschränkte Verbreitung</label>
+      <description>begrenzte Verbreitung durch zuständige Stelle</description>
     </entry>
 
   </codelist>
@@ -633,7 +660,7 @@
     <entry>
       <code>physicalMeasurement</code>
       <label>Physikalische Messung</label>
-      <description>Wert in physikalischen Einheiten der gemessenen Größe.</description>
+      <description>Wert in physikalischen Einheiten der gemessenen Grösse.</description>
     </entry>
     <entry>
       <code>auxillaryInformation</code>
@@ -783,140 +810,140 @@
   <codelist name="mri:MD_KeywordTypeCode">
     <entry>
       <code>discipline</code>
-      <label>Fachgebiet</label>
-      <description>Schlüsselwort im Zusammenhang mit einem Wissenszweig</description>
+      <label>Fachdisziplin</label>
+      <description>Schlüsselwort, welches einen Wissenszweig oder ein Spezialgebiet kennzeichnet</description>
     </entry>
     <entry>
       <code>place</code>
       <label>Ort</label>
-      <description>Schlüsselwort, das einen Ort identifiziert</description>
+      <description>Schlüsselwort, welches einen Ort kennzeichnet</description>
     </entry>
     <entry>
       <code>stratum</code>
-      <label>Schicht</label>
-      <description>Geologische Schicht</description>
+      <label>Schichtungsebene</label>
+      <description>Schlüsselwort, welches eine oder mehrere Schichten abgelagerter Stoffe kennzeichnet</description>
     </entry>
     <entry>
       <code>temporal</code>
       <label>Zeitlich</label>
-      <description>Schlüsselwort, das einen Zeitraum identifiziert</description>
+      <description>Schlüsselwort, welches eine Zeitspanne mit Bezug zu der Ressource kennzeichnet</description>
     </entry>
     <entry>
       <code>theme</code>
       <label>Thema</label>
-      <description>Schlüsselwort, das ein bestimmtes Thema identifiziert</description>
+      <description>Schlüsselwort, welches ein bestimmtes Thema oder einen Themenbereich kennzeichnet</description>
     </entry>
     <entry>
       <code>dataCentre</code>
-      <label>Datenzentrum</label>
-      <description>Schlüsselwort, das ein Datenarchiv oder eine Datenbank identifiziert, die Daten verwaltet und verteilt</description>
+      <label>Datencenter</label>
+      <description>Schlüsselwort, welches einen Datenspeicher oder ein Archiv identifiziert, das Daten verwaltet und verteilt</description>
     </entry>
     <entry>
       <code>featureType</code>
-      <label>Entitätstyp</label>
-      <description>Schlüsselwort, das eine Ressource mit einer Sammlung von Entitäten mit gemeinsamen Merkmalen identifiziert</description>
+      <label>Objektart</label>
+      <description>Schlüsselwort, welches eine Ressource identifiziert, die eine Sammlung von Instanzen von Entitäten mit gemeinsamen Merkmalen enthält oder betrifft</description>
     </entry>
     <entry>
       <code>instrument</code>
       <label>Instrument</label>
-      <description>Schlüsselwort, das ein Gerät zur Messung oder zum Vergleich physikalischer Eigenschaften identifiziert</description>
+      <description>Schlüsselwort, welches ein Gerät, zur Messung oder zum Vergleichen von physikalischen Eigenschaften kennzeichnet</description>
     </entry>
     <entry>
       <code>platform</code>
       <label>Plattform</label>
-      <description>Schlüsselwort, das eine Struktur identifiziert, auf der ein Instrument montiert ist</description>
+      <description>Schlüsselwort, welches eine Struktur, auf der ein Instrument montiert ist, kennzeichnet</description>
     </entry>
     <entry>
       <code>process</code>
       <label>Prozess</label>
-      <description>Schlüsselwort, das eine Reihe von Aktionen oder natürlichen Vorkommnissen identifiziert</description>
+      <description>Schlüsselwort, welches eine Reihe von Aktionen oder natürliche Ereignisse kennzeichnet</description>
     </entry>
     <entry>
       <code>project</code>
       <label>Projekt</label>
-      <description>Schlüsselwort, das einen Versuch zur Erstellung oder Änderung eines Produkts oder einer Dienstleistung identifiziert</description>
+      <description>Schlüsselwort, welches ein Unterfangen mit dem Ziel ein Produkt oder eine Dienstleistung zu erstellen oder zu verändern, kennzeichnet</description>
     </entry>
     <entry>
       <code>service</code>
       <label>Dienst</label>
-      <description>Schlüsselwort, das eine von einer Partei für eine andere ausgeführte Aktivität identifiziert</description>
+      <description>Schlüsselwort, welches eine Aktivität, die von einer Partei im Auftrag einer anderen ausgeführt wird, kennzeichnet</description>
     </entry>
     <entry>
       <code>product</code>
       <label>Produkt</label>
-      <description>Schlüsselwort, das einen Produkttyp identifiziert</description>
+      <description>Schlüsselwort, welches ein Produkttyp kennzeichnet</description>
     </entry>
     <entry>
       <code>subTopicCategory</code>
-      <label>Unterthemenkategorie</label>
-      <description>Verfeinerung einer Themenkategorie für die Klassifizierung geografischer Daten</description>
+      <label>Sub-Kategorie</label>
+      <description>Verfeinerung einer Themenkategorie für die Zwecke einer Klassifikation von Geodaten</description>
     </entry>
     <entry>
       <code>taxon</code>
-      <label>Taxon</label>
-      <description>Schlüsselwort, das eine Taxonomie der Ressource identifiziert</description>
+      <label>Taxonomie</label>
+      <description>Schlüsselwort, welches eine Taxonomie der Ressource kennzeichnet</description>
     </entry>
   </codelist>
   <codelist name="mmi:MD_MaintenanceFrequencyCode">
     <entry>
       <code>continual</code>
       <label>Kontinuierlich</label>
-      <description>Kontinuierliche Aktualisierung</description>
+      <description>wiederholt und oft aktualisiert</description>
     </entry>
     <entry>
       <code>daily</code>
       <label>Täglich</label>
-      <description>Tägliche Aktualisierung</description>
+      <description>täglich aktualisiert</description>
     </entry>
     <entry>
       <code>weekly</code>
       <label>Wöchentlich</label>
-      <description>Wöchentliche Aktualisierung</description>
+      <description>wöchentlich aktualisiert</description>
     </entry>
     <entry>
       <code>fortnightly</code>
-      <label>Zweimal monatlich</label>
-      <description>Aktualisierung 2 mal pro Monat</description>
+      <label>Zweiwöchentlich</label>
+      <description>jede zweite Woche aktualisiert</description>
     </entry>
     <entry>
       <code>monthly</code>
       <label>Monatlich</label>
-      <description>Monatliche Aktualisierung</description>
+      <description>monatlich aktualisiert</description>
     </entry>
     <entry>
       <code>quarterly</code>
       <label>Vierteljährlich</label>
-      <description>Vierteljährliche Aktualisierung</description>
+      <description>quartalsweise aktualisiert</description>
     </entry>
     <entry>
       <code>biannually</code>
       <label>Halbjährlich</label>
-      <description>Halbjährliche Aktualisierung</description>
+      <description>zweimal jährlich aktualisiert</description>
     </entry>
     <entry>
       <code>annually</code>
       <label>Jährlich</label>
-      <description>Jährliche Aktualisierung</description>
+      <description>jährlich aktualisiert</description>
     </entry>
     <entry>
       <code>asNeeded</code>
       <label>Bei Bedarf</label>
-      <description>Aktualisierung wenn notwendig erachtet</description>
+      <description>bei Bedarf aktualisiert</description>
     </entry>
     <entry>
       <code>irregular</code>
-      <label>Unregelmäßig</label>
-      <description>Unregelmäßige Aktualisierung</description>
+      <label>unregelmässig</label>
+      <description>in unregelmässigen Abständen aktualisiert</description>
     </entry>
     <entry>
       <code>notPlanned</code>
       <label>Nicht geplant</label>
-      <description>Nicht geplante Aktualisierung</description>
+      <description>es gibt keinen Zeitplan, um die Daten zu aktualisieren</description>
     </entry>
     <entry>
       <code>unknown</code>
       <label>Unbekannt</label>
-      <description>Unbekannte Aktualisierung</description>
+      <description>das Überarbeitungsintervall für die Daten ist unbekannt</description>
     </entry>
     <!-- ISO PROFIL CHE ONLY
 		<entry>
@@ -927,17 +954,17 @@
     <entry>
       <code>periodic</code>
       <label>Periodisch</label>
-      <description>Die Ressource wird in regelmäßigen Abständen aktualisiert</description>
+      <description>in regelmässigen Intervallen aktualisiert</description>
     </entry>
     <entry>
       <code>semimonthly</code>
-      <label>Zweimal monatlich</label>
-      <description>Die Ressource wird zweimal pro Monat aktualisiert</description>
+      <label>Halbmonatlich</label>
+      <description>zwei Mal pro Monat aktualisiert</description>
     </entry>
     <entry>
       <code>biennially</code>
       <label>Zweijährlich</label>
-      <description>Die Ressource wird alle zwei Jahre aktualisiert</description>
+      <description>alle zwei Jahre aktualisiert</description>
     </entry>
   </codelist>
   <codelist name="mrd:MD_MediumFormatCode">
@@ -1025,92 +1052,92 @@
     <entry>
       <code>completed</code>
       <label>Abgeschlossen</label>
-      <description>Fertige Ressource.</description>
+      <description>ist abgeschlossen</description>
     </entry>
     <entry>
       <code>historicalArchive</code>
-      <label>Archiviert</label>
-      <description>Ressource offline archiviert.</description>
+      <label>Historisches Archiv</label>
+      <description>Daten sind archiviert (offline)</description>
     </entry>
     <entry>
       <code>obsolete</code>
       <label>Veraltet</label>
-      <description>Veraltete Ressource.</description>
+      <description>nicht mehr von Relevanz</description>
     </entry>
     <entry>
       <code>onGoing</code>
-      <label>Laufend aktualisiert</label>
-      <description>Ressource wird kontinuierlich aktualisiert.</description>
+      <label>Kontinuierliche Aktualisierung</label>
+      <description>Laufend aktualisiert</description>
     </entry>
     <entry>
       <code>planned</code>
       <label>Geplant</label>
-      <description>Ressource wird zu einem festgelegten Datum erstellt oder aktualisiert.</description>
+      <description>das geplante Erstellungsdatum, an dem die Ressource erstellt oder aktualisiert wird</description>
     </entry>
     <entry>
       <code>required</code>
-      <label>Erstellung oder Aktualisierung erforderlich</label>
-      <description>Ressource muss erstellt oder aktualisiert werden.</description>
+      <label>Erforderlich</label>
+      <description>muss erzeugt oder aktualisiert werden</description>
     </entry>
     <entry>
       <code>underDevelopment</code>
       <label>In Entwicklung</label>
-      <description>Ressource wird erstellt.</description>
+      <description>Daten sind in Bearbeitung</description>
     </entry>
     <entry>
       <code>final</code>
-      <label>Final</label>
-      <description>Abgeschlossener Fortschritt, keine weiteren Änderungen werden akzeptiert.</description>
+      <label>Endgültig</label>
+      <description>der Verlauf ist abgeschlossen und es werden keine Änderungen akzeptiert.</description>
     </entry>
     <entry>
       <code>pending</code>
-      <label>Ausstehend</label>
+      <label>Pendent</label>
       <description>Beauftragt, aber noch nicht bearbeitet.</description>
     </entry>
     <entry>
       <code>retired</code>
       <label>Zurückgezogen</label>
-      <description>Die Nutzung des Elements wird nicht mehr empfohlen. Es wurde nicht durch ein anderes Element ersetzt.</description>
+      <description>die Verwendung des Elements wird nicht mehr empfohlen. Es wurde nicht durch ein anderes Element ersetzt</description>
     </entry>
     <entry>
       <code>superseded</code>
       <label>Ersetzt</label>
-      <description>Durch eine neue Ressource ersetzt.</description>
+      <description>Durch neue Ressource ersetzt.</description>
     </entry>
     <entry>
       <code>tentative</code>
-      <label>Vorläufig</label>
-      <description>Änderungen sind wahrscheinlich zu erwarten, bevor die Ressource endgültig ist oder abgeschlossen wird.</description>
+      <label>Provisorisch</label>
+      <description>Änderungen, die wahrscheinlich zu erwarten sind, bevor die Ressource die letzte ist oder fertiggestellt wird</description>
     </entry>
     <entry>
       <code>valid</code>
-      <label>Gültig</label>
-      <description>Zulässig unter bestimmten Bedingungen.</description>
+      <label>Valid</label>
+      <description>unter bestimmten Bedingungen zulässig</description>
     </entry>
     <entry>
       <code>accepted</code>
-      <label>Akzeptiert</label>
-      <description>Vom Auftraggeber vereinbart.</description>
+      <label>Angenommen</label>
+      <description>vom Auftraggeber akzeptiert</description>
     </entry>
     <entry>
       <code>notAccepted</code>
-      <label>Nicht akzeptiert</label>
-      <description>Vom Auftraggeber abgelehnt.</description>
+      <label>Nicht Angenommen</label>
+      <description>vom Auftraggeber abgelehnt</description>
     </entry>
     <entry>
       <code>withdrawn</code>
       <label>Zurückgezogen</label>
-      <description>Von jeglicher Berücksichtigung ausgeschlossen.</description>
+      <description>aus allen Überlegungen herausgenommen</description>
     </entry>
     <entry>
       <code>proposed</code>
       <label>Vorgeschlagen</label>
-      <description>Es wird vorgeschlagen, dass eine Entwicklung durchgeführt werden sollte.</description>
+      <description>vorgeschlagen, dass eine Erarbeitung erforderlich ist</description>
     </entry>
     <entry>
       <code>deprecated</code>
-      <label>Veraltet (deprecated)</label>
-      <description>Ressource ersetzt und wird veraltet, nur für historische Zwecke verwendet.</description>
+      <label>Abgewertet</label>
+      <description>ersetzte Ressource, welche veraltet sein wird und dessen Verwendung nur zu historischen Zwecken erlaubt ist</description>
     </entry>
     <entry hideInEditMode="true">
       <code>notobsolete</code>
@@ -1121,283 +1148,247 @@
   <codelist name="mco:MD_RestrictionCode">
     <entry>
       <code>copyright</code>
-      <label>Urheberrecht / Urheberpersönlichkeitsrecht (Copyright)</label>
-      <description>Ausschließliches Recht zur Veröffentlichung, Produktion oder zum Verkauf der
-        Rechte an einem literarischen, filmischen, musikalischen oder künstlerischen Werk oder
-        zur Verwendung eines Aufdrucks oder eines Handelszeichens, das
-        einem Autor, Komponisten, Künstler oder Vertreiber für einen bestimmten Zeitraum gesetzlich gewährt wird
-        Künstler oder Vertreiber gewährt wird
+      <label>Urheberrecht</label>
+      <description>exklusives Recht auf Veröffentlichung, Produktion oder Verkauf von Rechten an einem literarischen, 
+        filmischen, musikalischen oder künstlerischen Werk oder auf die Verwendung eines Drucks oder eines Handelsetiketts, 
+        das einem Autor, Komponisten, Künstler oder Verleiher für einen bestimmten Zeitraum gesetzlich gewährt wird
       </description>
     </entry>
     <entry>
       <code>patent</code>
       <label>Patent</label>
-      <description>Die Regierung hat ein ausschließliches Recht zur Herstellung,
-        eine Erfindung oder Entdeckung herzustellen, zu verkaufen, zu nutzen oder zu patentieren
+      <description>die Regierung hat das ausschliessliche Recht zur Herstellung, zum Verkauf, zur
+        Nutzung oder zur Lizenzierung einer Erfindung oder Entdeckung erteilt
       </description>
     </entry>
     <entry>
       <code>patentPending</code>
       <label>Patent angemeldet</label>
-      <description>Informationen erstellt oder verkauft, während ein Patent angemeldet ist
+      <description>produzierte oder verkaufte Informationen in Erwartung eines Patents
       </description>
     </entry>
     <entry>
       <code>trademark</code>
-      <label>Marke</label>
-      <description>Name, Symbol oder anderes Kennzeichen, das ein Produkt identifiziert,
-        das offiziell registriert und gesetzlich auf die Verwendung durch den
-        Eigentümer oder des Herstellers
+      <label>Warenzeichen</label>
+      <description>ein Name, ein Symbol oder ein anderes
+        Kennzeichen zur Identifizierung eines Produkts, das offiziell registriert und rechtlich
+        auf die Verwendung durch den Eigentümer oder Hersteller beschränkt ist
       </description>
     </entry>
     <entry>
       <code>license</code>
       <label>Lizenz</label>
-      <description>Einschränkung aufgrund einer Lizenz
-      </description>
+      <description>Formelle Genehmigung etwas zu tun</description>
     </entry>
     <entry>
       <code>intellectualPropertyRights</code>
-      <label>Recht am geistigen Eigentum / Vermögensrecht</label>
-      <description>Rechte auf finanziellen Gewinn aus der Verbreitung
-        und der Kontrolle über immaterielles Eigentum, das das
-        Ergebnis einer kreativen Tätigkeit
+      <label>Geistiges Eigentum</label>
+      <description>Rechte auf finanziellen Nutzen aus sowie
+        die Kontrolle über die Verteilung immaterieller Güter, 
+        welche das Ergebnis von Kreativität sind
       </description>
     </entry>
     <entry>
       <code>restricted</code>
-      <label>Eingeschränkt</label>
-      <description>Verbot der Verbreitung oder allgemeinen Veröffentlichung
-      </description>
+      <label>Beschränkter Zugang</label>
+      <description>von allgemeiner Offenlegung und Verbreitung ausgeschlossen</description>
     </entry>
     <entry>
       <code>otherRestrictions</code>
-      <label>Sonstige Einschränkungen</label>
-      <description>Keine Einschränkung festgelegt</description>
+      <label>Andere Beschränkungen</label>
+      <description>nicht aufgelistete Beschränkungen</description>
     </entry>
     <entry>
       <code>unrestricted</code>
-      <label>Keine Einschränkung</label>
-      <description>Es bestehen keine Einschränkungen</description>
+      <label>Unbeschränkt</label>
+      <description>keine Beschränkung</description>
     </entry>
     <entry>
       <code>licenceUnrestricted</code>
-      <label>Uneingeschränkte Lizenz</label>
-      <description>Keine formelle Genehmigung erforderlich, um die
-        Ressource
-      </description>
+      <label>uneingeschränkte Lizenz</label>
+      <description>für die Ressourcennutzung ist keine formelle Genehmigung erforderlich</description>
     </entry>
     <entry>
       <code>licenceEndUser</code>
-      <label>Endbenutzerlizenz</label>
-      <description>Formelle Genehmigung, die eine Person oder Organisation benötigt
-        zur Nutzung der Ressource und die sich von der Person unterscheiden kann, die
-        Besteller oder Käufer abweichen kann
+      <label>Endnutzer-Lizenz</label>
+      <description>eine formale Genehmigung zur Nutzung einer Ressource ist erforderlich 
+        für eine Person oder Stelle, die sich von der Person, die die Ressource bestellt oder kauft, 
+        unterscheiden kann
       </description>
     </entry>
     <entry>
       <code>licenceDistributor</code>
       <label>Vertriebslizenz</label>
-      <description>Formelle Genehmigung, die für eine Person oder Organisation erforderlich ist
-        zum Vermarkten oder Vertreiben der Ressource
+      <description>eine formale Genehmigung ist erforderlich,
+        damit eine Person oder eine Einrichtung die
+        Ressource vermarkten oder verbreiten darf
       </description>
     </entry>
     <entry>
       <code>private</code>
       <label>Privat</label>
-      <description>Schützt die Rechte einer Person oder Organisation in Bezug auf
-        Beobachtung, Eindringen oder Aufmerksamkeit durch Dritte
+      <description>schützt die Rechte von Einzelpersonen oder
+        Organisationen vor der Einsichtnahme, dem
+        Zugriff oder der Kenntnisnahme durch Dritte
       </description>
     </entry>
     <entry>
       <code>statutory</code>
       <label>Gesetzlich</label>
-      <description>Gesetzlich vorgeschrieben</description>
-    </entry>
-    <entry>
-      <code>vertraulich</code>
-      <label>Vertraulich</label>
-      <description>Für die Öffentlichkeit nicht zugänglich. HINWEIS Enthält Informationen
-        , die einem kommerziellen, industriellen
-        oder nationalen Interesse schaden könnten.
-      </description>
+      <description>gesetzlich vorgeschrieben</description>
     </entry>
     <entry>
       <code>SBU</code>
-      <label>Sensitive But Unclassified</label>
-      <description>Obwohl nicht klassifiziert, erfordert es strenge Kontrollen hinsichtlich seiner
-        Verbreitung
+      <label>Sensibel, aber nicht eingestuft</label>
+      <description>obwohl nicht klassifiziert, muss die Verbreitung streng kontrolliert werden
       </description>
     </entry>
     <entry>
       <code>in-confidence</code>
-      <label>Vertraulich</label>
-      <description>Vertraulich</description>
+      <label>Im Vertrauen </label>
+      <description>Im Vertrauen</description>
     </entry>
   </codelist>
 
   <codelist name="mcc:MD_ScopeCode">
     <entry>
-      <code>attribut</code>
+      <code>attribute</code>
       <label>Attribut</label>
-      <description>Informationen zu den Merkmalen des
-        Attributs
-      </description>
+      <description>die Informationen gelten für den Attributwert</description>
     </entry>
     <entry>
       <code>attributeType</code>
-      <label>Attributtyp</label>
-      <description>Informationen zu den Merkmalen der
-        Entität
-      </description>
+      <label>Attributart</label>
+      <description>die Informationen gelten für die Attributart</description>
     </entry>
     <entry>
       <code>collectionHardware</code>
-      <label>Hardware-Sammlung</label>
-      <description>Informationen zu den Merkmalen einer
-        Hardware-Sammlung
-      </description>
+      <label>Erfassungsgeräte</label>
+      <description>die Informationen gelten für die eingesetzten Geräte zur Datenerfassung</description>
     </entry>
     <entry>
       <code>collectionSession</code>
-      <label>Sitzungssammlung</label>
-      <description>Informationen zu den Merkmalen einer
-        Sitzungs-Sammlung
-      </description>
+      <label>Erfassungsaktion</label>
+      <description>die Informationen gelten für die Datenerfassungsaktion</description>
     </entry>
     <entry>
       <code>dataset</code>
-      <label>Datensatz</label>
-      <description>Informationen zu den Merkmalen des Datensatzes
-        
-      </description>
+      <label>Datenbestand</label>
+      <description>die Informationen gelten für den Datenbestand</description>
     </entry>
     <entry>
       <code>series</code>
-      <label>Datensammlung</label>
-      <description>Informationen zu den Merkmalen der
-        Datensammlung
-      </description>
+      <label>Serie</label>
+      <description>die Informationen gelten für die Serie</description>
     </entry>
     <entry>
       <code>nonGeographicDataset</code>
-      <label>Nicht-geografische Datensätze</label>
-      <description>Informationen zu den Merkmalen nicht-geografischer Datensätze
-        nicht-geografischen Datensätzen
-      </description>
+      <label>nichtgeografischer Datenbestand</label>
+      <description>die Informationen gelten für nicht-geografische Datenbestände</description>
     </entry>
     <entry>
       <code>dimensionGroup</code>
-      <label>Dimension einer Gruppe</label>
-      <description>Informationen, die für eine Gruppe gelten</description>
+      <label>Dimensionsgruppe</label>
+      <description>die Informationen gelten für eine Dimensionsgruppe</description>
     </entry>
     <entry>
       <code>feature</code>
-      <label>Entität</label>
-      <description>Informationen zu einer Entität</description>
+      <label>Objektinstanz</label>
+      <description>die Informationen gelten für eine Objektinstanz</description>
     </entry>
     <entry>
       <code>featureType</code>
-      <label>Entitätstyp</label>
-      <description>Informationen zu einem Entitätstyp</description>
+      <label>Objektart</label>
+      <description>die Informationen gelten für eine Objektart</description>
     </entry>
     <entry>
       <code>propertyType</code>
-      <label>Eigenschaftstyp</label>
-      <description>Informationen, die für einen Eigenschaftstyp gelten
-      </description>
+      <label>Eigenschaftsart</label>
+      <description>die Informationen gelten für eine Eigenschaftsart</description>
     </entry>
     <entry>
       <code>fieldSession</code>
-      <label>Sitzungsfeld</label>
-      <description>Informationen zu den Merkmalen eines
-        anwenden
-      </description>
+      <label>Feldkampagne</label>
+      <description>die Informationen gelten für eine Feldkampagne</description>
     </entry>
     <entry>
       <code>software</code>
       <label>Software</label>
-      <description>Informationen zu einem Programm oder einer Routine
-      </description>
+      <description>die Informationen gelten für ein Computerprogramm oder Teilprogramm</description>
     </entry>
     <entry>
       <code>service</code>
       <label>Dienst</label>
-      <description>Die Informationen beziehen sich auf eine Möglichkeit, die ein
-        einem Dienstleistungsanbieter für eine
-        Dienstleistungsnutzer über eine Reihe von Schnittstellen
-        , die ein Verhalten definieren, wie z. B. einen Anwendungsfall
+      <description>die Informationen gelten für ein
+        Angebot, die eine Dienstanbietereinheit einer Dienstnutzereinheit 
+        über eine Reihe von Schnittstellen zur Verfügung stellt, die ein
+        Merkmal wie z. B. einen Anwendungsfall definieren
       </description>
     </entry>
     <entry>
       <code>model</code>
       <label>Modell</label>
-      <description>Die Informationen beziehen sich auf eine Kopie oder Nachahmung
-        eines bestehenden oder hypothetischen Objekts
+      <description>die Informationen gelten für eine
+        Kopie oder Nachbildung eines existierenden 
+        oder hypothetischen Objekts
       </description>
     </entry>
     <entry>
       <code>tile</code>
-      <label>Fliese</label>
-      <description>Die Informationen beziehen sich auf ein Mosaik, eine räumliche Teilmenge
-        räumliche Teilmenge geografischer Daten
-      </description>
+      <label>Kachel</label>
+      <description>die Informationen gelten für ein Mosaik, eine räumliche Untermenge von geografischen Daten</description>
     </entry>
     <entry>
       <code>metadata</code>
       <label>Metadaten</label>
-      <description>Die Informationen gelten für Metadaten</description>
+      <description>die Informationen gelten für Metadaten</description>
     </entry>
     <entry>
       <code>initiative</code>
       <label>Initiative</label>
-      <description>Die Informationen beziehen sich auf eine Initiative</description>
+      <description>die Informationen gelten für eine Initiative</description>
     </entry>
     <entry>
       <code>Beispiel</code>
       <label>Probe</label>
-      <description>Die Informationen gelten für eine Probe</description>
+      <description>die Informationen gelten für ein Beispiel</description>
     </entry>
     <entry>
       <code>Dokument</code>
       <label>Dokument</label>
-      <description>Die Informationen gelten für ein Dokument</description>
+      <description>die Informationen gelten für ein Dokument</description>
     </entry>
     <entry>
       <code>repository</code>
-      <label>Datenarchiv</label>
-      <description>Die Informationen beziehen sich auf ein Datenarchiv
-      </description>
+      <label>Repository</label>
+      <description>die Informationen gelten für einen Speicherort</description>
     </entry>
     <entry>
       <code>aggregate</code>
       <label>Aggregat</label>
-      <description>Die Informationen gelten für eine Aggregatressource.
-      </description>
+      <description>die Informationen gelten für ein Aggregat</description>
     </entry>
     <entry>
       <code>product</code>
       <label>Produkt</label>
-      <description>Metadaten, die eine Informationsspezifikation
-        in ISO 19131
-      </description>
+      <description>Metadaten, die eine ISO 19131 Datenprodukt-Spezifikation beschreiben</description>
     </entry>
     <entry>
       <code>collection</code>
       <label>Sammlung</label>
-      <description>Die Informationen gelten für ein unstrukturiertes Ensemble
-      </description>
+      <description>die Informationen gelten für eine nicht strukturierte Sammlung</description>
     </entry>
     <entry>
       <code>coverage</code>
-      <label>Abdeckung</label>
-      <description>Die Informationen gelten für eine Abdeckung</description>
+      <label>Geltungsbereich</label>
+      <description>die Informationen gelten für einen Geltungsbereich</description>
     </entry>
     <entry>
-      <code>Anwendung</code>
-      <label>Anwendung</label>
-      <description>Informationsquelle, die in einem bestimmten Materialkomplex
-        und über ein Netzwerk zugänglich ist
+      <code>application</code>
+      <label>Applikation</label>
+      <description>Informationsressource, 
+        die in einem bestimmten Hardware-Set
+        untergebracht und über ein Netzwerk zugänglich ist
       </description>
     </entry>
     <entry hideInEditMode="true">
@@ -1420,36 +1411,34 @@
     <entry>
       <code>vector</code>
       <label>Vektor</label>
-      <description>Vektordaten (Punkt, Linie, Polygon)</description>
+      <description>zur Darstellung geografischer Informationen werden Vektordaten verwendet</description>
     </entry>
     <entry>
-      <code>Gitter</code>
-      <label>Raster</label>
-      <description>Raster- oder Matrixdaten</description>
+      <code>grid</code>
+      <label>Raster, Gitter</label>
+      <description>zur Darstellung geografischer Informationen werden Raster-/Gitterdaten verwendet</description>
     </entry>
     <entry>
       <code>textTable</code>
-      <label>Tabellarisch</label>
-      <description>Textdatei oder Tabelle</description>
+      <label>Text der Tabelle</label>
+      <description>zur Darstellung geografischer Informationen
+        werden textliche oder tabellarische Daten verwendet
+      </description>
     </entry>
     <entry>
       <code>tin</code>
       <label>TIN</label>
-      <description>Unregelmäßiges Dreiecksnetz (Triangulated Irregular
-        Network)
-      </description>
+      <description>« triangular irregular network » - Oberflächeninterpolation durch Dreiecksvermaschung</description>
     </entry>
     <entry>
       <code>stereoModel</code>
-      <label>Stereoskopisches Modell</label>
-      <description>Dreidimensionale Ansicht, die durch den Schnittpunkt der Strahlen
-        eines Paares sich überlappender Bilder
-      </description>
+      <label>Stereomodell</label>
+      <description>3D-Sicht, entstanden aus zwei Stereobildern</description>
     </entry>
     <entry>
       <code>video</code>
       <label>Video</label>
-      <description>Videoaufzeichnung</description>
+      <description>Szene einer Videoaufnahme</description>
     </entry>
     <!-- ISO PROFIL CHE ONLY
 		<entry>
@@ -1462,162 +1451,107 @@
     <entry>
       <code>farming</code>
       <label>Landwirtschaft</label>
-      <description>Viehzucht und/oder Ackerbau. Beispiele: Landwirtschaft, Bewässerung,
-        Aquakultur, Plantagen
-      </description>
+      <description>Tierzucht und/oder Pflanzenanbau</description>
     </entry>
     <entry>
       <code>biota</code>
-      <label>Biologie, Fauna und Flora</label>
-      <description>Flora und Fauna in einem natürlichen Ökosystem. Beispiele:
-        Lebensraum, Ökologie, Wildtiere, Wasserfauna, Biowissenschaften,
-        Feuchtgebiete, Vegetation, Biodiversität
-      </description>
+      <label>Biologie</label>
+      <description>Flora und/oder Fauna in der natürlichen Umgebung</description>
     </entry>
     <entry>
       <code>boundaries</code>
-      <label>Politische und administrative Grenzen</label>
-      <description>Beispiele: Grenzen von Ländern, Provinzen, Departements, Gemeinden
-        Gemeinden
-      </description>
+      <label>Grenzen</label>
+      <description>gesetzlich festgelegte Grenzen</description>
     </entry>
     <entry>
       <code>climatologyMeteorologyAtmosphere</code>
-      <label>Klimatologie, Meteorologie</label>
-      <description>Atmosphärische Prozesse und Phänomene. Beispiele: Klima,
-        Wetter, atmosphärische Bedingungen, Klimawandel,
-        Bewölkung
-      </description>
+      <label>Klimatologie, Meteorologie, Atmosphäre</label>
+      <description>Prozesse und Naturereignisse der Atmosphäre inkl. Klimatologie und Meteorologie</description>
     </entry>
     <entry>
       <code>Wirtschaft</code>
       <label>Wirtschaft</label>
-      <description>Wirtschaftliche Aktivitäten. Beispiele: Produktion, Arbeit,
-        Einkommen, Handel, Industrie, Tourismus und Ökotourismus, Forstwirtschaft,
-        Fischerei, Jagd, Exploration und Gewinnung von Bodenschätzen,
-        Erdöl, Erdgas
-      </description>
+      <description>wirtschaftliche Aktivitäten, Verhältnisse und Beschäftigung</description>
     </entry>
     <entry>
       <code>elevation</code>
-      <label>Höhenmessung</label>
-      <description>Höhen unterhalb und oberhalb des Meeresspiegels. Beispiele:
-        Höhe, Bathymetrie, DTM, Neigungen und aus der Höhe abgeleitete Berechnungen
-      </description>
+      <label>Höhenangaben</label>
+      <description>Höhenangabe bezogen auf ein Höhenreferenzsystem</description>
     </entry>
     <entry>
       <code>Umwelt</code>
       <label>Umwelt</label>
-      <description>Natürliche Ressourcen, Schutz, Erhaltung der
-        . Beispiele: Umweltverschmutzung, Abfallbehandlung und -lagerung
-        , Umweltüberwachung, Risikomanagement, Naturschutzgebiete
-        , Landschaft
-      </description>
+      <description>Umweltressourcen, Umweltschutz und Umwelterhaltung</description>
     </entry>
     <entry>
       <code>geoscientificInformation</code>
-      <label>Geowissenschaften, Geowissenschaften</label>
-      <description>Informationen zu den Geowissenschaften. Beispiele:
-        geophysikalische Komponenten und Prozesse, Geologie, Mineralogie, Tektonik,
-        Erdbebenrisiko
-      </description>
+      <label>Erdwissenschaften</label>
+      <description>Geowissenschaftliche Informationen</description>
     </entry>
     <entry>
       <code>health</code>
       <label>Gesundheit</label>
-      <description>Gesundheit, Gesundheitswesen, Epidemiologie. Beispiele: Krankheiten
-        und Epidemien, Faktoren, die die Gesundheit beeinflussen, geistige und körperliche Gesundheit,
-        Gesundheitsdienstleistungen
-      </description>
+      <description>Gesundheit, Gesundheitsdienste, Humanökologie und Sicherheit</description>
     </entry>
     <entry>
       <code>imageryBaseMapsEarthCover</code>
-      <label>Referenzkarte der Landbedeckung</label>
-      <description>Referenzkarte. Beispiele: Landnutzung,
-        Luft- und Satellitenbilder, thematische Karten,
-        Topografische Karten
-      </description>
+      <label>Oberflächenbeschreibung</label>
+      <description>Basiskarten und -daten</description>
     </entry>
     <entry>
       <code>intelligenceMilitary</code>
-      <label>Militärische Infrastrukturen</label>
-      <description>Militärstützpunkte und Infrastruktur</description>
+      <label>Militär und Aufklärung</label>
+      <description>Militärbasen, militärische Einrichtungen und Aktivitäten</description>
     </entry>
     <entry>
       <code>inlandWaters</code>
-      <label>Binnengewässer, Hydrographie</label>
-      <description>Beispiele: Flüsse, Gletscher, Salzseen, hydrografische Systeme
-        , Dämme, Durchflussmengen, Wasserqualität
-      </description>
+      <label>Binnengewässer</label>
+      <description>Binnengewässerdaten, Gewässernetze und deren Eigenschaften</description>
     </entry>
     <entry>
-      <code>Standort</code>
-      <label>Standort</label>
-      <description>Beispiele: Postleitzahlen, Adressen, Kontrollpunkte,
-        geodätisches Netz
-      </description>
+      <code>location</code>
+      <label>Ortsangaben</label>
+      <description>Positionsangaben und -dienste</description>
     </entry>
     <entry>
       <code>oceans</code>
-      <label>Ozeane</label>
-      <description>Bestandteile und Merkmale der Meeresumwelt. Beispiele:
-        Küste, Riffe, Gezeiten usw.
-      </description>
+      <label>Meere</label>
+      <description>Merkmale und Charakteristika von salzhaltigen Gewässern (ausser Binnengewässern)</description>
     </entry>
     <entry>
       <code>planningCadastre</code>
-      <label>Kataster, Raumplanung</label>
-      <description>Beispiele: Landnutzungskarte, Flächennutzungsplan
-        , Risikopräventionsplanung
-      </description>
+      <label>Planungsunterlagen und Kataster</label>
+      <description>Informationen für die Flächennutzungsplanung</description>
     </entry>
     <entry>
-      <code>Gesellschaft</code>
+      <code>society</code>
       <label>Gesellschaft</label>
-      <description>Merkmale von Gesellschaften und Kulturen. Beispiele
-        : Gesetze, Anthropologie, Bildung, Demografie, Archäologie,
-        Überwachung sozialer Systeme, Glaubenssätze, Sitten und Gebräuche, Verbrechen und
-        Justiz
-      </description>
+      <description>kulturelle und gesellschaftliche Merkmale</description>
     </entry>
     <entry>
-      <code>Struktur</code>
-      <label>Bauwerke und Bauwerke</label>
-      <description>Städtebauliche Einrichtungen. Beispiele: Museum, Kirche, Fabriken,
-        Häuser, Denkmäler, Geschäfte, Gebäude
-      </description>
+      <code>structure</code>
+      <label>Bauwerke</label>
+      <description>von Menschen errichtetes Bauwerk</description>
     </entry>
     <entry>
       <code>transportation</code>
-      <label>Verkehrsinfrastruktur</label>
-      <description>Verkehrsmittel für Personen und Güter. Beispiele:
-       Straßen, Flughäfen, Tunnel, Viadukte, Brücken, Eisenbahn
-      </description>
+      <label>Verkehrswesen</label>
+      <description>Mittel und Wege zur Beförderung von Personen und/oder Gütern</description>
     </entry>
     <entry>
       <code>utilitiesCommunication</code>
-      <label>Telekommunikation, Versorgung und Energie</label>
-      <description>Systeme für die Verteilung, Verwaltung oder Speicherung von
-        Energie, Wasser, Abfall. Kommunikationsinfrastrukturen und -dienste
-        . Beispiele: Solarenergie, Wasserkraft,
-        , Wasseraufbereitung und -verteilung, Strom- und Gasverteilungsnetze
-        , Gas, Telekommunikationsnetz, Radio.
-      </description>
+      <label>Ver- und Entsorgung, Kommunikation</label>
+      <description>Energie-, Wasser- und Abwassersysteme sowie Kommunikationsinfrastruktur und -dienste</description>
     </entry>
     <entry>
       <code>extraTerrestrial</code>
-      <label>Außerirdisch</label>
-      <description>Gebiet von mehr als 100 km über der Erdoberfläche
-        Erdoberfläche
-      </description>
+      <label>Extraterrestrisch</label>
+      <description>Bereich von mehr als 100 km oberhalb der Erdoberfläche</description>
     </entry>
     <entry>
-      <code>Katastrophe</code>
+      <code>disaster</code>
       <label>Katastrophe</label>
-      <description>Informationen zu Katastrophen BEISPIELE Katastrophengebiet
-        Katastrophengebiet, Evakuierungszone, Einrichtung zur Katastrophenprävention
-        , Rettungsmaßnahmen.
-      </description>
+      <description>Informationen zu Katastrophen</description>
     </entry>
   </codelist>
   <codelist name="msr:MD_TopologyLevelCode">
@@ -1681,7 +1615,7 @@
       <code>halfMaximum</code>
       <label>Halbwertsbreite</label>
       <description>Beschreibung: Breite einer Verteilung, die dem Abstand
-        zwischen den beiden äußeren Punkten der Verteilung, die die Hälfte der Leistung
+        zwischen den beiden äusseren Punkten der Verteilung, die die Hälfte der Leistung
         des Spitzenwerts
       </description>
     </entry>
@@ -2169,7 +2103,7 @@
       <description>Referenzsystem, das einen Standort durch
         Bezug auf ein Segment einer linearen geografischen Einheit und eine
         Entfernung entlang dieses Abschnitts von einem bestimmten Punkt aus BEISPIEL x km
-        entlang einer Straße
+        entlang einer Strasse
       </description>
     </entry>
     <entry>
@@ -2236,35 +2170,35 @@
     <entry>
       <code>ucs2</code>
       <label>Ucs2</label>
-      <description>16-Bit-Zeichensatz mit fester Größe, basierend auf ISO
+      <description>16-Bit-Zeichensatz mit fester Grösse, basierend auf ISO
         10646
       </description>
     </entry>
     <entry>
       <code>ucs4</code>
       <label>Ucs4</label>
-      <description>32-Bit-Universalzeichensatz mit fester Größe, basierend auf ISO/IEC
+      <description>32-Bit-Universalzeichensatz mit fester Grösse, basierend auf ISO/IEC
         10646
       </description>
     </entry>
     <entry>
       <code>utf7</code>
       <label>Utf7</label>
-      <description>7-Bit-UCS-Übertragungsformat mit variabler Größe, basierend auf ISO/IEC
+      <description>7-Bit-UCS-Übertragungsformat mit variabler Grösse, basierend auf ISO/IEC
         10646
       </description>
     </entry>
     <entry>
       <code>utf8</code>
       <label>Utf8</label>
-      <description>8-Bit-UCS-Übertragungsformat mit variabler Größe, basierend auf ISO/IEC
+      <description>8-Bit-UCS-Übertragungsformat mit variabler Grösse, basierend auf ISO/IEC
         10646
       </description>
     </entry>
     <entry>
       <code>utf16</code>
       <label>Utf16</label>
-      <description>16-Bit-UCS-Übertragungsformat mit variabler Größe, basierend auf ISO/IEC
+      <description>16-Bit-UCS-Übertragungsformat mit variabler Grösse, basierend auf ISO/IEC
         10646
       </description>
     </entry>
@@ -2434,7 +2368,6 @@
     </entry>
   </codelist>
 
-
   <codelist name="mrd:MD_MediumNameCode">
     <entry>
       <code>cdRom</code>
@@ -2537,8 +2470,7 @@
     <entry>
       <code>CORBA</code>
       <label>CORBA</label>
-      <description>Architektur für einen gemeinsamen Vermittler bei Objektanfragen
-        von
+      <description>Common Object Request Broker Architecture (Allgemeine Architektur für Vermittler von Objekt-Nachrichten)
       </description>
     </entry>
     <entry>
@@ -2549,17 +2481,17 @@
     <entry>
       <code>COM</code>
       <label>COM</label>
-      <description>Objektkomponentenmodell</description>
+      <description>Component Object Model (Objektkomponenten-Modell)</description>
     </entry>
     <entry>
       <code>SQL</code>
       <label>SQL</label>
-      <description>Strukturierte Abfragesprache</description>
+      <description>Structured Query Language</description>
     </entry>
     <entry>
       <code>SOAP</code>
       <label>SOAP</label>
-      <description>Vereinfachtes Protokoll für den Zugriff auf Objekte</description>
+      <description>Simple Object Access Protocol (Netzwerkprotokoll)</description>
     </entry>
     <entry>
       <code>Z3950</code>
@@ -2569,17 +2501,17 @@
     <entry>
       <code>HTTP</code>
       <label>HTTP</label>
-      <description>Hypertext Transfer Protocol</description>
+      <description>Hypertext Transfer Protocol (Hypertext-Übertragungsprotokoll)</description>
     </entry>
     <entry>
       <code>FTP</code>
       <label>FTP</label>
-      <description>Dateiübertragungsprotokoll</description>
+      <description>File Transfer Protocol (Dateiübertragungsprotokoll)</description>
     </entry>
     <entry>
       <code>WebServices</code>
-      <label>WebServices</label>
-      <description>Vereinfachtes Protokoll für den Zugriff auf Objekte</description>
+      <label>Webdienst</label>
+      <description>ein Dienst, der über ein Netzwerk angesprochen werden kann</description>
     </entry>
   </codelist>
   <codelist name="srv:SV_CouplingType">
