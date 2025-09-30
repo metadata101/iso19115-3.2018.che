@@ -170,7 +170,7 @@ public class Iso19139cheToIso19115cheConversionTest {
 
     @Test
     public void convertInterlis() throws Exception {
-        transformAndCompare("subtemplates/interlis", false);
+        transformAndCompare("subtemplates/interlis", false, "process/convert-to-iso19115-3.2018.che.xsl");
     }
 
     @Test
@@ -277,7 +277,11 @@ public class Iso19139cheToIso19115cheConversionTest {
     }
 
     private Element transformAndCompare(String mdNameRoot, boolean requireXmlHeader) throws Exception {
-        Path xslFile = getResourceInsideSchema("convert/fromISO19139.che.xsl");
+		return transformAndCompare(mdNameRoot, requireXmlHeader, "convert/fromISO19139.che.xsl");
+    }
+
+    private Element transformAndCompare(String mdNameRoot, boolean requireXmlHeader, String convertUsing) throws Exception {
+        Path xslFile = getResourceInsideSchema(convertUsing);
         Path xmlFile = getResource(mdNameRoot + "-19139.che.xml");
         Element source = Xml.loadFile(xmlFile);
 
