@@ -601,32 +601,32 @@
   <codelist name="mco:MD_ClassificationCode">
     <entry>
       <code>unclassified</code>
-      <label>nicht klassifiziert</label>
+      <label>Nicht klassifiziert</label>
       <description>zur allgemeinen Veröffentlichung verfügbar</description>
     </entry>
     <entry>
       <code>restricted</code>
-      <label>intern</label>
+      <label>Intern</label>
       <description>nicht zur Veröffentlichung bestimmt</description>
     </entry>
     <entry>
       <code>confidential</code>
-      <label>vertraulich</label>
+      <label>Vertraulich</label>
       <description>nur für Vertrauenspersonen</description>
     </entry>
     <entry>
       <code>secret</code>
-      <label>geheim</label>
+      <label>Geheim</label>
       <description>nur für einen ausgewählten Personenkreis</description>
     </entry>
     <entry>
       <code>topSecret</code>
-      <label>streng geheim</label>
+      <label>Streng geheim</label>
       <description>höchste Geheimhaltung</description>
     </entry>
     <entry>
       <code>SBU</code>
-      <label>sensibel, aber nicht klassifiziert</label>
+      <label>Sensibel, aber nicht klassifiziert</label>
       <description>obwohl nicht klassifiziert, erfordert eine strenge Kontrolle bezüglich seiner Veröffentlichung</description>
     </entry>
     <entry>
@@ -636,12 +636,12 @@
     </entry>
     <entry>
       <code>protected</code>
-      <label>geschützt</label>
+      <label>Geschützt</label>
       <description>das Kompromittieren der Informationen, könnte zu Schäden führen</description>
     </entry>
     <entry>
       <code>limitedDistribution</code>
-      <label>eingeschränkte Verbreitung</label>
+      <label>Eingeschränkte Verbreitung</label>
       <description>begrenzte Verbreitung durch zuständige Stelle</description>
     </entry>
 
@@ -1600,7 +1600,7 @@
     </entry>
     <entry>
       <code>abstract</code>
-      <label>Spaghetti</label>
+      <label>Zusammenfassung</label>
       <description>Geometrische Objekte ohne Beschreibung der Topologie
       </description>
     </entry>
