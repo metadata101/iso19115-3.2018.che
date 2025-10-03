@@ -1176,6 +1176,64 @@
     </che:CHE_MD_DataIdentification>
   </mdb:identificationInfo>
   <mdb:contentInfo>
+    <mrc:MD_FeatureCatalogueDescription>
+      <mrc:complianceCode>
+        <gco:Boolean>0</gco:Boolean>
+      </mrc:complianceCode>
+      <mrc:locale>
+        <lan:PT_Locale>
+          <lan:language>
+            <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="fre">fre</lan:LanguageCode>
+          </lan:language>
+          <lan:characterEncoding gco:nilReason="unknown" />
+        </lan:PT_Locale>
+      </mrc:locale>
+      <mrc:includedWithDataset>
+        <gco:Boolean>true</gco:Boolean>
+      </mrc:includedWithDataset>
+      <mrc:featureCatalogueCitation>
+        <cit:CI_Citation>
+          <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Instabilités de terrain (typologie)</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Instabilités de terrain (typologie)</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">Instabilités de terrain (typologie)</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:title>
+          <cit:date>
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>1999-01-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:presentationForm>
+            <cit:CI_PresentationFormCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_PresentationFormCode" codeListValue="documentDigital" />
+          </cit:presentationForm>
+          <cit:onlineResource>
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString />
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">"Bezeichnung Datenmodell"</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+            </cit:CI_OnlineResource>
+          </cit:onlineResource>
+        </cit:CI_Citation>
+      </mrc:featureCatalogueCitation>
+    </mrc:MD_FeatureCatalogueDescription>
+  </mdb:contentInfo>
+  <mdb:contentInfo>
     <mrc:MD_FeatureCatalogue>
       <mrc:featureCatalogue>
         <gfc:FC_FeatureCatalogue>
