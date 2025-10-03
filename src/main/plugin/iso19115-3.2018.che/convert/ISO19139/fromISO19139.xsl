@@ -219,6 +219,10 @@
                   </mdb:contentInfo>
                 </xsl:if>
 
+                <xsl:for-each select="gmd:contentInfo/oldche:CHE_MD_FeatureCatalogueDescription[count(oldche:class/oldche:CHE_MD_Class) > 0]">
+                    <xsl:apply-templates select="." mode="from19139to19115-3.2018-catalog"/>
+                </xsl:for-each>
+
                 <xsl:call-template name="onlineSourceDispatcher">
                     <xsl:with-param name="type" select="'featureCatalogueCitation'"/>
                 </xsl:call-template>
