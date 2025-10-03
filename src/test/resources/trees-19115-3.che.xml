@@ -554,6 +554,13 @@
     </che:CHE_MD_DataIdentification>
   </mdb:identificationInfo>
   <mdb:contentInfo>
+    <mrc:MD_FeatureCatalogueDescription>
+      <mrc:includedWithDataset>
+        <gco:Boolean>0</gco:Boolean>
+      </mrc:includedWithDataset>
+    </mrc:MD_FeatureCatalogueDescription>
+  </mdb:contentInfo>
+  <mdb:contentInfo>
     <mrc:MD_FeatureCatalogue>
       <mrc:featureCatalogue>
         <gfc:FC_FeatureCatalogue>
