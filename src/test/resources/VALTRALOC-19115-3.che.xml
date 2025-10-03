@@ -547,6 +547,35 @@
     </che:CHE_MD_DataIdentification>
   </mdb:identificationInfo>
   <mdb:contentInfo>
+    <mrc:MD_FeatureCatalogueDescription>
+      <mrc:includedWithDataset>
+        <gco:Boolean>0</gco:Boolean>
+      </mrc:includedWithDataset>
+      <mrc:featureCatalogueCitation>
+        <cit:CI_Citation>
+          <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Projets de valorisation des espaces publics en traversées de localités</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">Projets de valorisation des espaces publics en traversées de localités</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:title>
+          <cit:date>
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2012-01-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+        </cit:CI_Citation>
+      </mrc:featureCatalogueCitation>
+    </mrc:MD_FeatureCatalogueDescription>
+  </mdb:contentInfo>
+  <mdb:contentInfo>
     <mrc:MD_FeatureCatalogue>
       <mrc:featureCatalogue>
         <gfc:FC_FeatureCatalogue>
