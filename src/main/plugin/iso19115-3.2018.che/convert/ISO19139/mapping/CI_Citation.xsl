@@ -42,6 +42,7 @@
                 xmlns:gml="http://www.opengis.net/gml/3.2"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+                xmlns:oldche="http://www.geocat.ch/2008/che"
                 exclude-result-prefixes="#all">
 
     <xsl:import href="CI_ResponsibleParty.xsl"/>
@@ -58,6 +59,17 @@
     <xsl:template match="gmd:CI_Citation" mode="from19139to19115-3.2018">
         <xsl:element name="cit:CI_Citation">
             <xsl:apply-templates mode="from19139to19115-3.2018"/>
+            <xsl:if test="ancestor::oldche:CHE_MD_FeatureCatalogueDescription and ../../oldche:dataModel">
+                <xsl:element name="cit:onlineResource">
+                    <xsl:element name="cit:CI_OnlineResource">
+                        <xsl:element name="cit:linkage">
+                            <xsl:attribute name="xsi:type" select="'lan:PT_FreeText_PropertyType'"/>
+                            <gco:CharacterString><xsl:value-of select="../../oldche:dataModel/gmd:URL" /></gco:CharacterString>
+                            <xsl:apply-templates select="../../oldche:dataModel/oldche:PT_FreeURL" mode="from19139to19115-3.2018"/>
+                        </xsl:element>
+                    </xsl:element>
+                </xsl:element>
+            </xsl:if>
             <!-- Special attention is required for CI_ResponsibleParties that are included in the 
                 CI_Citation only for a URL. These are currently identified as those 
                 with no name elements (individualName, organisationName, or positionName)

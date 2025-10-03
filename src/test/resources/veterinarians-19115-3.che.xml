@@ -538,6 +538,36 @@
     </che:CHE_MD_DataIdentification>
   </mdb:identificationInfo>
   <mdb:contentInfo>
+    <mrc:MD_FeatureCatalogueDescription>
+      <mrc:includedWithDataset gco:nilReason="unknown" />
+      <mrc:featureCatalogueCitation>
+        <cit:CI_Citation>
+          <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Vétérinaires</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">Vétérinaires</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Mikrobiologische Wasserqualität der offiziellen Strandbäder</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:title>
+          <cit:date>
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2023-05-26</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+        </cit:CI_Citation>
+      </mrc:featureCatalogueCitation>
+    </mrc:MD_FeatureCatalogueDescription>
+  </mdb:contentInfo>
+  <mdb:contentInfo>
     <mrc:MD_FeatureCatalogue>
       <mrc:featureCatalogue>
         <gfc:FC_FeatureCatalogue>
