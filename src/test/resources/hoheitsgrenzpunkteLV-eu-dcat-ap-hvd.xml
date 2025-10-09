@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatap="http://data.europa.eu/r5r/" xmlns:eli="http://data.europa.eu/eli/ontology">
-  <rdf:Description rdf:about="ch.swisstopo.swisstlm3d-uebrigerverkehr">
+  <rdf:Description rdf:about="trueapi/records/ffc0267e-aca8-49ac-8f3e-86c9beca51f2#resource">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
     <dct:type>
       <skos:Concept rdf:about="http://purl.org/dc/dcmitype/Dataset">
@@ -8,20 +8,20 @@
       </skos:Concept>
     </dct:type>
     <foaf:isPrimaryTopicOf>
-      <rdf:Description rdf:about="ffc0267e-aca8-49ac-8f3e-86c9beca51f2">
+      <rdf:Description rdf:about="trueapi/records/ffc0267e-aca8-49ac-8f3e-86c9beca51f2">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord" />
         <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ffc0267e-aca8-49ac-8f3e-86c9beca51f2</dct:identifier>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-04T14:56:05.532Z</dct:modified>
-        <dct:title xml:lang="ger">swissTLM3D Übrige Bahn</dct:title>
-        <dct:title xml:lang="fre">swissTLM3D Autres transports</dct:title>
-        <dct:title xml:lang="ita">swissTLM3D Altri trasporti</dct:title>
-        <dct:title xml:lang="eng">swissTLM3D Other transportations</dct:title>
-        <dct:title xml:lang="roh">swissTLM3D Auters transports</dct:title>
-        <dct:description xml:lang="ger">swissTLM3D übrige Bahnen beinhaltet verschiedene Seilbahnarten sowie andere mechanische Transportsysteme. Es ist Bestandteil des Datensatzes swissTLM3D. Mit seiner hohen Genauigkeit und dem Einbezug der dritten Dimension ist swissTLM3D der umfassendste 3D-Vektordatensatz der Schweiz. Im Geoportal des Bundes werden die Objekte der Ebene "übrige Bahnen" entsprechend der ausgewählten Zoomstufe schrittweise dargestellt.</dct:description>
-        <dct:description xml:lang="fre">swissTLM3D autres transports comprend les différents transports à câble ainsi que d'autres types de transport mécanique. Il fait partie du jeu de données swissTLM3D. Avec une haute précision et l'intégration de la troisième dimension, swissTLM3D constitue le jeu de données vectorielles en 3D le plus complet de la Suisse. Dans le géoportail fédéral, les objets de la couche " autres transports" sont affichés progressivement en fonction des niveaux de zoom.</dct:description>
-        <dct:description xml:lang="ita">swissTLM3D altri trasporti comprende i differenti tipi di trasporto a fune e altri tipi di trasporto meccanico. Fa parte del set di dati swissTLM3D. Il prodotto swissTLM3D offre un'alta precisione e include anche la terza dimensione, si tratta della raccolta dati vettoriali in 3D più completa del territorio svizzero. All'interno del geoportale federale, gli oggetti del layer "altri trasporti " sono visualizzabili progressivamente, in funzione del livello di zoom selezionato.</dct:description>
-        <dct:description xml:lang="eng">swissTLM3D other transportations contains the different types of cable railway and other types of mechanical transport. It is part of the dataset swissTLM3D. With a high accuracy and the incorporation of a third dimension, swissTLM3D is the most extensive 3D vector data set of Switzerland. In the federal geoportal the objects of the layer "other transportations" are displayed gradually according to the different zoomlevels.</dct:description>
-        <dct:description xml:lang="roh">swissTLM3D Auters transports cuntegna differents geners da telefericas sco er auters sistems da transport mecanics. Ella è ina part integrala da l'unitad da datas swissTLM3D. Cun sia auta precisiun e cun l'integraziun da la terza dimensiun è swissTLM3D l'unitad da datas vectorialas en 3D la pli cumplessiva da la Svizra. En il geoportal da la Confederaziun vegnan ils objects dad "Auters transports" preschentads progressivamain, tut tenor il stgalim da zoom tschernì.</dct:description>
+        <dct:title xml:lang="de">swissTLM3D Übrige Bahn</dct:title>
+        <dct:title xml:lang="fr">swissTLM3D Autres transports</dct:title>
+        <dct:title xml:lang="it">swissTLM3D Altri trasporti</dct:title>
+        <dct:title xml:lang="en">swissTLM3D Other transportations</dct:title>
+        <dct:title xml:lang="rm">swissTLM3D Auters transports</dct:title>
+        <dct:description xml:lang="de">swissTLM3D übrige Bahnen beinhaltet verschiedene Seilbahnarten sowie andere mechanische Transportsysteme. Es ist Bestandteil des Datensatzes swissTLM3D. Mit seiner hohen Genauigkeit und dem Einbezug der dritten Dimension ist swissTLM3D der umfassendste 3D-Vektordatensatz der Schweiz. Im Geoportal des Bundes werden die Objekte der Ebene "übrige Bahnen" entsprechend der ausgewählten Zoomstufe schrittweise dargestellt.</dct:description>
+        <dct:description xml:lang="fr">swissTLM3D autres transports comprend les différents transports à câble ainsi que d'autres types de transport mécanique. Il fait partie du jeu de données swissTLM3D. Avec une haute précision et l'intégration de la troisième dimension, swissTLM3D constitue le jeu de données vectorielles en 3D le plus complet de la Suisse. Dans le géoportail fédéral, les objets de la couche " autres transports" sont affichés progressivement en fonction des niveaux de zoom.</dct:description>
+        <dct:description xml:lang="it">swissTLM3D altri trasporti comprende i differenti tipi di trasporto a fune e altri tipi di trasporto meccanico. Fa parte del set di dati swissTLM3D. Il prodotto swissTLM3D offre un'alta precisione e include anche la terza dimensione, si tratta della raccolta dati vettoriali in 3D più completa del territorio svizzero. All'interno del geoportale federale, gli oggetti del layer "altri trasporti " sono visualizzabili progressivamente, in funzione del livello di zoom selezionato.</dct:description>
+        <dct:description xml:lang="en">swissTLM3D other transportations contains the different types of cable railway and other types of mechanical transport. It is part of the dataset swissTLM3D. With a high accuracy and the incorporation of a third dimension, swissTLM3D is the most extensive 3D vector data set of Switzerland. In the federal geoportal the objects of the layer "other transportations" are displayed gradually according to the different zoomlevels.</dct:description>
+        <dct:description xml:lang="rm">swissTLM3D Auters transports cuntegna differents geners da telefericas sco er auters sistems da transport mecanics. Ella è ina part integrala da l'unitad da datas swissTLM3D. Cun sia auta precisiun e cun l'integraziun da la terza dimensiun è swissTLM3D l'unitad da datas vectorialas en 3D la pli cumplessiva da la Svizra. En il geoportal da la Confederaziun vegnan ils objects dad "Auters transports" preschentads progressivamain, tut tenor il stgalim da zoom tschernì.</dct:description>
         <dct:language>
           <dct:LinguisticSystem rdf:about="http://publications.europa.eu/resource/authority/language/DEU" />
         </dct:language>
@@ -38,16 +38,16 @@
           <dct:LinguisticSystem rdf:about="http://publications.europa.eu/resource/authority/language/ROH" />
         </dct:language>
         <dct:conformsTo>
-          <dct:Standard rdf:about="http://data.europa.eu/r5r/" />
+          <dct:Standard rdf:about="https://www.w3.org/TR/vocab-dcat/" />
         </dct:conformsTo>
-        <foaf:primaryTopic rdf:resource="ch.swisstopo.swisstlm3d-uebrigerverkehr" />
+        <foaf:primaryTopic rdf:resource="trueapi/records/ffc0267e-aca8-49ac-8f3e-86c9beca51f2#resource" />
       </rdf:Description>
     </foaf:isPrimaryTopicOf>
-    <dct:title xml:lang="ger">swissTLM3D Übrige Bahn</dct:title>
-    <dct:title xml:lang="fre">swissTLM3D Autres transports</dct:title>
-    <dct:title xml:lang="ita">swissTLM3D Altri trasporti</dct:title>
-    <dct:title xml:lang="eng">swissTLM3D Other transportations</dct:title>
-    <dct:title xml:lang="roh">swissTLM3D Auters transports</dct:title>
+    <dct:title xml:lang="de">swissTLM3D Übrige Bahn</dct:title>
+    <dct:title xml:lang="fr">swissTLM3D Autres transports</dct:title>
+    <dct:title xml:lang="it">swissTLM3D Altri trasporti</dct:title>
+    <dct:title xml:lang="en">swissTLM3D Other transportations</dct:title>
+    <dct:title xml:lang="rm">swissTLM3D Auters transports</dct:title>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-04-01</dct:issued>
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-05</dct:modified>
     <dcat:version>Version 2.3</dcat:version>
@@ -58,18 +58,18 @@
         <skos:notation />
       </rdf:Description>
     </adms:identifier>
-    <dct:description xml:lang="ger">swissTLM3D übrige Bahnen beinhaltet verschiedene Seilbahnarten sowie andere mechanische Transportsysteme. Es ist Bestandteil des Datensatzes swissTLM3D. Mit seiner hohen Genauigkeit und dem Einbezug der dritten Dimension ist swissTLM3D der umfassendste 3D-Vektordatensatz der Schweiz. Im Geoportal des Bundes werden die Objekte der Ebene "übrige Bahnen" entsprechend der ausgewählten Zoomstufe schrittweise dargestellt.</dct:description>
-    <dct:description xml:lang="fre">swissTLM3D autres transports comprend les différents transports à câble ainsi que d'autres types de transport mécanique. Il fait partie du jeu de données swissTLM3D. Avec une haute précision et l'intégration de la troisième dimension, swissTLM3D constitue le jeu de données vectorielles en 3D le plus complet de la Suisse. Dans le géoportail fédéral, les objets de la couche " autres transports" sont affichés progressivement en fonction des niveaux de zoom.</dct:description>
-    <dct:description xml:lang="ita">swissTLM3D altri trasporti comprende i differenti tipi di trasporto a fune e altri tipi di trasporto meccanico. Fa parte del set di dati swissTLM3D. Il prodotto swissTLM3D offre un'alta precisione e include anche la terza dimensione, si tratta della raccolta dati vettoriali in 3D più completa del territorio svizzero. All'interno del geoportale federale, gli oggetti del layer "altri trasporti " sono visualizzabili progressivamente, in funzione del livello di zoom selezionato.</dct:description>
-    <dct:description xml:lang="eng">swissTLM3D other transportations contains the different types of cable railway and other types of mechanical transport. It is part of the dataset swissTLM3D. With a high accuracy and the incorporation of a third dimension, swissTLM3D is the most extensive 3D vector data set of Switzerland. In the federal geoportal the objects of the layer "other transportations" are displayed gradually according to the different zoomlevels.</dct:description>
-    <dct:description xml:lang="roh">swissTLM3D Auters transports cuntegna differents geners da telefericas sco er auters sistems da transport mecanics. Ella è ina part integrala da l'unitad da datas swissTLM3D. Cun sia auta precisiun e cun l'integraziun da la terza dimensiun è swissTLM3D l'unitad da datas vectorialas en 3D la pli cumplessiva da la Svizra. En il geoportal da la Confederaziun vegnan ils objects dad "Auters transports" preschentads progressivamain, tut tenor il stgalim da zoom tschernì.</dct:description>
+    <dct:description xml:lang="de">swissTLM3D übrige Bahnen beinhaltet verschiedene Seilbahnarten sowie andere mechanische Transportsysteme. Es ist Bestandteil des Datensatzes swissTLM3D. Mit seiner hohen Genauigkeit und dem Einbezug der dritten Dimension ist swissTLM3D der umfassendste 3D-Vektordatensatz der Schweiz. Im Geoportal des Bundes werden die Objekte der Ebene "übrige Bahnen" entsprechend der ausgewählten Zoomstufe schrittweise dargestellt.</dct:description>
+    <dct:description xml:lang="fr">swissTLM3D autres transports comprend les différents transports à câble ainsi que d'autres types de transport mécanique. Il fait partie du jeu de données swissTLM3D. Avec une haute précision et l'intégration de la troisième dimension, swissTLM3D constitue le jeu de données vectorielles en 3D le plus complet de la Suisse. Dans le géoportail fédéral, les objets de la couche " autres transports" sont affichés progressivement en fonction des niveaux de zoom.</dct:description>
+    <dct:description xml:lang="it">swissTLM3D altri trasporti comprende i differenti tipi di trasporto a fune e altri tipi di trasporto meccanico. Fa parte del set di dati swissTLM3D. Il prodotto swissTLM3D offre un'alta precisione e include anche la terza dimensione, si tratta della raccolta dati vettoriali in 3D più completa del territorio svizzero. All'interno del geoportale federale, gli oggetti del layer "altri trasporti " sono visualizzabili progressivamente, in funzione del livello di zoom selezionato.</dct:description>
+    <dct:description xml:lang="en">swissTLM3D other transportations contains the different types of cable railway and other types of mechanical transport. It is part of the dataset swissTLM3D. With a high accuracy and the incorporation of a third dimension, swissTLM3D is the most extensive 3D vector data set of Switzerland. In the federal geoportal the objects of the layer "other transportations" are displayed gradually according to the different zoomlevels.</dct:description>
+    <dct:description xml:lang="rm">swissTLM3D Auters transports cuntegna differents geners da telefericas sco er auters sistems da transport mecanics. Ella è ina part integrala da l'unitad da datas swissTLM3D. Cun sia auta precisiun e cun l'integraziun da la terza dimensiun è swissTLM3D l'unitad da datas vectorialas en 3D la pli cumplessiva da la Svizra. En il geoportal da la Confederaziun vegnan ils objects dad "Auters transports" preschentads progressivamain, tut tenor il stgalim da zoom tschernì.</dct:description>
     <adms:status>
       <skos:Concept rdf:about="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#onGoing">
-        <skos:prefLabel xml:lang="ger">cl_MD_ProgressCode#onGoing</skos:prefLabel>
-        <skos:prefLabel xml:lang="fre">cl_MD_ProgressCode#onGoing</skos:prefLabel>
-        <skos:prefLabel xml:lang="ita">cl_MD_ProgressCode#onGoing</skos:prefLabel>
-        <skos:prefLabel xml:lang="eng">cl_MD_ProgressCode#onGoing</skos:prefLabel>
-        <skos:prefLabel xml:lang="roh">cl_MD_ProgressCode#onGoing</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">cl_MD_ProgressCode#onGoing</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">cl_MD_ProgressCode#onGoing</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">cl_MD_ProgressCode#onGoing</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">cl_MD_ProgressCode#onGoing</skos:prefLabel>
+        <skos:prefLabel xml:lang="rm">cl_MD_ProgressCode#onGoing</skos:prefLabel>
       </skos:Concept>
     </adms:status>
     <dcat:contactPoint>
@@ -77,20 +77,20 @@
         <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization" />
         <vcard:org>
           <rdf:Description>
-            <vcard:organisation-name xml:lang="ger">Bundesamt für Landestopografie swisstopo</vcard:organisation-name>
-            <vcard:organisation-name xml:lang="fre">Office fédéral de topographie swisstopo</vcard:organisation-name>
-            <vcard:organisation-name xml:lang="ita">Ufficio federale di topografia swisstopo</vcard:organisation-name>
-            <vcard:organisation-name xml:lang="eng">Federal Office of Topography swisstopo</vcard:organisation-name>
-            <vcard:organisation-name xml:lang="roh">Uffizi federal da topografia swisstopo</vcard:organisation-name>
+            <vcard:organisation-name xml:lang="de">Bundesamt für Landestopografie swisstopo</vcard:organisation-name>
+            <vcard:organisation-name xml:lang="fr">Office fédéral de topographie swisstopo</vcard:organisation-name>
+            <vcard:organisation-name xml:lang="it">Ufficio federale di topografia swisstopo</vcard:organisation-name>
+            <vcard:organisation-name xml:lang="en">Federal Office of Topography swisstopo</vcard:organisation-name>
+            <vcard:organisation-name xml:lang="rm">Uffizi federal da topografia swisstopo</vcard:organisation-name>
           </rdf:Description>
         </vcard:org>
         <vcard:hasEmail rdf:resource="mailto:geodata@swisstopo.ch" />
         <vcard:hasAddress>
           <vcard:Address>
-            <vcard:country-name xml:lang="ger">CH</vcard:country-name>
-            <vcard:locality xml:lang="ger">Wabern</vcard:locality>
-            <vcard:postal-code xml:lang="ger">3084</vcard:postal-code>
-            <vcard:street-address xml:lang="ger">Seftigenstrasse 264</vcard:street-address>
+            <vcard:country-name xml:lang="de">CH</vcard:country-name>
+            <vcard:locality xml:lang="de">Wabern</vcard:locality>
+            <vcard:postal-code xml:lang="de">3084</vcard:postal-code>
+            <vcard:street-address xml:lang="de">Seftigenstrasse 264</vcard:street-address>
           </vcard:Address>
         </vcard:hasAddress>
       </rdf:Description>
@@ -98,73 +98,70 @@
     <dct:rightsHolder>
       <rdf:Description>
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization" />
-        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent" />
-        <foaf:name xml:lang="ger">Bundesamt für Landestopografie swisstopo</foaf:name>
-        <foaf:name xml:lang="fre">Office fédéral de topographie swisstopo</foaf:name>
-        <foaf:name xml:lang="ita">Ufficio federale di topografia swisstopo</foaf:name>
-        <foaf:name xml:lang="eng">Federal Office of Topography swisstopo</foaf:name>
-        <foaf:name xml:lang="roh">Uffizi federal da topografia swisstopo</foaf:name>
+        <foaf:name xml:lang="de">Bundesamt für Landestopografie swisstopo</foaf:name>
+        <foaf:name xml:lang="fr">Office fédéral de topographie swisstopo</foaf:name>
+        <foaf:name xml:lang="it">Ufficio federale di topografia swisstopo</foaf:name>
+        <foaf:name xml:lang="en">Federal Office of Topography swisstopo</foaf:name>
+        <foaf:name xml:lang="rm">Uffizi federal da topografia swisstopo</foaf:name>
         <foaf:mbox rdf:resource="mailto:info@swisstopo.ch" />
-        <foaf:workplaceHomepage xml:lang="ger" />
-        <foaf:workplaceHomepage xml:lang="eng">https://www.swisstopo.ch</foaf:workplaceHomepage>
-        <foaf:workplaceHomepage xml:lang="ger">https://www.swisstopo.ch</foaf:workplaceHomepage>
-        <foaf:workplaceHomepage xml:lang="fre">https://www.swisstopo.ch</foaf:workplaceHomepage>
-        <foaf:workplaceHomepage xml:lang="ita">https://www.swisstopo.ch</foaf:workplaceHomepage>
-        <foaf:workplaceHomepage xml:lang="roh">https://www.swisstopo.ch</foaf:workplaceHomepage>
+        <foaf:workplaceHomepage xml:lang="de" />
+        <foaf:workplaceHomepage xml:lang="en">https://www.swisstopo.ch</foaf:workplaceHomepage>
+        <foaf:workplaceHomepage xml:lang="de">https://www.swisstopo.ch</foaf:workplaceHomepage>
+        <foaf:workplaceHomepage xml:lang="fr">https://www.swisstopo.ch</foaf:workplaceHomepage>
+        <foaf:workplaceHomepage xml:lang="it">https://www.swisstopo.ch</foaf:workplaceHomepage>
+        <foaf:workplaceHomepage xml:lang="rm">https://www.swisstopo.ch</foaf:workplaceHomepage>
       </rdf:Description>
     </dct:rightsHolder>
-    <dcat:keyword xml:lang="ger">Verkehrsnetz</dcat:keyword>
-    <dcat:keyword xml:lang="fre">réseau de transport</dcat:keyword>
-    <dcat:keyword xml:lang="ita">rete di trasporto</dcat:keyword>
-    <dcat:keyword xml:lang="eng">traffic network</dcat:keyword>
-    <dcat:keyword xml:lang="ger">Einzelobjekt</dcat:keyword>
-    <dcat:keyword xml:lang="fre">objet divers</dcat:keyword>
-    <dcat:keyword xml:lang="ita">oggetto singolo</dcat:keyword>
-    <dcat:keyword xml:lang="eng">single object</dcat:keyword>
-    <dcat:keyword xml:lang="ger">Aufbewahrungs- und Archivierungsplanung AAP - Bund</dcat:keyword>
-    <dcat:keyword xml:lang="fre">Planification de la conservation et de l'archivage AAP - Conféderation</dcat:keyword>
-    <dcat:keyword xml:lang="ita">Pianificazione della conservazione e dell’archiviazione AAP - Confederazione</dcat:keyword>
-    <dcat:keyword xml:lang="eng">Conservation and archiving planning AAP - Confederation</dcat:keyword>
-    <dcat:keyword xml:lang="ger">Landschaftsmodell</dcat:keyword>
-    <dcat:keyword xml:lang="fre">modèle du territoire</dcat:keyword>
-    <dcat:keyword xml:lang="ita">modello del territorio</dcat:keyword>
-    <dcat:keyword xml:lang="eng">landscape model</dcat:keyword>
-    <dcat:keyword xml:lang="ger">Geobasisdaten</dcat:keyword>
-    <dcat:keyword xml:lang="fre">géodonnées de base</dcat:keyword>
-    <dcat:keyword xml:lang="ita">geodati di base</dcat:keyword>
-    <dcat:keyword xml:lang="eng">official geodata</dcat:keyword>
-    <dcat:keyword xml:lang="ger">opendata.swiss</dcat:keyword>
-    <dcat:keyword xml:lang="fre">opendata.swiss</dcat:keyword>
-    <dcat:keyword xml:lang="ita">opendata.swiss</dcat:keyword>
-    <dcat:keyword xml:lang="eng">opendata.swiss</dcat:keyword>
-    <dcat:keyword xml:lang="roh">opendata.swiss</dcat:keyword>
-    <dcat:keyword xml:lang="ger">GIS (Geografisches Informationssystem)</dcat:keyword>
-    <dcat:keyword xml:lang="fre">SIG (Système d'Information Géographique)</dcat:keyword>
-    <dcat:keyword xml:lang="ita">SIG (Sistema Informativo Geografico)</dcat:keyword>
-    <dcat:keyword xml:lang="eng">GIS (Geographic Information System)</dcat:keyword>
-    <dcat:keyword xml:lang="ger">Geografische Bezeichnungen</dcat:keyword>
-    <dcat:keyword xml:lang="fre">Dénominations géographiques</dcat:keyword>
-    <dcat:keyword xml:lang="ita">Nomi geografici</dcat:keyword>
-    <dcat:keyword xml:lang="eng">Geographical names</dcat:keyword>
-    <dcat:keyword xml:lang="ger">Verkehrsnetze</dcat:keyword>
-    <dcat:keyword xml:lang="fre">Réseaux de transport</dcat:keyword>
-    <dcat:keyword xml:lang="ita">Reti di trasporto</dcat:keyword>
-    <dcat:keyword xml:lang="eng">Transport networks</dcat:keyword>
-    <dcat:keyword xml:lang="ger">BGDI Bundesgeodaten-Infrastruktur</dcat:keyword>
-    <dcat:keyword xml:lang="fre">IFDG l’Infrastructure Fédérale de données géographiques</dcat:keyword>
-    <dcat:keyword xml:lang="ita">IFDG Infrastruttura federale dei dati geografici</dcat:keyword>
-    <dcat:keyword xml:lang="eng">FSDI Federal Spatial Data Infrastructure</dcat:keyword>
-    <dct:relation />
-    <dct:relation />
+    <dcat:keyword xml:lang="de">Verkehrsnetz</dcat:keyword>
+    <dcat:keyword xml:lang="fr">réseau de transport</dcat:keyword>
+    <dcat:keyword xml:lang="it">rete di trasporto</dcat:keyword>
+    <dcat:keyword xml:lang="en">traffic network</dcat:keyword>
+    <dcat:keyword xml:lang="de">Einzelobjekt</dcat:keyword>
+    <dcat:keyword xml:lang="fr">objet divers</dcat:keyword>
+    <dcat:keyword xml:lang="it">oggetto singolo</dcat:keyword>
+    <dcat:keyword xml:lang="en">single object</dcat:keyword>
+    <dcat:keyword xml:lang="de">Aufbewahrungs- und Archivierungsplanung AAP - Bund</dcat:keyword>
+    <dcat:keyword xml:lang="fr">Planification de la conservation et de l'archivage AAP - Conféderation</dcat:keyword>
+    <dcat:keyword xml:lang="it">Pianificazione della conservazione e dell’archiviazione AAP - Confederazione</dcat:keyword>
+    <dcat:keyword xml:lang="en">Conservation and archiving planning AAP - Confederation</dcat:keyword>
+    <dcat:keyword xml:lang="de">Landschaftsmodell</dcat:keyword>
+    <dcat:keyword xml:lang="fr">modèle du territoire</dcat:keyword>
+    <dcat:keyword xml:lang="it">modello del territorio</dcat:keyword>
+    <dcat:keyword xml:lang="en">landscape model</dcat:keyword>
+    <dcat:keyword xml:lang="de">Geobasisdaten</dcat:keyword>
+    <dcat:keyword xml:lang="fr">géodonnées de base</dcat:keyword>
+    <dcat:keyword xml:lang="it">geodati di base</dcat:keyword>
+    <dcat:keyword xml:lang="en">official geodata</dcat:keyword>
+    <dcat:keyword xml:lang="de">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="fr">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="it">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="en">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="rm">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="de">GIS (Geografisches Informationssystem)</dcat:keyword>
+    <dcat:keyword xml:lang="fr">SIG (Système d'Information Géographique)</dcat:keyword>
+    <dcat:keyword xml:lang="it">SIG (Sistema Informativo Geografico)</dcat:keyword>
+    <dcat:keyword xml:lang="en">GIS (Geographic Information System)</dcat:keyword>
+    <dcat:keyword xml:lang="de">Geografische Bezeichnungen</dcat:keyword>
+    <dcat:keyword xml:lang="fr">Dénominations géographiques</dcat:keyword>
+    <dcat:keyword xml:lang="it">Nomi geografici</dcat:keyword>
+    <dcat:keyword xml:lang="en">Geographical names</dcat:keyword>
+    <dcat:keyword xml:lang="de">Verkehrsnetze</dcat:keyword>
+    <dcat:keyword xml:lang="fr">Réseaux de transport</dcat:keyword>
+    <dcat:keyword xml:lang="it">Reti di trasporto</dcat:keyword>
+    <dcat:keyword xml:lang="en">Transport networks</dcat:keyword>
+    <dcat:keyword xml:lang="de">BGDI Bundesgeodaten-Infrastruktur</dcat:keyword>
+    <dcat:keyword xml:lang="fr">IFDG l’Infrastructure Fédérale de données géographiques</dcat:keyword>
+    <dcat:keyword xml:lang="it">IFDG Infrastruttura federale dei dati geografici</dcat:keyword>
+    <dcat:keyword xml:lang="en">FSDI Federal Spatial Data Infrastructure</dcat:keyword>
     <dct:language>
       <dct:LinguisticSystem rdf:about="http://publications.europa.eu/resource/authority/language/DEU" />
     </dct:language>
     <dct:provenance>
       <dct:ProvenanceStatement>
-        <dct:description xml:lang="ger">Geometrische Genauigkeit: von 0.2 -1.5 m in allen drei Dimensionen für gut definierte Objekte wie z.B. Strassen und Gebäude, 1 - 3 m in allen drei Dimensionen für nicht klar abgrenzbare Objekte wie z.B. Wald</dct:description>
-        <dct:description xml:lang="fre">Précision géométrique: de 0,2 -1,5 m dans les trois dimensions pour des objets bien définis, par ex. routes et bâtiments, 1 - 3 m dans les trois dimensions pour les objets non délimitables clairement, par ex. forêts</dct:description>
-        <dct:description xml:lang="ita">Precisione geometrica:  da 0.2 -1.5 m in ognuna delle tre dimensioni per oggetti ben definiti quali ad es. strade e edifici, 1 - 3 m in ognuna delle tre dimensioni per oggetti dai contorni meno netti quali ad es. le foreste</dct:description>
-        <dct:description xml:lang="eng">Geometric accuracy: from 0.2 -1.5 m in all three dimensions for well-defined landscape features such as roads and buildings, 1 - 3 m in all three dimensions for landscape features which are not clearly defined such as forests</dct:description>
+        <dct:description xml:lang="de">Geometrische Genauigkeit: von 0.2 -1.5 m in allen drei Dimensionen für gut definierte Objekte wie z.B. Strassen und Gebäude, 1 - 3 m in allen drei Dimensionen für nicht klar abgrenzbare Objekte wie z.B. Wald</dct:description>
+        <dct:description xml:lang="fr">Précision géométrique: de 0,2 -1,5 m dans les trois dimensions pour des objets bien définis, par ex. routes et bâtiments, 1 - 3 m dans les trois dimensions pour les objets non délimitables clairement, par ex. forêts</dct:description>
+        <dct:description xml:lang="it">Precisione geometrica:  da 0.2 -1.5 m in ognuna delle tre dimensioni per oggetti ben definiti quali ad es. strade e edifici, 1 - 3 m in ognuna delle tre dimensioni per oggetti dai contorni meno netti quali ad es. le foreste</dct:description>
+        <dct:description xml:lang="en">Geometric accuracy: from 0.2 -1.5 m in all three dimensions for well-defined landscape features such as roads and buildings, 1 - 3 m in all three dimensions for landscape features which are not clearly defined such as forests</dct:description>
       </dct:ProvenanceStatement>
     </dct:provenance>
     <dcat:theme>
@@ -257,46 +254,49 @@
     </dcat:distribution>
     <dcat:distribution>
       <dcat:Distribution>
-        <dct:title xml:lang="ger">Vorschau map.geo.admin.ch</dct:title>
-        <dct:title xml:lang="fre">Aperçu map.geo.admin.ch</dct:title>
-        <dct:title xml:lang="ita">Previsione map.geo.admin.ch</dct:title>
-        <dct:title xml:lang="eng">Preview map.geo.admin.ch</dct:title>
-        <dct:description xml:lang="ger">Vorschau map.geo.admin.ch</dct:description>
-        <dct:description xml:lang="fre">Aperçu map.geo.admin.ch</dct:description>
-        <dct:description xml:lang="ita">Previsione map.geo.admin.ch</dct:description>
-        <dct:description xml:lang="eng">Preview map.geo.admin.ch</dct:description>
+        <dct:title xml:lang="de">Vorschau map.geo.admin.ch</dct:title>
+        <dct:title xml:lang="fr">Aperçu map.geo.admin.ch</dct:title>
+        <dct:title xml:lang="it">Previsione map.geo.admin.ch</dct:title>
+        <dct:title xml:lang="en">Preview map.geo.admin.ch</dct:title>
+        <dct:description xml:lang="de">Vorschau map.geo.admin.ch</dct:description>
+        <dct:description xml:lang="fr">Aperçu map.geo.admin.ch</dct:description>
+        <dct:description xml:lang="it">Previsione map.geo.admin.ch</dct:description>
+        <dct:description xml:lang="en">Preview map.geo.admin.ch</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-05</dct:modified>
         <dcat:accessURL rdf:resource="https://map.geo.admin.ch/?layers=ch.swisstopo.swisstlm3d-uebrigerverkehr" />
       </dcat:Distribution>
     </dcat:distribution>
     <dcat:distribution>
       <dcat:Distribution>
-        <dct:title xml:lang="ger">ch.swisstopo.swisstlm3d-uebrigerverkehr</dct:title>
-        <dct:title xml:lang="fre">ch.swisstopo.swisstlm3d-uebrigerverkehr</dct:title>
-        <dct:title xml:lang="ita">ch.swisstopo.swisstlm3d-uebrigerverkehr</dct:title>
-        <dct:title xml:lang="eng">ch.swisstopo.swisstlm3d-uebrigerverkehr</dct:title>
-        <dct:title xml:lang="roh">ch.swisstopo.swisstlm3d-uebrigerverkehr</dct:title>
-        <dct:description xml:lang="ger">WMTS-BGDI Dienst, Layer "Seilbahnen swissTLM3D"</dct:description>
-        <dct:description xml:lang="fre">Service WMTS-IFDG, couche , Layer "Transports à câble swissTLM3D"</dct:description>
-        <dct:description xml:lang="ita">Servizio WMTS-IFDG, strato "Trasporti a fune swissTLM3D"</dct:description>
-        <dct:description xml:lang="eng">WMTS-FSDI service, layer "Cableways swissTLM3D"</dct:description>
-        <dct:description xml:lang="roh">WMTS-BGDI Dienst, Layer "Seilbahnen swissTLM3D"</dct:description>
+        <dct:title xml:lang="de">ch.swisstopo.swisstlm3d-uebrigerverkehr</dct:title>
+        <dct:title xml:lang="fr">ch.swisstopo.swisstlm3d-uebrigerverkehr</dct:title>
+        <dct:title xml:lang="it">ch.swisstopo.swisstlm3d-uebrigerverkehr</dct:title>
+        <dct:title xml:lang="en">ch.swisstopo.swisstlm3d-uebrigerverkehr</dct:title>
+        <dct:title xml:lang="rm">ch.swisstopo.swisstlm3d-uebrigerverkehr</dct:title>
+        <dct:description xml:lang="de">WMTS-BGDI Dienst, Layer "Seilbahnen swissTLM3D"</dct:description>
+        <dct:description xml:lang="fr">Service WMTS-IFDG, couche , Layer "Transports à câble swissTLM3D"</dct:description>
+        <dct:description xml:lang="it">Servizio WMTS-IFDG, strato "Trasporti a fune swissTLM3D"</dct:description>
+        <dct:description xml:lang="en">WMTS-FSDI service, layer "Cableways swissTLM3D"</dct:description>
+        <dct:description xml:lang="rm">WMTS-BGDI Dienst, Layer "Seilbahnen swissTLM3D"</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-05</dct:modified>
         <dcat:accessURL rdf:resource="https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=de" />
       </dcat:Distribution>
     </dcat:distribution>
     <foaf:page>
       <foaf:Document rdf:about="https://www.swisstopo.admin.ch/de/landschaftsmodell-swisstlm3d">
-        <dct:description xml:lang="ger">swissTLM3D</dct:description>
+        <dct:description xml:lang="de">swissTLM3D</dct:description>
       </foaf:Document>
     </foaf:page>
     <dcat:distribution>
       <dcat:Distribution>
-        <dct:title xml:lang="ger">ch.swisstopo.swisstlm3d-uebrigerverkehr</dct:title>
-        <dct:description xml:lang="ger">Seilbahnen swissTLM3D</dct:description>
+        <dct:title xml:lang="de">ch.swisstopo.swisstlm3d-uebrigerverkehr</dct:title>
+        <dct:description xml:lang="de">Seilbahnen swissTLM3D</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-05</dct:modified>
         <dcat:accessURL rdf:resource="https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities" />
         <dcat:accessService>
           <rdf:Description>
             <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DataService" />
-            <dct:title xml:lang="ger">ch.swisstopo.swisstlm3d-uebrigerverkehr</dct:title>
+            <dct:title xml:lang="de">ch.swisstopo.swisstlm3d-uebrigerverkehr</dct:title>
             <dcat:endpointURL rdf:resource="https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities" />
             <dct:conformsTo>
               <dct:Standard rdf:about="http://www.opengeospatial.org/standards/wms" />
@@ -307,44 +307,47 @@
     </dcat:distribution>
     <dcat:distribution>
       <dcat:Distribution>
-        <dct:description xml:lang="ger">Shop</dct:description>
-        <dct:description xml:lang="fre">Shop</dct:description>
-        <dct:description xml:lang="ita">Shop</dct:description>
-        <dct:description xml:lang="eng">Shop</dct:description>
+        <dct:description xml:lang="de">Shop</dct:description>
+        <dct:description xml:lang="fr">Shop</dct:description>
+        <dct:description xml:lang="it">Shop</dct:description>
+        <dct:description xml:lang="en">Shop</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-05</dct:modified>
         <dcat:accessURL rdf:resource="https://www.swisstopo.admin.ch/de/landschaftsmodell-swisstlm3d" />
         <dcat:downloadURL rdf:resource="https://www.swisstopo.admin.ch/de/landschaftsmodell-swisstlm3d" />
       </dcat:Distribution>
     </dcat:distribution>
     <dcat:distribution>
       <dcat:Distribution>
-        <dct:description xml:lang="ger">map.geo.admin.ch</dct:description>
-        <dct:description xml:lang="fre">map.geo.admin.ch</dct:description>
-        <dct:description xml:lang="ita">map.geo.admin.ch</dct:description>
-        <dct:description xml:lang="eng">map.geo.admin.ch</dct:description>
+        <dct:description xml:lang="de">map.geo.admin.ch</dct:description>
+        <dct:description xml:lang="fr">map.geo.admin.ch</dct:description>
+        <dct:description xml:lang="it">map.geo.admin.ch</dct:description>
+        <dct:description xml:lang="en">map.geo.admin.ch</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-05</dct:modified>
         <dcat:accessURL rdf:resource="https://map.geo.admin.ch/?topic=swisstopo&amp;lang=de&amp;bgLayer=voidLayer&amp;catalogNodes=1436,1396,1397&amp;layers=ch.swisstopo.swisstlm3d-karte-farbe&amp;X=192000.00&amp;Y=622250.00&amp;zoom=2" />
       </dcat:Distribution>
     </dcat:distribution>
     <dcat:distribution>
       <dcat:Distribution>
-        <dct:title xml:lang="ger">RESTful API von geo.admin.ch</dct:title>
-        <dct:title xml:lang="fre">RESTful API de geo.admin.ch</dct:title>
-        <dct:title xml:lang="ita">RESTful API da geo.admin.ch</dct:title>
-        <dct:title xml:lang="eng">RESTful API from geo.admin.ch</dct:title>
-        <dct:title xml:lang="roh">RESTful API dad geo.admin.ch</dct:title>
-        <dct:description xml:lang="ger">RESTful API von geo.admin.ch</dct:description>
-        <dct:description xml:lang="fre">RESTful API de geo.admin.ch</dct:description>
-        <dct:description xml:lang="ita">RESTful API da geo.admin.ch</dct:description>
-        <dct:description xml:lang="eng">RESTful API from geo.admin.ch</dct:description>
-        <dct:description xml:lang="roh">RESTful API dad geo.admin.ch</dct:description>
+        <dct:title xml:lang="de">RESTful API von geo.admin.ch</dct:title>
+        <dct:title xml:lang="fr">RESTful API de geo.admin.ch</dct:title>
+        <dct:title xml:lang="it">RESTful API da geo.admin.ch</dct:title>
+        <dct:title xml:lang="en">RESTful API from geo.admin.ch</dct:title>
+        <dct:title xml:lang="rm">RESTful API dad geo.admin.ch</dct:title>
+        <dct:description xml:lang="de">RESTful API von geo.admin.ch</dct:description>
+        <dct:description xml:lang="fr">RESTful API de geo.admin.ch</dct:description>
+        <dct:description xml:lang="it">RESTful API da geo.admin.ch</dct:description>
+        <dct:description xml:lang="en">RESTful API from geo.admin.ch</dct:description>
+        <dct:description xml:lang="rm">RESTful API dad geo.admin.ch</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-05</dct:modified>
         <dcat:accessURL rdf:resource="https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swisstlm3d-uebrigerverkehr" />
         <dcat:accessService>
           <rdf:Description>
             <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DataService" />
-            <dct:title xml:lang="ger">RESTful API von geo.admin.ch</dct:title>
-            <dct:title xml:lang="fre">RESTful API de geo.admin.ch</dct:title>
-            <dct:title xml:lang="ita">RESTful API da geo.admin.ch</dct:title>
-            <dct:title xml:lang="eng">RESTful API from geo.admin.ch</dct:title>
-            <dct:title xml:lang="roh">RESTful API dad geo.admin.ch</dct:title>
+            <dct:title xml:lang="de">RESTful API von geo.admin.ch</dct:title>
+            <dct:title xml:lang="fr">RESTful API de geo.admin.ch</dct:title>
+            <dct:title xml:lang="it">RESTful API da geo.admin.ch</dct:title>
+            <dct:title xml:lang="en">RESTful API from geo.admin.ch</dct:title>
+            <dct:title xml:lang="rm">RESTful API dad geo.admin.ch</dct:title>
             <dcat:endpointURL rdf:resource="https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swisstlm3d-uebrigerverkehr" />
           </rdf:Description>
         </dcat:accessService>
