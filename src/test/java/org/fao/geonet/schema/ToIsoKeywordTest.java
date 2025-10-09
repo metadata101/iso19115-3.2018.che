@@ -30,6 +30,7 @@ import org.jdom.Element;
 import org.jdom.output.Format;
 import org.jdom.output.XMLOutputter;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.nio.file.Path;
@@ -52,7 +53,7 @@ public class ToIsoKeywordTest {
 	}
 
 	private void transformAndCompare(String scriptName, String inputFileName, String expectedFileName) throws Exception {
-		Path xslFile = getResourceInsideSchema(scriptName);
+		Path xslFile = getResource(scriptName);
 		Path xmlFile = getResource(inputFileName);
 		Element md = Xml.loadFile(xmlFile);
 
