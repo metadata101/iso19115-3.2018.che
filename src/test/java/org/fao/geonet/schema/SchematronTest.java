@@ -65,6 +65,13 @@ public class SchematronTest {
 	}
 
 	@Test
+	public void amphibiansWithUpdatedFixedInfoIsoSchematron() throws Exception {
+		String report = applySchematronAndCompare("amphibians-with-updated-fixed-info", false);
+
+		assertFalse(report.contains("failure"));
+	}
+
+	@Test
 	public void veterinariansIsoSchematron() throws Exception {
 		String report = applySchematronAndCompare("veterinarians", true);
 
