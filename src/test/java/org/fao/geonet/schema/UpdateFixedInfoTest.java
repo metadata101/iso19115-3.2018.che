@@ -53,7 +53,6 @@ public class UpdateFixedInfoTest {
 		assertTrue(transformed.getChildren().size() > 5);
 
 		XPath xPath = XPath.newInstance(".//mdb:dateInfo");
-		xPath.addNamespace("srv", "http://standards.iso.org/iso/19115/-3/srv/2.0");
 		List<?> nodes = xPath.selectNodes(transformed);
 		assertEquals(2, nodes.size());
 
