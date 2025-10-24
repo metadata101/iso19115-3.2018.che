@@ -49,8 +49,14 @@ public class ToIsoKeywordTest {
 
 	@Test
 	public void toKeywordWithXLink() throws Exception {
-		transformAndCompare("to19115-3.2018-keyword-as-xlink-call.xsl", "to19115-3.2018-keyword-as-xlink-input.xml", "to19115-3.2018-keyword-as-xlink-output.xml");
+		transformAndCompare("to19115-3.2018-keyword-as-xlink-call.xsl", "to19115-3.2018-keyword-geocat-input.xml", "to19115-3.2018-keyword-as-xlink-output.xml");
 	}
+
+	@Test
+	public void toKeywordWithThesaurusInfo() throws Exception {
+		transformAndCompare("to19115-3.2018-keyword-call.xsl", "to19115-3.2018-keyword-old-gemet-input.xml", "to19115-3.2018-keyword-output.xml");
+	}
+
 
 	private void transformAndCompare(String scriptName, String inputFileName, String expectedFileName) throws Exception {
 		Path xslFile = getResource(scriptName);
