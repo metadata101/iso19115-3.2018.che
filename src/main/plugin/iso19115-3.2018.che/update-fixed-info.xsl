@@ -216,6 +216,7 @@
       <xsl:apply-templates select="mdb:applicationSchemaInfo"/>
       <xsl:apply-templates select="mdb:metadataMaintenance"/>
       <xsl:apply-templates select="mdb:acquisitionInformation"/>
+      <xsl:apply-templates select="che:legislationInformation"/>
     </xsl:copy>
   </xsl:template>
 

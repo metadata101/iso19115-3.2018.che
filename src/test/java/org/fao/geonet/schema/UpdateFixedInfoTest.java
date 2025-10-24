@@ -68,4 +68,19 @@ public class UpdateFixedInfoTest {
 		TestSupport.assertGeneratedDataByteMatchExpected("amphibians-with-updated-fixed-info-19115-3.che.xml", amphibiansWithUpdatedFixedInfo, GENERATE_EXPECTED_FILE);
 	}
 
+	@Test
+	public void UpdateFixedCopyLegislationInformation() throws Exception {
+		Path xslFile = getResourceInsideSchema("update-fixed-info.xsl");
+		Path xmlFile = getResource("asiatischeHornisse-19115-3.che.xml");
+		Element source = Xml.loadFile(xmlFile);
+		Element root = new Element("root");
+		root.addContent(source);
+
+		Element transformed = Xml.transform(root, xslFile);
+
+		XPath xPath = XPath.newInstance(".//che:legislationInformation");
+		List<?> nodes = xPath.selectNodes(transformed);
+		assertEquals(1, nodes.size());
+	}
+
 }
