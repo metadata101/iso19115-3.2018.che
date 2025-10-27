@@ -4885,6 +4885,38 @@
     <description></description>
   </element>
 
+  <element name="relativePosition">
+    <label>Relative position</label>
+    <description></description>
+  </element>
+  <element name="gml:remoteSchema">
+    <label>Remote schema</label>
+    <description></description>
+  </element>
+  <element name="owns">
+    <label>Owns</label>
+    <description></description>
+  </element>
+  <element name="xlink:type">
+    <label>Type of link</label>
+    <description></description>
+  </element>
+  <element name="xlink:title">
+    <label>URL title</label>
+    <description></description>
+  </element>
+  <element name="unit">
+    <label>Unit</label>
+    <description></description>
+  </element>
+  <element name="radix">
+    <label>Radix</label>
+    <description></description>
+  </element>
+  <element name="factor">
+    <label>Factor</label>
+    <description></description>
+  </element>
 
   <element name="srv:SV_ServiceIdentification">
     <label>Service Identification</label>
