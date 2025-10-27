@@ -90,7 +90,7 @@
 
 
   <!-- Specific schema rendering -->
-  <xsl:template mode="getMetadataTitle" match="mdb:MD_Metadata">
+  <xsl:template mode="getMetadataTitle" match="che:CHE_MD_Metadata">
     <xsl:for-each select="if ($isOnlyFeatureCatalog)
                           then mdb:contentInfo/*/mrc:featureCatalogue/*/cat:name
                           else mdb:identificationInfo/*/mri:citation/*/cit:title">
@@ -100,7 +100,7 @@
     </xsl:for-each>
   </xsl:template>
 
-  <xsl:template mode="getMetadataAbstract" match="mdb:MD_Metadata">
+  <xsl:template mode="getMetadataAbstract" match="che:CHE_MD_Metadata">
     <xsl:for-each select="if ($isOnlyFeatureCatalog)
                           then mdb:contentInfo/*/mrc:featureCatalogue/*/cat:scope
                           else mdb:identificationInfo/*/mri:abstract">
@@ -116,7 +116,7 @@
   </xsl:template>
 
 
-  <xsl:template mode="getTags" match="mdb:MD_Metadata">
+  <xsl:template mode="getTags" match="che:CHE_MD_Metadata">
     <xsl:param name="byThesaurus" select="false()"/>
 
     <xsl:variable name="tags">
@@ -207,17 +207,17 @@
     </xsl:if>
   </xsl:template>
 
-  <xsl:template mode="getMetadataHierarchyLevel" match="mdb:MD_Metadata">
+  <xsl:template mode="getMetadataHierarchyLevel" match="che:CHE_MD_Metadata">
     <xsl:value-of select="if ($isOnlyFeatureCatalog)
                           then 'featureCatalog'
                           else mdb:metadataScope/*/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue"/>
   </xsl:template>
 
-  <xsl:template mode="getMetadataThumbnail" match="mdb:MD_Metadata">
+  <xsl:template mode="getMetadataThumbnail" match="che:CHE_MD_Metadata">
     <xsl:value-of select="mdb:identificationInfo/*/mri:graphicOverview[1]/*/mcc:fileName/gco:CharacterString"/>
   </xsl:template>
 
-  <xsl:template mode="getExtent" match="mdb:MD_Metadata">
+  <xsl:template mode="getExtent" match="che:CHE_MD_Metadata">
     <xsl:if test=".//mdb:identificationInfo/*/mri:extent">
       <section class="gn-md-side-extent">
         <h2>
@@ -239,7 +239,7 @@
     </xsl:if>
   </xsl:template>
 
-  <xsl:template mode="getOverviews" match="mdb:MD_Metadata">
+  <xsl:template mode="getOverviews" match="che:CHE_MD_Metadata">
     <xsl:if test="mdb:identificationInfo/*/mri:graphicOverview">
       <section class="gn-md-side-overview">
         <h2>
@@ -276,7 +276,7 @@
   </xsl:template>
 
 
-  <xsl:template mode="getMetadataHeader" match="mdb:MD_Metadata">
+  <xsl:template mode="getMetadataHeader" match="che:CHE_MD_Metadata">
     <div class="gn-abstract">
       <xsl:for-each select="if ($isOnlyFeatureCatalog)
                             then mdb:contentInfo/*/mrc:featureCatalogue/*/cat:scope
@@ -301,7 +301,7 @@
   </xsl:template>
 
 
-  <xsl:template mode="getMetadataCitation" match="mdb:MD_Metadata">
+  <xsl:template mode="getMetadataCitation" match="che:CHE_MD_Metadata">
     <xsl:variable name="displayCitation"
                   select="true()"/>
 
