@@ -8136,6 +8136,10 @@ dell'IGN (WPS)
     <label>Tipo di collegamento</label>
     <description></description>
   </element>
+  <element name="xlink:title">
+    <label>URL titolo</label>
+    <description></description>
+  </element>
   <element name="unit">
     <label>Unità</label>
     <description></description>

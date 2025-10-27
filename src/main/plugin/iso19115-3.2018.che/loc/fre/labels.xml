@@ -201,8 +201,8 @@
     <condition></condition>
   </element>
   <element name="che:basicGeodataLegalLevel">
-    <label>Niveau légal des géodonnées de base</label>
-    <description>Niveau légal des géodonnées de base</description>
+    <label>Niveau des géodonnées de base</label>
+    <description>Information indiquant si le jeu de géodonnées de base est détenu légalement au niveau fédéral, cantonal, municipal ou autre</description>
       <condition></condition>
   </element>
   <element name="che:basicGeodataResponsibilityLevel">
@@ -535,9 +535,8 @@
 
   <element name="mdb:metadataStandard" id="21.0">
     <label>Norme des métadonnées</label>
-    <description iso="true">Citation des normes auxquelles les métadonnées se
-      conforment. NOTE Il convient que les citations de norme de métadonnées
-      incluent un identifiant
+    <description iso="true">citation des normes auxquelles les métadonnées se conforment
+      NOTE : Il convient que les citations de norme de métadonnées incluent un identifiant.
     </description>
     <condition></condition>
   </element>
@@ -1537,13 +1536,13 @@
     <condition/>
   </element>
   <element name="cit:role" id="377.0" context="cit:CI_Responsibility">
-    <label>Role</label>
+    <label>Rôle</label>
     <description>Fonction remplie par l’acteur responsable</description>
     <condition>mandatory</condition>
   </element>
   <element name="cit:party" id="379.0" context="cit:CI_Responsibility">
     <label>Acteur</label>
-    <description iso="true">Informations concernant l’acteur</description>
+    <description iso="true">Informations concernant l’individu et/ou l’organisation de l’acteur</description>
   </element>
   <element name="cit:extent" id="378.0" context="cit:CI_Responsibility">
     <label>Étendue</label>
@@ -2981,7 +2980,7 @@ responsable du service.</li>
 
   </element>
   <element name="cit:URL" id="608.0">
-    <label>Adresse Internet</label>
+    <label>URL</label>
     <description>Classe destinée à la description d'un élément de métadonnées
       URL libre multilingue
     </description>
@@ -3218,10 +3217,8 @@ de métadonnées de données « BD Carthage métropole »
 
   </element>
   <element name="cit:alternateTitle" id="363.0">
-    <label>Autres appellations ou acronymes</label>
-    <description>Nom raccourci ou autre façon d'écrire le nom, sous lequel
-      l'information des informations de références est connue. Exemple : DCW
-      pour "Digital Chart of the World"
+    <label>Autre titre</label>
+    <description>nom abrégé ou nom dans un autre langage grâce auquel les informations citées sont connues. EXEMPLE «DCW» comme titre alternatif pour «Digital Chart of the World ».
     </description>
     <description iso="true">Nom abrégé ou nom dans un autre langage grâce auquel
       les informations citées sont connues. EXEMPLE «DCW» comme titre alternatif
@@ -4376,7 +4373,7 @@ version en tant que mot-clé complémentaire(s). Le numéro de version doit comp
   </element>
 
   <element name="mrd:distributionFormat" id="271.0">
-    <label>Format (encodage)</label>
+    <label>Format de distribution</label>
     <description>Description du format de distribution</description>
     <help>Ces informations sont gérées dans la classe MD_Format.</help>
     <condition/>
@@ -4475,7 +4472,7 @@ version en tant que mot-clé complémentaire(s). Le numéro de version doit comp
     <condition>Condition</condition>
   </element>
   <element name="cit:domainOfValidity" id="197.0">
-    <label>Domaine d'applicabliité</label>
+    <label>Domaine d'applicabilité</label>
     <description>Domaine de validité pour le système de référence</description>
     <help>Domaine de validité du système de référence géographique.</help>
     <condition/>
@@ -4500,7 +4497,7 @@ version en tant que mot-clé complémentaire(s). Le numéro de version doit comp
 
   </element>
   <element name="cit:edition" id="365.0">
-    <label>Edition</label>
+    <label>Édition</label>
     <description>Version de la ressource en question</description>
     <description iso="true">version de la ressource citée</description>
     <help>Version/édition de la source mentionnée</help>
@@ -5073,14 +5070,14 @@ période de temps couverte par le service.
 
   </element>
   <element name="cit:identifier" id="365.0">
-    <label>Identificateur</label>
-    <description>Identificateur de l'indication de provenance</description>
-    <help>Identificateur de l'indication de provenance. La classe MD_Identifier
+    <label>Identifiant</label>
+    <description>Identifiant de la ressource citée valeur identifiant de manière unique un objet dans un espace de noms</description>
+    <help>Identifiant de l'indication de provenance. La classe MD_Identifier
       permet d'affecter une indication de provenance à un registre existant.
     </help>
     <condition>Condition</condition>
     <help for="inspire"><![CDATA[<b>Exigence INSPIRE :</b>
-    L’identificateur identifie la ressource de manière unique.
+    L’identifiant identifie la ressource de manière unique.
     <ul>
       <li>Cet élément répétable est obligatoire.</li>
       <li>Il est constitué d’un {code} obligatoire (chaîne de caractères libre), éventuellement associé à un {espace de noms} (chaîne de caractères libre).</li>
@@ -5653,21 +5650,15 @@ période de temps couverte par le service.
     </help>
   </element>
   <element name="cit:name" context="cit:CI_Individual" id="375.0">
-    <label>Nom de la personne</label>
-    <description>Nom de la personne responsable. Prénom, nom et titre sont
-      séparés par un signe de délimitation
-    </description>
-    <help>Nom de la personne responsable. Des séparateurs (virgules) figurent
-      entre le prénom, le nom et le titre.
-    </help>
+    <label>Nom</label>
+    <description>nom de l’acteur (individu ou organisation)</description>
+    <help>Nom de l'acteur (individu ou organisation).</help>
   </element>
 
   <element name="cit:name">
     <label>Nom</label>
-    <description>Name of the series, or aggregate dataset, of which the dataset
-      is a part
-    </description>
-    <help/>
+    <description>nom de l’acteur (individu ou organisation)</description>
+    <help>Nom de l'acteur (individu ou organisation).</help>
     <condition>Obligatoire</condition>
   </element>
   <element name="cit:nameOfMeasure" id="100.0">
@@ -6402,8 +6393,8 @@ la non-évaluation</b>, dans le cadre de métadonnées INSPIRE
 
   </element>
   <element name="cit:positionName" id="377.0">
-    <label>Position</label>
-    <description>Rôle ou position de la personne responsable</description>
+    <label>Nom de position</label>
+    <description>position de l’individu dans une organisation</description>
     <help>Fonction ou position de la personne responsable.</help>
     <condition>Condition</condition>
   </element>
@@ -7538,8 +7529,8 @@ l’IGN (WPS)
 
   </element>
   <element name="mri:topicCategory" id="41.0">
-    <label>Catégorie ISO</label>
-    <description>Thème(s) principal(aux) du jeu de données</description>
+    <label>Catégorie de thème</label>
+    <description>Thème(s) principal (principal) de la ressource</description>
     <help>Thème principal (ou thèmes principaux) du jeu de données.
       Ce thème ou groupe de thèmes permet de trouver un jeu de données.
       Cet attribut se fondant sur une liste de codes de la norme ISO
@@ -8112,6 +8103,10 @@ l’IGN (WPS)
   </element>
   <element name="xlink:type">
     <label>Type de lien</label>
+    <description></description>
+  </element>
+  <element name="xlink:title">
+    <label>Libellé de l'URL</label>
     <description></description>
   </element>
   <element name="unit">
@@ -8784,15 +8779,14 @@ http://www.sandre.eaufrance.fr/?urn=urn:sandre:ensembledonnees:BDCarthage:FXX:::
     <description></description>
   </element>
   <element name="xlink:href">
-    <label>Link href</label>
-    <description>Supplies the data that allows an XLink application to find a
-      remote resource (or resource fragment) [W3C XLINK]
+    <label>URL</label>
+    <description>Fournit les données qui permettent à une application XLink de trouver une
+      ressource distante (ou un fragment de ressource) [W3C XLINK]
     </description>
   </element>
   <element name="hidden-elements">
-    <label>Hidden Elements</label>
-    <description>Child elements and attributes have been hidden because you do
-      no have access to view those elements
+    <label>Éléments masqués</label>
+    <description>Les éléments et attributs enfants ont été masqués car vous n'avez pas accès à ces éléments
     </description>
   </element>
   <element name="gml:axisAbbrev">
