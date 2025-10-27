@@ -4872,6 +4872,10 @@
         <label>Type of link</label>
         <description></description>
       </element>
+      <element name="xlink:title">
+        <label>URL title</label>
+        <description></description>
+      </element>
       <element name="unit">
         <label>Unit</label>
         <description></description>
