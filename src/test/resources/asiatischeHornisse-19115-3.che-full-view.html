@@ -5,9 +5,14 @@
       <div class="col-md-8">
         <header>
           <h1>
-            <i class="fa fa-fw gn-icon-" />
+            <i class="fa fa-fw gn-icon-dataset" />
+            Asiatische Hornisse
             <span class="text-muted badge" data-ng-class="{ 'text-success': md.mdStatus == 2, 'text-warning': md.mdStatus == 4 }" data-ng-if="user.isEditorOrMore() &amp;&amp; md.mdStatus &lt; 50 &amp;&amp; isMdWorkflowEnable">{{('status-' + md.mdStatus) | translate}}</span>
           </h1>
+          <div class="gn-abstract">
+            <p xmlns:xs="http://www.w3.org/2001/XMLSchema">Die Asiatische Hornisse wurde im Kanton Basel-Landschaft erstmals im Jahr 2022 nachgewiesen. Diese Art gilt als invasiv, da sie zur Ernährung ihrer Brut einheimische Wildbienen und Honigbienen in grossen Mengen jagt und diese Bestände so dezimiert. Die Bestandesdichte der Asiatischen Hornisse ist seit dem ersten Nachweis stark am Ansteigen. Mit dem Vernichten gefundener Nester wird versucht, deren Ausbreitung zu verlangsamen und die Populationsdichte zu senken.</p>
+          </div>
+          <script type="application/ld+json" />
           <div gn-related="md" data-user="user" data-layout="card" data-types="onlines" />
         </header>
         <div>
@@ -58,7 +63,7 @@
           <div class="tab-content">
             <div id="gn-tab-identificationInfo" class="tab-pane">
               <h1 class="hidden">Identification</h1>
-              <div id="gn-view-d26e347" class="gn-tab-content">
+              <div id="gn-view-d27e347" class="gn-tab-content">
                 <div class="entry name">
                   <h2>che:CHE_MD_DataIdentification</h2>
                   <div class="target">
@@ -225,7 +230,7 @@
             </div>
             <div id="gn-tab-distributionInfo" class="tab-pane">
               <h1 class="hidden">Distribution</h1>
-              <div id="gn-view-d26e351" class="gn-tab-content">
+              <div id="gn-view-d27e351" class="gn-tab-content">
                 <div class="entry name">
                   <h2>mrd:MD_Distribution</h2>
                   <div class="target">
@@ -313,7 +318,7 @@
             </div>
             <div id="gn-tab-referenceSystemInfo" class="tab-pane">
               <h1 class="hidden">Sys de référence</h1>
-              <div id="gn-view-d26e359" class="gn-tab-content">
+              <div id="gn-view-d27e359" class="gn-tab-content">
                 <dl class="gn-code">
                   <dt>mrs:referenceSystemIdentifier</dt>
                   <dd>
@@ -326,7 +331,7 @@
             </div>
             <div id="gn-tab-metadata" class="tab-pane">
               <h1 class="hidden">Métadonnées</h1>
-              <div id="gn-section-d26e363" class="gn-tab-content">
+              <div id="gn-section-d27e363" class="gn-tab-content">
                 <h2>Métadonnées</h2>
                 <dl class="gn-code">
                   <dt>mdb:metadataIdentifier</dt>
@@ -435,7 +440,7 @@
             </div>
             <div id="gn-tab-legislationInformation">
               <h1 class="hidden">legislationInformation</h1>
-              <div id="gn-view-d26e384" class="gn-tab-content">
+              <div id="gn-view-d27e384" class="gn-tab-content">
                 <div class="entry name">
                   <h2>che:CHE_MD_Legislation</h2>
                   <div class="target">
@@ -489,6 +494,22 @@
         </div>
       </div>
       <div class="gn-md-side gn-md-side-advanced col-md-4">
+        <section class="gn-md-side-overview">
+          <h2>
+            <i class="fa fa-fw fa-image" />
+            <span />
+          </h2>
+          <div>
+            <img data-gn-img-modal="md" class="gn-img-thumbnail center-block" alt="" src="https://www.geo.bl.ch/vorschaubilder_geocat/Asiatische_Hornisse.png" onerror="this.onerror=null; $('.gn-md-side-overview').hide();" />
+          </div>
+        </section>
+        <section class="gn-md-side-extent">
+          <h2>
+            <i class="fa fa-fw fa-map-marker" />
+            <span>Étendue spatiale</span>
+          </h2>
+          <img class="gn-img-extent" alt="" src="http://localhost:8080/geonetwork/srv/api/records/786606bc-2b81-4426-8ccd-e3a2c76cdb14/extents.png" />
+        </section>
         <br />
         <section class="gn-md-side-providedby">
           <h2>
