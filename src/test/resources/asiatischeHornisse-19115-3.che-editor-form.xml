@@ -100,6 +100,9 @@
             <li role="menuitem">
               <a href="" data-ng-click="switchToTab('applicationSchemaInfo', '')">Standard ext.</a>
             </li>
+            <li role="menuitem">
+              <a href="" data-ng-click="switchToTab('legislationInformation', '')">legislationInformation</a>
+            </li>
           </ul>
         </li>
       </div>

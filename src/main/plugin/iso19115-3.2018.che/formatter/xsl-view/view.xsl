@@ -861,8 +861,8 @@
         </xsl:variable>
 
         <xsl:choose>
-          <xsl:when test="string(*/cit:linkage/*)">
-            <a href="{*/cit:linkage/*}" target="_blank">
+          <xsl:when test="string(*/cit:linkage/gco:CharacterString)">
+            <a href="{*/cit:linkage/gco:CharacterString}" target="_blank">
               <xsl:apply-templates mode="render-value"
                                    select="if (*/cit:name != '') then */cit:name else */cit:linkage"/>
             </a>

@@ -191,4 +191,31 @@ public class XslUtil {
         return "";
     }
 
+    public static String getIsoLanguageLabel(String code, String language) {
+        return "dutch";
+    }
+
+    public static String getDefaultUrl(String uuid, String language) {
+        return "www.geonet.org";
+    }
+
+    public static boolean isAuthenticated() {
+        return false;
+    }
+
+    public static String getWebAnalyticsJavascriptCode() {
+        return "";
+    }
+
+    public static String getUiConfiguration(String key) {
+        return "{}";
+    }
+
+    public static String getWebAnalyticsService() {
+        return "";
+    }
+
+    public static String getSecurityProvider() {
+        return "";
+    }
 }
