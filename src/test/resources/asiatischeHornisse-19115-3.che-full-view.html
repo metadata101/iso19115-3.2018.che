@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="container-fluid gn-metadata-view gn-schema-iso19115-3.2018.che">
+  <article id="786606bc-2b81-4426-8ccd-e3a2c76cdb14" class="gn-md-view gn-metadata-display">
+    <div class="row">
+      <div class="col-md-8">
+        <header>
+          <h1>
+            <i class="fa fa-fw gn-icon-" />
+            <span class="text-muted badge" data-ng-class="{ 'text-success': md.mdStatus == 2, 'text-warning': md.mdStatus == 4 }" data-ng-if="user.isEditorOrMore() &amp;&amp; md.mdStatus &lt; 50 &amp;&amp; isMdWorkflowEnable">{{('status-' + md.mdStatus) | translate}}</span>
+          </h1>
+          <div gn-related="md" data-user="user" data-layout="card" data-types="onlines" />
+        </header>
+        <div>
+          <ul class="view-outline nav nav-tabs nav-tabs-advanced">
+            <li>
+              <a href="#gn-tab-identificationInfo">Identification</a>
+            </li>
+            <li>
+              <a href="#gn-tab-contentInfo">Contenu</a>
+            </li>
+            <li>
+              <a href="#gn-tab-distributionInfo">Distribution</a>
+            </li>
+            <li>
+              <a href="#gn-tab-dataQualityInfo">Qualité</a>
+            </li>
+            <li>
+              <a href="#gn-tab-resourceLineage">Généalogie</a>
+            </li>
+            <li>
+              <a href="#gn-tab-spatialRepresentationInfo">Rep. spatiale</a>
+            </li>
+            <li>
+              <a href="#gn-tab-referenceSystemInfo">Sys de référence</a>
+            </li>
+            <li>
+              <a href="#gn-tab-acquisitionInformation">Acquisition</a>
+            </li>
+            <li>
+              <a href="#gn-tab-metadata">Métadonnées</a>
+            </li>
+            <li>
+              <a href="#gn-tab-portrayalCatalogueInfo">Représentation</a>
+            </li>
+            <li>
+              <a href="#gn-tab-metadataConstraints">Md. constraintes</a>
+            </li>
+            <li>
+              <a href="#gn-tab-metadataMaintenance">Md. maintenance</a>
+            </li>
+            <li>
+              <a href="#gn-tab-applicationSchemaInfo">Standard ext.</a>
+            </li>
+            <li>
+              <a href="#gn-tab-legislationInformation">legislationInformation</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div id="gn-tab-identificationInfo" class="tab-pane">
+              <h1 class="hidden">Identification</h1>
+              <div id="gn-view-d26e347" class="gn-tab-content">
+                <div class="entry name">
+                  <h2>che:CHE_MD_DataIdentification</h2>
+                  <div class="target">
+                    <div class="entry name">
+                      <h2>cit:CI_Citation</h2>
+                      <div class="target">
+                        <dl class="gn-date">
+                          <dt>cit:date (cl_CI_DateTypeCode#revision)</dt>
+                          <dd>
+                            <span data-gn-humanize-time="2025-03-07">2025-03-07</span>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <dl class="gn-purpose">
+                      <dt>mri:purpose</dt>
+                      <dd>
+                        <p xmlns:xs="http://www.w3.org/2001/XMLSchema">Erfassen der Ausbreitung der Asiatischen Hornisse und Übersicht über Sichtungen von Individuen und Nestern zu Bekämpfungszwecken.</p>
+                      </dd>
+                    </dl>
+                    <dl class="gn-status">
+                      <dt>mri:status</dt>
+                      <dd>
+                        <span title="">cl_MD_ProgressCode#onGoing</span>
+                      </dd>
+                    </dl>
+                    <div class="gn-contact">
+                      <h4>
+                        <i class="fa fa-fw fa-envelope" />
+                        <span title="">cl_CI_RoleCode#pointOfContact</span>
+                      </h4>
+                    </div>
+                    <dl class="gn-spatialRepresentationType">
+                      <dt>mri:spatialRepresentationType</dt>
+                      <dd>
+                        <span title="">cl_MD_SpatialRepresentationTypeCode#vector</span>
+                      </dd>
+                    </dl>
+                    <dl class="gn-date">
+                      <dt>mri:topicCategory</dt>
+                      <dd>
+                        <ul>
+                          <li>
+                            <span title="">cl_MD_TopicCategoryCode#environment</span>
+                          </li>
+                        </ul>
+                      </dd>
+                    </dl>
+                    <div class="entry name">
+                      <h4>gex:EX_Extent</h4>
+                      <div class="target">
+                        <dl class="gn-description">
+                          <dt>gex:description</dt>
+                          <dd>
+                            <p xmlns:xs="http://www.w3.org/2001/XMLSchema">Canton de Bâle-Campagne (BL)</p>
+                          </dd>
+                        </dl>
+                        <div class="thumbnail extent">
+                          <div class="input-group coord coord-north">
+                            <input type="text" class="form-control" aria-label="" value="47.56" readonly="" />
+                            <span class="input-group-addon">N</span>
+                          </div>
+                          <div class="input-group coord coord-south">
+                            <input type="text" class="form-control" aria-label="" value="47.34" readonly="" />
+                            <span class="input-group-addon">S</span>
+                          </div>
+                          <div class="input-group coord coord-east">
+                            <input type="text" class="form-control" aria-label="" value="7.96" readonly="" />
+                            <span class="input-group-addon">E</span>
+                          </div>
+                          <div class="input-group coord coord-west">
+                            <input type="text" class="form-control" aria-label="" value="7.33" readonly="" />
+                            <span class="input-group-addon">W</span>
+                          </div>
+                          <img class="gn-img-extent" alt="" src="http://localhost:8080/geonetwork/srv/api/regions/geom.png?geomsrs=EPSG:4326&amp;geom=POLYGON((7.961712%2047.337693,7.961712%2047.564564,7.325891%2047.564564,7.325891%2047.337693,7.961712%2047.337693))" />
+                        </div>
+                        <br />
+                        <br />
+                        <img class="gn-img-extent" alt="" src="http://localhost:8080/geonetwork/srv/api/records/786606bc-2b81-4426-8ccd-e3a2c76cdb14/extents/2.png" />
+                        <br />
+                        <br />
+                      </div>
+                    </div>
+                    <div class="entry name">
+                      <h2>che:CHE_MD_MaintenanceInformation</h2>
+                      <div class="target">
+                        <dl class="gn-maintenanceAndUpdateFrequency">
+                          <dt>mmi:maintenanceAndUpdateFrequency</dt>
+                          <dd>
+                            <span title="">cl_MD_MaintenanceFrequencyCode#continual</span>
+                          </dd>
+                        </dl>
+                        <dl class="gn-maintenanceNote">
+                          <dt>mmi:maintenanceNote</dt>
+                          <dd>
+                            <p xmlns:xs="http://www.w3.org/2001/XMLSchema">Aktualisierung bei Bedarf</p>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="entry name">
+                      <h2>mri:resourceConstraints</h2>
+                      <div class="target">
+                        <dl class="gn-useLimitation">
+                          <dt>mco:useLimitation</dt>
+                          <dd>
+                            <p xmlns:xs="http://www.w3.org/2001/XMLSchema">Die Geodaten sind öffentlich zugänglich (Zugangsberechtigungsstufe A). Es gelten die Nutzungsbedingungen des Kantons Basel-Landschaft.</p>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="entry name">
+                      <h2>lan:PT_Locale</h2>
+                      <div class="target">
+                        <dl class="gn-language">
+                          <dt>lan:language</dt>
+                          <dd>dutch</dd>
+                        </dl>
+                        <dl class="gn-characterEncoding">
+                          <dt>lan:characterEncoding</dt>
+                          <dd>
+                            <span title="">cl_MD_CharacterSetCode#utf8</span>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <dl class="gn-subTopicCategory">
+                      <dt>che:subTopicCategory</dt>
+                      <dd>
+                        <span title="">cl_CHE_MD_SubTopicCategoryCode#environment_EnvironmentalProtection</span>
+                      </dd>
+                    </dl>
+                    <dl class="gn-basicGeodata">
+                      <dt>che:basicGeodata</dt>
+                      <dd>true</dd>
+                    </dl>
+                    <div class="entry name">
+                      <h2>che:CHE_MD_BasicGeodataInformation</h2>
+                      <div class="target">
+                        <dl class="gn-basicGeodataID">
+                          <dt>che:basicGeodataID</dt>
+                          <dd>
+                            <p xmlns:xs="http://www.w3.org/2001/XMLSchema">75-BL</p>
+                          </dd>
+                        </dl>
+                        <dl class="gn-basicGeodataLegalLevel">
+                          <dt>che:basicGeodataLegalLevel</dt>
+                          <dd>
+                            <span title="">cl_CHE_MD_LevelCode#cantonal</span>
+                          </dd>
+                        </dl>
+                        <dl class="gn-basicGeodataType">
+                          <dt>che:basicGeodataType</dt>
+                          <dd>
+                            <span title="">cl_CHE_MD_BasicGeodataTypeCode#openGovernmentData</span>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+            </div>
+            <div id="gn-tab-distributionInfo" class="tab-pane">
+              <h1 class="hidden">Distribution</h1>
+              <div id="gn-view-d26e351" class="gn-tab-content">
+                <div class="entry name">
+                  <h2>mrd:MD_Distribution</h2>
+                  <div class="target">
+                    <dl class="gn-format">
+                      <dt>mrd:distributionFormat</dt>
+                      <dd>
+                        <ul>
+                          <li>
+                            <p xmlns:xs="http://www.w3.org/2001/XMLSchema">ESRI Shapefile (SHP)</p>
+                            <p />
+                          </li>
+                        </ul>
+                      </dd>
+                    </dl>
+                    <div class="entry name">
+                      <h2>mrd:MD_Distributor</h2>
+                      <div class="target">
+                        <div class="gn-contact">
+                          <h4>
+                            <i class="fa fa-fw fa-envelope" />
+                            <span title="">cl_CI_RoleCode#distributor</span>
+                          </h4>
+                        </div>
+                        <div class="entry name">
+                          <h2>mrd:MD_StandardOrderProcess</h2>
+                          <div class="target">
+                            <dl class="gn-fees">
+                              <dt>mrd:fees</dt>
+                              <dd>
+                                <p xmlns:xs="http://www.w3.org/2001/XMLSchema">150.- CHF</p>
+                              </dd>
+                            </dl>
+                            <dl class="gn-orderingInstructions">
+                              <dt>mrd:orderingInstructions</dt>
+                              <dd>
+                                <p xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                                  Gebührenverordnung für Geobasisdaten und Geodienste (GeoVO, SGS 211.57):
+                                  <a href="http://bl.clex.ch/frontend/versions/1133?locale=de">http://bl.clex.ch/frontend/versions/1133?locale=de</a>
+                                </p>
+                              </dd>
+                            </dl>
+                            <dl class="gn-turnaround">
+                              <dt>mrd:turnaround</dt>
+                              <dd>
+                                <p xmlns:xs="http://www.w3.org/2001/XMLSchema">Datenlieferung innert 3 Tagen</p>
+                              </dd>
+                            </dl>
+                          </div>
+                        </div>
+                        <div class="entry name">
+                          <h2>cit:CI_Citation</h2>
+                          <div class="target">
+                            <dl class="gn-title">
+                              <dt>cit:title</dt>
+                              <dd>
+                                <p xmlns:xs="http://www.w3.org/2001/XMLSchema">ESRI Shapefile (SHP)</p>
+                              </dd>
+                            </dl>
+                            <dl class="gn-date">
+                              <dt>cit:date</dt>
+                              <dd />
+                            </dl>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="entry name">
+                      <h2>mrd:MD_DigitalTransferOptions</h2>
+                      <div class="target">
+                        <dl class="gn-link">
+                          <dt>mrd:onLine</dt>
+                          <dd>
+                            <a href="https://geoview.bl.ch/?map_x=2625125&amp;map_y=1255600&amp;map_zoom=2&amp;tree_group_layers_Neobiota=asiatische_hornissen_sichtung_individuen%2Casiatische_hornissen_nest_inaktiv%2Casiatische_hornissen_nest_aktiv&amp;tree_groups=Neobiota&amp;baselayer_opacity=100&amp;baselayer_ref=blank" target="_blank">
+                              <p xmlns:xs="http://www.w3.org/2001/XMLSchema">GeoView BL</p>
+                            </a>
+                            <p>Darstellungsdienst Kanton BL</p>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+            </div>
+            <div id="gn-tab-referenceSystemInfo" class="tab-pane">
+              <h1 class="hidden">Sys de référence</h1>
+              <div id="gn-view-d26e359" class="gn-tab-content">
+                <dl class="gn-code">
+                  <dt>mrs:referenceSystemIdentifier</dt>
+                  <dd>
+                    CH1903+ / LV95/EPSG:2056
+                    <p />
+                  </dd>
+                </dl>
+              </div>
+               
+            </div>
+            <div id="gn-tab-metadata" class="tab-pane">
+              <h1 class="hidden">Métadonnées</h1>
+              <div id="gn-section-d26e363" class="gn-tab-content">
+                <h2>Métadonnées</h2>
+                <dl class="gn-code">
+                  <dt>mdb:metadataIdentifier</dt>
+                  <dd>
+                    786606bc-2b81-4426-8ccd-e3a2c76cdb14
+                    <p />
+                  </dd>
+                </dl>
+                <div class="entry name">
+                  <h2>lan:PT_Locale</h2>
+                  <div class="target">
+                    <dl class="gn-language">
+                      <dt>lan:language</dt>
+                      <dd>dutch</dd>
+                    </dl>
+                    <dl class="gn-characterEncoding">
+                      <dt>lan:characterEncoding</dt>
+                      <dd>
+                        <span title="">cl_MD_CharacterSetCode#utf8</span>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="entry name">
+                  <h2>lan:PT_Locale</h2>
+                  <div class="target">
+                    <dl class="gn-language">
+                      <dt>lan:language</dt>
+                      <dd>dutch</dd>
+                    </dl>
+                    <dl class="gn-characterEncoding">
+                      <dt>lan:characterEncoding</dt>
+                      <dd>
+                        <span title="">cl_MD_CharacterSetCode#utf8</span>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="entry name">
+                  <h2>lan:PT_Locale</h2>
+                  <div class="target">
+                    <dl class="gn-language">
+                      <dt>lan:language</dt>
+                      <dd>dutch</dd>
+                    </dl>
+                    <dl class="gn-characterEncoding">
+                      <dt>lan:characterEncoding</dt>
+                      <dd>
+                        <span title="">cl_MD_CharacterSetCode#utf8</span>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="entry name">
+                  <h2>lan:PT_Locale</h2>
+                  <div class="target">
+                    <dl class="gn-language">
+                      <dt>lan:language</dt>
+                      <dd>dutch</dd>
+                    </dl>
+                    <dl class="gn-characterEncoding">
+                      <dt>lan:characterEncoding</dt>
+                      <dd>
+                        <span title="">cl_MD_CharacterSetCode#utf8</span>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="gn-contact">
+                  <h4>
+                    <i class="fa fa-fw fa-envelope" />
+                    <span title="">cl_CI_RoleCode#pointOfContact</span>
+                  </h4>
+                </div>
+                <div class="entry name">
+                  <h2>mdb:metadataScope</h2>
+                  <div class="target">
+                    <dl class="gn-resourceScope">
+                      <dt>mdb:resourceScope</dt>
+                      <dd>
+                        <span title="">cl_MD_ScopeCode#dataset</span>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <dl class="gn-date">
+                  <dt>mdb:dateInfo (cl_CI_DateTypeCode#revision)</dt>
+                  <dd>
+                    <span data-gn-humanize-time="2025-03-07T08:00:25.581Z">2025-03-07T08:00:25.581Z</span>
+                  </dd>
+                </dl>
+                <div class="entry name">
+                  <h2>mdb:metadataStandard</h2>
+                  <div class="target">
+                    <dl class="gn-title">
+                      <dt>cit:title</dt>
+                      <dd>
+                        <p xmlns:xs="http://www.w3.org/2001/XMLSchema">GM03 2+</p>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                 
+              </div>
+               
+            </div>
+            <div id="gn-tab-legislationInformation">
+              <h1 class="hidden">legislationInformation</h1>
+              <div id="gn-view-d26e384" class="gn-tab-content">
+                <div class="entry name">
+                  <h2>che:CHE_MD_Legislation</h2>
+                  <div class="target">
+                    <dl class="gn-country">
+                      <dt>che:country</dt>
+                      <dd>
+                        <span title="">cl_CountryCode#CH</span>
+                      </dd>
+                    </dl>
+                    <dl class="gn-language">
+                      <dt>che:language</dt>
+                      <dd>
+                        <span title="">cl_LanguageCode#ger</span>
+                      </dd>
+                    </dl>
+                    <dl class="gn-legislationType">
+                      <dt>che:legislationType</dt>
+                      <dd>
+                        <span title="">cl_CHE_CI_LegislationTypeCode#nationalDecree</span>
+                      </dd>
+                    </dl>
+                    <div class="entry name">
+                      <h2>cit:CI_Citation</h2>
+                      <div class="target">
+                        <dl class="gn-title">
+                          <dt>cit:title</dt>
+                          <dd>
+                            <p xmlns:xs="http://www.w3.org/2001/XMLSchema">Verordnung über den Umgang mit Organismen in der Umwelt</p>
+                          </dd>
+                        </dl>
+                        <dl class="gn-alternateTitle">
+                          <dt>cit:alternateTitle</dt>
+                          <dd>
+                            <p xmlns:xs="http://www.w3.org/2001/XMLSchema">Freisetzungsverordnung, FrSV</p>
+                          </dd>
+                        </dl>
+                        <dl class="gn-date">
+                          <dt>cit:date (cl_CI_DateTypeCode#publication)</dt>
+                          <dd>
+                            <span data-gn-humanize-time="2024-04-01">2024-04-01</span>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gn-md-side gn-md-side-advanced col-md-4">
+        <br />
+        <section class="gn-md-side-providedby">
+          <h2>
+            <i class="fa fa-fw fa-cog" />
+            <span />
+          </h2>
+          <img class="gn-source-logo" alt="" src="http://localhost:8080/geonetwork/srv/../images/logos/7ea582d4-9ddf-422e-b28f-29760a4c0147.png" />
+        </section>
+        <section class="gn-md-side-access">
+          <a class="btn btn-block btn-primary" href="www.geonet.org">
+            <i class="fa fa-fw fa-link" />
+          </a>
+          <div class="hidden-xs hidden-sm" />
+        </section>
+        <section class="gn-md-side-associated">
+          <h2>
+            <i class="fa fa-fw fa-link" />
+            <span>Ressources associées</span>
+          </h2>
+          <div gn-related="md" data-user="user" data-layout="card" data-types="parent|children|services|datasets|hassources|sources|fcats|siblings|associated">Not available</div>
+        </section>
+      </div>
+    </div>
+    <footer />
+  </article>
+  <br />
+  <br />
+</div>
+

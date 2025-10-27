@@ -890,7 +890,10 @@
         <section xpath="/che:CHE_MD_Metadata/mdb:applicationSchemaInfo" or="applicationSchemaInfo"
                  in="/che:CHE_MD_Metadata"/>
       </tab>
-
+      <tab id="legislationInformation" toggle="true">
+        <section xpath="/che:CHE_MD_Metadata/che:legislationInformation" or="legislationInformation"
+                 in="/che:CHE_MD_Metadata"/>
+      </tab>
       <thesaurusList defaultTransformation="to-iso19115-3.2018-keyword-with-anchor"/>
     </view>
     <view name="xml">
