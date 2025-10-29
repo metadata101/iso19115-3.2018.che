@@ -1469,7 +1469,7 @@
       <description>Prozesse und Naturereignisse der Atmosphäre inkl. Klimatologie und Meteorologie</description>
     </entry>
     <entry>
-      <code>Wirtschaft</code>
+      <code>economy</code>
       <label>Wirtschaft</label>
       <description>wirtschaftliche Aktivitäten, Verhältnisse und Beschäftigung</description>
     </entry>
@@ -1479,7 +1479,7 @@
       <description>Höhenangabe bezogen auf ein Höhenreferenzsystem</description>
     </entry>
     <entry>
-      <code>Umwelt</code>
+      <code>environment</code>
       <label>Umwelt</label>
       <description>Umweltressourcen, Umweltschutz und Umwelterhaltung</description>
     </entry>
