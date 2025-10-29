@@ -101,7 +101,7 @@
     <condition></condition>
   </element>
   <element name="che:CHE_MD_MaintenanceInformation">
-    <label>Informazioni sulla manutenzione</label>
+    <label>Informazioni sulla manutenzione iso19115-3.2018.che</label>
     <description>Classe relativa al motivo, alla portata e alla frequenza degli aggiornamenti.</description>
     <help>Le informazioni relative alla portata, alla frequenza e alla data di aggiornamento dei dati sono contenute nella
       classe MD_MaintenanceInformation. Questa classe contiene attributi che forniscono informazioni sulla frequenza e l'estensione
@@ -114,6 +114,18 @@
       specificate tramite "+updateScopeDescription" nella classe MD_ScopeDescription.
     </help>
     <condition></condition>
+  </element>      
+  <element name="mmi:MD_MaintenanceInformation"
+        context="che:CHE_MD_MaintenanceInformation">
+    <label>Informazioni sulla manutenzione</label>
+    <description iso="true">Informazioni sulla portata e sulla frequenza degli aggiornamenti
+    </description>
+    <condition>optional</condition>
+  </element>
+  <element name="gco:isoType"
+        context="che:CHE_MD_MaintenanceInformation">
+    <label>Tipo ISO</label>
+    <description iso="true">Indica il tipo ISO dell'elemento o del valore</description>
   </element>
   <element name="mmi:maintenanceDate">
     <label>Data di manutenzione</label>
@@ -2648,7 +2660,7 @@ responsabile del servizio.</li>
 
   </element>
   <element name="mmi:MD_MaintenanceInformation" id="142.0">
-    <label>Informazioni sulla manutenzione</label>
+    <label>Informazioni sulla manutenzione iso19115-3.2018</label>
     <description>Classe relativa al motivo, alla portata e alla frequenza degli aggiornamenti
       aggiornamenti.
     </description>
@@ -4525,7 +4537,7 @@ versione come parola chiave aggiuntiva. Il numero di versione deve essere compos
     <condition/>
 
   </element>
-  <element name="mri:extent" id="45.0" context="mri:MD_DataIdentification">
+  <element name="mri:extent" id="45.0">
     <label>Estensione</label>
     <description>Tipo di dati per le informazioni sull'estensione orizzontale,
       verticale e temporale del set di dati
@@ -4548,12 +4560,6 @@ versione come parola chiave aggiuntiva. Il numero di versione deve essere compos
       extent.geographicElement.EX_GeographicBoundingBox o
       extent.geographicElement.EX_GeographicDescription è richiesto
     </_condition>
-  </element>
-  <element name="mri:extent" id="45.0" context="srv:SV_ServiceIdentification">
-    <label>Estensione</label>
-    <description>Tipo di dati per le informazioni sull'estensione orizzontale,
-      verticale e temporale del servizio
-    </description>
   </element>
 
   <element name="mri:environmentDescription" id="44.0">
@@ -8137,7 +8143,11 @@ dell'IGN (WPS)
     <description></description>
   </element>
   <element name="xlink:title">
-    <label>URL titolo</label>
+    <label>titolo dell'URL</label>
+    <description></description>
+  </element>
+  <element name="xlink:show">
+    <label>visualizzazione dell'URL</label>
     <description></description>
   </element>
   <element name="unit">
