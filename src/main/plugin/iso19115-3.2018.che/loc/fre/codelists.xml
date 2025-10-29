@@ -2725,7 +2725,7 @@
   <codelist name="che:MD_BasicGeodataTypeCode" alias="BasicGeodataTypeCode">
     <entry>
       <code>oereb</code>
-      <label>cadastre RDPPF</label>
+      <label>Cadastre RDPPF</label>
     </entry>
     <entry>
       <code>referenceGeodata</code>
@@ -2762,7 +2762,7 @@
 	 </entry>
 	<entry>
       <code>other</code>
-      <label>autre</label>
+      <label>Autre</label>
 	</entry>
   </codelist>	
 
