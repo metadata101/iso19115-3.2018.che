@@ -31,7 +31,7 @@
            xsi:noNamespaceSchemaLocation="../../../../../../../schema-labels.xsd">
 
 
-  <codelist name="cit:CI_TelephoneTypeCode">
+	<codelist name="cit:CI_TelephoneTypeCode">
     <entry>
       <code>voice</code>
       <label>Sprachdienst</label>
@@ -2524,12 +2524,12 @@
       </description>
     </entry>
     <entry>
-      <code>gemischt</code>
+      <code>mixed</code>
       <label>Gemischt</label>
-      <description>Die Service-Instanz ist gemischt mit einer
-        Dateninstanz gemischt gekoppelt, d. h. die Klasse MD_DataIdentification
-        beschreibt die zugehörige Dateninstanz und darüber hinaus kann die Serviceinstanz
-        kann mit anderen externen Dateninstanzen arbeiten
+      <description>Die Dienstinstanz ist mit einer Dateninstanz gemischt gekoppelt, d. h. die Klasse
+        MD_DataIdentification beschreibt die verknüpfte Dateninstanz, und
+        zusätzlich kann die Dienstinstanz mit anderen externen Dateninstanzen
+        verwendet werden
       </description>
     </entry>
     <entry>
@@ -2582,4 +2582,179 @@
       <label>Unbekannt</label>
     </entry>
   </codelist>
+
+  <codelist name="che:CHE_MD_SubTopicCategoryCode" alias="subTopicCategory">
+    <definition>Subtopic Kategorien gemäss eCH-0166 zur Verbesserung der Klassifizierung von Themenkategorien und der Suche nach Geodaten</definition>
+    <entry>
+      <code>imageryBaseMapsEarthCover_BaseMaps</code>
+      <label>A1 Basiskarten, Landschaftsmodelle</label>
+    </entry>
+    <entry>
+      <code>imageryBaseMapsEarthCover_EarthCover</code>
+      <label>A2 Bodenbedeckung, Bodennutzung</label>
+    </entry>
+    <entry>
+      <code>imageryBaseMapsEarthCover_Imagery</code>
+      <label>A3 Luft-, Satellitenbilder</label>
+    </entry>
+    <entry>
+      <code>planningCadastre_Planning</code>
+      <label>E1 Raumplanung, Raumentwicklung</label>
+    </entry>
+    <entry>
+      <code>planningCadastre_Cadastre</code>
+      <label>E2 Grundstückskataster</label>
+    </entry>
+    <entry>
+      <code>geoscientificInformation_Geology</code>
+      <label>F1 Geologie</label>
+    </entry>
+    <entry>
+      <code>geoscientificInformation_Soils</code>
+      <label>F2 Boden</label>
+    </entry>
+    <entry>
+      <code>geoscientificInformation_NaturalHazards</code>
+      <label>F3 Naturbedingte Risiken</label>
+    </entry>
+    <entry>
+      <code>environment_EnvironmentalProtection</code>
+      <label>L1 Umweltschutz, Lärm</label>
+    </entry>
+    <entry>
+      <code>environment_NatureProtection</code>
+      <label>L2 Natur- und Landschaftsschutz</label>
+    </entry>
+    <entry>
+      <code>utilitiesCommunication_Energy</code>
+      <label>Q1 Energie</label>
+      <description></description>
+    </entry>
+    <entry>
+      <code>utilitiesCommunication_Utilities</code>
+      <label>Q2 Wasser- und Abfallsysteme</label>
+      <description></description>
+    </entry>
+    <entry>
+      <code>utilitiesCommunication_Communication</code>
+      <label>Q3 Kommunikation</label>
+      <description></description>
+    </entry>
+  </codelist>
+
+  <codelist name="che:CHE_MD_LevelCode" alias="mdLevelCode">
+    <entry>
+      <code>communal</code>
+      <label>kommunal</label>
+    </entry>
+    <entry>
+      <code>cantonal</code>
+      <label>kantonal</label>
+    </entry>
+    <entry>
+      <code>federal</code>
+      <label>national</label>
+      <description>Sammlung von Geodaten nach Bundesrecht</description>
+    </entry>
+    <entry>
+      <code>other</code>
+      <label>anderes</label>
+    </entry>
+  </codelist>
+
+  <codelist name="che:MD_BasicGeodataTypeCode" alias="BasicGeodataTypeCode">
+    <entry>
+      <code>oereb</code>
+      <label>Öreb-Kataster</label>
+    </entry>
+    <entry>
+      <code>referenceGeodata</code>
+      <label>Georeferenzdaten</label>
+    </entry>
+  </codelist>
+
+<codelist name="che:MD_BasicGeodataAccessLevelCode" alias="BasicGeodataAccessLevelCode">
+    <entry>
+      <code>A</code>
+      <label>Zugangsberechtigungsstufe A</label>
+	  <description>öffentlich zugängliche Geobasisdaten, Zugangsberechtigungsstufe A (Art. 22 GeoIV)</description>
+    </entry>
+    <entry>
+      <code>B</code>
+      <label>Zugangsberechtigungsstufe B</label>
+		<description>beschränkt öffentlich zugängliche Geobasisdaten, Zugangsberechtigungsstufe B (Art. 23 GeoIV)</description>
+    </entry>
+	<entry>
+      <code>C</code>
+      <label>Zugangsberechtigungsstufe C</label>
+		<description>nicht öffentlich zugängliche Geobasisdaten, Zugangsberechtigungsstufe C (Art. 24 GeoIV)</description>
+    </entry>
+  </codelist>
+
+<codelist name="che:CI_LegislationTypeCode" alias="LegislationTypeCode">
+    <entry>
+      <code>law</code>
+      <label>Gesetz</label>
+	</entry>
+    <entry>
+      <code>ordinance</code>
+      <label>Verordnung</label>
+	 </entry>
+	<entry>
+      <code>other</code>
+      <label>andere gesetzliche Vorschrift</label>
+	</entry>
+  </codelist>	
+
+<codelist name="che:AppraisalOfArchicalValueCode" alias="AppraisalOfArchicalValueCode">
+    <entry>
+      <code>A</code>
+      <label>archivwürdig</label>
+	</entry>
+    <entry>
+      <code>N</code>
+      <label>nicht archivwürdig</label>
+	 </entry>
+	<entry>
+      <code>S</code>
+      <label>Sampling oder Selektion</label>
+	  <description>archivwürdig in Auswahl (Sampling oder Selektion</description>
+	</entry>
+  </codelist>	
+
+<codelist name="che:ReasonForArchivingValueCode" alias="ReasonForArchivingValueCode">
+    <entry>
+      <code>legalRelevance</code>
+      <label>rechtliche Relevanz</label>
+	</entry>
+    <entry>
+      <code>guaranteeOfLegalCertainty</code>
+      <label>Gewährleistung von Rechtssicherheit</label>
+	 </entry>
+	<entry>
+      <code>evidenceOfBusinessPractice</code>
+      <label>Nachweis der Geschäftspraxis</label>
+	</entry>
+	    <entry>
+      <code>benefitsForResearch</code>
+      <label>Nutzen für die Forschung</label>
+	</entry>
+    <entry>
+      <code>contemporaryInterest</code>
+      <label>zeitgenössisches Interesse</label>
+	 </entry>
+	<entry>
+      <code>sensitivity</code>
+      <label>sensible Themen</label>
+	</entry>
+	<entry>
+      <code>developmentsProgression</code>
+      <label>Entwicklungen / Verlauf</label>
+	</entry>
+    <entry>
+      <code>definingPowers</code>
+      <label>Definitionsmacht</label>
+	 </entry>
+ </codelist>		
+	
 </codelists>

@@ -101,7 +101,7 @@
     <condition></condition>
   </element>
   <element name="che:CHE_MD_MaintenanceInformation">
-    <label>Information de maintenance</label>
+    <label>Information de maintenance iso19115-3.2018.che</label>
     <description>Classe sur la raison, l'étendue et la fréquence des mises à jour.</description>
     <help>Les informations concernant l'étendue, la fréquence et la date de mise à jour des données sont contenues dans
       la classe MD_MaintenanceInformation. Cette classe recèle des attributs renseignant sur la fréquence et l'étendue
@@ -115,6 +115,18 @@
     </help>
     <condition></condition>
   </element>
+    <element name="mmi:MD_MaintenanceInformation"
+          context="che:CHE_MD_MaintenanceInformation">
+      <label>Maintenance Information</label>
+      <description iso="true">Information sur la portée et la fréquence des mises à jour
+      </description>
+      <condition>optional</condition>
+    </element>
+    <element name="gco:isoType"
+          context="che:CHE_MD_MaintenanceInformation">
+      <label>ISO type</label>
+      <description iso="true">Indicates the ISO type of the element or value</description>
+    </element>
   <element name="mmi:maintenanceDate">
     <label>Date de maintenance</label>
     <description>Date de maintenance</description>
@@ -542,7 +554,9 @@
   </element>
   <element name="mdb:metadataProfile">
     <label>Profil des métadonnées</label>
-    <description>Citation du/des profil(s) de la norme de métadonnées</description>
+    <description>Citation du/des profil(s) de la norme de métadonnées qui régit les métadonnées
+      NOTE : Il convient que les citations de profil de métadonnées incluent un identifiant
+    </description>
   </element>
   <element name="mdb:resourceScope" id="40.0">
     <label>Domaine d'application de la ressource</label>
@@ -550,11 +564,6 @@
     <condition>mandatory</condition>
   </element>
   <element name="mdb:name" id="41.0" context="mdb:MD_MetadataScope">
-    <label>Nom</label>
-    <description iso="true">Description du domaine d’application.</description>
-    <condition>optional</condition>
-  </element>
-  <element name="mdb:name" id="41.0">
     <label>Nom</label>
     <description iso="true">Description du domaine d’application.</description>
     <condition>optional</condition>
@@ -1164,8 +1173,7 @@
   </element>
   <element name="mdb:otherLocale" id="24.0">
     <label>Autre paramétrage régional</label>
-    <description iso="true">Fournit des informations sur les chaînes de
-      caractères régionalisées utilisées de manière alternative
+    <description iso="true">Fournit des informations sur les chaînes de caractères régionalisées utilisées de manière alternative
     </description>
     <_condition>optional</_condition>
   </element>
@@ -1188,8 +1196,7 @@
   </element>
   <element name="mdb:resourceLineage" id="37.0">
     <label>Généalogie des ressources</label>
-    <description iso="true">Informations concernant la provenance, les sources
-      et/ou le(s) procédé(s) de production appliqué(s) à la ressource
+    <description iso="true">informations concernant la provenance, les sources et/ou le(s) procédé(s) de production appliqué(s) à la ressource
     </description>
     <_condition>optional</_condition>
   </element>
@@ -1543,6 +1550,7 @@
   <element name="cit:party" id="379.0" context="cit:CI_Responsibility">
     <label>Acteur</label>
     <description iso="true">Informations concernant l’individu et/ou l’organisation de l’acteur</description>
+    <condition>mandatory</condition>
   </element>
   <element name="cit:extent" id="378.0" context="cit:CI_Responsibility">
     <label>Étendue</label>
@@ -2647,7 +2655,7 @@ responsable du service.</li>
 
   </element>
   <element name="mmi:MD_MaintenanceInformation" id="142.0">
-    <label>Information de maintenance</label>
+    <label>Information de maintenance iso19115-3.2018</label>
     <description>Classe sur la raison, l'étendue et la fréquence des mises à
       jour.
     </description>
@@ -2701,10 +2709,8 @@ responsable du service.</li>
 
   </element>
   <element name="mdb:MD_MetadataScope">
-    <label>Type de ressource</label>
-    <description>Domaine auquel les métadonnées s'appliquent (voir l'annexe C
-      pour plus d'information au sujet des niveaux de hiérarchie des
-      métadonnées)
+    <label>Domaine d’application des métadonnées</label>
+    <description>Informations concernant le domaine d’application de la ressource
     </description>
     <help>Domaine auquel les métadonnées se rapportent. La catégorie
       d'informations à laquelle l'entité se réfère peut être indiquée dans la
@@ -3232,8 +3238,8 @@ de métadonnées de données « BD Carthage métropole »
 
   </element>
   <element name="mrd:amendmentNumber" id="287.0">
-    <label>Numéro de version du format</label>
-    <description>Numéro d'amélioration du format</description>
+    <label>Numéro de modification</label>
+    <description>numéro de modification de la version du format</description>
     <help>Numéro de la modification apportée au format.</help>
     <condition/>
 
@@ -3250,8 +3256,8 @@ de métadonnées de données « BD Carthage métropole »
 
   </element>
   <element name="mdb:applicationSchemaInfo" id="21.0">
-    <label>Informations sur le schéma conceptuel</label>
-    <description>Informations sur le schéma conceptuel du jeu de données
+    <label>Informations sur le schéma d'application</label>
+    <description>Informations sur le schéma conceptuel d’une ressource
     </description>
     <help>Informations relatives au schéma conceptuel du jeu de données</help>
     <condition/>
@@ -3712,9 +3718,8 @@ de métadonnées de données « BD Carthage métropole »
 
   </element>
   <element name="mdb:contentInfo" id="16.0">
-    <label>Information sur le contenu</label>
-    <description>Informations sur le catalogue d'objet et sur les descriptions
-      de la couverture et des charactéristiques raster
+    <label>Informations de contenu</label>
+    <description>informations relatives aux caractéristiques d’entité et de couverture
     </description>
     <help>Description du contenu du jeu de données. Renvoi au catalogue
       d'objets, au modèle de données ou à la description des données. Le contenu
@@ -3815,7 +3820,7 @@ de métadonnées de données « BD Carthage métropole »
 
   </element>
   <element name="mdb:dataQualityInfo" id="18.0">
-    <label>Informations sur la qualité des données</label>
+    <label>Évaluation globale de la qualité de la ou des ressources</label>
     <description>Estimation de la qualité des ressources</description>
     <help>Estimation de la qualité du jeu de données. Ces informations sont
       gérées dans la classe DQ_DataQuality.
@@ -3877,60 +3882,6 @@ de métadonnées de données « BD Carthage métropole »
 
   </element>
 
-  <element name="cit:date" id="362.0"
-           context="/mdb:MD_Metadata/mdb:identificationInfo/srv:SV_ServiceIdentification/cit:citation/cit:CI_Citation/cit:date/cit:CI_Date/cit:date">
-    <label>Date de référence</label>
-    <description>Date de référence pour la ressource en question</description>
-    <help>Date de référence indiquée sous forme de date (jj.mm.aaaa) et de type
-      de date (création, publication, traitement). Ces informations sont du type
-      CI_Date et sont gérées dans la classe du même nom.
-    </help>
-
-    <help><![CDATA[<b>Référence temporelle</b>]]></help>
-
-    <help for="inspire"><![CDATA[<b>Exigence INSPIRE :</b>
-    INSPIRE impose la fourniture d’au moins une référence temporelle qui peut être une date
-de création, de dernière révision, de publication ou une étendue temporelle.
-    <ul>
-      <li>Le système de référence par défaut est le calendrier grégorien.</li>
-      <li>Les dates sont exprimées conformément à la norme ISO 8601 (c’est-à-dire aaaa-mm-jj).</li>
-      <li>Il est possible de définir plusieurs références temporelles mais :</li>
-      <ul>
-        <li>II ne doit pas y avoir plus d’une date de dernière révision.</li>
-        <li>Il ne doit pas y avoir plus d’une date de création.</li>
-      </ul>
-    </ul>
-    Une date de référence du service est une information représentative de la vie du service
-(création, publication, révision), tandis que l’étendue temporelle fournit une indication de la
-période de temps couverte par le service.
-
-    ]]>
-    </help>
-    <help for="france">
-      <![CDATA[
-    <ul>
-      <li>Il est recommandé de fournir uniquement la date de publication.</li>
-      <li>L’étendue temporelle peut être utile pour annoncer la fin prévue d’un service. Dans
-        les autres cas, il est conseillé de ne pas le renseigner.</li>
-    </ul>
-    <br/>
-    Les notions de dates de création, publication et dernière révision sont floues pour un service.
-Notamment, les notions de date de création et de publication se rejoignent dans le cas du
-service. En ce qui concerne la date de dernière révision, il est difficile de définir à partir de
-quand un service est modifié (ajout / mise à jour de données, de fonctions ?) et ce champ
-serait sans doute difficile à maintenir. C’est pourquoi on conseille de saisir uniquement la
-date de mise en ligne du service, en tant que date de publication.
-    <br/>
-    Saisir la date de mise en ligne du service en tant que date de publication.
-    ]]>
-    </help>
-    <help>
-      <![CDATA[<b>Exemples :</b>
-      Le 24 août 2011 : « 2011-08-24 », Le 24 août 2011, midi douze minutes, 0 secondes, zone UTC+2) : « 2011-08-
-24T12:12:00+02:00 »
-      ]]>
-    </help>
-  </element>
   <element name="cit:date" id="362.0"
            context="/mdb:MD_Metadata/mdb:identificationInfo/cit:MD_DataIdentification/cit:citation/cit:CI_Citation/cit:date/cit:CI_Date/cit:date">
     <label>Date de référence</label>
@@ -4396,10 +4347,8 @@ version en tant que mot-clé complémentaire(s). Le numéro de version doit comp
     ]]></help>
   </element>
   <element name="mdb:distributionInfo" id="17.0">
-    <label>Informations sur la distribution</label>
-    <description>Informations sur le distributeur et sur la façon d'acquérir les
-      ressources
-    </description>
+    <label>Informations de distribution</label>
+    <description>informations sur le distributeur de la ressource et les options pour obtenir la ou les ressources</description>
     <help>Informations relatives au distributeur et au mode d'acquisition de la
       ou des ressources. Indications concernant le lieu et la forme d'obtention
       des données. Ces informations sont gérées dans la classe MD_Distribution.
@@ -4522,7 +4471,7 @@ version en tant que mot-clé complémentaire(s). Le numéro de version doit comp
     <condition/>
 
   </element>
-  <element name="mri:extent" id="45.0" context="mri:MD_DataIdentification">
+  <element name="mri:extent" id="45.0">
     <label>Étendue</label>
     <description>Type de données pour l'information sur l'étendue horizontale,
       verticale et temporelle du jeu de données
@@ -4545,12 +4494,6 @@ version en tant que mot-clé complémentaire(s). Le numéro de version doit comp
       extent.geographicElement.EX_GeographicBoundingBox or
       extent.geographicElement.EX_GeographicDescription is required
     </_condition>
-  </element>
-  <element name="mri:extent" id="45.0" context="srv:SV_ServiceIdentification">
-    <label>Étendue</label>
-    <description>Type de données pour l'information sur l'étendue horizontale,
-      verticale et temporelle du service
-    </description>
   </element>
 
   <element name="mri:environmentDescription" id="44.0">
@@ -4803,7 +4746,7 @@ période de temps couverte par le service.
 
   </element>
   <element name="mdb:metadataIdentifier" id="2.0">
-    <label>Identifiant de la fiche</label>
+    <label>Identifiant des métadonnées</label>
     <description>Identifiant unique pour la fiche de métadonnées. Il est généré
       automatiquement par l'application.
     </description>
@@ -4953,7 +4896,7 @@ période de temps couverte par le service.
 
   </element>
   <element name="mri:graphicOverview" id="31.0">
-    <label>Aperçus</label>
+    <label>Aperçus graphiques</label>
     <description>Vue générale graphique illustrant les ressources (y inclus une
       légende)
     </description>
@@ -5056,8 +4999,7 @@ période de temps couverte par le service.
   </element>
   <element name="mdb:identificationInfo" id="29.0">
     <label>Information de l'identification</label>
-    <description>Informations de base sur les ressources concernées par les
-      métadonnées
+    <description>Informations de base sur la ou les ressources auxquelles les métadonnées s’appliquent
     </description>
     <description iso="true">informations de base sur la ou les ressources
       auxquelles les métadonnées s’appliquent
@@ -5509,9 +5451,8 @@ période de temps couverte par le service.
 
   </element>
   <element name="mdb:metadataMaintenance" id="22.0">
-    <label>Mise à jour des métadonnées</label>
-    <description>Informations sur la fréquence de mise à jour des métadonnées,
-      ainsi que de leur étendue
+    <label>Maintenance des métadonnées</label>
+    <description>Informations concernant la fréquence de mises à jour des métadonnées et le domaine d’application de ces mises à jour
     </description>
     <help>Informations concernant la fréquence, l'étendue, la date et la
       validité des mises à jour. Ces informations sont gérées dans la classe
@@ -6576,9 +6517,8 @@ la non-évaluation</b>, dans le cadre de métadonnées INSPIRE
 
   </element>
   <element name="mdb:referenceSystemInfo" id="13.0">
-    <label>Information sur le système de référence</label>
-    <description>Description des références spatiale et temporelle utilisées
-      dans le jeu de données
+    <label>Informations du système de références</label>
+    <description>Description des systèmes de référence spatiales et temporelles utilisés dans la ressource
     </description>
     <help>Description des systèmes de référence spatiale et temporelle utilisés
       dans le jeu de données. Ces informations sont gérées dans la classe
@@ -6755,10 +6695,8 @@ diffusion restreinte.
 
   </element>
   <element name="mri:resourceMaintenance" id="30.0">
-    <label>Mise à jour de la ressource</label>
-    <description>Informations sur la fréquence de mise à jour des ressources,
-      ainsi que de leur étendue
-    </description>
+    <label>Maintenance de la ressource</label>
+    <description>Informations concernant la fréquence de mises à jour des ressources et le domaine d’application de ces mises à jour</description>
     <help>Informations concernant l'étendue et la date de mise à jour de la
       ressource. Si la mise à jour ne concerne pas la totalité du jeu de
       données, les options "updateScope" et "updateScopeDescription" permettent
@@ -8109,6 +8047,10 @@ l’IGN (WPS)
     <label>Libellé de l'URL</label>
     <description></description>
   </element>
+  <element name="xlink:show">
+    <label>Affichage de l'URL</label>
+    <description></description>
+  </element>
   <element name="unit">
     <label>Unité</label>
     <description></description>
@@ -9050,7 +8992,7 @@ http://www.sandre.eaufrance.fr/?urn=urn:sandre:ensembledonnees:BDCarthage:FXX:::
     <description></description>
   </element>
   <element name="gfc:roleName">
-    <label>Nom du rôle</label>
+    <label>Nom de rôle</label>
     <description></description>
   </element>
   <element name="gfc:signature">
