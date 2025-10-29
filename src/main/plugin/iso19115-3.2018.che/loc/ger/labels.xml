@@ -97,10 +97,21 @@
     <condition></condition>
   </element>
   <element name="che:CHE_MD_MaintenanceInformation">
-    <label>Wartungsinformation</label>
+    <label>Wartungsinformation iso19115-3.2018</label>
     <description>Information zu Umfang und Turnus der Aktualisierung</description>
     <help>z.B. Nachführungsinformationen</help>
     <condition></condition>
+  </element>
+  <element name="mmi:MD_MaintenanceInformation"
+      context="che:CHE_MD_MaintenanceInformation">
+    <label>Wartungsinformation</label>
+    <description iso="true">Information zur Wartung</description>
+    <condition>optional</condition>
+  </element>
+  <element name="gco:isoType"
+        context="che:CHE_MD_MaintenanceInformation">
+    <label>ISO-Typ</label>
+    <description iso="true">Information zur Wartung</description>
   </element>
   <element name="mmi:maintenanceDate">
       <label>Wartungsdatum</label>
@@ -2635,7 +2646,7 @@
 
   </element>
   <element name="mmi:MD_MaintenanceInformation" id="142.0">
-    <label>Wartungsinformationen</label>
+    <label>Wartungsinformation iso19115-3.2018</label>
     <description>Informationen zu Grund, Umfang und Häufigkeit der Wartungsarbeiten
       .
     </description>
@@ -4506,7 +4517,7 @@ Version als zusätzliches(s) Schlüsselwort(e) an. Die Versionsnummer muss aus d
     <condition/>
 
   </element>
-  <element name="mri:extent" id="45.0" context="mri:MD_DataIdentification">
+  <element name="mri:extent" id="45.0">
     <label>Ausdehnung</label>
     <description>Datentyp für Informationen über die horizontale,
       vertikalen und zeitlichen Ausdehnung des Datensatzes
@@ -4529,12 +4540,6 @@ Version als zusätzliches(s) Schlüsselwort(e) an. Die Versionsnummer muss aus d
       extent.geographicElement.EX_GeographicBoundingBox oder
       extent.geographicElement.EX_GeographicDescription erforderlich
     </_condition>
-  </element>
-  <element name="mri:extent" id="45.0" context="srv:SV_ServiceIdentification">
-    <label>Ausdehnung</label>
-    <description>Datentyp für Informationen über die horizontale,
-      vertikale und zeitliche Ausdehnung des Dienstes
-    </description>
   </element>
 
   <element name="mri:environmentDescription" id="44.0">
@@ -8113,6 +8118,10 @@ des IGN (WPS)
   </element>
   <element name="xlink:title">
     <label>URL-Titel</label>
+    <description></description>
+  </element>
+  <element name="xlink:show">
+    <label>URL-Anzeige</label>
     <description></description>
   </element>
   <element name="unit">

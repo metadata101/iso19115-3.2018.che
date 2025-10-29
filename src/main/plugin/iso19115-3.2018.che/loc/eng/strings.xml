@@ -55,6 +55,7 @@
   <applicationSchemaInfo>Schema info</applicationSchemaInfo>
   <acquisitionInformation>Acquisition info</acquisitionInformation>
   <qualityMeasures>Q. measures</qualityMeasures>
+  <!-- <maintenanceInformation>Maintenance information for iso19115-3.2018</maintenanceInformation> -->
 
   <bboxesSection>Geographic coverage</bboxesSection>
   <overviews>Overviews</overviews>

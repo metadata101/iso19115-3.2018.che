@@ -2942,55 +2942,55 @@
     <definition>Subtopic categories according to eCH-0166 to improve classification of topicCategories and search of geodata</definition>
     <entry>
       <code>imageryBaseMapsEarthCover_BaseMaps</code>
-      <label>Base Maps, Landscape Models (eCH-0166 - A1)</label>
+      <label>A1 Base Maps, Landscape Models</label>
     </entry>
     <entry>
       <code>imageryBaseMapsEarthCover_EarthCover</code>
-      <label>Land Cover, Land Use (eCH-0166 - A2)</label>
+      <label>A2 Land Cover, Land Use</label>
     </entry>
     <entry>
       <code>imageryBaseMapsEarthCover_Imagery</code>
-      <label>Aerial and Satellite Imagery (eCH-0166 - A3)</label>
+      <label>A3 Aerial and Satellite Imagery</label>
     </entry>
     <entry>
       <code>planningCadastre_Planning</code>
-      <label>Spatial Planning, Spatial Development (eCH-0166 - E1)</label>
+      <label>E1 Spatial Planning, Spatial Development</label>
     </entry>
     <entry>
       <code>planningCadastre_Cadastre</code>
-      <label>Cadastre, Land Registry (eCH-0166 - E2)</label>
+      <label>E2 Cadastre, Land Registry</label>
     </entry>
     <entry>
       <code>geoscientificInformation_Geology</code>
-      <label>Geology (eCH-0166 - F1)</label>
+      <label>F1 Geology</label>
     </entry>
     <entry>
       <code>geoscientificInformation_Soils</code>
-      <label>Soils (eCH-0166 - F2)</label>
+      <label>F2 Soils</label>
     </entry>
     <entry>
       <code>geoscientificInformation_NaturalHazards</code>
-      <label>Natural Hazards (eCH-0166 - F3)</label>
+      <label>F3 Natural Hazards</label>
     </entry>
     <entry>
       <code>environment_EnvironmentalProtection</code>
-      <label>Environmental Protection, Noise (eCH-0166 - L1)</label>
+      <label>L1 Environmental Protection, Noise</label>
     </entry>
     <entry>
       <code>environment_NatureProtection</code>
-      <label>Nature and Landscape Protection (eCH-0166 - L2)</label>
+      <label>L2 Nature and Landscape Protection</label>
     </entry>
     <entry>
       <code>utilitiesCommunication_Energy</code>
-      <label>Energy (eCH-0166 - Q1)</label>
+      <label>Q1 Energy</label>
     </entry>
     <entry>
       <code>utilitiesCommunication_Utilities</code>
-      <label>Water and Waste Systems (eCH-0166 - Q2)</label>
+      <label>Q2 Water and Waste Systems</label>
     </entry>
     <entry>
       <code>utilitiesCommunication_Communication</code>
-      <label>Communication (eCH-0166 - Q3)</label>
+      <label>Q3 Communication</label>
     </entry>
   </codelist>
 

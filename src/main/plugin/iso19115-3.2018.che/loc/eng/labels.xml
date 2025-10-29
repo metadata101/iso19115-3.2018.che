@@ -87,10 +87,32 @@
       <condition></condition>
     </element>
     <element name="che:CHE_MD_MaintenanceInformation">
-      <label>Maintenance Information</label>
-      <description>Maintenance Information</description>
+      <label>Maintenance Information iso19115-3.2018.che</label>
+      <description>Information about the scope and frequency of updating (iso19115-3.2018.che)</description>
+      <help>Information about the scope, frequency and date of updating of the data are contained in
+        the class MD_MaintenanceInformation. This class contains attributes that provide information about the frequency and extent
+        of the update and re-evaluation of the data set. Only the indication of frequency is mandatory
+        and must be selected from the list MD_MaintenanceFrequencyCode. The extent of the update, the attributes
+        it concerns and the associated descriptions are information that can be indicated via the
+        attributes "updateScope" and "updateScopeDescription". It is not planned to indicate the spatial extent of the
+        update. If only parts of a data set are updated or if all its parts are not
+        updated simultaneously, then the parts concerned by the description of the update can be
+        specified via "+updateScopeDescription" in the class MD_ScopeDescription.
+      </help>
       <condition></condition>
-      </element>
+    </element>
+    <element name="mmi:MD_MaintenanceInformation"
+          context="che:CHE_MD_MaintenanceInformation">
+      <label>Maintenance Information</label>
+      <description iso="true">Information about the scope and frequency of updating
+      </description>
+      <condition>optional</condition>
+    </element>
+    <element name="gco:isoType"
+          context="che:CHE_MD_MaintenanceInformation">
+      <label>ISO type</label>
+      <description iso="true">Indicates the ISO type of the element or value</description>
+    </element>
       <element name="mmi:maintenanceDate">
         <label>Maintenance Date</label>
         <description>Maintenance Date</description>
@@ -1839,9 +1861,8 @@
     </description>
   </element>
   <element name="mmi:MD_MaintenanceInformation" id="142.0">
-    <label>Maintenance information</label>
-    <description>Information about the scope and frequency of updating
-    </description>
+    <label>Maintenance information iso19115-3.2018</label>
+      <description>Information about the scope and frequency of updating (iso19115-3.2018)</description>
   </element>
   <element name="mrd:MD_Medium" id="291.0">
     <label>Medium</label>
@@ -4874,6 +4895,10 @@
       </element>
       <element name="xlink:title">
         <label>URL title</label>
+        <description></description>
+      </element>
+      <element name="xlink:show">
+        <label>URL show</label>
         <description></description>
       </element>
       <element name="unit">
