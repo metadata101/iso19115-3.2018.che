@@ -2645,15 +2645,15 @@
   <codelist name="che:CHE_MD_LevelCode" alias="mdLevelCode">
     <entry>
       <code>communal</code>
-      <label>kommunal</label>
+      <label>Kommunal</label>
     </entry>
     <entry>
       <code>cantonal</code>
-      <label>kantonal</label>
+      <label>Kantonal</label>
     </entry>
     <entry>
       <code>federal</code>
-      <label>national</label>
+      <label>National</label>
       <description>Sammlung von Geodaten nach Bundesrecht</description>
     </entry>
     <entry>
@@ -2709,23 +2709,23 @@
 <codelist name="che:AppraisalOfArchicalValueCode" alias="AppraisalOfArchicalValueCode">
     <entry>
       <code>A</code>
-      <label>archivwürdig</label>
+      <label>Archivwürdig</label>
 	</entry>
     <entry>
       <code>N</code>
-      <label>nicht archivwürdig</label>
+      <label>Nicht archivwürdig</label>
 	 </entry>
 	<entry>
       <code>S</code>
       <label>Sampling oder Selektion</label>
-	  <description>archivwürdig in Auswahl (Sampling oder Selektion</description>
+	  <description>archivwürdig in Auswahl (Sampling oder Selektion)</description>
 	</entry>
   </codelist>	
 
 <codelist name="che:ReasonForArchivingValueCode" alias="ReasonForArchivingValueCode">
     <entry>
       <code>legalRelevance</code>
-      <label>rechtliche Relevanz</label>
+      <label>Rechtliche Relevanz</label>
 	</entry>
     <entry>
       <code>guaranteeOfLegalCertainty</code>
@@ -2741,7 +2741,7 @@
 	</entry>
     <entry>
       <code>contemporaryInterest</code>
-      <label>zeitgenössisches Interesse</label>
+      <label>Zeitgenössisches Interesse</label>
 	 </entry>
 	<entry>
       <code>sensitivity</code>
