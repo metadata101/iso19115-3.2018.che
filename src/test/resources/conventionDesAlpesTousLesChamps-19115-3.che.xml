@@ -1584,10 +1584,10 @@
                 </lan:PT_FreeText>
               </che:commentOnDurationOfConservation>
               <che:appraisalOfArchivalValue>
-                <che:CHE_AppraisalOfArchivalValueCode codeList="#CHE_AppraisalOfArchivalValueCode" codeListValue="" />
+                <che:CHE_AppraisalOfArchivalValueCode codeList="appraisalOfArchivalValueCode" codeListValue="A" />
               </che:appraisalOfArchivalValue>
               <che:reasonForArchivingValue>
-                <che:CHE_ReasonForArchivingValueCode codeList="#CHE_ReasonForArchivingValueCode" codeListValue="" />
+                <che:CHE_ReasonForArchivingValueCode codeList="reasonForArchivingValueCode" codeListValue="evidenceOfBusinessPractice" />
               </che:reasonForArchivingValue>
               <che:commentOnArchivalValue xsi:type="lan:PT_FreeText_PropertyType">
                 <gco:CharacterString>Remarque AL</gco:CharacterString>

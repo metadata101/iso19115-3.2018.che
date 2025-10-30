@@ -809,7 +809,7 @@ Per infurmaziuns detagliadas davart il ISOS guardar www.isos.ch.</lan:LocalisedC
                 <gco:Integer>1</gco:Integer>
               </che:durationOfConservation>
               <che:appraisalOfArchivalValue>
-                <che:CHE_AppraisalOfArchivalValueCode codeList="#CHE_AppraisalOfArchivalValueCode" codeListValue="" />
+                <che:CHE_AppraisalOfArchivalValueCode codeList="appraisalOfArchivalValueCode" codeListValue="A" />
               </che:appraisalOfArchivalValue>
             </che:CHE_MD_Appraisal_AAP>
           </che:appraisal>
