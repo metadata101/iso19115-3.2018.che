@@ -2660,7 +2660,7 @@
       <label>anderes</label>
     </entry>
   </codelist>
-  <codelist name="che:MD_geodataTypeCode" alias="geodataType">
+  <codelist name="che:CHE_MD_BasicGeodataTypeCode" alias="geodataType">
     <entry>
       <code>basicGeodata</code>
       <label>Basic Geodata</label>
@@ -2671,7 +2671,7 @@
     </entry>
     <entry>
       <code>oerebRegister</code>
-      <label>oereb Register</label>
+      <label>Öreb-Kataster</label>
     </entry>
     <entry>
       <code>openGovernmentData</code>
@@ -2683,7 +2683,7 @@
     </entry>
     <entry>
       <code>referenceGeodata</code>
-      <label>Reference Geodata</label>
+      <label>Georeferenzdaten</label>
     </entry>
   </codelist>
   <codelist name="che:CHE_DS_AssociationTypeCode" alias="associationType">
@@ -2735,16 +2735,6 @@
     <entry>
       <code>isDescribedBy</code>
       <label>resource is described by associated resource</label>
-    </entry>
-  </codelist>
-  <codelist name="che:MD_BasicGeodataTypeCode" alias="BasicGeodataTypeCode">
-    <entry>
-      <code>oereb</code>
-      <label>Öreb-Kataster</label>
-    </entry>
-    <entry>
-      <code>referenceGeodata</code>
-      <label>Georeferenzdaten</label>
     </entry>
   </codelist>
   <codelist name="che:MD_BasicGeodataAccessLevelCode" alias="BasicGeodataAccessLevelCode">

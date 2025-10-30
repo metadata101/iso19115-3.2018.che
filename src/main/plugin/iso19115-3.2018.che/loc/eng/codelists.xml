@@ -3015,7 +3015,7 @@
       <label>Other</label>
     </entry>
   </codelist>
-  <codelist name="che:MD_geodataTypeCode" alias="geodataType">
+  <codelist name="che:CHE_MD_BasicGeodataTypeCode" alias="geodataType">
     <entry>
       <code>basicGeodata</code>
       <label>Basic Geodata</label>
@@ -3105,17 +3105,6 @@
     <entry>
       <code>C</code>
       <label>not publicly accessible</label>
-    </entry>
-  </codelist>
-  <codelist name="che:CHE_MD_BasicGeodataTypeCode" alias="basicGeodataType">
-    <definition>codes for geobasisdaten type</definition>
-    <entry>
-      <code>oereb</code>
-      <label>see GeoIV Annex 1 (SR 510.620)</label>
-    </entry>
-    <entry>
-      <code>referenceGeodata</code>
-      <label>see GeoIV Annex 1 (SR 510.620)</label>
     </entry>
   </codelist>
   <codelist name="che:CHE_CI_LegislationTypeCode" alias="legislationType">

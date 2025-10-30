@@ -2720,14 +2720,14 @@
       <label>Autre</label>
     </entry>
   </codelist>
-  <codelist name="che:MD_geodataTypeCode" alias="geodataType">
+  <codelist name="che:CHE_MD_BasicGeodataTypeCode" alias="geodataType">
     <entry>
       <code>basicGeodata</code>
       <label>Basic Geodata</label>
     </entry>
     <entry>
       <code>oereb</code>
-      <label>oereb</label>
+      <label>Cadastre RDPPF</label>
     </entry>
     <entry>
       <code>oerebRegister</code>
@@ -2743,7 +2743,7 @@
     </entry>
     <entry>
       <code>referenceGeodata</code>
-      <label>Reference Geodata</label>
+      <label>Géodonnées de référence</label>
     </entry>
   </codelist>
   <codelist name="che:CHE_DS_AssociationTypeCode" alias="associationType">
@@ -2795,16 +2795,6 @@
     <entry>
       <code>isDescribedBy</code>
       <label>resource is described by associated resource</label>
-    </entry>
-  </codelist>
-  <codelist name="che:MD_BasicGeodataTypeCode" alias="BasicGeodataTypeCode">
-    <entry>
-      <code>oereb</code>
-      <label>Cadastre RDPPF</label>
-    </entry>
-    <entry>
-      <code>referenceGeodata</code>
-      <label>Géodonnées de référence</label>
     </entry>
   </codelist>
   <codelist name="che:MD_BasicGeodataAccessLevelCode" alias="BasicGeodataAccessLevelCode">
