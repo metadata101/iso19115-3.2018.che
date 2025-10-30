@@ -2936,6 +2936,7 @@
       <label>Sconosciuto</label>
     </entry>
   </codelist>
+
   <codelist name="che:CHE_MD_SubTopicCategoryCode" alias="subTopicCategory">
     <entry>
       <code>imageryBaseMapsEarthCover_BaseMaps</code>
@@ -2993,7 +2994,6 @@
       <description></description>
     </entry>
   </codelist>
-
   <codelist name="che:CHE_MD_LevelCode" alias="mdLevelCode">
     <entry>
       <code>communal</code>
@@ -3013,7 +3013,6 @@
       <label>Altro</label>
     </entry>
   </codelist>
-
   <codelist name="che:MD_geodataTypeCode" alias="geodataType">
     <entry>
       <code>basicGeodata</code>
@@ -3038,6 +3037,148 @@
     <entry>
       <code>referenceGeodata</code>
       <label>Geodati di riferimento</label>
+    </entry>
+  </codelist>
+  <codelist name="che:CHE_DS_AssociationTypeCode" alias="associationType">
+    <definition>justification for the correlation of two resources</definition>
+    <entry>
+      <code>crossReference</code>
+      <label>reference from one resource to another</label>
+    </entry>
+    <entry>
+      <code>largerWorkCitation</code>
+      <label>reference to a master resource of which this one is a part</label>
+    </entry>
+    <entry>
+      <code>partOfSeamlessDatabase</code>
+      <label>part of same structured set of data held in a computer</label>
+    </entry>
+    <entry>
+      <code>stereoMate</code>
+      <label>part of a set of imagery that, when used together, provides three-dimensional images</label>
+    </entry>
+    <entry>
+      <code>isComposedOf</code>
+      <label>reference to resources that are parts of this resource</label>
+    </entry>
+    <entry>
+      <code>collectiveTitle</code>
+      <label>common title for a collection of resources. NOTE: title identifies elements of a series collectively, combined with information about what volumes are available at the source cite</label>
+    </entry>
+    <entry>
+      <code>series</code>
+      <label>associated through a common heritage such as produced to a common product specification</label>
+    </entry>
+    <entry>
+      <code>dependency</code>
+      <label>associated through a dependency</label>
+    </entry>
+    <entry>
+      <code>revisionOf</code>
+      <label>resource is a revision of associated resource</label>
+    </entry>
+    <entry>
+      <code>isTemporalStateOf</code>
+      <label>resource is a temporal state of associated resource</label>
+    </entry>
+    <entry>
+      <code>isDescriptionOf</code>
+      <label>resource is a description of associated resource</label>
+    </entry>
+    <entry>
+      <code>isDescribedBy</code>
+      <label>resource is described by associated resource</label>
+    </entry>
+  </codelist>
+  <codelist name="che:CHE_MD_BasicGeodataAccessLevelCode" alias="basicGeodataAccessLevel">
+    <definition>codes for geobasisdaten access authorization level</definition>
+    <entry>
+      <code>A</code>
+      <label>publicly accessible</label>
+    </entry>
+    <entry>
+      <code>B</code>
+      <label>publicly accessible with restrictions</label>
+    </entry>
+    <entry>
+      <code>C</code>
+      <label>not publicly accessible</label>
+    </entry>
+  </codelist>
+  <codelist name="che:CHE_MD_BasicGeodataTypeCode" alias="basicGeodataType">
+    <definition>codes for geobasisdaten type</definition>
+    <entry>
+      <code>oereb</code>
+      <label>see GeoIV Annex 1 (SR 510.620)</label>
+    </entry>
+    <entry>
+      <code>referenceGeodata</code>
+      <label>see GeoIV Annex 1 (SR 510.620)</label>
+    </entry>
+  </codelist>
+  <codelist name="che:CHE_CI_LegislationTypeCode" alias="legislationType">
+    <definition>codes for legislation type</definition>
+    <entry>
+      <code>law</code>
+      <label>law</label>
+    </entry>
+    <entry>
+      <code>ordinance</code>
+      <label>ordinance</label>
+    </entry>
+    <entry>
+      <code>other</code>
+      <label>other</label>
+    </entry>
+  </codelist>
+  <codelist name="che:CHE_AppraisalOfArchivalValueCode" alias="appraisalOfArchivalValue">
+    <definition>codes for archival value</definition>
+    <entry>
+      <code>A</code>
+      <label>with archival value</label>
+    </entry>
+    <entry>
+      <code>N</code>
+      <label>without archival value</label>
+    </entry>
+    <entry>
+      <code>S</code>
+      <label>sampling</label>
+    </entry>
+  </codelist>
+  <codelist name="che:CHE_ReasonForArchivingValueCode" alias="reasonForArchivingValue">
+    <definition>codes for archival value reason</definition>
+    <entry>
+      <code>legalRelevance</code>
+      <label>legalRelevance</label>
+    </entry>
+    <entry>
+      <code>guaranteeOfLegalCertainty</code>
+      <label>guarantee of legal certainty</label>
+    </entry>
+    <entry>
+      <code>evidenceOfBusinessPractice</code>
+      <label>evidence of business practice</label>
+    </entry>
+    <entry>
+      <code>benefitsForResearch</code>
+      <label>benefits for research</label>
+    </entry>
+    <entry>
+      <code>contemporaryInterest</code>
+      <label>contemporary interest</label>
+    </entry>
+    <entry>
+      <code>sensitivity</code>
+      <label>sensitivity</label>
+    </entry>
+    <entry>
+      <code>developmentsProgression</code>
+      <label>developments progression</label>
+    </entry>
+    <entry>
+      <code>definingPowers</code>
+      <label>defining powers</label>
     </entry>
   </codelist>
 
