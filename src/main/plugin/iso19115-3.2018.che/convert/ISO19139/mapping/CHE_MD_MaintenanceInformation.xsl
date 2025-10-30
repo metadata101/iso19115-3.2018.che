@@ -61,15 +61,15 @@
 
     <xsl:template match="oldche:CHE_AppraisalOfArchivalValueCode" mode="from19139to19115-3.2018">
         <xsl:element name="che:CHE_AppraisalOfArchivalValueCode">
-            <xsl:attribute name="codeList">#CHE_AppraisalOfArchivalValueCode</xsl:attribute>
-            <xsl:attribute name="codeListValue" select="oldche:CHE_AppraisalOfArchivalValueCode/@codeListValue"/>
+            <xsl:attribute name="codeList">appraisalOfArchivalValueCode</xsl:attribute>
+            <xsl:attribute name="codeListValue" select="@codeListValue"/>
         </xsl:element>
     </xsl:template>
 
     <xsl:template match="oldche:CHE_ReasonForArchivingValueCode" mode="from19139to19115-3.2018">
         <xsl:element name="che:CHE_ReasonForArchivingValueCode">
-            <xsl:attribute name="codeList">#CHE_ReasonForArchivingValueCode</xsl:attribute>
-            <xsl:attribute name="codeListValue" select="oldche:CHE_ReasonForArchivingValueCode/@codeListValue"/>
+            <xsl:attribute name="codeList">reasonForArchivingValueCode</xsl:attribute>
+            <xsl:attribute name="codeListValue" select="@codeListValue"/>
         </xsl:element>
     </xsl:template>
 

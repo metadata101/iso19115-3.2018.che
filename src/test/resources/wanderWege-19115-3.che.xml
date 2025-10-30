@@ -700,10 +700,10 @@
                 <gco:Integer>275</gco:Integer>
               </che:durationOfConservation>
               <che:appraisalOfArchivalValue>
-                <che:CHE_AppraisalOfArchivalValueCode codeList="#CHE_AppraisalOfArchivalValueCode" codeListValue="" />
+                <che:CHE_AppraisalOfArchivalValueCode codeList="appraisalOfArchivalValueCode" codeListValue="A" />
               </che:appraisalOfArchivalValue>
               <che:reasonForArchivingValue>
-                <che:CHE_ReasonForArchivingValueCode codeList="#CHE_ReasonForArchivingValueCode" codeListValue="" />
+                <che:CHE_ReasonForArchivingValueCode codeList="reasonForArchivingValueCode" codeListValue="legalRelevance" />
               </che:reasonForArchivingValue>
             </che:CHE_MD_Appraisal_AAP>
           </che:appraisal>
