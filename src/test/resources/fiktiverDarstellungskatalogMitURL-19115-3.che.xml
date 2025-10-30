@@ -1612,7 +1612,7 @@
         <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ita" />
       </che:language>
       <che:legislationType>
-        <che:CHE_CI_LegislationTypeCode codeList="#CHE_CI_LegislationCode" codeListValue="nationalDecree" />
+        <che:CHE_CI_LegislationTypeCode codeList="legislationCode" codeListValue="nationalDecree" />
       </che:legislationType>
       <che:internalReference xsi:type="lan:PT_FreeText_PropertyType">
         <gco:CharacterString>Anhang 1</gco:CharacterString>

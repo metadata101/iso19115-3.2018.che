@@ -26,7 +26,7 @@ public class IndexationTest {
 
     private static Field resolverMapField;
 
-    private static final boolean GENERATE_EXPECTED_FILE = false;
+    private static final boolean GENERATE_EXPECTED_FILE = false ;
 
     @BeforeClass
     public static void initOasis() throws NoSuchFieldException, IllegalAccessException {
