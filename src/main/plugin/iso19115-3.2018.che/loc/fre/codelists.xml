@@ -2743,7 +2743,7 @@
       <label>resource is described by associated resource</label>
     </entry>
   </codelist>
-  <codelist name="che:MD_BasicGeodataAccessLevelCode" alias="BasicGeodataAccessLevelCode">
+  <codelist name="che:CHE_MD_BasicGeodataAccessLevelCode" alias="basicGeodataAccessLevel">
     <entry>
       <code>A</code>
       <label>Niveau d'accessibilité A</label>
