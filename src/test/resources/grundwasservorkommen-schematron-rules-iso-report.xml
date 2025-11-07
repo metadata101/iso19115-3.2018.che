@@ -27,51 +27,6 @@
   <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/1999/xlink" prefix="xlink" />
   <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/2001/XMLSchema" prefix="xsi" />
   <svrl:ns-prefix-in-attribute-values uri="http://geocat.ch/che" prefix="che" />
-  <svrl:active-pattern document="" id="rule.cit.organisationnameandlogo" name_en="Organisation MUST have a name or a logo" name_fr="Une organisation DOIT avoir un nom ou un logo" name="Une organisation DOIT avoir un nom ou un logo" />
-  <svrl:fired-rule context="//che:CHE_CI_Organisation" />
-  <svrl:successful-report ref="#_" test="$hasName or $hasLogo" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='contact']/*[local-name()='CI_Responsibility']/*[local-name()='party']/*[local-name()='CHE_CI_Organisation']">
-    <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.cit.organisationnameandlogo-success-en" xml:lang="en">Organisation name is
-      "
-          KGK-CGC KGK-CGC KGK-CGC KGK-CGC KGK-CGC
-          "
-      and logo filename is
-      "
-          
-          "
-      .</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.cit.organisationnameandlogo-success-fr" xml:lang="fr">Le nom de l'organisation est
-      "
-          KGK-CGC KGK-CGC KGK-CGC KGK-CGC KGK-CGC
-          "
-      , son logo
-      "
-          
-          "
-      .</svrl:diagnostic-reference>
-  </svrl:successful-report>
-  <svrl:fired-rule context="//che:CHE_CI_Organisation" />
-  <svrl:successful-report ref="#_" test="$hasName or $hasLogo" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='SV_ServiceIdentification']/*[local-name()='pointOfContact']/*[local-name()='CI_Responsibility']/*[local-name()='party']/*[local-name()='CHE_CI_Organisation']">
-    <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.cit.organisationnameandlogo-success-en" xml:lang="en">Organisation name is
-      "
-          KGK-CGC KGK-CGC KGK-CGC KGK-CGC KGK-CGC
-          "
-      and logo filename is
-      "
-          
-          "
-      .</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.cit.organisationnameandlogo-success-fr" xml:lang="fr">Le nom de l'organisation est
-      "
-          KGK-CGC KGK-CGC KGK-CGC KGK-CGC KGK-CGC
-          "
-      , son logo
-      "
-          
-          "
-      .</svrl:diagnostic-reference>
-  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.gex.extenthasoneelement" name_en="Extent MUST have one description or one geographic,&#xA;      temporal or vertical element" name_fr="Une étendue DOIT avoir une description ou un&#xA;      élément géographique, temporel ou vertical" name="Une étendue DOIT avoir une description ou un&#xA;      élément géographique, temporel ou vertical" />
   <svrl:fired-rule context="//gex:EX_Extent" />
   <svrl:successful-report ref="#_" test="count($description)" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='SV_ServiceIdentification']/*[local-name()='extent']/*[local-name()='EX_Extent']">
