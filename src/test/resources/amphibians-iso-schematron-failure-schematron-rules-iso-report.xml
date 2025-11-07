@@ -78,17 +78,6 @@
       si non définie par l'encodage. L'encodage par défaut doit être "UTF-8".</svrl:text>
   </svrl:active-pattern>
   <svrl:fired-rule context="/che:CHE_MD_Metadata/mdb:defaultLocale|                        /che:CHE_MD_Metadata/mdb:identificationInfo/*/mri:defaultLocale" />
-  <svrl:successful-report ref="#_" test="$hasEncoding" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='defaultLocale']">
-    <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.defaultlocale-success-en" xml:lang="en">The
-      characeter encoding is "
-          utf8
-          .</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.defaultlocale-success-fr" xml:lang="fr">L'encodage est "
-          utf8
-          .</svrl:diagnostic-reference>
-  </svrl:successful-report>
-  <svrl:fired-rule context="/che:CHE_MD_Metadata/mdb:defaultLocale|                        /che:CHE_MD_Metadata/mdb:identificationInfo/*/mri:defaultLocale" />
   <svrl:successful-report ref="#_" test="$hasEncoding" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='defaultLocale']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.defaultlocale-success-en" xml:lang="en">The
@@ -135,6 +124,18 @@
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.metadataidentifier-mandatory-failure-en" xml:lang="en">Metadata identifier is mandatory when resource scope is 'dataset', 'series' or 'service'.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.metadataidentifier-mandatory-failure-fr" xml:lang="fr">L'identifiant des métadonnées est obligatoire quand la portée de la ressource est 'dataset', 'series' ou 'service'.</svrl:diagnostic-reference>
+  </svrl:failed-assert>
+  <svrl:active-pattern document="" id="rule.mdb.defaultlocale-mandatory" name_en="Default locale mandatory" name_fr="Langue par défaut obligatoire" name="Langue par défaut obligatoire">
+    <svrl:text>When metadata scope resourceScope is 'dataset', 'series' or 'service',
+      the default locale MUST be specified.</svrl:text>
+    <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
+      la langue par défaut DOIT être spécifiée.</svrl:text>
+  </svrl:active-pattern>
+  <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or         mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']" />
+  <svrl:failed-assert ref="#_" test="$hasDefaultLocale" location="/*[local-name()='CHE_MD_Metadata']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.defaultlocale-mandatory-failure-en" xml:lang="en">Default locale is mandatory when resource scope is 'dataset', 'series' or 'service'.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.defaultlocale-mandatory-failure-fr" xml:lang="fr">La langue par défaut est obligatoire quand la portée de la ressource est 'dataset', 'series' ou 'service'.</svrl:diagnostic-reference>
   </svrl:failed-assert>
   <svrl:active-pattern document="" id="rule.mex.datatypedetails" name_en="Extended element information&#xA;      which are not codelist, enumeration or codelistElement&#xA;      MUST specified max occurence and domain value" name_fr="Un élément d'extension qui n'est&#xA;      ni une codelist, ni une énumération, ni un élément de codelist&#xA;      DOIT préciser le nombre maximum d'occurences&#xA;      ainsi que la valeur du domaine" name="Un élément d'extension qui n'est&#xA;      ni une codelist, ni une énumération, ni un élément de codelist&#xA;      DOIT préciser le nombre maximum d'occurences&#xA;      ainsi que la valeur du domaine" />
   <svrl:active-pattern document="" id="rule.mex.conditional" name_en="Extended element information&#xA;      which are conditional MUST explained the condition" name_fr="Un élément d'extension conditionnel&#xA;      DOIT préciser les termes de la condition" name="Un élément d'extension conditionnel&#xA;      DOIT préciser les termes de la condition" />
