@@ -456,12 +456,12 @@
 
     <sch:p xml:lang="en">A metadata instance document conforming to
       this specification SHALL have a root CHE_MD_Metadata element
-      defined in the http://standards.iso.org/iso/19115/-3/mdb/2.0 namespace.
+      defined in the http://geocat.ch/che namespace.
     </sch:p>
 
     <sch:p xml:lang="fr">Une fiche de métadonnées conforme au standard
-      ISO19115-1 DOIT avoir un élément racine CHE_MD_Metadata (défini dans l'espace
-      de nommage http://standards.iso.org/iso/19115/-3/mdb/2.0).
+      ISO19115-3.2018.che DOIT avoir un élément racine CHE_MD_Metadata (défini dans l'espace
+      de nommage "http://geocat.ch/che").
     </sch:p>
 
     <sch:rule context="/">
