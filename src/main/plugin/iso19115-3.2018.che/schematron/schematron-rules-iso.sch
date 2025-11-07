@@ -25,65 +25,6 @@
 
   <sch:diagnostics>
 
-    <sch:diagnostic id="rule.cit.organisationnameandlogo-failure-en"
-                    xml:lang="en">The organisation does not have a name or a
-      logo.
-    </sch:diagnostic>
-
-    <sch:diagnostic id="rule.cit.organisationnameandlogo-failure-fr"
-                    xml:lang="fr">Une organisation n'a pas de nom ou de logo.
-    </sch:diagnostic>
-
-
-    <sch:diagnostic id="rule.cit.organisationnameandlogo-success-en"
-                    xml:lang="en">Organisation name is
-      "<sch:value-of select="normalize-space($name)"/>"
-      and logo filename is
-      "<sch:value-of select="normalize-space($logo)"/>"
-      .
-    </sch:diagnostic>
-
-    <sch:diagnostic id="rule.cit.organisationnameandlogo-success-fr"
-                    xml:lang="fr">Le nom de l'organisation est
-      "<sch:value-of select="normalize-space($name)"/>"
-      , son logo
-      "<sch:value-of select="normalize-space($logo)"/>"
-      .
-    </sch:diagnostic>
-
-  </sch:diagnostics>
-  <sch:pattern id="rule.cit.organisationnameandlogo">
-
-    <sch:title xml:lang="en">Organisation MUST have a name or a logo</sch:title>
-
-    <sch:title xml:lang="fr">Une organisation DOIT avoir un nom ou un logo
-    </sch:title>
-
-
-    <sch:rule context="//che:CHE_CI_Organisation">
-
-
-      <sch:let name="name" value="cit:name"/>
-
-      <sch:let name="logo" value="cit:logo/mcc:MD_BrowseGraphic/mcc:fileName"/>
-
-      <sch:let name="hasName" value="normalize-space($name) != ''"/>
-
-      <sch:let name="hasLogo" value="normalize-space($logo) != ''"/>
-
-
-      <sch:assert test="$hasName or $hasLogo"
-                  diagnostics="rule.cit.organisationnameandlogo-failure-en                       rule.cit.organisationnameandlogo-failure-fr"/>
-
-
-      <sch:report test="$hasName or $hasLogo"
-                  diagnostics="rule.cit.organisationnameandlogo-success-en                       rule.cit.organisationnameandlogo-success-fr"/>
-
-    </sch:rule>
-
-  </sch:pattern>
-  <sch:diagnostics>
-
     <sch:diagnostic id="rule.gex.extenthasoneelement-failure-en" xml:lang="en">
       The extent does not contain a description or a geographicElement.
     </sch:diagnostic>
