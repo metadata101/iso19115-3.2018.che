@@ -7,16 +7,6 @@
       </mcc:code>
     </mcc:MD_Identifier>
   </mdb:metadataIdentifier>
-  <mdb:defaultLocale>
-    <lan:PT_Locale id="DE">
-      <lan:language>
-        <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="ger">ger</lan:LanguageCode>
-      </lan:language>
-      <lan:characterEncoding>
-        <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
-      </lan:characterEncoding>
-    </lan:PT_Locale>
-  </mdb:defaultLocale>
   <mdb:metadataScope>
     <mdb:MD_MetadataScope>
       <mdb:resourceScope>

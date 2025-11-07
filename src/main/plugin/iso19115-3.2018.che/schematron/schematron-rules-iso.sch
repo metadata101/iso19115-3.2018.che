@@ -734,6 +734,60 @@
   </sch:pattern>
   <sch:diagnostics>
 
+    <sch:diagnostic id="rule.mdb.defaultlocale-mandatory-failure-en" xml:lang="en">
+      Default locale is mandatory when resource scope is 'dataset', 'series' or 'service'.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mdb.defaultlocale-mandatory-failure-fr" xml:lang="fr">
+      La langue par défaut est obligatoire quand la portée de la ressource est 'dataset', 'series' ou 'service'.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mdb.defaultlocale-mandatory-success-en" xml:lang="en">
+      Default locale is defined with language: "<sch:value-of select="$language"/>".
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mdb.defaultlocale-mandatory-success-fr" xml:lang="fr">
+      La langue par défaut est définie avec la langue : "<sch:value-of select="$language"/>".
+    </sch:diagnostic>
+
+  </sch:diagnostics>
+  <sch:pattern id="rule.mdb.defaultlocale-mandatory">
+
+    <sch:title xml:lang="en">Default locale mandatory</sch:title>
+
+    <sch:title xml:lang="fr">Langue par défaut obligatoire</sch:title>
+
+    <sch:p xml:lang="en">When metadata scope resourceScope is 'dataset', 'series' or 'service',
+      the default locale MUST be specified.
+    </sch:p>
+
+    <sch:p xml:lang="fr">Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
+      la langue par défaut DOIT être spécifiée.
+    </sch:p>
+
+    <sch:rule context="che:CHE_MD_Metadata[
+      mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or
+      mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or  
+      mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']">
+
+      <sch:let name="language"
+               value="normalize-space(mdb:defaultLocale/lan:PT_Locale/lan:language/lan:LanguageCode/@codeListValue)"/>
+
+      <sch:let name="hasDefaultLocale" value="$language != ''"/>
+
+      <sch:assert test="$hasDefaultLocale"
+                  diagnostics="rule.mdb.defaultlocale-mandatory-failure-en
+                              rule.mdb.defaultlocale-mandatory-failure-fr"/>
+
+      <sch:report test="$hasDefaultLocale"
+                  diagnostics="rule.mdb.defaultlocale-mandatory-success-en
+                              rule.mdb.defaultlocale-mandatory-success-fr"/>
+
+    </sch:rule>
+
+  </sch:pattern>
+  <sch:diagnostics>
+
     <sch:diagnostic id="rule.mex.datatypedetails-maxocc-failure-en"
                     xml:lang="en">
       Extended element information "<sch:value-of select="$name"/>"
