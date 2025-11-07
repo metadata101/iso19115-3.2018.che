@@ -680,6 +680,60 @@
   </sch:pattern>
   <sch:diagnostics>
 
+    <sch:diagnostic id="rule.mdb.metadataidentifier-mandatory-failure-en" xml:lang="en">
+      Metadata identifier is mandatory when resource scope is 'dataset', 'series' or 'service'.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mdb.metadataidentifier-mandatory-failure-fr" xml:lang="fr">
+      L'identifiant des métadonnées est obligatoire quand la portée de la ressource est 'dataset', 'series' ou 'service'.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mdb.metadataidentifier-mandatory-success-en" xml:lang="en">
+      Metadata identifier is defined: "<sch:value-of select="$metadataIdentifier"/>".
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mdb.metadataidentifier-mandatory-success-fr" xml:lang="fr">
+      L'identifiant des métadonnées est défini : "<sch:value-of select="$metadataIdentifier"/>".
+    </sch:diagnostic>
+
+  </sch:diagnostics>
+  <sch:pattern id="rule.mdb.metadataidentifier-mandatory">
+
+    <sch:title xml:lang="en">Metadata identifier mandatory</sch:title>
+
+    <sch:title xml:lang="fr">Identifiant des métadonnées obligatoire</sch:title>
+
+    <sch:p xml:lang="en">When metadata scope resourceScope is 'dataset', 'series' or 'service',
+      the metadata identifier MUST be specified.
+    </sch:p>
+
+    <sch:p xml:lang="fr">Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
+      l'identifiant des métadonnées DOIT être spécifié.
+    </sch:p>
+
+    <sch:rule context="che:CHE_MD_Metadata[
+      mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or
+      mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or
+      mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']">
+
+      <sch:let name="metadataIdentifier"
+               value="normalize-space(mdb:metadataIdentifier/mcc:MD_Identifier/mcc:code/gco:CharacterString)"/>
+
+      <sch:let name="hasMetadataIdentifier" value="$metadataIdentifier != ''"/>
+
+      <sch:assert test="$hasMetadataIdentifier"
+                  diagnostics="rule.mdb.metadataidentifier-mandatory-failure-en
+                              rule.mdb.metadataidentifier-mandatory-failure-fr"/>
+
+      <sch:report test="$hasMetadataIdentifier"
+                  diagnostics="rule.mdb.metadataidentifier-mandatory-success-en
+                              rule.mdb.metadataidentifier-mandatory-success-fr"/>
+
+    </sch:rule>
+
+  </sch:pattern>
+  <sch:diagnostics>
+
     <sch:diagnostic id="rule.mex.datatypedetails-maxocc-failure-en"
                     xml:lang="en">
       Extended element information "<sch:value-of select="$name"/>"

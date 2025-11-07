@@ -48,56 +48,12 @@
   <svrl:active-pattern document="" id="rule.mco-releasability" name_en="Releasability MUST&#xA;      specified an addresse or a statement" name_fr="La possibilité de divulgation&#xA;      DOIT définir un destinataire ou une indication" name="La possibilité de divulgation&#xA;      DOIT définir un destinataire ou une indication" />
   <svrl:active-pattern document="" id="rule.mco-legalconstraintdetails" name_en="Legal constraint MUST&#xA;      specified an access, use or other constraint or&#xA;      use limitation or releasability" name_fr="Une contrainte légale DOIT&#xA;      définir un type de contrainte (d'accès, d'utilisation ou autre)&#xA;      ou bien une limite d'utilisation ou une possibilité de divulgation" name="Une contrainte légale DOIT&#xA;      définir un type de contrainte (d'accès, d'utilisation ou autre)&#xA;      ou bien une limite d'utilisation ou une possibilité de divulgation" />
   <svrl:fired-rule context="//che:CHE_MD_LegalConstraints" />
-  <svrl:successful-report ref="#_" test="$hasDetails" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='resourceConstraints']/*[local-name()='CHE_MD_LegalConstraints']">
+  <svrl:successful-report ref="#_" test="$hasDetails" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='resourceConstraints']&#xA;          [&#xA;          1&#xA;          ]&#xA;        /*[local-name()='CHE_MD_LegalConstraints']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mco-legalconstraintdetails-success-en" xml:lang="en">The legal constraint is complete.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mco-legalconstraintdetails-success-fr" xml:lang="fr">La contrainte légale est complète.</svrl:diagnostic-reference>
   </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mco-legalconstraint-other" name_en="Legal constraint defining&#xA;      other restrictions for access or use constraint MUST&#xA;      specified other constraint." name_fr="Une contrainte légale indiquant&#xA;      d'autres restrictions d'utilisation ou d'accès DOIT&#xA;      préciser ces autres restrictions" name="Une contrainte légale indiquant&#xA;      d'autres restrictions d'utilisation ou d'accès DOIT&#xA;      préciser ces autres restrictions" />
-  <svrl:fired-rule context="//che:CHE_MD_LegalConstraints[       mco:accessConstraints/mco:MD_RestrictionCode/@codeListValue = 'otherRestrictions' or       mco:useConstraints/mco:MD_RestrictionCode/@codeListValue = 'otherRestrictions'       ]" />
-  <svrl:successful-report ref="#_" test="$hasOtherConstraints" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='resourceConstraints']/*[local-name()='CHE_MD_LegalConstraints']">
-    <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mco-legalconstraint-other-success-en" xml:lang="en">
-      The legal constraint other constraints is
-      "
-      <gcx:Anchor xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0" xmlns:che="http://geocat.ch/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0" xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0" xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:md1="http://standards.iso.org/iso/19115/-3/md1/2.0" xmlns:md2="http://standards.iso.org/iso/19115/-3/md2/2.0" xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/2.0" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0" xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0" xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0" xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0" xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0" xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0" xmlns:dqm="http://standards.iso.org/iso/19157/-2/dqm/1.0" xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://opendata.swiss/en/terms-of-use/#terms_by">Opendata BY: Freie Nutzung. Quellenangabe ist Pflicht.</gcx:Anchor>
-      <lan:PT_FreeText xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:che="http://geocat.ch/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0" xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0" xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:md1="http://standards.iso.org/iso/19115/-3/md1/2.0" xmlns:md2="http://standards.iso.org/iso/19115/-3/md2/2.0" xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/2.0" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0" xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0" xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0" xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0" xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0" xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0" xmlns:dqm="http://standards.iso.org/iso/19157/-2/dqm/1.0" xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <lan:textGroup>
-          <lan:LocalisedCharacterString locale="#DE">Opendata BY: Freie Nutzung. Quellenangabe ist Pflicht.</lan:LocalisedCharacterString>
-        </lan:textGroup>
-        <lan:textGroup>
-          <lan:LocalisedCharacterString locale="#FR">Opendata BY: Utilisation libre. Obligation d’indiquer la source.</lan:LocalisedCharacterString>
-        </lan:textGroup>
-        <lan:textGroup>
-          <lan:LocalisedCharacterString locale="#IT">Opendata BY: Libero utilizzo. Indicazione della fonte obbligatoria.</lan:LocalisedCharacterString>
-        </lan:textGroup>
-        <lan:textGroup>
-          <lan:LocalisedCharacterString locale="#EN">Opendata BY: Open use. Must provide the source.</lan:LocalisedCharacterString>
-        </lan:textGroup>
-      </lan:PT_FreeText>
-      ".
-    </svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mco-legalconstraint-other-success-fr" xml:lang="fr">
-      Les autres contraintes de la contrainte légale sont
-      "
-      <gcx:Anchor xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0" xmlns:che="http://geocat.ch/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0" xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0" xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:md1="http://standards.iso.org/iso/19115/-3/md1/2.0" xmlns:md2="http://standards.iso.org/iso/19115/-3/md2/2.0" xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/2.0" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0" xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0" xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0" xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0" xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0" xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0" xmlns:dqm="http://standards.iso.org/iso/19157/-2/dqm/1.0" xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://opendata.swiss/en/terms-of-use/#terms_by">Opendata BY: Freie Nutzung. Quellenangabe ist Pflicht.</gcx:Anchor>
-      <lan:PT_FreeText xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:che="http://geocat.ch/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0" xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0" xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:md1="http://standards.iso.org/iso/19115/-3/md1/2.0" xmlns:md2="http://standards.iso.org/iso/19115/-3/md2/2.0" xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/2.0" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0" xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0" xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0" xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0" xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0" xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0" xmlns:dqm="http://standards.iso.org/iso/19157/-2/dqm/1.0" xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <lan:textGroup>
-          <lan:LocalisedCharacterString locale="#DE">Opendata BY: Freie Nutzung. Quellenangabe ist Pflicht.</lan:LocalisedCharacterString>
-        </lan:textGroup>
-        <lan:textGroup>
-          <lan:LocalisedCharacterString locale="#FR">Opendata BY: Utilisation libre. Obligation d’indiquer la source.</lan:LocalisedCharacterString>
-        </lan:textGroup>
-        <lan:textGroup>
-          <lan:LocalisedCharacterString locale="#IT">Opendata BY: Libero utilizzo. Indicazione della fonte obbligatoria.</lan:LocalisedCharacterString>
-        </lan:textGroup>
-        <lan:textGroup>
-          <lan:LocalisedCharacterString locale="#EN">Opendata BY: Open use. Must provide the source.</lan:LocalisedCharacterString>
-        </lan:textGroup>
-      </lan:PT_FreeText>
-      ".
-    </svrl:diagnostic-reference>
-  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mdb.root-element" name_en="Metadata document root element" name_fr="Élément racine du document" name="Élément racine du document">
     <svrl:text>A metadata instance document conforming to
       this specification SHALL have a root CHE_MD_Metadata element
@@ -137,10 +93,10 @@
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.defaultlocale-success-en" xml:lang="en">The
       characeter encoding is "
-          8859part1
+          utf8
           .</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.defaultlocale-success-fr" xml:lang="fr">L'encodage est "
-          8859part1
+          utf8
           .</svrl:diagnostic-reference>
   </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mdb.scope-name" name_en="Metadata scope Name" name_fr="Description du domaine d'application" name="Description du domaine d'application">
@@ -159,19 +115,15 @@
       "creation").</svrl:text>
   </svrl:active-pattern>
   <svrl:fired-rule context="che:CHE_MD_Metadata" />
-  <svrl:successful-report ref="#_" test="$hasAtLeastOneCreationDate" location="/*[local-name()='CHE_MD_Metadata']">
+  <svrl:failed-assert ref="#_" test="$hasAtLeastOneCreationDate" location="/*[local-name()='CHE_MD_Metadata']">
     <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.create-date-success-en" xml:lang="en">
-      Metadata creation date:
-      <gco:DateTime xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:che="http://geocat.ch/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0" xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0" xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:md1="http://standards.iso.org/iso/19115/-3/md1/2.0" xmlns:md2="http://standards.iso.org/iso/19115/-3/md2/2.0" xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/2.0" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0" xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0" xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0" xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0" xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0" xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0" xmlns:dqm="http://standards.iso.org/iso/19157/-2/dqm/1.0" xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">2025-06-03T08:47:17.509Z</gco:DateTime>
-      .
-    </svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.create-date-success-fr" xml:lang="fr">
-      Date de création du document :
-      <gco:DateTime xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:che="http://geocat.ch/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0" xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0" xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:md1="http://standards.iso.org/iso/19115/-3/md1/2.0" xmlns:md2="http://standards.iso.org/iso/19115/-3/md2/2.0" xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/2.0" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0" xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0" xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0" xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0" xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0" xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0" xmlns:dqm="http://standards.iso.org/iso/19157/-2/dqm/1.0" xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">2025-06-03T08:47:17.509Z</gco:DateTime>
-      .
-    </svrl:diagnostic-reference>
-  </svrl:successful-report>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.create-date-failure-en" xml:lang="en">Specify a
+      creation date for the metadata record
+      in the metadata section.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.create-date-failure-fr" xml:lang="fr">Définir
+      une date de création pour le document
+      dans la section sur les métadonnées.</svrl:diagnostic-reference>
+  </svrl:failed-assert>
   <svrl:active-pattern document="" id="rule.mdb.metadataidentifier-mandatory" name_en="Metadata identifier mandatory" name_fr="Identifiant des métadonnées obligatoire" name="Identifiant des métadonnées obligatoire">
     <svrl:text>When metadata scope resourceScope is 'dataset', 'series' or 'service',
       the metadata identifier MUST be specified.</svrl:text>
@@ -179,21 +131,27 @@
       l'identifiant des métadonnées DOIT être spécifié.</svrl:text>
   </svrl:active-pattern>
   <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']" />
-  <svrl:successful-report ref="#_" test="$hasMetadataIdentifier" location="/*[local-name()='CHE_MD_Metadata']">
+  <svrl:failed-assert ref="#_" test="$hasMetadataIdentifier" location="/*[local-name()='CHE_MD_Metadata']">
     <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.metadataidentifier-mandatory-success-en" xml:lang="en">Metadata identifier is defined: "
-          0e5a8467-bf17-4d4d-aab4-3ba49417cedc
-          ".</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.metadataidentifier-mandatory-success-fr" xml:lang="fr">L'identifiant des métadonnées est défini : "
-          0e5a8467-bf17-4d4d-aab4-3ba49417cedc
-          ".</svrl:diagnostic-reference>
-  </svrl:successful-report>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.metadataidentifier-mandatory-failure-en" xml:lang="en">Metadata identifier is mandatory when resource scope is 'dataset', 'series' or 'service'.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.metadataidentifier-mandatory-failure-fr" xml:lang="fr">L'identifiant des métadonnées est obligatoire quand la portée de la ressource est 'dataset', 'series' ou 'service'.</svrl:diagnostic-reference>
+  </svrl:failed-assert>
   <svrl:active-pattern document="" id="rule.mex.datatypedetails" name_en="Extended element information&#xA;      which are not codelist, enumeration or codelistElement&#xA;      MUST specified max occurence and domain value" name_fr="Un élément d'extension qui n'est&#xA;      ni une codelist, ni une énumération, ni un élément de codelist&#xA;      DOIT préciser le nombre maximum d'occurences&#xA;      ainsi que la valeur du domaine" name="Un élément d'extension qui n'est&#xA;      ni une codelist, ni une énumération, ni un élément de codelist&#xA;      DOIT préciser le nombre maximum d'occurences&#xA;      ainsi que la valeur du domaine" />
   <svrl:active-pattern document="" id="rule.mex.conditional" name_en="Extended element information&#xA;      which are conditional MUST explained the condition" name_fr="Un élément d'extension conditionnel&#xA;      DOIT préciser les termes de la condition" name="Un élément d'extension conditionnel&#xA;      DOIT préciser les termes de la condition" />
   <svrl:active-pattern document="" id="rule.mex.mandatorycode" name_en="Extended element information&#xA;      which are codelist, enumeration or codelistElement&#xA;      MUST specified a code and a concept name" name_fr="Un élément d'extension qui est&#xA;      une codelist, une énumération, un élément de codelist&#xA;      DOIT préciser un code et un nom de concept" name="Un élément d'extension qui est&#xA;      une codelist, une énumération, un élément de codelist&#xA;      DOIT préciser un code et un nom de concept" />
   <svrl:active-pattern document="" id="rule.mmi-updatefrequency" name_en="Maintenance information MUST&#xA;      specified an update frequency" name_fr="L'information sur la maintenance&#xA;      DOIT définir une fréquence de mise à jour" name="L'information sur la maintenance&#xA;      DOIT définir une fréquence de mise à jour" />
   <svrl:fired-rule context="//che:CHE_MD_MaintenanceInformation" />
   <svrl:successful-report ref="#_" test="count($maintenanceAndUpdateFrequency)" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='resourceMaintenance']/*[local-name()='CHE_MD_MaintenanceInformation']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mmi-updatefrequency-success-en" xml:lang="en">The update frequency is "
+          notPlanned
+          ".</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mmi-updatefrequency-success-fr" xml:lang="fr">La fréquence de mise à jour est "
+          notPlanned
+          ".</svrl:diagnostic-reference>
+  </svrl:successful-report>
+  <svrl:fired-rule context="//che:CHE_MD_MaintenanceInformation" />
+  <svrl:successful-report ref="#_" test="count($maintenanceAndUpdateFrequency)" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='metadataMaintenance']/*[local-name()='CHE_MD_MaintenanceInformation']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mmi-updatefrequency-success-en" xml:lang="en">The update frequency is "
           asNeeded
@@ -244,10 +202,10 @@
   <svrl:successful-report ref="#_" test="$hasTopics" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.topicategoryfordsandseries-success-en" xml:lang="en">Number of topic category identified:
-          1
+          3
           .</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.topicategoryfordsandseries-success-fr" xml:lang="fr">Nombre de thèmes :
-          1
+          3
           .</svrl:diagnostic-reference>
   </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mri.associatedresource" name_en="Associated resource name" name_fr="Nom ou référence à une ressource associée" name="Nom ou référence à une ressource associée" />
@@ -255,12 +213,12 @@
   <svrl:successful-report ref="#_" test="$hasName or $hasMdRef" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='associatedResource']/*[local-name()='MD_AssociatedResource']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.associatedresource-success-en" xml:lang="en">The resource "
-          Steinbockkolonien Steinbockkolonien Colonies de bouquetins Colonie di stambecchi
+          -- Bezeichnung gemäss: «Bezeichnung GeoIV» (in GeoIV Anhang 1, Spalte B) -- -- Bezeichnung gemäss: «Bezeichnung GeoIV» (in GeoIV Anhang 1, Spalte B) -- -- Appellation selon: "Désignation OGéo" (dans OGéo, annexe 1, colonne B) -- -- Denominazione in conformità a: "Raccolta dei geodati di base di diritto federale" --
           "
       is associated.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.associatedresource-success-fr" xml:lang="fr">La
       ressource "
-          Steinbockkolonien Steinbockkolonien Colonies de bouquetins Colonie di stambecchi
+          -- Bezeichnung gemäss: «Bezeichnung GeoIV» (in GeoIV Anhang 1, Spalte B) -- -- Bezeichnung gemäss: «Bezeichnung GeoIV» (in GeoIV Anhang 1, Spalte B) -- -- Appellation selon: "Désignation OGéo" (dans OGéo, annexe 1, colonne B) -- -- Denominazione in conformità a: "Raccolta dei geodati di base di diritto federale" --
           "
       est associée.</svrl:diagnostic-reference>
   </svrl:successful-report>
