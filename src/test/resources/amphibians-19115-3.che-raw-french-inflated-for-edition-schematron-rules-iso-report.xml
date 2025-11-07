@@ -52,10 +52,10 @@
   <svrl:active-pattern document="" id="rule.mdb.root-element" name_en="Metadata document root element" name_fr="Élément racine du document" name="Élément racine du document">
     <svrl:text>A metadata instance document conforming to
       this specification SHALL have a root CHE_MD_Metadata element
-      defined in the http://standards.iso.org/iso/19115/-3/mdb/2.0 namespace.</svrl:text>
+      defined in the http://geocat.ch/che namespace.</svrl:text>
     <svrl:text>Une fiche de métadonnées conforme au standard
-      ISO19115-1 DOIT avoir un élément racine CHE_MD_Metadata (défini dans l'espace
-      de nommage http://standards.iso.org/iso/19115/-3/mdb/2.0).</svrl:text>
+      ISO19115-3.2018.che DOIT avoir un élément racine CHE_MD_Metadata (défini dans l'espace
+      de nommage "http://geocat.ch/che").</svrl:text>
   </svrl:active-pattern>
   <svrl:fired-rule context="/" />
   <svrl:successful-report ref="#_" test="$hasOneMD_MetadataElement" location="/*[local-name()='CHE_MD_Metadata']">
