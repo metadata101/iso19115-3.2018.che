@@ -65,6 +65,14 @@ public class SchematronTest {
 	}
 
 	@Test
+	public void amphibiansIsoSchematronFailure() throws Exception {
+		String report = applySchematronAndCompare("amphibians-iso-schematron-failure", false);
+
+		assertTrue(report.contains("failure"));
+	}
+
+
+	@Test
 	public void amphibiansWithUpdatedFixedInfoIsoSchematron() throws Exception {
 		String report = applySchematronAndCompare("amphibians-with-updated-fixed-info", false);
 
