@@ -27,7 +27,6 @@
   <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/1999/xlink" prefix="xlink" />
   <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/2001/XMLSchema" prefix="xsi" />
   <svrl:ns-prefix-in-attribute-values uri="http://geocat.ch/che" prefix="che" />
-  <svrl:active-pattern document="" id="rule.cit.individualnameandposition" name_en="Individual MUST have a name or a position" name_fr="Une personne DOIT avoir un nom ou une fonction" name="Une personne DOIT avoir un nom ou une fonction" />
   <svrl:active-pattern document="" id="rule.cit.organisationnameandlogo" name_en="Organisation MUST have a name or a logo" name_fr="Une organisation DOIT avoir un nom ou un logo" name="Une organisation DOIT avoir un nom ou un logo" />
   <svrl:fired-rule context="//che:CHE_CI_Organisation" />
   <svrl:successful-report ref="#_" test="$hasName or $hasLogo" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='contact']/*[local-name()='CI_Responsibility']/*[local-name()='party']/*[local-name()='CHE_CI_Organisation']">
