@@ -205,22 +205,6 @@
       </msr:geometricObjects>
     </msr:MD_VectorSpatialRepresentation>
   </mdb:spatialRepresentationInfo>
-  <mdb:referenceSystemInfo>
-    <mrs:MD_ReferenceSystem>
-      <mrs:referenceSystemIdentifier>
-        <mcc:MD_Identifier>
-          <mcc:code xsi:type="lan:PT_FreeText_PropertyType">
-            <gco:CharacterString>LV95 EPSG:2056</gco:CharacterString>
-            <lan:PT_FreeText>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#DE">LV95 EPSG:2056</lan:LocalisedCharacterString>
-              </lan:textGroup>
-            </lan:PT_FreeText>
-          </mcc:code>
-        </mcc:MD_Identifier>
-      </mrs:referenceSystemIdentifier>
-    </mrs:MD_ReferenceSystem>
-  </mdb:referenceSystemInfo>
   <mdb:identificationInfo>
     <che:CHE_MD_DataIdentification gco:isoType="mri:MD_DataIdentification">
       <mri:citation>
