@@ -22,66 +22,7 @@
   <sch:ns prefix="xlink" uri="http://www.w3.org/1999/xlink"/>
   <sch:ns prefix="xsi" uri="http://www.w3.org/2001/XMLSchema"/>
   <sch:ns prefix="che" uri="http://geocat.ch/che"/>
-  <sch:diagnostics>
 
-    <sch:diagnostic id="rule.cit.individualnameandposition-failure-en"
-                    xml:lang="en">The individual does not have a name or a
-      position.
-    </sch:diagnostic>
-
-    <sch:diagnostic id="rule.cit.individualnameandposition-failure-fr"
-                    xml:lang="fr">Une personne n'a pas de nom ou de fonction.
-    </sch:diagnostic>
-
-
-    <sch:diagnostic id="rule.cit.individualnameandposition-success-en"
-                    xml:lang="en">Individual name is
-      "<sch:value-of select="normalize-space($name)"/>"
-      and position
-      "<sch:value-of select="normalize-space($position)"/>"
-      .
-    </sch:diagnostic>
-
-    <sch:diagnostic id="rule.cit.individualnameandposition-success-fr"
-                    xml:lang="fr">Le nom de la personne est
-      "<sch:value-of select="normalize-space($name)"/>"
-      ,sa fonction
-      "<sch:value-of select="normalize-space($position)"/>"
-      .
-    </sch:diagnostic>
-
-  </sch:diagnostics>
-  <sch:pattern id="rule.cit.individualnameandposition">
-
-    <sch:title xml:lang="en">Individual MUST have a name or a position
-    </sch:title>
-
-    <sch:title xml:lang="fr">Une personne DOIT avoir un nom ou une fonction
-    </sch:title>
-
-
-    <sch:rule context="//cit:CI_Individual">
-
-
-      <sch:let name="name" value="cit:name"/>
-
-      <sch:let name="position" value="cit:positionName"/>
-
-      <sch:let name="hasName" value="normalize-space($name) != ''"/>
-
-      <sch:let name="hasPosition" value="normalize-space($position) != ''"/>
-
-
-      <sch:assert test="$hasName or $hasPosition"
-                  diagnostics="rule.cit.individualnameandposition-failure-en                       rule.cit.individualnameandposition-failure-fr"/>
-
-
-      <sch:report test="$hasName or $hasPosition"
-                  diagnostics="rule.cit.individualnameandposition-success-en                       rule.cit.individualnameandposition-success-fr"/>
-
-    </sch:rule>
-
-  </sch:pattern>
   <sch:diagnostics>
 
     <sch:diagnostic id="rule.cit.organisationnameandlogo-failure-en"
