@@ -162,6 +162,12 @@
           ger
           ".</svrl:diagnostic-reference>
   </svrl:successful-report>
+  <svrl:active-pattern document="" id="rule.mdb.referencesysteminfo-mandatory" name_en="Reference system information mandatory for dataset" name_fr="Information sur le système de référence obligatoire pour les jeux de données" name="Information sur le système de référence obligatoire pour les jeux de données">
+    <svrl:text>When metadata scope resourceScope is 'dataset',
+      the reference system information MUST be specified.</svrl:text>
+    <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset',
+      l'information sur le système de référence DOIT être spécifiée.</svrl:text>
+  </svrl:active-pattern>
   <svrl:active-pattern document="" id="rule.mex.datatypedetails" name_en="Extended element information&#xA;      which are not codelist, enumeration or codelistElement&#xA;      MUST specified max occurence and domain value" name_fr="Un élément d'extension qui n'est&#xA;      ni une codelist, ni une énumération, ni un élément de codelist&#xA;      DOIT préciser le nombre maximum d'occurences&#xA;      ainsi que la valeur du domaine" name="Un élément d'extension qui n'est&#xA;      ni une codelist, ni une énumération, ni un élément de codelist&#xA;      DOIT préciser le nombre maximum d'occurences&#xA;      ainsi que la valeur du domaine" />
   <svrl:active-pattern document="" id="rule.mex.conditional" name_en="Extended element information&#xA;      which are conditional MUST explained the condition" name_fr="Un élément d'extension conditionnel&#xA;      DOIT préciser les termes de la condition" name="Un élément d'extension conditionnel&#xA;      DOIT préciser les termes de la condition" />
   <svrl:active-pattern document="" id="rule.mex.mandatorycode" name_en="Extended element information&#xA;      which are codelist, enumeration or codelistElement&#xA;      MUST specified a code and a concept name" name_fr="Un élément d'extension qui est&#xA;      une codelist, une énumération, un élément de codelist&#xA;      DOIT préciser un code et un nom de concept" name="Un élément d'extension qui est&#xA;      une codelist, une énumération, un élément de codelist&#xA;      DOIT préciser un code et un nom de concept" />
