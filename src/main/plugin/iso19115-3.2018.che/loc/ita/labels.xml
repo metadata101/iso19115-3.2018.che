@@ -101,7 +101,7 @@
     <condition></condition>
   </element>
   <element name="che:CHE_MD_MaintenanceInformation">
-    <label>Informazioni sulla manutenzione</label>
+    <label>Informazioni sulla manutenzione iso19115-3.2018.che</label>
     <description>Classe relativa al motivo, alla portata e alla frequenza degli aggiornamenti.</description>
     <help>Le informazioni relative alla portata, alla frequenza e alla data di aggiornamento dei dati sono contenute nella
       classe MD_MaintenanceInformation. Questa classe contiene attributi che forniscono informazioni sulla frequenza e l'estensione
@@ -114,6 +114,17 @@
       specificate tramite "+updateScopeDescription" nella classe MD_ScopeDescription.
     </help>
     <condition></condition>
+  </element>      
+  <element name="mmi:MD_MaintenanceInformation"
+        context="che:CHE_MD_MaintenanceInformation">
+    <label>Informazioni sulla manutenzione</label>
+    <description iso="true">Informazioni sulla portata e sulla frequenza degli aggiornamenti
+    </description>
+    <condition>optional</condition>
+  </element>
+  <element name="gco:isoType">
+    <label>Tipo ISO</label>
+    <description iso="true">Indica il tipo ISO dell'elemento o del valore</description>
   </element>
   <element name="mmi:maintenanceDate">
     <label>Data di manutenzione</label>
@@ -173,6 +184,46 @@
   <element name="che:legislationConstraints">
     <label>Vincoli legislativi</label>
     <description>Vincoli legislativi</description>
+    <condition></condition>
+  </element>
+  <element name="che:CHE_MD_Legislation">
+    <label>Informazione sulla legislazione</label>
+    <description>Informazioni sulla legislazione</description>
+    <condition></condition>
+  </element>
+  <element name="che:country">
+    <label>Paese</label>
+    <description>Paese</description>
+    <condition></condition>
+  </element>
+  <element name="che:language">
+    <label>Lingua</label>
+    <description>Lingua</description>
+    <condition></condition>
+  </element>
+  <element name="che:legislationType">
+    <label>Tipo di legislazione</label>
+    <description>Tipo di legislazione</description>
+    <condition></condition>
+  </element>
+  <element name="che:legislationLevel">
+    <label>Livello della disposizione legale</label>
+    <description>Livello della disposizione legale</description>
+    <condition></condition>
+  </element>
+  <element name="che:internalReference">
+    <label>Riferimento interno</label>
+    <description>Riferimento interno</description>
+    <condition></condition>
+  </element>
+  <element name="che:legislationAcronym">
+    <label>Acronimo della disposizione legale</label>
+    <description>Acronimo della disposizione legale</description>
+    <condition></condition>
+  </element>
+  <element name="che:legislationCitation">
+    <label>Citazioni riguardanti la legislazione</label>
+    <description>Citazione riguardante la legislazione</description>
     <condition></condition>
   </element>
   <element name="che:subTopicCategory">
@@ -2648,7 +2699,7 @@ responsabile del servizio.</li>
 
   </element>
   <element name="mmi:MD_MaintenanceInformation" id="142.0">
-    <label>Informazioni sulla manutenzione</label>
+    <label>Informazioni sulla manutenzione iso19115-3.2018</label>
     <description>Classe relativa al motivo, alla portata e alla frequenza degli aggiornamenti
       aggiornamenti.
     </description>
@@ -4525,7 +4576,7 @@ versione come parola chiave aggiuntiva. Il numero di versione deve essere compos
     <condition/>
 
   </element>
-  <element name="mri:extent" id="45.0" context="mri:MD_DataIdentification">
+  <element name="mri:extent" id="45.0">
     <label>Estensione</label>
     <description>Tipo di dati per le informazioni sull'estensione orizzontale,
       verticale e temporale del set di dati
@@ -4548,12 +4599,6 @@ versione come parola chiave aggiuntiva. Il numero di versione deve essere compos
       extent.geographicElement.EX_GeographicBoundingBox o
       extent.geographicElement.EX_GeographicDescription è richiesto
     </_condition>
-  </element>
-  <element name="mri:extent" id="45.0" context="srv:SV_ServiceIdentification">
-    <label>Estensione</label>
-    <description>Tipo di dati per le informazioni sull'estensione orizzontale,
-      verticale e temporale del servizio
-    </description>
   </element>
 
   <element name="mri:environmentDescription" id="44.0">
@@ -5581,7 +5626,7 @@ periodo di tempo coperto dal servizio.
   </element>-->
   <element name="mrc:name">
     <label>Nome</label>
-    <description>identificatori per ogni attributo compreso nella risorsa
+    <description>Identificatori per ogni attributo compreso nella risorsa
       NOTA Questi identificatori possono essere utilizzati per fornire nomi per
       l'attributo da un insieme standardizzato di nomi.
     </description>
@@ -7990,7 +8035,7 @@ dell'IGN (WPS)
 
   <element name="gcx:Anchor">
     <label>Etichetta</label>
-    <description>descrizione</description>
+    <description>Descrizione</description>
   </element>
   <element name="gml:timePosition">
     <label>Momento</label>
@@ -8134,6 +8179,14 @@ dell'IGN (WPS)
   </element>
   <element name="xlink:type">
     <label>Tipo di collegamento</label>
+    <description></description>
+  </element>
+  <element name="xlink:title">
+    <label>titolo dell'URL</label>
+    <description></description>
+  </element>
+  <element name="xlink:show">
+    <label>visualizzazione dell'URL</label>
     <description></description>
   </element>
   <element name="unit">
@@ -9214,7 +9267,7 @@ http://www.sandre.eaufrance.fr/?urn=urn:sandre:ensembledonnees:BDCarthage:FXX:::
    </element>
   <element name="mrc:MI_RangeElementDescription">
     <label>Descrizione dell'intervallo</label>
-    <description>ad es. storage_meth</description>
+    <description>Ad es. storage_meth</description>
   </element>
   <element name="mrc:definition">
     <label>Definizione</label>

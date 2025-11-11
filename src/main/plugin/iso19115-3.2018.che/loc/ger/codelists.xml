@@ -31,7 +31,8 @@
            xsi:noNamespaceSchemaLocation="../../../../../../../schema-labels.xsd">
 
 
-  <codelist name="cit:CI_TelephoneTypeCode">
+	<codelist name="cit:CI_TelephoneTypeCode">
+    <description>Telefon-Typ</description>
     <entry>
       <code>voice</code>
       <label>Sprachdienst</label>
@@ -48,66 +49,68 @@
       <description>Telefon mit SMS-Dienst</description>
     </entry>
   </codelist>
+
   <codelist name="cit:CI_DateTypeCode">
+    <description>Art des Datums bzw. Ereignis, auf das sich das Datum bezieht</description>
     <entry>
       <code>creation</code>
       <label>Erstellung</label>
-      <description>das Datum gibt an, wann die Ressource erstmalig erstellt wurde</description>
+      <description>Das Datum gibt an, wann die Ressource erstmalig erstellt wurde</description>
     </entry>
     <entry>
       <code>publication</code>
       <label>Publikation</label>
-      <description>das Datum gibt an, wann die Ressource erstmalig publiziert wurde</description>
+      <description>Das Datum gibt an, wann die Ressource erstmalig publiziert wurde</description>
     </entry>
     <entry>
       <code>revision</code>
       <label>Aktualisierung</label>
-      <description>das Datum gibt an, wann die Ressource zuletzt überprüft/aktualisiert wurde</description>
+      <description>Das Datum gibt an, wann die Ressource zuletzt überprüft/aktualisiert wurde</description>
     </entry>
     <entry>
       <code>expiry</code>
       <label>Ablaufdatum</label>
-      <description>das Datum gibt an, wann die Gültigkeit der Ressource verfällt</description>
+      <description>Das Datum gibt an, wann die Gültigkeit der Ressource verfällt</description>
     </entry>
     <entry>
       <code>lastUpdate</code>
       <label>Letzte Aktualisierung</label>
-      <description>das Datum gibt an, wann die Ressource das letzte Mal aktualisiert wurde</description>
+      <description>Das Datum gibt an, wann die Ressource das letzte Mal aktualisiert wurde</description>
     </entry>
     <entry>
       <code>lastRevision</code>
-      <label>letzte Überprüfung</label>
-      <description>das Datum gibt an, wann die Ressource das letzte Mal überprüft wurde</description>
+      <label>Letzte Überprüfung</label>
+      <description>Das Datum gibt an, wann die Ressource das letzte Mal überprüft wurde</description>
     </entry>
     <entry>
       <code>nextUpdate</code>
       <label>Nächste Aktualisierung</label>
-      <description>das Datum gibt an, wann die Ressource erneut aktualisiert wird</description>
+      <description>Das Datum gibt an, wann die Ressource erneut aktualisiert wird</description>
     </entry>
     <entry>
       <code>unavailable</code>
-      <label>keine Verfügbarkeit</label>
-      <description>das Datum gibt an, wann die Ressource nicht mehr verfügbar ist oder nicht mehr beschafft werden kann.</description>
+      <label>Keine Verfügbarkeit</label>
+      <description>Das Datum gibt an, wann die Ressource nicht mehr verfügbar ist oder nicht mehr beschafft werden kann.</description>
     </entry>
     <entry>
       <code>inForce</code>
       <label>Inkraftsetzung</label>
-      <description>das Datum gibt an, wann die Ressource in Kraft gesetzt wurde</description>
+      <description>Das Datum gibt an, wann die Ressource in Kraft gesetzt wurde</description>
     </entry>
     <entry>
       <code>adopted</code>
       <label>Verabschiedung</label>
-      <description>das Datum gibt an, wann die Ressource angenommen wurde</description>
+      <description>Das Datum gibt an, wann die Ressource angenommen wurde</description>
     </entry>
     <entry>
       <code>deprecated</code>
       <label>Abgewertet</label>
-      <description>das Datum gibt an, wann die Ressource abgewertet wurde</description>
+      <description>Das Datum gibt an, wann die Ressource abgewertet wurde</description>
     </entry>
     <entry>
       <code>superseded</code>
       <label>Ersetzt</label>
-      <description>das Datum gibt an, wann die Ressource ersetzt wurde</description>
+      <description>Das Datum gibt an, wann die Ressource ersetzt wurde</description>
     </entry>
     <entry>
       <code>validityBegins</code>
@@ -119,20 +122,22 @@
     <entry>
       <code>validityExpires</code>
       <label>Gültigkeitsende</label>
-      <description>den Zeitpunkt, zu dem die Daten nicht mehr als gültig betrachtet werden</description>
+      <description>Zeitpunkt, zu dem die Daten nicht mehr als gültig betrachtet werden</description>
     </entry>
     <entry>
       <code>released</code>
       <label>Bereitstellung</label>
-      <description>das Datum, an dem die Ressource für den öffentlichen Zugang bereitgestellt werden soll</description>
+      <description>Das Datum, an dem die Ressource für den öffentlichen Zugang bereitgestellt werden soll</description>
     </entry>
     <entry>
       <code>distribution</code>
       <label>Vertrieb</label>
-      <description>das Datum gibt an, wann eine Ressource verteilt wurde</description>
+      <description>Das Datum gibt an, wann eine Ressource verteilt wurde</description>
     </entry>
   </codelist>
+
   <codelist name="cit:CI_OnLineFunctionCode" alias="function">
+    <description>Funktionalität der Online-Verbindung</description>
     <entry>
       <code>download</code>
       <label>Datentransfer: Download</label>
@@ -170,8 +175,8 @@
     </entry>
     <entry>
       <code>browseGraphic</code>
-      <label>grafische Darstellung</label>
-      <description>zur Verfügung gestellte Grafik</description>
+      <label>Grafische Darstellung</label>
+      <description>Zur Verfügung gestellte Grafik</description>
     </entry>
     <entry>
       <code>upload</code>
@@ -181,12 +186,12 @@
     <entry>
       <code>emailService</code>
       <label>Email-Service</label>
-      <description>bereitgestellter Online-Email-Dienst</description>
+      <description>Bereitgestellter Online-Email-Dienst</description>
     </entry>
     <entry>
       <code>browsing</code>
       <label>Browsing</label>
-      <description>bereitgestelltes Online-Browsing</description>
+      <description>Bereitgestelltes Online-Browsing</description>
     </entry>
     <entry>
       <code>fileAccess</code>
@@ -301,7 +306,9 @@
       <description>Grafische Darstellung von Informationen durch Diagramme, wie Kreisdiagramm, Balkendiagramm usw., auf Papier, Fotomedium oder anderem Medium gedruckt</description>
     </entry>
   </codelist>
+
   <codelist name="cit:CI_RoleCode" alias="roleCode">
+    <description>Funktion, welche die verantwortliche Stelle einnimmt</description>
     <entry>
       <code>resourceProvider</code>
       <label>Anbieter</label>
@@ -418,6 +425,7 @@
       <description>Person oder Stelle, welche ein Interesse an der Ressource oder ihrer Nutzung hat</description>
     </entry>
   </codelist>
+
   <codelist name="mdq:DQ_EvaluationMethodTypeCode">
     <entry>
       <code>directInternal</code>
@@ -435,7 +443,8 @@
       <description>Qualitätsbewertungsmethode, die auf externem Wissen basiert.</description>
     </entry>
   </codelist>
-  <codelist name="mri:DS_AssociationTypeCode" alias="associationType">
+  
+  <codelist name="che:CHE_DS_AssociationTypeCode" alias="associationType">
     <entry>
       <code>crossReference</code>
       <label>Querverweis</label>
@@ -469,14 +478,14 @@
     <entry>
       <code>collectiveTitle</code>
       <label>Gemeinsamer Titel</label>
-      <description>gemeinsamer Titel, der einer Ressourcensammlung gegeben wird.
+      <description>Gemeinsamer Titel, der einer Ressourcensammlung gegeben wird.
         ANMERKUNG: Der Titel identifiziert die Elemente einer Reihe gemeinsam, verbunden mit Informationen über den Umfang, welcher am Standort der Quelle verfügbar ist
       </description>
     </entry>
     <entry>
       <code>series</code>
       <label>Serie</label>
-      <description>verbunden zu einer Serie oder Datensammlung, wie z.B. einer gemeinsamen Produktspezifikation</description>
+      <description>Verbunden zu einer Serie oder Datensammlung, wie z.B. einer gemeinsamen Produktspezifikation</description>
     </entry>
     <entry>
       <code>dependency</code>
@@ -486,11 +495,11 @@
     <entry>
       <code>revisionOf</code>
       <label>Überarbeitung von</label>
-      <description>die Ressource ist eine Überarbeitung der assoziierten Ressource</description>
+      <description>Die Ressource ist eine Überarbeitung der assoziierten Ressource</description>
     </entry>
     <entry>
       <code>isTemporalStateOf</code>
-      <label>ist Zeitstand von</label>
+      <label>Ist Zeitstand von</label>
       <description>Bezug zu einem Datenbestand, von dem dieser Datenbestand einen bestimmten Zeitstand darstellt</description>
     </entry>
         <entry>
@@ -504,6 +513,7 @@
       <description>Bezug zu einer Ressource/einem Dokument, der diesen Datenbestand beschreibt</description>
     </entry>
   </codelist>
+
   <codelist name="mri:DS_InitiativeTypeCode" alias="initiativeType">
     <entry>
       <code>campaign</code>
@@ -599,35 +609,36 @@
     </entry>
   </codelist>
   <codelist name="mco:MD_ClassificationCode">
+    <description>Name der Einschränkungen beim Umgang mit dem Datenbestand</description>
     <entry>
       <code>unclassified</code>
       <label>Nicht klassifiziert</label>
-      <description>zur allgemeinen Veröffentlichung verfügbar</description>
+      <description>Zur allgemeinen Veröffentlichung verfügbar</description>
     </entry>
     <entry>
       <code>restricted</code>
       <label>Intern</label>
-      <description>nicht zur Veröffentlichung bestimmt</description>
+      <description>Nicht zur Veröffentlichung bestimmt</description>
     </entry>
     <entry>
       <code>confidential</code>
       <label>Vertraulich</label>
-      <description>nur für Vertrauenspersonen</description>
+      <description>Nur für Vertrauenspersonen</description>
     </entry>
     <entry>
       <code>secret</code>
       <label>Geheim</label>
-      <description>nur für einen ausgewählten Personenkreis</description>
+      <description>Nur für einen ausgewählten Personenkreis</description>
     </entry>
     <entry>
       <code>topSecret</code>
       <label>Streng geheim</label>
-      <description>höchste Geheimhaltung</description>
+      <description>Höchste Geheimhaltung</description>
     </entry>
     <entry>
-      <code>SBU</code>
+      <code>sensitiveButUnclassified</code>
       <label>Sensibel, aber nicht klassifiziert</label>
-      <description>obwohl nicht klassifiziert, erfordert eine strenge Kontrolle bezüglich seiner Veröffentlichung</description>
+      <description>Obwohl nicht klassifiziert, erfordert eine strenge Kontrolle bezüglich seiner Veröffentlichung</description>
     </entry>
     <entry>
       <code>forOfficialUseOnly</code>
@@ -637,12 +648,12 @@
     <entry>
       <code>protected</code>
       <label>Geschützt</label>
-      <description>das Kompromittieren der Informationen, könnte zu Schäden führen</description>
+      <description>Das Kompromittieren der Informationen, könnte zu Schäden führen</description>
     </entry>
     <entry>
       <code>limitedDistribution</code>
       <label>Eingeschränkte Verbreitung</label>
-      <description>begrenzte Verbreitung durch zuständige Stelle</description>
+      <description>Begrenzte Verbreitung durch zuständige Stelle</description>
     </entry>
 
   </codelist>
@@ -807,6 +818,7 @@
       <description>Dauer</description>
     </entry>
   </codelist>
+
   <codelist name="mri:MD_KeywordTypeCode">
     <entry>
       <code>discipline</code>
@@ -825,7 +837,7 @@
     </entry>
     <entry>
       <code>temporal</code>
-      <label>Zeitlich</label>
+      <label>Zeitraum</label>
       <description>Schlüsselwort, welches eine Zeitspanne mit Bezug zu der Ressource kennzeichnet</description>
     </entry>
     <entry>
@@ -884,89 +896,85 @@
       <description>Schlüsselwort, welches eine Taxonomie der Ressource kennzeichnet</description>
     </entry>
   </codelist>
+
   <codelist name="mmi:MD_MaintenanceFrequencyCode">
     <entry>
       <code>continual</code>
       <label>Kontinuierlich</label>
-      <description>wiederholt und oft aktualisiert</description>
+      <description>Wiederholt und oft aktualisiert</description>
     </entry>
     <entry>
       <code>daily</code>
       <label>Täglich</label>
-      <description>täglich aktualisiert</description>
+      <description>Täglich aktualisiert</description>
     </entry>
     <entry>
       <code>weekly</code>
       <label>Wöchentlich</label>
-      <description>wöchentlich aktualisiert</description>
+      <description>Wöchentlich aktualisiert</description>
     </entry>
     <entry>
       <code>fortnightly</code>
       <label>Zweiwöchentlich</label>
-      <description>jede zweite Woche aktualisiert</description>
+      <description>Jede zweite Woche aktualisiert</description>
     </entry>
     <entry>
       <code>monthly</code>
       <label>Monatlich</label>
-      <description>monatlich aktualisiert</description>
+      <description>Monatlich aktualisiert</description>
     </entry>
     <entry>
       <code>quarterly</code>
       <label>Vierteljährlich</label>
-      <description>quartalsweise aktualisiert</description>
+      <description>Quartalsweise aktualisiert</description>
     </entry>
     <entry>
       <code>biannually</code>
       <label>Halbjährlich</label>
-      <description>zweimal jährlich aktualisiert</description>
+      <description>Zweimal jährlich aktualisiert</description>
     </entry>
     <entry>
       <code>annually</code>
       <label>Jährlich</label>
-      <description>jährlich aktualisiert</description>
+      <description>Jährlich aktualisiert</description>
     </entry>
     <entry>
       <code>asNeeded</code>
       <label>Bei Bedarf</label>
-      <description>bei Bedarf aktualisiert</description>
+      <description>Bei Bedarf aktualisiert</description>
     </entry>
     <entry>
       <code>irregular</code>
-      <label>unregelmässig</label>
-      <description>in unregelmässigen Abständen aktualisiert</description>
+      <label>Unregelmässig</label>
+      <description>In unregelmässigen Abständen aktualisiert</description>
     </entry>
     <entry>
       <code>notPlanned</code>
       <label>Nicht geplant</label>
-      <description>es gibt keinen Zeitplan, um die Daten zu aktualisieren</description>
+      <description>Es gibt keinen Zeitplan, um die Daten zu aktualisieren</description>
     </entry>
     <entry>
       <code>unknown</code>
       <label>Unbekannt</label>
-      <description>das Überarbeitungsintervall für die Daten ist unbekannt</description>
+      <description>Das Überarbeitungsintervall für die Daten ist unbekannt</description>
     </entry>
-    <!-- ISO PROFIL CHE ONLY
-		<entry>
-			<code>userDefined</code>
-			<label>Fréquence personnalisée</label>
-			<description>Dans ce cas l'attribut définissant une fréquence personnalisée doit être utilisée</description>
-		</entry>-->
     <entry>
       <code>periodic</code>
       <label>Periodisch</label>
-      <description>in regelmässigen Intervallen aktualisiert</description>
+      <description>In regelmässigen Intervallen aktualisiert</description>
     </entry>
     <entry>
       <code>semimonthly</code>
       <label>Halbmonatlich</label>
-      <description>zwei Mal pro Monat aktualisiert</description>
+      <description>Zwei Mal pro Monat aktualisiert</description>
     </entry>
     <entry>
       <code>biennially</code>
       <label>Zweijährlich</label>
-      <description>alle zwei Jahre aktualisiert</description>
+      <description>Alle zwei Jahre aktualisiert</description>
     </entry>
   </codelist>
+
   <codelist name="mrd:MD_MediumFormatCode">
     <entry>
       <code>cpio</code>
@@ -1052,7 +1060,7 @@
     <entry>
       <code>completed</code>
       <label>Abgeschlossen</label>
-      <description>ist abgeschlossen</description>
+      <description>Ist abgeschlossen</description>
     </entry>
     <entry>
       <code>historicalArchive</code>
@@ -1062,7 +1070,7 @@
     <entry>
       <code>obsolete</code>
       <label>Veraltet</label>
-      <description>nicht mehr von Relevanz</description>
+      <description>Nicht mehr von Relevanz</description>
     </entry>
     <entry>
       <code>onGoing</code>
@@ -1072,12 +1080,12 @@
     <entry>
       <code>planned</code>
       <label>Geplant</label>
-      <description>das geplante Erstellungsdatum, an dem die Ressource erstellt oder aktualisiert wird</description>
+      <description>Das geplante Erstellungsdatum, an dem die Ressource erstellt oder aktualisiert wird</description>
     </entry>
     <entry>
       <code>required</code>
       <label>Erforderlich</label>
-      <description>muss erzeugt oder aktualisiert werden</description>
+      <description>Muss erzeugt oder aktualisiert werden</description>
     </entry>
     <entry>
       <code>underDevelopment</code>
@@ -1087,7 +1095,7 @@
     <entry>
       <code>final</code>
       <label>Endgültig</label>
-      <description>der Verlauf ist abgeschlossen und es werden keine Änderungen akzeptiert.</description>
+      <description>Der Verlauf ist abgeschlossen und es werden keine Änderungen akzeptiert.</description>
     </entry>
     <entry>
       <code>pending</code>
@@ -1097,7 +1105,7 @@
     <entry>
       <code>retired</code>
       <label>Zurückgezogen</label>
-      <description>die Verwendung des Elements wird nicht mehr empfohlen. Es wurde nicht durch ein anderes Element ersetzt</description>
+      <description>Die Verwendung des Elements wird nicht mehr empfohlen. Es wurde nicht durch ein anderes Element ersetzt</description>
     </entry>
     <entry>
       <code>superseded</code>
@@ -1112,32 +1120,32 @@
     <entry>
       <code>valid</code>
       <label>Valid</label>
-      <description>unter bestimmten Bedingungen zulässig</description>
+      <description>Unter bestimmten Bedingungen zulässig</description>
     </entry>
     <entry>
       <code>accepted</code>
       <label>Angenommen</label>
-      <description>vom Auftraggeber akzeptiert</description>
+      <description>Vom Auftraggeber akzeptiert</description>
     </entry>
     <entry>
       <code>notAccepted</code>
       <label>Nicht Angenommen</label>
-      <description>vom Auftraggeber abgelehnt</description>
+      <description>Vom Auftraggeber abgelehnt</description>
     </entry>
     <entry>
       <code>withdrawn</code>
       <label>Zurückgezogen</label>
-      <description>aus allen Überlegungen herausgenommen</description>
+      <description>Aus allen Überlegungen herausgenommen</description>
     </entry>
     <entry>
       <code>proposed</code>
       <label>Vorgeschlagen</label>
-      <description>vorgeschlagen, dass eine Erarbeitung erforderlich ist</description>
+      <description>Vorgeschlagen, dass eine Erarbeitung erforderlich ist</description>
     </entry>
     <entry>
       <code>deprecated</code>
       <label>Abgewertet</label>
-      <description>ersetzte Ressource, welche veraltet sein wird und dessen Verwendung nur zu historischen Zwecken erlaubt ist</description>
+      <description>Ersetzte Ressource, welche veraltet sein wird und dessen Verwendung nur zu historischen Zwecken erlaubt ist</description>
     </entry>
     <entry hideInEditMode="true">
       <code>notobsolete</code>
@@ -1145,11 +1153,12 @@
       <description></description>
     </entry>
   </codelist>
+
   <codelist name="mco:MD_RestrictionCode">
     <entry>
       <code>copyright</code>
       <label>Urheberrecht</label>
-      <description>exklusives Recht auf Veröffentlichung, Produktion oder Verkauf von Rechten an einem literarischen, 
+      <description>Exklusives Recht auf Veröffentlichung, Produktion oder Verkauf von Rechten an einem literarischen, 
         filmischen, musikalischen oder künstlerischen Werk oder auf die Verwendung eines Drucks oder eines Handelsetiketts, 
         das einem Autor, Komponisten, Künstler oder Verleiher für einen bestimmten Zeitraum gesetzlich gewährt wird
       </description>
@@ -1157,20 +1166,20 @@
     <entry>
       <code>patent</code>
       <label>Patent</label>
-      <description>die Regierung hat das ausschliessliche Recht zur Herstellung, zum Verkauf, zur
+      <description>Die Regierung hat das ausschliessliche Recht zur Herstellung, zum Verkauf, zur
         Nutzung oder zur Lizenzierung einer Erfindung oder Entdeckung erteilt
       </description>
     </entry>
     <entry>
       <code>patentPending</code>
       <label>Patent angemeldet</label>
-      <description>produzierte oder verkaufte Informationen in Erwartung eines Patents
+      <description>Produzierte oder verkaufte Informationen in Erwartung eines Patents
       </description>
     </entry>
     <entry>
       <code>trademark</code>
       <label>Warenzeichen</label>
-      <description>ein Name, ein Symbol oder ein anderes
+      <description>Ein Name, ein Symbol oder ein anderes
         Kennzeichen zur Identifizierung eines Produkts, das offiziell registriert und rechtlich
         auf die Verwendung durch den Eigentümer oder Hersteller beschränkt ist
       </description>
@@ -1191,27 +1200,27 @@
     <entry>
       <code>restricted</code>
       <label>Beschränkter Zugang</label>
-      <description>von allgemeiner Offenlegung und Verbreitung ausgeschlossen</description>
+      <description>Von allgemeiner Offenlegung und Verbreitung ausgeschlossen</description>
     </entry>
     <entry>
       <code>otherRestrictions</code>
       <label>Andere Beschränkungen</label>
-      <description>nicht aufgelistete Beschränkungen</description>
+      <description>Nicht aufgelistete Beschränkungen</description>
     </entry>
     <entry>
       <code>unrestricted</code>
       <label>Unbeschränkt</label>
-      <description>keine Beschränkung</description>
+      <description>Keine Beschränkung</description>
     </entry>
     <entry>
       <code>licenceUnrestricted</code>
       <label>uneingeschränkte Lizenz</label>
-      <description>für die Ressourcennutzung ist keine formelle Genehmigung erforderlich</description>
+      <description>Für die Ressourcennutzung ist keine formelle Genehmigung erforderlich</description>
     </entry>
     <entry>
       <code>licenceEndUser</code>
       <label>Endnutzer-Lizenz</label>
-      <description>eine formale Genehmigung zur Nutzung einer Ressource ist erforderlich 
+      <description>Eine formale Genehmigung zur Nutzung einer Ressource ist erforderlich
         für eine Person oder Stelle, die sich von der Person, die die Ressource bestellt oder kauft, 
         unterscheiden kann
       </description>
@@ -1219,7 +1228,7 @@
     <entry>
       <code>licenceDistributor</code>
       <label>Vertriebslizenz</label>
-      <description>eine formale Genehmigung ist erforderlich,
+      <description>Eine formale Genehmigung ist erforderlich,
         damit eine Person oder eine Einrichtung die
         Ressource vermarkten oder verbreiten darf
       </description>
@@ -1227,7 +1236,7 @@
     <entry>
       <code>private</code>
       <label>Privat</label>
-      <description>schützt die Rechte von Einzelpersonen oder
+      <description>Schützt die Rechte von Einzelpersonen oder
         Organisationen vor der Einsichtnahme, dem
         Zugriff oder der Kenntnisnahme durch Dritte
       </description>
@@ -1235,12 +1244,12 @@
     <entry>
       <code>statutory</code>
       <label>Gesetzlich</label>
-      <description>gesetzlich vorgeschrieben</description>
+      <description>Gesetzlich vorgeschrieben</description>
     </entry>
     <entry>
       <code>SBU</code>
       <label>Sensibel, aber nicht eingestuft</label>
-      <description>obwohl nicht klassifiziert, muss die Verbreitung streng kontrolliert werden
+      <description>Obwohl nicht klassifiziert, muss die Verbreitung streng kontrolliert werden
       </description>
     </entry>
     <entry>
@@ -1254,72 +1263,72 @@
     <entry>
       <code>attribute</code>
       <label>Attribut</label>
-      <description>die Informationen gelten für den Attributwert</description>
+      <description>Die Informationen gelten für den Attributwert</description>
     </entry>
     <entry>
       <code>attributeType</code>
       <label>Attributart</label>
-      <description>die Informationen gelten für die Attributart</description>
+      <description>Die Informationen gelten für die Attributart</description>
     </entry>
     <entry>
       <code>collectionHardware</code>
       <label>Erfassungsgeräte</label>
-      <description>die Informationen gelten für die eingesetzten Geräte zur Datenerfassung</description>
+      <description>Die Informationen gelten für die eingesetzten Geräte zur Datenerfassung</description>
     </entry>
     <entry>
       <code>collectionSession</code>
       <label>Erfassungsaktion</label>
-      <description>die Informationen gelten für die Datenerfassungsaktion</description>
+      <description>Die Informationen gelten für die Datenerfassungsaktion</description>
     </entry>
     <entry>
       <code>dataset</code>
       <label>Datenbestand</label>
-      <description>die Informationen gelten für den Datenbestand</description>
+      <description>Die Informationen gelten für den Datenbestand</description>
     </entry>
     <entry>
       <code>series</code>
       <label>Serie</label>
-      <description>die Informationen gelten für die Serie</description>
+      <description>Die Informationen gelten für die Serie</description>
     </entry>
     <entry>
       <code>nonGeographicDataset</code>
       <label>nichtgeografischer Datenbestand</label>
-      <description>die Informationen gelten für nicht-geografische Datenbestände</description>
+      <description>Die Informationen gelten für nicht-geografische Datenbestände</description>
     </entry>
     <entry>
       <code>dimensionGroup</code>
       <label>Dimensionsgruppe</label>
-      <description>die Informationen gelten für eine Dimensionsgruppe</description>
+      <description>Die Informationen gelten für eine Dimensionsgruppe</description>
     </entry>
     <entry>
       <code>feature</code>
       <label>Objektinstanz</label>
-      <description>die Informationen gelten für eine Objektinstanz</description>
+      <description>Die Informationen gelten für eine Objektinstanz</description>
     </entry>
     <entry>
       <code>featureType</code>
       <label>Objektart</label>
-      <description>die Informationen gelten für eine Objektart</description>
+      <description>Die Informationen gelten für eine Objektart</description>
     </entry>
     <entry>
       <code>propertyType</code>
       <label>Eigenschaftsart</label>
-      <description>die Informationen gelten für eine Eigenschaftsart</description>
+      <description>Die Informationen gelten für eine Eigenschaftsart</description>
     </entry>
     <entry>
       <code>fieldSession</code>
       <label>Feldkampagne</label>
-      <description>die Informationen gelten für eine Feldkampagne</description>
+      <description>Die Informationen gelten für eine Feldkampagne</description>
     </entry>
     <entry>
       <code>software</code>
       <label>Software</label>
-      <description>die Informationen gelten für ein Computerprogramm oder Teilprogramm</description>
+      <description>Die Informationen gelten für ein Computerprogramm oder Teilprogramm</description>
     </entry>
     <entry>
       <code>service</code>
       <label>Dienst</label>
-      <description>die Informationen gelten für ein
+      <description>Die Informationen gelten für ein
         Angebot, die eine Dienstanbietereinheit einer Dienstnutzereinheit 
         über eine Reihe von Schnittstellen zur Verfügung stellt, die ein
         Merkmal wie z. B. einen Anwendungsfall definieren
@@ -1328,7 +1337,7 @@
     <entry>
       <code>model</code>
       <label>Modell</label>
-      <description>die Informationen gelten für eine
+      <description>Die Informationen gelten für eine
         Kopie oder Nachbildung eines existierenden 
         oder hypothetischen Objekts
       </description>
@@ -1336,37 +1345,37 @@
     <entry>
       <code>tile</code>
       <label>Kachel</label>
-      <description>die Informationen gelten für ein Mosaik, eine räumliche Untermenge von geografischen Daten</description>
+      <description>Die Informationen gelten für ein Mosaik, eine räumliche Untermenge von geografischen Daten</description>
     </entry>
     <entry>
       <code>metadata</code>
       <label>Metadaten</label>
-      <description>die Informationen gelten für Metadaten</description>
+      <description>Die Informationen gelten für Metadaten</description>
     </entry>
     <entry>
       <code>initiative</code>
       <label>Initiative</label>
-      <description>die Informationen gelten für eine Initiative</description>
+      <description>Die Informationen gelten für eine Initiative</description>
     </entry>
     <entry>
       <code>Beispiel</code>
       <label>Probe</label>
-      <description>die Informationen gelten für ein Beispiel</description>
+      <description>Die Informationen gelten für ein Beispiel</description>
     </entry>
     <entry>
       <code>Dokument</code>
       <label>Dokument</label>
-      <description>die Informationen gelten für ein Dokument</description>
+      <description>Die Informationen gelten für ein Dokument</description>
     </entry>
     <entry>
       <code>repository</code>
       <label>Repository</label>
-      <description>die Informationen gelten für einen Speicherort</description>
+      <description>Die Informationen gelten für einen Speicherort</description>
     </entry>
     <entry>
       <code>aggregate</code>
       <label>Aggregat</label>
-      <description>die Informationen gelten für ein Aggregat</description>
+      <description>Die Informationen gelten für ein Aggregat</description>
     </entry>
     <entry>
       <code>product</code>
@@ -1376,12 +1385,12 @@
     <entry>
       <code>collection</code>
       <label>Sammlung</label>
-      <description>die Informationen gelten für eine nicht strukturierte Sammlung</description>
+      <description>Die Informationen gelten für eine nicht strukturierte Sammlung</description>
     </entry>
     <entry>
       <code>coverage</code>
       <label>Geltungsbereich</label>
-      <description>die Informationen gelten für einen Geltungsbereich</description>
+      <description>Die Informationen gelten für einen Geltungsbereich</description>
     </entry>
     <entry>
       <code>application</code>
@@ -1407,21 +1416,22 @@
       <description></description>
     </entry>
   </codelist>
+
   <codelist name="mcc:MD_SpatialRepresentationTypeCode">
     <entry>
       <code>vector</code>
       <label>Vektor</label>
-      <description>zur Darstellung geografischer Informationen werden Vektordaten verwendet</description>
+      <description>Zur Darstellung geografischer Informationen werden Vektordaten verwendet</description>
     </entry>
     <entry>
       <code>grid</code>
       <label>Raster, Gitter</label>
-      <description>zur Darstellung geografischer Informationen werden Raster-/Gitterdaten verwendet</description>
+      <description>Zur Darstellung geografischer Informationen werden Raster-/Gitterdaten verwendet</description>
     </entry>
     <entry>
       <code>textTable</code>
       <label>Text der Tabelle</label>
-      <description>zur Darstellung geografischer Informationen
+      <description>Zur Darstellung geografischer Informationen
         werden textliche oder tabellarische Daten verwendet
       </description>
     </entry>
@@ -1440,120 +1450,117 @@
       <label>Video</label>
       <description>Szene einer Videoaufnahme</description>
     </entry>
-    <!-- ISO PROFIL CHE ONLY
-		<entry>
-			<code>paperMap</code>
-			<label>Papierkarte</label>
-			<description></description>
-		</entry>-->
   </codelist>
+
   <codelist name="mri:MD_TopicCategoryCode" alias="topicCategory">
+    <description>Thematische Klassifikation von Geodaten auf einer übergeordneten Ebene, um die Gruppierung und Suche nach verfügbaren Geodatensätzen zu unterstützen.</description>
     <entry>
       <code>farming</code>
-      <label>Landwirtschaft</label>
+      <label>S Landwirtschaft</label>
       <description>Tierzucht und/oder Pflanzenanbau</description>
     </entry>
     <entry>
       <code>biota</code>
-      <label>Biologie</label>
+      <label>G Biologie</label>
       <description>Flora und/oder Fauna in der natürlichen Umgebung</description>
     </entry>
     <entry>
       <code>boundaries</code>
-      <label>Grenzen</label>
-      <description>gesetzlich festgelegte Grenzen</description>
+      <label>D Grenzen</label>
+      <description>Gesetzlich festgelegte Grenzen</description>
     </entry>
     <entry>
       <code>climatologyMeteorologyAtmosphere</code>
-      <label>Klimatologie, Meteorologie, Atmosphäre</label>
+      <label>K Klimatologie, Meteorologie, Atmosphäre</label>
       <description>Prozesse und Naturereignisse der Atmosphäre inkl. Klimatologie und Meteorologie</description>
     </entry>
     <entry>
       <code>Wirtschaft</code>
-      <label>Wirtschaft</label>
-      <description>wirtschaftliche Aktivitäten, Verhältnisse und Beschäftigung</description>
+      <label>T Wirtschaft</label>
+      <description>Wirtschaftliche Aktivitäten, Verhältnisse und Beschäftigung</description>
     </entry>
     <entry>
       <code>elevation</code>
-      <label>Höhenangaben</label>
+      <label>C Höhenangaben</label>
       <description>Höhenangabe bezogen auf ein Höhenreferenzsystem</description>
     </entry>
     <entry>
       <code>Umwelt</code>
-      <label>Umwelt</label>
+      <label>L Umwelt</label>
       <description>Umweltressourcen, Umweltschutz und Umwelterhaltung</description>
     </entry>
     <entry>
       <code>geoscientificInformation</code>
-      <label>Erdwissenschaften</label>
+      <label>F Erdwissenschaften</label>
       <description>Geowissenschaftliche Informationen</description>
     </entry>
     <entry>
       <code>health</code>
-      <label>Gesundheit</label>
+      <label>N Gesundheit</label>
       <description>Gesundheit, Gesundheitsdienste, Humanökologie und Sicherheit</description>
     </entry>
     <entry>
       <code>imageryBaseMapsEarthCover</code>
-      <label>Oberflächenbeschreibung</label>
+      <label>A Oberflächenbeschreibung</label>
       <description>Basiskarten und -daten</description>
     </entry>
     <entry>
       <code>intelligenceMilitary</code>
-      <label>Militär und Aufklärung</label>
+      <label>R Militär und Aufklärung</label>
       <description>Militärbasen, militärische Einrichtungen und Aktivitäten</description>
     </entry>
     <entry>
       <code>inlandWaters</code>
-      <label>Binnengewässer</label>
+      <label>I Binnengewässer</label>
       <description>Binnengewässerdaten, Gewässernetze und deren Eigenschaften</description>
     </entry>
     <entry>
       <code>location</code>
-      <label>Ortsangaben</label>
+      <label>B Ortsangaben</label>
       <description>Positionsangaben und -dienste</description>
     </entry>
     <entry>
       <code>oceans</code>
-      <label>Meere</label>
+      <label>H Meere</label>
       <description>Merkmale und Charakteristika von salzhaltigen Gewässern (ausser Binnengewässern)</description>
     </entry>
     <entry>
       <code>planningCadastre</code>
-      <label>Planungsunterlagen und Kataster</label>
+      <label>E Planungsunterlagen und Kataster</label>
       <description>Informationen für die Flächennutzungsplanung</description>
     </entry>
     <entry>
       <code>society</code>
-      <label>Gesellschaft</label>
-      <description>kulturelle und gesellschaftliche Merkmale</description>
+      <label>M Gesellschaft</label>
+      <description>Kulturelle und gesellschaftliche Merkmale</description>
     </entry>
     <entry>
       <code>structure</code>
-      <label>Bauwerke</label>
-      <description>von Menschen errichtetes Bauwerk</description>
+      <label>O Bauwerke</label>
+      <description>Von Menschen errichtetes Bauwerk</description>
     </entry>
     <entry>
       <code>transportation</code>
-      <label>Verkehrswesen</label>
+      <label>P Verkehrswesen</label>
       <description>Mittel und Wege zur Beförderung von Personen und/oder Gütern</description>
     </entry>
     <entry>
       <code>utilitiesCommunication</code>
-      <label>Ver- und Entsorgung, Kommunikation</label>
+      <label>Q Ver- und Entsorgung, Kommunikation</label>
       <description>Energie-, Wasser- und Abwassersysteme sowie Kommunikationsinfrastruktur und -dienste</description>
     </entry>
     <entry>
       <code>extraTerrestrial</code>
-      <label>Extraterrestrisch</label>
+      <label>U Extraterrestrisch</label>
       <description>Bereich von mehr als 100 km oberhalb der Erdoberfläche</description>
     </entry>
     <entry>
       <code>disaster</code>
-      <label>Katastrophe</label>
+      <label>V Katastrophe</label>
       <description>Informationen zu Katastrophen</description>
     </entry>
   </codelist>
+
   <codelist name="msr:MD_TopologyLevelCode">
     <entry>
       <code>geometryOnly</code>
@@ -2079,7 +2086,7 @@
     <entry>
       <code>geodeticGeographic2D</code>
       <label>2D geodätisch geografisch</label>
-      <description>geodätisches CRS-System mit einem ellipsoidischen 2D-Koordinatensystem
+      <description>Geodätisches CRS-System mit einem ellipsoidischen 2D-Koordinatensystem
         . BEISPIEL: Breitengrad, Längengrad
       </description>
     </entry>
@@ -2460,6 +2467,7 @@
       <description>Papierdokument</description>
     </entry>
   </codelist>
+
   <codelist name="srv:DCPList">
     <entry>
       <code>XML</code>
@@ -2511,9 +2519,10 @@
     <entry>
       <code>WebServices</code>
       <label>Webdienst</label>
-      <description>ein Dienst, der über ein Netzwerk angesprochen werden kann</description>
+      <description>Ein Dienst, der über ein Netzwerk angesprochen werden kann</description>
     </entry>
   </codelist>
+
   <codelist name="srv:SV_CouplingType">
     <entry>
       <code>tight</code>
@@ -2524,12 +2533,12 @@
       </description>
     </entry>
     <entry>
-      <code>gemischt</code>
+      <code>mixed</code>
       <label>Gemischt</label>
-      <description>Die Service-Instanz ist gemischt mit einer
-        Dateninstanz gemischt gekoppelt, d. h. die Klasse MD_DataIdentification
-        beschreibt die zugehörige Dateninstanz und darüber hinaus kann die Serviceinstanz
-        kann mit anderen externen Dateninstanzen arbeiten
+      <description>Die Dienstinstanz ist mit einer Dateninstanz gemischt gekoppelt, d. h. die Klasse
+        MD_DataIdentification beschreibt die verknüpfte Dateninstanz, und
+        zusätzlich kann die Dienstinstanz mit anderen externen Dateninstanzen
+        verwendet werden
       </description>
     </entry>
     <entry>
@@ -2582,4 +2591,184 @@
       <label>Unbekannt</label>
     </entry>
   </codelist>
+
+  <codelist name="che:CHE_MD_SubTopicCategoryCode" alias="subTopicCategory">
+    <definition>Subtopic Kategorien gemäss eCH-0166 zur Verbesserung der Klassifizierung von Themenkategorien und der Suche nach Geodaten</definition>
+    <entry>
+      <code>imageryBaseMapsEarthCover_BaseMaps</code>
+      <label>A1 Basiskarten, Landschaftsmodelle</label>
+    </entry>
+    <entry>
+      <code>imageryBaseMapsEarthCover_EarthCover</code>
+      <label>A2 Bodenbedeckung, Bodennutzung</label>
+    </entry>
+    <entry>
+      <code>imageryBaseMapsEarthCover_Imagery</code>
+      <label>A3 Luft-, Satellitenbilder</label>
+    </entry>
+    <entry>
+      <code>planningCadastre_Planning</code>
+      <label>E1 Raumplanung, Raumentwicklung</label>
+    </entry>
+    <entry>
+      <code>planningCadastre_Cadastre</code>
+      <label>E2 Grundstückskataster</label>
+    </entry>
+    <entry>
+      <code>geoscientificInformation_Geology</code>
+      <label>F1 Geologie</label>
+    </entry>
+    <entry>
+      <code>geoscientificInformation_Soils</code>
+      <label>F2 Boden</label>
+    </entry>
+    <entry>
+      <code>geoscientificInformation_NaturalHazards</code>
+      <label>F3 Naturbedingte Risiken</label>
+    </entry>
+    <entry>
+      <code>environment_EnvironmentalProtection</code>
+      <label>L1 Umweltschutz, Lärm</label>
+    </entry>
+    <entry>
+      <code>environment_NatureProtection</code>
+      <label>L2 Natur- und Landschaftsschutz</label>
+    </entry>
+    <entry>
+      <code>utilitiesCommunication_Energy</code>
+      <label>Q1 Energie</label>
+      <description></description>
+    </entry>
+    <entry>
+      <code>utilitiesCommunication_Utilities</code>
+      <label>Q2 Wasser- und Abfallsysteme</label>
+      <description></description>
+    </entry>
+    <entry>
+      <code>utilitiesCommunication_Communication</code>
+      <label>Q3 Kommunikation</label>
+      <description></description>
+    </entry>
+  </codelist>
+
+  <codelist name="che:CHE_MD_LevelCode" alias="mdLevelCode">
+    <entry>
+      <code>communal</code>
+      <label>Kommunal</label>
+    </entry>
+    <entry>
+      <code>cantonal</code>
+      <label>Kantonal</label>
+    </entry>
+    <entry>
+      <code>federal</code>
+      <label>National</label>
+    </entry>
+    <entry>
+      <code>other</code>
+      <label>Anderes</label>
+    </entry>
+  </codelist>
+
+  <codelist name="che:CHE_MD_BasicGeodataTypeCode" alias="BasicGeodataTypeCode">
+    <description>Geobasisdaten-Typ</description>
+    <entry>
+      <code>oereb</code>
+      <label>ÖREB-Kataster</label>
+      <description>Siehe GeoIV Annex 1 (RS 510.620)</description>
+    </entry>
+    <entry>
+      <code>referenceGeodata</code>
+      <label>Georeferenzdaten</label>
+      <description>Siehe GeoIV Annex 1 (RS 510.620)</description>
+    </entry>
+  </codelist>
+
+<codelist name="che:CHE_MD_BasicGeodataAccessLevelCode" alias="BasicGeodataAccessLevelCode">
+    <entry>
+      <code>A</code>
+      <label>A</label>
+	  <description>Öffentlich zugängliche Geobasisdaten, Zugangsberechtigungsstufe A (Art. 22 GeoIV)</description>
+    </entry>
+    <entry>
+      <code>B</code>
+      <label>B</label>
+		<description>Beschränkt öffentlich zugängliche Geobasisdaten, Zugangsberechtigungsstufe B (Art. 23 GeoIV)</description>
+    </entry>
+	<entry>
+      <code>C</code>
+      <label>C</label>
+		<description>Nicht öffentlich zugängliche Geobasisdaten, Zugangsberechtigungsstufe C (Art. 24 GeoIV)</description>
+    </entry>
+  </codelist>
+
+<codelist name="che:CHE_CI_LegislationTypeCode" alias="LegislationTypeCode">
+    <entry>
+      <code>law</code>
+      <label>Gesetz</label>
+	</entry>
+    <entry>
+      <code>ordinance</code>
+      <label>Verordnung</label>
+	 </entry>
+	<entry>
+      <code>other</code>
+      <label>Andere</label>
+      <description>Andere gesetzliche Vorschrift</description>
+	</entry>
+  </codelist>	
+
+<codelist name="che:CHE_AppraisalOfArchivalValueCode" alias="appraisalOfArchivalValue">
+    <entry>
+      <code>A</code>
+      <label>A</label>
+      <description>Archivwürdig</description>
+	</entry>
+    <entry>
+      <code>N</code>
+      <label>N</label>
+      <description>Nicht archivwürdig</description>
+	 </entry>
+	<entry>
+      <code>S</code>
+      <label>S</label>
+      <description>Archivwürdig in Auswahl (Sampling oder Selektion)</description>
+	</entry>
+  </codelist>	
+
+<codelist name="che:CHE_ReasonForArchivingValueCode" alias="ReasonForArchivingValueCode">
+    <entry>
+      <code>legalRelevance</code>
+      <label>Rechtliche Relevanz</label>
+	</entry>
+    <entry>
+      <code>guaranteeOfLegalCertainty</code>
+      <label>Gewährleistung von Rechtssicherheit</label>
+	 </entry>
+	<entry>
+      <code>evidenceOfBusinessPractice</code>
+      <label>Nachweis der Geschäftspraxis</label>
+	</entry>
+	    <entry>
+      <code>benefitsForResearch</code>
+      <label>Nutzen für die Forschung</label>
+	</entry>
+    <entry>
+      <code>contemporaryInterest</code>
+      <label>Zeitgenössisches Interesse</label>
+	 </entry>
+	<entry>
+      <code>sensitivity</code>
+      <label>sensible Themen</label>
+	</entry>
+	<entry>
+      <code>developmentsProgression</code>
+      <label>Entwicklungen / Verlauf</label>
+	</entry>
+    <entry>
+      <code>definingPowers</code>
+      <label>Definitionsmacht</label>
+	 </entry>
+ </codelist>		
+	
 </codelists>

@@ -97,10 +97,20 @@
     <condition></condition>
   </element>
   <element name="che:CHE_MD_MaintenanceInformation">
-    <label>Datenpflege</label>
+    <label>Wartungsinformation iso19115-3.2018</label>
     <description>Information zu Umfang und Turnus der Aktualisierung</description>
     <help>z.B. Nachführungsinformationen</help>
     <condition></condition>
+  </element>
+  <element name="mmi:MD_MaintenanceInformation"
+      context="che:CHE_MD_MaintenanceInformation">
+    <label>Wartungsinformation</label>
+    <description iso="true">Information zur Wartung</description>
+    <condition>optional</condition>
+  </element>
+  <element name="gco:isoType">
+    <label>ISO-Typ</label>
+    <description iso="true">Information zur Wartung</description>
   </element>
   <element name="mmi:maintenanceDate">
       <label>Wartungsdatum</label>
@@ -153,8 +163,8 @@
       <condition></condition>
     </element>
     <element name="che:CHE_MD_LegalConstraints">
-      <label>Contraintes légales</label>
-      <description>Contraintes légales</description>
+      <label>Rechtliche Einschränkungen</label>
+      <description>Rechtliche Einschränkungen</description>
       <condition></condition>
     </element>
     <element name="che:legislationConstraints">
@@ -163,9 +173,49 @@
       der Ressource oder der Metadaten</description>
       <condition></condition>
     </element>
+    <element name="che:CHE_MD_Legislation">
+      <label>Informationen zur Gesetzgebung</label>
+      <description>Informationen zur Gesetzgebung</description>
+      <condition></condition>
+    </element>
+    <element name="che:country">
+      <label>Staat</label>
+      <description>Staat</description>
+      <condition></condition>
+    </element>
+    <element name="che:language">
+      <label>Sprache</label>
+      <description>Sprache</description>
+      <condition></condition>
+    </element>
+    <element name="che:legislationType">
+      <label>Gesetzestyp</label>
+      <description>Gesetzestyp</description>
+      <condition></condition>
+    </element>
+    <element name="che:legislationLevel">
+      <label>Ebene der gesetzlichen Bestimmung</label>
+      <description>Ebene der gesetzlichen Bestimmung</description>
+      <condition></condition>
+    </element>
+    <element name="che:internalReference">
+      <label>Interne Referenz</label>
+      <description>Interne Referenz</description>
+      <condition></condition>
+    </element>
+    <element name="che:legislationAcronym">
+      <label>Akronym der Rechtsvorschrift</label>
+      <description>Akronym der Rechtsvorschrift</description>
+      <condition></condition>
+    </element>
+    <element name="che:legislationCitation">
+      <label>Quellenangaben zur Gesetzgebung</label>
+      <description>Quellenangaben zur Gesetzgebung</description>
+      <condition></condition>
+    </element>
     <element name="che:subTopicCategory">
-      <label>Unterthemenkategorie</label>
-      <description>Unterthemenkategorie</description>
+      <label>Thematische Unterkategorien</label>
+      <description>Thematische Unterkategorien</description>
       <condition></condition>
     </element>
     <element name="che:basicGeodata">
@@ -190,28 +240,28 @@
       <condition></condition>
     </element>
     <element name="che:basicGeodataLegalLevel">
-      <label>Rechtlicher Status der Geobasisdaten</label>
+      <label>Geobasisdatenebene</label>
       <description>Rechtlicher Status der Geobasisdaten</description>
       <condition></condition>
     </element>
     <element name="che:basicGeodataResponsibilityLevel">
-      <label>Geobasisdatenverantwortungsebene</label>
+      <label>Informationen über die Zuständigkeitsebene der Geobasisdaten</label>
       <description>Geobasisdatenverantwortungsebene</description>
       <condition></condition>
     </element>
     <element name="che:basicGeodataAccessLevel">
-        <label>Geobasisdatenzugangsebene</label>
+        <label>Informationen über die Zugangsberechtigungsstufe zu Geobasisdaten</label>
         <description>Geobasisdatenzugangsebene</description>
         <condition></condition>
     </element>
     <element name="che:basicGeodataType">
-      <label>Typ der Geobasisdaten</label>
-      <description>Typ der Geobasisdaten</description>
+      <label>Geobasisdatentyp</label>
+      <description>Geobasisdatentyp</description>
       <condition></condition>
     </element>
     <element name="che:organisationAcronym">
-      <label>Abkürzung der Organisation</label>
-      <description>Acronyme oder Abkürzung der Organisation</description>
+      <label>Akronym der Organisation</label>
+      <description>Akronym oder Abkürzung der Organisation</description>
       <help>z.B. BAFU, swisstopo...</help>
       <condition></condition>
     </element>
@@ -562,7 +612,7 @@
     </description>
   </element>
   <element name="msr:MD_GridSpatialRepresentation" id="148.0">
-    <label>Gitterförmige räumliche Darstellung</label>
+    <label>Gitterförmige räumliche Darstellungskatalog</label>
     <description iso="true">Informationen zu räumlichen Netzobjekten
       in der Ressource
     </description>
@@ -814,7 +864,7 @@
     <condition></condition>
   </element>
   <element name="msr:MD_FeatureCatalogueDescription" id="183.0">
-    <label>Beschreibung des Objektkatalogs</label>
+    <label>Beschreibung Objektartenkatalog</label>
     <description iso="true">Informationen zur Identifizierung des Objektkatalogs oder
       das konzeptionelle Schema
     </description>
@@ -859,12 +909,12 @@
 
 
   <element name="mrc:MD_FeatureCatalogue" id="189.0">
-    <label>Katalog der Entitäten</label>
+    <label>Objektartenkatalog</label>
     <description iso="true">Ein Katalog der Feature-Typen</description>
     <condition></condition>
   </element>
   <element name="mrc:featureCatalogue" id="190.0">
-    <label>Katalog der Entitäten</label>
+    <label>Objektartenkatalog</label>
     <description iso="true">Der Katalog der Entitätstypen, Attribute,
       Operationen und Beziehungen, die von der Ressource verwendet werden
     </description>
@@ -958,7 +1008,7 @@
     <description></description>
   </element>
   <element name="mdq:abstract">
-    <label>Zusammenfassung</label>
+    <label>Kurzbeschreibung</label>
     <description></description>
   </element>
   <element name="mdq:elementReport">
@@ -1117,7 +1167,7 @@
 
 
   <element name="cit:CI_Individual" id="383.0">
-    <label>Individuum</label>
+    <label>Einzelperson</label>
     <description iso="true">Datentyp für Informationen über
       Akteur, wenn der Akteur eine Einzelperson ist
     </description>
@@ -1128,7 +1178,7 @@
     <_condition>C / nicht durch Kodierung definiert und UTF-8 nicht verwendet?</_condition>
   </element>
   <element name="mdb:parentMetadata" id="18.0">
-    <label>Übergeordnete Metadaten</label>
+    <label>Eltern-Metadaten</label>
     <description iso="true">Identifizierung des übergeordneten Metadatensatzes
       
     </description>
@@ -1165,7 +1215,7 @@
     <_condition>optional</_condition>
   </element>
   <element name="mdb:metadataScope" id="38.0">
-    <label>Art der Ressource</label>
+    <label>Anwendungsbereich der Metadaten</label>
     <description>Bereich, auf den sich die Metadaten beziehen (siehe Anhang C
       für weitere Informationen zu den Hierarchieebenen der
       )
@@ -1189,8 +1239,8 @@
     <_condition>optional</_condition>
   </element>
   <element name="mri:associatedResource" id="62.0">
-    <label>Zugehörige Ressource</label>
-    <description iso="true">Informationen zu zugehörigen Ressourcen
+    <label>Verlinkte Ressource</label>
+    <description iso="true">Informationen zu verlinkten Ressourcen
     </description>
     <_condition>optional</_condition>
   </element>
@@ -1533,7 +1583,7 @@
     <description iso="true">Informationen zum Akteur</description>
   </element>
   <element name="cit:extent" id="378.0" context="cit:CI_Responsibility">
-    <label>Umfang</label>
+    <label>Ausdehnung</label>
     <description iso="true">Räumlicher oder zeitlicher Umfang der Rolle</description>
   </element>
   <element name="lan:language" id="448.0" context="/mdb:MD_Metadata/mdb:defaultLocale/lan:PT_Locale/lan:language">
@@ -1670,7 +1720,7 @@
 
   </element>
   <element name="cit:CI_Citation" id="361.0">
-    <label>Referenzinformationen</label>
+    <label>Quellenangaben</label>
     <description>Datentyp für die standardisierte Beschreibung von
       Referenzinformationen der Ressource
     </description>
@@ -1724,7 +1774,7 @@
 
   </element>
   <element name="cit:CI_OnlineResource" id="405.0">
-    <label>Online-Ressource</label>
+    <label>Online</label>
     <description>Datentyp für Informationen zu Online-Quellen,
       mit denen die erweiterten Metadatenelemente zum Datensatz
       , der Spezifikation oder des Profils abgerufen werden können
@@ -2060,7 +2110,7 @@
 
   </element>
   <element name="gex:EX_BoundingPolygon" id="341.0">
-    <label>Polygonausdehnung</label>
+    <label>Begrenzungspolygon</label>
     <description>Datentyp zur Beschreibung einer geschlossenen Fläche,
       ausgedrückt durch eine Reihe von Koordinatenpaaren (x, y), die den
       Datensatz umfasst. Der erste und der letzte Punkt sind identisch
@@ -2097,7 +2147,7 @@
 
   </element>
   <element name="gex:EX_GeographicBoundingBox" id="343.0">
-    <label>Geografischer Geltungsbereich</label>
+    <label>Geografisches Begrenzungsrechteck</label>
     <description>Datentyp zur Beschreibung der geografischen Lage
       des Datensatzes. Es handelt sich hierbei um eine ungefähre Angabe, sodass
       , sodass das Koordinatensystem nicht angegeben werden muss
@@ -2220,7 +2270,7 @@
 
   </element>
   <element name="mrl:LI_Lineage" id="82.0">
-    <label>Genealogie, Herkunft</label>
+    <label>Herkunft, Genealogie</label>
     <description>Klasse, die Informationen über Ereignisse oder
       Quelldaten enthält, die für die Erstellung der Daten verwendet wurden
     </description>
@@ -2242,12 +2292,12 @@
 
   </element>
   <element name="cit:LI_ProcessStep" id="86.0">
-    <label>Ereignis im Prozess</label>
+    <label>Prozessverlauf</label>
     <description>Informationen zu einem Ereignis im Erstellungs- oder Transformationsprozess
       Transformationsprozess, einschließlich des Datenpflegeprozesses
     </description>
     <help>Informationen zu einem Schritt im Prozess der Erstellung oder
-      Transformationsprozesses, einschließlich des Aktualisierungsprozesses. Die
+      Transformationsprozesses, einschliesslich des Aktualisierungsprozesses. Die
       verschiedenen Schritte, die zum endgültigen Datensatz führen, sind
       hier aufgeführt. Beispiel: photogrammetrische Wiederherstellung von Luftbildern,
       Überprüfung und Vervollständigung vor Ort und anschließende Erstellung der
@@ -2436,7 +2486,7 @@
 
   </element>
   <element name="mrd:MD_Distribution" id="270.0">
-    <label>Verteilung</label>
+    <label>Vertrieb</label>
     <description>Klasse mit Informationen über den Datenverteiler und
       Möglichkeiten zum Abrufen der Ressourcen
     </description>
@@ -2635,7 +2685,7 @@
 
   </element>
   <element name="mmi:MD_MaintenanceInformation" id="142.0">
-    <label>Wartungsinformationen</label>
+    <label>Wartungsinformation iso19115-3.2018</label>
     <description>Informationen zu Grund, Umfang und Häufigkeit der Wartungsarbeiten
       .
     </description>
@@ -2689,7 +2739,7 @@
 
   </element>
   <element name="mdb:MD_MetadataScope">
-    <label>Art der Ressource</label>
+    <label>Anwendungsbereich der Metadaten</label>
     <description>Bereich, auf den sich die Metadaten beziehen (siehe Anhang C
       für weitere Informationen zu den Hierarchieebenen der
       )
@@ -2968,7 +3018,7 @@
 
   </element>
   <element name="cit:URL" id="608.0">
-    <label>Internetadresse</label>
+    <label>URL</label>
     <description>Klasse zur Beschreibung eines Metadatenelements
       Mehrsprachige freie URL
     </description>
@@ -3101,7 +3151,7 @@ Zusammenfassung der referenzierten Ressource, nicht des Dienstes: Die Zusammenfa
   </element>
 
   <element name="mri:abstract" id="44.0">
-    <label>Zusammenfassung</label>
+    <label>Kurzbeschreibung</label>
     <description>Kurze Zusammenfassung des Inhalts der Ressourcen</description>
     <help>Kurze beschreibende Zusammenfassung des Inhalts des Datensatzes. Dieses Attribut ist
       vom Typ PT_FreeText und wird in der gleichnamigen Klasse verwaltet.
@@ -3205,7 +3255,7 @@ Zusammenfassung der referenzierten Ressource, nicht des Dienstes: Die Zusammenfa
 
   </element>
   <element name="cit:alternateTitle" id="363.0">
-    <label>Andere Bezeichnungen oder Akronyme</label>
+    <label>Alternativtitel</label>
     <description>Kurzbezeichnung oder andere Schreibweise des Namens, unter der
       die Referenzinformationen bekannt sind. Beispiel: DCW
       für „Digital Chart of the World”
@@ -3480,7 +3530,7 @@ Zusammenfassung der referenzierten Ressource, nicht des Dienstes: Die Zusammenfa
 
   </element>
   <element name="cit:city" id="390.0">
-    <label>Stadt</label>
+    <label>Ort</label>
     <description>Stadt des Standorts</description>
     <help>Stadt, Ort</help>
     <condition/>
@@ -3749,50 +3799,50 @@ Zusammenfassung der referenzierten Ressource, nicht des Dienstes: Die Zusammenfa
 
   </element>
   <element name="cit:country" id="393.0">
-    <label>Land</label>
-    <description>Land, in dessen Sprache die freie URL geschrieben ist</description>
-    <description iso="true">Land der physischen Adresse</description>
-    <help>Land, in dessen Sprache die freie URL geschrieben ist, die Auswahl erfolgt
-      in der Liste der ISO-Länder.
+    <label>Staat</label>
+    <description>Staat, in dessen Sprache die freie URL geschrieben ist</description>
+    <description iso="true">Staat der physischen Adresse</description>
+    <help>Staat, in dessen Sprache die freie URL geschrieben ist, die Auswahl erfolgt
+      in der Liste der ISO-Staaten.
     </help>
     <condition/>
   </element>
   <element name="cit:country" id="508.0" context="cit:MD_Legislation">
-    <label>Land</label>
-    <description>Land, aus dem das Gesetz stammt</description>
-    <help>Land, in dem das Gesetz erlassen wurde, Auswahl aus der ISO-Liste
+    <label>Staat</label>
+    <description>Staat, aus dem das Gesetz stammt</description>
+    <help>Staat, in dem das Gesetz erlassen wurde, Auswahl aus der ISO-Liste
       .
     </help>
     <condition/>
 
   </element>
   <element name="cit:country" id="605.0" context="PT_Group">
-    <label>Land</label>
-    <description>Land der Sprache, in der der Freitext verfasst ist
+    <label>Staat</label>
+    <description>Staat der Sprache, in der der Freitext verfasst ist
     </description>
-    <help>Land, in dessen Sprache der Freitext verfasst ist. Auswahl aus
-      der ISO-Länderliste.
+    <help>Staat, in dessen Sprache der Freitext verfasst ist. Auswahl aus
+      der ISO-Staatenliste.
     </help>
     <condition/>
 
   </element>
   <element name="lan:country" id="449.0">
-    <label>Land</label>
-    <description>Bezeichnung des Landes, das für die Sprache der regionalen Einstellungen spezifisch ist
+    <label>Staat</label>
+    <description>Bezeichnung des Staates, das für die Sprache der regionalen Einstellungen spezifisch ist
       Regional
     </description>
     <condition>optional</condition>
   </element>
   <element name="lan:country" id="449.0" context="lan:PT_Locale">
-    <label>Land</label>
-    <description>Bezeichnung des Landes, das für die Sprache der Einstellungen spezifisch ist
+    <label>Staat</label>
+    <description>Bezeichnung des Staates, das für die Sprache der Einstellungen spezifisch ist
       Regional
     </description>
     <condition>optional</condition>
   </element>
   <element name="cit:country" id="393.0" context="cit:CI_Address">
-    <label>Land</label>
-    <description>Land der Adresse</description>
+    <label>Staat</label>
+    <description>Staat der Adresse</description>
     <condition>optional</condition>
   </element>
   <element name="mri:credit" id="46.0">
@@ -4350,14 +4400,14 @@ Version als zusätzliches(s) Schlüsselwort(e) an. Die Versionsnummer muss aus d
 
   </element>
   <element name="mri:distance" id="61.0">
-    <label>Auflösungsabstand</label>
+    <label>Distanz</label>
     <description>Referenzentfernung, gemessen am Boden</description>
     <help>Auflösung am Boden</help>
     <condition>Entfernung eingeben, wenn kein Maßstab vorhanden</condition>
   </element>
 
   <element name="mrd:distributionFormat" id="271.0">
-    <label>Format (Kodierung)</label>
+    <label>Abgabeformat</label>
     <description>Beschreibung des Verteilungsformats</description>
     <help>Diese Informationen werden in der Klasse MD_Format verwaltet.</help>
     <condition/>
@@ -4496,7 +4546,7 @@ Version als zusätzliches(s) Schlüsselwort(e) an. Die Versionsnummer muss aus d
 
   </element>
   <element name="cit:electronicMailAddress" id="394.0">
-    <label>E-Mail-Adresse</label>
+    <label>E-Mail</label>
     <description>E-Mail-Adresse der Organisation oder der
       verantwortlichen Person
     </description>
@@ -4506,7 +4556,7 @@ Version als zusätzliches(s) Schlüsselwort(e) an. Die Versionsnummer muss aus d
     <condition/>
 
   </element>
-  <element name="mri:extent" id="45.0" context="mri:MD_DataIdentification">
+  <element name="mri:extent" id="45.0">
     <label>Ausdehnung</label>
     <description>Datentyp für Informationen über die horizontale,
       vertikalen und zeitlichen Ausdehnung des Datensatzes
@@ -4529,12 +4579,6 @@ Version als zusätzliches(s) Schlüsselwort(e) an. Die Versionsnummer muss aus d
       extent.geographicElement.EX_GeographicBoundingBox oder
       extent.geographicElement.EX_GeographicDescription erforderlich
     </_condition>
-  </element>
-  <element name="mri:extent" id="45.0" context="srv:SV_ServiceIdentification">
-    <label>Ausdehnung</label>
-    <description>Datentyp für Informationen über die horizontale,
-      vertikale und zeitliche Ausdehnung des Dienstes
-    </description>
   </element>
 
   <element name="mri:environmentDescription" id="44.0">
@@ -4638,7 +4682,7 @@ Version als zusätzliches(s) Schlüsselwort(e) an. Die Versionsnummer muss aus d
     <condition>Bedingung</condition>
   </element>
   <element name="mcc:extent" id="140.0" context="mcc:MD_Scope">
-    <label>Umfang</label>
+    <label>Ausdehnung</label>
     <description>Informationen zu den horizontalen, vertikalen und
       zeitlichen Bereichen der Daten, die durch das Attribut scope (79) des Anwendungsbereichs
       Anwendungsbereich
@@ -4652,7 +4696,7 @@ Version als zusätzliches(s) Schlüsselwort(e) an. Die Versionsnummer muss aus d
 
   </element>
   <element name="gex:extent" id="351.0">
-    <label>Umfang</label>
+    <label>Ausdehnung</label>
     <description>Datum und Uhrzeit für den Inhalt des Datensatzes</description>
     <help>Datum und Uhrzeit des Gültigkeitsbereichs des Datensatzes (Text).</help>
     <help for="inspire"><![CDATA[<b>INSPIRE-Anforderung:</b>
@@ -4706,7 +4750,7 @@ vom Dienst abgedeckten Zeitraum.
 
   </element>
   <element name="mrc:featureCatalogueCitation" id="238.0">
-    <label>Referenz aus dem Objektkatalog</label>
+    <label>Quellenangaben Objektartenkatalog</label>
     <description>Vollständige bibliografische Referenz zu einem oder mehreren externen Objektkatalogen
       externer Objektkataloge
     </description>
@@ -4768,7 +4812,7 @@ vom Dienst abgedeckten Zeitraum.
 
   </element>
   <element name="mcc:fileDescription" id="439.0">
-    <label>Beschreibung der Abbildung</label>
+    <label>Dateibeschreibung</label>
     <description>Textbeschreibung der Abbildung des Datensatzes
     </description>
     <description iso="true">Textbeschreibung der Abbildung
@@ -4781,7 +4825,7 @@ vom Dienst abgedeckten Zeitraum.
 
   </element>
   <element name="mdb:metadataIdentifier" id="2.0">
-    <label>Identifikationsnummer des Datensatzes</label>
+    <label>Identifikator des Metadatensatzes</label>
     <description>Eindeutige Kennung für den Metadatensatz. Sie wird
       automatisch von der Anwendung generiert.
     </description>
@@ -4790,7 +4834,7 @@ vom Dienst abgedeckten Zeitraum.
     </help>
   </element>
   <element name="mcc:fileName" id="438.0">
-    <label>Name oder URL der Abbildung</label>
+    <label>Dateiname</label>
     <description>Name der Datei, die die Grafik mit einer
       Abbildung des Datensatzes enthält
     </description>
@@ -4931,7 +4975,7 @@ vom Dienst abgedeckten Zeitraum.
 
   </element>
   <element name="mri:graphicOverview" id="31.0">
-    <label>Übersichten</label>
+    <label>Grafische Darstellungskatalog</label>
     <description>Grafische Übersicht zur Veranschaulichung der Ressourcen (einschließlich einer
       Legende)
     </description>
@@ -5323,7 +5367,7 @@ vom Dienst abgedeckten Zeitraum.
 
   </element>
   <element name="mcc:level" id="139.0">
-    <label>Ebene</label>
+    <label>Bezugsebene</label>
     <description>Hierarchische Ebene der Daten, die durch das Attribut scope
       (79) des Anwendungsbereichs
     </description>
@@ -5380,7 +5424,7 @@ vom Dienst abgedeckten Zeitraum.
     <condition>Bedingung</condition>
   </element>
   <element name="cit:linkage" id="406.0">
-    <label>Internetadresse</label>
+    <label>URL</label>
     <description>URL oder ähnliche Angabe einer Internetadresse für einen
       Online-Zugang , z. B. http://www.isotc211.org
     </description>
@@ -5398,7 +5442,7 @@ vom Dienst abgedeckten Zeitraum.
     <condition></condition>
   </element>
   <element name="mmi:maintenanceAndUpdateFrequency" id="143.0">
-    <label>Aktualisierungshäufigkeit</label>
+    <label>Wartungsintervall</label>
     <description>Häufigkeit, mit der Änderungen und Ergänzungen
       an der Ressource vorgenommen werden, nachdem die ursprüngliche Ressource fertiggestellt wurde
     </description>
@@ -5412,7 +5456,7 @@ vom Dienst abgedeckten Zeitraum.
 
   </element>
   <element name="mmi:maintenanceNote" id="148.0">
-    <label>Hinweis zur Aktualisierung</label>
+    <label>Anmerkung</label>
     <description>Informationen oder Hinweise zu spezifischen Anforderungen
       spezifischen Anforderungen hinsichtlich der Wartung der Ressourcen
     </description>
@@ -5497,7 +5541,7 @@ vom Dienst abgedeckten Zeitraum.
 
   </element>
   <element name="mdb:metadataMaintenance" id="22.0">
-    <label>Aktualisierung der Metadaten</label>
+    <label>Wartungsinformation</label>
     <description>Informationen zur Häufigkeit der Aktualisierung der Metadaten
       sowie deren Umfang
     </description>
@@ -5607,9 +5651,9 @@ vom Dienst abgedeckten Zeitraum.
 
   </element>
   <element name="cit:name" id="409.0" context="cit:CI_OnlineResource">
-    <label>Name</label>
-    <description>Name der Online-Ressource</description>
-    <help>Name der Online-Quelle.</help>
+    <label>Bezeichnung</label>
+    <description>Bezeichnung der Online-Ressource</description>
+    <help>Bezeichnung der Online-Quelle.</help>
     <condition>Obligatorisch</condition>
 
   </element>
@@ -5638,7 +5682,7 @@ vom Dienst abgedeckten Zeitraum.
     </help>
   </element>
   <element name="cit:name" context="cit:CI_Individual" id="375.0">
-    <label>Name der Person</label>
+    <label>Nachname</label>
     <description>Name der verantwortlichen Person. Vorname, Nachname und Titel sind
       durch ein Trennzeichen getrennt
     </description>
@@ -6072,7 +6116,7 @@ vom Dienst abgedeckten Zeitraum.
 
   </element>
   <element name="mrd:onLine" id="277.0">
-    <label>Online-Ressource</label>
+    <label>Online</label>
     <description>Informationen über die Online-Quellen, aus denen die
       Ressource bezogen werden kann
     </description>
@@ -6084,7 +6128,7 @@ vom Dienst abgedeckten Zeitraum.
 
   </element>
   <element name="cit:onlineResource" id="395.0" context="cit:CI_Contact">
-    <label>Online-Ressource</label>
+    <label>Online</label>
     <description iso="true">Online-Informationen, die verwendet werden können
       zur Kontaktaufnahme mit der Person oder Organisation verwendet werden können
     </description>
@@ -6092,7 +6136,7 @@ vom Dienst abgedeckten Zeitraum.
     <condition/>
   </element>
   <element name="cit:onlineResource" id="374.0" context="cit:CI_Citation">
-    <label>Online-Ressource</label>
+    <label>Online</label>
     <description iso="true">Online-Referenz der zitierten Ressource
     </description>
     <help/>
@@ -6155,7 +6199,7 @@ vom Dienst abgedeckten Zeitraum.
 
   </element>
   <element name="mco:otherConstraints" id="72.0">
-    <label>Weitere Einschränkungen</label>
+    <label>Andere Einschränkungen</label>
     <description>Sonstige rechtliche Einschränkungen und Voraussetzungen für den Zugriff auf und die
       Nutzung der Ressourcen oder Metadaten
     </description>
@@ -6376,7 +6420,7 @@ eine Nichtbewertung</b> im Rahmen der INSPIRE-Metadaten.
 
   </element>
   <element name="mdb:portrayalCatalogueInfo" id="19.0">
-    <label>Informationen zur Darstellung</label>
+    <label>Informationen zur Darstellungskatalog</label>
     <description>Informationen zum Regelkatalog für die
       Darstellung von Ressourcen
     </description>
@@ -6393,14 +6437,14 @@ eine Nichtbewertung</b> im Rahmen der INSPIRE-Metadaten.
     <condition>Bedingung</condition>
   </element>
   <element name="cit:postalCode" id="392.0">
-    <label>Postleitzahl</label>
+    <label>PLZ</label>
     <description>Postleitzahl oder anderer Code für den Standort</description>
     <help>Postleitzahl</help>
     <condition/>
 
   </element>
   <element name="cit:presentationForm" id="368.0">
-    <label>Form der Darstellung</label>
+    <label>Präsentationsform</label>
     <description>Art und Weise, in der die Ressource dargestellt wird</description>
     <help>Form, in der die Quelle verfügbar ist. Beispiel:
       digitales oder analoges Dokument, Bild, Karte, Modell usw. (Auswahl aus einer
@@ -6410,7 +6454,7 @@ eine Nichtbewertung</b> im Rahmen der INSPIRE-Metadaten.
 
   </element>
   <element name="mrl:processStep" id="84.0">
-    <label>Ereignis</label>
+    <label>Prozess</label>
     <description>Informationen zu Ereignissen im Leben des Datensatzes
     </description>
     <help>Informationen zu den Verarbeitungsschritten, die für die
@@ -6494,8 +6538,7 @@ eine Nichtbewertung</b> im Rahmen der INSPIRE-Metadaten.
       <option value="ESRI:REST-TILED">ESRI-REST-Kachelservice</option>
       <option value="FILE:GEO">GIS-Datei</option>
       <option value="FILE:RASTER">GIS-Rasterdatei</option>
-      <option value="WWW:LINK-1.0-http--link" default="">Internetadresse
-        (URL)
+      <option value="WWW:LINK-1.0-http--link" default="">Webadresse (URL)
       </option>
       <option value="WWW:LINK-1.0-http--rss">RSS-Feed (URL)</option>
       <option value="DB:POSTGIS">PostGIS-Datenbank/Tabelle</option>
@@ -7023,7 +7066,7 @@ eingeschränkter Verbreitung
 
   </element>
   <element name="mdb:spatialRepresentationInfo" id="12.0">
-    <label>Informationen zur räumlichen Darstellung</label>
+    <label>Informationen zur räumlichen Darstellungskatalog</label>
     <description>Digitale Darstellung der räumlichen Informationen im Datensatz
       Datensatz
     </description>
@@ -7039,7 +7082,7 @@ eingeschränkter Verbreitung
 
   </element>
   <element name="mri:spatialRepresentationType" id="37.0">
-    <label>Art der räumlichen Darstellung</label>
+    <label>Räumliche Darstellungsart</label>
     <description>Verfahren zur räumlichen Darstellung geografischer Informationen
       
     </description>
@@ -7140,7 +7183,7 @@ eingeschränkter Verbreitung
   </element>
 
   <element name="mrl:statement" id="83.0">
-    <label>Allgemeines zur Herkunft</label>
+    <label>Erklärung</label>
     <description>Allgemeine Erläuterung zu den Kenntnissen des Datenproduzenten
       über die Abstammung des Datensatzes
     </description>
@@ -7153,8 +7196,8 @@ eingeschränkter Verbreitung
     <condition>Bedingung</condition>
   </element>
   <element name="mri:status" id="28.0">
-    <label>Status</label>
-    <description>Status (Arbeitsstatus) der Ressourcen</description>
+    <label>Bearbeitungsstatus</label>
+    <description>Status (bearbeitungsstatus) der Ressourcen</description>
     <description iso="true">Status der Ressource</description>
     <help>Bearbeitungsstatus des Datensatzes. Auswahl einer der folgenden Optionen
       : vollständig, historisches Archiv, veraltet, in Bearbeitung, in Planung,
@@ -7536,7 +7579,7 @@ des IGN (WPS)
 
   </element>
   <element name="mri:topicCategory" id="41.0">
-    <label>ISO-Kategorie</label>
+    <label>Thematik</label>
     <description>Hauptthema(en) des Datensatzes</description>
     <help>Hauptthema (oder Hauptthemen) des Datensatzes.
       Anhand dieses Themas oder dieser Themengruppe kann ein Datensatz gefunden werden.
@@ -7723,13 +7766,13 @@ des IGN (WPS)
 
   </element>
   <element name="mco:useConstraints" id="71.0">
-    <label>Nutzungsbeschränkungen</label>
+    <label>Nutzungseinschränkungen</label>
     <description>Einschränkungen zum Schutz privater
       und geistigen Sphären sowie andere besondere Einschränkungen oder
       Einschränkungen oder Warnhinweise für die Nutzung der Ressourcen oder
       Metadaten
     </description>
-    <help>Rechtlich begründete Nutzungsbeschränkungen zum Schutz
+    <help>Rechtlich begründete Nutzungseinschränkungen zum Schutz
       die Privatsphäre, das geistige Eigentum oder andere ähnliche Bereiche
       wie Lizenzbedingungen. Diese können
       aus den folgenden Elementen ausgewählt werden: Urheberrecht, Patent,
@@ -7801,7 +7844,7 @@ des IGN (WPS)
   </element>
   <element name="mco:constraintApplicationScope" id="100.0">
     <label>Anwendungsbereich der Einschränkungen</label>
-    <description>räumlicher und/oder zeitlicher Umfang und/oder Ebene
+    <description>Räumlicher und/oder zeitlicher Umfang und/oder Ebene
       Anwendung der Einschränkungen
     </description>
     <help></help>
@@ -7823,10 +7866,10 @@ des IGN (WPS)
 
   </element>
   <element name="mmi:userDefinedMaintenanceFrequency" id="145.0">
-    <label>Andere Aktualisierungshäufigkeit</label>
-    <description>Andere als die definierten Aktualisierungsintervalle</description>
-    <help>Vom Benutzer definierter Aktualisierungsrhythmus, wenn die Option „Vom Benutzer definiert
-      vom Benutzer" in der Liste „Wartungs- und Aktualisierungshäufigkeit
+    <label>Andere Wartungsintervall</label>
+    <description>Andere als die definierten Wartungsintervalle</description>
+    <help>Vom Benutzer definierter Wartungsrhythmus, wenn die Option „Vom Benutzer definiert
+      vom Benutzer" in der Liste „Wartungs- und Wartungsintervall
       Wartungs- und Aktualisierungsfrequenz” ausgewählt wurde.
     </help>
     <condition/>
@@ -8112,6 +8155,14 @@ des IGN (WPS)
     <label>Verbindungstyp</label>
     <description></description>
   </element>
+  <element name="xlink:title">
+    <label>URL-Titel</label>
+    <description></description>
+  </element>
+  <element name="xlink:show">
+    <label>URL-Anzeige</label>
+    <description></description>
+  </element>
   <element name="unit">
     <label>Einheit</label>
     <description></description>
@@ -8356,7 +8407,7 @@ http://www.sandre.eaufrance.fr/?urn=urn:sandre:ensembledonnees:BDCarthage:FXX:::
       verweisen die Metadaten
       auf die hierarchisch höchste Ebene verweisen
       , sofern dies
-      für das ordnungsgemäße Funktionieren des Dienstes und ein angemessenes Informationsniveau
+      für das ordnungsgemässe Funktionieren des Dienstes und ein angemessenes Informationsniveau
       über die
       .
     </help>
@@ -8839,7 +8890,7 @@ http://www.sandre.eaufrance.fr/?urn=urn:sandre:ensembledonnees:BDCarthage:FXX:::
     <label>Realisierungszeitpunkt</label>
   </element>
   <element name="gfc:FC_FeatureCatalogue">
-    <label>Beschreibung des zugehörigen Attributkatalogs</label>
+    <label>Quellenangaben Objektartenkatalog</label>
     <description></description>
   </element>
   <element name="gfc:FC_FeatureAttribute">
@@ -8862,7 +8913,7 @@ http://www.sandre.eaufrance.fr/?urn=urn:sandre:ensembledonnees:BDCarthage:FXX:::
     <description>Katalogdatum</description>
   </element>
   <element name="cat:name">
-    <label>Name des zugewiesenen Katalogs</label>
+    <label>Titel Objektartenkatalog</label>
     <description>Allgemeiner Name des Katalogs</description>
   </element>
   <element name="cat:language">
@@ -8878,16 +8929,16 @@ http://www.sandre.eaufrance.fr/?urn=urn:sandre:ensembledonnees:BDCarthage:FXX:::
     <description>Katalogversion</description>
   </element>
   <element name="cat:versionDate">
-    <label>Katalogdatum</label>
-    <description>Katalogdatum</description>
+    <label>Datum Katalog</label>
+    <description>Datum Katalog</description>
   </element>
   <element name="gfc:producer">
     <label>Verantwortlicher für den Katalog</label>
     <description>Verantwortlicher für den Katalog</description>
   </element>
   <element name="gfc:featureType">
-    <label>Beschreibung einer Eigenschaft</label>
-    <description>Beschreibung einer Eigenschaft. In diesem Fall handelt es sich
+    <label>Beschreibung Objektart</label>
+    <description>Beschreibung Objektart. In diesem Fall handelt es sich
       in der Regel um eine Attributtabelle
     </description>
   </element>
@@ -8900,8 +8951,8 @@ http://www.sandre.eaufrance.fr/?urn=urn:sandre:ensembledonnees:BDCarthage:FXX:::
     <description>Beschreibung der Attributtabelle</description>
   </element>
   <element name="gfc:typeName">
-    <label>Name der Eigenschaft</label>
-    <description>Name der Eigenschaft, d. h. der Tabelle</description>
+    <label>Name Objektart</label>
+    <description>Name der Objektart, d. h. der Tabelle</description>
   </element>
   <element name="cat:characterSet">
     <label>Zeichensatz</label>
@@ -9136,7 +9187,7 @@ http://www.sandre.eaufrance.fr/?urn=urn:sandre:ensembledonnees:BDCarthage:FXX:::
     <description></description>
   </element>
   <element name="mdq:spatialRepresentationType">
-    <label>Art der räumlichen Darstellung</label>
+    <label>Art der räumlichen Darstellungskatalog</label>
     <description></description>
   </element>
   <element name="reg:RE_AmendmentType">
@@ -9183,14 +9234,14 @@ http://www.sandre.eaufrance.fr/?urn=urn:sandre:ensembledonnees:BDCarthage:FXX:::
      <description>Sprachcode</description>
    </element>
    <element name="mcc:MD_SpatialRepresentationTypeCode">
-     <label>Typ der räumlichen Darstellung</label>
+     <label>Typ der räumlichen Darstellungskatalog</label>
    </element>
    <element name="mcc:MD_ProgressCode">
      <label>Status</label>
    </element>
   <element name="mrc:MI_RangeElementDescription">
     <label>Beschreibung des Bereichs</label>
-    <description>z. B. storage_meth</description>
+    <description>Z. B. storage_meth</description>
   </element>
   <element name="mrc:definition">
     <label>Definition</label>
@@ -9223,7 +9274,7 @@ http://www.sandre.eaufrance.fr/?urn=urn:sandre:ensembledonnees:BDCarthage:FXX:::
     <description></description>
   </element>
   <element name="mac:extent">
-    <label>Umfang</label>
+    <label>Ausdehnung</label>
     <description></description>
   </element>
   <element name="mac:sensingInstrument">

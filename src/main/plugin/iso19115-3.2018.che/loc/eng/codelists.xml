@@ -901,6 +901,7 @@
       </description>
     </entry>
   </codelist>
+
   <codelist name="msr:MD_DimensionNameTypeCode">
     <entry>
       <code>row</code>
@@ -944,6 +945,7 @@
       <description>Duration</description>
     </entry>
   </codelist>
+
   <codelist name="msr:MD_GeometricObjectTypeCode">
     <entry>
       <code>complex</code>
@@ -986,6 +988,7 @@
       </description>
     </entry>
   </codelist>
+
   <codelist name="mrc:MD_ImagingConditionCode">
     <entry>
       <code>blurredImage</code>
@@ -1055,6 +1058,7 @@
       </description>
     </entry>
   </codelist>
+
   <codelist name="mri:MD_KeywordTypeCode">
     <entry>
       <code>discipline</code>
@@ -1153,6 +1157,7 @@
       <description>Keyword identifies a taxonomy of the resource</description>
     </entry>
   </codelist>
+
   <codelist name="mmi:MD_MaintenanceFrequencyCode">
     <entry>
       <code>continual</code>
@@ -1232,6 +1237,7 @@
       <description>Resource is updated every 2 years</description>
     </entry>
   </codelist>
+
   <codelist name="mrd:MD_MediumFormatCode">
     <entry>
       <code>cpio</code>
@@ -1270,6 +1276,7 @@
       <description>Universal Disk Format</description>
     </entry>
   </codelist>
+
   <codelist name="mex:MD_ObligationCode">
     <entry>
       <code>mandatory</code>
@@ -1288,6 +1295,7 @@
       </description>
     </entry>
   </codelist>
+
   <codelist name="msr:MD_PixelOrientationCode">
     <entry>
       <code>center</code>
@@ -1323,6 +1331,7 @@
       </description>
     </entry>
   </codelist>
+
   <codelist name="mcc:MD_ProgressCode">
     <entry>
       <code>completed</code>
@@ -1432,6 +1441,7 @@
       <description></description>
     </entry>
   </codelist>
+
   <codelist name="mco:MD_RestrictionCode">
     <entry>
       <code>copyright</code>
@@ -1492,7 +1502,7 @@
     <entry>
       <code>licenceUnrestricted</code>
       <label>Licence Unrestricted</label>
-      <description>formal permission not required to use the resource
+      <description>Formal permission not required to use the resource
       </description>
     </entry>
     <entry>
@@ -1744,7 +1754,7 @@
   <codelist name="mri:MD_TopicCategoryCode" alias="topicCategory">
     <entry>
       <code>farming</code>
-      <label>Farming</label>
+      <label>S Farming</label>
       <description>Rearing of animals and/or cultivation of plants. Examples:
         agriculture, irrigation, aquaculture, plantations, herding, pests and
         diseases affecting crops and livestock
@@ -1752,7 +1762,7 @@
     </entry>
     <entry>
       <code>biota</code>
-      <label>Biota</label>
+      <label>G Biota</label>
       <description>Flora and/or fauna in natural environment. Examples:
         wildlife, vegetation, biological sciences, ecology, wilderness, sealife,
         wetlands, habitat
@@ -1760,14 +1770,14 @@
     </entry>
     <entry>
       <code>boundaries</code>
-      <label>Boundaries</label>
+      <label>D Boundaries</label>
       <description>Legal land descriptions. Examples: political and
         administrative boundaries
       </description>
     </entry>
     <entry>
       <code>climatologyMeteorologyAtmosphere</code>
-      <label>Climatology, meteorology, atmosphere</label>
+      <label>K Climatology, meteorology, atmosphere</label>
       <description>Processes and phenomena of the atmosphere. Examples: cloud
         cover, weather, climate, atmospheric conditions, climate change,
         precipitation
@@ -1775,7 +1785,7 @@
     </entry>
     <entry>
       <code>economy</code>
-      <label>Economy</label>
+      <label>T Economy</label>
       <description>Economic activities, conditions and employment. Examples:
         production, labour, revenue, commerce, industry, tourism and ecotourism,
         forestry, fisheries, commercial or subsistence hunting, exploration and
@@ -1784,14 +1794,14 @@
     </entry>
     <entry>
       <code>elevation</code>
-      <label>Elevation</label>
+      <label>C Elevation</label>
       <description>Height above or below sea level. Examples: altitude,
         bathymetry, digital elevation models, slope, derived products
       </description>
     </entry>
     <entry>
       <code>environment</code>
-      <label>Environment</label>
+      <label>L Environment</label>
       <description>Environmental resources, protection and conservation.
         Examples: environmental pollution, waste storage and treatment,
         environmental impact assessment, monitoring environmental risk, nature
@@ -1800,7 +1810,7 @@
     </entry>
     <entry>
       <code>geoscientificInformation</code>
-      <label>Geoscientific information</label>
+      <label>F Geoscientific information</label>
       <description>Information pertaining to earth sciences. Examples:
         geophysical features and processes, geology, minerals, sciences dealing
         with the composition, structure and origin of the earth s rocks, risks
@@ -1810,7 +1820,7 @@
     </entry>
     <entry>
       <code>health</code>
-      <label>Health</label>
+      <label>N Health</label>
       <description>Health, health services, human ecology, and safety. Examples:
         disease and illness, factors affecting health, hygiene, substance abuse,
         mental and physical health, health services
@@ -1818,21 +1828,21 @@
     </entry>
     <entry>
       <code>imageryBaseMapsEarthCover</code>
-      <label>Imagery base maps earth cover</label>
+      <label>A Imagery base maps earth cover</label>
       <description>Base maps. Examples: land cover, topographic maps, imagery,
         unclassified images, annotations
       </description>
     </entry>
     <entry>
       <code>intelligenceMilitary</code>
-      <label>Intelligence military</label>
+      <label>R Intelligence military</label>
       <description>Military bases, structures, activities. Examples: barracks,
         training grounds, military transportation, information collection
       </description>
     </entry>
     <entry>
       <code>inlandWaters</code>
-      <label>Inland waters</label>
+      <label>I Inland waters</label>
       <description>Inland water features, drainage systems and their
         characteristics. Examples: rivers and glaciers, salt lakes, water
         utilization plans, dams, currents, floods, water quality, hydrographic
@@ -1841,7 +1851,7 @@
     </entry>
     <entry>
       <code>location</code>
-      <label>Location</label>
+      <label>B Location</label>
       <description>Positional information and services. Examples: addresses,
         geodetic networks, control points, postal zones and services, place
         names
@@ -1849,14 +1859,14 @@
     </entry>
     <entry>
       <code>oceans</code>
-      <label>Oceans</label>
+      <label>H Oceans</label>
       <description>Features and characteristics of salt water bodies (excluding
         inland waters). Examples: tides, tidal waves, coastal information, reefs
       </description>
     </entry>
     <entry>
       <code>planningCadastre</code>
-      <label>Planning cadastre</label>
+      <label>E Planning cadastre</label>
       <description>Information used for appropriate actions for future use of
         the land. Examples: land use maps, zoning maps, cadastral surveys, land
         ownership
@@ -1864,7 +1874,7 @@
     </entry>
     <entry>
       <code>society</code>
-      <label>Society</label>
+      <label>M Society</label>
       <description>Characteristics of society and cultures. Examples:
         settlements, anthropology, archaeology, education, traditional beliefs,
         manners and customs, demographic data, recreational areas and
@@ -1874,14 +1884,14 @@
     </entry>
     <entry>
       <code>structure</code>
-      <label>Structure</label>
+      <label>O Structure</label>
       <description>Man-made construction. Examples: buildings, museums,
         churches, factories, housing, monuments, shops, towers
       </description>
     </entry>
     <entry>
       <code>transportation</code>
-      <label>Transportation</label>
+      <label>P Transportation</label>
       <description>Means and aids for conveying persons and/or goods. Examples:
         roads, airports/airstrips, shipping routes, tunnels, nautical charts,
         vehicle or vessel location, aeronautical charts, railways
@@ -1889,9 +1899,9 @@
     </entry>
     <entry>
       <code>utilitiesCommunication</code>
-      <label>Utilities communication</label>
+      <label>Q Utilities communication</label>
       <description>Energy, water and waste systems and communications
-        infrastructure andservices. Examples: hydroelectricity, geothermal,
+        infrastructure and services. Examples: hydroelectricity, geothermal,
         solar and nuclear sources of energy, water purification and
         distribution, sewage collection and disposal, electricity and gas
         distribution, data communication, telecommunication, radio,
@@ -1900,13 +1910,13 @@
     </entry>
     <entry>
       <code>extraTerrestrial</code>
-      <label>Extra Terrestrial</label>
+      <label>U Extra Terrestrial</label>
       <description>Region more than 100 km above the surface of the Earth
       </description>
     </entry>
     <entry>
       <code>disaster</code>
-      <label>Disaster</label>
+      <label>V Disaster</label>
       <description>Information related to disasters EXAMPLES: Site of the
         disaster, evacuation zone, disaster-prevention facility, disaster relief
         activities
@@ -2898,7 +2908,7 @@
     <entry>
       <code>loose</code>
       <label>Loose</label>
-      <description>service instance is loosely coupled with a data instance,
+      <description>Service instance is loosely coupled with a data instance,
         i.e. no MD_DataIdentification class has to be described
       </description>
     </entry>
@@ -2938,7 +2948,9 @@
       <label>Unknown</label>
     </entry>
   </codelist>
+  
   <codelist name="che:CHE_MD_SubTopicCategoryCode" alias="subTopicCategory">
+    <definition>Subtopic categories according to eCH-0166 to improve classification of topicCategories and search of geodata</definition>
     <entry>
       <code>imageryBaseMapsEarthCover_BaseMaps</code>
       <label>A1 Base Maps, Landscape Models</label>
@@ -2973,26 +2985,23 @@
     </entry>
     <entry>
       <code>environment_EnvironmentalProtection</code>
-      <label>L1 Environmental protection, Noise</label>
+      <label>L1 Environmental Protection, Noise</label>
     </entry>
     <entry>
       <code>environment_NatureProtection</code>
-      <label>L2 Nature and Landscape protection</label>
+      <label>L2 Nature and Landscape Protection</label>
     </entry>
     <entry>
       <code>utilitiesCommunication_Energy</code>
       <label>Q1 Energy</label>
-      <description></description>
     </entry>
     <entry>
       <code>utilitiesCommunication_Utilities</code>
       <label>Q2 Water and Waste Systems</label>
-      <description></description>
     </entry>
     <entry>
       <code>utilitiesCommunication_Communication</code>
       <label>Q3 Communication</label>
-      <description></description>
     </entry>
   </codelist>
 
@@ -3000,15 +3009,17 @@
     <entry>
       <code>communal</code>
       <label>Communal</label>
+      <description>Communal hierarchy level</description>
     </entry>
     <entry>
       <code>cantonal</code>
       <label>Cantonal</label>
+      <description>Cantonal hierarchy level</description>
     </entry>
     <entry>
       <code>federal</code>
       <label>Federal</label>
-      <description>Set of geodata ID at federal level (Collection of geodata on federal law)</description>
+      <description>Federal hierarchy level</description>
     </entry>
     <entry>
       <code>other</code>
@@ -3016,31 +3027,160 @@
     </entry>
   </codelist>
 
-  <codelist name="che:MD_geodataTypeCode" alias="geodataType">
+  <codelist name="che:CHE_DS_AssociationTypeCode" alias="associationType">
+    <definition>Justification for the correlation of two resources</definition>
     <entry>
-      <code>basicGeodata</code>
-      <label>Basic Geodata</label>
+      <code>crossReference</code>
+      <label>Reference from one resource to another</label>
     </entry>
+    <entry>
+      <code>largerWorkCitation</code>
+      <label>Reference to a master resource of which this one is a part</label>
+    </entry>
+    <entry>
+      <code>partOfSeamlessDatabase</code>
+      <label>Part of same structured set of data held in a computer</label>
+    </entry>
+    <entry>
+      <code>stereoMate</code>
+      <label>Part of a set of imagery that, when used together, provides three-dimensional images</label>
+    </entry>
+    <entry>
+      <code>isComposedOf</code>
+      <label>Reference to resources that are parts of this resource</label>
+    </entry>
+    <entry>
+      <code>collectiveTitle</code>
+      <label>Common title for a collection of resources. NOTE: title identifies elements of a series collectively, combined with information about what volumes are available at the source cite</label>
+    </entry>
+    <entry>
+      <code>series</code>
+      <label>Associated through a common heritage such as produced to a common product specification</label>
+    </entry>
+    <entry>
+      <code>dependency</code>
+      <label>Associated through a dependency</label>
+    </entry>
+    <entry>
+      <code>revisionOf</code>
+      <label>Resource is a revision of associated resource</label>
+    </entry>
+    <entry>
+      <code>isTemporalStateOf</code>
+      <label>Resource is a temporal state of associated resource</label>
+    </entry>
+    <entry>
+      <code>isDescriptionOf</code>
+      <label>Resource is a description of associated resource</label>
+    </entry>
+    <entry>
+      <code>isDescribedBy</code>
+      <label>Resource is described by associated resource</label>
+    </entry>
+  </codelist>
+
+  <codelist name="che:CHE_MD_BasicGeodataAccessLevelCode" alias="basicGeodataAccessLevel">
+    <definition>Codes for geobasisdaten access authorization level</definition>
+    <entry>
+      <code>A</code>
+      <label>A</label>
+      <description>Publicly accessible</description>
+    </entry>
+    <entry>
+      <code>B</code>
+      <label>B</label>
+      <description>Publicly accessible with restrictions</description>
+    </entry>
+    <entry>
+      <code>C</code>
+      <label>C</label>
+      <description>Not publicly accessible</description>
+    </entry>
+  </codelist>
+
+  <codelist name="che:CHE_MD_BasicGeodataTypeCode" alias="BasicGeodataTypeCode">
+    <definition>Type of basic geodata</definition>
     <entry>
       <code>oereb</code>
-      <label>oereb</label>
-    </entry>
-    <entry>
-      <code>oerebRegister</code>
-      <label>oereb Register</label>
-    </entry>
-    <entry>
-      <code>openGovernmentData</code>
-      <label>Open Government Data</label>
-    </entry>
-    <entry>
-      <code>openData</code>
-      <label>Open Data</label>
+      <label>Cadastre PLRRE</label>
+      <description>See GeoIV Annex 1 (SR 510.620)</description>
     </entry>
     <entry>
       <code>referenceGeodata</code>
       <label>Reference Geodata</label>
+      <description>See GeoIV Annex 1 (SR 510.620)</description>
     </entry>
   </codelist>
 
+  <codelist name="che:CHE_CI_LegislationTypeCode" alias="legislationType">
+    <definition>Codes for legislation type</definition>
+    <entry>
+      <code>law</code>
+      <label>Law</label>
+    </entry>
+    <entry>
+      <code>ordinance</code>
+      <label>Ordinance</label>
+    </entry>
+    <entry>
+      <code>other</code>
+      <label>Other legal disposition</label>
+    </entry>
+  </codelist>
+
+  <codelist name="che:CHE_AppraisalOfArchivalValueCode" alias="appraisalOfArchivalValue">
+    <definition>Codes for archival value</definition>
+    <entry>
+      <code>A</code>
+      <label>A</label>
+      <description>With archival value</description>
+    </entry>
+    <entry>
+      <code>N</code>
+      <label>N</label>
+      <description>Without archival value</description>
+    </entry>
+    <entry>
+      <code>S</code>
+      <label>S</label>
+      <description>Sampling</description>
+    </entry>
+  </codelist>
+
+  <codelist name="che:CHE_ReasonForArchivingValueCode" alias="reasonForArchivingValue">
+    <definition>Codes for archival value reason</definition>
+    <entry>
+      <code>legalRelevance</code>
+      <label>Legal relevance</label>
+    </entry>
+    <entry>
+      <code>guaranteeOfLegalCertainty</code>
+      <label>Guarantee of legal certainty</label>
+    </entry>
+    <entry>
+      <code>evidenceOfBusinessPractice</code>
+      <label>Evidence of business practice</label>
+    </entry>
+    <entry>
+      <code>benefitsForResearch</code>
+      <label>Benefits for research</label>
+    </entry>
+    <entry>
+      <code>contemporaryInterest</code>
+      <label>Contemporary interest</label>
+    </entry>
+    <entry>
+      <code>sensitivity</code>
+      <label>Sensitivity</label>
+    </entry>
+    <entry>
+      <code>developmentsProgression</code>
+      <label>Developments progression</label>
+    </entry>
+    <entry>
+      <code>definingPowers</code>
+      <label>Defining powers</label>
+    </entry>
+  </codelist>
+  
 </codelists>

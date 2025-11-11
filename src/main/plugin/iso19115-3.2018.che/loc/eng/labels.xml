@@ -87,10 +87,31 @@
       <condition></condition>
     </element>
     <element name="che:CHE_MD_MaintenanceInformation">
-      <label>Maintenance Information</label>
-      <description>Maintenance Information</description>
+      <label>Maintenance Information iso19115-3.2018.che</label>
+      <description>Information about the scope and frequency of updating (iso19115-3.2018.che)</description>
+      <help>Information about the scope, frequency and date of updating of the data are contained in
+        the class MD_MaintenanceInformation. This class contains attributes that provide information about the frequency and extent
+        of the update and re-evaluation of the data set. Only the indication of frequency is mandatory
+        and must be selected from the list MD_MaintenanceFrequencyCode. The extent of the update, the attributes
+        it concerns and the associated descriptions are information that can be indicated via the
+        attributes "updateScope" and "updateScopeDescription". It is not planned to indicate the spatial extent of the
+        update. If only parts of a data set are updated or if all its parts are not
+        updated simultaneously, then the parts concerned by the description of the update can be
+        specified via "+updateScopeDescription" in the class MD_ScopeDescription.
+      </help>
       <condition></condition>
-      </element>
+    </element>
+    <element name="mmi:MD_MaintenanceInformation"
+          context="che:CHE_MD_MaintenanceInformation">
+      <label>Maintenance Information</label>
+      <description iso="true">Information about the scope and frequency of updating
+      </description>
+      <condition>optional</condition>
+    </element>
+    <element name="gco:isoType">
+      <label>ISO type</label>
+      <description iso="true">Indicates the ISO type of the element or value</description>
+    </element>
       <element name="mmi:maintenanceDate">
         <label>Maintenance Date</label>
         <description>Maintenance Date</description>
@@ -149,6 +170,46 @@
       <element name="che:legislationConstraints">
         <label>Legislation Constraints</label>
         <description>Legislation Constraints</description>
+        <condition></condition>
+      </element>
+      <element name="che:CHE_MD_Legislation">
+        <label>Legislation</label>
+        <description>Legislation</description>
+        <condition></condition>
+      </element>
+      <element name="che:country">
+        <label>Country</label>
+        <description>Country</description>
+        <condition></condition>
+      </element>
+      <element name="che:language">
+        <label>Language</label>
+        <description>Language</description>
+        <condition></condition>
+      </element>
+      <element name="che:legislationType">
+        <label>Legislation Type</label>
+        <description>Legislation Type</description>
+        <condition></condition>
+      </element>
+      <element name="che:legislationLevel">
+        <label>Legislation Level</label>
+        <description>Legislation Level</description>
+        <condition></condition>
+      </element>
+      <element name="che:internalReference">
+        <label>Internal Reference</label>
+        <description>Internal Reference</description>
+        <condition></condition>
+      </element>
+      <element name="che:legislationAcronym">
+        <label>Legislation Acronym</label>
+        <description>Legislation Acronym</description>
+        <condition></condition>
+      </element>
+      <element name="che:legislationCitation">
+        <label>Legislation Citation</label>
+        <description>Legislation Citation</description>
         <condition></condition>
       </element>
       <element name="che:subTopicCategory">
@@ -1839,9 +1900,8 @@
     </description>
   </element>
   <element name="mmi:MD_MaintenanceInformation" id="142.0">
-    <label>Maintenance information</label>
-    <description>Information about the scope and frequency of updating
-    </description>
+    <label>Maintenance information iso19115-3.2018</label>
+      <description>Information about the scope and frequency of updating (iso19115-3.2018)</description>
   </element>
   <element name="mrd:MD_Medium" id="291.0">
     <label>Medium</label>
@@ -2016,6 +2076,7 @@
           information is known.
           Example: "DCW" as an alternative title for "Digital Chart of the World
         </description>
+        <condition>mandatory</condition>
       </element>
       <element name="mrd:amendmentNumber" id="287.0">
         <label>Amendment number</label>
@@ -2533,7 +2594,7 @@
       </element>
       <element name="mrl:sourceSpatialResolution" id="133.0">
         <label>Source spatial resolution</label>
-        <description>spatial resolution expressed as a scale factor, a distance, an
+        <description>Spatial resolution expressed as a scale factor, a distance, an
           angle or a level of detail
         </description>
         <help></help>
@@ -3138,7 +3199,7 @@
   </element>
   <element name="mcc:linkage" id="442.0" context="mcc:MD_BrowseGraphic">
     <label>Linkage</label>
-    <description>link to browse graphic</description>
+    <description>Link to browse graphic</description>
     <condition></condition>
   </element>
   <element name="mmi:maintenanceAndUpdateFrequency" id="143.0">
@@ -4647,7 +4708,7 @@
       </element>
       <element name="mcc:version" id="208.2" context="mcc:MD_Identifier">
         <label>Version</label>
-        <description>version identifier for the namespace</description>
+        <description>Version identifier for the namespace</description>
       </element>
       <element name="mri:version" id="286.0">
         <label>Version</label>
@@ -4766,7 +4827,7 @@
       </element>
       <element name="gml:timeInterval">
         <label>Time interval</label>
-        <description>conforms to ISO 11404 which is based on floating point values
+        <description>Conforms to ISO 11404 which is based on floating point values
           for temporal length.
           ISO 11404 syntax specifies the use of a positiveInteger together with
           appropriate values for radix and factor. The resolution of the time
@@ -4870,6 +4931,14 @@
       </element>
       <element name="xlink:type">
         <label>Type of link</label>
+        <description></description>
+      </element>
+      <element name="xlink:title">
+        <label>URL title</label>
+        <description></description>
+      </element>
+      <element name="xlink:show">
+        <label>URL show</label>
         <description></description>
       </element>
       <element name="unit">
@@ -5748,11 +5817,11 @@
       </element>
       <element name="mrc:MI_CoverageDescription">
         <label>Coverage description (with range elements)</label>
-        <description>information about the content of a coverage, including the description of specific range elements</description>
+        <description>Information about the content of a coverage, including the description of specific range elements</description>
       </element>
       <element name="mrc:MI_RangeElementDescription">
         <label>Range element description</label>
-        <description>eg. storage_meth</description>
+        <description>Eg. storage_meth</description>
       </element>
       <element name="mrc:definition">
         <label>Definition</label>
