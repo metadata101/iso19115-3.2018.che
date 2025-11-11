@@ -107,8 +107,7 @@
       <description iso="true">Information about the scope and frequency of updating</description>
       <condition>optional</condition>
     </element>
-    <element name="gco:isoType"
-          context="che:CHE_MD_MaintenanceInformation">
+    <element name="gco:isoType">
       <label>ISO type</label>
       <description iso="true">Indicates the ISO type of the element or value</description>
     </element>
@@ -170,6 +169,51 @@
       <element name="che:legislationConstraints">
         <label>Legislation Constraints</label>
         <description>Legislation Constraints</description>
+        <condition></condition>
+      </element>
+      <element name="che:CHE_MD_Legislation">
+        <label>Legislation</label>
+        <description>Legislation</description>
+        <condition></condition>
+      </element>
+      <element name="che:legislationInformation">
+        <label>Legislation information</label>
+        <description>Legislation information</description>
+        <condition></condition>
+      </element>
+      <element name="che:country">
+        <label>Country</label>
+        <description>Country</description>
+        <condition></condition>
+      </element>
+      <element name="che:language">
+        <label>Language</label>
+        <description>Language</description>
+        <condition></condition>
+      </element>
+      <element name="che:legislationType">
+        <label>Legislation Type</label>
+        <description>Legislation Type</description>
+        <condition></condition>
+      </element>
+      <element name="che:legislationLevel">
+        <label>Legislation Level</label>
+        <description>Legislation Level</description>
+        <condition></condition>
+      </element>
+      <element name="che:internalReference">
+        <label>Internal Reference</label>
+        <description>Internal Reference</description>
+        <condition></condition>
+      </element>
+      <element name="che:legislatiogit comnAcronym">
+        <label>Legislation Acronym</label>
+        <description>Legislation Acronym</description>
+        <condition></condition>
+      </element>
+      <element name="che:legislationCitation">
+        <label>Legislation Citation</label>
+        <description>Legislation Citation</description>
         <condition></condition>
       </element>
       <element name="che:subTopicCategory">
@@ -3158,7 +3202,7 @@
   </element>
   <element name="mcc:linkage" id="442.0" context="mcc:MD_BrowseGraphic">
     <label>Linkage</label>
-    <description>link to browse graphic</description>
+    <description>Link to browse graphic</description>
     <condition></condition>
   </element>
   <element name="mmi:maintenanceAndUpdateFrequency" id="143.0">
@@ -4667,7 +4711,7 @@
   </element>
   <element name="mcc:version" id="208.2" context="mcc:MD_Identifier">
     <label>Version</label>
-    <description>version identifier for the namespace</description>
+    <description>Version identifier for the namespace</description>
   </element>
   <element name="mri:version" id="286.0">
     <label>Version</label>
@@ -4786,7 +4830,7 @@
   </element>
   <element name="gml:timeInterval">
     <label>Time interval</label>
-    <description>conforms to ISO 11404 which is based on floating point values
+    <description>Conforms to ISO 11404 which is based on floating point values
       for temporal length.
       ISO 11404 syntax specifies the use of a positiveInteger together with
       appropriate values for radix and factor. The resolution of the time
@@ -6091,11 +6135,11 @@
   </element>
   <element name="mrc:MI_CoverageDescription">
     <label>Coverage description (with range elements)</label>
-    <description>information about the content of a coverage, including the description of specific range elements</description>
+    <description>Information about the content of a coverage, including the description of specific range elements</description>
   </element>
   <element name="mrc:MI_RangeElementDescription">
     <label>Range element description</label>
-    <description>eg. storage_meth</description>
+    <description>Eg. storage_meth</description>
   </element>
   <element name="mrc:definition">
     <label>Definition</label>

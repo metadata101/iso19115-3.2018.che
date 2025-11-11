@@ -49,6 +49,7 @@
   <portrayalCatalogueInfo>Darstellung</portrayalCatalogueInfo>
   <metadataConstraints>Metadateneinschränkungen</metadataConstraints>
   <metadataMaintenance>Metadaten-Pflege</metadataMaintenance>
+  <legislationInformation>Gesetzgebung</legislationInformation>
   <applicationSchemaInfo>Erw. Standard</applicationSchemaInfo>
   <acquisitionInformation>Erfassung</acquisitionInformation>
   <bboxesSection>Geografischer Bereich</bboxesSection>
