@@ -514,6 +514,159 @@
     </entry>
   </codelist>
 
+  <codelist name="che:CHE_DS_AssociationTypeCode" alias="associationType">
+    <entry>
+      <code>crossReference</code>s
+      <label>Riferimento incrociato</label>
+      <description>Riferimento da un set di dati a un altro</description>
+    </entry>
+    <entry>
+      <code>largerWorkCitation</code>
+      <label>Citazione di un'opera più ampia</label>
+      <description>Riferimento a un set di dati principale di cui questo fa parte
+      </description>
+    </entry>
+    <entry>
+      <code>partOfSeamlessDatabase</code>
+      <label>Parte di un database senza soluzione di continuità</label>
+      <description>Parte dello stesso insieme strutturato di dati conservato in un computer
+      </description>
+    </entry>
+    <entry>
+      <code>source</code>
+      <label>Fonte</label>
+      <description>Riferimenti alla fonte dei dati che ha permesso di
+        produrre le mappe, ecc.
+      </description>
+    </entry>
+    <entry>
+      <code>stereoMate</code>
+      <label>Stereo mate</label>
+      <description>Parte di una serie di immagini che, se utilizzate insieme, forniscono
+        immagini tridimensionali
+      </description>
+    </entry>
+    <entry>
+      <code>isComposedOf</code>
+      <label>È composto da</label>
+      <description>Riferimento alle risorse che fanno parte di questa risorsa
+      </description>
+    </entry>
+    <entry>
+      <code>collectiveTitle</code>
+      <label>Titolo collettivo</label>
+      <description>Titolo comune per una raccolta di risorse. NOTA Il titolo
+        identifica collettivamente gli elementi di una serie, insieme alle informazioni
+        su quali volumi sono disponibili presso la fonte citata
+      </description>
+    </entry>
+    <entry>
+      <code>series</code>
+      <label>Serie</label>
+      <description>Associati attraverso un patrimonio comune, come la produzione secondo
+        specifiche di prodotto comuni
+      </description>
+    </entry>
+    <entry>
+      <code>dependency</code>
+      <label>Dipendenza</label>
+      <description>Associato tramite una dipendenza</description>
+    </entry>
+    <entry>
+      <code>revisionOf</code>
+      <label>Revisione di</label>
+      <description>La risorsa è una revisione della risorsa associata</description>
+    </entry>
+  </codelist>
+
+  <codelist name="che:CHE_MD_BasicGeodataAccessLevelCode" alias="BasicGeodataAccessLevelCode">
+    <entry>
+      <code>A</code>
+      <label>A</label>
+	  <description>Geodati di base accessibili al pubblico, livello A (Art. 22 OGeo)</description>
+    </entry>
+    <entry>
+      <code>B</code>
+      <label>B</label>
+		<description>Geodati di base parzialmente accessibili al pubblico: livello B (Art. 23 OGeo)</description>
+    </entry>
+	<entry>
+      <code>C</code>
+      <label>C</label>
+		<description>Geodati di base non accessibili al pubblico: livello C (Art. 24 OGeo)</description>
+    </entry>
+  </codelist>
+
+  <codelist name="che:CHE_CI_LegislationTypeCode" alias="LegislationTypeCode">
+    <entry>
+      <code>law</code>
+      <label>Legge</label>
+    </entry>
+      <entry>
+        <code>ordinance</code>
+        <label>Ordinanza</label>
+    </entry>
+    <entry>
+        <code>other</code>
+        <label>Altro</label>
+        <description>Altra disposizione legale</description>
+    </entry>
+  </codelist>
+
+  <codelist name="che:CHE_AppraisalOfArchivalValueCode" alias="appraisalOfArchivalValue">
+    <entry>
+      <code>A</code>
+      <label>A</label>
+      <description>Avente valore archivistico</description>
+    </entry>
+      <entry>
+        <code>N</code>
+        <label>N</label>
+        <description>Senza valore archivistico</description>
+    </entry>
+    <entry>
+        <code>S</code>
+        <label>S</label>
+      <description>Sampling (campionamento) / Sélection (scelta)</description>
+    </entry>
+  </codelist>
+
+  <codelist name="che:CHE_ReasonForArchivingValueCode" alias="ReasonForArchivingValueCode">
+  <definition>Raison de la valeur archivistique [15]</definition>
+    <entry>
+      <code>legalRelevance</code>
+      <label>Pertinenza giuridica</label>
+	  </entry>
+    <entry>
+      <code>guaranteeOfLegalCertainty</code>
+      <label>Garanzia della certezza giuridica</label>
+	  </entry>
+	  <entry>
+      <code>evidenceOfBusinessPractice</code>
+      <label>Prova della pratica commerciale</label>
+	  </entry>
+	  <entry>
+      <code>benefitsForResearch</code>
+      <label>Utilità per la ricerca</label>
+	  </entry>
+    <entry>
+      <code>contemporaryInterest</code>
+      <label>Valore d’attualità</label>
+	  </entry>
+	  <entry>
+      <code>sensitivity</code>
+      <label>Soggetti esplosivi</label>
+	  </entry>
+	  <entry>
+      <code>developmentsProgression</code>
+      <label>Evoluzione/svolgimento</label>
+	  </entry>
+    <entry>
+      <code>definingPowers</code>
+      <label>Poteri definitivi</label>
+	  </entry>
+ </codelist>		
+
   <codelist name="mri:DS_InitiativeTypeCode" alias="initiativeType">
     <entry>
       <code>campaign</code>
@@ -1680,7 +1833,7 @@
   <codelist name="mri:MD_TopicCategoryCode" alias="topicCategory">
     <entry>
       <code>farming</code>
-      <label>Agricoltura</label>
+      <label>S Agricoltura</label>
       <description>Allevamento di animali e/o coltivazione di piante. Esempi:
         agricoltura, irrigazione, acquacoltura, piantagioni, pastorizia, parassiti e
         malattie che colpiscono le colture e il bestiame
@@ -1688,7 +1841,7 @@
     </entry>
     <entry>
       <code>biota</code>
-      <label>Biota</label>
+      <label>G Biota</label>
       <description>Flora e/o fauna nell'ambiente naturale. Esempi:
         fauna selvatica, vegetazione, scienze biologiche, ecologia, natura selvaggia, vita marina,
         zone umide, habitat
@@ -1696,14 +1849,14 @@
     </entry>
     <entry>
       <code>boundaries</code>
-      <label>Confini</label>
+      <label>D Confini</label>
       <description>Descrizioni legali dei terreni. Esempi: confini politici e
         amministrativi
       </description>
     </entry>
     <entry>
       <code>climatologiaMeteorologiaAtmosfera</code>
-      <label>Climatologia, meteorologia, atmosfera</label>
+      <label>K Climatologia, meteorologia, atmosfera</label>
       <description>Processi e fenomeni dell'atmosfera. Esempi: copertura nuvolosa
         , tempo atmosferico, clima, condizioni atmosferiche, cambiamenti climatici,
         precipitazioni
@@ -1711,7 +1864,7 @@
     </entry>
     <entry>
       <code>economy</code>
-      <label>Economia</label>
+      <label>T Economia</label>
       <description>Attività economiche, condizioni e occupazione. Esempi:
         produzione, lavoro, entrate, commercio, industria, turismo ed ecoturismo,
         silvicoltura, pesca, caccia commerciale o di sussistenza, esplorazione e
@@ -1720,14 +1873,14 @@
     </entry>
     <entry>
       <code>elevation</code>
-      <label>Altitudine</label>
+      <label>C Altitudine</label>
       <description>Altezza sopra o sotto il livello del mare. Esempi: altitudine,
         batimetria, modelli digitali di elevazione, pendenza, prodotti derivati
       </description>
     </entry>
     <entry>
       <code>environment</code>
-      <label>Ambiente</label>
+      <label>L Ambiente</label>
       <description>Risorse ambientali, protezione e conservazione.
         Esempi: inquinamento ambientale, stoccaggio e trattamento dei rifiuti,
         valutazione dell'impatto ambientale, monitoraggio del rischio ambientale,
@@ -1736,7 +1889,7 @@
     </entry>
     <entry>
       <code>geoscientificInformation</code>
-      <label>Informazioni geoscientifiche</label>
+      <label>F Informazioni geoscientifiche</label>
       <description>Informazioni relative alle scienze della terra. Esempi:
         caratteristiche e processi geofisici, geologia, minerali, scienze che si occupano
         la composizione, la struttura e l'origine delle rocce terrestri, rischi
@@ -1746,7 +1899,7 @@
     </entry>
     <entry>
       <code>health</code>
-      <label>Salute</label>
+      <label>N Salute</label>
       <description>Salute, servizi sanitari, ecologia umana e sicurezza. Esempi:
         malattie e disturbi, fattori che influiscono sulla salute, igiene, abuso di sostanze,
         salute mentale e fisica, servizi sanitari
@@ -1754,21 +1907,21 @@
     </entry>
     <entry>
       <code>imageryBaseMapsEarthCover</code>
-      <label>Mappe di base con immagini della copertura terrestre</label>
+      <label>A Mappe di base con immagini della copertura terrestre</label>
       <description>Mappe di base. Esempi: copertura del suolo, mappe topografiche, immagini,
         immagini non classificate, annotazioni
       </description>
     </entry>
     <entry>
       <code>intelligenceMilitare</code>
-      <label>Intelligence militare</label>
+      <label>R Intelligence militare</label>
       <description>Basi militari, strutture, attività. Esempi: caserme,
         campi di addestramento, trasporti militari, raccolta di informazioni
       </description>
     </entry>
     <entry>
       <code>inlandWaters</code>
-      <label>Acque interne</label>
+      <label>I Acque interne</label>
       <description>Caratteristiche delle acque interne, sistemi di drenaggio e loro
         caratteristiche. Esempi: fiumi e ghiacciai, laghi salati, piani di
         , dighe, correnti, inondazioni, qualità dell'acqua, carte idrografiche.
@@ -1776,7 +1929,7 @@
     </entry>
     <entry>
       <code>location</code>
-      <label>Posizione</label>
+      <label>B Posizione</label>
       <description>Informazioni e servizi relativi alla posizione. Esempi: indirizzi,
         reti geodetiche, punti di controllo, zone e servizi postali, nomi di luoghi
         nomi
@@ -1784,14 +1937,14 @@
     </entry>
     <entry>
       <code>oceans</code>
-      <label>Oceani</label>
+      <label>H Oceani</label>
       <description>Caratteristiche e peculiarità dei corpi idrici salati (escluse le
         acque interne). Esempi: maree, maremoti, informazioni costiere, barriere coralline
       </description>
     </entry>
     <entry>
       <code>planningCadastre</code>
-      <label>Catasto urbanistico</label>
+      <label>E Catasto urbanistico</label>
       <description>Informazioni utilizzate per azioni appropriate per l'uso futuro del
         terreno. Esempi: mappe di utilizzo del terreno, mappe di zonizzazione, rilevamenti catastali, proprietà del terreno
         proprietà
@@ -1799,7 +1952,7 @@
     </entry>
     <entry>
       <code>society</code>
-      <label>Società</label>
+      <label>M Società</label>
       <description>Caratteristiche della società e delle culture. Esempi:
         insediamenti, antropologia, archeologia, istruzione, credenze tradizionali,
         costumi e tradizioni, dati demografici, aree ricreative e
@@ -1809,14 +1962,14 @@
     </entry>
     <entry>
       <code>structure</code>
-      <label>Struttura</label>
+      <label>O Struttura</label>
       <description>Costruzione artificiale. Esempi: edifici, musei,
         chiese, fabbriche, abitazioni, monumenti, negozi, torri
       </description>
     </entry>
     <entry>
       <code>transportation</code>
-      <label>Trasporti</label>
+      <label>P Trasporti</label>
       <description>Mezzi e strumenti per il trasporto di persone e/o merci. Esempi:
         strade, aeroporti/piste di atterraggio, rotte marittime, gallerie, carte nautiche,
         localizzazione di veicoli o imbarcazioni, carte aeronautiche, ferrovie
@@ -1824,7 +1977,7 @@
     </entry>
     <entry>
       <code>utilitiesCommunication</code>
-      <label>Comunicazioni di pubblica utilità</label>
+      <label>Q Comunicazioni di pubblica utilità</label>
       <description>Sistemi energetici, idrici e di smaltimento dei rifiuti e infrastrutture e servizi di comunicazione
         infrastrutture e servizi. Esempi: energia idroelettrica, geotermica,
         energia solare e nucleare, depurazione e
@@ -1835,13 +1988,13 @@
     </entry>
     <entry>
       <code>extraTerrestrial</code>
-      <label>Extraterrestre</label>
+      <label>U Extraterrestre</label>
       <description>Regione a più di 100 km sopra la superficie terrestre
       </description>
     </entry>
     <entry>
       <code>disaster</code>
-      <label>Catastrofe</label>
+      <label>V Catastrofe</label>
       <description>Informazioni relative alle catastrofi ESEMPI: Luogo della
         catastrofe, zona di evacuazione, struttura di prevenzione delle catastrofi, attività di soccorso in caso di catastrofi
         attività
@@ -2874,6 +3027,7 @@
   </codelist>
 
   <codelist name="che:CHE_MD_SubTopicCategoryCode" alias="subTopicCategory">
+    <definition>Sottocategorie di sottotemi secondo eCH-0166 per migliorare la classificazione delle categorie tematiche e la ricerca dei geodati</definition>
     <entry>
       <code>imageryBaseMapsEarthCover_BaseMaps</code>
       <label>A1 Mappe di base, modelli paesaggistici</label>
@@ -2949,30 +3103,18 @@
       <label>Altro</label>
     </entry>
   </codelist>
-  <codelist name="che:CHE_MD_BasicGeodataTypeCode" alias="geodataType">
-    <entry>
-      <code>basicGeodata</code>
-      <label>Geodati di base</label>
-    </entry>
+
+  <codelist name="che:CHE_MD_BasicGeodataTypeCode" alias="BasicGeodataTypeCode">
+    <description>Tipi di geodati di base</description>
     <entry>
       <code>oereb</code>
-      <label>oereb</label>
-    </entry>
-    <entry>
-      <code>oerebRegister</code>
-      <label>oereb Registrati</label>
-    </entry>
-    <entry>
-      <code>openGovernmentData</code>
-      <label>Dati governativi aperti</label>
-    </entry>
-    <entry>
-      <code>openData</code>
-      <label>Dati aperti</label>
+      <label>Catasto RDPP</label>
+      <description>Cf. OGeo Appendice 1 (RS 510.620)</description>
     </entry>
     <entry>
       <code>referenceGeodata</code>
       <label>Geodati di riferimento</label>
+      <description>Cf. OGeo Appendice 1 (RS 510.620)</description>
     </entry>
   </codelist>
   <codelist name="mri:DS_AssociationTypeCode" alias="associationType">

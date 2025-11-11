@@ -122,8 +122,7 @@
     </description>
     <condition>optional</condition>
   </element>
-  <element name="gco:isoType"
-        context="che:CHE_MD_MaintenanceInformation">
+  <element name="gco:isoType">
     <label>Tipo ISO</label>
     <description iso="true">Indica il tipo ISO dell'elemento o del valore</description>
   </element>
@@ -185,6 +184,46 @@
   <element name="che:legislationConstraints">
     <label>Vincoli legislativi</label>
     <description>Vincoli legislativi</description>
+    <condition></condition>
+  </element>
+  <element name="che:CHE_MD_Legislation">
+    <label>Informazione sulla legislazione</label>
+    <description>Informazioni sulla legislazione</description>
+    <condition></condition>
+  </element>
+  <element name="che:country">
+    <label>Paese</label>
+    <description>Paese</description>
+    <condition></condition>
+  </element>
+  <element name="che:language">
+    <label>Lingua</label>
+    <description>Lingua</description>
+    <condition></condition>
+  </element>
+  <element name="che:legislationType">
+    <label>Tipo di legislazione</label>
+    <description>Tipo di legislazione</description>
+    <condition></condition>
+  </element>
+  <element name="che:legislationLevel">
+    <label>Livello della disposizione legale</label>
+    <description>Livello della disposizione legale</description>
+    <condition></condition>
+  </element>
+  <element name="che:internalReference">
+    <label>Riferimento interno</label>
+    <description>Riferimento interno</description>
+    <condition></condition>
+  </element>
+  <element name="che:legislationAcronym">
+    <label>Acronimo della disposizione legale</label>
+    <description>Acronimo della disposizione legale</description>
+    <condition></condition>
+  </element>
+  <element name="che:legislationCitation">
+    <label>Citazioni riguardanti la legislazione</label>
+    <description>Citazione riguardante la legislazione</description>
     <condition></condition>
   </element>
   <element name="che:subTopicCategory">
@@ -5587,7 +5626,7 @@ periodo di tempo coperto dal servizio.
   </element>-->
   <element name="mrc:name">
     <label>Nome</label>
-    <description>identificatori per ogni attributo compreso nella risorsa
+    <description>Identificatori per ogni attributo compreso nella risorsa
       NOTA Questi identificatori possono essere utilizzati per fornire nomi per
       l'attributo da un insieme standardizzato di nomi.
     </description>
@@ -7996,7 +8035,7 @@ dell'IGN (WPS)
 
   <element name="gcx:Anchor">
     <label>Etichetta</label>
-    <description>descrizione</description>
+    <description>Descrizione</description>
   </element>
   <element name="gml:timePosition">
     <label>Momento</label>
@@ -9228,7 +9267,7 @@ http://www.sandre.eaufrance.fr/?urn=urn:sandre:ensembledonnees:BDCarthage:FXX:::
    </element>
   <element name="mrc:MI_RangeElementDescription">
     <label>Descrizione dell'intervallo</label>
-    <description>ad es. storage_meth</description>
+    <description>Ad es. storage_meth</description>
   </element>
   <element name="mrc:definition">
     <label>Definizione</label>

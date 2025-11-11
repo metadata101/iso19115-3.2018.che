@@ -122,8 +122,7 @@
       </description>
       <condition>optional</condition>
     </element>
-    <element name="gco:isoType"
-          context="che:CHE_MD_MaintenanceInformation">
+    <element name="gco:isoType">
       <label>ISO type</label>
       <description iso="true">Indicates the ISO type of the element or value</description>
     </element>
@@ -185,6 +184,46 @@
   <element name="che:legislationConstraints">
     <label>Contraintes législatives</label>
     <description>Contraintes législatives</description>
+    <condition></condition>
+  </element>
+  <element name="che:CHE_MD_Legislation">
+    <label>Informations sur la législation</label>
+    <description>Informations sur la législation</description>
+    <condition></condition>
+  </element>
+  <element name="che:country">
+    <label>Pays</label>
+    <description>Pays</description>
+    <condition></condition>
+  </element>
+  <element name="che:language">
+    <label>Langue</label>
+    <description>Langue</description>
+    <condition></condition>
+  </element>
+  <element name="che:legislationType">
+    <label>Type de législation</label>
+    <description>Type de législation</description>
+    <condition></condition>
+  </element>
+  <element name="che:legislationLevel">
+    <label>Niveau de la disposition légale</label>
+    <description>Niveau de la disposition légale</description>
+    <condition></condition>
+  </element>
+  <element name="che:internalReference">
+    <label>Référence interne</label>
+    <description>Référence interne</description>
+    <condition></condition>
+  </element>
+  <element name="che:legislationAcronym">
+    <label>Acronyme de la disposition légale</label>
+    <description>Acronyme de la disposition légale</description>
+    <condition></condition>
+  </element>
+  <element name="che:legislationCitation">
+    <label>Citations concernant la législation</label>
+    <description>Citation concernant la législation</description>
     <condition></condition>
   </element>
   <element name="che:subTopicCategory">
@@ -3224,8 +3263,6 @@ de métadonnées de données « BD Carthage métropole »
   </element>
   <element name="cit:alternateTitle" id="363.0">
     <label>Autre titre</label>
-    <description>nom abrégé ou nom dans un autre langage grâce auquel les informations citées sont connues. EXEMPLE «DCW» comme titre alternatif pour «Digital Chart of the World ».
-    </description>
     <description iso="true">Nom abrégé ou nom dans un autre langage grâce auquel
       les informations citées sont connues. EXEMPLE «DCW» comme titre alternatif
       pour «Digital Chart of the World».
@@ -3239,7 +3276,7 @@ de métadonnées de données « BD Carthage métropole »
   </element>
   <element name="mrd:amendmentNumber" id="287.0">
     <label>Numéro de modification</label>
-    <description>numéro de modification de la version du format</description>
+    <description>Numéro de modification de la version du format</description>
     <help>Numéro de la modification apportée au format.</help>
     <condition/>
 
@@ -3719,7 +3756,7 @@ de métadonnées de données « BD Carthage métropole »
   </element>
   <element name="mdb:contentInfo" id="16.0">
     <label>Informations de contenu</label>
-    <description>informations relatives aux caractéristiques d’entité et de couverture
+    <description>Informations relatives aux caractéristiques d’entité et de couverture
     </description>
     <help>Description du contenu du jeu de données. Renvoi au catalogue
       d'objets, au modèle de données ou à la description des données. Le contenu
@@ -4348,7 +4385,7 @@ version en tant que mot-clé complémentaire(s). Le numéro de version doit comp
   </element>
   <element name="mdb:distributionInfo" id="17.0">
     <label>Informations de distribution</label>
-    <description>informations sur le distributeur de la ressource et les options pour obtenir la ou les ressources</description>
+    <description>Informations sur le distributeur de la ressource et les options pour obtenir la ou les ressources</description>
     <help>Informations relatives au distributeur et au mode d'acquisition de la
       ou des ressources. Indications concernant le lieu et la forme d'obtention
       des données. Ces informations sont gérées dans la classe MD_Distribution.
@@ -5509,7 +5546,7 @@ période de temps couverte par le service.
   </element>-->
   <element name="mrc:name">
     <label>Nom</label>
-    <description>identifiants pour chaque attribut compris dans la ressource
+    <description>Identifiants pour chaque attribut compris dans la ressource
       NOTE Ces identifiants peuvent être utilisés pour fournir des noms pour
       l’attribut à partir d’un ensemble normalisé de noms.
     </description>
@@ -5592,13 +5629,13 @@ période de temps couverte par le service.
   </element>
   <element name="cit:name" context="cit:CI_Individual" id="375.0">
     <label>Nom</label>
-    <description>nom de l’acteur (individu ou organisation)</description>
+    <description>Nom de l’acteur (individu ou organisation)</description>
     <help>Nom de l'acteur (individu ou organisation).</help>
   </element>
 
   <element name="cit:name">
     <label>Nom</label>
-    <description>nom de l’acteur (individu ou organisation)</description>
+    <description>Nom de l’acteur (individu ou organisation)</description>
     <help>Nom de l'acteur (individu ou organisation).</help>
     <condition>Obligatoire</condition>
   </element>
@@ -6335,7 +6372,7 @@ la non-évaluation</b>, dans le cadre de métadonnées INSPIRE
   </element>
   <element name="cit:positionName" id="377.0">
     <label>Nom de position</label>
-    <description>position de l’individu dans une organisation</description>
+    <description>Position de l’individu dans une organisation</description>
     <help>Fonction ou position de la personne responsable.</help>
     <condition>Condition</condition>
   </element>
@@ -7096,10 +7133,10 @@ diffusion restreinte.
     <condition>Condition</condition>
   </element>
   <element name="mri:status" id="28.0">
-    <label>Etat</label>
-    <description>Etat (de travail) des ressources</description>
+    <label>État</label>
+    <description>État (de travail) des ressources</description>
     <description iso="true">Statut de la ressource</description>
-    <help>Etat de traitement du jeu de données. Sélection de l'une des options
+    <help>État de traitement du jeu de données. Sélection de l'une des options
       suivantes : complet, archive historique, obsolète, en cours, en projet,
       nécessaire, à l'étude.
     </help>
@@ -7897,7 +7934,7 @@ l’IGN (WPS)
 
   <element name="gcx:Anchor">
     <label>Libellé</label>
-    <description>description</description>
+    <description>Description</description>
   </element>
   <element name="gml:timePosition">
     <label>Instant</label>
@@ -9128,7 +9165,7 @@ http://www.sandre.eaufrance.fr/?urn=urn:sandre:ensembledonnees:BDCarthage:FXX:::
    </element>
   <element name="mrc:MI_RangeElementDescription">
     <label>Description de la gamme</label>
-    <description>eg. storage_meth</description>
+    <description>Eg. storage_meth</description>
   </element>
   <element name="mrc:definition">
     <label>Définition</label>
