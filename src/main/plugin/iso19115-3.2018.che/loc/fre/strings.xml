@@ -49,6 +49,7 @@
   <portrayalCatalogueInfo>Représentation</portrayalCatalogueInfo>
   <metadataConstraints>Md. constraintes</metadataConstraints>
   <metadataMaintenance>Md. maintenance</metadataMaintenance>
+  <legislationInformation>Législation</legislationInformation>
   <applicationSchemaInfo>Standard ext.</applicationSchemaInfo>
   <acquisitionInformation>Acquisition</acquisitionInformation>
   <bboxesSection>Zone géographique</bboxesSection>
@@ -56,9 +57,6 @@
   <citationProposal-help>Cette proposition de citation a été générée automatiquement selon le format suggéré par DataCite. Nous vous invitons à vérifier dans les métadonnées si les auteurs n'ont pas imposé un format de citation spécifique.</citationProposal-help>
   <citationAdditional>Pour toute utilisation de cette ressource dans une publication, merci de citer également les travaux suivants :</citationAdditional>
   <associatedResources>Ressources associées</associatedResources>
-
-
-
   <add-resource-id>Générer un identifiant</add-resource-id>
   <add-resource-idHelp>Construit un identifiant en utilisant l'URL du catalogue
     et l'identifiant de la fiche (eg.
