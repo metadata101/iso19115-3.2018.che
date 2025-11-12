@@ -1410,25 +1410,12 @@
   </sch:pattern>
   <sch:diagnostics>
 
-    <sch:diagnostic id="rule.mri.datasetextent-failure-en" xml:lang="en">The
-      dataset MUST provide a
-      geographic description or a bounding box.
+    <sch:diagnostic id="rule.mri.datasetextent-failure-en" xml:lang="en">
+      dataset or series description MUST provide a bounding box.
     </sch:diagnostic>
 
-    <sch:diagnostic id="rule.mri.datasetextent-failure-fr" xml:lang="fr">Le jeu
-      de données DOIT être décrit par
-      une description géographique ou une emprise.
-    </sch:diagnostic>
-
-
-    <sch:diagnostic id="rule.mri.datasetextentdesc-success-en" xml:lang="en">The
-      dataset geographic description is:
-      "<sch:value-of select="normalize-space($geodescription)"/>".
-    </sch:diagnostic>
-
-    <sch:diagnostic id="rule.mri.datasetextentdesc-success-fr" xml:lang="fr">La
-      description géographique du jeu de données est
-      "<sch:value-of select="normalize-space($geodescription)"/>".
+    <sch:diagnostic id="rule.mri.datasetextent-failure-fr" xml:lang="fr">La description d'un jeu
+      de données ou d'une collection DOIT comprendre une emprise.
     </sch:diagnostic>
 
 
@@ -1459,27 +1446,21 @@
 
 
     <sch:rule
-            context="/che:CHE_MD_Metadata[mdb:metadataScope/                           mdb:MD_MetadataScope/mdb:resourceScope/                           mcc:MD_ScopeCode/@codeListValue = 'dataset']/                           mdb:identificationInfo/che:CHE_MD_DataIdentification">
+            context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series']/                           mdb:identificationInfo/che:CHE_MD_DataIdentification">
 
-
-      <sch:let name="geodescription"
-               value="mri:extent/gex:EX_Extent/gex:geographicElement/                   gex:EX_GeographicDescription/gex:geographicIdentifier[                   normalize-space(mcc:MD_Identifier/mcc:code/*/text()) != ''                   ]"/>
 
       <sch:let name="geobox"
                value="mri:extent/gex:EX_Extent/gex:geographicElement/                   gex:EX_GeographicBoundingBox[                   normalize-space(gex:westBoundLongitude/gco:Decimal) != '' and                   normalize-space(gex:eastBoundLongitude/gco:Decimal) != '' and                   normalize-space(gex:southBoundLatitude/gco:Decimal) != '' and                   normalize-space(gex:northBoundLatitude/gco:Decimal) != ''                   ]"/>
 
 
       <sch:let name="hasGeoextent"
-               value="count($geodescription) + count($geobox) &gt; 0"/>
+               value="count($geobox) &gt; 0"/>
 
 
       <sch:assert test="$hasGeoextent"
                   diagnostics="rule.mri.datasetextent-failure-en                       rule.mri.datasetextent-failure-fr"/>
 
       <!-- TODO: Improve reporting when having multiple elements -->
-
-      <sch:report test="count($geodescription) &gt; 0"
-                  diagnostics="rule.mri.datasetextentdesc-success-en                       rule.mri.datasetextentdesc-success-fr"/>
 
       <sch:report test="count($geobox) &gt; 0"
                   diagnostics="rule.mri.datasetextentbox-success-en                       rule.mri.datasetextentbox-success-fr"/>

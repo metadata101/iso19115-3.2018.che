@@ -34,11 +34,6 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-desc-success-en" xml:lang="en">The extent contains a description.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-desc-success-fr" xml:lang="fr">L'étendue contient une description.</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:successful-report ref="#_" test="count($geographicBox)" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='extent']/*[local-name()='EX_Extent']">
-    <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-box-success-en" xml:lang="en">The extent contains a bounding box element.</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-box-success-fr" xml:lang="fr">L'étendue contient une emprise géographique.</svrl:diagnostic-reference>
-  </svrl:successful-report>
   <svrl:successful-report ref="#_" test="count($geographicPoly)" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='extent']/*[local-name()='EX_Extent']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-poly-success-en" xml:lang="en">The extent contains a bounding polygon.</svrl:diagnostic-reference>
@@ -177,39 +172,13 @@
   <svrl:active-pattern document="" id="rule.mrc.bandunit" name_en="Band MUST specified bounds units&#xA;      when a bound max or bound min is defined" name_fr="Une bande DOIT préciser l'unité&#xA;      lorsqu'une borne maximum ou minimum est définie" name="Une bande DOIT préciser l'unité&#xA;      lorsqu'une borne maximum ou minimum est définie" />
   <svrl:active-pattern document="" id="rule.mrd.mediumunit" name_en="Medium having density MUST specified density&#xA;      units" name_fr="Un média précisant une densité DOIT préciser&#xA;      l'unité" name="Un média précisant une densité DOIT préciser&#xA;      l'unité" />
   <svrl:active-pattern document="" id="rule.mri.datasetextent" name_en="Dataset extent" name_fr="Emprise du jeu de données" name="Emprise du jeu de données" />
-  <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/                           mdb:MD_MetadataScope/mdb:resourceScope/                           mcc:MD_ScopeCode/@codeListValue = 'dataset']/                           mdb:identificationInfo/che:CHE_MD_DataIdentification" />
-  <svrl:successful-report ref="#_" test="count($geobox) &gt; 0" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
+  <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series']/                           mdb:identificationInfo/che:CHE_MD_DataIdentification" />
+  <svrl:failed-assert ref="#_" test="$hasGeoextent" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
     <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.datasetextentbox-success-en" xml:lang="en">The
-      dataset geographic bounding box is:
-      [W:
-          5.956088
-          ,
-      S:
-          45.817970
-          ],
-      [E:
-          10.492036
-          ,
-      N:
-          47.808488
-          ],
-      .</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.datasetextentbox-success-fr" xml:lang="fr">L'emprise géographique du jeu de données est
-      [W:
-          5.956088
-          ,
-      S:
-          45.817970
-          ],
-      [E:
-          10.492036
-          ,
-      N:
-          47.808488
-          ]
-      .</svrl:diagnostic-reference>
-  </svrl:successful-report>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.datasetextent-failure-en" xml:lang="en">dataset or series description MUST provide a bounding box.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.datasetextent-failure-fr" xml:lang="fr">La description d'un jeu
+      de données ou d'une collection DOIT comprendre une emprise.</svrl:diagnostic-reference>
+  </svrl:failed-assert>
   <svrl:active-pattern document="" id="rule.mri.topicategoryfordsandseries" name_en="Topic category for dataset and series" name_fr="Thème principal d'un jeu de données ou d'une&#xA;      série" name="Thème principal d'un jeu de données ou d'une&#xA;      série" />
   <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/                          mdb:MD_MetadataScope/mdb:resourceScope/                          mcc:MD_ScopeCode/@codeListValue = 'dataset' or                           mdb:metadataScope/                          mdb:MD_MetadataScope/mdb:resourceScope/                          mcc:MD_ScopeCode/@codeListValue = 'series']/                          mdb:identificationInfo/che:CHE_MD_DataIdentification" />
   <svrl:successful-report ref="#_" test="$hasTopics" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
