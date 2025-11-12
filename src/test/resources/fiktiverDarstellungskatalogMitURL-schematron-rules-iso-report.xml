@@ -234,7 +234,7 @@
   <svrl:active-pattern document="" id="rule.mrc.bandunit" name_en="Band MUST specified bounds units&#xA;      when a bound max or bound min is defined" name_fr="Une bande DOIT préciser l'unité&#xA;      lorsqu'une borne maximum ou minimum est définie" name="Une bande DOIT préciser l'unité&#xA;      lorsqu'une borne maximum ou minimum est définie" />
   <svrl:active-pattern document="" id="rule.mrd.mediumunit" name_en="Medium having density MUST specified density&#xA;      units" name_fr="Un média précisant une densité DOIT préciser&#xA;      l'unité" name="Un média précisant une densité DOIT préciser&#xA;      l'unité" />
   <svrl:active-pattern document="" id="rule.mri.datasetextent" name_en="Dataset extent" name_fr="Emprise du jeu de données" name="Emprise du jeu de données" />
-  <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/                           mdb:MD_MetadataScope/mdb:resourceScope/                           mcc:MD_ScopeCode/@codeListValue = 'dataset']/                           mdb:identificationInfo/che:CHE_MD_DataIdentification" />
+  <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series']/                           mdb:identificationInfo/che:CHE_MD_DataIdentification" />
   <svrl:successful-report ref="#_" test="count($geobox) &gt; 0" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.datasetextentbox-success-en" xml:lang="en">The

@@ -681,12 +681,6 @@ For details, see the attached data description.</lan:LocalisedCharacterString>
           </gex:description>
           <gex:geographicElement>
             <gex:EX_GeographicBoundingBox>
-              <gex:westBoundLongitude>
-                <gco:Decimal>5.956088</gco:Decimal>
-              </gex:westBoundLongitude>
-              <gex:eastBoundLongitude>
-                <gco:Decimal>10.492036</gco:Decimal>
-              </gex:eastBoundLongitude>
               <gex:southBoundLatitude>
                 <gco:Decimal>45.817970</gco:Decimal>
               </gex:southBoundLatitude>
