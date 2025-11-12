@@ -316,6 +316,22 @@
           1
           .</svrl:diagnostic-reference>
   </svrl:successful-report>
+  <svrl:active-pattern document="" id="rule.mri.descriptivekeywords-mandatory" name_en="Descriptive keyword mandatory for dataset, series and service" name_fr="Mot-clé descriptif obligatoire pour les jeux de données, séries et services" name="Mot-clé descriptif obligatoire pour les jeux de données, séries et services">
+    <svrl:text>When metadata scope resourceScope is 'dataset', 'series' or 'service',
+      descriptive keywords MUST be specified.</svrl:text>
+    <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
+      un mot-clé descriptif DOIT être spécifié.</svrl:text>
+  </svrl:active-pattern>
+  <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']       /mdb:identificationInfo/che:CHE_MD_DataIdentification" />
+  <svrl:successful-report ref="#_149" test="$hasDescriptiveKeywords" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_149" diagnostic="rule.mri.descriptivekeywords-mandatory-success-en" xml:lang="en">Number of descriptive keywords groups defined:
+          3
+          .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_149" diagnostic="rule.mri.descriptivekeywords-mandatory-success-fr" xml:lang="fr">Nombre de groupes de mots-clés descriptifs définis :
+          3
+          .</svrl:diagnostic-reference>
+  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.srv.servicetaxonomy" name_en="Service taxonomy" name_fr="Taxonomie des services" name="Taxonomie des services" />
 </svrl:schematron-output>
 
