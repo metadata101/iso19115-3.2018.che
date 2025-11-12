@@ -1815,6 +1815,114 @@
     </sch:rule>
 
   </sch:pattern>
+  <sch:diagnostics>
+
+    <sch:diagnostic id="rule.mri.pointofcontact-mandatory-failure-en" xml:lang="en">
+      Point of contact is mandatory when resource scope is 'dataset', 'series' or 'service'.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mri.pointofcontact-mandatory-failure-fr" xml:lang="fr">
+      Le point de contact est obligatoire quand la portée de la ressource est 'dataset', 'series' ou 'service'.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mri.pointofcontact-mandatory-success-en" xml:lang="en">
+      Number of point of contact defined: <sch:value-of select="count($pointOfContact)"/>.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mri.pointofcontact-mandatory-success-fr" xml:lang="fr">
+      Nombre de points de contact définis : <sch:value-of select="count($pointOfContact)"/>.
+    </sch:diagnostic>
+
+  </sch:diagnostics>
+  <sch:pattern id="rule.mri.pointofcontact-mandatory">
+
+    <sch:title xml:lang="en">Point of contact mandatory for dataset, series and service</sch:title>
+
+    <sch:title xml:lang="fr">Point de contact obligatoire pour les jeux de données, séries et services</sch:title>
+
+    <sch:p xml:lang="en">When metadata scope resourceScope is 'dataset', 'series' or 'service',
+      point of contact MUST be specified.
+    </sch:p>
+
+    <sch:p xml:lang="fr">Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
+      le point de contact DOIT être spécifié.
+    </sch:p>
+
+    <sch:rule context="che:CHE_MD_Metadata[
+      mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or
+      mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or
+      mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']
+      /mdb:identificationInfo/che:CHE_MD_DataIdentification">
+
+      <sch:let name="pointOfContact"
+               value="mri:pointOfContact[*]"/>
+
+      <sch:let name="hasPointOfContact" value="count($pointOfContact) &gt; 0"/>
+
+      <sch:assert test="$hasPointOfContact"
+                  diagnostics="rule.mri.pointofcontact-mandatory-failure-en
+                              rule.mri.pointofcontact-mandatory-failure-fr"/>
+
+      <sch:report test="$hasPointOfContact"
+                  diagnostics="rule.mri.pointofcontact-mandatory-success-en
+                              rule.mri.pointofcontact-mandatory-success-fr"/>
+
+    </sch:rule>
+
+  </sch:pattern>
+  <sch:diagnostics>
+
+    <sch:diagnostic id="rule.mri.resourcemaintenance-mandatory-failure-en" xml:lang="en">
+      Resource maintenance is mandatory when resource scope is 'dataset'.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mri.resourcemaintenance-mandatory-failure-fr" xml:lang="fr">
+      La maintenance de la ressource est obligatoire quand la portée de la ressource est 'dataset'.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mri.resourcemaintenance-mandatory-success-en" xml:lang="en">
+      Number of resource maintenance defined: <sch:value-of select="count($resourceMaintenance)"/>.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mri.resourcemaintenance-mandatory-success-fr" xml:lang="fr">
+      Nombre de maintenances de ressource définies : <sch:value-of select="count($resourceMaintenance)"/>.
+    </sch:diagnostic>
+
+  </sch:diagnostics>
+  <sch:pattern id="rule.mri.resourcemaintenance-mandatory">
+
+    <sch:title xml:lang="en">Resource maintenance mandatory for dataset</sch:title>
+
+    <sch:title xml:lang="fr">Maintenance de la ressource obligatoire pour les jeux de données</sch:title>
+
+    <sch:p xml:lang="en">When metadata scope resourceScope is 'dataset',
+      resource maintenance MUST be specified.
+    </sch:p>
+
+    <sch:p xml:lang="fr">Quand la portée des métadonnées (resourceScope) est 'dataset',
+      la maintenance de la ressource DOIT être spécifiée.
+    </sch:p>
+
+    <sch:rule context="che:CHE_MD_Metadata[
+      mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']
+      /mdb:identificationInfo/che:CHE_MD_DataIdentification">
+
+      <sch:let name="resourceMaintenance"
+               value="mri:resourceMaintenance[*]"/>
+
+      <sch:let name="hasResourceMaintenance" value="count($resourceMaintenance) &gt; 0"/>
+
+      <sch:assert test="$hasResourceMaintenance"
+                  diagnostics="rule.mri.resourcemaintenance-mandatory-failure-en
+                              rule.mri.resourcemaintenance-mandatory-failure-fr"/>
+
+      <sch:report test="$hasResourceMaintenance"
+                  diagnostics="rule.mri.resourcemaintenance-mandatory-success-en
+                              rule.mri.resourcemaintenance-mandatory-success-fr"/>
+
+    </sch:rule>
+
+  </sch:pattern>
   <sch:pattern id="rule.srv.servicetaxonomy">
 
     <sch:title xml:lang="en">Service taxonomy</sch:title>
