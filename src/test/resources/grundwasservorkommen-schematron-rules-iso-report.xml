@@ -185,18 +185,48 @@
     <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
       la date de citation dans la section dataIdentification DOIT être spécifiée.</svrl:text>
   </svrl:active-pattern>
+  <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']       /mdb:identificationInfo/*[name() = 'che:CHE_MD_DataIdentification' or name() = 'srv:SV_ServiceIdentification']" />
+  <svrl:successful-report ref="#_" test="$hasCitationDate" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='SV_ServiceIdentification']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.citationdate-mandatory-success-en" xml:lang="en">Number of citation dates defined:
+          1
+          .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.citationdate-mandatory-success-fr" xml:lang="fr">Nombre de dates de citation définies :
+          1
+          .</svrl:diagnostic-reference>
+  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mri.descriptivekeywords-mandatory" name_en="Descriptive keyword mandatory for dataset, series and service" name_fr="Mot-clé descriptif obligatoire pour les jeux de données, séries et services" name="Mot-clé descriptif obligatoire pour les jeux de données, séries et services">
     <svrl:text>When metadata scope resourceScope is 'dataset', 'series' or 'service',
       descriptive keywords MUST be specified.</svrl:text>
     <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
       un mot-clé descriptif DOIT être spécifié.</svrl:text>
   </svrl:active-pattern>
+  <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']       /mdb:identificationInfo/*[name() = 'che:CHE_MD_DataIdentification' or name() = 'srv:SV_ServiceIdentification']" />
+  <svrl:successful-report ref="#_" test="$hasDescriptiveKeywords" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='SV_ServiceIdentification']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.descriptivekeywords-mandatory-success-en" xml:lang="en">Number of descriptive keywords groups defined:
+          2
+          .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.descriptivekeywords-mandatory-success-fr" xml:lang="fr">Nombre de groupes de mots-clés descriptifs définis :
+          2
+          .</svrl:diagnostic-reference>
+  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mri.pointofcontact-mandatory" name_en="Point of contact mandatory for dataset, series and service" name_fr="Point de contact obligatoire pour les jeux de données, séries et services" name="Point de contact obligatoire pour les jeux de données, séries et services">
     <svrl:text>When metadata scope resourceScope is 'dataset', 'series' or 'service',
       point of contact MUST be specified.</svrl:text>
     <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
       le point de contact DOIT être spécifié.</svrl:text>
   </svrl:active-pattern>
+  <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']       /mdb:identificationInfo/*[name() = 'che:CHE_MD_DataIdentification' or name() = 'srv:SV_ServiceIdentification']" />
+  <svrl:successful-report ref="#_" test="$hasPointOfContact" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='SV_ServiceIdentification']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.pointofcontact-mandatory-success-en" xml:lang="en">Number of point of contact defined:
+          1
+          .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.pointofcontact-mandatory-success-fr" xml:lang="fr">Nombre de points de contact définis :
+          1
+          .</svrl:diagnostic-reference>
+  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mri.resourcemaintenance-mandatory" name_en="Resource maintenance mandatory for dataset" name_fr="Maintenance de la ressource obligatoire pour les jeux de données" name="Maintenance de la ressource obligatoire pour les jeux de données">
     <svrl:text>When metadata scope resourceScope is 'dataset',
       resource maintenance MUST be specified.</svrl:text>
