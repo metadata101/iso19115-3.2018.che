@@ -155,6 +155,49 @@
   </sch:pattern>
   <sch:diagnostics>
 
+    <sch:diagnostic id="rule.che.basicgeodatainfo-required-failure-en" xml:lang="en">
+      When che:basicGeodata is true, che:basicGeodataInformation MUST be provided in CHE_MD_DataIdentification.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.che.basicgeodatainfo-required-failure-fr" xml:lang="fr">
+      Lorsque che:basicGeodata vaut true, che:basicGeodataInformation DOIT être renseigné dans CHE_MD_DataIdentification.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.che.basicgeodatainfo-required-success-en" xml:lang="en">
+      basicGeodataInformation is present when basicGeodata is true.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.che.basicgeodatainfo-required-success-fr" xml:lang="fr">
+      basicGeodataInformation est présent lorsque basicGeodata vaut true.
+    </sch:diagnostic>
+
+  </sch:diagnostics>
+  <sch:pattern id="rule.che.basicgeodatainfo-required-when-basic">
+
+    <sch:title xml:lang="en">basicGeodataInformation is mandatory when basicGeodata = true</sch:title>
+
+    <sch:title xml:lang="fr">basicGeodataInformation est obligatoire lorsque basicGeodata = true</sch:title>
+
+
+    <sch:rule context="//che:CHE_MD_DataIdentification">
+
+      <sch:let name="isBasic"
+               value="che:basicGeodata/gco:Boolean = 'true' or che:basicGeodata/gco:Boolean = '1'"/>
+
+      <sch:let name="hasInfo"
+               value="count(che:basicGeodataInformation/che:CHE_MD_BasicGeodataInformation) &gt; 0"/>
+
+      <sch:assert test="not($isBasic) or $hasInfo"
+                  diagnostics="rule.che.basicgeodatainfo-required-failure-en rule.che.basicgeodatainfo-required-failure-fr"/>
+
+      <sch:report test="$isBasic and $hasInfo"
+                  diagnostics="rule.che.basicgeodatainfo-required-success-en rule.che.basicgeodatainfo-required-success-fr"/>
+
+    </sch:rule>
+
+  </sch:pattern>
+  <sch:diagnostics>
+
     <sch:diagnostic id="rule.gex.verticalhascrsorcrsid-failure-en"
                     xml:lang="en">The vertical extent does not contains CRS or
       CRS identifier.

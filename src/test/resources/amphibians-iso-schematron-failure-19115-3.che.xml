@@ -495,19 +495,6 @@ For details, see the attached data description.</lan:LocalisedCharacterString>
       <che:basicGeodata>
         <gco:Boolean>true</gco:Boolean>
       </che:basicGeodata>
-      <che:basicGeodataInformation>
-        <che:CHE_MD_BasicGeodataInformation>
-          <che:basicGeodataID>
-            <gco:CharacterString />
-          </che:basicGeodataID>
-          <che:basicGeodataLegalLevel>
-            <che:CHE_MD_LevelCode codeList="mdLevelCode" codeListValue="federal" />
-          </che:basicGeodataLegalLevel>
-          <che:basicGeodataType>
-            <che:CHE_MD_BasicGeodataTypeCode codeList="geodataType" codeListValue="openData" />
-          </che:basicGeodataType>
-        </che:CHE_MD_BasicGeodataInformation>
-      </che:basicGeodataInformation>
     </che:CHE_MD_DataIdentification>
   </mdb:identificationInfo>
   <mdb:distributionInfo>

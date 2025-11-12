@@ -44,6 +44,13 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-poly-success-en" xml:lang="en">The extent contains a bounding polygon.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-poly-success-fr" xml:lang="fr">L'étendue contient un polygone englobant.</svrl:diagnostic-reference>
   </svrl:successful-report>
+  <svrl:active-pattern document="" id="rule.che.basicgeodatainfo-required-when-basic" name_en="basicGeodataInformation is mandatory when basicGeodata = true" name_fr="basicGeodataInformation est obligatoire lorsque basicGeodata = true" name="basicGeodataInformation est obligatoire lorsque basicGeodata = true" />
+  <svrl:fired-rule context="//che:CHE_MD_DataIdentification" />
+  <svrl:successful-report ref="#_" test="$isBasic and $hasInfo" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.basicgeodatainfo-required-success-en" xml:lang="en">basicGeodataInformation is present when basicGeodata is true.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.basicgeodatainfo-required-success-fr" xml:lang="fr">basicGeodataInformation est présent lorsque basicGeodata vaut true.</svrl:diagnostic-reference>
+  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.gex.verticalhascrsorcrsid" name_en="Vertical element MUST contains a CRS or CRS&#xA;      identifier" name_fr="Une étendue verticale DOIT contenir un CRS ou un&#xA;      identifiant de CRS" name="Une étendue verticale DOIT contenir un CRS ou un&#xA;      identifiant de CRS" />
   <svrl:active-pattern document="" id="rule.mco-releasability" name_en="Releasability MUST&#xA;      specified an addresse or a statement" name_fr="La possibilité de divulgation&#xA;      DOIT définir un destinataire ou une indication" name="La possibilité de divulgation&#xA;      DOIT définir un destinataire ou une indication" />
   <svrl:active-pattern document="" id="rule.mco-legalconstraintdetails" name_en="Legal constraint MUST&#xA;      specified an access, use or other constraint or&#xA;      use limitation or releasability" name_fr="Une contrainte légale DOIT&#xA;      définir un type de contrainte (d'accès, d'utilisation ou autre)&#xA;      ou bien une limite d'utilisation ou une possibilité de divulgation" name="Une contrainte légale DOIT&#xA;      définir un type de contrainte (d'accès, d'utilisation ou autre)&#xA;      ou bien une limite d'utilisation ou une possibilité de divulgation" />
