@@ -191,6 +191,18 @@
     <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
       un mot-clé descriptif DOIT être spécifié.</svrl:text>
   </svrl:active-pattern>
+  <svrl:active-pattern document="" id="rule.mri.pointofcontact-mandatory" name_en="Point of contact mandatory for dataset, series and service" name_fr="Point de contact obligatoire pour les jeux de données, séries et services" name="Point de contact obligatoire pour les jeux de données, séries et services">
+    <svrl:text>When metadata scope resourceScope is 'dataset', 'series' or 'service',
+      point of contact MUST be specified.</svrl:text>
+    <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
+      le point de contact DOIT être spécifié.</svrl:text>
+  </svrl:active-pattern>
+  <svrl:active-pattern document="" id="rule.mri.resourcemaintenance-mandatory" name_en="Resource maintenance mandatory for dataset" name_fr="Maintenance de la ressource obligatoire pour les jeux de données" name="Maintenance de la ressource obligatoire pour les jeux de données">
+    <svrl:text>When metadata scope resourceScope is 'dataset',
+      resource maintenance MUST be specified.</svrl:text>
+    <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset',
+      la maintenance de la ressource DOIT être spécifiée.</svrl:text>
+  </svrl:active-pattern>
   <svrl:active-pattern document="" id="rule.srv.servicetaxonomy" name_en="Service taxonomy" name_fr="Taxonomie des services" name="Taxonomie des services" />
   <svrl:fired-rule context="//srv:SV_ServiceIdentification" />
 </svrl:schematron-output>
