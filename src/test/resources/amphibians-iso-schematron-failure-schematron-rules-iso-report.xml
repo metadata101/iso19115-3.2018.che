@@ -149,16 +149,6 @@
   <svrl:active-pattern document="" id="rule.mex.mandatorycode" name_en="Extended element information&#xA;      which are codelist, enumeration or codelistElement&#xA;      MUST specified a code and a concept name" name_fr="Un élément d'extension qui est&#xA;      une codelist, une énumération, un élément de codelist&#xA;      DOIT préciser un code et un nom de concept" name="Un élément d'extension qui est&#xA;      une codelist, une énumération, un élément de codelist&#xA;      DOIT préciser un code et un nom de concept" />
   <svrl:active-pattern document="" id="rule.mmi-updatefrequency" name_en="Maintenance information MUST&#xA;      specified an update frequency" name_fr="L'information sur la maintenance&#xA;      DOIT définir une fréquence de mise à jour" name="L'information sur la maintenance&#xA;      DOIT définir une fréquence de mise à jour" />
   <svrl:fired-rule context="//che:CHE_MD_MaintenanceInformation" />
-  <svrl:successful-report ref="#_" test="count($maintenanceAndUpdateFrequency)" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='resourceMaintenance']/*[local-name()='CHE_MD_MaintenanceInformation']">
-    <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mmi-updatefrequency-success-en" xml:lang="en">The update frequency is "
-          notPlanned
-          ".</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mmi-updatefrequency-success-fr" xml:lang="fr">La fréquence de mise à jour est "
-          notPlanned
-          ".</svrl:diagnostic-reference>
-  </svrl:successful-report>
-  <svrl:fired-rule context="//che:CHE_MD_MaintenanceInformation" />
   <svrl:successful-report ref="#_" test="count($maintenanceAndUpdateFrequency)" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='metadataMaintenance']/*[local-name()='CHE_MD_MaintenanceInformation']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mmi-updatefrequency-success-en" xml:lang="en">The update frequency is "
@@ -228,6 +218,30 @@
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.descriptivekeywords-mandatory-failure-en" xml:lang="en">Descriptive keywords are mandatory when resource scope is 'dataset', 'series' or 'service'.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.descriptivekeywords-mandatory-failure-fr" xml:lang="fr">La description d'un 'dataset', d'une 'series' ou d'un 'service' doit comprendre au moins un mot-clé (descriptive keyword).</svrl:diagnostic-reference>
+  </svrl:failed-assert>
+  <svrl:active-pattern document="" id="rule.mri.pointofcontact-mandatory" name_en="Point of contact mandatory for dataset, series and service" name_fr="Point de contact obligatoire pour les jeux de données, séries et services" name="Point de contact obligatoire pour les jeux de données, séries et services">
+    <svrl:text>When metadata scope resourceScope is 'dataset', 'series' or 'service',
+      point of contact MUST be specified.</svrl:text>
+    <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
+      le point de contact DOIT être spécifié.</svrl:text>
+  </svrl:active-pattern>
+  <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']       /mdb:identificationInfo/che:CHE_MD_DataIdentification" />
+  <svrl:failed-assert ref="#_" test="$hasPointOfContact" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.pointofcontact-mandatory-failure-en" xml:lang="en">Point of contact is mandatory when resource scope is 'dataset', 'series' or 'service'.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.pointofcontact-mandatory-failure-fr" xml:lang="fr">Le point de contact est obligatoire quand la portée de la ressource est 'dataset', 'series' ou 'service'.</svrl:diagnostic-reference>
+  </svrl:failed-assert>
+  <svrl:active-pattern document="" id="rule.mri.resourcemaintenance-mandatory" name_en="Resource maintenance mandatory for dataset" name_fr="Maintenance de la ressource obligatoire pour les jeux de données" name="Maintenance de la ressource obligatoire pour les jeux de données">
+    <svrl:text>When metadata scope resourceScope is 'dataset',
+      resource maintenance MUST be specified.</svrl:text>
+    <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset',
+      la maintenance de la ressource DOIT être spécifiée.</svrl:text>
+  </svrl:active-pattern>
+  <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']       /mdb:identificationInfo/che:CHE_MD_DataIdentification" />
+  <svrl:failed-assert ref="#_" test="$hasResourceMaintenance" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.resourcemaintenance-mandatory-failure-en" xml:lang="en">Resource maintenance is mandatory when resource scope is 'dataset'.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.resourcemaintenance-mandatory-failure-fr" xml:lang="fr">La maintenance de la ressource est obligatoire quand la portée de la ressource est 'dataset'.</svrl:diagnostic-reference>
   </svrl:failed-assert>
   <svrl:active-pattern document="" id="rule.srv.servicetaxonomy" name_en="Service taxonomy" name_fr="Taxonomie des services" name="Taxonomie des services" />
 </svrl:schematron-output>

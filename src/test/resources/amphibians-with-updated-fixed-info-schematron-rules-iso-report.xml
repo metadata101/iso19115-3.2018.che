@@ -291,6 +291,38 @@
           3
           .</svrl:diagnostic-reference>
   </svrl:successful-report>
+  <svrl:active-pattern document="" id="rule.mri.pointofcontact-mandatory" name_en="Point of contact mandatory for dataset, series and service" name_fr="Point de contact obligatoire pour les jeux de données, séries et services" name="Point de contact obligatoire pour les jeux de données, séries et services">
+    <svrl:text>When metadata scope resourceScope is 'dataset', 'series' or 'service',
+      point of contact MUST be specified.</svrl:text>
+    <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
+      le point de contact DOIT être spécifié.</svrl:text>
+  </svrl:active-pattern>
+  <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']       /mdb:identificationInfo/che:CHE_MD_DataIdentification" />
+  <svrl:successful-report ref="#_" test="$hasPointOfContact" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.pointofcontact-mandatory-success-en" xml:lang="en">Number of point of contact defined:
+          3
+          .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.pointofcontact-mandatory-success-fr" xml:lang="fr">Nombre de points de contact définis :
+          3
+          .</svrl:diagnostic-reference>
+  </svrl:successful-report>
+  <svrl:active-pattern document="" id="rule.mri.resourcemaintenance-mandatory" name_en="Resource maintenance mandatory for dataset" name_fr="Maintenance de la ressource obligatoire pour les jeux de données" name="Maintenance de la ressource obligatoire pour les jeux de données">
+    <svrl:text>When metadata scope resourceScope is 'dataset',
+      resource maintenance MUST be specified.</svrl:text>
+    <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset',
+      la maintenance de la ressource DOIT être spécifiée.</svrl:text>
+  </svrl:active-pattern>
+  <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']       /mdb:identificationInfo/che:CHE_MD_DataIdentification" />
+  <svrl:successful-report ref="#_" test="$hasResourceMaintenance" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.resourcemaintenance-mandatory-success-en" xml:lang="en">Number of resource maintenance defined:
+          1
+          .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.resourcemaintenance-mandatory-success-fr" xml:lang="fr">Nombre de maintenances de ressource définies :
+          1
+          .</svrl:diagnostic-reference>
+  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.srv.servicetaxonomy" name_en="Service taxonomy" name_fr="Taxonomie des services" name="Taxonomie des services" />
 </svrl:schematron-output>
 
