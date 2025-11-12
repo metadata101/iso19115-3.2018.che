@@ -54,8 +54,6 @@
            xmlns:gml="http://www.opengis.net/gml/3.2"
            xmlns:xlink="http://www.w3.org/1999/xlink"
            xsi:noNamespaceSchemaLocation="../../../../../../../schema-labels.xsd">
-
-
   <codelist name="cit:CI_TelephoneTypeCode">
     <entry>
       <code>voice</code>
@@ -531,7 +529,6 @@
       </description>
     </entry>
   </codelist>
-
   <codelist name="mri:DS_InitiativeTypeCode" alias="initiativeType">
     <entry>
       <code>campaign</code>
@@ -844,7 +841,6 @@
       </description>
     </entry>
   </codelist>
-
   <codelist name="msr:MD_DimensionNameTypeCode">
     <entry>
       <code>row</code>
@@ -888,7 +884,6 @@
       <description>Duration</description>
     </entry>
   </codelist>
-
   <codelist name="msr:MD_GeometricObjectTypeCode">
     <entry>
       <code>complex</code>
@@ -931,7 +926,6 @@
       </description>
     </entry>
   </codelist>
-
   <codelist name="mrc:MD_ImagingConditionCode">
     <entry>
       <code>blurredImage</code>
@@ -1001,7 +995,6 @@
       </description>
     </entry>
   </codelist>
-
   <codelist name="mri:MD_KeywordTypeCode">
     <entry>
       <code>discipline</code>
@@ -1100,7 +1093,6 @@
       <description>Keyword identifies a taxonomy of the resource</description>
     </entry>
   </codelist>
-
   <codelist name="mmi:MD_MaintenanceFrequencyCode">
     <entry>
       <code>continual</code>
@@ -1180,7 +1172,6 @@
       <description>Resource is updated every 2 years</description>
     </entry>
   </codelist>
-
   <codelist name="mrd:MD_MediumFormatCode">
     <entry>
       <code>cpio</code>
@@ -1219,7 +1210,6 @@
       <description>Universal Disk Format</description>
     </entry>
   </codelist>
-
   <codelist name="mex:MD_ObligationCode">
     <entry>
       <code>mandatory</code>
@@ -1238,7 +1228,6 @@
       </description>
     </entry>
   </codelist>
-
   <codelist name="msr:MD_PixelOrientationCode">
     <entry>
       <code>center</code>
@@ -1274,7 +1263,6 @@
       </description>
     </entry>
   </codelist>
-
   <codelist name="mcc:MD_ProgressCode">
     <entry>
       <code>completed</code>
@@ -1384,7 +1372,6 @@
       <description></description>
     </entry>
   </codelist>
-
   <codelist name="mco:MD_RestrictionCode">
     <entry>
       <code>copyright</code>
@@ -1495,7 +1482,6 @@
       <description>With trust</description>
     </entry>
   </codelist>
-
   <codelist name="mcc:MD_ScopeCode">
     <entry>
       <code>attribute</code>
@@ -1640,7 +1626,6 @@
         accessible over a network
       </description>
     </entry>
-
     <entry hideInEditMode="true">
       <code>map</code>
       <label>Map</label>
@@ -2700,7 +2685,6 @@
       <description>Simplified Chinese code set</description>
     </entry>
   </codelist>
-
   <codelist name="mrd:MD_MediumNameCode">
     <entry>
       <code>cdRom</code>
@@ -2872,7 +2856,6 @@
       </description>
     </entry>
   </codelist>
-
   <codelist name="indeterminatePosition">
     <entry>
       <code>after</code>
@@ -2891,7 +2874,6 @@
       <label>Unknown</label>
     </entry>
   </codelist>
-  
   <codelist name="che:CHE_MD_SubTopicCategoryCode" alias="subTopicCategory">
     <definition>Subtopic categories according to eCH-0166 to improve classification of topicCategories and search of geodata</definition>
     <entry>
@@ -2968,7 +2950,6 @@
       <label>Other</label>
     </entry>
   </codelist>
-
   <codelist name="che:CHE_DS_AssociationTypeCode" alias="associationType">
     <definition>Justification for the correlation of two resources</definition>
     <entry>
@@ -3020,7 +3001,6 @@
       <label>Resource is described by associated resource</label>
     </entry>
   </codelist>
-
   <codelist name="che:CHE_MD_BasicGeodataAccessLevelCode" alias="basicGeodataAccessLevel">
     <definition>Codes for geobasisdaten access authorization level</definition>
     <entry>
@@ -3039,7 +3019,6 @@
       <description>Not publicly accessible</description>
     </entry>
   </codelist>
-
   <codelist name="che:CHE_MD_BasicGeodataTypeCode" alias="BasicGeodataTypeCode">
     <definition>Type of basic geodata</definition>
     <entry>
@@ -3053,7 +3032,6 @@
       <description>See GeoIV Annex 1 (SR 510.620)</description>
     </entry>
   </codelist>
-
   <codelist name="che:CHE_CI_LegislationTypeCode" alias="legislationType">
     <definition>Codes for legislation type</definition>
     <entry>
@@ -3069,7 +3047,6 @@
       <label>Other legal disposition</label>
     </entry>
   </codelist>
-
   <codelist name="che:CHE_AppraisalOfArchivalValueCode" alias="appraisalOfArchivalValue">
     <definition>Codes for archival value</definition>
     <entry>
@@ -3088,7 +3065,6 @@
       <description>Sampling</description>
     </entry>
   </codelist>
-
   <codelist name="che:CHE_ReasonForArchivingValueCode" alias="reasonForArchivingValue">
     <definition>Codes for archival value reason</definition>
     <entry>
@@ -3124,5 +3100,4 @@
       <label>Defining powers</label>
     </entry>
   </codelist>
-  
 </codelists>

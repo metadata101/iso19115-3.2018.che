@@ -29,8 +29,6 @@
            xmlns:gml="http://www.opengis.net/gml/3.2"
            xmlns:xlink="http://www.w3.org/1999/xlink"
            xsi:noNamespaceSchemaLocation="../../../../../../../schema-labels.xsd">
-
-
 	<codelist name="cit:CI_TelephoneTypeCode">
     <description>Telefon-Typ</description>
     <entry>
@@ -49,7 +47,6 @@
       <description>Telefon mit SMS-Dienst</description>
     </entry>
   </codelist>
-
   <codelist name="cit:CI_DateTypeCode">
     <description>Art des Datums bzw. Ereignis, auf das sich das Datum bezieht</description>
     <entry>
@@ -135,7 +132,6 @@
       <description>Das Datum gibt an, wann eine Ressource verteilt wurde</description>
     </entry>
   </codelist>
-
   <codelist name="cit:CI_OnLineFunctionCode" alias="function">
     <description>Funktionalität der Online-Verbindung</description>
     <entry>
@@ -306,7 +302,6 @@
       <description>Grafische Darstellung von Informationen durch Diagramme, wie Kreisdiagramm, Balkendiagramm usw., auf Papier, Fotomedium oder anderem Medium gedruckt</description>
     </entry>
   </codelist>
-
   <codelist name="cit:CI_RoleCode" alias="roleCode">
     <description>Funktion, welche die verantwortliche Stelle einnimmt</description>
     <entry>
@@ -366,13 +361,6 @@
       <label>Autor</label>
       <description>Person oder Stelle, welche die Ressource verfasst</description>
     </entry>
-    <!-- ISO PROFIL CHE ONLY
-
-		<entry>
-			<code>partner</code>
-			<label>Partner</label>
-			<description></description>
-		</entry>-->
     <entry>
       <code>sponsor</code>
       <label>Sponsor</label>
@@ -425,7 +413,6 @@
       <description>Person oder Stelle, welche ein Interesse an der Ressource oder ihrer Nutzung hat</description>
     </entry>
   </codelist>
-
   <codelist name="mdq:DQ_EvaluationMethodTypeCode">
     <entry>
       <code>directInternal</code>
@@ -443,7 +430,6 @@
       <description>Qualitätsbewertungsmethode, die auf externem Wissen basiert.</description>
     </entry>
   </codelist>
-  
   <codelist name="che:CHE_DS_AssociationTypeCode" alias="associationType">
     <entry>
       <code>crossReference</code>
@@ -513,7 +499,6 @@
       <description>Bezug zu einer Ressource/einem Dokument, der diesen Datenbestand beschreibt</description>
     </entry>
   </codelist>
-
   <codelist name="mri:DS_InitiativeTypeCode" alias="initiativeType">
     <entry>
       <code>campaign</code>
@@ -655,7 +640,6 @@
       <label>Eingeschränkte Verbreitung</label>
       <description>Begrenzte Verbreitung durch zuständige Stelle</description>
     </entry>
-
   </codelist>
   <codelist name="mrc:MD_CoverageContentTypeCode">
     <entry>
@@ -818,7 +802,6 @@
       <description>Dauer</description>
     </entry>
   </codelist>
-
   <codelist name="mri:MD_KeywordTypeCode">
     <entry>
       <code>discipline</code>
@@ -896,7 +879,6 @@
       <description>Schlüsselwort, welches eine Taxonomie der Ressource kennzeichnet</description>
     </entry>
   </codelist>
-
   <codelist name="mmi:MD_MaintenanceFrequencyCode">
     <entry>
       <code>continual</code>
@@ -974,7 +956,6 @@
       <description>Alle zwei Jahre aktualisiert</description>
     </entry>
   </codelist>
-
   <codelist name="mrd:MD_MediumFormatCode">
     <entry>
       <code>cpio</code>
@@ -1153,7 +1134,6 @@
       <description></description>
     </entry>
   </codelist>
-
   <codelist name="mco:MD_RestrictionCode">
     <entry>
       <code>copyright</code>
@@ -1258,7 +1238,6 @@
       <description>Im Vertrauen</description>
     </entry>
   </codelist>
-
   <codelist name="mcc:MD_ScopeCode">
     <entry>
       <code>attribute</code>
@@ -1416,7 +1395,6 @@
       <description></description>
     </entry>
   </codelist>
-
   <codelist name="mcc:MD_SpatialRepresentationTypeCode">
     <entry>
       <code>vector</code>
@@ -1451,7 +1429,6 @@
       <description>Szene einer Videoaufnahme</description>
     </entry>
   </codelist>
-
   <codelist name="mri:MD_TopicCategoryCode" alias="topicCategory">
     <description>Thematische Klassifikation von Geodaten auf einer übergeordneten Ebene, um die Gruppierung und Suche nach verfügbaren Geodatensätzen zu unterstützen.</description>
     <entry>
@@ -1560,7 +1537,6 @@
       <description>Informationen zu Katastrophen</description>
     </entry>
   </codelist>
-
   <codelist name="msr:MD_TopologyLevelCode">
     <entry>
       <code>geometryOnly</code>
@@ -2374,7 +2350,6 @@
       <description>Vereinfachter chinesischer Zeichensatz</description>
     </entry>
   </codelist>
-
   <codelist name="mrd:MD_MediumNameCode">
     <entry>
       <code>cdRom</code>
@@ -2467,7 +2442,6 @@
       <description>Papierdokument</description>
     </entry>
   </codelist>
-
   <codelist name="srv:DCPList">
     <entry>
       <code>XML</code>
@@ -2522,7 +2496,6 @@
       <description>Ein Dienst, der über ein Netzwerk angesprochen werden kann</description>
     </entry>
   </codelist>
-
   <codelist name="srv:SV_CouplingType">
     <entry>
       <code>tight</code>
@@ -2572,7 +2545,6 @@
       <label>Mit Genehmigung</label>
     </entry>
   </codelist>
-
   <codelist name="indeterminatePosition">
     <entry>
       <code>after</code>
@@ -2591,7 +2563,6 @@
       <label>Unbekannt</label>
     </entry>
   </codelist>
-
   <codelist name="che:CHE_MD_SubTopicCategoryCode" alias="subTopicCategory">
     <definition>Subtopic Kategorien gemäss eCH-0166 zur Verbesserung der Klassifizierung von Themenkategorien und der Suche nach Geodaten</definition>
     <entry>
@@ -2668,7 +2639,6 @@
       <label>Anderes</label>
     </entry>
   </codelist>
-
   <codelist name="che:CHE_MD_BasicGeodataTypeCode" alias="BasicGeodataTypeCode">
     <description>Geobasisdaten-Typ</description>
     <entry>
@@ -2682,7 +2652,6 @@
       <description>Siehe GeoIV Annex 1 (RS 510.620)</description>
     </entry>
   </codelist>
-
 <codelist name="che:CHE_MD_BasicGeodataAccessLevelCode" alias="BasicGeodataAccessLevelCode">
     <entry>
       <code>A</code>
@@ -2700,7 +2669,6 @@
 		<description>Nicht öffentlich zugängliche Geobasisdaten, Zugangsberechtigungsstufe C (Art. 24 GeoIV)</description>
     </entry>
   </codelist>
-
 <codelist name="che:CHE_CI_LegislationTypeCode" alias="LegislationTypeCode">
     <entry>
       <code>law</code>
@@ -2716,7 +2684,6 @@
       <description>Andere gesetzliche Vorschrift</description>
 	</entry>
   </codelist>	
-
 <codelist name="che:CHE_AppraisalOfArchivalValueCode" alias="appraisalOfArchivalValue">
     <entry>
       <code>A</code>
@@ -2734,7 +2701,6 @@
       <description>Archivwürdig in Auswahl (Sampling oder Selektion)</description>
 	</entry>
   </codelist>	
-
 <codelist name="che:CHE_ReasonForArchivingValueCode" alias="ReasonForArchivingValueCode">
     <entry>
       <code>legalRelevance</code>

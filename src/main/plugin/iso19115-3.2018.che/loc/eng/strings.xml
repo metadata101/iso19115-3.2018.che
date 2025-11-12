@@ -52,6 +52,7 @@
   <portrayalCatalogueInfo>Portrayal</portrayalCatalogueInfo>
   <metadataConstraints>Md. constraints</metadataConstraints>
   <metadataMaintenance>Md. maintenance</metadataMaintenance>
+  <legislationInformation>Legislation information</legislationInformation>
   <applicationSchemaInfo>Schema info</applicationSchemaInfo>
   <acquisitionInformation>Acquisition info</acquisitionInformation>
   <qualityMeasures>Q. measures</qualityMeasures>
@@ -69,8 +70,6 @@
   <citationProposal-help>This proposal was automatically generated, check if the metadata authors did not specified custom citation requirements.</citationProposal-help>
   <citationAdditional>When using this resource in a publication, also cite the related work(s) with:</citationAdditional>
   <associatedResources>Associated resources</associatedResources>
-
-
   <add-resource-id>Compute resource identifier</add-resource-id>
   <add-resource-idHelp>Compose the resource identifier using the catalog URL and
     the metadata identifier (eg.

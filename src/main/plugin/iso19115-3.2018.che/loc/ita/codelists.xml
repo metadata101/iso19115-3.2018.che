@@ -29,8 +29,6 @@
            xmlns:gml="http://www.opengis.net/gml/3.2"
            xmlns:xlink="http://www.w3.org/1999/xlink"
            xsi:noNamespaceSchemaLocation="../../../../../../../schema-labels.xsd">
-
-
   <codelist name="cit:CI_TelephoneTypeCode">
     <entry>
       <code>voice</code>
@@ -426,7 +424,6 @@
       <description>Autore della risorsa</description>
     </entry>
         <!-- ISO PROFIL CHE ONLY
-
 		<entry>
 			<code>partner</code>
 			<label>Partenaire</label>
@@ -513,7 +510,6 @@
       </description>
     </entry>
   </codelist>
-
   <codelist name="che:CHE_DS_AssociationTypeCode" alias="associationType">
     <entry>
       <code>crossReference</code>s
@@ -578,7 +574,6 @@
       <description>La risorsa è una revisione della risorsa associata</description>
     </entry>
   </codelist>
-
   <codelist name="che:CHE_MD_BasicGeodataAccessLevelCode" alias="BasicGeodataAccessLevelCode">
     <entry>
       <code>A</code>
@@ -596,7 +591,6 @@
 		<description>Geodati di base non accessibili al pubblico: livello C (Art. 24 OGeo)</description>
     </entry>
   </codelist>
-
   <codelist name="che:CHE_CI_LegislationTypeCode" alias="LegislationTypeCode">
     <entry>
       <code>law</code>
@@ -612,7 +606,6 @@
         <description>Altra disposizione legale</description>
     </entry>
   </codelist>
-
   <codelist name="che:CHE_AppraisalOfArchivalValueCode" alias="appraisalOfArchivalValue">
     <entry>
       <code>A</code>
@@ -630,7 +623,6 @@
       <description>Sampling (campionamento) / Sélection (scelta)</description>
     </entry>
   </codelist>
-
   <codelist name="che:CHE_ReasonForArchivingValueCode" alias="ReasonForArchivingValueCode">
   <definition>Raison de la valeur archivistique [15]</definition>
     <entry>
@@ -666,7 +658,6 @@
       <label>Poteri definitivi</label>
 	  </entry>
  </codelist>		
-
   <codelist name="mri:DS_InitiativeTypeCode" alias="initiativeType">
     <entry>
       <code>campaign</code>
@@ -1625,7 +1616,6 @@
       <description>Con fiducia</description>
     </entry>
   </codelist>
-
   <codelist name="mcc:MD_ScopeCode">
     <entry>
       <code>attribute</code>
@@ -1770,7 +1760,6 @@
         accessibile tramite una rete
       </description>
     </entry>
-
     <entry hideInEditMode="true">
       <code>map</code>
       <label>Mappa</label>
@@ -2835,7 +2824,6 @@
       <description>Set di codici cinese semplificato</description>
     </entry>
   </codelist>
-
   <codelist name="mrd:MD_MediumNameCode">
     <entry>
       <code>cdRom</code>
@@ -3006,7 +2994,6 @@
       </description>
     </entry>
   </codelist>
-
   <codelist name="indeterminatePosition">
     <entry>
       <code>after</code>
@@ -3025,7 +3012,6 @@
       <label>Sconosciuto</label>
     </entry>
   </codelist>
-
   <codelist name="che:CHE_MD_SubTopicCategoryCode" alias="subTopicCategory">
     <definition>Sottocategorie di sottotemi secondo eCH-0166 per migliorare la classificazione delle categorie tematiche e la ricerca dei geodati</definition>
     <entry>
@@ -3103,7 +3089,6 @@
       <label>Altro</label>
     </entry>
   </codelist>
-
   <codelist name="che:CHE_MD_BasicGeodataTypeCode" alias="BasicGeodataTypeCode">
     <description>Tipi di geodati di base</description>
     <entry>
@@ -3248,5 +3233,4 @@
       <label>defining powers</label>
     </entry>
   </codelist>
-
 </codelists>

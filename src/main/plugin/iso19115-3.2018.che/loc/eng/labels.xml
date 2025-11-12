@@ -80,194 +80,198 @@
       <label>Data Identification</label>
       <description>Data Identification</description>
       <condition></condition>
-    </element>
-    <element name="che:CHE_CI_Organisation">
-      <label>Organisation</label>
-      <description>Organisation</description>
+  </element>
+  <element name="che:CHE_CI_Organisation">
+    <label>Organisation</label>
+    <description>Organisation</description>
+    <condition></condition>
+  </element>
+  <element name="che:CHE_MD_MaintenanceInformation">
+    <label>Maintenance Information iso19115-3.2018.che</label>
+    <description>Information about the scope and frequency of updating (iso19115-3.2018.che)</description>
+    <help>Information about the scope, frequency and date of updating of the data are contained in
+      the class MD_MaintenanceInformation. This class contains attributes that provide information about the frequency and extent
+      of the update and re-evaluation of the data set. Only the indication of frequency is mandatory
+      and must be selected from the list MD_MaintenanceFrequencyCode. The extent of the update, the attributes
+      it concerns and the associated descriptions are information that can be indicated via the
+      attributes "updateScope" and "updateScopeDescription". It is not planned to indicate the spatial extent of the
+      update. If only parts of a data set are updated or if all its parts are not
+      updated simultaneously, then the parts concerned by the description of the update can be
+      specified via "+updateScopeDescription" in the class MD_ScopeDescription.
+    </help>
+    <condition></condition>
+  </element>
+  <element name="mmi:MD_MaintenanceInformation"
+        context="che:CHE_MD_MaintenanceInformation">
+    <label>Maintenance Information</label>
+    <description iso="true">Information about the scope and frequency of updating
+    </description>
+    <condition>optional</condition>
+  </element>
+  <element name="gco:isoType">
+    <label>ISO type</label>
+    <description iso="true">Indicates the ISO type of the element or value</description>
+  </element>
+    <element name="mmi:maintenanceDate">
+      <label>Maintenance Date</label>
+      <description>Maintenance Date</description>
       <condition></condition>
     </element>
-    <element name="che:CHE_MD_MaintenanceInformation">
-      <label>Maintenance Information iso19115-3.2018.che</label>
-      <description>Information about the scope and frequency of updating (iso19115-3.2018.che)</description>
-      <help>Information about the scope, frequency and date of updating of the data are contained in
-        the class MD_MaintenanceInformation. This class contains attributes that provide information about the frequency and extent
-        of the update and re-evaluation of the data set. Only the indication of frequency is mandatory
-        and must be selected from the list MD_MaintenanceFrequencyCode. The extent of the update, the attributes
-        it concerns and the associated descriptions are information that can be indicated via the
-        attributes "updateScope" and "updateScopeDescription". It is not planned to indicate the spatial extent of the
-        update. If only parts of a data set are updated or if all its parts are not
-        updated simultaneously, then the parts concerned by the description of the update can be
-        specified via "+updateScopeDescription" in the class MD_ScopeDescription.
-      </help>
+    <element name="mmi:maintenanceScope">
+      <label>Maintenance Scope</label>
+      <description>Maintenance Scope</description>
       <condition></condition>
     </element>
-    <element name="mmi:MD_MaintenanceInformation"
-          context="che:CHE_MD_MaintenanceInformation">
-      <label>Maintenance Information</label>
-      <description iso="true">Information about the scope and frequency of updating
-      </description>
-      <condition>optional</condition>
+    <element name="mmi:contact">
+      <label>Contact</label>
+      <description>Contact</description>
+      <condition></condition>
     </element>
-
-    <element name="gco:isoType">
-      <label>ISO type</label>
-      <description iso="true">Indicates the ISO type of the element or value</description>
+    <element name="che:appraisal">
+      <label>Appraisal</label>
+      <description>Appraisal</description>
+      <condition></condition>
     </element>
-      <element name="mmi:maintenanceDate">
-        <label>Maintenance Date</label>
-        <description>Maintenance Date</description>
-        <condition></condition>
-      </element>
-      <element name="mmi:maintenanceScope">
-        <label>Maintenance Scope</label>
-        <description>Maintenance Scope</description>
-        <condition></condition>
-      </element>
-      <element name="mmi:contact">
-        <label>Contact</label>
-        <description>Contact</description>
-        <condition></condition>
-      </element>
-      <element name="che:appraisal">
-        <label>Appraisal</label>
-        <description>Appraisal</description>
-        <condition></condition>
-      </element>
-      <element name="che:CHE_MD_Appraisal_AAP">
-        <label>Appraisal AAP</label>
-        <description>Appraisal AAP</description>
-        <condition></condition>
-      </element>
-      <element name="che:durationOfConservation">
-        <label>Duration of Conservation</label>
-        <description>Duration of Conservation</description>
-        <condition></condition>
-      </element>
-      <element name="che:commentOnDurationOfConservation">
-        <label>Comment on Duration of Conservation</label>
-        <description>Comment on Duration of Conservation</description>
-        <condition></condition>
-      </element>
-      <element name="che:appraisalOfArchivalValue">
-        <label>Appraisal of Archival Value</label>
-        <description>Appraisal ogit comf Archival Value</description>
-        <condition></condition>
-      </element>
-      <element name="che:reasonForArchivingValue">
-        <label>Reason for Archiving Value</label>
-        <description>Reason for Archiving Value</description>
-        <condition></condition>
-      </element>
-      <element name="che:commentOnArchivalValue">
-        <label>Comment on Archival Value</label>
-        <description>Comment on Archival Value</description>
-        <condition></condition>
-      </element>
-      <element name="che:CHE_MD_LegalConstraints">
-        <label>Legal Constraints</label>
-        <description>Legal Constraints</description>
-        <condition></condition>
-      </element>
-      <element name="che:legislationConstraints">
-        <label>Legislation Constraints</label>
-        <description>Legislation Constraints</description>
-        <condition></condition>
-      </element>
-      <element name="che:CHE_MD_Legislation">
-        <label>Legislation</label>
-        <description>Legislation</description>
-        <condition></condition>
-      </element>
-      <element name="che:country">
-        <label>Country</label>
-        <description>Country</description>
-        <condition></condition>
-      </element>
-      <element name="che:language">
-        <label>Language</label>
-        <description>Language</description>
-        <condition></condition>
-      </element>
-      <element name="che:legislationType">
-        <label>Legislation Type</label>
-        <description>Legislation Type</description>
-        <condition></condition>
-      </element>
-      <element name="che:legislationLevel">
-        <label>Legislation Level</label>
-        <description>Legislation Level</description>
-        <condition></condition>
-      </element>
-      <element name="che:internalReference">
-        <label>Internal Reference</label>
-        <description>Internal Reference</description>
-        <condition></condition>
-      </element>
-      <element name="che:legislatiogit comnAcronym">
-        <label>Legislation Acronym</label>
-        <description>Legislation Acronym</description>
-        <condition></condition>
-      </element>
-      <element name="che:legislationCitation">
-        <label>Legislation Citation</label>
-        <description>Legislation Citation</description>
-        <condition></condition>
-      </element>
-      <element name="che:subTopicCategory">
-        <label>Subtopic Category</label>
-        <description>Subtopic Category</description>
-        <condition></condition>
-      </element>
-      <element name="che:basicGeodata">
-        <label>Basic Geodata</label>
-        <description>Basic Geodata</description>
-        <condition></condition>
-      </element>
-      <element name="che:basicGeodataInformation">
-        <label>Basic Geodata Information</label>
-        <description>Basic Geodata Information</description>
-        <condition></condition>
-      </element>
-      <element name="che:CHE_MD_BasicGeodataInformation">
-        <label>Basic Geodata Information</label>
-        <description>Basic Geodata Information</description>
-        <condition></condition>
-      </element>
-      <element name="che:basicGeodataID">
-        <label>Basic Geodata ID</label>
-        <description>Basic Geodata ID</description>
-        <condition></condition>
-      </element>
-      <element name="che:basicGeodataLegalLevel">
-        <label>Basic Geodata Legal Level</label>
-        <description>Basic Geodata Legal Level</description>
-        <condition></condition>
-      </element>
-      <element name="che:basicGeodataResponsibilityLevel">
-        <label>Basic Geodata Responsibility Level</label>
-        <description>Basic Geodata Responsibility Level</description>
-        <condition></condition>
-      </element>
-      <element name="che:basicGeodataAccessLevel">
-        <label>Basic Geodata Access Level</label>
-        <description>Basic Geodata Access Level</description>
-        <condition></condition>
-      </element>
-      <element name="che:basicGeodataType">
-        <label>Basic Geodata Type</label>
-        <description>Basic Geodata Type</description>
-        <condition></condition>
-      </element>
-      <element name="che:organisationAcronym">
-        <label>Organisation Acronym</label>
-        <description>Acronym of the organisation</description>
-        <condition></condition>
-      </element>
-      <element name="che:parentOrganisation">
-        <label>Parent Organisation</label>
-        <description>Parent organisation</description>
-        <condition></condition>
-      </element>
+    <element name="che:CHE_MD_Appraisal_AAP">
+      <label>Appraisal AAP</label>
+      <description>Appraisal AAP</description>
+      <condition></condition>
+    </element>
+    <element name="che:durationOfConservation">
+      <label>Duration of Conservation</label>
+      <description>Duration of Conservation</description>
+      <condition></condition>
+    </element>
+    <element name="che:commentOnDurationOfConservation">
+      <label>Comment on Duration of Conservation</label>
+      <description>Comment on Duration of Conservation</description>
+      <condition></condition>
+    </element>
+    <element name="che:appraisalOfArchivalValue">
+      <label>Appraisal of Archival Value</label>
+      <description>Appraisal of Archival Value</description>
+      <condition></condition>
+    </element>
+    <element name="che:reasonForArchivingValue">
+      <label>Reason for Archiving Value</label>
+      <description>Reason for Archiving Value</description>
+      <condition></condition>
+    </element>
+    <element name="che:commentOnArchivalValue">
+      <label>Comment on Archival Value</label>
+      <description>Comment on Archival Value</description>
+      <condition></condition>
+    </element>
+    <element name="che:CHE_MD_LegalConstraints">
+      <label>Legal Constraints</label>
+      <description>Legal Constraints</description>
+      <condition></condition>
+    </element>
+    <element name="che:legislationConstraints">
+      <label>Legislation Constraints</label>
+      <description>Legislation Constraints</description>
+      <condition></condition>
+    </element>
+    <element name="che:CHE_MD_Legislation">
+      <label>Legislation</label>
+      <description>Legislation</description>
+      <condition></condition>
+    </element>
+    <element name="che:legislationInformation">
+      <label>Legislation information</label>
+      <description>Legislation information</description>
+      <condition></condition>
+    </element>
+    <element name="che:country">
+      <label>Country</label>
+      <description>Country</description>
+      <condition></condition>
+    </element>
+    <element name="che:language">
+      <label>Language</label>
+      <description>Language</description>
+      <condition></condition>
+    </element>
+    <element name="che:legislationType">
+      <label>Legislation Type</label>
+      <description>Legislation Type</description>
+      <condition></condition>
+    </element>
+    <element name="che:legislationLevel">
+      <label>Legislation Level</label>
+      <description>Legislation Level</description>
+      <condition></condition>
+    </element>
+    <element name="che:internalReference">
+      <label>Internal Reference</label>
+      <description>Internal Reference</description>
+      <condition></condition>
+    </element>
+    <element name="che:legislatiogit comnAcronym">
+      <label>Legislation Acronym</label>
+      <description>Legislation Acronym</description>
+      <condition></condition>
+    </element>
+    <element name="che:legislationCitation">
+      <label>Legislation Citation</label>
+      <description>Legislation Citation</description>
+      <condition></condition>
+    </element>
+    <element name="che:subTopicCategory">
+      <label>Subtopic Category</label>
+      <description>Subtopic Category</description>
+      <condition></condition>
+    </element>
+    <element name="che:basicGeodata">
+      <label>Basic Geodata</label>
+      <description>Basic Geodata</description>
+      <condition></condition>
+    </element>
+    <element name="che:basicGeodataInformation">
+      <label>Basic Geodata Information</label>
+      <description>Basic Geodata Information</description>
+      <condition></condition>
+    </element>
+    <element name="che:CHE_MD_BasicGeodataInformation">
+      <label>Basic Geodata Information</label>
+      <description>Basic Geodata Information</description>
+      <condition></condition>
+    </element>
+    <element name="che:basicGeodataID">
+      <label>Basic Geodata ID</label>
+      <description>Basic Geodata ID</description>
+      <condition></condition>
+    </element>
+    <element name="che:basicGeodataLegalLevel">
+      <label>Basic Geodata Legal Level</label>
+      <description>Basic Geodata Legal Level</description>
+      <condition></condition>
+    </element>
+    <element name="che:basicGeodataResponsibilityLevel">
+      <label>Basic Geodata Responsibility Level</label>
+      <description>Basic Geodata Responsibility Level</description>
+      <condition></condition>
+    </element>
+    <element name="che:basicGeodataAccessLevel">
+      <label>Basic Geodata Access Level</label>
+      <description>Basic Geodata Access Level</description>
+      <condition></condition>
+    </element>
+    <element name="che:basicGeodataType">
+      <label>Basic Geodata Type</label>
+      <description>Basic Geodata Type</description>
+      <condition></condition>
+    </element>
+    <element name="che:organisationAcronym">
+      <label>Organisation Acronym</label>
+      <description>Acronym of the organisation</description>
+      <condition></condition>
+    </element>
+    <element name="che:parentOrganisation">
+      <label>Parent Organisation</label>
+      <description>Parent organisation</description>
+      <condition></condition>
+    </element>
   <element name="mac:type">
     <label>Type</label>
     <description></description>
@@ -1069,7 +1073,6 @@
     <description iso="true">Type of resource for which metadata is provided
     </description>
   </element>
-
   <element name="mdb:MD_MetadataScope" id="6.0">
     <label>Hierarchy level</label>
     <description>Scope to which the metadata applies (see annex H for more
@@ -2051,7 +2054,6 @@
       gérées dans la classe du même nom.
     </help>
     <condition/>
-
       </element>
       <element name="cit:administrativeArea" id="391.0">
         <label>Administrative area</label>
@@ -2533,7 +2535,6 @@
           <option value="500000">1:500´000</option>
           <option value="1000000">1:1´000´000</option>
         </helper>
-
       </element>
       <element name="mrd:density" id="293.0">
         <label>Density</label>
@@ -2657,8 +2658,6 @@
         </description>
         <condition>mandatory</condition>
       </element>
-
-
       <element name="lan:date" id="454.0" context="lan:PT_LocaleContainer">
         <label>Date</label>
         <description iso="true">Date of creation or revision of the locale
@@ -2955,7 +2954,6 @@
         </description>
         <help></help>
         <condition/>
-
       </element>
       <element name="mrc:filmDistortionInformationAvailability" id="254.0">
         <label>Film distortion information availability</label>
@@ -2970,7 +2968,6 @@
         </description>
         <help></help>
         <condition/>
-
   </element>
   <element name="mrd:formatDistributor" id="290.0">
     <label>Format distributor</label>
@@ -3975,7 +3972,6 @@
       <option value="OGC:WMTS">View (WMTS)</option>
       <option value="OGC:WPS">OGC-WPS Web Processing Service</option>
       <option value="OGC:OWS-C">View (OWS Context)</option>-->
-
           <option value="OGC API - Coverages">OGC API - Coverages</option>
           <option value="OGC API - Features">OGC API - Features</option>
           <option value="OGC API - Maps">OGC API - Maps</option>
@@ -4086,7 +4082,6 @@
         <help></help>
         <condition>mandatory</condition>
       </element>
-
       <element name="mco:MD_Releasability" id="114.0">
         <label>Releasability</label>
         <description iso="true">information about resource release constraints
@@ -4114,7 +4109,6 @@
         <help></help>
         <condition/>
       </element>
-
       <element name="mdq:report" id="80.0">
         <label>Report</label>
         <description>Quantitative quality information for the data specified by the
@@ -4408,7 +4402,6 @@
           <option value="OGC:OWS-C">OGC OWS Context</option>
         </helper>
       </element>
-
       <element name="cit:title" id="360.0"
               context="/mdb:MD_Metadata/mdb:dataQualityInfo/mdq:DQ_DataQuality/mdq:report/mdq:DQ_DomainConsistency/mdq:result/mdq:DQ_ConformanceResult/mdq:specification/cit:CI_Citation/cit:title">
         <label>Specification</label>
@@ -4485,13 +4478,11 @@
           </option>
         </helper>
       </element>
-
       <element name="cit:title" id="360.0"
               context="/mdb:MD_Metadata/mdb:identificationInfo/mri:MD_DataIdentification/mri:citation/cit:CI_Citation/cit:title">
         <label>Title</label>
         <description>Name by which the cited resource is known</description>
       </element>
-
       <element name="cit:title" id="360.0">
         <label>Title</label>
         <description>Name by which the cited resource is known</description>
@@ -4747,24 +4738,20 @@
         <description>Formatted as 2007-09-12T15:00:00 (YYYY-MM-DDTHH:mm:ss)
         </description>
       </element>
-
       <element name="gml:endPosition">
         <label>End date</label>
         <description>Formatted as 2007-09-12T15:00:00 (YYYY-MM-DDTHH:mm:ss)
         </description>
       </element>
-
       <element name="gml:relatedTime">
         <label>Related time</label>
         <description>Defines the relation of a given time to the object.
         </description>
       </element>
-
       <element name="gml:coordinates">
         <label>Coordinates</label>
         <description>Used to record an array of tuples or coordinates.</description>
       </element>
-
       <element name="gml:Polygon">
         <label>Polygon</label>
         <description>A gml:Polygon is a special surface that is defined by a single
@@ -4774,14 +4761,12 @@
           interior.
         </description>
       </element>
-
       <element name="gml:Point">
         <label>Point</label>
         <description>A gml:Point is defined by a single coordinate tuple.
         </description>
         <example>74. -37.</example>
       </element>
-
       <element name="gml:LineString">
         <label>Line</label>
         <description>A gml:LineString is a special curve that consists of a single
@@ -4791,7 +4776,6 @@
           interpolation between them.
         </description>
       </element>
-
       <element name="gml:LinearRing">
         <label>Linear ring</label>
         <description>A gml:LinearRing is defined by four or more coordinate tuples,
@@ -4800,18 +4784,14 @@
           coincident.
         </description>
       </element>
-
       <element name="gml:exterior">
         <label>Outer boundary</label>
         <description>The outer boundary of a solid.</description>
       </element>
-
       <element name="gml:interior">
         <label>Inner boundary</label>
         <description>The inner boundary of a solid</description>
       </element>
-
-
       <element name="gml:begin">
         <label>Begin</label>
         <description/>
@@ -4888,12 +4868,10 @@
         <label>Projected CRS</label>
         <description/>
       </element>
-
       <element name="gml:id">
         <label>Identifier</label>
         <description>Unique identifier</description>
       </element>
-
       <element name="gml:id" id="191.0" context="mri:MD_CRS">
         <label>Ellipsoid</label>
         <description>Identity of the ellipsoid used</description>
@@ -4917,7 +4895,6 @@
         <label>Name of the calendar era</label>
         <description></description>
       </element>
-
       <element name="relativePosition">
         <label>Relative position</label>
         <description></description>
@@ -4954,8 +4931,6 @@
         <label>Factor</label>
         <description></description>
       </element>
-
-
       <element name="srv:SV_ServiceIdentification">
         <label>Service Identification</label>
         <description>Service identification section</description>
@@ -5365,10 +5340,8 @@
         <label>Period duration</label>
         <description>
           The duration data type is used to specify a time interval.
-
           The time interval is specified in the following form "PnYnMnDTnHnMnS"
           where:
-
           * P indicates the period (required)
           * nY indicates the number of years
           * nM indicates the number of months
@@ -5477,7 +5450,6 @@
       <element name="gml:realizationEpoch">
         <label>Realization epoch</label>
       </element>
-
       <element name="gfc:FC_FeatureCatalogue">
         <label>Feature Catalogue description</label>
         <description></description>
@@ -5732,8 +5704,6 @@
       <element name="gfc:valueMeasurementUnit">
         <label>Value measurement unit</label>
       </element>
-
-
       <element name="mdq:resultFile">
         <label>Result file</label>
         <description></description>
