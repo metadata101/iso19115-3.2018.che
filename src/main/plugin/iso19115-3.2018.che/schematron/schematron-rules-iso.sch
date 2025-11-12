@@ -1756,6 +1756,65 @@
     </sch:diagnostic>
 
   </sch:diagnostics>
+  <sch:diagnostics>
+
+    <sch:diagnostic id="rule.mri.descriptivekeywords-mandatory-failure-en" xml:lang="en">
+      Descriptive keywords are mandatory when resource scope is 'dataset', 'series' or 'service'.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mri.descriptivekeywords-mandatory-failure-fr" xml:lang="fr">
+      La description d'un 'dataset', d'une 'series' ou d'un 'service' doit comprendre au moins un mot-clé (descriptive keyword).
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mri.descriptivekeywords-mandatory-success-en" xml:lang="en">
+      Number of descriptive keywords groups defined: <sch:value-of select="count($descriptiveKeywords)"/>.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mri.descriptivekeywords-mandatory-success-fr" xml:lang="fr">
+      Nombre de groupes de mots-clés descriptifs définis : <sch:value-of select="count($descriptiveKeywords)"/>.
+    </sch:diagnostic>
+
+  </sch:diagnostics>
+  <sch:pattern id="rule.mri.descriptivekeywords-mandatory">
+
+    <sch:title xml:lang="en">Descriptive keyword mandatory for dataset, series and service</sch:title>
+
+    <sch:title xml:lang="fr">Mot-clé descriptif obligatoire pour les jeux de données, séries et services</sch:title>
+
+    <sch:p xml:lang="en">When metadata scope resourceScope is 'dataset', 'series' or 'service',
+      descriptive keywords MUST be specified.
+    </sch:p>
+
+    <sch:p xml:lang="fr">Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
+      un mot-clé descriptif DOIT être spécifié.
+    </sch:p>
+
+    <sch:rule context="che:CHE_MD_Metadata[
+      mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or
+      mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or
+      mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']
+      /mdb:identificationInfo/che:CHE_MD_DataIdentification">
+
+      <sch:let name="descriptiveKeywords"
+               value="mri:descriptiveKeywords/mri:MD_Keywords[
+                 count(mri:keyword[
+                   normalize-space(gco:CharacterString) != '' or
+                   count(lan:PT_FreeText/lan:textGroup/lan:LocalisedCharacterString[normalize-space(.) != '']) > 0
+                 ]) > 0]"/>
+
+      <sch:let name="hasDescriptiveKeywords" value="count($descriptiveKeywords) &gt; 0"/>
+
+      <sch:assert test="$hasDescriptiveKeywords"
+                  diagnostics="rule.mri.descriptivekeywords-mandatory-failure-en
+                              rule.mri.descriptivekeywords-mandatory-failure-fr"/>
+
+      <sch:report test="$hasDescriptiveKeywords"
+                  diagnostics="rule.mri.descriptivekeywords-mandatory-success-en
+                              rule.mri.descriptivekeywords-mandatory-success-fr"/>
+
+    </sch:rule>
+
+  </sch:pattern>
   <sch:pattern id="rule.srv.servicetaxonomy">
 
     <sch:title xml:lang="en">Service taxonomy</sch:title>
