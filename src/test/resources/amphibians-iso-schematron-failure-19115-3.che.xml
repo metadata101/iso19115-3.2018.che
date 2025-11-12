@@ -224,14 +224,6 @@
             </lan:PT_FreeText>
           </cit:title>
           <cit:date>
-            <cit:CI_Date>
-              <cit:date>
-                <gco:Date>2024-02-23</gco:Date>
-              </cit:date>
-              <cit:dateType>
-                <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</cit:CI_DateTypeCode>
-              </cit:dateType>
-            </cit:CI_Date>
           </cit:date>
           <cit:identifier>
             <mcc:MD_Identifier>
