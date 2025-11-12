@@ -1696,6 +1696,61 @@
   </sch:pattern>
   <sch:diagnostics>
 
+    <sch:diagnostic id="rule.mri.citationdate-mandatory-failure-en" xml:lang="en">
+      Citation date is mandatory when resource scope is 'dataset', 'series' or 'service'.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mri.citationdate-mandatory-failure-fr" xml:lang="fr">
+      La date de citation est obligatoire quand la portée de la ressource est 'dataset', 'series' ou 'service'.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mri.citationdate-mandatory-success-en" xml:lang="en">
+      Number of citation dates defined: <sch:value-of select="count($citationDates)"/>.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mri.citationdate-mandatory-success-fr" xml:lang="fr">
+      Nombre de dates de citation définies : <sch:value-of select="count($citationDates)"/>.
+    </sch:diagnostic>
+
+  </sch:diagnostics>
+  <sch:pattern id="rule.mri.citationdate-mandatory">
+
+    <sch:title xml:lang="en">Citation date mandatory for dataset, series and service</sch:title>
+
+    <sch:title xml:lang="fr">Date de citation obligatoire pour les jeux de données, séries et services</sch:title>
+
+    <sch:p xml:lang="en">When metadata scope resourceScope is 'dataset', 'series' or 'service',
+      the citation date in dataIdentification section MUST be specified.
+    </sch:p>
+
+    <sch:p xml:lang="fr">Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
+      la date de citation dans la section dataIdentification DOIT être spécifiée.
+    </sch:p>
+
+    <sch:rule context="che:CHE_MD_Metadata[
+      mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or
+      mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or
+      mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']
+      /mdb:identificationInfo/che:CHE_MD_DataIdentification">
+
+      <sch:let name="citationDates"
+               value="mri:citation/cit:CI_Citation/cit:date/cit:CI_Date/cit:date[normalize-space(gco:DateTime) != '' or normalize-space(gco:Date) != '']"/>
+
+      <sch:let name="hasCitationDate" value="count($citationDates) &gt; 0"/>
+
+      <sch:assert test="$hasCitationDate"
+                  diagnostics="rule.mri.citationdate-mandatory-failure-en
+                              rule.mri.citationdate-mandatory-failure-fr"/>
+
+      <sch:report test="$hasCitationDate"
+                  diagnostics="rule.mri.citationdate-mandatory-success-en
+                              rule.mri.citationdate-mandatory-success-fr"/>
+
+    </sch:rule>
+
+  </sch:pattern>
+  <sch:diagnostics>
+
     <sch:diagnostic id="rule.mri.servicetaxonomy-failure-en" xml:lang="en">A
       service metadata SHALL refer to the service
       taxonomy defined in ISO19119 defining one or more value in the

@@ -255,6 +255,22 @@
       est associée.</svrl:diagnostic-reference>
   </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mri.defaultlocalewhenhastext" name_en="Resource language" name_fr="Langue de la ressource" name="Langue de la ressource" />
+  <svrl:active-pattern document="" id="rule.mri.citationdate-mandatory" name_en="Citation date mandatory for dataset, series and service" name_fr="Date de citation obligatoire pour les jeux de données, séries et services" name="Date de citation obligatoire pour les jeux de données, séries et services">
+    <svrl:text>When metadata scope resourceScope is 'dataset', 'series' or 'service',
+      the citation date in dataIdentification section MUST be specified.</svrl:text>
+    <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
+      la date de citation dans la section dataIdentification DOIT être spécifiée.</svrl:text>
+  </svrl:active-pattern>
+  <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']       /mdb:identificationInfo/che:CHE_MD_DataIdentification" />
+  <svrl:successful-report ref="#_" test="$hasCitationDate" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.citationdate-mandatory-success-en" xml:lang="en">Number of citation dates defined:
+          1
+          .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.citationdate-mandatory-success-fr" xml:lang="fr">Nombre de dates de citation définies :
+          1
+          .</svrl:diagnostic-reference>
+  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.srv.servicetaxonomy" name_en="Service taxonomy" name_fr="Taxonomie des services" name="Taxonomie des services" />
 </svrl:schematron-output>
 
