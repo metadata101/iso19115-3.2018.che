@@ -1712,7 +1712,7 @@
       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or
       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or
       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']
-      /mdb:identificationInfo/che:CHE_MD_DataIdentification">
+      /mdb:identificationInfo/*[name() = 'che:CHE_MD_DataIdentification' or name() = 'srv:SV_ServiceIdentification']">
 
       <sch:let name="citationDates"
                value="mri:citation/cit:CI_Citation/cit:date/cit:CI_Date/cit:date[normalize-space(gco:DateTime) != '' or normalize-space(gco:Date) != '']"/>
@@ -1793,7 +1793,7 @@
       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or
       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or
       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']
-      /mdb:identificationInfo/che:CHE_MD_DataIdentification">
+      /mdb:identificationInfo/*[name() = 'che:CHE_MD_DataIdentification' or name() = 'srv:SV_ServiceIdentification']">
 
       <sch:let name="descriptiveKeywords"
                value="mri:descriptiveKeywords/mri:MD_Keywords[
@@ -1852,7 +1852,7 @@
       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or
       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or
       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']
-      /mdb:identificationInfo/che:CHE_MD_DataIdentification">
+      /mdb:identificationInfo/*[name() = 'che:CHE_MD_DataIdentification' or name() = 'srv:SV_ServiceIdentification']">
 
       <sch:let name="pointOfContact"
                value="mri:pointOfContact[*]"/>

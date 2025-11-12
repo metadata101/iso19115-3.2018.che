@@ -265,7 +265,7 @@
     <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
       la date de citation dans la section dataIdentification DOIT être spécifiée.</svrl:text>
   </svrl:active-pattern>
-  <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']       /mdb:identificationInfo/che:CHE_MD_DataIdentification" />
+  <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']       /mdb:identificationInfo/*[name() = 'che:CHE_MD_DataIdentification' or name() = 'srv:SV_ServiceIdentification']" />
   <svrl:successful-report ref="#_" test="$hasCitationDate" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.citationdate-mandatory-success-en" xml:lang="en">Number of citation dates defined:
@@ -281,7 +281,7 @@
     <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
       un mot-clé descriptif DOIT être spécifié.</svrl:text>
   </svrl:active-pattern>
-  <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']       /mdb:identificationInfo/che:CHE_MD_DataIdentification" />
+  <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']       /mdb:identificationInfo/*[name() = 'che:CHE_MD_DataIdentification' or name() = 'srv:SV_ServiceIdentification']" />
   <svrl:successful-report ref="#_" test="$hasDescriptiveKeywords" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.descriptivekeywords-mandatory-success-en" xml:lang="en">Number of descriptive keywords groups defined:
@@ -297,7 +297,7 @@
     <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
       le point de contact DOIT être spécifié.</svrl:text>
   </svrl:active-pattern>
-  <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']       /mdb:identificationInfo/che:CHE_MD_DataIdentification" />
+  <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']       /mdb:identificationInfo/*[name() = 'che:CHE_MD_DataIdentification' or name() = 'srv:SV_ServiceIdentification']" />
   <svrl:successful-report ref="#_" test="$hasPointOfContact" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.pointofcontact-mandatory-success-en" xml:lang="en">Number of point of contact defined:
