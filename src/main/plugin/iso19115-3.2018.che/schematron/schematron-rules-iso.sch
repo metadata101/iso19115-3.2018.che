@@ -20,7 +20,7 @@
   <sch:ns prefix="gco" uri="http://standards.iso.org/iso/19115/-3/gco/1.0"/>
   <sch:ns prefix="geonet" uri="http://www.fao.org/geonetwork"/>
   <sch:ns prefix="xlink" uri="http://www.w3.org/1999/xlink"/>
-  <sch:ns prefix="xsi" uri="http://www.w3.org/2001/XMLSchema"/>
+  <sch:ns prefix="xsi" uri="http://www.w3.org/2001/XMLSchema-instance"/>
   <sch:ns prefix="che" uri="http://geocat.ch/che"/>
 
   <sch:diagnostics>
@@ -90,6 +90,54 @@
 
 
   </sch:diagnostics>
+  <sch:diagnostics>
+
+    <sch:diagnostic id="rule.che.topic-subtopic-consistency-failure-en" xml:lang="en">
+      Inconsistent topic and subTopicCategory: each che:CHE_MD_SubTopicCategoryCode must start with the selected ISO topicCategory (prefix before '_').
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.che.topic-subtopic-consistency-failure-fr" xml:lang="fr">
+      Incohérence entre la catégorie et la sous-catégorie : chaque che:CHE_MD_SubTopicCategoryCode doit commencer par la topicCategory sélectionnée (préfixe avant « _ »).
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.che.topic-subtopic-consistency-success-en" xml:lang="en">
+      Topic categories and sub topic categories are consistent according to eCH-0166.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.che.topic-subtopic-consistency-success-fr" xml:lang="fr">
+      Les catégories et sous-catégories sont cohérentes conformément à eCH-0166.
+    </sch:diagnostic>
+
+  </sch:diagnostics>
+  <sch:pattern id="rule.che.topic-subtopic-consistency">
+
+    <sch:title xml:lang="en">Ensure consistency between topicCategory and subTopicCategory (eCH-0166)</sch:title>
+
+    <sch:title xml:lang="fr">Assurer la cohérence entre topicCategory et subTopicCategory (eCH-0166)</sch:title>
+
+
+    <sch:rule context="//che:CHE_MD_DataIdentification">
+
+      <!-- All selected topicCategory codes (ISO MD_TopicCategoryCode) for this identification -->
+      <sch:let name="topicCodes" value="mri:topicCategory/mri:MD_TopicCategoryCode/text()"/>
+
+      <!-- Count subTopic codes whose prefix (before '_') does NOT match any selected topicCategory -->
+      <sch:let name="invalidSubCount"
+               value="count(che:subTopicCategory/che:CHE_MD_SubTopicCategoryCode[
+                         not(substring-before(@codeListValue,'_') = $topicCodes)
+                       ])"/>
+
+      <!-- Assert there are no inconsistent subTopicCategory codes -->
+      <sch:assert test="$invalidSubCount = 0"
+                  diagnostics="rule.che.topic-subtopic-consistency-failure-en rule.che.topic-subtopic-consistency-failure-fr"/>
+
+      <!-- Optional success report when subTopicCategory present and consistent -->
+      <sch:report test="count(che:subTopicCategory/che:CHE_MD_SubTopicCategoryCode) &gt; 0 and $invalidSubCount = 0"
+                  diagnostics="rule.che.topic-subtopic-consistency-success-en rule.che.topic-subtopic-consistency-success-fr"/>
+
+    </sch:rule>
+
+  </sch:pattern>
   <sch:pattern id="rule.gex.extenthasoneelement">
 
     <sch:title xml:lang="en">Extent MUST have one description or one geographic,
