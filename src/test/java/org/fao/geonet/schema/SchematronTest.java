@@ -20,9 +20,11 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Pattern;
 
 import static org.fao.geonet.schema.TestSupport.getResource;
 import static org.fao.geonet.schema.TestSupport.getResourceInsideSchema;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -90,7 +92,7 @@ public class SchematronTest {
 	public void fiktiverDarstellungskatalogIsoSchematron() throws Exception {
 		String report = applySchematronAndCompare("fiktiverDarstellungskatalogMitURL", true);
 
-		assertFalse(report.contains("failure"));
+		assertEquals(1, Pattern.compile("<svrl:failed-assert").matcher(report).results().count());
 	}
 
 	@Test
@@ -104,7 +106,7 @@ public class SchematronTest {
 	public void schematronForEditor() throws Exception {
 		String report = applySchematronAndCompare("grundwasservorkommen", true);
 		Path xmlFile = getResource("amphibians-19115-3.che-raw-french-inflated-for-edition.xml");
-		Element md = Xml.selectElement(Xml.loadFile(xmlFile), "che:CHE_MD_Metadata", List.of(Namespace.getNamespace("che", "http://geocat.ch/che")));;
+		Element md = Xml.selectElement(Xml.loadFile(xmlFile), "che:CHE_MD_Metadata", List.of(Namespace.getNamespace("che", "http://geocat.ch/che")));
 
 		applySchematronAndCompare("amphibians-19115-3.che-raw-french-inflated-for-edition", true, md);
 
