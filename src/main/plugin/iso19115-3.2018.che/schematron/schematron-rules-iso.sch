@@ -449,12 +449,12 @@
 
     <sch:title xml:lang="en">Legal constraint MUST
       specified an access, use or other constraint or
-      use limitation or releasability
+      use limitation
     </sch:title>
 
     <sch:title xml:lang="fr">Une contrainte légale DOIT
       définir un type de contrainte (d'accès, d'utilisation ou autre)
-      ou bien une limite d'utilisation ou une possibilité de divulgation
+      ou bien une limite d'utilisation
     </sch:title>
 
 
@@ -477,12 +477,8 @@
                value="mco:useLimitation/*[                  normalize-space(.) != '' or                  count(.//@codeListValue[. != '']) &gt; 0]"/>
 
 
-      <sch:let name="releasability"
-               value="mco:releasability/*[                  normalize-space(.) != '' or                  count(.//@codeListValue[. != '']) &gt; 0]"/>
-
-
       <sch:let name="hasDetails"
-               value="count($accessConstraints) +                        count($useConstraints) +                        count($otherConstraints) +                        count($useLimitation) +                        count($releasability)                       &gt; 0"/>
+               value="count($accessConstraints) +                        count($useConstraints) +                        count($otherConstraints) +                        count($useLimitation)                     &gt; 0"/>
 
 
       <sch:assert test="$hasDetails"
