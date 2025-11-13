@@ -44,6 +44,13 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-poly-success-en" xml:lang="en">The extent contains a bounding polygon.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-poly-success-fr" xml:lang="fr">L'étendue contient un polygone englobant.</svrl:diagnostic-reference>
   </svrl:successful-report>
+  <svrl:active-pattern document="" id="rule.che.subtopic-required-when-dataset-and-basic" name_en="subTopicCategory is mandatory when resourceScope = dataset and basicGeodata = true" name_fr="subTopicCategory est obligatoire lorsque resourceScope = dataset et basicGeodata = true" name="subTopicCategory est obligatoire lorsque resourceScope = dataset et basicGeodata = true" />
+  <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']/                      mdb:identificationInfo/che:CHE_MD_DataIdentification" />
+  <svrl:failed-assert ref="#_" test="not($isBasic) or $hasSubTopic" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.subtopic-when-dataset-and-basic-failure-en" xml:lang="en">When resourceScope is 'dataset' and che:basicGeodata is true, che:subTopicCategory MUST be provided.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.subtopic-when-dataset-and-basic-failure-fr" xml:lang="fr">Lorsque resourceScope vaut 'dataset' et que che:basicGeodata vaut true, che:subTopicCategory DOIT être renseigné.</svrl:diagnostic-reference>
+  </svrl:failed-assert>
   <svrl:active-pattern document="" id="rule.che.basicgeodatainfo-required-when-basic" name_en="basicGeodataInformation is mandatory when basicGeodata = true" name_fr="basicGeodataInformation est obligatoire lorsque basicGeodata = true" name="basicGeodataInformation est obligatoire lorsque basicGeodata = true" />
   <svrl:fired-rule context="//che:CHE_MD_DataIdentification" />
   <svrl:successful-report ref="#_" test="$isBasic and $hasInfo" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
