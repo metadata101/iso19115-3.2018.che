@@ -78,7 +78,7 @@ public class SchematronTest {
 	public void amphibiansWithUpdatedFixedInfoIsoSchematron() throws Exception {
 		String report = applySchematronAndCompare("amphibians-with-updated-fixed-info", false);
 
-		assertFalse(report.contains("failure"));
+		hasExpectedNumberOfFailure(1, report);
 	}
 
 	@Test
@@ -92,10 +92,10 @@ public class SchematronTest {
 	public void fiktiverDarstellungskatalogIsoSchematron() throws Exception {
 		String report = applySchematronAndCompare("fiktiverDarstellungskatalogMitURL", true);
 
-		assertEquals(1, Pattern.compile("<svrl:failed-assert").matcher(report).results().count());
-	}
+        hasExpectedNumberOfFailure(2, report);
+    }
 
-	@Test
+    @Test
 	public void grundwasservorkommenServiceIsoSchematron() throws Exception {
 		String report = applySchematronAndCompare("grundwasservorkommen", true);
 
@@ -141,4 +141,7 @@ public class SchematronTest {
 		return actual;
 	}
 
+    private static void hasExpectedNumberOfFailure(int expected, String report) {
+        assertEquals(expected, Pattern.compile("<svrl:failed-assert").matcher(report).results().count());
+    }
 }

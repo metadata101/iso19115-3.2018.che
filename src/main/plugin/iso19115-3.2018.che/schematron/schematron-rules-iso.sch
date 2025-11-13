@@ -18,6 +18,7 @@
   <sch:ns prefix="mcc" uri="http://standards.iso.org/iso/19115/-3/mcc/1.0"/>
   <sch:ns prefix="lan" uri="http://standards.iso.org/iso/19115/-3/lan/1.0"/>
   <sch:ns prefix="gco" uri="http://standards.iso.org/iso/19115/-3/gco/1.0"/>
+  <sch:ns prefix="mrl" uri="http://standards.iso.org/iso/19115/-3/mrl/2.0"/>
   <sch:ns prefix="geonet" uri="http://www.fao.org/geonetwork"/>
   <sch:ns prefix="xlink" uri="http://www.w3.org/1999/xlink"/>
   <sch:ns prefix="xsi" uri="http://www.w3.org/2001/XMLSchema-instance"/>
@@ -90,6 +91,50 @@
 
 
   </sch:diagnostics>
+  <sch:diagnostics>
+
+    <sch:diagnostic id="rule.mrl.statement-when-dataset-failure-en" xml:lang="en">
+      When resourceScope is 'dataset', the lineage statement (mrl:statement) MUST be provided in CHE_MD_Metadata.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mrl.statement-when-dataset-failure-fr" xml:lang="fr">
+      Lorsque resourceScope vaut 'dataset', l’élément d’historique mrl:statement DOIT être renseigné dans CHE_MD_Metadata.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mrl.statement-when-dataset-success-en" xml:lang="en">
+      Lineage statement is present for dataset resources.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mrl.statement-when-dataset-success-fr" xml:lang="fr">
+      L’élément d’historique (statement) est présent pour les jeux de données.
+    </sch:diagnostic>
+
+  </sch:diagnostics>
+  <sch:pattern id="rule.mrl.statement-required-when-dataset">
+
+    <sch:title xml:lang="en">Lineage statement is mandatory when resourceScope = dataset</sch:title>
+
+    <sch:title xml:lang="fr">Le statement (historique) est obligatoire lorsque resourceScope = dataset</sch:title>
+
+
+    <sch:rule
+            context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']">
+
+      <!-- Non-empty lineage statement anywhere under resourceLineage/LI_Lineage/statement -->
+      <sch:let name="statement"
+               value="mdb:resourceLineage/mrl:LI_Lineage/mrl:statement/*[normalize-space(.) != '']"/>
+
+      <sch:let name="hasStatement" value="count($statement) &gt; 0"/>
+
+      <sch:assert test="$hasStatement"
+                  diagnostics="rule.mrl.statement-when-dataset-failure-en rule.mrl.statement-when-dataset-failure-fr"/>
+
+      <sch:report test="$hasStatement"
+                  diagnostics="rule.mrl.statement-when-dataset-success-en rule.mrl.statement-when-dataset-success-fr"/>
+
+    </sch:rule>
+
+  </sch:pattern>
   <sch:diagnostics>
 
     <sch:diagnostic id="rule.che.topic-subtopic-consistency-failure-en" xml:lang="en">
