@@ -172,6 +172,51 @@
     </sch:diagnostic>
 
   </sch:diagnostics>
+  <sch:diagnostics>
+
+    <sch:diagnostic id="rule.che.subtopic-when-dataset-and-basic-failure-en" xml:lang="en">
+      When resourceScope is 'dataset' and che:basicGeodata is true, che:subTopicCategory MUST be provided.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.che.subtopic-when-dataset-and-basic-failure-fr" xml:lang="fr">
+      Lorsque resourceScope vaut 'dataset' et que che:basicGeodata vaut true, che:subTopicCategory DOIT être renseigné.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.che.subtopic-when-dataset-and-basic-success-en" xml:lang="en">
+      subTopicCategory is present when basicGeodata is true for a dataset.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.che.subtopic-when-dataset-and-basic-success-fr" xml:lang="fr">
+      subTopicCategory est présent lorsque basicGeodata vaut true pour un jeu de données.
+    </sch:diagnostic>
+
+  </sch:diagnostics>
+  <sch:pattern id="rule.che.subtopic-required-when-dataset-and-basic">
+
+    <sch:title xml:lang="en">subTopicCategory is mandatory when resourceScope = dataset and basicGeodata = true</sch:title>
+
+    <sch:title xml:lang="fr">subTopicCategory est obligatoire lorsque resourceScope = dataset et basicGeodata = true</sch:title>
+
+
+    <sch:rule
+            context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']/
+                     mdb:identificationInfo/che:CHE_MD_DataIdentification">
+
+      <sch:let name="isBasic"
+               value="che:basicGeodata/gco:Boolean = 'true' or che:basicGeodata/gco:Boolean = '1'"/>
+
+      <sch:let name="hasSubTopic"
+               value="count(che:subTopicCategory/che:CHE_MD_SubTopicCategoryCode) &gt; 0"/>
+
+      <sch:assert test="not($isBasic) or $hasSubTopic"
+                  diagnostics="rule.che.subtopic-when-dataset-and-basic-failure-en rule.che.subtopic-when-dataset-and-basic-failure-fr"/>
+
+      <sch:report test="$isBasic and $hasSubTopic"
+                  diagnostics="rule.che.subtopic-when-dataset-and-basic-success-en rule.che.subtopic-when-dataset-and-basic-success-fr"/>
+
+    </sch:rule>
+
+  </sch:pattern>
   <sch:pattern id="rule.che.basicgeodatainfo-required-when-basic">
 
     <sch:title xml:lang="en">basicGeodataInformation is mandatory when basicGeodata = true</sch:title>
