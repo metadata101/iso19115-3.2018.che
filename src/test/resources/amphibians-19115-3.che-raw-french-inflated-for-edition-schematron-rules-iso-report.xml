@@ -25,8 +25,15 @@
   <svrl:ns-prefix-in-attribute-values uri="http://standards.iso.org/iso/19115/-3/gco/1.0" prefix="gco" />
   <svrl:ns-prefix-in-attribute-values uri="http://www.fao.org/geonetwork" prefix="geonet" />
   <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/1999/xlink" prefix="xlink" />
-  <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/2001/XMLSchema" prefix="xsi" />
+  <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi" />
   <svrl:ns-prefix-in-attribute-values uri="http://geocat.ch/che" prefix="che" />
+  <svrl:active-pattern document="" id="rule.che.topic-subtopic-consistency" name_en="Ensure consistency between topicCategory and subTopicCategory (eCH-0166)" name_fr="Assurer la cohérence entre topicCategory et subTopicCategory (eCH-0166)" name="Assurer la cohérence entre topicCategory et subTopicCategory (eCH-0166)" />
+  <svrl:fired-rule context="//che:CHE_MD_DataIdentification" />
+  <svrl:successful-report ref="#_149" test="count(che:subTopicCategory/che:CHE_MD_SubTopicCategoryCode) &gt; 0 and $invalidSubCount = 0" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_149" diagnostic="rule.che.topic-subtopic-consistency-success-en" xml:lang="en">Topic categories and sub topic categories are consistent according to eCH-0166.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_149" diagnostic="rule.che.topic-subtopic-consistency-success-fr" xml:lang="fr">Les catégories et sous-catégories sont cohérentes conformément à eCH-0166.</svrl:diagnostic-reference>
+  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.gex.extenthasoneelement" name_en="Extent MUST have one description or one geographic,&#xA;      temporal or vertical element" name_fr="Une étendue DOIT avoir une description ou un&#xA;      élément géographique, temporel ou vertical" name="Une étendue DOIT avoir une description ou un&#xA;      élément géographique, temporel ou vertical" />
   <svrl:fired-rule context="//gex:EX_Extent" />
   <svrl:successful-report ref="#_408" test="count($geographicBox)" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='extent']/*[local-name()='EX_Extent']">

@@ -281,9 +281,6 @@ For details, see the attached data description.</lan:LocalisedCharacterString>
         <mri:MD_TopicCategoryCode>biota</mri:MD_TopicCategoryCode>
       </mri:topicCategory>
       <mri:topicCategory>
-        <mri:MD_TopicCategoryCode>environment</mri:MD_TopicCategoryCode>
-      </mri:topicCategory>
-      <mri:topicCategory>
         <mri:MD_TopicCategoryCode>farming</mri:MD_TopicCategoryCode>
       </mri:topicCategory>
       <mri:extent>
