@@ -26,7 +26,6 @@ import static org.fao.geonet.schema.TestSupport.getResource;
 import static org.fao.geonet.schema.TestSupport.getResourceInsideSchema;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
 
 public class SchematronTest {
 
@@ -63,14 +62,14 @@ public class SchematronTest {
 	public void amphibiansIsoSchematron() throws Exception {
 		String report = applySchematronAndCompare("amphibians", false);
 
-		assertTrue(report.contains("failure"));
+        hasExpectedNumberOfFailure(2, report);
 	}
 
 	@Test
 	public void amphibiansIsoSchematronFailure() throws Exception {
 		String report = applySchematronAndCompare("amphibians-iso-schematron-failure", false);
 
-		assertTrue(report.contains("failure"));
+        hasExpectedNumberOfFailure(13, report);
 	}
 
 
@@ -99,18 +98,18 @@ public class SchematronTest {
 	public void grundwasservorkommenServiceIsoSchematron() throws Exception {
 		String report = applySchematronAndCompare("grundwasservorkommen", true);
 
-		assertFalse(report.contains("failure"));
+        hasExpectedNumberOfFailure(1, report);
 	}
 
 	@Test
 	public void schematronForEditor() throws Exception {
-		String report = applySchematronAndCompare("grundwasservorkommen", true);
-		Path xmlFile = getResource("amphibians-19115-3.che-raw-french-inflated-for-edition.xml");
-		Element md = Xml.selectElement(Xml.loadFile(xmlFile), "che:CHE_MD_Metadata", List.of(Namespace.getNamespace("che", "http://geocat.ch/che")));
+        String rootName = "amphibians-19115-3.che-raw-french-inflated-for-edition";
+        Path xmlFile = getResource(rootName + ".xml");
+        Element md = Xml.selectElement(Xml.loadFile(xmlFile), "che:CHE_MD_Metadata", List.of(Namespace.getNamespace("che", "http://geocat.ch/che")));
 
-		applySchematronAndCompare("amphibians-19115-3.che-raw-french-inflated-for-edition", true, md);
+        String report = applySchematronAndCompare(rootName, true, md);
 
-		assertFalse(report.contains("failure"));
+        hasExpectedNumberOfFailure(1, report);
 	}
 
 
