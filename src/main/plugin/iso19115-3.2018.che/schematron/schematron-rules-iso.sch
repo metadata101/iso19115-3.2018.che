@@ -92,6 +92,51 @@
 
   </sch:diagnostics>
   <sch:diagnostics>
+    <sch:diagnostic id="rule.mri.maintenance-frequency-when-scope-dss-failure-en" xml:lang="en">
+      When resourceScope is 'dataset', 'series' or 'service', maintenanceAndUpdateFrequency MUST be provided in the identification section.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mri.maintenance-frequency-when-scope-dss-failure-fr" xml:lang="fr">
+      Lorsque resourceScope vaut 'dataset', 'series' ou 'service', maintenanceAndUpdateFrequency DOIT être renseigné dans la section d’identification.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mri.maintenance-frequency-when-scope-dss-success-en" xml:lang="en">
+      maintenanceAndUpdateFrequency is present for resources with scope dataset/series/service.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mri.maintenance-frequency-when-scope-dss-success-fr" xml:lang="fr">
+      maintenanceAndUpdateFrequency est présent pour les ressources de type dataset/series/service.
+    </sch:diagnostic>
+
+  </sch:diagnostics>
+  <sch:pattern id="rule.mri.maintenance-frequency-required-when-dataset-series-service">
+
+    <sch:title xml:lang="en">maintenanceAndUpdateFrequency is mandatory when resourceScope = dataset, series or service</sch:title>
+
+    <sch:title xml:lang="fr">maintenanceAndUpdateFrequency est obligatoire lorsque resourceScope = dataset, series ou service</sch:title>
+
+
+    <sch:rule
+            context="/che:CHE_MD_Metadata[
+                        mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or
+                        mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or
+                        mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']">
+
+      <!-- Count maintenanceAndUpdateFrequency declarations with a code element -->
+      <sch:let name="maintenanceFreqCount"
+               value="count(//che:CHE_MD_MaintenanceInformation/mmi:maintenanceAndUpdateFrequency/mmi:MD_MaintenanceFrequencyCode)"/>
+
+      <sch:assert test="$maintenanceFreqCount &gt; 0"
+                  diagnostics="rule.mri.maintenance-frequency-when-scope-dss-failure-en rule.mri.maintenance-frequency-when-scope-dss-failure-fr"/>
+
+      <sch:report test="$maintenanceFreqCount &gt; 0"
+                  diagnostics="rule.mri.maintenance-frequency-when-scope-dss-success-en rule.mri.maintenance-frequency-when-scope-dss-success-fr"/>
+
+    </sch:rule>
+
+  </sch:pattern>
+  
+  <sch:diagnostics>
 
     <sch:diagnostic id="rule.mrl.statement-when-dataset-failure-en" xml:lang="en">
       When resourceScope is 'dataset', the lineage statement (mrl:statement) MUST be provided in CHE_MD_Metadata.

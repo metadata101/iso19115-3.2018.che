@@ -28,6 +28,13 @@
   <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/1999/xlink" prefix="xlink" />
   <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi" />
   <svrl:ns-prefix-in-attribute-values uri="http://geocat.ch/che" prefix="che" />
+  <svrl:active-pattern document="" id="rule.mri.maintenance-frequency-required-when-dataset-series-service" name_en="maintenanceAndUpdateFrequency is mandatory when resourceScope = dataset, series or service" name_fr="maintenanceAndUpdateFrequency est obligatoire lorsque resourceScope = dataset, series ou service" name="maintenanceAndUpdateFrequency est obligatoire lorsque resourceScope = dataset, series ou service" />
+  <svrl:fired-rule context="/che:CHE_MD_Metadata[                         mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or                         mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or                         mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']" />
+  <svrl:successful-report ref="#_" test="$maintenanceFreqCount &gt; 0" location="/*[local-name()='CHE_MD_Metadata']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.maintenance-frequency-when-scope-dss-success-en" xml:lang="en">maintenanceAndUpdateFrequency is present for resources with scope dataset/series/service.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.maintenance-frequency-when-scope-dss-success-fr" xml:lang="fr">maintenanceAndUpdateFrequency est présent pour les ressources de type dataset/series/service.</svrl:diagnostic-reference>
+  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mrl.statement-required-when-dataset" name_en="Lineage statement is mandatory when resourceScope = dataset" name_fr="Le statement (historique) est obligatoire lorsque resourceScope = dataset" name="Le statement (historique) est obligatoire lorsque resourceScope = dataset" />
   <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']" />
   <svrl:failed-assert ref="#_" test="$hasStatement" location="/*[local-name()='CHE_MD_Metadata']">
@@ -200,27 +207,6 @@
   <svrl:active-pattern document="" id="rule.mex.datatypedetails" name_en="Extended element information&#xA;      which are not codelist, enumeration or codelistElement&#xA;      MUST specified max occurence and domain value" name_fr="Un élément d'extension qui n'est&#xA;      ni une codelist, ni une énumération, ni un élément de codelist&#xA;      DOIT préciser le nombre maximum d'occurences&#xA;      ainsi que la valeur du domaine" name="Un élément d'extension qui n'est&#xA;      ni une codelist, ni une énumération, ni un élément de codelist&#xA;      DOIT préciser le nombre maximum d'occurences&#xA;      ainsi que la valeur du domaine" />
   <svrl:active-pattern document="" id="rule.mex.conditional" name_en="Extended element information&#xA;      which are conditional MUST explained the condition" name_fr="Un élément d'extension conditionnel&#xA;      DOIT préciser les termes de la condition" name="Un élément d'extension conditionnel&#xA;      DOIT préciser les termes de la condition" />
   <svrl:active-pattern document="" id="rule.mex.mandatorycode" name_en="Extended element information&#xA;      which are codelist, enumeration or codelistElement&#xA;      MUST specified a code and a concept name" name_fr="Un élément d'extension qui est&#xA;      une codelist, une énumération, un élément de codelist&#xA;      DOIT préciser un code et un nom de concept" name="Un élément d'extension qui est&#xA;      une codelist, une énumération, un élément de codelist&#xA;      DOIT préciser un code et un nom de concept" />
-  <svrl:active-pattern document="" id="rule.mmi-updatefrequency" name_en="Maintenance information MUST&#xA;      specified an update frequency" name_fr="L'information sur la maintenance&#xA;      DOIT définir une fréquence de mise à jour" name="L'information sur la maintenance&#xA;      DOIT définir une fréquence de mise à jour" />
-  <svrl:fired-rule context="//che:CHE_MD_MaintenanceInformation" />
-  <svrl:successful-report ref="#_" test="count($maintenanceAndUpdateFrequency)" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='resourceMaintenance']/*[local-name()='CHE_MD_MaintenanceInformation']">
-    <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mmi-updatefrequency-success-en" xml:lang="en">The update frequency is "
-          notPlanned
-          ".</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mmi-updatefrequency-success-fr" xml:lang="fr">La fréquence de mise à jour est "
-          notPlanned
-          ".</svrl:diagnostic-reference>
-  </svrl:successful-report>
-  <svrl:fired-rule context="//che:CHE_MD_MaintenanceInformation" />
-  <svrl:successful-report ref="#_" test="count($maintenanceAndUpdateFrequency)" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='metadataMaintenance']/*[local-name()='CHE_MD_MaintenanceInformation']">
-    <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mmi-updatefrequency-success-en" xml:lang="en">The update frequency is "
-          asNeeded
-          ".</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mmi-updatefrequency-success-fr" xml:lang="fr">La fréquence de mise à jour est "
-          asNeeded
-          ".</svrl:diagnostic-reference>
-  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mrc.sampledimension" name_en="Sample dimension MUST provide a max,&#xA;      a min or a mean value" name_fr="La dimension de l'échantillon DOIT préciser&#xA;      une valeur maximum, une valeur minimum ou une moyenne" name="La dimension de l'échantillon DOIT préciser&#xA;      une valeur maximum, une valeur minimum ou une moyenne" />
   <svrl:active-pattern document="" id="rule.mrc.bandunit" name_en="Band MUST specified bounds units&#xA;      when a bound max or bound min is defined" name_fr="Une bande DOIT préciser l'unité&#xA;      lorsqu'une borne maximum ou minimum est définie" name="Une bande DOIT préciser l'unité&#xA;      lorsqu'une borne maximum ou minimum est définie" />
   <svrl:active-pattern document="" id="rule.mrd.mediumunit" name_en="Medium having density MUST specified density&#xA;      units" name_fr="Un média précisant une densité DOIT préciser&#xA;      l'unité" name="Un média précisant une densité DOIT préciser&#xA;      l'unité" />
