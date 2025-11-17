@@ -327,13 +327,13 @@
           1
           .</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.mri.resourcemaintenance-mandatory" name_en="Resource maintenance mandatory for dataset" name_fr="Maintenance de la ressource obligatoire pour les jeux de données" name="Maintenance de la ressource obligatoire pour les jeux de données">
-    <svrl:text>When metadata scope resourceScope is 'dataset',
+  <svrl:active-pattern document="" id="rule.mri.resourcemaintenance-mandatory" name_en="Resource maintenance mandatory for dataset, series and service" name_fr="Maintenance de la ressource obligatoire pour les jeux de données, séries et services" name="Maintenance de la ressource obligatoire pour les jeux de données, séries et services">
+    <svrl:text>When metadata scope resourceScope is 'dataset', 'series' or 'service',
       resource maintenance MUST be specified.</svrl:text>
-    <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset',
+    <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
       la maintenance de la ressource DOIT être spécifiée.</svrl:text>
   </svrl:active-pattern>
-  <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']       /mdb:identificationInfo/che:CHE_MD_DataIdentification" />
+  <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']       /mdb:identificationInfo/*[name() = 'che:CHE_MD_DataIdentification' or name() = 'srv:SV_ServiceIdentification']" />
   <svrl:successful-report ref="#_" test="$hasResourceMaintenance" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.resourcemaintenance-mandatory-success-en" xml:lang="en">Number of resource maintenance defined:
