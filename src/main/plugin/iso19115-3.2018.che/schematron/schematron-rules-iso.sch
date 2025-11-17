@@ -135,6 +135,51 @@
     </sch:rule>
 
   </sch:pattern>
+  <sch:diagnostics>
+
+    <sch:diagnostic id="rule.mrs.refsys-identifier-when-dataset-failure-en" xml:lang="en">
+      When resourceScope is 'dataset', at least one referenceSystemIdentifier (mcc:MD_Identifier code) MUST be provided in CHE_MD_Metadata.referenceSystemInfo.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mrs.refsys-identifier-when-dataset-failure-fr" xml:lang="fr">
+      Lorsque resourceScope vaut 'dataset', au moins un referenceSystemIdentifier (code de mcc:MD_Identifier) DOIT être renseigné dans CHE_MD_Metadata.referenceSystemInfo.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mrs.refsys-identifier-when-dataset-success-en" xml:lang="en">
+      Reference system identifier is present for dataset resources.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mrs.refsys-identifier-when-dataset-success-fr" xml:lang="fr">
+      Un identifiant de système de référence est présent pour les jeux de données.
+    </sch:diagnostic>
+
+  </sch:diagnostics>
+  <sch:pattern id="rule.mrs.refsys-identifier-required-when-dataset">
+
+    <sch:title xml:lang="en">referenceSystemIdentifier is mandatory when resourceScope = dataset</sch:title>
+
+    <sch:title xml:lang="fr">referenceSystemIdentifier est obligatoire lorsque resourceScope = dataset</sch:title>
+
+
+    <sch:rule
+            context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']">
+
+      <!-- Count reference system identifiers with a non-empty MD_Identifier code -->
+      <sch:let name="refIdCount"
+               value="count(mdb:referenceSystemInfo/mrs:MD_ReferenceSystem/
+                             mrs:referenceSystemIdentifier/mcc:MD_Identifier[
+                               mcc:code/*[normalize-space(.) != '']
+                             ])"/>
+
+      <sch:assert test="$refIdCount &gt; 0"
+                  diagnostics="rule.mrs.refsys-identifier-when-dataset-failure-en rule.mrs.refsys-identifier-when-dataset-failure-fr"/>
+
+      <sch:report test="$refIdCount &gt; 0"
+                  diagnostics="rule.mrs.refsys-identifier-when-dataset-success-en rule.mrs.refsys-identifier-when-dataset-success-fr"/>
+
+    </sch:rule>
+
+  </sch:pattern>
   
   <sch:diagnostics>
 
