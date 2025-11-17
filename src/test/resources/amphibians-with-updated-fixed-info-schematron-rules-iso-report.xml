@@ -64,8 +64,8 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrd.distribution-format-when-dataset-success-fr" xml:lang="fr">L'élément distributionFormat est présent pour les jeux de données.</svrl:diagnostic-reference>
   </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mrs.refsys-identifier-required-when-dataset" name_en="referenceSystemIdentifier is mandatory when resourceScope = dataset" name_fr="referenceSystemIdentifier est obligatoire lorsque resourceScope = dataset" name="referenceSystemIdentifier est obligatoire lorsque resourceScope = dataset" />
-  <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']" />
-  <svrl:successful-report ref="#_" test="$refIdCount &gt; 0" location="/*[local-name()='CHE_MD_Metadata']">
+  <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']/mdb:referenceSystemInfo" />
+  <svrl:successful-report ref="#_" test="$refIdCount &gt; 0" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='referenceSystemInfo']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrs.refsys-identifier-when-dataset-success-en" xml:lang="en">Reference system identifier is present for dataset resources.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrs.refsys-identifier-when-dataset-success-fr" xml:lang="fr">Un identifiant de système de référence est présent pour les jeux de données.</svrl:diagnostic-reference>
@@ -230,18 +230,6 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.defaultlocale-mandatory-success-fr" xml:lang="fr">La langue par défaut est définie avec la langue : "
           ger
           ".</svrl:diagnostic-reference>
-  </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.mdb.referencesysteminfo-mandatory" name_en="Reference system information mandatory for dataset" name_fr="Information sur le système de référence obligatoire pour les jeux de données" name="Information sur le système de référence obligatoire pour les jeux de données">
-    <svrl:text>When metadata scope resourceScope is 'dataset',
-      the reference system information MUST be specified.</svrl:text>
-    <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset',
-      l'information sur le système de référence DOIT être spécifiée.</svrl:text>
-  </svrl:active-pattern>
-  <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']" />
-  <svrl:successful-report ref="#_" test="$hasReferenceSystemInfo" location="/*[local-name()='CHE_MD_Metadata']">
-    <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.referencesysteminfo-mandatory-success-en" xml:lang="en">A reference system is defined.</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.referencesysteminfo-mandatory-success-fr" xml:lang="fr">Un système de référence est défini.</svrl:diagnostic-reference>
   </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mex.datatypedetails" name_en="Extended element information&#xA;      which are not codelist, enumeration or codelistElement&#xA;      MUST specified max occurence and domain value" name_fr="Un élément d'extension qui n'est&#xA;      ni une codelist, ni une énumération, ni un élément de codelist&#xA;      DOIT préciser le nombre maximum d'occurences&#xA;      ainsi que la valeur du domaine" name="Un élément d'extension qui n'est&#xA;      ni une codelist, ni une énumération, ni un élément de codelist&#xA;      DOIT préciser le nombre maximum d'occurences&#xA;      ainsi que la valeur du domaine" />
   <svrl:active-pattern document="" id="rule.mex.conditional" name_en="Extended element information&#xA;      which are conditional MUST explained the condition" name_fr="Un élément d'extension conditionnel&#xA;      DOIT préciser les termes de la condition" name="Un élément d'extension conditionnel&#xA;      DOIT préciser les termes de la condition" />
