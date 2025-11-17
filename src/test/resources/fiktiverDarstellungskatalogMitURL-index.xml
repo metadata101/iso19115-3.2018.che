@@ -439,10 +439,9 @@
       
       }</contactForDistribution>
   <linkUrl>https://map.geo.admin.ch/?layers=ch.bafu.fauna-steinbockkolonien</linkUrl>
-  <linkProtocol>MAP:Preview</linkProtocol>
-  <linkUrlProtocolMAPPreview>https://map.geo.admin.ch/?layers=ch.bafu.fauna-steinbockkolonien</linkUrlProtocolMAPPreview>
+  <linkUrlProtocol>https://map.geo.admin.ch/?layers=ch.bafu.fauna-steinbockkolonien</linkUrlProtocol>
   <link type="object">{
-            "protocol":"MAP:Preview",
+            "protocol":"",
             "mimeType":"",
             
               "urlObject": 

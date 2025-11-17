@@ -137,6 +137,58 @@
   </sch:pattern>
   <sch:diagnostics>
 
+    <sch:diagnostic id="rule.mrd.online-protocol-when-dataset-failure-en" xml:lang="en">
+      When resourceScope is 'dataset', each onLine (cit:CI_OnlineResource) MUST provide a protocol (cit:protocol with non-empty content).
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mrd.online-protocol-when-dataset-failure-fr" xml:lang="fr">
+      Lorsque resourceScope vaut 'dataset', chaque onLine (cit:CI_OnlineResource) DOIT indiquer un protocole (cit:protocol avec un contenu non vide).
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mrd.online-protocol-when-dataset-success-en" xml:lang="en">
+      All onLine (cit:CI_OnlineResource) entries provide a protocol for dataset resources.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mrd.online-protocol-when-dataset-success-fr" xml:lang="fr">
+      Toutes les entrées onLine (cit:CI_OnlineResource) indiquent un protocole pour les jeux de données.
+    </sch:diagnostic>
+
+  </sch:diagnostics>
+  <sch:pattern id="rule.mrd.online-protocol-required-when-dataset">
+
+    <sch:title xml:lang="en">onLine.protocol is mandatory when resourceScope = dataset</sch:title>
+
+    <sch:title xml:lang="fr">onLine.protocol est obligatoire lorsque resourceScope = dataset</sch:title>
+
+
+    <sch:rule
+            context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']">
+
+      <!-- Count onLine resources and those that have a non-empty protocol -->
+      <sch:let name="onlineCount"
+               value="count(mdb:distributionInfo/mrd:MD_Distribution/
+                             mrd:transferOptions/mrd:MD_DigitalTransferOptions/
+                             mrd:onLine/cit:CI_OnlineResource)"/>
+
+      <sch:let name="onlineWithProtocolCount"
+               value="count(mdb:distributionInfo/mrd:MD_Distribution/
+                             mrd:transferOptions/mrd:MD_DigitalTransferOptions/
+                             mrd:onLine/cit:CI_OnlineResource[
+                               cit:protocol/*[normalize-space(.) != '']
+                             ])"/>
+
+      <!-- If there are onLine resources, all must have a non-empty protocol -->
+      <sch:assert test="$onlineCount = 0 or $onlineWithProtocolCount = $onlineCount"
+                  diagnostics="rule.mrd.online-protocol-when-dataset-failure-en rule.mrd.online-protocol-when-dataset-failure-fr"/>
+
+      <sch:report test="$onlineCount &gt; 0 and $onlineWithProtocolCount = $onlineCount"
+                  diagnostics="rule.mrd.online-protocol-when-dataset-success-en rule.mrd.online-protocol-when-dataset-success-fr"/>
+
+    </sch:rule>
+
+  </sch:pattern>
+  <sch:diagnostics>
+
     <sch:diagnostic id="rule.mrd.transfer-options-when-dataset-failure-en" xml:lang="en">
       When resourceScope is 'dataset', at least one transferOptions (mrd:MD_DigitalTransferOptions) MUST be provided in CHE_MD_Metadata.distributionInfo.
     </sch:diagnostic>

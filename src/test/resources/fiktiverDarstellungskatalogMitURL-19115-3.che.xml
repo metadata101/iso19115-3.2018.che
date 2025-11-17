@@ -1102,7 +1102,7 @@
                 </lan:PT_FreeText>
               </cit:linkage>
               <cit:protocol>
-                <gco:CharacterString>MAP:Preview</gco:CharacterString>
+                <gco:CharacterString />
               </cit:protocol>
               <cit:name xsi:type="lan:PT_FreeText_PropertyType">
                 <gco:CharacterString>Vorschau map.geo.admin.ch</gco:CharacterString>

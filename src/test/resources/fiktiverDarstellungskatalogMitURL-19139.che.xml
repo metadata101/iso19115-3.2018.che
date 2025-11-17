@@ -1019,7 +1019,7 @@
                 </che:PT_FreeURL>
               </gmd:linkage>
               <gmd:protocol>
-                <gco:CharacterString>MAP:Preview</gco:CharacterString>
+                <gco:CharacterString></gco:CharacterString>
               </gmd:protocol>
               <gmd:name xsi:type="gmd:PT_FreeText_PropertyType">
                 <gco:CharacterString>Vorschau map.geo.admin.ch</gco:CharacterString>
