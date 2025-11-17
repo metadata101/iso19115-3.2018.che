@@ -2193,11 +2193,11 @@
   <sch:diagnostics>
 
     <sch:diagnostic id="rule.mri.resourcemaintenance-mandatory-failure-en" xml:lang="en">
-      Resource maintenance is mandatory when resource scope is 'dataset'.
+      Resource maintenance is mandatory when resource scope is 'dataset', 'series' or 'service'.
     </sch:diagnostic>
 
     <sch:diagnostic id="rule.mri.resourcemaintenance-mandatory-failure-fr" xml:lang="fr">
-      La maintenance de la ressource est obligatoire quand la portée de la ressource est 'dataset'.
+      La maintenance de la ressource est obligatoire quand la portée de la ressource est 'dataset', 'series' ou 'service'.
     </sch:diagnostic>
 
     <sch:diagnostic id="rule.mri.resourcemaintenance-mandatory-success-en" xml:lang="en">
@@ -2211,21 +2211,23 @@
   </sch:diagnostics>
   <sch:pattern id="rule.mri.resourcemaintenance-mandatory">
 
-    <sch:title xml:lang="en">Resource maintenance mandatory for dataset</sch:title>
+    <sch:title xml:lang="en">Resource maintenance mandatory for dataset, series and service</sch:title>
 
-    <sch:title xml:lang="fr">Maintenance de la ressource obligatoire pour les jeux de données</sch:title>
+    <sch:title xml:lang="fr">Maintenance de la ressource obligatoire pour les jeux de données, séries et services</sch:title>
 
-    <sch:p xml:lang="en">When metadata scope resourceScope is 'dataset',
+    <sch:p xml:lang="en">When metadata scope resourceScope is 'dataset', 'series' or 'service',
       resource maintenance MUST be specified.
     </sch:p>
 
-    <sch:p xml:lang="fr">Quand la portée des métadonnées (resourceScope) est 'dataset',
+    <sch:p xml:lang="fr">Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
       la maintenance de la ressource DOIT être spécifiée.
     </sch:p>
 
     <sch:rule context="che:CHE_MD_Metadata[
-      mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']
-      /mdb:identificationInfo/che:CHE_MD_DataIdentification">
+      mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or
+      mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or
+      mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']
+      /mdb:identificationInfo/*[name() = 'che:CHE_MD_DataIdentification' or name() = 'srv:SV_ServiceIdentification']">
 
       <sch:let name="resourceMaintenance"
                value="mri:resourceMaintenance[*]"/>
