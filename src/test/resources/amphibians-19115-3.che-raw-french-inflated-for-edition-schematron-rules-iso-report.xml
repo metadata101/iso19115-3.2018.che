@@ -35,6 +35,13 @@
     <svrl:diagnostic-reference ref="#_1" diagnostic="rule.mri.maintenance-frequency-when-scope-dss-success-en" xml:lang="en">maintenanceAndUpdateFrequency is present for resources with scope dataset/series/service.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_1" diagnostic="rule.mri.maintenance-frequency-when-scope-dss-success-fr" xml:lang="fr">maintenanceAndUpdateFrequency est présent pour les ressources de type dataset/series/service.</svrl:diagnostic-reference>
   </svrl:successful-report>
+  <svrl:active-pattern document="" id="rule.mrd.transfer-options-required-when-dataset" name_en="transferOptions is mandatory when resourceScope = dataset" name_fr="transferOptions est obligatoire lorsque resourceScope = dataset" name="transferOptions est obligatoire lorsque resourceScope = dataset" />
+  <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']" />
+  <svrl:successful-report ref="#_1" test="$transferOptionsCount &gt; 0" location="/*[local-name()='CHE_MD_Metadata']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_1" diagnostic="rule.mrd.transfer-options-when-dataset-success-en" xml:lang="en">transferOptions is present for dataset resources.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_1" diagnostic="rule.mrd.transfer-options-when-dataset-success-fr" xml:lang="fr">L'élément transferOptions est présent pour les jeux de données.</svrl:diagnostic-reference>
+  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mrs.refsys-identifier-required-when-dataset" name_en="referenceSystemIdentifier is mandatory when resourceScope = dataset" name_fr="referenceSystemIdentifier est obligatoire lorsque resourceScope = dataset" name="referenceSystemIdentifier est obligatoire lorsque resourceScope = dataset" />
   <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']" />
   <svrl:successful-report ref="#_1" test="$refIdCount &gt; 0" location="/*[local-name()='CHE_MD_Metadata']">
