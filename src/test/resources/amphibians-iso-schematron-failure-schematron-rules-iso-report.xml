@@ -35,6 +35,8 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.maintenance-frequency-when-scope-dss-success-en" xml:lang="en">maintenanceAndUpdateFrequency is present for resources with scope dataset/series/service.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.maintenance-frequency-when-scope-dss-success-fr" xml:lang="fr">maintenanceAndUpdateFrequency est présent pour les ressources de type dataset/series/service.</svrl:diagnostic-reference>
   </svrl:successful-report>
+  <svrl:active-pattern document="" id="rule.mrd.online-protocol-required-when-dataset" name_en="onLine.protocol is mandatory when resourceScope = dataset" name_fr="onLine.protocol est obligatoire lorsque resourceScope = dataset" name="onLine.protocol est obligatoire lorsque resourceScope = dataset" />
+  <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']" />
   <svrl:active-pattern document="" id="rule.mrd.transfer-options-required-when-dataset" name_en="transferOptions is mandatory when resourceScope = dataset" name_fr="transferOptions est obligatoire lorsque resourceScope = dataset" name="transferOptions est obligatoire lorsque resourceScope = dataset" />
   <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']" />
   <svrl:failed-assert ref="#_" test="$transferOptionsCount &gt; 0" location="/*[local-name()='CHE_MD_Metadata']">
