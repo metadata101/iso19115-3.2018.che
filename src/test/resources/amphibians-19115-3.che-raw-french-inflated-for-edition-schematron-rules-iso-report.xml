@@ -35,6 +35,13 @@
     <svrl:diagnostic-reference ref="#_1" diagnostic="rule.mri.maintenance-frequency-when-scope-dss-success-en" xml:lang="en">maintenanceAndUpdateFrequency is present for resources with scope dataset/series/service.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_1" diagnostic="rule.mri.maintenance-frequency-when-scope-dss-success-fr" xml:lang="fr">maintenanceAndUpdateFrequency est présent pour les ressources de type dataset/series/service.</svrl:diagnostic-reference>
   </svrl:successful-report>
+  <svrl:active-pattern document="" id="rule.mrs.refsys-identifier-required-when-dataset" name_en="referenceSystemIdentifier is mandatory when resourceScope = dataset" name_fr="referenceSystemIdentifier est obligatoire lorsque resourceScope = dataset" name="referenceSystemIdentifier est obligatoire lorsque resourceScope = dataset" />
+  <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']" />
+  <svrl:successful-report ref="#_1" test="$refIdCount &gt; 0" location="/*[local-name()='CHE_MD_Metadata']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_1" diagnostic="rule.mrs.refsys-identifier-when-dataset-success-en" xml:lang="en">Reference system identifier is present for dataset resources.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_1" diagnostic="rule.mrs.refsys-identifier-when-dataset-success-fr" xml:lang="fr">Un identifiant de système de référence est présent pour les jeux de données.</svrl:diagnostic-reference>
+  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mrl.statement-required-when-dataset" name_en="Lineage statement is mandatory when resourceScope = dataset" name_fr="Le statement (historique) est obligatoire lorsque resourceScope = dataset" name="Le statement (historique) est obligatoire lorsque resourceScope = dataset" />
   <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']" />
   <svrl:failed-assert ref="#_1" test="$hasStatement" location="/*[local-name()='CHE_MD_Metadata']">
