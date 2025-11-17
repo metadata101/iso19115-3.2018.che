@@ -205,6 +205,15 @@
       </msr:geometricObjects>
     </msr:MD_VectorSpatialRepresentation>
   </mdb:spatialRepresentationInfo>
+  <mdb:referenceSystemInfo>
+    <mrs:MD_ReferenceSystem>
+      <mrs:referenceSystemIdentifier>
+        <mcc:MD_Identifier>
+          <mcc:code xsi:type="lan:PT_FreeText_PropertyType"/>
+        </mcc:MD_Identifier>
+      </mrs:referenceSystemIdentifier>
+    </mrs:MD_ReferenceSystem>
+  </mdb:referenceSystemInfo>
   <mdb:identificationInfo>
     <che:CHE_MD_DataIdentification gco:isoType="mri:MD_DataIdentification">
       <mri:citation>

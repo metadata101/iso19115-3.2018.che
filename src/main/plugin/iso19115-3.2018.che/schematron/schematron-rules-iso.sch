@@ -344,11 +344,11 @@
 
 
     <sch:rule
-            context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']">
+            context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']/mdb:referenceSystemInfo">
 
       <!-- Count reference system identifiers with a non-empty MD_Identifier code -->
       <sch:let name="refIdCount"
-               value="count(mdb:referenceSystemInfo/mrs:MD_ReferenceSystem/
+               value="count(mrs:MD_ReferenceSystem/
                              mrs:referenceSystemIdentifier/mcc:MD_Identifier[
                                mcc:code/*[normalize-space(.) != '']
                              ])"/>
@@ -1231,58 +1231,6 @@
       <sch:report test="$hasDefaultLocale"
                   diagnostics="rule.mdb.defaultlocale-mandatory-success-en
                               rule.mdb.defaultlocale-mandatory-success-fr"/>
-
-    </sch:rule>
-
-  </sch:pattern>
-  <sch:diagnostics>
-
-    <sch:diagnostic id="rule.mdb.referencesysteminfo-mandatory-failure-en" xml:lang="en">
-      Defining a reference system is mandatory when resource scope is 'dataset'.
-    </sch:diagnostic>
-
-    <sch:diagnostic id="rule.mdb.referencesysteminfo-mandatory-failure-fr" xml:lang="fr">
-      Définir un système de référence est obligatoire quand la portée de la ressource est 'dataset'.
-    </sch:diagnostic>
-
-    <sch:diagnostic id="rule.mdb.referencesysteminfo-mandatory-success-en" xml:lang="en">
-      A reference system is defined.
-    </sch:diagnostic>
-
-    <sch:diagnostic id="rule.mdb.referencesysteminfo-mandatory-success-fr" xml:lang="fr">
-      Un système de référence est défini.
-    </sch:diagnostic>
-
-  </sch:diagnostics>
-  <sch:pattern id="rule.mdb.referencesysteminfo-mandatory">
-
-    <sch:title xml:lang="en">Reference system information mandatory for dataset</sch:title>
-
-    <sch:title xml:lang="fr">Information sur le système de référence obligatoire pour les jeux de données</sch:title>
-
-    <sch:p xml:lang="en">When metadata scope resourceScope is 'dataset',
-      the reference system information MUST be specified.
-    </sch:p>
-
-    <sch:p xml:lang="fr">Quand la portée des métadonnées (resourceScope) est 'dataset',
-      l'information sur le système de référence DOIT être spécifiée.
-    </sch:p>
-
-    <sch:rule context="che:CHE_MD_Metadata[
-      mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']">
-
-      <sch:let name="referenceSystemInfo"
-               value="mdb:referenceSystemInfo[*]"/>
-
-      <sch:let name="hasReferenceSystemInfo" value="count($referenceSystemInfo) > 0"/>
-
-      <sch:assert test="$hasReferenceSystemInfo"
-                  diagnostics="rule.mdb.referencesysteminfo-mandatory-failure-en
-                              rule.mdb.referencesysteminfo-mandatory-failure-fr"/>
-
-      <sch:report test="$hasReferenceSystemInfo"
-                  diagnostics="rule.mdb.referencesysteminfo-mandatory-success-en
-                              rule.mdb.referencesysteminfo-mandatory-success-fr"/>
 
     </sch:rule>
 
