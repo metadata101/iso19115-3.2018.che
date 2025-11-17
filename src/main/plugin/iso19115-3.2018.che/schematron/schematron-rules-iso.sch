@@ -224,6 +224,49 @@
   </sch:pattern>
   <sch:diagnostics>
 
+    <sch:diagnostic id="rule.mrd.distribution-format-when-dataset-failure-en" xml:lang="en">
+      When resourceScope is 'dataset', at least one distributionFormat (mrd:MD_Format) MUST be provided in CHE_MD_Metadata.distributionInfo.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mrd.distribution-format-when-dataset-failure-fr" xml:lang="fr">
+      Lorsque resourceScope vaut 'dataset', au moins un distributionFormat (mrd:MD_Format) DOIT être renseigné dans CHE_MD_Metadata.distributionInfo.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mrd.distribution-format-when-dataset-success-en" xml:lang="en">
+      distributionFormat is present for dataset resources.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mrd.distribution-format-when-dataset-success-fr" xml:lang="fr">
+      L'élément distributionFormat est présent pour les jeux de données.
+    </sch:diagnostic>
+
+  </sch:diagnostics>
+  <sch:pattern id="rule.mrd.distribution-format-required-when-dataset">
+
+    <sch:title xml:lang="en">distributionFormat is mandatory when resourceScope = dataset</sch:title>
+
+    <sch:title xml:lang="fr">distributionFormat est obligatoire lorsque resourceScope = dataset</sch:title>
+
+
+    <sch:rule
+            context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']">
+
+      <!-- Count distribution formats declarations (at least one MD_Format required) -->
+      <sch:let name="distributionFormatCount"
+               value="count(mdb:distributionInfo/mrd:MD_Distribution/
+                             mrd:distributionFormat/mrd:MD_Format)"/>
+
+      <sch:assert test="$distributionFormatCount &gt; 0"
+                  diagnostics="rule.mrd.distribution-format-when-dataset-failure-en rule.mrd.distribution-format-when-dataset-failure-fr"/>
+
+      <sch:report test="$distributionFormatCount &gt; 0"
+                  diagnostics="rule.mrd.distribution-format-when-dataset-success-en rule.mrd.distribution-format-when-dataset-success-fr"/>
+
+    </sch:rule>
+
+  </sch:pattern>
+  <sch:diagnostics>
+
     <sch:diagnostic id="rule.mrs.refsys-identifier-when-dataset-failure-en" xml:lang="en">
       When resourceScope is 'dataset', at least one referenceSystemIdentifier (mcc:MD_Identifier code) MUST be provided in CHE_MD_Metadata.referenceSystemInfo.
     </sch:diagnostic>

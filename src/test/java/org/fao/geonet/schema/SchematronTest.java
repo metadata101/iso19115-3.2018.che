@@ -69,7 +69,7 @@ public class SchematronTest {
 	public void amphibiansIsoSchematronFailure() throws Exception {
 		String report = applySchematronAndCompare("amphibians-iso-schematron-failure", false);
 
-        hasExpectedNumberOfFailure(16, report);
+        hasExpectedNumberOfFailure(17, report);
 	}
 
 
