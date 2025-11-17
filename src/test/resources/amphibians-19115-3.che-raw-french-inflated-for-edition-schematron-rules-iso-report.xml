@@ -42,6 +42,13 @@
     <svrl:diagnostic-reference ref="#_1" diagnostic="rule.mrd.transfer-options-when-dataset-success-en" xml:lang="en">transferOptions is present for dataset resources.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_1" diagnostic="rule.mrd.transfer-options-when-dataset-success-fr" xml:lang="fr">L'élément transferOptions est présent pour les jeux de données.</svrl:diagnostic-reference>
   </svrl:successful-report>
+  <svrl:active-pattern document="" id="rule.mrd.online-required-when-dataset" name_en="onLine is mandatory when resourceScope = dataset" name_fr="onLine est obligatoire lorsque resourceScope = dataset" name="onLine est obligatoire lorsque resourceScope = dataset" />
+  <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']" />
+  <svrl:successful-report ref="#_1" test="$onlineCount &gt; 0" location="/*[local-name()='CHE_MD_Metadata']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_1" diagnostic="rule.mrd.online-when-dataset-success-en" xml:lang="en">onLine is present in distribution transfer options for dataset resources.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_1" diagnostic="rule.mrd.online-when-dataset-success-fr" xml:lang="fr">L'élément onLine est présent dans les options de transfert pour les jeux de données.</svrl:diagnostic-reference>
+  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mrs.refsys-identifier-required-when-dataset" name_en="referenceSystemIdentifier is mandatory when resourceScope = dataset" name_fr="referenceSystemIdentifier est obligatoire lorsque resourceScope = dataset" name="referenceSystemIdentifier est obligatoire lorsque resourceScope = dataset" />
   <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']" />
   <svrl:successful-report ref="#_1" test="$refIdCount &gt; 0" location="/*[local-name()='CHE_MD_Metadata']">

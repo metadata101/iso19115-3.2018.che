@@ -180,6 +180,50 @@
   </sch:pattern>
   <sch:diagnostics>
 
+    <sch:diagnostic id="rule.mrd.online-when-dataset-failure-en" xml:lang="en">
+      When resourceScope is 'dataset', at least one onLine (cit:CI_OnlineResource) MUST be provided in CHE_MD_Metadata.distributionInfo/transferOptions.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mrd.online-when-dataset-failure-fr" xml:lang="fr">
+      Lorsque resourceScope vaut 'dataset', au moins un onLine (cit:CI_OnlineResource) DOIT être renseigné dans CHE_MD_Metadata.distributionInfo/transferOptions.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mrd.online-when-dataset-success-en" xml:lang="en">
+      onLine is present in distribution transfer options for dataset resources.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mrd.online-when-dataset-success-fr" xml:lang="fr">
+      L'élément onLine est présent dans les options de transfert pour les jeux de données.
+    </sch:diagnostic>
+
+  </sch:diagnostics>
+  <sch:pattern id="rule.mrd.online-required-when-dataset">
+
+    <sch:title xml:lang="en">onLine is mandatory when resourceScope = dataset</sch:title>
+
+    <sch:title xml:lang="fr">onLine est obligatoire lorsque resourceScope = dataset</sch:title>
+
+
+    <sch:rule
+            context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']">
+
+      <!-- Count online resources declared in distribution transfer options -->
+      <sch:let name="onlineCount"
+               value="count(mdb:distributionInfo/mrd:MD_Distribution/
+                             mrd:transferOptions/mrd:MD_DigitalTransferOptions/
+                             mrd:onLine/cit:CI_OnlineResource)"/>
+
+      <sch:assert test="$onlineCount &gt; 0"
+                  diagnostics="rule.mrd.online-when-dataset-failure-en rule.mrd.online-when-dataset-failure-fr"/>
+
+      <sch:report test="$onlineCount &gt; 0"
+                  diagnostics="rule.mrd.online-when-dataset-success-en rule.mrd.online-when-dataset-success-fr"/>
+
+    </sch:rule>
+
+  </sch:pattern>
+  <sch:diagnostics>
+
     <sch:diagnostic id="rule.mrs.refsys-identifier-when-dataset-failure-en" xml:lang="en">
       When resourceScope is 'dataset', at least one referenceSystemIdentifier (mcc:MD_Identifier code) MUST be provided in CHE_MD_Metadata.referenceSystemInfo.
     </sch:diagnostic>
