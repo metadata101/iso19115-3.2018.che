@@ -137,6 +137,49 @@
   </sch:pattern>
   <sch:diagnostics>
 
+    <sch:diagnostic id="rule.mrd.transfer-options-when-dataset-failure-en" xml:lang="en">
+      When resourceScope is 'dataset', at least one transferOptions (mrd:MD_DigitalTransferOptions) MUST be provided in CHE_MD_Metadata.distributionInfo.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mrd.transfer-options-when-dataset-failure-fr" xml:lang="fr">
+      Lorsque resourceScope vaut 'dataset', au moins un transferOptions (mrd:MD_DigitalTransferOptions) DOIT être renseigné dans CHE_MD_Metadata.distributionInfo.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mrd.transfer-options-when-dataset-success-en" xml:lang="en">
+      transferOptions is present for dataset resources.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mrd.transfer-options-when-dataset-success-fr" xml:lang="fr">
+      L'élément transferOptions est présent pour les jeux de données.
+    </sch:diagnostic>
+
+  </sch:diagnostics>
+  <sch:pattern id="rule.mrd.transfer-options-required-when-dataset">
+
+    <sch:title xml:lang="en">transferOptions is mandatory when resourceScope = dataset</sch:title>
+
+    <sch:title xml:lang="fr">transferOptions est obligatoire lorsque resourceScope = dataset</sch:title>
+
+
+    <sch:rule
+            context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']">
+
+      <!-- Count transfer options declarations (even empty MD_DigitalTransferOptions satisfies the rule) -->
+      <sch:let name="transferOptionsCount"
+               value="count(mdb:distributionInfo/mrd:MD_Distribution/
+                             mrd:transferOptions/mrd:MD_DigitalTransferOptions)"/>
+
+      <sch:assert test="$transferOptionsCount &gt; 0"
+                  diagnostics="rule.mrd.transfer-options-when-dataset-failure-en rule.mrd.transfer-options-when-dataset-failure-fr"/>
+
+      <sch:report test="$transferOptionsCount &gt; 0"
+                  diagnostics="rule.mrd.transfer-options-when-dataset-success-en rule.mrd.transfer-options-when-dataset-success-fr"/>
+
+    </sch:rule>
+
+  </sch:pattern>
+  <sch:diagnostics>
+
     <sch:diagnostic id="rule.mrs.refsys-identifier-when-dataset-failure-en" xml:lang="en">
       When resourceScope is 'dataset', at least one referenceSystemIdentifier (mcc:MD_Identifier code) MUST be provided in CHE_MD_Metadata.referenceSystemInfo.
     </sch:diagnostic>
