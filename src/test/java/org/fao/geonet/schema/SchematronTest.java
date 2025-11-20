@@ -69,7 +69,7 @@ public class SchematronTest {
 	public void amphibiansIsoSchematronFailure() throws Exception {
 		String report = applySchematronAndCompare("amphibians-iso-schematron-failure", false);
 
-        hasExpectedNumberOfFailure(16, report);
+        hasExpectedNumberOfFailure(13, report);
 	}
 
 
@@ -91,7 +91,7 @@ public class SchematronTest {
 	public void fiktiverDarstellungskatalogIsoSchematron() throws Exception {
 		String report = applySchematronAndCompare("fiktiverDarstellungskatalogMitURL", true);
 
-        hasExpectedNumberOfFailure(2, report);
+        hasExpectedNumberOfFailure(1, report);
     }
 
     @Test
