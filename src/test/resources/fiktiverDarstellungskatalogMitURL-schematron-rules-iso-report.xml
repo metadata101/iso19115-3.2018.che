@@ -35,34 +35,6 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.maintenance-frequency-when-scope-dss-success-en" xml:lang="en">maintenanceAndUpdateFrequency is present for resources with scope dataset/series/service.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.maintenance-frequency-when-scope-dss-success-fr" xml:lang="fr">maintenanceAndUpdateFrequency est présent pour les ressources de type dataset/series/service.</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.mrd.online-protocol-required-when-dataset" name_en="onLine.protocol is mandatory when resourceScope = dataset" name_fr="onLine.protocol est obligatoire lorsque resourceScope = dataset" name="onLine.protocol est obligatoire lorsque resourceScope = dataset" />
-  <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']" />
-  <svrl:failed-assert ref="#_" test="$onlineCount = 0 or $onlineWithProtocolCount = $onlineCount" location="/*[local-name()='CHE_MD_Metadata']">
-    <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrd.online-protocol-when-dataset-failure-en" xml:lang="en">When resourceScope is 'dataset', each onLine (cit:CI_OnlineResource) MUST provide a protocol (cit:protocol with non-empty content).</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrd.online-protocol-when-dataset-failure-fr" xml:lang="fr">Lorsque resourceScope vaut 'dataset', chaque onLine (cit:CI_OnlineResource) DOIT indiquer un protocole (cit:protocol avec un contenu non vide).</svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:active-pattern document="" id="rule.mrd.transfer-options-required-when-dataset" name_en="transferOptions is mandatory when resourceScope = dataset" name_fr="transferOptions est obligatoire lorsque resourceScope = dataset" name="transferOptions est obligatoire lorsque resourceScope = dataset" />
-  <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']" />
-  <svrl:successful-report ref="#_" test="$transferOptionsCount &gt; 0" location="/*[local-name()='CHE_MD_Metadata']">
-    <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrd.transfer-options-when-dataset-success-en" xml:lang="en">transferOptions is present for dataset resources.</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrd.transfer-options-when-dataset-success-fr" xml:lang="fr">L'élément transferOptions est présent pour les jeux de données.</svrl:diagnostic-reference>
-  </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.mrd.online-required-when-dataset" name_en="onLine is mandatory when resourceScope = dataset" name_fr="onLine est obligatoire lorsque resourceScope = dataset" name="onLine est obligatoire lorsque resourceScope = dataset" />
-  <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']" />
-  <svrl:successful-report ref="#_" test="$onlineCount &gt; 0" location="/*[local-name()='CHE_MD_Metadata']">
-    <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrd.online-when-dataset-success-en" xml:lang="en">onLine is present in distribution transfer options for dataset resources.</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrd.online-when-dataset-success-fr" xml:lang="fr">L'élément onLine est présent dans les options de transfert pour les jeux de données.</svrl:diagnostic-reference>
-  </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.mrd.distribution-format-required-when-dataset" name_en="distributionFormat is mandatory when resourceScope = dataset" name_fr="distributionFormat est obligatoire lorsque resourceScope = dataset" name="distributionFormat est obligatoire lorsque resourceScope = dataset" />
-  <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']" />
-  <svrl:successful-report ref="#_" test="$distributionFormatCount &gt; 0" location="/*[local-name()='CHE_MD_Metadata']">
-    <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrd.distribution-format-when-dataset-success-en" xml:lang="en">distributionFormat is present for dataset resources.</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrd.distribution-format-when-dataset-success-fr" xml:lang="fr">L'élément distributionFormat est présent pour les jeux de données.</svrl:diagnostic-reference>
-  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mrs.refsys-identifier-required-when-dataset" name_en="referenceSystemIdentifier is mandatory when resourceScope = dataset" name_fr="referenceSystemIdentifier est obligatoire lorsque resourceScope = dataset" name="referenceSystemIdentifier est obligatoire lorsque resourceScope = dataset" />
   <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']/mdb:referenceSystemInfo" />
   <svrl:successful-report ref="#_" test="$refIdCount &gt; 0" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='referenceSystemInfo']">
