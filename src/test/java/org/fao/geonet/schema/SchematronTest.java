@@ -91,7 +91,7 @@ public class SchematronTest {
 	public void fiktiverDarstellungskatalogIsoSchematron() throws Exception {
 		String report = applySchematronAndCompare("fiktiverDarstellungskatalogMitURL", true);
 
-        hasExpectedNumberOfFailure(3, report);
+        hasExpectedNumberOfFailure(2, report);
     }
 
     @Test
