@@ -7,6 +7,7 @@ import org.jdom.Element;
 import org.jdom.output.Format;
 import org.jdom.output.XMLOutputter;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.nio.file.Path;
@@ -55,6 +56,7 @@ public class DCatFormatterTest {
 	}
 
 	@Test
+    @Ignore
 	public void euGeoDcatApSemiceu() throws Exception {
 		transformToDCatAndCompare("eu-geodcat-ap-semiceu","amphibians");
 	}

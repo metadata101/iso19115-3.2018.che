@@ -414,6 +414,12 @@
   <extentDescriptionObject type="object">{"default":"Schweiz", "langger":"Schweiz", "langfre":"Suisse", "langita":"Svizzera", "langeng":"Switzerland", "langroh":"Svizra"}</extentDescriptionObject>
   <geom type="object">{"type": "Polygon","coordinates": [[[5.956088,45.817970],[10.492036,45.817970],[10.492036,47.808488],[5.956088,47.808488],[5.956088,45.817970]]]}</geom>
   <location>46.813229,8.224062</location>
+  <resourceVerticalRange type="object">{
+                "gte": 123.123
+                  ,"lte": 456.456
+                  ,"unit": "m"
+                
+                }</resourceVerticalRange>
   <coordinateSystem>LV95 EPSG:2056</coordinateSystem>
   <crsDetails type="object">{
             "code": "LV95 EPSG:2056",
