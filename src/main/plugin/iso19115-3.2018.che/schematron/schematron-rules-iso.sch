@@ -154,6 +154,56 @@
     </sch:diagnostic>
 
   </sch:diagnostics>
+  <sch:diagnostics>
+
+    <sch:diagnostic id="rule.mdb.contact-email-when-scope-dss-failure-en" xml:lang="en">
+      When resourceScope is 'dataset', 'series' or 'service', every metadata contact party (mdb:contact/cit:party/*) MUST provide an electronic mail address (cit:contactInfo/cit:CI_Contact/cit:address/cit:CI_Address/cit:electronicMailAddress).
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mdb.contact-email-when-scope-dss-failure-fr" xml:lang="fr">
+      Lorsque resourceScope vaut 'dataset', 'series' ou 'service', chaque partie de contact des métadonnées (mdb:contact/cit:party/*) DOIT fournir une adresse électronique (cit:contactInfo/cit:CI_Contact/cit:address/cit:CI_Address/cit:electronicMailAddress).
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mdb.contact-email-when-scope-dss-success-en" xml:lang="en">
+      All metadata contact parties provide an electronic mail address for resources with scope dataset/series/service.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mdb.contact-email-when-scope-dss-success-fr" xml:lang="fr">
+      Toutes les parties de contact des métadonnées fournissent une adresse électronique pour les ressources de type dataset/series/service.
+    </sch:diagnostic>
+
+  </sch:diagnostics>
+  <sch:pattern id="rule.mdb.contact-email-required-when-dataset-series-service">
+
+    <sch:title xml:lang="en">Metadata contact parties must have an electronicMailAddress when resourceScope = dataset, series or service</sch:title>
+
+    <sch:title xml:lang="fr">Les parties de contact des métadonnées doivent avoir une adresse électronique lorsque resourceScope = dataset, series ou service</sch:title>
+
+
+    <sch:rule
+            context="/che:CHE_MD_Metadata[
+              mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or
+              mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or
+              mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']">
+
+      <!-- All parties defined under metadata contacts, excluding GeoNetwork helper nodes -->
+      <sch:let name="parties"
+               value="mdb:contact/cit:CI_Responsibility/cit:party/*[namespace-uri(.) != 'http://www.fao.org/geonetwork']"/>
+
+      <!-- Count parties missing at least one electronicMailAddress under CI_Address -->
+      <sch:let name="missingEmailCount"
+               value="count($parties[not(cit:contactInfo/cit:CI_Contact/cit:address/cit:CI_Address/cit:electronicMailAddress)])"/>
+
+      <!-- If parties are defined, all must provide an electronicMailAddress -->
+      <sch:assert test="count($parties) = 0 or $missingEmailCount = 0"
+                  diagnostics="rule.mdb.contact-email-when-scope-dss-failure-en rule.mdb.contact-email-when-scope-dss-failure-fr"/>
+
+      <sch:report test="count($parties) &gt; 0 and $missingEmailCount = 0"
+                  diagnostics="rule.mdb.contact-email-when-scope-dss-success-en rule.mdb.contact-email-when-scope-dss-success-fr"/>
+
+    </sch:rule>
+
+  </sch:pattern>
   <sch:pattern id="rule.mdb.contact-address-required-when-dataset-series-service">
 
     <sch:title xml:lang="en">Metadata contact parties must have an address when resourceScope = dataset, series or service</sch:title>
