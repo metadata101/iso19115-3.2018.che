@@ -137,6 +137,56 @@
   </sch:pattern>
   <sch:diagnostics>
 
+    <sch:diagnostic id="rule.mdb.contact-contactinfo-when-scope-dss-failure-en" xml:lang="en">
+      When resourceScope is 'dataset', 'series' or 'service', every metadata contact party (mdb:contact/cit:party/*) MUST provide a contactInfo (cit:contactInfo/cit:CI_Contact).
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mdb.contact-contactinfo-when-scope-dss-failure-fr" xml:lang="fr">
+      Lorsque resourceScope vaut 'dataset', 'series' ou 'service', chaque partie de contact des métadonnées (mdb:contact/cit:party/*) DOIT fournir un contactInfo (cit:contactInfo/cit:CI_Contact).
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mdb.contact-contactinfo-when-scope-dss-success-en" xml:lang="en">
+      All metadata contact parties provide a contactInfo for resources with scope dataset/series/service.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.mdb.contact-contactinfo-when-scope-dss-success-fr" xml:lang="fr">
+      Toutes les parties de contact des métadonnées fournissent un contactInfo pour les ressources de type dataset/series/service.
+    </sch:diagnostic>
+
+  </sch:diagnostics>
+  <sch:pattern id="rule.mdb.contact-contactinfo-required-when-dataset-series-service">
+
+    <sch:title xml:lang="en">Metadata contact parties must have contactInfo when resourceScope = dataset, series or service</sch:title>
+
+    <sch:title xml:lang="fr">Les parties de contact des métadonnées doivent avoir un contactInfo lorsque resourceScope = dataset, series ou service</sch:title>
+
+
+    <sch:rule
+            context="/che:CHE_MD_Metadata[
+              mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or
+              mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or
+              mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']">
+
+      <!-- All parties defined under metadata contacts -->
+      <sch:let name="parties"
+               value="mdb:contact/cit:CI_Responsibility/cit:party/*[namespace-uri(.) != 'http://www.fao.org/geonetwork']"/>
+
+      <!-- Count parties missing contactInfo/CI_Contact -->
+      <sch:let name="missingContactInfoCount"
+               value="count($parties[not(cit:contactInfo/cit:CI_Contact)])"/>
+
+      <!-- If parties are defined, all must provide a contactInfo -->
+      <sch:assert test="count($parties) = 0 or $missingContactInfoCount = 0"
+                  diagnostics="rule.mdb.contact-contactinfo-when-scope-dss-failure-en rule.mdb.contact-contactinfo-when-scope-dss-failure-fr"/>
+
+      <sch:report test="count($parties) &gt; 0 and $missingContactInfoCount = 0"
+                  diagnostics="rule.mdb.contact-contactinfo-when-scope-dss-success-en rule.mdb.contact-contactinfo-when-scope-dss-success-fr"/>
+
+    </sch:rule>
+
+  </sch:pattern>
+  <sch:diagnostics>
+
     <sch:diagnostic id="rule.gex.verticalcrsid-when-dataset-failure-en" xml:lang="en">
       When resourceScope is 'dataset' and a vertical extent is used, each vertical extent MUST provide a verticalCRSId (gex:verticalCRSId).
     </sch:diagnostic>
