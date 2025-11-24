@@ -39,61 +39,6 @@
             </lan:PT_FreeText>
           </cit:name>
           <cit:contactInfo>
-            <cit:CI_Contact>
-              <cit:phone>
-                <cit:CI_Telephone>
-                  <cit:number>
-                    <gco:CharacterString />
-                  </cit:number>
-                  <cit:numberType>
-                    <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="facsimile">facsimile</cit:CI_TelephoneTypeCode>
-                  </cit:numberType>
-                </cit:CI_Telephone>
-              </cit:phone>
-              <cit:address>
-                <cit:CI_Address>
-                  <cit:deliveryPoint>
-                    <gco:CharacterString>Reckenholzstrasse 191</gco:CharacterString>
-                  </cit:deliveryPoint>
-                  <cit:city>
-                    <gco:CharacterString>Zürich</gco:CharacterString>
-                  </cit:city>
-                  <cit:postalCode>
-                    <gco:CharacterString>8046</gco:CharacterString>
-                  </cit:postalCode>
-                  <cit:country>
-                    <gco:CharacterString>CH</gco:CharacterString>
-                  </cit:country>
-                  <cit:electronicMailAddress>
-                    <gco:CharacterString>GIS@agroscope.admin.ch</gco:CharacterString>
-                  </cit:electronicMailAddress>
-                </cit:CI_Address>
-              </cit:address>
-              <cit:onlineResource>
-                <cit:CI_OnlineResource>
-                  <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
-                    <gco:CharacterString>http://www.agroscope.admin.ch</gco:CharacterString>
-                    <lan:PT_FreeText>
-                      <lan:textGroup>
-                        <lan:LocalisedCharacterString locale="#DE">http://www.agroscope.admin.ch</lan:LocalisedCharacterString>
-                      </lan:textGroup>
-                      <lan:textGroup>
-                        <lan:LocalisedCharacterString locale="#FR">http://www.agroscope.admin.ch</lan:LocalisedCharacterString>
-                      </lan:textGroup>
-                      <lan:textGroup>
-                        <lan:LocalisedCharacterString locale="#IT">http://www.agroscope.admin.ch</lan:LocalisedCharacterString>
-                      </lan:textGroup>
-                      <lan:textGroup>
-                        <lan:LocalisedCharacterString locale="#EN">http://www.agroscope.admin.ch</lan:LocalisedCharacterString>
-                      </lan:textGroup>
-                    </lan:PT_FreeText>
-                  </cit:linkage>
-                  <cit:protocol>
-                    <gco:CharacterString>WWW:LINK</gco:CharacterString>
-                  </cit:protocol>
-                </cit:CI_OnlineResource>
-              </cit:onlineResource>
-            </cit:CI_Contact>
           </cit:contactInfo>
           <cit:individual>
             <cit:CI_Individual>
