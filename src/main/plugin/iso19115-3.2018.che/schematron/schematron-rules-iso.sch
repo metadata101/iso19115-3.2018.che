@@ -137,6 +137,55 @@
   </sch:pattern>
   <sch:diagnostics>
 
+    <sch:diagnostic id="rule.gex.verticalcrsid-when-dataset-failure-en" xml:lang="en">
+      When resourceScope is 'dataset' and a vertical extent is used, each vertical extent MUST provide a verticalCRSId (gex:verticalCRSId).
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.gex.verticalcrsid-when-dataset-failure-fr" xml:lang="fr">
+      Lorsque resourceScope vaut 'dataset' et qu'une étendue verticale est utilisée, chaque étendue verticale DOIT fournir un verticalCRSId (gex:verticalCRSId).
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.gex.verticalcrsid-when-dataset-success-en" xml:lang="en">
+      All vertical extents provide a verticalCRSId for dataset resources.
+    </sch:diagnostic>
+
+    <sch:diagnostic id="rule.gex.verticalcrsid-when-dataset-success-fr" xml:lang="fr">
+      Toutes les étendues verticales fournissent un verticalCRSId pour les jeux de données.
+    </sch:diagnostic>
+
+  </sch:diagnostics>
+  <sch:pattern id="rule.gex.verticalcrsid-required-when-dataset">
+
+    <sch:title xml:lang="en">verticalCRSId is mandatory for vertical extents when resourceScope = dataset</sch:title>
+
+    <sch:title xml:lang="fr">verticalCRSId est obligatoire pour les étendues verticales lorsque resourceScope = dataset</sch:title>
+
+
+    <sch:rule
+            context="/che:CHE_MD_Metadata[
+                        mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset'
+                      ]/mdb:identificationInfo/che:CHE_MD_DataIdentification/mri:extent/gex:EX_Extent/gex:verticalElement">
+
+      <!-- All vertical extents declared in identification extent -->
+      <sch:let name="verticalExtents"
+               value="gex:EX_VerticalExtent"/>
+
+      <!-- Count vertical extents missing gex:verticalCRSId -->
+      <sch:let name="missingCrsIdCount"
+               value="count($verticalExtents[not(gex:verticalCRSId)])"/>
+
+      <!-- If vertical extents are used, then each must provide a verticalCRSId -->
+      <sch:assert test="count($verticalExtents) = 0 or $missingCrsIdCount = 0"
+                  diagnostics="rule.gex.verticalcrsid-when-dataset-failure-en rule.gex.verticalcrsid-when-dataset-failure-fr"/>
+
+      <sch:report test="count($verticalExtents) &gt; 0 and $missingCrsIdCount = 0"
+                  diagnostics="rule.gex.verticalcrsid-when-dataset-success-en rule.gex.verticalcrsid-when-dataset-success-fr"/>
+
+    </sch:rule>
+
+  </sch:pattern>
+  <sch:diagnostics>
+
     <sch:diagnostic id="rule.mrs.refsys-identifier-when-dataset-failure-en" xml:lang="en">
       When resourceScope is 'dataset', at least one referenceSystemIdentifier (mcc:MD_Identifier code) MUST be provided in CHE_MD_Metadata.referenceSystemInfo.
     </sch:diagnostic>
