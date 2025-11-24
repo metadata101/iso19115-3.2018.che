@@ -35,6 +35,7 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.maintenance-frequency-when-scope-dss-success-en" xml:lang="en">maintenanceAndUpdateFrequency is present for resources with scope dataset/series/service.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.maintenance-frequency-when-scope-dss-success-fr" xml:lang="fr">maintenanceAndUpdateFrequency est présent pour les ressources de type dataset/series/service.</svrl:diagnostic-reference>
   </svrl:successful-report>
+  <svrl:active-pattern document="" id="rule.gex.verticalcrsid-required-when-dataset" name_en="verticalCRSId is mandatory for vertical extents when resourceScope = dataset" name_fr="verticalCRSId est obligatoire pour les étendues verticales lorsque resourceScope = dataset" name="verticalCRSId est obligatoire pour les étendues verticales lorsque resourceScope = dataset" />
   <svrl:active-pattern document="" id="rule.mrs.refsys-identifier-required-when-dataset" name_en="referenceSystemIdentifier is mandatory when resourceScope = dataset" name_fr="referenceSystemIdentifier est obligatoire lorsque resourceScope = dataset" name="referenceSystemIdentifier est obligatoire lorsque resourceScope = dataset" />
   <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']/mdb:referenceSystemInfo" />
   <svrl:successful-report ref="#_" test="$refIdCount &gt; 0" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='referenceSystemInfo']">

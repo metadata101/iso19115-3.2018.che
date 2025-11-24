@@ -62,7 +62,7 @@ public class SchematronTest {
 	public void amphibiansIsoSchematron() throws Exception {
 		String report = applySchematronAndCompare("amphibians", false);
 
-        hasExpectedNumberOfFailure(2, report);
+        hasExpectedNumberOfFailure(3, report);
 	}
 
 	@Test

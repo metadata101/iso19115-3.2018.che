@@ -1058,6 +1058,24 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
               </gmd:polygon>
             </gmd:EX_BoundingPolygon>
           </gmd:geographicElement>
+          <gmd:verticalElement>
+            <gmd:EX_VerticalExtent>
+              <gmd:minimumValue>
+                  <gco:Real>123.123</gco:Real>
+              </gmd:minimumValue>
+              <gmd:maximumValue>
+                <gco:Real>456.456</gco:Real>
+              </gmd:maximumValue>
+              <gmd:verticalCRS>
+                <gml:VerticalCRS gml:id="d833601e5228a1052958">
+                  <gml:identifier codeSpace="">Test</gml:identifier>
+                  <gml:scope>Test</gml:scope>
+                  <gml:verticalCS xlink:href="urn:ogc:def:cs:EPSG::6499" />
+                  <gml:verticalDatum xlink:href="urn:ogc:def:datum:EPSG::5100" />
+                </gml:VerticalCRS>
+              </gmd:verticalCRS>
+            </gmd:EX_VerticalExtent>
+          </gmd:verticalElement>
         </gmd:EX_Extent>
       </gmd:extent>
       <che:basicGeodataID gco:nilReason="missing">
