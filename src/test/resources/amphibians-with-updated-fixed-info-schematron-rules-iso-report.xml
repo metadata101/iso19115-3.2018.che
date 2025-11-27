@@ -57,6 +57,12 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.contact-contactinfo-when-scope-dss-success-fr" xml:lang="fr">Toutes les parties de contact des métadonnées fournissent un contactInfo pour les ressources de type dataset/series/service.</svrl:diagnostic-reference>
   </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.gex.verticalcrsid-required-when-dataset" name_en="verticalCRSId is mandatory for vertical extents when resourceScope = dataset" name_fr="verticalCRSId est obligatoire pour les étendues verticales lorsque resourceScope = dataset" name="verticalCRSId est obligatoire pour les étendues verticales lorsque resourceScope = dataset" />
+  <svrl:fired-rule context="/che:CHE_MD_Metadata[                         mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset'                       ]/mdb:identificationInfo/che:CHE_MD_DataIdentification/mri:extent/gex:EX_Extent/gex:verticalElement" />
+  <svrl:failed-assert ref="#_" test="count($verticalExtents) = 0 or $missingCrsIdCount = 0" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='extent']/*[local-name()='EX_Extent']/*[local-name()='verticalElement']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.verticalcrsid-when-dataset-failure-en" xml:lang="en">When resourceScope is 'dataset' and a vertical extent is used, each vertical extent MUST provide a verticalCRSId (gex:verticalCRSId).</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.verticalcrsid-when-dataset-failure-fr" xml:lang="fr">Lorsque resourceScope vaut 'dataset' et qu'une étendue verticale est utilisée, chaque étendue verticale DOIT fournir un verticalCRSId (gex:verticalCRSId).</svrl:diagnostic-reference>
+  </svrl:failed-assert>
   <svrl:active-pattern document="" id="rule.mrs.refsys-identifier-required-when-dataset" name_en="referenceSystemIdentifier is mandatory when resourceScope = dataset" name_fr="referenceSystemIdentifier est obligatoire lorsque resourceScope = dataset" name="referenceSystemIdentifier est obligatoire lorsque resourceScope = dataset" />
   <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']/mdb:referenceSystemInfo" />
   <svrl:successful-report ref="#_" test="$refIdCount &gt; 0" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='referenceSystemInfo']">
@@ -95,6 +101,11 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-poly-success-en" xml:lang="en">The extent contains a bounding polygon.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-poly-success-fr" xml:lang="fr">L'étendue contient un polygone englobant.</svrl:diagnostic-reference>
   </svrl:successful-report>
+  <svrl:successful-report ref="#_" test="count($vertical)" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='extent']/*[local-name()='EX_Extent']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-vertical-success-en" xml:lang="en">The extent contains a vertical element.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-vertical-success-fr" xml:lang="fr">L'étendue contient une étendue verticale.</svrl:diagnostic-reference>
+  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.che.basicgeodatainfo-required-when-basic" name_en="basicGeodataInformation is mandatory when basicGeodata = true" name_fr="basicGeodataInformation est obligatoire lorsque basicGeodata = true" name="basicGeodataInformation est obligatoire lorsque basicGeodata = true" />
   <svrl:fired-rule context="//che:CHE_MD_DataIdentification" />
   <svrl:successful-report ref="#_" test="$isBasic and $hasInfo" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
@@ -103,7 +114,13 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.basicgeodatainfo-required-success-fr" xml:lang="fr">basicGeodataInformation est présent lorsque basicGeodata vaut true.</svrl:diagnostic-reference>
   </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.gex.verticalhascrsorcrsid" name_en="Vertical element MUST contains a CRS or CRS&#xA;      identifier" name_fr="Une étendue verticale DOIT contenir un CRS ou un&#xA;      identifiant de CRS" name="Une étendue verticale DOIT contenir un CRS ou un&#xA;      identifiant de CRS" />
-  <svrl:active-pattern document="" id="rule.mco-releasability" name_en="Releasability MUST&#xA;      specified an addresse or a statement" name_fr="La possibilité de divulgation&#xA;      DOIT définir un destinataire ou une indication" name="La possibilité de divulgation&#xA;      DOIT définir un destinataire ou une indication" />
+  <svrl:fired-rule context="//gex:EX_VerticalExtent" />
+  <svrl:successful-report ref="#_" test="$hasCrsOrCrsId" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='extent']/*[local-name()='EX_Extent']/*[local-name()='verticalElement']/*[local-name()='EX_VerticalExtent']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.verticalhascrsorcrsid-success-en" xml:lang="en">The vertical extent contains CRS information.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.verticalhascrsorcrsid-success-fr" xml:lang="fr">L'étendue verticale contient les informations
+      sur le CRS.</svrl:diagnostic-reference>
+  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mco-legalconstraintdetails" name_en="Legal constraint MUST&#xA;      specified an access, use or other constraint or&#xA;      use limitation" name_fr="Une contrainte légale DOIT&#xA;      définir un type de contrainte (d'accès, d'utilisation ou autre)&#xA;      ou bien une limite d'utilisation" name="Une contrainte légale DOIT&#xA;      définir un type de contrainte (d'accès, d'utilisation ou autre)&#xA;      ou bien une limite d'utilisation" />
   <svrl:fired-rule context="//che:CHE_MD_LegalConstraints" />
   <svrl:successful-report ref="#_" test="$hasDetails" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='resourceConstraints']&#xA;          [&#xA;          1&#xA;          ]&#xA;        /*[local-name()='CHE_MD_LegalConstraints']">
