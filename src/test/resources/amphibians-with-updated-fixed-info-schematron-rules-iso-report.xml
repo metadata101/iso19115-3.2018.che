@@ -106,13 +106,6 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-vertical-success-en" xml:lang="en">The extent contains a vertical element.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-vertical-success-fr" xml:lang="fr">L'étendue contient une étendue verticale.</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.che.basicgeodatainfo-required-when-basic" name_en="basicGeodataInformation is mandatory when basicGeodata = true" name_fr="basicGeodataInformation est obligatoire lorsque basicGeodata = true" name="basicGeodataInformation est obligatoire lorsque basicGeodata = true" />
-  <svrl:fired-rule context="//che:CHE_MD_DataIdentification" />
-  <svrl:successful-report ref="#_" test="$isBasic and $hasInfo" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
-    <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.basicgeodatainfo-required-success-en" xml:lang="en">basicGeodataInformation is present when basicGeodata is true.</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.basicgeodatainfo-required-success-fr" xml:lang="fr">basicGeodataInformation est présent lorsque basicGeodata vaut true.</svrl:diagnostic-reference>
-  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.gex.verticalhascrsorcrsid" name_en="Vertical element MUST contains a CRS or CRS&#xA;      identifier" name_fr="Une étendue verticale DOIT contenir un CRS ou un&#xA;      identifiant de CRS" name="Une étendue verticale DOIT contenir un CRS ou un&#xA;      identifiant de CRS" />
   <svrl:fired-rule context="//gex:EX_VerticalExtent" />
   <svrl:successful-report ref="#_" test="$hasCrsOrCrsId" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='extent']/*[local-name()='EX_Extent']/*[local-name()='verticalElement']/*[local-name()='EX_VerticalExtent']">
