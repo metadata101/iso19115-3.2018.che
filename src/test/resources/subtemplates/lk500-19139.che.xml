@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmd:EX_Extent xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geocat.ch/2008/che https://www.geocat.ch/geonetwork/xml/schemas/iso19139.che/schema/che/che.xsd">
+  <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+    <gmd:PT_FreeText>
+      <gmd:textGroup>
+        <gmd:LocalisedCharacterString locale="#EN">National Map 1:500'000</gmd:LocalisedCharacterString>
+      </gmd:textGroup>
+      <gmd:textGroup>
+        <gmd:LocalisedCharacterString locale="#DE">Landeskarte 1:500'000</gmd:LocalisedCharacterString>
+      </gmd:textGroup>
+      <gmd:textGroup>
+        <gmd:LocalisedCharacterString locale="#FR">Carte nationale 1:500'000</gmd:LocalisedCharacterString>
+      </gmd:textGroup>
+      <gmd:textGroup>
+        <gmd:LocalisedCharacterString locale="#IT">Carta nazionale 1:500'000</gmd:LocalisedCharacterString>
+      </gmd:textGroup>
+      <gmd:textGroup>
+        <gmd:LocalisedCharacterString locale="#RM">Landeskarte 1:500'000</gmd:LocalisedCharacterString>
+      </gmd:textGroup>
+    </gmd:PT_FreeText>
+  </gmd:description>
+  <gmd:geographicElement>
+    <gmd:EX_GeographicDescription>
+      <gmd:geographicIdentifier>
+        <gmd:MD_Identifier>
+          <gmd:code xsi:type="gmd:PT_FreeText_PropertyType">
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#EN">NM500</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE">LK500</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#FR">CN500</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#IT">CN500</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#RM">LK500</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:code>
+        </gmd:MD_Identifier>
+      </gmd:geographicIdentifier>
+    </gmd:EX_GeographicDescription>
+  </gmd:geographicElement>
+  <gmd:geographicElement>
+    <gmd:EX_GeographicBoundingBox>
+      <gmd:westBoundLongitude>
+        <gco:Decimal>5.327000</gco:Decimal>
+      </gmd:westBoundLongitude>
+      <gmd:eastBoundLongitude>
+        <gco:Decimal>11.403000</gco:Decimal>
+      </gmd:eastBoundLongitude>
+      <gmd:southBoundLatitude>
+        <gco:Decimal>45.304000</gco:Decimal>
+      </gmd:southBoundLatitude>
+      <gmd:northBoundLatitude>
+        <gco:Decimal>48.191000</gco:Decimal>
+      </gmd:northBoundLatitude>
+    </gmd:EX_GeographicBoundingBox>
+  </gmd:geographicElement>
+  <gmd:geographicElement>
+    <gmd:EX_BoundingPolygon>
+      <gmd:polygon>
+        <MultiSurface xmlns="http://www.opengis.net/gml/3.2" gml:id="d35658599e86" srsName="EPSG:4326">
+          <gml:surfaceMember>
+            <Polygon gml:id="d35658599e88" srsName="EPSG:4326">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList srsDimension="2">48.14300002440249 11.403000031392866 45.30400002061325 11.20000003420552 45.35000002508389 5.43600001607719 48.19100002971984 5.3270000143382985 48.14300002440249 11.403000031392866</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </Polygon>
+          </gml:surfaceMember>
+        </MultiSurface>
+      </gmd:polygon>
+    </gmd:EX_BoundingPolygon>
+  </gmd:geographicElement>
+</gmd:EX_Extent>
