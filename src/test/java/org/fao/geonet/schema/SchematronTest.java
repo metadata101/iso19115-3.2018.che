@@ -77,7 +77,7 @@ public class SchematronTest {
 	public void amphibiansWithUpdatedFixedInfoIsoSchematron() throws Exception {
 		String report = applySchematronAndCompare("amphibians-with-updated-fixed-info", false);
 
-		hasExpectedNumberOfFailure(1, report);
+		hasExpectedNumberOfFailure(2, report);
 	}
 
 	@Test
