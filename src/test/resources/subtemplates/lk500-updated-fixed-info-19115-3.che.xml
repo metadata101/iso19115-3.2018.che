@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gex:EX_Extent xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geocat.ch/2008/che https://www.geocat.ch/geonetwork/xml/schemas/iso19139.che/schema/che/che.xsd">
+  <gex:description xsi:type="lan:PT_FreeText_PropertyType">
+    <lan:PT_FreeText xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
+      <lan:textGroup>
+        <lan:LocalisedCharacterString locale="#EN">National Map 1:500'000</lan:LocalisedCharacterString>
+      </lan:textGroup>
+      <lan:textGroup>
+        <lan:LocalisedCharacterString locale="#DE">Landeskarte 1:500'000</lan:LocalisedCharacterString>
+      </lan:textGroup>
+      <lan:textGroup>
+        <lan:LocalisedCharacterString locale="#FR">Carte nationale 1:500'000</lan:LocalisedCharacterString>
+      </lan:textGroup>
+      <lan:textGroup>
+        <lan:LocalisedCharacterString locale="#IT">Carta nazionale 1:500'000</lan:LocalisedCharacterString>
+      </lan:textGroup>
+      <lan:textGroup>
+        <lan:LocalisedCharacterString locale="#RM">Landeskarte 1:500'000</lan:LocalisedCharacterString>
+      </lan:textGroup>
+    </lan:PT_FreeText>
+  </gex:description>
+  <gex:geographicElement>
+    <gex:EX_GeographicDescription>
+      <gex:geographicIdentifier>
+        <mcc:MD_Identifier xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0">
+          <mcc:code xsi:type="lan:PT_FreeText_PropertyType">
+            <lan:PT_FreeText xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">NM500</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">LK500</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">CN500</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">CN500</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#RM">LK500</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mcc:code>
+        </mcc:MD_Identifier>
+      </gex:geographicIdentifier>
+    </gex:EX_GeographicDescription>
+  </gex:geographicElement>
+  <gex:geographicElement>
+    <gex:EX_GeographicBoundingBox>
+      <gex:westBoundLongitude>
+        <gco:Decimal xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">5.327000</gco:Decimal>
+      </gex:westBoundLongitude>
+      <gex:eastBoundLongitude>
+        <gco:Decimal xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">11.403000</gco:Decimal>
+      </gex:eastBoundLongitude>
+      <gex:southBoundLatitude>
+        <gco:Decimal xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">45.304000</gco:Decimal>
+      </gex:southBoundLatitude>
+      <gex:northBoundLatitude>
+        <gco:Decimal xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">48.191000</gco:Decimal>
+      </gex:northBoundLatitude>
+    </gex:EX_GeographicBoundingBox>
+  </gex:geographicElement>
+  <gex:geographicElement>
+    <gex:EX_BoundingPolygon>
+      <gex:polygon>
+        <MultiSurface xmlns="http://www.opengis.net/gml/3.2" xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="d35658599e86" srsName="EPSG:4326">
+          <surfaceMember>
+            <Polygon gml:id="d35658599e88" srsName="EPSG:4326">
+              <exterior>
+                <LinearRing>
+                  <posList srsDimension="2">48.14300002440249 11.403000031392866 45.30400002061325 11.20000003420552 45.35000002508389 5.43600001607719 48.19100002971984 5.3270000143382985 48.14300002440249 11.403000031392866</posList>
+                </LinearRing>
+              </exterior>
+            </Polygon>
+          </surfaceMember>
+        </MultiSurface>
+      </gex:polygon>
+    </gex:EX_BoundingPolygon>
+  </gex:geographicElement>
+</gex:EX_Extent>
+

@@ -36,7 +36,7 @@ public class UpdateFixedInfoTest {
 	}
 
 	@Test
-	public void UpdateFixedInfoReturnAnMd() throws Exception {
+	public void updateFixedInfoReturnAnMd() throws Exception {
 		Path xslFile = getResourceInsideSchema("update-fixed-info.xsl");
 		Path xmlFile = getResource("amphibians-19115-3.che.xml");
 		Element source = Xml.loadFile(xmlFile);
@@ -69,7 +69,7 @@ public class UpdateFixedInfoTest {
 	}
 
 	@Test
-	public void UpdateFixedCopyLegislationInformation() throws Exception {
+	public void updateFixedCopyLegislationInformation() throws Exception {
 		Path xslFile = getResourceInsideSchema("update-fixed-info.xsl");
 		Path xmlFile = getResource("asiatischeHornisse-19115-3.che.xml");
 		Element source = Xml.loadFile(xmlFile);
@@ -81,6 +81,21 @@ public class UpdateFixedInfoTest {
 		XPath xPath = XPath.newInstance(".//che:legislationInformation");
 		List<?> nodes = xPath.selectNodes(transformed);
 		assertEquals(1, nodes.size());
+	}
+
+	@Test
+	public void updateFixedInfoSubtemplate() throws Exception {
+		Path xslFile = getResourceInsideSchema("update-fixed-info-subtemplate.xsl");
+		Path xmlFile = getResource("subtemplates/lk500-19115-3.che.xml");
+		Element source = Xml.loadFile(xmlFile);
+		Element root = new Element("root");
+		root.addContent(source);
+
+		Element transformed = Xml.transform(root, xslFile);
+
+		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
+		String lk500WithUpdatedFixedInfo = xmlOutputter.outputString(new Document(transformed));
+		TestSupport.assertGeneratedDataByteMatchExpected("subtemplates/lk500-updated-fixed-info-19115-3.che.xml", lk500WithUpdatedFixedInfo, GENERATE_EXPECTED_FILE);
 	}
 
 }

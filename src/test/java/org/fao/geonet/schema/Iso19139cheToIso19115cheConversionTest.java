@@ -184,6 +184,11 @@ public class Iso19139cheToIso19115cheConversionTest {
     }
 
     @Test
+    public void convertLk500() throws Exception {
+        transformAndCompare("subtemplates/lk500", false);
+    }
+
+    @Test
     public void convertRawOrganischenBodenInDerSchweiz() throws Exception {
         transformAndCompare("raw-organischenBodenInDerSchweiz", false);
     }

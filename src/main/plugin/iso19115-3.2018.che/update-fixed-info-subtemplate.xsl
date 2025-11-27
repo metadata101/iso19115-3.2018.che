@@ -53,87 +53,9 @@
   <xsl:output name="default-serialize-mode" indent="no"
               omit-xml-declaration="yes"/>
 
-  <xsl:variable name="isExtentSubtemplate"
-                select="count(/root/gex:EX_Extent) = 1"/>
-
   <xsl:template match="/root">
     <xsl:apply-templates select="gex:*|mrs:*|mdb:*|cit:*|dqm:*|cit:*|mcc:*|mrc:*|mrd:*|mco:*|mdq:*"/>
   </xsl:template>
-
-
-  <!-- On a subtemplate of type extent having a polygon
-  defined, computed the bounding box from the polygon
-  removing any previous bounding boxes. -->
-  <xsl:template match="gex:EX_Extent
-                            [gex:geographicElement/*/gex:polygon/gml:*]
-                            [$isExtentSubtemplate]">
-    <xsl:variable name="polygons"
-                  select="gex:geographicElement/gex:EX_BoundingPolygon/
-                            gex:polygon"/>
-    <xsl:copy>
-      <xsl:apply-templates select="@*"/>
-      <xsl:apply-templates select="gex:description"/>
-      <xsl:apply-templates select="gex:geographicElement[gex:EX_GeographicDescription]"/>
-
-      <!-- Replace bounding box by the one computed from gex:polygons -->
-      <xsl:apply-templates mode="compute-bbox-for-polygon"
-                           select="gex:geographicElement/gex:EX_BoundingPolygon/gex:polygon"/>
-
-      <xsl:apply-templates select="gex:geographicElement[gex:EX_BoundingPolygon]"/>
-      <xsl:apply-templates select="gex:temporalElement[gex:EX_TemporalExtent]"/>
-      <xsl:apply-templates select="gex:temporalElement[gex:EX_SpatialTemporalExtent]"/>
-      <xsl:apply-templates select="gex:verticalElement"/>
-    </xsl:copy>
-  </xsl:template>
-
-  <xsl:template match="gex:EX_SpatialTemporalExtent
-                            [gex:spatialExtent/*/gex:polygon/gml:*]
-                            [$isExtentSubtemplate]">
-    <xsl:variable name="polygons"
-                  select="*/gex:EX_BoundingPolygon/
-                            gex:polygon"/>
-    <xsl:copy>
-      <xsl:apply-templates select="@*"/>
-      <xsl:apply-templates select="gex:extent"/>
-      <xsl:apply-templates select="gex:spatialExtent[gex:EX_GeographicDescription]"/>
-
-      <!-- Replace bounding box by the one computed from gex:polygons -->
-      <xsl:apply-templates mode="compute-bbox-for-polygon"
-                           select="gex:spatialExtent/gex:EX_BoundingPolygon/gex:polygon"/>
-
-      <xsl:apply-templates select="gex:spatialExtent[gex:EX_BoundingPolygon]"/>
-    </xsl:copy>
-  </xsl:template>
-
-
-
-  <xsl:template mode="compute-bbox-for-polygon"
-                match="gex:polygon">
-    <xsl:variable name="bbox"
-                  select="java:geomToBbox(saxon:serialize(./gml:*, 'default-serialize-mode'))"/>
-    <xsl:if test="$bbox != ''">
-      <xsl:variable name="bboxCoordinates"
-                    select="tokenize($bbox, '\|')"/>
-
-      <gex:geographicElement>
-        <gex:EX_GeographicBoundingBox>
-          <gex:westBoundLongitude>
-            <gco:Decimal><xsl:value-of select="$bboxCoordinates[1]"/></gco:Decimal>
-          </gex:westBoundLongitude>
-          <gex:eastBoundLongitude>
-            <gco:Decimal><xsl:value-of select="$bboxCoordinates[3]"/></gco:Decimal>
-          </gex:eastBoundLongitude>
-          <gex:southBoundLatitude>
-            <gco:Decimal><xsl:value-of select="$bboxCoordinates[2]"/></gco:Decimal>
-          </gex:southBoundLatitude>
-          <gex:northBoundLatitude>
-            <gco:Decimal><xsl:value-of select="$bboxCoordinates[4]"/></gco:Decimal>
-          </gex:northBoundLatitude>
-        </gex:EX_GeographicBoundingBox>
-      </gex:geographicElement>
-    </xsl:if>
-  </xsl:template>
-
 
   <xsl:template match="@*|node()">
     <xsl:copy>
