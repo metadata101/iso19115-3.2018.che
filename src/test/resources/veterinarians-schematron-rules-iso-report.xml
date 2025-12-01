@@ -257,17 +257,6 @@
           .</svrl:diagnostic-reference>
   </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mri.associatedresource" name_en="Associated resource name" name_fr="Nom ou référence à une ressource associée" name="Nom ou référence à une ressource associée" />
-  <svrl:active-pattern document="" id="rule.mri.defaultlocalewhenhastext" name_en="Resource language" name_fr="Langue de la ressource" name="Langue de la ressource" />
-  <svrl:fired-rule context="//che:CHE_MD_DataIdentification[       ../../mdb:contentInfo/mrc:MD_FeatureCatalogue or       ../../mdb:contentInfo/mrc:MD_FeatureCatalogueDescription]" />
-  <svrl:successful-report ref="#_" test="$hasAtLeastOneLanguage" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
-    <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.defaultlocalewhenhastext-success-en" xml:lang="en">Number of resource language:
-          1
-          .</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.defaultlocalewhenhastext-success-fr" xml:lang="fr">Nombre de langues de la ressource :
-          1
-          .</svrl:diagnostic-reference>
-  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mri.citationdate-mandatory" name_en="Citation date mandatory for dataset, series and service" name_fr="Date de citation obligatoire pour les jeux de données, séries et services" name="Date de citation obligatoire pour les jeux de données, séries et services">
     <svrl:text>When metadata scope resourceScope is 'dataset', 'series' or 'service',
       the citation date in dataIdentification section MUST be specified.</svrl:text>
