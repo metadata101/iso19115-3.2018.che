@@ -1788,67 +1788,6 @@
   </sch:pattern>
   <sch:diagnostics>
 
-    <sch:diagnostic id="rule.mri.defaultlocalewhenhastext-failure-en"
-                    xml:lang="en">Resource language MUST be defined when the
-      resource
-      includes textual information.
-    </sch:diagnostic>
-
-    <sch:diagnostic id="rule.mri.defaultlocalewhenhastext-failure-fr"
-                    xml:lang="fr">La langue de la resource DOIT être renseignée
-      lorsque la ressource contient des informations textuelles.
-    </sch:diagnostic>
-
-
-    <sch:diagnostic id="rule.mri.defaultlocalewhenhastext-success-en"
-                    xml:lang="en">Number of resource language:
-      <sch:value-of select="count($resourceLanguages)"/>.
-    </sch:diagnostic>
-
-    <sch:diagnostic id="rule.mri.defaultlocalewhenhastext-success-fr"
-                    xml:lang="fr">Nombre de langues de la ressource :
-      <sch:value-of select="count($resourceLanguages)"/>.
-    </sch:diagnostic>
-
-  </sch:diagnostics>
-  <sch:pattern id="rule.mri.defaultlocalewhenhastext">
-
-    <sch:title xml:lang="en">Resource language</sch:title>
-
-    <sch:title xml:lang="fr">Langue de la ressource</sch:title>
-
-    <!--
-    QUESTION-TODO: "includes textual information" may not be easy to define.
-    Imagery will not. Could we consider that this rule applies to
-    a resource having a feature catalog ? For services ?
-
-    Here the context define that the rule applies to DataIdentification
-    having FeatureCatalog siblings.
-    -->
-
-    <sch:rule
-            context="//che:CHE_MD_DataIdentification[       ../../mdb:contentInfo/mrc:MD_FeatureCatalogue or       ../../mdb:contentInfo/mrc:MD_FeatureCatalogueDescription]">
-
-
-      <sch:let name="resourceLanguages"
-               value="mri:defaultLocale/lan:PT_Locale/                 lan:language/lan:LanguageCode/@codeListValue[. != '']"/>
-
-      <sch:let name="hasAtLeastOneLanguage"
-               value="count($resourceLanguages) &gt; 0"/>
-
-
-      <sch:assert test="$hasAtLeastOneLanguage"
-                  diagnostics="rule.mri.defaultlocalewhenhastext-failure-en          rule.mri.defaultlocalewhenhastext-failure-fr"/>
-
-
-      <sch:report test="$hasAtLeastOneLanguage"
-                  diagnostics="rule.mri.defaultlocalewhenhastext-success-en          rule.mri.defaultlocalewhenhastext-success-fr"/>
-
-    </sch:rule>
-
-  </sch:pattern>
-  <sch:diagnostics>
-
     <sch:diagnostic id="rule.mri.citationdate-mandatory-failure-en" xml:lang="en">
       Citation date is mandatory when resource scope is 'dataset', 'series' or 'service'.
     </sch:diagnostic>

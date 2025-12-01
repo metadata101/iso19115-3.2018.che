@@ -289,7 +289,6 @@
           "
       est associée.</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.mri.defaultlocalewhenhastext" name_en="Resource language" name_fr="Langue de la ressource" name="Langue de la ressource" />
   <svrl:active-pattern document="" id="rule.mri.citationdate-mandatory" name_en="Citation date mandatory for dataset, series and service" name_fr="Date de citation obligatoire pour les jeux de données, séries et services" name="Date de citation obligatoire pour les jeux de données, séries et services">
     <svrl:text>When metadata scope resourceScope is 'dataset', 'series' or 'service',
       the citation date in dataIdentification section MUST be specified.</svrl:text>
