@@ -748,6 +748,7 @@
     </sch:diagnostic>
 
   </sch:diagnostics>
+  <!-- currently disabled
   <sch:pattern id="rule.mdb.root-element">
 
     <sch:title xml:lang="en">Metadata document root element</sch:title>
@@ -779,8 +780,8 @@
                   diagnostics="rule.mdb.root-element-success-en                       rule.mdb.root-element-success-fr"/>
 
     </sch:rule>
-
   </sch:pattern>
+  -->
   <sch:diagnostics>
 
     <sch:diagnostic id="rule.mdb.defaultlocale-failure-en" xml:lang="en">The

@@ -80,22 +80,6 @@
   <svrl:active-pattern document="" id="rule.gex.verticalhascrsorcrsid" name_en="Vertical element MUST contains a CRS or CRS&#xA;      identifier" name_fr="Une étendue verticale DOIT contenir un CRS ou un&#xA;      identifiant de CRS" name="Une étendue verticale DOIT contenir un CRS ou un&#xA;      identifiant de CRS" />
   <svrl:active-pattern document="" id="rule.mco-legalconstraintdetails" name_en="Legal constraint MUST&#xA;      specified an access, use or other constraint or&#xA;      use limitation" name_fr="Une contrainte légale DOIT&#xA;      définir un type de contrainte (d'accès, d'utilisation ou autre)&#xA;      ou bien une limite d'utilisation" name="Une contrainte légale DOIT&#xA;      définir un type de contrainte (d'accès, d'utilisation ou autre)&#xA;      ou bien une limite d'utilisation" />
   <svrl:active-pattern document="" id="rule.mco-legalconstraint-other" name_en="Legal constraint defining&#xA;      other restrictions for access or use constraint MUST&#xA;      specified other constraint." name_fr="Une contrainte légale indiquant&#xA;      d'autres restrictions d'utilisation ou d'accès DOIT&#xA;      préciser ces autres restrictions" name="Une contrainte légale indiquant&#xA;      d'autres restrictions d'utilisation ou d'accès DOIT&#xA;      préciser ces autres restrictions" />
-  <svrl:active-pattern document="" id="rule.mdb.root-element" name_en="Metadata document root element" name_fr="Élément racine du document" name="Élément racine du document">
-    <svrl:text>A metadata instance document conforming to
-      this specification SHALL have a root CHE_MD_Metadata element
-      defined in the http://geocat.ch/che namespace.</svrl:text>
-    <svrl:text>Une fiche de métadonnées conforme au standard
-      ISO19115-3.2018.che DOIT avoir un élément racine CHE_MD_Metadata (défini dans l'espace
-      de nommage "http://geocat.ch/che").</svrl:text>
-  </svrl:active-pattern>
-  <svrl:fired-rule context="/" />
-  <svrl:successful-report ref="#_" test="$hasOneMD_MetadataElement" location="/*[local-name()='CHE_MD_Metadata']">
-    <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.root-element-success-en" xml:lang="en">Root
-      element CHE_MD_Metadata found.</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.root-element-success-fr" xml:lang="fr">Élément
-      racine CHE_MD_Metadata défini.</svrl:diagnostic-reference>
-  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mdb.defaultlocale" name_en="Default locale" name_fr="Langue du document" name="Langue du document">
     <svrl:text>The default locale MUST be documented if
       not defined by the encoding. The default value for the character
