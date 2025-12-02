@@ -804,6 +804,7 @@
     </sch:diagnostic>
 
   </sch:diagnostics>
+  <!-- currently disabled
   <sch:pattern id="rule.mdb.defaultlocale">
 
     <sch:title xml:lang="en">Default locale</sch:title>
@@ -842,6 +843,7 @@
     </sch:rule>
 
   </sch:pattern>
+  -->
   <sch:diagnostics>
 
     <sch:diagnostic id="rule.mdb.scope-name-failure-en" xml:lang="en">Specify a

@@ -80,24 +80,6 @@
   <svrl:active-pattern document="" id="rule.gex.verticalhascrsorcrsid" name_en="Vertical element MUST contains a CRS or CRS&#xA;      identifier" name_fr="Une étendue verticale DOIT contenir un CRS ou un&#xA;      identifiant de CRS" name="Une étendue verticale DOIT contenir un CRS ou un&#xA;      identifiant de CRS" />
   <svrl:active-pattern document="" id="rule.mco-legalconstraintdetails" name_en="Legal constraint MUST&#xA;      specified an access, use or other constraint or&#xA;      use limitation" name_fr="Une contrainte légale DOIT&#xA;      définir un type de contrainte (d'accès, d'utilisation ou autre)&#xA;      ou bien une limite d'utilisation" name="Une contrainte légale DOIT&#xA;      définir un type de contrainte (d'accès, d'utilisation ou autre)&#xA;      ou bien une limite d'utilisation" />
   <svrl:active-pattern document="" id="rule.mco-legalconstraint-other" name_en="Legal constraint defining&#xA;      other restrictions for access or use constraint MUST&#xA;      specified other constraint." name_fr="Une contrainte légale indiquant&#xA;      d'autres restrictions d'utilisation ou d'accès DOIT&#xA;      préciser ces autres restrictions" name="Une contrainte légale indiquant&#xA;      d'autres restrictions d'utilisation ou d'accès DOIT&#xA;      préciser ces autres restrictions" />
-  <svrl:active-pattern document="" id="rule.mdb.defaultlocale" name_en="Default locale" name_fr="Langue du document" name="Langue du document">
-    <svrl:text>The default locale MUST be documented if
-      not defined by the encoding. The default value for the character
-      encoding is "UTF-8".</svrl:text>
-    <svrl:text>La langue doit être documentée
-      si non définie par l'encodage. L'encodage par défaut doit être "UTF-8".</svrl:text>
-  </svrl:active-pattern>
-  <svrl:fired-rule context="/che:CHE_MD_Metadata/mdb:defaultLocale|                        /che:CHE_MD_Metadata/mdb:identificationInfo/*/mri:defaultLocale" />
-  <svrl:successful-report ref="#_" test="$hasEncoding" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='defaultLocale']">
-    <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.defaultlocale-success-en" xml:lang="en">The
-      characeter encoding is "
-          utf8
-          .</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.defaultlocale-success-fr" xml:lang="fr">L'encodage est "
-          utf8
-          .</svrl:diagnostic-reference>
-  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mdb.scope-name" name_en="Metadata scope Name" name_fr="Description du domaine d'application" name="Description du domaine d'application">
     <svrl:text>If a MD_MetadataScope element is present,
       the name property MUST have a value if resourceScope is not equal to
