@@ -234,20 +234,6 @@
           3
           .</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.mri.associatedresource" name_en="Associated resource name" name_fr="Nom ou référence à une ressource associée" name="Nom ou référence à une ressource associée" />
-  <svrl:fired-rule context="//che:CHE_MD_DataIdentification/mri:associatedResource/*[namespace-uri(.) != 'http://www.fao.org/geonetwork']|                        //srv:SV_ServiceIdentification/mri:associatedResource/*[namespace-uri(.) != 'http://www.fao.org/geonetwork']" />
-  <svrl:successful-report ref="#_" test="$hasName or $hasMdRef" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='associatedResource']/*[local-name()='MD_AssociatedResource']">
-    <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.associatedresource-success-en" xml:lang="en">The resource "
-          -- Bezeichnung gemäss: «Bezeichnung GeoIV» (in GeoIV Anhang 1, Spalte B) -- -- Bezeichnung gemäss: «Bezeichnung GeoIV» (in GeoIV Anhang 1, Spalte B) -- -- Appellation selon: "Désignation OGéo" (dans OGéo, annexe 1, colonne B) -- -- Denominazione in conformità a: "Raccolta dei geodati di base di diritto federale" --
-          "
-      is associated.</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.associatedresource-success-fr" xml:lang="fr">La
-      ressource "
-          -- Bezeichnung gemäss: «Bezeichnung GeoIV» (in GeoIV Anhang 1, Spalte B) -- -- Bezeichnung gemäss: «Bezeichnung GeoIV» (in GeoIV Anhang 1, Spalte B) -- -- Appellation selon: "Désignation OGéo" (dans OGéo, annexe 1, colonne B) -- -- Denominazione in conformità a: "Raccolta dei geodati di base di diritto federale" --
-          "
-      est associée.</svrl:diagnostic-reference>
-  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mri.citationdate-mandatory" name_en="Citation date mandatory for dataset, series and service" name_fr="Date de citation obligatoire pour les jeux de données, séries et services" name="Date de citation obligatoire pour les jeux de données, séries et services">
     <svrl:text>When metadata scope resourceScope is 'dataset', 'series' or 'service',
       the citation date in dataIdentification section MUST be specified.</svrl:text>
