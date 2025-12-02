@@ -1925,8 +1925,11 @@
         <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ita" />
       </che:language>
       <che:legislationType>
-        <che:CHE_CI_LegislationTypeCode codeList="legislationCode" codeListValue="nationalDecree" />
+        <che:CHE_CI_LegislationTypeCode codeList="legislationType" codeListValue="ordinance" />
       </che:legislationType>
+      <che:legislationLevel>
+        <che:CHE_MD_LevelCode codeList="mdLevelCode" codeListValue="national" />
+      </che:legislationLevel>
       <che:internalReference xsi:type="lan:PT_FreeText_PropertyType">
         <gco:CharacterString>Anhang 1</gco:CharacterString>
         <lan:PT_FreeText>

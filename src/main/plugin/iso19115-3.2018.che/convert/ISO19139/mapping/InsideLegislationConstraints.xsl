@@ -16,11 +16,31 @@
             <xsl:apply-templates select="@*" mode="from19139to19115-3.2018"/>
         </lan:LanguageCode>
     </xsl:template>
-    <xsl:template match="oldche:CHE_CI_LegislationCode" mode="from19139to19115-3.2018">
-        <xsl:element name="che:CHE_CI_LegislationTypeCode">
-            <xsl:attribute name="codeList">legislationCode</xsl:attribute>
-            <xsl:attribute name="codeListValue" select="@codeListValue"/>
-        </xsl:element>
+    <xsl:template match="oldche:legislationType" mode="from19139to19115-3.2018">
+        <xsl:choose>
+            <xsl:when test="oldche:CHE_CI_LegislationCode/@codeListValue='nationalDecree'">
+                <xsl:element name="che:legislationType">
+                    <xsl:element name="che:CHE_CI_LegislationTypeCode">
+                        <xsl:attribute name="codeList">legislationType</xsl:attribute>
+                        <xsl:attribute name="codeListValue" select="'ordinance'"/>
+                    </xsl:element>
+                </xsl:element>
+                <xsl:element name="che:legislationLevel">
+                    <xsl:element name="che:CHE_MD_LevelCode">
+                        <xsl:attribute name="codeList">mdLevelCode</xsl:attribute>
+                        <xsl:attribute name="codeListValue" select="'national'"/>
+                    </xsl:element>
+                </xsl:element>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:element name="che:legislationType">
+                    <xsl:element name="che:CHE_CI_LegislationTypeCode">
+                        <xsl:attribute name="codeList">legislationCode</xsl:attribute>
+                        <xsl:attribute name="codeListValue" select="oldche:CHE_CI_LegislationCode/@codeListValue"/>
+                    </xsl:element>
+                </xsl:element>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     <xsl:template match="oldche:title" mode="from19139to19115-3.2018">
         <che:legislationCitation>
