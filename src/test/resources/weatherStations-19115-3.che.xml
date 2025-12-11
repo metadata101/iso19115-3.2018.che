@@ -1411,7 +1411,7 @@
           <mri:associationType>
             <mri:DS_AssociationTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#DS_AssociationTypeCode" codeListValue="largerWorkCitation">largerWorkCitation</mri:DS_AssociationTypeCode>
           </mri:associationType>
-          <mri:metadataReference>
+          <mri:metadataReference uuidref="1663f219-2da9-4a3c-8ba9-251250c82751">
             <cit:CI_Citation>
               <cit:title gco:nilReason="missing" />
               <cit:identifier>
@@ -1430,7 +1430,7 @@
           <mri:associationType>
             <mri:DS_AssociationTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#DS_AssociationTypeCode" codeListValue="largerWorkCitation">largerWorkCitation</mri:DS_AssociationTypeCode>
           </mri:associationType>
-          <mri:metadataReference>
+          <mri:metadataReference uuidref="1663f219-2da9-4a3c-8ba9-251250c82751">
             <cit:CI_Citation>
               <cit:title gco:nilReason="missing" />
               <cit:identifier>
