@@ -1204,7 +1204,7 @@
           <mri:associationType>
             <mri:DS_AssociationTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#DS_AssociationTypeCode" codeListValue="largerWorkCitation">largerWorkCitation</mri:DS_AssociationTypeCode>
           </mri:associationType>
-          <mri:metadataReference>
+          <mri:metadataReference uuidref="73856ca2-f21d-4cc9-90f6-f3e8375555df">
             <cit:CI_Citation>
               <cit:title gco:nilReason="missing" />
               <cit:identifier>

@@ -428,7 +428,7 @@
           <mri:associationType>
             <mri:DS_AssociationTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#DS_AssociationTypeCode" codeListValue="isDescriptionOf">isDescriptionOf</mri:DS_AssociationTypeCode>
           </mri:associationType>
-          <mri:metadataReference>
+          <mri:metadataReference uuidref="eeab64f5-e878-4898-b80c-50440b89f525">
             <cit:CI_Citation>
               <cit:title gco:nilReason="missing" />
               <cit:identifier>

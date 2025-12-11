@@ -787,7 +787,7 @@
           <mri:associationType>
             <mri:DS_AssociationTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#DS_AssociationTypeCode" codeListValue="largerWorkCitation">largerWorkCitation</mri:DS_AssociationTypeCode>
           </mri:associationType>
-          <mri:metadataReference>
+          <mri:metadataReference uuidref="a24ed0a9-cc08-4e71-b9e1-253281c25746">
             <cit:CI_Citation>
               <cit:title gco:nilReason="missing" />
               <cit:identifier>
@@ -809,7 +809,7 @@
           <mri:initiativeType>
             <mri:DS_InitiativeTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#DS_InitiativeTypeCode" codeListValue="largerWorkCitation">largerWorkCitation</mri:DS_InitiativeTypeCode>
           </mri:initiativeType>
-          <mri:metadataReference>
+          <mri:metadataReference uuidref="https://www.geocat.ch/geonetwork/srv/ger/catalog.search">
             <cit:CI_Citation>
               <cit:title gco:nilReason="missing" />
               <cit:identifier>

@@ -608,6 +608,7 @@
           <xsl:variable name="uuidref"
                         select="gmd:MD_AggregateInformation/gmd:aggregateDataSetIdentifier/*/gmd:code/*/@uuidref"/>
           <mri:metadataReference>
+            <xsl:attribute name="uuidref" select="if ($uuidref != '') then $uuidref else gmd:MD_AggregateInformation/gmd:aggregateDataSetIdentifier/*/gmd:code/*/text()"/>
             <cit:CI_Citation>
               <xsl:if test="not(gmd:MD_AggregateInformation/gmd:aggregateDataSetName/gmd:CI_Citation/gmd:title)">
                 <cit:title gco:nilReason="missing"/>
