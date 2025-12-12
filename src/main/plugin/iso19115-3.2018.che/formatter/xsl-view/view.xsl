@@ -619,7 +619,7 @@
     <xsl:choose>
       <xsl:when test="$layout = 'short'">
         <xsl:apply-templates mode="render-field"
-                             select="*/cit:party/(cit:CI_Organisation|cit:CI_Individual)">
+                             select="*/cit:party/(che:CHE_CI_Organisation|cit:CI_Individual)">
           <xsl:with-param name="layout" select="$layout"/>
         </xsl:apply-templates>
       </xsl:when>
@@ -632,7 +632,7 @@
           </h4>
 
           <xsl:apply-templates mode="render-field"
-                               select="*/cit:party/(cit:CI_Organisation|cit:CI_Individual)">
+                               select="*/cit:party/(che:CHE_CI_Organisation|cit:CI_Individual)">
             <xsl:with-param name="layout" select="$layout"/>
           </xsl:apply-templates>
         </div>
@@ -643,7 +643,7 @@
 
 
   <xsl:template mode="render-field"
-                match="*/cit:party/cit:CI_Organisation
+                match="*/cit:party/che:CHE_CI_Organisation
                       |*/cit:party/cit:CI_Individual"
                 priority="100">
     <xsl:param name="layout"
@@ -653,7 +653,7 @@
     <xsl:variable name="displayName">
       <xsl:choose>
         <xsl:when
-          test="name(.) = 'cit:CI_Organisation'">
+          test="name(.) = 'che:CHE_CI_Organisation'">
           <!-- Org name may be multilingual -->
           <xsl:apply-templates mode="render-value-no-breaklines"
                                select="cit:name"/>
