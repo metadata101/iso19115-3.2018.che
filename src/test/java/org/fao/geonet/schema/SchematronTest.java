@@ -62,7 +62,7 @@ public class SchematronTest {
 	public void amphibiansIsoSchematron() throws Exception {
 		String report = applySchematronAndCompare("amphibians", false);
 
-        hasExpectedNumberOfFailure(3, report);
+        hasExpectedNumberOfFailure(2, report);
 	}
 
 	@Test
@@ -77,7 +77,7 @@ public class SchematronTest {
 	public void amphibiansWithUpdatedFixedInfoIsoSchematron() throws Exception {
 		String report = applySchematronAndCompare("amphibians-with-updated-fixed-info", false);
 
-		hasExpectedNumberOfFailure(2, report);
+		hasExpectedNumberOfFailure(1, report);
 	}
 
 	@Test
@@ -109,7 +109,7 @@ public class SchematronTest {
 
         String report = applySchematronAndCompare(rootName, true, md);
 
-        hasExpectedNumberOfFailure(1, report);
+        hasExpectedNumberOfFailure(0, report);
 	}
 
 

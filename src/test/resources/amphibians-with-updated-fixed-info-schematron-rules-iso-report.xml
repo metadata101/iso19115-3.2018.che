@@ -70,13 +70,7 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrs.refsys-identifier-when-dataset-success-en" xml:lang="en">Reference system identifier is present for dataset resources.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrs.refsys-identifier-when-dataset-success-fr" xml:lang="fr">Un identifiant de système de référence est présent pour les jeux de données.</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.mrl.statement-required-when-dataset" name_en="Lineage statement is mandatory when resourceScope = dataset" name_fr="Le statement (historique) est obligatoire lorsque resourceScope = dataset" name="Le statement (historique) est obligatoire lorsque resourceScope = dataset" />
-  <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']" />
-  <svrl:failed-assert ref="#_" test="$hasStatement" location="/*[local-name()='CHE_MD_Metadata']">
-    <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrl.statement-when-dataset-failure-en" xml:lang="en">When resourceScope is 'dataset', the lineage statement (mrl:statement) MUST be provided in CHE_MD_Metadata.</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrl.statement-when-dataset-failure-fr" xml:lang="fr">Lorsque resourceScope vaut 'dataset', l’élément d’historique mrl:statement DOIT être renseigné dans CHE_MD_Metadata.</svrl:diagnostic-reference>
-  </svrl:failed-assert>
+  <svrl:active-pattern document="" id="rule.mrl.statement-required-when-dataset" name_en="Lineage statement is mandatory when lineage and resourceScope = dataset" name_fr="Le statement (historique) est obligatoire lorsque lineage and resourceScope = dataset" name="Le statement (historique) est obligatoire lorsque lineage and resourceScope = dataset" />
   <svrl:active-pattern document="" id="rule.che.topic-subtopic-consistency" name_en="Ensure consistency between topicCategory and subTopicCategory (eCH-0166)" name_fr="Assurer la cohérence entre topicCategory et subTopicCategory (eCH-0166)" name="Assurer la cohérence entre topicCategory et subTopicCategory (eCH-0166)" />
   <svrl:fired-rule context="//che:CHE_MD_DataIdentification" />
   <svrl:successful-report ref="#_" test="count(che:subTopicCategory/che:CHE_MD_SubTopicCategoryCode) &gt; 0 and $invalidSubCount = 0" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
