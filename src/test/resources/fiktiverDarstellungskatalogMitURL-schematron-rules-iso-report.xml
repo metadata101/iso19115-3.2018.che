@@ -64,8 +64,8 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrs.refsys-identifier-when-dataset-success-en" xml:lang="en">Reference system identifier is present for dataset resources.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrs.refsys-identifier-when-dataset-success-fr" xml:lang="fr">Un identifiant de système de référence est présent pour les jeux de données.</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.mrl.statement-required-when-dataset" name_en="Lineage statement is mandatory when resourceScope = dataset" name_fr="Le statement (historique) est obligatoire lorsque resourceScope = dataset" name="Le statement (historique) est obligatoire lorsque resourceScope = dataset" />
-  <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']" />
+  <svrl:active-pattern document="" id="rule.mrl.statement-required-when-dataset" name_en="Lineage statement is mandatory when lineage and resourceScope = dataset" name_fr="Le statement (historique) est obligatoire lorsque lineage and resourceScope = dataset" name="Le statement (historique) est obligatoire lorsque lineage and resourceScope = dataset" />
+  <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' and mdb:resourceLineage/mrl:LI_Lineage]" />
   <svrl:failed-assert ref="#_" test="$hasStatement" location="/*[local-name()='CHE_MD_Metadata']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrl.statement-when-dataset-failure-en" xml:lang="en">When resourceScope is 'dataset', the lineage statement (mrl:statement) MUST be provided in CHE_MD_Metadata.</svrl:diagnostic-reference>

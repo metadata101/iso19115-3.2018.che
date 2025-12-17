@@ -401,13 +401,13 @@
   </sch:diagnostics>
   <sch:pattern id="rule.mrl.statement-required-when-dataset">
 
-    <sch:title xml:lang="en">Lineage statement is mandatory when resourceScope = dataset</sch:title>
+    <sch:title xml:lang="en">Lineage statement is mandatory when lineage and resourceScope = dataset</sch:title>
 
-    <sch:title xml:lang="fr">Le statement (historique) est obligatoire lorsque resourceScope = dataset</sch:title>
+    <sch:title xml:lang="fr">Le statement (historique) est obligatoire lorsque lineage and resourceScope = dataset</sch:title>
 
 
     <sch:rule
-            context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']">
+            context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' and mdb:resourceLineage/mrl:LI_Lineage]">
 
       <!-- Non-empty lineage statement anywhere under resourceLineage/LI_Lineage/statement -->
       <sch:let name="statement"
