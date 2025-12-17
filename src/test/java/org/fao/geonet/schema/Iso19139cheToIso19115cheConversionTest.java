@@ -300,8 +300,6 @@ public class Iso19139cheToIso19115cheConversionTest {
         List<?> nodes = xPath.selectNodes(gruenflaechenIso19115che);
         assertEquals(1, nodes.size());
         assertEquals("OGC:WFS", ((Element)((Element) nodes.get(0)).getChildren().get(0)).getText());
-        //TODO CMT/SRT activate
-        //isGNValid(gruenflaechenIso19115che);
     }
 
     private void assertNamespacePresent(List<?> namespaces, String nsLocation, String prefix) {
@@ -363,7 +361,5 @@ public class Iso19139cheToIso19115cheConversionTest {
 
     private void transformValidateAndCompare(String mdNameRoot) throws Exception {
         isValid(transformAndCompare(mdNameRoot, true));
-        //TODO CMT/SRT activate
-        //isGNValid(amphibiansIso19115che);
     }
 }
