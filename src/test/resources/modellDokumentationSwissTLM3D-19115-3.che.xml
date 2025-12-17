@@ -452,6 +452,16 @@
           </lan:characterEncoding>
         </lan:PT_Locale>
       </mri:defaultLocale>
+      <mri:otherLocale>
+        <lan:PT_Locale>
+          <lan:language>
+            <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="fre">fre</lan:LanguageCode>
+          </lan:language>
+          <lan:characterEncoding>
+            <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
+          </lan:characterEncoding>
+        </lan:PT_Locale>
+      </mri:otherLocale>
       <che:subTopicCategory>
         <che:CHE_MD_SubTopicCategoryCode codeList="subTopicCategory" codeListValue="imageryBaseMapsEarthCover_BaseMaps" />
       </che:subTopicCategory>
