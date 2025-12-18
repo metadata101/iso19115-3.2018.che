@@ -1216,7 +1216,7 @@
     </_condition>
   </element>
   <element name="mdb:resourceLineage" id="37.0">
-    <label>Ressourcenherkunft</label>
+    <label>Herkunft der Ressourcen</label>
     <description iso="true">Informationen über Herkunft, Quellen
       und/oder die auf die Ressource angewandten Produktionsverfahren
     </description>
@@ -6179,13 +6179,25 @@ eine Nichtbewertung</b> im Rahmen der INSPIRE-Metadaten.
     <label>Protokoll</label>
     <description>Zu verwendendes Verbindungsprotokoll</description>
     <help>Verwendetes Verbindungsprotokoll, z. B. FTP.</help>
-    <condition/>
     <helper>
+      <option value="WWW:LINK">Webadresse (URL)</option>
+      <option value="WWW:DOWNLOAD-URL">Datei zum Download (URL)</option>
       <option value="OGC API - Coverages">OGC API - Coverages</option>
       <option value="OGC API - Features">OGC API - Features</option>
       <option value="OGC API - Maps">OGC API - Maps</option>
       <option value="OGC API - Records">OGC API - Datensätze</option>
-      <option value="OGC:3DTILES">OGC-3DTiles-Datensatz</option>
+      <option value="OGC:WMS">OGC-WMS Web Map Service</option>
+      <option value="OGC:WFS">OGC-WFS Web Feature Service</option>
+      <option value="OGC:WCS">OGC-WCS Web Coverage Service</option>
+      <option value="OGC:WMTS">OGC-WMTS Web Map Tile Service</option>
+      <option value="OGC:WMC">OGC-WMC Web Map Context</option>
+      <option value="ESRI:REST">ArcGIS REST Services</option>
+      <option value="CHTOPO:specialised-geoportal">Spezialisiertes Geoportal</option>
+      <option value="MAP:Preview">map.geo.admin.ch preview</option>
+      <option value="OPENDATA:SWISS">Permalink opendata.swiss</option>
+      <option value="WWW:DOWNLOAD-APP">Download-APP (geoshop)</option>
+      <option value="Linked:data">Linked:data	</option>
+      <!-- <option value="OGC:3DTILES">OGC-3DTiles-Datensatz</option>
       <option value="OGC:COG">OGC-Cloud Optimized GeoTIFF</option>
       <option value="OGC:CSW">OGC-CSW-Katalogdienst für das Web</option>
       <option value="OGC:KML">OGC-KML Keyhole Markup Language</option>
@@ -6209,24 +6221,24 @@ eine Nichtbewertung</b> im Rahmen der INSPIRE-Metadaten.
       <option value="OGC:WMTS">OGC-WMS Web Map Tile Service</option>
       <option value="OGC:WNS">OGC-WNS Web Notification Service</option>
       <option value="OGC:WPS">OGC-WPS Web Processing Service</option>
-      <option value="WWW:DOWNLOAD-1.0-ftp--download">Datei zum Herunterladen
+      <option value="WWW:DOWNLOAD-1.0-ftp&amp;#45;&amp;#45;download">Datei zum Herunterladen
         (FTP)
       </option>
-      <option value="WWW:DOWNLOAD-1.0-http--download">Datei zum Herunterladen
+      <option value="WWW:DOWNLOAD-1.0-http&amp;#45;&amp;#45;download">Datei zum Herunterladen
       </option>
       <option value="ESRI:REST">ESRI REST-Dienst</option>
       <option value="ESRI:REST-TILED">ESRI-REST-Kachelservice</option>
       <option value="FILE:GEO">GIS-Datei</option>
       <option value="FILE:RASTER">GIS-Rasterdatei</option>
-      <option value="WWW:LINK-1.0-http--link" default="">Webadresse (URL)
+      <option value="WWW:LINK-1.0-http&amp;#45;&amp;#45;link" default="">Webadresse (URL)
       </option>
-      <option value="WWW:LINK-1.0-http--rss">RSS-Feed (URL)</option>
+      <option value="WWW:LINK-1.0-http&amp;#45;&amp;#45;rss">RSS-Feed (URL)</option>
       <option value="DB:POSTGIS">PostGIS-Datenbank/Tabelle</option>
       <option value="DB:ORACLE">Datenbank / ORACLE</option>
-      <option value="WWW:LINK-1.0-http--opendap">OPeNDAP-URL</option>
+      <option value="WWW:LINK-1.0-http&amp;#45;&amp;#45;opendap">OPeNDAP-URL</option>
       <option value="RBNB:DATATURBINE">Data Turbine</option>
       <option value="UKST">Unbekannter Diensttyp</option>
-      <!--<option value="WWW:LINK">Internetadresse (URL)</option>
+      <option value="WWW:LINK">Internetadresse (URL)</option>
       <option value="WWW:LINK-1.0-http&amp;#45;&amp;#45;publication-URL">Link zu einer Hauptveröffentlichung</option>
       <option value="WWW:LINK-1.0-http&amp;#45;&amp;#45;metadata-URL">Internetadresse zu den Metadaten</option>
       <option value="OGC:WMS">Anzeigen (WMS)</option>

@@ -6210,11 +6210,24 @@ la non valutazione</b>, nell'ambito dei metadati INSPIRE
     <help>Protocollo di connessione utilizzato, ad esempio FTP.</help>
     <condition/>
     <helper>
+      <option value="WWW:LINK">Web address (URL)</option>
+      <option value="WWW:DOWNLOAD-URL">File per il download (URL)</option>
       <option valore="OGC API - Coperture">OGC API - Coperture</option>
       <option valore="OGC API - Features">OGC API - Features</option>
       <option valore="API OGC - Mappe">API OGC - Mappe</option>
       <option value="API OGC - Record">API OGC - Record</option>
-      <option value="OGC:3DTILES">OGC-3DTiles Dataset</option>
+      <option value="OGC:WMS">OGC-WMS Web Map Service</option>
+      <option value="OGC:WFS">OGC-WFS Web Feature Service</option>
+      <option value="OGC:WCS">OGC-WCS Web Coverage Service</option>
+      <option value="OGC:WMTS">OGC-WMTS Web Map Tile Service</option>
+      <option value="OGC:WMC">OGC-WMC Web Map Context</option>
+      <option value="ESRI:REST">ArcGIS REST Services</option>
+      <option value="CHTOPO:specialised-geoportal">Geoportale specializzato</option>
+      <option value="MAP:Preview">map.geo.admin.ch preview</option>
+      <option value="OPENDATA:SWISS">Permalink opendata.swiss</option>
+      <option value="WWW:DOWNLOAD-APP">Download-APP (geoshop)</option>
+      <option value="Linked:data">Linked:data	</option>
+      <!--<option value="OGC:3DTILES">OGC-3DTiles Dataset</option>
       <option valore="OGC:COG">OGC-Cloud Optimized GeoTIFF</option>
       <option valore="OGC:CSW">Servizio catalogo OGC-CSW per il Web</option>
       <option value="OGC:KML">OGC-KML Keyhole Markup Language</option>
@@ -6238,25 +6251,25 @@ la non valutazione</b>, nell'ambito dei metadati INSPIRE
       <option value="OGC:WMTS">Servizio di mappe web OGC-WMS</option>
       <option valore="OGC:WNS">Servizio di notifica web OGC-WNS</option>
       <option valore="OGC:WPS">Servizio di elaborazione web OGC-WPS</option>
-      <option valore="WWW:DOWNLOAD-1.0-ftp--download">File da scaricare
+      <option valore="WWW:DOWNLOAD-1.0-ftp&amp;#45;&amp;#45;download">File da scaricare
         (FTP)
       </option>
-      <option value="WWW:DOWNLOAD-1.0-http--download">File da scaricare
+      <option value="WWW:DOWNLOAD-1.0-http&amp;#45;&amp;#45;download">File da scaricare
       </option>
       <option value="ESRI:REST">Servizio REST ESRI</option>
       <option value="ESRI:REST-TILED">Servizio REST ESRI Tiled</option>
       <option value="FILE:GEO">File GIS</option>
       <option valore="FILE:RASTER">File GIS RASTER</option>
-      <option valore="WWW:LINK-1.0-http--link" default="">Indirizzo Internet
+      <option valore="WWW:LINK-1.0-http&amp;#45;&amp;#45;link" default="">Indirizzo Internet
         (URL)
       </option>
-      <option valore="WWW:LINK-1.0-http--rss">Feed RSS (URL)</option>
+      <option valore="WWW:LINK-1.0-http&amp;#45;&amp;#45;rss">Feed RSS (URL)</option>
       <option valore="DB:POSTGIS">Database / Tabella PostGIS</option>
       <option valore="DB:ORACLE">Database / ORACLE</option>
-      <option valore="WWW:LINK-1.0-http--opendap">URL OPeNDAP</option>
+      <option valore="WWW:LINK-1.0-http&amp;#45;&amp;#45;opendap">URL OPeNDAP</option>
       <option valore="RBNB:DATATURBINE">Data Turbine</option>
       <option value="UKST">Tipo di servizio sconosciuto</option>
-      <!--<option value="WWW:LINK">Indirizzo Internet (URL)</option>
+      <option value="WWW:LINK">Indirizzo Internet (URL)</option>
       <option value="WWW:LINK-1.0-http&amp;#45;&amp;#45;publication-URL">Link a una pubblicazione principale</option>
       <option value="WWW:LINK-1.0-http&amp;#45;&amp;#45;metadata-URL">Indirizzo Internet dei metadati</option>
       <option valore="OGC:WMS">Visualizza (WMS)</option>

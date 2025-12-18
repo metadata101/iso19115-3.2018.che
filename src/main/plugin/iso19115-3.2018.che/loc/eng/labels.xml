@@ -271,6 +271,16 @@
         <description>Parent organisation</description>
         <condition></condition>
       </element>
+  <element name="mdb:acquisitionInformation">
+    <label>Acquisition Information</label>
+    <description></description>
+    <condition></condition>
+  </element>
+  <element name="mac:MI_AcquisitionInformation">
+    <label>Acquisition Information</label>
+    <description></description>
+    <condition></condition>
+  </element>    
   <element name="mac:type">
     <label>Type</label>
     <description></description>
@@ -475,8 +485,14 @@
     </description>
     <condition></condition>
   </element>
+  <element name="mdb:metadataProfile">
+    <label>Metadata profile</label>
+    <description iso="true">Citation of the metadata standard profile(s) governing the metadata.
+      NOTE: Metadata profile citations should include an identifier.
+    </description>
+  </element>
   <element name="mdb:resourceScope" id="40.0">
-    <label>Resource type</label>
+    <label>Resource scope</label>
     <description iso="true">Code for the scope.</description>
     <condition>mandatory</condition>
   </element>
@@ -1061,7 +1077,7 @@
     <_condition>optional</_condition>
   </element>
   <element name="mdb:resourceLineage" id="37.0">
-    <label>Data quality info</label>
+    <label>Resource lineage</label>
     <description iso="true">Information about the provenance, source(s), and/or
       the production process(es) applied to the resource
     </description>
@@ -1074,7 +1090,7 @@
   </element>
 
   <element name="mdb:MD_MetadataScope" id="6.0">
-    <label>Hierarchy level</label>
+    <label>Metadata scope</label>
     <description>Scope to which the metadata applies (see annex H for more
       information about
       metadata hierarchy levels)
@@ -3962,7 +3978,24 @@
   <element name="cit:protocol" id="398.0" alias="protocol">
     <label>Protocol</label>
     <description>Connection protocol to be used</description>
-    <helper>
+    <helper>      
+      <option value="WWW:LINK">Web address (URL)</option>
+      <option value="WWW:DOWNLOAD-URL">File for download (URL)</option>
+      <option value="OGC API - Coverages">OGC API - Coverages</option>
+      <option value="OGC API - Features">OGC API - Features</option>
+      <option value="OGC API - Maps">OGC API - Maps</option>
+      <option value="OGC API - Records">OGC API - Records</option>
+      <option value="OGC:WMS">OGC-WMS Web Map Service</option>
+      <option value="OGC:WFS">OGC-WFS Web Feature Service</option>
+      <option value="OGC:WCS">OGC-WCS Web Coverage Service</option>
+      <option value="OGC:WMTS">OGC-WMTS Web Map Tile Service</option>
+      <option value="OGC:WMC">OGC-WMC Web Map Context</option>
+      <option value="ESRI:REST">ArcGIS REST Services</option>
+      <option value="CHTOPO:specialised-geoportal">Specialised Geoportal</option>
+      <option value="MAP:Preview">map.geo.admin.ch preview</option>
+      <option value="OPENDATA:SWISS">Permalink opendata.swiss</option>
+      <option value="WWW:DOWNLOAD-APP">Download-APP (geoshop)</option>
+      <option value="Linked:data">Linked:data	</option>
       <!--<option value="WWW:LINK">Web link (URL)</option>
       <option value="WWW:LINK-1.0-http&#45;&#45;publication-URL">Main publication link</option>
       <option value="WWW:LINK-1.0-http&#45;&#45;metadata-URL">Point of truth URL of this metadata record</option>
@@ -3975,13 +4008,9 @@
       <option value="OGC:WCS">Download (WCS)</option>
       <option value="OGC:WMS">View (WMS)</option>
       <option value="OGC:WMTS">View (WMTS)</option>
-      <option value="OGC:WPS">OGC-WPS Web Processing Service</option>
-      <option value="OGC:OWS-C">View (OWS Context)</option>-->
+      <option value="OGC:WPS">OGC-WPS Web Processing Service</option> -->
 
-      <option value="OGC API - Coverages">OGC API - Coverages</option>
-      <option value="OGC API - Features">OGC API - Features</option>
-      <option value="OGC API - Maps">OGC API - Maps</option>
-      <option value="OGC API - Records">OGC API - Records</option>
+      <option value="OGC:OWS-C">View (OWS Context)</option>
       <option value="OGC:3DTILES">OGC-3DTiles Dataset</option>
       <option value="OGC:COG">OGC-Cloud Optimized GeoTIFF</option>
       <option value="OGC:CSW">OGC-CSW Catalogue Service for the Web
@@ -3999,27 +4028,22 @@
       <option value="OGC:SOS">OGC-SOS Sensor Observation Service</option>
       <option value="OGC:SPS">OGC-SPS Sensor Planning Service</option>
       <option value="OGC:SAS">OGC-SAS Sensor Alert Service</option>
-      <option value="OGC:WCS">OGC-WCS Web Coverage Service</option>
       <option value="OGC:WCTS">OGC-WCTS Web Coordinate Transformation Service</option>
-      <option value="OGC:WFS">OGC-WFS Web Feature Service</option>
       <option value="INSPIRE Atom">INSPIRE Atom</option>
-      <option value="OGC:WMS">OGC-WMS Web Map Service</option>
-      <option value="OGC:WMTS">OGC-WMS Web Map Tile Service</option>
       <option value="OGC:WNS">OGC-WNS Web Notification Service</option>
       <option value="OGC:WPS">OGC-WPS Web Processing Service</option>
-      <option value="WWW:DOWNLOAD-1.0-ftp--download">File for download through FTP</option>
-      <option value="WWW:DOWNLOAD-1.0-http--download">File for download</option>
-      <option value="ESRI:REST">ESRI REST Service</option>
+      <option value="WWW:DOWNLOAD-1.0-ftp&amp;#45;&amp;#45;download">File for download through FTP</option>
+      <option value="WWW:DOWNLOAD-1.0-http&amp;#45;&amp;#45;download">File for download</option>
       <option value="ESRI:REST-TILED">ESRI REST Tiled Service</option>
       <option value="FILE:GEO">GIS file</option>
       <option value="FILE:RASTER">GIS RASTER file</option>
-      <option value="WWW:LINK-1.0-http--link" default="">Web address (URL)</option>
-      <option value="WWW:LINK-1.0-http--rss">RSS News feed (URL)</option>
+      <option value="WWW:LINK-1.0-http&amp;#45;&amp;#45;link" default="">Web address (URL)</option>
+      <option value="WWW:LINK-1.0-http&amp;#45;&amp;#45;rss">RSS News feed (URL)</option>
       <option value="DB:POSTGIS">PostGIS database table</option>
       <option value="DB:ORACLE">ORACLE database table</option>
-      <option value="WWW:LINK-1.0-http--opendap">OPeNDAP URL</option>
+      <option value="WWW:LINK-1.0-http&amp;#45;&amp;#45;opendap">OPeNDAP URL</option>
       <option value="RBNB:DATATURBINE">Data Turbine</option>
-      <option value="UKST">Unknown Service Type</option>
+      <option value="UKST">Unknown Service Type</option>-->
     </helper>
   </element>
   <element name="mri:purpose" id="26.0">
@@ -4967,6 +4991,10 @@
   </element>
   <element name="xlink:title">
     <label>URL title</label>
+    <description></description>
+  </element>
+  <element name="xlink:show">
+    <label>URL show</label>
     <description></description>
   </element>
   <element name="unit">
