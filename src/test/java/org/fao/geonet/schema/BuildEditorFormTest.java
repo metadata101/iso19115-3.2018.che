@@ -126,6 +126,20 @@ public class BuildEditorFormTest {
 		TestSupport.assertGeneratedDataByteMatchExpected("amphibians-19115-3.che-related.xml", actual, GENERATE_EXPECTED_FILE);
 	}
 
+	@Test
+	public void rawZonesDeTranquilliteEdit() throws Exception {
+		Path xslFile = getResource("gn-site/xslt/ui-metadata/edit/edit.xsl");
+		Path xmlFile = getResource("raw-zonesDeTranquillite-19115-3.che-raw-french-inflated-for-edition.xml");
+		Element inflatedMd = Xml.loadFile(xmlFile);
+
+		Element editorForm = Xml.transform(inflatedMd, xslFile);
+
+		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
+		String actual = xmlOutputter.outputString(editorForm);
+
+		TestSupport.assertGeneratedDataByteMatchExpected("raw-zonesDeTranquillite-19115-3.che-editor-form.xml", actual, GENERATE_EXPECTED_FILE);
+	}
+
 	private static Path addRequiredSchemasAndDisableConflictingOne() throws URISyntaxException {
 		return getResource("config/schemaplugin-uri-catalog.xml");
 	}
