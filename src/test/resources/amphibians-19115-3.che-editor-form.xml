@@ -605,7 +605,7 @@
               <a class="fa fa-angle-down " data-gn-editor-control-move="422" data-domelement-to-move="422" data-direction="down" href="" tabindex="-1" />
             </div>
           </legend>
-          <div gn-draw-bbox="" data-hleft="5.956088" data-hright="10.492036" data-hbottom="45.817970" data-htop="47.808488" data-hleft-ref="_425" data-hright-ref="_427" data-hbottom-ref="_429" data-htop-ref="_431" data-lang="lang" />
+          <div gn-draw-bbox="" data-hleft="5.956088" data-hright="10.492036" data-hbottom="45.817970" data-htop="47.808488" data-hleft-ref="_425" data-hright-ref="_427" data-hbottom-ref="_429" data-htop-ref="_431" data-lang="lang" data-read-only="false" />
         </fieldset>
         <fieldset id="gn-el-432" data-gn-field-highlight="" class=" gn-polygon">
           <legend class="polygon" data-gn-field-tooltip="iso19115-3.2018.che|gex:polygon|gex:EX_BoundingPolygon|" data-gn-slide-toggle="false">
