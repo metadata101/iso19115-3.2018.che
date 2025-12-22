@@ -97,7 +97,7 @@
     <condition></condition>
   </element>
   <element name="che:CHE_MD_MaintenanceInformation">
-    <label>Wartungsinformation iso19115-3.2018</label>
+    <label>Wartungsinformation iso19115-3.2018.che</label>
     <description>Information zu Umfang und Turnus der Aktualisierung</description>
     <help>z.B. Nachführungsinformationen</help>
     <condition></condition>
@@ -2819,11 +2819,11 @@
     <condition/>
   </element>
   <element name="srv:SV_ServiceIdentification" id="47.0">
-    <label>Dienstidentifikation</label>
-    <description>Klasse zur Identifizierung der Leistungen, die
-      bei einem Dienstanbieter über eine Reihe von Schnittstellen
-      , die ein Verhalten definieren (siehe ISO 19119 für weitere
-      Informationen).
+    <label>Basisinformation zum Dienst</label>
+    <description>dentifikation der Möglichkeiten, die 
+      ein Dienstanbieter einem Dienstnutzer über eine Reihe von Schnittstellen zur
+      Verfügung stellt, die ein Verhalten definieren
+      ANMERKUNG: Siehe ISO19119 für weitere Informationen
     </description>
     <help>Klasse zur Identifizierung der Dienste, die ein Anbieter
       dem Benutzer anbietet und deren Inhalt und Umfang durch
@@ -7753,11 +7753,8 @@ des IGN (WPS)
     <condition/>
   </element>
   <element name="srv:serviceType">
-    <label>Art der Dienstleistung</label>
-    <description>
-      Klassifizierung, die die Suche nach verfügbaren geografischen Datendiensten ermöglicht
-      zu suchen. Ein bestimmter Dienst
-      nur einer Kategorie zugeordnet werden.<!-- [2] --></description>
+    <label>Art des Dienstes</label>
+    <description>Name der Dienstart BEISPIEL "discovery", "view","download", "transformation" oder "invoke"</description>
     <help for="inspire">
       <![CDATA[
       Dieses Element ermöglicht die Klassifizierung von Diensten.
@@ -7808,13 +7805,23 @@ INSPIRE aufgeführten Werte muss angegeben werden.
     <label>Wertetyp</label>
   </element>
   <element name="srv:serviceTypeVersion">
-    <label>Version des Diensttyps</label>
-    <description>Version des Diensttyps</description>
+    <label>Version des Dienstes</label>
+    <description>Dienstversion; ermöglicht die
+      Suche auf der Grundlage der Version des Diensttyps.
+      BEISPIEL Beispielsweise können wir im OGC-Katalog nur an
+      V1.1-Diensten interessiert sein.
+      Wenn eine Version als separates Attribut angegeben wird,
+      können Nutzer leicht nach dem Dienst eines Typs unabhängig
+      von der Version suchen.BEISPIEL: OGC WMS 1.3.0
+    </description>
   </element>
   <element name="srv:accessProperties">
-    <label>Zugriffseigenschaften</label>
-    <description>Informationen zur Verfügbarkeit des Dienstes (Preise, Bestellhinweise
-      Bestellinformationen ...)
+    <label>Zugangsbestimmungen</label>
+    <description>Informationen über die Verfügbarkeit des Dienstes, einschließlich
+      — Kosten
+      — Zeitpunkt der Verfügbarkeit
+      — Bestellhinweise
+      — Lieferzeit
     </description>
   </element>
   <element name="srv:restrictions">
@@ -7834,11 +7841,11 @@ INSPIRE aufgeführten Werte muss angegeben werden.
   </element>
   <element name="srv:operationName">
     <label>Name der Operation</label>
-    <description>Name der Operation</description>
+    <description>Name für diese Schnittstelle</description>
   </element>
   <element name="srv:SV_OperationMetadata">
-    <label>Operationen</label>
-    <description>Informationen zu den Vorgängen</description>
+    <label>Metadaten von Operationen</label>
+    <description>Informationen über die vom Dienst zur Verfügung gestellten Operationen</description>
   </element>
   <element name="srv:DCP">
     <label>Kommunikation</label>
@@ -7850,8 +7857,8 @@ INSPIRE aufgeführten Werte muss angegeben werden.
     <label>Kommunikationsplattform</label>
   </element>
   <element name="srv:operationDescription">
-    <label>Beschreibung des Vorgangs</label>
-    <description>Beschreibung des Vorgangs in Form von Freitext
+    <label>Beschreibung der Operation</label>
+    <description>Beschreibung der Operation in Form von Freitext
     </description>
   </element>
   <element name="srv:invocationName">
@@ -7866,8 +7873,9 @@ INSPIRE aufgeführten Werte muss angegeben werden.
     <label>Richtung des Parameters</label>
   </element>
   <element name="srv:connectPoint">
-    <label>Verbindungspunkt</label>
-    <description>Verbindungspunkt für den Zugriff auf die Schnittstelle</description>
+    <label>Verknüpfungspunkt</label>
+    <description>Zugangspunkt zur Dienst
+schnittstelle</description>
   </element>
   <element name="srv:dependsOn">
     <label>Abhängig von</label>
@@ -8007,12 +8015,12 @@ http://www.sandre.eaufrance.fr/?urn=urn:sandre:ensembledonnees:BDCarthage:FXX:::
     <description></description>
   </element>
   <element name="srv:serviceStandard">
-    <label>Dienststandard</label>
+    <label>Standard, an den sich der Dienst hält</label>
     <description></description>
   </element>
   <element name="srv:distributedComputingPlatform">
-    <label>Verteilte Rechenplattformen</label>
-    <description>Verteilte Rechenplattformen, auf denen der Vorgang durchgeführt wurde</description>
+    <label>Distributionsplattform</label>
+    <description>Distributionsplattform auf welcher die Operation durchgeführt wurde</description>
   </element>
   <element name="srv:parameter">
     <label>Parameter</label>
