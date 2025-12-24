@@ -76,6 +76,7 @@
       }</contactForResource>
   <hasOverview>false</hasOverview>
   <resourceLanguage>ger</resourceLanguage>
+  <resourceLanguage>fre</resourceLanguage>
   <tag type="object">[
       {
       "default":"Objektkatalog", "langger":"Objektkatalog", "langfre":"catalogue des objets", "langita":"catalogo degli oggetti", "langeng":"object catalog"

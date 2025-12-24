@@ -465,7 +465,7 @@
 
 
         <xsl:for-each
-          select="mri:defaultLocale/lan:PT_Locale/lan:language/lan:LanguageCode/@codeListValue">
+          select="mri:defaultLocale/lan:PT_Locale/lan:language/lan:LanguageCode/@codeListValue|mri:otherLocale/lan:PT_Locale/lan:language/lan:LanguageCode/@codeListValue">
           <resourceLanguage>
             <xsl:value-of select="."/>
           </resourceLanguage>

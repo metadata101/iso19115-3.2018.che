@@ -137,6 +137,8 @@
             
             }</overview>
   <resourceLanguage>ger</resourceLanguage>
+  <resourceLanguage>fre</resourceLanguage>
+  <resourceLanguage>ita</resourceLanguage>
   <tag type="object">[
       {
       "default":"Verwaltungseinheiten", "langger":"Verwaltungseinheiten", "langfre":"Unit\u00E9s administratives", "langita":"Unit\u00E0 amministrative", "langeng":"Administrative units"
