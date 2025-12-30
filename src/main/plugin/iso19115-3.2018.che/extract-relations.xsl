@@ -15,6 +15,7 @@
   xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0"
   xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0"
   xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
+  xmlns:che="http://geocat.ch/che"
   exclude-result-prefixes="#all" >
 
   <xsl:import href="index-fields/link-utility.xsl"/>
@@ -23,18 +24,17 @@
        It could be documents (not always in distribution section)
        or thumbnails
   -->
-  <xsl:template mode="relation" match="metadata[mdb:MD_Metadata or *[contains(@gco:isoType, 'MD_Metadata')]]" priority="99">
-
+  <xsl:template mode="relation" match="metadata[che:CHE_MD_Metadata]" priority="200">
     <thumbnails>
       <xsl:for-each select="*/descendant::*[name(.) = 'mri:graphicOverview']/*">
         <item>
           <id><xsl:value-of select="mcc:fileName/gco:CharacterString"/></id>
           <url>
-              <xsl:apply-templates mode="get-iso19115-3.2018-localized-string"
+              <xsl:apply-templates mode="get-iso19115-3.2018.che-localized-string"
                                     select="mcc:fileName"/>
           </url>
           <title>
-              <xsl:apply-templates mode="get-iso19115-3.2018-localized-string"
+              <xsl:apply-templates mode="get-iso19115-3.2018.che-localized-string"
                                    select="mcc:fileDescription"/>
           </title>
           <type>thumbnail</type>
@@ -43,8 +43,8 @@
     </thumbnails>
 
     <onlines>
-      <xsl:call-template name="collect-distribution-links"/>
-      <xsl:call-template name="collect-documents"/>
+      <xsl:call-template name="collect-che-distribution-links"/>
+      <xsl:call-template name="collect-che-documents"/>
     </onlines>
   </xsl:template>
 </xsl:stylesheet>
