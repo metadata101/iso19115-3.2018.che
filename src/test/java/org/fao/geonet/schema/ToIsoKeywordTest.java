@@ -30,13 +30,11 @@ import org.jdom.Element;
 import org.jdom.output.Format;
 import org.jdom.output.XMLOutputter;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import java.nio.file.Path;
 
 import static org.fao.geonet.schema.TestSupport.getResource;
-import static org.fao.geonet.schema.TestSupport.getResourceInsideSchema;
 
 public class ToIsoKeywordTest {
 
@@ -54,7 +52,7 @@ public class ToIsoKeywordTest {
 
 	@Test
 	public void toKeywordWithThesaurusInfo() throws Exception {
-		transformAndCompare("to19115-3.2018-keyword-call.xsl", "to19115-3.2018-keyword-old-gemet-input.xml", "to19115-3.2018-keyword-output.xml");
+		transformAndCompare("handle/to19115-3.2018-keyword-call.xsl", "to19115-3.2018-keyword-old-gemet-input.xml", "to19115-3.2018-keyword-output.xml");
 	}
 
 
