@@ -9,6 +9,7 @@
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
                 xmlns:gn="http://www.fao.org/geonetwork"
                 xmlns:gn-fn-iso19115-3.2018="http://geonetwork-opensource.org/xsl/functions/profiles/iso19115-3.2018"
+                xmlns:che="http://geocat.ch/che"
                 exclude-result-prefixes="#all" version="2.0">
 
   <xsl:import href="../layout/utility-fn.xsl"/>
@@ -27,7 +28,7 @@
   <xsl:variable name="separator" select="'\|'"/>
 
   <xsl:variable name="mainLang"
-                select="/mdb:MD_Metadata/mdb:defaultLocale/*/lan:language/*/@codeListValue"
+                select="/che:CHE_MD_Metadata/mdb:defaultLocale/*/lan:language/*/@codeListValue"
                 as="xs:string"/>
 
   <xsl:variable name="useOnlyPTFreeText"
@@ -71,7 +72,7 @@
       <xsl:apply-templates select="mri:otherLocale"/>
       <xsl:apply-templates select="mri:environmentDescription"/>
       <xsl:apply-templates select="mri:supplementalInformation"/>
-
+      <xsl:apply-templates select="che:*"/>
       <xsl:apply-templates select="srv:*"/>
     </xsl:copy>
   </xsl:template>
