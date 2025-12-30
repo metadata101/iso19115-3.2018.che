@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+  <thumbnails>
+    <item>
+      <id>https://www.geo.bl.ch/vorschaubilder_geocat/Asiatische_Hornisse.png</id>
+      <url>
+        <value lang="ger">https://www.geo.bl.ch/vorschaubilder_geocat/Asiatische_Hornisse.png</value>
+      </url>
+      <title />
+      <type>thumbnail</type>
+    </item>
+  </thumbnails>
+  <onlines>
+    <item>
+      <id>https://geoview.bl.ch/?map_x=2625125&amp;map_y=1255600&amp;map_zoom=2&amp;tree_group_layers_Neobiota=asiatische_hornissen_sichtung_individuen%2Casiatische_hornissen_nest_inaktiv%2Casiatische_hornissen_nest_aktiv&amp;tree_groups=Neobiota&amp;baselayer_opacity=100&amp;baselayer_ref=blank</id>
+      <title>
+        <value lang="ger">GeoView BL</value>
+        <value lang="">GeoView BL</value>
+      </title>
+      <url>
+        <value lang="ger">https://geoview.bl.ch/?map_x=2625125&amp;map_y=1255600&amp;map_zoom=2&amp;tree_group_layers_Neobiota=asiatische_hornissen_sichtung_individuen%2Casiatische_hornissen_nest_inaktiv%2Casiatische_hornissen_nest_aktiv&amp;tree_groups=Neobiota&amp;baselayer_opacity=100&amp;baselayer_ref=blank</value>
+        <value lang="">https://geoview.bl.ch/?map_x=2625125&amp;map_y=1255600&amp;map_zoom=2&amp;tree_group_layers_Neobiota=asiatische_hornissen_sichtung_individuen%2Casiatische_hornissen_nest_inaktiv%2Casiatische_hornissen_nest_aktiv&amp;tree_groups=Neobiota&amp;baselayer_opacity=100&amp;baselayer_ref=blank</value>
+        <value lang="fre">https://geoview.bl.ch/?map_x=2625125&amp;map_y=1255600&amp;map_zoom=2&amp;tree_group_layers_Neobiota=asiatische_hornissen_sichtung_individuen%2Casiatische_hornissen_nest_inaktiv%2Casiatische_hornissen_nest_aktiv&amp;tree_groups=Neobiota&amp;baselayer_opacity=100&amp;baselayer_ref=blank</value>
+        <value lang="ita">https://geoview.bl.ch/?map_x=2625125&amp;map_y=1255600&amp;map_zoom=2&amp;tree_group_layers_Neobiota=asiatische_hornissen_sichtung_individuen%2Casiatische_hornissen_nest_inaktiv%2Casiatische_hornissen_nest_aktiv&amp;tree_groups=Neobiota&amp;baselayer_opacity=100&amp;baselayer_ref=blank</value>
+        <value lang="eng">https://geoview.bl.ch/?map_x=2625125&amp;map_y=1255600&amp;map_zoom=2&amp;tree_group_layers_Neobiota=asiatische_hornissen_sichtung_individuen%2Casiatische_hornissen_nest_inaktiv%2Casiatische_hornissen_nest_aktiv&amp;tree_groups=Neobiota&amp;baselayer_opacity=100&amp;baselayer_ref=blank</value>
+      </url>
+      <function />
+      <applicationProfile />
+      <description>
+        <value lang="ger">Darstellungsdienst Kanton BL</value>
+        <value lang="">Darstellungsdienst Kanton BL</value>
+      </description>
+      <protocol>CHTOPO:specialised-geoportal</protocol>
+      <mimeType />
+      <type>onlinesrc</type>
+    </item>
+  </onlines>
+</result>
+
