@@ -1134,7 +1134,7 @@
 
 
       <xsl:variable name="additionalDocuments" as="node()*">
-        <xsl:call-template name="collect-documents">
+        <xsl:call-template name="collect-che-documents">
           <xsl:with-param name="forIndexing" select="true()"/>
         </xsl:call-template>
       </xsl:variable>

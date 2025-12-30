@@ -7,23 +7,24 @@
                 xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0"
                 xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0"
                 xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0"
+                xmlns:che="http://geocat.ch/che"
                 exclude-result-prefixes="#all">
 
 
   <!-- Convert an element gco:CharacterString
   to the GN localized string structure -->
-  <xsl:template mode="get-iso19115-3.2018-localized-string" match="*">
+  <xsl:template mode="get-iso19115-3.2018.che-localized-string" match="*">
     <xsl:param name="defaultLanguage" select="'eng'" as="xs:string?"/>
 
     <xsl:variable name="mainLanguage"
-                  select="ancestor::mdb:MD_Metadata/mdb:defaultLocale/*/lan:language/*/@codeListValue"/>
+                  select="ancestor::che:CHE_MD_Metadata/mdb:defaultLocale/*/lan:language/*/@codeListValue"/>
 
     <xsl:for-each select="gco:CharacterString|gcx:Anchor|gcx:MimeFileType|
                           lan:PT_FreeText/*/lan:LocalisedCharacterString">
       <xsl:variable name="localeId"
                     select="substring-after(@locale, '#')"/>
       <value lang="{if (@locale)
-                    then ancestor::mdb:MD_Metadata/mdb:otherLocale/*[@id = $localeId]/lan:language/*/@codeListValue
+                    then ancestor::che:CHE_MD_Metadata/mdb:otherLocale/*[@id = $localeId]/lan:language/*/@codeListValue
                     else if ($mainLanguage)
                     then $mainLanguage
                     else $defaultLanguage}">
@@ -32,7 +33,7 @@
     </xsl:for-each>
   </xsl:template>
 
-  <xsl:template name="collect-distribution-links">
+  <xsl:template name="collect-che-distribution-links">
 
     <xsl:for-each select="*/descendant::*[
                             local-name() = 'onLine'
@@ -42,11 +43,11 @@
           <xsl:value-of select="cit:linkage/gco:CharacterString"/>
         </id>
         <title>
-          <xsl:apply-templates mode="get-iso19115-3.2018-localized-string"
+          <xsl:apply-templates mode="get-iso19115-3.2018.che-localized-string"
                                select="cit:name"/>
         </title>
         <url>
-          <xsl:apply-templates mode="get-iso19115-3.2018-localized-string"
+          <xsl:apply-templates mode="get-iso19115-3.2018.che-localized-string"
                                select="cit:linkage"/>
         </url>
         <function>
@@ -56,7 +57,7 @@
           <xsl:value-of select="cit:applicationProfile/gco:CharacterString"/>
         </applicationProfile>
         <description>
-          <xsl:apply-templates mode="get-iso19115-3.2018-localized-string"
+          <xsl:apply-templates mode="get-iso19115-3.2018.che-localized-string"
                                select="cit:description"/>
         </description>
         <protocol>
@@ -95,7 +96,7 @@
   (which could be multilingual and will be indexed with translations)
   and in extract-relations.xsl which return only the current API call language.
   -->
-  <xsl:template name="collect-documents">
+  <xsl:template name="collect-che-documents">
     <xsl:param name="forIndexing" select="false()" as="xs:boolean"/>
 
     <xsl:variable name="root" select="."/>
@@ -115,7 +116,7 @@
                 <xsl:copy-of select="cit:linkage"/>
               </xsl:when>
               <xsl:otherwise>
-                <xsl:apply-templates mode="get-iso19115-3.2018-localized-string"
+                <xsl:apply-templates mode="get-iso19115-3.2018.che-localized-string"
                                      select="cit:linkage"/>
               </xsl:otherwise>
             </xsl:choose>
@@ -128,7 +129,7 @@
                 <xsl:copy-of select="$name"/>
               </xsl:when>
               <xsl:otherwise>
-                <xsl:apply-templates mode="get-iso19115-3.2018-localized-string"
+                <xsl:apply-templates mode="get-iso19115-3.2018.che-localized-string"
                                      select="$name"/>
               </xsl:otherwise>
             </xsl:choose>
@@ -143,7 +144,7 @@
                 <xsl:copy-of select="$desc"/>
               </xsl:when>
               <xsl:otherwise>
-                <xsl:apply-templates mode="get-iso19115-3.2018-localized-string"
+                <xsl:apply-templates mode="get-iso19115-3.2018.che-localized-string"
                                      select="$desc"/>
               </xsl:otherwise>
             </xsl:choose>
