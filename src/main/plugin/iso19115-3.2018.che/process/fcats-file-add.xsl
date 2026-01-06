@@ -34,6 +34,7 @@
   xmlns:gn="http://www.fao.org/geonetwork"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:gn-fn-iso19115-3.2018="http://geonetwork-opensource.org/xsl/functions/profiles/iso19115-3.2018"
+  xmlns:che="http://geocat.ch/che"
   exclude-result-prefixes="#all">
 
   <xsl:import href="../layout/utility-fn.xsl"/>
@@ -44,11 +45,11 @@
 
 
   <xsl:variable name="mainLang"
-                select="/mdb:MD_Metadata/mdb:defaultLocale/*/lan:language/*/@codeListValue"
+                select="/che:CHE_MD_Metadata/mdb:defaultLocale/*/lan:language/*/@codeListValue"
                 as="xs:string"/>
 
   <xsl:variable name="mainLangId"
-                select="/mdb:MD_Metadata/mdb:defaultLocale/*/@id"
+                select="/che:CHE_MD_Metadata/mdb:defaultLocale/*/@id"
                 as="xs:string"/>
 
   <xsl:variable name="useOnlyPTFreeText"
@@ -56,9 +57,9 @@
                 as="xs:boolean"/>
 
   <xsl:variable name="metadataIdentifier"
-                select="/mdb:MD_Metadata/mdb:metadataIdentifier[position() = 1]/mcc:MD_Identifier/mcc:code/gco:CharacterString"/>
+                select="/che:CHE_MD_Metadata/mdb:metadataIdentifier[position() = 1]/mcc:MD_Identifier/mcc:code/gco:CharacterString"/>
 
-  <xsl:template match="/mdb:MD_Metadata|*[contains(@gco:isoType, 'mdb:MD_Metadata')]">
+  <xsl:template match="/che:CHE_MD_Metadata|*[contains(@gco:isoType, 'mdb:MD_Metadata')]">
     <xsl:copy>
       <xsl:copy-of select="@*"/>
       <xsl:apply-templates select="mdb:metadataIdentifier"/>
@@ -90,6 +91,7 @@
       <xsl:apply-templates select="mdb:applicationSchemaInfo"/>
       <xsl:apply-templates select="mdb:metadataMaintenance"/>
       <xsl:apply-templates select="mdb:acquisitionInformation"/>
+      <xsl:apply-templates select="che:*"/>
     </xsl:copy>
   </xsl:template>
 
