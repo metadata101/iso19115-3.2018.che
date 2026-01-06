@@ -730,6 +730,7 @@ I dati si basano sul modello di geodati minimo (MGDM) «Inventario dei prelievi 
         </srv:SV_OperationMetadata>
       </srv:containsOperations>
       <srv:operatesOn uuidref="7cb578f8-ca6f-40ef-8d39-d27414cc3047" xlink:href="https://www.geocat.ch/geonetwork/srv/ger/csw?service=CSW&amp;request=GetRecordById&amp;version=2.0.2&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=7cb578f8-ca6f-40ef-8d39-d27414cc3047" />
+      <srv:operatesOn uuidref="f27432fa-948b-4608-98d5-22ebe118c98a" xlink:href="https://www.geocat.ch/geonetwork/srv/api/records/f27432fa-948b-4608-98d5-22ebe118c98a" />
     </srv:SV_ServiceIdentification>
   </mdb:identificationInfo>
   <che:legislationInformation>
