@@ -20,8 +20,10 @@
  * Contact: Jeroen Ticheler - FAO - Viale delle Terme di Caracalla 2,
  * Rome - Italy. email: geonetwork@osgeo.org
  */
-package org.fao.geonet.schema;
+package org.fao.geonet.schema.process;
 
+import org.fao.geonet.schema.IndexationTest;
+import org.fao.geonet.schema.TestSupport;
 import org.fao.geonet.utils.ResolverWrapper;
 import org.fao.geonet.utils.TransformerFactoryFactory;
 import org.fao.geonet.utils.Xml;
@@ -83,7 +85,7 @@ public class ThumbnailAddTest {
 
         XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
         String actual = xmlOutputter.outputString(new Document(transformed));
-        TestSupport.assertGeneratedDataByteMatchExpected("asiatischeHornisse-19115-3.che-with-described-thumbnail.xml", actual, GENERATE_EXPECTED_FILE);
+        TestSupport.assertGeneratedDataByteMatchExpected("processes/asiatischeHornisse-19115-3.che-with-described-thumbnail.xml", actual, GENERATE_EXPECTED_FILE);
     }
 
 }
