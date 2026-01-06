@@ -44,9 +44,10 @@
     <xsl:choose>
       <xsl:when test="$action= 'list' or $action = 'analyze'">
         <xsl:variable name="root" select="/"/>
-
         <suggestions>
-          <!-- Filter process if user ask for a specific one. If not loop over all. -->
+            <!-- Filter process if user ask for a specific one. If not loop over all. -->
+          <!-- 06/01/2026. disable suggestions since processes are not qualified. Moreover,
+           a few of them do not copy che specific elements. -->
           <xsl:for-each select="if ($process='') then $processes/p else $processes/p[.=$process]">
             <xsl:variable name="tplName" select="concat($action, '-',.)"/>
             <saxon:call-template name="{$tplName}">
@@ -56,6 +57,7 @@
               </xsl:fallback>
             </saxon:call-template>
           </xsl:for-each>
+          -->
         </suggestions>
       </xsl:when>
       <xsl:otherwise>
