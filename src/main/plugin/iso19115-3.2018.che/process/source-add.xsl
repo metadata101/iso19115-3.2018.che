@@ -9,6 +9,7 @@ Stylesheet used to update metadata adding a reference to a source record.
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:gn="http://www.fao.org/geonetwork"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:che="http://geocat.ch/che"
                 exclude-result-prefixes="#all">
 
   <!-- Source metadata record UUID -->
@@ -80,6 +81,7 @@ Stylesheet used to update metadata adding a reference to a source record.
       <xsl:apply-templates select="mdb:applicationSchemaInfo"/>
       <xsl:apply-templates select="mdb:metadataMaintenance"/>
       <xsl:apply-templates select="mdb:acquisitionInformation"/>
+      <xsl:apply-templates select="che:*"/>
     </xsl:copy>
 
   </xsl:template>
