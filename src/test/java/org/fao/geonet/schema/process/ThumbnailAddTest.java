@@ -22,52 +22,21 @@
  */
 package org.fao.geonet.schema.process;
 
-import org.fao.geonet.schema.IndexationTest;
 import org.fao.geonet.schema.TestSupport;
-import org.fao.geonet.utils.ResolverWrapper;
-import org.fao.geonet.utils.TransformerFactoryFactory;
 import org.fao.geonet.utils.Xml;
 import org.jdom.Document;
 import org.jdom.Element;
 import org.jdom.output.Format;
 import org.jdom.output.XMLOutputter;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
-import java.lang.reflect.Field;
-import java.net.URISyntaxException;
 import java.nio.file.Path;
 import java.util.HashMap;
-import java.util.Map;
 
 import static org.fao.geonet.schema.TestSupport.getResource;
 import static org.fao.geonet.schema.TestSupport.getResourceInsideSchema;
 
-public class ThumbnailAddTest {
-
-    private static final boolean GENERATE_EXPECTED_FILE = false;
-
-    private static Field resolverMapField;
-
-    @BeforeClass
-    public static void initSaxon() {
-        TransformerFactoryFactory.init("net.sf.saxon.TransformerFactoryImpl");
-    }
-
-    @BeforeClass
-    public static void initOasis() throws NoSuchFieldException, IllegalAccessException, URISyntaxException {
-        resolverMapField = ResolverWrapper.class.getDeclaredField("resolverMap");
-        resolverMapField.setAccessible(true);
-        ((Map<?, ?>) resolverMapField.get(null)).clear();
-        ResolverWrapper.createResolverForSchema("DEFAULT", Path.of(IndexationTest.class.getClassLoader().getResource("gn-site/WEB-INF/oasis-catalog.xml").getPath()));
-    }
-
-    @AfterClass
-    public static void clearOasis() throws IllegalAccessException {
-        ((Map<?,?>) resolverMapField.get(null)).clear();
-    }
-
+public class ThumbnailAddTest  extends AbstractProcessTest {
 
     @Test
     public void asiatischeHornisse() throws Exception {
