@@ -18,7 +18,7 @@
   <xsl:template name="get-iso19115-3.2018.che-other-languages-as-json">
     <xsl:variable name="langs">
       <xsl:choose>
-        <xsl:when test="$metadata/gn:info[position() = last()]/isTemplate = 's'">
+        <xsl:when test="$metadata/gn:info[position() = last()]/isTemplate = 's' or $metadata/gn:info[position() = last()]/isTemplate = 't'">
 
           <xsl:for-each select="distinct-values($metadata//lan:LocalisedCharacterString/@locale)">
             <xsl:variable name="locale" select="string(.)" />
@@ -55,7 +55,7 @@
     </xsl:variable>
 
     <xsl:choose>
-      <xsl:when test="$metadata/gn:info[position() = last()]/isTemplate = 's'">
+      <xsl:when test="$metadata/gn:info[position() = last()]/isTemplate = 's' or $metadata/gn:info[position() = last()]/isTemplate = 't'">
         <xsl:for-each select="distinct-values($metadata//lan:LocalisedCharacterString/@locale)">
           <xsl:variable name="locale" select="string(.)" />
           <xsl:variable name="langId" select="xslutil:threeCharLangCode(substring($locale, 2, 2))" />
