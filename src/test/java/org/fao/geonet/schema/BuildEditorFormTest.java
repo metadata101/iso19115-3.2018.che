@@ -104,13 +104,26 @@ public class BuildEditorFormTest {
 		Element inflatedMd = Xml.loadFile(xmlFile);
 
 		Element editorForm = Xml.transform(inflatedMd, xslFile);
-
 		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
 		String actual = xmlOutputter.outputString(editorForm);
 
 		TestSupport.assertGeneratedDataByteMatchExpected("subtemplates/secretariat-ibat-19115-3.che-editor-form.xml", actual, GENERATE_EXPECTED_FILE);
 	}
 
+	@Test
+	public void secretariatIbatEditForTemplateOfSubTemplate() throws Exception {
+		Path xslFile = getResource("gn-site/xslt/ui-metadata/edit/edit.xsl");
+		Path xmlFile = getResource("subtemplates/secretariat-ibat-19115-3.che-raw-inflated-for-edition.xml");
+		Element inflatedMd = Xml.loadFile(xmlFile);
+
+		Xml.selectElement(inflatedMd, "*//isTemplate").setText("t");
+		Element editorForm = Xml.transform(inflatedMd, xslFile);
+		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
+		String actual = xmlOutputter.outputString(editorForm);
+		actual = actual.replace(" value=\"t\"", " value=\"s\"");
+
+		TestSupport.assertGeneratedDataByteMatchExpected("subtemplates/secretariat-ibat-19115-3.che-editor-form.xml", actual, GENERATE_EXPECTED_FILE);
+	}
 
 	@Test
 	public void amphibiansRelations() throws Exception {
