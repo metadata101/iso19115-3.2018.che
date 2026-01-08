@@ -18,6 +18,13 @@
                 <xsl:apply-templates select="." mode="from19139to19115-3.2018"/>
             </xsl:for-each>
 
+            <xsl:if test="count(gmd:maintenanceAndUpdateFrequency) &lt; 1">
+                <mmi:maintenanceAndUpdateFrequency>
+                    <mmi:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_MaintenanceFrequencyCode"
+                                                     codeListValue="unknown"/>
+                </mmi:maintenanceAndUpdateFrequency>
+            </xsl:if>
+
             <xsl:for-each select="gmd:dateOfNextUpdate">
                 <mmi:maintenanceDate>
                     <cit:CI_Date>
