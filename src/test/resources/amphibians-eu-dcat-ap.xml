@@ -207,7 +207,7 @@ For details, see the attached data description.</dct:description>
       </rdf:Description>
     </dct:spatial>
     <dct:accrualPeriodicity>
-      <dct:Frequency rdf:about="http://publications.europa.eu/resource/authority/frequency/NOT_PLANNED" />
+      <dct:Frequency rdf:about="http://publications.europa.eu/resource/authority/frequency/UNKNOWN" />
     </dct:accrualPeriodicity>
     <foaf:page>
       <foaf:Document rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce/attachments/ICAL.png" />
