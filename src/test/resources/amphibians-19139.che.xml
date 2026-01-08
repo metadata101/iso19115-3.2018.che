@@ -648,9 +648,6 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
       </gmd:pointOfContact>
       <gmd:resourceMaintenance>
         <che:CHE_MD_MaintenanceInformation gco:isoType="gmd:MD_MaintenanceInformation">
-          <gmd:maintenanceAndUpdateFrequency>
-            <gmd:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="notPlanned" />
-          </gmd:maintenanceAndUpdateFrequency>
           <che:archiveConcept>
             <che:CHE_MD_ArchiveConcept />
           </che:archiveConcept>
