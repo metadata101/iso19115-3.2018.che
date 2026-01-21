@@ -534,7 +534,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 0
+            "group": 1
             }</link>
   <linkUrl>https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=de</linkUrl>
   <linkProtocol>OGC:WMTS</linkProtocol>
@@ -557,7 +557,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 0
+            "group": 2
             }</link>
   <linkUrl>https://map.geo.admin.ch/?layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</linkUrl>
   <linkProtocol>MAP:Preview</linkProtocol>
@@ -576,7 +576,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 0
+            "group": 3
             }</link>
   <linkUrl>https://data.geo.admin.ch/browser/index.html#/collections/ch.bak.bundesinventar-schuetzenswerte-ortsbilder/items/bundesinventar-schuetzenswerte-ortsbilder</linkUrl>
   <linkProtocol>WWW:DOWNLOAD-URL</linkProtocol>
@@ -595,7 +595,7 @@
             
             "function":"download",
             "applicationProfile":"",
-            "group": 1
+            "group": 4
             }</link>
   <linkUrl>http://map.geo.admin.ch/?selectedNode=node_ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos1&amp;Y=660000&amp;X=190000&amp;zoom=1&amp;bgLayer=ch.swisstopo.pixelkarte-farbe&amp;layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder&amp;layers_opacity=1&amp;layers_visibility=true&amp;lan</linkUrl>
   <linkProtocol>CHTOPO:specialised-geoportal</linkProtocol>
@@ -614,7 +614,7 @@
             
             "function":"information",
             "applicationProfile":"",
-            "group": 2
+            "group": 5
             }</link>
   <linkUrl>https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</linkUrl>
   <linkProtocol>ESRI:REST</linkProtocol>
@@ -637,7 +637,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 3
+            "group": 6
             }</link>
   <parentUuid>12bcf72d-6ef6-4486-a71f-25c37044392b</parentUuid>
   <recordGroup>12bcf72d-6ef6-4486-a71f-25c37044392b</recordGroup>

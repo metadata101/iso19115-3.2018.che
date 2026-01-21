@@ -511,7 +511,7 @@
             
             "function":"download",
             "applicationProfile":"",
-            "group": 0
+            "group": 1
             }</link>
   <linkUrl>https://map.geo.admin.ch/?topic=aviation&amp;lang=de&amp;bgLayer=ch.swisstopo.pixelkarte-grau&amp;layers=ch.bazl.wohngebiete-aulav&amp;catalogNodes=2863&amp;layers_opacity=0.6&amp;E=2642942.51&amp;N=1189717.47&amp;zoom=2</linkUrl>
   <linkProtocol>MAP:Preview</linkProtocol>
@@ -530,7 +530,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 0
+            "group": 2
             }</link>
   <linkUrl>https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map.pdf</linkUrl>
   <linkProtocol>WWW:LINK</linkProtocol>
@@ -553,7 +553,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 0
+            "group": 3
             }</link>
   <linkUrl>https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20et%20al%202015%20LocatingOrganicSoilsForTheSwissGreenhouseGasInventory.pdf</linkUrl>
   <linkProtocol>WWW:LINK</linkProtocol>
@@ -576,7 +576,7 @@
             
             "function":"download",
             "applicationProfile":"",
-            "group": 0
+            "group": 4
             }</link>
   <linkUrl>https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map%20SI.pdf</linkUrl>
   <linkProtocol>WWW:DOWNLOAD</linkProtocol>
@@ -599,7 +599,7 @@
             
             "function":"download",
             "applicationProfile":"",
-            "group": 0
+            "group": 5
             }</link>
   <linkUrl>https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/Soil_Legende_BGDI_Arial12_DE.png</linkUrl>
   <linkProtocol>LEGEND:PNG</linkProtocol>
@@ -618,7 +618,7 @@
             
             "function":"information",
             "applicationProfile":"",
-            "group": 0
+            "group": 6
             }</link>
   <linkUrl>https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/Abstract_de_engl_fr_def.pdf</linkUrl>
   <linkProtocol>WWW:DOWNLOAD</linkProtocol>
@@ -641,7 +641,7 @@
             
             "function":"download",
             "applicationProfile":"",
-            "group": 0
+            "group": 7
             }</link>
   <recordGroup>0572e842-7e34-409a-90d9-526d012a1c2d</recordGroup>
 </doc>

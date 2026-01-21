@@ -1425,6 +1425,10 @@ For details, see the attached data description.</gmd:LocalisedCharacterString>
               </gmd:function>
             </gmd:CI_OnlineResource>
           </gmd:onLine>
+          <gmd:offLine>
+            <gmd:MD_Medium>
+            </gmd:MD_Medium>
+          </gmd:offLine>
         </gmd:MD_DigitalTransferOptions>
       </gmd:transferOptions>
     </gmd:MD_Distribution>

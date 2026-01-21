@@ -520,7 +520,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 0
+            "group": 1
             }</link>
   <linkUrl>https://www.swisstopo.admin.ch/de/landschaftsmodell-swisstlm3d</linkUrl>
   <linkProtocol>WWW:LINK</linkProtocol>
@@ -539,7 +539,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 1
+            "group": 2
             }</link>
   <linkUrl>https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities</linkUrl>
   <linkProtocol>OGC:WMS</linkProtocol>
@@ -562,7 +562,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 1
+            "group": 3
             }</link>
   <linkUrl>https://www.swisstopo.admin.ch/de/landschaftsmodell-swisstlm3d</linkUrl>
   <linkProtocol>WWW:DOWNLOAD-URL</linkProtocol>
@@ -581,7 +581,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 2
+            "group": 4
             }</link>
   <linkUrl>https://map.geo.admin.ch/?topic=swisstopo&amp;lang=de&amp;bgLayer=voidLayer&amp;catalogNodes=1436,1396,1397&amp;layers=ch.swisstopo.swisstlm3d-karte-farbe&amp;X=192000.00&amp;Y=622250.00&amp;zoom=2</linkUrl>
   <linkProtocol>CHTOPO:specialised-geoportal</linkProtocol>
@@ -600,7 +600,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 3
+            "group": 5
             }</link>
   <linkUrl>https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swisstlm3d-uebrigerverkehr</linkUrl>
   <linkProtocol>ESRI:REST</linkProtocol>
@@ -623,7 +623,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 3
+            "group": 6
             }</link>
   <recordGroup>ffc0267e-aca8-49ac-8f3e-86c9beca51f2</recordGroup>
   <recordLink type="object">{

@@ -505,7 +505,7 @@
             
             "function":"download",
             "applicationProfile":"",
-            "group": 1
+            "group": 2
             }</link>
   <linkUrl>https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=de</linkUrl>
   <linkProtocol>OGC:WMS</linkProtocol>
@@ -528,7 +528,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 1
+            "group": 3
             }</link>
   <linkUrl>http://www.bafu.admin.ch/geodaten</linkUrl>
   <linkProtocol>WWW:DOWNLOAD:ESRI Shapefile</linkProtocol>
@@ -551,7 +551,7 @@
             
             "function":"download",
             "applicationProfile":"",
-            "group": 2
+            "group": 4
             }</link>
   <linkUrl>http://wmts.geo.admin.ch/1.0.0/WMTSCapabilities.xml</linkUrl>
   <linkProtocol>OGC:WMTS</linkProtocol>
@@ -574,7 +574,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 3
+            "group": 5
             }</link>
   <linkUrl>https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.fauna-steinbockkolonien</linkUrl>
   <linkProtocol>ESRI:REST</linkProtocol>
@@ -597,7 +597,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 3
+            "group": 6
             }</link>
   <linkUrl>https://opendata.swiss/de/perma/0e5a8467-bf17-4d4d-aab4-3ba49417cedc@bundesamt-fur-umwelt-bafu</linkUrl>
   <linkProtocol>OPENDATA:SWISS</linkProtocol>
@@ -620,7 +620,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 3
+            "group": 7
             }</link>
   <recordGroup>0e5a8467-bf17-4d4d-aab4-3ba49417cedc</recordGroup>
 </doc>
