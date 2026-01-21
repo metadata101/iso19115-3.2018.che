@@ -261,6 +261,7 @@
     <xsl:include href="mapping/CHE_MD_BasicGeodataInformation.xsl" />
     <xsl:include href="mapping/MD_PortrayalCatalogueReference.xsl" />
     <xsl:include href="mapping/xlink_href.xsl" />
+    <xsl:include href="mapping/CI_transferOptions.xsl" />
 
     <!-- Depending on the function of online source in ISO19139,
     categorized them in more descriptive sections. -->

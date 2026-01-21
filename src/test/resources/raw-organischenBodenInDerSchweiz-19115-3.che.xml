@@ -411,6 +411,10 @@ Parts of the data are subject to a licence. Please read the additional documenta
               </cit:description>
             </cit:CI_OnlineResource>
           </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
           <mrd:onLine>
             <cit:CI_OnlineResource>
               <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
@@ -457,6 +461,10 @@ Parts of the data are subject to a licence. Please read the additional documenta
               </cit:function>
             </cit:CI_OnlineResource>
           </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
           <mrd:onLine>
             <cit:CI_OnlineResource>
               <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
@@ -486,6 +494,10 @@ Parts of the data are subject to a licence. Please read the additional documenta
               </cit:name>
             </cit:CI_OnlineResource>
           </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
           <mrd:onLine>
             <cit:CI_OnlineResource>
               <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
@@ -541,6 +553,10 @@ Parts of the data are subject to a licence. Please read the additional documenta
               </cit:description>
             </cit:CI_OnlineResource>
           </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
           <mrd:onLine>
             <cit:CI_OnlineResource>
               <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
@@ -605,6 +621,10 @@ Parts of the data are subject to a licence. Please read the additional documenta
               </cit:function>
             </cit:CI_OnlineResource>
           </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
           <mrd:onLine>
             <cit:CI_OnlineResource>
               <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
@@ -669,6 +689,10 @@ Parts of the data are subject to a licence. Please read the additional documenta
               </cit:function>
             </cit:CI_OnlineResource>
           </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
           <mrd:onLine>
             <cit:CI_OnlineResource>
               <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
@@ -713,6 +737,10 @@ Parts of the data are subject to a licence. Please read the additional documenta
               </cit:function>
             </cit:CI_OnlineResource>
           </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
           <mrd:onLine>
             <cit:CI_OnlineResource>
               <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
@@ -777,6 +805,10 @@ Parts of the data are subject to a licence. Please read the additional documenta
               </cit:function>
             </cit:CI_OnlineResource>
           </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
           <mrd:onLine>
             <cit:CI_OnlineResource>
               <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
@@ -815,6 +847,10 @@ Parts of the data are subject to a licence. Please read the additional documenta
               </cit:description>
             </cit:CI_OnlineResource>
           </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
           <mrd:onLine>
             <cit:CI_OnlineResource>
               <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">

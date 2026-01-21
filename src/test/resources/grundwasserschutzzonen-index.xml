@@ -467,7 +467,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 0
+            "group": 1
             }</link>
   <linkUrl>https://geobasisdaten.ch/detail/821362/</linkUrl>
   <linkProtocol>WWW:LINK</linkProtocol>
@@ -490,7 +490,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 0
+            "group": 2
             }</link>
   <linkUrl>https://ows.geo.tg.ch/geofy_access_proxy/gewaesserschutzkarte?Service=WMS&amp;Version=1.3.0&amp;Request=GetCapabilities</linkUrl>
   <linkProtocol>OGC:WMS</linkProtocol>
@@ -513,7 +513,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 0
+            "group": 3
             }</link>
   <linkUrl>https://ows.geo.tg.ch/geofy_access_proxy/gewaesserschutzkarte?Service=WFS&amp;Version=2.0.0&amp;Request=GetCapabilities</linkUrl>
   <linkProtocol>OGC:WFS</linkProtocol>
@@ -532,7 +532,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 0
+            "group": 4
             }</link>
   <linkUrl>https://geodienste.ch/services/planerischer_gewaesserschutz</linkUrl>
   <linkProtocol>WWW:LINK</linkProtocol>
@@ -555,7 +555,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 0
+            "group": 5
             }</link>
   <linkUrl>https://shop.geo.tg.ch/products/gewaesserschutzkarte</linkUrl>
   <linkProtocol>WWW:DOWNLOAD-APP</linkProtocol>
@@ -578,7 +578,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 0
+            "group": 6
             }</link>
   <linkUrl>https://data.tg.ch</linkUrl>
   <linkProtocol>WWW:LINK</linkProtocol>
@@ -601,7 +601,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 0
+            "group": 7
             }</link>
   <linkUrl>https://opendata.swiss/de/perma/f494da66-8860-48d5-9cc7-ec38b885afd1@kanton-thurgau</linkUrl>
   <linkProtocol>OPENDATA:SWISS</linkProtocol>
@@ -624,7 +624,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 0
+            "group": 8
             }</link>
   <recordGroup>f494da66-8860-48d5-9cc7-ec38b885afd1</recordGroup>
   <recordLink type="object">{

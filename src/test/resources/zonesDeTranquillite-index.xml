@@ -441,7 +441,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 0
+            "group": 1
             }</link>
   <linkUrl>https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=de</linkUrl>
   <linkProtocol>OGC:WMTS</linkProtocol>
@@ -464,7 +464,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 0
+            "group": 2
             }</link>
   <linkUrl>https://www.wildruhezonen.ch/news/aenderungen-und-allgemeine-hinweise</linkUrl>
   <linkProtocol>WWW:LINK</linkProtocol>
@@ -483,7 +483,7 @@
             
             "function":"information",
             "applicationProfile":"",
-            "group": 1
+            "group": 3
             }</link>
   <linkUrl>http://www.wildruhezonen.ch</linkUrl>
   <linkProtocol>CHTOPO:specialised-geoportal</linkProtocol>
@@ -502,7 +502,7 @@
             
             "function":"information",
             "applicationProfile":"",
-            "group": 2
+            "group": 4
             }</link>
   <linkUrl>https://www.geodienste.ch/services/wildruhezonen</linkUrl>
   <linkProtocol>WWW:DOWNLOAD-URL</linkProtocol>
@@ -521,7 +521,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 3
+            "group": 5
             }</link>
   <linkUrl>https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.wrz-wildruhezonen_portal</linkUrl>
   <linkProtocol>ESRI:REST</linkProtocol>
@@ -544,7 +544,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 3
+            "group": 6
             }</link>
   <recordGroup>4a0c8bc7-89d1-484e-a34a-454a31267c41</recordGroup>
 </doc>

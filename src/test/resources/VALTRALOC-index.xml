@@ -389,7 +389,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 0
+            "group": 1
             }</link>
   <linkUrl>https://geo.fr.ch</linkUrl>
   <linkProtocol>WWW:LINK</linkProtocol>
@@ -408,7 +408,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 1
+            "group": 2
             }</link>
   <recordGroup>f01959c2-b48f-4f0c-ae81-3f6c68357267</recordGroup>
 </doc>
