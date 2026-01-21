@@ -665,7 +665,7 @@
             
             "function":"download",
             "applicationProfile":"",
-            "group": 0
+            "group": 1
             }</link>
   <linkUrl>https://data.geo.admin.ch/ch.meteoschweiz.ogd-smn/ogd-smn_meta_stations.csv</linkUrl>
   <linkProtocol>WWW:DOWNLOAD-URL</linkProtocol>
@@ -688,7 +688,7 @@
             
             "function":"download",
             "applicationProfile":"",
-            "group": 0
+            "group": 2
             }</link>
   <linkUrl>https://data.geo.admin.ch/api/stac/v1/collections/ch.meteoschweiz.ogd-smn</linkUrl>
   <linkProtocol>WWW:DOWNLOAD:TEXT, semicolon separated (CSV)</linkProtocol>
@@ -711,7 +711,7 @@
             
             "function":"download",
             "applicationProfile":"",
-            "group": 0
+            "group": 3
             }</link>
   <linkUrl>https://www.meteoschweiz.admin.ch/service-und-publikationen/applikationen/ext/daten-ohne-programmierkenntnisse-herunterladen.html#lang=de&amp;mdt=normal&amp;pgid=&amp;sid=&amp;col=&amp;di=&amp;tr=&amp;hdr=</linkUrl>
   <linkUrlProtocol>https://www.meteoschweiz.admin.ch/service-und-publikationen/applikationen/ext/daten-ohne-programmierkenntnisse-herunterladen.html#lang=de&amp;mdt=normal&amp;pgid=&amp;sid=&amp;col=&amp;di=&amp;tr=&amp;hdr=</linkUrlProtocol>
@@ -733,7 +733,7 @@
             
             "function":"download",
             "applicationProfile":"",
-            "group": 0
+            "group": 4
             }</link>
   <linkUrl>https://www.meteoschweiz.admin.ch/service-und-publikationen/service/open-data.html</linkUrl>
   <linkProtocol>WWW:LINK</linkProtocol>
@@ -752,7 +752,7 @@
             
             "function":"information",
             "applicationProfile":"",
-            "group": 0
+            "group": 5
             }</link>
   <linkUrl>https://opendatadocs.meteoswiss.ch/de/a-data-groundbased/a1-automatic-weather-stations</linkUrl>
   <linkProtocol>WWW:LINK</linkProtocol>
@@ -775,7 +775,7 @@
             
             "function":"information",
             "applicationProfile":"",
-            "group": 0
+            "group": 6
             }</link>
   <linkUrl>https://data.geo.admin.ch/ch.meteoschweiz.ogd-smn/ogd-smn_meta_datainventory.csv</linkUrl>
   <linkProtocol>WWW:DOWNLOAD-URL</linkProtocol>
@@ -798,7 +798,7 @@
             
             "function":"download",
             "applicationProfile":"",
-            "group": 0
+            "group": 7
             }</link>
   <recordGroup>35323752-ed32-4cc1-8a75-898c749b777b</recordGroup>
   <recordLink type="object">{

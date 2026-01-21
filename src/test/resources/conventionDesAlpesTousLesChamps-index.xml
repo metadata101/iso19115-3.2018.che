@@ -593,7 +593,7 @@
             
             "function":"download",
             "applicationProfile":"",
-            "group": 0
+            "group": 1
             }</link>
   <linkUrl>http://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=de</linkUrl>
   <linkProtocol>OGC:WMS</linkProtocol>
@@ -616,7 +616,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 0
+            "group": 2
             }</link>
   <linkUrl>https://www.are.admin.ch/are/de/home/raumentwicklung-und-raumplanung/grundlagen-und-daten/minimale-geodatenmodelle/alpenkonvention.html</linkUrl>
   <linkProtocol>WWW:DOWNLOAD-URL</linkProtocol>
@@ -635,7 +635,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 1
+            "group": 3
             }</link>
   <linkUrl>http://map.are.admin.ch/?Y=660000&amp;X=190000&amp;zoom=1&amp;bgLayer=ch.swisstopo.pixelkarte-grau&amp;layers=ch.are.alpenkonvention&amp;layers_opacity=0.2&amp;layers_visibility=true&amp;lang=de</linkUrl>
   <linkProtocol>CHTOPO:specialised-geoportal</linkProtocol>
@@ -654,7 +654,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 2
+            "group": 4
             }</link>
   <linkUrl>http://wmts.geo.admin.ch</linkUrl>
   <linkProtocol>OGC:WMTS</linkProtocol>
@@ -677,7 +677,7 @@
             
             "function":"",
             "applicationProfile":"",
-            "group": 3
+            "group": 5
             }</link>
   <linkUrl>http://www.alpconv.org</linkUrl>
   <linkProtocol>WWW:LINK</linkProtocol>
@@ -696,7 +696,7 @@
             
             "function":"information",
             "applicationProfile":"",
-            "group": 4
+            "group": 6
             }</link>
   <linkUrl>http://map.geo.admin.ch/?selectedNode=LT1_1&amp;Y=660000&amp;X=190000&amp;zoom=1&amp;bgLayer=ch.swisstopo.pixelkarte-farbe&amp;layers=ch.are.alpenkonvention&amp;layers_opacity=0.6&amp;layers_visibility=true&amp;lang=de</linkUrl>
   <linkProtocol>WWW:LINK</linkProtocol>
@@ -715,7 +715,7 @@
             
             "function":"information",
             "applicationProfile":"",
-            "group": 5
+            "group": 7
             }</link>
   <linkUrl>http://www.admin.ch/ch/d/sr/0_700_1/app1.html</linkUrl>
   <linkProtocol>WWW:LINK</linkProtocol>
@@ -734,7 +734,7 @@
             
             "function":"information",
             "applicationProfile":"",
-            "group": 6
+            "group": 8
             }</link>
   <recordGroup>fbafbbd4-4622-445f-8e07-1ad4f6a61c55</recordGroup>
 </doc>
