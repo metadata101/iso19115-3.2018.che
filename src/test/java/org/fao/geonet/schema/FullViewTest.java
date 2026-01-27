@@ -89,6 +89,20 @@ public class FullViewTest {
         TestSupport.assertGeneratedDataByteMatchExpected("asiatischeHornisse-19115-3.che-full-view.html", actual, GENERATE_EXPECTED_FILE);
     }
 
+    @Test
+    public void asiatischeHornisseIta() throws Exception {
+        Path xslFile = getResourceInsideSchema("formatter/xsl-view/view.xsl");
+        Path xmlFile = getResource("asiatischeHornisse-19115-3.che-full-view-form-ita.xml");
+        Element source = Xml.loadFile(xmlFile);
+
+        Element transformed = Xml.transform(source, xslFile, Map.of("view", "advanced", "approved", "true", "root", "div"));
+
+
+        XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
+        String actual = xmlOutputter.outputString(new Document(transformed));
+        TestSupport.assertGeneratedDataByteMatchExpected("asiatischeHornisse-19115-3.che-full-view-ita.html", actual, GENERATE_EXPECTED_FILE);
+    }
+
     private static Path addRequiredSchemasAndDisableConflictingOne() throws URISyntaxException {
         return getResource("config/schemaplugin-uri-catalog.xml");
     }

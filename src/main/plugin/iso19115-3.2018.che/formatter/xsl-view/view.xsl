@@ -859,10 +859,9 @@
           <xsl:apply-templates mode="render-value"
                                select="*/cit:description"/>
         </xsl:variable>
-
         <xsl:choose>
-          <xsl:when test="string(*/cit:linkage/gco:CharacterString)">
-            <xsl:variable name="url">
+          <xsl:when test="string(*/cit:linkage/gco:CharacterString) or string(*/cit:linkage/lan:PT_FreeText/lan:textGroup/lan:LocalisedCharacterString[@locale=$langId])">
+          <xsl:variable name="url">
               <xsl:apply-templates mode="render-value" select="*/cit:linkage"/>
             </xsl:variable>
             <a href="{$url}" target="_blank">
