@@ -116,6 +116,9 @@ I dati si basano sul modello di geodati minimo (MGDM) «Inventario dei prelievi 
         <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral">{"type":"Polygon","coordinates":[[[5.956088,47.808488],[10.492036,47.808488],[10.492036,45.817970],[5.956088,45.817970],[5.956088,47.808488]]]}</dcat:bbox>
       </rdf:Description>
     </dct:spatial>
+    <dct:accrualPeriodicity>
+      <dct:Frequency rdf:about="http://publications.europa.eu/resource/authority/frequency/UNKNOWN" />
+    </dct:accrualPeriodicity>
     <dcat:endpointURL rdf:resource="https://geodienste.ch/db/grundwasservorkommen_v2_0/deu?" />
     <dcat:endpointURL rdf:resource="https://geodienste.ch/db/grundwasservorkommen_v2_0/deu?" />
     <dcat:endpointURL rdf:resource="https://geodienste.ch/db/grundwasservorkommen_v2_0/deu?" />

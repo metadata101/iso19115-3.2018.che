@@ -395,6 +395,13 @@ I dati si basano sul modello di geodati minimo (MGDM) «Inventario dei prelievi 
           </gex:geographicElement>
         </gex:EX_Extent>
       </mri:extent>
+      <mri:resourceMaintenance>
+        <che:CHE_MD_MaintenanceInformation gco:isoType="mmi:MD_MaintenanceInformation">
+          <mmi:maintenanceAndUpdateFrequency>
+            <mmi:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_MaintenanceFrequencyCode" codeListValue="unknown" />
+          </mmi:maintenanceAndUpdateFrequency>
+        </che:CHE_MD_MaintenanceInformation>
+      </mri:resourceMaintenance>
       <mri:descriptiveKeywords>
         <mri:MD_Keywords>
           <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">

@@ -388,7 +388,17 @@
           <xsl:apply-templates select="gmd:temporalResolution" mode="from19139to19115-3.2018"/>
           <xsl:apply-templates select="gmd:topicCategory[.//gmd:MD_TopicCategoryCode[not(contains(.,'_'))]]" mode="from19139to19115-3.2018"/>
           <xsl:apply-templates select="gmd:extent | srvold:extent" mode="from19139to19115-3.2018"/>
-          <xsl:apply-templates select="gmd:resourceMaintenance" mode="from19139to19115-3.2018"/>
+
+          <xsl:choose>
+            <xsl:when test="gmd:resourceMaintenance">
+              <xsl:apply-templates select="gmd:resourceMaintenance" mode="from19139to19115-3.2018"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <mri:resourceMaintenance>
+                <xsl:apply-templates select="document('')/*/xsl:variable[@name='emptyMaintenanceInformation']/*" mode="from19139to19115-3.2018"/>
+              </mri:resourceMaintenance>
+            </xsl:otherwise>
+          </xsl:choose>
           <xsl:apply-templates select="gmd:graphicOverview" mode="from19139to19115-3.2018"/>
           <xsl:apply-templates select="gmd:resourceFormat" mode="from19139to19115-3.2018"/>
           <xsl:apply-templates select="gmd:descriptiveKeywords" mode="from19139to19115-3.2018"/>
@@ -747,4 +757,7 @@
   <xsl:template match="gmd:MD_Format/gmd:name" priority="5" mode="from19139to19115-3.2018"/>
   <xsl:template match="gmd:MD_Format/gmd:specification" priority="5" mode="from19139to19115-3.2018"/>
   <xsl:template match="gmd:MD_Format/gmd:version" priority="5" mode="from19139to19115-3.2018"/>
+  <xsl:variable name="emptyMaintenanceInformation">
+    <oldche:CHE_MD_MaintenanceInformation/>
+  </xsl:variable>
 </xsl:stylesheet>
