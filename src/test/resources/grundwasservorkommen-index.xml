@@ -39,6 +39,7 @@
       }</contact>
   <cl_resourceScope type="object">{"key":"service","default":"mcc:MD_ScopeCode--service--ger","langger":"mcc:MD_ScopeCode--service--ger","langfre":"mcc:MD_ScopeCode--service--fre","langeng":"mcc:MD_ScopeCode--service--eng","langita":"mcc:MD_ScopeCode--service--ita","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_ScopeCode","text":"service"}</cl_resourceScope>
   <cl_numberType type="object">{"key":"voice","default":"cit:CI_TelephoneTypeCode--voice--ger","langger":"cit:CI_TelephoneTypeCode--voice--ger","langfre":"cit:CI_TelephoneTypeCode--voice--fre","langeng":"cit:CI_TelephoneTypeCode--voice--eng","langita":"cit:CI_TelephoneTypeCode--voice--ita","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#CI_TelephoneTypeCode","text":"voice"}</cl_numberType>
+  <cl_maintenanceAndUpdateFrequency type="object">{"key":"unknown","default":"mmi:MD_MaintenanceFrequencyCode--unknown--ger","langger":"mmi:MD_MaintenanceFrequencyCode--unknown--ger","langfre":"mmi:MD_MaintenanceFrequencyCode--unknown--fre","langeng":"mmi:MD_MaintenanceFrequencyCode--unknown--eng","langita":"mmi:MD_MaintenanceFrequencyCode--unknown--ita","link":"http:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#MD_MaintenanceFrequencyCode"}</cl_maintenanceAndUpdateFrequency>
   <cl_type type="object">{"key":"theme","default":"mri:MD_KeywordTypeCode--theme--ger","langger":"mri:MD_KeywordTypeCode--theme--ger","langfre":"mri:MD_KeywordTypeCode--theme--fre","langeng":"mri:MD_KeywordTypeCode--theme--eng","langita":"mri:MD_KeywordTypeCode--theme--ita","link":"http:\/\/www.isotc211.org\/2005\/resources\/codeList.xml#MD_KeywordTypeCode"}</cl_type>
   <cl_couplingType type="object">{"key":"tight","default":"srv:SV_CouplingType--tight--ger","langger":"srv:SV_CouplingType--tight--ger","langfre":"srv:SV_CouplingType--tight--fre","langeng":"srv:SV_CouplingType--tight--eng","langita":"srv:SV_CouplingType--tight--ita","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#SV_CouplingType","text":"tight"}</cl_couplingType>
   <cl_distributedComputingPlatform type="object">{"key":"WebServices","default":"srv:DCPList--WebServices--ger","langger":"srv:DCPList--WebServices--ger","langfre":"srv:DCPList--WebServices--fre","langeng":"srv:DCPList--WebServices--eng","langita":"srv:DCPList--WebServices--ita","link":"https:\/\/standards.iso.org\/iso\/19115\/resources\/Codelists\/cat\/codelists.xml#DCPList","text":"WebServices"}</cl_distributedComputingPlatform>
@@ -368,6 +369,10 @@
                               "thesaurus": "geonetwork.thesaurus.local.theme.geocat.ch"
                             }
                           }</indexingErrorMsg>
+  <maintenance type="object">{
+            "frequency": "unknown"
+            
+            }</maintenance>
   <hasBoundingPolygon>true</hasBoundingPolygon>
   <extentDescriptionObject type="object">{"default":"Schweiz", "langger":"Schweiz", "langfre":"Suisse", "langeng":"Switzerland", "langita":"Svizzera"}</extentDescriptionObject>
   <geom type="object">{"type": "Polygon","coordinates": [[[5.956088,45.817970],[10.492036,45.817970],[10.492036,47.808488],[5.956088,47.808488],[5.956088,45.817970]]]}</geom>

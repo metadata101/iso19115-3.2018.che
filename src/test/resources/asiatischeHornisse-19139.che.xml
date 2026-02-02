@@ -266,9 +266,6 @@
       </gmd:pointOfContact>
       <gmd:resourceMaintenance>
         <che:CHE_MD_MaintenanceInformation gco:isoType="gmd:MD_MaintenanceInformation">
-          <gmd:maintenanceAndUpdateFrequency>
-            <gmd:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="continual" />
-          </gmd:maintenanceAndUpdateFrequency>
           <gmd:updateScopeDescription />
           <gmd:maintenanceNote xsi:type="gmd:PT_FreeText_PropertyType">
             <gco:CharacterString>Aktualisierung bei Bedarf</gco:CharacterString>

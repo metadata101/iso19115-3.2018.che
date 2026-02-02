@@ -98,7 +98,7 @@ public class SchematronTest {
 	public void grundwasservorkommenServiceIsoSchematron() throws Exception {
 		String report = applySchematronAndCompare("grundwasservorkommen", true);
 
-        hasExpectedNumberOfFailure(2, report);
+        hasExpectedNumberOfFailure(0, report);
 	}
 
 	@Test

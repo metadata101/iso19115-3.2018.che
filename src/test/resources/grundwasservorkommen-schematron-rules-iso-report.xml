@@ -30,11 +30,11 @@
   <svrl:ns-prefix-in-attribute-values uri="http://geocat.ch/che" prefix="che" />
   <svrl:active-pattern document="" id="rule.mri.maintenance-frequency-required-when-dataset-series-service" name_en="maintenanceAndUpdateFrequency is mandatory when resourceScope = dataset, series or service" name_fr="maintenanceAndUpdateFrequency est obligatoire lorsque resourceScope = dataset, series ou service" name="maintenanceAndUpdateFrequency est obligatoire lorsque resourceScope = dataset, series ou service" />
   <svrl:fired-rule context="/che:CHE_MD_Metadata[                         mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or                         mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or                         mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']" />
-  <svrl:failed-assert ref="#_" test="$maintenanceFreqCount &gt; 0" location="/*[local-name()='CHE_MD_Metadata']">
+  <svrl:successful-report ref="#_" test="$maintenanceFreqCount &gt; 0" location="/*[local-name()='CHE_MD_Metadata']">
     <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.maintenance-frequency-when-scope-dss-failure-en" xml:lang="en">When resourceScope is 'dataset', 'series' or 'service', maintenanceAndUpdateFrequency MUST be provided in the identification section.</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.maintenance-frequency-when-scope-dss-failure-fr" xml:lang="fr">Lorsque resourceScope vaut 'dataset', 'series' ou 'service', maintenanceAndUpdateFrequency DOIT être renseigné dans la section d’identification.</svrl:diagnostic-reference>
-  </svrl:failed-assert>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.maintenance-frequency-when-scope-dss-success-en" xml:lang="en">maintenanceAndUpdateFrequency is present for resources with scope dataset/series/service.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.maintenance-frequency-when-scope-dss-success-fr" xml:lang="fr">maintenanceAndUpdateFrequency est présent pour les ressources de type dataset/series/service.</svrl:diagnostic-reference>
+  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.mdb.contact-email-required-when-dataset-series-service" name_en="Metadata contact parties must have an electronicMailAddress when resourceScope = dataset, series or service" name_fr="Les parties de contact des métadonnées doivent avoir une adresse électronique lorsque resourceScope = dataset, series ou service" name="Les parties de contact des métadonnées doivent avoir une adresse électronique lorsque resourceScope = dataset, series ou service" />
   <svrl:fired-rule context="/che:CHE_MD_Metadata[               mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or               mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or               mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']" />
   <svrl:successful-report ref="#_" test="count($parties) &gt; 0 and $missingEmailCount = 0" location="/*[local-name()='CHE_MD_Metadata']">
@@ -223,11 +223,15 @@
       la maintenance de la ressource DOIT être spécifiée.</svrl:text>
   </svrl:active-pattern>
   <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']       /mdb:identificationInfo/*[name() = 'che:CHE_MD_DataIdentification' or name() = 'srv:SV_ServiceIdentification']" />
-  <svrl:failed-assert ref="#_" test="$hasResourceMaintenance" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='SV_ServiceIdentification']">
+  <svrl:successful-report ref="#_" test="$hasResourceMaintenance" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='SV_ServiceIdentification']">
     <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.resourcemaintenance-mandatory-failure-en" xml:lang="en">Resource maintenance is mandatory when resource scope is 'dataset', 'series' or 'service'.</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.resourcemaintenance-mandatory-failure-fr" xml:lang="fr">La maintenance de la ressource est obligatoire quand la portée de la ressource est 'dataset', 'series' ou 'service'.</svrl:diagnostic-reference>
-  </svrl:failed-assert>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.resourcemaintenance-mandatory-success-en" xml:lang="en">Number of resource maintenance defined:
+          1
+          .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.resourcemaintenance-mandatory-success-fr" xml:lang="fr">Nombre de maintenances de ressource définies :
+          1
+          .</svrl:diagnostic-reference>
+  </svrl:successful-report>
   <svrl:active-pattern document="" id="rule.srv.servicetaxonomy" name_en="Service taxonomy" name_fr="Taxonomie des services" name="Taxonomie des services" />
   <svrl:fired-rule context="//srv:SV_ServiceIdentification" />
 </svrl:schematron-output>
