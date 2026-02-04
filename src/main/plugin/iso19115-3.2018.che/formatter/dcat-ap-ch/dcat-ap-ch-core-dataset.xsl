@@ -130,43 +130,55 @@
     <xsl:variable name="candidateOrgs" select="local:get-candidate-org($metadata)"/>
     
     <xsl:variable name="orgName" select="normalize-space($candidateOrgs/cit:name/gco:CharacterString)"/>
+    <xsl:variable name="orgAcronym" select="normalize-space($candidateOrgs/che:organisationAcronym/gco:CharacterString)"/>
     
-    <!-- First: try to find exact match in organization mapping -->
-    <xsl:variable name="mappedSlug" select="$orgMapping[@geocatName = $orgName]/@opendataSlug"/>
-    
-    <!-- If no exact match, try with base name (before comma) -->
-    <xsl:variable name="baseOrgName" select="normalize-space(tokenize($orgName, ',')[1])"/>
-    <xsl:variable name="baseMappedSlug" select="
-      if ($mappedSlug = '' and contains($orgName, ',')) 
-      then $orgMapping[@geocatName = $baseOrgName]/@opendataSlug
-      else ''
-    "/>
+    <!-- Step 1: Try to find match in organization mapping (exact or contains) -->
+    <xsl:variable name="mappedSlug">
+      <xsl:choose>
+        <!-- Try exact match first -->
+        <xsl:when test="$orgMapping[@geocatName = $orgName]">
+          <xsl:value-of select="$orgMapping[@geocatName = $orgName]/@opendataSlug"/>
+        </xsl:when>
+        <!-- Try base name (before comma) exact match -->
+        <xsl:when test="contains($orgName, ',')">
+          <xsl:variable name="baseOrgName" select="normalize-space(tokenize($orgName, ',')[1])"/>
+          <xsl:choose>
+            <!-- First try exact match with base name -->
+            <xsl:when test="$orgMapping[@geocatName = $baseOrgName]">
+              <xsl:value-of select="$orgMapping[@geocatName = $baseOrgName]/@opendataSlug"/>
+            </xsl:when>
+            <!-- Then try contains match: check if any geocatName contains the baseOrgName -->
+            <xsl:otherwise>
+              <xsl:value-of select="$orgMapping[contains(@geocatName, $baseOrgName)][1]/@opendataSlug"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:when>
+        <!-- Try contains match: check if any geocatName contains the orgName -->
+        <xsl:otherwise>
+          <xsl:value-of select="$orgMapping[contains(@geocatName, $orgName)][1]/@opendataSlug"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
     
     <xsl:choose>
+      <!-- Use mapping if found -->
       <xsl:when test="$mappedSlug != ''">
-        <!-- Use mapped slug from organization-mapping.xml (exact match) -->
         <xsl:value-of select="$mappedSlug"/>
       </xsl:when>
-      <xsl:when test="$baseMappedSlug != ''">
-        <!-- Use mapped slug from organization-mapping.xml (base name match) -->
-        <xsl:value-of select="$baseMappedSlug"/>
+      
+      <!-- Step 2: Use acronym if available and not empty -->
+      <xsl:when test="$orgAcronym != ''">
+        <xsl:value-of select="local:slugify($orgAcronym)"/>
       </xsl:when>
+      
+      <!-- Step 3: Fallback to organization name -->
       <xsl:otherwise>
-        <!-- Fallback: generate slug from base organization name (before comma) -->
-        <xsl:variable name="nameForSlug" select="if (contains($orgName, ',')) then $baseOrgName else $orgName"/>
-        <xsl:variable name="orgAcronym" select="normalize-space($candidateOrgs/che:organisationAcronym/gco:CharacterString)"/>
-        
-        <!-- Normalize organization name to slug-friendly text -->
-        <xsl:variable name="slug" select="local:slugify($nameForSlug)"/>
-        
-        <!-- Add acronym suffix if present -->
-        <xsl:variable name="slugWithAcronym" select="
-          if ($orgAcronym != '') 
-          then concat($slug, '-', local:slugify($orgAcronym))
-          else $slug
+        <xsl:variable name="baseOrgName" select="
+          if (contains($orgName, ',')) 
+          then normalize-space(tokenize($orgName, ',')[1])
+          else $orgName
         "/>
-        
-        <xsl:value-of select="$slugWithAcronym"/>
+        <xsl:value-of select="local:slugify($baseOrgName)"/>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:function>
