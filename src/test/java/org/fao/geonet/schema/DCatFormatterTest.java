@@ -66,6 +66,11 @@ public class DCatFormatterTest {
 		transformToDCatAndCompare("eu-dcat-ap", "grundwasservorkommen");
 	}
 
+	@Test
+	public void chDcatAp() throws Exception {
+		transformToDCatAndCompare("dcat-ap-ch", "grundwasservorkommen");
+	}
+
 	private void transformToDCatAndCompare(String profile, String mdNameRoot) throws Exception {
 		Path xslFile = getResourceInsideSchema("formatter/" + profile + "/view.xsl");
 		Path xmlFile = getResource(mdNameRoot + "-19115-3.che.xml");
