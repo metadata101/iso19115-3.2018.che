@@ -165,10 +165,14 @@
               <target>
                  <mkdir dir="target/sample-data"/>
                  <defaultexcludes add="**/.DS_Store"/>
-                 <zip destfile="target/sample-data/service_record.mef"
-                   basedir="src/main/plugin/iso19115-3.2018.che/sample-data/service_record"
+                 <zip destfile="target/sample-data/commented-eCH-0271-de.mef"
+                   basedir="src/main/plugin/iso19115-3.2018.che/sample-data/3afaf269-3259-4318-9c1f-203ecd1240ba"
                    whenempty="create"
                    excludes="**/.keepme"/>
+                <zip destfile="target/sample-data/commented-eCH-0271-fr.mef"
+                     basedir="src/main/plugin/iso19115-3.2018.che/sample-data/b2f5f840-7973-452f-ae9b-fb5a7c2949bb"
+                     whenempty="create"
+                     excludes="**/.keepme"/>
               </target>
             </configuration>
             <goals><goal>run</goal></goals>
