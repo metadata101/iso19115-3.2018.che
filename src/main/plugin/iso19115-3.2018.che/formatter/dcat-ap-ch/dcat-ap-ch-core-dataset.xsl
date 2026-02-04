@@ -126,30 +126,38 @@
   <xsl:function name="local:get-publisher-slug">
     <xsl:param name="metadata"/>
     
-    <!-- Get first candidate organization (priority: publisher > owner > pointOfContact > metadata contact) -->
-    <xsl:variable name="candidateOrgs" select="
-      ($metadata/mdb:identificationInfo/*/mri:pointOfContact[*/cit:role/*/@codeListValue = 'publisher']/*/cit:party/che:CHE_CI_Organisation,
-       $metadata/mdb:identificationInfo/*/mri:pointOfContact[*/cit:role/*/@codeListValue = 'owner']/*/cit:party/che:CHE_CI_Organisation,
-       $metadata/mdb:identificationInfo/*/mri:pointOfContact[*/cit:role/*/@codeListValue = 'pointOfContact']/*/cit:party/che:CHE_CI_Organisation,
-       $metadata/mdb:contact/*/cit:party/che:CHE_CI_Organisation)[1]
-    "/>
+    <!-- Get first candidate organization using reusable function -->
+    <xsl:variable name="candidateOrgs" select="local:get-candidate-org($metadata)"/>
     
     <xsl:variable name="orgName" select="normalize-space($candidateOrgs/cit:name/gco:CharacterString)"/>
     
     <!-- First: try to find exact match in organization mapping -->
     <xsl:variable name="mappedSlug" select="$orgMapping[@geocatName = $orgName]/@opendataSlug"/>
     
+    <!-- If no exact match, try with base name (before comma) -->
+    <xsl:variable name="baseOrgName" select="normalize-space(tokenize($orgName, ',')[1])"/>
+    <xsl:variable name="baseMappedSlug" select="
+      if ($mappedSlug = '' and contains($orgName, ',')) 
+      then $orgMapping[@geocatName = $baseOrgName]/@opendataSlug
+      else ''
+    "/>
+    
     <xsl:choose>
       <xsl:when test="$mappedSlug != ''">
-        <!-- Use mapped slug from organization-mapping.xml -->
+        <!-- Use mapped slug from organization-mapping.xml (exact match) -->
         <xsl:value-of select="$mappedSlug"/>
       </xsl:when>
+      <xsl:when test="$baseMappedSlug != ''">
+        <!-- Use mapped slug from organization-mapping.xml (base name match) -->
+        <xsl:value-of select="$baseMappedSlug"/>
+      </xsl:when>
       <xsl:otherwise>
-        <!-- Fallback: generate slug from organization name -->
+        <!-- Fallback: generate slug from base organization name (before comma) -->
+        <xsl:variable name="nameForSlug" select="if (contains($orgName, ',')) then $baseOrgName else $orgName"/>
         <xsl:variable name="orgAcronym" select="normalize-space($candidateOrgs/che:organisationAcronym/gco:CharacterString)"/>
         
         <!-- Normalize organization name to slug-friendly text -->
-        <xsl:variable name="slug" select="local:slugify($orgName)"/>
+        <xsl:variable name="slug" select="local:slugify($nameForSlug)"/>
         
         <!-- Add acronym suffix if present -->
         <xsl:variable name="slugWithAcronym" select="
@@ -172,8 +180,8 @@
     <xsl:for-each select="$nodes/gco:CharacterString[normalize-space() != '']">
       <xsl:variable name="defaultLang" select="ancestor::che:CHE_MD_Metadata/mdb:defaultLocale/*/lan:language/*/@codeListValue"/>
       <xsl:variable name="langCode" select="local:iso639-to-2letter($defaultLang)"/>
-      <!-- Skip unsupported language codes (conversion returns 'und' for unmapped ISO 639-2 codes) -->
-      <xsl:if test="$langCode != 'und'">
+      <!-- Skip unsupported language codes (conversion returns empty string for unmapped ISO 639-2 codes) -->
+      <xsl:if test="$langCode != ''">
         <xsl:element name="{$property}">
           <xsl:attribute name="xml:lang" select="$langCode"/>
           <xsl:value-of select="normalize-space(.)"/>
@@ -190,7 +198,7 @@
       "/>
       <xsl:variable name="langCode" select="local:iso639-to-2letter($langCode3)"/>
       <!-- Skip undefined languages -->
-      <xsl:if test="$langCode != 'und'">
+      <xsl:if test="$langCode != ''">
         <xsl:element name="{$property}">
           <xsl:attribute name="xml:lang" select="$langCode"/>
           <xsl:value-of select="normalize-space(.)"/>
@@ -312,11 +320,11 @@
             <!-- Langues (du dataset parent) -->
             <xsl:variable name="defaultLang" select="ancestor::che:CHE_MD_Metadata/mdb:defaultLocale/*/lan:language/*/@codeListValue"/>
             <xsl:if test="$defaultLang != ''">
-              <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/{upper-case($defaultLang)}"/>
+              <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/{local:iso639-to-eu($defaultLang)}"/>
             </xsl:if>
             <xsl:for-each select="ancestor::che:CHE_MD_Metadata/mdb:otherLocale/*/lan:language/*/@codeListValue">
               <xsl:if test=". != $defaultLang">
-                <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/{upper-case(.)}"/>
+                <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/{local:iso639-to-eu(.)}"/>
               </xsl:if>
             </xsl:for-each>
           </dcat:Distribution>
@@ -461,13 +469,13 @@
     <!-- Default language -->
     <xsl:variable name="defaultLang" select="mdb:defaultLocale/*/lan:language/*/@codeListValue"/>
     <xsl:if test="$defaultLang != ''">
-      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/{upper-case($defaultLang)}"/>
+      <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/{local:iso639-to-eu($defaultLang)}"/>
     </xsl:if>
     
     <!-- Other languages -->
     <xsl:for-each select="mdb:otherLocale/*/lan:language/*/@codeListValue">
       <xsl:if test=". != $defaultLang">
-        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/{upper-case(.)}"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/{local:iso639-to-eu(.)}"/>
       </xsl:if>
     </xsl:for-each>
   </xsl:template>
@@ -479,7 +487,7 @@
       <xsl:for-each select="gco:CharacterString[normalize-space() != '']">
         <xsl:variable name="defaultLang" select="ancestor::che:CHE_MD_Metadata/mdb:defaultLocale/*/lan:language/*/@codeListValue"/>
         <xsl:variable name="langCode" select="local:iso639-to-2letter($defaultLang)"/>
-        <xsl:if test="$langCode != 'und'">
+        <xsl:if test="$langCode != ''">
           <dcat:keyword xml:lang="{$langCode}">
             <xsl:value-of select="normalize-space(.)"/>
           </dcat:keyword>
@@ -494,7 +502,7 @@
           ancestor::che:CHE_MD_Metadata/mdb:otherLocale/*[@id = $localeId]/lan:language/*/@codeListValue
         "/>
         <xsl:variable name="langCode" select="local:iso639-to-2letter($langCode3)"/>
-        <xsl:if test="$langCode != 'und'">
+        <xsl:if test="$langCode != ''">
           <dcat:keyword xml:lang="{$langCode}">
             <xsl:value-of select="normalize-space(.)"/>
           </dcat:keyword>
@@ -885,7 +893,25 @@
       <xsl:when test="$code = 'eng'">en</xsl:when>
       <xsl:when test="$code = 'roh'">rm</xsl:when>
       <xsl:when test="string-length($code) = 2"><xsl:value-of select="$code"/></xsl:when>
-      <xsl:otherwise>und</xsl:otherwise>
+      <xsl:otherwise></xsl:otherwise>
+    </xsl:choose>
+  </xsl:function>
+
+  <!-- ISO 639-2 to EU bibliographic codes (ISO 639-2/B) -->
+  <xsl:function name="local:iso639-to-eu">
+    <xsl:param name="code"/>
+    
+    <xsl:variable name="normalizedCode" select="lower-case($code)"/>
+    
+    <xsl:choose>
+      <xsl:when test="$normalizedCode = 'ger'">DEU</xsl:when>
+      <xsl:when test="$normalizedCode = 'deu'">DEU</xsl:when>
+      <xsl:when test="$normalizedCode = 'fre'">FRA</xsl:when>
+      <xsl:when test="$normalizedCode = 'fra'">FRA</xsl:when>
+      <xsl:when test="$normalizedCode = 'ita'">ITA</xsl:when>
+      <xsl:when test="$normalizedCode = 'eng'">ENG</xsl:when>
+      <xsl:when test="$normalizedCode = 'roh'">ROH</xsl:when>
+      <xsl:otherwise><xsl:value-of select="upper-case($normalizedCode)"/></xsl:otherwise>
     </xsl:choose>
   </xsl:function>
 
