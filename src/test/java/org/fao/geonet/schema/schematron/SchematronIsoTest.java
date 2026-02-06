@@ -1,5 +1,6 @@
-package org.fao.geonet.schema;
+package org.fao.geonet.schema.schematron;
 
+import org.fao.geonet.schema.TestSupport;
 import org.fao.geonet.utils.IO;
 import org.fao.geonet.utils.TransformerFactoryFactory;
 import org.fao.geonet.utils.Xml;
@@ -27,7 +28,7 @@ import static org.fao.geonet.schema.TestSupport.getResourceInsideSchema;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
-public class SchematronTest {
+public class SchematronIsoTest {
 
 	private static final boolean GENERATE_EXPECTED_FILE = false;
 
@@ -59,50 +60,52 @@ public class SchematronTest {
 	}
 
 	@Test
-	public void amphibiansIsoSchematron() throws Exception {
+	public void amphibians() throws Exception {
 		String report = applySchematronAndCompare("amphibians", false);
 
         hasExpectedNumberOfFailure(2, report);
 	}
 
 	@Test
-	public void amphibiansIsoSchematronFailure() throws Exception {
-		String report = applySchematronAndCompare("amphibians-iso-schematron-failure", false);
+	public void amphibiansFailure() throws Exception {
+		Path xmlFile = getResource("schematron/amphibians-iso-schematron-failure-19115-3.che.xml");
+		Element md = Xml.loadFile(xmlFile);
+		String report = applySchematronAndCompare("amphibians-iso-schematron-failure", false, md);
 
         hasExpectedNumberOfFailure(15, report);
 	}
 
 
 	@Test
-	public void amphibiansWithUpdatedFixedInfoIsoSchematron() throws Exception {
+	public void amphibiansWithUpdatedFixedInfo() throws Exception {
 		String report = applySchematronAndCompare("amphibians-with-updated-fixed-info", false);
 
 		hasExpectedNumberOfFailure(1, report);
 	}
 
 	@Test
-	public void veterinariansIsoSchematron() throws Exception {
+	public void veterinarians() throws Exception {
 		String report = applySchematronAndCompare("veterinarians", true);
 
 		assertFalse(report.contains("failure"));
 	}
 
 	@Test
-	public void fiktiverDarstellungskatalogIsoSchematron() throws Exception {
+	public void fiktiverDarstellungskatalog() throws Exception {
 		String report = applySchematronAndCompare("fiktiverDarstellungskatalogMitURL", true);
 
         hasExpectedNumberOfFailure(1, report);
     }
 
     @Test
-	public void grundwasservorkommenServiceIsoSchematron() throws Exception {
+	public void grundwasservorkommenService() throws Exception {
 		String report = applySchematronAndCompare("grundwasservorkommen", true);
 
         hasExpectedNumberOfFailure(0, report);
 	}
 
 	@Test
-	public void schematronForEditor() throws Exception {
+	public void forEditor() throws Exception {
         String rootName = "amphibians-19115-3.che-raw-french-inflated-for-edition";
         Path xmlFile = getResource(rootName + ".xml");
         Element md = Xml.selectElement(Xml.loadFile(xmlFile), "che:CHE_MD_Metadata", List.of(Namespace.getNamespace("che", "http://geocat.ch/che")));
@@ -136,7 +139,7 @@ public class SchematronTest {
 
 		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
 		String actual = xmlOutputter.outputString(new Document(report));
-		TestSupport.assertGeneratedDataByteMatchExpected(mdNameRoot + "-schematron-rules-iso-report.xml", actual, GENERATE_EXPECTED_FILE);
+		TestSupport.assertGeneratedDataByteMatchExpected("schematron/" + mdNameRoot + "-schematron-rules-iso-report.xml", actual, GENERATE_EXPECTED_FILE);
 		return actual;
 	}
 
