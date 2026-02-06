@@ -42,5 +42,12 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.basicgeodata.basicgeodataid-mandatory-failure-en" xml:lang="en">When basicGeodata is 'true', basicGeodataID must be present.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.basicgeodata.basicgeodataid-mandatory-failure-fr" xml:lang="fr">Lorsque basicGeodata vaut 'true', basicGeodataID doit être présent.</svrl:diagnostic-reference>
   </svrl:failed-assert>
+  <svrl:active-pattern document="" id="rule.che.topic-subtopic-consistency" name_en="Ensure consistency between topicCategory and subTopicCategory (eCH-0166)" name_fr="Assurer la cohérence entre topicCategory et subTopicCategory (eCH-0166)" name="Assurer la cohérence entre topicCategory et subTopicCategory (eCH-0166)" />
+  <svrl:fired-rule context="//che:CHE_MD_DataIdentification" />
+  <svrl:successful-report ref="#_" test="count(che:subTopicCategory/che:CHE_MD_SubTopicCategoryCode) &gt; 0 and $invalidSubCount = 0" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.topic-subtopic-consistency-success-en" xml:lang="en">Topic categories and sub topic categories are consistent according to eCH-0166.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.topic-subtopic-consistency-success-fr" xml:lang="fr">Les catégories et sous-catégories sont cohérentes conformément à eCH-0166.</svrl:diagnostic-reference>
+  </svrl:successful-report>
 </svrl:schematron-output>
 
