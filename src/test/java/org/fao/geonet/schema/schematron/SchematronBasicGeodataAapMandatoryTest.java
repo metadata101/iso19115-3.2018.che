@@ -59,21 +59,28 @@ public class SchematronBasicGeodataAapMandatoryTest {
 	}
 
 	@Test
-	public void amphibiansIsoSchematron() throws Exception {
+	public void amphibians() throws Exception {
 		String report = applySchematronAndCompare("amphibians", false);
 
-        hasExpectedNumberOfFailure(0, report);
+        hasExpectedNumberOfFailure(1, report);
 	}
 
 	@Test
-	public void amphibiansIsoSchematronNoGeodataInformation() throws Exception {
+	public void asiatischeHornisse() throws Exception {
+		String report = applySchematronAndCompare("asiatischeHornisse", false);
+
+		hasExpectedNumberOfFailure(0, report);
+	}
+
+	@Test
+	public void amphibiansNoGeodataInformation() throws Exception {
 		Path xmlFile = getResource("amphibians" + "-19115-3.che.xml");
 		Element md = Xml.loadFile(xmlFile);
 		Xml.selectElement(md, "*//che:basicGeodataInformation").detach();
 
 		String report = applySchematronAndCompare("amphibians-no-geodataInfo", false, md);
 
-		hasExpectedNumberOfFailure(1, report);
+		hasExpectedNumberOfFailure(2, report);
 	}
 
 	private String applySchematronAndCompare(String mdNameRoot, boolean forceCreationDate) throws Exception {
