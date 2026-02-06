@@ -71,8 +71,6 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrl.statement-when-dataset-success-en" xml:lang="en">Lineage statement is present for dataset resources.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrl.statement-when-dataset-success-fr" xml:lang="fr">L’élément d’historique (statement) est présent pour les jeux de données.</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.che.topic-subtopic-consistency" name_en="Ensure consistency between topicCategory and subTopicCategory (eCH-0166)" name_fr="Assurer la cohérence entre topicCategory et subTopicCategory (eCH-0166)" name="Assurer la cohérence entre topicCategory et subTopicCategory (eCH-0166)" />
-  <svrl:fired-rule context="//che:CHE_MD_DataIdentification" />
   <svrl:active-pattern document="" id="rule.gex.extenthasoneelement" name_en="Extent MUST have one description or one geographic,&#xA;      temporal or vertical element" name_fr="Une étendue DOIT avoir une description ou un&#xA;      élément géographique, temporel ou vertical" name="Une étendue DOIT avoir une description ou un&#xA;      élément géographique, temporel ou vertical" />
   <svrl:fired-rule context="//gex:EX_Extent" />
   <svrl:successful-report ref="#_" test="count($description)" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='extent']/*[local-name()='EX_Extent']">

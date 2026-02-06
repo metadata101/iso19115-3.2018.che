@@ -37,6 +37,7 @@
     <sch:diagnostic id="rule.basicgeodata.basicgeodatainformation-mandatory-success-fr" xml:lang="fr">
       basicGeodataInformation est présent lorsque basicGeodata vaut 'true'.
     </sch:diagnostic>
+
     <sch:diagnostic id="rule.basicgeodata.basicgeodataid-mandatory-failure-en" xml:lang="en">
       When basicGeodata is 'true', basicGeodataID must be present.
     </sch:diagnostic>
@@ -49,6 +50,20 @@
     <sch:diagnostic id="rule.basicgeodata.basicgeodataid-mandatory-success-fr" xml:lang="fr">
       basicGeodataID est présent lorsque basicGeodata vaut 'true'.
     </sch:diagnostic>
+
+    <sch:diagnostic id="rule.che.topic-subtopic-consistency-failure-en" xml:lang="en">
+      Inconsistent topic and subTopicCategory: each che:CHE_MD_SubTopicCategoryCode must start with the selected ISO topicCategory (prefix before '_').
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.topic-subtopic-consistency-failure-fr" xml:lang="fr">
+      Incohérence entre la catégorie et la sous-catégorie : chaque che:CHE_MD_SubTopicCategoryCode doit commencer par la topicCategory sélectionnée (préfixe avant « _ »).
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.topic-subtopic-consistency-success-en" xml:lang="en">
+      Topic categories and sub topic categories are consistent according to eCH-0166.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.topic-subtopic-consistency-success-fr" xml:lang="fr">
+      Les catégories et sous-catégories sont cohérentes conformément à eCH-0166.
+    </sch:diagnostic>
+
   </sch:diagnostics>
 
   <sch:pattern id="rule.basicgeodata.basicgeodatainformation-mandatory">
@@ -73,4 +88,19 @@
                  diagnostics="rule.basicgeodata.basicgeodataid-mandatory-success-en rule.basicgeodata.basicgeodataid-mandatory-success-fr"/>
     </sch:rule>
   </sch:pattern>
+
+    <sch:pattern id="rule.che.topic-subtopic-consistency">
+      <sch:title xml:lang="en">Ensure consistency between topicCategory and subTopicCategory (eCH-0166)</sch:title>
+      <sch:title xml:lang="fr">Assurer la cohérence entre topicCategory et subTopicCategory (eCH-0166)</sch:title>
+      <sch:rule context="//che:CHE_MD_DataIdentification">
+        <sch:let name="topicCodes" value="mri:topicCategory/mri:MD_TopicCategoryCode/text()"/>
+        <sch:let name="invalidSubCount"
+                 value="count(che:subTopicCategory/che:CHE_MD_SubTopicCategoryCode[
+                           not(substring-before(@codeListValue,'_') = $topicCodes)])"/>
+        <sch:assert test="$invalidSubCount = 0"
+                    diagnostics="rule.che.topic-subtopic-consistency-failure-en rule.che.topic-subtopic-consistency-failure-fr"/>
+        <sch:report test="count(che:subTopicCategory/che:CHE_MD_SubTopicCategoryCode) &gt; 0 and $invalidSubCount = 0"
+                    diagnostics="rule.che.topic-subtopic-consistency-success-en rule.che.topic-subtopic-consistency-success-fr"/>
+      </sch:rule>
+    </sch:pattern>
 </sch:schema>
