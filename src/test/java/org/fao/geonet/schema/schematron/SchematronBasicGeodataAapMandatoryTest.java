@@ -73,14 +73,15 @@ public class SchematronBasicGeodataAapMandatoryTest {
 	}
 
 	@Test
-	public void amphibiansNoGeodataInformation() throws Exception {
+	public void amphibiansNoGeodataInformationBadSubtopic() throws Exception {
 		Path xmlFile = getResource("amphibians" + "-19115-3.che.xml");
 		Element md = Xml.loadFile(xmlFile);
 		Xml.selectElement(md, "*//che:basicGeodataInformation").detach();
+		Xml.selectElement(md, "*//che:CHE_MD_SubTopicCategoryCode").setAttribute("codeListValue", "geoscientificInformation_Soils");
 
-		String report = applySchematronAndCompare("amphibians-no-geodataInfo", false, md);
+		String report = applySchematronAndCompare("amphibians-no-geodatainfo-bad-subtopic", false, md);
 
-		hasExpectedNumberOfFailure(2, report);
+		hasExpectedNumberOfFailure(3, report);
 	}
 
 	private String applySchematronAndCompare(String mdNameRoot, boolean forceCreationDate) throws Exception {

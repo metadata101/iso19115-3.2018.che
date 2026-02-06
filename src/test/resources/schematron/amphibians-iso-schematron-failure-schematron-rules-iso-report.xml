@@ -71,13 +71,6 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrl.statement-when-dataset-failure-en" xml:lang="en">When resourceScope is 'dataset', the lineage statement (mrl:statement) MUST be provided in CHE_MD_Metadata.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrl.statement-when-dataset-failure-fr" xml:lang="fr">Lorsque resourceScope vaut 'dataset', l’élément d’historique mrl:statement DOIT être renseigné dans CHE_MD_Metadata.</svrl:diagnostic-reference>
   </svrl:failed-assert>
-  <svrl:active-pattern document="" id="rule.che.topic-subtopic-consistency" name_en="Ensure consistency between topicCategory and subTopicCategory (eCH-0166)" name_fr="Assurer la cohérence entre topicCategory et subTopicCategory (eCH-0166)" name="Assurer la cohérence entre topicCategory et subTopicCategory (eCH-0166)" />
-  <svrl:fired-rule context="//che:CHE_MD_DataIdentification" />
-  <svrl:failed-assert ref="#_" test="$invalidSubCount = 0" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
-    <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.topic-subtopic-consistency-failure-en" xml:lang="en">Inconsistent topic and subTopicCategory: each che:CHE_MD_SubTopicCategoryCode must start with the selected ISO topicCategory (prefix before '_').</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.topic-subtopic-consistency-failure-fr" xml:lang="fr">Incohérence entre la catégorie et la sous-catégorie : chaque che:CHE_MD_SubTopicCategoryCode doit commencer par la topicCategory sélectionnée (préfixe avant « _ »).</svrl:diagnostic-reference>
-  </svrl:failed-assert>
   <svrl:active-pattern document="" id="rule.gex.extenthasoneelement" name_en="Extent MUST have one description or one geographic,&#xA;      temporal or vertical element" name_fr="Une étendue DOIT avoir une description ou un&#xA;      élément géographique, temporel ou vertical" name="Une étendue DOIT avoir une description ou un&#xA;      élément géographique, temporel ou vertical" />
   <svrl:fired-rule context="//gex:EX_Extent" />
   <svrl:successful-report ref="#_" test="count($description)" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='extent']/*[local-name()='EX_Extent']">

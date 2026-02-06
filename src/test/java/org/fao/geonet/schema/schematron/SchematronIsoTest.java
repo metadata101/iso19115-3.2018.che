@@ -72,7 +72,7 @@ public class SchematronIsoTest {
 		Element md = Xml.loadFile(xmlFile);
 		String report = applySchematronAndCompare("amphibians-iso-schematron-failure", false, md);
 
-        hasExpectedNumberOfFailure(15, report);
+        hasExpectedNumberOfFailure(14, report);
 	}
 
 
