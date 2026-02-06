@@ -35,5 +35,12 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.basicgeodata.basicgeodatainformation-mandatory-failure-en" xml:lang="en">When basicGeodata is 'true', basicGeodataInformation must be present.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.basicgeodata.basicgeodatainformation-mandatory-failure-fr" xml:lang="fr">Lorsque basicGeodata vaut 'true', basicGeodataInformation doit être présent.</svrl:diagnostic-reference>
   </svrl:failed-assert>
+  <svrl:active-pattern document="" id="rule.basicgeodata.basicgeodataid-mandatory" name_en="{basicGeodata = ‘true’ implies basicGeodataID is mandatory}" name_fr="{basicGeodata = ‘true’ implique que basicGeodataID est obligatoire}" name="{basicGeodata = ‘true’ implique que basicGeodataID est obligatoire}" />
+  <svrl:fired-rule context="//che:CHE_MD_Metadata/mdb:identificationInfo/che:CHE_MD_DataIdentification[che:basicGeodata/gco:Boolean = 'true']" />
+  <svrl:failed-assert ref="#_" test="che:basicGeodataInformation/che:CHE_MD_BasicGeodataInformation/che:basicGeodataID/gco:CharacterString and normalize-space(che:basicGeodataInformation/che:CHE_MD_BasicGeodataInformation/che:basicGeodataID/gco:CharacterString) != ''" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.basicgeodata.basicgeodataid-mandatory-failure-en" xml:lang="en">When basicGeodata is 'true', basicGeodataID must be present.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.basicgeodata.basicgeodataid-mandatory-failure-fr" xml:lang="fr">Lorsque basicGeodata vaut 'true', basicGeodataID doit être présent.</svrl:diagnostic-reference>
+  </svrl:failed-assert>
 </svrl:schematron-output>
 

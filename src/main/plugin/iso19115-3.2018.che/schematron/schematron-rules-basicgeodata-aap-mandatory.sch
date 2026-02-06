@@ -37,6 +37,18 @@
     <sch:diagnostic id="rule.basicgeodata.basicgeodatainformation-mandatory-success-fr" xml:lang="fr">
       basicGeodataInformation est présent lorsque basicGeodata vaut 'true'.
     </sch:diagnostic>
+    <sch:diagnostic id="rule.basicgeodata.basicgeodataid-mandatory-failure-en" xml:lang="en">
+      When basicGeodata is 'true', basicGeodataID must be present.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.basicgeodata.basicgeodataid-mandatory-failure-fr" xml:lang="fr">
+      Lorsque basicGeodata vaut 'true', basicGeodataID doit être présent.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.basicgeodata.basicgeodataid-mandatory-success-en" xml:lang="en">
+      basicGeodataID is present when basicGeodata is 'true'.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.basicgeodata.basicgeodataid-mandatory-success-fr" xml:lang="fr">
+      basicGeodataID est présent lorsque basicGeodata vaut 'true'.
+    </sch:diagnostic>
   </sch:diagnostics>
 
   <sch:pattern id="rule.basicgeodata.basicgeodatainformation-mandatory">
@@ -48,6 +60,17 @@
                   diagnostics="rule.basicgeodata.basicgeodatainformation-mandatory-failure-en rule.basicgeodata.basicgeodatainformation-mandatory-failure-fr"/>
       <sch:report test="che:basicGeodataInformation"
                  diagnostics="rule.basicgeodata.basicgeodatainformation-mandatory-success-en rule.basicgeodata.basicgeodatainformation-mandatory-success-fr"/>
+    </sch:rule>
+  </sch:pattern>
+
+  <sch:pattern id="rule.basicgeodata.basicgeodataid-mandatory">
+    <sch:title xml:lang="en">{basicGeodata = ‘true’ implies basicGeodataID is mandatory}</sch:title>
+    <sch:title xml:lang="fr">{basicGeodata = ‘true’ implique que basicGeodataID est obligatoire}</sch:title>
+    <sch:rule context="//che:CHE_MD_Metadata/mdb:identificationInfo/che:CHE_MD_DataIdentification[che:basicGeodata/gco:Boolean = 'true']">
+      <sch:assert test="che:basicGeodataInformation/che:CHE_MD_BasicGeodataInformation/che:basicGeodataID/gco:CharacterString and normalize-space(che:basicGeodataInformation/che:CHE_MD_BasicGeodataInformation/che:basicGeodataID/gco:CharacterString) != ''"
+                  diagnostics="rule.basicgeodata.basicgeodataid-mandatory-failure-en rule.basicgeodata.basicgeodataid-mandatory-failure-fr"/>
+      <sch:report test="che:basicGeodataInformation/che:CHE_MD_BasicGeodataInformation/che:basicGeodataID/gco:CharacterString and normalize-space(che:basicGeodataInformation/che:CHE_MD_BasicGeodataInformation/che:basicGeodataID/gco:CharacterString) != ''"
+                 diagnostics="rule.basicgeodata.basicgeodataid-mandatory-success-en rule.basicgeodata.basicgeodataid-mandatory-success-fr"/>
     </sch:rule>
   </sch:pattern>
 </sch:schema>
