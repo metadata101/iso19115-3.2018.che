@@ -27,9 +27,9 @@ import static org.fao.geonet.schema.TestSupport.getResource;
 import static org.fao.geonet.schema.TestSupport.getResourceInsideSchema;
 import static org.junit.Assert.assertEquals;
 
-public class SchematronBasicGeodataAapMandatoryTest {
+public class SchematronBasicGeodataAapRecommendedTest {
 
-	private static final boolean GENERATE_EXPECTED_FILE = false;
+	private static final boolean GENERATE_EXPECTED_FILE = true;
 
 	private static Path compiledSchematronFilePath;
 
@@ -43,7 +43,7 @@ public class SchematronBasicGeodataAapMandatoryTest {
 	@BeforeClass
 	public static void initSaxonAndCompileSchematron() throws Exception {
 		mustInitSaxonFirst();
-		Element schematronSource = Xml.loadFile(getResourceInsideSchema("schematron/schematron-rules-basicgeodata-aap-mandatory.sch"));
+		Element schematronSource = Xml.loadFile(getResourceInsideSchema("schematron/schematron-rules-basicgeodata-aap-recommended.sch"));
 		Path schematronCompilation = getResource("gn-site/WEB-INF/classes/schematron/iso_svrl_for_xslt2.xsl");
 		Element compiledSchematron = Xml.transform(schematronSource, schematronCompilation);
 		compiledSchematronFilePath = temporaryFolder.getRoot().toPath().resolve("path/requiredtoFind/utilsfile/compiled-iso-schematron.xsl");
@@ -59,29 +59,22 @@ public class SchematronBasicGeodataAapMandatoryTest {
 	}
 
 	@Test
-	public void amphibians() throws Exception {
-		String report = applySchematronAndCompare("amphibians", false);
-
-        hasExpectedNumberOfFailure(1, report);
-	}
-
-	@Test
-	public void asiatischeHornisse() throws Exception {
-		String report = applySchematronAndCompare("asiatischeHornisse", false);
+	public void wanderWegeHornisse() throws Exception {
+		String report = applySchematronAndCompare("wanderWege", false);
 
 		hasExpectedNumberOfFailure(0, report);
 	}
 
 	@Test
-	public void amphibiansNoGeodataInformationBadSubtopic() throws Exception {
-		Path xmlFile = getResource("amphibians-19115-3.che.xml");
+	public void wanderWegeMissingAAPDetails() throws Exception {
+		Path xmlFile = getResource("wanderWege-19115-3.che.xml");
 		Element md = Xml.loadFile(xmlFile);
-		Xml.selectElement(md, "*//che:basicGeodataInformation").detach();
-		Xml.selectElement(md, "*//che:CHE_MD_SubTopicCategoryCode").setAttribute("codeListValue", "geoscientificInformation_Soils");
+		Xml.selectElement(md, "*//che:durationOfConservation/gco:Integer").setText(" ");
+		Xml.selectElement(md, "*//che:CHE_AppraisalOfArchivalValueCode").detach();
 
-		String report = applySchematronAndCompare("amphibians-no-geodatainfo-bad-subtopic", false, md);
+		String report = applySchematronAndCompare("wanderWege-missing-aap-details", false, md);
 
-		hasExpectedNumberOfFailure(3, report);
+		hasExpectedNumberOfFailure(2, report);
 	}
 
 	private String applySchematronAndCompare(String mdNameRoot, boolean forceCreationDate) throws Exception {
@@ -107,7 +100,7 @@ public class SchematronBasicGeodataAapMandatoryTest {
 
 		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
 		String actual = xmlOutputter.outputString(new Document(report));
-		TestSupport.assertGeneratedDataByteMatchExpected("schematron/" + mdNameRoot + "-schematron-rules-basicgeodata-aap-mandatory-report.xml", actual, GENERATE_EXPECTED_FILE);
+		TestSupport.assertGeneratedDataByteMatchExpected("schematron/" + mdNameRoot + "-schematron-rules-basicgeodata-aap-recommended-report.xml", actual, GENERATE_EXPECTED_FILE);
 		return actual;
 	}
 
