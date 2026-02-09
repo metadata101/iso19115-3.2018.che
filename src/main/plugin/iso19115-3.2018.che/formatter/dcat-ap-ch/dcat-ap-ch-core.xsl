@@ -84,7 +84,7 @@
     <!-- Note: The CatalogRecord is created as a sibling to the Dataset,
          not as a wrapper. The relationship is via foaf:primaryTopic -->
     <xsl:variable name="recordUri" select="concat(
-      'https://www.geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/',
+      'https://www.geocat.ch/datahub/dataset/',
       mdb:metadataIdentifier/*/mcc:code/*/text()
     )"/>
     

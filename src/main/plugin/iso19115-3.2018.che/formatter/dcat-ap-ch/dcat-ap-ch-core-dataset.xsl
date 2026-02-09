@@ -157,7 +157,7 @@
     
     <xsl:if test="$publisherOrg">
       <!-- Try to get URL from contact's onlineResource -->
-      <xsl:variable name="orgUrl" select="normalize-space($publisherOrg/cit:contactInfo/*/cit:onlineResource/*/cit:linkage/*/text())"/>
+      <xsl:variable name="orgUrl" select="normalize-space(($publisherOrg/cit:contactInfo/*/cit:onlineResource/*/cit:linkage/*/text())[1])"/>
       
       <dct:publisher>
         <xsl:choose>
@@ -410,7 +410,7 @@
   <!-- 9. ADD GEOCAT RELATION -->
   <xsl:template name="add-geocat-relation">
     <xsl:variable name="uuid" select="mdb:metadataIdentifier/*/mcc:code/*/text()"/>
-    <xsl:variable name="geocatUrl" select="concat('https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/', $uuid)"/>
+    <xsl:variable name="geocatUrl" select="concat('https://www.geocat.ch/datahub/dataset/', $uuid)"/>
     
     <dct:relation>
       <rdf:Description rdf:about="{$geocatUrl}">
