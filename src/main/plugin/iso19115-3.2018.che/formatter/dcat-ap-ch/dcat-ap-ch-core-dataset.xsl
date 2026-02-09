@@ -37,9 +37,6 @@
   <!-- Based on opendata.swiss documentation           -->
   <!-- https://handbook.opendata.swiss/de/content/glossar/bibliothek/dcat-ap-ch.html -->
   <!-- ================================================ -->
-  
-  <!-- Load organization mapping file -->
-  <xsl:variable name="orgMapping" select="document('organization-mapping.xml')/organizations/org"/>
 
   <!-- ================================================ -->
   <!-- MAIN TEMPLATE: CHE_MD_Metadata to dcat:Dataset  -->
@@ -47,17 +44,13 @@
   
   <xsl:template match="che:CHE_MD_Metadata" mode="iso19115-3-to-dcat">
     <xsl:variable name="uuid" select="mdb:metadataIdentifier/*/mcc:code/*/text()"/>
-    <xsl:variable name="orgSlug" select="local:get-publisher-slug(.)"/>
     
-    <!-- Dataset URI -->
-    <xsl:variable name="resourceUri" select="concat('https://ckan.opendata.swiss/perma/', $uuid, '@', $orgSlug)"/>
-    
-    <dcat:Dataset rdf:about="{$resourceUri}">
+    <dcat:Dataset>
       <!-- 1. TYPE -->
       <!-- <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/> -->
       
       <!-- 2. IDENTIFIER -->
-      <dct:identifier><xsl:value-of select="concat($uuid, '@', $orgSlug)"/></dct:identifier>
+      <dct:identifier><xsl:value-of select="$uuid"/></dct:identifier>
       
       <!-- 3. TITLE -->
       <xsl:call-template name="multilingual-field">
@@ -122,68 +115,7 @@
   <!-- HELPER TEMPLATES                                -->
   <!-- ================================================ -->
 
-  <!-- 1. GET PUBLISHER SLUG -->
-  <xsl:function name="local:get-publisher-slug">
-    <xsl:param name="metadata"/>
-    
-    <!-- Get first candidate organization using reusable function -->
-    <xsl:variable name="candidateOrgs" select="local:get-candidate-org($metadata)"/>
-    
-    <xsl:variable name="orgName" select="normalize-space($candidateOrgs/cit:name/gco:CharacterString)"/>
-    <xsl:variable name="orgAcronym" select="normalize-space($candidateOrgs/che:organisationAcronym/gco:CharacterString)"/>
-    
-    <!-- Step 1: Try to find match in organization mapping (exact or contains) -->
-    <xsl:variable name="mappedSlug">
-      <xsl:choose>
-        <!-- Try exact match first -->
-        <xsl:when test="$orgMapping[@geocatName = $orgName]">
-          <xsl:value-of select="$orgMapping[@geocatName = $orgName]/@opendataSlug"/>
-        </xsl:when>
-        <!-- Try base name (before comma) exact match -->
-        <xsl:when test="contains($orgName, ',')">
-          <xsl:variable name="baseOrgName" select="normalize-space(tokenize($orgName, ',')[1])"/>
-          <xsl:choose>
-            <!-- First try exact match with base name -->
-            <xsl:when test="$orgMapping[@geocatName = $baseOrgName]">
-              <xsl:value-of select="$orgMapping[@geocatName = $baseOrgName]/@opendataSlug"/>
-            </xsl:when>
-            <!-- Then try contains match: check if any geocatName contains the baseOrgName -->
-            <xsl:otherwise>
-              <xsl:value-of select="$orgMapping[contains(@geocatName, $baseOrgName)][1]/@opendataSlug"/>
-            </xsl:otherwise>
-          </xsl:choose>
-        </xsl:when>
-        <!-- Try contains match: check if any geocatName contains the orgName -->
-        <xsl:otherwise>
-          <xsl:value-of select="$orgMapping[contains(@geocatName, $orgName)][1]/@opendataSlug"/>
-        </xsl:otherwise>
-      </xsl:choose>
-    </xsl:variable>
-    
-    <xsl:choose>
-      <!-- Use mapping if found -->
-      <xsl:when test="$mappedSlug != ''">
-        <xsl:value-of select="$mappedSlug"/>
-      </xsl:when>
-      
-      <!-- Step 2: Use acronym if available and not empty -->
-      <xsl:when test="$orgAcronym != ''">
-        <xsl:value-of select="local:slugify($orgAcronym)"/>
-      </xsl:when>
-      
-      <!-- Step 3: Fallback to organization name -->
-      <xsl:otherwise>
-        <xsl:variable name="baseOrgName" select="
-          if (contains($orgName, ',')) 
-          then normalize-space(tokenize($orgName, ',')[1])
-          else $orgName
-        "/>
-        <xsl:value-of select="local:slugify($baseOrgName)"/>
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:function>
-
-  <!-- 2. MULTILINGUAL FIELD PROCESSING -->
+  <!-- 1. MULTILINGUAL FIELD PROCESSING -->
   <xsl:template name="multilingual-field">
     <xsl:param name="nodes"/>
     <xsl:param name="property"/>
@@ -221,17 +153,31 @@
 
   <!-- 3. ADD PUBLISHER -->
   <xsl:template name="add-publisher">
-    <!-- Reuse same organization selection logic as get-publisher-slug -->
     <xsl:variable name="publisherOrg" select="local:get-candidate-org(.)"/>
     
     <xsl:if test="$publisherOrg">
-      <xsl:variable name="orgName" select="normalize-space($publisherOrg/cit:name/gco:CharacterString)"/>
-      <xsl:variable name="orgSlug" select="local:get-publisher-slug(.)"/>
+      <!-- Try to get URL from contact's onlineResource -->
+      <xsl:variable name="orgUrl" select="normalize-space($publisherOrg/cit:contactInfo/*/cit:onlineResource/*/cit:linkage/*/text())"/>
       
       <dct:publisher>
-        <foaf:Agent rdf:about="https://opendata.swiss/organization/{$orgSlug}">
-          <foaf:name xml:lang="de"><xsl:value-of select="$orgName"/></foaf:name>
-        </foaf:Agent>
+        <xsl:choose>
+          <xsl:when test="$orgUrl != ''">
+            <foaf:Agent rdf:about="{$orgUrl}">
+              <xsl:call-template name="multilingual-field">
+                <xsl:with-param name="nodes" select="$publisherOrg/cit:name"/>
+                <xsl:with-param name="property" select="'foaf:name'"/>
+              </xsl:call-template>
+            </foaf:Agent>
+          </xsl:when>
+          <xsl:otherwise>
+            <foaf:Agent>
+              <xsl:call-template name="multilingual-field">
+                <xsl:with-param name="nodes" select="$publisherOrg/cit:name"/>
+                <xsl:with-param name="property" select="'foaf:name'"/>
+              </xsl:call-template>
+            </foaf:Agent>
+          </xsl:otherwise>
+        </xsl:choose>
       </dct:publisher>
     </xsl:if>
   </xsl:template>
@@ -594,13 +540,12 @@
   <xsl:template name="add-qualified-relation">
     <xsl:for-each select="mdb:identificationInfo/*/mri:aggregationInfo/*/mri:aggregateDataSetIdentifier/*/mcc:code[gco:CharacterString/text() != '']">
       <xsl:variable name="relatedUuid" select="gco:CharacterString/text()"/>
-      <xsl:variable name="orgSlug" select="local:get-publisher-slug(.)"/>
       
       <dcat:qualifiedRelation>
         <dcat:Relationship>
           <dct:relation>
-            <dcat:Dataset rdf:about="https://ckan.opendata.swiss/perma/{$relatedUuid}@{$orgSlug}">
-              <dct:identifier><xsl:value-of select="concat($relatedUuid, '@', $orgSlug)"/></dct:identifier>
+            <dcat:Dataset>
+              <dct:identifier><xsl:value-of select="$relatedUuid"/></dct:identifier>
             </dcat:Dataset>
           </dct:relation>
           <dcat:hadRole rdf:resource="http://www.iana.org/assignments/relation/related"/>
@@ -823,47 +768,6 @@
        $metadata/mdb:identificationInfo/*/mri:pointOfContact[*/cit:role/*/@codeListValue = 'pointOfContact']/*/cit:party/che:CHE_CI_Organisation,
        $metadata/mdb:contact/*/cit:party/che:CHE_CI_Organisation)[1]
     "/>
-  </xsl:function>
-
-  <!-- Slugify text: normalize umlauts/accents, lowercase, replace non-alphanumeric with hyphens -->
-  <xsl:function name="local:slugify">
-    <xsl:param name="text"/>
-    
-    <!-- Step 1: Normalize German umlauts (ü→u, ö→o, ä→a, ß→ss) -->
-    <xsl:variable name="step1" select="
-      replace(
-        replace(
-          replace(
-            replace(
-              replace(
-                replace(
-                  replace(
-                    replace($text, 'ü', 'u'),
-                    'ö', 'o'),
-                  'ä', 'a'),
-                'Ü', 'U'),
-              'Ö', 'O'),
-            'Ä', 'A'),
-          'ß', 'ss'),
-        'ẞ', 'SS')
-    "/>
-    
-    <!-- Step 2: Normalize French accents (é/è/ê→e, à/â→a, ç→c, î/ï→i) -->
-    <xsl:variable name="step2" select="
-      replace(
-        replace(
-          replace(
-            replace($step1, 'é|è|ê|ë', 'e'),
-            'à|â', 'a'),
-          'ç', 'c'),
-        'î|ï', 'i')
-    "/>
-    
-    <!-- Step 3: Lowercase and replace non-alphanumeric with hyphens -->
-    <xsl:variable name="step3" select="lower-case(replace($step2, '[^a-zA-Z0-9]+', '-'))"/>
-    
-    <!-- Step 4: Clean up multiple hyphens and trim -->
-    <xsl:value-of select="replace(replace(replace($step3, '--+', '-'), '^-+', ''), '-+$', '')"/>
   </xsl:function>
 
   <!-- Format datetime with +00:00 timezone instead of Z -->

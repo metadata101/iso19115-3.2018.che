@@ -88,11 +88,6 @@
       mdb:metadataIdentifier/*/mcc:code/*/text()
     )"/>
     
-    <xsl:variable name="datasetUri" select="concat(
-      'https://ckan.opendata.swiss/dataset/',
-      mdb:metadataIdentifier/*/mcc:code/*/text()
-    )"/>
-    
     <!-- CatalogRecord (simplified, no wrapper) -->
     <dcat:CatalogRecord rdf:about="{$recordUri}">
       <xsl:apply-templates mode="iso19115-3-to-dcat"
@@ -102,7 +97,6 @@
                                   |mdb:dateInfo/*[cit:dateType/*/@codeListValue = 'creation']/cit:date
                                   |mdb:dateInfo/*[cit:dateType/*/@codeListValue = 'revision']/cit:date"/>
       <xsl:copy-of select="$properties"/>
-      <foaf:primaryTopic rdf:resource="{$datasetUri}"/>
     </dcat:CatalogRecord>
   </xsl:template>
 
