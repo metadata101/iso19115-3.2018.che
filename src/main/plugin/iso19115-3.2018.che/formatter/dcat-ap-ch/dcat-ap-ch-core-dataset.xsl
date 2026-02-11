@@ -44,8 +44,9 @@
   
   <xsl:template match="che:CHE_MD_Metadata" mode="iso19115-3-to-dcat">
     <xsl:variable name="uuid" select="mdb:metadataIdentifier/*/mcc:code/*/text()"/>
+    <xsl:variable name="resourceUri" select="concat('https://www.geocat.ch/geonetwork/srv/api/records/', $uuid, '/formatters/dcat-ap-ch')"/>
     
-    <dcat:Dataset>
+    <dcat:Dataset rdf:about="{$resourceUri}">
       <!-- 1. TYPE -->
       <!-- <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/> -->
       
