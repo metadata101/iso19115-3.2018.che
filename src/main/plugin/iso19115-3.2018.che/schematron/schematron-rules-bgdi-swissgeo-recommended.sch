@@ -37,6 +37,18 @@
     <sch:diagnostic id="rule.che.bgdi-keyword-poc-owner-recommended-success-fr" xml:lang="fr">
       Un pointOfContact avec le rôle 'owner' est présent.
     </sch:diagnostic>
+    <sch:diagnostic id="rule.che.bgdi-keyword-status-recommended-failure-en" xml:lang="en">
+      If MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur', then mri:status/mcc:MD_ProgressCode is recommended.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.bgdi-keyword-status-recommended-failure-fr" xml:lang="fr">
+      Si MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur', alors mri:status/mcc:MD_ProgressCode est recommandé.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.bgdi-keyword-status-recommended-success-en" xml:lang="en">
+      mri:status/mcc:MD_ProgressCode is present.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.bgdi-keyword-status-recommended-success-fr" xml:lang="fr">
+      mri:status/mcc:MD_ProgressCode est présent.
+    </sch:diagnostic>
   </sch:diagnostics>
 
   <sch:pattern id="rule.che.bgdi-keyword-poc-owner-recommended">
@@ -47,6 +59,17 @@
         diagnostics="rule.che.bgdi-keyword-poc-owner-recommended-success-en rule.che.bgdi-keyword-poc-owner-recommended-success-fr"/>
       <sch:assert test="mri:pointOfContact/cit:CI_Responsibility/cit:role/cit:CI_RoleCode[@codeListValue='owner']"
         diagnostics="rule.che.bgdi-keyword-poc-owner-recommended-failure-en rule.che.bgdi-keyword-poc-owner-recommended-failure-fr"/>
+    </sch:rule>
+  </sch:pattern>
+
+  <sch:pattern id="rule.che.bgdi-keyword-status-recommended">
+    <sch:title xml:lang="en">If MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur' then mri:status/mcc:MD_ProgressCode is recommended</sch:title>
+    <sch:title xml:lang="fr">Si MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur' alors mri:status/mcc:MD_ProgressCode est recommandé</sch:title>
+    <sch:rule context="//che:CHE_MD_DataIdentification[.//mri:MD_Keywords/mri:keyword/gco:CharacterString = 'BGDI Bundesgeodaten-Infrastruktur']">
+      <sch:report test="mri:status/mcc:MD_ProgressCode and normalize-space(mri:status/mcc:MD_ProgressCode/@codeListValue) != ''"
+        diagnostics="rule.che.bgdi-keyword-status-recommended-success-en rule.che.bgdi-keyword-status-recommended-success-fr"/>
+      <sch:assert test="mri:status/mcc:MD_ProgressCode and normalize-space(mri:status/mcc:MD_ProgressCode/@codeListValue) != ''"
+        diagnostics="rule.che.bgdi-keyword-status-recommended-failure-en rule.che.bgdi-keyword-status-recommended-failure-fr"/>
     </sch:rule>
   </sch:pattern>
 

@@ -75,10 +75,12 @@ public class SchematronBgdiSwissgeoRecommendedTest {
 	public void wanderWegeMissings() throws Exception {
 		Path xmlFile = getResource("wanderWege-19115-3.che.xml");
 		Element md = Xml.loadFile(xmlFile);
+		Element roleElement = Xml.selectElement(md, "*//mri:status/mcc:MD_ProgressCode");
+		roleElement.getAttribute("codeListValue").setValue("");
 
 		String report = applySchematronAndCompare("wanderWege-missings", false, md);
 
-		hasExpectedNumberOfFailure(1, report);
+		hasExpectedNumberOfFailure(2, report);
 	}
 
 	private String applySchematronAndCompare(String mdNameRoot, boolean forceCreationDate) throws Exception {
