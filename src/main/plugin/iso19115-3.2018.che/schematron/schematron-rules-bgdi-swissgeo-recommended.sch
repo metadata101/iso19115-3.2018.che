@@ -37,6 +37,20 @@
     <sch:diagnostic id="rule.che.bgdi-keyword-poc-owner-recommended-success-fr" xml:lang="fr">
       Un pointOfContact avec le rôle 'owner' est présent.
     </sch:diagnostic>
+
+    <sch:diagnostic id="rule.che.bgdi-keyword-identifier-code-recommended-failure-en" xml:lang="en">
+      If MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur', then cit:identifier/mcc:MD_Identifier/mcc:code/gco:CharacterString must be defined.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.bgdi-keyword-identifier-code-recommended-failure-fr" xml:lang="fr">
+      Si MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur', alors cit:identifier/mcc:MD_Identifier/mcc:code/gco:CharacterString doit être défini.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.bgdi-keyword-identifier-code-recommended-success-en" xml:lang="en">
+      cit:identifier/mcc:MD_Identifier/mcc:code/gco:CharacterString is present.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.bgdi-keyword-identifier-code-recommended-success-fr" xml:lang="fr">
+      cit:identifier/mcc:MD_Identifier/mcc:code/gco:CharacterString est présent.
+    </sch:diagnostic>
+
     <sch:diagnostic id="rule.che.bgdi-keyword-status-recommended-failure-en" xml:lang="en">
       If MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur', then mri:status/mcc:MD_ProgressCode is recommended.
     </sch:diagnostic>
@@ -49,6 +63,7 @@
     <sch:diagnostic id="rule.che.bgdi-keyword-status-recommended-success-fr" xml:lang="fr">
       mri:status/mcc:MD_ProgressCode est présent.
     </sch:diagnostic>
+
     <sch:diagnostic id="rule.che.bgdi-keyword-legal-otherconstraints-recommended-failure-en" xml:lang="en">
       If MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur', then mri:resourceConstraints/che:CHE_MD_LegalConstraints/mco:otherConstraints is recommended.
     </sch:diagnostic>
@@ -74,6 +89,17 @@
     </sch:rule>
   </sch:pattern>
 
+  <sch:pattern id="rule.che.bgdi-keyword-identifier-code-recommended">
+    <sch:title xml:lang="en">If MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur' then cit:identifier/mcc:MD_Identifier/mcc:code/gco:CharacterString must be defined</sch:title>
+    <sch:title xml:lang="fr">Si MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur' alors cit:identifier/mcc:MD_Identifier/mcc:code/gco:CharacterString doit être défini</sch:title>
+    <sch:rule context="//che:CHE_MD_DataIdentification[.//mri:MD_Keywords/mri:keyword/gco:CharacterString = 'BGDI Bundesgeodaten-Infrastruktur']">
+      <sch:assert test="some $id in mri:citation/cit:CI_Citation/cit:identifier/mcc:MD_Identifier/mcc:code/gco:CharacterString satisfies normalize-space($id) != ''"
+        diagnostics="rule.che.bgdi-keyword-identifier-code-recommended-failure-en rule.che.bgdi-keyword-identifier-code-recommended-failure-fr"/>
+      <sch:report test="some $id in mri:citation/cit:CI_Citation/cit:identifier/mcc:MD_Identifier/mcc:code/gco:CharacterString satisfies normalize-space($id) != ''"
+        diagnostics="rule.che.bgdi-keyword-identifier-code-recommended-success-en rule.che.bgdi-keyword-identifier-code-recommended-success-fr"/>
+    </sch:rule>
+  </sch:pattern>
+
   <sch:pattern id="rule.che.bgdi-keyword-status-recommended">
     <sch:title xml:lang="en">If MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur' then mri:status/mcc:MD_ProgressCode is recommended</sch:title>
     <sch:title xml:lang="fr">Si MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur' alors mri:status/mcc:MD_ProgressCode est recommandé</sch:title>
@@ -95,6 +121,5 @@
         diagnostics="rule.che.bgdi-keyword-legal-otherconstraints-recommended-failure-en rule.che.bgdi-keyword-legal-otherconstraints-recommended-failure-fr"/>
     </sch:rule>
   </sch:pattern>
-
 
 </sch:schema>
