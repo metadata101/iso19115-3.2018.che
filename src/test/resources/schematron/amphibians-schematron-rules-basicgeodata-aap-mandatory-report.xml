@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svrl:schematron-output xmlns:svrl="http://purl.oclc.org/dsdl/svrl" title="Règles ISO" schemaVersion="">
+<svrl:schematron-output xmlns:svrl="http://purl.oclc.org/dsdl/svrl" title="Basic Geodata - AAP règles obligatoires" schemaVersion="">
   <!--
          
         
@@ -28,14 +28,14 @@
   <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/1999/xlink" prefix="xlink" />
   <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi" />
   <svrl:ns-prefix-in-attribute-values uri="http://geocat.ch/che" prefix="che" />
-  <svrl:active-pattern document="" id="rule.basicgeodata.basicgeodatainformation-mandatory" name_en="{basicGeodata = ‘true’ implies basicGeodataInformation is mandatory}" name_fr="{basicGeodata = ‘true’ implique que basicGeodataInformation est obligatoire}" name="{basicGeodata = ‘true’ implique que basicGeodataInformation est obligatoire}" />
+  <svrl:active-pattern document="" id="rule.basicgeodata.basicgeodatainformation-mandatory" name_en="basicGeodata = ‘true’ implies basicGeodataInformation is mandatory" name_fr="basicGeodata = ‘true’ implique que basicGeodataInformation est obligatoire" name="basicGeodata = ‘true’ implique que basicGeodataInformation est obligatoire" />
   <svrl:fired-rule context="//che:CHE_MD_Metadata/mdb:identificationInfo/che:CHE_MD_DataIdentification[che:basicGeodata/gco:Boolean = 'true']" />
   <svrl:successful-report ref="#_" test="che:basicGeodataInformation" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.basicgeodata.basicgeodatainformation-mandatory-success-en" xml:lang="en">basicGeodataInformation is present when basicGeodata is 'true'.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.basicgeodata.basicgeodatainformation-mandatory-success-fr" xml:lang="fr">basicGeodataInformation est présent lorsque basicGeodata vaut 'true'.</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.basicgeodata.basicgeodataid-mandatory" name_en="{basicGeodata = ‘true’ implies basicGeodataID is mandatory}" name_fr="{basicGeodata = ‘true’ implique que basicGeodataID est obligatoire}" name="{basicGeodata = ‘true’ implique que basicGeodataID est obligatoire}" />
+  <svrl:active-pattern document="" id="rule.basicgeodata.basicgeodataid-mandatory" name_en="basicGeodata = ‘true’ implies basicGeodataID is mandatory" name_fr="basicGeodata = ‘true’ implique que basicGeodataID est obligatoire" name="basicGeodata = ‘true’ implique que basicGeodataID est obligatoire" />
   <svrl:fired-rule context="//che:CHE_MD_Metadata/mdb:identificationInfo/che:CHE_MD_DataIdentification[che:basicGeodata/gco:Boolean = 'true']" />
   <svrl:failed-assert ref="#_" test="che:basicGeodataInformation/che:CHE_MD_BasicGeodataInformation/che:basicGeodataID/gco:CharacterString and normalize-space(che:basicGeodataInformation/che:CHE_MD_BasicGeodataInformation/che:basicGeodataID/gco:CharacterString) != ''" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
     <svrl:text />
