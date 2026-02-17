@@ -59,7 +59,7 @@ public class SchematronBasicGeodataAapRecommendedTest {
 	}
 
 	@Test
-	public void wanderWegeHornisse() throws Exception {
+	public void wanderWege() throws Exception {
 		String report = applySchematronAndCompare("wanderWege", false);
 
 		hasExpectedNumberOfFailure(0, report);
