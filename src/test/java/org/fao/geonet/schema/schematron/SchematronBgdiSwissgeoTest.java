@@ -73,11 +73,13 @@ public class SchematronBgdiSwissgeoTest {
 		Xml.selectElement(md, "*//mri:citation/cit:CI_Citation/cit:title/lan:PT_FreeText/lan:textGroup[lan:LocalisedCharacterString/@locale='#DE']").detach();
 		Xml.selectElement(md, "*//mri:citation/cit:CI_Citation/cit:alternateTitle/lan:PT_FreeText/lan:textGroup/lan:LocalisedCharacterString[@locale='#FR']").setText(" ");
 		Xml.selectElement(md, "*//mri:citation/cit:CI_Citation/cit:alternateTitle/lan:PT_FreeText/lan:textGroup[lan:LocalisedCharacterString/@locale='#DE']").detach();
+		Xml.selectElement(md, "*//mri:abstract/lan:PT_FreeText/lan:textGroup/lan:LocalisedCharacterString[@locale='#FR']").setText(" ");
+		Xml.selectElement(md, "*//mri:abstract/lan:PT_FreeText/lan:textGroup[lan:LocalisedCharacterString/@locale='#DE']").detach();
 
 
 		String report = applySchematronAndCompare("wanderWege-missings", false, md);
 
-		hasExpectedNumberOfFailure(4, report);
+		hasExpectedNumberOfFailure(6, report);
 	}
 
 	private String applySchematronAndCompare(String mdNameRoot, boolean forceCreationDate) throws Exception {
