@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-  <sch:title xmlns="http://www.w3.org/2001/XMLSchema" xml:lang="en">bgdi-swissgeo rules</sch:title>
-  <sch:title xmlns="http://www.w3.org/2001/XMLSchema" xml:lang="fr">règles bgdi-swissgeo</sch:title>
+  <sch:title xmlns="http://www.w3.org/2001/XMLSchema" xml:lang="en">bgdi-swissgeo mandatory rules</sch:title>
+  <sch:title xmlns="http://www.w3.org/2001/XMLSchema" xml:lang="fr">règles obligatoires bgdi-swissgeo</sch:title>
   <sch:ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
   <sch:ns prefix="srv" uri="http://standards.iso.org/iso/19115/-3/srv/2.0"/>
   <sch:ns prefix="cit" uri="http://standards.iso.org/iso/19115/-3/cit/2.0"/>
