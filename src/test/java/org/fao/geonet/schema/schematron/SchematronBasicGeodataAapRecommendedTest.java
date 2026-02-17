@@ -29,7 +29,7 @@ import static org.junit.Assert.assertEquals;
 
 public class SchematronBasicGeodataAapRecommendedTest {
 
-	private static final boolean GENERATE_EXPECTED_FILE = true;
+	private static final boolean GENERATE_EXPECTED_FILE = false;
 
 	private static Path compiledSchematronFilePath;
 

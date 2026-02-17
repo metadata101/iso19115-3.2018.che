@@ -67,8 +67,8 @@
   </sch:diagnostics>
 
   <sch:pattern id="rule.basicgeodata.basicgeodatainformation-mandatory">
-    <sch:title xml:lang="en">{basicGeodata = ‘true’ implies basicGeodataInformation is mandatory}</sch:title>
-    <sch:title xml:lang="fr">{basicGeodata = ‘true’ implique que basicGeodataInformation est obligatoire}</sch:title>
+    <sch:title xml:lang="en">basicGeodata = ‘true’ implies basicGeodataInformation is mandatory</sch:title>
+    <sch:title xml:lang="fr">basicGeodata = ‘true’ implique que basicGeodataInformation est obligatoire</sch:title>
 
     <sch:rule context="//che:CHE_MD_Metadata/mdb:identificationInfo/che:CHE_MD_DataIdentification[che:basicGeodata/gco:Boolean = 'true']">
       <sch:assert test="che:basicGeodataInformation"
@@ -79,8 +79,8 @@
   </sch:pattern>
 
   <sch:pattern id="rule.basicgeodata.basicgeodataid-mandatory">
-    <sch:title xml:lang="en">{basicGeodata = ‘true’ implies basicGeodataID is mandatory}</sch:title>
-    <sch:title xml:lang="fr">{basicGeodata = ‘true’ implique que basicGeodataID est obligatoire}</sch:title>
+    <sch:title xml:lang="en">basicGeodata = ‘true’ implies basicGeodataID is mandatory</sch:title>
+    <sch:title xml:lang="fr">basicGeodata = ‘true’ implique que basicGeodataID est obligatoire</sch:title>
     <sch:rule context="//che:CHE_MD_Metadata/mdb:identificationInfo/che:CHE_MD_DataIdentification[che:basicGeodata/gco:Boolean = 'true']">
       <sch:assert test="che:basicGeodataInformation/che:CHE_MD_BasicGeodataInformation/che:basicGeodataID/gco:CharacterString and normalize-space(che:basicGeodataInformation/che:CHE_MD_BasicGeodataInformation/che:basicGeodataID/gco:CharacterString) != ''"
                   diagnostics="rule.basicgeodata.basicgeodataid-mandatory-failure-en rule.basicgeodata.basicgeodataid-mandatory-failure-fr"/>
