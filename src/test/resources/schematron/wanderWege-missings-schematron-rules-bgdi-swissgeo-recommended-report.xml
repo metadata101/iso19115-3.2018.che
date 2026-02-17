@@ -42,5 +42,12 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.bgdi-keyword-status-recommended-failure-en" xml:lang="en">If MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur', then mri:status/mcc:MD_ProgressCode is recommended.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.bgdi-keyword-status-recommended-failure-fr" xml:lang="fr">Si MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur', alors mri:status/mcc:MD_ProgressCode est recommandé.</svrl:diagnostic-reference>
   </svrl:failed-assert>
+  <svrl:active-pattern document="" id="rule.che.bgdi-keyword-legal-otherconstraints-recommended" name_en="If MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur' then mri:resourceConstraints/che:CHE_MD_LegalConstraints/mco:otherConstraints is recommended" name_fr="Si MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur' alors mri:resourceConstraints/che:CHE_MD_LegalConstraints/mco:otherConstraints est recommandé" name="Si MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur' alors mri:resourceConstraints/che:CHE_MD_LegalConstraints/mco:otherConstraints est recommandé" />
+  <svrl:fired-rule context="//che:CHE_MD_DataIdentification[.//mri:MD_Keywords/mri:keyword/gco:CharacterString = 'BGDI Bundesgeodaten-Infrastruktur']" />
+  <svrl:failed-assert ref="#_" test="mri:resourceConstraints/che:CHE_MD_LegalConstraints/mco:otherConstraints/* and normalize-space(mri:resourceConstraints/che:CHE_MD_LegalConstraints/mco:otherConstraints/*[1]) != ''" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
+    <svrl:text />
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.bgdi-keyword-legal-otherconstraints-recommended-failure-en" xml:lang="en">If MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur', then mri:resourceConstraints/che:CHE_MD_LegalConstraints/mco:otherConstraints is recommended.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.bgdi-keyword-legal-otherconstraints-recommended-failure-fr" xml:lang="fr">Si MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur', alors mri:resourceConstraints/che:CHE_MD_LegalConstraints/mco:otherConstraints est recommandé.</svrl:diagnostic-reference>
+  </svrl:failed-assert>
 </svrl:schematron-output>
 
