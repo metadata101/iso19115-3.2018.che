@@ -74,6 +74,30 @@
     <sch:diagnostic id="rule.che.bgdi-keyword-alternatetitle-fr-mandatory-success-fr" xml:lang="fr">
       CHE_MD_DataIdentification.citation.CI_Citation.alternateTitle pour la locale '#FR' est présent.
     </sch:diagnostic>
+    <sch:diagnostic id="rule.che.bgdi-keyword-abstract-de-mandatory-failure-en" xml:lang="en">
+      If MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur', then CHE_MD_DataIdentification.abstract for locale '#DE' is mandatory.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.bgdi-keyword-abstract-de-mandatory-failure-fr" xml:lang="fr">
+      Si MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur', alors CHE_MD_DataIdentification.abstract pour la locale '#DE' est obligatoire.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.bgdi-keyword-abstract-de-mandatory-success-en" xml:lang="en">
+      CHE_MD_DataIdentification.abstract for locale '#DE' is present.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.bgdi-keyword-abstract-de-mandatory-success-fr" xml:lang="fr">
+      CHE_MD_DataIdentification.abstract pour la locale '#DE' est présent.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.bgdi-keyword-abstract-fr-mandatory-failure-en" xml:lang="en">
+      If MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur', then CHE_MD_DataIdentification.abstract for locale '#FR' is mandatory.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.bgdi-keyword-abstract-fr-mandatory-failure-fr" xml:lang="fr">
+      Si MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur', alors CHE_MD_DataIdentification.abstract pour la locale '#FR' est obligatoire.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.bgdi-keyword-abstract-fr-mandatory-success-en" xml:lang="en">
+      CHE_MD_DataIdentification.abstract for locale '#FR' is present.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.bgdi-keyword-abstract-fr-mandatory-success-fr" xml:lang="fr">
+      CHE_MD_DataIdentification.abstract pour la locale '#FR' est présent.
+    </sch:diagnostic>
   </sch:diagnostics>
 
   <sch:pattern id="rule.che.bgdi-keyword-title-de-mandatory">
@@ -114,6 +138,26 @@
         diagnostics="rule.che.bgdi-keyword-alternatetitle-fr-mandatory-failure-en rule.che.bgdi-keyword-alternatetitle-fr-mandatory-failure-fr"/>
       <sch:report test="mri:citation/cit:CI_Citation/cit:alternateTitle/lan:PT_FreeText/lan:textGroup/lan:LocalisedCharacterString[@locale='#FR' and normalize-space(text())!='']"
         diagnostics="rule.che.bgdi-keyword-alternatetitle-fr-mandatory-success-en rule.che.bgdi-keyword-alternatetitle-fr-mandatory-success-fr"/>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern id="rule.che.bgdi-keyword-abstract-de-mandatory">
+    <sch:title xml:lang="en">If MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur' then CHE_MD_DataIdentification.abstract for locale '#DE' is mandatory</sch:title>
+    <sch:title xml:lang="fr">Si MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur' alors CHE_MD_DataIdentification.abstract pour la locale '#DE' est obligatoire</sch:title>
+    <sch:rule context="//che:CHE_MD_DataIdentification[.//mri:MD_Keywords/mri:keyword/gco:CharacterString = 'BGDI Bundesgeodaten-Infrastruktur']">
+      <sch:assert test="mri:abstract/lan:PT_FreeText/lan:textGroup/lan:LocalisedCharacterString[@locale='#DE' and normalize-space(text())!='']"
+        diagnostics="rule.che.bgdi-keyword-abstract-de-mandatory-failure-en rule.che.bgdi-keyword-abstract-de-mandatory-failure-fr"/>
+      <sch:report test="mri:abstract/lan:PT_FreeText/lan:textGroup/lan:LocalisedCharacterString[@locale='#DE' and normalize-space(text())!='']"
+        diagnostics="rule.che.bgdi-keyword-abstract-de-mandatory-success-en rule.che.bgdi-keyword-abstract-de-mandatory-success-fr"/>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern id="rule.che.bgdi-keyword-abstract-fr-mandatory">
+    <sch:title xml:lang="en">If MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur' then CHE_MD_DataIdentification.abstract for locale '#FR' is mandatory</sch:title>
+    <sch:title xml:lang="fr">Si MD_Keywords.keyword = 'BGDI Bundesgeodaten-Infrastruktur' alors CHE_MD_DataIdentification.abstract pour la locale '#FR' est obligatoire</sch:title>
+    <sch:rule context="//che:CHE_MD_DataIdentification[.//mri:MD_Keywords/mri:keyword/gco:CharacterString = 'BGDI Bundesgeodaten-Infrastruktur']">
+      <sch:assert test="mri:abstract/lan:PT_FreeText/lan:textGroup/lan:LocalisedCharacterString[@locale='#FR' and normalize-space(text())!='']"
+        diagnostics="rule.che.bgdi-keyword-abstract-fr-mandatory-failure-en rule.che.bgdi-keyword-abstract-fr-mandatory-failure-fr"/>
+      <sch:report test="mri:abstract/lan:PT_FreeText/lan:textGroup/lan:LocalisedCharacterString[@locale='#FR' and normalize-space(text())!='']"
+        diagnostics="rule.che.bgdi-keyword-abstract-fr-mandatory-success-en rule.che.bgdi-keyword-abstract-fr-mandatory-success-fr"/>
     </sch:rule>
   </sch:pattern>
 </sch:schema>
