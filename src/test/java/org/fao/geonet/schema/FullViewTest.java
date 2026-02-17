@@ -77,22 +77,23 @@ public class FullViewTest {
 
     @Test
     public void asiatischeHornisse() throws Exception {
-        Path xslFile = getResourceInsideSchema("formatter/xsl-view/view.xsl");
-        Path xmlFile = getResource("asiatischeHornisse-19115-3.che-full-view-form.xml");
-        Element source = Xml.loadFile(xmlFile);
+        String xmlFileName = "asiatischeHornisse-19115-3.che-full-view-form.xml";
+        String expectedFileName = "asiatischeHornisse-19115-3.che-full-view.html";
 
-        Element transformed = Xml.transform(source, xslFile, Map.of("view", "advanced", "approved", "true", "root", "div"));
-
-
-        XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
-        String actual = xmlOutputter.outputString(new Document(transformed));
-        TestSupport.assertGeneratedDataByteMatchExpected("asiatischeHornisse-19115-3.che-full-view.html", actual, GENERATE_EXPECTED_FILE);
+        assertXmlFileGenerateExpected(xmlFileName, expectedFileName);
     }
 
     @Test
     public void asiatischeHornisseIta() throws Exception {
+        String xmlFileName = "asiatischeHornisse-19115-3.che-full-view-form-ita.xml";
+        String expectedFileName = "asiatischeHornisse-19115-3.che-full-view-ita.html";
+
+        assertXmlFileGenerateExpected(xmlFileName, expectedFileName);
+    }
+
+    private static void assertXmlFileGenerateExpected(String xmlFileName, String expectedFileName) throws Exception {
         Path xslFile = getResourceInsideSchema("formatter/xsl-view/view.xsl");
-        Path xmlFile = getResource("asiatischeHornisse-19115-3.che-full-view-form-ita.xml");
+        Path xmlFile = getResource(xmlFileName);
         Element source = Xml.loadFile(xmlFile);
 
         Element transformed = Xml.transform(source, xslFile, Map.of("view", "advanced", "approved", "true", "root", "div"));
@@ -100,7 +101,7 @@ public class FullViewTest {
 
         XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
         String actual = xmlOutputter.outputString(new Document(transformed));
-        TestSupport.assertGeneratedDataByteMatchExpected("asiatischeHornisse-19115-3.che-full-view-ita.html", actual, GENERATE_EXPECTED_FILE);
+        TestSupport.assertGeneratedDataByteMatchExpected(expectedFileName, actual, GENERATE_EXPECTED_FILE);
     }
 
     private static Path addRequiredSchemasAndDisableConflictingOne() throws URISyntaxException {
