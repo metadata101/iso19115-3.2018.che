@@ -71,13 +71,14 @@ public class SchematronBgdiSwissgeoTest {
 		Element md = Xml.loadFile(xmlFile);
 		Xml.selectElement(md, "*//mri:citation/cit:CI_Citation/cit:title/lan:PT_FreeText/lan:textGroup/lan:LocalisedCharacterString[@locale='#FR']").setText(" ");
 		Xml.selectElement(md, "*//mri:citation/cit:CI_Citation/cit:title/lan:PT_FreeText/lan:textGroup[lan:LocalisedCharacterString/@locale='#DE']").detach();
+		Xml.selectElement(md, "*//mri:citation/cit:CI_Citation/cit:alternateTitle/lan:PT_FreeText/lan:textGroup/lan:LocalisedCharacterString[@locale='#FR']").setText(" ");
+		Xml.selectElement(md, "*//mri:citation/cit:CI_Citation/cit:alternateTitle/lan:PT_FreeText/lan:textGroup[lan:LocalisedCharacterString/@locale='#DE']").detach();
+
 
 		String report = applySchematronAndCompare("wanderWege-missings", false, md);
 
-		hasExpectedNumberOfFailure(2, report);
+		hasExpectedNumberOfFailure(4, report);
 	}
-
-
 
 	private String applySchematronAndCompare(String mdNameRoot, boolean forceCreationDate) throws Exception {
 		Path xmlFile = getResource(mdNameRoot + "-19115-3.che.xml");
