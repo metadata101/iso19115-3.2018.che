@@ -27,7 +27,7 @@ import static org.fao.geonet.schema.TestSupport.getResource;
 import static org.fao.geonet.schema.TestSupport.getResourceInsideSchema;
 import static org.junit.Assert.assertEquals;
 
-public class SchematronBgdiSwissgeoTest {
+public class SchematronBgdiSwissgeoMandatoryTest {
 
 	private static final boolean GENERATE_EXPECTED_FILE = false;
 
@@ -43,7 +43,7 @@ public class SchematronBgdiSwissgeoTest {
 	@BeforeClass
 	public static void initSaxonAndCompileSchematron() throws Exception {
 		mustInitSaxonFirst();
-		Element schematronSource = Xml.loadFile(getResourceInsideSchema("schematron/schematron-rules-bgdi-swissgeo.sch"));
+		Element schematronSource = Xml.loadFile(getResourceInsideSchema("schematron/schematron-rules-bgdi-swissgeo-mandatory.sch"));
 		Path schematronCompilation = getResource("gn-site/WEB-INF/classes/schematron/iso_svrl_for_xslt2.xsl");
 		Element compiledSchematron = Xml.transform(schematronSource, schematronCompilation);
 		compiledSchematronFilePath = temporaryFolder.getRoot().toPath().resolve("path/requiredtoFind/utilsfile/compiled-iso-schematron.xsl");
@@ -105,7 +105,7 @@ public class SchematronBgdiSwissgeoTest {
 
 		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
 		String actual = xmlOutputter.outputString(new Document(report));
-		TestSupport.assertGeneratedDataByteMatchExpected("schematron/" + mdNameRoot + "-schematron-rules-bgdi-swissgeo-report.xml", actual, GENERATE_EXPECTED_FILE);
+		TestSupport.assertGeneratedDataByteMatchExpected("schematron/" + mdNameRoot + "-schematron-rules-bgdi-swissgeo-mandatory-report.xml", actual, GENERATE_EXPECTED_FILE);
 		return actual;
 	}
 
