@@ -43,9 +43,13 @@ public class SchematronBgdiSwissgeoRecommendedTest extends AbstractSchematronTes
 		Element roleElement = Xml.selectElement(md, "*//mri:status/mcc:MD_ProgressCode");
 		roleElement.getAttribute("codeListValue").setValue("");
 		Xml.selectElement(md, "*//che:CHE_MD_LegalConstraints/mco:otherConstraints/gcx:Anchor").setText("");
+		Xml.selectElement(md, "*//che:CHE_MD_DataIdentification/mri:citation/cit:CI_Citation" +
+						"/cit:identifier/mcc:MD_Identifier/mcc:code/gco:CharacterString")
+				.setText("");
+
 
 		String report = applySchematronAndCompare("wanderWege-missings", md);
 
-		hasExpectedNumberOfFailure(3, report);
+		hasExpectedNumberOfFailure(4, report);
 	}
 }
