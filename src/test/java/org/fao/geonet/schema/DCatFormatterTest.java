@@ -56,7 +56,7 @@ public class DCatFormatterTest {
 	}
 
 	@Test
-    @Ignore
+    @Ignore("Legacy formatter via Iso19139, does not work")
 	public void euGeoDcatApSemiceu() throws Exception {
 		transformToDCatAndCompare("eu-geodcat-ap-semiceu","amphibians");
 	}
