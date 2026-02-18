@@ -75,7 +75,7 @@ public class DCatFormatterTest {
 
 		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
 		String actual = xmlOutputter.outputString(new Document(euDcatApView));
-		TestSupport.assertGeneratedDataByteMatchExpected(mdNameRoot + "-"  + profile + ".xml", actual, GENERATE_EXPECTED_FILE);
+		TestSupport.assertGeneratedDataByteMatchExpected("dcat/" + mdNameRoot + "-"  + profile + ".xml", actual, GENERATE_EXPECTED_FILE);
 	}
 
 }
