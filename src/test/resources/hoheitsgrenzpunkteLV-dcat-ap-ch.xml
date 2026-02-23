@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatapch="http://dcat-ap.ch/ns/">
+  <dcat:Dataset rdf:about="https://ckan.opendata.swiss/perma/ffc0267e-aca8-49ac-8f3e-86c9beca51f2@bundesamt-fur-landestopografie-swisstopo">
+    <dct:identifier>ffc0267e-aca8-49ac-8f3e-86c9beca51f2@bundesamt-fur-landestopografie-swisstopo</dct:identifier>
+    <dct:title xml:lang="de">swissTLM3D Übrige Bahn</dct:title>
+    <dct:title xml:lang="fr">swissTLM3D Autres transports</dct:title>
+    <dct:title xml:lang="it">swissTLM3D Altri trasporti</dct:title>
+    <dct:title xml:lang="en">swissTLM3D Other transportations</dct:title>
+    <dct:title xml:lang="rm">swissTLM3D Auters transports</dct:title>
+    <dct:description xml:lang="de">swissTLM3D übrige Bahnen beinhaltet verschiedene Seilbahnarten sowie andere mechanische Transportsysteme. Es ist Bestandteil des Datensatzes swissTLM3D. Mit seiner hohen Genauigkeit und dem Einbezug der dritten Dimension ist swissTLM3D der umfassendste 3D-Vektordatensatz der Schweiz. Im Geoportal des Bundes werden die Objekte der Ebene "übrige Bahnen" entsprechend der ausgewählten Zoomstufe schrittweise dargestellt.</dct:description>
+    <dct:description xml:lang="fr">swissTLM3D autres transports comprend les différents transports à câble ainsi que d'autres types de transport mécanique. Il fait partie du jeu de données swissTLM3D. Avec une haute précision et l'intégration de la troisième dimension, swissTLM3D constitue le jeu de données vectorielles en 3D le plus complet de la Suisse. Dans le géoportail fédéral, les objets de la couche " autres transports" sont affichés progressivement en fonction des niveaux de zoom.</dct:description>
+    <dct:description xml:lang="it">swissTLM3D altri trasporti comprende i differenti tipi di trasporto a fune e altri tipi di trasporto meccanico. Fa parte del set di dati swissTLM3D. Il prodotto swissTLM3D offre un'alta precisione e include anche la terza dimensione, si tratta della raccolta dati vettoriali in 3D più completa del territorio svizzero. All'interno del geoportale federale, gli oggetti del layer "altri trasporti " sono visualizzabili progressivamente, in funzione del livello di zoom selezionato.</dct:description>
+    <dct:description xml:lang="en">swissTLM3D other transportations contains the different types of cable railway and other types of mechanical transport. It is part of the dataset swissTLM3D. With a high accuracy and the incorporation of a third dimension, swissTLM3D is the most extensive 3D vector data set of Switzerland. In the federal geoportal the objects of the layer "other transportations" are displayed gradually according to the different zoomlevels.</dct:description>
+    <dct:description xml:lang="rm">swissTLM3D Auters transports cuntegna differents geners da telefericas sco er auters sistems da transport mecanics. Ella è ina part integrala da l'unitad da datas swissTLM3D. Cun sia auta precisiun e cun l'integraziun da la terza dimensiun è swissTLM3D l'unitad da datas vectorialas en 3D la pli cumplessiva da la Svizra. En il geoportal da la Confederaziun vegnan ils objects dad "Auters transports" preschentads progressivamain, tut tenor il stgalim da zoom tschernì.</dct:description>
+    <dct:publisher>
+      <foaf:Agent rdf:about="https://opendata.swiss/organization/bundesamt-fur-landestopografie-swisstopo">
+        <foaf:name xml:lang="de">Bundesamt für Landestopografie swisstopo</foaf:name>
+      </foaf:Agent>
+    </dct:publisher>
+    <dcat:contactPoint>
+      <vcard:Organization>
+        <vcard:fn>Bundesamt für Landestopografie swisstopo</vcard:fn>
+        <vcard:hasEmail rdf:resource="mailto:geocat@swisstopo.ch" />
+      </vcard:Organization>
+    </dcat:contactPoint>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://map.geo.admin.ch/?layers=ch.swisstopo.swisstlm3d-uebrigerverkehr" />
+        <dct:title xml:lang="de">Vorschau map.geo.admin.ch</dct:title>
+        <dct:title xml:lang="fr">Aperçu map.geo.admin.ch</dct:title>
+        <dct:title xml:lang="it">Previsione map.geo.admin.ch</dct:title>
+        <dct:title xml:lang="en">Preview map.geo.admin.ch</dct:title>
+        <dct:description xml:lang="de">Vorschau map.geo.admin.ch</dct:description>
+        <dct:description xml:lang="fr">Aperçu map.geo.admin.ch</dct:description>
+        <dct:description xml:lang="it">Previsione map.geo.admin.ch</dct:description>
+        <dct:description xml:lang="en">Preview map.geo.admin.ch</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-04-01T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=de" />
+        <dct:title xml:lang="de">ch.swisstopo.swisstlm3d-uebrigerverkehr</dct:title>
+        <dct:title xml:lang="fr">ch.swisstopo.swisstlm3d-uebrigerverkehr</dct:title>
+        <dct:title xml:lang="it">ch.swisstopo.swisstlm3d-uebrigerverkehr</dct:title>
+        <dct:title xml:lang="en">ch.swisstopo.swisstlm3d-uebrigerverkehr</dct:title>
+        <dct:title xml:lang="rm">ch.swisstopo.swisstlm3d-uebrigerverkehr</dct:title>
+        <dct:description xml:lang="de">WMTS-BGDI Dienst, Layer "Seilbahnen swissTLM3D"</dct:description>
+        <dct:description xml:lang="fr">Service WMTS-IFDG, couche , Layer "Transports à câble swissTLM3D"</dct:description>
+        <dct:description xml:lang="it">Servizio WMTS-IFDG, strato "Trasporti a fune swissTLM3D"</dct:description>
+        <dct:description xml:lang="en">WMTS-FSDI service, layer "Cableways swissTLM3D"</dct:description>
+        <dct:description xml:lang="rm">WMTS-BGDI Dienst, Layer "Seilbahnen swissTLM3D"</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/WMTS_SRVC" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-04-01T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities" />
+        <dct:title xml:lang="de">ch.swisstopo.swisstlm3d-uebrigerverkehr</dct:title>
+        <dct:description xml:lang="de">Seilbahnen swissTLM3D</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/WMS_SRVC" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-04-01T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://www.swisstopo.admin.ch/de/landschaftsmodell-swisstlm3d" />
+        <dcat:downloadURL rdf:resource="https://www.swisstopo.admin.ch/de/landschaftsmodell-swisstlm3d" />
+        <dct:description xml:lang="de">Shop</dct:description>
+        <dct:description xml:lang="fr">Shop</dct:description>
+        <dct:description xml:lang="it">Shop</dct:description>
+        <dct:description xml:lang="en">Shop</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/UNSPECIFIED" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-04-01T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swisstlm3d-uebrigerverkehr" />
+        <dct:title xml:lang="de">RESTful API von geo.admin.ch</dct:title>
+        <dct:title xml:lang="fr">RESTful API de geo.admin.ch</dct:title>
+        <dct:title xml:lang="it">RESTful API da geo.admin.ch</dct:title>
+        <dct:title xml:lang="en">RESTful API from geo.admin.ch</dct:title>
+        <dct:title xml:lang="rm">RESTful API dad geo.admin.ch</dct:title>
+        <dct:description xml:lang="de">RESTful API von geo.admin.ch</dct:description>
+        <dct:description xml:lang="fr">RESTful API de geo.admin.ch</dct:description>
+        <dct:description xml:lang="it">RESTful API da geo.admin.ch</dct:description>
+        <dct:description xml:lang="en">RESTful API from geo.admin.ch</dct:description>
+        <dct:description xml:lang="rm">RESTful API dad geo.admin.ch</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/REST" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-04-01T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-04-01T00:00:00</dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T00:00:00</dct:modified>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI" />
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TRAN" />
+    <dcat:landingPage rdf:resource="https://www.swisstopo.admin.ch/de/landschaftsmodell-swisstlm3d" />
+    <dct:relation>
+      <rdf:Description rdf:about="https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/ffc0267e-aca8-49ac-8f3e-86c9beca51f2">
+        <rdfs:label xml:lang="de">geocat.ch Permalink</rdfs:label>
+        <rdfs:label xml:lang="fr">geocat.ch permalien</rdfs:label>
+        <rdfs:label xml:lang="it">geocat.ch link permanente</rdfs:label>
+        <rdfs:label xml:lang="en">geocat.ch permalink</rdfs:label>
+      </rdf:Description>
+    </dct:relation>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+    <dcat:keyword xml:lang="de">Verkehrsnetz</dcat:keyword>
+    <dcat:keyword xml:lang="fr">réseau de transport</dcat:keyword>
+    <dcat:keyword xml:lang="it">rete di trasporto</dcat:keyword>
+    <dcat:keyword xml:lang="en">traffic network</dcat:keyword>
+    <dcat:keyword xml:lang="de">Einzelobjekt</dcat:keyword>
+    <dcat:keyword xml:lang="fr">objet divers</dcat:keyword>
+    <dcat:keyword xml:lang="it">oggetto singolo</dcat:keyword>
+    <dcat:keyword xml:lang="en">single object</dcat:keyword>
+    <dcat:keyword xml:lang="de">Aufbewahrungs- und Archivierungsplanung AAP - Bund</dcat:keyword>
+    <dcat:keyword xml:lang="fr">Planification de la conservation et de l'archivage AAP - Conféderation</dcat:keyword>
+    <dcat:keyword xml:lang="it">Pianificazione della conservazione e dell’archiviazione AAP - Confederazione</dcat:keyword>
+    <dcat:keyword xml:lang="en">Conservation and archiving planning AAP - Confederation</dcat:keyword>
+    <dcat:keyword xml:lang="de">Landschaftsmodell</dcat:keyword>
+    <dcat:keyword xml:lang="fr">modèle du territoire</dcat:keyword>
+    <dcat:keyword xml:lang="it">modello del territorio</dcat:keyword>
+    <dcat:keyword xml:lang="en">landscape model</dcat:keyword>
+    <dcat:keyword xml:lang="de">Geobasisdaten</dcat:keyword>
+    <dcat:keyword xml:lang="fr">géodonnées de base</dcat:keyword>
+    <dcat:keyword xml:lang="it">geodati di base</dcat:keyword>
+    <dcat:keyword xml:lang="en">official geodata</dcat:keyword>
+    <dcat:keyword xml:lang="de">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="fr">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="it">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="en">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="rm">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="de">GIS (Geografisches Informationssystem)</dcat:keyword>
+    <dcat:keyword xml:lang="fr">SIG (Système d'Information Géographique)</dcat:keyword>
+    <dcat:keyword xml:lang="it">SIG (Sistema Informativo Geografico)</dcat:keyword>
+    <dcat:keyword xml:lang="en">GIS (Geographic Information System)</dcat:keyword>
+    <dcat:keyword xml:lang="de">Geografische Bezeichnungen</dcat:keyword>
+    <dcat:keyword xml:lang="fr">Dénominations géographiques</dcat:keyword>
+    <dcat:keyword xml:lang="it">Nomi geografici</dcat:keyword>
+    <dcat:keyword xml:lang="en">Geographical names</dcat:keyword>
+    <dcat:keyword xml:lang="de">Verkehrsnetze</dcat:keyword>
+    <dcat:keyword xml:lang="fr">Réseaux de transport</dcat:keyword>
+    <dcat:keyword xml:lang="it">Reti di trasporto</dcat:keyword>
+    <dcat:keyword xml:lang="en">Transport networks</dcat:keyword>
+    <dcat:keyword xml:lang="de">BGDI Bundesgeodaten-Infrastruktur</dcat:keyword>
+    <dcat:keyword xml:lang="fr">IFDG l’Infrastructure Fédérale de données géographiques</dcat:keyword>
+    <dcat:keyword xml:lang="it">IFDG Infrastruttura federale dei dati geografici</dcat:keyword>
+    <dcat:keyword xml:lang="en">FSDI Federal Spatial Data Infrastructure</dcat:keyword>
+    <dct:spatial>Schweiz</dct:spatial>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+  </dcat:Dataset>
+  <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by">
+    <rdf:type rdf:resource="http://purl.org/dc/terms/LicenseDocument" />
+  </dct:RightsStatement>
+</rdf:RDF>
+

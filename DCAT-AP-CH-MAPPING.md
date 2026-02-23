@@ -1,0 +1,234 @@
+# eCH-0271 to DCAT-AP CH Mapping Documentation
+
+## Overview
+
+This document describes the mapping from eCH-0271 (Swiss geocat.ch metadata standard) to DCAT-AP CH (Data Catalog Vocabulary - Application Profile for Switzerland).
+
+The transformation is implemented in the XSLT stylesheet `dcat-ap-ch-core-dataset.xsl` and produces RDF/XML output conforming to the [DCAT-AP CH specification](https://handbook.opendata.swiss/de/content/glossar/bibliothek/dcat-ap-ch.html).
+
+## Key Features
+
+- **Multilingual support**: Handles all four Swiss national languages (DE, FR, IT, EN) plus Romansh (RM)
+- **Organization mapping**: Uses `organization-mapping.xml` to map geocat.ch organizations to opendata.swiss slugs
+- **Intelligent slug generation**: Automatically generates publisher slugs from organization acronyms or names
+- **License mapping**: Converts ISO constraints to DCAT-AP CH license URIs (terms_open, terms_by, terms_ask, etc.)
+- **Format detection**: Automatically detects distribution formats from protocols and file extensions
+- **EU vocabulary alignment**: Maps ISO code lists to EU Named Authority Lists
+
+## Dataset Level Mapping
+
+-> See mapping-eCH0271-dcat-ap-ch table (tab dcat_ap_ch_mapping)
+
+## Distribution Level Mapping
+
+Distributions are created for online resources with specific protocols:
+- `WWW:DOWNLOAD*` - Download services
+- `OGC:WMTS` - WMTS tile services  
+- `OGC:WFS` - WFS feature services
+- `OGC:WMS` - WMS map services
+- `ESRI:REST` - ArcGIS REST services
+- `LINKED:DATA` - Linked data services
+- `MAP:Preview` - Map preview pages
+
+-> See mapping-eCH0271-dcat-ap-ch table (tab dcat_ap_ch_distribution_mapping)
+
+## Code Mappings
+
+### ISO Topic Category to EU Data Theme
+
+| ISO Topic Category | EU Data Theme | URI |
+|-------------------|---------------|-----|
+| imageryBaseMapsEarthCover, location, elevation, boundaries, planningCadastre, geoscientificInformation, structure | REGI (Regions and cities) | http://publications.europa.eu/resource/authority/data-theme/REGI |
+| environment, biota, oceans, inlandWaters, climatologyMeteorologyAtmosphere | ENVI (Environment) | http://publications.europa.eu/resource/authority/data-theme/ENVI |
+| society | SOCI (Population and society) | http://publications.europa.eu/resource/authority/data-theme/SOCI |
+| health | HEAL (Health) | http://publications.europa.eu/resource/authority/data-theme/HEAL |
+| transportation | TRAN (Transport) | http://publications.europa.eu/resource/authority/data-theme/TRAN |
+| farming | AGRI (Agriculture) | http://publications.europa.eu/resource/authority/data-theme/AGRI |
+| economy | ECON (Economy and finance) | http://publications.europa.eu/resource/authority/data-theme/ECON |
+
+### ISO Maintenance Frequency to EU Frequency
+
+| ISO Frequency Code | EU Frequency Code | Label |
+|-------------------|-------------------|-------|
+| continual | CONT | Continuous |
+| daily | DAILY | Daily |
+| weekly | WEEKLY | Weekly |
+| fortnightly | BIWEEKLY | Biweekly |
+| monthly | MONTHLY | Monthly |
+| quarterly | QUARTERLY | Quarterly |
+| biannually | ANNUAL_2 | Semiannual |
+| annually | ANNUAL | Annual |
+| asNeeded, irregular | IRREG | Irregular |
+| (empty/unknown) | UNKNOWN | Unknown |
+
+### ISO 639 Language Codes
+
+| ISO 639-2 (3-letter) | ISO 639-1 (2-letter) | EU Code |
+|---------------------|---------------------|---------|
+| ger, deu | de | DEU |
+| fre, fra | fr | FRA |
+| ita | it | ITA |
+| eng | en | ENG |
+| roh | rm | ROH |
+
+### Distribution Format Mapping
+
+| Protocol/Extension | Format Code | URI |
+|-------------------|-------------|-----|
+| OGC:WMS* | WMS_SRVC | http://publications.europa.eu/resource/authority/file-type/WMS_SRVC |
+| OGC:WMTS* | WMTS_SRVC | http://publications.europa.eu/resource/authority/file-type/WMTS_SRVC |
+| OGC:WFS* | WFS_SRVC | http://publications.europa.eu/resource/authority/file-type/WFS_SRVC |
+| ESRI:REST* | REST | http://publications.europa.eu/resource/authority/file-type/REST |
+| MAP:Preview* | HTML | http://publications.europa.eu/resource/authority/file-type/HTML |
+| *.shp | SHP | http://publications.europa.eu/resource/authority/file-type/SHP |
+| *.gpkg | GPKG | http://publications.europa.eu/resource/authority/file-type/GPKG |
+| *.geojson | GEOJSON | http://publications.europa.eu/resource/authority/file-type/GEOJSON |
+| *.json | JSON | http://publications.europa.eu/resource/authority/file-type/JSON |
+| *.gml | GML | http://publications.europa.eu/resource/authority/file-type/GML |
+| *.kml | KML | http://publications.europa.eu/resource/authority/file-type/KML |
+| *.csv | CSV | http://publications.europa.eu/resource/authority/file-type/CSV |
+| *.xml | XML | http://publications.europa.eu/resource/authority/file-type/XML |
+| *.zip | ZIP | http://publications.europa.eu/resource/authority/file-type/ZIP |
+| *.pdf | PDF | http://publications.europa.eu/resource/authority/file-type/PDF |
+| *.html, *.htm | HTML | http://publications.europa.eu/resource/authority/file-type/HTML |
+| (unknown) | UNSPECIFIED | http://publications.europa.eu/resource/authority/file-type/UNSPECIFIED |
+
+### License Mapping
+
+Constraints text in `mco:useLimitation` or `mco:otherConstraints` is analyzed to determine the license:
+
+| Constraint Text Contains | License URI |
+|-------------------------|-------------|
+| "Opendata BY-ASK" | http://dcat-ap.ch/vocabulary/licenses/terms_by_ask |
+| "Opendata BY" | http://dcat-ap.ch/vocabulary/licenses/terms_by |
+| "Opendata ASK" | http://dcat-ap.ch/vocabulary/licenses/terms_ask |
+| "Opendata OPEN", "Utilisation libre", "Freie Nutzung" | http://dcat-ap.ch/vocabulary/licenses/terms_open |
+| "CC0" | https://creativecommons.org/publicdomain/zero/1.0/ |
+| "CC BY 4.0" | https://creativecommons.org/licenses/by/4.0/ |
+| (default fallback) | http://dcat-ap.ch/vocabulary/licenses/terms_open |
+
+## Organization Publisher Mapping
+
+The transformation uses a configurable `organization-mapping.xml` file to map geocat.ch organization names to opendata.swiss publisher slugs. This ensures consistent publisher identifiers across both platforms.
+
+### Mapping Priority
+
+1. **Exact match**: geocat.ch organization name matches `@geocatName` in mapping file
+2. **Base name exact match**: Organization name before comma matches `@geocatName`
+3. **Contains match**: `@geocatName` contains the organization name
+4. **Acronym fallback**: Use organization acronym from `che:organisationAcronym` (slugified)
+5. **Name fallback**: Use organization name (slugified)
+
+### Slug Generation
+
+The `local:slugify()` function normalizes organization names:
+- German umlauts: ü→u, ö→o, ä→a, ß→ss
+- French accents: é/è/ê→e, à/â→a, ç→c
+- Convert to lowercase
+- Replace non-alphanumeric characters with hyphens
+- Remove leading/trailing hyphens and consecutive hyphens
+
+Example: "Bundesamt für Umwelt (BAFU)" → "bafu" or "bundesamt-fur-umwelt"
+
+## URI Patterns
+
+### Dataset URI
+```
+https://ckan.opendata.swiss/perma/{uuid}@{publisher-slug}
+```
+
+Example:
+```
+https://ckan.opendata.swiss/perma/550e8400-e29b-41d4-a716-446655440000@bafu
+```
+
+### Publisher URI
+```
+https://opendata.swiss/organization/{publisher-slug}
+```
+
+Example:
+```
+https://opendata.swiss/organization/bafu
+```
+
+### geocat.ch Relation URI
+```
+https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/{uuid}
+```
+
+Example:
+```
+https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/550e8400-e29b-41d4-a716-446655440000
+```
+
+## Multilingual Handling
+
+All text fields (title, description, keywords) support multilingual content:
+
+1. **Default language**: Extracted from `gco:CharacterString` with language from `mdb:defaultLocale/*/lan:language`
+2. **Alternative languages**: Extracted from `lan:PT_FreeText/lan:textGroup/lan:LocalisedCharacterString/@locale`
+
+The transformation:
+- Resolves locale IDs to language codes via `mdb:locale` or `mdb:otherLocale`
+- Converts ISO 639-2 (3-letter) codes to ISO 639-1 (2-letter) for xml:lang attributes
+- Skips unsupported or unmapped language codes (returns empty string instead of 'und')
+
+Example output:
+```xml
+<dct:title xml:lang="de">Deutscher Titel</dct:title>
+<dct:title xml:lang="fr">Titre français</dct:title>
+<dct:title xml:lang="it">Titolo italiano</dct:title>
+<dct:title xml:lang="en">English title</dct:title>
+```
+
+## Date Handling
+
+All dates are formatted as ISO 8601 DateTime with timezone:
+
+- Input formats accepted: `YYYY-MM-DD` or `YYYY-MM-DDTHH:MM:SS` (with or without timezone)
+- Output format: `YYYY-MM-DDTHH:MM:SS+00:00`
+- Timezone 'Z' is converted to '+00:00' for better DCAT-AP CH compatibility
+
+## Implementation Notes
+
+### XPath Selection Priority
+
+For contact/publisher organization selection:
+1. pointOfContact with role "publisher"
+2. pointOfContact with role "owner"
+3. pointOfContact with role "pointOfContact"
+4. First metadata contact
+
+### Distribution Filtering
+
+Only online resources with specific protocol prefixes are converted to distributions:
+- `WWW:DOWNLOAD*` - downloadable files
+- `OGC:WMTS`, `OGC:WFS`, `OGC:WMS` - OGC web services
+- `ESRI:REST` - ArcGIS services
+- `LINKED:DATA` - linked data endpoints
+- `MAP:Preview` - map preview pages
+
+Resources with `WWW:LINK*` are used for landing pages, not distributions.
+
+### Mandatory Fields Handling
+
+The transformation ensures all mandatory DCAT-AP CH properties are present:
+- If no issued date exists, creation date is used as fallback
+- If no license is found, defaults to `terms_open`
+- If no format can be determined, uses `UNSPECIFIED`
+- Contact point requires at least email address to be included
+
+## References
+
+- [DCAT-AP CH Specification](https://handbook.opendata.swiss/de/content/glossar/bibliothek/dcat-ap-ch.html)
+- [ISO 19115-3 Standard](https://www.iso.org/standard/32579.html)
+- [EU Named Authority Lists](http://publications.europa.eu/mdr/authority/)
+- [geocat.ch Metadata Catalog](https://www.geocat.ch/)
+- [opendata.swiss Open Data Portal](https://opendata.swiss/)
+
+## Version History
+
+- **Current version**: Based on XSLT stylesheet in iso19115-3.2018.che plugin
+- **Target DCAT version**: DCAT 2.0 / DCAT-AP CH
+- **Last updated**: February 2026

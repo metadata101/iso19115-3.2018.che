@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatapch="http://dcat-ap.ch/ns/">
+  <dcat:Dataset rdf:about="https://ckan.opendata.swiss/perma/0572e842-7e34-409a-90d9-526d012a1c2d@agroscope-metadaten">
+    <dct:identifier>0572e842-7e34-409a-90d9-526d012a1c2d@agroscope-metadaten</dct:identifier>
+    <dct:title xml:lang="de">Abschätzung der organischen Böden in der Schweiz 2024</dct:title>
+    <dct:title xml:lang="fr">Estimation des sols organiques en Suisse 2024</dct:title>
+    <dct:title xml:lang="en">Estimate of Switzerland’s Organic Soil Surface, 2025</dct:title>
+    <dct:description xml:lang="de">Die Abschätzung der organischen Bodenfläche der Schweiz aus dem Jahr 2025 ist eine Aktualisierung der Abschätzung der organischen Böden aus dem Jahr 2015. Wie in der Karte von 2015 wurde der Ansatz der Zusammenstellung vorhandener Informationsquellen (z. B. Bodenkarten, geologische Karten, Waldlebensraumkarten, historische Beobachtungen von Mooren sowie Verzeichnisse von Niedermooren und Hochmooren) verwendet, um eine Schätzung des aktuellen Umfangs der organischen Böden zu erstellen. In einem ersten Schritt wurden vier wichtige Datensätze aktualisiert: Bodenkarten, geologische Karten, das nationale Inventar der Hoch- und Übergangsmoore und die Waldbiotopkarten. In einem zweiten Schritt wurden alle Datensätze harmonisiert und in ein Datenmodell eingefügt, das die halbautomatische Kombination der verschiedenen Datensätze ermöglicht. In einem dritten Schritt wurden die Datensätze kombiniert (genauer gesagt überlagert) und eine regelbasierte Methode wurde verwendet, um die resultierenden Flächen als organischen oder nicht organischen Boden zu charakterisieren. In einem vierten Schritt wurden Informationen über die mineralische Bodenoberfläche verwendet, um Flächen zu löschen, für die der Nachweis für mineralischen Boden stärker war. als jener für organischen Boden. Die für die meisten Anwendungen empfohlene Fläche der organischen Böden beträgt 32.702 ha, was der „weniger konservativen“ Schätzung oder organischen Böden entspricht. Aufgrund der heterogenen Natur der Informationsquellen, die zur Erstellung dieser Indikatorkarte verwendet wurden, ist es nicht möglich, den Maßstab zu definieren, für den diese Karte geeignet ist. Es kann jedoch folgende Empfehlung ausgesprochen werden: Die Karte eignet sich nur für die Verwendung auf regionaler Ebene (z. B. Kanton oder Bezirk, ca. 1:100.000) und in größerem Maßstab; sie ist für die Verwendung im Feldmaßstab ungeeignet. Die beiden Publikationen (Wüst-Galley, C. and J. Leifeld (2025) “The distribution and (future) use of Switzerland’s organic soils” Mires and Peat 32(4): 1-17, DOI: 10.19189/001c.130819 and Wüst-Galley, C., A. Grünig and J. Leifeld (2015) “Locating organic soils for the greenhouse gas inventory” Agroscope Science 26, 100 pp.) beschreiben die Methoden und die aktualisierten Datensätze im Detail. s wird wärmstens empfohlen beide Publikationen vor der Nutzung der Datensätze zu lesen. Teile der Daten sind mit einer Lizenz belegt. Bitte die zusätzlich verfügbare Dokumentation beachten.</dct:description>
+    <dct:description xml:lang="fr">L'estimation de la surface des sols organiques de la Suisse en 2025 est une mise à jour de l'estimation des sols organiques de 2015. Comme dans la carte de 2015, elle a utilisé l'approche consistant à rassembler les sources d'information existantes (par exemple, les cartes des sols, les cartes géologiques, les cartes des habitats forestiers, les observations historiques des tourbières, ainsi que les inventaires des marais et des tourbières hautes) pour générer une estimation de l'étendue actuelle des sols organiques. Dans un premier étape, quatre ensembles de données importants ont été mis à jour : les cartes des sols, les cartes géologiques, l'inventaire national des tourbières hautes et des tourbières de transition, et les cartes des habitats forestiers. Dans un deuxième étape, tous les ensembles de données ont été harmonisés et insérés dans un modèle de données, permettant la combinaison semi-automatique des différents ensembles de données. Dans un troisième étape, les ensembles de données ont été combinés (plus précisément, superposés) et une méthode basée sur des règles a été utilisée pour caractériser les surfaces résultantes comme étant des sols organiques ou non organiques. Dans une quatrième étape, les informations sur la surface du sol minéral ont été utilisées pour supprimer les surfaces pour lesquelles la preuve de sol minéral était plus forte. La surface de sol recommandée pour la plupart des applications est de 32 702 ha, ce qui correspond à l'estimation « moins conservatrice » ou aux sols organiques. En raison de la nature hétérogène des sources d'information utilisées pour générer cette carte d'indicateurs, il n'est pas possible de définir l'échelle pour laquelle cette carte est appropriée. La recommandation suivante peut toutefois être faite : la carte ne peut être utilisée qu'à l'échelle régionale (par exemple, cantonale ou régionale, environ 1:100 000) et à une échelle plus grande ; elle ne convient pas à une utilisation à l'échelle du terrain. Les deux publications (Wüst-Galley, C. and J. Leifeld (2025) “The distribution and (future) use of Switzerland’s organic soils” Mires and Peat 32(4): 1-17, DOI: 10.19189/001c.130819 and Wüst-Galley, C., A. Grünig and J. Leifeld (2015) “Locating organic soils for the greenhouse gas inventory” Agroscope Science 26, 100 pp.) décrivent en détail la méthodologie et les ensembles de données mis à jour, et il est fortement recommandé à toute personne souhaitant utiliser cet ensemble de données de lire ces deux publications. Une partie des données est soumise à une licence. Consultez s'il vous plaît la documentation aditionelle.</dct:description>
+    <dct:description xml:lang="en">Estimate of Switzerland’s Organic Soil Surface, 2025 The 2025 estimate of Switzerland’s organic soil surface is an update of the 2015 estimate of organic soils. As in the 2015 map, it used the approach of collating existing information sources (e.g., soil maps, geology maps, forest habitat maps, historical observations of peatlands, as well as inventories of fens and raised bogs) to generate an estimate or the current extent of organic soils. In a first step, four important data sets were updated: Soil maps, geology maps, the national inventory of raised and transitional bogs, and the forest habitat maps. In a second step, all data sets were harmonized and inserted into a data model, allowing the semi-automatic combination of the various data sets. In a third step, the data sets were combined (more specifically, overlain) and a rule-based method was used to characterise the resulting surfaces as organic soil, or not organic soil. In a fourth step, information on the mineral soil surface was used to delete surfaces for which the evidence of mineral soil was stronger. The soil surface recommended for use in most applications is 32,702 ha, which corresponds to the ‘less conservative’ estimate or organic soils. Because of the heterogeneous nature of the information sources that were used to generate this indicator map, it is not possible to define the scale for which this map is appropriate. The following recommendation can however be made: The map is suitable for use at the regional scale (e.g., cantonal or district, ca. 1:100,000) and larger scale only; it is unsuitable for field-scale use. The two publications (Wüst-Galley, C. and J. Leifeld (2025) “The distribution and (future) use of Switzerland’s organic soils” Mires and Peat 32(4): 1-17, DOI: 10.19189/001c.130819 and Wüst-Galley, C., A. Grünig and J. Leifeld (2015) “Locating organic soils for the greenhouse gas inventory” Agroscope Science 26, 100 pp.) describe the methodology and updated data sets in detail, and it is strongly recommended that both publications should be read by anybody wanting to use this data set. Parts of the data are subject to a licence. Please read the additional documentation.</dct:description>
+    <dct:publisher>
+      <foaf:Agent rdf:about="https://opendata.swiss/organization/agroscope-metadaten">
+        <foaf:name xml:lang="de">Agroscope</foaf:name>
+      </foaf:Agent>
+    </dct:publisher>
+    <dcat:contactPoint>
+      <vcard:Organization>
+        <vcard:fn>Agroscope</vcard:fn>
+        <vcard:hasEmail rdf:resource="mailto:GIS@agroscope.admin.ch" />
+      </vcard:Organization>
+    </dcat:contactPoint>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://data.geo.admin.ch/browser/index.html#/collections/ch.agroscope.LAYERNAME" />
+        <dcat:downloadURL rdf:resource="https://data.geo.admin.ch/browser/index.html#/collections/ch.agroscope.LAYERNAME" />
+        <dct:title xml:lang="de">STAC Browser</dct:title>
+        <dct:title xml:lang="fr">Lien vers les données à télécharger</dct:title>
+        <dct:description xml:lang="de">Link zum Datenbezug</dct:description>
+        <dct:description xml:lang="fr">Lien vers la distribution des données</dct:description>
+        <dct:description xml:lang="it">Link per le fonti dei dati</dct:description>
+        <dct:description xml:lang="en">Link for data download</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/UNSPECIFIED" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08T00:00:00+00:00</dct:issued>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://map.geo.admin.ch/?topic=aviation&amp;lang=de&amp;bgLayer=ch.swisstopo.pixelkarte-grau&amp;layers=ch.bazl.wohngebiete-aulav&amp;catalogNodes=2863&amp;layers_opacity=0.6&amp;E=2642942.51&amp;N=1189717.47&amp;zoom=2" />
+        <dct:title xml:lang="de">Vorschau der Karte</dct:title>
+        <dct:title xml:lang="fr">Prévie da la carte</dct:title>
+        <dct:title xml:lang="en">Map preview</dct:title>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08T00:00:00+00:00</dct:issued>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map%20SI.pdf" />
+        <dcat:downloadURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map%20SI.pdf" />
+        <dct:title xml:lang="de">Wüst-Galley Leifeld 2025 org soils map SI.pdf</dct:title>
+        <dct:title xml:lang="fr">Wüst-Galley Leifeld 2025 org soils map SI.pdf</dct:title>
+        <dct:title xml:lang="it">Wüst-Galley Leifeld 2025 org soils map SI.pdf</dct:title>
+        <dct:title xml:lang="en">Wüst-Galley Leifeld 2025 org soils map SI.pdf</dct:title>
+        <dct:title xml:lang="rm">Wüst-Galley Leifeld 2025 org soils map SI.pdf</dct:title>
+        <dct:description xml:lang="de">Publikation zu den Daten von 2024</dct:description>
+        <dct:description xml:lang="fr">Publication expliquant les données de 2024</dct:description>
+        <dct:description xml:lang="en">Publication explaining the data of 2024</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/PDF" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08T00:00:00+00:00</dct:issued>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/Abstract_de_engl_fr_def.pdf" />
+        <dcat:downloadURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/Abstract_de_engl_fr_def.pdf" />
+        <dct:title xml:lang="de">Abstract_de_engl_fr_def.pdf</dct:title>
+        <dct:title xml:lang="fr">Abstract_de_engl_fr_def.pdf</dct:title>
+        <dct:title xml:lang="it">Abstract_de_engl_fr_def.pdf</dct:title>
+        <dct:title xml:lang="en">Abstract_de_engl_fr_def.pdf</dct:title>
+        <dct:title xml:lang="rm">Abstract_de_engl_fr_def.pdf</dct:title>
+        <dct:description xml:lang="de">Zusätzliche Beschreibung der Daten</dct:description>
+        <dct:description xml:lang="fr">Description aditionelle des données</dct:description>
+        <dct:description xml:lang="en">Additional description of the data</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/PDF" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08T00:00:00+00:00</dct:issued>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08T00:00:00</dct:issued>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI" />
+    <dcat:landingPage rdf:resource="https://www.agroscope.admin.ch/agroscope/de/home/themen/umwelt-ressourcen/klima-lufthygiene/co2-treibhausgase-landwirtschaftliche-boeden/organische-boeden/flaeche.html" />
+    <dct:relation>
+      <rdf:Description rdf:about="https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/0572e842-7e34-409a-90d9-526d012a1c2d">
+        <rdfs:label xml:lang="de">geocat.ch Permalink</rdfs:label>
+        <rdfs:label xml:lang="fr">geocat.ch permalien</rdfs:label>
+        <rdfs:label xml:lang="it">geocat.ch link permanente</rdfs:label>
+        <rdfs:label xml:lang="en">geocat.ch permalink</rdfs:label>
+      </rdf:Description>
+    </dct:relation>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+    <dcat:keyword xml:lang="de">BGDI Bundesgeodaten-Infrastruktur</dcat:keyword>
+    <dcat:keyword xml:lang="fr">IFDG l’Infrastructure Fédérale de données géographiques</dcat:keyword>
+    <dcat:keyword xml:lang="it">IFDG Infrastruttura federale dei dati geografici</dcat:keyword>
+    <dcat:keyword xml:lang="en">FSDI Federal Spatial Data Infrastructure</dcat:keyword>
+    <dcat:keyword xml:lang="de">Bund</dcat:keyword>
+    <dcat:keyword xml:lang="fr">confédération</dcat:keyword>
+    <dcat:keyword xml:lang="it">confederazione</dcat:keyword>
+    <dcat:keyword xml:lang="en">confederation</dcat:keyword>
+    <dcat:keyword xml:lang="de">Klimaschutz</dcat:keyword>
+    <dcat:keyword xml:lang="fr">protection du climat</dcat:keyword>
+    <dcat:keyword xml:lang="it">protezione del clima</dcat:keyword>
+    <dcat:keyword xml:lang="en">climate protection</dcat:keyword>
+    <dcat:keyword xml:lang="de">Vernäßter Boden</dcat:keyword>
+    <dcat:keyword xml:lang="fr">sol saturé (engorgé) d'eau</dcat:keyword>
+    <dcat:keyword xml:lang="it">terreno saturo d'acqua</dcat:keyword>
+    <dcat:keyword xml:lang="en">waterlogged land</dcat:keyword>
+    <dcat:keyword xml:lang="de">Moor</dcat:keyword>
+    <dcat:keyword xml:lang="fr">tourbière</dcat:keyword>
+    <dcat:keyword xml:lang="it">torbiera acida</dcat:keyword>
+    <dcat:keyword xml:lang="en">bog</dcat:keyword>
+    <dcat:keyword xml:lang="de">Moor</dcat:keyword>
+    <dcat:keyword xml:lang="fr">tourbière</dcat:keyword>
+    <dcat:keyword xml:lang="it">torbiera acida</dcat:keyword>
+    <dcat:keyword xml:lang="en">bog</dcat:keyword>
+    <dcat:keyword xml:lang="de">Treibhausgas</dcat:keyword>
+    <dcat:keyword xml:lang="fr">gaz à effet de serre</dcat:keyword>
+    <dcat:keyword xml:lang="it">gas a effetto serra</dcat:keyword>
+    <dcat:keyword xml:lang="en">greenhouse gas</dcat:keyword>
+    <dcat:keyword xml:lang="de">Treibhausgas</dcat:keyword>
+    <dcat:keyword xml:lang="fr">gaz à effet de serre</dcat:keyword>
+    <dcat:keyword xml:lang="it">gas a effetto serra</dcat:keyword>
+    <dcat:keyword xml:lang="en">greenhouse gas</dcat:keyword>
+    <dcat:keyword xml:lang="de">Kartierung</dcat:keyword>
+    <dcat:keyword xml:lang="fr">cartographie (cartes)</dcat:keyword>
+    <dcat:keyword xml:lang="it">mappatura</dcat:keyword>
+    <dcat:keyword xml:lang="en">mapping</dcat:keyword>
+    <dcat:keyword xml:lang="de">Kartierung</dcat:keyword>
+    <dcat:keyword xml:lang="fr">cartographie (cartes)</dcat:keyword>
+    <dcat:keyword xml:lang="it">mappatura</dcat:keyword>
+    <dcat:keyword xml:lang="en">mapping</dcat:keyword>
+    <dcat:keyword xml:lang="de">Boden</dcat:keyword>
+    <dcat:keyword xml:lang="fr">sol</dcat:keyword>
+    <dcat:keyword xml:lang="it">suolo</dcat:keyword>
+    <dcat:keyword xml:lang="en">soil</dcat:keyword>
+    <dct:spatial>Schweiz</dct:spatial>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/UNKNOWN" />
+  </dcat:Dataset>
+  <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open">
+    <rdf:type rdf:resource="http://purl.org/dc/terms/LicenseDocument" />
+  </dct:RightsStatement>
+</rdf:RDF>
+
