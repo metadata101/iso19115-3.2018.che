@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatapch="http://dcat-ap.ch/ns/">
+  <dcat:Dataset rdf:about="https://ckan.opendata.swiss/perma/8b1185b2-b14b-45b3-9814-95247c4f3d09@saav">
+    <dct:identifier>8b1185b2-b14b-45b3-9814-95247c4f3d09@saav</dct:identifier>
+    <dct:title xml:lang="fr">Vétérinaires (Canton de Fribourg) - EN TRAVAIL</dct:title>
+    <dct:description xml:lang="fr">Cette donnée recense les adresses de cabinets vétérinaires. Elle sert actuellement de base à la création de la donnée "Vétérinaires de contact pour le piétin". À l'avenir, elle sera enrichie avec d'autres cabinets vétérinaires du canton.</dct:description>
+    <dct:publisher>
+      <foaf:Agent rdf:about="https://opendata.swiss/organization/saav">
+        <foaf:name xml:lang="de">Service de la sécurité alimentaire et des affaires vétérinaires</foaf:name>
+      </foaf:Agent>
+    </dct:publisher>
+    <dcat:contactPoint>
+      <vcard:Organization>
+        <vcard:fn>Service de la sécurité alimentaire et des affaires vétérinaires</vcard:fn>
+        <vcard:hasEmail rdf:resource="mailto:benoit.michel@fr.ch" />
+      </vcard:Organization>
+    </dcat:contactPoint>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf" />
+        <dcat:downloadURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf" />
+        <dct:title xml:lang="fr">Datenbeschreibung_AmphibienAckerland.pdf</dct:title>
+        <dct:title xml:lang="de">Datenbeschreibung_AmphibienAckerland.pdf</dct:title>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/PDF" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-05-26T00:00:00+00:00</dct:issued>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-05-26T00:00:00</dct:issued>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI" />
+    <dcat:landingPage rdf:resource="https://www.fr.ch/diaf/saav" />
+    <dct:relation>
+      <rdf:Description rdf:about="https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/8b1185b2-b14b-45b3-9814-95247c4f3d09">
+        <rdfs:label xml:lang="de">geocat.ch Permalink</rdfs:label>
+        <rdfs:label xml:lang="fr">geocat.ch permalien</rdfs:label>
+        <rdfs:label xml:lang="it">geocat.ch link permanente</rdfs:label>
+        <rdfs:label xml:lang="en">geocat.ch permalink</rdfs:label>
+      </rdf:Description>
+    </dct:relation>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+    <dcat:keyword xml:lang="fr">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="de">opendata.swiss</dcat:keyword>
+    <dct:spatial>Canton de Fribourg (FR)</dct:spatial>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+  </dcat:Dataset>
+  <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by">
+    <rdf:type rdf:resource="http://purl.org/dc/terms/LicenseDocument" />
+  </dct:RightsStatement>
+</rdf:RDF>
+

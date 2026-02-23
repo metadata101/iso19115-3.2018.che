@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatapch="http://dcat-ap.ch/ns/">
+  <dcat:Dataset rdf:about="https://ckan.opendata.swiss/perma/0e5a8467-bf17-4d4d-aab4-3ba49417cedc@bundesamt-fur-umwelt-bafu">
+    <dct:identifier>0e5a8467-bf17-4d4d-aab4-3ba49417cedc@bundesamt-fur-umwelt-bafu</dct:identifier>
+    <dct:title xml:lang="de">Beispiel II "Verbreitung der Steinbockkolonien"</dct:title>
+    <dct:title xml:lang="fr">Example II "Colonies de bouquetins"</dct:title>
+    <dct:title xml:lang="it">Exempio II "Diffusione delle colonie di stambecchi"</dct:title>
+    <dct:title xml:lang="en">Example II "Distribution of ibex colonies"</dct:title>
+    <dct:description xml:lang="de">Der Alpensteinbock lebt nach seiner Wiederansiedlung im Jahre 1906 in verschiedenen Kolonien unterschiedlicher Ausdehnung im Alpenraum und im Jura. Das Wachstum der Bestände hat in einzelnen Kolonien zu negativen Auswirkungen bei anderen Arten und der Vegetation geführt, so dass Regulierungsmassnahmen getroffen werden. Die Vorschriften über die Abschussplanungen der Steinbockbestände beruhen auf dem Bundesgesetz über die Jagd und den Schutz wildlebender Säugetiere und Vögel vom 20. Juni 1986. Die Kolonien werden gemäss den Vorschriften über die Bestandeserhebungen in der Verordnung über die Regulierung von Steinbockbeständen vom 30. April 1990 erfasst und bilden zusammen mit den Bestandeserhebungen die Basis für die Abschussplanungen.</dct:description>
+    <dct:description xml:lang="fr">Réintroduit en 1906, le Bouquetin des Alpes vit en colonies d’extension variable localisées dans le Jura et l’arc alpin. La croissance des populations a entraîné dans certaines colonies des effets néfastes sur d’autres espèces et sur la végétation, rendant nécessaire la prise de mesures de régulation. Les prescriptions relatives à la planification des tirs de bouquetins se fondent sur la loi fédérale du 20 juin 1986 sur la chasse et la protection des mammifères et oiseaux sauvages. Conformément aux prescriptions concernant le recensement des populations dans l’ordonnance du 30 avril 1990 sur la régulation des populations de bouquetins, les colonies sont recensées et constituent, avec le recensement des populations, la base de la planification des tirs.</dct:description>
+    <dct:description xml:lang="it">Dalla sua reintroduzione, avvenuta nel 1906, lo stambecco delle Alpi vive nell'Arco alpino e nel Giura, in diverse colonie che occupano aree di varie estensioni. La crescita dei bran-chi in alcune colonie ha avuto un impatto negativo su altre specie e sulla vegetazione presenti in dette aree, al punto tale che sono stati adottati provvedimenti regolativi. Le prescrizioni sulla pianificazione degli abbattimenti degli stambecchi si basano sulla legge federale del 20 giugno 1986 sulla caccia e la protezione dei mammiferi e degli uccelli selvatici. I dati sulle colonie sono rilevati secondo le disposizioni di cui all'ordinanza del 30 aprile 1990 sulla regolazione degli effettivi degli stambecchi e costituiscono la base per le pianificazioni degli abbattimenti assieme alle rilevazioni degli effettivi.</dct:description>
+    <dct:description xml:lang="en">After being resettled in 1906, Alpine (Capra) ibex live in colonies of varying sizes throughout the Alpine region and in the Jura mountains. Because the growth of stocks in specific colonies had negative effects on other species and vegetation, regulatory measures were taken. The regulations concerning the hunting quota for ibex stocks are based on the Federal Act of 20 June 1986 on the Hunting and Protection of Wild Mammals and Birds. The colonies are counted in accordance with the provisions on stocktaking of the Ordinance of 30 April 1990 on the Regulation of Capra Stocks, which is used in addition to stocktaking to set hunting quotas.</dct:description>
+    <dct:description xml:lang="rm">Suenter sia recolonisaziun l'onn 1906 viva il capricorn alpin en diversas colonias da differenta dimensiun en las Alps ed en il Giura. En singulas colonias ha la creschientscha dals effectivs gì consequenzas negativas per autras spezias e per la vegetaziun, uschia ch'i vegnan prendidas mesiras da regulaziun. Las prescripziuns davart las planisaziuns da la reducziun dals effectivs da capricorns sa basan sin la Lescha federala dals 20 da zercladur 1986 davart la chatscha e la protecziun dals mamifers e dals utschels selvadis. Las colonias vegnan registradas tenor las prescripziuns davart las relevaziuns dals effectivs da l'Ordinaziun dals 30 d'avrigl 1990 davart la regulaziun dals effectivs da capricorns e furman, ensemen cun las relevaziuns dals effectivs, la basa per planisar la reducziun dals effectivs.</dct:description>
+    <dct:publisher>
+      <foaf:Agent rdf:about="https://opendata.swiss/organization/bundesamt-fur-umwelt-bafu">
+        <foaf:name xml:lang="de">Bundesamt für Umwelt</foaf:name>
+      </foaf:Agent>
+    </dct:publisher>
+    <dcat:contactPoint>
+      <vcard:Organization>
+        <vcard:fn>Bundesamt für Umwelt</vcard:fn>
+        <vcard:hasEmail rdf:resource="mailto:info@bafu.admin.ch" />
+      </vcard:Organization>
+    </dcat:contactPoint>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://data.geo.admin.ch/ch.bafu.fauna-steinbockkolonien/data.zip" />
+        <dcat:downloadURL rdf:resource="https://data.geo.admin.ch/ch.bafu.fauna-steinbockkolonien/data.zip" />
+        <dct:title xml:lang="de">Download-Server von geo.admin.ch</dct:title>
+        <dct:description xml:lang="de">Download Server von geo.admin.ch</dct:description>
+        <dct:description xml:lang="fr">Serveur de téléchargement de geo.admin.ch</dct:description>
+        <dct:description xml:lang="it">Server di download di geo.admin.ch</dct:description>
+        <dct:description xml:lang="en">Download server from geo.admin.ch</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/ZIP" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-01-01T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-31T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=de" />
+        <dct:title xml:lang="de">ch.bafu.fauna-steinbockkolonien</dct:title>
+        <dct:description xml:lang="de">WMS-BGDI Dienst, Layer "Steinbockkolonien"</dct:description>
+        <dct:description xml:lang="fr">Service WMS--IFDG, Layer "Steinbockkolonien"</dct:description>
+        <dct:description xml:lang="it">Servizio WMS-IFDG Dienst, Layer "Steinbockkolonien"</dct:description>
+        <dct:description xml:lang="en">WMS-FSDI service, Layer "Steinbockkolonien"</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/WMS_SRVC" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-01-01T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-31T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="http://www.bafu.admin.ch/geodaten" />
+        <dcat:downloadURL rdf:resource="http://www.bafu.admin.ch/geodaten" />
+        <dct:title xml:lang="de">Download ESRI Shapefile</dct:title>
+        <dct:description xml:lang="de">Link für Datenbezug ESRI Shapefile (.shp)</dct:description>
+        <dct:description xml:lang="fr">Lien vers la distribution des données ESRI Shapefile (.shp)</dct:description>
+        <dct:description xml:lang="it">Link per le fonti dei dati ESRI Shapefile (.shp)</dct:description>
+        <dct:description xml:lang="en">Link for download ESRI Shapefile (.shp)</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/UNSPECIFIED" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-01-01T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-31T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="http://wmts.geo.admin.ch/1.0.0/WMTSCapabilities.xml" />
+        <dct:title xml:lang="de">ch.bafu.fauna-steinbockkolonien</dct:title>
+        <dct:description xml:lang="de">WMTS für das Nationale Geoportal</dct:description>
+        <dct:description xml:lang="fr">WMTS pour le géoportail national</dct:description>
+        <dct:description xml:lang="en">WMTS for the national geoportal</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/WMTS_SRVC" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-01-01T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-31T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.fauna-steinbockkolonien" />
+        <dct:title xml:lang="de">RESTful API von geo.admin.ch</dct:title>
+        <dct:title xml:lang="fr">RESTful API de geo.admin.ch</dct:title>
+        <dct:title xml:lang="it">RESTful API da geo.admin.ch</dct:title>
+        <dct:title xml:lang="en">RESTful API from geo.admin.ch</dct:title>
+        <dct:title xml:lang="rm">RESTful API dad geo.admin.ch</dct:title>
+        <dct:description xml:lang="de">RESTful API von geo.admin.ch</dct:description>
+        <dct:description xml:lang="fr">RESTful API de geo.admin.ch</dct:description>
+        <dct:description xml:lang="it">RESTful API da geo.admin.ch</dct:description>
+        <dct:description xml:lang="en">RESTful API from geo.admin.ch</dct:description>
+        <dct:description xml:lang="rm">RESTful API dad geo.admin.ch</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/REST" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-01-01T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-31T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-01-01T00:00:00</dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-31T00:00:00</dct:modified>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI" />
+    <dcat:landingPage rdf:resource="https://www.bafu.admin.ch/bafu/de/home/themen/biodiversitaet/zustand/karten.html" />
+    <dct:relation>
+      <rdf:Description rdf:about="https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/0e5a8467-bf17-4d4d-aab4-3ba49417cedc">
+        <rdfs:label xml:lang="de">geocat.ch Permalink</rdfs:label>
+        <rdfs:label xml:lang="fr">geocat.ch permalien</rdfs:label>
+        <rdfs:label xml:lang="it">geocat.ch link permanente</rdfs:label>
+        <rdfs:label xml:lang="en">geocat.ch permalink</rdfs:label>
+      </rdf:Description>
+    </dct:relation>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+    <dcat:keyword xml:lang="de">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="fr">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="it">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="en">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="rm">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="de">Aufbewahrungs- und Archivierungsplanung AAP - Bund</dcat:keyword>
+    <dcat:keyword xml:lang="fr">Planification de la conservation et de l'archivage AAP - Conféderation</dcat:keyword>
+    <dcat:keyword xml:lang="it">Pianificazione della conservazione e dell’archiviazione AAP - Confederazione</dcat:keyword>
+    <dcat:keyword xml:lang="en">Conservation and archiving planning AAP - Confederation</dcat:keyword>
+    <dcat:keyword xml:lang="de">e-geo.ch</dcat:keyword>
+    <dcat:keyword xml:lang="fr">e-geo.ch</dcat:keyword>
+    <dcat:keyword xml:lang="it">e-geo.ch</dcat:keyword>
+    <dcat:keyword xml:lang="en">e-geo.ch</dcat:keyword>
+    <dcat:keyword xml:lang="de">Geobasisdaten</dcat:keyword>
+    <dcat:keyword xml:lang="fr">géodonnées de base</dcat:keyword>
+    <dcat:keyword xml:lang="it">geodati di base</dcat:keyword>
+    <dcat:keyword xml:lang="en">official geodata</dcat:keyword>
+    <dcat:keyword xml:lang="de">Umwelt</dcat:keyword>
+    <dcat:keyword xml:lang="fr">environnement</dcat:keyword>
+    <dcat:keyword xml:lang="it">ambiente (in generale)</dcat:keyword>
+    <dcat:keyword xml:lang="en">environment</dcat:keyword>
+    <dcat:keyword xml:lang="de">Wild</dcat:keyword>
+    <dcat:keyword xml:lang="fr">gibier</dcat:keyword>
+    <dcat:keyword xml:lang="it">selvaggina</dcat:keyword>
+    <dcat:keyword xml:lang="en">game (animals)</dcat:keyword>
+    <dcat:keyword xml:lang="de">Wildtier</dcat:keyword>
+    <dcat:keyword xml:lang="fr">animal sauvage</dcat:keyword>
+    <dcat:keyword xml:lang="it">animale selvatico</dcat:keyword>
+    <dcat:keyword xml:lang="en">wild animal</dcat:keyword>
+    <dcat:keyword xml:lang="de">Verteilung der Arten</dcat:keyword>
+    <dcat:keyword xml:lang="fr">Répartition des espèces</dcat:keyword>
+    <dcat:keyword xml:lang="it">Distribuzione delle specie</dcat:keyword>
+    <dcat:keyword xml:lang="en">Species distribution</dcat:keyword>
+    <dct:spatial>Schweiz</dct:spatial>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG" />
+  </dcat:Dataset>
+  <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by">
+    <rdf:type rdf:resource="http://purl.org/dc/terms/LicenseDocument" />
+  </dct:RightsStatement>
+</rdf:RDF>
+

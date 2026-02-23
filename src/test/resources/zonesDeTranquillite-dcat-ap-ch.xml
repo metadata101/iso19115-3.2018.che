@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatapch="http://dcat-ap.ch/ns/">
+  <dcat:Dataset rdf:about="https://ckan.opendata.swiss/perma/4a0c8bc7-89d1-484e-a34a-454a31267c41@bafu">
+    <dct:identifier>4a0c8bc7-89d1-484e-a34a-454a31267c41@bafu</dct:identifier>
+    <dct:title xml:lang="de">Wildruhezonen</dct:title>
+    <dct:title xml:lang="fr">Zones de tranquillité</dct:title>
+    <dct:title xml:lang="it">Zone di tranquillità</dct:title>
+    <dct:title xml:lang="en">Designated wildlife areas</dct:title>
+    <dct:title xml:lang="rm">Zonas da paus per la selvaschina</dct:title>
+    <dct:description xml:lang="de">Wildtiere brauchen Rückzugsgebiete in welchen sie nicht gestört werden. Die Ausscheidung von Wildruhezonen dient der Vermeidung übermässiger Störung gemäss Art. 7 Abs 4 des JSG als Antwort auf die zunehmende Freizeitnutzung. Es gibt heute rechtsverbindliche Wildruhezonen und Schutzgebiete, die über den Rechtssetzungsprozess ausgeschieden sind (kantonales Jagdrecht, kommunale Zonenplanung, etc.), wie auch empfohlene Gebiete. Innerhalb von rechtsverbindlichen Wildruhezonen und Wildtierschutzgebieten dürfen nur die in der Karte eingezeichneten erlaubten Routen und Wege begangen werden. Nicht eingezeichnet sind präparierte (Langlauf-)Loipen, Winterwanderwege und im Winter geräumte oder befahrbare Strassen. Diese dürfen von Schneesportlern selbstverständlich begangen werden. In empfohlenen Wildruhezonen sind die erlaubten Routen und Wege als Empfehlungen zu verstehen. Der Stand der Arbeiten in den Kantonen ist zur Zeit sehr unterschiedlich, weshalb der Datensatz Lücken aufweist. Die Karte wird mindestens jährlich (zu Winterbeginn) aktualisiert. Bitte beachten Sie die allgemeinen Hinweise und Änderungen (z.B. Perimeteranpassungen) unten, welche in der Karte noch nicht berücksichtigt werden konnten. Die Kampagne "Respektiere deine Grenzen" setzt sich für den Schutz der Wildtiere und die Bekanntmachung der Wildruhezonen in der Bevölkerung ein.</dct:description>
+    <dct:description xml:lang="fr">Les animaux sauvages ont besoin de sites de repli dans lesquels ils ne sont pas dérangés. Selon la loi fédérale sur la chasse (art. 7, al. 4 LChP) les zones de tranquillité pour la faune sauvage servent à éviter des dérangements excessifs causés par l’augmentation des activités de loisirs. Il existe des zones de tranquillité contraignantes et des zones de tranquillité recommandées. Les zones de tranquillité contraignantes sont délimitées par le biais d’un processus législatif (p. ex. via la loi cantonale sur la chasse ou le plan directeur communal). A l'intérieur des zones de tranquillité et des sites de protection contraignantes, seuls les routes et les chemins figurant sur la carte peuvent être empruntés. Les pistes (de ski de fond), les sentiers de randonnées hivernales et les itinéraires dégagés ou accessibles en hiver ne sont pas représentés. Naturellement, ceux-ci peuvent être empruntés par les randonneurs. Dans les zones de tranquillité recommandées, les routes et les chemins autorisés sont à comprendre comme recommandés. L'avancement de la saisie des données varient considérablement d'un canton à l'autre. C'est pourquoi le jeu de données actuel présente quelques lacunes. La carte est actualisée au moins une fois par an (au début de l’hiver).Merci de respecter les remarques générales ainsi que les modifications ci-dessous (ex. modification de périmètre) qui n'ont pas encore pu être prises en compte sur la carte. La campagne "Respecter, c'est protéger" s'engage pour la protection de la faune et pour faire connaître les zones de tranquillité au grand public.</dct:description>
+    <dct:description xml:lang="it">La fauna selvatica ha bisogno di zone in cui ritirarsi per poter vivere indisturbata. Conformemente alla legge sulla caccia (art. 7 cpv. 4 LCP), lo scopo di queste zone è prevenire un eccessivo disturbo della fauna selvatica a fronte della crescente utilizzazione del territorio per le attività del tempo libero. Esistono zone vincolanti e zone raccomandate. Le zone vincolanti sono istituite mediante processo legislativo (p. es. legislazione cantonale sulla caccia, pianificazione comunale delle zone). All’interno delle zone di tranquillità e delle siti de protezione vincolanti, solo strade e sentieri segnalate sulla carta possono essere percorsi. Non sono invece segnalati le piste per lo sci di fondo, i percorsi escursionistici invernali e le strade sgomberate dalla neve o rese percorribili d’inverno. L’accesso è consentito alle persone che praticano sport invernali. Nelle zone di tranquillità raccomandate, le strade e i percorsi autorizzati sono da ritenere come raccomandate. Lo stato dell’inserimento dei dati varia notevolmente da un cantone all'altro. Per questo motivo il set di dati attuale presenta alcune lacune. La carta viene aggiornata almeno una volta l’anno (a inizio della stagione invernale).Vi preghiamo di rispettare le osservazioni generali e le modifiche qui di seguito (per esempio modifica del perimetro) che non sono ancora state prese in considerazione sulla carta. La campagna "Chi rispetta protegge" è concepita per proteggere la fauna e per l'informazione alla popolazione in merito alle zone di tranquillità.</dct:description>
+    <dct:description xml:lang="en">Wildlife requires areas of refuge in which it will not be disturbed. In accordance with Article 7 Paragraph 4 of the Swiss Hunting Act (HuntA), designated wildlife areas are designed to prevent excessive interference due the increase in recreational activities. There are now statutory wildlife areas and reserves which are delineated through a legislative process (cantonal hunting law, municipal zone planning, etc.), as well as recommended wildlife areas and reserves. Within statutory designated wildlife areas and wildlife reserves, only permitted paths and trails marked on the map may be accessed. Prepared cross-country skiing trails, winter hiking trails and roads that are cleared or passable in winter are not shown on the map. Participants in winter sports may, of course, use these routes. In recommended wildlife areas, the permitted paths and trails are to be understood as suggestions. The status of the work currently varies significantly between cantons, which is why the dataset is incomplete. The map is updated at least once a year (at the start of winter). Please take note of the general information and changes below (e.g. perimeter adjustments), which have not yet been incorporated into the map. The campaign “Respektiere deine Grenzen” ("Respect your limits") is committed to protecting wildlife and raising public awareness of wildlife reserves.</dct:description>
+    <dct:description xml:lang="rm">Ils animals selvadis dovran refugis, nua ch'els na vegnan betg disturbads. La determinaziun da zonas da paus per la selvaschina serva ad evitar disturbis memia gronds tenor l'art. 7 al. 4 LChP sco resposta a l'augment da l'utilisaziun da temp liber. Oz datti zonas da paus per la selvaschina e territoris protegids giuridicamain liants ch'èn vegnids determinads sin basa d'in process legislativ (dretg da chatscha chantunal, planisaziun communala da zonas e.u.v.) sco er territoris recumandads. Entaifer las zonas da paus per la selvaschina ed ils asils da selvaschina giuridicamain liants dastgan ins chaminar mo sin las rutas e sendas permessas ch'èn inditgadas sin la charta. Betg inditgadas èn loipas (da passlung) preparadas, sendas da viandar l'enviern sco er vias rumidas da la naiv u charrablas l'enviern. Quellas dastgan natiralmain vegnir duvradas dals sportists d'enviern. En zonas da paus per la selvaschina recumandadas ston las rutas e sendas permessas vegnir chapidas sco recumandaziuns. Il stadi da las lavurs en ils chantuns è actualmain fitg different, perquai ha l'unitad da datas largias. La charta vegn actualisada almain ina giada l'onn (il cumenzament da l'enviern). Resguardai per plaschair las infurmaziuns generalas e las midadas (p.ex. adattaziuns dal perimeter) che n'han anc betg pudì vegnir resguardadas en la charta. La campagna "Respecta tes cunfins – er en la natira" s'engascha per la protecziun da la selvaschina e vul er render enconuschentas a la populaziun las zonas da paus per la selvaschina.</dct:description>
+    <dct:publisher>
+      <foaf:Agent rdf:about="https://opendata.swiss/organization/bafu">
+        <foaf:name xml:lang="de">Bundesamt für Umwelt / Abteilung Biodiversität und Landschaft</foaf:name>
+      </foaf:Agent>
+    </dct:publisher>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://map.geo.admin.ch/?layers=ch.bafu.wrz-wildruhezonen_portal" />
+        <dct:title xml:lang="de">Vorschau map.geo.admin.ch</dct:title>
+        <dct:title xml:lang="fr">Aperçu map.geo.admin.ch</dct:title>
+        <dct:title xml:lang="it">Previsione map.geo.admin.ch</dct:title>
+        <dct:title xml:lang="en">Preview map.geo.admin.ch</dct:title>
+        <dct:description xml:lang="de">Vorschau map.geo.admin.ch</dct:description>
+        <dct:description xml:lang="fr">Aperçu map.geo.admin.ch</dct:description>
+        <dct:description xml:lang="it">Previsione map.geo.admin.ch</dct:description>
+        <dct:description xml:lang="en">Preview map.geo.admin.ch</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=de" />
+        <dct:title xml:lang="de">ch.bafu.wrz-wildruhezonen_portal</dct:title>
+        <dct:title xml:lang="fr">ch.bafu.wrz-wildruhezonen_portal</dct:title>
+        <dct:title xml:lang="it">ch.bafu.wrz-wildruhezonen_portal</dct:title>
+        <dct:title xml:lang="en">ch.bafu.wrz-wildruhezonen_portal</dct:title>
+        <dct:title xml:lang="rm">ch.bafu.wrz-wildruhezonen_portal</dct:title>
+        <dct:description xml:lang="de">WMS-BGDI Dienst, Layer "Wildruhezonen"</dct:description>
+        <dct:description xml:lang="fr">Service WMS-IFDG, couche "Zones de tranquillité"</dct:description>
+        <dct:description xml:lang="it">Servizio WMS-IFDG, strato "Zone di tranquillità"</dct:description>
+        <dct:description xml:lang="en">WMS-FSDI service, layer "Designated wildlife areas"</dct:description>
+        <dct:description xml:lang="rm">WMS-BGDI Dienst, Layer "Wildruhezonen"</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/WMS_SRVC" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=de" />
+        <dct:title xml:lang="de">ch.bafu.wrz-wildruhezonen_portal</dct:title>
+        <dct:title xml:lang="fr">ch.bafu.wrz-wildruhezonen_portal</dct:title>
+        <dct:title xml:lang="it">ch.bafu.wrz-wildruhezonen_portal</dct:title>
+        <dct:title xml:lang="en">ch.bafu.wrz-wildruhezonen_portal</dct:title>
+        <dct:title xml:lang="rm">ch.bafu.wrz-wildruhezonen_portal</dct:title>
+        <dct:description xml:lang="de">WMTS-BGDI Dienst, Layer "Wildruhezonen"</dct:description>
+        <dct:description xml:lang="fr">Service WMTS-IFDG, couche , Layer "Zones de tranquillité"</dct:description>
+        <dct:description xml:lang="it">Servizio WMTS-IFDG, strato "Zone di tranquillità"</dct:description>
+        <dct:description xml:lang="en">WMTS-FSDI service, layer "Designated wildlife areas"</dct:description>
+        <dct:description xml:lang="rm">WMTS-BGDI Dienst, Layer "Wildruhezonen"</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/WMTS_SRVC" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://www.geodienste.ch/services/wildruhezonen" />
+        <dcat:downloadURL rdf:resource="https://www.geodienste.ch/services/wildruhezonen" />
+        <dct:description xml:lang="de">Abteilung Biodiversität und Landschaft</dct:description>
+        <dct:description xml:lang="fr">Division Biodiversité et paysage</dct:description>
+        <dct:description xml:lang="it">Divisione Biodiversità e paesaggio</dct:description>
+        <dct:description xml:lang="en">Biodiversity and Landscape Division</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/UNSPECIFIED" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.wrz-wildruhezonen_portal" />
+        <dct:title xml:lang="de">RESTful API von geo.admin.ch</dct:title>
+        <dct:title xml:lang="fr">RESTful API de geo.admin.ch</dct:title>
+        <dct:title xml:lang="it">RESTful API da geo.admin.ch</dct:title>
+        <dct:title xml:lang="en">RESTful API from geo.admin.ch</dct:title>
+        <dct:title xml:lang="rm">RESTful API dad geo.admin.ch</dct:title>
+        <dct:description xml:lang="de">RESTful API von geo.admin.ch</dct:description>
+        <dct:description xml:lang="fr">RESTful API de geo.admin.ch</dct:description>
+        <dct:description xml:lang="it">RESTful API da geo.admin.ch</dct:description>
+        <dct:description xml:lang="en">RESTful API from geo.admin.ch</dct:description>
+        <dct:description xml:lang="rm">RESTful API dad geo.admin.ch</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/REST" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T00:00:00</dct:modified>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI" />
+    <dcat:landingPage rdf:resource="https://www.wildruhezonen.ch/news/aenderungen-und-allgemeine-hinweise" />
+    <dct:relation>
+      <rdf:Description rdf:about="https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/4a0c8bc7-89d1-484e-a34a-454a31267c41">
+        <rdfs:label xml:lang="de">geocat.ch Permalink</rdfs:label>
+        <rdfs:label xml:lang="fr">geocat.ch permalien</rdfs:label>
+        <rdfs:label xml:lang="it">geocat.ch link permanente</rdfs:label>
+        <rdfs:label xml:lang="en">geocat.ch permalink</rdfs:label>
+      </rdf:Description>
+    </dct:relation>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+    <dcat:keyword xml:lang="de">Schutzgebiete</dcat:keyword>
+    <dcat:keyword xml:lang="fr">Sites protégés</dcat:keyword>
+    <dcat:keyword xml:lang="it">Siti protetti</dcat:keyword>
+    <dcat:keyword xml:lang="en">Protected sites</dcat:keyword>
+    <dcat:keyword xml:lang="de">Wildfauna</dcat:keyword>
+    <dcat:keyword xml:lang="fr">faune sauvage</dcat:keyword>
+    <dcat:keyword xml:lang="it">fauna selvatica</dcat:keyword>
+    <dcat:keyword xml:lang="en">wild fauna</dcat:keyword>
+    <dcat:keyword xml:lang="de">Habitat wildlebender Tiere und Pflanzen</dcat:keyword>
+    <dcat:keyword xml:lang="fr">habitat de la faune sauvage</dcat:keyword>
+    <dcat:keyword xml:lang="it">habitat di flora e fauna selvatiche</dcat:keyword>
+    <dcat:keyword xml:lang="en">wildlife habitat</dcat:keyword>
+    <dcat:keyword xml:lang="de">Biologisches Schutzgebiet</dcat:keyword>
+    <dcat:keyword xml:lang="fr">réserve biologique</dcat:keyword>
+    <dcat:keyword xml:lang="it">riserve biologiche</dcat:keyword>
+    <dcat:keyword xml:lang="en">biological reserve</dcat:keyword>
+    <dcat:keyword xml:lang="de">Wildtier</dcat:keyword>
+    <dcat:keyword xml:lang="fr">animal sauvage</dcat:keyword>
+    <dcat:keyword xml:lang="it">animale selvatico</dcat:keyword>
+    <dcat:keyword xml:lang="en">wild animal</dcat:keyword>
+    <dcat:keyword xml:lang="de">Skitour</dcat:keyword>
+    <dcat:keyword xml:lang="fr">randonnée à ski</dcat:keyword>
+    <dcat:keyword xml:lang="it">escursione con gli sci</dcat:keyword>
+    <dcat:keyword xml:lang="en">ski tour</dcat:keyword>
+    <dcat:keyword xml:lang="de">Schneesport</dcat:keyword>
+    <dcat:keyword xml:lang="fr">sport de neige</dcat:keyword>
+    <dcat:keyword xml:lang="it">sport della neve</dcat:keyword>
+    <dcat:keyword xml:lang="en">snowsport</dcat:keyword>
+    <dcat:keyword xml:lang="de">Jagdbanngebiet</dcat:keyword>
+    <dcat:keyword xml:lang="fr">district franc</dcat:keyword>
+    <dcat:keyword xml:lang="it">bandita di caccia</dcat:keyword>
+    <dcat:keyword xml:lang="en">game reserve</dcat:keyword>
+    <dcat:keyword xml:lang="de">BGDI Bundesgeodaten-Infrastruktur</dcat:keyword>
+    <dcat:keyword xml:lang="fr">IFDG l’Infrastructure Fédérale de données géographiques</dcat:keyword>
+    <dcat:keyword xml:lang="it">IFDG Infrastruttura federale dei dati geografici</dcat:keyword>
+    <dcat:keyword xml:lang="en">FSDI Federal Spatial Data Infrastructure</dcat:keyword>
+    <dct:spatial>Schweiz</dct:spatial>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+  </dcat:Dataset>
+  <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by">
+    <rdf:type rdf:resource="http://purl.org/dc/terms/LicenseDocument" />
+  </dct:RightsStatement>
+</rdf:RDF>
+
