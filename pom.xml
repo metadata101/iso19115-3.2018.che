@@ -165,12 +165,28 @@
               <target>
                  <mkdir dir="target/sample-data"/>
                  <defaultexcludes add="**/.DS_Store"/>
-                 <zip destfile="target/sample-data/commented-eCH-0271-de.mef"
-                   basedir="src/main/plugin/iso19115-3.2018.che/sample-data/3afaf269-3259-4318-9c1f-203ecd1240ba"
+                 <zip destfile="target/sample-data/dataset-eCH-0271.mef"
+                   basedir="src/main/plugin/iso19115-3.2018.che/sample-data/dataset"
                    whenempty="create"
                    excludes="**/.keepme"/>
-                <zip destfile="target/sample-data/commented-eCH-0271-fr.mef"
-                     basedir="src/main/plugin/iso19115-3.2018.che/sample-data/b2f5f840-7973-452f-ae9b-fb5a7c2949bb"
+                <zip destfile="target/sample-data/service-eCH-0271.mef"
+                     basedir="src/main/plugin/iso19115-3.2018.che/sample-data/service"
+                     whenempty="create"
+                     excludes="**/.keepme"/>
+                <zip destfile="target/sample-data/model-eCH-0271.mef"
+                     basedir="src/main/plugin/iso19115-3.2018.che/sample-data/model"
+                     whenempty="create"
+                     excludes="**/.keepme"/>
+                <zip destfile="target/sample-data/extent-eCH-0271.mef"
+                     basedir="src/main/plugin/iso19115-3.2018.che/sample-data/extent"
+                     whenempty="create"
+                     excludes="**/.keepme"/>
+                <zip destfile="target/sample-data/contact-eCH-0271.mef"
+                     basedir="src/main/plugin/iso19115-3.2018.che/sample-data/contact"
+                     whenempty="create"
+                     excludes="**/.keepme"/>
+                <zip destfile="target/sample-data/format-eCH-0271.mef"
+                     basedir="src/main/plugin/iso19115-3.2018.che/sample-data/format"
                      whenempty="create"
                      excludes="**/.keepme"/>
               </target>

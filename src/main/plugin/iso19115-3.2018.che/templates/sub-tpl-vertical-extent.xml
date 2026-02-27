@@ -1,0 +1,40 @@
+<gex:EX_Extent xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0"
+               uuid="8ab50202-ea23-4fe6-abe1-6e21e8967330">
+    <gex:description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:type="lan:PT_FreeText_PropertyType">
+        <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">-- Template "vertical extent" --</gco:CharacterString>
+        <lan:PT_FreeText xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
+            <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">-- Template "vertical extent" --</lan:LocalisedCharacterString>
+            </lan:textGroup>
+            <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">-- Template "vertical extent" --</lan:LocalisedCharacterString>
+            </lan:textGroup>
+            <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">-- Template "vertical extent" --</lan:LocalisedCharacterString>
+            </lan:textGroup>
+            <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">-- Template "vertical extent" --</lan:LocalisedCharacterString>
+            </lan:textGroup>
+            <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#RM">-- Template "vertical extent" --</lan:LocalisedCharacterString>
+            </lan:textGroup>
+        </lan:PT_FreeText>
+    </gex:description>
+    <gex:verticalElement>
+        <gex:EX_VerticalExtent>
+            <gex:minimumValue>
+                <gco:Real xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"/>
+            </gex:minimumValue>
+            <gex:maximumValue>
+                <gco:Real xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"/>
+            </gex:maximumValue>
+            <gex:verticalCRS>
+                <gml:VerticalCRS xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="">
+                    <gml:identifier codeSpace=""/>
+                    <gml:scope/>
+                </gml:VerticalCRS>
+            </gex:verticalCRS>
+        </gex:EX_VerticalExtent>
+    </gex:verticalElement>
+</gex:EX_Extent>

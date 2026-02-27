@@ -1,0 +1,138 @@
+<cit:CI_Responsibility xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
+                       uuid="264fb902-50cf-4dde-b227-92aa335a348a">
+  <cit:role>
+    <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode"
+                     codeListValue="pointOfContact">pointOfContact</cit:CI_RoleCode>
+  </cit:role>
+  <cit:party>
+    <che:CHE_CI_Organisation xmlns:che="http://geocat.ch/che"
+                             xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
+                             gco:isoType="cit:CI_Organisation">
+      <cit:name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:type="lan:PT_FreeText_PropertyType">
+        <lan:PT_FreeText xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#EN">-- Template "contacts" --</lan:LocalisedCharacterString>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#DE">-- Vorlage "Kontakt" --</lan:LocalisedCharacterString>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#FR">-- Template "contacts" --</lan:LocalisedCharacterString>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#IT"/>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#RM"/>
+          </lan:textGroup>
+        </lan:PT_FreeText>
+      </cit:name>
+      <cit:contactInfo>
+        <cit:CI_Contact>
+          <cit:phone>
+            <cit:CI_Telephone>
+              <cit:number>
+                <gco:CharacterString/>
+              </cit:number>
+              <cit:numberType>
+                <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode"
+                                          codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+              </cit:numberType>
+            </cit:CI_Telephone>
+          </cit:phone>
+          <cit:address>
+            <cit:CI_Address>
+              <cit:deliveryPoint>
+                <gco:CharacterString/>
+              </cit:deliveryPoint>
+              <cit:city>
+                <gco:CharacterString/>
+              </cit:city>
+              <cit:postalCode>
+                <gco:CharacterString/>
+              </cit:postalCode>
+              <cit:country>
+                <gco:CharacterString>CH</gco:CharacterString>
+              </cit:country>
+              <cit:electronicMailAddress>
+                <gco:CharacterString/>
+              </cit:electronicMailAddress>
+            </cit:CI_Address>
+          </cit:address>
+          <cit:onlineResource>
+            <cit:CI_OnlineResource>
+              <cit:linkage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                           xsi:type="lan:PT_FreeText_PropertyType">
+                <lan:PT_FreeText xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN"/>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE"/>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR"/>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT"/>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#RM"/>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>WWW:LINK</gco:CharacterString>
+              </cit:protocol>
+            </cit:CI_OnlineResource>
+          </cit:onlineResource>
+        </cit:CI_Contact>
+      </cit:contactInfo>
+      <cit:individual>
+        <cit:CI_Individual>
+          <cit:positionName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                            xsi:type="lan:PT_FreeText_PropertyType">
+            <lan:PT_FreeText xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN"/>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE"/>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR"/>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT"/>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#RM"/>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:positionName>
+        </cit:CI_Individual>
+      </cit:individual>
+      <che:organisationAcronym xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                               xsi:type="lan:PT_FreeText_PropertyType">
+        <lan:PT_FreeText xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#EN"/>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#DE"/>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#FR"/>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#IT"/>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#RM"/>
+          </lan:textGroup>
+        </lan:PT_FreeText>
+      </che:organisationAcronym>
+    </che:CHE_CI_Organisation>
+  </cit:party>
+</cit:CI_Responsibility>

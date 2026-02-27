@@ -1,0 +1,57 @@
+<gex:EX_Extent xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0"
+               uuid="7b5bae4e-5844-4e93-ac24-b18d72e8be94">
+  <gex:description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:type="lan:PT_FreeText_PropertyType">
+    <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">Bottighofen</gco:CharacterString>
+    <lan:PT_FreeText xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
+      <lan:textGroup>
+        <lan:LocalisedCharacterString locale="#EN">-- template "spatial extent" --</lan:LocalisedCharacterString>
+      </lan:textGroup>
+      <lan:textGroup>
+        <lan:LocalisedCharacterString locale="#DE">-- Vorlage "räumliche Ausdehnung" --</lan:LocalisedCharacterString>
+      </lan:textGroup>
+      <lan:textGroup>
+        <lan:LocalisedCharacterString locale="#FR">-- modèle "étendue géographique" --</lan:LocalisedCharacterString>
+      </lan:textGroup>
+      <lan:textGroup>
+        <lan:LocalisedCharacterString locale="#IT"/>
+      </lan:textGroup>
+      <lan:textGroup>
+        <lan:LocalisedCharacterString locale="#RM"/>
+      </lan:textGroup>
+    </lan:PT_FreeText>
+  </gex:description>
+  <gex:geographicElement>
+    <gex:EX_GeographicBoundingBox>
+      <gex:westBoundLongitude>
+        <gco:Decimal xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">6.00</gco:Decimal>
+      </gex:westBoundLongitude>
+      <gex:eastBoundLongitude>
+        <gco:Decimal xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">10.50</gco:Decimal>
+      </gex:eastBoundLongitude>
+      <gex:southBoundLatitude>
+        <gco:Decimal xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">45.80</gco:Decimal>
+      </gex:southBoundLatitude>
+      <gex:northBoundLatitude>
+        <gco:Decimal xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">47.60</gco:Decimal>
+      </gex:northBoundLatitude>
+    </gex:EX_GeographicBoundingBox>
+  </gex:geographicElement>
+  <gex:geographicElement>
+    <gex:EX_BoundingPolygon>
+      <gex:polygon>
+        <gml:MultiSurface xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="d13740773e77" srsDimension="2">
+          <gml:surfaceMember>
+            <gml:Polygon gml:id="d13740773e79">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>9.2199012015 47.6392725198 9.2058028234 47.644372725 9.2053892708 47.6379560959 9.1984590347 47.631665458 9.2166348165 47.6232381976 9.2199012015 47.6392725198</gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>
+            </gml:Polygon>
+          </gml:surfaceMember>
+        </gml:MultiSurface>
+      </gex:polygon>
+    </gex:EX_BoundingPolygon>
+  </gex:geographicElement>
+</gex:EX_Extent>
