@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info version="1.1">
+  <general>
+    <createDate>2026-02-26T14:25:46.498423Z</createDate>
+    <changeDate>2026-02-26T14:37:19.966702Z</changeDate>
+    <schema>iso19115-3.2018.che</schema>
+    <isTemplate>n</isTemplate>
+    <localId>2772</localId>
+    <format>full</format>
+    <rating>0</rating>
+    <popularity>0</popularity>
+    <uuid>e7b1ae14-c0bd-4d8f-8080-0f1e35bc47ce</uuid>
+  </general>
+  <categories/>
+  <privileges>
+    <group name="all">
+      <operation name="featured" />
+      <operation name="dynamic" />
+      <operation name="notify" />
+      <operation name="editing" />
+      <operation name="download" />
+      <operation name="view" />
+    </group>
+  </privileges>
+  <public />
+  <private />
+</info>

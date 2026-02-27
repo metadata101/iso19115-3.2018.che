@@ -1,0 +1,14 @@
+<mrd:MD_Format xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0"
+               uuid="678c92f2-1c6b-4d92-8a77-fe02e4bca910">
+  <mrd:formatSpecificationCitation>
+    <cit:CI_Citation xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
+      <cit:title>
+        <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">-- Format Template --</gco:CharacterString>
+      </cit:title>
+      <cit:date xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" gco:nilReason="unknown"/>
+      <cit:edition xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" gco:nilReason="unknown">
+        <gco:CharacterString/>
+      </cit:edition>
+    </cit:CI_Citation>
+  </mrd:formatSpecificationCitation>
+</mrd:MD_Format>
