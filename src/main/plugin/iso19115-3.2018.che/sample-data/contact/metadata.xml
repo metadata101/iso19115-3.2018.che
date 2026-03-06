@@ -12,13 +12,13 @@
                 xsi:type="lan:PT_FreeText_PropertyType">
         <lan:PT_FreeText xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
           <lan:textGroup>
-            <lan:LocalisedCharacterString locale="#EN">-- Template "contacts" --</lan:LocalisedCharacterString>
+            <lan:LocalisedCharacterString locale="#EN">-- subtemplate "contacts" example --</lan:LocalisedCharacterString>
           </lan:textGroup>
           <lan:textGroup>
-            <lan:LocalisedCharacterString locale="#DE">-- Vorlage "Kontakt" --</lan:LocalisedCharacterString>
+            <lan:LocalisedCharacterString locale="#DE">-- subtemplate "Kontakt" example  --</lan:LocalisedCharacterString>
           </lan:textGroup>
           <lan:textGroup>
-            <lan:LocalisedCharacterString locale="#FR">-- Template "contacts" --</lan:LocalisedCharacterString>
+            <lan:LocalisedCharacterString locale="#FR">-- exemple de subtemplate "contacts" --</lan:LocalisedCharacterString>
           </lan:textGroup>
           <lan:textGroup>
             <lan:LocalisedCharacterString locale="#IT"/>

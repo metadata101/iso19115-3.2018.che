@@ -3,7 +3,7 @@
   <mrd:formatSpecificationCitation>
     <cit:CI_Citation xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
       <cit:title>
-        <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">-- Format Template --</gco:CharacterString>
+        <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">-- format subtemplate example --</gco:CharacterString>
       </cit:title>
       <cit:date xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" gco:nilReason="unknown"/>
       <cit:edition xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" gco:nilReason="unknown">
