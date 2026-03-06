@@ -5,13 +5,13 @@
     <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">Bottighofen</gco:CharacterString>
     <lan:PT_FreeText xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
       <lan:textGroup>
-        <lan:LocalisedCharacterString locale="#EN">-- template "spatial extent" --</lan:LocalisedCharacterString>
+        <lan:LocalisedCharacterString locale="#EN">-- subtemplate "spatial extent" example --</lan:LocalisedCharacterString>
       </lan:textGroup>
       <lan:textGroup>
-        <lan:LocalisedCharacterString locale="#DE">-- Vorlage "räumliche Ausdehnung" --</lan:LocalisedCharacterString>
+        <lan:LocalisedCharacterString locale="#DE">-- subtemplate "räumliche Ausdehnung" example --</lan:LocalisedCharacterString>
       </lan:textGroup>
       <lan:textGroup>
-        <lan:LocalisedCharacterString locale="#FR">-- modèle "étendue géographique" --</lan:LocalisedCharacterString>
+        <lan:LocalisedCharacterString locale="#FR">-- subtemplate "étendue géographique" example --</lan:LocalisedCharacterString>
       </lan:textGroup>
       <lan:textGroup>
         <lan:LocalisedCharacterString locale="#IT"/>

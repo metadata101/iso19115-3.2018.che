@@ -4,12 +4,12 @@
     <createDate>2026-02-25T14:25:46.498423Z</createDate>
     <changeDate>2026-02-25T14:37:19.966702Z</changeDate>
     <schema>iso19115-3.2018.che</schema>
-    <isTemplate>s</isTemplate>
+    <isTemplate>n</isTemplate>
     <localId>2772</localId>
     <format>full</format>
     <rating>0</rating>
     <popularity>0</popularity>
-    <uuid>7f7b5dba-5381-43b5-b33c-1c7af711118c</uuid>
+    <uuid>237fdbfe-2164-451f-8221-6c493e360c71</uuid>
   </general>
   <categories/>
   <privileges>
@@ -22,6 +22,8 @@
       <operation name="view" />
     </group>
   </privileges>
-  <public />
+  <public>
+    <file name="thumbnail.png" changeDate="2026-03-04T19:51:44.508Z" />
+  </public>
   <private />
 </info>

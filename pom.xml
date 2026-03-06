@@ -189,6 +189,10 @@
                      basedir="src/main/plugin/iso19115-3.2018.che/sample-data/format"
                      whenempty="create"
                      excludes="**/.keepme"/>
+                <zip destfile="target/sample-data/dataset-with-subtemplate-eCH-0271.mef"
+                     basedir="src/main/plugin/iso19115-3.2018.che/sample-data/dataset-with-subtemplate"
+                     whenempty="create"
+                     excludes="**/.keepme"/>
               </target>
             </configuration>
             <goals><goal>run</goal></goals>
