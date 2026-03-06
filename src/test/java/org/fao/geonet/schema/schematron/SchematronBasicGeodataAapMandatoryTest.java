@@ -27,7 +27,7 @@ public class SchematronBasicGeodataAapMandatoryTest extends AbstractSchematronTe
 	public void amphibians() throws Exception {
 		String report = applySchematronAndCompare("amphibians");
 
-        hasExpectedNumberOfFailure(1, report);
+        hasExpectedNumberOfFailure(0, report);
 	}
 
 	@Test
@@ -46,6 +46,6 @@ public class SchematronBasicGeodataAapMandatoryTest extends AbstractSchematronTe
 
 		String report = applySchematronAndCompare("amphibians-no-geodatainfo-bad-subtopic", md);
 
-		hasExpectedNumberOfFailure(3, report);
+		hasExpectedNumberOfFailure(1, report);
 	}
 }

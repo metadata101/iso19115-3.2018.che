@@ -7,8 +7,17 @@
                 exclude-result-prefixes="#all">
 
     <xsl:template match="*" mode="from19139to19115-3.2018-CHE_MD_BasicGeodataInformation">
+        <xsl:variable name="hasBasicGeodataID"
+                      select="normalize-space(oldche:basicGeodataID/gcoold:CharacterString) != ''"/>
         <xsl:element name="che:basicGeodata">
-            <gco:Boolean>true</gco:Boolean>
+            <xsl:choose>
+                <xsl:when test="$hasBasicGeodataID">
+                    <gco:Boolean>true</gco:Boolean>
+                </xsl:when>
+                <xsl:otherwise>
+                    <gco:Boolean>false</gco:Boolean>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:element>
         <xsl:element name="che:basicGeodataInformation">
             <xsl:element name="che:CHE_MD_BasicGeodataInformation">

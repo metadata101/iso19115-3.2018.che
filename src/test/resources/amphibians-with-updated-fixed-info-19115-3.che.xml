@@ -1216,7 +1216,7 @@ For details, see the attached data description.</lan:LocalisedCharacterString>
         <che:CHE_MD_SubTopicCategoryCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_SubTopicCategoryCode" codeListValue="environment_NatureProtection" />
       </che:subTopicCategory>
       <che:basicGeodata>
-        <gco:Boolean>true</gco:Boolean>
+        <gco:Boolean>false</gco:Boolean>
       </che:basicGeodata>
       <che:basicGeodataInformation>
         <che:CHE_MD_BasicGeodataInformation>
