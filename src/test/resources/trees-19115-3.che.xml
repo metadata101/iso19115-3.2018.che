@@ -246,16 +246,42 @@
               </cit:dateType>
             </cit:CI_Date>
           </cit:date>
-          <cit:identifier>
-            <mcc:MD_Identifier>
-              <mcc:code>
-                <gco:CharacterString />
-              </mcc:code>
-            </mcc:MD_Identifier>
-          </cit:identifier>
           <cit:presentationForm>
             <cit:CI_PresentationFormCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_PresentationFormCode" codeListValue="mapDigital" />
           </cit:presentationForm>
+          <cit:onlineResource>
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://www.vs.ch/web/sen/eaux-souterraines-introduction</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">https://www.vs.ch/web/sen/eaux-souterraines-introduction</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">https://www.vs.ch/web/sen/eaux-souterraines-introduction</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">https://www.vs.ch/web/sen/eaux-souterraines-introduction</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">https://www.vs.ch/web/sen/eaux-souterraines-introduction</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol gco:nilReason="missing">
+                <gco:CharacterString />
+              </cit:protocol>
+              <cit:name gco:nilReason="missing">
+                <gco:CharacterString />
+              </cit:name>
+              <cit:description gco:nilReason="missing" xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString />
+              </cit:description>
+              <cit:function>
+                <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="" />
+              </cit:function>
+            </cit:CI_OnlineResource>
+          </cit:onlineResource>
         </cit:CI_Citation>
       </mri:citation>
       <mri:abstract xsi:type="lan:PT_FreeText_PropertyType">

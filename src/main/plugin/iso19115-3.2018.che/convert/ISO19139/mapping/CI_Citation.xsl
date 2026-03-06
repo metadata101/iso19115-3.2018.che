@@ -59,6 +59,39 @@
     <xsl:template match="gmd:CI_Citation" mode="from19139to19115-3.2018">
         <xsl:element name="cit:CI_Citation">
             <xsl:apply-templates mode="from19139to19115-3.2018"/>
+
+            <xsl:if test="parent::gmd:citation/parent::oldche:CHE_MD_DataIdentification and normalize-space(/*/gmd:dataSetURI/gcoold:CharacterString) != ''">
+                <xsl:variable name="dataSetURI"><xsl:value-of select="/*/gmd:dataSetURI/gcoold:CharacterString"/></xsl:variable>
+                <cit:onlineResource>
+                    <cit:CI_OnlineResource>
+                        <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                            <gco:CharacterString><xsl:value-of select="$dataSetURI"/></gco:CharacterString>
+                            <lan:PT_FreeText>
+                                <xsl:for-each select="/*/gmd:locale/gmd:PT_Locale">
+                                    <lan:textGroup>
+                                        <lan:LocalisedCharacterString locale="#{@id}">
+                                            <xsl:value-of select="$dataSetURI"/>
+                                        </lan:LocalisedCharacterString>
+                                    </lan:textGroup>
+                                </xsl:for-each>
+                            </lan:PT_FreeText>
+                        </cit:linkage>
+                        <cit:protocol gco:nilReason="missing">
+                            <gco:CharacterString/>
+                        </cit:protocol>
+                        <cit:name gco:nilReason="missing">
+                            <gco:CharacterString/>
+                        </cit:name>
+                        <cit:description gco:nilReason="missing" xsi:type="lan:PT_FreeText_PropertyType">
+                            <gco:CharacterString/>
+                        </cit:description>
+                        <cit:function>
+                            <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode"
+                                                       codeListValue=""/>
+                        </cit:function>
+                    </cit:CI_OnlineResource>
+                </cit:onlineResource>
+            </xsl:if>
             <xsl:if test="ancestor::oldche:CHE_MD_FeatureCatalogueDescription and ../../oldche:dataModel">
                 <xsl:element name="cit:onlineResource">
                     <xsl:element name="cit:CI_OnlineResource">
