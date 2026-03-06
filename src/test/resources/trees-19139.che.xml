@@ -112,8 +112,8 @@
   <gmd:metadataStandardName xmlns:geonet="http://www.fao.org/geonetwork">
     <gco:CharacterString>GM03 2+</gco:CharacterString>
   </gmd:metadataStandardName>
-  <gmd:dataSetURI xmlns:geonet="http://www.fao.org/geonetwork" gco:nilReason="missing">
-    <gco:CharacterString />
+  <gmd:dataSetURI>
+    <gco:CharacterString>https://www.vs.ch/web/sen/eaux-souterraines-introduction</gco:CharacterString>
   </gmd:dataSetURI>
   <gmd:locale xmlns:geonet="http://www.fao.org/geonetwork">
     <gmd:PT_Locale id="DE">
