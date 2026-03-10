@@ -50,6 +50,18 @@ public class SchematronBgdiSwissgeoRecommendedTest extends AbstractSchematronTes
 
 		String report = applySchematronAndCompare("wanderWege-missings", md);
 
-		hasExpectedNumberOfFailure(4, report);
+		hasExpectedNumberOfFailure(3, report);
 	}
+
+	@Test
+	public void aerodrome() throws Exception {
+		Path xmlFile = getResource("noisePollutionAerodrome-19115-3.che.xml");
+		Element md = Xml.loadFile(xmlFile);
+
+
+		String report = applySchematronAndCompare("noisePollutionAerodrome", md);
+
+		hasExpectedNumberOfFailure(1, report);
+	}
+
 }
