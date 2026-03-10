@@ -885,7 +885,7 @@
         </gmd:EX_Extent>
       </gmd:extent>
       <che:basicGeodataID>
-        <gco:CharacterString>169.1</gco:CharacterString>
+        <gco:CharacterString></gco:CharacterString>
       </che:basicGeodataID>
       <che:basicGeodataIDType>
         <che:basicGeodataIDTypeCode codeList="#basicGeodataIDTypeCode" codeListValue="federal" />

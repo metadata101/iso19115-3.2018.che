@@ -4,14 +4,17 @@
                 xmlns:che="http://geocat.ch/che"
                 xmlns:gcoold="http://www.isotc211.org/2005/gco"
                 xmlns:oldche="http://www.geocat.ch/2008/che"
+                xmlns:gmd="http://www.isotc211.org/2005/gmd"
                 exclude-result-prefixes="#all">
 
     <xsl:template match="*" mode="from19139to19115-3.2018-CHE_MD_BasicGeodataInformation">
         <xsl:variable name="hasBasicGeodataID"
                       select="normalize-space(oldche:basicGeodataID/gcoold:CharacterString) != ''"/>
+        <xsl:variable name="hasGeobasisdatenKeyword"
+                      select="gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gcoold:CharacterString[normalize-space(.) = 'Geobasisdaten']"/>
         <xsl:element name="che:basicGeodata">
             <xsl:choose>
-                <xsl:when test="$hasBasicGeodataID">
+                <xsl:when test="$hasBasicGeodataID or $hasGeobasisdatenKeyword">
                     <gco:Boolean>true</gco:Boolean>
                 </xsl:when>
                 <xsl:otherwise>

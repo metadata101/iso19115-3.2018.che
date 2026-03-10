@@ -954,7 +954,7 @@
       <che:basicGeodataInformation>
         <che:CHE_MD_BasicGeodataInformation>
           <che:basicGeodataID>
-            <gco:CharacterString>169.1</gco:CharacterString>
+            <gco:CharacterString />
           </che:basicGeodataID>
           <che:basicGeodataLegalLevel>
             <che:CHE_MD_LevelCode codeList="mdLevelCode" codeListValue="federal" />
