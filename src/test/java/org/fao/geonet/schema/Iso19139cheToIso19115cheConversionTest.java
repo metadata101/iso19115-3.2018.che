@@ -302,6 +302,11 @@ public class Iso19139cheToIso19115cheConversionTest {
         assertEquals("OGC:WFS", ((Element)((Element) nodes.get(0)).getChildren().get(0)).getText());
     }
 
+    @Test
+    public void convertGiebenach() throws Exception {
+        transformAndCompare("giebenach", true);
+    }
+
     private void assertNamespacePresent(List<?> namespaces, String nsLocation, String prefix) {
         Namespace ns = namespaces.stream() //
                 .filter(n -> prefix.equals(((Namespace) n).getPrefix()))
