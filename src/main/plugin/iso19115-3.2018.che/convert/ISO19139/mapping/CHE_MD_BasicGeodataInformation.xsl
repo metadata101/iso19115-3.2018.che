@@ -9,7 +9,7 @@
 
     <xsl:template match="*" mode="from19139to19115-3.2018-CHE_MD_BasicGeodataInformation">
         <xsl:variable name="hasBasicGeodataID"
-                      select="normalize-space(oldche:basicGeodataID/gcoold:CharacterString) != ''"/>
+                      select="some $id in oldche:basicGeodataID/gcoold:CharacterString satisfies normalize-space($id) != ''"/>
         <xsl:variable name="hasGeobasisdatenKeyword"
                       select="gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gcoold:CharacterString[normalize-space(.) = 'Geobasisdaten']"/>
         <xsl:element name="che:basicGeodata">
@@ -26,9 +26,11 @@
             <xsl:element name="che:CHE_MD_BasicGeodataInformation">
                 <xsl:choose>
                     <xsl:when test="oldche:basicGeodataID">
-                        <che:basicGeodataID>
-                            <xsl:apply-templates select="oldche:basicGeodataID/gcoold:CharacterString" mode="from19139to19115-3.2018"/>
-                        </che:basicGeodataID>
+                        <xsl:for-each select="oldche:basicGeodataID">
+                            <che:basicGeodataID>
+                                <xsl:apply-templates select="gcoold:CharacterString" mode="from19139to19115-3.2018"/>
+                            </che:basicGeodataID>
+                        </xsl:for-each>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:element name="che:basicGeodataID">
