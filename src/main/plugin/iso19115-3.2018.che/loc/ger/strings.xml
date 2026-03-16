@@ -48,9 +48,9 @@
   <contentInfo>Inhalt</contentInfo>
   <portrayalCatalogueInfo>Darstellung</portrayalCatalogueInfo>
   <metadataConstraints>Metadateneinschränkungen</metadataConstraints>
-  <metadataMaintenance>Metadaten-Pflege</metadataMaintenance>
+  <metadataMaintenance>Wartung</metadataMaintenance>
   <legislationInformation>Gesetzgebung</legislationInformation>
-  <applicationSchemaInfo>Erw. Standard</applicationSchemaInfo>
+  <applicationSchemaInfo>Anwendungsschema</applicationSchemaInfo>
   <acquisitionInformation>Erfassung</acquisitionInformation>
   <bboxesSection>Geografischer Bereich</bboxesSection>
   <citationProposal>Zitierempfehlung</citationProposal>
