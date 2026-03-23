@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatapch="http://dcat-ap.ch/ns/">
-  <dcat:Dataset rdf:about="https://ckan.opendata.swiss/perma/b9c1d690-008f-494c-a47f-ec96d9a8d84f@bundesamt-fur-kultur-bak">
-    <dct:identifier>b9c1d690-008f-494c-a47f-ec96d9a8d84f@bundesamt-fur-kultur-bak</dct:identifier>
+  <dcat:Dataset rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/b9c1d690-008f-494c-a47f-ec96d9a8d84f/formatters/dcat-ap-ch">
+    <dct:identifier>b9c1d690-008f-494c-a47f-ec96d9a8d84f</dct:identifier>
     <dct:title xml:lang="de">ISOS - Bundesinventar der schützenswerten Ortsbilder der Schweiz von nationaler Bedeutung ab 2021 - Bilder</dct:title>
     <dct:title xml:lang="fr">ISOS - Inventaire fédéral des sites construits d'importance nationale à protéger en Suisse dès 2021 - Photos</dct:title>
     <dct:title xml:lang="it">ISOS - Inventario federale degli insediamenti svizzeri da proteggere d’importanza nazionale dal 2021 - Foto</dct:title>
@@ -13,8 +13,12 @@
     <dct:description xml:lang="en">The Inventory of Swiss Heritage Sites (ISOS) designates and documents the most valuable sites of national importance. Work on the ISOS began in 1973 with the development of a suitable method for cataloguing sites – the ISOS method. In 2016, the Federal Office of Culture (FOC) updated this method and adapted the presentation of the inventory in line with GIS technology. The original method (ISOS I) and the adapted method (ISOS II) are based on the same basic principles and rules. This portal presents the ISOS site records currently in use. There are two kinds of data: 1. the site records prepared using the ISOS I method, which are only available as PDFs; 2. the site records updated using the ISOS II method, which are available as PDFs and geodata. Please be aware that only the PDFs are legally valid. The geodata are for information purposes only. The level of detail increases as the scale increases. The ISOS is currently being revised and the revision is taking place in stages. This means that for a certain period of time, site records compiled using the ISOS I method and those updated using the ISOS II method will coexist on this portal. Once the revision for the whole of Switzerland has been completed, only the site records compiled using the ISOS II method will be available. This layer presents the photos for the site records updated using the ISOS II method. It is updated once a year. The information is clearest when this layer is placed over the “site records” layer. The photos can be viewed from a scale of 1: 50,000. All ISOS data (plans, texts, photos) are the intellectual property of the Swiss federal government (© FOC, Bern). For detailed information on ISOS, see www.isos.ch.</dct:description>
     <dct:description xml:lang="rm">L'Inventari federal dals lieus svizzers d'impurtanza naziunala degns da protecziun (ISOS) designescha e documentescha ils lieus impurtants ils pli prezius da la Svizra. Las lavurs vi dal ISOS han cumenzà l'onn 1973 cun sviluppar ina metoda ch'è adattada per inventarisar lieus – la metoda ISOS. L'onn 2016 ha l'Uffizi federal da cultura (UFC) actualisà questa metoda ed adattà la preschentaziun da l'Inventari federal a la tecnologia SIG. La metoda oriunda (ISOS I) e la metoda adattada (ISOS II) sa basan sin ils medems princips fundamentals e sin las medemas reglas. Quest portal preschenta ils relevaments ISOS ch'èn actualmain en vigur. I dat duas sorts da datas: 1. ils relevaments elavurads tenor la metoda ISOS I ch'èn disponibels mo sco PDF; 2. ils relevaments actualisads tenor la metoda ISOS II ch'èn disponibels sco PDF e sco geodatas. Resguardai per plaschair: mo ils documents da PDF han valur legala. Las geodatas servan mo a l'infurmaziun. Il grad da precisaziun s'augmenta cun la scala che crescha. Actualmain vegn il ISOS revedì. La revisiun vegn fatga en etappas. Durant in tschert temp vegnan pia a coexister sin quest portal relevaments ch'èn vegnids fatgs tenor la metoda ISOS I, e relevaments ch'èn vegnids actualisads cun la metoda ISOS II. Cura che la revisiun è terminada en tut la Svizra, vegnan ad esser disponibels mo pli relevaments ch'èn vegnids elavurads tenor la metoda ISOS II. Quest layer preschenta las fotografias dals relevaments actualisads tenor la metoda ISOS II. El vegn actualisà mintga onn. La meglra survesaivladad da las infurmaziuns vegn cuntanschida, sch'il layer sa chatta sur il layer "Relevaments da lieus". Las fotografias vegnan preschentadas en la scala 1:50'000. Tut las datas ISOS (plans, texts, fotografias) èn la proprietad intellectuala da la Regenza federala (© UFC, Berna). Per infurmaziuns detagliadas davart il ISOS guardar www.isos.ch.</dct:description>
     <dct:publisher>
-      <foaf:Agent rdf:about="https://opendata.swiss/organization/bundesamt-fur-kultur-bak">
+      <foaf:Agent>
         <foaf:name xml:lang="de">Bundesamt für Kultur</foaf:name>
+        <foaf:name xml:lang="fr">Office fédéral de la culture</foaf:name>
+        <foaf:name xml:lang="it">Ufficio federale della cultura</foaf:name>
+        <foaf:name xml:lang="en">Federal Office of Culture</foaf:name>
+        <foaf:name xml:lang="rm">Bundesamt für Kultur</foaf:name>
       </foaf:Agent>
     </dct:publisher>
     <dcat:contactPoint>
@@ -150,7 +154,7 @@
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcat:landingPage rdf:resource="https://www.bak.admin.ch/bak/de/home/baukultur/isos-und-ortsbildschutz.html" />
     <dct:relation>
-      <rdf:Description rdf:about="https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/b9c1d690-008f-494c-a47f-ec96d9a8d84f">
+      <rdf:Description rdf:about="https://www.geocat.ch/datahub/dataset/b9c1d690-008f-494c-a47f-ec96d9a8d84f">
         <rdfs:label xml:lang="de">geocat.ch Permalink</rdfs:label>
         <rdfs:label xml:lang="fr">geocat.ch permalien</rdfs:label>
         <rdfs:label xml:lang="it">geocat.ch link permanente</rdfs:label>

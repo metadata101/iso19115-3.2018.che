@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatapch="http://dcat-ap.ch/ns/">
-  <dcat:Dataset rdf:about="https://ckan.opendata.swiss/perma/4a0c8bc7-89d1-484e-a34a-454a31267c41@bafu">
-    <dct:identifier>4a0c8bc7-89d1-484e-a34a-454a31267c41@bafu</dct:identifier>
+  <dcat:Dataset rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/4a0c8bc7-89d1-484e-a34a-454a31267c41/formatters/dcat-ap-ch">
+    <dct:identifier>4a0c8bc7-89d1-484e-a34a-454a31267c41</dct:identifier>
     <dct:title xml:lang="de">Wildruhezonen</dct:title>
     <dct:title xml:lang="fr">Zones de tranquillité</dct:title>
     <dct:title xml:lang="it">Zone di tranquillità</dct:title>
@@ -13,8 +13,12 @@
     <dct:description xml:lang="en">Wildlife requires areas of refuge in which it will not be disturbed. In accordance with Article 7 Paragraph 4 of the Swiss Hunting Act (HuntA), designated wildlife areas are designed to prevent excessive interference due the increase in recreational activities. There are now statutory wildlife areas and reserves which are delineated through a legislative process (cantonal hunting law, municipal zone planning, etc.), as well as recommended wildlife areas and reserves. Within statutory designated wildlife areas and wildlife reserves, only permitted paths and trails marked on the map may be accessed. Prepared cross-country skiing trails, winter hiking trails and roads that are cleared or passable in winter are not shown on the map. Participants in winter sports may, of course, use these routes. In recommended wildlife areas, the permitted paths and trails are to be understood as suggestions. The status of the work currently varies significantly between cantons, which is why the dataset is incomplete. The map is updated at least once a year (at the start of winter). Please take note of the general information and changes below (e.g. perimeter adjustments), which have not yet been incorporated into the map. The campaign “Respektiere deine Grenzen” ("Respect your limits") is committed to protecting wildlife and raising public awareness of wildlife reserves.</dct:description>
     <dct:description xml:lang="rm">Ils animals selvadis dovran refugis, nua ch'els na vegnan betg disturbads. La determinaziun da zonas da paus per la selvaschina serva ad evitar disturbis memia gronds tenor l'art. 7 al. 4 LChP sco resposta a l'augment da l'utilisaziun da temp liber. Oz datti zonas da paus per la selvaschina e territoris protegids giuridicamain liants ch'èn vegnids determinads sin basa d'in process legislativ (dretg da chatscha chantunal, planisaziun communala da zonas e.u.v.) sco er territoris recumandads. Entaifer las zonas da paus per la selvaschina ed ils asils da selvaschina giuridicamain liants dastgan ins chaminar mo sin las rutas e sendas permessas ch'èn inditgadas sin la charta. Betg inditgadas èn loipas (da passlung) preparadas, sendas da viandar l'enviern sco er vias rumidas da la naiv u charrablas l'enviern. Quellas dastgan natiralmain vegnir duvradas dals sportists d'enviern. En zonas da paus per la selvaschina recumandadas ston las rutas e sendas permessas vegnir chapidas sco recumandaziuns. Il stadi da las lavurs en ils chantuns è actualmain fitg different, perquai ha l'unitad da datas largias. La charta vegn actualisada almain ina giada l'onn (il cumenzament da l'enviern). Resguardai per plaschair las infurmaziuns generalas e las midadas (p.ex. adattaziuns dal perimeter) che n'han anc betg pudì vegnir resguardadas en la charta. La campagna "Respecta tes cunfins – er en la natira" s'engascha per la protecziun da la selvaschina e vul er render enconuschentas a la populaziun las zonas da paus per la selvaschina.</dct:description>
     <dct:publisher>
-      <foaf:Agent rdf:about="https://opendata.swiss/organization/bafu">
+      <foaf:Agent>
         <foaf:name xml:lang="de">Bundesamt für Umwelt / Abteilung Biodiversität und Landschaft</foaf:name>
+        <foaf:name xml:lang="fr">Office fédéral de l'environnement / Division Biodiversité et paysage</foaf:name>
+        <foaf:name xml:lang="it">Ufficio federale dell'ambiente / Divisione Biodiversità e paesaggio</foaf:name>
+        <foaf:name xml:lang="en">Federal Office for the Environment / Biodiversity and Landscape Division</foaf:name>
+        <foaf:name xml:lang="rm">Bundesamt für Umwelt</foaf:name>
       </foaf:Agent>
     </dct:publisher>
     <dcat:distribution>
@@ -149,7 +153,7 @@
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI" />
     <dcat:landingPage rdf:resource="https://www.wildruhezonen.ch/news/aenderungen-und-allgemeine-hinweise" />
     <dct:relation>
-      <rdf:Description rdf:about="https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/4a0c8bc7-89d1-484e-a34a-454a31267c41">
+      <rdf:Description rdf:about="https://www.geocat.ch/datahub/dataset/4a0c8bc7-89d1-484e-a34a-454a31267c41">
         <rdfs:label xml:lang="de">geocat.ch Permalink</rdfs:label>
         <rdfs:label xml:lang="fr">geocat.ch permalien</rdfs:label>
         <rdfs:label xml:lang="it">geocat.ch link permanente</rdfs:label>

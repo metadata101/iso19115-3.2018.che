@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatapch="http://dcat-ap.ch/ns/">
-  <dcat:Dataset rdf:about="https://ckan.opendata.swiss/perma/ffc0267e-aca8-49ac-8f3e-86c9beca51f2@bundesamt-fur-landestopografie-swisstopo">
-    <dct:identifier>ffc0267e-aca8-49ac-8f3e-86c9beca51f2@bundesamt-fur-landestopografie-swisstopo</dct:identifier>
+  <dcat:Dataset rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/ffc0267e-aca8-49ac-8f3e-86c9beca51f2/formatters/dcat-ap-ch">
+    <dct:identifier>ffc0267e-aca8-49ac-8f3e-86c9beca51f2</dct:identifier>
     <dct:title xml:lang="de">swissTLM3D Übrige Bahn</dct:title>
     <dct:title xml:lang="fr">swissTLM3D Autres transports</dct:title>
     <dct:title xml:lang="it">swissTLM3D Altri trasporti</dct:title>
@@ -13,8 +13,12 @@
     <dct:description xml:lang="en">swissTLM3D other transportations contains the different types of cable railway and other types of mechanical transport. It is part of the dataset swissTLM3D. With a high accuracy and the incorporation of a third dimension, swissTLM3D is the most extensive 3D vector data set of Switzerland. In the federal geoportal the objects of the layer "other transportations" are displayed gradually according to the different zoomlevels.</dct:description>
     <dct:description xml:lang="rm">swissTLM3D Auters transports cuntegna differents geners da telefericas sco er auters sistems da transport mecanics. Ella è ina part integrala da l'unitad da datas swissTLM3D. Cun sia auta precisiun e cun l'integraziun da la terza dimensiun è swissTLM3D l'unitad da datas vectorialas en 3D la pli cumplessiva da la Svizra. En il geoportal da la Confederaziun vegnan ils objects dad "Auters transports" preschentads progressivamain, tut tenor il stgalim da zoom tschernì.</dct:description>
     <dct:publisher>
-      <foaf:Agent rdf:about="https://opendata.swiss/organization/bundesamt-fur-landestopografie-swisstopo">
+      <foaf:Agent>
         <foaf:name xml:lang="de">Bundesamt für Landestopografie swisstopo</foaf:name>
+        <foaf:name xml:lang="fr">Office fédéral de topographie swisstopo</foaf:name>
+        <foaf:name xml:lang="it">Ufficio federale di topografia swisstopo</foaf:name>
+        <foaf:name xml:lang="en">Federal Office of Topography swisstopo</foaf:name>
+        <foaf:name xml:lang="rm">Uffizi federal da topografia swisstopo</foaf:name>
       </foaf:Agent>
     </dct:publisher>
     <dcat:contactPoint>
@@ -154,7 +158,7 @@
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TRAN" />
     <dcat:landingPage rdf:resource="https://www.swisstopo.admin.ch/de/landschaftsmodell-swisstlm3d" />
     <dct:relation>
-      <rdf:Description rdf:about="https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/ffc0267e-aca8-49ac-8f3e-86c9beca51f2">
+      <rdf:Description rdf:about="https://www.geocat.ch/datahub/dataset/ffc0267e-aca8-49ac-8f3e-86c9beca51f2">
         <rdfs:label xml:lang="de">geocat.ch Permalink</rdfs:label>
         <rdfs:label xml:lang="fr">geocat.ch permalien</rdfs:label>
         <rdfs:label xml:lang="it">geocat.ch link permanente</rdfs:label>

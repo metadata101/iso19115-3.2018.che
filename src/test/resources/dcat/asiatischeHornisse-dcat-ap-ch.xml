@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatapch="http://dcat-ap.ch/ns/">
-  <dcat:Dataset rdf:about="https://ckan.opendata.swiss/perma/786606bc-2b81-4426-8ccd-e3a2c76cdb14@amt-fur-umweltschutz-und-energie">
-    <dct:identifier>786606bc-2b81-4426-8ccd-e3a2c76cdb14@amt-fur-umweltschutz-und-energie</dct:identifier>
+  <dcat:Dataset rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/786606bc-2b81-4426-8ccd-e3a2c76cdb14/formatters/dcat-ap-ch">
+    <dct:identifier>786606bc-2b81-4426-8ccd-e3a2c76cdb14</dct:identifier>
     <dct:title xml:lang="de">Asiatische Hornisse</dct:title>
     <dct:description xml:lang="de">Die Asiatische Hornisse wurde im Kanton Basel-Landschaft erstmals im Jahr 2022 nachgewiesen. Diese Art gilt als invasiv, da sie zur Ernährung ihrer Brut einheimische Wildbienen und Honigbienen in grossen Mengen jagt und diese Bestände so dezimiert. Die Bestandesdichte der Asiatischen Hornisse ist seit dem ersten Nachweis stark am Ansteigen. Mit dem Vernichten gefundener Nester wird versucht, deren Ausbreitung zu verlangsamen und die Populationsdichte zu senken.</dct:description>
     <dct:publisher>
-      <foaf:Agent rdf:about="https://opendata.swiss/organization/amt-fur-umweltschutz-und-energie">
+      <foaf:Agent rdf:about="https://www.baselland.ch/politik-und-behorden/direktionen/bau-und-umweltschutzdirektion/umweltschutz-energie">
         <foaf:name xml:lang="de">Amt für Umweltschutz und Energie</foaf:name>
+        <foaf:name xml:lang="en">Amt für Umweltschutz und Energie</foaf:name>
       </foaf:Agent>
     </dct:publisher>
     <dcat:contactPoint>
@@ -18,7 +19,7 @@
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-07T00:00:00</dct:modified>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI" />
     <dct:relation>
-      <rdf:Description rdf:about="https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/786606bc-2b81-4426-8ccd-e3a2c76cdb14">
+      <rdf:Description rdf:about="https://www.geocat.ch/datahub/dataset/786606bc-2b81-4426-8ccd-e3a2c76cdb14">
         <rdfs:label xml:lang="de">geocat.ch Permalink</rdfs:label>
         <rdfs:label xml:lang="fr">geocat.ch permalien</rdfs:label>
         <rdfs:label xml:lang="it">geocat.ch link permanente</rdfs:label>

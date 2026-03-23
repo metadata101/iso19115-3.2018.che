@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatapch="http://dcat-ap.ch/ns/">
-  <dcat:Dataset rdf:about="https://ckan.opendata.swiss/perma/35323752-ed32-4cc1-8a75-898c749b777b@bundesamt-fur-meteorologie-und-klimatologie-meteoschweiz">
-    <dct:identifier>35323752-ed32-4cc1-8a75-898c749b777b@bundesamt-fur-meteorologie-und-klimatologie-meteoschweiz</dct:identifier>
+  <dcat:Dataset rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/35323752-ed32-4cc1-8a75-898c749b777b/formatters/dcat-ap-ch">
+    <dct:identifier>35323752-ed32-4cc1-8a75-898c749b777b</dct:identifier>
     <dct:title xml:lang="de">Automatische Wetterstationen – Messwerte</dct:title>
     <dct:title xml:lang="fr">Stations météorologiques automatiques – Valeurs mesurées</dct:title>
     <dct:title xml:lang="it">Stazioni meteorologiche automatiche – Valori misurati</dct:title>
@@ -11,8 +11,11 @@
     <dct:description xml:lang="it">Temperatura, precipitazioni, vento, soleggiamento, umidità, radiazione e pressione – per stazione – valori ogni 10 minuti ('t'), orari ('h'), giornalieri ('d'), mensili ('m') e annuali ('y') – dalla mezzanotte ('now'), dall'anno corrente fino a ieri ('recent'), dall'inizio delle misurazioni in incrementi di dieci anni ('historical'). Se si necessitano valori orari, giornalieri, mensili o annuali, si consiglia vivamente di scaricare la risoluzione corrispondente.</dct:description>
     <dct:description xml:lang="en">Temperature, precipitation, wind, sunshine, humidity, radiation and pressure – per station – values every 10 minutes ('t'), hourly ('h'), daily ('d'), monthly ('m') and yearly ('y') – since midnight ('now'), from the current year up to yesterday ('recent'), since the beginning of the measurement in ten-year increments ('historical'). If you require hourly, daily, monthly or yearly values, we strongly recommend that you download the corresponding resolution.</dct:description>
     <dct:publisher>
-      <foaf:Agent rdf:about="https://opendata.swiss/organization/bundesamt-fur-meteorologie-und-klimatologie-meteoschweiz">
+      <foaf:Agent rdf:about="https://www.meteoschweiz.admin.ch/service-und-publikationen/service/open-data.html">
         <foaf:name xml:lang="de">Bundesamt für Meteorologie und Klimatologie MeteoSchweiz</foaf:name>
+        <foaf:name xml:lang="fr">Office fédéral de météorologie et de climatologie MétéoSuisse</foaf:name>
+        <foaf:name xml:lang="it">Ufficio federale di meteorologia e climatologia MeteoSvizzera</foaf:name>
+        <foaf:name xml:lang="en">Federal Office of Meterology and Climatology MeteoSwiss</foaf:name>
       </foaf:Agent>
     </dct:publisher>
     <dcat:distribution>
@@ -149,7 +152,7 @@
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI" />
     <dcat:landingPage rdf:resource="https://www.meteoschweiz.admin.ch/service-und-publikationen/service/open-data.html" />
     <dct:relation>
-      <rdf:Description rdf:about="https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/35323752-ed32-4cc1-8a75-898c749b777b">
+      <rdf:Description rdf:about="https://www.geocat.ch/datahub/dataset/35323752-ed32-4cc1-8a75-898c749b777b">
         <rdfs:label xml:lang="de">geocat.ch Permalink</rdfs:label>
         <rdfs:label xml:lang="fr">geocat.ch permalien</rdfs:label>
         <rdfs:label xml:lang="it">geocat.ch link permanente</rdfs:label>

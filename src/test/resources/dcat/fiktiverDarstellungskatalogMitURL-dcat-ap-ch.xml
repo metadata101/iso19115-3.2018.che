@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatapch="http://dcat-ap.ch/ns/">
-  <dcat:Dataset rdf:about="https://ckan.opendata.swiss/perma/0e5a8467-bf17-4d4d-aab4-3ba49417cedc@bundesamt-fur-umwelt-bafu">
-    <dct:identifier>0e5a8467-bf17-4d4d-aab4-3ba49417cedc@bundesamt-fur-umwelt-bafu</dct:identifier>
+  <dcat:Dataset rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/0e5a8467-bf17-4d4d-aab4-3ba49417cedc/formatters/dcat-ap-ch">
+    <dct:identifier>0e5a8467-bf17-4d4d-aab4-3ba49417cedc</dct:identifier>
     <dct:title xml:lang="de">Beispiel II "Verbreitung der Steinbockkolonien"</dct:title>
     <dct:title xml:lang="fr">Example II "Colonies de bouquetins"</dct:title>
     <dct:title xml:lang="it">Exempio II "Diffusione delle colonie di stambecchi"</dct:title>
@@ -12,8 +12,12 @@
     <dct:description xml:lang="en">After being resettled in 1906, Alpine (Capra) ibex live in colonies of varying sizes throughout the Alpine region and in the Jura mountains. Because the growth of stocks in specific colonies had negative effects on other species and vegetation, regulatory measures were taken. The regulations concerning the hunting quota for ibex stocks are based on the Federal Act of 20 June 1986 on the Hunting and Protection of Wild Mammals and Birds. The colonies are counted in accordance with the provisions on stocktaking of the Ordinance of 30 April 1990 on the Regulation of Capra Stocks, which is used in addition to stocktaking to set hunting quotas.</dct:description>
     <dct:description xml:lang="rm">Suenter sia recolonisaziun l'onn 1906 viva il capricorn alpin en diversas colonias da differenta dimensiun en las Alps ed en il Giura. En singulas colonias ha la creschientscha dals effectivs gì consequenzas negativas per autras spezias e per la vegetaziun, uschia ch'i vegnan prendidas mesiras da regulaziun. Las prescripziuns davart las planisaziuns da la reducziun dals effectivs da capricorns sa basan sin la Lescha federala dals 20 da zercladur 1986 davart la chatscha e la protecziun dals mamifers e dals utschels selvadis. Las colonias vegnan registradas tenor las prescripziuns davart las relevaziuns dals effectivs da l'Ordinaziun dals 30 d'avrigl 1990 davart la regulaziun dals effectivs da capricorns e furman, ensemen cun las relevaziuns dals effectivs, la basa per planisar la reducziun dals effectivs.</dct:description>
     <dct:publisher>
-      <foaf:Agent rdf:about="https://opendata.swiss/organization/bundesamt-fur-umwelt-bafu">
+      <foaf:Agent>
         <foaf:name xml:lang="de">Bundesamt für Umwelt</foaf:name>
+        <foaf:name xml:lang="fr">Office fédéral de l'environnement</foaf:name>
+        <foaf:name xml:lang="it">Ufficio federale dell'ambiente</foaf:name>
+        <foaf:name xml:lang="en">Federal Office for the Environment</foaf:name>
+        <foaf:name xml:lang="rm">Bundesamt für Umwelt</foaf:name>
       </foaf:Agent>
     </dct:publisher>
     <dcat:contactPoint>
@@ -148,7 +152,7 @@
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI" />
     <dcat:landingPage rdf:resource="https://www.bafu.admin.ch/bafu/de/home/themen/biodiversitaet/zustand/karten.html" />
     <dct:relation>
-      <rdf:Description rdf:about="https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/0e5a8467-bf17-4d4d-aab4-3ba49417cedc">
+      <rdf:Description rdf:about="https://www.geocat.ch/datahub/dataset/0e5a8467-bf17-4d4d-aab4-3ba49417cedc">
         <rdfs:label xml:lang="de">geocat.ch Permalink</rdfs:label>
         <rdfs:label xml:lang="fr">geocat.ch permalien</rdfs:label>
         <rdfs:label xml:lang="it">geocat.ch link permanente</rdfs:label>

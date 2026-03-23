@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatapch="http://dcat-ap.ch/ns/">
-  <dcat:Dataset rdf:about="https://ckan.opendata.swiss/perma/1d177f9e-2446-428f-8740-0dbe11e4131c@gn">
-    <dct:identifier>1d177f9e-2446-428f-8740-0dbe11e4131c@gn</dct:identifier>
+  <dcat:Dataset rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/1d177f9e-2446-428f-8740-0dbe11e4131c/formatters/dcat-ap-ch">
+    <dct:identifier>1d177f9e-2446-428f-8740-0dbe11e4131c</dct:identifier>
     <dct:title xml:lang="fr">Localisation des arbres annoncés dans les exploitations agricoles</dct:title>
     <dct:title xml:lang="de">Bäume</dct:title>
     <dct:title xml:lang="it">Alberi</dct:title>
@@ -9,8 +9,9 @@
     <dct:description xml:lang="fr">Arbres annoncés par les exploitants agricoles. Ceux-ci sont inscrits comme faisant partie de l’exploitation et sont comptabilisés pour les paiements directs. La donnée est annuellement archivée depuis 2014.</dct:description>
     <dct:description xml:lang="de">Diese Ebene zeigt die durch die Landwirte über die Internet-Plattform GELAN angemeldeten Bäume an.</dct:description>
     <dct:publisher>
-      <foaf:Agent rdf:about="https://opendata.swiss/organization/gn">
-        <foaf:name xml:lang="de">Grangeneuve</foaf:name>
+      <foaf:Agent rdf:about="https://www.fr.ch/de/grangeneuve">
+        <foaf:name xml:lang="fr">Grangeneuve</foaf:name>
+        <foaf:name xml:lang="en">Service de l'agriculture</foaf:name>
       </foaf:Agent>
     </dct:publisher>
     <dcat:contactPoint>
@@ -108,7 +109,7 @@
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI" />
     <dcat:landingPage rdf:resource="https://map.geo.fr.ch/?dataTheme=Agriculture&amp;theme&amp;lang=fr" />
     <dct:relation>
-      <rdf:Description rdf:about="https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/1d177f9e-2446-428f-8740-0dbe11e4131c">
+      <rdf:Description rdf:about="https://www.geocat.ch/datahub/dataset/1d177f9e-2446-428f-8740-0dbe11e4131c">
         <rdfs:label xml:lang="de">geocat.ch Permalink</rdfs:label>
         <rdfs:label xml:lang="fr">geocat.ch permalien</rdfs:label>
         <rdfs:label xml:lang="it">geocat.ch link permanente</rdfs:label>

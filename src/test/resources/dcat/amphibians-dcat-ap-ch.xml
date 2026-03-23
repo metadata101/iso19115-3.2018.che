@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatapch="http://dcat-ap.ch/ns/">
-  <dcat:Dataset rdf:about="https://ckan.opendata.swiss/perma/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce@bafu">
-    <dct:identifier>9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce@bafu</dct:identifier>
+  <dcat:Dataset rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce/formatters/dcat-ap-ch">
+    <dct:identifier>9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce</dct:identifier>
     <dct:title xml:lang="de">Amphibien Ausbreitungskarten - Ichthyosaura alpestris</dct:title>
     <dct:title xml:lang="fr">Cartes de dispersion des amphibiens - Ichthyosaura alpestris</dct:title>
     <dct:title xml:lang="en">Amphibian dispersal maps - Ichthyosaura alpestris</dct:title>
@@ -9,8 +9,12 @@
     <dct:description xml:lang="fr">Carte de la Suisse montrant la probabilité de dispersion du Triton alpestre (Ichthyosaura alpestris). Chaque cellule de la grille indique la probabilité relative que des individus traversent cet hectare sur leur trajet entre des sites de reproduction connus. La carte montre la probabilité de dispersion qui augmente le long d'une échelle allant du bleu au rouge en passant par le jaune. Ces cartes devraient être considérées comme des cartes de chaleur de l'activité de dispersion des populations existantes. En pratique, ces cartes indiquent également les endroits où les nouveaux sites de reproduction d'amphibiens potentiels ont le plus de chances d'être colonisés. Les zones avec de nombreuses populations à proximité immédiate apparaissent en rouge plus foncé, ce qui reflète une plus grande probabilité de dispersion, car plusieurs voies de dispersion entre les populations se chevauchent. Cette caractéristique des cartes mérite une attention particulière. Des nuances plus claires sur les bords de la distribution des espèces ne signifient pas nécessairement un lien plus faible entre les populations, mais sont plutôt la conséquence d'une densité plus faible de sites de reproduction d'amphibiens sur les bords de la distribution. L'échelle de couleurs doit être considérée dans le contexte de l'environnement immédiat. La carte de dispersion a été calculée avec Circuitscape et se base sur une matrice de résistance du paysage dérivée du MDS le mieux évalué pour chaque espèce. Pour plus de détails, voir la description des données ci-jointe.</dct:description>
     <dct:description xml:lang="en">Swiss-wide map depicting the dispersal probability of the Alpine newt (Ichthyosaura alpestris). Each grid cell indicates the relative probability that dispersing individuals will pass through that hectare on their way between known amphibian breeding sites. The map shows dispersal probability increasing along a scale from blue to yellow to red. These maps should be thought of as heatmaps for dispersal activity of existing populations. In practical terms, these maps also show locations where potential new amphibian breeding sites have the highest chances of being colonized. Areas with many populations in close proximity appear a darker red, reflecting the higher probability of dispersal as multiple dispersal routes between populations intersect. This feature of the maps deserves special attention. Lighter shades at the edges of the species' range do not necessarily indicate a weaker connection between populations, but rather a consequence of the lower density of breeding sites at the edges of the range. The color scale should be considered in the context of the immediate surroundings. The dispersal map was calculated using Circuitscape and is based on a landscape resistance matrix derived from the best-ranked dispersal model for each species. For details, see the attached data description.</dct:description>
     <dct:publisher>
-      <foaf:Agent rdf:about="https://opendata.swiss/organization/bafu">
+      <foaf:Agent rdf:about="https://www.bafu.admin.ch/bafu/de/home/amt/abteilungen-sektionen/abteilung-biodiversitaet-und-landschaft.html">
         <foaf:name xml:lang="de">Bundesamt für Umwelt / Abteilung Biodiversität und Landschaft</foaf:name>
+        <foaf:name xml:lang="fr">Office fédéral de l'environnement / Division Biodiversité et paysage</foaf:name>
+        <foaf:name xml:lang="it">Ufficio federale dell'ambiente / Divisione Biodiversità e paesaggio</foaf:name>
+        <foaf:name xml:lang="en">Federal Office for the Environment / Biodiversity and Landscape Division</foaf:name>
+        <foaf:name xml:lang="rm">Bundesamt für Umwelt</foaf:name>
       </foaf:Agent>
     </dct:publisher>
     <dcat:contactPoint>
@@ -63,7 +67,7 @@
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI" />
     <dcat:landingPage rdf:resource="http://www.agroscope.admin.ch" />
     <dct:relation>
-      <rdf:Description rdf:about="https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce">
+      <rdf:Description rdf:about="https://www.geocat.ch/datahub/dataset/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce">
         <rdfs:label xml:lang="de">geocat.ch Permalink</rdfs:label>
         <rdfs:label xml:lang="fr">geocat.ch permalien</rdfs:label>
         <rdfs:label xml:lang="it">geocat.ch link permanente</rdfs:label>
