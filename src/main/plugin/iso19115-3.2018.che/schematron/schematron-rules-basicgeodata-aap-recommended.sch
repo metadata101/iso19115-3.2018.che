@@ -2,6 +2,7 @@
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron">
   <sch:title xmlns="http://www.w3.org/2001/XMLSchema" xml:lang="en">Basic Geodata - AAP recommended rules</sch:title>
   <sch:title xmlns="http://www.w3.org/2001/XMLSchema" xml:lang="fr">Basic Geodata - AAP règles recommandées</sch:title>
+  <sch:title xmlns="http://www.w3.org/2001/XMLSchema" xml:lang="de">Basic Geodata - AAP empfohlene Regeln</sch:title>
   <sch:ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
   <sch:ns prefix="srv" uri="http://standards.iso.org/iso/19115/-3/srv/2.0"/>
   <sch:ns prefix="cit" uri="http://standards.iso.org/iso/19115/-3/cit/2.0"/>
@@ -26,52 +27,66 @@
 
   <sch:diagnostics>
     <sch:diagnostic id="rule.che.appraisal-aap-duration-mandatory-failure-en" xml:lang="en">
-      When CHE_MD_Appraisal_AAP is used, durationOfConservation is mandatory.
+      When Appraisal AAP (CHE_MD_Appraisal_AAP) is used, Duration of Conservation (durationOfConservation) is mandatory.
     </sch:diagnostic>
     <sch:diagnostic id="rule.che.appraisal-aap-duration-mandatory-failure-fr" xml:lang="fr">
-      Lorsque CHE_MD_Appraisal_AAP est utilisé, durationOfConservation est obligatoire.
+      Lorsque Évaluation AAP (CHE_MD_Appraisal_AAP) est utilisé, Durée de conservation (durationOfConservation) est obligatoire.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.appraisal-aap-duration-mandatory-failure-de" xml:lang="de">
+      Wenn Bewertung AAP (CHE_MD_Appraisal_AAP) verwendet wird, ist Aufbewahrungsdauer NV in Jahren (durationOfConservation) obligatorisch.
     </sch:diagnostic>
     <sch:diagnostic id="rule.che.appraisal-aap-duration-mandatory-success-en" xml:lang="en">
-      durationOfConservation is present in CHE_MD_Appraisal_AAP.
+      Duration of Conservation (durationOfConservation) is present in Appraisal AAP (CHE_MD_Appraisal_AAP).
     </sch:diagnostic>
     <sch:diagnostic id="rule.che.appraisal-aap-duration-mandatory-success-fr" xml:lang="fr">
-      durationOfConservation est présent dans CHE_MD_Appraisal_AAP.
+      Durée de conservation (durationOfConservation) est présente dans Évaluation AAP (CHE_MD_Appraisal_AAP).
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.appraisal-aap-duration-mandatory-success-de" xml:lang="de">
+      Aufbewahrungsdauer NV in Jahren (durationOfConservation) ist in Bewertung AAP (CHE_MD_Appraisal_AAP) vorhanden.
     </sch:diagnostic>
 
     <sch:diagnostic id="rule.che.appraisal-aap-archival-value-mandatory-failure-en" xml:lang="en">
-      When CHE_MD_Appraisal_AAP is used, appraisalOfArchivalValue is mandatory.
+      When Appraisal AAP (CHE_MD_Appraisal_AAP) is used, Appraisal of Archival Value (appraisalOfArchivalValue) is mandatory.
     </sch:diagnostic>
     <sch:diagnostic id="rule.che.appraisal-aap-archival-value-mandatory-failure-fr" xml:lang="fr">
-      Lorsque CHE_MD_Appraisal_AAP est utilisé, appraisalOfArchivalValue est obligatoire.
+      Lorsque Évaluation AAP (CHE_MD_Appraisal_AAP) est utilisé, Évaluation de la valeur archivistique (appraisalOfArchivalValue) est obligatoire.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.appraisal-aap-archival-value-mandatory-failure-de" xml:lang="de">
+      Wenn Bewertung AAP (CHE_MD_Appraisal_AAP) verwendet wird, ist Bewertung Archivwürdigkeit (appraisalOfArchivalValue) obligatorisch.
     </sch:diagnostic>
     <sch:diagnostic id="rule.che.appraisal-aap-archival-value-mandatory-success-en" xml:lang="en">
-      appraisalOfArchivalValue is present in CHE_MD_Appraisal_AAP.
+      Appraisal of Archival Value (appraisalOfArchivalValue) is present in Appraisal AAP (CHE_MD_Appraisal_AAP).
     </sch:diagnostic>
     <sch:diagnostic id="rule.che.appraisal-aap-archival-value-mandatory-success-fr" xml:lang="fr">
-      appraisalOfArchivalValue est présent dans CHE_MD_Appraisal_AAP.
+      Évaluation de la valeur archivistique (appraisalOfArchivalValue) est présente dans Évaluation AAP (CHE_MD_Appraisal_AAP).
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.appraisal-aap-archival-value-mandatory-success-de" xml:lang="de">
+      Bewertung Archivwürdigkeit (appraisalOfArchivalValue) ist in Bewertung AAP (CHE_MD_Appraisal_AAP) vorhanden.
     </sch:diagnostic>
 
   </sch:diagnostics>
 
   <sch:pattern id="rule.che.appraisal-aap-duration-mandatory">
-    <sch:title xml:lang="en">{If CHE_MD_Appraisal_AAP is used then CHE_MD_Appraisal_AAP.durationOfConservation is mandatory}</sch:title>
-    <sch:title xml:lang="fr">{Si CHE_MD_Appraisal_AAP est utilisé alors CHE_MD_Appraisal_AAP.durationOfConservation est obligatoire}</sch:title>
+    <sch:title xml:lang="en">{If Appraisal AAP (CHE_MD_Appraisal_AAP) is used then Duration of Conservation (CHE_MD_Appraisal_AAP.durationOfConservation) is mandatory}</sch:title>
+    <sch:title xml:lang="fr">{Si Évaluation AAP (CHE_MD_Appraisal_AAP) est utilisé alors Durée de conservation (CHE_MD_Appraisal_AAP.durationOfConservation) est obligatoire}</sch:title>
+    <sch:title xml:lang="de">{Wenn Bewertung AAP (CHE_MD_Appraisal_AAP) verwendet wird, ist Aufbewahrungsdauer NV in Jahren (CHE_MD_Appraisal_AAP.durationOfConservation) obligatorisch}</sch:title>
     <sch:rule context="//che:CHE_MD_Appraisal_AAP">
       <sch:assert test="che:durationOfConservation/gco:Integer and normalize-space(che:durationOfConservation/gco:Integer) != ''"
-                  diagnostics="rule.che.appraisal-aap-duration-mandatory-failure-en rule.che.appraisal-aap-duration-mandatory-failure-fr"/>
+                  diagnostics="rule.che.appraisal-aap-duration-mandatory-failure-en rule.che.appraisal-aap-duration-mandatory-failure-fr rule.che.appraisal-aap-duration-mandatory-failure-de"/>
       <sch:report test="che:durationOfConservation/gco:Integer and normalize-space(che:durationOfConservation/gco:Integer) != ''"
-                  diagnostics="rule.che.appraisal-aap-duration-mandatory-success-en rule.che.appraisal-aap-duration-mandatory-success-fr"/>
+                  diagnostics="rule.che.appraisal-aap-duration-mandatory-success-en rule.che.appraisal-aap-duration-mandatory-success-fr rule.che.appraisal-aap-duration-mandatory-success-de"/>
     </sch:rule>
   </sch:pattern>
 
   <sch:pattern id="rule.che.appraisal-aap-archival-value-mandatory">
-    <sch:title xml:lang="en">{If CHE_MD_Appraisal_AAP is used then CHE_MD_Appraisal_AAP.appraisalOfArchivalValue is mandatory}</sch:title>
-    <sch:title xml:lang="fr">{Si CHE_MD_Appraisal_AAP est utilisé alors CHE_MD_Appraisal_AAP.appraisalOfArchivalValue est obligatoire}</sch:title>
+    <sch:title xml:lang="en">{If Appraisal AAP (CHE_MD_Appraisal_AAP) is used then Appraisal of Archival Value (CHE_MD_Appraisal_AAP.appraisalOfArchivalValue) is mandatory}</sch:title>
+    <sch:title xml:lang="fr">{Si Évaluation AAP (CHE_MD_Appraisal_AAP) est utilisé alors Évaluation de la valeur archivistique (CHE_MD_Appraisal_AAP.appraisalOfArchivalValue) est obligatoire}</sch:title>
+    <sch:title xml:lang="de">{Wenn Bewertung AAP (CHE_MD_Appraisal_AAP) verwendet wird, ist Bewertung Archivwürdigkeit (CHE_MD_Appraisal_AAP.appraisalOfArchivalValue) obligatorisch}</sch:title>
     <sch:rule context="//che:CHE_MD_Appraisal_AAP">
       <sch:assert test="che:appraisalOfArchivalValue/che:CHE_AppraisalOfArchivalValueCode/@codeListValue and normalize-space(che:appraisalOfArchivalValue/che:CHE_AppraisalOfArchivalValueCode/@codeListValue) != ''"
-                  diagnostics="rule.che.appraisal-aap-archival-value-mandatory-failure-en rule.che.appraisal-aap-archival-value-mandatory-failure-fr"/>
+                  diagnostics="rule.che.appraisal-aap-archival-value-mandatory-failure-en rule.che.appraisal-aap-archival-value-mandatory-failure-fr rule.che.appraisal-aap-archival-value-mandatory-failure-de"/>
       <sch:report test="che:appraisalOfArchivalValue/che:CHE_AppraisalOfArchivalValueCode/@codeListValue and normalize-space(che:appraisalOfArchivalValue/che:CHE_AppraisalOfArchivalValueCode/@codeListValue) != ''"
-                  diagnostics="rule.che.appraisal-aap-archival-value-mandatory-success-en rule.che.appraisal-aap-archival-value-mandatory-success-fr"/>
+                  diagnostics="rule.che.appraisal-aap-archival-value-mandatory-success-en rule.che.appraisal-aap-archival-value-mandatory-success-fr rule.che.appraisal-aap-archival-value-mandatory-success-de"/>
     </sch:rule>
   </sch:pattern>
 
