@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svrl:schematron-output xmlns:svrl="http://purl.oclc.org/dsdl/svrl" title="Basic Geodata - AAP règles recommandées" schemaVersion="">
+<svrl:schematron-output xmlns:svrl="http://purl.oclc.org/dsdl/svrl" title="Basic Geodata - AAP empfohlene Regeln" schemaVersion="">
   <!--
          
         
@@ -28,19 +28,21 @@
   <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/1999/xlink" prefix="xlink" />
   <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi" />
   <svrl:ns-prefix-in-attribute-values uri="http://geocat.ch/che" prefix="che" />
-  <svrl:active-pattern document="" id="rule.che.appraisal-aap-duration-mandatory" name_en="{If CHE_MD_Appraisal_AAP is used then CHE_MD_Appraisal_AAP.durationOfConservation is mandatory}" name_fr="{Si CHE_MD_Appraisal_AAP est utilisé alors CHE_MD_Appraisal_AAP.durationOfConservation est obligatoire}" name="{Si CHE_MD_Appraisal_AAP est utilisé alors CHE_MD_Appraisal_AAP.durationOfConservation est obligatoire}" />
+  <svrl:active-pattern document="" id="rule.che.appraisal-aap-duration-mandatory" name_en="{If Appraisal AAP (CHE_MD_Appraisal_AAP) is used then Duration of Conservation (CHE_MD_Appraisal_AAP.durationOfConservation) is mandatory}" name_fr="{Si Évaluation AAP (CHE_MD_Appraisal_AAP) est utilisé alors Durée de conservation (CHE_MD_Appraisal_AAP.durationOfConservation) est obligatoire}" name_de="{Wenn Bewertung AAP (CHE_MD_Appraisal_AAP) verwendet wird, ist Aufbewahrungsdauer NV in Jahren (CHE_MD_Appraisal_AAP.durationOfConservation) obligatorisch}" name="{Wenn Bewertung AAP (CHE_MD_Appraisal_AAP) verwendet wird, ist Aufbewahrungsdauer NV in Jahren (CHE_MD_Appraisal_AAP.durationOfConservation) obligatorisch}" />
   <svrl:fired-rule context="//che:CHE_MD_Appraisal_AAP" />
   <svrl:successful-report ref="#_" test="che:durationOfConservation/gco:Integer and normalize-space(che:durationOfConservation/gco:Integer) != ''" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='resourceMaintenance']/*[local-name()='CHE_MD_MaintenanceInformation']/*[local-name()='appraisal']/*[local-name()='CHE_MD_Appraisal_AAP']">
     <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.appraisal-aap-duration-mandatory-success-en" xml:lang="en">durationOfConservation is present in CHE_MD_Appraisal_AAP.</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.appraisal-aap-duration-mandatory-success-fr" xml:lang="fr">durationOfConservation est présent dans CHE_MD_Appraisal_AAP.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.appraisal-aap-duration-mandatory-success-en" xml:lang="en">Duration of Conservation (durationOfConservation) is present in Appraisal AAP (CHE_MD_Appraisal_AAP).</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.appraisal-aap-duration-mandatory-success-fr" xml:lang="fr">Durée de conservation (durationOfConservation) est présente dans Évaluation AAP (CHE_MD_Appraisal_AAP).</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.appraisal-aap-duration-mandatory-success-de" xml:lang="de">Aufbewahrungsdauer NV in Jahren (durationOfConservation) ist in Bewertung AAP (CHE_MD_Appraisal_AAP) vorhanden.</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.che.appraisal-aap-archival-value-mandatory" name_en="{If CHE_MD_Appraisal_AAP is used then CHE_MD_Appraisal_AAP.appraisalOfArchivalValue is mandatory}" name_fr="{Si CHE_MD_Appraisal_AAP est utilisé alors CHE_MD_Appraisal_AAP.appraisalOfArchivalValue est obligatoire}" name="{Si CHE_MD_Appraisal_AAP est utilisé alors CHE_MD_Appraisal_AAP.appraisalOfArchivalValue est obligatoire}" />
+  <svrl:active-pattern document="" id="rule.che.appraisal-aap-archival-value-mandatory" name_en="{If Appraisal AAP (CHE_MD_Appraisal_AAP) is used then Appraisal of Archival Value (CHE_MD_Appraisal_AAP.appraisalOfArchivalValue) is mandatory}" name_fr="{Si Évaluation AAP (CHE_MD_Appraisal_AAP) est utilisé alors Évaluation de la valeur archivistique (CHE_MD_Appraisal_AAP.appraisalOfArchivalValue) est obligatoire}" name_de="{Wenn Bewertung AAP (CHE_MD_Appraisal_AAP) verwendet wird, ist Bewertung Archivwürdigkeit (CHE_MD_Appraisal_AAP.appraisalOfArchivalValue) obligatorisch}" name="{Wenn Bewertung AAP (CHE_MD_Appraisal_AAP) verwendet wird, ist Bewertung Archivwürdigkeit (CHE_MD_Appraisal_AAP.appraisalOfArchivalValue) obligatorisch}" />
   <svrl:fired-rule context="//che:CHE_MD_Appraisal_AAP" />
   <svrl:successful-report ref="#_" test="che:appraisalOfArchivalValue/che:CHE_AppraisalOfArchivalValueCode/@codeListValue and normalize-space(che:appraisalOfArchivalValue/che:CHE_AppraisalOfArchivalValueCode/@codeListValue) != ''" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='resourceMaintenance']/*[local-name()='CHE_MD_MaintenanceInformation']/*[local-name()='appraisal']/*[local-name()='CHE_MD_Appraisal_AAP']">
     <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.appraisal-aap-archival-value-mandatory-success-en" xml:lang="en">appraisalOfArchivalValue is present in CHE_MD_Appraisal_AAP.</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.appraisal-aap-archival-value-mandatory-success-fr" xml:lang="fr">appraisalOfArchivalValue est présent dans CHE_MD_Appraisal_AAP.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.appraisal-aap-archival-value-mandatory-success-en" xml:lang="en">Appraisal of Archival Value (appraisalOfArchivalValue) is present in Appraisal AAP (CHE_MD_Appraisal_AAP).</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.appraisal-aap-archival-value-mandatory-success-fr" xml:lang="fr">Évaluation de la valeur archivistique (appraisalOfArchivalValue) est présente dans Évaluation AAP (CHE_MD_Appraisal_AAP).</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.appraisal-aap-archival-value-mandatory-success-de" xml:lang="de">Bewertung Archivwürdigkeit (appraisalOfArchivalValue) ist in Bewertung AAP (CHE_MD_Appraisal_AAP) vorhanden.</svrl:diagnostic-reference>
   </svrl:successful-report>
 </svrl:schematron-output>
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svrl:schematron-output xmlns:svrl="http://purl.oclc.org/dsdl/svrl" title="Basic Geodata - AAP règles obligatoires" schemaVersion="">
+<svrl:schematron-output xmlns:svrl="http://purl.oclc.org/dsdl/svrl" title="Basic Geodata - AAP obligatorische Regeln" schemaVersion="">
   <!--
          
         
@@ -28,14 +28,15 @@
   <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/1999/xlink" prefix="xlink" />
   <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi" />
   <svrl:ns-prefix-in-attribute-values uri="http://geocat.ch/che" prefix="che" />
-  <svrl:active-pattern document="" id="rule.basicgeodata.basicgeodatainformation-mandatory" name_en="basicGeodata = ‘true’ implies basicGeodataInformation is mandatory" name_fr="basicGeodata = ‘true’ implique que basicGeodataInformation est obligatoire" name="basicGeodata = ‘true’ implique que basicGeodataInformation est obligatoire" />
-  <svrl:active-pattern document="" id="rule.basicgeodata.basicgeodataid-mandatory" name_en="basicGeodata = ‘true’ implies basicGeodataID is mandatory" name_fr="basicGeodata = ‘true’ implique que basicGeodataID est obligatoire" name="basicGeodata = ‘true’ implique que basicGeodataID est obligatoire" />
-  <svrl:active-pattern document="" id="rule.che.topic-subtopic-consistency" name_en="Ensure consistency between topicCategory and subTopicCategory (eCH-0166)" name_fr="Assurer la cohérence entre topicCategory et subTopicCategory (eCH-0166)" name="Assurer la cohérence entre topicCategory et subTopicCategory (eCH-0166)" />
+  <svrl:active-pattern document="" id="rule.basicgeodata.basicgeodatainformation-mandatory" name_en="Basic Geodata activated (basicGeodata = ‘true’) implies Basic Geodata Information (basicGeodataInformation) is mandatory" name_fr="Géodonnées de base activées (basicGeodata = ‘true’) implique que Informations sur les Géodonnées (basicGeodataInformation) est obligatoire" name_de="Geobasisdaten aktiviert (basicGeodata = ‘true’) impliziert, dass Informationen zu Geobasisdaten (basicGeodataInformation) obligatorisch sind" name="Geobasisdaten aktiviert (basicGeodata = ‘true’) impliziert, dass Informationen zu Geobasisdaten (basicGeodataInformation) obligatorisch sind" />
+  <svrl:active-pattern document="" id="rule.basicgeodata.basicgeodataid-mandatory" name_en="Basic Geodata activated (basicGeodata = ‘true’) implies Basic Geodata ID (basicGeodataID) is mandatory" name_fr="Géodonnées de base activées (basicGeodata = ‘true’) implique que l'identifiant Géodonnées de base (basicGeodataID) est obligatoire" name_de="Geobasisdaten aktiviert (basicGeodata = ‘true’) impliziert, dass Identifikator des Geobasisdatensatzes (basicGeodataID) obligatorisch ist" name="Geobasisdaten aktiviert (basicGeodata = ‘true’) impliziert, dass Identifikator des Geobasisdatensatzes (basicGeodataID) obligatorisch ist" />
+  <svrl:active-pattern document="" id="rule.che.topic-subtopic-consistency" name_en="Ensure consistency between Topic categories (topicCategory) and Subtopic categories (subTopicCategory) (eCH-0166)" name_fr="Assurer la cohérence entre Les catégories de thème (topicCategory) et les catégories de sous-thème (subTopicCategory) (eCH-0166)" name_de="Sicherstellen der Konsistenz zwischen Themenkategorien (topicCategory) und Thematische Unterkategorien (subTopicCategory) (eCH-0166)" name="Sicherstellen der Konsistenz zwischen Themenkategorien (topicCategory) und Thematische Unterkategorien (subTopicCategory) (eCH-0166)" />
   <svrl:fired-rule context="//che:CHE_MD_DataIdentification" />
   <svrl:successful-report ref="#_" test="count(che:subTopicCategory/che:CHE_MD_SubTopicCategoryCode) &gt; 0 and $invalidSubCount = 0" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
     <svrl:text />
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.topic-subtopic-consistency-success-en" xml:lang="en">Topic categories and sub topic categories are consistent according to eCH-0166.</svrl:diagnostic-reference>
-    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.topic-subtopic-consistency-success-fr" xml:lang="fr">Les catégories et sous-catégories sont cohérentes conformément à eCH-0166.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.topic-subtopic-consistency-success-en" xml:lang="en">Topic categories (topicCategory) and sub topic categories (subTopicCategory) are consistent according to eCH-0166.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.topic-subtopic-consistency-success-fr" xml:lang="fr">Les catégories de thème (topicCategory) et catégories de sous-thème (subTopicCategory) sont cohérentes conformément à eCH-0166.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.che.topic-subtopic-consistency-success-de" xml:lang="de">Themenkategorien (topicCategory) und Thematische Unterkategorien (subTopicCategory) sind gemäss eCH-0166 konsistent.</svrl:diagnostic-reference>
   </svrl:successful-report>
 </svrl:schematron-output>
 
