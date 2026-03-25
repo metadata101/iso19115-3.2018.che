@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svrl:schematron-output xmlns:svrl="http://purl.oclc.org/dsdl/svrl" title="Règles ISO" schemaVersion="">
+<svrl:schematron-output xmlns:svrl="http://purl.oclc.org/dsdl/svrl" title="ISO-Regeln" schemaVersion="">
   <!--
          
         
@@ -28,88 +28,100 @@
   <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/1999/xlink" prefix="xlink" />
   <svrl:ns-prefix-in-attribute-values uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi" />
   <svrl:ns-prefix-in-attribute-values uri="http://geocat.ch/che" prefix="che" />
-  <svrl:active-pattern document="" id="rule.mri.maintenance-frequency-required-when-dataset-series-service" name_en="maintenanceAndUpdateFrequency is mandatory when resourceScope = dataset, series or service" name_fr="maintenanceAndUpdateFrequency est obligatoire lorsque resourceScope = dataset, series ou service" name="maintenanceAndUpdateFrequency est obligatoire lorsque resourceScope = dataset, series ou service" />
+  <svrl:active-pattern document="" id="rule.mri.maintenance-frequency-required-when-dataset-series-service" name_en="maintenanceAndUpdateFrequency is mandatory when resourceScope = dataset, series or service" name_fr="maintenanceAndUpdateFrequency est obligatoire lorsque resourceScope = dataset, series ou service" name_de="maintenanceAndUpdateFrequency ist obligatorisch wenn resourceScope = dataset, series oder service" name="maintenanceAndUpdateFrequency ist obligatorisch wenn resourceScope = dataset, series oder service" />
   <svrl:fired-rule context="/che:CHE_MD_Metadata[                         mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or                         mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or                         mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']" />
   <svrl:successful-report ref="#_" test="$maintenanceFreqCount &gt; 0" location="/*[local-name()='CHE_MD_Metadata']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.maintenance-frequency-when-scope-dss-success-en" xml:lang="en">maintenanceAndUpdateFrequency is present for resources with scope dataset/series/service.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.maintenance-frequency-when-scope-dss-success-fr" xml:lang="fr">maintenanceAndUpdateFrequency est présent pour les ressources de type dataset/series/service.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.maintenance-frequency-when-scope-dss-success-de" xml:lang="de">maintenanceAndUpdateFrequency ist für Ressourcen vom Typ dataset/series/service vorhanden.</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.mdb.contact-email-required-when-dataset-series-service" name_en="Metadata contact parties must have an electronicMailAddress when resourceScope = dataset, series or service" name_fr="Les parties de contact des métadonnées doivent avoir une adresse électronique lorsque resourceScope = dataset, series ou service" name="Les parties de contact des métadonnées doivent avoir une adresse électronique lorsque resourceScope = dataset, series ou service" />
+  <svrl:active-pattern document="" id="rule.mdb.contact-email-required-when-dataset-series-service" name_en="Metadata contact parties must have an electronicMailAddress when resourceScope = dataset, series or service" name_fr="Les parties de contact des métadonnées doivent avoir une adresse électronique lorsque resourceScope = dataset, series ou service" name_de="Kontaktparteien der Metadaten müssen eine E-Mail-Adresse haben wenn resourceScope = dataset, series oder service" name="Kontaktparteien der Metadaten müssen eine E-Mail-Adresse haben wenn resourceScope = dataset, series oder service" />
   <svrl:fired-rule context="/che:CHE_MD_Metadata[               mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or               mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or               mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']" />
   <svrl:successful-report ref="#_" test="count($parties) &gt; 0 and $missingEmailCount = 0" location="/*[local-name()='CHE_MD_Metadata']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.contact-email-when-scope-dss-success-en" xml:lang="en">All metadata contact parties provide an electronic mail address for resources with scope dataset/series/service.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.contact-email-when-scope-dss-success-fr" xml:lang="fr">Toutes les parties de contact des métadonnées fournissent une adresse électronique pour les ressources de type dataset/series/service.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.contact-email-when-scope-dss-success-de" xml:lang="de">Alle Kontaktparteien der Metadaten stellen eine E-Mail-Adresse für Ressourcen vom Typ dataset/series/service bereit.</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.mdb.contact-address-required-when-dataset-series-service" name_en="Metadata contact parties must have an address when resourceScope = dataset, series or service" name_fr="Les parties de contact des métadonnées doivent avoir une adresse lorsque resourceScope = dataset, series ou service" name="Les parties de contact des métadonnées doivent avoir une adresse lorsque resourceScope = dataset, series ou service" />
+  <svrl:active-pattern document="" id="rule.mdb.contact-address-required-when-dataset-series-service" name_en="Metadata contact parties must have an address when resourceScope = dataset, series or service" name_fr="Les parties de contact des métadonnées doivent avoir une adresse lorsque resourceScope = dataset, series ou service" name_de="Kontaktparteien der Metadaten müssen eine Adresse haben wenn resourceScope = dataset, series oder service" name="Kontaktparteien der Metadaten müssen eine Adresse haben wenn resourceScope = dataset, series oder service" />
   <svrl:fired-rule context="/che:CHE_MD_Metadata[               mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or               mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or               mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']" />
   <svrl:successful-report ref="#_" test="count($parties) &gt; 0 and $missingAddressCount = 0" location="/*[local-name()='CHE_MD_Metadata']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.contact-address-when-scope-dss-success-en" xml:lang="en">All metadata contact parties provide an address for resources with scope dataset/series/service.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.contact-address-when-scope-dss-success-fr" xml:lang="fr">Toutes les parties de contact des métadonnées fournissent une adresse pour les ressources de type dataset/series/service.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.contact-address-when-scope-dss-success-de" xml:lang="de">Alle Kontaktparteien der Metadaten stellen eine Adresse für Ressourcen vom Typ dataset/series/service bereit.</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.mdb.contact-contactinfo-required-when-dataset-series-service" name_en="Metadata contact parties must have contactInfo when resourceScope = dataset, series or service" name_fr="Les parties de contact des métadonnées doivent avoir un contactInfo lorsque resourceScope = dataset, series ou service" name="Les parties de contact des métadonnées doivent avoir un contactInfo lorsque resourceScope = dataset, series ou service" />
+  <svrl:active-pattern document="" id="rule.mdb.contact-contactinfo-required-when-dataset-series-service" name_en="Metadata contact parties must have contactInfo when resourceScope = dataset, series or service" name_fr="Les parties de contact des métadonnées doivent avoir un contactInfo lorsque resourceScope = dataset, series ou service" name_de="Verantwortliche Akteure der Metadaten müssen ein contactInfo haben wenn resourceScope = dataset, series oder service" name="Verantwortliche Akteure der Metadaten müssen ein contactInfo haben wenn resourceScope = dataset, series oder service" />
   <svrl:fired-rule context="/che:CHE_MD_Metadata[               mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or               mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or               mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']" />
   <svrl:successful-report ref="#_" test="count($parties) &gt; 0 and $missingContactInfoCount = 0" location="/*[local-name()='CHE_MD_Metadata']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.contact-contactinfo-when-scope-dss-success-en" xml:lang="en">All metadata contact parties provide a contactInfo for resources with scope dataset/series/service.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.contact-contactinfo-when-scope-dss-success-fr" xml:lang="fr">Toutes les parties de contact des métadonnées fournissent un contactInfo pour les ressources de type dataset/series/service.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.contact-contactinfo-when-scope-dss-success-de" xml:lang="de">Alle Verantwortlichen Akteure der Metadaten stellen ein contactInfo für Ressourcen vom Typ dataset/series/service bereit.</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.gex.verticalcrsid-required-when-dataset" name_en="verticalCRSId is mandatory for vertical extents when resourceScope = dataset" name_fr="verticalCRSId est obligatoire pour les étendues verticales lorsque resourceScope = dataset" name="verticalCRSId est obligatoire pour les étendues verticales lorsque resourceScope = dataset" />
+  <svrl:active-pattern document="" id="rule.gex.verticalcrsid-required-when-dataset" name_en="verticalCRSId is mandatory for vertical extents when resourceScope = dataset" name_fr="verticalCRSId est obligatoire pour les étendues verticales lorsque resourceScope = dataset" name_de="verticalCRSId ist obligatorisch für vertikale Ausdehnungen wenn resourceScope = dataset" name="verticalCRSId ist obligatorisch für vertikale Ausdehnungen wenn resourceScope = dataset" />
   <svrl:fired-rule context="/che:CHE_MD_Metadata[                         mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset'                       ]/mdb:identificationInfo/che:CHE_MD_DataIdentification/mri:extent/gex:EX_Extent/gex:verticalElement" />
   <svrl:failed-assert ref="#_" test="count($verticalExtents) = 0 or $missingCrsIdCount = 0" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='extent']/*[local-name()='EX_Extent']/*[local-name()='verticalElement']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.verticalcrsid-when-dataset-failure-en" xml:lang="en">When resourceScope is 'dataset' and a vertical extent is used, each vertical extent MUST provide a verticalCRSId (gex:verticalCRSId).</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.verticalcrsid-when-dataset-failure-fr" xml:lang="fr">Lorsque resourceScope vaut 'dataset' et qu'une étendue verticale est utilisée, chaque étendue verticale DOIT fournir un verticalCRSId (gex:verticalCRSId).</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.verticalcrsid-when-dataset-failure-de" xml:lang="de">Wenn resourceScope 'dataset' ist und eine vertikale Ausdehnung verwendet wird, MUSS jede vertikale Ausdehnung eine verticalCRSId (gex:verticalCRSId) angeben.</svrl:diagnostic-reference>
   </svrl:failed-assert>
-  <svrl:active-pattern document="" id="rule.mrs.refsys-identifier-required-when-dataset" name_en="referenceSystemIdentifier is mandatory when resourceScope = dataset" name_fr="referenceSystemIdentifier est obligatoire lorsque resourceScope = dataset" name="referenceSystemIdentifier est obligatoire lorsque resourceScope = dataset" />
+  <svrl:active-pattern document="" id="rule.mrs.refsys-identifier-required-when-dataset" name_en="referenceSystemIdentifier is mandatory when resourceScope = dataset" name_fr="referenceSystemIdentifier est obligatoire lorsque resourceScope = dataset" name_de="referenceSystemIdentifier ist obligatorisch wenn resourceScope = dataset" name="referenceSystemIdentifier ist obligatorisch wenn resourceScope = dataset" />
   <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset']/mdb:referenceSystemInfo" />
   <svrl:successful-report ref="#_" test="$refIdCount &gt; 0" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='referenceSystemInfo']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrs.refsys-identifier-when-dataset-success-en" xml:lang="en">Reference system identifier is present for dataset resources.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrs.refsys-identifier-when-dataset-success-fr" xml:lang="fr">Un identifiant de système de référence est présent pour les jeux de données.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mrs.refsys-identifier-when-dataset-success-de" xml:lang="de">Ein Referenzsystemidentifikator ist für Datensätze vorhanden.</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.mrl.statement-required-when-dataset" name_en="Lineage statement is mandatory when lineage and resourceScope = dataset" name_fr="Le statement (historique) est obligatoire lorsque lineage and resourceScope = dataset" name="Le statement (historique) est obligatoire lorsque lineage and resourceScope = dataset" />
-  <svrl:active-pattern document="" id="rule.gex.extenthasoneelement" name_en="Extent MUST have one description or one geographic,&#xA;      temporal or vertical element" name_fr="Une étendue DOIT avoir une description ou un&#xA;      élément géographique, temporel ou vertical" name="Une étendue DOIT avoir une description ou un&#xA;      élément géographique, temporel ou vertical" />
+  <svrl:active-pattern document="" id="rule.mrl.statement-required-when-dataset" name_en="Lineage statement is mandatory when lineage and resourceScope = dataset" name_fr="Le statement (historique) est obligatoire lorsque lineage and resourceScope = dataset" name_de="Das statement (Herkunft) ist obligatorisch wenn lineage und resourceScope = dataset" name="Das statement (Herkunft) ist obligatorisch wenn lineage und resourceScope = dataset" />
+  <svrl:active-pattern document="" id="rule.gex.extenthasoneelement" name_en="Extent MUST have one description or one geographic,&#xA;      temporal or vertical element" name_fr="Une étendue DOIT avoir une description ou un&#xA;      élément géographique, temporel ou vertical" name_de="Eine Ausdehnung MUSS eine Beschreibung oder ein&#xA;      geografisches, zeitliches oder vertikales Element enthalten" name="Eine Ausdehnung MUSS eine Beschreibung oder ein&#xA;      geografisches, zeitliches oder vertikales Element enthalten" />
   <svrl:fired-rule context="//gex:EX_Extent" />
   <svrl:successful-report ref="#_" test="count($description)" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='extent']/*[local-name()='EX_Extent']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-desc-success-en" xml:lang="en">The extent contains a description.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-desc-success-fr" xml:lang="fr">L'étendue contient une description.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-desc-success-de" xml:lang="de">Die Ausdehnung enthält eine Beschreibung.</svrl:diagnostic-reference>
   </svrl:successful-report>
   <svrl:successful-report ref="#_" test="count($geographicBox)" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='extent']/*[local-name()='EX_Extent']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-box-success-en" xml:lang="en">The extent contains a bounding box element.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-box-success-fr" xml:lang="fr">L'étendue contient une emprise géographique.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-box-success-de" xml:lang="de">Die Ausdehnung enthält ein geografisches Begrenzungsrechteck.</svrl:diagnostic-reference>
   </svrl:successful-report>
   <svrl:successful-report ref="#_" test="count($geographicPoly)" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='extent']/*[local-name()='EX_Extent']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-poly-success-en" xml:lang="en">The extent contains a bounding polygon.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-poly-success-fr" xml:lang="fr">L'étendue contient un polygone englobant.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-poly-success-de" xml:lang="de">Die Ausdehnung enthält ein Begrenzungspolygon.</svrl:diagnostic-reference>
   </svrl:successful-report>
   <svrl:successful-report ref="#_" test="count($vertical)" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='extent']/*[local-name()='EX_Extent']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-vertical-success-en" xml:lang="en">The extent contains a vertical element.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-vertical-success-fr" xml:lang="fr">L'étendue contient une étendue verticale.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.extenthasoneelement-vertical-success-de" xml:lang="de">Die Ausdehnung enthält ein vertikales Element.</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.gex.verticalhascrsorcrsid" name_en="Vertical element MUST contains a CRS or CRS&#xA;      identifier" name_fr="Une étendue verticale DOIT contenir un CRS ou un&#xA;      identifiant de CRS" name="Une étendue verticale DOIT contenir un CRS ou un&#xA;      identifiant de CRS" />
+  <svrl:active-pattern document="" id="rule.gex.verticalhascrsorcrsid" name_en="Vertical element MUST contains a CRS or CRS&#xA;      identifier" name_fr="Une étendue verticale DOIT contenir un CRS ou un&#xA;      identifiant de CRS" name_de="Eine vertikale Ausdehnung MUSS ein CRS oder einen&#xA;      CRS-Identifikator enthalten" name="Eine vertikale Ausdehnung MUSS ein CRS oder einen&#xA;      CRS-Identifikator enthalten" />
   <svrl:fired-rule context="//gex:EX_VerticalExtent" />
   <svrl:successful-report ref="#_" test="$hasCrsOrCrsId" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='extent']/*[local-name()='EX_Extent']/*[local-name()='verticalElement']/*[local-name()='EX_VerticalExtent']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.verticalhascrsorcrsid-success-en" xml:lang="en">The vertical extent contains CRS information.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.verticalhascrsorcrsid-success-fr" xml:lang="fr">L'étendue verticale contient les informations
       sur le CRS.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.gex.verticalhascrsorcrsid-success-de" xml:lang="de">Die vertikale Ausdehnung enthält CRS-Informationen.</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.mco-legalconstraintdetails" name_en="Legal constraint MUST&#xA;      specified an access, use or other constraint or&#xA;      use limitation" name_fr="Une contrainte légale DOIT&#xA;      définir un type de contrainte (d'accès, d'utilisation ou autre)&#xA;      ou bien une limite d'utilisation" name="Une contrainte légale DOIT&#xA;      définir un type de contrainte (d'accès, d'utilisation ou autre)&#xA;      ou bien une limite d'utilisation" />
+  <svrl:active-pattern document="" id="rule.mco-legalconstraintdetails" name_en="Legal constraint MUST&#xA;      specified an access, use or other constraint or&#xA;      use limitation" name_fr="Une contrainte légale DOIT&#xA;      définir un type de contrainte (d'accès, d'utilisation ou autre)&#xA;      ou bien une limite d'utilisation" name_de="Eine Rechtsbeschränkung MUSS eine Zugangs-, Nutzungs-&#xA;      oder weitere Einschränkung oder eine Nutzungslimitierung definieren" name="Eine Rechtsbeschränkung MUSS eine Zugangs-, Nutzungs-&#xA;      oder weitere Einschränkung oder eine Nutzungslimitierung definieren" />
   <svrl:fired-rule context="//che:CHE_MD_LegalConstraints" />
   <svrl:successful-report ref="#_" test="$hasDetails" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']/*[local-name()='resourceConstraints']&#xA;          [&#xA;          1&#xA;          ]&#xA;        /*[local-name()='CHE_MD_LegalConstraints']">
     <svrl:text />
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mco-legalconstraintdetails-success-en" xml:lang="en">The legal constraint is complete.</svrl:diagnostic-reference>
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mco-legalconstraintdetails-success-fr" xml:lang="fr">La contrainte légale est complète.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mco-legalconstraintdetails-success-de" xml:lang="de">Die Rechtsbeschränkung ist vollständig.</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.mco-legalconstraint-other" name_en="Legal constraint defining&#xA;      other restrictions for access or use constraint MUST&#xA;      specified other constraint." name_fr="Une contrainte légale indiquant&#xA;      d'autres restrictions d'utilisation ou d'accès DOIT&#xA;      préciser ces autres restrictions" name="Une contrainte légale indiquant&#xA;      d'autres restrictions d'utilisation ou d'accès DOIT&#xA;      préciser ces autres restrictions" />
-  <svrl:active-pattern document="" id="rule.mdb.scope-name" name_en="Metadata scope Name" name_fr="Description du domaine d'application" name="Description du domaine d'application">
+  <svrl:active-pattern document="" id="rule.mco-legalconstraint-other" name_en="Legal constraint defining&#xA;      other restrictions for access or use constraint MUST&#xA;      specified other constraint." name_fr="Une contrainte légale indiquant&#xA;      d'autres restrictions d'utilisation ou d'accès DOIT&#xA;      préciser ces autres restrictions" name_de="Eine Rechtsbeschränkung, die weitere Nutzungs- oder&#xA;      Zugangsbeschränkungen angibt, MUSS diese weiteren Einschränkungen angeben" name="Eine Rechtsbeschränkung, die weitere Nutzungs- oder&#xA;      Zugangsbeschränkungen angibt, MUSS diese weiteren Einschränkungen angeben" />
+  <svrl:active-pattern document="" id="rule.mdb.scope-name" name_en="Metadata scope Name" name_fr="Description du domaine d'application" name_de="Name des Metadatenbereichs" name="Name des Metadatenbereichs">
     <svrl:text>If a MD_MetadataScope element is present,
       the name property MUST have a value if resourceScope is not equal to
       "dataset"</svrl:text>
@@ -117,12 +129,14 @@
       est défini, sa description (name) DOIT avoir une valeur
       si ce domaine n'est pas "jeu de données" (ie. "dataset").</svrl:text>
   </svrl:active-pattern>
-  <svrl:active-pattern document="" id="rule.mdb.create-date" name_en="Metadata create date" name_fr="Date de création du document" name="Date de création du document">
+  <svrl:active-pattern document="" id="rule.mdb.create-date" name_en="Metadata create date" name_fr="Date de création du document" name_de="Erstellungsdatum des Dokuments" name="Erstellungsdatum des Dokuments">
     <svrl:text>A dateInfo property value with data type = "creation"
       MUST be present in every MD_Metadata instance.</svrl:text>
     <svrl:text>Tout document DOIT avoir une date de création
       définie (en utilisant un élément dateInfo avec un type de date
       "creation").</svrl:text>
+    <svrl:text>Jedes Dokument MUSS ein Erstellungsdatum haben
+      (definiert mit einem dateInfo-Element mit dem Datumstyp "creation").</svrl:text>
   </svrl:active-pattern>
   <svrl:fired-rule context="che:CHE_MD_Metadata" />
   <svrl:failed-assert ref="#_" test="$hasAtLeastOneCreationDate" location="/*[local-name()='CHE_MD_Metadata']">
@@ -133,12 +147,16 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.create-date-failure-fr" xml:lang="fr">Définir
       une date de création pour le document
       dans la section sur les métadonnées.</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.create-date-failure-de" xml:lang="de">Ein Erstellungsdatum für das Dokument
+      im Metadatenabschnitt angeben.</svrl:diagnostic-reference>
   </svrl:failed-assert>
-  <svrl:active-pattern document="" id="rule.mdb.metadataidentifier-mandatory" name_en="Metadata identifier mandatory" name_fr="Identifiant des métadonnées obligatoire" name="Identifiant des métadonnées obligatoire">
+  <svrl:active-pattern document="" id="rule.mdb.metadataidentifier-mandatory" name_en="Metadata identifier mandatory" name_fr="Identifiant des métadonnées obligatoire" name_de="Metadatenidentifikator obligatorisch" name="Metadatenidentifikator obligatorisch">
     <svrl:text>When metadata scope resourceScope is 'dataset', 'series' or 'service',
       the metadata identifier MUST be specified.</svrl:text>
     <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
       l'identifiant des métadonnées DOIT être spécifié.</svrl:text>
+    <svrl:text>Wenn die Metadatenbereichsressource 'dataset', 'series' oder 'service' ist,
+      muss der Metadatenidentifikator angegeben werden.</svrl:text>
   </svrl:active-pattern>
   <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']" />
   <svrl:successful-report ref="#_" test="$hasMetadataIdentifier" location="/*[local-name()='CHE_MD_Metadata']">
@@ -149,12 +167,17 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.metadataidentifier-mandatory-success-fr" xml:lang="fr">L'identifiant des métadonnées est défini : "
           9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce
           ".</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.metadataidentifier-mandatory-success-de" xml:lang="de">Der Metadatenidentifikator ist definiert: "
+          9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce
+          ".</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.mdb.defaultlocale-mandatory" name_en="Default locale mandatory" name_fr="Langue par défaut obligatoire" name="Langue par défaut obligatoire">
+  <svrl:active-pattern document="" id="rule.mdb.defaultlocale-mandatory" name_en="Default locale mandatory" name_fr="Langue par défaut obligatoire" name_de="Standardsprache obligatorisch" name="Standardsprache obligatorisch">
     <svrl:text>When metadata scope resourceScope is 'dataset', 'series' or 'service',
       the default locale MUST be specified.</svrl:text>
     <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
       la langue par défaut DOIT être spécifiée.</svrl:text>
+    <svrl:text>Wenn die Metadatenbereichsressource 'dataset', 'series' oder 'service' ist,
+        muss die Standardsprache angegeben werden.</svrl:text>
   </svrl:active-pattern>
   <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or         mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']" />
   <svrl:successful-report ref="#_" test="$hasDefaultLocale" location="/*[local-name()='CHE_MD_Metadata']">
@@ -165,14 +188,17 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.defaultlocale-mandatory-success-fr" xml:lang="fr">La langue par défaut est définie avec la langue : "
           ger
           ".</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mdb.defaultlocale-mandatory-success-de" xml:lang="de">Die Standardsprache ist mit der Sprache "
+          ger
+          " definiert.</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.mex.datatypedetails" name_en="Extended element information&#xA;      which are not codelist, enumeration or codelistElement&#xA;      MUST specified max occurence and domain value" name_fr="Un élément d'extension qui n'est&#xA;      ni une codelist, ni une énumération, ni un élément de codelist&#xA;      DOIT préciser le nombre maximum d'occurences&#xA;      ainsi que la valeur du domaine" name="Un élément d'extension qui n'est&#xA;      ni une codelist, ni une énumération, ni un élément de codelist&#xA;      DOIT préciser le nombre maximum d'occurences&#xA;      ainsi que la valeur du domaine" />
-  <svrl:active-pattern document="" id="rule.mex.conditional" name_en="Extended element information&#xA;      which are conditional MUST explained the condition" name_fr="Un élément d'extension conditionnel&#xA;      DOIT préciser les termes de la condition" name="Un élément d'extension conditionnel&#xA;      DOIT préciser les termes de la condition" />
-  <svrl:active-pattern document="" id="rule.mex.mandatorycode" name_en="Extended element information&#xA;      which are codelist, enumeration or codelistElement&#xA;      MUST specified a code and a concept name" name_fr="Un élément d'extension qui est&#xA;      une codelist, une énumération, un élément de codelist&#xA;      DOIT préciser un code et un nom de concept" name="Un élément d'extension qui est&#xA;      une codelist, une énumération, un élément de codelist&#xA;      DOIT préciser un code et un nom de concept" />
-  <svrl:active-pattern document="" id="rule.mrc.sampledimension" name_en="Sample dimension MUST provide a max,&#xA;      a min or a mean value" name_fr="La dimension de l'échantillon DOIT préciser&#xA;      une valeur maximum, une valeur minimum ou une moyenne" name="La dimension de l'échantillon DOIT préciser&#xA;      une valeur maximum, une valeur minimum ou une moyenne" />
-  <svrl:active-pattern document="" id="rule.mrc.bandunit" name_en="Band MUST specified bounds units&#xA;      when a bound max or bound min is defined" name_fr="Une bande DOIT préciser l'unité&#xA;      lorsqu'une borne maximum ou minimum est définie" name="Une bande DOIT préciser l'unité&#xA;      lorsqu'une borne maximum ou minimum est définie" />
-  <svrl:active-pattern document="" id="rule.mrd.mediumunit" name_en="Medium having density MUST specified density&#xA;      units" name_fr="Un média précisant une densité DOIT préciser&#xA;      l'unité" name="Un média précisant une densité DOIT préciser&#xA;      l'unité" />
-  <svrl:active-pattern document="" id="rule.mri.datasetextent" name_en="Dataset extent" name_fr="Emprise du jeu de données" name="Emprise du jeu de données" />
+  <svrl:active-pattern document="" id="rule.mex.datatypedetails" name_en="Extended element information&#xA;      which are not codelist, enumeration or codelistElement&#xA;      MUST specified max occurence and domain value" name_fr="Un élément d'extension qui n'est&#xA;      ni une codelist, ni une énumération, ni un élément de codelist&#xA;      DOIT préciser le nombre maximum d'occurences&#xA;      ainsi que la valeur du domaine" name_de="Ein Erweiterungselement, das keine Codeliste, keine&#xA;      Aufzählung und kein Codelistenelement ist, MUSS das maximale&#xA;      Vorkommen und den Domänenwert angeben" name="Ein Erweiterungselement, das keine Codeliste, keine&#xA;      Aufzählung und kein Codelistenelement ist, MUSS das maximale&#xA;      Vorkommen und den Domänenwert angeben" />
+  <svrl:active-pattern document="" id="rule.mex.conditional" name_en="Extended element information&#xA;      which are conditional MUST explained the condition" name_fr="Un élément d'extension conditionnel&#xA;      DOIT préciser les termes de la condition" name_de="Ein bedingtes Erweiterungselement&#xA;      MUSS die Bedingung angeben" name="Ein bedingtes Erweiterungselement&#xA;      MUSS die Bedingung angeben" />
+  <svrl:active-pattern document="" id="rule.mex.mandatorycode" name_en="Extended element information&#xA;      which are codelist, enumeration or codelistElement&#xA;      MUST specified a code and a concept name" name_fr="Un élément d'extension qui est&#xA;      une codelist, une énumération, un élément de codelist&#xA;      DOIT préciser un code et un nom de concept" name_de="Ein Erweiterungselement, das eine Codeliste,&#xA;      Aufzählung oder ein Codelistenelement ist, MUSS einen Code&#xA;      und einen Konzeptnamen angeben" name="Ein Erweiterungselement, das eine Codeliste,&#xA;      Aufzählung oder ein Codelistenelement ist, MUSS einen Code&#xA;      und einen Konzeptnamen angeben" />
+  <svrl:active-pattern document="" id="rule.mrc.sampledimension" name_en="Sample dimension MUST provide a max,&#xA;      a min or a mean value" name_fr="La dimension de l'échantillon DOIT préciser&#xA;      une valeur maximum, une valeur minimum ou une moyenne" name_de="Die Stichprobendimension MUSS einen Maximal-,&#xA;      Minimal- oder Mittelwert angeben" name="Die Stichprobendimension MUSS einen Maximal-,&#xA;      Minimal- oder Mittelwert angeben" />
+  <svrl:active-pattern document="" id="rule.mrc.bandunit" name_en="Band MUST specified bounds units&#xA;      when a bound max or bound min is defined" name_fr="Une bande DOIT préciser l'unité&#xA;      lorsqu'une borne maximum ou minimum est définie" name_de="Ein Band MUSS die Einheit angeben,&#xA;      wenn eine obere oder untere Grenze definiert ist" name="Ein Band MUSS die Einheit angeben,&#xA;      wenn eine obere oder untere Grenze definiert ist" />
+  <svrl:active-pattern document="" id="rule.mrd.mediumunit" name_en="Medium having density MUST specified density&#xA;      units" name_fr="Un média précisant une densité DOIT préciser&#xA;      l'unité" name_de="Ein Medium, das eine Dichte angibt,&#xA;      MUSS die Einheit angeben" name="Ein Medium, das eine Dichte angibt,&#xA;      MUSS die Einheit angeben" />
+  <svrl:active-pattern document="" id="rule.mri.datasetextent" name_en="Dataset extent" name_fr="Emprise du jeu de données" name_de="Ausdehnung des Datensatzes" name="Ausdehnung des Datensatzes" />
   <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series']/                           mdb:identificationInfo/che:CHE_MD_DataIdentification" />
   <svrl:successful-report ref="#_" test="count($geobox) &gt; 0" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
     <svrl:text />
@@ -205,8 +231,22 @@
           47.808488
           ]
       .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.datasetextentbox-success-de" xml:lang="de">Das geografische Begrenzungsrechteck des Datensatzes ist
+      [W:
+          5.956088
+          ,
+      S:
+          45.817970
+          ],
+      [E:
+          10.492036
+          ,
+      N:
+          47.808488
+          ]
+      .</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.mri.topicategoryfordsandseries" name_en="Topic category for dataset and series" name_fr="Thème principal d'un jeu de données ou d'une&#xA;      série" name="Thème principal d'un jeu de données ou d'une&#xA;      série" />
+  <svrl:active-pattern document="" id="rule.mri.topicategoryfordsandseries" name_en="Topic category for dataset and series" name_fr="Thème principal d'un jeu de données ou d'une&#xA;      série" name_de="Themenbereich eines Datensatzes oder einer&#xA;      Serie" name="Themenbereich eines Datensatzes oder einer&#xA;      Serie" />
   <svrl:fired-rule context="/che:CHE_MD_Metadata[mdb:metadataScope/                          mdb:MD_MetadataScope/mdb:resourceScope/                          mcc:MD_ScopeCode/@codeListValue = 'dataset' or                           mdb:metadataScope/                          mdb:MD_MetadataScope/mdb:resourceScope/                          mcc:MD_ScopeCode/@codeListValue = 'series']/                          mdb:identificationInfo/che:CHE_MD_DataIdentification" />
   <svrl:successful-report ref="#_" test="$hasTopics" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
     <svrl:text />
@@ -216,12 +256,17 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.topicategoryfordsandseries-success-fr" xml:lang="fr">Nombre de thèmes :
           3
           .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.topicategoryfordsandseries-success-de" xml:lang="de">Anzahl der Themenbereiche:
+          3
+          .</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.mri.citationdate-mandatory" name_en="Citation date mandatory for dataset, series and service" name_fr="Date de citation obligatoire pour les jeux de données, séries et services" name="Date de citation obligatoire pour les jeux de données, séries et services">
+  <svrl:active-pattern document="" id="rule.mri.citationdate-mandatory" name_en="Citation date mandatory for dataset, series and service" name_fr="Date de citation obligatoire pour les jeux de données, séries et services" name_de="Referenzinformationendatum obligatorisch für Datensätze, Serien und Dienste" name="Referenzinformationendatum obligatorisch für Datensätze, Serien und Dienste">
     <svrl:text>When metadata scope resourceScope is 'dataset', 'series' or 'service',
       the citation date in dataIdentification section MUST be specified.</svrl:text>
     <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
       la date de citation dans la section dataIdentification DOIT être spécifiée.</svrl:text>
+    <svrl:text>Wenn der Ressourcenbereich der Metadaten (resourceScope) 'dataset', 'series' oder 'service' ist,
+      muss das Referenzinformationendatum im Abschnitt dataIdentification angegeben werden.</svrl:text>
   </svrl:active-pattern>
   <svrl:fired-rule context="che:CHE_MD_Metadata[       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'dataset' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'series' or       mdb:metadataScope/mdb:MD_MetadataScope/mdb:resourceScope/mcc:MD_ScopeCode/@codeListValue = 'service']       /mdb:identificationInfo/*[name() = 'che:CHE_MD_DataIdentification' or name() = 'srv:SV_ServiceIdentification']" />
   <svrl:successful-report ref="#_" test="$hasCitationDate" location="/*[local-name()='CHE_MD_Metadata']/*[local-name()='identificationInfo']/*[local-name()='CHE_MD_DataIdentification']">
@@ -232,8 +277,11 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.citationdate-mandatory-success-fr" xml:lang="fr">Nombre de dates de citation définies :
           1
           .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.citationdate-mandatory-success-de" xml:lang="de">Anzahl der definierten Referenzinformationendaten:
+          1
+          .</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.mri.descriptivekeywords-mandatory" name_en="Descriptive keyword mandatory for dataset, series and service" name_fr="Mot-clé descriptif obligatoire pour les jeux de données, séries et services" name="Mot-clé descriptif obligatoire pour les jeux de données, séries et services">
+  <svrl:active-pattern document="" id="rule.mri.descriptivekeywords-mandatory" name_en="Descriptive keyword mandatory for dataset, series and service" name_fr="Mot-clé descriptif obligatoire pour les jeux de données, séries et services" name_de="Deskriptives Schlüsselwort obligatorisch für Datensätze, Serien und Dienste" name="Deskriptives Schlüsselwort obligatorisch für Datensätze, Serien und Dienste">
     <svrl:text>When metadata scope resourceScope is 'dataset', 'series' or 'service',
       descriptive keywords MUST be specified.</svrl:text>
     <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
@@ -248,8 +296,11 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.descriptivekeywords-mandatory-success-fr" xml:lang="fr">Nombre de groupes de mots-clés descriptifs définis :
           3
           .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.descriptivekeywords-mandatory-success-de" xml:lang="de">Anzahl der definierten deskriptiven Schlüsselwortgruppen:
+          3
+          .</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.mri.pointofcontact-mandatory" name_en="Point of contact mandatory for dataset, series and service" name_fr="Point de contact obligatoire pour les jeux de données, séries et services" name="Point de contact obligatoire pour les jeux de données, séries et services">
+  <svrl:active-pattern document="" id="rule.mri.pointofcontact-mandatory" name_en="Point of contact mandatory for dataset, series and service" name_fr="Point de contact obligatoire pour les jeux de données, séries et services" name_de="Kontaktpunkt obligatorisch für Datensätze, Serien und Dienste" name="Kontaktpunkt obligatorisch für Datensätze, Serien und Dienste">
     <svrl:text>When metadata scope resourceScope is 'dataset', 'series' or 'service',
       point of contact MUST be specified.</svrl:text>
     <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
@@ -264,8 +315,11 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.pointofcontact-mandatory-success-fr" xml:lang="fr">Nombre de points de contact définis :
           3
           .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.pointofcontact-mandatory-success-de" xml:lang="de">Anzahl der definierten Kontaktpunkte:
+          3
+          .</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.mri.resourcemaintenance-mandatory" name_en="Resource maintenance mandatory for dataset, series and service" name_fr="Maintenance de la ressource obligatoire pour les jeux de données, séries et services" name="Maintenance de la ressource obligatoire pour les jeux de données, séries et services">
+  <svrl:active-pattern document="" id="rule.mri.resourcemaintenance-mandatory" name_en="Resource maintenance mandatory for dataset, series and service" name_fr="Maintenance de la ressource obligatoire pour les jeux de données, séries et services" name_de="Ressourcenwartung obligatorisch für Datensätze, Serien und Dienste" name="Ressourcenwartung obligatorisch für Datensätze, Serien und Dienste">
     <svrl:text>When metadata scope resourceScope is 'dataset', 'series' or 'service',
       resource maintenance MUST be specified.</svrl:text>
     <svrl:text>Quand la portée des métadonnées (resourceScope) est 'dataset', 'series' ou 'service',
@@ -280,7 +334,10 @@
     <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.resourcemaintenance-mandatory-success-fr" xml:lang="fr">Nombre de maintenances de ressource définies :
           1
           .</svrl:diagnostic-reference>
+    <svrl:diagnostic-reference ref="#_" diagnostic="rule.mri.resourcemaintenance-mandatory-success-de" xml:lang="de">Anzahl der definierten Ressourcenwartungen:
+          1
+          .</svrl:diagnostic-reference>
   </svrl:successful-report>
-  <svrl:active-pattern document="" id="rule.srv.servicetaxonomy" name_en="Service taxonomy" name_fr="Taxonomie des services" name="Taxonomie des services" />
+  <svrl:active-pattern document="" id="rule.srv.servicetaxonomy" name_en="Service taxonomy" name_fr="Taxonomie des services" name_de="Diensttaxonomie" name="Diensttaxonomie" />
 </svrl:schematron-output>
 
