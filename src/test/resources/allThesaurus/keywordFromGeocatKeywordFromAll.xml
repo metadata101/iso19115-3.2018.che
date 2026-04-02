@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+    <che:CHE_MD_Metadata xmlns:che="http://geocat.ch/che"
+                         xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
+                         xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0"
+                         xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                         gco:isoType="mdb:MD_Metadata">
+        <mdb:identificationInfo>
+            <che:CHE_MD_DataIdentification gco:isoType="mri:MD_DataIdentification">
+                <mri:descriptiveKeywords
+                        xlink:href="local://srv/api/registries/vocabularies/keyword?skipdescriptivekeywords=true&amp;thesaurus=local.theme.geocat.ch&amp;id=http%3A%2F%2Fcustom.shared.obj.ch%2Fconcept%23eaeb5d8f-b32f-40dc-82e7-474ca2cfa29b&amp;multiple=false&amp;lang=ger,fre,ita,eng,roh"/>
+                <mri:descriptiveKeywords
+                        xlink:href="local://srv/api/registries/vocabularies/keyword?skipdescriptivekeywords=true&amp;thesaurus=external.none.allThesaurus&amp;id=http%3A%2F%2Forg.fao.geonet.thesaurus.all%2Flocal.theme.geocat.ch%40%40%40http%3A%2F%2Fgeocat.ch%2Fconcept%2387&amp;multiple=false&amp;lang=ger,fre,ita,eng,roh"/>
+            </che:CHE_MD_DataIdentification>
+        </mdb:identificationInfo>
+    </che:CHE_MD_Metadata>
+</root>
