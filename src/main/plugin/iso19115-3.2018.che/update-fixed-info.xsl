@@ -28,8 +28,12 @@
 
   <xsl:import href="convert/ISO19139/utility/create19115-3Namespaces.xsl"/>
 
+  <xsl:variable name="serviceUrl" select="/root/nodeUrl"/>
+  <xsl:variable name="node" select="/root/nodeId"/>
+
   <xsl:include href="../iso19139/convert/functions.xsl"/>
   <xsl:include href="layout/utility-fn.xsl"/>
+  <xsl:include href="update-fixed-info-keywords.xsl"/>
 
   <xsl:variable name="editorConfig"
                 select="document('layout/config-editor.xml')"/>
@@ -590,7 +594,7 @@
     </xsl:call-template>
   </xsl:template>
 
-  <xsl:template match="mri:descriptiveKeywords[not(*/mri:thesaurusName)]" priority="10">
+  <xsl:template match="mri:descriptiveKeywords[not(*/mri:thesaurusName) and not(@xlink:href)]" priority="10">
     <xsl:variable name="name" select="name()"/>
     <xsl:variable name="freeTextKeywordBlockType"
                   select="*/mri:type/*/@codeListValue"/>

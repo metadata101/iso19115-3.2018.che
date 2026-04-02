@@ -217,4 +217,12 @@ public class XslUtil {
     }
 
     public static String toUiConfigArg(String config)  { return config; }
+
+    public static String decodeURLParameter(String str) {
+        try {
+            return java.net.URLDecoder.decode(str, "UTF-8");
+        } catch (Exception ex) {
+            return str;
+        }
+    }
 }
