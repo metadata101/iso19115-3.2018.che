@@ -219,4 +219,13 @@ public class XslUtil {
     public static String getLanguage() {
         return getDefaultLangCode();
     }
+
+    public static String decodeURLParameter(String str) {
+        try {
+            return java.net.URLDecoder.decode(str, "UTF-8");
+        } catch (Exception ex) {
+            return str;
+        }
+    }
+
 }

@@ -98,4 +98,18 @@ public class UpdateFixedInfoTest {
 		TestSupport.assertGeneratedDataByteMatchExpected("subtemplates/lk500-updated-fixed-info-19115-3.che.xml", lk500WithUpdatedFixedInfo, GENERATE_EXPECTED_FILE);
 	}
 
+	@Test
+	public void allThesaurus() throws Exception {
+		Path xslFile = getResourceInsideSchema("update-fixed-info.xsl");
+		Path xmlFile = getResource("allThesaurus/keywordFromGeocatKeywordFromAll.xml");
+		Element source = Xml.loadFile(xmlFile);
+
+		Element transformed = Xml.transform(source, xslFile);
+
+		Element identificationInfo = Xml.selectElement(transformed, "*/che:CHE_MD_DataIdentification/mri:descriptiveKeywords");
+		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
+		String processed = xmlOutputter.outputString(identificationInfo);
+		TestSupport.assertGeneratedDataByteMatchExpected("allThesaurus/twoKeywordsInGeocat.xml", processed, GENERATE_EXPECTED_FILE);
+	}
+
 }
