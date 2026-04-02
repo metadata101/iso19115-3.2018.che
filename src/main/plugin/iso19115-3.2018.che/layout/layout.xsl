@@ -68,6 +68,12 @@
     <xsl:variable name="flatModeException"
                   select="gn-fn-metadata:isFieldFlatModeException($viewConfig, $name, name(..), $xpath)"/>
 
+    <xsl:if test="$name = 'mri:descriptiveKeywords' and count(../mri:descriptiveKeywords) = 0">
+      <xsl:call-template name="addAllThesaurusIso19115-3.2018">
+        <xsl:with-param name="ref" select="concat('_X', ../gn:element/@ref, '_', replace('mri:descriptiveKeywords', ':', 'COLON'))"/>
+      </xsl:call-template>
+    </xsl:if>
+
     <xsl:if test="$isEditing and
                   (not($isFlatMode) or $flatModeException)">
 
