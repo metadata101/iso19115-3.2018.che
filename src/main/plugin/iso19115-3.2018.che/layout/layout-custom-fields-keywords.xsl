@@ -35,7 +35,12 @@
     <xsl:variable name="thesaurusTitleEl"
                   select="mri:MD_Keywords/mri:thesaurusName/*/cit:title"/>
 
-    <!--TODO Add all Thesaurus as first block of keywords-->
+    <!--Add all Thesaurus as first block of keywords-->
+    <xsl:if test="name(preceding-sibling::*[1]) != name()">
+      <xsl:call-template name="addAllThesaurusIso19115-3.2018">
+        <xsl:with-param name="ref" select="concat('_X', ../gn:element/@ref, '_', replace(name(), ':', 'COLON'))"/>
+      </xsl:call-template>
+    </xsl:if>
 
 
     <xsl:variable name="thesaurusTitle">
@@ -286,6 +291,42 @@
       </xsl:otherwise>
     </xsl:choose>
 
+  </xsl:template>
+
+  <xsl:template name="addAllThesaurusIso19115-3.2018">
+    <xsl:param name="ref"/>
+    <xsl:param name="xpath" select="''" required="no"/>
+    <xsl:param name="keywordList" select="''" required="no"/>
+    <xsl:param name="transformation" select="'to-iso19115-3.2018-keyword'" required="no"/>
+
+    <xsl:if test="xslutil:getSettingValue('system/metadata/allThesaurus') = 'true'">
+      <xsl:variable name="thesaurusConfig"
+                    as="element()?"
+                    select="$thesaurusList/thesaurus[@key='external.none.allThesaurus']"/>
+
+      <xsl:variable name="transformations"
+                    as="xs:string"
+                    select="if ($thesaurusConfig/@transformations != '')
+                              then $thesaurusConfig/@transformations
+                              else 'to-iso19115-3.2018-keyword,to-iso19115-3.2018-keyword-with-anchor,to-iso19115-3.2018-keyword-as-xlink'"/>
+
+      <br></br>
+      <div
+              data-gn-keyword-selector="tagsinput"
+              data-metadata-id=""
+              data-element-ref="{$ref}"
+              data-element-xpath="{$xpath}"
+              data-thesaurus-title="{{{{'selectKeyword' | translate}}}}"
+              data-thesaurus-key="external.none.allThesaurus"
+              data-keywords="{$keywordList}"
+              data-transformations="{$transformations}"
+              data-current-transformation="{$transformation}"
+              data-max-tags=""
+              data-lang="{$metadataOtherLanguagesAsJson}"
+              data-textgroup-only="false"
+              class="">
+      </div>
+    </xsl:if>
   </xsl:template>
 
 </xsl:stylesheet>
