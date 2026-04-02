@@ -717,6 +717,8 @@
               </a>
             </div>
           </div>
+          <br />
+          <div data-gn-keyword-selector="tagsinput" data-metadata-id="" data-element-ref="_X97_mriCOLONdescriptiveKeywords" data-element-xpath="" data-thesaurus-title="{{'selectKeyword' | translate}}" data-thesaurus-key="external.none.allThesaurus" data-keywords="" data-transformations="to-iso19115-3.2018-keyword,to-iso19115-3.2018-keyword-with-anchor,to-iso19115-3.2018-keyword-as-xlink" data-current-transformation="to-iso19115-3.2018-keyword" data-max-tags="" data-lang="{&quot;ger&quot;:&quot;#DE&quot;,&quot;fre&quot;:&quot;#FR&quot;}" data-textgroup-only="false" class="" />
           <div class="form-group gn-field   gn-add-field  " id="gn-el-d67e14369" data-gn-cardinality="0-10000" data-gn-field-highlight="">
             <label class="col-sm-2 control-label" data-gn-field-tooltip="iso19115-3.2018.che|mri:descriptiveKeywords|che:CHE_MD_DataIdentification|">Mots clés</label>
             <div class="col-sm-9">
