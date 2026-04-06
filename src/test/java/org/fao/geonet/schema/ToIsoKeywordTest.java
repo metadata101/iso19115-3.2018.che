@@ -55,6 +55,10 @@ public class ToIsoKeywordTest {
 		transformAndCompare("handle/to19115-3.2018-keyword-call.xsl", "to19115-3.2018-keyword-old-gemet-input.xml", "to19115-3.2018-keyword-output.xml");
 	}
 
+	@Test
+	public void keywordFromRegions() throws Exception {
+		transformAndCompare("handle/to19115-3.2018-keyword-call.xsl", "allThesaurus/keywordFromSearcherToPrepareForEditor.xml", "allThesaurus/convertedKeyword.xml");
+	}
 
 	private void transformAndCompare(String scriptName, String inputFileName, String expectedFileName) throws Exception {
 		Path xslFile = getResource(scriptName);

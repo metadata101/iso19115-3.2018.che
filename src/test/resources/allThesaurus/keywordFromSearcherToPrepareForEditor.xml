@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+    <request>
+        <thesaurus>external.place.regions</thesaurus>
+        <textgroupOnly>false</textgroupOnly>
+        <id>http://www.naturalearthdata.com/ne_admin#Country/GIN</id>
+        <langMap>{"ger":"#DE","fre":"#FR","ita":"#IT","eng":"#EN","roh":"#RM"}</langMap>
+        <transformation>to-iso19115-3.2018-keyword-as-xlink</transformation>
+        <lang>ger,fre,ita,eng,roh</lang>
+        <languageConversions>
+            <conversion from="ger" to="DE"/>
+            <conversion from="fre" to="FR"/>
+            <conversion from="ita" to="IT"/>
+            <conversion from="eng" to="EN"/>
+            <conversion from="roh" to="RM"/>
+        </languageConversions>
+    </request>
+    <descKeys>
+        <keyword>
+            <selected>false</selected>
+            <id>0</id>
+            <value language="fre">Guinea</value>
+            <definition language="fre"/>
+            <defaultLang>fre</defaultLang>
+            <thesaurus>
+                <key>external.place.regions</key>
+                <title>Continents, countries, sea regions of the world.</title>
+                <date>2015-07-17</date>
+                <type>place</type>
+                <url>http://localhost:8080/geonetwork/srv/api/registries/vocabularies/external.place.regions</url>
+            </thesaurus>
+            <uri>http://www.naturalearthdata.com/ne_admin#Country/GIN</uri>
+            <geo>
+                <east>-7.6624</east>
+                <west>-15.081</west>
+                <south>7.1902</south>
+                <north>12.673</north>
+            </geo>
+            <values>
+                <value language="ger"/>
+                <value language="fre">Guinea</value>
+                <value language="ita"/>
+                <value language="eng">Guinea</value>
+                <value language="roh"/>
+            </values>
+            <definitions>
+                <definition language="ger"/>
+                <definition language="fre"/>
+                <definition language="ita"/>
+                <definition language="eng"/>
+                <definition language="roh"/>
+            </definitions>
+        </keyword>
+    </descKeys>
+    <gui>
+        <thesaurus>
+            <thesauri>
+                <thesaurus>
+                    <key>external.place.regions</key>
+                    <dname>place</dname>
+                    <description>Generated from NaturalEarth datasets and SeaVox.</description>
+                    <filename>regions.rdf</filename>
+                    <title>Continents, countries, sea regions of the world.</title>
+                    <multilingualTitles/>
+                    <dublinCoreMultilinguals/>
+                    <multilingualDescriptions/>
+                    <date>2015-07-17</date>
+                    <createdDate/>
+                    <issuedDate>2015-07-17</issuedDate>
+                    <modifiedDate>2015-07-17</modifiedDate>
+                    <url>http://localhost:8080/geonetwork/srv/api/registries/vocabularies/external.place.regions</url>
+                    <defaultNamespace>http://geonetwork-opensource.org/thesaurus/naturalearth-and-seavox</defaultNamespace>
+                    <type>external</type>
+                </thesaurus>
+                <thesaurus>
+                    <key>local.theme.geocat.ch</key>
+                    <dname>theme</dname>
+                    <description/>
+                    <filename>geocat.ch.rdf</filename>
+                    <title>geocat.ch</title>
+                    <multilingualTitles>
+                        <multilingualTitle>
+                            <lang>fr</lang>
+                            <title>geocat.ch</title>
+                        </multilingualTitle>
+                        <multilingualTitle>
+                            <lang>en</lang>
+                            <title>geocat.ch</title>
+                        </multilingualTitle>
+                        <multilingualTitle>
+                            <lang>it</lang>
+                            <title>geocat.ch</title>
+                        </multilingualTitle>
+                        <multilingualTitle>
+                            <lang>de</lang>
+                            <title>geocat.ch</title>
+                        </multilingualTitle>
+                    </multilingualTitles>
+                    <dublinCoreMultilinguals/>
+                    <multilingualDescriptions/>
+                    <date>2026-03-21</date>
+                    <createdDate/>
+                    <issuedDate/>
+                    <modifiedDate/>
+                    <url>http://localhost:8080/geonetwork/srv/api/registries/vocabularies/local.theme.geocat.ch</url>
+                    <defaultNamespace>http://www.geocat.ch/concept</defaultNamespace>
+                    <type>local</type>
+                </thesaurus>
+                <thesaurus>
+                    <key>external.none.allThesaurus</key>
+                    <dname>none</dname>
+                    <description/>
+                    <filename>allThesaurus</filename>
+                    <title>All Keywords</title>
+                    <multilingualTitles/>
+                    <dublinCoreMultilinguals/>
+                    <multilingualDescriptions/>
+                    <date/>
+                    <createdDate/>
+                    <issuedDate/>
+                    <modifiedDate/>
+                    <url>http://localhost:8080/geonetwork/srv/api/registries/vocabularies/external.none.allThesaurus</url>
+                    <defaultNamespace>http://org.fao.geonet.thesaurus.all/http%3A%2F%2Fgeonetwork-opensource.org%2Fthesaurus%2Fnaturalearth-and-seavox</defaultNamespace>
+                    <type>external</type>
+                </thesaurus>
+                <thesaurus>
+                    <key>local.theme.codelist_unit_time</key>
+                    <dname>theme</dname>
+                    <description/>
+                    <filename>codelist_unit_time.rdf</filename>
+                    <title>Units of measurements / Time</title>
+                    <multilingualTitles>
+                        <multilingualTitle>
+                            <lang>fr</lang>
+                            <title>Unités de mesure / Temps</title>
+                        </multilingualTitle>
+                        <multilingualTitle>
+                            <lang>en</lang>
+                            <title>Units of measurements / Time</title>
+                        </multilingualTitle>
+                    </multilingualTitles>
+                    <dublinCoreMultilinguals>
+                        <dublinCoreMultilingual>
+                            <lang>fr</lang>
+                            <tag>title</tag>
+                            <value>Unités de mesure / Temps</value>
+                        </dublinCoreMultilingual>
+                        <dublinCoreMultilingual>
+                            <lang>en</lang>
+                            <tag>title</tag>
+                            <value>Units of measurements / Time</value>
+                        </dublinCoreMultilingual>
+                    </dublinCoreMultilinguals>
+                    <multilingualDescriptions/>
+                    <date>2025-06-18</date>
+                    <createdDate/>
+                    <issuedDate/>
+                    <modifiedDate/>
+                    <url>http://localhost:8080/geonetwork/srv/api/registries/vocabularies/local.theme.codelist_unit_time</url>
+                    <defaultNamespace>https://en.wikipedia.org/wiki/Time</defaultNamespace>
+                    <type>local</type>
+                </thesaurus>
+                <thesaurus>
+                    <key>local.theme.codelist_unit_distance</key>
+                    <dname>theme</dname>
+                    <description/>
+                    <filename>codelist_unit_distance.rdf</filename>
+                    <title>Units of measurements / Distance</title>
+                    <multilingualTitles>
+                        <multilingualTitle>
+                            <lang>fr</lang>
+                            <title>Unités de mesure / Distance</title>
+                        </multilingualTitle>
+                        <multilingualTitle>
+                            <lang>en</lang>
+                            <title>Units of measurements / Distance</title>
+                        </multilingualTitle>
+                    </multilingualTitles>
+                    <dublinCoreMultilinguals>
+                        <dublinCoreMultilingual>
+                            <lang>fr</lang>
+                            <tag>title</tag>
+                            <value>Unités de mesure / Distance</value>
+                        </dublinCoreMultilingual>
+                        <dublinCoreMultilingual>
+                            <lang>en</lang>
+                            <tag>title</tag>
+                            <value>Units of measurements / Distance</value>
+                        </dublinCoreMultilingual>
+                    </dublinCoreMultilinguals>
+                    <multilingualDescriptions/>
+                    <date>2025-06-18</date>
+                    <createdDate/>
+                    <issuedDate/>
+                    <modifiedDate/>
+                    <url>http://localhost:8080/geonetwork/srv/api/registries/vocabularies/local.theme.codelist_unit_distance</url>
+                    <defaultNamespace>https://en.wikipedia.org/wiki/Length</defaultNamespace>
+                    <type>local</type>
+                </thesaurus>
+            </thesauri>
+        </thesaurus>
+    </gui>
+    <nodeUrl>http://localhost:8080/geonetwork/srv/</nodeUrl>
+    <nodeId>srv</nodeId>
+</root>
