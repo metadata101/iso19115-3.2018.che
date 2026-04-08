@@ -718,14 +718,14 @@
                     <xsl:value-of select="$displayName"/>
                   </xsl:otherwise>
                 </xsl:choose>
-              </strong><br/>
+              </strong>
               <xsl:for-each select=".//cit:contactInfo/*">
                 <xsl:for-each select="cit:address/*/(
                                             cit:deliveryPoint|cit:city|
                                             cit:administrativeArea|cit:postalCode|cit:country)">
                   <div>
                     <xsl:if test="normalize-space(.) != ''">
-                      <xsl:apply-templates mode="render-value-no-breaklines" select="."/><br/>
+                      <xsl:apply-templates mode="render-value-no-breaklines" select="."/>
                     </xsl:if>
                   </div>
                 </xsl:for-each>
