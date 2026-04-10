@@ -3241,6 +3241,7 @@
                 <owner>1</owner>
                 <sourceid>7ea582d4-9ddf-422e-b28f-29760a4c0147</sourceid>
                 <groupowner>6</groupowner>
+                <grouplogo>../images/harvesting/logo.png</grouplogo>
             </sourceinfo>
             <harvestinfo>
                 <harvested_jpaworkaround>n</harvested_jpaworkaround>
