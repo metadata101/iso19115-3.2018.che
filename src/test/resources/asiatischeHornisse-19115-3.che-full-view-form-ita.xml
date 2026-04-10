@@ -3276,6 +3276,7 @@ Vuoi ancora uscire dalla pagina e perdere le tue modifiche?</unsavedChangesWarni
         <groupowner>6</groupowner>
         <sourceid>7ea582d4-9ddf-422e-b28f-29760a4c0147</sourceid>
         <owner>1</owner>
+        <grouplogo>../images/harvesting/logo.png</grouplogo>
       </sourceinfo>
       <harvestinfo>
         <harvested>false</harvested>
