@@ -45,7 +45,7 @@
    so that all keywords from the same thesaurus are in the same
    keyword block.
   -->
-  <xsl:template match="mri:descriptiveKeywords|srv:keywords" priority="10">
+  <xsl:template match="mri:descriptiveKeywords|srv:keywords" priority="500">
     <xsl:variable name="name" select="name()"/>
     <xsl:variable name="root" select="/"/>
     <xsl:variable name="node" select="."/>
