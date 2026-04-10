@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatapch="http://dcat-ap.ch/ns/">
+  <dcat:Dataset rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/97df4dcd-364c-4649-9c11-c65b3b0e9ff2/formatters/dcat-ap-ch">
+    <dct:identifier>97df4dcd-364c-4649-9c11-c65b3b0e9ff2</dct:identifier>
+    <dct:title xml:lang="de">Beispiel swissTLM3D Wanderwege</dct:title>
+    <dct:title xml:lang="fr">Exemple swissTLM3D chemins de randonnée pédestre</dct:title>
+    <dct:title xml:lang="it">Exampio swissTLM3D percorsi escursionistici</dct:title>
+    <dct:title xml:lang="en">Example swissTLM3D hiking trails</dct:title>
+    <dct:description xml:lang="de">swissTLM3D Wanderwege enthält die signalisierten Wanderrouten der Schweiz und des Fürstentums Liechtenstein. Der Datensatz wird in Zusammenarbeit mit dem Bundesamt für Strassen ASTRA, SchweizMobil, Schweizer Wanderwege und den Kantonen publiziert. Die Daten werden einmal pro Jahr mit dem Datensatz swissTLM3D vollständig aktualisiert. Bei Bedarf werden im Laufe des Jahres punktuelle Korrekturen und Verbesserungen publiziert.</dct:description>
+    <dct:description xml:lang="fr">swissTLM3D chemins de randonnée pédestre comprend les chemins de randonnée officiels de la Suisse et de la Principauté de Liechtenstein. Le jeu de données est publié en collaboration avec l'Office fédéral des routes OFROU, SuisseMobile, Suisse Rando et les cantons. Les données sont mises à jour complètement une fois par an avec le jeu de données swissTLM3D. En cours d’année, des corrections et améliorations ponctuelles sont publiées au besoin.</dct:description>
+    <dct:description xml:lang="it">swissTLM3D sentieri pedestri comprende i sentieri pedestri ufficiali della Svizzera e del Principato del Liechtenstein. Il set di dati viene pubblicato in collaborazione con l'Ufficio federale delle strade USTRA, SvizzeraMobile, Sentieri Svizzeri e i cantoni. I dati vengono aggiornati completamente una volta all'anno con il dataset swissTLM3D. Correzioni e miglioramenti puntuali vengono pubblicati regolarmente durante l’anno.</dct:description>
+    <dct:description xml:lang="en">swissTLM3D hiking trails contains the hiking trails of Switzerland and the Principality of Liechtenstein. This dataset is published in collaboration with the Federal roads office FEDRO, SwitzerlandMobility, Suisse Rando and the cantons. The data is fully updated once a year with the swissTLM3D dataset. If necessary, ad hoc corrections and improvements are published during the year.</dct:description>
+    <dct:description xml:lang="rm">swissTLM3D Sendas da viandar cuntegna las sendas da viandar uffizialas da la Svizra e dal Principadi da Liechtenstein. L'unitad da datas vegn publitgada en collavuraziun cun l'Uffizi federal da vias UVias, cun SvizraMobila, cun Sendas svizras e cun ils chantuns. swissTLM3D Sendas da viandar è ina part da l'unitad da datas swissTLM3D.</dct:description>
+    <dct:publisher>
+      <foaf:Agent>
+        <foaf:name xml:lang="de">Bundesamt für Landestopografie swisstopo</foaf:name>
+        <foaf:name xml:lang="fr">Office fédéral de topographie swisstopo</foaf:name>
+        <foaf:name xml:lang="it">Ufficio federale di topografia swisstopo</foaf:name>
+        <foaf:name xml:lang="en">Federal Office of Topography swisstopo</foaf:name>
+        <foaf:name xml:lang="rm">Uffizi federal da topografia swisstopo</foaf:name>
+      </foaf:Agent>
+    </dct:publisher>
+    <dcat:contactPoint>
+      <vcard:Organization>
+        <vcard:fn>Bundesamt für Landestopografie swisstopo</vcard:fn>
+        <vcard:hasEmail rdf:resource="mailto:geocat@swisstopo.ch" />
+      </vcard:Organization>
+    </dcat:contactPoint>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://map.geo.admin.ch/?layers=ch.swisstopo.swisstlm3d-wanderwege" />
+        <dct:title xml:lang="de">Vorschau map.geo.admin.ch</dct:title>
+        <dct:title xml:lang="fr">Aperçu map.geo.admin.ch</dct:title>
+        <dct:title xml:lang="it">Previsione map.geo.admin.ch</dct:title>
+        <dct:title xml:lang="en">Preview map.geo.admin.ch</dct:title>
+        <dct:description xml:lang="de">Vorschau map.geo.admin.ch</dct:description>
+        <dct:description xml:lang="fr">Aperçu map.geo.admin.ch</dct:description>
+        <dct:description xml:lang="it">Previsione map.geo.admin.ch</dct:description>
+        <dct:description xml:lang="en">Preview map.geo.admin.ch</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-04-01T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-04T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=de" />
+        <dct:title xml:lang="de">ch.swisstopo.swisstlm3d-wanderwege</dct:title>
+        <dct:title xml:lang="fr">ch.swisstopo.swisstlm3d-wanderwege</dct:title>
+        <dct:title xml:lang="it">ch.swisstopo.swisstlm3d-wanderwege</dct:title>
+        <dct:title xml:lang="en">ch.swisstopo.swisstlm3d-wanderwege</dct:title>
+        <dct:title xml:lang="rm">ch.swisstopo.swisstlm3d-wanderwege</dct:title>
+        <dct:description xml:lang="de">WMS-BGDI Dienst, Layer "Wanderwege"</dct:description>
+        <dct:description xml:lang="fr">Service WMS-IFDG, couche "Chemins de randonnée pédestre"</dct:description>
+        <dct:description xml:lang="it">Servizio WMS-IFDG, strato "Percorsi escursionistici"</dct:description>
+        <dct:description xml:lang="en">WMS-FSDI service, layer "Hiking trails"</dct:description>
+        <dct:description xml:lang="rm">WMS-BGDI Dienst, Layer "Wanderwege"</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/WMS_SRVC" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-04-01T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-04T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=de" />
+        <dct:title xml:lang="de">ch.swisstopo.swisstlm3d-wanderwege</dct:title>
+        <dct:title xml:lang="fr">ch.swisstopo.swisstlm3d-wanderwege</dct:title>
+        <dct:title xml:lang="it">ch.swisstopo.swisstlm3d-wanderwege</dct:title>
+        <dct:title xml:lang="en">ch.swisstopo.swisstlm3d-wanderwege</dct:title>
+        <dct:title xml:lang="rm">ch.swisstopo.swisstlm3d-wanderwege</dct:title>
+        <dct:description xml:lang="de">WMTS-BGDI Dienst, Layer "Wanderwege"</dct:description>
+        <dct:description xml:lang="fr">Service WMTS-IFDG, couche , Layer "Chemins de randonnée pédestre"</dct:description>
+        <dct:description xml:lang="it">Servizio WMTS-IFDG, strato "Percorsi escursionistici"</dct:description>
+        <dct:description xml:lang="en">WMTS-FSDI service, layer "Hiking trails"</dct:description>
+        <dct:description xml:lang="rm">WMTS-BGDI Dienst, Layer "Wanderwege"</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/WMTS_SRVC" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-04-01T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-04T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://data.geo.admin.ch/ch.swisstopo.swisstlm3d-wanderwege/swisstlm3d-wanderwege/swisstlm3d-wanderwege_2056_5728.gpkg.zip" />
+        <dcat:downloadURL rdf:resource="https://data.geo.admin.ch/ch.swisstopo.swisstlm3d-wanderwege/swisstlm3d-wanderwege/swisstlm3d-wanderwege_2056_5728.gpkg.zip" />
+        <dct:title xml:lang="de">swisstlm3d-wanderwege</dct:title>
+        <dct:description xml:lang="de">Geopackage (ZIP)</dct:description>
+        <dct:description xml:lang="fr">Geopackage (ZIP)</dct:description>
+        <dct:description xml:lang="it">Geopackage (ZIP)</dct:description>
+        <dct:description xml:lang="en">Geopackage (ZIP)</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/ZIP" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-04-01T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-04T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swisstlm3d-wanderwege" />
+        <dct:title xml:lang="de">RESTful API von geo.admin.ch</dct:title>
+        <dct:title xml:lang="fr">RESTful API de geo.admin.ch</dct:title>
+        <dct:title xml:lang="it">RESTful API da geo.admin.ch</dct:title>
+        <dct:title xml:lang="en">RESTful API from geo.admin.ch</dct:title>
+        <dct:title xml:lang="rm">RESTful API dad geo.admin.ch</dct:title>
+        <dct:description xml:lang="de">RESTful API von geo.admin.ch</dct:description>
+        <dct:description xml:lang="fr">RESTful API de geo.admin.ch</dct:description>
+        <dct:description xml:lang="it">RESTful API da geo.admin.ch</dct:description>
+        <dct:description xml:lang="en">RESTful API from geo.admin.ch</dct:description>
+        <dct:description xml:lang="rm">RESTful API dad geo.admin.ch</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/REST" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-04-01T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-04T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-04-01T00:00:00</dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-04T00:00:00</dct:modified>
+    <dcat:landingPage rdf:resource="https://www.swisstopo.admin.ch/de/landschaftsmodell-swisstlm3d" />
+    <dct:relation>
+      <rdf:Description rdf:about="https://www.geocat.ch/datahub/dataset/97df4dcd-364c-4649-9c11-c65b3b0e9ff2">
+        <rdfs:label xml:lang="de">geocat.ch Permalink</rdfs:label>
+        <rdfs:label xml:lang="fr">geocat.ch permalien</rdfs:label>
+        <rdfs:label xml:lang="it">geocat.ch link permanente</rdfs:label>
+        <rdfs:label xml:lang="en">geocat.ch permalink</rdfs:label>
+      </rdf:Description>
+    </dct:relation>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+    <dcat:keyword xml:lang="de">Verkehrsnetze</dcat:keyword>
+    <dcat:keyword xml:lang="fr">Réseaux de transport</dcat:keyword>
+    <dcat:keyword xml:lang="it">Reti di trasporto</dcat:keyword>
+    <dcat:keyword xml:lang="en">Transport networks</dcat:keyword>
+    <dcat:keyword xml:lang="de">Geografische Bezeichnungen</dcat:keyword>
+    <dcat:keyword xml:lang="fr">Dénominations géographiques</dcat:keyword>
+    <dcat:keyword xml:lang="it">Nomi geografici</dcat:keyword>
+    <dcat:keyword xml:lang="en">Geographical names</dcat:keyword>
+    <dcat:keyword xml:lang="de">Vektor</dcat:keyword>
+    <dcat:keyword xml:lang="fr">vecteur</dcat:keyword>
+    <dcat:keyword xml:lang="it">vettore</dcat:keyword>
+    <dcat:keyword xml:lang="en">vector</dcat:keyword>
+    <dcat:keyword xml:lang="de">Geographisches Informationssystem</dcat:keyword>
+    <dcat:keyword xml:lang="fr">système d'information géographique</dcat:keyword>
+    <dcat:keyword xml:lang="it">sistema informativo geografico</dcat:keyword>
+    <dcat:keyword xml:lang="en">geographic information system</dcat:keyword>
+    <dcat:keyword xml:lang="de">Wanderweg</dcat:keyword>
+    <dcat:keyword xml:lang="fr">sentier de randonnée</dcat:keyword>
+    <dcat:keyword xml:lang="it">sentiero escursionistico</dcat:keyword>
+    <dcat:keyword xml:lang="en">hiking trail</dcat:keyword>
+    <dcat:keyword xml:lang="de">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="fr">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="it">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="en">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="rm">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="de">GIS (Geografisches Informationssystem)</dcat:keyword>
+    <dcat:keyword xml:lang="fr">SIG (Système d'Information Géographique)</dcat:keyword>
+    <dcat:keyword xml:lang="it">SIG (Sistema Informativo Geografico)</dcat:keyword>
+    <dcat:keyword xml:lang="en">GIS (Geographic Information System)</dcat:keyword>
+    <dcat:keyword xml:lang="de">Landschaftsmodell</dcat:keyword>
+    <dcat:keyword xml:lang="fr">modèle du territoire</dcat:keyword>
+    <dcat:keyword xml:lang="it">modello del territorio</dcat:keyword>
+    <dcat:keyword xml:lang="en">landscape model</dcat:keyword>
+    <dcat:keyword xml:lang="de">BGDI Bundesgeodaten-Infrastruktur</dcat:keyword>
+    <dcat:keyword xml:lang="fr">IFDG l’Infrastructure Fédérale de données géographiques</dcat:keyword>
+    <dcat:keyword xml:lang="it">IFDG Infrastruttura federale dei dati geografici</dcat:keyword>
+    <dcat:keyword xml:lang="en">FSDI Federal Spatial Data Infrastructure</dcat:keyword>
+    <dct:spatial>Schweiz</dct:spatial>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG" />
+  </dcat:Dataset>
+  <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by">
+    <rdf:type rdf:resource="http://purl.org/dc/terms/LicenseDocument" />
+  </dct:RightsStatement>
+</rdf:RDF>
+
