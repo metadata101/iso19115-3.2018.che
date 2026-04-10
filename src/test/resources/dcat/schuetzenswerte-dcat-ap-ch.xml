@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatapch="http://dcat-ap.ch/ns/">
+  <dcat:Dataset rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/b9c1d690-008f-494c-a47f-ec96d9a8d84f/formatters/dcat-ap-ch">
+    <dct:identifier>b9c1d690-008f-494c-a47f-ec96d9a8d84f</dct:identifier>
+    <dct:title xml:lang="de">ISOS - Bundesinventar der schützenswerten Ortsbilder der Schweiz von nationaler Bedeutung ab 2021 - Bilder</dct:title>
+    <dct:title xml:lang="fr">ISOS - Inventaire fédéral des sites construits d'importance nationale à protéger en Suisse dès 2021 - Photos</dct:title>
+    <dct:title xml:lang="it">ISOS - Inventario federale degli insediamenti svizzeri da proteggere d’importanza nazionale dal 2021 - Foto</dct:title>
+    <dct:title xml:lang="en">ISOS - Federal Inventory of Swiss heritage sites of national importance since 2021 - Photos</dct:title>
+    <dct:title xml:lang="rm">ISOS - Inventari federal dals lieus svizzers d'impurtanza naziunala degns da protecziun a partir da l’onn 2021 - Fotografias</dct:title>
+    <dct:description xml:lang="de">Das Bundesinventar der schützenswerten Ortsbilder der Schweiz von nationaler Bedeutung (ISOS) bezeichnet die wertvollsten, landesweit bedeutenden Ortsbilder und dokumentiert sie. Die Arbeiten am ISOS begannen 1973 mit der Entwicklung einer für die Inventarisierung von Ortsbildern geeigneten Methode – der ISOS-Methode. Im Jahr 2016 hat das Bundesamt für Kultur (BAK) diese Methode aktualisiert und die Darstellung des Bundesinventars an die GIS-Technologie angepasst. Die ursprüngliche Methode (ISOS I) und die angepasste Methode (ISOS II) beruhen auf denselben Grundprinzipien und Regeln. Dieses Portal präsentiert die ISOS-Aufnahmen, die zurzeit in Kraft sind. Es gibt zwei Arten von Daten: 1. die nach Methode ISOS I erarbeiteten Aufnahmen, die lediglich als PDF verfügbar sind; 2. die nach Methode ISOS II erarbeiteten Aufnahmen, die als PDF und vektorielle Geodaten verfügbar sind. Bitte beachten Sie: Nur die PDF sind rechtsgültig. Die Geodaten dienen lediglich der Information. Ihr Detaillierungsgrad nimmt mit wachsendem Massstab zu. Das ISOS wird zurzeit revidiert. Die Revision erfolgt etappenweise. Folglich werden während einer gewissen Zeit Aufnahmen, die nach der Methode ISOS I erarbeitet wurden, und Aufnahmen, die mit der Methode ISOS II erstellt wurden, auf diesem Portal koexistieren. Nach Abschluss der Revision in der ganzen Schweiz werden nur noch Aufnahmen verfügbar sein, die nach der Methode ISOS II erarbeitet wurden. Dieser Layer präsentiert die Fotos zu den nach der Methode ISOS II aktualisierten Aufnahmen. Er wird jährlich aktualisiert. Die beste Übersichtlichkeit der Informationen wird erreicht, wenn er über dem Layer "Ortsbildaufnahmen" liegt. Die Fotos sind ab dem Massstab 1: 50'000 zu sehen. Alle ISOS-Daten (Pläne, Texte, Fotos) sind geistiges Eigentum der Bundesregierung (© BAK, Bern) Für detaillierte Informationen zum ISOS siehe www.isos.ch.</dct:description>
+    <dct:description xml:lang="fr">L’Inventaire fédéral des sites construits d’importance nationale à protéger en Suisse (ISOS) recense les sites construits les plus précieux et les plus importants du pays et les documente. Les travaux relatifs à l’Inventaire ISOS ont commencé en 1973 avec le développement d’une méthode appropriée au recensement des sites construits – la méthode ISOS. En 2016, l’Office fédéral de la culture (OFC) a actualisé cette méthode et a adapté la présentation de l'Inventaire fédéral aux technologies SIG. La méthode originelle (ISOS I) et la méthode adaptée (ISOS II) reposent sur les mêmes principes et les mêmes règles de base. Le présent portail présente les relevés ISOS actuellement en vigueur. Ces derniers se composent de deux types de données: 1. les relevés élaborés selon la méthode ISOS I, uniquement disponibles sous forme de PDF; 2. les relevés établis selon la méthode ISOS II, disponibles sous forme de PDF et de géodonnées vectorielles. Attention: seuls les PDFs ont valeur légale. Les géodonnées ont uniquement une valeur informative. Leur degré de détail augmente avec l'échelle. L'ISOS est actuellement en cours de révision. Cette révision s’effectue par étapes. Pendant un certain temps, les relevés élaborés selon la méthode ISOS I et les relevés établis selon la méthode ISOS II coexisteront donc sur le géoportail. Une fois l’ISOS révisé dans toute la Suisse, seuls les relevés établis selon la méthode ISOS II seront disponibles. Cette couche présente les photos des sites actualisés selon la méthode ISOS II. Elle est mise à jour une fois par année. Pour une lisibilité optimale des informations, il est conseillé de la placer au-dessus de la couche "relevés de sites". Les photos sont visibles à partir de l'échelle 1 : 50'000. Toutes les données ISOS (plans, textes, photos) sont la propriété intellectuelle du gouvernement fédéral (© OFC, Berne ). Pour des informations détaillées sur l'ISOS, voir www.isos.ch.</dct:description>
+    <dct:description xml:lang="it">L’Inventario federale degli insediamenti svizzeri da proteggere d’importanza nazionale (ISOS) rileva e documenta gli insediamenti di maggior valore e importanza del paese. L’avvio dei lavori per l’allestimento dell’ISOS risale al 1973 con lo sviluppo di un metodo adeguato per l’inventariazione di insediamenti – il metodo ISOS. Nel 2016, l'Ufficio federale della cultura (UFC) ha rielaborato tale metodo e adeguato la rappresentazione dell'Inventario federale alle tecnologie GIS. Il metodo originario (ISOS I) e il suo aggiornamento (ISOS II) hanno gli stessi principi e le stesse regole di base. Questo portale presenta i rilevamenti ISOS attualmente in vigore che consistono in due tipi di dati: 1. rilevamenti allestiti secondo il metodo ISOS I, disponibili unicamente sotto forma di PDF 2. rilevamenti allestiti secondo il metodo ISOS II, disponibili sotto forma di PDF e di geodati vettoriali. Attenzione: solo i PDF hanno forza giuridica. I geodati sono a solo titolo informativo. Il loro livello di dettaglio cresce con l'aumentare della scala di rappresentazione. Attualmente, l'ISOS è in fase di revisione che avviene per tappe. Di conseguenza, per un certo periodo di tempo, i rilevamenti elaborati secondo il metodo ISOS I e i rilevamenti allestiti secondo il metodo ISOS II coesisteranno su questo portale. Una volta che l'ISOS sarà stato rivisto in tutta la Svizzera, saranno disponibili solo i rilevamenti realizzati secondo il metodo ISOS II. Questo livello presenta le foto relative ai rilevamenti degli insediamenti aggiornati secondo il metodo ISOS II. Sarà aggiornato una volta all'anno. Per una leggibilità ottimale delle informazioni è consigliabile porlo al di sopra del livello "rilevamenti degli insediamenti". Le foto sono visibili dalla scala 1 : 50'000. Tutti i dati ISOS (piani, testi, foto) sono proprietà intellettuale della Confederazione (© UFC, Berna). Per informazioni approfondite sull'ISOS, si vada su www.isos.ch.</dct:description>
+    <dct:description xml:lang="en">The Inventory of Swiss Heritage Sites (ISOS) designates and documents the most valuable sites of national importance. Work on the ISOS began in 1973 with the development of a suitable method for cataloguing sites – the ISOS method. In 2016, the Federal Office of Culture (FOC) updated this method and adapted the presentation of the inventory in line with GIS technology. The original method (ISOS I) and the adapted method (ISOS II) are based on the same basic principles and rules. This portal presents the ISOS site records currently in use. There are two kinds of data: 1. the site records prepared using the ISOS I method, which are only available as PDFs; 2. the site records updated using the ISOS II method, which are available as PDFs and geodata. Please be aware that only the PDFs are legally valid. The geodata are for information purposes only. The level of detail increases as the scale increases. The ISOS is currently being revised and the revision is taking place in stages. This means that for a certain period of time, site records compiled using the ISOS I method and those updated using the ISOS II method will coexist on this portal. Once the revision for the whole of Switzerland has been completed, only the site records compiled using the ISOS II method will be available. This layer presents the photos for the site records updated using the ISOS II method. It is updated once a year. The information is clearest when this layer is placed over the “site records” layer. The photos can be viewed from a scale of 1: 50,000. All ISOS data (plans, texts, photos) are the intellectual property of the Swiss federal government (© FOC, Bern). For detailed information on ISOS, see www.isos.ch.</dct:description>
+    <dct:description xml:lang="rm">L'Inventari federal dals lieus svizzers d'impurtanza naziunala degns da protecziun (ISOS) designescha e documentescha ils lieus impurtants ils pli prezius da la Svizra. Las lavurs vi dal ISOS han cumenzà l'onn 1973 cun sviluppar ina metoda ch'è adattada per inventarisar lieus – la metoda ISOS. L'onn 2016 ha l'Uffizi federal da cultura (UFC) actualisà questa metoda ed adattà la preschentaziun da l'Inventari federal a la tecnologia SIG. La metoda oriunda (ISOS I) e la metoda adattada (ISOS II) sa basan sin ils medems princips fundamentals e sin las medemas reglas. Quest portal preschenta ils relevaments ISOS ch'èn actualmain en vigur. I dat duas sorts da datas: 1. ils relevaments elavurads tenor la metoda ISOS I ch'èn disponibels mo sco PDF; 2. ils relevaments actualisads tenor la metoda ISOS II ch'èn disponibels sco PDF e sco geodatas. Resguardai per plaschair: mo ils documents da PDF han valur legala. Las geodatas servan mo a l'infurmaziun. Il grad da precisaziun s'augmenta cun la scala che crescha. Actualmain vegn il ISOS revedì. La revisiun vegn fatga en etappas. Durant in tschert temp vegnan pia a coexister sin quest portal relevaments ch'èn vegnids fatgs tenor la metoda ISOS I, e relevaments ch'èn vegnids actualisads cun la metoda ISOS II. Cura che la revisiun è terminada en tut la Svizra, vegnan ad esser disponibels mo pli relevaments ch'èn vegnids elavurads tenor la metoda ISOS II. Quest layer preschenta las fotografias dals relevaments actualisads tenor la metoda ISOS II. El vegn actualisà mintga onn. La meglra survesaivladad da las infurmaziuns vegn cuntanschida, sch'il layer sa chatta sur il layer "Relevaments da lieus". Las fotografias vegnan preschentadas en la scala 1:50'000. Tut las datas ISOS (plans, texts, fotografias) èn la proprietad intellectuala da la Regenza federala (© UFC, Berna). Per infurmaziuns detagliadas davart il ISOS guardar www.isos.ch.</dct:description>
+    <dct:publisher>
+      <foaf:Agent>
+        <foaf:name xml:lang="de">Bundesamt für Kultur</foaf:name>
+        <foaf:name xml:lang="fr">Office fédéral de la culture</foaf:name>
+        <foaf:name xml:lang="it">Ufficio federale della cultura</foaf:name>
+        <foaf:name xml:lang="en">Federal Office of Culture</foaf:name>
+        <foaf:name xml:lang="rm">Bundesamt für Kultur</foaf:name>
+      </foaf:Agent>
+    </dct:publisher>
+    <dcat:contactPoint>
+      <vcard:Organization>
+        <vcard:fn>Bundesamt für Kultur - ISOS</vcard:fn>
+        <vcard:hasEmail rdf:resource="mailto:isos@bak.admin.ch" />
+      </vcard:Organization>
+    </dcat:contactPoint>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=de" />
+        <dct:title xml:lang="de">ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</dct:title>
+        <dct:title xml:lang="fr">ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</dct:title>
+        <dct:title xml:lang="it">ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</dct:title>
+        <dct:title xml:lang="en">ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</dct:title>
+        <dct:title xml:lang="rm">ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</dct:title>
+        <dct:description xml:lang="de">WMS-BGDI Dienst, Layer "ISOS - Bilder"</dct:description>
+        <dct:description xml:lang="fr">Service WMS-IFDG, couche "ISOS - Photos"</dct:description>
+        <dct:description xml:lang="it">Servizio WMS-IFDG, strato "ISOS - Foto"</dct:description>
+        <dct:description xml:lang="en">WMS-FSDI service, layer "ISOS - Photos"</dct:description>
+        <dct:description xml:lang="rm">WMS-BGDI Dienst, Layer "ISOS - Bilder"</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/WMS_SRVC" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-22T00:00:00+00:00</dct:issued>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=de" />
+        <dct:title xml:lang="de">ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</dct:title>
+        <dct:title xml:lang="fr">ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</dct:title>
+        <dct:title xml:lang="it">ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</dct:title>
+        <dct:title xml:lang="en">ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</dct:title>
+        <dct:title xml:lang="rm">ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos</dct:title>
+        <dct:description xml:lang="de">WMTS-BGDI Dienst, Layer "ISOS - Bilder"</dct:description>
+        <dct:description xml:lang="fr">Service WMTS-IFDG, couche , Layer "ISOS - Photos"</dct:description>
+        <dct:description xml:lang="it">Servizio WMTS-IFDG, strato "ISOS - Foto"</dct:description>
+        <dct:description xml:lang="en">WMTS-FSDI service, layer "ISOS - Photos"</dct:description>
+        <dct:description xml:lang="rm">WMTS-BGDI Dienst, Layer "ISOS - Bilder"</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/WMTS_SRVC" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-22T00:00:00+00:00</dct:issued>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://map.geo.admin.ch/?layers=ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos" />
+        <dct:title xml:lang="de">Vorschau map.geo.admin.ch</dct:title>
+        <dct:title xml:lang="fr">Aperçu map.geo.admin.ch</dct:title>
+        <dct:title xml:lang="it">Previsione map.geo.admin.ch</dct:title>
+        <dct:title xml:lang="en">Preview map.geo.admin.ch</dct:title>
+        <dct:title xml:lang="rm">Vorschau map.geo.admin.ch</dct:title>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-22T00:00:00+00:00</dct:issued>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://data.geo.admin.ch/browser/index.html#/collections/ch.bak.bundesinventar-schuetzenswerte-ortsbilder/items/bundesinventar-schuetzenswerte-ortsbilder" />
+        <dcat:downloadURL rdf:resource="https://data.geo.admin.ch/browser/index.html#/collections/ch.bak.bundesinventar-schuetzenswerte-ortsbilder/items/bundesinventar-schuetzenswerte-ortsbilder" />
+        <dct:description xml:lang="de">Link zum Datenbezug</dct:description>
+        <dct:description xml:lang="fr">Lien vers la distribution des données</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/UNSPECIFIED" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-22T00:00:00+00:00</dct:issued>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bak.bundesinventar-schuetzenswerte-ortsbilder_fotos" />
+        <dct:title xml:lang="de">RESTful API von geo.admin.ch</dct:title>
+        <dct:title xml:lang="fr">RESTful API de geo.admin.ch</dct:title>
+        <dct:title xml:lang="it">RESTful API da geo.admin.ch</dct:title>
+        <dct:title xml:lang="en">RESTful API from geo.admin.ch</dct:title>
+        <dct:title xml:lang="rm">RESTful API dad geo.admin.ch</dct:title>
+        <dct:description xml:lang="de">RESTful API von geo.admin.ch</dct:description>
+        <dct:description xml:lang="fr">RESTful API de geo.admin.ch</dct:description>
+        <dct:description xml:lang="it">RESTful API da geo.admin.ch</dct:description>
+        <dct:description xml:lang="en">RESTful API from geo.admin.ch</dct:description>
+        <dct:description xml:lang="rm">RESTful API dad geo.admin.ch</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/REST" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-22T00:00:00+00:00</dct:issued>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-22T00:00:00</dct:issued>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
+    <dcat:landingPage rdf:resource="https://www.bak.admin.ch/bak/de/home/baukultur/isos-und-ortsbildschutz.html" />
+    <dct:relation>
+      <rdf:Description rdf:about="https://www.geocat.ch/datahub/dataset/b9c1d690-008f-494c-a47f-ec96d9a8d84f">
+        <rdfs:label xml:lang="de">geocat.ch Permalink</rdfs:label>
+        <rdfs:label xml:lang="fr">geocat.ch permalien</rdfs:label>
+        <rdfs:label xml:lang="it">geocat.ch link permanente</rdfs:label>
+        <rdfs:label xml:lang="en">geocat.ch permalink</rdfs:label>
+      </rdf:Description>
+    </dct:relation>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+    <dcat:keyword xml:lang="de">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="fr">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="it">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="en">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="rm">opendata.swiss</dcat:keyword>
+    <dcat:keyword xml:lang="de">Geobasisdienst</dcat:keyword>
+    <dcat:keyword xml:lang="fr">géoservice de base</dcat:keyword>
+    <dcat:keyword xml:lang="it">geoservizio di base</dcat:keyword>
+    <dcat:keyword xml:lang="en">official geoservice</dcat:keyword>
+    <dcat:keyword xml:lang="de">Ortsbild</dcat:keyword>
+    <dcat:keyword xml:lang="fr">site construit</dcat:keyword>
+    <dcat:keyword xml:lang="it">insediamento</dcat:keyword>
+    <dcat:keyword xml:lang="en">heritage site</dcat:keyword>
+    <dcat:keyword xml:lang="de">BGDI Bundesgeodaten-Infrastruktur</dcat:keyword>
+    <dcat:keyword xml:lang="fr">IFDG l’Infrastructure Fédérale de données géographiques</dcat:keyword>
+    <dcat:keyword xml:lang="it">IFDG Infrastruttura federale dei dati geografici</dcat:keyword>
+    <dcat:keyword xml:lang="en">FSDI Federal Spatial Data Infrastructure</dcat:keyword>
+    <dcat:keyword xml:lang="de">ISOS</dcat:keyword>
+    <dcat:keyword xml:lang="fr">ISOS</dcat:keyword>
+    <dcat:keyword xml:lang="it">ISOS</dcat:keyword>
+    <dcat:keyword xml:lang="en">ISOS</dcat:keyword>
+    <dcat:keyword xml:lang="de">Bundesinventar</dcat:keyword>
+    <dcat:keyword xml:lang="fr">inventaire fédéral</dcat:keyword>
+    <dcat:keyword xml:lang="it">inventario federale</dcat:keyword>
+    <dcat:keyword xml:lang="en">federal inventory</dcat:keyword>
+    <dcat:keyword xml:lang="de">Aufbewahrungs- und Archivierungsplanung AAP - Bund</dcat:keyword>
+    <dcat:keyword xml:lang="fr">Planification de la conservation et de l'archivage AAP - Conféderation</dcat:keyword>
+    <dcat:keyword xml:lang="it">Pianificazione della conservazione e dell’archiviazione AAP - Confederazione</dcat:keyword>
+    <dcat:keyword xml:lang="en">Conservation and archiving planning AAP - Confederation</dcat:keyword>
+    <dcat:keyword xml:lang="de">Baudenkmal</dcat:keyword>
+    <dcat:keyword xml:lang="fr">monument historique</dcat:keyword>
+    <dcat:keyword xml:lang="it">monumento di valore storico</dcat:keyword>
+    <dcat:keyword xml:lang="en">historical monument</dcat:keyword>
+    <dcat:keyword xml:lang="de">Historischer Standort</dcat:keyword>
+    <dcat:keyword xml:lang="fr">site historique</dcat:keyword>
+    <dcat:keyword xml:lang="it">sito di valore storico</dcat:keyword>
+    <dcat:keyword xml:lang="en">historical site</dcat:keyword>
+    <dcat:keyword xml:lang="de">Denkmalerhaltung</dcat:keyword>
+    <dcat:keyword xml:lang="fr">conservation des monuments</dcat:keyword>
+    <dcat:keyword xml:lang="it">conservazione dei monumenti</dcat:keyword>
+    <dcat:keyword xml:lang="en">conservation of monuments</dcat:keyword>
+    <dcat:keyword xml:lang="de">Kulturgut</dcat:keyword>
+    <dcat:keyword xml:lang="fr">bien culturel</dcat:keyword>
+    <dcat:keyword xml:lang="it">beni culturali</dcat:keyword>
+    <dcat:keyword xml:lang="en">cultural goods</dcat:keyword>
+    <dcat:keyword xml:lang="de">Bewirtschaftungsgebiete/Schutzgebiete/geregelte Gebiete und Berichterstattungseinheiten</dcat:keyword>
+    <dcat:keyword xml:lang="fr">Zones de gestion, de restriction ou de réglementation et unités de déclaration</dcat:keyword>
+    <dcat:keyword xml:lang="it">Zone sottoposte a gestione/limitazioni/regolamentazione e unità con obbligo di comunicare dati</dcat:keyword>
+    <dcat:keyword xml:lang="en">Area management/restriction/regulation zones and reporting units</dcat:keyword>
+    <dct:spatial>Schweiz</dct:spatial>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+  </dcat:Dataset>
+  <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by">
+    <rdf:type rdf:resource="http://purl.org/dc/terms/LicenseDocument" />
+  </dct:RightsStatement>
+</rdf:RDF>
+

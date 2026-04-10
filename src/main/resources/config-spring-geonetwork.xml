@@ -20,6 +20,7 @@
         <entry key="eu-dcat-ap-mobility" value="https://w3id.org/mobilitydcat-ap"/>
         <entry key="eu-geodcat-ap" value="http://data.europa.eu/930/"/>
         <entry key="eu-geodcat-ap-semiceu" value="http://data.europa.eu/930/#semiceu"/>
+        <entry key="dcat-ap-ch" value="http://dcat-ap.ch/schema/dcat-ap-ch/2.0"/>
       </util:map>
     </property>
     <property name="xpathTitle">
