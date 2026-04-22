@@ -102,9 +102,9 @@
     <sch:title xml:lang="fr">Géodonnées de base activées (basicGeodata = ‘true’) implique que l'identifiant Géodonnées de base (basicGeodataID) est obligatoire</sch:title>
     <sch:title xml:lang="de">Geobasisdaten aktiviert (basicGeodata = ‘true’) impliziert, dass Identifikator des Geobasisdatensatzes (basicGeodataID) obligatorisch ist</sch:title>
     <sch:rule context="//che:CHE_MD_Metadata/mdb:identificationInfo/che:CHE_MD_DataIdentification[che:basicGeodata/gco:Boolean = 'true']">
-      <sch:assert test="che:basicGeodataInformation/che:CHE_MD_BasicGeodataInformation/che:basicGeodataID/gco:CharacterString and normalize-space(che:basicGeodataInformation/che:CHE_MD_BasicGeodataInformation/che:basicGeodataID/gco:CharacterString) != ''"
+      <sch:assert test="some $id in che:basicGeodataInformation/che:CHE_MD_BasicGeodataInformation/che:basicGeodataID/gco:CharacterString satisfies normalize-space($id) != ''"
                   diagnostics="rule.basicgeodata.basicgeodataid-mandatory-failure-en rule.basicgeodata.basicgeodataid-mandatory-failure-fr rule.basicgeodata.basicgeodataid-mandatory-failure-de"/>
-      <sch:report test="che:basicGeodataInformation/che:CHE_MD_BasicGeodataInformation/che:basicGeodataID/gco:CharacterString and normalize-space(che:basicGeodataInformation/che:CHE_MD_BasicGeodataInformation/che:basicGeodataID/gco:CharacterString) != ''"
+      <sch:report test="some $id in che:basicGeodataInformation/che:CHE_MD_BasicGeodataInformation/che:basicGeodataID/gco:CharacterString satisfies normalize-space($id) != ''"
                  diagnostics="rule.basicgeodata.basicgeodataid-mandatory-success-en rule.basicgeodata.basicgeodataid-mandatory-success-fr rule.basicgeodata.basicgeodataid-mandatory-success-de"/>
     </sch:rule>
   </sch:pattern>

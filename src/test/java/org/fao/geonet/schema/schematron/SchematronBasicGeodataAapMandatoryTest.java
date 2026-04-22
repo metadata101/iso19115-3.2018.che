@@ -3,6 +3,7 @@ package org.fao.geonet.schema.schematron;
 import org.checkerframework.checker.nullness.qual.NonNull;
 import org.fao.geonet.utils.Xml;
 import org.jdom.Element;
+import org.jdom.xpath.XPath;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -48,4 +49,25 @@ public class SchematronBasicGeodataAapMandatoryTest extends AbstractSchematronTe
 
 		hasExpectedNumberOfFailure(1, report);
 	}
+
+	@Test
+	public void manyBasicGeodataInformation() throws Exception {
+		String report = applySchematronAndCompare("waldenburgAmtlicheVermessung");
+
+		hasExpectedNumberOfFailure(0, report);
+	}
+
+	@Test
+	public void allBasicGeodataIdEmpty() throws Exception {
+		Path xmlFile = getResource("waldenburgAmtlicheVermessung" + "-19115-3.che.xml");
+		Element md = Xml.loadFile(xmlFile);
+		XPath xp = XPath.newInstance("*//che:basicGeodataID");
+		xp.addNamespace("che", "http://geocat.ch/che");
+		xp.selectNodes(md).forEach(e -> ((Element)e).setText(""));
+
+		String report = applySchematronAndCompare("waldenburgAmtlicheVermessungGeodataIdEmpty", false, md);
+
+		hasExpectedNumberOfFailure(1, report);
+	}
+
 }
