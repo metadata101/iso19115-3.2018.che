@@ -1,0 +1,1501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<che:CHE_MD_Metadata xmlns:che="http://geocat.ch/che" xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0" xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0" xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:md1="http://standards.iso.org/iso/19115/-3/md1/2.0" xmlns:md2="http://standards.iso.org/iso/19115/-3/md2/2.0" xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/2.0" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0" xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0" xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0" xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0" xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0" xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0" xmlns:dqm="http://standards.iso.org/iso/19157/-2/dqm/1.0" xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gco:isoType="mdb:MD_Metadata" xsi:schemaLocation="http://geocat.ch/che http://share-ech.ch/xmlns/eCH-0271/1.0.0/standards.iso.org/iso/19115/-3/eCH-0271-1-0-0.xsd">
+  <mdb:metadataIdentifier xlink:type="simple">
+    <mcc:MD_Identifier xsi:type="mcc:MD_Identifier_Type">
+      <mcc:code>
+        <gco:CharacterString>3409f6cd-5a60-4dc2-bce5-0894eb6fa3ca</gco:CharacterString>
+      </mcc:code>
+    </mcc:MD_Identifier>
+  </mdb:metadataIdentifier>
+  <mdb:defaultLocale xlink:type="simple">
+    <lan:PT_Locale id="de" xsi:type="lan:PT_Locale_Type">
+      <lan:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
+      </lan:language>
+      <lan:characterEncoding>
+        <lan:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+      </lan:characterEncoding>
+    </lan:PT_Locale>
+  </mdb:defaultLocale>
+  <mdb:parentMetadata xlink:type="simple" uuidref="7e4dc201-62ff-40ef-bc0f-ea27c5b23f26" />
+  <mdb:metadataScope xlink:type="simple">
+    <mdb:MD_MetadataScope>
+      <mdb:resourceScope>
+        <mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ScopeCode" codeListValue="dataset" />
+      </mdb:resourceScope>
+    </mdb:MD_MetadataScope>
+  </mdb:metadataScope>
+  <mdb:contact xlink:type="simple">
+    <cit:CI_Responsibility>
+      <cit:role>
+        <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</cit:CI_RoleCode>
+      </cit:role>
+      <cit:party xlink:type="simple">
+        <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
+          <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Amt für Geoinformation BL</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">Amt für Geoinformation BL</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:name>
+          <cit:contactInfo xlink:type="simple">
+            <cit:CI_Contact>
+              <cit:address xlink:type="simple">
+                <cit:CI_Address>
+                  <cit:deliveryPoint>
+                    <gco:CharacterString>Mühlemattstrasse 36</gco:CharacterString>
+                  </cit:deliveryPoint>
+                  <cit:city>
+                    <gco:CharacterString>Liestal</gco:CharacterString>
+                  </cit:city>
+                  <cit:postalCode>
+                    <gco:CharacterString>4410</gco:CharacterString>
+                  </cit:postalCode>
+                  <cit:country>
+                    <gco:CharacterString>Schweiz</gco:CharacterString>
+                  </cit:country>
+                  <cit:electronicMailAddress>
+                    <gco:CharacterString>support.gis@bl.ch</gco:CharacterString>
+                  </cit:electronicMailAddress>
+                </cit:CI_Address>
+              </cit:address>
+              <cit:onlineResource xlink:type="simple">
+                <cit:CI_OnlineResource>
+                  <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                    <gco:CharacterString>https://geo.bl.ch</gco:CharacterString>
+                    <lan:PT_FreeText>
+                      <lan:textGroup xlink:type="simple">
+                        <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">https://geo.bl.ch</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                    </lan:PT_FreeText>
+                  </cit:linkage>
+                  <cit:protocol>
+                    <gco:CharacterString>WWW:LINK</gco:CharacterString>
+                  </cit:protocol>
+                </cit:CI_OnlineResource>
+              </cit:onlineResource>
+            </cit:CI_Contact>
+          </cit:contactInfo>
+        </che:CHE_CI_Organisation>
+      </cit:party>
+    </cit:CI_Responsibility>
+  </mdb:contact>
+  <mdb:dateInfo xlink:type="simple">
+    <cit:CI_Date>
+      <cit:date>
+        <gco:Date xsi:nil="true" />
+        <gco:DateTime>2026-04-22T09:41:34</gco:DateTime>
+      </cit:date>
+      <cit:dateType>
+        <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation" />
+      </cit:dateType>
+    </cit:CI_Date>
+  </mdb:dateInfo>
+  <mdb:metadataStandard xlink:type="simple">
+    <cit:CI_Citation>
+      <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+        <gco:CharacterString>GM03 2+</gco:CharacterString>
+        <lan:PT_FreeText>
+          <lan:textGroup xlink:type="simple">
+            <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">GM03 2+</lan:LocalisedCharacterString>
+          </lan:textGroup>
+        </lan:PT_FreeText>
+      </cit:title>
+    </cit:CI_Citation>
+  </mdb:metadataStandard>
+  <mdb:metadataLinkage xlink:type="simple">
+    <cit:CI_OnlineResource>
+      <cit:linkage>
+        <gco:CharacterString>https://geocat-int.dev.bgdi.ch/geonetwork/srv/api/records/3409f6cd-5a60-4dc2-bce5-0894eb6fa3ca</gco:CharacterString>
+      </cit:linkage>
+      <cit:function>
+        <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="completeMetadata" />
+      </cit:function>
+    </cit:CI_OnlineResource>
+  </mdb:metadataLinkage>
+  <mdb:referenceSystemInfo xlink:type="simple">
+    <mrs:MD_ReferenceSystem>
+      <mrs:referenceSystemIdentifier xlink:type="simple">
+        <mcc:MD_Identifier>
+          <mcc:code>
+            <gco:CharacterString>EPSG:2056</gco:CharacterString>
+          </mcc:code>
+        </mcc:MD_Identifier>
+      </mrs:referenceSystemIdentifier>
+    </mrs:MD_ReferenceSystem>
+  </mdb:referenceSystemInfo>
+  <mdb:identificationInfo xlink:type="simple">
+    <che:CHE_MD_DataIdentification gco:isoType="mri:MD_DataIdentification">
+      <mri:citation xlink:type="simple">
+        <cit:CI_Citation>
+          <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Amtliche Vermessung, Gemeinde Waldenburg</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">Amtliche Vermessung, Gemeinde Waldenburg</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:title>
+          <cit:alternateTitle xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Amtliche Vermessung, Gemeinde Waldenburg</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">Amtliche Vermessung, Gemeinde Waldenburg</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:alternateTitle>
+          <cit:date xlink:type="simple">
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2026-01-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:identifier xlink:type="simple">
+            <mcc:MD_Identifier>
+              <mcc:code>
+                <gco:CharacterString>ch.bl.agi.amtliche_vermessung</gco:CharacterString>
+              </mcc:code>
+            </mcc:MD_Identifier>
+          </cit:identifier>
+        </cit:CI_Citation>
+      </mri:citation>
+      <mri:abstract xsi:type="lan:PT_FreeText_PropertyType">
+        <gco:CharacterString>Die amtliche Vermessung (AV) ist eine durch Bundesrecht geregelte Aufgabe der Kantone. Die amtliche Vermessung umfasst die Erhebung, Verwaltung und Nachführung der rechtsverbindlichen Eigentumsgrenzen sowie weiterer Informationen über die Grundstücke und stellt diese im Plan für das Grundbuch dar. Dieser Plan ist ein amtliches Dokument und die darin festgehaltenen Grundstücksgrenzen, Dienstbarkeiten und öffentlich-rechtlichen Eigentumsbeschränkungen haben Rechtswirkung. Die Daten der AV bilden die Basis für den Aufbau und Betrieb von raumbezogenen Informationssystemen. Das Datenmodell der amtlichen Vermessung ist in INTERLIS beschrieben. Das für den Kanton BL verwendete Datenmodell DM01AVBL24LV95D umfasst folgende Informationsebenen: Fixpunkte, Bodenbedeckung, Einzelobjekte, Höhen, Nomenklatur, Liegenschaften, Rohrleitungen, Administrative Einteilungen (Gebäudeadressen, Hoheitsgrenzen, etc.) und öffentlich-rechtliche Eigentumsbeschränkungen (Waldgrenzen, Baulinien). Für spezifische Informationen zu einer Gemeinde konsultieren Sie bitte den Geometadatensatz "Daten der amtlichen Vermessung" der entsprechenden Gemeinde. Der Datensatz "amtliche Ortschaftenverzeichnis mit Postleitzahl und Perimeter" wird zentral bei swisstopo geführt. Für spezifische Informationen zu einem Postleitzahlgebiet konsultieren Sie bitte den Geometadatensatz "Amtliches Ortschaftenverzeichnis mit Postleitzahl und Perimeter" des Bundes.</gco:CharacterString>
+        <lan:PT_FreeText>
+          <lan:textGroup xlink:type="simple">
+            <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">Die amtliche Vermessung (AV) ist eine durch Bundesrecht geregelte Aufgabe der Kantone. Die amtliche Vermessung umfasst die Erhebung, Verwaltung und Nachführung der rechtsverbindlichen Eigentumsgrenzen sowie weiterer Informationen über die Grundstücke und stellt diese im Plan für das Grundbuch dar. Dieser Plan ist ein amtliches Dokument und die darin festgehaltenen Grundstücksgrenzen, Dienstbarkeiten und öffentlich-rechtlichen Eigentumsbeschränkungen haben Rechtswirkung. Die Daten der AV bilden die Basis für den Aufbau und Betrieb von raumbezogenen Informationssystemen. Das Datenmodell der amtlichen Vermessung ist in INTERLIS beschrieben. Das für den Kanton BL verwendete Datenmodell DM01AVBL24LV95D umfasst folgende Informationsebenen: Fixpunkte, Bodenbedeckung, Einzelobjekte, Höhen, Nomenklatur, Liegenschaften, Rohrleitungen, Administrative Einteilungen (Gebäudeadressen, Hoheitsgrenzen, etc.) und öffentlich-rechtliche Eigentumsbeschränkungen (Waldgrenzen, Baulinien). Für spezifische Informationen zu einer Gemeinde konsultieren Sie bitte den Geometadatensatz "Daten der amtlichen Vermessung" der entsprechenden Gemeinde. Der Datensatz "amtliche Ortschaftenverzeichnis mit Postleitzahl und Perimeter" wird zentral bei swisstopo geführt. Für spezifische Informationen zu einem Postleitzahlgebiet konsultieren Sie bitte den Geometadatensatz "Amtliches Ortschaftenverzeichnis mit Postleitzahl und Perimeter" des Bundes.</lan:LocalisedCharacterString>
+          </lan:textGroup>
+        </lan:PT_FreeText>
+      </mri:abstract>
+      <mri:pointOfContact xlink:type="simple">
+        <cit:CI_Responsibility>
+          <cit:role>
+            <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</cit:CI_RoleCode>
+          </cit:role>
+          <cit:party xlink:type="simple">
+            <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>Amt für Geoinformation BL</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup xlink:type="simple">
+                    <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">Amt für Geoinformation BL</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:name>
+              <cit:contactInfo xlink:type="simple">
+                <cit:CI_Contact>
+                  <cit:address xlink:type="simple">
+                    <cit:CI_Address>
+                      <cit:deliveryPoint>
+                        <gco:CharacterString>Mühlemattstrasse 36</gco:CharacterString>
+                      </cit:deliveryPoint>
+                      <cit:city>
+                        <gco:CharacterString>Liestal</gco:CharacterString>
+                      </cit:city>
+                      <cit:postalCode>
+                        <gco:CharacterString>4410</gco:CharacterString>
+                      </cit:postalCode>
+                      <cit:country>
+                        <gco:CharacterString>Schweiz</gco:CharacterString>
+                      </cit:country>
+                      <cit:electronicMailAddress>
+                        <gco:CharacterString>support.gis@bl.ch</gco:CharacterString>
+                      </cit:electronicMailAddress>
+                    </cit:CI_Address>
+                  </cit:address>
+                  <cit:onlineResource xlink:type="simple">
+                    <cit:CI_OnlineResource>
+                      <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                        <gco:CharacterString>https://geo.bl.ch</gco:CharacterString>
+                        <lan:PT_FreeText>
+                          <lan:textGroup xlink:type="simple">
+                            <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">https://geo.bl.ch</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                        </lan:PT_FreeText>
+                      </cit:linkage>
+                      <cit:protocol>
+                        <gco:CharacterString>WWW:LINK</gco:CharacterString>
+                      </cit:protocol>
+                    </cit:CI_OnlineResource>
+                  </cit:onlineResource>
+                </cit:CI_Contact>
+              </cit:contactInfo>
+            </che:CHE_CI_Organisation>
+          </cit:party>
+        </cit:CI_Responsibility>
+      </mri:pointOfContact>
+      <mri:spatialResolution xlink:type="simple">
+        <mri:MD_Resolution>
+          <mri:equivalentScale xlink:type="simple">
+            <mri:MD_RepresentativeFraction>
+              <mri:denominator>
+                <gco:Integer>10000</gco:Integer>
+              </mri:denominator>
+            </mri:MD_RepresentativeFraction>
+          </mri:equivalentScale>
+        </mri:MD_Resolution>
+      </mri:spatialResolution>
+      <mri:topicCategory>
+        <mri:MD_TopicCategoryCode>imageryBaseMapsEarthCover</mri:MD_TopicCategoryCode>
+      </mri:topicCategory>
+      <mri:extent xlink:type="simple">
+        <gex:EX_Extent>
+          <gex:description xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Gemeinde Waldenburg</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">Gemeinde Waldenburg</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </gex:description>
+          <gex:geographicElement xlink:type="simple">
+            <gex:EX_GeographicBoundingBox>
+              <gex:westBoundLongitude>
+                <gco:Decimal>7.698683</gco:Decimal>
+              </gex:westBoundLongitude>
+              <gex:eastBoundLongitude>
+                <gco:Decimal>7.775739</gco:Decimal>
+              </gex:eastBoundLongitude>
+              <gex:southBoundLatitude>
+                <gco:Decimal>47.366901</gco:Decimal>
+              </gex:southBoundLatitude>
+              <gex:northBoundLatitude>
+                <gco:Decimal>47.388378</gco:Decimal>
+              </gex:northBoundLatitude>
+            </gex:EX_GeographicBoundingBox>
+          </gex:geographicElement>
+          <gex:geographicElement xlink:type="simple">
+            <gex:EX_BoundingPolygon>
+              <gex:polygon xlink:type="simple">
+                <gml:Polygon>
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList>47.384972 7.727735 47.38507 7.728843 47.385007 7.729628 47.384983 7.731258 47.384892 7.731804 47.384837 7.732615 47.384777 7.733272 47.384743 7.734952 47.384745 7.735654 47.384702 7.736435 47.384704 7.737285 47.384671 7.738185 47.384689 7.739029 47.38529 7.73942 47.385687 7.739696 47.385721 7.739724 47.385929 7.739818 47.386164 7.740032 47.386349 7.740117 47.386542 7.740281 47.386807 7.739674 47.386968 7.739732 47.387213 7.73983 47.387446 7.739937 47.387483 7.739719 47.387521 7.739444 47.38758 7.739133 47.387656 7.739183 47.387839 7.739336 47.387965 7.739458 47.388148 7.739707 47.38811 7.739859 47.388068 7.739975 47.388084 7.740288 47.387812 7.740773 47.387825 7.741552 47.387718 7.742091 47.387683 7.742342 47.387731 7.743424 47.387727 7.74357 47.387666 7.743791 47.387602 7.744095 47.387475 7.744468 47.387341 7.744572 47.387299 7.745275 47.387464 7.745752 47.387597 7.745974 47.387924 7.746433 47.387656 7.747303 47.387599 7.747951 47.38774 7.748003 47.387923 7.748045 47.388141 7.748087 47.388455 7.748195 47.388424 7.748607 47.388383 7.749259 47.388246 7.749251 47.38791 7.749211 47.387798 7.749707 47.387752 7.74981 47.387624 7.749929 47.386714 7.749829 47.38656 7.749859 47.38631 7.750143 47.386157 7.750705 47.386017 7.751373 47.385993 7.7519 47.385991 7.752357 47.385936 7.752835 47.385781 7.753486 47.385718 7.753852 47.385698 7.754124 47.385591 7.754658 47.385546 7.75555 47.38543 7.756259 47.385204 7.757124 47.384943 7.757908 47.384876 7.758134 47.384737 7.758573 47.384587 7.759356 47.38441 7.759874 47.38414 7.760641 47.383932 7.76125 47.383857 7.761967 47.383672 7.762669 47.383566 7.763224 47.383452 7.763653 47.383349 7.764018 47.383213 7.764664 47.383457 7.766038 47.383251 7.766796 47.383122 7.767242 47.383055 7.767424 47.382829 7.767986 47.382567 7.768483 47.382385 7.768976 47.382461 7.769209 47.382134 7.76964 47.381984 7.770045 47.381332 7.770554 47.381084 7.770614 47.380789 7.770968 47.380443 7.77085 47.379658 7.770638 47.379197 7.770495 47.378454 7.76987 47.377 7.775667 47.375569 7.773524 47.374766 7.772311 47.371938 7.765286 47.369105 7.760087 47.368011 7.759001 47.368283 7.752304 47.367162 7.743871 47.367563 7.738605 47.366866 7.735858 47.366829 7.729011 47.367001 7.728881 47.367667 7.728551 47.3681 7.728308 47.368861 7.72792 47.368919 7.727044 47.368907 7.726825 47.37017 7.718385 47.370256 7.717966 47.370354 7.717457 47.370402 7.716952 47.370465 7.716501 47.370564 7.716304 47.37076 7.714949 47.370906 7.713979 47.37093 7.713054 47.370912 7.712584 47.370977 7.71199 47.371206 7.711212 47.371313 7.71035 47.371375 7.709608 47.37151 7.709034 47.371598 7.708555 47.371639 7.708044 47.371721 7.70756 47.371768 7.706642 47.371887 7.706106 47.371952 7.705288 47.372054 7.704741 47.372142 7.704021 47.372347 7.70293 47.37245 7.70196 47.37238 7.701168 47.372305 7.700366 47.373496 7.698774 47.37388 7.698717 47.374161 7.699105 47.374389 7.699379 47.374646 7.699224 47.375047 7.699465 47.37538 7.699836 47.375817 7.699918 47.376731 7.701328 47.377129 7.701951 47.377733 7.702878 47.378626 7.704769 47.379062 7.705815 47.379077 7.705972 47.37912 7.707223 47.379067 7.707745 47.378788 7.708587 47.378783 7.709033 47.378995 7.710013 47.378851 7.711236 47.378819 7.711661 47.378841 7.712249 47.378853 7.713219 47.378802 7.713933 47.378408 7.715213 47.378147 7.716541 47.378015 7.716679 47.378081 7.717254 47.378256 7.71829 47.37849 7.718268 47.37876 7.718086 47.378778 7.718063 47.378803 7.718 47.378829 7.717957 47.379026 7.717697 47.379215 7.71746 47.379238 7.717418 47.379289 7.717291 47.37931 7.717264 47.379351 7.717232 47.379375 7.717205 47.379442 7.717089 47.379461 7.717076 47.379783 7.716972 47.379844 7.716935 47.379953 7.717305 47.379973 7.71736 47.379985 7.717526 47.380113 7.717805 47.380308 7.717664 47.380896 7.717922 47.381014 7.718784 47.381048 7.719295 47.381075 7.720018 47.381134 7.72045 47.381406 7.720563 47.382404 7.719883 47.382803 7.719675 47.383035 7.719355 47.383399 7.718979 47.383583 7.720479 47.383865 7.721034 47.384024 7.721697 47.38401 7.722317 47.384067 7.723577 47.384316 7.724276 47.384453 7.7249 47.384535 7.726101 47.384655 7.72675 47.384804 7.727598 47.384972 7.727735</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </gml:Polygon>
+              </gex:polygon>
+            </gex:EX_BoundingPolygon>
+          </gex:geographicElement>
+        </gex:EX_Extent>
+      </mri:extent>
+      <mri:resourceMaintenance xlink:type="simple">
+        <che:CHE_MD_MaintenanceInformation gco:isoType="mmi:MD_MaintenanceInformation">
+          <mmi:maintenanceAndUpdateFrequency>
+            <mmi:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded" />
+          </mmi:maintenanceAndUpdateFrequency>
+          <mmi:maintenanceNote />
+          <che:appraisal xlink:type="simple">
+            <che:CHE_MD_Appraisal_AAP>
+              <che:durationOfConservation>
+                <gco:Integer>0</gco:Integer>
+              </che:durationOfConservation>
+              <che:appraisalOfArchivalValue>
+                <che:CHE_AppraisalOfArchivalValueCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_AppraisalOfArchivalValueCode" codeListValue="N" />
+              </che:appraisalOfArchivalValue>
+            </che:CHE_MD_Appraisal_AAP>
+          </che:appraisal>
+        </che:CHE_MD_MaintenanceInformation>
+      </mri:resourceMaintenance>
+      <mri:descriptiveKeywords>
+        <mri:MD_Keywords>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>cadastre</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">catasto dei terreni</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">land register</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Kataster</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:type>
+            <mri:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19115/-3/resources/codeList.xml#MD_KeywordTypeCode" codeListValue="theme" />
+          </mri:type>
+          <mri:thesaurusName>
+            <cit:CI_Citation>
+              <cit:title>
+                <gcx:Anchor xlink:href="http://geonetwork-opensource.org/gemet">GEMET</gcx:Anchor>
+              </cit:title>
+              <cit:date>
+                <cit:CI_Date>
+                  <cit:date>
+                    <gco:Date>2018-08-16</gco:Date>
+                  </cit:date>
+                  <cit:dateType>
+                    <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication" />
+                  </cit:dateType>
+                </cit:CI_Date>
+              </cit:date>
+              <cit:identifier>
+                <mcc:MD_Identifier>
+                  <mcc:code>
+                    <gcx:Anchor xlink:href="https://geocat-int.dev.bgdi.ch/geonetwork/srv/api/registries/vocabularies/external.theme.gemet">geonetwork.thesaurus.external.theme.gemet</gcx:Anchor>
+                  </mcc:code>
+                </mcc:MD_Identifier>
+              </cit:identifier>
+            </cit:CI_Citation>
+          </mri:thesaurusName>
+        </mri:MD_Keywords>
+      </mri:descriptiveKeywords>
+      <mri:descriptiveKeywords>
+        <mri:MD_Keywords>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>mensuration officielle MO</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">misurazione ufficiale MU</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">cadastral surveying</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Amtliche Vermessung AV</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>point fixe</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">punto fisso</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">fixpoint</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Fixpunkt</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>couverture du sol</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">copertura del suolo</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">land cover</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Bodenbedeckung</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>objet divers</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">oggetto singolo</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">single object</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Einzelobjekt</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>bien-fonds</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">bene immobile</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">immoveable property</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Liegenschaft</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>terrain</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">fondo</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">site</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Grundstück</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>limite territoriale</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">confine giurisdizionale</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">sovereign border</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Hoheitsgrenze</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>opendata.swiss</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">opendata.swiss</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">opendata.swiss</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">opendata.swiss</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:type>
+            <mri:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19115/-3/resources/codeList.xml#MD_KeywordTypeCode" codeListValue="theme" />
+          </mri:type>
+          <mri:thesaurusName>
+            <cit:CI_Citation>
+              <cit:title>
+                <gcx:Anchor xlink:href="http://www.geocat.ch/concept">geocat.ch</gcx:Anchor>
+              </cit:title>
+              <cit:date>
+                <cit:CI_Date>
+                  <cit:date>
+                    <gco:Date>2026-04-13</gco:Date>
+                  </cit:date>
+                  <cit:dateType>
+                    <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication" />
+                  </cit:dateType>
+                </cit:CI_Date>
+              </cit:date>
+              <cit:identifier>
+                <mcc:MD_Identifier>
+                  <mcc:code>
+                    <gcx:Anchor xlink:href="https://geocat-int.dev.bgdi.ch/geonetwork/srv/api/registries/vocabularies/local.theme.geocat.ch">geonetwork.thesaurus.local.theme.geocat.ch</gcx:Anchor>
+                  </mcc:code>
+                </mcc:MD_Identifier>
+              </cit:identifier>
+            </cit:CI_Citation>
+          </mri:thesaurusName>
+        </mri:MD_Keywords>
+      </mri:descriptiveKeywords>
+      <mri:descriptiveKeywords>
+        <mri:MD_Keywords>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>administration</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">amministrazione</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">administration</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Verwaltung, Organisation, Institutionen, Planung, Politik und -vollzug, immaterielle Massnahmen</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:type>
+            <mri:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19115/-3/resources/codeList.xml#MD_KeywordTypeCode" codeListValue="theme" />
+          </mri:type>
+          <mri:thesaurusName>
+            <cit:CI_Citation>
+              <cit:title>
+                <gcx:Anchor xlink:href="http://geonetwork-opensource.org/gemet-theme">GEMET themes</gcx:Anchor>
+              </cit:title>
+              <cit:date>
+                <cit:CI_Date>
+                  <cit:date>
+                    <gco:Date>2009-09-22</gco:Date>
+                  </cit:date>
+                  <cit:dateType>
+                    <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication" />
+                  </cit:dateType>
+                </cit:CI_Date>
+              </cit:date>
+              <cit:identifier>
+                <mcc:MD_Identifier>
+                  <mcc:code>
+                    <gcx:Anchor xlink:href="https://geocat-int.dev.bgdi.ch/geonetwork/srv/api/registries/vocabularies/external.theme.gemet-theme">geonetwork.thesaurus.external.theme.gemet-theme</gcx:Anchor>
+                  </mcc:code>
+                </mcc:MD_Identifier>
+              </cit:identifier>
+            </cit:CI_Citation>
+          </mri:thesaurusName>
+        </mri:MD_Keywords>
+      </mri:descriptiveKeywords>
+      <mri:descriptiveKeywords>
+        <mri:MD_Keywords>
+          <mri:keyword gco:nilReason="missing">
+            <gco:CharacterString />
+          </mri:keyword>
+          <mri:type>
+            <mri:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19115/-3/resources/codeList.xml#MD_KeywordTypeCode" codeListValue="theme" />
+          </mri:type>
+          <mri:thesaurusName>
+            <cit:CI_Citation>
+              <cit:title>
+                <gcx:Anchor xlink:href="http://geonetwork-opensource.org/inspire-theme">GEMET - INSPIRE themes, version 1.0</gcx:Anchor>
+              </cit:title>
+              <cit:date>
+                <cit:CI_Date>
+                  <cit:date>
+                    <gco:Date>2008-06-01</gco:Date>
+                  </cit:date>
+                  <cit:dateType>
+                    <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication" />
+                  </cit:dateType>
+                </cit:CI_Date>
+              </cit:date>
+              <cit:identifier>
+                <mcc:MD_Identifier>
+                  <mcc:code>
+                    <gcx:Anchor xlink:href="https://geocat-int.dev.bgdi.ch/geonetwork/srv/api/registries/vocabularies/external.theme.inspire-theme">geonetwork.thesaurus.external.theme.inspire-theme</gcx:Anchor>
+                  </mcc:code>
+                </mcc:MD_Identifier>
+              </cit:identifier>
+            </cit:CI_Citation>
+          </mri:thesaurusName>
+        </mri:MD_Keywords>
+      </mri:descriptiveKeywords>
+      <mri:resourceConstraints xlink:type="simple">
+        <che:CHE_MD_LegalConstraints gco:isoType="mco:MD_LegalConstraints">
+          <mco:otherConstraints xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>A - Die Geodaten sind öffentlich zugänglich.</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">A - Die Geodaten sind öffentlich zugänglich.</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mco:otherConstraints>
+          <mco:otherConstraints xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>CC-BY: Freie Nutzung, Quellenangabe ist Pflicht.</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">CC-BY: Freie Nutzung, Quellenangabe ist Pflicht.</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mco:otherConstraints>
+          <mco:otherConstraints xsi:type="lan:PT_FreeText_PropertyType">
+            <gcx:Anchor>https://www.baselland.ch/politik-und-behorden/direktionen/volkswirtschafts-und-gesundheitsdirektion/amt-fur-geoinformation/geoportal/geodaten/nutzung-von-geodaten</gcx:Anchor>
+            <gco:CharacterString>Nutzung von Geodaten des Kantons Basel-Landschaft</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">Nutzung von Geodaten des Kantons Basel-Landschaft</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mco:otherConstraints>
+        </che:CHE_MD_LegalConstraints>
+      </mri:resourceConstraints>
+      <mri:defaultLocale xlink:type="simple">
+        <lan:PT_Locale xsi:type="lan:PT_Locale_Type">
+          <lan:language>
+            <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
+          </lan:language>
+          <lan:characterEncoding>
+            <lan:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+          </lan:characterEncoding>
+        </lan:PT_Locale>
+      </mri:defaultLocale>
+      <che:basicGeodata>
+        <gco:Boolean>true</gco:Boolean>
+      </che:basicGeodata>
+      <che:basicGeodataInformation xlink:type="simple">
+        <che:CHE_MD_BasicGeodataInformation>
+          <che:basicGeodataID xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>51</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">51</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </che:basicGeodataID>
+          <che:basicGeodataLegalLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="federal" />
+          </che:basicGeodataLegalLevel>
+          <che:basicGeodataResponsibilityLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="cantonal" />
+          </che:basicGeodataResponsibilityLevel>
+        </che:CHE_MD_BasicGeodataInformation>
+      </che:basicGeodataInformation>
+      <che:basicGeodataInformation xlink:type="simple">
+        <che:CHE_MD_BasicGeodataInformation>
+          <che:basicGeodataID xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>228</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">228</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </che:basicGeodataID>
+          <che:basicGeodataLegalLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="federal" />
+          </che:basicGeodataLegalLevel>
+          <che:basicGeodataResponsibilityLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="cantonal" />
+          </che:basicGeodataResponsibilityLevel>
+        </che:CHE_MD_BasicGeodataInformation>
+      </che:basicGeodataInformation>
+      <che:basicGeodataInformation xlink:type="simple">
+        <che:CHE_MD_BasicGeodataInformation>
+          <che:basicGeodataID xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>9-BL</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">9-BL</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </che:basicGeodataID>
+          <che:basicGeodataLegalLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="cantonal" />
+          </che:basicGeodataLegalLevel>
+          <che:basicGeodataResponsibilityLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="communal" />
+          </che:basicGeodataResponsibilityLevel>
+        </che:CHE_MD_BasicGeodataInformation>
+      </che:basicGeodataInformation>
+      <che:basicGeodataInformation xlink:type="simple">
+        <che:CHE_MD_BasicGeodataInformation>
+          <che:basicGeodataID xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>11-BL</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">11-BL</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </che:basicGeodataID>
+          <che:basicGeodataLegalLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="cantonal" />
+          </che:basicGeodataLegalLevel>
+          <che:basicGeodataResponsibilityLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="communal" />
+          </che:basicGeodataResponsibilityLevel>
+        </che:CHE_MD_BasicGeodataInformation>
+      </che:basicGeodataInformation>
+      <che:basicGeodataInformation xlink:type="simple">
+        <che:CHE_MD_BasicGeodataInformation>
+          <che:basicGeodataID xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>12-BL</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">12-BL</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </che:basicGeodataID>
+          <che:basicGeodataLegalLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="cantonal" />
+          </che:basicGeodataLegalLevel>
+          <che:basicGeodataResponsibilityLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="communal" />
+          </che:basicGeodataResponsibilityLevel>
+        </che:CHE_MD_BasicGeodataInformation>
+      </che:basicGeodataInformation>
+      <che:basicGeodataInformation xlink:type="simple">
+        <che:CHE_MD_BasicGeodataInformation>
+          <che:basicGeodataID xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>13-BL</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">13-BL</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </che:basicGeodataID>
+          <che:basicGeodataLegalLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="cantonal" />
+          </che:basicGeodataLegalLevel>
+          <che:basicGeodataResponsibilityLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="communal" />
+          </che:basicGeodataResponsibilityLevel>
+        </che:CHE_MD_BasicGeodataInformation>
+      </che:basicGeodataInformation>
+      <che:basicGeodataInformation xlink:type="simple">
+        <che:CHE_MD_BasicGeodataInformation>
+          <che:basicGeodataID xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>14-BL</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">14-BL</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </che:basicGeodataID>
+          <che:basicGeodataLegalLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="cantonal" />
+          </che:basicGeodataLegalLevel>
+          <che:basicGeodataResponsibilityLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="communal" />
+          </che:basicGeodataResponsibilityLevel>
+        </che:CHE_MD_BasicGeodataInformation>
+      </che:basicGeodataInformation>
+      <che:basicGeodataInformation xlink:type="simple">
+        <che:CHE_MD_BasicGeodataInformation>
+          <che:basicGeodataID xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>15-BL</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">15-BL</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </che:basicGeodataID>
+          <che:basicGeodataLegalLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="cantonal" />
+          </che:basicGeodataLegalLevel>
+          <che:basicGeodataResponsibilityLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="communal" />
+          </che:basicGeodataResponsibilityLevel>
+        </che:CHE_MD_BasicGeodataInformation>
+      </che:basicGeodataInformation>
+      <che:basicGeodataInformation xlink:type="simple">
+        <che:CHE_MD_BasicGeodataInformation>
+          <che:basicGeodataID xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>16-BL</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">16-BL</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </che:basicGeodataID>
+          <che:basicGeodataLegalLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="cantonal" />
+          </che:basicGeodataLegalLevel>
+          <che:basicGeodataResponsibilityLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="communal" />
+          </che:basicGeodataResponsibilityLevel>
+        </che:CHE_MD_BasicGeodataInformation>
+      </che:basicGeodataInformation>
+      <che:basicGeodataInformation xlink:type="simple">
+        <che:CHE_MD_BasicGeodataInformation>
+          <che:basicGeodataID xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>17-BL</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">17-BL</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </che:basicGeodataID>
+          <che:basicGeodataLegalLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="cantonal" />
+          </che:basicGeodataLegalLevel>
+          <che:basicGeodataResponsibilityLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="communal" />
+          </che:basicGeodataResponsibilityLevel>
+        </che:CHE_MD_BasicGeodataInformation>
+      </che:basicGeodataInformation>
+      <che:basicGeodataInformation xlink:type="simple">
+        <che:CHE_MD_BasicGeodataInformation>
+          <che:basicGeodataID xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>18-BL</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">18-BL</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </che:basicGeodataID>
+          <che:basicGeodataLegalLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="cantonal" />
+          </che:basicGeodataLegalLevel>
+          <che:basicGeodataResponsibilityLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="communal" />
+          </che:basicGeodataResponsibilityLevel>
+        </che:CHE_MD_BasicGeodataInformation>
+      </che:basicGeodataInformation>
+    </che:CHE_MD_DataIdentification>
+  </mdb:identificationInfo>
+  <mdb:contentInfo xlink:type="simple">
+    <mrc:MD_FeatureCatalogueDescription>
+      <mrc:includedWithDataset>
+        <gco:Boolean>true</gco:Boolean>
+      </mrc:includedWithDataset>
+    </mrc:MD_FeatureCatalogueDescription>
+  </mdb:contentInfo>
+  <mdb:distributionInfo xlink:type="simple">
+    <mrd:MD_Distribution>
+      <mrd:distributionFormat xlink:type="simple">
+        <mrd:MD_Format>
+          <mrd:formatSpecificationCitation xlink:type="simple">
+            <ns33:CI_Citation xmlns:ns33="http://standards.iso.org/iso/19115/-3/cit/1.0">
+              <ns33:title>
+                <gco:CharacterString>INTERLIS 2 (XTF)</gco:CharacterString>
+              </ns33:title>
+              <ns33:date xlink:type="simple" gco:nilReason="unknown" />
+              <ns33:edition gco:nilReason="unknown" />
+            </ns33:CI_Citation>
+          </mrd:formatSpecificationCitation>
+        </mrd:MD_Format>
+      </mrd:distributionFormat>
+      <mrd:transferOptions xlink:type="simple">
+        <mrd:MD_DigitalTransferOptions>
+          <mrd:onLine xlink:type="simple">
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://map.geo.bl.ch</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup xlink:type="simple">
+                    <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">https://map.geo.bl.ch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>WWW:LINK</gco:CharacterString>
+              </cit:protocol>
+              <cit:name>
+                <gco:CharacterString>map.geo.bl.ch</gco:CharacterString>
+              </cit:name>
+            </cit:CI_OnlineResource>
+          </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+    </mrd:MD_Distribution>
+  </mdb:distributionInfo>
+  <che:legislationInformation xlink:type="simple">
+    <che:CHE_MD_Legislation>
+      <che:country>
+        <lan:CountryCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CountryCode" codeListValue="CH" />
+      </che:country>
+      <che:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
+      </che:language>
+      <che:legislationLevel>
+        <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/ Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="federal" />
+      </che:legislationLevel>
+      <che:legislationAcronym>
+        <gco:CharacterString>Rohrleitungsgesetz, RLG</gco:CharacterString>
+      </che:legislationAcronym>
+      <che:legislationCitation xlink:type="simple">
+        <cit:CI_Citation>
+          <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Bundesgesetz über Rohrleitungsanlagen zur Beförderung flüssiger oder gasförmiger Brenn- oder Treibstoffe</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">Bundesgesetz über Rohrleitungsanlagen zur Beförderung flüssiger oder gasförmiger Brenn- oder Treibstoffe</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:title>
+          <cit:alternateTitle xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Rohrleitungsgesetz, RLG</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">Rohrleitungsgesetz, RLG</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:alternateTitle>
+          <cit:date xlink:type="simple">
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>1964-03-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:date xlink:type="simple">
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2023-09-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:onlineResource xlink:type="simple">
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://www.fedlex.admin.ch/eli/cc/1964/99_95_95/de</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup xlink:type="simple">
+                    <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">https://www.fedlex.admin.ch/eli/cc/1964/99_95_95/de</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>WWW:LINK</gco:CharacterString>
+              </cit:protocol>
+            </cit:CI_OnlineResource>
+          </cit:onlineResource>
+        </cit:CI_Citation>
+      </che:legislationCitation>
+    </che:CHE_MD_Legislation>
+  </che:legislationInformation>
+  <che:legislationInformation xlink:type="simple">
+    <che:CHE_MD_Legislation>
+      <che:country>
+        <lan:CountryCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CountryCode" codeListValue="CH" />
+      </che:country>
+      <che:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
+      </che:language>
+      <che:legislationLevel>
+        <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/ Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="federal" />
+      </che:legislationLevel>
+      <che:legislationAcronym>
+        <gco:CharacterString>TVAV</gco:CharacterString>
+      </che:legislationAcronym>
+      <che:legislationCitation xlink:type="simple">
+        <cit:CI_Citation>
+          <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Technische Verordnung des VBS über die amtliche Vermessung</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">Technische Verordnung des VBS über die amtliche Vermessung</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:title>
+          <cit:alternateTitle xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>TVAV</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">TVAV</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:alternateTitle>
+          <cit:date xlink:type="simple">
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2024-01-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:date xlink:type="simple">
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2024-01-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:onlineResource xlink:type="simple">
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://www.fedlex.admin.ch/eli/oc/2008/386/de</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup xlink:type="simple">
+                    <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">https://www.fedlex.admin.ch/eli/oc/2008/386/de</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>WWW:LINK</gco:CharacterString>
+              </cit:protocol>
+            </cit:CI_OnlineResource>
+          </cit:onlineResource>
+        </cit:CI_Citation>
+      </che:legislationCitation>
+    </che:CHE_MD_Legislation>
+  </che:legislationInformation>
+  <che:legislationInformation xlink:type="simple">
+    <che:CHE_MD_Legislation>
+      <che:country>
+        <lan:CountryCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CountryCode" codeListValue="CH" />
+      </che:country>
+      <che:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
+      </che:language>
+      <che:legislationLevel>
+        <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/ Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="federal" />
+      </che:legislationLevel>
+      <che:legislationAcronym>
+        <gco:CharacterString>VAV</gco:CharacterString>
+      </che:legislationAcronym>
+      <che:legislationCitation xlink:type="simple">
+        <cit:CI_Citation>
+          <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Verordnung über die amtliche Vermessung</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">Verordnung über die amtliche Vermessung</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:title>
+          <cit:alternateTitle xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>VAV</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">VAV</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:alternateTitle>
+          <cit:date xlink:type="simple">
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>1993-01-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:date xlink:type="simple">
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2024-01-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:onlineResource xlink:type="simple">
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://www.fedlex.admin.ch/eli/cc/1992/2446_2446_2446/de</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup xlink:type="simple">
+                    <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">https://www.fedlex.admin.ch/eli/cc/1992/2446_2446_2446/de</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>WWW:LINK</gco:CharacterString>
+              </cit:protocol>
+            </cit:CI_OnlineResource>
+          </cit:onlineResource>
+        </cit:CI_Citation>
+      </che:legislationCitation>
+    </che:CHE_MD_Legislation>
+  </che:legislationInformation>
+  <che:legislationInformation xlink:type="simple">
+    <che:CHE_MD_Legislation>
+      <che:country>
+        <lan:CountryCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CountryCode" codeListValue="CH" />
+      </che:country>
+      <che:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
+      </che:language>
+      <che:legislationLevel>
+        <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/ Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="cantonal" />
+      </che:legislationLevel>
+      <che:legislationAcronym>
+        <gco:CharacterString>KVAV</gco:CharacterString>
+      </che:legislationAcronym>
+      <che:legislationCitation xlink:type="simple">
+        <cit:CI_Citation>
+          <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Kantonale Verordnung über die amtliche Vermessung</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">Kantonale Verordnung über die amtliche Vermessung</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:title>
+          <cit:alternateTitle xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>KVAV</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">KVAV</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:alternateTitle>
+          <cit:date xlink:type="simple">
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2012-07-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:date xlink:type="simple">
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2021-11-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:onlineResource xlink:type="simple">
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://bl.clex.ch/app/de/texts_of_law/211.53</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup xlink:type="simple">
+                    <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">https://bl.clex.ch/app/de/texts_of_law/211.53</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>WWW:LINK</gco:CharacterString>
+              </cit:protocol>
+            </cit:CI_OnlineResource>
+          </cit:onlineResource>
+        </cit:CI_Citation>
+      </che:legislationCitation>
+    </che:CHE_MD_Legislation>
+  </che:legislationInformation>
+  <che:legislationInformation xlink:type="simple">
+    <che:CHE_MD_Legislation>
+      <che:country>
+        <lan:CountryCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CountryCode" codeListValue="CH" />
+      </che:country>
+      <che:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
+      </che:language>
+      <che:legislationLevel>
+        <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/ Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="cantonal" />
+      </che:legislationLevel>
+      <che:legislationAcronym>
+        <gco:CharacterString>GeoNAV</gco:CharacterString>
+      </che:legislationAcronym>
+      <che:legislationCitation xlink:type="simple">
+        <cit:CI_Citation>
+          <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Verordnung über geografische Namen und Gebäudeadressen</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">Verordnung über geografische Namen und Gebäudeadressen</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:title>
+          <cit:alternateTitle xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>GeoNAV</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">GeoNAV</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:alternateTitle>
+          <cit:date xlink:type="simple">
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2011-04-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:date xlink:type="simple">
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2021-11-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:onlineResource xlink:type="simple">
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://bl.clex.ch/app/de/texts_of_law/145.91</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup xlink:type="simple">
+                    <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">https://bl.clex.ch/app/de/texts_of_law/145.91</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>WWW:LINK</gco:CharacterString>
+              </cit:protocol>
+            </cit:CI_OnlineResource>
+          </cit:onlineResource>
+        </cit:CI_Citation>
+      </che:legislationCitation>
+    </che:CHE_MD_Legislation>
+  </che:legislationInformation>
+  <che:legislationInformation xlink:type="simple">
+    <che:CHE_MD_Legislation>
+      <che:country>
+        <lan:CountryCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CountryCode" codeListValue="CH" />
+      </che:country>
+      <che:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
+      </che:language>
+      <che:legislationLevel>
+        <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/ Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="cantonal" />
+      </che:legislationLevel>
+      <che:legislationAcronym>
+        <gco:CharacterString>EG ZGB</gco:CharacterString>
+      </che:legislationAcronym>
+      <che:legislationCitation xlink:type="simple">
+        <cit:CI_Citation>
+          <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Gesetz über die Einführung des Zivilgesetzbuches</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">Gesetz über die Einführung des Zivilgesetzbuches</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:title>
+          <cit:alternateTitle xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>EG ZGB</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">EG ZGB</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:alternateTitle>
+          <cit:date xlink:type="simple">
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2007-08-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:date xlink:type="simple">
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2024-01-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:onlineResource xlink:type="simple">
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://bl.clex.ch/app/de/texts_of_law/211</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup xlink:type="simple">
+                    <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">https://bl.clex.ch/app/de/texts_of_law/211</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>WWW:LINK</gco:CharacterString>
+              </cit:protocol>
+            </cit:CI_OnlineResource>
+          </cit:onlineResource>
+        </cit:CI_Citation>
+      </che:legislationCitation>
+    </che:CHE_MD_Legislation>
+  </che:legislationInformation>
+  <che:legislationInformation xlink:type="simple">
+    <che:CHE_MD_Legislation>
+      <che:country>
+        <lan:CountryCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CountryCode" codeListValue="CH" />
+      </che:country>
+      <che:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
+      </che:language>
+      <che:legislationLevel>
+        <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/ Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="cantonal" />
+      </che:legislationLevel>
+      <che:legislationAcronym>
+        <gco:CharacterString>KGeoIV</gco:CharacterString>
+      </che:legislationAcronym>
+      <che:legislationCitation xlink:type="simple">
+        <cit:CI_Citation>
+          <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Kantonale Verordnung über Geoinformation</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">Kantonale Verordnung über Geoinformation</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:title>
+          <cit:alternateTitle xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>KGeoIV</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">KGeoIV</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:alternateTitle>
+          <cit:date xlink:type="simple">
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2008-07-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:date xlink:type="simple">
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2024-07-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:onlineResource xlink:type="simple">
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://bl.clex.ch/app/de/texts_of_law/211.58</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup xlink:type="simple">
+                    <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">https://bl.clex.ch/app/de/texts_of_law/211.58</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>WWW:LINK</gco:CharacterString>
+              </cit:protocol>
+            </cit:CI_OnlineResource>
+          </cit:onlineResource>
+        </cit:CI_Citation>
+      </che:legislationCitation>
+    </che:CHE_MD_Legislation>
+  </che:legislationInformation>
+  <che:legislationInformation xlink:type="simple">
+    <che:CHE_MD_Legislation>
+      <che:country>
+        <lan:CountryCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CountryCode" codeListValue="CH" />
+      </che:country>
+      <che:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
+      </che:language>
+      <che:legislationLevel>
+        <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/ Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="federal" />
+      </che:legislationLevel>
+      <che:legislationAcronym>
+        <gco:CharacterString>GeoIG</gco:CharacterString>
+      </che:legislationAcronym>
+      <che:legislationCitation xlink:type="simple">
+        <cit:CI_Citation>
+          <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Bundesgesetz über Geoinformation</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">Bundesgesetz über Geoinformation</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:title>
+          <cit:alternateTitle xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>GeoIG</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">GeoIG</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:alternateTitle>
+          <cit:date xlink:type="simple">
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2008-07-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:date xlink:type="simple">
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2023-09-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:onlineResource xlink:type="simple">
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://www.lexfind.ch/fe/de/tol/26290</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup xlink:type="simple">
+                    <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">https://www.lexfind.ch/fe/de/tol/26290</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>WWW:LINK</gco:CharacterString>
+              </cit:protocol>
+            </cit:CI_OnlineResource>
+          </cit:onlineResource>
+        </cit:CI_Citation>
+      </che:legislationCitation>
+    </che:CHE_MD_Legislation>
+  </che:legislationInformation>
+  <che:legislationInformation xlink:type="simple">
+    <che:CHE_MD_Legislation>
+      <che:country>
+        <lan:CountryCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CountryCode" codeListValue="CH" />
+      </che:country>
+      <che:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
+      </che:language>
+      <che:legislationLevel>
+        <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/ Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="federal" />
+      </che:legislationLevel>
+      <che:legislationAcronym>
+        <gco:CharacterString>GeoIV</gco:CharacterString>
+      </che:legislationAcronym>
+      <che:legislationCitation xlink:type="simple">
+        <cit:CI_Citation>
+          <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Verordnung über Geoinformation</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">Verordnung über Geoinformation</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:title>
+          <cit:alternateTitle xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>GeoIV</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup xlink:type="simple">
+                <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">GeoIV</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:alternateTitle>
+          <cit:date xlink:type="simple">
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2008-07-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:date xlink:type="simple">
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2017-09-01</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:onlineResource xlink:type="simple">
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://www.lexfind.ch/fe/de/tol/29454</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup xlink:type="simple">
+                    <lan:LocalisedCharacterString locale="#DE" xsi:type="lan:LocalisedCharacterString_Type">https://www.lexfind.ch/fe/de/tol/29454</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>WWW:LINK</gco:CharacterString>
+              </cit:protocol>
+            </cit:CI_OnlineResource>
+          </cit:onlineResource>
+        </cit:CI_Citation>
+      </che:legislationCitation>
+    </che:CHE_MD_Legislation>
+  </che:legislationInformation>
+</che:CHE_MD_Metadata>
+
