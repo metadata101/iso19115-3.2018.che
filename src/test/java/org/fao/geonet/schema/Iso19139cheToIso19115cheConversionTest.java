@@ -200,6 +200,11 @@ public class Iso19139cheToIso19115cheConversionTest {
     }
 
     @Test
+    public void convertWithMainLanguageCodeSetAsCharString() throws Exception {
+        transformAndCompare("lichen2014", false);
+    }
+
+    @Test
     public void testOdsConversion() throws Exception {
         Element xmlFromJSON = Xml.getXmlFromJSON(Files.readString(getResource("ods.json")));
         xmlFromJSON.setName("record");
@@ -303,7 +308,7 @@ public class Iso19139cheToIso19115cheConversionTest {
     }
 
     @Test
-    public void convertGiebenach() throws Exception {
+    public void convertSeveralBasicGeodataId() throws Exception {
         transformAndCompare("giebenach", true);
     }
 
