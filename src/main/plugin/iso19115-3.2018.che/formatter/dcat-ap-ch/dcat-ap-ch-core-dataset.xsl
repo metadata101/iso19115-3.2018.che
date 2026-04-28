@@ -225,8 +225,10 @@
         starts-with($protocol, 'LINKED:DATA') or
         starts-with($protocol, 'MAP:Preview')
       ">
+        <xsl:variable name="datasetUuid" select="ancestor::che:CHE_MD_Metadata/mdb:metadataIdentifier/*/mcc:code/*/text()"/>
+        <xsl:variable name="distributionUri" select="concat('https://www.geocat.ch/geonetwork/srv/api/records/', $datasetUuid, '/distributions/', position())"/>
         <dcat:distribution>
-          <dcat:Distribution>
+          <dcat:Distribution rdf:about="{$distributionUri}">
             <!-- Access URL -->
             <dcat:accessURL rdf:resource="{$url}"/>
             <!-- Download URL for download protocols -->
@@ -557,14 +559,28 @@
 
   <!-- 16. ADD DOCUMENTATION -->
   <xsl:template name="add-documentation">
-    <!-- Additional documentation resources -->
+    <!-- foaf:page: WWW:LINK with function 'information' -->
+    <xsl:for-each select="
+      mdb:distributionInfo//mrd:onLine[
+        starts-with((*/cit:protocol/*/text())[1], 'WWW:LINK') and
+        */cit:function/*/@codeListValue = 'information'
+      ]
+    ">
+      <xsl:variable name="url" select="normalize-space((*/cit:linkage/gco:CharacterString/text())[1])"/>
+      <xsl:if test="$url != ''">
+        <foaf:page>
+          <foaf:Document rdf:about="{$url}"/>
+        </foaf:page>
+      </xsl:if>
+    </xsl:for-each>
+    <!-- foaf:documentation: function 'documentation' or in additionalDocumentation -->
     <xsl:for-each select="
       mdb:distributionInfo//mrd:onLine[
         */cit:function/*/@codeListValue = 'documentation' or
         ancestor::mrl:additionalDocumentation
       ]
     ">
-  <xsl:variable name="url" select="normalize-space((*/cit:linkage/*/text())[1])"/>
+      <xsl:variable name="url" select="normalize-space((*/cit:linkage/*/text())[1])"/>
       <xsl:if test="$url != ''">
         <foaf:documentation>
           <foaf:Document rdf:about="{$url}">
