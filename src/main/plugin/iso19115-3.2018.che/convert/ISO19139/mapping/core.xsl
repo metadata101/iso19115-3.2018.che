@@ -91,7 +91,7 @@
     </gfc:cardinality>
   </xsl:template>
 
-  <xsl:variable name="mainLanguage" select="*/gmd:language/*/@codeListValue"/>
+  <xsl:variable name="mainLanguage" select="*/gmd:language/*/@codeListValue|*/gmd:language/gcoold:CharacterString"/>
 
   <xsl:template match="gmd:locale[*/gmd:languageCode/*/@codeListValue = $mainLanguage]" priority="5" mode="from19139to19115-3.2018"/>
 
@@ -104,7 +104,7 @@
         <xsl:when test="ancestor-or-self::oldche:CHE_MD_FeatureCatalogueDescription">
           <xsl:value-of select="'mrc:locale'"/>
         </xsl:when>
-        <xsl:when test="local-name() = 'language' and gmd:LanguageCode/@codeListValue = $mainLanguage">
+        <xsl:when test="local-name() = 'language' and (gmd:LanguageCode/@codeListValue = $mainLanguage or gcoold:CharacterString = $mainLanguage)">
           <xsl:value-of select="concat($nameSpacePrefix, ':defaultLocale')"/>
         </xsl:when>
         <xsl:otherwise>
