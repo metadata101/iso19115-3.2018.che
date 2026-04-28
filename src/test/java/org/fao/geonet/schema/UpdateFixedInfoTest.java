@@ -112,4 +112,18 @@ public class UpdateFixedInfoTest {
 		TestSupport.assertGeneratedDataByteMatchExpected("allThesaurus/twoKeywordsInGeocat.xml", processed, GENERATE_EXPECTED_FILE);
 	}
 
+	@Test
+	public void lichen() throws Exception {
+		Path xslFile = getResourceInsideSchema("update-fixed-info.xsl");
+		Path xmlFile = getResource("lichen2014-19115-3.che.xml");
+		Element source = Xml.loadFile(xmlFile);
+		Element root = new Element("root");
+		root.addContent(source);
+
+		Element transformed = Xml.transform(root, xslFile);
+
+		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
+		String amphibiansWithUpdatedFixedInfo = xmlOutputter.outputString(new Document(transformed));
+		TestSupport.assertGeneratedDataByteMatchExpected("lichen2014-with-updated-fixed-info-19115-3.che.xml", amphibiansWithUpdatedFixedInfo, GENERATE_EXPECTED_FILE);
+	}
 }
