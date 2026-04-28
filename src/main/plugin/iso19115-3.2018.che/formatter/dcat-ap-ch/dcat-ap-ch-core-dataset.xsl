@@ -596,6 +596,9 @@
     <xsl:param name="protocol"/>
     <xsl:param name="url"/>
     
+    <!-- Strip URL fragment (#...) and query string (?...) before extension detection -->
+    <xsl:variable name="urlBase" select="lower-case(tokenize($url, '[#?]')[1])"/>
+    
     <xsl:variable name="formatUri">
       <xsl:choose>
         <!-- Service protocols (full URIs) -->
@@ -616,17 +619,17 @@
         </xsl:when>
         
         <!-- File formats by extension (code only) -->
-        <xsl:when test="ends-with(lower-case($url), '.shp')">http://publications.europa.eu/resource/authority/file-type/SHP</xsl:when>
-        <xsl:when test="ends-with(lower-case($url), '.gpkg')">http://publications.europa.eu/resource/authority/file-type/GPKG</xsl:when>
-        <xsl:when test="ends-with(lower-case($url), '.geojson')">http://publications.europa.eu/resource/authority/file-type/GEOJSON</xsl:when>
-        <xsl:when test="ends-with(lower-case($url), '.json')">http://publications.europa.eu/resource/authority/file-type/JSON</xsl:when>
-        <xsl:when test="ends-with(lower-case($url), '.gml')">http://publications.europa.eu/resource/authority/file-type/GML</xsl:when>
-        <xsl:when test="ends-with(lower-case($url), '.kml')">http://publications.europa.eu/resource/authority/file-type/KML</xsl:when>
-        <xsl:when test="ends-with(lower-case($url), '.csv')">http://publications.europa.eu/resource/authority/file-type/CSV</xsl:when>
-        <xsl:when test="ends-with(lower-case($url), '.xml')">http://publications.europa.eu/resource/authority/file-type/XML</xsl:when>
-        <xsl:when test="ends-with(lower-case($url), '.zip')">http://publications.europa.eu/resource/authority/file-type/ZIP</xsl:when>
-        <xsl:when test="ends-with(lower-case($url), '.pdf')">http://publications.europa.eu/resource/authority/file-type/PDF</xsl:when>
-        <xsl:when test="ends-with(lower-case($url), '.html') or ends-with(lower-case($url), '.htm')">http://publications.europa.eu/resource/authority/file-type/HTML</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.shp')">http://publications.europa.eu/resource/authority/file-type/SHP</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.gpkg')">http://publications.europa.eu/resource/authority/file-type/GPKG</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.geojson')">http://publications.europa.eu/resource/authority/file-type/GEOJSON</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.json')">http://publications.europa.eu/resource/authority/file-type/JSON</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.gml')">http://publications.europa.eu/resource/authority/file-type/GML</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.kml')">http://publications.europa.eu/resource/authority/file-type/KML</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.csv')">http://publications.europa.eu/resource/authority/file-type/CSV</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.xml')">http://publications.europa.eu/resource/authority/file-type/XML</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.zip')">http://publications.europa.eu/resource/authority/file-type/ZIP</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.pdf')">http://publications.europa.eu/resource/authority/file-type/PDF</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.html') or ends-with($urlBase, '.htm')">http://publications.europa.eu/resource/authority/file-type/HTML</xsl:when>
         
         <!-- Default -->
         <xsl:otherwise>http://publications.europa.eu/resource/authority/file-type/UNSPECIFIED</xsl:otherwise>

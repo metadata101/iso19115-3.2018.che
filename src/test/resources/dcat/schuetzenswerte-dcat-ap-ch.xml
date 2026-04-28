@@ -109,7 +109,7 @@
         <dcat:downloadURL rdf:resource="https://data.geo.admin.ch/browser/index.html#/collections/ch.bak.bundesinventar-schuetzenswerte-ortsbilder/items/bundesinventar-schuetzenswerte-ortsbilder" />
         <dct:description xml:lang="de">Link zum Datenbezug</dct:description>
         <dct:description xml:lang="fr">Lien vers la distribution des données</dct:description>
-        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/UNSPECIFIED" />
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
         <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
         <dct:rights>
