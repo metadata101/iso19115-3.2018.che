@@ -150,7 +150,7 @@
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
       </dcat:Distribution>
     </dcat:distribution>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-22T00:00:00</dct:issued>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-22T00:00:00+00:00</dct:issued>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI" />
     <dcat:landingPage rdf:resource="https://www.bak.admin.ch/bak/de/home/baukultur/isos-und-ortsbildschutz.html" />
     <dct:relation>

@@ -21,6 +21,12 @@
         <foaf:name xml:lang="rm">Bundesamt für Umwelt</foaf:name>
       </foaf:Agent>
     </dct:publisher>
+    <dcat:contactPoint>
+      <vcard:Organization>
+        <vcard:fn>Bundesamt für Umwelt / Abteilung Biodiversität und Landschaft</vcard:fn>
+        <vcard:hasEmail rdf:resource="mailto:bnl@bafu.admin.ch" />
+      </vcard:Organization>
+    </dcat:contactPoint>
     <dcat:distribution>
       <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/4a0c8bc7-89d1-484e-a34a-454a31267c41/distributions/1">
         <dcat:accessURL rdf:resource="https://map.geo.admin.ch/?layers=ch.bafu.wrz-wildruhezonen_portal" />
@@ -38,6 +44,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T00:00:00+00:00</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T00:00:00+00:00</dct:modified>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
@@ -65,6 +72,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T00:00:00+00:00</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T00:00:00+00:00</dct:modified>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
@@ -92,6 +100,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T00:00:00+00:00</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T00:00:00+00:00</dct:modified>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
@@ -114,6 +123,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T00:00:00+00:00</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T00:00:00+00:00</dct:modified>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
@@ -141,6 +151,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T00:00:00+00:00</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T00:00:00+00:00</dct:modified>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
@@ -149,7 +160,7 @@
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
       </dcat:Distribution>
     </dcat:distribution>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T00:00:00</dct:modified>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T00:00:00+00:00</dct:modified>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI" />
     <dcat:landingPage rdf:resource="https://www.wildruhezonen.ch/news/aenderungen-und-allgemeine-hinweise" />
     <dct:relation>

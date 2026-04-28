@@ -33,7 +33,7 @@
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
       </dcat:Distribution>
     </dcat:distribution>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-05-26T00:00:00</dct:issued>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-05-26T00:00:00+00:00</dct:issued>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI" />
     <dcat:landingPage rdf:resource="https://www.fr.ch/diaf/saav" />
     <dct:relation>

@@ -1,0 +1,83 @@
+@prefix sh:     <http://www.w3.org/ns/shacl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix vcard:  <http://www.w3.org/2006/vcard/ns#> .
+
+# ==============================================================
+# DCAT-AP-CH SPECIFIC SHACL Shapes
+# Rules specific to the Swiss National Open Data Portal (opendata.swiss)
+# that go beyond or differ from DCAT-AP 2.1.1.
+#
+# Used together with: shacl/dcat-ap-2.1.1-base-SHACL.ttl
+# Reference: https://handbook.opendata.swiss/de/content/glossar/bibliothek/dcat-ap-ch.html
+# ==============================================================
+
+# ==============================================================
+# dcat:Dataset — CH-specific constraints
+# ==============================================================
+
+<#DatasetShapeCH>
+  a sh:NodeShape ;
+  sh:targetClass dcat:Dataset ;
+  sh:name "DCAT-AP-CH Dataset (Swiss-specific)" ;
+
+  # dct:accrualPeriodicity — MANDATORY in DCAT-AP-CH (only recommended in DCAT-AP 2.1.1)
+  sh:property [
+    sh:path dct:accrualPeriodicity ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:message "dct:accrualPeriodicity is mandatory in DCAT-AP-CH (exactly 1 IRI from EU frequency vocabulary)" ;
+    sh:severity sh:Violation ;
+  ] ;
+
+  # dcat:contactPoint — MANDATORY in DCAT-AP-CH
+  sh:property [
+    sh:path dcat:contactPoint ;
+    sh:minCount 1 ;
+    sh:message "dcat:contactPoint is mandatory in DCAT-AP-CH (at least 1)" ;
+    sh:severity sh:Violation ;
+  ] ;
+
+  # dct:relation — geocat.ch permalink, recommended
+  sh:property [
+    sh:path dct:relation ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:message "dct:relation must be a blank node or IRI" ;
+    sh:severity sh:Warning ;
+  ] ;
+
+.
+
+# ==============================================================
+# dcat:Distribution — CH-specific constraints
+# ==============================================================
+
+<#DistributionShapeCH>
+  a sh:NodeShape ;
+  sh:targetClass dcat:Distribution ;
+  sh:name "DCAT-AP-CH Distribution (Swiss-specific)" ;
+
+  # dct:license — MANDATORY in DCAT-AP-CH, must use opendata.swiss vocabulary or CC
+  sh:property [
+    sh:path dct:license ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:message "dct:license is mandatory in DCAT-AP-CH (exactly 1 IRI)" ;
+    sh:severity sh:Violation ;
+  ] ;
+
+  # dct:issued — MANDATORY in DCAT-AP-CH
+  sh:property [
+    sh:path dct:issued ;
+    sh:minCount 1 ;
+    sh:message "dct:issued is mandatory on distributions in DCAT-AP-CH" ;
+    sh:severity sh:Violation ;
+  ] ;
+
+.

@@ -41,7 +41,7 @@
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
       </dcat:Distribution>
     </dcat:distribution>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-01-01T00:00:00</dct:issued>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-01-01T00:00:00+00:00</dct:issued>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI" />
     <dct:relation>
       <rdf:Description rdf:about="https://www.geocat.ch/datahub/dataset/eeab64f5-e878-4898-b80c-50440b89f525">

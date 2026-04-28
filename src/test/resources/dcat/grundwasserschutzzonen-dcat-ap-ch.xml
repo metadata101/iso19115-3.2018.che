@@ -74,8 +74,8 @@
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
       </dcat:Distribution>
     </dcat:distribution>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-01-01T00:00:00</dct:issued>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-16T00:00:00</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-01-01T00:00:00+00:00</dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-16T00:00:00+00:00</dct:modified>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI" />
     <dcat:landingPage rdf:resource="https://map.geo.tg.ch" />
     <dct:relation>

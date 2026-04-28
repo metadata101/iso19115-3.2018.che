@@ -21,6 +21,12 @@
         <foaf:name xml:lang="rm">Uffizi federal da topografia swisstopo</foaf:name>
       </foaf:Agent>
     </dct:publisher>
+    <dcat:contactPoint>
+      <vcard:Organization>
+        <vcard:fn>Bundesamt für Landestopografie swisstopo</vcard:fn>
+        <vcard:hasEmail rdf:resource="mailto:geocat@swisstopo.ch" />
+      </vcard:Organization>
+    </dcat:contactPoint>
     <dcat:distribution>
       <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/fbafbbd4-4622-445f-8e07-1ad4f6a61c55/distributions/2">
         <dcat:accessURL rdf:resource="http://data.geo.admin.ch/ch.are.alpenkonvention/data.zip" />
@@ -35,7 +41,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         </dct:rights>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1999-01-01T00:00:00+00:00</dct:issued>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-01-01T00:00:00+00:00</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-01-01T00:00:00+00:00</dct:modified>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
@@ -58,7 +64,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         </dct:rights>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1999-01-01T00:00:00+00:00</dct:issued>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-01-01T00:00:00+00:00</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-01-01T00:00:00+00:00</dct:modified>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
@@ -79,7 +85,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         </dct:rights>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1999-01-01T00:00:00+00:00</dct:issued>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-01-01T00:00:00+00:00</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-01-01T00:00:00+00:00</dct:modified>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
@@ -101,7 +107,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         </dct:rights>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1999-01-01T00:00:00+00:00</dct:issued>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-01-01T00:00:00+00:00</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-01-01T00:00:00+00:00</dct:modified>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
@@ -110,8 +116,8 @@
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
       </dcat:Distribution>
     </dcat:distribution>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1999-01-01T00:00:00</dct:issued>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-01-01T00:00:00</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1999-01-01T00:00:00+00:00</dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-01-01T00:00:00+00:00</dct:modified>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI" />
     <dcat:landingPage rdf:resource="https://www.are.admin.ch/are/de/home/laendliche-raeume-und-berggebiete/internationale-zusammenarbeit/alpenkonvention.html" />
     <dct:relation>

@@ -41,7 +41,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
         </dct:rights>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-01-01T00:00:00+00:00</dct:issued>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-31T00:00:00+00:00</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-31T00:00:00+00:00</dct:modified>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
@@ -64,7 +64,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
         </dct:rights>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-01-01T00:00:00+00:00</dct:issued>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-31T00:00:00+00:00</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-31T00:00:00+00:00</dct:modified>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
@@ -88,7 +88,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
         </dct:rights>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-01-01T00:00:00+00:00</dct:issued>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-31T00:00:00+00:00</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-31T00:00:00+00:00</dct:modified>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
@@ -110,7 +110,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
         </dct:rights>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-01-01T00:00:00+00:00</dct:issued>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-31T00:00:00+00:00</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-31T00:00:00+00:00</dct:modified>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
@@ -138,7 +138,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
         </dct:rights>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-01-01T00:00:00+00:00</dct:issued>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-31T00:00:00+00:00</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-31T00:00:00+00:00</dct:modified>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
@@ -147,8 +147,8 @@
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
       </dcat:Distribution>
     </dcat:distribution>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-01-01T00:00:00</dct:issued>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-31T00:00:00</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-01-01T00:00:00+00:00</dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-31T00:00:00+00:00</dct:modified>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI" />
     <dcat:landingPage rdf:resource="https://www.bafu.admin.ch/bafu/de/home/themen/biodiversitaet/zustand/karten.html" />
     <dct:relation>

@@ -18,6 +18,12 @@
         <foaf:name xml:lang="en">Federal Office of Meterology and Climatology MeteoSwiss</foaf:name>
       </foaf:Agent>
     </dct:publisher>
+    <dcat:contactPoint>
+      <vcard:Organization>
+        <vcard:fn>Bundesamt für Meteorologie und Klimatologie MeteoSchweiz</vcard:fn>
+        <vcard:hasEmail rdf:resource="mailto:opendata.en@meteoschweiz.ch" />
+      </vcard:Organization>
+    </dcat:contactPoint>
     <dcat:distribution>
       <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/35323752-ed32-4cc1-8a75-898c749b777b/distributions/1">
         <dcat:accessURL rdf:resource="https://data.geo.admin.ch/ch.meteoschweiz.messwerte-aktuell/VQHA80.csv" />
@@ -148,7 +154,7 @@
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
       </dcat:Distribution>
     </dcat:distribution>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-20T00:00:00</dct:issued>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-20T00:00:00+00:00</dct:issued>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI" />
     <dcat:landingPage rdf:resource="https://www.meteoschweiz.admin.ch/service-und-publikationen/service/open-data.html" />
     <dct:relation>

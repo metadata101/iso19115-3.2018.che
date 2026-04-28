@@ -186,9 +186,9 @@
   <!-- 4. ADD CONTACT POINT -->
   <xsl:template name="add-contact-point">
     <xsl:variable name="contacts" select="
-      mdb:identificationInfo/*/mri:pointOfContact[*/cit:role/*/@codeListValue = 'pointOfContact'] |
-      mdb:identificationInfo/*/mri:pointOfContact[*/cit:role/*/@codeListValue = 'owner'] |
-      mdb:contact
+      mdb:identificationInfo/*/mri:pointOfContact[cit:CI_Responsibility/cit:role/*/@codeListValue = 'pointOfContact'] |
+      mdb:identificationInfo/*/mri:pointOfContact[cit:CI_Responsibility/cit:role/*/@codeListValue = 'owner'] |
+      mdb:contact[cit:CI_Responsibility]
     "/>
     
     <xsl:for-each select="$contacts[1]">
@@ -262,7 +262,9 @@
               ($dates[*/cit:dateType/*/@codeListValue = 'publication']/*/cit:date/gco:Date/text())[1] |
               ($dates[*/cit:dateType/*/@codeListValue = 'publication']/*/cit:date/gco:DateTime/text())[1] |
               ($dates[*/cit:dateType/*/@codeListValue = 'creation']/*/cit:date/gco:Date/text())[1] |
-              ($dates[*/cit:dateType/*/@codeListValue = 'creation']/*/cit:date/gco:DateTime/text())[1]
+              ($dates[*/cit:dateType/*/@codeListValue = 'creation']/*/cit:date/gco:DateTime/text())[1] |
+              ($dates[*/cit:dateType/*/@codeListValue = 'revision']/*/cit:date/gco:Date/text())[1] |
+              ($dates[*/cit:dateType/*/@codeListValue = 'revision']/*/cit:date/gco:DateTime/text())[1]
             "/>
             <xsl:if test="$issued[1] != ''">
               <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
@@ -307,14 +309,7 @@
     "/>
     <xsl:if test="$issued[1] != ''">
       <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
-        <xsl:choose>
-          <xsl:when test="contains($issued[1], 'T')">
-            <xsl:value-of select="$issued[1]"/>
-          </xsl:when>
-          <xsl:otherwise>
-            <xsl:value-of select="concat($issued[1], 'T00:00:00')"/>
-          </xsl:otherwise>
-        </xsl:choose>
+        <xsl:value-of select="local:format-datetime($issued[1])"/>
       </dct:issued>
     </xsl:if>
     
@@ -325,14 +320,7 @@
     "/>
     <xsl:if test="$modified[1] != ''">
       <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
-        <xsl:choose>
-          <xsl:when test="contains($modified[1], 'T')">
-            <xsl:value-of select="$modified[1]"/>
-          </xsl:when>
-          <xsl:otherwise>
-            <xsl:value-of select="concat($modified[1], 'T00:00:00')"/>
-          </xsl:otherwise>
-        </xsl:choose>
+        <xsl:value-of select="local:format-datetime($modified[1])"/>
       </dct:modified>
     </xsl:if>
   </xsl:template>
@@ -809,8 +797,21 @@
         </xsl:choose>
       </xsl:when>
       <xsl:otherwise>
-        <!-- Date only, add time and timezone -->
-        <xsl:value-of select="concat($dateValue, 'T00:00:00+00:00')"/>
+        <!-- Date only, add time and timezone, completing partial dates (yyyy-MM → yyyy-MM-01, yyyy → yyyy-01-01) -->
+        <xsl:variable name="paddedDate">
+          <xsl:choose>
+            <xsl:when test="string-length($dateValue) = 4">
+              <xsl:value-of select="concat($dateValue, '-01-01')"/>
+            </xsl:when>
+            <xsl:when test="string-length($dateValue) = 7">
+              <xsl:value-of select="concat($dateValue, '-01')"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="$dateValue"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:variable>
+        <xsl:value-of select="concat($paddedDate, 'T00:00:00+00:00')"/>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:function>

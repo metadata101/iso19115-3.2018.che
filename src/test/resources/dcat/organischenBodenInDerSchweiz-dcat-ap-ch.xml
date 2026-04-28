@@ -38,7 +38,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         </dct:rights>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08T00:00:00+00:00</dct:issued>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-01T00:00:00+00:00</dct:issued>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
@@ -58,7 +58,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         </dct:rights>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08T00:00:00+00:00</dct:issued>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-01T00:00:00+00:00</dct:issued>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
@@ -84,7 +84,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         </dct:rights>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08T00:00:00+00:00</dct:issued>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-01T00:00:00+00:00</dct:issued>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
@@ -110,7 +110,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         </dct:rights>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08T00:00:00+00:00</dct:issued>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-01T00:00:00+00:00</dct:issued>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
@@ -118,7 +118,7 @@
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
       </dcat:Distribution>
     </dcat:distribution>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08T00:00:00</dct:issued>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-01T00:00:00+00:00</dct:issued>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI" />
     <dcat:landingPage rdf:resource="https://www.agroscope.admin.ch/agroscope/de/home/themen/umwelt-ressourcen/klima-lufthygiene/co2-treibhausgase-landwirtschaftliche-boeden/organische-boeden/flaeche.html" />
     <dct:relation>
