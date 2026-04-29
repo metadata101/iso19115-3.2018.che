@@ -30,6 +30,7 @@
                 xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
                 xmlns:skos="http://www.w3.org/2004/02/skos/core#"
                 xmlns:local="http://local-functions"
+                xmlns:util="java:org.fao.geonet.util.XslUtil"
                 exclude-result-prefixes="#all">
 
   <!-- ================================================ -->
@@ -38,13 +39,18 @@
   <!-- https://handbook.opendata.swiss/de/content/glossar/bibliothek/dcat-ap-ch.html -->
   <!-- ================================================ -->
 
+  <!-- Base URL of the GeoNetwork instance (no trailing slash); resolved at runtime via GeoNetwork setting 'nodeUrl' -->
+  <xsl:param name="geonetworkBaseUrl" select="util:getSettingValue('nodeUrl')"/>
+  <!-- Base URL of the opendata datahub (geocat.ch-specific, no trailing slash) -->
+  <xsl:param name="datahubBaseUrl" select="'https://www.geocat.ch/datahub'"/>
+
   <!-- ================================================ -->
   <!-- MAIN TEMPLATE: CHE_MD_Metadata to dcat:Dataset  -->
   <!-- ================================================ -->
   
   <xsl:template match="che:CHE_MD_Metadata" mode="iso19115-3-to-dcat">
     <xsl:variable name="uuid" select="mdb:metadataIdentifier/*/mcc:code/*/text()"/>
-    <xsl:variable name="resourceUri" select="concat('https://www.geocat.ch/geonetwork/srv/api/records/', $uuid, '/formatters/dcat-ap-ch')"/>
+    <xsl:variable name="resourceUri" select="concat($geonetworkBaseUrl, 'api/records/', $uuid, '/formatters/dcat-ap-ch')"/>
     
     <dcat:Dataset rdf:about="{$resourceUri}">
       <!-- 1. TYPE -->
@@ -226,7 +232,7 @@
         starts-with($protocol, 'MAP:Preview')
       ">
         <xsl:variable name="datasetUuid" select="ancestor::che:CHE_MD_Metadata/mdb:metadataIdentifier/*/mcc:code/*/text()"/>
-        <xsl:variable name="distributionUri" select="concat('https://www.geocat.ch/geonetwork/srv/api/records/', $datasetUuid, '/distributions/', position())"/>
+        <xsl:variable name="distributionUri" select="concat($geonetworkBaseUrl, 'api/records/', $datasetUuid, '/distributions/', position())"/>
         <dcat:distribution>
           <dcat:Distribution rdf:about="{$distributionUri}">
             <!-- Access URL -->
@@ -401,7 +407,7 @@
   <!-- 9. ADD GEOCAT RELATION -->
   <xsl:template name="add-geocat-relation">
     <xsl:variable name="uuid" select="mdb:metadataIdentifier/*/mcc:code/*/text()"/>
-    <xsl:variable name="geocatUrl" select="concat('https://www.geocat.ch/datahub/dataset/', $uuid)"/>
+    <xsl:variable name="geocatUrl" select="concat($datahubBaseUrl, '/dataset/', $uuid)"/>
     
     <dct:relation>
       <rdf:Description rdf:about="{$geocatUrl}">

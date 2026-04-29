@@ -157,19 +157,17 @@ public class ShaclDcatApChTest {
         // 4. Validate
         ValidationReport report = ShaclValidator.get().validate(shapes, dataModel.getGraph());
 
-        // 5. Build violation message
-        String violations = "";
-        if (!report.conforms()) {
-            violations = report.getEntries().stream()
-                .map(e -> String.format(
-                    "\n  [%s] path=%s value=%s message=%s",
-                    e.severity(),
-                    e.resultPath(),
-                    e.value(),
-                    e.message()
-                ))
-                .collect(Collectors.joining());
-        }
+        // 5. Build violation message (always collect entries: conforms() may be true
+        //    even when warning-level entries are present)
+        String violations = report.getEntries().stream()
+            .map(e -> String.format(
+                "\n  [%s] path=%s value=%s message=%s",
+                e.severity(),
+                e.resultPath(),
+                e.value(),
+                e.message()
+            ))
+            .collect(Collectors.joining());
 
         assertTrue("SHACL violations in '" + mdNameRoot + "':" + violations, report.conforms());
     }

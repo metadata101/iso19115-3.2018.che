@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatapch="http://dcat-ap.ch/ns/">
-  <dcat:Dataset rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/f8ca237a-882b-4e72-8b81-81378fb9e85c/formatters/dcat-ap-ch">
+  <dcat:Dataset rdf:about="https://www.geocat.ch/geonetwork/api/records/f8ca237a-882b-4e72-8b81-81378fb9e85c/formatters/dcat-ap-ch">
     <dct:identifier>f8ca237a-882b-4e72-8b81-81378fb9e85c</dct:identifier>
     <dct:title xml:lang="de">geodienste.ch WMS Grundwasservorkommen</dct:title>
     <dct:title xml:lang="fr">geodienste.ch WMS Nappes souterraines</dct:title>
