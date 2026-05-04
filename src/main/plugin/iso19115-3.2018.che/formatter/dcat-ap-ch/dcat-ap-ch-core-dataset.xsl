@@ -198,7 +198,7 @@
     "/>
     
     <xsl:for-each select="$contacts[1]">
-      <xsl:variable name="contactOrg" select="*/cit:party/che:CHE_CI_Organisation"/>
+      <xsl:variable name="contactOrg" select="*/cit:party/che:CHE_CI_Organisation | */cit:party/cit:CI_Organisation"/>
       <xsl:variable name="email" select="normalize-space($contactOrg/cit:contactInfo/*/cit:address/*/cit:electronicMailAddress[1]/gco:CharacterString)"/>
       <xsl:variable name="orgName" select="normalize-space($contactOrg/cit:name/gco:CharacterString)"/>
       
@@ -822,10 +822,10 @@
     <xsl:param name="metadata"/>
     
     <xsl:sequence select="
-      ($metadata/mdb:identificationInfo/*/mri:pointOfContact[*/cit:role/*/@codeListValue = 'publisher']/*/cit:party/che:CHE_CI_Organisation,
-       $metadata/mdb:identificationInfo/*/mri:pointOfContact[*/cit:role/*/@codeListValue = 'owner']/*/cit:party/che:CHE_CI_Organisation,
-       $metadata/mdb:identificationInfo/*/mri:pointOfContact[*/cit:role/*/@codeListValue = 'pointOfContact']/*/cit:party/che:CHE_CI_Organisation,
-       $metadata/mdb:contact/*/cit:party/che:CHE_CI_Organisation)[1]
+      ($metadata/mdb:identificationInfo/*/mri:pointOfContact[*/cit:role/*/@codeListValue = 'publisher']/*/cit:party/(che:CHE_CI_Organisation|cit:CI_Organisation),
+       $metadata/mdb:identificationInfo/*/mri:pointOfContact[*/cit:role/*/@codeListValue = 'owner']/*/cit:party/(che:CHE_CI_Organisation|cit:CI_Organisation),
+       $metadata/mdb:identificationInfo/*/mri:pointOfContact[*/cit:role/*/@codeListValue = 'pointOfContact']/*/cit:party/(che:CHE_CI_Organisation|cit:CI_Organisation),
+       $metadata/mdb:contact/*/cit:party/(che:CHE_CI_Organisation|cit:CI_Organisation))[1]
     "/>
   </xsl:function>
 
