@@ -97,6 +97,18 @@
       </exclusions>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.apache.jena</groupId>
+      <artifactId>jena-shacl</artifactId>
+      <version>4.10.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>1.17.0</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
   <build>
     <resources>

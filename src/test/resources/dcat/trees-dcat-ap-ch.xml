@@ -21,7 +21,7 @@
       </vcard:Organization>
     </dcat:contactPoint>
     <dcat:distribution>
-      <dcat:Distribution>
+      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/1d177f9e-2446-428f-8740-0dbe11e4131c/distributions/4">
         <dcat:accessURL rdf:resource="https://geo.fr.ch/portal/apps/sites/#/geoportail/search?q=1d177f9e-2446-428f-8740-0dbe11e4131c" />
         <dcat:downloadURL rdf:resource="https://geo.fr.ch/portal/apps/sites/#/geoportail/search?q=1d177f9e-2446-428f-8740-0dbe11e4131c" />
         <dct:description xml:lang="fr">Accès aux données (fr) : téléchargement et services web (Géoportail cantonal)</dct:description>
@@ -34,6 +34,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-11T00:00:00+00:00</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-11T00:00:00+00:00</dct:modified>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
@@ -42,7 +43,7 @@
       </dcat:Distribution>
     </dcat:distribution>
     <dcat:distribution>
-      <dcat:Distribution>
+      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/1d177f9e-2446-428f-8740-0dbe11e4131c/distributions/5">
         <dcat:accessURL rdf:resource="https://geo.fr.ch/portal/apps/sites/#/geoportal/search?q=1d177f9e-2446-428f-8740-0dbe11e4131c" />
         <dcat:downloadURL rdf:resource="https://geo.fr.ch/portal/apps/sites/#/geoportal/search?q=1d177f9e-2446-428f-8740-0dbe11e4131c" />
         <dct:description xml:lang="fr">Datenzugriff (de): Download und Webservices (Kantonales Geoportal)</dct:description>
@@ -55,6 +56,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-11T00:00:00+00:00</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-11T00:00:00+00:00</dct:modified>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
@@ -63,7 +65,7 @@
       </dcat:Distribution>
     </dcat:distribution>
     <dcat:distribution>
-      <dcat:Distribution>
+      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/1d177f9e-2446-428f-8740-0dbe11e4131c/distributions/6">
         <dcat:accessURL rdf:resource="https://geo.fr.ch/ags/services/OpenData/Arbres_culture/MapServer/WMSServer?request=GetCapabilities&amp;service=WMS" />
         <dct:title xml:lang="fr">0</dct:title>
         <dct:description xml:lang="fr">Arbres (culture)</dct:description>
@@ -73,6 +75,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-11T00:00:00+00:00</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-11T00:00:00+00:00</dct:modified>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
@@ -81,7 +84,7 @@
       </dcat:Distribution>
     </dcat:distribution>
     <dcat:distribution>
-      <dcat:Distribution>
+      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/1d177f9e-2446-428f-8740-0dbe11e4131c/distributions/7">
         <dcat:accessURL rdf:resource="https://geo.fr.ch/CartoFR/?showLegend&amp;uniquelayer=https://geo.fr.ch/ags/rest/services/OpenData/Arbres_culture/MapServer/0" />
         <dct:title xml:lang="fr">Visualisation des données</dct:title>
         <dct:title xml:lang="de">Visualisierung der Daten</dct:title>
@@ -97,6 +100,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-11T00:00:00+00:00</dct:issued>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-11T00:00:00+00:00</dct:modified>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
@@ -104,7 +108,7 @@
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
       </dcat:Distribution>
     </dcat:distribution>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-11T00:00:00</dct:modified>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-11T00:00:00+00:00</dct:modified>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI" />
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI" />
     <dcat:landingPage rdf:resource="https://map.geo.fr.ch/?dataTheme=Agriculture&amp;theme&amp;lang=fr" />
