@@ -22,7 +22,7 @@
         <vcard:hasEmail rdf:resource="mailto:geodienste@kgk-cgc.ch" />
       </vcard:Organization>
     </dcat:contactPoint>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-27T00:00:00</dct:issued>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-27T00:00:00+00:00</dct:issued>
     <dct:relation>
       <rdf:Description rdf:about="https://www.geocat.ch/datahub/dataset/f8ca237a-882b-4e72-8b81-81378fb9e85c">
         <rdfs:label xml:lang="de">geocat.ch Permalink</rdfs:label>
