@@ -21,7 +21,7 @@
       </vcard:Organization>
     </dcat:contactPoint>
     <dcat:distribution>
-      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/6e2efe8b-7153-4f5c-81a5-c154e69727ba/distributions/2">
+      <dcat:Distribution>
         <dcat:accessURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/6e2efe8b-7153-4f5c-81a5-c154e69727ba/attachments/be4129e9-d1d6-4856-b465-8ca2803e1376.pdf" />
         <dcat:downloadURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/6e2efe8b-7153-4f5c-81a5-c154e69727ba/attachments/be4129e9-d1d6-4856-b465-8ca2803e1376.pdf" />
         <dct:description xml:lang="de">Deutsche Version</dct:description>
