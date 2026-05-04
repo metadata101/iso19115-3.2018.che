@@ -23,7 +23,7 @@
       </vcard:Organization>
     </dcat:contactPoint>
     <dcat:distribution>
-      <dcat:Distribution>
+      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/distributions/2">
         <dcat:accessURL rdf:resource="https://data.geo.admin.ch/browser/index.html#/collections/ch.agroscope.LAYERNAME" />
         <dcat:downloadURL rdf:resource="https://data.geo.admin.ch/browser/index.html#/collections/ch.agroscope.LAYERNAME" />
         <dct:title xml:lang="de">STAC Browser</dct:title>
@@ -32,13 +32,13 @@
         <dct:description xml:lang="fr">Lien vers la distribution des données</dct:description>
         <dct:description xml:lang="it">Link per le fonti dei dati</dct:description>
         <dct:description xml:lang="en">Link for data download</dct:description>
-        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/UNSPECIFIED" />
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
         <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         </dct:rights>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08T00:00:00+00:00</dct:issued>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-01T00:00:00+00:00</dct:issued>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
@@ -47,7 +47,7 @@
       </dcat:Distribution>
     </dcat:distribution>
     <dcat:distribution>
-      <dcat:Distribution>
+      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/distributions/3">
         <dcat:accessURL rdf:resource="https://map.geo.admin.ch/?topic=aviation&amp;lang=de&amp;bgLayer=ch.swisstopo.pixelkarte-grau&amp;layers=ch.bazl.wohngebiete-aulav&amp;catalogNodes=2863&amp;layers_opacity=0.6&amp;E=2642942.51&amp;N=1189717.47&amp;zoom=2" />
         <dct:title xml:lang="de">Vorschau der Karte</dct:title>
         <dct:title xml:lang="fr">Prévie da la carte</dct:title>
@@ -58,7 +58,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         </dct:rights>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08T00:00:00+00:00</dct:issued>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-01T00:00:00+00:00</dct:issued>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
@@ -67,7 +67,7 @@
       </dcat:Distribution>
     </dcat:distribution>
     <dcat:distribution>
-      <dcat:Distribution>
+      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/distributions/6">
         <dcat:accessURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map%20SI.pdf" />
         <dcat:downloadURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map%20SI.pdf" />
         <dct:title xml:lang="de">Wüst-Galley Leifeld 2025 org soils map SI.pdf</dct:title>
@@ -84,7 +84,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         </dct:rights>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08T00:00:00+00:00</dct:issued>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-01T00:00:00+00:00</dct:issued>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
@@ -93,7 +93,7 @@
       </dcat:Distribution>
     </dcat:distribution>
     <dcat:distribution>
-      <dcat:Distribution>
+      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/distributions/8">
         <dcat:accessURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/Abstract_de_engl_fr_def.pdf" />
         <dcat:downloadURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/Abstract_de_engl_fr_def.pdf" />
         <dct:title xml:lang="de">Abstract_de_engl_fr_def.pdf</dct:title>
@@ -110,7 +110,7 @@
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         </dct:rights>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08T00:00:00+00:00</dct:issued>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-01T00:00:00+00:00</dct:issued>
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
@@ -118,7 +118,7 @@
         <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
       </dcat:Distribution>
     </dcat:distribution>
-    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08T00:00:00</dct:issued>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-01T00:00:00+00:00</dct:issued>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI" />
     <dcat:landingPage rdf:resource="https://www.agroscope.admin.ch/agroscope/de/home/themen/umwelt-ressourcen/klima-lufthygiene/co2-treibhausgase-landwirtschaftliche-boeden/organische-boeden/flaeche.html" />
     <dct:relation>

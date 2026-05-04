@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatap="http://data.europa.eu/r5r/" xmlns:geodcatap="http://data.europa.eu/930/" xmlns:cnt="http://www.w3.org/2011/content#" xmlns:eli="http://data.europa.eu/eli/ontology">
-  <rdf:Description rdf:about="trueapi/records/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce#resource">
+  <rdf:Description rdf:about="https://www.geocat.ch/geonetwork/api/records/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce#resource">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
     <dct:type>
       <skos:Concept rdf:about="http://purl.org/dc/dcmitype/Dataset">
@@ -9,7 +9,7 @@
     </dct:type>
     <geodcatap:resourceType rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset" />
     <foaf:isPrimaryTopicOf>
-      <rdf:Description rdf:about="trueapi/records/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce">
+      <rdf:Description rdf:about="https://www.geocat.ch/geonetwork/api/records/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord" />
         <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce</dct:identifier>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-17T16:04:56.559Z</dct:modified>
@@ -66,7 +66,7 @@ For details, see the attached data description.</dct:description>
         <dct:conformsTo>
           <dct:Standard rdf:about="https://www.w3.org/TR/vocab-dcat/" />
         </dct:conformsTo>
-        <foaf:primaryTopic rdf:resource="trueapi/records/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce#resource" />
+        <foaf:primaryTopic rdf:resource="https://www.geocat.ch/geonetwork/api/records/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce#resource" />
       </rdf:Description>
     </foaf:isPrimaryTopicOf>
     <dct:title xml:lang="de">Amphibien Ausbreitungskarten - Ichthyosaura alpestris</dct:title>

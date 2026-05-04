@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
-  <rdf:Description rdf:about="trueapi/records/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce#resource">
+  <rdf:Description rdf:about="https://www.geocat.ch/geonetwork/api/records/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce#resource">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
     <dct:type>
       <skos:Concept rdf:about="http://purl.org/dc/dcmitype/Dataset">
@@ -13,7 +13,7 @@
       </skos:Concept>
     </dct:type>
     <foaf:isPrimaryTopicOf>
-      <rdf:Description rdf:about="trueapi/records/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce">
+      <rdf:Description rdf:about="https://www.geocat.ch/geonetwork/api/records/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce">
         <rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord" />
         <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce</dct:identifier>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-17T16:04:56.559Z</dct:modified>
@@ -35,7 +35,7 @@ These maps should be thought of as heatmaps for dispersal activity of existing p
 Areas with many populations in close proximity appear a darker red, reflecting the higher probability of dispersal as multiple dispersal routes between populations intersect. This feature of the maps deserves special attention. Lighter shades at the edges of the species' range do not necessarily indicate a weaker connection between populations, but rather a consequence of the lower density of breeding sites at the edges of the range. The color scale should be considered in the context of the immediate surroundings.
 The dispersal map was calculated using Circuitscape and is based on a landscape resistance matrix derived from the best-ranked dispersal model for each species.
 For details, see the attached data description.</dct:description>
-        <foaf:primaryTopic rdf:resource="trueapi/records/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce#resource" />
+        <foaf:primaryTopic rdf:resource="https://www.geocat.ch/geonetwork/api/records/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce#resource" />
       </rdf:Description>
     </foaf:isPrimaryTopicOf>
     <dct:title xml:lang="de">Amphibien Ausbreitungskarten - Ichthyosaura alpestris</dct:title>

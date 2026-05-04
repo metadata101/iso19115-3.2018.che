@@ -64,6 +64,8 @@ public class XslUtil {
                 return "false";
             case "system/inspire/enable":
                 return IS_INSPIRE_ENABLED.toString();
+            case "nodeUrl":
+                return "https://www.geocat.ch/geonetwork/";
             default:
                 return "true";
         }

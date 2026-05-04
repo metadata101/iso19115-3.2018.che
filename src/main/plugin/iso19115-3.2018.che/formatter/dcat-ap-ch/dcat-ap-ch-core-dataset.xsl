@@ -30,6 +30,7 @@
                 xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
                 xmlns:skos="http://www.w3.org/2004/02/skos/core#"
                 xmlns:local="http://local-functions"
+                xmlns:util="java:org.fao.geonet.util.XslUtil"
                 exclude-result-prefixes="#all">
 
   <!-- ================================================ -->
@@ -38,13 +39,18 @@
   <!-- https://handbook.opendata.swiss/de/content/glossar/bibliothek/dcat-ap-ch.html -->
   <!-- ================================================ -->
 
+  <!-- Base URL of the GeoNetwork instance (no trailing slash); resolved at runtime via GeoNetwork setting 'nodeUrl' -->
+  <xsl:param name="geonetworkBaseUrl" select="util:getSettingValue('nodeUrl')"/>
+  <!-- Base URL of the opendata datahub (geocat.ch-specific, no trailing slash) -->
+  <xsl:param name="datahubBaseUrl" select="'https://www.geocat.ch/datahub'"/>
+
   <!-- ================================================ -->
   <!-- MAIN TEMPLATE: CHE_MD_Metadata to dcat:Dataset  -->
   <!-- ================================================ -->
   
   <xsl:template match="che:CHE_MD_Metadata" mode="iso19115-3-to-dcat">
     <xsl:variable name="uuid" select="mdb:metadataIdentifier/*/mcc:code/*/text()"/>
-    <xsl:variable name="resourceUri" select="concat('https://www.geocat.ch/geonetwork/srv/api/records/', $uuid, '/formatters/dcat-ap-ch')"/>
+    <xsl:variable name="resourceUri" select="concat($geonetworkBaseUrl, 'srv/api/records/', $uuid, '/formatters/dcat-ap-ch')"/>
     
     <dcat:Dataset rdf:about="{$resourceUri}">
       <!-- 1. TYPE -->
@@ -186,9 +192,9 @@
   <!-- 4. ADD CONTACT POINT -->
   <xsl:template name="add-contact-point">
     <xsl:variable name="contacts" select="
-      mdb:identificationInfo/*/mri:pointOfContact[*/cit:role/*/@codeListValue = 'pointOfContact'] |
-      mdb:identificationInfo/*/mri:pointOfContact[*/cit:role/*/@codeListValue = 'owner'] |
-      mdb:contact
+      mdb:identificationInfo/*/mri:pointOfContact[cit:CI_Responsibility/cit:role/*/@codeListValue = 'pointOfContact'] |
+      mdb:identificationInfo/*/mri:pointOfContact[cit:CI_Responsibility/cit:role/*/@codeListValue = 'owner'] |
+      mdb:contact[cit:CI_Responsibility]
     "/>
     
     <xsl:for-each select="$contacts[1]">
@@ -225,8 +231,10 @@
         starts-with($protocol, 'LINKED:DATA') or
         starts-with($protocol, 'MAP:Preview')
       ">
+        <xsl:variable name="datasetUuid" select="ancestor::che:CHE_MD_Metadata/mdb:metadataIdentifier/*/mcc:code/*/text()"/>
+        <xsl:variable name="distributionUri" select="concat($geonetworkBaseUrl, 'srv/api/records/', $datasetUuid, '/distributions/', position())"/>
         <dcat:distribution>
-          <dcat:Distribution>
+          <dcat:Distribution rdf:about="{$distributionUri}">
             <!-- Access URL -->
             <dcat:accessURL rdf:resource="{$url}"/>
             <!-- Download URL for download protocols -->
@@ -260,7 +268,9 @@
               ($dates[*/cit:dateType/*/@codeListValue = 'publication']/*/cit:date/gco:Date/text())[1] |
               ($dates[*/cit:dateType/*/@codeListValue = 'publication']/*/cit:date/gco:DateTime/text())[1] |
               ($dates[*/cit:dateType/*/@codeListValue = 'creation']/*/cit:date/gco:Date/text())[1] |
-              ($dates[*/cit:dateType/*/@codeListValue = 'creation']/*/cit:date/gco:DateTime/text())[1]
+              ($dates[*/cit:dateType/*/@codeListValue = 'creation']/*/cit:date/gco:DateTime/text())[1] |
+              ($dates[*/cit:dateType/*/@codeListValue = 'revision']/*/cit:date/gco:Date/text())[1] |
+              ($dates[*/cit:dateType/*/@codeListValue = 'revision']/*/cit:date/gco:DateTime/text())[1]
             "/>
             <xsl:if test="$issued[1] != ''">
               <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
@@ -305,14 +315,7 @@
     "/>
     <xsl:if test="$issued[1] != ''">
       <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
-        <xsl:choose>
-          <xsl:when test="contains($issued[1], 'T')">
-            <xsl:value-of select="$issued[1]"/>
-          </xsl:when>
-          <xsl:otherwise>
-            <xsl:value-of select="concat($issued[1], 'T00:00:00')"/>
-          </xsl:otherwise>
-        </xsl:choose>
+        <xsl:value-of select="local:format-datetime($issued[1])"/>
       </dct:issued>
     </xsl:if>
     
@@ -323,14 +326,7 @@
     "/>
     <xsl:if test="$modified[1] != ''">
       <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">
-        <xsl:choose>
-          <xsl:when test="contains($modified[1], 'T')">
-            <xsl:value-of select="$modified[1]"/>
-          </xsl:when>
-          <xsl:otherwise>
-            <xsl:value-of select="concat($modified[1], 'T00:00:00')"/>
-          </xsl:otherwise>
-        </xsl:choose>
+        <xsl:value-of select="local:format-datetime($modified[1])"/>
       </dct:modified>
     </xsl:if>
   </xsl:template>
@@ -411,7 +407,7 @@
   <!-- 9. ADD GEOCAT RELATION -->
   <xsl:template name="add-geocat-relation">
     <xsl:variable name="uuid" select="mdb:metadataIdentifier/*/mcc:code/*/text()"/>
-    <xsl:variable name="geocatUrl" select="concat('https://www.geocat.ch/datahub/dataset/', $uuid)"/>
+    <xsl:variable name="geocatUrl" select="concat($datahubBaseUrl, '/dataset/', $uuid)"/>
     
     <dct:relation>
       <rdf:Description rdf:about="{$geocatUrl}">
@@ -557,14 +553,28 @@
 
   <!-- 16. ADD DOCUMENTATION -->
   <xsl:template name="add-documentation">
-    <!-- Additional documentation resources -->
+    <!-- foaf:page: WWW:LINK with function 'information' -->
+    <xsl:for-each select="
+      mdb:distributionInfo//mrd:onLine[
+        starts-with((*/cit:protocol/*/text())[1], 'WWW:LINK') and
+        */cit:function/*/@codeListValue = 'information'
+      ]
+    ">
+      <xsl:variable name="url" select="normalize-space((*/cit:linkage/gco:CharacterString/text())[1])"/>
+      <xsl:if test="$url != ''">
+        <foaf:page>
+          <foaf:Document rdf:about="{$url}"/>
+        </foaf:page>
+      </xsl:if>
+    </xsl:for-each>
+    <!-- foaf:documentation: function 'documentation' or in additionalDocumentation -->
     <xsl:for-each select="
       mdb:distributionInfo//mrd:onLine[
         */cit:function/*/@codeListValue = 'documentation' or
         ancestor::mrl:additionalDocumentation
       ]
     ">
-  <xsl:variable name="url" select="normalize-space((*/cit:linkage/*/text())[1])"/>
+      <xsl:variable name="url" select="normalize-space((*/cit:linkage/*/text())[1])"/>
       <xsl:if test="$url != ''">
         <foaf:documentation>
           <foaf:Document rdf:about="{$url}">
@@ -592,6 +602,9 @@
     <xsl:param name="protocol"/>
     <xsl:param name="url"/>
     
+    <!-- Strip URL fragment (#...) and query string (?...) before extension detection -->
+    <xsl:variable name="urlBase" select="lower-case(tokenize($url, '[#?]')[1])"/>
+    
     <xsl:variable name="formatUri">
       <xsl:choose>
         <!-- Service protocols (full URIs) -->
@@ -612,17 +625,17 @@
         </xsl:when>
         
         <!-- File formats by extension (code only) -->
-        <xsl:when test="ends-with(lower-case($url), '.shp')">http://publications.europa.eu/resource/authority/file-type/SHP</xsl:when>
-        <xsl:when test="ends-with(lower-case($url), '.gpkg')">http://publications.europa.eu/resource/authority/file-type/GPKG</xsl:when>
-        <xsl:when test="ends-with(lower-case($url), '.geojson')">http://publications.europa.eu/resource/authority/file-type/GEOJSON</xsl:when>
-        <xsl:when test="ends-with(lower-case($url), '.json')">http://publications.europa.eu/resource/authority/file-type/JSON</xsl:when>
-        <xsl:when test="ends-with(lower-case($url), '.gml')">http://publications.europa.eu/resource/authority/file-type/GML</xsl:when>
-        <xsl:when test="ends-with(lower-case($url), '.kml')">http://publications.europa.eu/resource/authority/file-type/KML</xsl:when>
-        <xsl:when test="ends-with(lower-case($url), '.csv')">http://publications.europa.eu/resource/authority/file-type/CSV</xsl:when>
-        <xsl:when test="ends-with(lower-case($url), '.xml')">http://publications.europa.eu/resource/authority/file-type/XML</xsl:when>
-        <xsl:when test="ends-with(lower-case($url), '.zip')">http://publications.europa.eu/resource/authority/file-type/ZIP</xsl:when>
-        <xsl:when test="ends-with(lower-case($url), '.pdf')">http://publications.europa.eu/resource/authority/file-type/PDF</xsl:when>
-        <xsl:when test="ends-with(lower-case($url), '.html') or ends-with(lower-case($url), '.htm')">http://publications.europa.eu/resource/authority/file-type/HTML</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.shp')">http://publications.europa.eu/resource/authority/file-type/SHP</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.gpkg')">http://publications.europa.eu/resource/authority/file-type/GPKG</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.geojson')">http://publications.europa.eu/resource/authority/file-type/GEOJSON</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.json')">http://publications.europa.eu/resource/authority/file-type/JSON</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.gml')">http://publications.europa.eu/resource/authority/file-type/GML</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.kml')">http://publications.europa.eu/resource/authority/file-type/KML</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.csv')">http://publications.europa.eu/resource/authority/file-type/CSV</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.xml')">http://publications.europa.eu/resource/authority/file-type/XML</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.zip')">http://publications.europa.eu/resource/authority/file-type/ZIP</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.pdf')">http://publications.europa.eu/resource/authority/file-type/PDF</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.html') or ends-with($urlBase, '.htm')">http://publications.europa.eu/resource/authority/file-type/HTML</xsl:when>
         
         <!-- Default -->
         <xsl:otherwise>http://publications.europa.eu/resource/authority/file-type/UNSPECIFIED</xsl:otherwise>
@@ -793,8 +806,21 @@
         </xsl:choose>
       </xsl:when>
       <xsl:otherwise>
-        <!-- Date only, add time and timezone -->
-        <xsl:value-of select="concat($dateValue, 'T00:00:00+00:00')"/>
+        <!-- Date only, add time and timezone, completing partial dates (yyyy-MM → yyyy-MM-01, yyyy → yyyy-01-01) -->
+        <xsl:variable name="paddedDate">
+          <xsl:choose>
+            <xsl:when test="string-length($dateValue) = 4">
+              <xsl:value-of select="concat($dateValue, '-01-01')"/>
+            </xsl:when>
+            <xsl:when test="string-length($dateValue) = 7">
+              <xsl:value-of select="concat($dateValue, '-01')"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="$dateValue"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:variable>
+        <xsl:value-of select="concat($paddedDate, 'T00:00:00+00:00')"/>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:function>
