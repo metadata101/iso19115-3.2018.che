@@ -24,7 +24,7 @@
       </vcard:Organization>
     </dcat:contactPoint>
     <dcat:distribution>
-      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce/distributions/1">
+      <dcat:Distribution>
         <dcat:accessURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf" />
         <dcat:downloadURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf" />
         <dct:title xml:lang="de">Datenbeschreibung_AmphibienAckerland.pdf</dct:title>
@@ -43,7 +43,7 @@
       </dcat:Distribution>
     </dcat:distribution>
     <dcat:distribution>
-      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce/distributions/2">
+      <dcat:Distribution>
         <dcat:accessURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf" />
         <dcat:downloadURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf" />
         <dct:title xml:lang="de">DescriptionDonnees_BatrachiensAgricole.pdf</dct:title>
