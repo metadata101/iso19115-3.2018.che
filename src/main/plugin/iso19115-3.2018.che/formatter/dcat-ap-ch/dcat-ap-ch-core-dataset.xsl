@@ -231,10 +231,8 @@
         starts-with($protocol, 'LINKED:DATA') or
         starts-with($protocol, 'MAP:Preview')
       ">
-        <xsl:variable name="datasetUuid" select="ancestor::che:CHE_MD_Metadata/mdb:metadataIdentifier/*/mcc:code/*/text()"/>
-        <xsl:variable name="distributionUri" select="concat($geonetworkBaseUrl, 'srv/api/records/', $datasetUuid, '/distributions/', position())"/>
         <dcat:distribution>
-          <dcat:Distribution rdf:about="{$distributionUri}">
+          <dcat:Distribution>
             <!-- Access URL -->
             <dcat:accessURL rdf:resource="{$url}"/>
             <!-- Download URL for download protocols -->
