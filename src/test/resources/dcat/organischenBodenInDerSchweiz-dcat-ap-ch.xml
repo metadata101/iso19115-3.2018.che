@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatapch="http://dcat-ap.ch/ns/">
-  <dcat:Dataset rdf:about="https://www.geocat.ch/geonetwork/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/formatters/dcat-ap-ch">
+  <dcat:Dataset rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/formatters/dcat-ap-ch">
     <dct:identifier>0572e842-7e34-409a-90d9-526d012a1c2d</dct:identifier>
     <dct:title xml:lang="de">Abschätzung der organischen Böden in der Schweiz 2024</dct:title>
     <dct:title xml:lang="fr">Estimation des sols organiques en Suisse 2024</dct:title>
@@ -23,7 +23,7 @@
       </vcard:Organization>
     </dcat:contactPoint>
     <dcat:distribution>
-      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/distributions/2">
+      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/distributions/2">
         <dcat:accessURL rdf:resource="https://data.geo.admin.ch/browser/index.html#/collections/ch.agroscope.LAYERNAME" />
         <dcat:downloadURL rdf:resource="https://data.geo.admin.ch/browser/index.html#/collections/ch.agroscope.LAYERNAME" />
         <dct:title xml:lang="de">STAC Browser</dct:title>
@@ -47,7 +47,7 @@
       </dcat:Distribution>
     </dcat:distribution>
     <dcat:distribution>
-      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/distributions/3">
+      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/distributions/3">
         <dcat:accessURL rdf:resource="https://map.geo.admin.ch/?topic=aviation&amp;lang=de&amp;bgLayer=ch.swisstopo.pixelkarte-grau&amp;layers=ch.bazl.wohngebiete-aulav&amp;catalogNodes=2863&amp;layers_opacity=0.6&amp;E=2642942.51&amp;N=1189717.47&amp;zoom=2" />
         <dct:title xml:lang="de">Vorschau der Karte</dct:title>
         <dct:title xml:lang="fr">Prévie da la carte</dct:title>
@@ -67,7 +67,7 @@
       </dcat:Distribution>
     </dcat:distribution>
     <dcat:distribution>
-      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/distributions/6">
+      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/distributions/6">
         <dcat:accessURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map%20SI.pdf" />
         <dcat:downloadURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map%20SI.pdf" />
         <dct:title xml:lang="de">Wüst-Galley Leifeld 2025 org soils map SI.pdf</dct:title>
@@ -93,7 +93,7 @@
       </dcat:Distribution>
     </dcat:distribution>
     <dcat:distribution>
-      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/distributions/8">
+      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/distributions/8">
         <dcat:accessURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/Abstract_de_engl_fr_def.pdf" />
         <dcat:downloadURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/Abstract_de_engl_fr_def.pdf" />
         <dct:title xml:lang="de">Abstract_de_engl_fr_def.pdf</dct:title>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatapch="http://dcat-ap.ch/ns/">
-  <dcat:Dataset rdf:about="https://www.geocat.ch/geonetwork/api/records/786606bc-2b81-4426-8ccd-e3a2c76cdb14/formatters/dcat-ap-ch">
+  <dcat:Dataset rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/786606bc-2b81-4426-8ccd-e3a2c76cdb14/formatters/dcat-ap-ch">
     <dct:identifier>786606bc-2b81-4426-8ccd-e3a2c76cdb14</dct:identifier>
     <dct:title xml:lang="de">Asiatische Hornisse</dct:title>
     <dct:description xml:lang="de">Die Asiatische Hornisse wurde im Kanton Basel-Landschaft erstmals im Jahr 2022 nachgewiesen. Diese Art gilt als invasiv, da sie zur Ernährung ihrer Brut einheimische Wildbienen und Honigbienen in grossen Mengen jagt und diese Bestände so dezimiert. Die Bestandesdichte der Asiatischen Hornisse ist seit dem ersten Nachweis stark am Ansteigen. Mit dem Vernichten gefundener Nester wird versucht, deren Ausbreitung zu verlangsamen und die Populationsdichte zu senken.</dct:description>

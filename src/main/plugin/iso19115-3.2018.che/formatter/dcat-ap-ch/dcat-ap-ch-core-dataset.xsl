@@ -50,7 +50,7 @@
   
   <xsl:template match="che:CHE_MD_Metadata" mode="iso19115-3-to-dcat">
     <xsl:variable name="uuid" select="mdb:metadataIdentifier/*/mcc:code/*/text()"/>
-    <xsl:variable name="resourceUri" select="concat($geonetworkBaseUrl, 'api/records/', $uuid, '/formatters/dcat-ap-ch')"/>
+    <xsl:variable name="resourceUri" select="concat($geonetworkBaseUrl, 'srv/api/records/', $uuid, '/formatters/dcat-ap-ch')"/>
     
     <dcat:Dataset rdf:about="{$resourceUri}">
       <!-- 1. TYPE -->
@@ -232,7 +232,7 @@
         starts-with($protocol, 'MAP:Preview')
       ">
         <xsl:variable name="datasetUuid" select="ancestor::che:CHE_MD_Metadata/mdb:metadataIdentifier/*/mcc:code/*/text()"/>
-        <xsl:variable name="distributionUri" select="concat($geonetworkBaseUrl, 'api/records/', $datasetUuid, '/distributions/', position())"/>
+        <xsl:variable name="distributionUri" select="concat($geonetworkBaseUrl, 'srv/api/records/', $datasetUuid, '/distributions/', position())"/>
         <dcat:distribution>
           <dcat:Distribution rdf:about="{$distributionUri}">
             <!-- Access URL -->

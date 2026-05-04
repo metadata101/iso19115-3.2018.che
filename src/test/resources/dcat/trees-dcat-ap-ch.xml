@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatapch="http://dcat-ap.ch/ns/">
-  <dcat:Dataset rdf:about="https://www.geocat.ch/geonetwork/api/records/1d177f9e-2446-428f-8740-0dbe11e4131c/formatters/dcat-ap-ch">
+  <dcat:Dataset rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/1d177f9e-2446-428f-8740-0dbe11e4131c/formatters/dcat-ap-ch">
     <dct:identifier>1d177f9e-2446-428f-8740-0dbe11e4131c</dct:identifier>
     <dct:title xml:lang="fr">Localisation des arbres annoncés dans les exploitations agricoles</dct:title>
     <dct:title xml:lang="de">Bäume</dct:title>
@@ -21,7 +21,7 @@
       </vcard:Organization>
     </dcat:contactPoint>
     <dcat:distribution>
-      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/api/records/1d177f9e-2446-428f-8740-0dbe11e4131c/distributions/4">
+      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/1d177f9e-2446-428f-8740-0dbe11e4131c/distributions/4">
         <dcat:accessURL rdf:resource="https://geo.fr.ch/portal/apps/sites/#/geoportail/search?q=1d177f9e-2446-428f-8740-0dbe11e4131c" />
         <dcat:downloadURL rdf:resource="https://geo.fr.ch/portal/apps/sites/#/geoportail/search?q=1d177f9e-2446-428f-8740-0dbe11e4131c" />
         <dct:description xml:lang="fr">Accès aux données (fr) : téléchargement et services web (Géoportail cantonal)</dct:description>
@@ -43,7 +43,7 @@
       </dcat:Distribution>
     </dcat:distribution>
     <dcat:distribution>
-      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/api/records/1d177f9e-2446-428f-8740-0dbe11e4131c/distributions/5">
+      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/1d177f9e-2446-428f-8740-0dbe11e4131c/distributions/5">
         <dcat:accessURL rdf:resource="https://geo.fr.ch/portal/apps/sites/#/geoportal/search?q=1d177f9e-2446-428f-8740-0dbe11e4131c" />
         <dcat:downloadURL rdf:resource="https://geo.fr.ch/portal/apps/sites/#/geoportal/search?q=1d177f9e-2446-428f-8740-0dbe11e4131c" />
         <dct:description xml:lang="fr">Datenzugriff (de): Download und Webservices (Kantonales Geoportal)</dct:description>
@@ -65,7 +65,7 @@
       </dcat:Distribution>
     </dcat:distribution>
     <dcat:distribution>
-      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/api/records/1d177f9e-2446-428f-8740-0dbe11e4131c/distributions/6">
+      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/1d177f9e-2446-428f-8740-0dbe11e4131c/distributions/6">
         <dcat:accessURL rdf:resource="https://geo.fr.ch/ags/services/OpenData/Arbres_culture/MapServer/WMSServer?request=GetCapabilities&amp;service=WMS" />
         <dct:title xml:lang="fr">0</dct:title>
         <dct:description xml:lang="fr">Arbres (culture)</dct:description>
@@ -84,7 +84,7 @@
       </dcat:Distribution>
     </dcat:distribution>
     <dcat:distribution>
-      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/api/records/1d177f9e-2446-428f-8740-0dbe11e4131c/distributions/7">
+      <dcat:Distribution rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/1d177f9e-2446-428f-8740-0dbe11e4131c/distributions/7">
         <dcat:accessURL rdf:resource="https://geo.fr.ch/CartoFR/?showLegend&amp;uniquelayer=https://geo.fr.ch/ags/rest/services/OpenData/Arbres_culture/MapServer/0" />
         <dct:title xml:lang="fr">Visualisation des données</dct:title>
         <dct:title xml:lang="de">Visualisierung der Daten</dct:title>
