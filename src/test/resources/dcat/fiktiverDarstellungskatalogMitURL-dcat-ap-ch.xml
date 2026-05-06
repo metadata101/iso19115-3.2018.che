@@ -82,7 +82,7 @@
         <dct:description xml:lang="fr">Lien vers la distribution des données ESRI Shapefile (.shp)</dct:description>
         <dct:description xml:lang="it">Link per le fonti dei dati ESRI Shapefile (.shp)</dct:description>
         <dct:description xml:lang="en">Link for download ESRI Shapefile (.shp)</dct:description>
-        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/UNSPECIFIED" />
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/SHP" />
         <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
         <dct:rights>
