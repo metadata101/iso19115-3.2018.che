@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:org="http://www.w3.org/ns/org#" xmlns:pav="http://purl.org/pav/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcatapch="http://dcat-ap.ch/ns/">
+  <dcat:Dataset rdf:about="https://www.geocat.ch/geonetwork/srv/api/records/CERN_PERIMETRE_SECU_INFRA_SOUT/formatters/dcat-ap-ch">
+    <dct:identifier>CERN_PERIMETRE_SECU_INFRA_SOUT</dct:identifier>
+    <dct:title xml:lang="fr">Périmètre de sécurité</dct:title>
+    <dct:description xml:lang="fr">Cette géodonnée présente le périmètre de protection des installations du CERN actuelles (LHC et autres installations) et en étude (FCC). Ceci notamment vis-à-vis des porteurs de projets en souterrain (fondations, ouvrages ou forages profonds de profondeur supérieure à 10m). Les profondeurs indiquées dans les attributs le sont sur l’ensemble de l’ouvrage, il est nécessaire de contacter le CERN pour plus de précisions locales. Important: le Futur Collisionneur Circulaire (FCC) étant en cours d'étude et encore non validé, ces données sont mises à disposition des porteurs de projets uniquement à des fins d'information préliminaire et ne disposent d'aucune valeur légale.</dct:description>
+    <dct:publisher>
+      <foaf:Agent>
+        <foaf:name xml:lang="fr">Site Management and Buildings (SMB)</foaf:name>
+      </foaf:Agent>
+    </dct:publisher>
+    <dcat:contactPoint>
+      <vcard:Organization>
+        <vcard:fn>Site Management and Buildings (SMB)</vcard:fn>
+        <vcard:hasEmail rdf:resource="mailto:youri.robert@cern.ch" />
+      </vcard:Organization>
+    </dcat:contactPoint>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://vector.sitg.ge.ch/arcgis/rest/services/CERN_PERIMETRE_SECU_INFRA_SOUT/FeatureServer" />
+        <dct:title xml:lang="fr">0</dct:title>
+        <dct:description xml:lang="fr">CERN_PERIMETRE_SECU_INFRA_SOUT</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/REST" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-10-22T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-02-23T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://vector.sitg.ge.ch/arcgis/rest/services/CERN_PERIMETRE_SECU_INFRA_SOUT/MapServer/WFSServer?service=WFS&amp;request=GetCapabilities" />
+        <dct:title xml:lang="fr">0</dct:title>
+        <dct:description xml:lang="fr">CERN_PERIMETRE_SECU_INFRA_SOUT</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/REST" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-10-22T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-02-23T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://ge.ch/sitg/geodata/SITG/OPENDATA/CERN_PERIMETRE_SECU_INFRA_SOUT-CSV.zip" />
+        <dct:title xml:lang="fr">CSV</dct:title>
+        <dct:description xml:lang="fr">Serveur de fichiers Opendata</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/csv" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-10-22T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-02-23T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://ge.ch/sitg/geodata/SITG/OPENDATA/CERN_PERIMETRE_SECU_INFRA_SOUT-GDB.zip" />
+        <dct:title xml:lang="fr">GDB</dct:title>
+        <dct:description xml:lang="fr">Serveur de fichiers Opendata</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/ZIP" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/zip" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-10-22T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-02-23T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://ge.ch/sitg/geodata/SITG/OPENDATA/CERN_PERIMETRE_SECU_INFRA_SOUT-GML.zip" />
+        <dct:title xml:lang="fr">GML</dct:title>
+        <dct:description xml:lang="fr">Serveur de fichiers Opendata</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/GML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/gml+xml" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-10-22T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-02-23T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://ge.ch/sitg/geodata/SITG/OPENDATA/CERN_PERIMETRE_SECU_INFRA_SOUT-KML.zip" />
+        <dct:title xml:lang="fr">KML</dct:title>
+        <dct:description xml:lang="fr">Serveur de fichiers Opendata</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/KML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/vnd.google-earth.kml+xml" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-10-22T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-02-23T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://ge.ch/sitg/geodata/SITG/OPENDATA/CERN_PERIMETRE_SECU_INFRA_SOUT-SHP.zip" />
+        <dct:title xml:lang="fr">SHP</dct:title>
+        <dct:description xml:lang="fr">Serveur de fichiers Opendata</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/SHP" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/zip" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-10-22T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-02-23T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-10-22T00:00:00+00:00</dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-02-23T00:00:00+00:00</dct:modified>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI" />
+    <dct:relation>
+      <rdf:Description rdf:about="https://www.geocat.ch/datahub/dataset/CERN_PERIMETRE_SECU_INFRA_SOUT">
+        <rdfs:label xml:lang="de">geocat.ch Permalink</rdfs:label>
+        <rdfs:label xml:lang="fr">geocat.ch permalien</rdfs:label>
+        <rdfs:label xml:lang="it">geocat.ch link permanente</rdfs:label>
+        <rdfs:label xml:lang="en">geocat.ch permalink</rdfs:label>
+      </rdf:Description>
+    </dct:relation>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+    <dcat:keyword xml:lang="fr">opendata.swiss</dcat:keyword>
+    <dct:spatial>GE</dct:spatial>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
+  </dcat:Dataset>
+</rdf:RDF>
