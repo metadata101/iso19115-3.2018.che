@@ -191,24 +191,35 @@
 
   <!-- 4. ADD CONTACT POINT -->
   <xsl:template name="add-contact-point">
+    <!-- Priority: pointOfContact role in identificationInfo > owner role in identificationInfo > metadata contact
+         Uses if/then/else instead of XPath union to preserve priority order
+         (XPath | returns nodes in document order: mdb:contact comes before mdb:identificationInfo in the document) -->
+    <xsl:variable name="pointOfContactNodes" select="
+      mdb:identificationInfo/*/mri:pointOfContact[cit:CI_Responsibility/cit:role/*/@codeListValue = 'pointOfContact']"/>
+    <xsl:variable name="ownerNodes" select="
+      mdb:identificationInfo/*/mri:pointOfContact[cit:CI_Responsibility/cit:role/*/@codeListValue = 'owner']"/>
+    <xsl:variable name="metadataContactNodes" select="mdb:contact[cit:CI_Responsibility]"/>
+
     <xsl:variable name="contacts" select="
-      mdb:identificationInfo/*/mri:pointOfContact[cit:CI_Responsibility/cit:role/*/@codeListValue = 'pointOfContact'] |
-      mdb:identificationInfo/*/mri:pointOfContact[cit:CI_Responsibility/cit:role/*/@codeListValue = 'owner'] |
-      mdb:contact[cit:CI_Responsibility]
+      if ($pointOfContactNodes) then $pointOfContactNodes
+      else if ($ownerNodes) then $ownerNodes
+      else $metadataContactNodes
     "/>
-    
+
     <xsl:for-each select="$contacts[1]">
       <xsl:variable name="contactOrg" select="*/cit:party/che:CHE_CI_Organisation | */cit:party/cit:CI_Organisation"/>
       <xsl:variable name="email" select="normalize-space($contactOrg/cit:contactInfo/*/cit:address/*/cit:electronicMailAddress[1]/gco:CharacterString)"/>
       <xsl:variable name="orgName" select="normalize-space($contactOrg/cit:name/gco:CharacterString)"/>
       
-      <xsl:if test="$contactOrg and $email != ''">
+      <xsl:if test="$contactOrg and $orgName != ''">
         <dcat:contactPoint>
           <vcard:Organization>
             <vcard:fn>
               <xsl:value-of select="$orgName"/>
             </vcard:fn>
-            <vcard:hasEmail rdf:resource="mailto:{$email}"/>
+            <xsl:if test="$email != ''">
+              <vcard:hasEmail rdf:resource="mailto:{$email}"/>
+            </xsl:if>
           </vcard:Organization>
         </dcat:contactPoint>
       </xsl:if>

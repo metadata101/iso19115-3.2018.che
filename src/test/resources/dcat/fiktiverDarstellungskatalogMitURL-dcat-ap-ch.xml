@@ -22,8 +22,8 @@
     </dct:publisher>
     <dcat:contactPoint>
       <vcard:Organization>
-        <vcard:fn>Bundesamt für Umwelt</vcard:fn>
-        <vcard:hasEmail rdf:resource="mailto:info@bafu.admin.ch" />
+        <vcard:fn>Bundesamt für Umwelt BAFU / GIN</vcard:fn>
+        <vcard:hasEmail rdf:resource="mailto:gin@bafu.admin.ch" />
       </vcard:Organization>
     </dcat:contactPoint>
     <dcat:distribution>

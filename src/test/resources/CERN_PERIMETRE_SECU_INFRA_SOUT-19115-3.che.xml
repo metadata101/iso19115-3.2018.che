@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<che:CHE_MD_Metadata xmlns:che="http://geocat.ch/che" xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0" xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0" xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:md1="http://standards.iso.org/iso/19115/-3/md1/2.0" xmlns:md2="http://standards.iso.org/iso/19115/-3/md2/2.0" xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/2.0" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0" xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0" xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0" xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0" xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0" xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0" xmlns:dqm="http://standards.iso.org/iso/19157/-2/dqm/1.0" xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gco:isoType="mdb:MD_Metadata" xsi:schemaLocation="http://geocat.ch/che http://share-ech.ch/xmlns/eCH-0271/1.0.0/standards.iso.org/iso/19115/-3/eCH-0271-1-0-0.xsd">
+  <mdb:metadataIdentifier>
+    <mcc:MD_Identifier>
+      <mcc:code>
+        <gco:CharacterString>CERN_PERIMETRE_SECU_INFRA_SOUT</gco:CharacterString>
+      </mcc:code>
+    </mcc:MD_Identifier>
+  </mdb:metadataIdentifier>
+  <mdb:defaultLocale>
+    <lan:PT_Locale id="FR">
+      <lan:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="fre" />
+      </lan:language>
+      <lan:characterEncoding>
+        <lan:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+      </lan:characterEncoding>
+    </lan:PT_Locale>
+  </mdb:defaultLocale>
+  <mdb:parentMetadata uuidref="" />
+  <mdb:contact>
+    <cit:CI_Responsibility>
+      <cit:role>
+        <cit:CI_RoleCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="owner" />
+      </cit:role>
+      <cit:party>
+        <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
+          <cit:name>
+            <gco:CharacterString>Organisation européenne pour la recherche nucléaire</gco:CharacterString>
+          </cit:name>
+          <cit:contactInfo>
+            <cit:CI_Contact>
+              <cit:phone>
+                <cit:CI_Telephone>
+                  <cit:number gco:nilReason="missing">
+                    <gco:CharacterString />
+                  </cit:number>
+                  <cit:numberType>
+                    <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice" />
+                  </cit:numberType>
+                </cit:CI_Telephone>
+              </cit:phone>
+              <cit:phone>
+                <cit:CI_Telephone>
+                  <cit:number gco:nilReason="missing">
+                    <gco:CharacterString />
+                  </cit:number>
+                  <cit:numberType>
+                    <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="facsimile" />
+                  </cit:numberType>
+                </cit:CI_Telephone>
+              </cit:phone>
+              <cit:address>
+                <cit:CI_Address>
+                  <cit:deliveryPoint gco:nilReason="missing">
+                    <gco:CharacterString />
+                  </cit:deliveryPoint>
+                  <cit:city />
+                  <cit:postalCode />
+                  <cit:electronicMailAddress />
+                </cit:CI_Address>
+              </cit:address>
+            </cit:CI_Contact>
+          </cit:contactInfo>
+          <cit:individual>
+            <cit:CI_Individual>
+              <cit:positionName />
+            </cit:CI_Individual>
+          </cit:individual>
+        </che:CHE_CI_Organisation>
+      </cit:party>
+    </cit:CI_Responsibility>
+  </mdb:contact>
+  <mdb:dateInfo>
+    <cit:CI_Date>
+      <cit:date>
+        <gco:DateTime>2025-10-29T04:04:14Z</gco:DateTime>
+      </cit:date>
+      <cit:dateType>
+        <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation" />
+      </cit:dateType>
+    </cit:CI_Date>
+  </mdb:dateInfo>
+  <mdb:dateInfo>
+    <cit:CI_Date>
+      <cit:date>
+        <gco:DateTime>2026-05-04T10:16:29.811459Z</gco:DateTime>
+      </cit:date>
+      <cit:dateType>
+        <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision" />
+      </cit:dateType>
+    </cit:CI_Date>
+  </mdb:dateInfo>
+  <mdb:metadataStandard>
+    <cit:CI_Citation>
+      <cit:title>
+        <gco:CharacterString>GM03</gco:CharacterString>
+      </cit:title>
+      <cit:edition>
+        <gco:CharacterString>2+</gco:CharacterString>
+      </cit:edition>
+    </cit:CI_Citation>
+  </mdb:metadataStandard>
+  <mdb:metadataLinkage>
+    <cit:CI_OnlineResource>
+      <cit:linkage>
+        <gco:CharacterString>https://geocat-dev.dev.bgdi.ch/geonetwork/srv/api/records/CERN_PERIMETRE_SECU_INFRA_SOUT</gco:CharacterString>
+      </cit:linkage>
+      <cit:function>
+        <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="completeMetadata" />
+      </cit:function>
+    </cit:CI_OnlineResource>
+  </mdb:metadataLinkage>
+  <mdb:referenceSystemInfo>
+    <mrs:MD_ReferenceSystem>
+      <mrs:referenceSystemIdentifier>
+        <mcc:MD_Identifier>
+          <mcc:code>
+            <gco:CharacterString>CH1903+ / LV95</gco:CharacterString>
+          </mcc:code>
+        </mcc:MD_Identifier>
+      </mrs:referenceSystemIdentifier>
+    </mrs:MD_ReferenceSystem>
+  </mdb:referenceSystemInfo>
+  <mdb:identificationInfo>
+    <che:CHE_MD_DataIdentification gco:isoType="mri:MD_DataIdentification">
+      <mri:citation>
+        <cit:CI_Citation>
+          <cit:title>
+            <gco:CharacterString>Périmètre de sécurité</gco:CharacterString>
+          </cit:title>
+          <cit:date>
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2025-10-22</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:date>
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2025-10-22</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:date>
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2026-02-23</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+        </cit:CI_Citation>
+      </mri:citation>
+      <mri:abstract>
+        <gco:CharacterString>Cette géodonnée présente le périmètre de protection des installations du CERN actuelles (LHC et autres installations) et en étude (FCC). Ceci notamment vis-à-vis des porteurs de projets en souterrain (fondations, ouvrages ou forages profonds de profondeur supérieure à 10m). Les profondeurs indiquées dans les attributs le sont sur l’ensemble de l’ouvrage, il est nécessaire de contacter le CERN pour plus de précisions locales.
+
+Important: le Futur Collisionneur Circulaire (FCC) étant en cours d'étude et encore non validé, ces données sont mises à disposition des porteurs de projets uniquement à des fins d'information préliminaire et ne disposent d'aucune valeur légale.</gco:CharacterString>
+      </mri:abstract>
+      <mri:credit />
+      <mri:pointOfContact>
+        <cit:CI_Responsibility>
+          <cit:role>
+            <cit:CI_RoleCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="owner" />
+          </cit:role>
+          <cit:party>
+            <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
+              <cit:name>
+                <gco:CharacterString>Site Management and Buildings (SMB)</gco:CharacterString>
+              </cit:name>
+              <cit:contactInfo>
+                <cit:CI_Contact>
+                  <cit:phone>
+                    <cit:CI_Telephone>
+                      <cit:number>
+                        <gco:CharacterString>+4122 767 34 14</gco:CharacterString>
+                      </cit:number>
+                      <cit:numberType>
+                        <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice" />
+                      </cit:numberType>
+                    </cit:CI_Telephone>
+                  </cit:phone>
+                  <cit:phone>
+                    <cit:CI_Telephone>
+                      <cit:number gco:nilReason="missing">
+                        <gco:CharacterString />
+                      </cit:number>
+                      <cit:numberType>
+                        <cit:CI_TelephoneTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="facsimile" />
+                      </cit:numberType>
+                    </cit:CI_Telephone>
+                  </cit:phone>
+                  <cit:address>
+                    <cit:CI_Address>
+                      <cit:deliveryPoint gco:nilReason="missing">
+                        <gco:CharacterString />
+                      </cit:deliveryPoint>
+                      <cit:city />
+                      <cit:postalCode />
+                      <cit:electronicMailAddress>
+                        <gco:CharacterString>youri.robert@cern.ch</gco:CharacterString>
+                      </cit:electronicMailAddress>
+                    </cit:CI_Address>
+                  </cit:address>
+                </cit:CI_Contact>
+              </cit:contactInfo>
+              <cit:individual>
+                <cit:CI_Individual>
+                  <cit:name>
+                    <gco:CharacterString>Youri Robert</gco:CharacterString>
+                  </cit:name>
+                  <cit:positionName />
+                </cit:CI_Individual>
+              </cit:individual>
+            </che:CHE_CI_Organisation>
+          </cit:party>
+        </cit:CI_Responsibility>
+      </mri:pointOfContact>
+      <mri:topicCategory>
+        <mri:MD_TopicCategoryCode>structure</mri:MD_TopicCategoryCode>
+      </mri:topicCategory>
+      <mri:extent>
+        <gex:EX_Extent>
+          <gex:geographicElement>
+            <gex:EX_GeographicDescription>
+              <gex:geographicIdentifier>
+                <mcc:MD_Identifier>
+                  <mcc:code>
+                    <gco:CharacterString>GE</gco:CharacterString>
+                  </mcc:code>
+                </mcc:MD_Identifier>
+              </gex:geographicIdentifier>
+            </gex:EX_GeographicDescription>
+          </gex:geographicElement>
+          <gex:geographicElement>
+            <gex:EX_GeographicBoundingBox>
+              <gex:extentTypeCode>
+                <gco:Boolean>false</gco:Boolean>
+              </gex:extentTypeCode>
+              <gex:westBoundLongitude>
+                <gco:Decimal>2484523.28510000</gco:Decimal>
+              </gex:westBoundLongitude>
+              <gex:eastBoundLongitude>
+                <gco:Decimal>2513664.07180000</gco:Decimal>
+              </gex:eastBoundLongitude>
+              <gex:southBoundLatitude>
+                <gco:Decimal>1093850.49340000</gco:Decimal>
+              </gex:southBoundLatitude>
+              <gex:northBoundLatitude>
+                <gco:Decimal>1129968.16770000</gco:Decimal>
+              </gex:northBoundLatitude>
+            </gex:EX_GeographicBoundingBox>
+          </gex:geographicElement>
+        </gex:EX_Extent>
+      </mri:extent>
+      <mri:resourceMaintenance>
+        <che:CHE_MD_MaintenanceInformation gco:isoType="mmi:MD_MaintenanceInformation">
+          <mmi:maintenanceAndUpdateFrequency>
+            <mmi:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_MaintenanceFrequencyCode" codeListValue="annually" />
+          </mmi:maintenanceAndUpdateFrequency>
+        </che:CHE_MD_MaintenanceInformation>
+      </mri:resourceMaintenance>
+      <mri:descriptiveKeywords>
+        <mri:MD_Keywords>
+          <mri:keyword>
+            <gco:CharacterString>opendata.swiss</gco:CharacterString>
+          </mri:keyword>
+        </mri:MD_Keywords>
+      </mri:descriptiveKeywords>
+      <mri:resourceConstraints>
+        <che:CHE_MD_LegalConstraints gco:isoType="mco:MD_LegalConstraints" />
+      </mri:resourceConstraints>
+      <mri:defaultLocale>
+        <lan:PT_Locale>
+          <lan:language>
+            <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="fre" />
+          </lan:language>
+          <lan:characterEncoding>
+            <lan:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+          </lan:characterEncoding>
+        </lan:PT_Locale>
+      </mri:defaultLocale>
+    </che:CHE_MD_DataIdentification>
+  </mdb:identificationInfo>
+  <mdb:distributionInfo>
+    <mrd:MD_Distribution>
+      <mrd:distributionFormat>
+        <mrd:MD_Format>
+          <mrd:formatSpecificationCitation>
+            <cit:CI_Citation>
+              <cit:title>
+                <gco:CharacterString>ESRI:REST</gco:CharacterString>
+              </cit:title>
+              <cit:date gco:nilReason="unknown" />
+              <cit:edition>
+                <gco:CharacterString>-</gco:CharacterString>
+              </cit:edition>
+            </cit:CI_Citation>
+          </mrd:formatSpecificationCitation>
+        </mrd:MD_Format>
+      </mrd:distributionFormat>
+      <mrd:distributionFormat>
+        <mrd:MD_Format>
+          <mrd:formatSpecificationCitation>
+            <cit:CI_Citation>
+              <cit:title>
+                <gco:CharacterString>ESRI:REST</gco:CharacterString>
+              </cit:title>
+              <cit:date gco:nilReason="unknown" />
+              <cit:edition>
+                <gco:CharacterString>-</gco:CharacterString>
+              </cit:edition>
+            </cit:CI_Citation>
+          </mrd:formatSpecificationCitation>
+        </mrd:MD_Format>
+      </mrd:distributionFormat>
+      <mrd:distributionFormat>
+        <mrd:MD_Format>
+          <mrd:formatSpecificationCitation>
+            <cit:CI_Citation>
+              <cit:title>
+                <gco:CharacterString>CSV</gco:CharacterString>
+              </cit:title>
+              <cit:date gco:nilReason="unknown" />
+              <cit:edition>
+                <gco:CharacterString>-</gco:CharacterString>
+              </cit:edition>
+            </cit:CI_Citation>
+          </mrd:formatSpecificationCitation>
+        </mrd:MD_Format>
+      </mrd:distributionFormat>
+      <mrd:distributionFormat>
+        <mrd:MD_Format>
+          <mrd:formatSpecificationCitation>
+            <cit:CI_Citation>
+              <cit:title>
+                <gco:CharacterString>GDB</gco:CharacterString>
+              </cit:title>
+              <cit:date gco:nilReason="unknown" />
+              <cit:edition>
+                <gco:CharacterString>-</gco:CharacterString>
+              </cit:edition>
+            </cit:CI_Citation>
+          </mrd:formatSpecificationCitation>
+        </mrd:MD_Format>
+      </mrd:distributionFormat>
+      <mrd:distributionFormat>
+        <mrd:MD_Format>
+          <mrd:formatSpecificationCitation>
+            <cit:CI_Citation>
+              <cit:title>
+                <gco:CharacterString>GML</gco:CharacterString>
+              </cit:title>
+              <cit:date gco:nilReason="unknown" />
+              <cit:edition>
+                <gco:CharacterString>-</gco:CharacterString>
+              </cit:edition>
+            </cit:CI_Citation>
+          </mrd:formatSpecificationCitation>
+        </mrd:MD_Format>
+      </mrd:distributionFormat>
+      <mrd:distributionFormat>
+        <mrd:MD_Format>
+          <mrd:formatSpecificationCitation>
+            <cit:CI_Citation>
+              <cit:title>
+                <gco:CharacterString>KML</gco:CharacterString>
+              </cit:title>
+              <cit:date gco:nilReason="unknown" />
+              <cit:edition>
+                <gco:CharacterString>-</gco:CharacterString>
+              </cit:edition>
+            </cit:CI_Citation>
+          </mrd:formatSpecificationCitation>
+        </mrd:MD_Format>
+      </mrd:distributionFormat>
+      <mrd:distributionFormat>
+        <mrd:MD_Format>
+          <mrd:formatSpecificationCitation>
+            <cit:CI_Citation>
+              <cit:title>
+                <gco:CharacterString>SHP</gco:CharacterString>
+              </cit:title>
+              <cit:date gco:nilReason="unknown" />
+              <cit:edition>
+                <gco:CharacterString>-</gco:CharacterString>
+              </cit:edition>
+            </cit:CI_Citation>
+          </mrd:formatSpecificationCitation>
+        </mrd:MD_Format>
+      </mrd:distributionFormat>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
+          <mrd:onLine>
+            <cit:CI_OnlineResource>
+              <cit:linkage>
+                <gco:CharacterString>https://vector.sitg.ge.ch/arcgis/rest/services/CERN_PERIMETRE_SECU_INFRA_SOUT/FeatureServer</gco:CharacterString>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>ESRI:REST</gco:CharacterString>
+              </cit:protocol>
+              <cit:name>
+                <gco:CharacterString>0</gco:CharacterString>
+              </cit:name>
+              <cit:description>
+                <gco:CharacterString>CERN_PERIMETRE_SECU_INFRA_SOUT</gco:CharacterString>
+              </cit:description>
+            </cit:CI_OnlineResource>
+          </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
+          <mrd:onLine>
+            <cit:CI_OnlineResource>
+              <cit:linkage>
+                <gco:CharacterString>https://vector.sitg.ge.ch/arcgis/rest/services/CERN_PERIMETRE_SECU_INFRA_SOUT/MapServer/WFSServer?service=WFS&amp;request=GetCapabilities</gco:CharacterString>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>ESRI:REST</gco:CharacterString>
+              </cit:protocol>
+              <cit:name>
+                <gco:CharacterString>0</gco:CharacterString>
+              </cit:name>
+              <cit:description>
+                <gco:CharacterString>CERN_PERIMETRE_SECU_INFRA_SOUT</gco:CharacterString>
+              </cit:description>
+            </cit:CI_OnlineResource>
+          </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
+          <mrd:onLine>
+            <cit:CI_OnlineResource>
+              <cit:linkage>
+                <gco:CharacterString>https://ge.ch/sitg/geodata/SITG/OPENDATA/CERN_PERIMETRE_SECU_INFRA_SOUT-CSV.zip</gco:CharacterString>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>CSV</gco:CharacterString>
+              </cit:protocol>
+              <cit:name>
+                <gco:CharacterString>CSV</gco:CharacterString>
+              </cit:name>
+              <cit:description>
+                <gco:CharacterString>Serveur de fichiers Opendata</gco:CharacterString>
+              </cit:description>
+            </cit:CI_OnlineResource>
+          </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
+          <mrd:onLine>
+            <cit:CI_OnlineResource>
+              <cit:linkage>
+                <gco:CharacterString>https://ge.ch/sitg/geodata/SITG/OPENDATA/CERN_PERIMETRE_SECU_INFRA_SOUT-GDB.zip</gco:CharacterString>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>GDB</gco:CharacterString>
+              </cit:protocol>
+              <cit:name>
+                <gco:CharacterString>GDB</gco:CharacterString>
+              </cit:name>
+              <cit:description>
+                <gco:CharacterString>Serveur de fichiers Opendata</gco:CharacterString>
+              </cit:description>
+            </cit:CI_OnlineResource>
+          </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
+          <mrd:onLine>
+            <cit:CI_OnlineResource>
+              <cit:linkage>
+                <gco:CharacterString>https://ge.ch/sitg/geodata/SITG/OPENDATA/CERN_PERIMETRE_SECU_INFRA_SOUT-GML.zip</gco:CharacterString>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>GML</gco:CharacterString>
+              </cit:protocol>
+              <cit:name>
+                <gco:CharacterString>GML</gco:CharacterString>
+              </cit:name>
+              <cit:description>
+                <gco:CharacterString>Serveur de fichiers Opendata</gco:CharacterString>
+              </cit:description>
+            </cit:CI_OnlineResource>
+          </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
+          <mrd:onLine>
+            <cit:CI_OnlineResource>
+              <cit:linkage>
+                <gco:CharacterString>https://ge.ch/sitg/geodata/SITG/OPENDATA/CERN_PERIMETRE_SECU_INFRA_SOUT-KML.zip</gco:CharacterString>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>KML</gco:CharacterString>
+              </cit:protocol>
+              <cit:name>
+                <gco:CharacterString>KML</gco:CharacterString>
+              </cit:name>
+              <cit:description>
+                <gco:CharacterString>Serveur de fichiers Opendata</gco:CharacterString>
+              </cit:description>
+            </cit:CI_OnlineResource>
+          </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
+          <mrd:onLine>
+            <cit:CI_OnlineResource>
+              <cit:linkage>
+                <gco:CharacterString>https://ge.ch/sitg/geodata/SITG/OPENDATA/CERN_PERIMETRE_SECU_INFRA_SOUT-SHP.zip</gco:CharacterString>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>SHP</gco:CharacterString>
+              </cit:protocol>
+              <cit:name>
+                <gco:CharacterString>SHP</gco:CharacterString>
+              </cit:name>
+              <cit:description>
+                <gco:CharacterString>Serveur de fichiers Opendata</gco:CharacterString>
+              </cit:description>
+            </cit:CI_OnlineResource>
+          </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+    </mrd:MD_Distribution>
+  </mdb:distributionInfo>
+  <mdb:resourceLineage>
+    <mrl:LI_Lineage>
+      <mrl:statement>
+        <gco:CharacterString>de 1/5000 à 1/20000</gco:CharacterString>
+      </mrl:statement>
+      <mrl:scope>
+        <mcc:MD_Scope>
+          <mcc:level>
+            <mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ScopeCode" codeListValue="dataset" />
+          </mcc:level>
+        </mcc:MD_Scope>
+      </mrl:scope>
+    </mrl:LI_Lineage>
+  </mdb:resourceLineage>
+</che:CHE_MD_Metadata>
+

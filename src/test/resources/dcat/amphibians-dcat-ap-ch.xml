@@ -19,8 +19,8 @@
     </dct:publisher>
     <dcat:contactPoint>
       <vcard:Organization>
-        <vcard:fn>Agroscope Metadaten</vcard:fn>
-        <vcard:hasEmail rdf:resource="mailto:GIS@agroscope.admin.ch" />
+        <vcard:fn>Bundesamt für Umwelt / Abteilung Biodiversität und Landschaft</vcard:fn>
+        <vcard:hasEmail rdf:resource="mailto:bnl@bafu.admin.ch" />
       </vcard:Organization>
     </dcat:contactPoint>
     <dcat:distribution>
