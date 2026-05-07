@@ -151,6 +151,11 @@ public class DCatFormatterTest {
 		transformToDCatAndCompare("dcat-ap-ch", "wanderWege");
 	}
 
+	@Test
+	public void chDcatApCERN() throws Exception {
+		transformToDCatAndCompare("dcat-ap-ch", "CERN_PERIMETRE_SECU_INFRA_SOUT");
+	}
+
 	private void transformToDCatAndCompare(String profile, String mdNameRoot) throws Exception {
 		Path xslFile = getResourceInsideSchema("formatter/" + profile + "/view.xsl");
 		Path xmlFile = getResource(mdNameRoot + "-19115-3.che.xml");

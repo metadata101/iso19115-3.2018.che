@@ -23,7 +23,7 @@
     <dcat:contactPoint>
       <vcard:Organization>
         <vcard:fn>Bundesamt für Landestopografie swisstopo</vcard:fn>
-        <vcard:hasEmail rdf:resource="mailto:geocat@swisstopo.ch" />
+        <vcard:hasEmail rdf:resource="mailto:geodata@swisstopo.ch" />
       </vcard:Organization>
     </dcat:contactPoint>
     <dcat:distribution>
