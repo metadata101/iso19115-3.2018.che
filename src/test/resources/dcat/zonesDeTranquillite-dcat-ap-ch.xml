@@ -67,7 +67,6 @@
         <dct:description xml:lang="en">WMS-FSDI service, layer "Designated wildlife areas"</dct:description>
         <dct:description xml:lang="rm">WMS-BGDI Dienst, Layer "Wildruhezonen"</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/WMS_SRVC" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
@@ -95,7 +94,27 @@
         <dct:description xml:lang="en">WMTS-FSDI service, layer "Designated wildlife areas"</dct:description>
         <dct:description xml:lang="rm">WMTS-BGDI Dienst, Layer "Wildruhezonen"</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/WMTS_SRVC" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://www.wildruhezonen.ch/news/aenderungen-und-allgemeine-hinweise" />
+        <dct:description xml:lang="de">Änderungen &amp; allgemeine Hinweise</dct:description>
+        <dct:description xml:lang="fr">Modifications et remarques générales</dct:description>
+        <dct:description xml:lang="it">Modifiche e indicazioni generali</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
@@ -118,7 +137,6 @@
         <dct:description xml:lang="it">Divisione Biodiversità e paesaggio</dct:description>
         <dct:description xml:lang="en">Biodiversity and Landscape Division</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/UNSPECIFIED" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
@@ -146,7 +164,6 @@
         <dct:description xml:lang="en">RESTful API from geo.admin.ch</dct:description>
         <dct:description xml:lang="rm">RESTful API dad geo.admin.ch</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/REST" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
