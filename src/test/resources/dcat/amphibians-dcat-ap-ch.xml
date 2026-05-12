@@ -29,7 +29,7 @@
         <dcat:downloadURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/Datenbeschreibung_AmphibienAckerland.pdf" />
         <dct:title xml:lang="de">Datenbeschreibung_AmphibienAckerland.pdf</dct:title>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/PDF" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/pdf" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
@@ -48,7 +48,7 @@
         <dcat:downloadURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0916243e-68d9-41c5-95f7-0f657e2ee07f/attachments/DescriptionDonnees_BatrachiensAgricole.pdf" />
         <dct:title xml:lang="de">DescriptionDonnees_BatrachiensAgricole.pdf</dct:title>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/PDF" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/pdf" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />

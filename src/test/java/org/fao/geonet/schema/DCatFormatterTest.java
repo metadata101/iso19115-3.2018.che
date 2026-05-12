@@ -17,7 +17,7 @@ import static org.fao.geonet.schema.TestSupport.getResourceInsideSchema;
 
 public class DCatFormatterTest {
 
-	private static final boolean GENERATE_EXPECTED_FILE = false;
+private static final boolean GENERATE_EXPECTED_FILE = false;
 
 	@BeforeClass
 	public static void initSaxon() {
@@ -154,6 +154,11 @@ public class DCatFormatterTest {
 	@Test
 	public void chDcatApCERN() throws Exception {
 		transformToDCatAndCompare("dcat-ap-ch", "CERN_PERIMETRE_SECU_INFRA_SOUT");
+	}
+
+	@Test
+	public void chDcatApLandesschwerenetz() throws Exception {
+		transformToDCatAndCompare("dcat-ap-ch", "landesschwerenetz");
 	}
 
 	private void transformToDCatAndCompare(String profile, String mdNameRoot) throws Exception {

@@ -29,6 +29,31 @@
     </dcat:contactPoint>
     <dcat:distribution>
       <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://www.are.admin.ch/are/de/home/laendliche-raeume-und-berggebiete/internationale-zusammenarbeit/alpenkonvention.html" />
+        <dct:title xml:lang="de">Nom AL</dct:title>
+        <dct:title xml:lang="fr">Nom FR</dct:title>
+        <dct:title xml:lang="it">Nom IT</dct:title>
+        <dct:title xml:lang="en">Nom EN</dct:title>
+        <dct:title xml:lang="rm">Nom RM</dct:title>
+        <dct:description xml:lang="de">Webseite des ARE über die Alpenkonvention</dct:description>
+        <dct:description xml:lang="fr">Page web de l'ARE sur la Convention alpine</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-01-01T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-01-01T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
         <dcat:accessURL rdf:resource="http://data.geo.admin.ch/ch.are.alpenkonvention/data.zip" />
         <dcat:downloadURL rdf:resource="http://data.geo.admin.ch/ch.are.alpenkonvention/data.zip" />
         <dct:description xml:lang="de">Download von data.geo.admin.ch</dct:description>
@@ -36,7 +61,7 @@
         <dct:description xml:lang="it">Server di download di geo.admin.ch</dct:description>
         <dct:description xml:lang="en">Download server from geo.admin.ch</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/ZIP" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/zip" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
@@ -59,7 +84,6 @@
         <dct:description xml:lang="it">Servizio WMS di geo.admin.ch</dct:description>
         <dct:description xml:lang="en">WMS Service from geo.admin.ch</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/WMS_SRVC" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
@@ -80,7 +104,7 @@
         <dct:description xml:lang="de">Minimales Geodatenmodell in INTERLIS 2.3</dct:description>
         <dct:description xml:lang="fr">Modèle de données minimal en INTERLIS 2.3</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
@@ -102,7 +126,69 @@
         <dct:description xml:lang="fr">WMTS pour le géoportail national</dct:description>
         <dct:description xml:lang="en">WMTS for the national geoportal</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/WMTS_SRVC" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-01-01T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-01-01T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="http://www.alpconv.org" />
+        <dct:description xml:lang="de">Offizielle Homepage der Alpenkonvention</dct:description>
+        <dct:description xml:lang="fr">Site web officiel de la Convention alpine</dct:description>
+        <dct:description xml:lang="it">Pagina web ufficiale della Convenzione delle alpi</dct:description>
+        <dct:description xml:lang="en">Official Website of the Alpine Convention</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-01-01T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-01-01T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="http://map.geo.admin.ch/?selectedNode=LT1_1&amp;Y=660000&amp;X=190000&amp;zoom=1&amp;bgLayer=ch.swisstopo.pixelkarte-farbe&amp;layers=ch.are.alpenkonvention&amp;layers_opacity=0.6&amp;layers_visibility=true&amp;lang=de" />
+        <dct:description xml:lang="de">Die Alpenkonvention im Bundesgeoportal</dct:description>
+        <dct:description xml:lang="fr">La convention alpine dans le géoportail fédéral</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-01-01T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-01-01T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="http://www.admin.ch/ch/d/sr/0_700_1/app1.html" />
+        <dct:description xml:lang="de">Liste der administrativen Einheiten des Alpenraumes in der schweizerischen Eidgenossenschaft</dct:description>
+        <dct:description xml:lang="fr">Liste des unités administratives de l'espace alpin dans la Confédération suisse</dct:description>
+        <dct:description xml:lang="it">Elenco delle unità amministrative dello spazio alpino nella Confederazione Svizzera</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
