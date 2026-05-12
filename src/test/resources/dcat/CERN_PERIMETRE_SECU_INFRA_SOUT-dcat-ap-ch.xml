@@ -21,7 +21,6 @@
         <dct:title xml:lang="fr">0</dct:title>
         <dct:description xml:lang="fr">CERN_PERIMETRE_SECU_INFRA_SOUT</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/REST" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
@@ -37,7 +36,6 @@
         <dct:title xml:lang="fr">0</dct:title>
         <dct:description xml:lang="fr">CERN_PERIMETRE_SECU_INFRA_SOUT</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/REST" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
@@ -69,7 +67,6 @@
         <dct:title xml:lang="fr">GDB</dct:title>
         <dct:description xml:lang="fr">Serveur de fichiers Opendata</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/ZIP" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/zip" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
@@ -117,7 +114,6 @@
         <dct:title xml:lang="fr">SHP</dct:title>
         <dct:description xml:lang="fr">Serveur de fichiers Opendata</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/SHP" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/zip" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
@@ -144,3 +140,4 @@
     <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL" />
   </dcat:Dataset>
 </rdf:RDF>
+

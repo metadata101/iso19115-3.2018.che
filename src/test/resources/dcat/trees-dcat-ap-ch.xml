@@ -22,6 +22,67 @@
     </dcat:contactPoint>
     <dcat:distribution>
       <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://map.geo.fr.ch/?dataTheme=Agriculture&amp;theme&amp;lang=fr" />
+        <dct:title xml:lang="fr">Portail cartographique du canton de Fribourg. Thème Agriculture</dct:title>
+        <dct:title xml:lang="de">Online-Karten des Kantons Freiburg. Thema : Landwirtschaft</dct:title>
+        <dct:description xml:lang="fr">Portail cartographique du canton de Fribourg. Thème Agriculture</dct:description>
+        <dct:description xml:lang="de">Online-Karten des Kantons Freiburg. Thema : Landwirtschaft</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-11T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-11T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="http://map.geo.fr.ch/arcgis/rest/services/PortailCarto/Theme_agriculture/MapServer" />
+        <dct:title xml:lang="fr">ArcGIS REST Services Directory</dct:title>
+        <dct:description xml:lang="fr">ArcGIS REST Services Directory</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-11T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-11T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://geo.fr.ch" />
+        <dct:title xml:lang="fr">Géoportail cantonal</dct:title>
+        <dct:title xml:lang="de">Kantonales Geoportal</dct:title>
+        <dct:title xml:lang="it">Geoportale cantonale</dct:title>
+        <dct:title xml:lang="en">Cantonal Geoportal</dct:title>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-11T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-11T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
         <dcat:accessURL rdf:resource="https://geo.fr.ch/portal/apps/sites/#/geoportail/search?q=1d177f9e-2446-428f-8740-0dbe11e4131c" />
         <dcat:downloadURL rdf:resource="https://geo.fr.ch/portal/apps/sites/#/geoportail/search?q=1d177f9e-2446-428f-8740-0dbe11e4131c" />
         <dct:description xml:lang="fr">Accès aux données (fr) : téléchargement et services web (Géoportail cantonal)</dct:description>
@@ -29,7 +90,6 @@
         <dct:description xml:lang="it">Accès aux données (fr) : téléchargement et services web (Géoportail cantonal)</dct:description>
         <dct:description xml:lang="en">Accès aux données (fr) : téléchargement et services web (Géoportail cantonal)</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/UNSPECIFIED" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
@@ -51,7 +111,6 @@
         <dct:description xml:lang="it">Datenzugriff (de): Download und Webservices (Kantonales Geoportal)</dct:description>
         <dct:description xml:lang="en">Datenzugriff (de): Download und Webservices (Kantonales Geoportal)</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/UNSPECIFIED" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
@@ -70,7 +129,6 @@
         <dct:title xml:lang="fr">0</dct:title>
         <dct:description xml:lang="fr">Arbres (culture)</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/WMS_SRVC" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />

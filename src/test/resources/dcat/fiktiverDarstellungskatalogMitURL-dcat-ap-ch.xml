@@ -28,6 +28,32 @@
     </dcat:contactPoint>
     <dcat:distribution>
       <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://www.bafu.admin.ch/bafu/de/home/themen/biodiversitaet/zustand/karten.html" />
+        <dct:title xml:lang="de">Link zur Detailbeschreibung</dct:title>
+        <dct:title xml:lang="fr">Lien vers la description détaillée des données</dct:title>
+        <dct:title xml:lang="it">Link per la descrizione dei dettagli</dct:title>
+        <dct:title xml:lang="en">Link to description</dct:title>
+        <dct:description xml:lang="de">Interaktive Karten, Geodaten und Geodatenmodelle zum Thema Biodiversität, BAFU</dct:description>
+        <dct:description xml:lang="fr">Lien vers la description détaillée des données</dct:description>
+        <dct:description xml:lang="it">Link per la descrizione dei dettagli</dct:description>
+        <dct:description xml:lang="en">Link to description</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-31T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-31T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
         <dcat:accessURL rdf:resource="https://data.geo.admin.ch/ch.bafu.fauna-steinbockkolonien/data.zip" />
         <dcat:downloadURL rdf:resource="https://data.geo.admin.ch/ch.bafu.fauna-steinbockkolonien/data.zip" />
         <dct:title xml:lang="de">Download-Server von geo.admin.ch</dct:title>
@@ -36,7 +62,7 @@
         <dct:description xml:lang="it">Server di download di geo.admin.ch</dct:description>
         <dct:description xml:lang="en">Download server from geo.admin.ch</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/ZIP" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/zip" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
@@ -59,7 +85,6 @@
         <dct:description xml:lang="it">Servizio WMS-IFDG Dienst, Layer "Steinbockkolonien"</dct:description>
         <dct:description xml:lang="en">WMS-FSDI service, Layer "Steinbockkolonien"</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/WMS_SRVC" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
@@ -105,7 +130,6 @@
         <dct:description xml:lang="fr">WMTS pour le géoportail national</dct:description>
         <dct:description xml:lang="en">WMTS for the national geoportal</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/WMTS_SRVC" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
@@ -133,7 +157,6 @@
         <dct:description xml:lang="en">RESTful API from geo.admin.ch</dct:description>
         <dct:description xml:lang="rm">RESTful API dad geo.admin.ch</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/REST" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />

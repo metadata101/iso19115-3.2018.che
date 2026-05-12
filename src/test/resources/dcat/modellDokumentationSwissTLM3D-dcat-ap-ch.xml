@@ -22,12 +22,30 @@
     </dcat:contactPoint>
     <dcat:distribution>
       <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/6e2efe8b-7153-4f5c-81a5-c154e69727ba/attachments/b6444b4c-50ea-4982-8bd1-bcf7541a5b0d.pdf" />
+        <dct:description xml:lang="de">Französische Version</dct:description>
+        <dct:description xml:lang="fr">Version française</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T00:00:00+00:00</dct:issued>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
         <dcat:accessURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/6e2efe8b-7153-4f5c-81a5-c154e69727ba/attachments/be4129e9-d1d6-4856-b465-8ca2803e1376.pdf" />
         <dcat:downloadURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/6e2efe8b-7153-4f5c-81a5-c154e69727ba/attachments/be4129e9-d1d6-4856-b465-8ca2803e1376.pdf" />
         <dct:description xml:lang="de">Deutsche Version</dct:description>
         <dct:description xml:lang="fr">Version allemande</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/PDF" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/pdf" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />

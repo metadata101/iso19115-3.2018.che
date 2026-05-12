@@ -37,7 +37,7 @@
         <dct:description xml:lang="it">Indicazioni temporali in UTC: 00:40 UTC = 02:40 orario estivo locale (CH), 01:40 orario invernale. Parametri chiave: tre200s0; rre150z0; sre000z0; gre000z0; ure200s0; tde200s0; dkl010z0; fu3010z0; fu3010z1; prestas0; pp0qffs0; pp0qnhs0; ppz850s0; ppz700s0; dv1towz0; fu3towz0; u3towz1; ta1tows0; uretows0; tdetows0.</dct:description>
         <dct:description xml:lang="en">Time in UTC: 00:40 UTC = 02:40 local (CH) summer time, 01:40 winter time. Main parameters: tre200s0; rre150z0; sre000z0; gre000z0; ure200s0; tde200s0; dkl010z0; fu3010z0; fu3010z1; prestas0; pp0qffs0; pp0qnhs0; ppz850s0; ppz700s0; dv1towz0; fu3towz0; u3towz1; ta1tows0; uretows0; tdetows0.</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/csv" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
@@ -63,7 +63,7 @@
         <dct:description xml:lang="it">Tutti i parametri hanno un identificatore unico che dipende dalla risoluzione temporale (ad esempio, "dkl010z0" per "direzione del vento; media di dieci minuti"). Questa risorsa fornisce un elenco di tutti gli identificatori dei parametri con spiegazione, intervallo di tempo, cifre decimali, tipo di dati e unità di misura.</dct:description>
         <dct:description xml:lang="en">All parameters have a unique identifier that depends on the time resolution (e.g. "dkl010z0" for "wind direction; ten-minute average"). This resource provides a list of all parameter identifiers with explanation, time interval, decimal places, data type and unit of measurement.</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/csv" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
@@ -89,7 +89,7 @@
         <dct:description xml:lang="it">Tutte le stazioni hanno un identificatore di tre lettere (ad esempio "BER" per "Bern/Zollikofen" o "LUG" per "Lugano"). Questa risorsa fornisce un elenco di tutti gli identificatori delle stazioni con nome, Cantone, Wigos ID, tipo di stazione, altitudine, coordinate, orientamento e URL della pagina dei dettagli delle stazioni.</dct:description>
         <dct:description xml:lang="en">All stations have a three-letter identifier (e.g. "BER" for "Bern/Zollikofen" or "LUG" for "Lugano"). This resource provides a list of all station identifiers with name, Canton, Wigos ID, station type, altitude, coordinates, orientation and URL of the station details pages.</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/csv" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
@@ -115,7 +115,53 @@
         <dct:description xml:lang="it">Temperatura, precipitazioni, vento, soleggiamento, umidità, radiazione e pressione – per stazione – valori ogni 10 minuti ('t'), orari ('h'), giornalieri ('d'), mensili ('m') e annuali ('y') – dalla mezzanotte ('now'), dall'anno corrente fino a ieri ('recent'), dall'inizio delle misurazioni in incrementi di dieci anni ('historical'). Se si necessitano valori orari, giornalieri, mensili o annuali, si consiglia vivamente di scaricare la risoluzione corrispondente.</dct:description>
         <dct:description xml:lang="en">Temperature, precipitation, wind, sunshine, humidity, radiation and pressure – per station – values every 10 minutes ('t'), hourly ('h'), daily ('d'), monthly ('m') and yearly ('y') – since midnight ('now'), from the current year up to yesterday ('recent'), since the beginning of the measurement in ten-year increments ('historical'). If you require hourly, daily, monthly or yearly values, we strongly recommend that you download the corresponding resolution.</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/csv" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-20T00:00:00+00:00</dct:issued>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://www.meteoschweiz.admin.ch/service-und-publikationen/service/open-data.html" />
+        <dct:title xml:lang="de">Open Data Landingpage</dct:title>
+        <dct:title xml:lang="fr">Page d'accueil Open Data</dct:title>
+        <dct:title xml:lang="it">Pagina iniziale Open Data</dct:title>
+        <dct:title xml:lang="en">Open Data landing page</dct:title>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-20T00:00:00+00:00</dct:issued>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://opendatadocs.meteoswiss.ch/de/a-data-groundbased/a1-automatic-weather-stations" />
+        <dct:title xml:lang="de">Open Data Dokumentation</dct:title>
+        <dct:title xml:lang="fr">Documentation Open Data</dct:title>
+        <dct:title xml:lang="it">Documentazione Open Data</dct:title>
+        <dct:title xml:lang="en">Open Data Documentation</dct:title>
+        <dct:description xml:lang="de">Informationen zu den Daten, ihrer Struktur, ihrem Format, ihren Metadaten und ihrer Anwendung.</dct:description>
+        <dct:description xml:lang="fr">Informations sur les données, leur structure, leur format, leurs métadonnées et leur usage.</dct:description>
+        <dct:description xml:lang="it">Informazioni sui dati, sulla loro struttura, sul loro formato, sui loro metadati e sul loro uso.</dct:description>
+        <dct:description xml:lang="en">Information about the data, its structure, format, metadata and usage.</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
@@ -141,7 +187,7 @@
         <dct:description xml:lang="it">Questa risorsa fornisce un elenco di tutti stazioni e parametri con la data di inizio e di fine delle misurazioni.</dct:description>
         <dct:description xml:lang="en">This resource provides a list of all stations and parameters with start and end date of the measurements.</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/csv" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
