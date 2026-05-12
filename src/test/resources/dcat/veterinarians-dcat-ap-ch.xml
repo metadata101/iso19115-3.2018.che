@@ -23,7 +23,7 @@
         <dct:title xml:lang="fr">Datenbeschreibung_AmphibienAckerland.pdf</dct:title>
         <dct:title xml:lang="de">Datenbeschreibung_AmphibienAckerland.pdf</dct:title>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/PDF" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/pdf" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />

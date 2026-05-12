@@ -67,7 +67,25 @@
         <dct:description xml:lang="en">WMTS-FSDI service, layer "Cableways swissTLM3D"</dct:description>
         <dct:description xml:lang="rm">WMTS-BGDI Dienst, Layer "Seilbahnen swissTLM3D"</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/WMTS_SRVC" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-04-01T00:00:00+00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T00:00:00+00:00</dct:modified>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://www.swisstopo.admin.ch/de/landschaftsmodell-swisstlm3d" />
+        <dct:description xml:lang="de">swissTLM3D</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
@@ -87,7 +105,6 @@
         <dct:title xml:lang="de">ch.swisstopo.swisstlm3d-uebrigerverkehr</dct:title>
         <dct:description xml:lang="de">Seilbahnen swissTLM3D</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/WMS_SRVC" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
@@ -110,7 +127,6 @@
         <dct:description xml:lang="it">Shop</dct:description>
         <dct:description xml:lang="en">Shop</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/UNSPECIFIED" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
@@ -138,7 +154,6 @@
         <dct:description xml:lang="en">RESTful API from geo.admin.ch</dct:description>
         <dct:description xml:lang="rm">RESTful API dad geo.admin.ch</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/REST" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/xml" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />

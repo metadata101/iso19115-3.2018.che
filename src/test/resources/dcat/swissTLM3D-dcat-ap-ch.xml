@@ -29,7 +29,6 @@
         <dct:description xml:lang="de">ili-Datei</dct:description>
         <dct:description xml:lang="fr">Fichier ili</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/UNSPECIFIED" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />

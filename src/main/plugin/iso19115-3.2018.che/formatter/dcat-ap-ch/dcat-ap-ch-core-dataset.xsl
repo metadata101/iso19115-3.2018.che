@@ -236,6 +236,7 @@
       <!-- Check if this should be a DCAT distribution -->
       <xsl:if test="
         starts-with($protocol, 'WWW:DOWNLOAD') or
+        starts-with($protocol, 'WWW:LINK') or
         starts-with($protocol, 'OGC:WMTS') or
         starts-with($protocol, 'OGC:WFS') or
         starts-with($protocol, 'OGC:WMS') or
@@ -243,7 +244,11 @@
         starts-with($protocol, 'LINKED:DATA') or
         starts-with($protocol, 'MAP:Preview') or
         contains($protocolLower, 'wms') or
+        contains($protocolLower, 'wmts') or
         contains($protocolLower, 'wfs') or
+        contains($protocolLower, 'restful') or
+        contains($protocolLower, 'arcgis rest') or
+        contains($protocolLower, 'rest api') or
         contains($protocolLower, 'web portal') or
         contains($protocolLower, 'web atlas') or
         contains($protocolLower, 'csv') or
@@ -294,6 +299,7 @@
             <!-- Media Type -->
             <xsl:call-template name="add-media-type">
               <xsl:with-param name="protocol" select="$protocol"/>
+              <xsl:with-param name="url" select="$url"/>
             </xsl:call-template>
             <!-- Rights/License mandatory - extracted from metadata constraints -->
             <xsl:call-template name="add-distribution-license"/>
@@ -647,16 +653,16 @@
         <xsl:when test="starts-with($protocol, 'OGC:WMS') or contains($protocolLower, 'wms')">
           <xsl:text>http://publications.europa.eu/resource/authority/file-type/WMS_SRVC</xsl:text>
         </xsl:when>
-        <xsl:when test="starts-with($protocol, 'OGC:WMTS')">
+        <xsl:when test="starts-with($protocol, 'OGC:WMTS') or contains($protocolLower, 'wmts')">
           <xsl:text>http://publications.europa.eu/resource/authority/file-type/WMTS_SRVC</xsl:text>
         </xsl:when>
         <xsl:when test="starts-with($protocol, 'OGC:WFS') or contains($protocolLower, 'wfs')">
           <xsl:text>http://publications.europa.eu/resource/authority/file-type/WFS_SRVC</xsl:text>
         </xsl:when>
-        <xsl:when test="starts-with($protocol, 'ESRI:REST')">
+        <xsl:when test="starts-with($protocol, 'ESRI:REST') or contains($protocolLower, 'restful') or contains($protocolLower, 'arcgis rest') or contains($protocolLower, 'rest api')">
           <xsl:text>http://publications.europa.eu/resource/authority/file-type/REST</xsl:text>
         </xsl:when>
-        <xsl:when test="starts-with($protocol, 'MAP:Preview') or contains($protocolLower, 'web portal') or contains($protocolLower, 'web atlas')">
+        <xsl:when test="starts-with($protocol, 'MAP:Preview') or starts-with($protocol, 'WWW:LINK') or contains($protocolLower, 'web portal') or contains($protocolLower, 'web atlas')">
           <xsl:text>http://publications.europa.eu/resource/authority/file-type/HTML</xsl:text>
         </xsl:when>
 
@@ -801,21 +807,42 @@
   <!-- 21. ADD MEDIA TYPE (for distributions) -->
   <xsl:template name="add-media-type">
     <xsl:param name="protocol"/>
+    <xsl:param name="url" select="''"/>
 
     <xsl:variable name="protocolLower" select="lower-case($protocol)"/>
+    <xsl:variable name="protocolLowerMT" select="lower-case($protocol)"/>
+    <xsl:variable name="urlBaseMT" select="lower-case(tokenize($url, '[#?]')[1])"/>
     <xsl:variable name="mediaType">
       <xsl:choose>
-        <xsl:when test="starts-with($protocol, 'MAP:Preview') or starts-with($protocol, 'WWW:LINK') or contains($protocolLower, 'web portal') or contains($protocolLower, 'web atlas')">text/html</xsl:when>
-        <xsl:when test="starts-with($protocol, 'WWW:DOWNLOAD')">application/octet-stream</xsl:when>
-        <xsl:when test="starts-with($protocol, 'OGC:') or starts-with($protocol, 'ESRI:') or contains($protocolLower, 'wms') or contains($protocolLower, 'wfs')">application/xml</xsl:when>
-        <xsl:when test="contains($protocolLower, 'csv')">text/csv</xsl:when>
-        <xsl:when test="contains($protocolLower, 'gml')">application/gml+xml</xsl:when>
-        <xsl:when test="contains($protocolLower, 'kml')">application/vnd.google-earth.kml+xml</xsl:when>
-        <xsl:when test="contains($protocolLower, 'geojson')">application/geo+json</xsl:when>
-        <xsl:when test="contains($protocolLower, 'geotiff') or contains($protocolLower, 'tiff') or contains($protocolLower, 'tif')">image/tiff</xsl:when>
-        <xsl:when test="contains($protocolLower, 'pdf')">application/pdf</xsl:when>
-        <xsl:when test="contains($protocolLower, 'txt')">text/plain</xsl:when>
-        <xsl:otherwise>application/zip</xsl:otherwise>
+        <!-- HTML pages and web links -->
+        <xsl:when test="starts-with($protocol, 'MAP:Preview') or starts-with($protocol, 'WWW:LINK') or contains($protocolLowerMT, 'web portal') or contains($protocolLowerMT, 'web atlas')">text/html</xsl:when>
+        <!-- Service protocols: no media type (XML envelope differs per service) -->
+        <xsl:when test="starts-with($protocol, 'OGC:') or starts-with($protocol, 'ESRI:') or contains($protocolLowerMT, 'wms') or contains($protocolLowerMT, 'wmts') or contains($protocolLowerMT, 'wfs') or contains($protocolLowerMT, 'restful') or contains($protocolLowerMT, 'arcgis rest')"></xsl:when>
+        <!-- Downloads: derive media type from protocol name or URL extension -->
+        <xsl:when test="starts-with($protocol, 'WWW:DOWNLOAD') or starts-with($protocol, 'LINKED:DATA')">
+          <xsl:choose>
+            <xsl:when test="contains($protocolLowerMT, 'csv') or ends-with($urlBaseMT, '.csv')">text/csv</xsl:when>
+            <xsl:when test="contains($protocolLowerMT, 'geojson') or ends-with($urlBaseMT, '.geojson')">application/geo+json</xsl:when>
+            <xsl:when test="ends-with($urlBaseMT, '.json')">application/json</xsl:when>
+            <xsl:when test="contains($protocolLowerMT, 'gml') or ends-with($urlBaseMT, '.gml')">application/gml+xml</xsl:when>
+            <xsl:when test="contains($protocolLowerMT, 'kml') or ends-with($urlBaseMT, '.kml')">application/vnd.google-earth.kml+xml</xsl:when>
+            <xsl:when test="contains($protocolLowerMT, 'geotiff') or ends-with($urlBaseMT, '.tif') or ends-with($urlBaseMT, '.tiff')">image/tiff</xsl:when>
+            <xsl:when test="contains($protocolLowerMT, 'pdf') or ends-with($urlBaseMT, '.pdf')">application/pdf</xsl:when>
+            <xsl:when test="contains($protocolLowerMT, 'gpkg') or contains($protocolLowerMT, 'geopackage') or ends-with($urlBaseMT, '.gpkg')">application/geopackage+sqlite3</xsl:when>
+            <xsl:when test="contains($protocolLowerMT, 'shp') or contains($protocolLowerMT, 'shapefile') or ends-with($urlBaseMT, '.shp')">application/octet-stream</xsl:when>
+            <xsl:when test="ends-with($urlBaseMT, '.zip') or contains($protocolLowerMT, 'zip')">application/zip</xsl:when>
+            <xsl:when test="ends-with($urlBaseMT, '.html') or ends-with($urlBaseMT, '.htm')">text/html</xsl:when>
+            <xsl:when test="ends-with($urlBaseMT, '.xml')">application/xml</xsl:when>
+          </xsl:choose>
+        </xsl:when>
+        <!-- Other known formats -->
+        <xsl:when test="contains($protocolLowerMT, 'csv')">text/csv</xsl:when>
+        <xsl:when test="contains($protocolLowerMT, 'gml')">application/gml+xml</xsl:when>
+        <xsl:when test="contains($protocolLowerMT, 'kml')">application/vnd.google-earth.kml+xml</xsl:when>
+        <xsl:when test="contains($protocolLowerMT, 'geojson')">application/geo+json</xsl:when>
+        <xsl:when test="contains($protocolLowerMT, 'geotiff') or contains($protocolLowerMT, 'tiff') or contains($protocolLowerMT, 'tif')">image/tiff</xsl:when>
+        <xsl:when test="contains($protocolLowerMT, 'pdf')">application/pdf</xsl:when>
+        <xsl:when test="contains($protocolLowerMT, 'txt')">text/plain</xsl:when>
       </xsl:choose>
     </xsl:variable>
     

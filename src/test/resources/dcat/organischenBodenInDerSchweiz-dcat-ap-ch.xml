@@ -24,6 +24,29 @@
     </dcat:contactPoint>
     <dcat:distribution>
       <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://www.agroscope.admin.ch/agroscope/de/home/themen/umwelt-ressourcen/klima-lufthygiene/co2-treibhausgase-landwirtschaftliche-boeden/organische-boeden/flaeche.html" />
+        <dct:title xml:lang="de">Link zum Projekt</dct:title>
+        <dct:title xml:lang="fr">Liens vers le project</dct:title>
+        <dct:title xml:lang="en">Link to the project</dct:title>
+        <dct:description xml:lang="de">Link zum Projekt</dct:description>
+        <dct:description xml:lang="fr">Liens vers le projet</dct:description>
+        <dct:description xml:lang="en">Link to the project</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-01T00:00:00+00:00</dct:issued>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
         <dcat:accessURL rdf:resource="https://data.geo.admin.ch/browser/index.html#/collections/ch.agroscope.LAYERNAME" />
         <dcat:downloadURL rdf:resource="https://data.geo.admin.ch/browser/index.html#/collections/ch.agroscope.LAYERNAME" />
         <dct:title xml:lang="de">STAC Browser</dct:title>
@@ -33,7 +56,7 @@
         <dct:description xml:lang="it">Link per le fonti dei dati</dct:description>
         <dct:description xml:lang="en">Link for data download</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
@@ -68,6 +91,54 @@
     </dcat:distribution>
     <dcat:distribution>
       <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map.pdf" />
+        <dct:title xml:lang="de">Wüst-Galley Leifeld 2025 org soils map.pdf</dct:title>
+        <dct:title xml:lang="fr">Wüst-Galley Leifeld 2025 org soils map.pdf</dct:title>
+        <dct:title xml:lang="it">Wüst-Galley Leifeld 2025 org soils map.pdf</dct:title>
+        <dct:title xml:lang="en">Wüst-Galley Leifeld 2025 org soils map.pdf</dct:title>
+        <dct:title xml:lang="rm">Wüst-Galley Leifeld 2025 org soils map.pdf</dct:title>
+        <dct:description xml:lang="de">Link zur Publikation</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-01T00:00:00+00:00</dct:issued>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:accessURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20et%20al%202015%20LocatingOrganicSoilsForTheSwissGreenhouseGasInventory.pdf" />
+        <dct:title xml:lang="de">Wüst-Galley et al 2015 LocatingOrganicSoilsForTheSwissGreenhouseGasInventory.pdf</dct:title>
+        <dct:title xml:lang="fr">Wüst-Galley et al 2015 LocatingOrganicSoilsForTheSwissGreenhouseGasInventory.pdf</dct:title>
+        <dct:title xml:lang="it">Wüst-Galley et al 2015 LocatingOrganicSoilsForTheSwissGreenhouseGasInventory.pdf</dct:title>
+        <dct:title xml:lang="en">Wüst-Galley et al 2015 LocatingOrganicSoilsForTheSwissGreenhouseGasInventory.pdf</dct:title>
+        <dct:title xml:lang="rm">Wüst-Galley et al 2015 LocatingOrganicSoilsForTheSwissGreenhouseGasInventory.pdf</dct:title>
+        <dct:description xml:lang="de">Publikation zu den Daten von 2015</dct:description>
+        <dct:description xml:lang="fr">Publication expliquant les données de 2015</dct:description>
+        <dct:description xml:lang="en">Publication explaining the data of 2015</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
+        <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        <dct:rights>
+          <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
+        </dct:rights>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-01T00:00:00+00:00</dct:issued>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/DEU" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ROH" />
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution>
         <dcat:accessURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map%20SI.pdf" />
         <dcat:downloadURL rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/0572e842-7e34-409a-90d9-526d012a1c2d/attachments/W%C3%BCst-Galley%20Leifeld%202025%20org%20soils%20map%20SI.pdf" />
         <dct:title xml:lang="de">Wüst-Galley Leifeld 2025 org soils map SI.pdf</dct:title>
@@ -79,7 +150,7 @@
         <dct:description xml:lang="fr">Publication expliquant les données de 2024</dct:description>
         <dct:description xml:lang="en">Publication explaining the data of 2024</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/PDF" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/pdf" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
@@ -105,7 +176,7 @@
         <dct:description xml:lang="fr">Description aditionelle des données</dct:description>
         <dct:description xml:lang="en">Additional description of the data</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/PDF" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream" />
+        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/pdf" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
