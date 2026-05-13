@@ -64,6 +64,25 @@
       Identifikator des Geobasisdatensatzes (basicGeodataID) ist vorhanden, wenn Geobasisdaten aktiviert ist (basicGeodata='true').
     </sch:diagnostic>
 
+    <sch:diagnostic id="rule.che.aap-metadatamaintenance-misplaced-failure-en" xml:lang="en">
+      AAP section (appraisal) found in metadataMaintenance but not in identificationInfo. The AAP section must be declared under identificationInfo/resourceMaintenance.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.aap-metadatamaintenance-misplaced-failure-fr" xml:lang="fr">
+      Section AAP (appraisal) trouvée dans metadataMaintenance mais absente de identificationInfo. La section AAP dans metadataMaintenance doit être déclarée sous identificationInfo/resourceMaintenance.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.aap-metadatamaintenance-misplaced-failure-de" xml:lang="de">
+      AAP-Bereich (appraisal) in metadataMaintenance gefunden, aber nicht in identificationInfo. Der AAP-Bereich in metadataMaintenance muss unter identificationInfo/resourceMaintenance deklariert werden.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.aap-metadatamaintenance-misplaced-success-en" xml:lang="en">
+      AAP section (appraisal) is correctly present in identificationInfo.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.aap-metadatamaintenance-misplaced-success-fr" xml:lang="fr">
+      La section AAP (appraisal) est correctement présente dans identificationInfo.
+    </sch:diagnostic>
+    <sch:diagnostic id="rule.che.aap-metadatamaintenance-misplaced-success-de" xml:lang="de">
+      Der AAP-Bereich (appraisal) ist korrekt in identificationInfo vorhanden.
+    </sch:diagnostic>
+
     <sch:diagnostic id="rule.che.topic-subtopic-consistency-failure-en" xml:lang="en">
       Inconsistent Topic category (topicCategory) and Subtopic Category (subTopicCategory): each Subtopic Category (che:CHE_MD_SubTopicCategoryCode) must start with the selected ISO topicCategory (prefix before '_').
     </sch:diagnostic>
@@ -106,6 +125,18 @@
                   diagnostics="rule.basicgeodata.basicgeodataid-mandatory-failure-en rule.basicgeodata.basicgeodataid-mandatory-failure-fr rule.basicgeodata.basicgeodataid-mandatory-failure-de"/>
       <sch:report test="some $id in che:basicGeodataInformation/che:CHE_MD_BasicGeodataInformation/che:basicGeodataID/gco:CharacterString satisfies normalize-space($id) != ''"
                  diagnostics="rule.basicgeodata.basicgeodataid-mandatory-success-en rule.basicgeodata.basicgeodataid-mandatory-success-fr rule.basicgeodata.basicgeodataid-mandatory-success-de"/>
+    </sch:rule>
+  </sch:pattern>
+
+  <sch:pattern id="rule.che.aap-metadatamaintenance-misplaced">
+    <sch:title xml:lang="en">AAP section in metadataMaintenance requires AAP section in identificationInfo</sch:title>
+    <sch:title xml:lang="fr">Section AAP dans metadataMaintenance implique une section AAP dans identificationInfo</sch:title>
+    <sch:title xml:lang="de">AAP-Bereich in metadataMaintenance erfordert AAP-Bereich in identificationInfo</sch:title>
+    <sch:rule context="//che:CHE_MD_Metadata[mdb:metadataMaintenance//che:CHE_MD_Appraisal_AAP]">
+      <sch:assert test="mdb:identificationInfo//mri:resourceMaintenance//che:CHE_MD_Appraisal_AAP"
+                  diagnostics="rule.che.aap-metadatamaintenance-misplaced-failure-en rule.che.aap-metadatamaintenance-misplaced-failure-fr rule.che.aap-metadatamaintenance-misplaced-failure-de"/>
+      <sch:report test="mdb:identificationInfo//mri:resourceMaintenance//che:CHE_MD_Appraisal_AAP"
+                  diagnostics="rule.che.aap-metadatamaintenance-misplaced-success-en rule.che.aap-metadatamaintenance-misplaced-success-fr rule.che.aap-metadatamaintenance-misplaced-success-de"/>
     </sch:rule>
   </sch:pattern>
 

@@ -70,4 +70,30 @@ public class SchematronBasicGeodataAapMandatoryTest extends AbstractSchematronTe
 		hasExpectedNumberOfFailure(1, report);
 	}
 
+	@Test
+	public void extraMisplacedAAPSection() throws Exception {
+		String report = applySchematronAndCompare("swissBOUNDARIES3D_misplaced_AAP");
+
+		hasExpectedNumberOfFailure(0, report);
+	}
+
+
+	@Test
+	public void misplacedAAPSectionAlone() throws Exception {
+		Path xmlFile = getResource("swissBOUNDARIES3D_misplaced_AAP" + "-19115-3.che.xml");
+		Element md = Xml.loadFile(xmlFile);
+		XPath xp = XPath.newInstance("*//che:CHE_MD_DataIdentification/mri:resourceMaintenance/che:CHE_MD_MaintenanceInformation/che:appraisal");
+		xp.addNamespace("che", "http://geocat.ch/che");
+		xp.addNamespace("mri", "http://standards.iso.org/iso/19115/-3/mri/1.0");
+
+		xp.selectNodes(md).forEach(e -> ((Element)e).detach());
+
+		String report = applySchematronAndCompare("swissBOUNDARIES3D_misplaced_AAP_alone", false, md);
+
+		hasExpectedNumberOfFailure(1, report);
+	}
+
+
+
+
 }
