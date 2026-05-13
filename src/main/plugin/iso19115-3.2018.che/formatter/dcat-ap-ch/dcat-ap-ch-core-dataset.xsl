@@ -662,8 +662,11 @@
         <xsl:when test="starts-with($protocol, 'ESRI:REST') or contains($protocolLower, 'restful') or contains($protocolLower, 'arcgis rest') or contains($protocolLower, 'rest api')">
           <xsl:text>http://publications.europa.eu/resource/authority/file-type/REST</xsl:text>
         </xsl:when>
-        <xsl:when test="starts-with($protocol, 'MAP:Preview') or starts-with($protocol, 'WWW:LINK') or contains($protocolLower, 'web portal') or contains($protocolLower, 'web atlas')">
+        <xsl:when test="starts-with($protocol, 'WWW:LINK') or contains($protocolLower, 'web portal') or contains($protocolLower, 'web atlas')">
           <xsl:text>http://publications.europa.eu/resource/authority/file-type/HTML</xsl:text>
+        </xsl:when>
+        <xsl:when test="starts-with($protocol, 'MAP:Preview')">
+          <xsl:text>http://publications.europa.eu/resource/authority/file-type/MAP_PRVW</xsl:text>
         </xsl:when>
 
         <!-- Format protocols identified by name (case-insensitive) -->
@@ -815,7 +818,7 @@
     <xsl:variable name="mediaType">
       <xsl:choose>
         <!-- HTML pages and web links -->
-        <xsl:when test="starts-with($protocol, 'MAP:Preview') or starts-with($protocol, 'WWW:LINK') or contains($protocolLowerMT, 'web portal') or contains($protocolLowerMT, 'web atlas')">text/html</xsl:when>
+        <xsl:when test="starts-with($protocol, 'WWW:LINK') or contains($protocolLowerMT, 'web portal') or contains($protocolLowerMT, 'web atlas')">text/html</xsl:when>
         <!-- Service protocols: no media type (XML envelope differs per service) -->
         <xsl:when test="starts-with($protocol, 'OGC:') or starts-with($protocol, 'ESRI:') or contains($protocolLowerMT, 'wms') or contains($protocolLowerMT, 'wmts') or contains($protocolLowerMT, 'wfs') or contains($protocolLowerMT, 'restful') or contains($protocolLowerMT, 'arcgis rest')"></xsl:when>
         <!-- Downloads: derive media type from protocol name or URL extension -->

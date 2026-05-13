@@ -152,8 +152,7 @@
         <dct:description xml:lang="de">Visualisierung der Daten</dct:description>
         <dct:description xml:lang="it">Visualizzazione dei dati</dct:description>
         <dct:description xml:lang="en">Visualization of the data</dct:description>
-        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/MAP_PRVW" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_open" />
