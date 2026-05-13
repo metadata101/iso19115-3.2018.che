@@ -13,7 +13,7 @@
 
   <properties>
     <xmlunit.version>2.10.0</xmlunit.version>
-    <gn.version>4.4.10-SEBR72-SNAPSHOT</gn.version>
+    <gn.version>4.4.10-0</gn.version>
   </properties>
 
   <dependencies>
@@ -262,14 +262,6 @@
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
-    </repository>
-    <repository>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <id>sebr72</id>
-      <name>C2C commit specifics Repository</name>
-      <url>https://maven.pkg.github.com/sebr72/core-geonetwork</url>
     </repository>
   </repositories>
 </project>
