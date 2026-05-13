@@ -105,8 +105,7 @@
         <dct:title xml:lang="it">Previsione map.geo.admin.ch</dct:title>
         <dct:title xml:lang="en">Preview map.geo.admin.ch</dct:title>
         <dct:title xml:lang="rm">Vorschau map.geo.admin.ch</dct:title>
-        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/HTML" />
-        <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/text/html" />
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/MAP_PRVW" />
         <dct:license rdf:resource="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
         <dct:rights>
           <dct:RightsStatement rdf:about="http://dcat-ap.ch/vocabulary/licenses/terms_by" />
