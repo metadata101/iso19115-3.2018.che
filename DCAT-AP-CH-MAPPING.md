@@ -22,13 +22,14 @@ The transformation is implemented in the XSLT stylesheet `dcat-ap-ch-core-datase
 ## Distribution Level Mapping
 
 Distributions are created for online resources with specific protocols:
-- `WWW:DOWNLOAD*` - Download services
-- `OGC:WMTS` - WMTS tile services  
+- `WWW:DOWNLOAD*` - Download files (also sets `dcat:downloadURL`)
+- `WWW:LINK*` - Web links (HTML format)
+- `OGC:WMTS` - WMTS tile services
 - `OGC:WFS` - WFS feature services
 - `OGC:WMS` - WMS map services
 - `ESRI:REST` - ArcGIS REST services
 - `LINKED:DATA` - Linked data services
-- `MAP:Preview` - Map preview pages
+- `MAP:Preview` - Map preview pages 
 
 -> See mapping-eCH0271-dcat-ap-ch table (tab dcat_ap_ch_distribution_mapping)
 
@@ -79,7 +80,8 @@ Distributions are created for online resources with specific protocols:
 | OGC:WMTS* | WMTS_SRVC | http://publications.europa.eu/resource/authority/file-type/WMTS_SRVC |
 | OGC:WFS* | WFS_SRVC | http://publications.europa.eu/resource/authority/file-type/WFS_SRVC |
 | ESRI:REST* | REST | http://publications.europa.eu/resource/authority/file-type/REST |
-| MAP:Preview* | HTML | http://publications.europa.eu/resource/authority/file-type/HTML |
+| WWW:LINK* | HTML | http://publications.europa.eu/resource/authority/file-type/HTML |
+| MAP:Preview* | MAP_PRVW | http://publications.europa.eu/resource/authority/file-type/MAP_PRVW |
 | *.shp | SHP | http://publications.europa.eu/resource/authority/file-type/SHP |
 | *.gpkg | GPKG | http://publications.europa.eu/resource/authority/file-type/GPKG |
 | *.geojson | GEOJSON | http://publications.europa.eu/resource/authority/file-type/GEOJSON |
@@ -203,13 +205,14 @@ For contact/publisher organization selection:
 ### Distribution Filtering
 
 Only online resources with specific protocol prefixes are converted to distributions:
-- `WWW:DOWNLOAD*` - downloadable files
+- `WWW:DOWNLOAD*` - downloadable files (also sets `dcat:downloadURL`)
+- `WWW:LINK*` - web links, included as distributions with format `HTML`
 - `OGC:WMTS`, `OGC:WFS`, `OGC:WMS` - OGC web services
 - `ESRI:REST` - ArcGIS services
 - `LINKED:DATA` - linked data endpoints
-- `MAP:Preview` - map preview pages
+- `MAP:Preview` - map preview pages (format `HTML`)
 
-Resources with `WWW:LINK*` are used for landing pages, not distributions.
+Note: `WWW:LINK*` resources are used **both** as distributions (if present in `mrd:onLine`) and as the dataset landing page (`dcat:landingPage`). The first `WWW:LINK` URL found is used as landing page.
 
 ### Mandatory Fields Handling
 
@@ -231,4 +234,12 @@ The transformation ensures all mandatory DCAT-AP CH properties are present:
 
 - **Current version**: Based on XSLT stylesheet in iso19115-3.2018.che plugin
 - **Target DCAT version**: DCAT 2.0 / DCAT-AP CH
-- **Last updated**: February 2026
+- **Last updated**: May 2026
+
+### Changelog
+
+**May 2026** (`feature-dcat-ap-ch-v3`):
+- `WWW:LINK*` resources now also created as distributions (format `HTML`), in addition to being used as landing page
+- `MAP:Preview` distributions: `dct:title` is now the plain `cit:name` (prefix `Map (Preview) ` is handled by CKAN geocat harvester)
+- `MAP:Preview` distributions: `dct:format MAP_PRVW` (`http://publications.europa.eu/resource/authority/file-type/MAP_PRVW`) — no `dcat:mediaType` emitted
+- Fixed format mapping for `OGC:WMS` with version suffixes (e.g. `OGC:WMS-1.3.0-http-get-map`)
