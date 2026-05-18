@@ -532,12 +532,12 @@
       <dct:temporal>
         <dct:PeriodOfTime>
           <xsl:if test="$begin != ''">
-            <dcat:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
+            <dcat:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#{if (contains($begin, 'T')) then 'dateTime' else 'date'}">
               <xsl:value-of select="$begin"/>
             </dcat:startDate>
           </xsl:if>
           <xsl:if test="$end != ''">
-            <dcat:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
+            <dcat:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#{if (contains($end, 'T')) then 'dateTime' else 'date'}">
               <xsl:value-of select="$end"/>
             </dcat:endDate>
           </xsl:if>
