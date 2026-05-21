@@ -1,5 +1,21 @@
-# ---------------------------   WIP  ---------------------------
-# ---- not intended to be used at this point ----
+# ------------------------------------------------------
+Before attempting a local build, one has to build gn dependencies from https://github.com/sebr72/core-geonetwork/commits/commits_to_report_upstream_4.4.9/.
+(in a separate folder)
+```
+git clone https://github.com/sebr72/core-geonetwork.git
+cd core-geonetwork
+git checkout commits_to_report_upstream_4.4.9
+mvn clean install -DskipTests  -Denforcer.skip
+```
+(this will install the required dependencies in your local maven repository, so that the build of this plugin can find them)
+
+Then, to build,
+(at the root of this repository)
+```
+mvn clean install
+```
+
+# ------------------------------------------------------
 
 
 # ISO 19115-3:2018 schema plugin, swiss specialisation
