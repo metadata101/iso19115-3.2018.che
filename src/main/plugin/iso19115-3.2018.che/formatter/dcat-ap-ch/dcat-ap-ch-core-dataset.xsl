@@ -374,46 +374,45 @@
 
   <!-- 7. ADD THEMES -->
   <xsl:template name="add-themes">
-    <xsl:for-each select="mdb:identificationInfo/*/mri:topicCategory/mri:MD_TopicCategoryCode">
-      <xsl:variable name="category" select="text()"/>
-      
-      <!-- Map ISO topicCategory to EU data themes -->
-      <xsl:variable name="theme">
-        <xsl:choose>
-          <!-- Geography and territory -->
-          <xsl:when test="
-            starts-with($category, 'imageryBaseMapsEarthCover') or
-            $category = 'location' or $category = 'elevation' or
-            $category = 'boundaries' or starts-with($category, 'planningCadastre') or
-            starts-with($category, 'geoscientificInformation') or $category = 'structure'
-          ">REGI</xsl:when>
-          
-          <!-- Environment -->
-          <xsl:when test="
-            starts-with($category, 'environment') or $category = 'biota' or
-            $category = 'oceans' or $category = 'inlandWaters' or
-            $category = 'climatologyMeteorologyAtmosphere'
-          ">ENVI</xsl:when>
-          
-          <!-- Society -->
-          <xsl:when test="$category = 'society'">SOCI</xsl:when>
-          
-          <!-- Health -->
-          <xsl:when test="$category = 'health'">HEAL</xsl:when>
-          
-          <!-- Transport -->
-          <xsl:when test="$category = 'transportation'">TRAN</xsl:when>
-          
-          <!-- Agriculture -->
-          <xsl:when test="$category = 'farming'">AGRI</xsl:when>
-          
-          <!-- Economy -->
-          <xsl:when test="$category = 'economy'">ECON</xsl:when>
-        </xsl:choose>
-      </xsl:variable>
-      
-      <xsl:if test="$theme != ''">
-        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/{$theme}"/>
+    <!-- Get all topic categories -->
+    <xsl:variable name="topicCategories" select="mdb:identificationInfo/*/mri:topicCategory/mri:MD_TopicCategoryCode/text()"/>
+    
+    <!-- Get all sub-topic categories (these take priority) -->
+    <xsl:variable name="subTopicCategories" select="mdb:identificationInfo/*/che:subTopicCategory/che:CHE_MD_SubTopicCategoryCode/text()"/>
+    
+    <!-- Extract parent categories from sub-topics (remove suffix after _) to determine which topics have sub-topics -->
+    <xsl:variable name="parentOfSubTopics" as="xs:string*">
+      <xsl:for-each select="$subTopicCategories">
+        <xsl:value-of select="substring-before(., '_')"/>
+      </xsl:for-each>
+    </xsl:variable>
+    
+    <!-- Determine which categories to process:
+         - All sub-topics (they have priority and replace their parent topics)
+         - All parent topics that don't have sub-topics (to avoid redundancy) -->
+    <xsl:variable name="categoriesToProcess" as="xs:string*">
+      <!-- Add all sub-topics -->
+      <xsl:sequence select="$subTopicCategories"/>
+      <!-- Add topics that don't have corresponding sub-topics -->
+      <xsl:for-each select="$topicCategories">
+        <xsl:variable name="currentTopic" select="."/>
+        <xsl:if test="not($parentOfSubTopics = $currentTopic)">
+          <xsl:sequence select="$currentTopic"/>
+        </xsl:if>
+      </xsl:for-each>
+    </xsl:variable>
+    
+    <!-- Map categories to DCAT-AP CH themes and collect all unique themes -->
+    <xsl:variable name="allThemes" as="xs:string*">
+      <xsl:for-each select="distinct-values($categoriesToProcess)">
+        <xsl:sequence select="local:map-topic-to-dcat-ch-themes(.)"/>
+      </xsl:for-each>
+    </xsl:variable>
+    
+    <!-- Output each unique theme (URIs already complete from mapping function) -->
+    <xsl:for-each select="distinct-values($allThemes)">
+      <xsl:if test="normalize-space(.) != ''">
+        <dcat:theme rdf:resource="{.}"/>
       </xsl:if>
     </xsl:for-each>
   </xsl:template>
@@ -857,6 +856,92 @@
   <!-- ================================================ -->
   <!-- UTILITY FUNCTIONS                               -->
   <!-- ================================================ -->
+
+  <!-- Map ISO 19115 topic/subtopic category to DCAT-AP CH themes -->
+  <!-- Based on swisstopo_to_ogdch_group_mapping from legacy ISO 19139-che schema -->
+  <xsl:function name="local:map-topic-to-dcat-ch-themes" as="xs:string*">
+    <xsl:param name="category"/>
+    
+    <xsl:variable name="REGI" select="'http://publications.europa.eu/resource/authority/data-theme/REGI'"/>
+    <xsl:variable name="ENVI" select="'http://publications.europa.eu/resource/authority/data-theme/ENVI'"/>
+    <xsl:variable name="AGRI" select="'http://publications.europa.eu/resource/authority/data-theme/AGRI'"/>
+    <xsl:variable name="ECON" select="'http://publications.europa.eu/resource/authority/data-theme/ECON'"/>
+    <xsl:variable name="EDUC" select="'http://publications.europa.eu/resource/authority/data-theme/EDUC'"/>
+    <xsl:variable name="HEAL" select="'http://publications.europa.eu/resource/authority/data-theme/HEAL'"/>
+    <xsl:variable name="TRAN" select="'http://publications.europa.eu/resource/authority/data-theme/TRAN'"/>
+    <xsl:variable name="ENER" select="'http://publications.europa.eu/resource/authority/data-theme/ENER'"/>
+    <xsl:variable name="SOCI" select="'http://publications.europa.eu/resource/authority/data-theme/SOCI'"/>
+    <xsl:variable name="GOVE" select="'http://publications.europa.eu/resource/authority/data-theme/GOVE'"/>
+    
+    <!-- Maps ISO 19115 topic categories to VOCAB-EU-THEME URIs as used by DCAT-AP-CH -->
+    <xsl:choose>
+      <!-- Geographic/spatial categories → REGI + ENVI -->
+      <xsl:when test="starts-with($category, 'imageryBaseMapsEarthCover') or 
+                      starts-with($category, 'planningCadastre') or 
+                      starts-with($category, 'geoscientificInformation') or
+                      $category = ('location', 'elevation', 'boundaries')">
+        <xsl:sequence select="($REGI, $ENVI)"/>
+      </xsl:when>
+      
+      <!-- Environmental categories → ENVI -->
+      <xsl:when test="starts-with($category, 'environment') or 
+                      $category = ('oceans', 'inlandWaters', 'climatologyMeteorologyAtmosphere')">
+        <xsl:sequence select="$ENVI"/>
+      </xsl:when>
+      
+      <!-- Agriculture/Biota -->
+      <xsl:when test="$category = 'biota'">
+        <xsl:sequence select="($AGRI, $ENVI)"/>
+      </xsl:when>
+      <xsl:when test="$category = 'farming'">
+        <xsl:sequence select="$AGRI"/>
+      </xsl:when>
+      
+      <!-- Economic categories -->
+      <xsl:when test="$category = ('structure', 'economy')">
+        <xsl:sequence select="$ECON"/>
+      </xsl:when>
+      
+      <!-- Society/Education -->
+      <xsl:when test="$category = 'society'">
+        <xsl:sequence select="($EDUC, $SOCI)"/>
+      </xsl:when>
+      
+      <!-- Health -->
+      <xsl:when test="$category = 'health'">
+        <xsl:sequence select="$HEAL"/>
+      </xsl:when>
+      
+      <!-- Transportation -->
+      <xsl:when test="$category = 'transportation'">
+        <xsl:sequence select="$TRAN"/>
+      </xsl:when>
+      
+      <!-- Utilities and Communication -->
+      <xsl:when test="$category = 'utilitiesCommunication'">
+        <xsl:sequence select="($ENER, $ENVI, $EDUC)"/>
+      </xsl:when>
+      <xsl:when test="$category = 'utilitiesCommunication_Energy'">
+        <xsl:sequence select="$ENER"/>
+      </xsl:when>
+      <xsl:when test="$category = 'utilitiesCommunication_Utilities'">
+        <xsl:sequence select="$ENVI"/>
+      </xsl:when>
+      <xsl:when test="$category = 'utilitiesCommunication_Communication'">
+        <xsl:sequence select="$EDUC"/>
+      </xsl:when>
+      
+      <!-- Intelligence/Military → GOVE -->
+      <xsl:when test="$category = 'intelligenceMilitary'">
+        <xsl:sequence select="$GOVE"/>
+      </xsl:when>
+      
+      <!-- No match: return empty sequence (filtered by distinct-values in add-themes) -->
+      <xsl:otherwise>
+        <xsl:sequence select="()"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:function>
 
   <!-- Get candidate organization (priority: publisher > owner > pointOfContact > metadata contact) -->
   <xsl:function name="local:get-candidate-org">

@@ -62,9 +62,8 @@
       </dcat:Distribution>
     </dcat:distribution>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-23T00:00:00+00:00</dct:issued>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI" />
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI" />
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI" />
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI" />
     <dcat:landingPage rdf:resource="http://www.agroscope.admin.ch" />
     <dct:relation>
       <rdf:Description rdf:about="https://www.geocat.ch/datahub/dataset/9ea54bf1-43b5-4cbd-ab46-0a9dd65567ce">

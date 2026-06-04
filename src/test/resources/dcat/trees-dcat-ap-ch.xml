@@ -167,6 +167,7 @@
     </dcat:distribution>
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-11T00:00:00+00:00</dct:modified>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI" />
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI" />
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/AGRI" />
     <dcat:landingPage rdf:resource="https://map.geo.fr.ch/?dataTheme=Agriculture&amp;theme&amp;lang=fr" />
     <dct:relation>

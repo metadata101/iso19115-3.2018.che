@@ -177,6 +177,9 @@
     </dcat:distribution>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-04-01T00:00:00+00:00</dct:issued>
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-04T00:00:00+00:00</dct:modified>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENER" />
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI" />
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC" />
     <dcat:landingPage rdf:resource="https://www.swisstopo.admin.ch/de/landschaftsmodell-swisstlm3d" />
     <dct:relation>
       <rdf:Description rdf:about="https://www.geocat.ch/datahub/dataset/97df4dcd-364c-4649-9c11-c65b3b0e9ff2">

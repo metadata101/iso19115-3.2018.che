@@ -35,17 +35,37 @@ Distributions are created for online resources with specific protocols:
 
 ## Code Mappings
 
-### ISO Topic Category to EU Data Theme
+### ISO Topic Category to VOCAB-EU-THEME URIs
 
-| ISO Topic Category | EU Data Theme | URI |
-|-------------------|---------------|-----|
-| imageryBaseMapsEarthCover, location, elevation, boundaries, planningCadastre, geoscientificInformation, structure | REGI (Regions and cities) | http://publications.europa.eu/resource/authority/data-theme/REGI |
-| environment, biota, oceans, inlandWaters, climatologyMeteorologyAtmosphere | ENVI (Environment) | http://publications.europa.eu/resource/authority/data-theme/ENVI |
-| society | SOCI (Population and society) | http://publications.europa.eu/resource/authority/data-theme/SOCI |
-| health | HEAL (Health) | http://publications.europa.eu/resource/authority/data-theme/HEAL |
-| transportation | TRAN (Transport) | http://publications.europa.eu/resource/authority/data-theme/TRAN |
-| farming | AGRI (Agriculture) | http://publications.europa.eu/resource/authority/data-theme/AGRI |
-| economy | ECON (Economy and finance) | http://publications.europa.eu/resource/authority/data-theme/ECON |
+The ISO 19115-3 topic categories (and their Swiss subtopic variants) are mapped to VOCAB-EU-THEME URIs as used by DCAT-AP CH. This mapping ensures consistent categorization across the DCAT-AP vocabulary landscape while remaining compatible with EU data theme standards.
+
+| ISO Topic Category | EU Data Theme Code | Theme URI |
+|-------------------|-------------------|-----------|
+| imageryBaseMapsEarthCover* | REGI | http://publications.europa.eu/resource/authority/data-theme/REGI |
+| imageryBaseMapsEarthCover* | ENVI | http://publications.europa.eu/resource/authority/data-theme/ENVI |
+| location | REGI, ENVI | http://publications.europa.eu/resource/authority/data-theme/REGI, http://publications.europa.eu/resource/authority/data-theme/ENVI |
+| elevation | REGI, ENVI | http://publications.europa.eu/resource/authority/data-theme/REGI, http://publications.europa.eu/resource/authority/data-theme/ENVI |
+| boundaries | REGI, ENVI | http://publications.europa.eu/resource/authority/data-theme/REGI, http://publications.europa.eu/resource/authority/data-theme/ENVI |
+| planningCadastre* | REGI, ENVI | http://publications.europa.eu/resource/authority/data-theme/REGI, http://publications.europa.eu/resource/authority/data-theme/ENVI |
+| geoscientificInformation* | REGI, ENVI | http://publications.europa.eu/resource/authority/data-theme/REGI, http://publications.europa.eu/resource/authority/data-theme/ENVI |
+| structure | ECON | http://publications.europa.eu/resource/authority/data-theme/ECON |
+| environment* | ENVI | http://publications.europa.eu/resource/authority/data-theme/ENVI |
+| biota | AGRI, ENVI | http://publications.europa.eu/resource/authority/data-theme/AGRI, http://publications.europa.eu/resource/authority/data-theme/ENVI |
+| oceans | ENVI | http://publications.europa.eu/resource/authority/data-theme/ENVI |
+| inlandWaters | ENVI | http://publications.europa.eu/resource/authority/data-theme/ENVI |
+| climatologyMeteorologyAtmosphere | ENVI | http://publications.europa.eu/resource/authority/data-theme/ENVI |
+| society | EDUC, SOCI | http://publications.europa.eu/resource/authority/data-theme/EDUC, http://publications.europa.eu/resource/authority/data-theme/SOCI |
+| health | HEAL | http://publications.europa.eu/resource/authority/data-theme/HEAL |
+| transportation | TRAN | http://publications.europa.eu/resource/authority/data-theme/TRAN |
+| utilitiesCommunication | ENER, ENVI, EDUC | http://publications.europa.eu/resource/authority/data-theme/ENER, http://publications.europa.eu/resource/authority/data-theme/ENVI, http://publications.europa.eu/resource/authority/data-theme/EDUC |
+| utilitiesCommunication_Energy | ENER | http://publications.europa.eu/resource/authority/data-theme/ENER |
+| utilitiesCommunication_Utilities | ENVI | http://publications.europa.eu/resource/authority/data-theme/ENVI |
+| utilitiesCommunication_Communication | EDUC | http://publications.europa.eu/resource/authority/data-theme/EDUC |
+| intelligenceMilitary | GOVE | http://publications.europa.eu/resource/authority/data-theme/GOVE |
+| farming | AGRI | http://publications.europa.eu/resource/authority/data-theme/AGRI |
+| economy | ECON | http://publications.europa.eu/resource/authority/data-theme/ECON |
+
+**Theme Prioritization**: When both parent topic and subtopic are present, the **subtopic takes priority** to avoid redundant theme assignments. For example, if a dataset has topic `biota` with subtopic `biota_*` variant, the subtopic mapping is used to prevent duplicate theme URIs in the output.
 
 ### ISO Maintenance Frequency to EU Frequency
 
@@ -234,9 +254,16 @@ The transformation ensures all mandatory DCAT-AP CH properties are present:
 
 - **Current version**: Based on XSLT stylesheet in iso19115-3.2018.che plugin
 - **Target DCAT version**: DCAT 2.0 / DCAT-AP CH
-- **Last updated**: May 2026
+- **Last updated**: June 2026
 
 ### Changelog
+
+**June 2026** (`feature-dcat-ap-ch-v3`):
+- **Theme mapping corrected**: Replaced EU data-theme codes (REGI, ENVI, AGRI, etc.) with DCAT-AP CH themes (geography, territory, agriculture, culture, health, mobility, etc.)
+- **New mapping function**: Implemented `local:map-topic-to-dcat-ch-themes()` function based on legacy ISO 19139-che `swisstopo_to_ogdch_group_mapping`
+- **Subtopic priority logic**: When both parent topic and subtopic are present, subtopic takes priority to avoid redundant theme outputs
+- **Duplicate prevention**: Parent topics are excluded if they have corresponding subtopics
+- All SHACL validation tests pass (16/16 conforming to DCAT-AP 2.1.1 base and DCAT-AP-CH shapes)
 
 **May 2026** (`feature-dcat-ap-ch-v3`):
 - `WWW:LINK*` resources now also created as distributions (format `HTML`), in addition to being used as landing page

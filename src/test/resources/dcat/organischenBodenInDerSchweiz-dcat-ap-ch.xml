@@ -190,6 +190,7 @@
     </dcat:distribution>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-01T00:00:00+00:00</dct:issued>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI" />
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI" />
     <dcat:landingPage rdf:resource="https://www.agroscope.admin.ch/agroscope/de/home/themen/umwelt-ressourcen/klima-lufthygiene/co2-treibhausgase-landwirtschaftliche-boeden/organische-boeden/flaeche.html" />
     <dct:relation>
       <rdf:Description rdf:about="https://www.geocat.ch/datahub/dataset/0572e842-7e34-409a-90d9-526d012a1c2d">
