@@ -125,7 +125,7 @@
     </dcat:distribution>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-10-22T00:00:00+00:00</dct:issued>
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-02-23T00:00:00+00:00</dct:modified>
-    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI" />
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ECON" />
     <dct:relation>
       <rdf:Description rdf:about="https://www.geocat.ch/datahub/dataset/CERN_PERIMETRE_SECU_INFRA_SOUT">
         <rdfs:label xml:lang="de">geocat.ch Permalink</rdfs:label>

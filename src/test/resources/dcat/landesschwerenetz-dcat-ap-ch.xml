@@ -133,6 +133,7 @@
     </dcat:distribution>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-08-10T00:00:00+00:00</dct:issued>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI" />
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI" />
     <dcat:landingPage rdf:resource="https://www.swisstopo.admin.ch/de/landesschwerenetz" />
     <dct:relation>
       <rdf:Description rdf:about="https://www.geocat.ch/datahub/dataset/95879cd4-e93d-4d4d-af57-4ec6731b9c97">

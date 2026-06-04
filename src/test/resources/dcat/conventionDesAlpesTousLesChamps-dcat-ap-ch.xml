@@ -205,6 +205,7 @@
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1999-01-01T00:00:00+00:00</dct:issued>
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-01-01T00:00:00+00:00</dct:modified>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI" />
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI" />
     <dcat:landingPage rdf:resource="https://www.are.admin.ch/are/de/home/laendliche-raeume-und-berggebiete/internationale-zusammenarbeit/alpenkonvention.html" />
     <dct:relation>
       <rdf:Description rdf:about="https://www.geocat.ch/datahub/dataset/fbafbbd4-4622-445f-8e07-1ad4f6a61c55">

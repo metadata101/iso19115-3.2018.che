@@ -169,6 +169,7 @@
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-04-01T00:00:00+00:00</dct:issued>
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T00:00:00+00:00</dct:modified>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI" />
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI" />
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TRAN" />
     <dcat:landingPage rdf:resource="https://www.swisstopo.admin.ch/de/landschaftsmodell-swisstlm3d" />
     <dct:relation>
