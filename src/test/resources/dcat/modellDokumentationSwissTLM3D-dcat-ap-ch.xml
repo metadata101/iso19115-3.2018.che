@@ -59,6 +59,7 @@
     </dcat:distribution>
     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T00:00:00+00:00</dct:issued>
     <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/REGI" />
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/ENVI" />
     <dcat:landingPage rdf:resource="https://www.geocat.ch/geonetwork/srv/api/records/6e2efe8b-7153-4f5c-81a5-c154e69727ba/attachments/b6444b4c-50ea-4982-8bd1-bcf7541a5b0d.pdf" />
     <dct:relation>
       <rdf:Description rdf:about="https://www.geocat.ch/datahub/dataset/6e2efe8b-7153-4f5c-81a5-c154e69727ba">
