@@ -109,10 +109,11 @@ The ISO 19115-3 topic categories (and their Swiss subtopic variants) are mapped 
 | *.gml | GML | http://publications.europa.eu/resource/authority/file-type/GML |
 | *.kml | KML | http://publications.europa.eu/resource/authority/file-type/KML |
 | *.csv | CSV | http://publications.europa.eu/resource/authority/file-type/CSV |
-| *.xml | XML | http://publications.europa.eu/resource/authority/file-type/XML |
+| *.xml, *.ili, *.xtf, *.itf | XML | http://publications.europa.eu/resource/authority/file-type/XML |
 | *.zip | ZIP | http://publications.europa.eu/resource/authority/file-type/ZIP |
 | *.pdf | PDF | http://publications.europa.eu/resource/authority/file-type/PDF |
 | *.html, *.htm | HTML | http://publications.europa.eu/resource/authority/file-type/HTML |
+| WWW:DOWNLOAD* (no extension) | HTML | http://publications.europa.eu/resource/authority/file-type/HTML |
 | (unknown) | UNSPECIFIED | http://publications.europa.eu/resource/authority/file-type/UNSPECIFIED |
 
 ### License Mapping
@@ -263,6 +264,8 @@ The transformation ensures all mandatory DCAT-AP CH properties are present:
 - **New mapping function**: Implemented `local:map-topic-to-dcat-ch-themes()` function based on legacy ISO 19139-che `swisstopo_to_ogdch_group_mapping`
 - **Subtopic priority logic**: When both parent topic and subtopic are present, subtopic takes priority to avoid redundant theme outputs
 - **Duplicate prevention**: Parent topics are excluded if they have corresponding subtopics
+- **INTERLIS format support**: Added mapping for Swiss INTERLIS formats (*.ili, *.xtf, *.itf) → XML format
+- **WWW:DOWNLOAD fallback**: Resources with `WWW:DOWNLOAD*` protocol but no file extension now default to HTML format (web page/download form)
 - All SHACL validation tests pass (16/16 conforming to DCAT-AP 2.1.1 base and DCAT-AP-CH shapes)
 
 **May 2026** (`feature-dcat-ap-ch-v3`):
