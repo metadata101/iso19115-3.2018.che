@@ -230,4 +230,7 @@ public class XslUtil {
         }
     }
 
+    public static String getPermalink(String uuid, String language) {
+        return String.format("permalink-%s-%s", uuid, language);
+    }
 }
