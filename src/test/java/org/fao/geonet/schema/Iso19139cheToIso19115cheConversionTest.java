@@ -39,7 +39,6 @@ import static org.fao.geonet.schema.TestSupport.getResource;
 import static org.fao.geonet.schema.TestSupport.getResourceInsideSchema;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNull;
 
 import org.jdom.Namespace;
 import org.jdom.output.Format;
@@ -269,9 +268,9 @@ public class Iso19139cheToIso19115cheConversionTest {
 
     @Test
     public void testDataciteConversion() throws Exception {
-        xslFile = Paths.get(testClass.getClassLoader().getResource("convert/fromDatacite.xsl").toURI());
-        xmlFile = Paths.get(testClass.getClassLoader().getResource("metadata-datacite.xml").toURI());
-        Path expectedFile = Paths.get(testClass.getClassLoader().getResource("metadata-datacite-after-conversion.xml").toURI());
+        Path xslFile = getResourceInsideSchema("convert/fromDatacite.xsl");
+        Path xmlFile = getResource("metadata-datacite.xml");
+        Path expectedFile = getResource("metadata-datacite-after-conversion.xml");
 
         Element inputElement = Xml.loadFile(expectedFile);
         String expectedXml = Xml.getString(inputElement);

@@ -227,4 +227,8 @@ public class XslUtil {
             return str;
         }
     }
+
+    public static String getDefaultLangCode() {
+        return "eng";
+    }
 }
