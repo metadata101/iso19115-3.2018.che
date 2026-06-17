@@ -7,7 +7,7 @@
 
   <groupId>org.geonetwork-opensource</groupId>
   <artifactId>gn-schema-iso19115-3.2018.che</artifactId>
-  <version>4.4.11-0.1-SNAPSHOT</version>
+  <version>4.4.12-SEBR72-SNAPSHOT</version>
   <name>GeoNetwork schema plugin for ISO19115-3:2018.che standard</name>
   <packaging>jar</packaging>
 
