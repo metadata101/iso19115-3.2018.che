@@ -3583,21 +3583,11 @@
           </div>
           <div class="form-group gn-field gn-linkage gn-required gn- " id="gn-el-139" data-gn-field-highlight="">
             <label for="gn-field-139" class="col-sm-2 control-label">Adresse Internet</label>
-            <div class="col-sm-9 col-xs-11 gn-value nopadding-in-table" data-gn-multilingual-field="{&quot;ger&quot;:&quot;#DE&quot;,&quot;fre&quot;:&quot;#FR&quot;,&quot;ita&quot;:&quot;#IT&quot;,&quot;eng&quot;:&quot;#EN&quot;,&quot;roh&quot;:&quot;#RM&quot;}" data-main-language="ger" data-expanded="false">
-              <input class="form-control hidden" id="gn-field-139" name="_lang_FR_138" data-gn-field-tooltip="iso19115-3.2018.che|cit:linkage|cit:CI_OnlineResource|/che:CHE_MD_Metadata/mdb:metadataLinkage/cit:CI_OnlineResource/cit:linkage" required="required" lang="FR" type="text" value="" />
-              <input class="form-control hidden" id="gn-field-139" name="_lang_IT_138" data-gn-field-tooltip="iso19115-3.2018.che|cit:linkage|cit:CI_OnlineResource|/che:CHE_MD_Metadata/mdb:metadataLinkage/cit:CI_OnlineResource/cit:linkage" required="required" lang="IT" type="text" value="" />
-              <input class="form-control hidden" id="gn-field-139" name="_lang_EN_138" data-gn-field-tooltip="iso19115-3.2018.che|cit:linkage|cit:CI_OnlineResource|/che:CHE_MD_Metadata/mdb:metadataLinkage/cit:CI_OnlineResource/cit:linkage" required="required" lang="EN" type="text" value="" />
-              <input class="form-control hidden" id="gn-field-139" name="_lang_RM_138" data-gn-field-tooltip="iso19115-3.2018.che|cit:linkage|cit:CI_OnlineResource|/che:CHE_MD_Metadata/mdb:metadataLinkage/cit:CI_OnlineResource/cit:linkage" required="required" lang="RM" type="text" value="" />
-              <input class="form-control hidden" id="gn-field-139" name="_lang_DE_138" data-gn-field-tooltip="iso19115-3.2018.che|cit:linkage|cit:CI_OnlineResource|/che:CHE_MD_Metadata/mdb:metadataLinkage/cit:CI_OnlineResource/cit:linkage" required="required" data-gn-check="#gn-el-139" lang="DE" type="text" value="http://localhost:8080/geonetwork/srv/api/records/4a0c8bc7-89d1-484e-a34a-454a31267c41" />
+            <div class="col-sm-9 col-xs-11 gn-value nopadding-in-table">
+              <input class="form-control " id="gn-field-139" name="_" data-gn-field-tooltip="iso19115-3.2018.che|cit:linkage|cit:CI_OnlineResource|/che:CHE_MD_Metadata/mdb:metadataLinkage/cit:CI_OnlineResource/cit:linkage" required="required" data-gn-check="#gn-el-139" disabled="disabled" type="text" value="http://localhost:8080/geonetwork/srv/api/records/4a0c8bc7-89d1-484e-a34a-454a31267c41" />
               <div class="gn-move">
                 <a class="fa fa-angle-up hidden" data-gn-editor-control-move="138" data-domelement-to-move="139" data-direction="up" href="" tabindex="-1" />
                 <a class="fa fa-angle-down hidden" data-gn-editor-control-move="138" data-domelement-to-move="139" data-direction="down" href="" tabindex="-1" />
-              </div>
-              <div class="well well-sm                 gn-attr                 hidden" id="gn-attr-div_139">
-                <button type="button" class="btn btn-default btn-xs btn-attr btn-xs gn-attr-gco_nilReason" id="gn-attr-add-button-gcoCOLONnilReason_139" data-gn-click-and-spin="add('138', 'gco:nilReason', '139', null, true)" title="">
-                  <i class="fa fa-plus fa-fw" />
-                  Raison de l'absence
-                </button>
               </div>
             </div>
             <div class="col-sm-1 col-xs-1 gn-control" />
