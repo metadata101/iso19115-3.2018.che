@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdb:MD_Metadata xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0" xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0" xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/1.0" xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0" xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0" xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0" xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0" xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0" xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0" xmlns:dqm="http://standards.iso.org/iso/19157/-2/dqm/1.0" xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink">
+<che:CHE_MD_Metadata xmlns:che="http://geocat.ch/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0" xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0" xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:md1="http://standards.iso.org/iso/19115/-3/md1/2.0" xmlns:md2="http://standards.iso.org/iso/19115/-3/md2/2.0" xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/2.0" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0" xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0" xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0" xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0" xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0" xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0" xmlns:dqm="http://standards.iso.org/iso/19157/-2/dqm/1.0" xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" gco:isoType="mdb:MD_Metadata">
   <mdb:metadataIdentifier>
     <mcc:MD_Identifier>
       <mcc:code>
@@ -25,85 +25,54 @@
     </mdb:MD_MetadataScope>
   </mdb:metadataScope>
   <mdb:contact>
-    <cit:CI_Responsibility>
-      <cit:role>
-        <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="distributor">distributor</cit:CI_RoleCode>
-      </cit:role>
-      <cit:party>
-        <cit:CI_Organisation>
-          <cit:name xsi:type="lan:PT_FreeText_PropertyType">
-            <gco:CharacterString>GeoRhena: Système d'Information Géographique du Rhin Supérieur</gco:CharacterString>
-            <lan:PT_FreeText>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#FR">GeoRhena: Système d'Information Géographique du Rhin Supérieur</lan:LocalisedCharacterString>
-              </lan:textGroup>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#DE">GeoRhena: Geographische Informationssystem des Oberrheins</lan:LocalisedCharacterString>
-              </lan:textGroup>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#EN">GeoRhena: Geographical Information System of the Upper Rhine</lan:LocalisedCharacterString>
-              </lan:textGroup>
-            </lan:PT_FreeText>
-          </cit:name>
-          <cit:contactInfo>
-            <cit:CI_Contact>
-              <cit:phone>
-                <cit:CI_Telephone>
-                  <cit:number>
-                    <gco:CharacterString>00 33 3 89 30 63 91</gco:CharacterString>
-                  </cit:number>
-                  <cit:numberType>
-                    <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="facsimile">facsimile</cit:CI_TelephoneTypeCode>
-                  </cit:numberType>
-                </cit:CI_Telephone>
-              </cit:phone>
-              <cit:address>
-                <cit:CI_Address>
-                  <cit:deliveryPoint xsi:type="gmd:PT_FreeText_PropertyType">
-                    <gco:CharacterString>100, avenue d'Alsace</gco:CharacterString>
-                    <lan:PT_FreeText>
-                      <lan:textGroup>
-                        <lan:LocalisedCharacterString locale="#FR">100, avenue d'Alsace</lan:LocalisedCharacterString>
-                      </lan:textGroup>
-                      <lan:textGroup>
-                        <lan:LocalisedCharacterString locale="#EN">100, avenue d'Alsace</lan:LocalisedCharacterString>
-                      </lan:textGroup>
-                    </lan:PT_FreeText>
-                  </cit:deliveryPoint>
-                  <cit:city>
-                    <gco:CharacterString>COLMAR</gco:CharacterString>
-                  </cit:city>
-                  <cit:postalCode>
-                    <gco:CharacterString>68000</gco:CharacterString>
-                  </cit:postalCode>
-                  <cit:country xsi:type="gmd:PT_FreeText_PropertyType">
-                    <gco:CharacterString>FR</gco:CharacterString>
-                    <lan:PT_FreeText>
-                      <lan:textGroup>
-                        <lan:LocalisedCharacterString locale="#FR">FR</lan:LocalisedCharacterString>
-                      </lan:textGroup>
-                      <lan:textGroup>
-                        <lan:LocalisedCharacterString locale="#EN">FR</lan:LocalisedCharacterString>
-                      </lan:textGroup>
-                    </lan:PT_FreeText>
-                  </cit:country>
-                </cit:CI_Address>
-              </cit:address>
-              <cit:onlineResource>
-                <cit:CI_OnlineResource>
-                  <cit:linkage>
-                    <gco:CharacterString>http://www.georhena.eu</gco:CharacterString>
-                  </cit:linkage>
-                  <cit:protocol>
-                    <gco:CharacterString>text/html</gco:CharacterString>
-                  </cit:protocol>
-                </cit:CI_OnlineResource>
-              </cit:onlineResource>
-            </cit:CI_Contact>
-          </cit:contactInfo>
-        </cit:CI_Organisation>
-      </cit:party>
-    </cit:CI_Responsibility>
+    <mdb:CI_ResponsibleParty>
+      <mdb:contactInfo>
+        <mdb:CI_Contact>
+          <mdb:address>
+            <mdb:CI_Address>
+              <mdb:deliveryPoint xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>100, avenue d'Alsace</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">100, avenue d'Alsace</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">100, avenue d'Alsace</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </mdb:deliveryPoint>
+              <mdb:city>
+                <gco:CharacterString>COLMAR</gco:CharacterString>
+              </mdb:city>
+              <mdb:postalCode>
+                <gco:CharacterString>68000</gco:CharacterString>
+              </mdb:postalCode>
+              <mdb:country xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>FR</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">FR</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">FR</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </mdb:country>
+            </mdb:CI_Address>
+          </mdb:address>
+          <mdb:onlineResource>
+            <cit:CI_OnlineResource>
+              <cit:linkage>
+                <gco:CharacterString>http://www.georhena.eu</gco:CharacterString>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>text/html</gco:CharacterString>
+              </cit:protocol>
+            </cit:CI_OnlineResource>
+          </mdb:onlineResource>
+        </mdb:CI_Contact>
+      </mdb:contactInfo>
+    </mdb:CI_ResponsibleParty>
   </mdb:contact>
   <mdb:dateInfo>
     <cit:CI_Date>
@@ -145,18 +114,8 @@
       </lan:characterEncoding>
     </lan:PT_Locale>
   </mdb:otherLocale>
-  <mdb:otherLocale>
-    <lan:PT_Locale id="FR">
-      <lan:language>
-        <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="fre">fre</lan:LanguageCode>
-      </lan:language>
-      <lan:characterEncoding>
-        <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
-      </lan:characterEncoding>
-    </lan:PT_Locale>
-  </mdb:otherLocale>
   <mdb:identificationInfo>
-    <mri:MD_DataIdentification>
+    <che:CHE_MD_DataIdentification gco:isoType="mri:MD_DataIdentification">
       <mri:citation>
         <cit:CI_Citation>
           <cit:title xsi:type="lan:PT_FreeText_PropertyType">
@@ -235,183 +194,113 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
         <mcc:MD_ProgressCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ProgressCode" codeListValue="completed">completed</mcc:MD_ProgressCode>
       </mri:status>
       <mri:pointOfContact>
-        <cit:CI_Responsibility>
-          <cit:role>
-            <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</cit:CI_RoleCode>
-          </cit:role>
-          <cit:party>
-            <cit:CI_Organisation>
-              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
-                <gco:CharacterString>GeoRhena</gco:CharacterString>
-                <lan:PT_FreeText>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#FR">GeoRhena</lan:LocalisedCharacterString>
-                  </lan:textGroup>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#DE">GeoRhena</lan:LocalisedCharacterString>
-                  </lan:textGroup>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#EN">GeoRhena</lan:LocalisedCharacterString>
-                  </lan:textGroup>
-                </lan:PT_FreeText>
-              </cit:name>
-              <cit:contactInfo>
-                <cit:CI_Contact>
-                  <cit:phone>
-                    <cit:CI_Telephone>
-                      <cit:number>
-                        <gco:CharacterString>00 33 3 89 30 63 91</gco:CharacterString>
-                      </cit:number>
-                      <cit:numberType>
-                        <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
-                      </cit:numberType>
-                    </cit:CI_Telephone>
-                  </cit:phone>
-                  <cit:address>
-                    <cit:CI_Address>
-                      <cit:deliveryPoint xsi:type="gmd:PT_FreeText_PropertyType">
-                        <gco:CharacterString>100, avenue d'Alsace</gco:CharacterString>
-                        <lan:PT_FreeText>
-                          <lan:textGroup>
-                            <lan:LocalisedCharacterString locale="#FR">100, avenue d'Alsace</lan:LocalisedCharacterString>
-                          </lan:textGroup>
-                          <lan:textGroup>
-                            <lan:LocalisedCharacterString locale="#EN">100, avenue d'Alsace</lan:LocalisedCharacterString>
-                          </lan:textGroup>
-                        </lan:PT_FreeText>
-                      </cit:deliveryPoint>
-                      <cit:city>
-                        <gco:CharacterString>COLMAR</gco:CharacterString>
-                      </cit:city>
-                      <cit:postalCode>
-                        <gco:CharacterString>68000</gco:CharacterString>
-                      </cit:postalCode>
-                      <cit:country xsi:type="gmd:PT_FreeText_PropertyType">
-                        <gco:CharacterString>FRANCE</gco:CharacterString>
-                        <lan:PT_FreeText>
-                          <lan:textGroup>
-                            <lan:LocalisedCharacterString locale="#FR">FRANCE</lan:LocalisedCharacterString>
-                          </lan:textGroup>
-                          <lan:textGroup>
-                            <lan:LocalisedCharacterString locale="#EN">FRANCE</lan:LocalisedCharacterString>
-                          </lan:textGroup>
-                        </lan:PT_FreeText>
-                      </cit:country>
-                      <cit:electronicMailAddress xsi:type="gmd:PT_FreeText_PropertyType">
-                        <gco:CharacterString>contact@georhena.eu</gco:CharacterString>
-                        <lan:PT_FreeText>
-                          <lan:textGroup>
-                            <lan:LocalisedCharacterString locale="#FR">contact@georhena.eu</lan:LocalisedCharacterString>
-                          </lan:textGroup>
-                          <lan:textGroup>
-                            <lan:LocalisedCharacterString locale="#DE">contact@georhena.eu</lan:LocalisedCharacterString>
-                          </lan:textGroup>
-                          <lan:textGroup>
-                            <lan:LocalisedCharacterString locale="#EN">contact@georhena.eu</lan:LocalisedCharacterString>
-                          </lan:textGroup>
-                        </lan:PT_FreeText>
-                      </cit:electronicMailAddress>
-                    </cit:CI_Address>
-                  </cit:address>
-                  <cit:onlineResource>
-                    <cit:CI_OnlineResource>
-                      <cit:linkage>
-                        <gco:CharacterString>https://www.georhena.eu/</gco:CharacterString>
-                      </cit:linkage>
-                      <cit:protocol>
-                        <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
-                      </cit:protocol>
-                      <cit:name gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
-                        <gco:CharacterString />
-                      </cit:name>
-                      <cit:description gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
-                        <gco:CharacterString />
-                      </cit:description>
-                    </cit:CI_OnlineResource>
-                  </cit:onlineResource>
-                </cit:CI_Contact>
-              </cit:contactInfo>
-              <cit:individual>
-                <cit:CI_Individual>
-                  <cit:name xsi:type="lan:PT_FreeText_PropertyType">
-                    <gco:CharacterString>GeoRhena</gco:CharacterString>
+        <mri:CI_ResponsibleParty>
+          <mri:contactInfo>
+            <mri:CI_Contact>
+              <mri:address>
+                <mri:CI_Address>
+                  <mri:deliveryPoint xsi:type="lan:PT_FreeText_PropertyType">
+                    <gco:CharacterString>100, avenue d'Alsace</gco:CharacterString>
                     <lan:PT_FreeText>
                       <lan:textGroup>
-                        <lan:LocalisedCharacterString locale="#FR">GeoRhena</lan:LocalisedCharacterString>
+                        <lan:LocalisedCharacterString locale="#FR">100, avenue d'Alsace</lan:LocalisedCharacterString>
                       </lan:textGroup>
                       <lan:textGroup>
-                        <lan:LocalisedCharacterString locale="#DE">GeoRhena</lan:LocalisedCharacterString>
-                      </lan:textGroup>
-                      <lan:textGroup>
-                        <lan:LocalisedCharacterString locale="#EN">GeoRhena</lan:LocalisedCharacterString>
+                        <lan:LocalisedCharacterString locale="#EN">100, avenue d'Alsace</lan:LocalisedCharacterString>
                       </lan:textGroup>
                     </lan:PT_FreeText>
+                  </mri:deliveryPoint>
+                  <mri:city>
+                    <gco:CharacterString>COLMAR</gco:CharacterString>
+                  </mri:city>
+                  <mri:postalCode>
+                    <gco:CharacterString>68000</gco:CharacterString>
+                  </mri:postalCode>
+                  <mri:country xsi:type="lan:PT_FreeText_PropertyType">
+                    <gco:CharacterString>FRANCE</gco:CharacterString>
+                    <lan:PT_FreeText>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#FR">FRANCE</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#EN">FRANCE</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                    </lan:PT_FreeText>
+                  </mri:country>
+                  <mri:electronicMailAddress xsi:type="lan:PT_FreeText_PropertyType">
+                    <gco:CharacterString>contact@georhena.eu</gco:CharacterString>
+                    <lan:PT_FreeText>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#FR">contact@georhena.eu</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#DE">contact@georhena.eu</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#EN">contact@georhena.eu</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                    </lan:PT_FreeText>
+                  </mri:electronicMailAddress>
+                </mri:CI_Address>
+              </mri:address>
+              <mri:onlineResource>
+                <cit:CI_OnlineResource>
+                  <cit:linkage>
+                    <gco:CharacterString>https://www.georhena.eu/</gco:CharacterString>
+                  </cit:linkage>
+                  <cit:protocol>
+                    <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                  </cit:protocol>
+                  <cit:name gco:nilReason="missing" xsi:type="lan:PT_FreeText_PropertyType">
+                    <gco:CharacterString />
                   </cit:name>
-                </cit:CI_Individual>
-              </cit:individual>
-            </cit:CI_Organisation>
-          </cit:party>
-        </cit:CI_Responsibility>
+                  <cit:description gco:nilReason="missing" xsi:type="lan:PT_FreeText_PropertyType">
+                    <gco:CharacterString />
+                  </cit:description>
+                </cit:CI_OnlineResource>
+              </mri:onlineResource>
+            </mri:CI_Contact>
+          </mri:contactInfo>
+        </mri:CI_ResponsibleParty>
       </mri:pointOfContact>
       <mri:pointOfContact>
-        <cit:CI_Responsibility>
-          <cit:role>
-            <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="custodian">custodian</cit:CI_RoleCode>
-          </cit:role>
-          <cit:party>
-            <cit:CI_Organisation>
-              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
-                <gco:CharacterString>Collectivité Européenne d'Alsace</gco:CharacterString>
-                <lan:PT_FreeText>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#FR">Collectivité Européenne d'Alsace</lan:LocalisedCharacterString>
-                  </lan:textGroup>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#DE">Collectivité Européenne d'Alsace</lan:LocalisedCharacterString>
-                  </lan:textGroup>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#EN">Collectivité Européenne d'Alsace</lan:LocalisedCharacterString>
-                  </lan:textGroup>
-                </lan:PT_FreeText>
-              </cit:name>
-              <cit:contactInfo>
-                <cit:CI_Contact>
-                  <cit:address>
-                    <cit:CI_Address>
-                      <cit:electronicMailAddress xsi:type="gmd:PT_FreeText_PropertyType">
-                        <gco:CharacterString>info@chateaux-rhenans.eu</gco:CharacterString>
-                        <lan:PT_FreeText>
-                          <lan:textGroup>
-                            <lan:LocalisedCharacterString locale="#FR">info@chateaux-rhenans.eu</lan:LocalisedCharacterString>
-                          </lan:textGroup>
-                          <lan:textGroup>
-                            <lan:LocalisedCharacterString locale="#DE">info@chateaux-rhenans.eu</lan:LocalisedCharacterString>
-                          </lan:textGroup>
-                        </lan:PT_FreeText>
-                      </cit:electronicMailAddress>
-                    </cit:CI_Address>
-                  </cit:address>
-                  <cit:onlineResource>
-                    <cit:CI_OnlineResource>
-                      <cit:linkage>
-                        <gco:CharacterString>https://www.alsace.eu</gco:CharacterString>
-                      </cit:linkage>
-                      <cit:protocol>
-                        <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
-                      </cit:protocol>
-                      <cit:name gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
-                        <gco:CharacterString />
-                      </cit:name>
-                      <cit:description gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
-                        <gco:CharacterString />
-                      </cit:description>
-                    </cit:CI_OnlineResource>
-                  </cit:onlineResource>
-                </cit:CI_Contact>
-              </cit:contactInfo>
-            </cit:CI_Organisation>
-          </cit:party>
-        </cit:CI_Responsibility>
+        <mri:CI_ResponsibleParty>
+          <mri:contactInfo>
+            <mri:CI_Contact>
+              <mri:address>
+                <mri:CI_Address>
+                  <mri:electronicMailAddress xsi:type="lan:PT_FreeText_PropertyType">
+                    <gco:CharacterString>info@chateaux-rhenans.eu</gco:CharacterString>
+                    <lan:PT_FreeText>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#FR">info@chateaux-rhenans.eu</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#DE">info@chateaux-rhenans.eu</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                    </lan:PT_FreeText>
+                  </mri:electronicMailAddress>
+                </mri:CI_Address>
+              </mri:address>
+              <mri:onlineResource>
+                <cit:CI_OnlineResource>
+                  <cit:linkage>
+                    <gco:CharacterString>https://www.alsace.eu</gco:CharacterString>
+                  </cit:linkage>
+                  <cit:protocol>
+                    <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                  </cit:protocol>
+                  <cit:name gco:nilReason="missing" xsi:type="lan:PT_FreeText_PropertyType">
+                    <gco:CharacterString />
+                  </cit:name>
+                  <cit:description gco:nilReason="missing" xsi:type="lan:PT_FreeText_PropertyType">
+                    <gco:CharacterString />
+                  </cit:description>
+                </cit:CI_OnlineResource>
+              </mri:onlineResource>
+            </mri:CI_Contact>
+          </mri:contactInfo>
+        </mri:CI_ResponsibleParty>
       </mri:pointOfContact>
       <mri:spatialRepresentationType>
         <mcc:MD_SpatialRepresentationTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector">vector</mcc:MD_SpatialRepresentationTypeCode>
@@ -435,10 +324,10 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
           <gex:temporalElement>
             <gex:EX_TemporalExtent>
               <gex:extent>
-                <TimePeriod xmlns="http://www.opengis.net/gml/3.2" gml:id="d600e429a1052958">
-                  <beginPosition>2023-12-15</beginPosition>
-                  <endPosition>2024-02-15</endPosition>
-                </TimePeriod>
+                <gml:TimePeriod gml:id="d600e429a1052958">
+                  <gml:beginPosition>2023-12-15</gml:beginPosition>
+                  <gml:endPosition>2024-02-15</gml:endPosition>
+                </gml:TimePeriod>
               </gex:extent>
             </gex:EX_TemporalExtent>
           </gex:temporalElement>
@@ -476,7 +365,7 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
           <mcc:fileName>
             <gco:CharacterString>https://geoportal.georhena.eu/geonetwork/srv/api/records/f74f5451-b198-4edf-abdd-a6b6b7caed81/attachments/chateaux_rhenans.jpeg</gco:CharacterString>
           </mcc:fileName>
-          <mcc:fileDescription xsi:type="gmd:PT_FreeText_PropertyType">
+          <mcc:fileDescription xsi:type="lan:PT_FreeText_PropertyType">
             <gco:CharacterString>chateaux_rhenans.jpeg</gco:CharacterString>
             <lan:PT_FreeText>
               <lan:textGroup>
@@ -494,7 +383,7 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
       </mri:graphicOverview>
       <mri:descriptiveKeywords>
         <mri:MD_Keywords>
-          <mri:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
             <gco:CharacterString>Rhin Supérieur</gco:CharacterString>
             <lan:PT_FreeText>
               <lan:textGroup>
@@ -515,7 +404,7 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
       </mri:descriptiveKeywords>
       <mri:descriptiveKeywords>
         <mri:MD_Keywords>
-          <mri:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
             <gco:CharacterString>gestion patrimoniale</gco:CharacterString>
             <lan:PT_FreeText>
               <lan:textGroup>
@@ -529,7 +418,7 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
               </lan:textGroup>
             </lan:PT_FreeText>
           </mri:keyword>
-          <mri:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
             <gco:CharacterString>tourisme</gco:CharacterString>
             <lan:PT_FreeText>
               <lan:textGroup>
@@ -579,7 +468,7 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
       </mri:descriptiveKeywords>
       <mri:descriptiveKeywords>
         <mri:MD_Keywords>
-          <mri:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
             <gco:CharacterString>Châteaux forts</gco:CharacterString>
             <lan:PT_FreeText>
               <lan:textGroup>
@@ -593,7 +482,7 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
               </lan:textGroup>
             </lan:PT_FreeText>
           </mri:keyword>
-          <mri:keyword xsi:type="gmd:PT_FreeText_PropertyType">
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
             <gco:CharacterString>Patrimoine castral</gco:CharacterString>
             <lan:PT_FreeText>
               <lan:textGroup>
@@ -614,7 +503,7 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
       </mri:descriptiveKeywords>
       <mri:resourceConstraints>
         <mco:MD_Constraints>
-          <mco:useLimitation xsi:type="gmd:PT_FreeText_PropertyType">
+          <mco:useLimitation xsi:type="lan:PT_FreeText_PropertyType">
             <gco:CharacterString>Licence CC-BY - ©CeA ; ©GeoRhena</gco:CharacterString>
             <lan:PT_FreeText>
               <lan:textGroup>
@@ -631,14 +520,14 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
         </mco:MD_Constraints>
       </mri:resourceConstraints>
       <mri:resourceConstraints>
-        <mco:MD_LegalConstraints>
+        <che:CHE_MD_LegalConstraints gco:isoType="mco:MD_LegalConstraints">
           <mco:accessConstraints>
             <mco:MD_RestrictionCode codeListValue="otherRestrictions" codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode" />
           </mco:accessConstraints>
           <mco:useConstraints>
             <mco:MD_RestrictionCode codeListValue="otherRestrictions" codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode" />
           </mco:useConstraints>
-          <mco:otherConstraints xsi:type="gmd:PT_FreeText_PropertyType">
+          <mco:otherConstraints xsi:type="lan:PT_FreeText_PropertyType">
             <gco:CharacterString>Pas d'autre limitation</gco:CharacterString>
             <lan:PT_FreeText>
               <lan:textGroup>
@@ -652,7 +541,7 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
               </lan:textGroup>
             </lan:PT_FreeText>
           </mco:otherConstraints>
-        </mco:MD_LegalConstraints>
+        </che:CHE_MD_LegalConstraints>
       </mri:resourceConstraints>
       <mri:defaultLocale>
         <lan:PT_Locale>
@@ -674,7 +563,7 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
           </lan:characterEncoding>
         </lan:PT_Locale>
       </mri:otherLocale>
-    </mri:MD_DataIdentification>
+    </che:CHE_MD_DataIdentification>
   </mdb:identificationInfo>
   <mdb:distributionInfo>
     <mrd:MD_Distribution>
@@ -707,41 +596,19 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
       <mrd:distributor>
         <mrd:MD_Distributor>
           <mrd:distributorContact>
-            <cit:CI_Responsibility>
-              <cit:role>
-                <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="publisher">publisher</cit:CI_RoleCode>
-              </cit:role>
-              <cit:party>
-                <cit:CI_Organisation>
-                  <cit:name xsi:type="lan:PT_FreeText_PropertyType">
-                    <gco:CharacterString>GeoRhena</gco:CharacterString>
-                    <lan:PT_FreeText>
-                      <lan:textGroup>
-                        <lan:LocalisedCharacterString locale="#FR">GeoRhena</lan:LocalisedCharacterString>
-                      </lan:textGroup>
-                    </lan:PT_FreeText>
-                  </cit:name>
-                  <cit:contactInfo>
-                    <cit:CI_Contact>
-                      <cit:address>
-                        <cit:CI_Address>
-                          <cit:electronicMailAddress gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
-                            <gco:CharacterString />
-                          </cit:electronicMailAddress>
-                        </cit:CI_Address>
-                      </cit:address>
-                    </cit:CI_Contact>
-                  </cit:contactInfo>
-                  <cit:individual>
-                    <cit:CI_Individual>
-                      <cit:name gco:nilReason="missing">
+            <mrd:CI_ResponsibleParty>
+              <mrd:contactInfo>
+                <mrd:CI_Contact>
+                  <mrd:address>
+                    <mrd:CI_Address>
+                      <mrd:electronicMailAddress gco:nilReason="missing" xsi:type="lan:PT_FreeText_PropertyType">
                         <gco:CharacterString />
-                      </cit:name>
-                    </cit:CI_Individual>
-                  </cit:individual>
-                </cit:CI_Organisation>
-              </cit:party>
-            </cit:CI_Responsibility>
+                      </mrd:electronicMailAddress>
+                    </mrd:CI_Address>
+                  </mrd:address>
+                </mrd:CI_Contact>
+              </mrd:contactInfo>
+            </mrd:CI_ResponsibleParty>
           </mrd:distributorContact>
         </mrd:MD_Distributor>
       </mrd:distributor>
@@ -755,7 +622,7 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
               <cit:protocol>
                 <gco:CharacterString>OGC:WMS</gco:CharacterString>
               </cit:protocol>
-              <cit:name xsi:type="gmd:PT_FreeText_PropertyType">
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
                 <gco:CharacterString>chateaux_rhenans</gco:CharacterString>
                 <lan:PT_FreeText>
                   <lan:textGroup>
@@ -769,7 +636,7 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
                   </lan:textGroup>
                 </lan:PT_FreeText>
               </cit:name>
-              <cit:description xsi:type="gmd:PT_FreeText_PropertyType">
+              <cit:description xsi:type="lan:PT_FreeText_PropertyType">
                 <gco:CharacterString>Châteaux rhénans du Rhin Supérieur - copie</gco:CharacterString>
                 <lan:PT_FreeText>
                   <lan:textGroup>
@@ -785,6 +652,10 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
               </cit:description>
             </cit:CI_OnlineResource>
           </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
           <mrd:onLine>
             <cit:CI_OnlineResource>
               <cit:linkage>
@@ -793,7 +664,7 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
               <cit:protocol>
                 <gco:CharacterString>OGC:WFS</gco:CharacterString>
               </cit:protocol>
-              <cit:name xsi:type="gmd:PT_FreeText_PropertyType">
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
                 <gco:CharacterString>society:chateaux_rhenans</gco:CharacterString>
                 <lan:PT_FreeText>
                   <lan:textGroup>
@@ -807,7 +678,7 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
                   </lan:textGroup>
                 </lan:PT_FreeText>
               </cit:name>
-              <cit:description xsi:type="gmd:PT_FreeText_PropertyType">
+              <cit:description xsi:type="lan:PT_FreeText_PropertyType">
                 <gco:CharacterString>Châteaux rhénans du Rhin Supérieur</gco:CharacterString>
                 <lan:PT_FreeText>
                   <lan:textGroup>
@@ -823,6 +694,10 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
               </cit:description>
             </cit:CI_OnlineResource>
           </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
           <mrd:onLine>
             <cit:CI_OnlineResource>
               <cit:linkage>
@@ -831,7 +706,7 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
               <cit:protocol>
                 <gco:CharacterString>WWW:DOWNLOAD-1.0-ftp--download</gco:CharacterString>
               </cit:protocol>
-              <cit:name xsi:type="gmd:PT_FreeText_PropertyType">
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
                 <gco:CharacterString>Téléchargement du Shapefile</gco:CharacterString>
                 <lan:PT_FreeText>
                   <lan:textGroup>
@@ -847,6 +722,10 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
               </cit:name>
             </cit:CI_OnlineResource>
           </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
           <mrd:onLine>
             <cit:CI_OnlineResource>
               <cit:linkage>
@@ -855,7 +734,7 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
               <cit:protocol>
                 <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
               </cit:protocol>
-              <cit:name xsi:type="gmd:PT_FreeText_PropertyType">
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
                 <gco:CharacterString>Site internet du projet "Châteaux rhénans"</gco:CharacterString>
                 <lan:PT_FreeText>
                   <lan:textGroup>
@@ -869,7 +748,7 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
                   </lan:textGroup>
                 </lan:PT_FreeText>
               </cit:name>
-              <cit:description gco:nilReason="missing" xsi:type="gmd:PT_FreeText_PropertyType">
+              <cit:description gco:nilReason="missing" xsi:type="lan:PT_FreeText_PropertyType">
                 <gco:CharacterString />
               </cit:description>
             </cit:CI_OnlineResource>
@@ -903,5 +782,5 @@ This project is co-financed by the EU as part of the Interreg VI project "Châte
       </mrl:scope>
     </mrl:LI_Lineage>
   </mdb:resourceLineage>
-</mdb:MD_Metadata>
+</che:CHE_MD_Metadata>
 
