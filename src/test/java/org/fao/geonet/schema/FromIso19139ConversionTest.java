@@ -48,7 +48,7 @@ public class FromIso19139ConversionTest {
 
 	@Test
 	public void upperRhineCastles() throws Exception {
-		transformAndCompare("convert/fromISO19139.xsl", "UpperRhineCastles-iso19139.xml", "UpperRhineCastles-iso19115-3.2018.xml");
+		transformAndCompare("convert/fromISO19139.che.xsl", "UpperRhineCastles-iso19139.xml", "UpperRhineCastles-iso19115-3.2018.che.xml");
 	}
 
 	private void transformAndCompare(String scriptName, String inputFileName, String expectedFileName) throws Exception {
