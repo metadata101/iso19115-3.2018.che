@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns="http://www.interlis.ch/ILIGML-2.0/Localisation_V2" targetNamespace="http://www.interlis.ch/ILIGML-2.0/Localisation_V2" elementFormDefault="qualified" attributeFormDefault="unqualified"
+  xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:INTERLIS="http://www.interlis.ch/ILIGML-2.0/INTERLIS"
+  xmlns:ili2c="http://www.interlis.ch/ili2c/ILIGML-2.0"
+  xmlns:InternationalCodes_V2="http://www.interlis.ch/ILIGML-2.0/InternationalCodes_V2"
+  >
+<xsd:annotation>
+  <xsd:appinfo source="http://www.interlis.ch/ili2c/ili2cversion">5.6.8-e6f7ab6dd5cdba29afc9b24866ecb98c057d82b2</xsd:appinfo>
+  <xsd:appinfo source="http://www.interlis.ch/ili2c">
+    <ili2c:Model>
+      <ili2c:model>Localisation_V2</ili2c:model>
+      <ili2c:modelVersion>2021-01-06</ili2c:modelVersion>
+      <ili2c:modelIssuer>https://models.geo.admin.ch/CH/</ili2c:modelIssuer>
+    </ili2c:Model>
+  </xsd:appinfo>
+</xsd:annotation>
+<xsd:import namespace="http://www.opengis.net/gml/3.2"/>
+<xsd:import namespace="http://www.interlis.ch/ILIGML-2.0/INTERLIS"/>
+<xsd:import namespace="http://www.interlis.ch/ILIGML-2.0/InternationalCodes_V2"/>
+<xsd:element name="LocalisedText" type="LocalisedTextType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="LocalisedTextType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="Language" type="InternationalCodes_V2:LanguageCode_ISO639_1" minOccurs="0"/>
+        <xsd:element name="Text">
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:normalizedString">
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="LocalisedMText" type="LocalisedMTextType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="LocalisedMTextType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="Language" type="InternationalCodes_V2:LanguageCode_ISO639_1" minOccurs="0"/>
+        <xsd:element name="Text">
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="LocalisedUri" type="LocalisedUriType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="LocalisedUriType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="Language" type="InternationalCodes_V2:LanguageCode_ISO639_1" minOccurs="0"/>
+        <xsd:element name="Text">
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:anyURI">
+              <xsd:maxLength value="1023"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MultilingualText" type="MultilingualTextType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MultilingualTextType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="LocalisedText" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="LocalisedText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MultilingualMText" type="MultilingualMTextType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MultilingualMTextType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="LocalisedText" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="LocalisedMText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MultilingualUri" type="MultilingualUriType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MultilingualUriType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="LocalisedText" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="LocalisedUri"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="LocalisedBlob" type="LocalisedBlobType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="LocalisedBlobType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="Language" type="InternationalCodes_V2:LanguageCode_ISO639_1" minOccurs="0"/>
+        <xsd:element name="Content" minOccurs="0">
+          <xsd:simpleType >
+            <xsd:restriction base="xsd:base64Binary">
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MultilingualBlob" type="MultilingualBlobType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MultilingualBlobType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="LocalisedBlob" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="LocalisedBlob"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="LocalisedXML" type="LocalisedXMLType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="LocalisedXMLType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="Language" type="InternationalCodes_V2:LanguageCode_ISO639_1" minOccurs="0"/>
+        <xsd:element name="Content" minOccurs="0">
+          <xsd:complexType >
+            <xsd:sequence>
+              <xsd:any namespace="##any" minOccurs="0" maxOccurs="unbounded" processContents="lax"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MultilingualXML" type="MultilingualXMLType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MultilingualXMLType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="LocalisedXML" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="LocalisedXML"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+</xsd:schema>

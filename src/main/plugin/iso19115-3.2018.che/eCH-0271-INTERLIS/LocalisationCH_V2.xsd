@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns="http://www.interlis.ch/ILIGML-2.0/LocalisationCH_V2" targetNamespace="http://www.interlis.ch/ILIGML-2.0/LocalisationCH_V2" elementFormDefault="qualified" attributeFormDefault="unqualified"
+  xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:INTERLIS="http://www.interlis.ch/ILIGML-2.0/INTERLIS"
+  xmlns:ili2c="http://www.interlis.ch/ili2c/ILIGML-2.0"
+  xmlns:Localisation_V2="http://www.interlis.ch/ILIGML-2.0/Localisation_V2"
+  >
+<xsd:annotation>
+  <xsd:appinfo source="http://www.interlis.ch/ili2c/ili2cversion">5.6.8-e6f7ab6dd5cdba29afc9b24866ecb98c057d82b2</xsd:appinfo>
+  <xsd:appinfo source="http://www.interlis.ch/ili2c">
+    <ili2c:Model>
+      <ili2c:model>LocalisationCH_V2</ili2c:model>
+      <ili2c:modelVersion>2021-01-06</ili2c:modelVersion>
+      <ili2c:modelIssuer>https://models.geo.admin.ch/CH/</ili2c:modelIssuer>
+    </ili2c:Model>
+  </xsd:appinfo>
+</xsd:annotation>
+<xsd:import namespace="http://www.opengis.net/gml/3.2"/>
+<xsd:import namespace="http://www.interlis.ch/ILIGML-2.0/INTERLIS"/>
+<xsd:import namespace="http://www.interlis.ch/ILIGML-2.0/Localisation_V2"/>
+<xsd:element name="LocalisedText" type="LocalisedTextType" substitutionGroup="Localisation_V2:LocalisedText"/>
+<xsd:complexType  name="LocalisedTextType">
+  <xsd:complexContent>
+    <xsd:extension base="Localisation_V2:LocalisedTextType">
+      <xsd:sequence>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="LocalisedMText" type="LocalisedMTextType" substitutionGroup="Localisation_V2:LocalisedMText"/>
+<xsd:complexType  name="LocalisedMTextType">
+  <xsd:complexContent>
+    <xsd:extension base="Localisation_V2:LocalisedMTextType">
+      <xsd:sequence>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="LocalisedUri" type="LocalisedUriType" substitutionGroup="Localisation_V2:LocalisedUri"/>
+<xsd:complexType  name="LocalisedUriType">
+  <xsd:complexContent>
+    <xsd:extension base="Localisation_V2:LocalisedUriType">
+      <xsd:sequence>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MultilingualText" type="MultilingualTextType" substitutionGroup="Localisation_V2:MultilingualText"/>
+<xsd:complexType  name="MultilingualTextType">
+  <xsd:complexContent>
+    <xsd:extension base="Localisation_V2:MultilingualTextType">
+      <xsd:sequence>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MultilingualMText" type="MultilingualMTextType" substitutionGroup="Localisation_V2:MultilingualMText"/>
+<xsd:complexType  name="MultilingualMTextType">
+  <xsd:complexContent>
+    <xsd:extension base="Localisation_V2:MultilingualMTextType">
+      <xsd:sequence>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MultilingualUri" type="MultilingualUriType" substitutionGroup="Localisation_V2:MultilingualUri"/>
+<xsd:complexType  name="MultilingualUriType">
+  <xsd:complexContent>
+    <xsd:extension base="Localisation_V2:MultilingualUriType">
+      <xsd:sequence>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="LocalisedBlob" type="LocalisedBlobType" substitutionGroup="Localisation_V2:LocalisedBlob"/>
+<xsd:complexType  name="LocalisedBlobType">
+  <xsd:complexContent>
+    <xsd:extension base="Localisation_V2:LocalisedBlobType">
+      <xsd:sequence>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MultilingualBlob" type="MultilingualBlobType" substitutionGroup="Localisation_V2:MultilingualBlob"/>
+<xsd:complexType  name="MultilingualBlobType">
+  <xsd:complexContent>
+    <xsd:extension base="Localisation_V2:MultilingualBlobType">
+      <xsd:sequence>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="LocalisedXML" type="LocalisedXMLType" substitutionGroup="Localisation_V2:LocalisedXML"/>
+<xsd:complexType  name="LocalisedXMLType">
+  <xsd:complexContent>
+    <xsd:extension base="Localisation_V2:LocalisedXMLType">
+      <xsd:sequence>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MultilingualXML" type="MultilingualXMLType" substitutionGroup="Localisation_V2:MultilingualXML"/>
+<xsd:complexType  name="MultilingualXMLType">
+  <xsd:complexContent>
+    <xsd:extension base="Localisation_V2:MultilingualXMLType">
+      <xsd:sequence>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+</xsd:schema>

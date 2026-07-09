@@ -1,0 +1,1414 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="o1">
+  <gml:identifier codeSpace="http://www.interlis.ch">eCH0271_1</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Dictionary gml:id="eCH0271_1.eCH0271.CHE_AppraisalOfArchivalValueCode">
+      <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1">eCH0271_1.eCH0271.CHE_AppraisalOfArchivalValueCode</gml:identifier>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o2">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_AppraisalOfArchivalValueCode">A</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o3">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_AppraisalOfArchivalValueCode">N</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o4">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_AppraisalOfArchivalValueCode">S</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Dictionary gml:id="eCH0271_1.eCH0271.CHE_CI_LegislationTypeCode">
+      <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1">eCH0271_1.eCH0271.CHE_CI_LegislationTypeCode</gml:identifier>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o5">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_CI_LegislationTypeCode">law</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o6">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_CI_LegislationTypeCode">ordinance</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o7">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_CI_LegislationTypeCode">otherLegalProvision</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Dictionary gml:id="eCH0271_1.eCH0271.CHE_DS_AssociationTypeCode">
+      <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1">eCH0271_1.eCH0271.CHE_DS_AssociationTypeCode</gml:identifier>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o8">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_DS_AssociationTypeCode">crossReference</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o9">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_DS_AssociationTypeCode">largerWorkCitation</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o10">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_DS_AssociationTypeCode">partOfSeamlessDatabase</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o11">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_DS_AssociationTypeCode">stereoMate</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o12">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_DS_AssociationTypeCode">isComposedOf</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o13">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_DS_AssociationTypeCode">collectiveTitle</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o14">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_DS_AssociationTypeCode">series</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o15">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_DS_AssociationTypeCode">dependency</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o16">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_DS_AssociationTypeCode">revisionOf</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o17">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_DS_AssociationTypeCode">isTemporalStateOf</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o18">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_DS_AssociationTypeCode">isDescriptionOf</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o19">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_DS_AssociationTypeCode">isDescribedBy</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Dictionary gml:id="eCH0271_1.eCH0271.CHE_MD_BasicGeodataAccessLevelCode">
+      <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1">eCH0271_1.eCH0271.CHE_MD_BasicGeodataAccessLevelCode</gml:identifier>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o20">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_MD_BasicGeodataAccessLevelCode">A</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o21">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_MD_BasicGeodataAccessLevelCode">B</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o22">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_MD_BasicGeodataAccessLevelCode">C</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Dictionary gml:id="eCH0271_1.eCH0271.CHE_MD_BasicGeodataTypeCode">
+      <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1">eCH0271_1.eCH0271.CHE_MD_BasicGeodataTypeCode</gml:identifier>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o23">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_MD_BasicGeodataTypeCode">oereb</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o24">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_MD_BasicGeodataTypeCode">referenceData</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Dictionary gml:id="eCH0271_1.eCH0271.CHE_MD_LevelCode">
+      <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1">eCH0271_1.eCH0271.CHE_MD_LevelCode</gml:identifier>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o25">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_MD_LevelCode">communal</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o26">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_MD_LevelCode">cantonal</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o27">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_MD_LevelCode">federal</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o28">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_MD_LevelCode">other</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Dictionary gml:id="eCH0271_1.eCH0271.CHE_MD_SubTopicCategoryCode">
+      <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1">eCH0271_1.eCH0271.CHE_MD_SubTopicCategoryCode</gml:identifier>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o29">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_MD_SubTopicCategoryCode">imageryBaseMapsEarthCover_BaseMaps</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o30">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_MD_SubTopicCategoryCode">imageryBaseMapsEarthCover_EarthCover</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o31">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_MD_SubTopicCategoryCode">imageryBaseMapsEarthCover_Imagery</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o32">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_MD_SubTopicCategoryCode">planningCadastre_Planning</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o33">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_MD_SubTopicCategoryCode">planningCadastre_Cadastre</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o34">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_MD_SubTopicCategoryCode">geoscientificInformation_Geology</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o35">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_MD_SubTopicCategoryCode">geoscientificInformation_Soils</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o36">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_MD_SubTopicCategoryCode">geoscientificInformation_NaturalHazards</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o37">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_MD_SubTopicCategoryCode">environment_EnvironmentalProtection</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o38">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_MD_SubTopicCategoryCode">environment_NatureProtection</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o39">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_MD_SubTopicCategoryCode">utilitiesCommunication_Energy</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o40">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_MD_SubTopicCategoryCode">utilitiesCommunication_Utilities</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o41">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_MD_SubTopicCategoryCode">utilitiesCommunication_Communication</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Dictionary gml:id="eCH0271_1.eCH0271.CHE_ReasonForArchivingValueCode">
+      <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1">eCH0271_1.eCH0271.CHE_ReasonForArchivingValueCode</gml:identifier>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o42">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_ReasonForArchivingValueCode">legalRelevance</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o43">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_ReasonForArchivingValueCode">quaranteeOfLegalCertainty</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o44">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_ReasonForArchivingValueCode">evidenceOfBusinessPractice</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o45">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_ReasonForArchivingValueCode">benefitsForResearch</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o46">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_ReasonForArchivingValueCode">contemporaryInterest</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o47">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_ReasonForArchivingValueCode">sensitivity</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o48">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_ReasonForArchivingValueCode">developmentsProgression</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o49">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CHE_ReasonForArchivingValueCode">definingPowers</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Dictionary gml:id="eCH0271_1.eCH0271.DCPList">
+      <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1">eCH0271_1.eCH0271.DCPList</gml:identifier>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o50">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/DCPList">XML_</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o51">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/DCPList">CORBA</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o52">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/DCPList">JAVA</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o53">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/DCPList">COM</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o54">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/DCPList">SQL</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o55">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/DCPList">SOAP</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o56">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/DCPList">Z3950</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o57">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/DCPList">HTTP</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o58">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/DCPList">FTP</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o59">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/DCPList">webServices</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Dictionary gml:id="eCH0271_1.eCH0271.MD_ClassificationCode">
+      <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1">eCH0271_1.eCH0271.MD_ClassificationCode</gml:identifier>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o60">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ClassificationCode">unclassified</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o61">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ClassificationCode">restricted</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o62">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ClassificationCode">confidential</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o63">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ClassificationCode">secret</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o64">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ClassificationCode">topSecret</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o65">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ClassificationCode">sensitiveButUnclassified</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o66">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ClassificationCode">forOfficialUseOnly</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o67">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ClassificationCode">protected</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o68">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ClassificationCode">limitedDistribution</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Dictionary gml:id="eCH0271_1.eCH0271.MD_KeywordTypeCode">
+      <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1">eCH0271_1.eCH0271.MD_KeywordTypeCode</gml:identifier>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o69">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_KeywordTypeCode">discipline</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o70">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_KeywordTypeCode">place</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o71">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_KeywordTypeCode">stratum</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o72">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_KeywordTypeCode">temporal</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o73">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_KeywordTypeCode">theme</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o74">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_KeywordTypeCode">dataCentre</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o75">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_KeywordTypeCode">featureType</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o76">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_KeywordTypeCode">instrument</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o77">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_KeywordTypeCode">platform</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o78">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_KeywordTypeCode">process</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o79">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_KeywordTypeCode">project</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o80">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_KeywordTypeCode">service</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o81">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_KeywordTypeCode">product</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o82">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_KeywordTypeCode">subTopicCategory</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o83">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_KeywordTypeCode">taxon</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Dictionary gml:id="eCH0271_1.eCH0271.MD_MaintenanceFrequencyCode">
+      <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1">eCH0271_1.eCH0271.MD_MaintenanceFrequencyCode</gml:identifier>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o84">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_MaintenanceFrequencyCode">continual</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o85">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_MaintenanceFrequencyCode">daily</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o86">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_MaintenanceFrequencyCode">weekly</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o87">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_MaintenanceFrequencyCode">fortnightly</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o88">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_MaintenanceFrequencyCode">monthly</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o89">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_MaintenanceFrequencyCode">quarterly</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o90">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_MaintenanceFrequencyCode">biannually</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o91">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_MaintenanceFrequencyCode">annually</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o92">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_MaintenanceFrequencyCode">asNeeded</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o93">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_MaintenanceFrequencyCode">irregular</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o94">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_MaintenanceFrequencyCode">notPlanned</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o95">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_MaintenanceFrequencyCode">unknown</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Dictionary gml:id="eCH0271_1.eCH0271.MD_RestrictionCode">
+      <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1">eCH0271_1.eCH0271.MD_RestrictionCode</gml:identifier>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o96">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_RestrictionCode">copyright</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o97">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_RestrictionCode">patent</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o98">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_RestrictionCode">patentPending</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o99">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_RestrictionCode">trademark</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o100">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_RestrictionCode">license</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o101">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_RestrictionCode">intellectualPropertyRights</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o102">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_RestrictionCode">restricted</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o103">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_RestrictionCode">otherRestrictions</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o104">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_RestrictionCode">unrestricted</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o105">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_RestrictionCode">licenceUnrestricted</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o106">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_RestrictionCode">licenceEndUser</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o107">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_RestrictionCode">licenceDistributor</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o108">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_RestrictionCode">private</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o109">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_RestrictionCode">statutory</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o110">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_RestrictionCode">confidential</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o111">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_RestrictionCode">sensitiveButUnclassified</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o112">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_RestrictionCode">in_confidence</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Dictionary gml:id="eCH0271_1.eCH0271.MD_ScopeCode">
+      <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1">eCH0271_1.eCH0271.MD_ScopeCode</gml:identifier>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o113">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">attribute</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o114">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">attributeType</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o115">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">collectionHardware</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o116">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">collectionSession</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o117">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">dataset</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o118">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">series</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o119">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">nonGeographicDataset</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o120">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">dimensionGroup</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o121">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">feature</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o122">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">featureType</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o123">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">propertyType</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o124">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">fieldSession</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o125">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">software</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o126">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">service</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o127">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">model</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o128">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">tile</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o129">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">metadata</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o130">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">inititative</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o131">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">sample</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o132">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">document</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o133">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">repository</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o134">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">aggregate</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o135">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">product</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o136">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">collection</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o137">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">coverage</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o138">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ScopeCode">application</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Dictionary gml:id="eCH0271_1.eCH0271.MD_ProgressCode">
+      <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1">eCH0271_1.eCH0271.MD_ProgressCode</gml:identifier>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o139">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ProgressCode">completed</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o140">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ProgressCode">historicalArchive</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o141">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ProgressCode">obsolete</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o142">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ProgressCode">onGoing</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o143">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ProgressCode">planned</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o144">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ProgressCode">required</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o145">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ProgressCode">underDevelopment</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o146">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ProgressCode">final</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o147">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ProgressCode">pending</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o148">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ProgressCode">retired</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o149">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ProgressCode">superseded</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o150">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ProgressCode">tentative</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o151">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ProgressCode">valid</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o152">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ProgressCode">accepted</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o153">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ProgressCode">notAccepted</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o154">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ProgressCode">withDrawn</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o155">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ProgressCode">proposed</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o156">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_ProgressCode">deprecated</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Dictionary gml:id="eCH0271_1.eCH0271.MD_SpatialRepresentationTypeCode">
+      <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1">eCH0271_1.eCH0271.MD_SpatialRepresentationTypeCode</gml:identifier>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o157">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_SpatialRepresentationTypeCode">vector</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o158">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_SpatialRepresentationTypeCode">grid</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o159">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_SpatialRepresentationTypeCode">textTable</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o160">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_SpatialRepresentationTypeCode">tin</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o161">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_SpatialRepresentationTypeCode">stereoModel</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o162">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_SpatialRepresentationTypeCode">video</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Dictionary gml:id="eCH0271_1.eCH0271.MD_CharacterSetCode">
+      <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1">eCH0271_1.eCH0271.MD_CharacterSetCode</gml:identifier>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o163">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">ucs2</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o164">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">ucs4</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o165">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">utf7</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o166">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">utf8</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o167">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">utf16</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o168">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">a8859part1</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o169">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">a8859part2</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o170">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">a8859part3</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o171">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">a8859part4</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o172">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">a8859part5</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o173">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">a8859part6</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o174">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">a8859part7</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o175">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">a8859part8</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o176">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">a8859part9</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o177">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">a8859part10</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o178">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">a8859part11</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o179">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">a8859part13</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o180">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">a8859part14</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o181">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">a8859part15</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o182">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">a8859part16</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o183">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">jis</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o184">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">shiftJIS</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o185">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">eucJP</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o186">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">usAscii</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o187">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">ebcdic</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o188">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">eucKR</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o189">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">big5</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o190">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_CharacterSetCode">GB2312</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Dictionary gml:id="eCH0271_1.eCH0271.MD_TopicCategoryCode">
+      <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1">eCH0271_1.eCH0271.MD_TopicCategoryCode</gml:identifier>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o191">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_TopicCategoryCode">farming</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o192">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_TopicCategoryCode">biota</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o193">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_TopicCategoryCode">boundaries</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o194">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_TopicCategoryCode">climatologyMeteorologyAtmosphere</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o195">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_TopicCategoryCode">economy</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o196">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_TopicCategoryCode">elevation</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o197">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_TopicCategoryCode">inlandWaters</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o198">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_TopicCategoryCode">environment</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o199">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_TopicCategoryCode">geoscientificInformation</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o200">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_TopicCategoryCode">health</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o201">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_TopicCategoryCode">imageryBaseMapsEarthCover</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o202">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_TopicCategoryCode">intelligenceMilitary</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o203">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_TopicCategoryCode">location</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o204">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_TopicCategoryCode">oceans</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o205">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_TopicCategoryCode">planningCadastre</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o206">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_TopicCategoryCode">society</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o207">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_TopicCategoryCode">structure</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o208">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_TopicCategoryCode">transportation</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o209">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_TopicCategoryCode">extraTerrestrial</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o210">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_TopicCategoryCode">disaster</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o211">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/MD_TopicCategoryCode">utilitiesCommunication</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Dictionary gml:id="eCH0271_1.eCH0271.CI_DateTypeCode">
+      <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1">eCH0271_1.eCH0271.CI_DateTypeCode</gml:identifier>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o212">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_DateTypeCode">creation</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o213">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_DateTypeCode">publication</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o214">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_DateTypeCode">revision</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o215">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_DateTypeCode">expiry</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o216">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_DateTypeCode">lastUpdate</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o217">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_DateTypeCode">lastRevision</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o218">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_DateTypeCode">nextUpdate</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o219">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_DateTypeCode">unavailable</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o220">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_DateTypeCode">inForce</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o221">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_DateTypeCode">adopted</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o222">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_DateTypeCode">deprecated</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o223">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_DateTypeCode">superseded</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o224">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_DateTypeCode">validityBegins</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o225">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_DateTypeCode">validityExpires</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o226">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_DateTypeCode">released</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o227">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_DateTypeCode">distribution</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Dictionary gml:id="eCH0271_1.eCH0271.CI_TelephoneTypeCode">
+      <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1">eCH0271_1.eCH0271.CI_TelephoneTypeCode</gml:identifier>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o228">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_TelephoneTypeCode">voice</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o229">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_TelephoneTypeCode">facsimile</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o230">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_TelephoneTypeCode">sms</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Dictionary gml:id="eCH0271_1.eCH0271.CI_OnLineFunctionCode">
+      <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1">eCH0271_1.eCH0271.CI_OnLineFunctionCode</gml:identifier>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o231">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_OnLineFunctionCode">download</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o232">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_OnLineFunctionCode">information</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o233">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_OnLineFunctionCode">offlineAccess</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o234">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_OnLineFunctionCode">order</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o235">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_OnLineFunctionCode">search</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o236">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_OnLineFunctionCode">completeMetadata</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o237">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_OnLineFunctionCode">browseGraphic</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o238">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_OnLineFunctionCode">upload</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o239">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_OnLineFunctionCode">emailService</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o240">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_OnLineFunctionCode">browsing</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o241">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_OnLineFunctionCode">fileAccess</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Dictionary gml:id="eCH0271_1.eCH0271.CI_RoleCode">
+      <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1">eCH0271_1.eCH0271.CI_RoleCode</gml:identifier>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o242">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_RoleCode">resourceProvider</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o243">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_RoleCode">custodian</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o244">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_RoleCode">owner</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o245">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_RoleCode">user</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o246">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_RoleCode">distributor</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o247">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_RoleCode">originator</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o248">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_RoleCode">pointOfContact</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o249">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_RoleCode">principalInvestigator</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o250">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_RoleCode">processor</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o251">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_RoleCode">publisher</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o252">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_RoleCode">author</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o253">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_RoleCode">sponsor</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o254">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_RoleCode">coAuthor</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o255">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_RoleCode">collaborator</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o256">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_RoleCode">editor</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o257">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_RoleCode">mediator</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o258">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_RoleCode">rightsHolder</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o259">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_RoleCode">contributor</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o260">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_RoleCode">funder</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <gml:Definition gml:id="o261">
+          <gml:identifier codeSpace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1/CI_RoleCode">stakeholder</gml:identifier>
+        </gml:Definition>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

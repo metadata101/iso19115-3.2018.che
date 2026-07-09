@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns="http://www.interlis.ch/ILIGML-2.0/DictionariesCH_V2" targetNamespace="http://www.interlis.ch/ILIGML-2.0/DictionariesCH_V2" elementFormDefault="qualified" attributeFormDefault="unqualified"
+  xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:INTERLIS="http://www.interlis.ch/ILIGML-2.0/INTERLIS"
+  xmlns:ili2c="http://www.interlis.ch/ili2c/ILIGML-2.0"
+  xmlns:Dictionaries_V2="http://www.interlis.ch/ILIGML-2.0/Dictionaries_V2"
+  >
+<xsd:annotation>
+  <xsd:appinfo source="http://www.interlis.ch/ili2c/ili2cversion">5.6.8-e6f7ab6dd5cdba29afc9b24866ecb98c057d82b2</xsd:appinfo>
+  <xsd:appinfo source="http://www.interlis.ch/ili2c">
+    <ili2c:Model>
+      <ili2c:model>DictionariesCH_V2</ili2c:model>
+      <ili2c:modelVersion>2021-01-06</ili2c:modelVersion>
+      <ili2c:modelIssuer>https://models.geo.admin.ch/CH/</ili2c:modelIssuer>
+    </ili2c:Model>
+  </xsd:appinfo>
+</xsd:annotation>
+<xsd:import namespace="http://www.opengis.net/gml/3.2"/>
+<xsd:import namespace="http://www.interlis.ch/ILIGML-2.0/INTERLIS"/>
+<xsd:import namespace="http://www.interlis.ch/ILIGML-2.0/Dictionaries_V2"/>
+<xsd:element name="Dictionary" type="DictionaryType" substitutionGroup="Dictionaries_V2:Dictionary"/>
+<xsd:complexType  name="DictionaryType">
+  <xsd:complexContent>
+    <xsd:extension base="Dictionaries_V2:DictionaryType">
+      <xsd:sequence>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="DictionariesMemberType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureMemberType">
+      <xsd:sequence>
+        <xsd:choice>
+          <xsd:element ref="Dictionary"/>
+        </xsd:choice>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="Dictionaries" type="DictionariesType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType name="DictionariesType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="member" type="DictionariesMemberType" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+      <xsd:attributeGroup ref="gml:AggregationAttributeGroup"/>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+</xsd:schema>

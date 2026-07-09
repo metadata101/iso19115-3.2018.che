@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns="http://www.interlis.ch/ILIGML-2.0/InternationalCodes_V2" targetNamespace="http://www.interlis.ch/ILIGML-2.0/InternationalCodes_V2" elementFormDefault="qualified" attributeFormDefault="unqualified"
+  xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:INTERLIS="http://www.interlis.ch/ILIGML-2.0/INTERLIS"
+  xmlns:ili2c="http://www.interlis.ch/ili2c/ILIGML-2.0"
+  >
+<xsd:annotation>
+  <xsd:appinfo source="http://www.interlis.ch/ili2c/ili2cversion">5.6.8-e6f7ab6dd5cdba29afc9b24866ecb98c057d82b2</xsd:appinfo>
+  <xsd:appinfo source="http://www.interlis.ch/ili2c">
+    <ili2c:Model>
+      <ili2c:model>InternationalCodes_V2</ili2c:model>
+      <ili2c:modelVersion>2021-01-06</ili2c:modelVersion>
+      <ili2c:modelIssuer>https://models.geo.admin.ch/CH/</ili2c:modelIssuer>
+    </ili2c:Model>
+  </xsd:appinfo>
+</xsd:annotation>
+<xsd:import namespace="http://www.opengis.net/gml/3.2"/>
+<xsd:import namespace="http://www.interlis.ch/ILIGML-2.0/INTERLIS"/>
+<xsd:complexType name="LanguageCode_ISO639_1">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="CountryCode_ISO3166_1">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+</xsd:schema>

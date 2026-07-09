@@ -1,0 +1,4236 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns="http://www.interlis.ch/ILIGML-2.0/eCH0271_1" targetNamespace="http://www.interlis.ch/ILIGML-2.0/eCH0271_1" elementFormDefault="qualified" attributeFormDefault="unqualified"
+  xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:INTERLIS="http://www.interlis.ch/ILIGML-2.0/INTERLIS"
+  xmlns:ili2c="http://www.interlis.ch/ili2c/ILIGML-2.0"
+  xmlns:Units="http://www.interlis.ch/ILIGML-2.0/Units"
+  xmlns:InternationalCodes_V2="http://www.interlis.ch/ILIGML-2.0/InternationalCodes_V2"
+  xmlns:Localisation_V2="http://www.interlis.ch/ILIGML-2.0/Localisation_V2"
+  >
+<xsd:annotation>
+  <xsd:appinfo source="http://www.interlis.ch/ili2c/ili2cversion">5.6.8-e6f7ab6dd5cdba29afc9b24866ecb98c057d82b2</xsd:appinfo>
+  <xsd:appinfo source="http://www.interlis.ch/ili2c">
+    <ili2c:Model>
+      <ili2c:model>eCH0271_1</ili2c:model>
+      <ili2c:modelVersion>2024-11-18</ili2c:modelVersion>
+      <ili2c:modelIssuer>http://www.kogis.ch</ili2c:modelIssuer>
+    </ili2c:Model>
+  </xsd:appinfo>
+</xsd:annotation>
+<xsd:import namespace="http://www.opengis.net/gml/3.2"/>
+<xsd:import namespace="http://www.interlis.ch/ILIGML-2.0/INTERLIS"/>
+<xsd:import namespace="http://www.interlis.ch/ILIGML-2.0/Units"/>
+<xsd:import namespace="http://www.interlis.ch/ILIGML-2.0/InternationalCodes_V2"/>
+<xsd:import namespace="http://www.interlis.ch/ILIGML-2.0/Localisation_V2"/>
+<xsd:simpleType name="Angle">
+  <xsd:restriction base="xsd:decimal">
+    <xsd:minInclusive value="0.00000"/>
+    <xsd:maxInclusive value="360.00000"/>
+  </xsd:restriction>
+</xsd:simpleType>
+<xsd:complexType name="CHE_AppraisalOfArchivalValueCode">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="CHE_CI_LegislationTypeCode">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="CHE_DS_AssociationTypeCode">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="CHE_MD_BasicGeodataAccessLevelCode">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="CHE_MD_BasicGeodataTypeCode">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="CHE_MD_LevelCode">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="CHE_MD_SubTopicCategoryCode">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="CHE_ReasonForArchivingValueCode">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:simpleType name="DateTime">
+  <xsd:restriction base="xsd:dateTime">
+  </xsd:restriction>
+</xsd:simpleType>
+<xsd:complexType name="DCPList">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:simpleType name="Distance">
+  <xsd:restriction base="xsd:decimal">
+    <xsd:minInclusive value="0.00"/>
+    <xsd:maxInclusive value="9999999999.99"/>
+  </xsd:restriction>
+</xsd:simpleType>
+<xsd:complexType name="GM_Point">
+  <xsd:complexContent>
+    <xsd:restriction base="gml:PointPropertyType">
+      <xsd:sequence>
+        <xsd:element ref="gml:Point"/>
+      </xsd:sequence>
+    </xsd:restriction>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="MD_ClassificationCode">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="MD_KeywordTypeCode">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="MD_MaintenanceFrequencyCode">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="MD_RestrictionCode">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="MD_ScopeCode">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:simpleType name="Real">
+  <xsd:restriction base="xsd:decimal">
+    <xsd:minInclusive value="-9999999999.99"/>
+    <xsd:maxInclusive value="9999999999.99"/>
+  </xsd:restriction>
+</xsd:simpleType>
+<xsd:element name="DQ_DataQuality" type="DQ_DataQualityType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="DQ_DataQualityType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="report" type="gml:ReferenceType" minOccurs="1" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>QualityElement</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="scope" type="gml:ReferenceType" minOccurs="1" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Scope</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="LI_Lineage" type="LI_LineageType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="LI_LineageType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="statement" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="Localisation_V2:MultilingualMText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType" minOccurs="1" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="processStep" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>LI_ProcessStep</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="scope" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Scope</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="source" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>LI_Source</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_Constraints" type="MD_ConstraintsType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_ConstraintsType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="useLimitation" minOccurs="0" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="Localisation_V2:MultilingualMText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="MD_BrowseGraphic" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_BrowseGraphic</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Identification" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:simpleType name="Boolean">
+  <xsd:restriction base="xsd:boolean"/>
+</xsd:simpleType>
+<xsd:complexType name="GM_Object">
+  <xsd:complexContent>
+    <xsd:restriction base="gml:SurfacePropertyType">
+      <xsd:sequence>
+        <xsd:element ref="gml:Polygon"/>
+      </xsd:sequence>
+    </xsd:restriction>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:simpleType name="Integer">
+  <xsd:restriction base="xsd:integer">
+    <xsd:minInclusive value="-2147483648"/>
+    <xsd:maxInclusive value="2147483647"/>
+  </xsd:restriction>
+</xsd:simpleType>
+<xsd:complexType name="MD_ProgressCode">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="MD_SpatialRepresentationTypeCode">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:element name="CHE_MD_LegalConstraints" type="CHE_MD_LegalConstraintsType" substitutionGroup="MD_Constraints"/>
+<xsd:complexType  name="CHE_MD_LegalConstraintsType">
+  <xsd:complexContent>
+    <xsd:extension base="MD_ConstraintsType">
+      <xsd:sequence>
+        <xsd:element name="accessConstraints" type="MD_RestrictionCode" minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element name="useConstraints" type="MD_RestrictionCode" minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element name="otherConstraints" minOccurs="0" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="Localisation_V2:MultilingualMText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="legislationConstraints" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Legislation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CHE_MD_MaintenanceInformation" type="CHE_MD_MaintenanceInformationType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CHE_MD_MaintenanceInformationType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="maintenanceAndUpdateFrequency" type="MD_MaintenanceFrequencyCode" minOccurs="0"/>
+        <xsd:element name="maintenanceNote" minOccurs="0" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="Localisation_V2:MultilingualMText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="MD_Identification" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="appraisal" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Appraisal_AAP</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_ContentInformation" type="MD_ContentInformationType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_ContentInformationType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_DigitalTransferOptions" type="MD_DigitalTransferOptionsType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_DigitalTransferOptionsType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="MD_Distribution" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Distribution</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Distributor" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Distributor</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="distributionFormat" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Format</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="onLine" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_OnlineResource</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="TM_Primitive" type="TM_PrimitiveType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="TM_PrimitiveType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="begin" type="DateTime"/>
+        <xsd:element name="end" type="DateTime" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:simpleType name="CharacterString">
+  <xsd:restriction base="xsd:normalizedString">
+    <xsd:maxLength value="256"/>
+  </xsd:restriction>
+</xsd:simpleType>
+<xsd:complexType name="MD_CharacterSetCode">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:complexType name="MD_TopicCategoryCode">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:element name="EX_TemporalExtent" type="EX_TemporalExtentType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="EX_TemporalExtentType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="extent">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="TM_Primitive"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="EX_Extent" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>EX_Extent</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_Distributor" type="MD_DistributorType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_DistributorType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="MD_Distribution" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Distribution</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="distributionOrderProcess" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_StandardOrderProcess</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="distributorContact" type="gml:ReferenceType" minOccurs="1" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Responsibility</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="distributorFormat" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Format</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="distributorTransferOptions" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_DigitalTransferOptions</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_FeatureCatalogueDescription" type="MD_FeatureCatalogueDescriptionType" substitutionGroup="MD_ContentInformation"/>
+<xsd:complexType  name="MD_FeatureCatalogueDescriptionType">
+  <xsd:complexContent>
+    <xsd:extension base="MD_ContentInformationType">
+      <xsd:sequence>
+        <xsd:element name="featureCatalogueCitation" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:simpleType name="CharacterStringLong">
+  <xsd:restriction base="xsd:string">
+  </xsd:restriction>
+</xsd:simpleType>
+<xsd:element name="CHE_MD_Appraisal_AAP" type="CHE_MD_Appraisal_AAPType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CHE_MD_Appraisal_AAPType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="durationOfConservation" type="Integer"/>
+        <xsd:element name="commentOnDurationOfConservation" type="CharacterString" minOccurs="0"/>
+        <xsd:element name="appraisalOfArchivalValue" type="CHE_AppraisalOfArchivalValueCode"/>
+        <xsd:element name="reasonForArchivingValue" type="CHE_ReasonForArchivingValueCode" minOccurs="0"/>
+        <xsd:element name="commentOnArchivalValue" type="CharacterString" minOccurs="0"/>
+        <xsd:element name="CHE_MD_MaintenanceInformation" type="gml:ReferenceType" minOccurs="1" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_MaintenanceInformation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CHE_MD_BasicGeodataInformation" type="CHE_MD_BasicGeodataInformationType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CHE_MD_BasicGeodataInformationType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="basicGeodataID" type="CharacterString"/>
+        <xsd:element name="basicGeodataLegalLevel" type="CHE_MD_LevelCode" minOccurs="0"/>
+        <xsd:element name="basicGeodataResponsibilityLevel" type="CHE_MD_LevelCode" minOccurs="0"/>
+        <xsd:element name="basicGeodataAccessLevel" type="CHE_MD_BasicGeodataAccessLevelCode" minOccurs="0"/>
+        <xsd:element name="basicGeodataType" type="CHE_MD_BasicGeodataTypeCode" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CHE_MD_Legislation" type="CHE_MD_LegislationType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CHE_MD_LegislationType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="country" type="InternationalCodes_V2:CountryCode_ISO3166_1" maxOccurs="unbounded"/>
+        <xsd:element name="language" type="InternationalCodes_V2:LanguageCode_ISO639_1" minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element name="legislationType" type="CHE_CI_LegislationTypeCode" minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element name="internalReference" type="CharacterString" minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element name="legislationLevel" type="CHE_MD_LevelCode" minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element name="legislationAcronym" type="CharacterString" minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element name="MD_LegalConstraints" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_LegalConstraints</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="legislationCitation" type="gml:ReferenceType" minOccurs="1" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CI_Address" type="CI_AddressType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CI_AddressType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="deliveryPoint" type="CharacterString" minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element name="postalCode" type="CharacterString" minOccurs="0"/>
+        <xsd:element name="city" type="CharacterString" minOccurs="0"/>
+        <xsd:element name="administrativeArea" type="CharacterString" minOccurs="0"/>
+        <xsd:element name="country" type="InternationalCodes_V2:CountryCode_ISO3166_1" minOccurs="0"/>
+        <xsd:element name="electronicMailAddress" type="CharacterString" minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element name="CI_ResponsibleParty" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Contact</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_ApplicationSchemaInformation" type="MD_ApplicationSchemaInformationType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_ApplicationSchemaInformationType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="schemaLanguage" type="CharacterString"/>
+        <xsd:element name="constraintLanguage" type="CharacterString"/>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="name" type="gml:ReferenceType" minOccurs="1" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_BrowseGraphic" type="MD_BrowseGraphicType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_BrowseGraphicType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="fileName" type="CharacterString"/>
+        <xsd:element name="fileType" type="CharacterString" minOccurs="0"/>
+        <xsd:element name="fileDescription" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="Localisation_V2:MultilingualMText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="CI_Organisation" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_CI_Organisation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Identification" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="imageConstraints" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Constraints</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="linkage" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_OnlineResource</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_Format" type="MD_FormatType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_FormatType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="amendmentNumber" type="CharacterString" minOccurs="0"/>
+        <xsd:element name="MD_DigitalTransferOptions" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_DigitalTransferOptions</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Distribution" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Distribution</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Identification" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="formatDistributor" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Distributor</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="formatSpecificationCitation" type="gml:ReferenceType" minOccurs="1" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_Identification" type="MD_IdentificationType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_IdentificationType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="status" type="MD_ProgressCode" minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element name="spatialRepresentationType" type="MD_SpatialRepresentationTypeCode" minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element name="topicCategory" type="MD_TopicCategoryCode" minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element name="abstract">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="Localisation_V2:MultilingualMText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="additionalDocumentation" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="aggregationInfo" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_AssociatedResource</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="citation" type="gml:ReferenceType" minOccurs="1" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="descriptiveKeywords" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Keywords</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="extent" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>EX_Extent</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="graphicOverview" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_BrowseGraphic</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="pointOfContact" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Responsibility</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="processingLevel" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identifier</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="resourceConstraints" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Constraints</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="resourceFormat" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Format</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="resourceMaintenance" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_MaintenanceInformation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="spatialResolution" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Resolution</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_SecurityConstraints" type="MD_SecurityConstraintsType" substitutionGroup="MD_Constraints"/>
+<xsd:complexType  name="MD_SecurityConstraintsType">
+  <xsd:complexContent>
+    <xsd:extension base="MD_ConstraintsType">
+      <xsd:sequence>
+        <xsd:element name="classification" type="MD_ClassificationCode"/>
+        <xsd:element name="classificationSystem" type="CharacterString" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="PT_Locale" type="PT_LocaleType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="PT_LocaleType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="language" type="InternationalCodes_V2:LanguageCode_ISO639_1"/>
+        <xsd:element name="country" type="InternationalCodes_V2:CountryCode_ISO3166_1" minOccurs="0"/>
+        <xsd:element name="characterEncoding" type="MD_CharacterSetCode" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="SV_OperationMetadata" type="SV_OperationMetadataType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="SV_OperationMetadataType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="operationName" type="CharacterString"/>
+        <xsd:element name="distributedComputingPlatform" type="DCPList" maxOccurs="unbounded"/>
+        <xsd:element name="invocationName" type="CharacterString" minOccurs="0"/>
+        <xsd:element name="operationDescription" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="Localisation_V2:MultilingualMText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="SV_ServiceIdentification" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>SV_ServiceIdentification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="connectPoint" type="gml:ReferenceType" minOccurs="1" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_OnlineResource</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="CI_DateTypeCode">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:element name="MD_AssociatedResource" type="MD_AssociatedResourceType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_AssociatedResourceType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="associationType" type="CHE_DS_AssociationTypeCode"/>
+        <xsd:element name="MD_Identification" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="metadataReference" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="name" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_Identifier" type="MD_IdentifierType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_IdentifierType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="code">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="Localisation_V2:MultilingualMText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="codeSpace" type="CharacterString" minOccurs="0"/>
+        <xsd:element name="version" type="CharacterString" minOccurs="0"/>
+        <xsd:element name="description" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="Localisation_V2:MultilingualText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="CI_Citation" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Identification" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_ReferenceSystem" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_ReferenceSystem</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="authority" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_StandardOrderProcess" type="MD_StandardOrderProcessType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_StandardOrderProcessType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="fees" type="CharacterString" minOccurs="0"/>
+        <xsd:element name="MD_Distributor" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Distributor</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="SV_ServiceIdentification" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>SV_ServiceIdentification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="legislationConstraintsMD_LegalConstraints" type="legislationConstraintsMD_LegalConstraintsType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="legislationConstraintsMD_LegalConstraintsType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="legislationConstraints" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Legislation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_LegalConstraints" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_LegalConstraints</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_BrowseGraphicimageConstraints" type="MD_BrowseGraphicimageConstraintsType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_BrowseGraphicimageConstraintsType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="MD_BrowseGraphic" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_BrowseGraphic</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="imageConstraints" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Constraints</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_DigitalTransferOptionsdistributionFormat" type="MD_DigitalTransferOptionsdistributionFormatType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_DigitalTransferOptionsdistributionFormatType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="MD_DigitalTransferOptions" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_DigitalTransferOptions</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="distributionFormat" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Format</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_MaintenanceInformationappraisal" type="MD_MaintenanceInformationappraisalType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_MaintenanceInformationappraisalType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="CHE_MD_MaintenanceInformation" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_MaintenanceInformation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="appraisal" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Appraisal_AAP</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="CI_TelephoneTypeCode">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:element name="CI_Date" type="CI_DateType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CI_DateType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="date" type="DateTime"/>
+        <xsd:element name="dateType" type="CI_DateTypeCode"/>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="aggregationInfo_MD_Identification" type="aggregationInfo_MD_IdentificationType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="aggregationInfo_MD_IdentificationType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="aggregationInfo" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_AssociatedResource</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Identification" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="distributionOrderProcessMD_Distributor" type="distributionOrderProcessMD_DistributorType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="distributionOrderProcessMD_DistributorType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="distributionOrderProcess" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_StandardOrderProcess</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Distributor" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Distributor</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="distributorTransferOptionsMD_Distributor" type="distributorTransferOptionsMD_DistributorType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="distributorTransferOptionsMD_DistributorType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="distributorTransferOptions" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_DigitalTransferOptions</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Distributor" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Distributor</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_IdentificationprocessingLevel" type="MD_IdentificationprocessingLevelType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_IdentificationprocessingLevelType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="MD_Identification" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="processingLevel" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identifier</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="CI_OnLineFunctionCode">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:element name="CHE_MD_Metadata" type="CHE_MD_MetadataType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CHE_MD_MetadataType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="defaultLocale" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="PT_Locale"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="otherLocale" minOccurs="0" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="PT_Locale"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="dateInfo" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="CI_Date"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="applicationSchemaInfo" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_ApplicationSchemaInformation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="contact" type="gml:ReferenceType" minOccurs="1" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Responsibility</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="contentInfo" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_ContentInformation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="dataQualityInfo" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>DQ_DataQuality</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="distributionInfo" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Distribution</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="identificationInfo" type="gml:ReferenceType" minOccurs="1" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="legislationInformation" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Legislation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="metadataIdentifier" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identifier</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="metadataMaintenance" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_MaintenanceInformation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="metadataProfile" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="metadataScope" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_MetadataScope</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="metadataStandard" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="parentMetadata" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="referenceSystemInfo" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_ReferenceSystem</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="resourceLineage" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>LI_Lineage</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="CI_RoleCode">
+  <xsd:simpleContent>
+    <xsd:restriction base="gml:CodeType">
+    </xsd:restriction>
+  </xsd:simpleContent>
+</xsd:complexType>
+<xsd:element name="applicationSchemaInfoMD_Metadata" type="applicationSchemaInfoMD_MetadataType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="applicationSchemaInfoMD_MetadataType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="applicationSchemaInfo" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_ApplicationSchemaInformation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="contentInfoMD_Metadata" type="contentInfoMD_MetadataType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="contentInfoMD_MetadataType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="contentInfo" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_ContentInformation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_MetadatadataQualityInfo" type="MD_MetadatadataQualityInfoType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_MetadatadataQualityInfoType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="dataQualityInfo" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>DQ_DataQuality</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_MetadataidentificationInfo" type="MD_MetadataidentificationInfoType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_MetadataidentificationInfoType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="identificationInfo" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_MetadatametadataMaintenance" type="MD_MetadatametadataMaintenanceType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_MetadatametadataMaintenanceType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="metadataMaintenance" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_MaintenanceInformation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_MetadataresourceLineage" type="MD_MetadataresourceLineageType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_MetadataresourceLineageType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="resourceLineage" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>LI_Lineage</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CI_Responsibility" type="CI_ResponsibilityType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CI_ResponsibilityType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="role" type="CI_RoleCode"/>
+        <xsd:element name="CI_Citation" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Distributor" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Distributor</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Identification" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="parentResponsibleParty" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_CI_Organisation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="party" type="gml:ReferenceType" minOccurs="1" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Party</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="formatDistributordistributorFormat" type="formatDistributordistributorFormatType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="formatDistributordistributorFormatType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="formatDistributor" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Distributor</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="distributorFormat" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Format</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="metadataIdentifierMD_Metadata" type="metadataIdentifierMD_MetadataType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="metadataIdentifierMD_MetadataType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="metadataIdentifier" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identifier</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="resourceMaintenanceMD_Identification" type="resourceMaintenanceMD_IdentificationType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="resourceMaintenanceMD_IdentificationType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="resourceMaintenance" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_MaintenanceInformation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Identification" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CI_Telephone" type="CI_TelephoneType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CI_TelephoneType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="number" type="CharacterString"/>
+        <xsd:element name="numberType" type="CI_TelephoneTypeCode" minOccurs="0"/>
+        <xsd:element name="CI_ResponsibleParty" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Contact</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="graphicOverviewMD_Identification" type="graphicOverviewMD_IdentificationType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="graphicOverviewMD_IdentificationType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="graphicOverview" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_BrowseGraphic</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Identification" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="EX_GeographicExtent" type="EX_GeographicExtentType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="EX_GeographicExtentType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="extentTypeCode" type="Boolean" minOccurs="0"/>
+        <xsd:element name="EX_Extent" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>EX_Extent</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="EX_BoundingPolygon" type="EX_BoundingPolygonType" substitutionGroup="EX_GeographicExtent"/>
+<xsd:complexType  name="EX_BoundingPolygonType">
+  <xsd:complexContent>
+    <xsd:extension base="EX_GeographicExtentType">
+      <xsd:sequence>
+        <xsd:element name="polygon" type="GM_Object" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="EX_VerticalExtent" type="EX_VerticalExtentType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="EX_VerticalExtentType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="minimumValue" type="Real"/>
+        <xsd:element name="maximumValue" type="Real"/>
+        <xsd:element name="EX_Extent" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>EX_Extent</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="verticalCRSId" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_ReferenceSystem</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="EX_GeographicBoundingBox" type="EX_GeographicBoundingBoxType" substitutionGroup="EX_GeographicExtent"/>
+<xsd:complexType  name="EX_GeographicBoundingBoxType">
+  <xsd:complexContent>
+    <xsd:extension base="EX_GeographicExtentType">
+      <xsd:sequence>
+        <xsd:element name="northBoundLatitude" type="Angle"/>
+        <xsd:element name="southBoundLatitude" type="Angle"/>
+        <xsd:element name="eastBoundLongitude" type="Angle"/>
+        <xsd:element name="westBoundLongitude" type="Angle"/>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_Distribution" type="MD_DistributionType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_DistributionType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="description" type="CharacterString" minOccurs="0"/>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="distributionFormat" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Format</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="distributor" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Distributor</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="transferOptions" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_DigitalTransferOptions</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_MetadataScope" type="MD_MetadataScopeType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_MetadataScopeType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="resourceScope" type="MD_ScopeCode"/>
+        <xsd:element name="name" type="CharacterString" minOccurs="0"/>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_DistributiondistributionFormat" type="MD_DistributiondistributionFormatType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_DistributiondistributionFormatType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="MD_Distribution" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Distribution</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="distributionFormat" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Format</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_Distributiondistributor" type="MD_DistributiondistributorType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_DistributiondistributorType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="distributor" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Distributor</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Distribution" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Distribution</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_ReferenceSystem" type="MD_ReferenceSystemType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_ReferenceSystemType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="EX_VerticalExtent" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>EX_VerticalExtent</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="referenceSystemIdentifier" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identifier</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_DistributiontransferOptions" type="MD_DistributiontransferOptionsType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_DistributiontransferOptionsType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="MD_Distribution" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Distribution</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="transferOptions" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_DigitalTransferOptions</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_DistributordistributorContact" type="MD_DistributordistributorContactType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_DistributordistributorContactType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="distributorContact" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Responsibility</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Distributor" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Distributor</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_RepresentativeFraction" type="MD_RepresentativeFractionType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_RepresentativeFractionType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="denominator" type="Integer"/>
+        <xsd:element name="MD_Resolution" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Resolution</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_ReferenceSystemreferenceSystemIdentifier" type="MD_ReferenceSystemreferenceSystemIdentifierType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_ReferenceSystemreferenceSystemIdentifierType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="referenceSystemIdentifier" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identifier</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_ReferenceSystem" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_ReferenceSystem</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="verticalCRSIdEX_VerticalExtent" type="verticalCRSIdEX_VerticalExtentType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="verticalCRSIdEX_VerticalExtentType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="verticalCRSId" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_ReferenceSystem</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="EX_VerticalExtent" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>EX_VerticalExtent</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CI_Citation" type="CI_CitationType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CI_CitationType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="date" minOccurs="0" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="CI_Date"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="title">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="Localisation_V2:MultilingualMText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="edition" type="CharacterString" minOccurs="0"/>
+        <xsd:element name="alternateTitle" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="Localisation_V2:MultilingualMText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="DQ_ConformanceResult" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>DQ_ConformanceResult</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_AggregateInformation" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_AssociatedResource</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_ApplicationSchemaInformation" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_ApplicationSchemaInformation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_AssociatedResource" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_AssociatedResource</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_FeatureCatalogueDescription" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_FeatureCatalogueDescription</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Format" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Format</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Identification" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Keywords" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Keywords</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Legislation" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Legislation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="SV_ServiceIdentification" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>SV_ServiceIdentification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="authorizedId" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identifier</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="child" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="citedResponsibleParty" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Responsibility</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="documentationOfIdentification" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="identifier" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identifier</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="onlineResource" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_OnlineResource</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="profileUsedBy" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="series" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Series</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="standardUsedBy" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_Resolution" type="MD_ResolutionType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_ResolutionType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="distance" type="Distance" minOccurs="0"/>
+        <xsd:element name="vertical" type="Distance" minOccurs="0"/>
+        <xsd:element name="angularDistance" type="Angle" minOccurs="0"/>
+        <xsd:element name="levelOfDetail" type="CharacterString" minOccurs="0"/>
+        <xsd:element name="MD_DataIdentification" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="equivalentScale" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_RepresentativeFraction</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CI_Contact" type="CI_ContactType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CI_ContactType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="CI_ResponsibleParty" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Party</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="address" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Address</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="onlineResource" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_OnlineResource</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="phone" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Telephone</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_Scope" type="MD_ScopeType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_ScopeType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="level" type="MD_ScopeCode"/>
+        <xsd:element name="DQ_DataQuality" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>DQ_DataQuality</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="LI_Lineage" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>LI_Lineage</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="LI_ProcessStep" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>LI_ProcessStep</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="LI_Source" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>LI_Source</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="extent" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>EX_Extent</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="authorityMD_Identifier" type="authorityMD_IdentifierType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="authorityMD_IdentifierType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="authority" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="authorizedId" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identifier</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CI_CitationcitedResponsibleParty" type="CI_CitationcitedResponsiblePartyType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CI_CitationcitedResponsiblePartyType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="citedResponsibleParty" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Responsibility</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="CI_Citation" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="documentationOfIdentificationadditionalDocumentation" type="documentationOfIdentificationadditionalDocumentationType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="documentationOfIdentificationadditionalDocumentationType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="documentationOfIdentification" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="additionalDocumentation" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="featureCatalogueCitationCI_Citation" type="featureCatalogueCitationCI_CitationType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="featureCatalogueCitationCI_CitationType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="featureCatalogueCitation" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_FeatureCatalogueDescription" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_FeatureCatalogueDescription</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_AggregateInformationaggregateDataSetName" type="MD_AggregateInformationaggregateDataSetNameType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_AggregateInformationaggregateDataSetNameType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="MD_AggregateInformation" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_AssociatedResource</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="name" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_AssociatedResourcemetadataReference" type="MD_AssociatedResourcemetadataReferenceType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_AssociatedResourcemetadataReferenceType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="MD_AssociatedResource" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_AssociatedResource</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="metadataReference" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_Legislationtitle" type="MD_LegislationtitleType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_LegislationtitleType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="legislationCitation" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Legislation" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Legislation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_ResolutionequivalentScale" type="MD_ResolutionequivalentScaleType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_ResolutionequivalentScaleType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="equivalentScale" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_RepresentativeFraction</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Resolution" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Resolution</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="parentIdentifierMD_Metadata" type="parentIdentifierMD_MetadataType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="parentIdentifierMD_MetadataType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="child" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="parentMetadata" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="standardUsedBymetadataStandard" type="standardUsedBymetadataStandardType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="standardUsedBymetadataStandardType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="standardUsedBy" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="metadataStandard" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CI_OnlineResource" type="CI_OnlineResourceType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CI_OnlineResourceType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="protocol" type="CharacterString" minOccurs="0"/>
+        <xsd:element name="function" type="CI_OnLineFunctionCode" minOccurs="0"/>
+        <xsd:element name="description" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="Localisation_V2:MultilingualMText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="name" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="Localisation_V2:MultilingualMText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="linkage">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="Localisation_V2:MultilingualUri"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="CI_Citation" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="CI_Contact" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Contact</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_BrowseGraphic" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_BrowseGraphic</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_DigitalTransferOptions" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_DigitalTransferOptions</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="SV_OperationMetadata" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>SV_OperationMetadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_Keywords" type="MD_KeywordsType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_KeywordsType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="type" type="MD_KeywordTypeCode" minOccurs="0"/>
+        <xsd:element name="keyword" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="Localisation_V2:MultilingualMText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="MD_Identification" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="thesaurusName" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CI_Citationidentifier" type="CI_CitationidentifierType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CI_CitationidentifierType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="identifier" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identifier</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="CI_Citation" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CI_ResponsiblePartyaddress" type="CI_ResponsiblePartyaddressType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CI_ResponsiblePartyaddressType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="address" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Address</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="CI_ResponsibleParty" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Contact</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="DQ_DataQualityscope" type="DQ_DataQualityscopeType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="DQ_DataQualityscopeType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="DQ_DataQuality" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>DQ_DataQuality</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="scope" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Scope</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_ApplicationSchemaInformationname" type="MD_ApplicationSchemaInformationnameType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_ApplicationSchemaInformationnameType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="MD_ApplicationSchemaInformation" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_ApplicationSchemaInformation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="name" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_MetadatalegislationInformation" type="MD_MetadatalegislationInformationType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_MetadatalegislationInformationType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="legislationInformation" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Legislation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="scopeLI_Lineage" type="scopeLI_LineageType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="scopeLI_LineageType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="LI_Lineage" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>LI_Lineage</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="scope" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Scope</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CI_Party" type="CI_PartyType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CI_PartyType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="name">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="Localisation_V2:MultilingualMText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="CI_Responsibility" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Responsibility</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="contactInfo" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Contact</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CI_ContactonlineResource" type="CI_ContactonlineResourceType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CI_ContactonlineResourceType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="CI_Contact" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Contact</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="onlineResource" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_OnlineResource</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_BrowseGraphiclinkage" type="MD_BrowseGraphiclinkageType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_BrowseGraphiclinkageType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="MD_BrowseGraphic" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_BrowseGraphic</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="linkage" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_OnlineResource</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_keywordsthesaurusName" type="MD_keywordsthesaurusNameType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_keywordsthesaurusNameType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="MD_Keywords" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Keywords</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="thesaurusName" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_MetadatametadataScope" type="MD_MetadatametadataScopeType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_MetadatametadataScopeType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="metadataScope" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_MetadataScope</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="SV_OperationMetadataconnectPoint" type="SV_OperationMetadataconnectPointType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="SV_OperationMetadataconnectPointType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="SV_OperationMetadata" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>SV_OperationMetadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="connectPoint" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_OnlineResource</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="EX_Extent" type="EX_ExtentType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="EX_ExtentType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="description" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="Localisation_V2:MultilingualMText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="DQ_Scope" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Scope</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_DataIdentification" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="geographicElement" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>EX_GeographicExtent</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="temporalElement" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>EX_TemporalExtent</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="verticalElement" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>EX_VerticalExtent</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CI_Responsibilityparty" type="CI_ResponsibilitypartyType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CI_ResponsibilitypartyType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="CI_Responsibility" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Responsibility</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="party" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Party</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CI_ResponsiblePartycontactInfo" type="CI_ResponsiblePartycontactInfoType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CI_ResponsiblePartycontactInfoType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="contactInfo" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Contact</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="CI_ResponsibleParty" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Party</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="distributionInfoMD_Metadata" type="distributionInfoMD_MetadataType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="distributionInfoMD_MetadataType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="distributionInfo" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Distribution</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CI_ResponsiblePartyphone" type="CI_ResponsiblePartyphoneType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CI_ResponsiblePartyphoneType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="phone" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Telephone</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="CI_ResponsibleParty" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Contact</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="DQ_Scopeextent" type="DQ_ScopeextentType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="DQ_ScopeextentType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="extent" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>EX_Extent</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="DQ_Scope" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Scope</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_DataIdentificationextent" type="MD_DataIdentificationextentType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_DataIdentificationextentType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="extent" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>EX_Extent</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_DataIdentification" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_Metadatacontact" type="MD_MetadatacontactType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_MetadatacontactType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="contact" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Responsibility</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="profileUsedBymetadataProfile" type="profileUsedBymetadataProfileType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="profileUsedBymetadataProfileType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="profileUsedBy" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="metadataProfile" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CI_CitationonlineResource" type="CI_CitationonlineResourceType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CI_CitationonlineResourceType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="CI_Citation" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="onlineResource" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_OnlineResource</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="descriptiveKeywordsMD_Identification" type="descriptiveKeywordsMD_IdentificationType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="descriptiveKeywordsMD_IdentificationType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="descriptiveKeywords" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Keywords</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Identification" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_DataIdentificationspatialResolution" type="MD_DataIdentificationspatialResolutionType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_DataIdentificationspatialResolutionType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="spatialResolution" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Resolution</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_DataIdentification" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="referenceSystemInfoMD_Metadata" type="referenceSystemInfoMD_MetadataType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="referenceSystemInfoMD_MetadataType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="referenceSystemInfo" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_ReferenceSystem</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Metadata" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_Metadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="resourceFormatMD_Identification" type="resourceFormatMD_IdentificationType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="resourceFormatMD_IdentificationType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="resourceFormat" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Format</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Identification" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CI_Individual" type="CI_IndividualType" substitutionGroup="CI_Party"/>
+<xsd:complexType  name="CI_IndividualType">
+  <xsd:complexContent>
+    <xsd:extension base="CI_PartyType">
+      <xsd:sequence>
+        <xsd:element name="individualFirstName" type="CharacterString" minOccurs="0"/>
+        <xsd:element name="positionName" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="Localisation_V2:MultilingualMText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="organisation" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_CI_Organisation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="EX_ExtentgeographicElement" type="EX_ExtentgeographicElementType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="EX_ExtentgeographicElementType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="EX_Extent" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>EX_Extent</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="geographicElement" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>EX_GeographicExtent</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_DigitalTransferOptionsonLine" type="MD_DigitalTransferOptionsonLineType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_DigitalTransferOptionsonLineType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="onLine" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_OnlineResource</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_DigitalTransferOptions" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_DigitalTransferOptions</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CHE_CI_Organisation" type="CHE_CI_OrganisationType" substitutionGroup="CI_Party"/>
+<xsd:complexType  name="CHE_CI_OrganisationType">
+  <xsd:complexContent>
+    <xsd:extension base="CI_PartyType">
+      <xsd:sequence>
+        <xsd:element name="organisationAcronym" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="Localisation_V2:MultilingualMText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="individual" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Individual</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="logo" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_BrowseGraphic</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="parentOrganisation" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Responsibility</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="EX_ExtenttemporalElement" type="EX_ExtenttemporalElementType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="EX_ExtenttemporalElementType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="EX_Extent" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>EX_Extent</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="temporalElement" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>EX_TemporalExtent</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_Identificationcitation" type="MD_IdentificationcitationType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_IdentificationcitationType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="citation" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Identification" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CHE_MD_DataIdentification" type="CHE_MD_DataIdentificationType" substitutionGroup="MD_Identification"/>
+<xsd:complexType  name="CHE_MD_DataIdentificationType">
+  <xsd:complexContent>
+    <xsd:extension base="MD_IdentificationType">
+      <xsd:sequence>
+        <xsd:element name="defaultLocale" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="PT_Locale"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="supplementalInformation" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="Localisation_V2:MultilingualMText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="otherLocale" minOccurs="0" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="PT_Locale"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="subTopicCategory" type="CHE_MD_SubTopicCategoryCode" minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element name="basicGeodata" type="xsd:boolean" minOccurs="0"/>
+        <xsd:element name="basicGeodataInformation" minOccurs="0" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="CHE_MD_BasicGeodataInformation"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="SV_ServiceIdentification" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>SV_ServiceIdentification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CI_Organisationlogo" type="CI_OrganisationlogoType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CI_OrganisationlogoType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="CI_Organisation" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_CI_Organisation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="logo" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_BrowseGraphic</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CI_ResponsiblePartyparentinfo" type="CI_ResponsiblePartyparentinfoType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CI_ResponsiblePartyparentinfoType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="parentResponsibleParty" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_CI_Organisation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="parentOrganisation" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Responsibility</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="EX_ExtentverticalElement" type="EX_ExtentverticalElementType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="EX_ExtentverticalElementType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="EX_Extent" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>EX_Extent</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="verticalElement" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>EX_VerticalExtent</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="individualorganisation" type="individualorganisationType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="individualorganisationType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="individual" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Individual</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="organisation" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_CI_Organisation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_IdentificationpointOfContact" type="MD_IdentificationpointOfContactType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_IdentificationpointOfContactType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="pointOfContact" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Responsibility</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Identification" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CI_Series" type="CI_SeriesType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CI_SeriesType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="name" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="Localisation_V2:MultilingualMText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="CI_Citation" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="MD_FormatformatSpecificationCitation" type="MD_FormatformatSpecificationCitationType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="MD_FormatformatSpecificationCitationType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="MD_Format" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Format</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="formatSpecificationCitation" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="QualityResult" type="QualityResultType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="QualityResultType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="DQ_Element" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>QualityElement</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="CI_Citationseries" type="CI_CitationseriesType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="CI_CitationseriesType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="series" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Series</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="CI_Citation" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="DQ_ConformanceResult" type="DQ_ConformanceResultType" substitutionGroup="QualityResult"/>
+<xsd:complexType  name="DQ_ConformanceResultType">
+  <xsd:complexContent>
+    <xsd:extension base="QualityResultType">
+      <xsd:sequence>
+        <xsd:element name="explanation" type="CharacterString" minOccurs="0"/>
+        <xsd:element name="pass" type="Boolean"/>
+        <xsd:element name="specification" type="gml:ReferenceType" minOccurs="1" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="gml_CodeType" type="gml_CodeTypeType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="gml_CodeTypeType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="code" type="CharacterString"/>
+        <xsd:element name="codeSpace" minOccurs="0">
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:anyURI">
+              <xsd:maxLength value="1023"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="LI_ProcessStep" type="LI_ProcessStepType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="LI_ProcessStepType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="description" type="CharacterStringLong"/>
+        <xsd:element name="stepDateTime" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="TM_Primitive"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="rationale" type="CharacterString" minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element name="LI_Lineage" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>LI_Lineage</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="scope" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Scope</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="source" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>LI_Source</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="QualityElement" type="QualityElementType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="QualityElementType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="DQ_Qualitiy" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>DQ_DataQuality</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="result" type="gml:ReferenceType" minOccurs="1" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>QualityResult</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="SV_ServiceIdentification" type="SV_ServiceIdentificationType" substitutionGroup="MD_Identification"/>
+<xsd:complexType  name="SV_ServiceIdentificationType">
+  <xsd:complexContent>
+    <xsd:extension base="MD_IdentificationType">
+      <xsd:sequence>
+        <xsd:element name="credit" type="CharacterString" minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element name="serviceTypeVersion" type="CharacterString" minOccurs="0"/>
+        <xsd:element name="serviceType">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="gml_CodeType"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="accessProperties" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_StandardOrderProcess</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="containsOperations" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>SV_OperationMetadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="operatesOn" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_DataIdentification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="serviceStandard" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="DQ_ConformanceResultspecification" type="DQ_ConformanceResultspecificationType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="DQ_ConformanceResultspecificationType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="DQ_ConformanceResult" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>DQ_ConformanceResult</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="specification" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="DQ_LogicalConsistency" type="DQ_LogicalConsistencyType" substitutionGroup="QualityElement"/>
+<xsd:complexType  name="DQ_LogicalConsistencyType">
+  <xsd:complexContent>
+    <xsd:extension base="QualityElementType">
+      <xsd:sequence>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="LI_Source" type="LI_SourceType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="LI_SourceType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="description" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="Localisation_V2:MultilingualMText"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="LI_Lineage" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>LI_Lineage</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="scope" type="gml:ReferenceType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Scope</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="sourceStep" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>LI_ProcessStep</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="containsOperationsSV_ServiceIdentification" type="containsOperationsSV_ServiceIdentificationType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="containsOperationsSV_ServiceIdentificationType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="containsOperations" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>SV_OperationMetadata</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="SV_ServiceIdentification" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>SV_ServiceIdentification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="processStepLI_Lineage" type="processStepLI_LineageType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="processStepLI_LineageType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="processStep" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>LI_ProcessStep</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="LI_Lineage" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>LI_Lineage</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="reportDQ_DataQuality" type="reportDQ_DataQualityType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="reportDQ_DataQualityType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="report" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>QualityElement</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="DQ_Qualitiy" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>DQ_DataQuality</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="SV_ServiceIdentificationaccessProperties" type="SV_ServiceIdentificationaccessPropertiesType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="SV_ServiceIdentificationaccessPropertiesType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="SV_ServiceIdentification" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>SV_ServiceIdentification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="accessProperties" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_StandardOrderProcess</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="SV_ServiceIdentificationoperatesOn" type="SV_ServiceIdentificationoperatesOnType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="SV_ServiceIdentificationoperatesOnType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="SV_ServiceIdentification" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>SV_ServiceIdentification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="operatesOn" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CHE_MD_DataIdentification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="SV_ServiceIdentificationserviceStandard" type="SV_ServiceIdentificationserviceStandardType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="SV_ServiceIdentificationserviceStandardType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="SV_ServiceIdentification" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>SV_ServiceIdentification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="serviceStandard" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>CI_Citation</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="DQ_DomainConsistency" type="DQ_DomainConsistencyType" substitutionGroup="DQ_LogicalConsistency"/>
+<xsd:complexType  name="DQ_DomainConsistencyType">
+  <xsd:complexContent>
+    <xsd:extension base="DQ_LogicalConsistencyType">
+      <xsd:sequence>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="LI_Sourcescope" type="LI_SourcescopeType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="LI_SourcescopeType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="LI_Source" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>LI_Source</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="scope" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Scope</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="resourceConstraintsMD_Identification" type="resourceConstraintsMD_IdentificationType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="resourceConstraintsMD_IdentificationType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="resourceConstraints" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Constraints</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="MD_Identification" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Identification</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="resultDQ_Element" type="resultDQ_ElementType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="resultDQ_ElementType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="result" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>QualityResult</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="DQ_Element" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>QualityElement</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="sourceLI_Lineage" type="sourceLI_LineageType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="sourceLI_LineageType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="source" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>LI_Source</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="LI_Lineage" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>LI_Lineage</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="LI_ProcessStepscope" type="LI_ProcessStepscopeType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="LI_ProcessStepscopeType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="LI_ProcessStep" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>LI_ProcessStep</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="scope" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>MD_Scope</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="sourceStepsource" type="sourceStepsourceType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType  name="sourceStepsourceType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="sourceStep" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>LI_ProcessStep</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="source" type="gml:ReferenceType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <gml:targetElement>LI_Source</gml:targetElement>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="eCH0271MemberType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureMemberType">
+      <xsd:sequence>
+        <xsd:choice>
+          <xsd:element ref="DQ_DataQuality"/>
+          <xsd:element ref="LI_Lineage"/>
+          <xsd:element ref="MD_Constraints"/>
+          <xsd:element ref="CHE_MD_LegalConstraints"/>
+          <xsd:element ref="CHE_MD_MaintenanceInformation"/>
+          <xsd:element ref="MD_DigitalTransferOptions"/>
+          <xsd:element ref="EX_TemporalExtent"/>
+          <xsd:element ref="MD_Distributor"/>
+          <xsd:element ref="MD_FeatureCatalogueDescription"/>
+          <xsd:element ref="CHE_MD_Appraisal_AAP"/>
+          <xsd:element ref="CHE_MD_Legislation"/>
+          <xsd:element ref="CI_Address"/>
+          <xsd:element ref="MD_ApplicationSchemaInformation"/>
+          <xsd:element ref="MD_BrowseGraphic"/>
+          <xsd:element ref="MD_Format"/>
+          <xsd:element ref="MD_SecurityConstraints"/>
+          <xsd:element ref="SV_OperationMetadata"/>
+          <xsd:element ref="MD_AssociatedResource"/>
+          <xsd:element ref="MD_Identifier"/>
+          <xsd:element ref="MD_StandardOrderProcess"/>
+          <xsd:element ref="legislationConstraintsMD_LegalConstraints"/>
+          <xsd:element ref="MD_BrowseGraphicimageConstraints"/>
+          <xsd:element ref="MD_DigitalTransferOptionsdistributionFormat"/>
+          <xsd:element ref="MD_MaintenanceInformationappraisal"/>
+          <xsd:element ref="aggregationInfo_MD_Identification"/>
+          <xsd:element ref="distributionOrderProcessMD_Distributor"/>
+          <xsd:element ref="distributorTransferOptionsMD_Distributor"/>
+          <xsd:element ref="MD_IdentificationprocessingLevel"/>
+          <xsd:element ref="CHE_MD_Metadata"/>
+          <xsd:element ref="applicationSchemaInfoMD_Metadata"/>
+          <xsd:element ref="contentInfoMD_Metadata"/>
+          <xsd:element ref="MD_MetadatadataQualityInfo"/>
+          <xsd:element ref="MD_MetadataidentificationInfo"/>
+          <xsd:element ref="MD_MetadatametadataMaintenance"/>
+          <xsd:element ref="MD_MetadataresourceLineage"/>
+          <xsd:element ref="CI_Responsibility"/>
+          <xsd:element ref="formatDistributordistributorFormat"/>
+          <xsd:element ref="metadataIdentifierMD_Metadata"/>
+          <xsd:element ref="resourceMaintenanceMD_Identification"/>
+          <xsd:element ref="CI_Telephone"/>
+          <xsd:element ref="graphicOverviewMD_Identification"/>
+          <xsd:element ref="EX_BoundingPolygon"/>
+          <xsd:element ref="EX_VerticalExtent"/>
+          <xsd:element ref="EX_GeographicBoundingBox"/>
+          <xsd:element ref="MD_Distribution"/>
+          <xsd:element ref="MD_MetadataScope"/>
+          <xsd:element ref="MD_DistributiondistributionFormat"/>
+          <xsd:element ref="MD_Distributiondistributor"/>
+          <xsd:element ref="MD_ReferenceSystem"/>
+          <xsd:element ref="MD_DistributiontransferOptions"/>
+          <xsd:element ref="MD_DistributordistributorContact"/>
+          <xsd:element ref="MD_RepresentativeFraction"/>
+          <xsd:element ref="MD_ReferenceSystemreferenceSystemIdentifier"/>
+          <xsd:element ref="verticalCRSIdEX_VerticalExtent"/>
+          <xsd:element ref="CI_Citation"/>
+          <xsd:element ref="MD_Resolution"/>
+          <xsd:element ref="CI_Contact"/>
+          <xsd:element ref="MD_Scope"/>
+          <xsd:element ref="authorityMD_Identifier"/>
+          <xsd:element ref="CI_CitationcitedResponsibleParty"/>
+          <xsd:element ref="documentationOfIdentificationadditionalDocumentation"/>
+          <xsd:element ref="featureCatalogueCitationCI_Citation"/>
+          <xsd:element ref="MD_AggregateInformationaggregateDataSetName"/>
+          <xsd:element ref="MD_AssociatedResourcemetadataReference"/>
+          <xsd:element ref="MD_Legislationtitle"/>
+          <xsd:element ref="MD_ResolutionequivalentScale"/>
+          <xsd:element ref="parentIdentifierMD_Metadata"/>
+          <xsd:element ref="standardUsedBymetadataStandard"/>
+          <xsd:element ref="CI_OnlineResource"/>
+          <xsd:element ref="MD_Keywords"/>
+          <xsd:element ref="CI_Citationidentifier"/>
+          <xsd:element ref="CI_ResponsiblePartyaddress"/>
+          <xsd:element ref="DQ_DataQualityscope"/>
+          <xsd:element ref="MD_ApplicationSchemaInformationname"/>
+          <xsd:element ref="MD_MetadatalegislationInformation"/>
+          <xsd:element ref="scopeLI_Lineage"/>
+          <xsd:element ref="CI_Party"/>
+          <xsd:element ref="CI_ContactonlineResource"/>
+          <xsd:element ref="MD_BrowseGraphiclinkage"/>
+          <xsd:element ref="MD_keywordsthesaurusName"/>
+          <xsd:element ref="MD_MetadatametadataScope"/>
+          <xsd:element ref="SV_OperationMetadataconnectPoint"/>
+          <xsd:element ref="EX_Extent"/>
+          <xsd:element ref="CI_Responsibilityparty"/>
+          <xsd:element ref="CI_ResponsiblePartycontactInfo"/>
+          <xsd:element ref="distributionInfoMD_Metadata"/>
+          <xsd:element ref="CI_ResponsiblePartyphone"/>
+          <xsd:element ref="DQ_Scopeextent"/>
+          <xsd:element ref="MD_DataIdentificationextent"/>
+          <xsd:element ref="MD_Metadatacontact"/>
+          <xsd:element ref="profileUsedBymetadataProfile"/>
+          <xsd:element ref="CI_CitationonlineResource"/>
+          <xsd:element ref="descriptiveKeywordsMD_Identification"/>
+          <xsd:element ref="MD_DataIdentificationspatialResolution"/>
+          <xsd:element ref="referenceSystemInfoMD_Metadata"/>
+          <xsd:element ref="resourceFormatMD_Identification"/>
+          <xsd:element ref="CI_Individual"/>
+          <xsd:element ref="EX_ExtentgeographicElement"/>
+          <xsd:element ref="MD_DigitalTransferOptionsonLine"/>
+          <xsd:element ref="CHE_CI_Organisation"/>
+          <xsd:element ref="EX_ExtenttemporalElement"/>
+          <xsd:element ref="MD_Identificationcitation"/>
+          <xsd:element ref="CHE_MD_DataIdentification"/>
+          <xsd:element ref="CI_Organisationlogo"/>
+          <xsd:element ref="CI_ResponsiblePartyparentinfo"/>
+          <xsd:element ref="EX_ExtentverticalElement"/>
+          <xsd:element ref="individualorganisation"/>
+          <xsd:element ref="MD_IdentificationpointOfContact"/>
+          <xsd:element ref="CI_Series"/>
+          <xsd:element ref="MD_FormatformatSpecificationCitation"/>
+          <xsd:element ref="CI_Citationseries"/>
+          <xsd:element ref="DQ_ConformanceResult"/>
+          <xsd:element ref="LI_ProcessStep"/>
+          <xsd:element ref="SV_ServiceIdentification"/>
+          <xsd:element ref="DQ_ConformanceResultspecification"/>
+          <xsd:element ref="LI_Source"/>
+          <xsd:element ref="containsOperationsSV_ServiceIdentification"/>
+          <xsd:element ref="processStepLI_Lineage"/>
+          <xsd:element ref="reportDQ_DataQuality"/>
+          <xsd:element ref="SV_ServiceIdentificationaccessProperties"/>
+          <xsd:element ref="SV_ServiceIdentificationoperatesOn"/>
+          <xsd:element ref="SV_ServiceIdentificationserviceStandard"/>
+          <xsd:element ref="DQ_DomainConsistency"/>
+          <xsd:element ref="LI_Sourcescope"/>
+          <xsd:element ref="resourceConstraintsMD_Identification"/>
+          <xsd:element ref="resultDQ_Element"/>
+          <xsd:element ref="sourceLI_Lineage"/>
+          <xsd:element ref="LI_ProcessStepscope"/>
+          <xsd:element ref="sourceStepsource"/>
+        </xsd:choice>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:element name="eCH0271" type="eCH0271Type" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType name="eCH0271Type">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element name="member" type="eCH0271MemberType" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+      <xsd:attributeGroup ref="gml:AggregationAttributeGroup"/>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+</xsd:schema>
