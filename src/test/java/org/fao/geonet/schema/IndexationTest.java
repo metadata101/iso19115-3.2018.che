@@ -167,6 +167,12 @@ public class IndexationTest {
         }
     }
 
+    @Test
+    public void indexLichen() throws Exception {
+        XslUtil.IS_INSPIRE_ENABLED = false;
+        indexAndCompareWithExpected("lichen2014");
+    }
+
     private void indexAndCompareWithExpected(String fileRoot) throws Exception {
         indexAndCompareWithExpected(fileRoot, "index.xsl");
     }

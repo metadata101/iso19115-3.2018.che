@@ -973,7 +973,7 @@
 
       <xsl:for-each select="mdb:referenceSystemInfo/*">
         <xsl:for-each select="mrs:referenceSystemIdentifier/*">
-          <xsl:variable name="crs" select="mcc:code/*[1]/text()"/>
+          <xsl:variable name="crs" select="mcc:code/gco:CharacterString/text()"/>
           <xsl:variable name="crsLabel"
                         select="if (mcc:description/*[1])
                                 then mcc:description/*[1]/text()
