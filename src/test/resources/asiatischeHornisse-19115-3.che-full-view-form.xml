@@ -2785,7 +2785,13 @@
                     <mcc:MD_SpatialRepresentationTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector">vector</mcc:MD_SpatialRepresentationTypeCode>
                 </mri:spatialRepresentationType>
                 <mri:topicCategory>
+                    <mri:MD_TopicCategoryCode>imageryBaseMapsEarthCover</mri:MD_TopicCategoryCode>
+                </mri:topicCategory>
+                <mri:topicCategory>
                     <mri:MD_TopicCategoryCode>environment</mri:MD_TopicCategoryCode>
+                </mri:topicCategory>
+                <mri:topicCategory>
+                    <mri:MD_TopicCategoryCode>geoscientificInformation</mri:MD_TopicCategoryCode>
                 </mri:topicCategory>
                 <mri:extent xlink:show="embed" uuidref="geocatch-subtpl-extent-kantonsgebiet-13">
                     <gex:EX_Extent>
@@ -2969,7 +2975,13 @@
                     </lan:PT_Locale>
                 </mri:defaultLocale>
                 <che:subTopicCategory>
+                    <che:CHE_MD_SubTopicCategoryCode codeList="subTopicCategory" codeListValue="imageryBaseMapsEarthCover_Imagery" />
+                </che:subTopicCategory>
+                <che:subTopicCategory>
                     <che:CHE_MD_SubTopicCategoryCode codeList="subTopicCategory" codeListValue="environment_EnvironmentalProtection" />
+                </che:subTopicCategory>
+                <che:subTopicCategory>
+                    <che:CHE_MD_SubTopicCategoryCode codeList="subTopicCategory" codeListValue="geoscientificInformation_Soils" />
                 </che:subTopicCategory>
                 <che:basicGeodata>
                     <gco:Boolean>true</gco:Boolean>

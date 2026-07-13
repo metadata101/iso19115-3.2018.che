@@ -33,6 +33,7 @@
                 xmlns:saxon="http://saxon.sf.net/"
                 xmlns:che="http://geocat.ch/che"
                 extension-element-prefixes="saxon"
+                xmlns:exslt="http://exslt.org/common"
                 exclude-result-prefixes="#all">
   <!-- This formatter render an ISO19115-3 record based on the
   editor configuration file.
@@ -1061,6 +1062,18 @@
                        srv:SV_ParameterDirection[1]|
                        reg:RE_AmendmentType[1]"
                 priority="100">
+
+    <xsl:variable name="translated_cat">
+      <xsl:for-each select="parent::node()/(
+                       mri:topicCategory|
+                       mex:MD_ObligationCode|
+                       msr:MD_PixelOrientationCode|
+                       srv:SV_ParameterDirection|
+                       reg:RE_AmendmentType)">
+        <xsl:apply-templates mode="render-value" select="*"/>
+      </xsl:for-each>
+    </xsl:variable>
+
     <dl class="gn-date">
       <dt>
         <xsl:call-template name="render-field-label">
@@ -1069,25 +1082,54 @@
       </dt>
       <dd>
         <ul>
-          <xsl:for-each select="parent::node()/(mri:topicCategory|mex:MD_ObligationCode|
-                msr:MD_PixelOrientationCode|srv:SV_ParameterDirection|
-                reg:RE_AmendmentType)">
+          <xsl:for-each select="exslt:node-set($translated_cat)/span">
+            <xsl:sort data-type="text" order="ascending" select="text()"/>
             <li>
-              <xsl:apply-templates mode="render-value"
-                                   select="*"/>
+              <xsl:copy-of select="."/>
             </li>
           </xsl:for-each>
         </ul>
       </dd>
     </dl>
   </xsl:template>
+
+  <xsl:template mode="render-field"
+                match="che:subTopicCategory[1]"
+                priority="501">
+
+    <xsl:variable name="translated_cat">
+      <xsl:for-each select="parent::node()/che:subTopicCategory/che:CHE_MD_SubTopicCategoryCode">
+        <xsl:apply-templates mode="render-value" select="@*"/>
+      </xsl:for-each>
+    </xsl:variable>
+
+    <dl class="gn-date">
+      <dt>
+        <xsl:call-template name="render-field-label">
+          <xsl:with-param name="languages" select="$allLanguages"/>
+        </xsl:call-template>
+      </dt>
+      <dd>
+        <ul>
+          <xsl:for-each select="exslt:node-set($translated_cat)/span">
+            <xsl:sort data-type="text" order="ascending" select="text()"/>
+            <li>
+              <xsl:copy-of select="."/>
+            </li>
+          </xsl:for-each>
+        </ul>
+      </dd>
+    </dl>
+  </xsl:template>
+
   <xsl:template mode="render-field"
                 match="mri:topicCategory[position() > 1]|
                        mex:MD_ObligationCode[position() > 1]|
                        msr:MD_PixelOrientationCode[position() > 1]|
                        srv:SV_ParameterDirection[position() > 1]|
-                       reg:RE_AmendmentType[position() > 1]"
-                priority="100"/>
+                       reg:RE_AmendmentType[position() > 1]|
+                       che:subTopicCategory[position() > 1]"
+                priority="501"/>
 
 
   <!-- Link to other metadata records -->
@@ -1127,6 +1169,8 @@
   <xsl:template mode="render-field"
                 match="*">
     <xsl:param name="fieldName" select="''" as="xs:string"/>
+
+
     <xsl:apply-templates mode="render-field">
       <xsl:with-param name="fieldName" select="$fieldName"/>
     </xsl:apply-templates>
@@ -1311,7 +1355,8 @@
                        mex:MD_ObligationCode|
                        msr:MD_PixelOrientationCode|
                        srv:SV_ParameterDirection|
-                       reg:RE_AmendmentType">
+                       reg:RE_AmendmentType|
+                       che:CHE_MD_SubTopicCategoryCode">
     <xsl:param name="forcedLanguage" select="''" required="no"/>
 
     <xsl:variable name="id" select="."/>
