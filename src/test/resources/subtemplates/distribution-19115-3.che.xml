@@ -1,0 +1,62 @@
+<mrd:MD_Distribution xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0">
+  <mrd:transferOptions>
+    <mrd:MD_DigitalTransferOptions>
+      <mrd:onLine>
+        <cit:CI_OnlineResource xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
+          <cit:linkage>
+            <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">Website URL</gco:CharacterString>
+          </cit:linkage>
+          <cit:protocol>
+            <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">WWW:LINK-1.0-http--link</gco:CharacterString>
+          </cit:protocol>
+          <cit:name>
+            <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" />
+          </cit:name>
+          <cit:description>
+            <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">Website description</gco:CharacterString>
+          </cit:description>
+        </cit:CI_OnlineResource>
+      </mrd:onLine>
+    </mrd:MD_DigitalTransferOptions>
+  </mrd:transferOptions>
+  <mrd:transferOptions>
+    <mrd:MD_DigitalTransferOptions>
+      <mrd:onLine>
+        <cit:CI_OnlineResource xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
+          <cit:linkage>
+            <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" />
+          </cit:linkage>
+          <cit:protocol>
+            <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+          </cit:protocol>
+          <cit:name>
+            <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" />
+          </cit:name>
+          <cit:description>
+            <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">Short description of the data</gco:CharacterString>
+          </cit:description>
+        </cit:CI_OnlineResource>
+      </mrd:onLine>
+    </mrd:MD_DigitalTransferOptions>
+  </mrd:transferOptions>
+  <mrd:transferOptions>
+    <mrd:MD_DigitalTransferOptions>
+      <mrd:onLine>
+        <cit:CI_OnlineResource xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
+          <cit:linkage>
+            <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">http://serverIP/cgi-bin/wms?map=/directory/file.map</gco:CharacterString>
+          </cit:linkage>
+          <cit:protocol>
+            <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">OGC:WMS-1.1.1-http-get-map</gco:CharacterString>
+          </cit:protocol>
+          <cit:name>
+            <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">name_of_data_in_the_map_file</gco:CharacterString>
+          </cit:name>
+          <cit:description>
+            <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">Short description of the data</gco:CharacterString>
+          </cit:description>
+        </cit:CI_OnlineResource>
+      </mrd:onLine>
+    </mrd:MD_DigitalTransferOptions>
+  </mrd:transferOptions>
+</mrd:MD_Distribution>

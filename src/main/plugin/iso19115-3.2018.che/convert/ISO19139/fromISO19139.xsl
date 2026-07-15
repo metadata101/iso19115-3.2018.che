@@ -101,7 +101,7 @@
 
     <xsl:template match="/">
         <xsl:choose>
-            <xsl:when test="oldche:CHE_CI_ResponsibleParty|gmd:EX_Extent|gmd:MD_Format">
+            <xsl:when test="oldche:CHE_CI_ResponsibleParty|gmd:EX_Extent|gmd:MD_Format|gmd:MD_Distribution">
                 <xsl:call-template name="to-iso19115-3-subtemplate"/>
             </xsl:when>
             <xsl:otherwise>
