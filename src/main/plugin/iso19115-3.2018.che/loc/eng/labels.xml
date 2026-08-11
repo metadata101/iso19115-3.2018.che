@@ -4956,10 +4956,6 @@
     <label>Owns</label>
     <description></description>
   </element>
-  <element name="xlink:type">
-    <label>Type of link</label>
-    <description></description>
-  </element>
   <element name="unit">
     <label>Unit</label>
     <description></description>
@@ -4983,10 +4979,6 @@
   </element>
   <element name="owns">
     <label>Owns</label>
-    <description></description>
-  </element>
-  <element name="xlink:type">
-    <label>Type of link</label>
     <description></description>
   </element>
   <element name="xlink:title">
