@@ -593,10 +593,10 @@
 
   <!-- 16. ADD DOCUMENTATION -->
   <xsl:template name="add-documentation">
-    <!-- foaf:page: WWW:LINK with function 'information' -->
+    <!-- foaf:page: WWW:LINK or WWW:DOWNLOAD with function 'information' -->
     <xsl:for-each select="
       mdb:distributionInfo//mrd:onLine[
-        starts-with((*/cit:protocol/*/text())[1], 'WWW:LINK') and
+        (starts-with((*/cit:protocol/*/text())[1], 'WWW:LINK') or starts-with((*/cit:protocol/*/text())[1], 'WWW:DOWNLOAD')) and
         */cit:function/*/@codeListValue = 'information'
       ]
     ">
@@ -661,7 +661,7 @@
         <xsl:when test="starts-with($protocol, 'ESRI:REST') or contains($protocolLower, 'restful') or contains($protocolLower, 'arcgis rest') or contains($protocolLower, 'rest api')">
           <xsl:text>http://publications.europa.eu/resource/authority/file-type/REST</xsl:text>
         </xsl:when>
-        <xsl:when test="starts-with($protocol, 'WWW:LINK') or contains($protocolLower, 'web portal') or contains($protocolLower, 'web atlas')">
+        <xsl:when test="starts-with($protocol, 'WWW:LINK') or starts-with($protocol, 'WWW:DOWNLOAD-APP') or contains($protocolLower, 'web portal') or contains($protocolLower, 'web atlas')">
           <xsl:text>http://publications.europa.eu/resource/authority/file-type/HTML</xsl:text>
         </xsl:when>
         <xsl:when test="starts-with($protocol, 'MAP:Preview')">
@@ -679,6 +679,7 @@
         <xsl:when test="contains($protocolLower, 'gpkg') or contains($protocolLower, 'geopackage')">http://publications.europa.eu/resource/authority/file-type/GPKG</xsl:when>
         <xsl:when test="contains($protocolLower, 'shp') or contains($protocolLower, 'shapefile')">http://publications.europa.eu/resource/authority/file-type/SHP</xsl:when>
         <xsl:when test="contains($protocolLower, 'txt')">http://publications.europa.eu/resource/authority/file-type/TXT</xsl:when>
+        <xsl:when test="contains($protocolLower, 'interlis') or contains($protocolLower, 'ili') or contains($protocolLower, 'xtf') or contains($protocolLower, 'itf')">http://publications.europa.eu/resource/authority/file-type/XML</xsl:when>
 
         <!-- File formats by URL extension (fallback) -->
         <xsl:when test="ends-with($urlBase, '.shp')">http://publications.europa.eu/resource/authority/file-type/SHP</xsl:when>
@@ -688,10 +689,13 @@
         <xsl:when test="ends-with($urlBase, '.gml')">http://publications.europa.eu/resource/authority/file-type/GML</xsl:when>
         <xsl:when test="ends-with($urlBase, '.kml')">http://publications.europa.eu/resource/authority/file-type/KML</xsl:when>
         <xsl:when test="ends-with($urlBase, '.csv')">http://publications.europa.eu/resource/authority/file-type/CSV</xsl:when>
-        <xsl:when test="ends-with($urlBase, '.xml')">http://publications.europa.eu/resource/authority/file-type/XML</xsl:when>
+        <xsl:when test="ends-with($urlBase, '.xml') or ends-with($urlBase, '.ili') or ends-with($urlBase, '.xtf') or ends-with($urlBase, '.itf')">http://publications.europa.eu/resource/authority/file-type/XML</xsl:when>
         <xsl:when test="ends-with($urlBase, '.zip')">http://publications.europa.eu/resource/authority/file-type/ZIP</xsl:when>
         <xsl:when test="ends-with($urlBase, '.pdf')">http://publications.europa.eu/resource/authority/file-type/PDF</xsl:when>
         <xsl:when test="ends-with($urlBase, '.html') or ends-with($urlBase, '.htm')">http://publications.europa.eu/resource/authority/file-type/HTML</xsl:when>
+        
+        <!-- Fallback: WWW:DOWNLOAD* resources without file extension are typically web pages or forms -->
+        <xsl:when test="starts-with($protocol, 'WWW:DOWNLOAD')">http://publications.europa.eu/resource/authority/file-type/HTML</xsl:when>
         
         <!-- Default -->
         <xsl:otherwise>http://publications.europa.eu/resource/authority/file-type/UNSPECIFIED</xsl:otherwise>
@@ -817,7 +821,7 @@
     <xsl:variable name="mediaType">
       <xsl:choose>
         <!-- HTML pages and web links -->
-        <xsl:when test="starts-with($protocol, 'WWW:LINK') or contains($protocolLowerMT, 'web portal') or contains($protocolLowerMT, 'web atlas')">text/html</xsl:when>
+        <xsl:when test="starts-with($protocol, 'WWW:LINK') or starts-with($protocol, 'WWW:DOWNLOAD-APP') or contains($protocolLowerMT, 'web portal') or contains($protocolLowerMT, 'web atlas')">text/html</xsl:when>
         <!-- Service protocols: no media type (XML envelope differs per service) -->
         <xsl:when test="starts-with($protocol, 'OGC:') or starts-with($protocol, 'ESRI:') or contains($protocolLowerMT, 'wms') or contains($protocolLowerMT, 'wmts') or contains($protocolLowerMT, 'wfs') or contains($protocolLowerMT, 'restful') or contains($protocolLowerMT, 'arcgis rest')"></xsl:when>
         <!-- Downloads: derive media type from protocol name or URL extension -->
@@ -834,7 +838,7 @@
             <xsl:when test="contains($protocolLowerMT, 'shp') or contains($protocolLowerMT, 'shapefile') or ends-with($urlBaseMT, '.shp')">application/octet-stream</xsl:when>
             <xsl:when test="ends-with($urlBaseMT, '.zip') or contains($protocolLowerMT, 'zip')">application/zip</xsl:when>
             <xsl:when test="ends-with($urlBaseMT, '.html') or ends-with($urlBaseMT, '.htm')">text/html</xsl:when>
-            <xsl:when test="ends-with($urlBaseMT, '.xml')">application/xml</xsl:when>
+            <xsl:when test="ends-with($urlBaseMT, '.xml') or ends-with($urlBaseMT, '.ili') or ends-with($urlBaseMT, '.xtf') or ends-with($urlBaseMT, '.itf')">application/xml</xsl:when>
           </xsl:choose>
         </xsl:when>
         <!-- Other known formats -->
