@@ -247,6 +247,16 @@ public class Iso19139cheToIso19115cheConversionTest {
         transformAndCompare("giebenach", true);
     }
 
+    @Test
+    public void convertFeatureCatalogueCitationMultilingualTitle() throws Exception {
+        transformAndCompare("featureCatalogueCitation-multilingual-title", false);
+    }
+
+    @Test
+    public void convertWmsWithTwoServiceTypeVersion() throws Exception {
+        transformAndCompare("wms-with-2-serviceTypeVersion", false);
+    }
+
     private void assertNamespacePresent(List<?> namespaces, String nsLocation, String prefix) {
         Namespace ns = namespaces.stream() //
                 .filter(n -> prefix.equals(((Namespace) n).getPrefix()))

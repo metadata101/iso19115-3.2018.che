@@ -28,11 +28,12 @@
                 <xsl:element name="mrc:featureCatalogue">
                     <xsl:element name="gfc:FC_FeatureCatalogue">
                         <xsl:choose>
-                            <xsl:when test="./gmd:featureCatalogueCitation/gmd:CI_Citation/gmd:title">
-                                <xsl:call-template name="writeCharacterStringElement">
-                                    <xsl:with-param name="elementName" select="'cat:name'"/>
-                                    <xsl:with-param name="nodeWithStringToWrite" select="./gmd:featureCatalogueCitation/gmd:CI_Citation/gmd:title"/>
-                                </xsl:call-template>
+                            <xsl:when test="./gmd:featureCatalogueCitation/gmd:CI_Citation/gmd:title/gcoold:CharacterString">
+                                <xsl:element name="cat:name">
+                                    <xsl:element name="gco:CharacterString">
+                                        <xsl:value-of select="./gmd:featureCatalogueCitation/gmd:CI_Citation/gmd:title/gcoold:CharacterString"/>
+                                    </xsl:element>
+                                </xsl:element>
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:element name="cat:name">

@@ -307,10 +307,11 @@
               <xsl:with-param name="elementName" select="'cit:title'"/>
               <xsl:with-param name="nodeWithStringToWrite" select="."/>
             </xsl:call-template>
-            <xsl:call-template name="writeCharacterStringElement">
-              <xsl:with-param name="elementName" select="'cit:edition'"/>
-              <xsl:with-param name="nodeWithStringToWrite" select="../gmd:metadataStandardVersion"/>
-            </xsl:call-template>
+            <cit:edition>
+              <xsl:for-each select="../gmd:metadataStandardVersion/gcoold:CharacterString">
+                <gco:CharacterString><xsl:value-of select="."/></gco:CharacterString>
+              </xsl:for-each>
+            </cit:edition>
           </xsl:otherwise>
         </xsl:choose>
       </cit:CI_Citation>
