@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-  xmlns="http://www.interlis.ch/ILIGML-2.0/LocalisationCH_V2" targetNamespace="http://www.interlis.ch/ILIGML-2.0/LocalisationCH_V2" elementFormDefault="qualified" attributeFormDefault="unqualified"
+  xmlns="http://www.interlis.ch/xtf/2.4/LocalisationCH_V2" targetNamespace="http://www.interlis.ch/xtf/2.4/LocalisationCH_V2" elementFormDefault="qualified" attributeFormDefault="unqualified"
   xmlns:gml="http://www.opengis.net/gml/3.2"
-  xmlns:INTERLIS="http://www.interlis.ch/ILIGML-2.0/INTERLIS"
+  xmlns:INTERLIS="http://www.interlis.ch/xtf/2.4/INTERLIS"
   xmlns:ili2c="http://www.interlis.ch/ili2c/ILIGML-2.0"
-  xmlns:Localisation_V2="http://www.interlis.ch/ILIGML-2.0/Localisation_V2"
+  xmlns:Localisation_V2="http://www.interlis.ch/xtf/2.4/Localisation_V2"
   >
 <xsd:annotation>
   <xsd:appinfo source="http://www.interlis.ch/ili2c/ili2cversion">5.6.8-e6f7ab6dd5cdba29afc9b24866ecb98c057d82b2</xsd:appinfo>
@@ -16,9 +16,9 @@
     </ili2c:Model>
   </xsd:appinfo>
 </xsd:annotation>
-<xsd:import namespace="http://www.opengis.net/gml/3.2"/>
-<xsd:import namespace="http://www.interlis.ch/ILIGML-2.0/INTERLIS"/>
-<xsd:import namespace="http://www.interlis.ch/ILIGML-2.0/Localisation_V2"/>
+<xsd:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+<xsd:import namespace="http://www.interlis.ch/xtf/2.4/INTERLIS"/>
+<xsd:import namespace="http://www.interlis.ch/xtf/2.4/Localisation_V2"/>
 <xsd:element name="LocalisedText" type="LocalisedTextType" substitutionGroup="Localisation_V2:LocalisedText"/>
 <xsd:complexType  name="LocalisedTextType">
   <xsd:complexContent>

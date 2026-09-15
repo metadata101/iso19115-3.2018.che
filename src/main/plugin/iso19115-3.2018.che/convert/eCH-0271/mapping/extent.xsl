@@ -12,7 +12,7 @@
 <xsl:stylesheet version="2.0"
   xmlns:xsl  ="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs   ="http://www.w3.org/2001/XMLSchema"
-  xmlns:int  ="http://www.interlis.ch/INTERLIS2.3"
+  xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1"
   xmlns:ech0271 ="urn:ech0271-functions"
   xmlns:gex  ="http://standards.iso.org/iso/19115/-3/gex/1.0"
   xmlns:gco  ="http://standards.iso.org/iso/19115/-3/gco/1.0"
@@ -30,16 +30,16 @@
 
     <gex:EX_Extent>
       <!-- description — multilingual text -->
-      <xsl:if test="$extRecord/description/int:eCH0271_1.eCH0271.PT_FreeText | $extRecord/description/int:eCH0271_1.Comprehensive.PT_FreeText">
+      <xsl:if test="$extRecord/description/eCH0271_1:eCH0271_1.eCH0271.PT_FreeText | $extRecord/description/eCH0271_1:eCH0271_1.Comprehensive.PT_FreeText">
         <gex:description xsi:type="lan:PT_FreeText_PropertyType">
           <xsl:call-template name="ech0271:PT_FreeText_content">
-            <xsl:with-param name="freeText" select="$extRecord/description/int:eCH0271_1.eCH0271.PT_FreeText | $extRecord/description/int:eCH0271_1.Comprehensive.PT_FreeText"/>
+            <xsl:with-param name="freeText" select="$extRecord/description/eCH0271_1:eCH0271_1.eCH0271.PT_FreeText | $extRecord/description/eCH0271_1:eCH0271_1.Comprehensive.PT_FreeText"/>
           </xsl:call-template>
         </gex:description>
       </xsl:if>
 
       <!-- geographicElement — handle bounding box and geographic description -->
-      <xsl:for-each select="$basket/(int:eCH0271_1.eCH0271.EX_ExtentgeographicElement | int:eCH0271_1.Comprehensive.EX_ExtentgeographicElement)
+      <xsl:for-each select="$basket/(eCH0271_1:eCH0271_1.eCH0271.EX_ExtentgeographicElement | eCH0271_1:eCH0271_1.Comprehensive.EX_ExtentgeographicElement)
                                     [EX_Extent/@REF = $extRecord/@TID]">
         <xsl:variable name="geoElemRef" select="geographicElement/@REF"/>
         <xsl:variable name="geoElem" select="key('byTID', $geoElemRef)"/>
@@ -73,7 +73,7 @@
       </xsl:for-each>
 
       <!-- temporalElement — temporal extents -->
-      <xsl:for-each select="$basket/(int:eCH0271_1.eCH0271.EX_ExtenttemporalElement | int:eCH0271_1.Comprehensive.EX_ExtenttemporalElement)
+      <xsl:for-each select="$basket/(eCH0271_1:eCH0271_1.eCH0271.EX_ExtenttemporalElement | eCH0271_1:eCH0271_1.Comprehensive.EX_ExtenttemporalElement)
                                     [EX_Extent/@REF = $extRecord/@TID]">
         <xsl:variable name="tempElemRef" select="temporalElement/@REF"/>
         <xsl:variable name="tempElem" select="key('byTID', $tempElemRef)"/>
@@ -182,7 +182,7 @@
 
     <gex:EX_BoundingPolygon>
       <!-- polygon — GML geometry (typically MultiSurface or Polygon) -->
-      <xsl:for-each select="$basket/(int:eCH0271_1.eCH0271.EX_BoundingPolygonpolygon | int:eCH0271_1.Comprehensive.EX_BoundingPolygonpolygon)
+      <xsl:for-each select="$basket/(eCH0271_1:eCH0271_1.eCH0271.EX_BoundingPolygonpolygon | eCH0271_1:eCH0271_1.Comprehensive.EX_BoundingPolygonpolygon)
                                     [EX_BoundingPolygon/@REF = $polyRecord/@TID]">
         <xsl:variable name="polyRef" select="polygon/@REF"/>
         <xsl:variable name="gmlGeom" select="key('byTID', $polyRef)"/>
@@ -206,11 +206,11 @@
     <gex:EX_TemporalExtent>
       <xsl:choose>
         <!-- Time period (start/end) via TM_Primitive (eCH0271 standard structure) -->
-        <xsl:when test="$tempRecord/extent/int:eCH0271_1.eCH0271.TM_Primitive | $tempRecord/extent/int:eCH0271_1.Comprehensive.TM_Primitive">
+        <xsl:when test="$tempRecord/extent/eCH0271_1:eCH0271_1.eCH0271.TM_Primitive | $tempRecord/extent/eCH0271_1:eCH0271_1.Comprehensive.TM_Primitive">
           <gex:extent>
             <gml:TimePeriod>
               <!-- Start time -->
-              <xsl:variable name="begin" select="normalize-space(($tempRecord/extent/int:eCH0271_1.eCH0271.TM_Primitive/begin | $tempRecord/extent/int:eCH0271_1.Comprehensive.TM_Primitive/begin)[1])"/>
+              <xsl:variable name="begin" select="normalize-space(($tempRecord/extent/eCH0271_1:eCH0271_1.eCH0271.TM_Primitive/begin | $tempRecord/extent/eCH0271_1:eCH0271_1.Comprehensive.TM_Primitive/begin)[1])"/>
               <xsl:if test="$begin != ''">
                 <gml:begin>
                   <gml:TimeInstant>
@@ -221,7 +221,7 @@
                 </gml:begin>
               </xsl:if>
               <!-- End time -->
-              <xsl:variable name="end" select="normalize-space(($tempRecord/extent/int:eCH0271_1.eCH0271.TM_Primitive/end | $tempRecord/extent/int:eCH0271_1.Comprehensive.TM_Primitive/end)[1])"/>
+              <xsl:variable name="end" select="normalize-space(($tempRecord/extent/eCH0271_1:eCH0271_1.eCH0271.TM_Primitive/end | $tempRecord/extent/eCH0271_1:eCH0271_1.Comprehensive.TM_Primitive/end)[1])"/>
               <xsl:if test="$end != ''">
                 <gml:end>
                   <gml:TimeInstant>
@@ -235,11 +235,11 @@
           </gex:extent>
         </xsl:when>
         <!-- Single time instant (fallback) -->
-        <xsl:when test="$tempRecord/extent/int:eCH0271_1.eCH0271.timeInstant | $tempRecord/extent/int:eCH0271_1.Comprehensive.timeInstant">
+        <xsl:when test="$tempRecord/extent/eCH0271_1:eCH0271_1.eCH0271.timeInstant | $tempRecord/extent/eCH0271_1:eCH0271_1.Comprehensive.timeInstant">
           <gex:extent>
             <gml:TimeInstant>
               <gml:timePosition>
-                <xsl:value-of select="normalize-space(($tempRecord/extent/int:eCH0271_1.eCH0271.timeInstant | $tempRecord/extent/int:eCH0271_1.Comprehensive.timeInstant)[1])"/>
+                <xsl:value-of select="normalize-space(($tempRecord/extent/eCH0271_1:eCH0271_1.eCH0271.timeInstant | $tempRecord/extent/eCH0271_1:eCH0271_1.Comprehensive.timeInstant)[1])"/>
               </gml:timePosition>
             </gml:TimeInstant>
           </gex:extent>
@@ -258,7 +258,7 @@
 
     <gex:EX_SpatialTemporalExtent>
       <!-- spatialExtent — geographic coverage -->
-      <xsl:for-each select="$basket/(int:eCH0271_1.eCH0271.EX_SpatialTemporalExtentspatialExtent | int:eCH0271_1.Comprehensive.EX_SpatialTemporalExtentspatialExtent)
+      <xsl:for-each select="$basket/(eCH0271_1:eCH0271_1.eCH0271.EX_SpatialTemporalExtentspatialExtent | eCH0271_1:eCH0271_1.Comprehensive.EX_SpatialTemporalExtentspatialExtent)
                                     [EX_SpatialTemporalExtent/@REF = $spatTempRecord/@TID]">
         <xsl:variable name="spatialRef" select="spatialExtent/@REF"/>
         <xsl:variable name="spatialRecord" select="key('byTID', $spatialRef)"/>
@@ -274,7 +274,7 @@
       </xsl:for-each>
 
       <!-- temporalExtent — time coverage -->
-      <xsl:for-each select="$basket/(int:eCH0271_1.eCH0271.EX_SpatialTemporalExtenttemporalExtent | int:eCH0271_1.Comprehensive.EX_SpatialTemporalExtenttemporalExtent)
+      <xsl:for-each select="$basket/(eCH0271_1:eCH0271_1.eCH0271.EX_SpatialTemporalExtenttemporalExtent | eCH0271_1:eCH0271_1.Comprehensive.EX_SpatialTemporalExtenttemporalExtent)
                                     [EX_SpatialTemporalExtent/@REF = $spatTempRecord/@TID]">
         <xsl:variable name="tempRef" select="temporalExtent/@REF"/>
         <xsl:variable name="tempRecord" select="key('byTID', $tempRef)"/>

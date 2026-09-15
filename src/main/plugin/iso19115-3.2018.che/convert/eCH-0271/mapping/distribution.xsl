@@ -7,7 +7,7 @@
 <xsl:stylesheet version="2.0"
   xmlns:xsl  ="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs   ="http://www.w3.org/2001/XMLSchema"
-  xmlns:int  ="http://www.interlis.ch/INTERLIS2.3"
+  xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1"
   xmlns:ech0271 ="urn:ech0271-functions"
   xmlns:cit  ="http://standards.iso.org/iso/19115/-3/cit/2.0"
   xmlns:gco  ="http://standards.iso.org/iso/19115/-3/gco/1.0"
@@ -30,9 +30,9 @@
 
       <!-- distributionFormat (via MD_DistributiondistributionFormat) -->
       <xsl:for-each
-        select="$basket/int:eCH0271_1.eCH0271.MD_DistributiondistributionFormat
-                        [int:MD_Distribution/@REF = $distRecord/@TID]">
-        <xsl:variable name="fmtRecord" select="key('byTID', int:distributionFormat/@REF)"/>
+        select="$basket/eCH0271_1:eCH0271_1.eCH0271.MD_DistributiondistributionFormat
+                        [eCH0271_1:MD_Distribution/@REF = $distRecord/@TID]">
+        <xsl:variable name="fmtRecord" select="key('byTID', eCH0271_1:distributionFormat/@REF)"/>
         <xsl:if test="$fmtRecord">
           <mrd:distributionFormat>
             <xsl:call-template name="ech0271:MD_Format">
@@ -44,9 +44,9 @@
 
       <!-- transferOptions via MD_DigitalTransferOptions -->
       <xsl:for-each
-        select="$basket/(int:eCH0271_1.eCH0271.MD_DigitalTransferOptions
-                        |int:eCH0271_1.eCH0271.MD_DigitalTransferOptions)
-                        [int:MD_Distribution/@REF = $distRecord/@TID]">
+        select="$basket/(eCH0271_1:eCH0271_1.eCH0271.MD_DigitalTransferOptions
+                        |eCH0271_1:eCH0271_1.eCH0271.MD_DigitalTransferOptions)
+                        [eCH0271_1:MD_Distribution/@REF = $distRecord/@TID]">
         <mrd:transferOptions>
           <xsl:call-template name="ech0271:MD_DigitalTransferOptions">
             <xsl:with-param name="dtoRecord" select="."/>
@@ -68,8 +68,8 @@
     <mrd:MD_DigitalTransferOptions>
       <!-- online resources -->
       <xsl:for-each
-        select="$basket/int:eCH0271_1.eCH0271.CI_OnlineResource
-                        [int:MD_DigitalTransferOptions/@REF = $dtoRecord/@TID]">
+        select="$basket/eCH0271_1:eCH0271_1.eCH0271.CI_OnlineResource
+                        [eCH0271_1:MD_DigitalTransferOptions/@REF = $dtoRecord/@TID]">
         <mrd:onLine>
           <xsl:call-template name="ech0271:CI_OnlineResource">
             <xsl:with-param name="orRecord" select="."/>
@@ -89,46 +89,46 @@
       <!-- linkage (first URL from PT_FreeURL) -->
       <xsl:variable name="url"
         select="normalize-space(
-          $orRecord/int:linkage/int:eCH0271_1.eCH0271.PT_FreeURL
-                    /int:URLGroup/int:eCH0271_1.eCH0271.PT_URLGroup[1]/int:plainURL)"/>
+          $orRecord/eCH0271_1:linkage/eCH0271_1:eCH0271_1.eCH0271.PT_FreeURL
+                    /eCH0271_1:URLGroup/eCH0271_1:eCH0271_1.eCH0271.PT_URLGroup[1]/eCH0271_1:plainURL)"/>
       <xsl:if test="$url != ''">
         <cit:linkage>
           <gco:CharacterString><xsl:value-of select="$url"/></gco:CharacterString>
         </cit:linkage>
       </xsl:if>
       <!-- protocol -->
-      <xsl:if test="normalize-space($orRecord/int:protocol) != ''">
+      <xsl:if test="normalize-space($orRecord/eCH0271_1:protocol) != ''">
         <cit:protocol>
           <gco:CharacterString>
-            <xsl:value-of select="normalize-space($orRecord/int:protocol)"/>
+            <xsl:value-of select="normalize-space($orRecord/eCH0271_1:protocol)"/>
           </gco:CharacterString>
         </cit:protocol>
       </xsl:if>
       <!-- name -->
-      <xsl:if test="$orRecord/int:name/int:eCH0271_1.eCH0271.PT_FreeText">
+      <xsl:if test="$orRecord/eCH0271_1:name/eCH0271_1:eCH0271_1.eCH0271.PT_FreeText">
         <cit:name xsi:type="lan:PT_FreeText_PropertyType">
           <xsl:call-template name="ech0271:PT_FreeText_content">
             <xsl:with-param name="freeText"
-              select="$orRecord/int:name/int:eCH0271_1.eCH0271.PT_FreeText"/>
+              select="$orRecord/eCH0271_1:name/eCH0271_1:eCH0271_1.eCH0271.PT_FreeText"/>
           </xsl:call-template>
         </cit:name>
       </xsl:if>
       <!-- description -->
-      <xsl:if test="$orRecord/int:description/int:eCH0271_1.eCH0271.PT_FreeText">
+      <xsl:if test="$orRecord/eCH0271_1:description/eCH0271_1:eCH0271_1.eCH0271.PT_FreeText">
         <cit:description xsi:type="lan:PT_FreeText_PropertyType">
           <xsl:call-template name="ech0271:PT_FreeText_content">
             <xsl:with-param name="freeText"
-              select="$orRecord/int:description/int:eCH0271_1.eCH0271.PT_FreeText"/>
+              select="$orRecord/eCH0271_1:description/eCH0271_1:eCH0271_1.eCH0271.PT_FreeText"/>
           </xsl:call-template>
         </cit:description>
       </xsl:if>
       <!-- function -->
-      <xsl:if test="normalize-space($orRecord/int:function) != ''">
+      <xsl:if test="normalize-space($orRecord/eCH0271_1:function) != ''">
         <cit:function>
           <cit:CI_OnLineFunctionCode
             codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode"
-            codeListValue="{normalize-space($orRecord/int:function)}">
-            <xsl:value-of select="normalize-space($orRecord/int:function)"/>
+            codeListValue="{normalize-space($orRecord/eCH0271_1:function)}">
+            <xsl:value-of select="normalize-space($orRecord/eCH0271_1:function)"/>
           </cit:CI_OnLineFunctionCode>
         </cit:function>
       </xsl:if>
@@ -146,13 +146,13 @@
         <cit:CI_Citation>
           <cit:title>
             <gco:CharacterString>
-              <xsl:value-of select="normalize-space($fmtRecord/int:name)"/>
+              <xsl:value-of select="normalize-space($fmtRecord/eCH0271_1:name)"/>
             </gco:CharacterString>
           </cit:title>
-          <xsl:if test="normalize-space($fmtRecord/int:version) != ''">
+          <xsl:if test="normalize-space($fmtRecord/eCH0271_1:version) != ''">
             <cit:edition>
               <gco:CharacterString>
-                <xsl:value-of select="normalize-space($fmtRecord/int:version)"/>
+                <xsl:value-of select="normalize-space($fmtRecord/eCH0271_1:version)"/>
               </gco:CharacterString>
             </cit:edition>
           </xsl:if>

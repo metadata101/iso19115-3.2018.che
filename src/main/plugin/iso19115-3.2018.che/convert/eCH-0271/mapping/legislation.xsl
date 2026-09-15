@@ -15,7 +15,7 @@
 <xsl:stylesheet version="2.0"
   xmlns:xsl  ="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs   ="http://www.w3.org/2001/XMLSchema"
-  xmlns:int  ="http://www.interlis.ch/INTERLIS2.3"
+  xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1"
   xmlns:ech0271 ="urn:ech0271-functions"
   xmlns:che  ="http://geocat.ch/che"
   xmlns:cit  ="http://standards.iso.org/iso/19115/-3/cit/2.0"
@@ -37,7 +37,7 @@
 
     <che:CHE_MD_Legislation gco:isoType="mcc:MD_LegalConstraints">
       <!-- country — jurisdiction (ISO 3166 country code) -->
-      <xsl:for-each select="$legisRecord/int:country/int:CodeISO.CountryCodeISO_[1]/int:value">
+      <xsl:for-each select="$legisRecord/eCH0271_1:country/eCH0271_1:CodeISO.CountryCodeISO_[1]/eCH0271_1:value">
         <xsl:variable name="countryCode" select="normalize-space(.)"/>
         <xsl:if test="$countryCode != ''">
           <che:country>
@@ -50,7 +50,7 @@
       </xsl:for-each>
 
       <!-- legislationType — type of legislation (cantonal, federal, international) -->
-      <xsl:for-each select="$legisRecord/int:legislationType/int:value">
+      <xsl:for-each select="$legisRecord/eCH0271_1:legislationType/eCH0271_1:value">
         <xsl:variable name="legisType" select="normalize-space(.)"/>
         <xsl:if test="$legisType != ''">
           <che:legislationType>
@@ -64,7 +64,7 @@
       </xsl:for-each>
 
       <!-- language — language of the legislation -->
-      <xsl:for-each select="$legisRecord/int:language/int:CodeISO.LanguageCodeISO_[1]/int:value">
+      <xsl:for-each select="$legisRecord/eCH0271_1:language/eCH0271_1:CodeISO.LanguageCodeISO_[1]/eCH0271_1:value">
         <xsl:variable name="langCode" select="normalize-space(.)"/>
         <xsl:if test="$langCode != ''">
           <che:language>
@@ -77,7 +77,7 @@
       </xsl:for-each>
 
       <!-- title — citation of the legislative act/regulation -->
-      <xsl:for-each select="$legisRecord/int:title/@REF">
+      <xsl:for-each select="$legisRecord/eCH0271_1:title/@REF">
         <xsl:variable name="citRef" select="."/>
         <xsl:variable name="citRecord" select="key('byTID', $citRef)"/>
 
@@ -92,7 +92,7 @@
       </xsl:for-each>
 
       <!-- internalReference — optional: reference to internal document ID -->
-      <xsl:for-each select="$legisRecord/int:internalReference[normalize-space(.) != '']">
+      <xsl:for-each select="$legisRecord/eCH0271_1:internalReference[normalize-space(.) != '']">
         <che:internalReference>
           <gco:CharacterString>
             <xsl:value-of select="normalize-space(.)"/>

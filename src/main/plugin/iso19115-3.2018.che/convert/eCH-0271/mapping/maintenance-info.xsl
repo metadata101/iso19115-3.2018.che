@@ -2,7 +2,7 @@
 <xsl:stylesheet version="2.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns:int="http://www.interlis.ch/INTERLIS2.3"
+  xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1"
   xmlns:ech0271="urn:ech0271-functions"
   xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0"
   xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0"
@@ -33,11 +33,11 @@
 
     <mdb:MD_MaintenanceInformation>
       <!-- maintenance and update frequency (codelist: annually, asNeeded, daily, etc.) -->
-      <xsl:if test="normalize-space($maintRecord/int:maintenanceAndUpdateFrequency) != ''">
+      <xsl:if test="normalize-space($maintRecord/eCH0271_1:maintenanceAndUpdateFrequency) != ''">
         <mdb:maintenanceAndUpdateFrequency>
           <mcc:MD_MaintenanceFrequencyCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_MaintenanceFrequencyCode"
-            codeListValue="{normalize-space($maintRecord/int:maintenanceAndUpdateFrequency)}">
-            <xsl:value-of select="normalize-space($maintRecord/int:maintenanceAndUpdateFrequency)"/>
+            codeListValue="{normalize-space($maintRecord/eCH0271_1:maintenanceAndUpdateFrequency)}">
+            <xsl:value-of select="normalize-space($maintRecord/eCH0271_1:maintenanceAndUpdateFrequency)"/>
           </mcc:MD_MaintenanceFrequencyCode>
         </mdb:maintenanceAndUpdateFrequency>
       </xsl:if>
@@ -45,12 +45,12 @@
       <!-- contact information for maintenance (if present in future extensions) -->
       <!-- maintenanceContact via back-reference (not currently used in test data) -->
       <!-- 
-      <xsl:for-each select="$basket/int:eCH0271_1.eCH0271.CI_ResponsibleParty
-                              [int:MD_MaintenanceInformation/@REF = $maintRecord/@TID]">
+      <xsl:for-each select="$basket/eCH0271_1:eCH0271_1.eCH0271.CI_ResponsibleParty
+                              [eCH0271_1:MD_MaintenanceInformation/@REF = $maintRecord/@TID]">
         <mdb:maintenanceContact>
           <xsl:call-template name="ech0271:CI_Responsibility">
             <xsl:with-param name="partyTID" select="@TID"/>
-            <xsl:with-param name="roleCode" select="normalize-space(int:role)"/>
+            <xsl:with-param name="roleCode" select="normalize-space(eCH0271_1:role)"/>
             <xsl:with-param name="basket" select="$basket"/>
           </xsl:call-template>
         </mdb:maintenanceContact>

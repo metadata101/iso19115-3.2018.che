@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-  xmlns="http://www.interlis.ch/ILIGML-2.0/InternationalCodes_V2" targetNamespace="http://www.interlis.ch/ILIGML-2.0/InternationalCodes_V2" elementFormDefault="qualified" attributeFormDefault="unqualified"
+  xmlns="http://www.interlis.ch/xtf/2.4/InternationalCodes_V2" targetNamespace="http://www.interlis.ch/xtf/2.4/InternationalCodes_V2" elementFormDefault="qualified" attributeFormDefault="unqualified"
   xmlns:gml="http://www.opengis.net/gml/3.2"
-  xmlns:INTERLIS="http://www.interlis.ch/ILIGML-2.0/INTERLIS"
+  xmlns:INTERLIS="http://www.interlis.ch/xtf/2.4/INTERLIS"
   xmlns:ili2c="http://www.interlis.ch/ili2c/ILIGML-2.0"
   >
 <xsd:annotation>
@@ -15,8 +15,8 @@
     </ili2c:Model>
   </xsd:appinfo>
 </xsd:annotation>
-<xsd:import namespace="http://www.opengis.net/gml/3.2"/>
-<xsd:import namespace="http://www.interlis.ch/ILIGML-2.0/INTERLIS"/>
+<xsd:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+<xsd:import namespace="http://www.interlis.ch/xtf/2.4/INTERLIS"/>
 <xsd:complexType name="LanguageCode_ISO639_1">
   <xsd:simpleContent>
     <xsd:restriction base="gml:CodeType">
