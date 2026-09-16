@@ -135,7 +135,40 @@
        ================================================================ -->
   <xsl:template match="eCH0271_1:CHE_MD_Metadata" mode="md-metadata">
     <xsl:variable name="mdTID" select="@ili:tid"/>
-    <che:CHE_MD_Metadata>
+    <che:CHE_MD_Metadata
+      xmlns:che="http://geocat.ch/che"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0"
+      xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1"
+      xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
+      xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0"
+      xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0"
+      xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0"
+      xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0"
+      xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0"
+      xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0"
+      xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0"
+      xmlns:md1="http://standards.iso.org/iso/19115/-3/md1/2.0"
+      xmlns:md2="http://standards.iso.org/iso/19115/-3/md2/2.0"
+      xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/2.0"
+      xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0"
+      xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0"
+      xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0"
+      xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0"
+      xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0"
+      xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0"
+      xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0"
+      xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0"
+      xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0"
+      xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0"
+      xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0"
+      xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0"
+      xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0"
+      xmlns:dqm="http://standards.iso.org/iso/19157/-2/dqm/1.0"
+      xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0"
+      xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
+      xmlns:gml="http://www.opengis.net/gml/3.2"
+      xmlns:xlink="http://www.w3.org/1999/xlink">
       <!-- metadata identifier -->
       <xsl:apply-templates select="eCH0271_1:metadataIdentifier" mode="identifier"/>
 
@@ -200,6 +233,13 @@
             <xsl:value-of select="eCH0271_1:language"/>
           </lan:LanguageCode>
         </lan:language>
+        <xsl:if test="eCH0271_1:country">
+          <lan:country>
+            <gco:CharacterString>
+              <xsl:value-of select="eCH0271_1:country"/>
+            </gco:CharacterString>
+          </lan:country>
+        </xsl:if>
         <xsl:if test="eCH0271_1:characterEncoding">
           <lan:characterEncoding>
             <lan:MD_CharacterSetCode>
@@ -232,7 +272,7 @@
   </xsl:template>
 
   <!-- ================================================================
-       pointOfContact: resolve @ili:ref → CI_Responsibility
+       pointOfContact: resolve @ili:ref → CI_Responsibility with party
        ================================================================ -->
   <xsl:template match="eCH0271_1:pointOfContact[@ili:ref]" mode="contact">
     <xsl:variable name="respId" select="@ili:ref"/>
@@ -246,7 +286,31 @@
               <xsl:value-of select="$respObj/eCH0271_1:role"/>
             </cit:CI_RoleCode>
           </cit:role>
-          <!-- party, party.name, contact info, etc. — expand as needed -->
+          <!-- Resolve party reference (organisation) -->
+          <xsl:if test="$respObj/eCH0271_1:party[@ili:ref]">
+            <xsl:variable name="partyId" select="$respObj/eCH0271_1:party/@ili:ref"/>
+            <xsl:variable name="partyObj" select="key('byTID', $partyId)"/>
+            <xsl:if test="$partyObj/self::eCH0271_1:CHE_CI_Organisation">
+              <cit:party>
+                <che:CHE_CI_Organisation>
+                  <xsl:if test="$partyObj/eCH0271_1:name">
+                    <cit:name>
+                      <gco:CharacterString>
+                        <xsl:value-of select="$partyObj/eCH0271_1:name"/>
+                      </gco:CharacterString>
+                    </cit:name>
+                  </xsl:if>
+                  <xsl:if test="$partyObj/eCH0271_1:organisationAcronym">
+                    <che:organisationAcronym>
+                      <gco:CharacterString>
+                        <xsl:value-of select="$partyObj/eCH0271_1:organisationAcronym"/>
+                      </gco:CharacterString>
+                    </che:organisationAcronym>
+                  </xsl:if>
+                </che:CHE_CI_Organisation>
+              </cit:party>
+            </xsl:if>
+          </xsl:if>
         </cit:CI_Responsibility>
       </mdb:contact>
     </xsl:if>

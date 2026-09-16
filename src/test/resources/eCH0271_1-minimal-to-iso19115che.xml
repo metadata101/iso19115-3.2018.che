@@ -1,4 +1,4 @@
-<che:CHE_MD_Metadata xmlns:che="http://geocat.ch/che">
+<che:CHE_MD_Metadata xmlns:che="http://geocat.ch/che" xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1" xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0" xmlns:md1="http://standards.iso.org/iso/19115/-3/md1/2.0" xmlns:md2="http://standards.iso.org/iso/19115/-3/md2/2.0" xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/2.0" xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0" xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0" xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0" xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0" xmlns:dqm="http://standards.iso.org/iso/19157/-2/dqm/1.0">
   <mdb:metadataIdentifier xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
     <mcc:MD_Identifier xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0">
       <mcc:code>
@@ -11,6 +11,9 @@
       <lan:language>
         <lan:LanguageCode>fr</lan:LanguageCode>
       </lan:language>
+      <lan:country>
+        <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">CH</gco:CharacterString>
+      </lan:country>
       <lan:characterEncoding>
         <lan:MD_CharacterSetCode>utf8</lan:MD_CharacterSetCode>
       </lan:characterEncoding>
@@ -29,6 +32,16 @@
       <cit:role>
         <cit:CI_RoleCode>pointOfContact</cit:CI_RoleCode>
       </cit:role>
+      <cit:party>
+        <che:CHE_CI_Organisation>
+          <cit:name>
+            <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">Test Organisation</gco:CharacterString>
+          </cit:name>
+          <che:organisationAcronym>
+            <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">TEST</gco:CharacterString>
+          </che:organisationAcronym>
+        </che:CHE_CI_Organisation>
+      </cit:party>
     </cit:CI_Responsibility>
   </mdb:contact>
   <mdb:identificationInfo xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
