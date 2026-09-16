@@ -1,0 +1,48 @@
+<che:CHE_MD_Metadata xmlns:che="http://geocat.ch/che">
+  <mdb:metadataIdentifier xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
+    <mcc:MD_Identifier xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0">
+      <mcc:code>
+        <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">test-metadata-001</gco:CharacterString>
+      </mcc:code>
+    </mcc:MD_Identifier>
+  </mdb:metadataIdentifier>
+  <mdb:defaultLocale xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
+    <lan:PT_Locale xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
+      <lan:language>
+        <lan:LanguageCode>fr</lan:LanguageCode>
+      </lan:language>
+      <lan:characterEncoding>
+        <lan:MD_CharacterSetCode>utf8</lan:MD_CharacterSetCode>
+      </lan:characterEncoding>
+    </lan:PT_Locale>
+  </mdb:defaultLocale>
+  <mdb:dateInfo xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
+    <cit:CI_Date xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
+      <cit:date>2024-11-18T10:30:00</cit:date>
+      <cit:dateType>
+        <cit:CI_DateTypeCode>revision</cit:CI_DateTypeCode>
+      </cit:dateType>
+    </cit:CI_Date>
+  </mdb:dateInfo>
+  <mdb:contact xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
+    <cit:CI_Responsibility xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
+      <cit:role>
+        <cit:CI_RoleCode>pointOfContact</cit:CI_RoleCode>
+      </cit:role>
+    </cit:CI_Responsibility>
+  </mdb:contact>
+  <mdb:identificationInfo xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
+    <mri:MD_DataIdentification xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0">
+      <mri:citation>
+        <cit:CI_Citation xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
+          <cit:title>
+            <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">Test Dataset</gco:CharacterString>
+          </cit:title>
+        </cit:CI_Citation>
+      </mri:citation>
+      <mri:abstract>
+        <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">A minimal test dataset for eCH0271 to ISO 19115-3:2018 CHE conversion</gco:CharacterString>
+      </mri:abstract>
+    </mri:MD_DataIdentification>
+  </mdb:identificationInfo>
+</che:CHE_MD_Metadata>
