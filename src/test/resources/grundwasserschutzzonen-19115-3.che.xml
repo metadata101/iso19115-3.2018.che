@@ -1345,7 +1345,7 @@
               <cit:protocol>
                 <gco:CharacterString>OGC:WFS</gco:CharacterString>
               </cit:protocol>
-              <cit:name gco:nilReason="missing" xsi:type="lan:PT_FreeText_PropertyType">
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
                 <gco:CharacterString />
               </cit:name>
               <cit:description xsi:type="lan:PT_FreeText_PropertyType">
