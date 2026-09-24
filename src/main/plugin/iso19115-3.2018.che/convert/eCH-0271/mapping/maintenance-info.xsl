@@ -1,63 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- eCH-0271 → ISO 19115-3:2018 CHE: CHE_MD_MaintenanceInformation mapping
+     Handles resource maintenance with mmi: namespace
+     XSLT 2.0, Saxon HE 9.1+ compatible -->
 <xsl:stylesheet version="2.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS"
   xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1"
-  xmlns:ech0271="urn:ech0271-functions"
-  xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0"
-  xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0"
+  xmlns:che="http://geocat.ch/che"
   xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  exclude-result-prefixes="xsl xs int ech0271">
+  xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0"
+  exclude-result-prefixes="#all">
 
   <!-- ================================================================
-       MD_MaintenanceInformation
-       Maps GM03 MD_MaintenanceInformation to ISO 19115-3:2018 mdb:MD_MaintenanceInformation
+       resourceMaintenance: CHE_MD_MaintenanceInformation → mri:resourceMaintenance
        
-       INTERLIS source structure:
-       - eCH0271_1.eCH0271.MD_MaintenanceInformation
-         - maintenanceAndUpdateFrequency: CodeList value (annually, asNeeded, daily, etc.)
-         - MD_Identification: back-reference to the data identification
+       Maps eCH0271 resource maintenance to ISO 19115-3:2018 CHE structure:
+       - Source: eCH0271_1:CHE_MD_MaintenanceInformation
+       - Output wrapper: che:CHE_MD_MaintenanceInformation with gco:isoType="mmi:MD_MaintenanceInformation"
+       - Children: mmi: namespace (maintenance info module)
        
-       Output ISO 19115-3 structure:
-       - mdb:MD_MaintenanceInformation
-         - mdb:maintenanceAndUpdateFrequency: mcc:MD_MaintenanceFrequencyCode
-         - mdb:maintenanceContact: cit:CI_Responsibility (optional)
-         - mdb:maintenanceDate: gco:DateTime (optional)
-         - mdb:maintenanceScope: mcc:MD_Scope (optional)
+       Critical points:
+       - Frequency code uses mmi:MD_MaintenanceFrequencyCode
+       - Must be wrapped in che: container with isoType pointing to mmi:
+       - All child elements use mmi: namespace prefix
        ================================================================ -->
+  <xsl:template match="eCH0271_1:resourceMaintenance[@ili:ref]" mode="resource-maintenance">
+    <xsl:variable name="maintId" select="@ili:ref"/>
+    <xsl:variable name="maintObj" select="key('byTID', $maintId)"/>
 
-  <xsl:template name="ech0271:MD_MaintenanceInformation">
-    <xsl:param name="maintRecord" as="element()"/>
-    <xsl:param name="basket"      as="element()"/>
-
-    <mdb:MD_MaintenanceInformation>
-      <!-- maintenance and update frequency (codelist: annually, asNeeded, daily, etc.) -->
-      <xsl:if test="normalize-space($maintRecord/eCH0271_1:maintenanceAndUpdateFrequency) != ''">
-        <mdb:maintenanceAndUpdateFrequency>
-          <mcc:MD_MaintenanceFrequencyCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_MaintenanceFrequencyCode"
-            codeListValue="{normalize-space($maintRecord/eCH0271_1:maintenanceAndUpdateFrequency)}">
-            <xsl:value-of select="normalize-space($maintRecord/eCH0271_1:maintenanceAndUpdateFrequency)"/>
-          </mcc:MD_MaintenanceFrequencyCode>
-        </mdb:maintenanceAndUpdateFrequency>
-      </xsl:if>
-
-      <!-- contact information for maintenance (if present in future extensions) -->
-      <!-- maintenanceContact via back-reference (not currently used in test data) -->
-      <!-- 
-      <xsl:for-each select="$basket/eCH0271_1:eCH0271_1.eCH0271.CI_ResponsibleParty
-                              [eCH0271_1:MD_MaintenanceInformation/@REF = $maintRecord/@TID]">
-        <mdb:maintenanceContact>
-          <xsl:call-template name="ech0271:CI_Responsibility">
-            <xsl:with-param name="partyTID" select="@TID"/>
-            <xsl:with-param name="roleCode" select="normalize-space(eCH0271_1:role)"/>
-            <xsl:with-param name="basket" select="$basket"/>
-          </xsl:call-template>
-        </mdb:maintenanceContact>
-      </xsl:for-each>
-      -->
-
-    </mdb:MD_MaintenanceInformation>
+    <xsl:if test="$maintObj/self::eCH0271_1:CHE_MD_MaintenanceInformation">
+      <che:CHE_MD_MaintenanceInformation gco:isoType="mmi:MD_MaintenanceInformation">
+        <!-- Maintenance and update frequency -->
+        <xsl:if test="$maintObj/eCH0271_1:maintenanceAndUpdateFrequency">
+          <mmi:maintenanceAndUpdateFrequency>
+            <xsl:call-template name="frequency-code">
+              <xsl:with-param name="value" select="normalize-space($maintObj/eCH0271_1:maintenanceAndUpdateFrequency)"/>
+            </xsl:call-template>
+          </mmi:maintenanceAndUpdateFrequency>
+        </xsl:if>
+        <!-- Maintenance note -->
+        <xsl:if test="$maintObj/eCH0271_1:maintenanceNote">
+          <mmi:maintenanceNote>
+            <xsl:apply-templates select="$maintObj/eCH0271_1:maintenanceNote" mode="multilingual-text"/>
+          </mmi:maintenanceNote>
+        </xsl:if>
+      </che:CHE_MD_MaintenanceInformation>
+    </xsl:if>
   </xsl:template>
 
 </xsl:stylesheet>

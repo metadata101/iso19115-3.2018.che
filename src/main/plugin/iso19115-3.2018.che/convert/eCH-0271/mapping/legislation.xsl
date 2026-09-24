@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  eCH0271 → ISO 19115-3:2018 (CHE) — Legislation mapping
-  
-  Swiss-specific extension. Covers:
-  - CHE_MD_Legislation (container for legal framework)
-  - country (ISO 3166 country code)
-  - legislationType (CHE_CI_LegislationCode: cantonal, federal, international)
-  - internalReference (reference to legal document)
-  - language (ISO 639-2/T language code)
-  - title (CI_Citation of the legislation)
-  
-  Used in metadata constraints to specify applicable laws/regulations.
--->
+<!-- eCH0271 → ISO 19115-3:2018 CHE legislation mapping
+     Swiss-specific: CHE_MD_Legislation (legal framework), country, type, language, title, internalReference -->
 <xsl:stylesheet version="2.0"
   xmlns:xsl  ="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs   ="http://www.w3.org/2001/XMLSchema"
+  xmlns:ili  ="http://www.interlis.ch/xtf/2.4/INTERLIS"
   xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1"
   xmlns:ech0271 ="urn:ech0271-functions"
   xmlns:che  ="http://geocat.ch/che"
@@ -28,77 +18,47 @@
   <!-- NOTE: $CL variable is defined in the parent stylesheet (fromGM03.xsl) -->
   <!-- Do not redefine it here to avoid XSLT duplicate global variable error -->
 
-  <!-- ================================================================
-       CHE_MD_Legislation — Swiss legal framework container
-       ================================================================ -->
+  <!-- CHE_MD_Legislation -->
   <xsl:template name="ech0271:CHE_MD_Legislation">
     <xsl:param name="legisRecord" as="element()"/>
     <xsl:param name="basket"      as="element()"/>
 
-    <che:CHE_MD_Legislation gco:isoType="mcc:MD_LegalConstraints">
-      <!-- country — jurisdiction (ISO 3166 country code) -->
-      <xsl:for-each select="$legisRecord/eCH0271_1:country/eCH0271_1:CodeISO.CountryCodeISO_[1]/eCH0271_1:value">
-        <xsl:variable name="countryCode" select="normalize-space(.)"/>
-        <xsl:if test="$countryCode != ''">
-          <che:country>
-            <mcc:MD_CountryCode codeList="{$CL}MD_CountryCode"
-              codeListValue="{$countryCode}">
-              <xsl:value-of select="$countryCode"/>
-            </mcc:MD_CountryCode>
-          </che:country>
-        </xsl:if>
-      </xsl:for-each>
+    <che:CHE_MD_Legislation>
+      <!-- country (ISO 3166) -->
+      <xsl:if test="normalize-space($legisRecord/eCH0271_1:country) != ''">
+        <che:country>
+          <lan:CountryCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#Country" codeListValue="{normalize-space($legisRecord/eCH0271_1:country)}"/>
+        </che:country>
+      </xsl:if>
 
-      <!-- legislationType — type of legislation (cantonal, federal, international) -->
-      <xsl:for-each select="$legisRecord/eCH0271_1:legislationType/eCH0271_1:value">
-        <xsl:variable name="legisType" select="normalize-space(.)"/>
-        <xsl:if test="$legisType != ''">
-          <che:legislationType>
-            <!-- CHE_CI_LegislationCode is a CHE-specific codelist -->
-            <che:CHE_CI_LegislationCode codeList="./resources/codeList.xml#LegislationCode"
-              codeListValue="{$legisType}">
-              <xsl:value-of select="$legisType"/>
-            </che:CHE_CI_LegislationCode>
-          </che:legislationType>
-        </xsl:if>
-      </xsl:for-each>
+      <!-- legislationType (cantonal, federal, international) -->
+      <xsl:if test="normalize-space($legisRecord/eCH0271_1:legislationType) != ''">
+        <che:legislationType>
+          <che:CHE_CI_LegislationTypeCode codeList="legislationCode" codeListValue="{normalize-space($legisRecord/eCH0271_1:legislationType)}"/>
+        </che:legislationType>
+      </xsl:if>
 
-      <!-- language — language of the legislation -->
-      <xsl:for-each select="$legisRecord/eCH0271_1:language/eCH0271_1:CodeISO.LanguageCodeISO_[1]/eCH0271_1:value">
-        <xsl:variable name="langCode" select="normalize-space(.)"/>
-        <xsl:if test="$langCode != ''">
-          <che:language>
-            <mcc:MD_LanguageCode codeList="{$CL}MD_LanguageCode"
-              codeListValue="{$langCode}">
-              <xsl:value-of select="$langCode"/>
-            </mcc:MD_LanguageCode>
-          </che:language>
-        </xsl:if>
-      </xsl:for-each>
+      <!-- language (ISO 639-2/T) -->
+      <xsl:if test="normalize-space($legisRecord/eCH0271_1:language) != ''">
+        <che:language>
+          <mcc:MD_LanguageCode codeList="{$CL}MD_LanguageCode"
+            codeListValue="{normalize-space($legisRecord/eCH0271_1:language)}">
+            <xsl:value-of select="normalize-space($legisRecord/eCH0271_1:language)"/>
+          </mcc:MD_LanguageCode>
+        </che:language>
+      </xsl:if>
 
-      <!-- title — citation of the legislative act/regulation -->
-      <xsl:for-each select="$legisRecord/eCH0271_1:title/@REF">
-        <xsl:variable name="citRef" select="."/>
+      <!-- legislationCitation -->
+      <xsl:if test="$legisRecord/eCH0271_1:legislationCitation[@ili:ref]">
+        <xsl:variable name="citRef" select="$legisRecord/eCH0271_1:legislationCitation/@ili:ref"/>
         <xsl:variable name="citRecord" select="key('byTID', $citRef)"/>
 
-        <xsl:if test="$citRecord">
-          <che:title>
-            <xsl:call-template name="ech0271:CI_Citation">
-              <xsl:with-param name="citTID" select="$citRef"/>
-              <xsl:with-param name="basket" select="$basket"/>
-            </xsl:call-template>
-          </che:title>
+        <xsl:if test="$citRecord/self::eCH0271_1:CI_Citation">
+          <che:legislationCitation>
+            <xsl:apply-templates select="$citRecord" mode="citation"/>
+          </che:legislationCitation>
         </xsl:if>
-      </xsl:for-each>
-
-      <!-- internalReference — optional: reference to internal document ID -->
-      <xsl:for-each select="$legisRecord/eCH0271_1:internalReference[normalize-space(.) != '']">
-        <che:internalReference>
-          <gco:CharacterString>
-            <xsl:value-of select="normalize-space(.)"/>
-          </gco:CharacterString>
-        </che:internalReference>
-      </xsl:for-each>
+      </xsl:if>
     </che:CHE_MD_Legislation>
   </xsl:template>
 
