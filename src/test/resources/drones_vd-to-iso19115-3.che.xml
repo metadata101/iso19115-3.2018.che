@@ -59,6 +59,13 @@
               </cit:address>
             </cit:CI_Contact>
           </cit:contactInfo>
+          <cit:individual>
+            <cit:CI_Individual>
+              <cit:name>
+                <gco:CharacterString>Sébastien Favre Police cantonale vaudoise</gco:CharacterString>
+              </cit:name>
+            </cit:CI_Individual>
+          </cit:individual>
         </che:CHE_CI_Organisation>
       </cit:party>
     </cit:CI_Responsibility>
@@ -149,6 +156,13 @@
                   </cit:address>
                 </cit:CI_Contact>
               </cit:contactInfo>
+              <cit:individual>
+                <cit:CI_Individual>
+                  <cit:name>
+                    <gco:CharacterString>Sébastien Favre Police cantonale vaudoise</gco:CharacterString>
+                  </cit:name>
+                </cit:CI_Individual>
+              </cit:individual>
             </che:CHE_CI_Organisation>
           </cit:party>
         </cit:CI_Responsibility>

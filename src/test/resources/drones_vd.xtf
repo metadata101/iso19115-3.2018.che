@@ -135,6 +135,9 @@
         <eCH0271_1:contactInfo
             ili:ref="contact-001"/>
 
+        <eCH0271_1:individual
+            ili:ref="individual-001"/>
+
       </eCH0271_1:CHE_CI_Organisation>
 
 

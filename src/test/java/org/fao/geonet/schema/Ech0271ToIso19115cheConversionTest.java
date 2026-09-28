@@ -20,7 +20,7 @@ import org.junit.Test;
  */
 public class Ech0271ToIso19115cheConversionTest {
 
-    private static final boolean GENERATE_EXPECTED_FILE = true;
+    private static final boolean GENERATE_EXPECTED_FILE = false;
 
     @BeforeClass
     public static void initSaxon() {
@@ -44,6 +44,27 @@ public class Ech0271ToIso19115cheConversionTest {
         
         TestSupport.assertGeneratedDataByteMatchExpected(
             "drones_vd-to-iso19115-3.che.xml",
+            Xml.getString(transformed),
+            GENERATE_EXPECTED_FILE);
+    }
+
+    /**
+     * Forward: eCH0271 XTF 2.4 (multiple_md_sz) → ISO 19115-3:2018 CHE XML
+     */
+    @Test
+    public void convertMultipleMdSzEch0271() throws Exception {
+        Path xslFile = getResourceInsideSchema("convert/eCH-0271/fromECH0271.xsl");
+        Path xmlFile = getResource("multiple_md_sz.xtf");
+        
+        Element source = Xml.loadFile(xmlFile);
+        Element transformed = Xml.transform(source, xslFile);
+        
+        assertTrue(
+            "Expected CHE_MD_Metadata or CHE_MD_MetadataCollection, got: " + transformed.getName(),
+            transformed.getName().contains("CHE_MD_Metadata"));
+        
+        TestSupport.assertGeneratedDataByteMatchExpected(
+            "multiple_md_sz-to-iso19115-3.che.xml",
             Xml.getString(transformed),
             GENERATE_EXPECTED_FILE);
     }

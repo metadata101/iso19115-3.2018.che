@@ -20,7 +20,8 @@
   xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0"
   xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0"
   xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0"
-  exclude-result-prefixes="xsl xs che mdb mri mrd cit gex mdq mcc lan gco mrl mrs mco">
+  xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0"
+  exclude-result-prefixes="xsl xs che mdb mri mrd cit gex mdq mcc lan gco mrl mrs mco mmi">
 
   <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
   <xsl:strip-space elements="*"/>
@@ -96,16 +97,69 @@
     </xsl:if>
 
     <!-- Contact/Responsibility elements and associated organisations -->
-    <xsl:for-each select="mdb:contact | mri:pointOfContact">
+    <xsl:for-each select="mdb:contact | mdb:identificationInfo/*/mri:pointOfContact">
       <!-- Generate organisation first if referenced -->
       <xsl:variable name="partyElem" select="(cit:CI_Responsibility | cit:CI_ResponsibleParty)/cit:party[1]"/>
       <xsl:if test="$partyElem">
         <xsl:call-template name="generate-organisation">
           <xsl:with-param name="elem" select="$partyElem"/>
         </xsl:call-template>
+        <!-- Generate contact info for organisation if exists -->
+        <xsl:if test="$partyElem/*/cit:contactInfo/cit:CI_Contact">
+          <xsl:call-template name="generate-contact">
+            <xsl:with-param name="elem" select="$partyElem/*/cit:contactInfo/cit:CI_Contact"/>
+          </xsl:call-template>
+          <!-- Generate address if exists -->
+          <xsl:if test="$partyElem/*/cit:contactInfo/cit:CI_Contact/cit:address/cit:CI_Address">
+            <xsl:call-template name="generate-address">
+              <xsl:with-param name="elem" select="$partyElem/*/cit:contactInfo/cit:CI_Contact/cit:address/cit:CI_Address"/>
+            </xsl:call-template>
+          </xsl:if>
+        </xsl:if>
+        <!-- Generate individual for organisation if exists -->
+        <xsl:if test="$partyElem/*/cit:individual/cit:CI_Individual">
+          <xsl:call-template name="generate-individual">
+            <xsl:with-param name="elem" select="$partyElem/*/cit:individual/cit:CI_Individual"/>
+          </xsl:call-template>
+        </xsl:if>
       </xsl:if>
       <!-- Then generate responsibility -->
       <xsl:call-template name="generate-responsibility">
+        <xsl:with-param name="elem" select="."/>
+      </xsl:call-template>
+    </xsl:for-each>
+
+    <!-- Generate maintenance information -->
+    <xsl:for-each select="mdb:identificationInfo/*/mri:resourceMaintenance/che:CHE_MD_MaintenanceInformation | mdb:identificationInfo/*/mri:resourceMaintenance/mmi:MD_MaintenanceInformation">
+      <xsl:call-template name="generate-maintenance-info">
+        <xsl:with-param name="elem" select="."/>
+      </xsl:call-template>
+    </xsl:for-each>
+
+    <!-- Generate browse graphics -->
+    <xsl:for-each select="mdb:identificationInfo/*/mri:graphicOverview/mcc:MD_BrowseGraphic">
+      <xsl:call-template name="generate-browse-graphic">
+        <xsl:with-param name="elem" select="."/>
+      </xsl:call-template>
+    </xsl:for-each>
+
+    <!-- Generate legal constraints -->
+    <xsl:for-each select="mdb:identificationInfo/*/mri:resourceConstraints/mco:MD_LegalConstraints">
+      <xsl:call-template name="generate-legal-constraints">
+        <xsl:with-param name="elem" select="."/>
+      </xsl:call-template>
+    </xsl:for-each>
+
+    <!-- Generate default locale from data identification -->
+    <xsl:for-each select="mdb:identificationInfo/*/mri:defaultLocale/lan:PT_Locale">
+      <xsl:call-template name="generate-default-locale">
+        <xsl:with-param name="elem" select="."/>
+      </xsl:call-template>
+    </xsl:for-each>
+
+    <!-- Legal constraints / legislation -->
+    <xsl:for-each select="mdb:identificationInfo/*/mri:resourceConstraints/mco:MD_LegalConstraints">
+      <xsl:call-template name="generate-legislation">
         <xsl:with-param name="elem" select="."/>
       </xsl:call-template>
     </xsl:for-each>
@@ -118,6 +172,13 @@
     </xsl:for-each>
     <xsl:for-each select="mdb:identificationInfo/*/mri:citation/cit:CI_Citation">
       <xsl:call-template name="generate-citation">
+        <xsl:with-param name="elem" select="."/>
+      </xsl:call-template>
+    </xsl:for-each>
+
+    <!-- Generate basicGeodataInformation if present -->
+    <xsl:for-each select="mdb:identificationInfo/*/che:basicGeodataInformation">
+      <xsl:call-template name="generate-basicgeodatainformation">
         <xsl:with-param name="elem" select="."/>
       </xsl:call-template>
     </xsl:for-each>
@@ -136,23 +197,20 @@
       </xsl:call-template>
     </xsl:for-each>
 
-    <!-- Reference system -->
-    <xsl:for-each select="mdb:referenceSystemInfo">
+    <!-- Reference system: include the code from referenceSystemIdentifier -->
+    <xsl:for-each select="mdb:referenceSystemInfo/mrs:MD_ReferenceSystem">
       <xsl:variable name="refSysTID" select="generate-id(.)"/>
-      <eCH0271_1:MD_ReferenceSystem ili:tid="REFSYS_{$refSysTID}"/>
-    </xsl:for-each>
-
-    <!-- Point of contact from data identification -->
-    <xsl:for-each select="mdb:identificationInfo/*/mri:pointOfContact">
-      <xsl:variable name="partyElem" select="(cit:CI_Responsibility | cit:CI_ResponsibleParty)/cit:party[1]"/>
-      <xsl:if test="$partyElem">
-        <xsl:call-template name="generate-organisation">
-          <xsl:with-param name="elem" select="$partyElem"/>
-        </xsl:call-template>
-      </xsl:if>
-      <xsl:call-template name="generate-responsibility">
-        <xsl:with-param name="elem" select="."/>
-      </xsl:call-template>
+      <eCH0271_1:MD_ReferenceSystem ili:tid="REFSYS_{$refSysTID}">
+        <xsl:if test="mrs:referenceSystemIdentifier/mcc:MD_Identifier/mcc:code/gco:CharacterString">
+          <eCH0271_1:referenceSystemIdentifier>
+            <eCH0271_1:MD_Identifier ili:tid="REFID_{generate-id(mrs:referenceSystemIdentifier)}">
+              <eCH0271_1:code>
+                <xsl:value-of select="normalize-space(mrs:referenceSystemIdentifier/mcc:MD_Identifier/mcc:code/gco:CharacterString)"/>
+              </eCH0271_1:code>
+            </eCH0271_1:MD_Identifier>
+          </eCH0271_1:referenceSystemIdentifier>
+        </xsl:if>
+      </eCH0271_1:MD_ReferenceSystem>
     </xsl:for-each>
 
     <!-- CHE_MD_DataIdentification (main) -->
@@ -201,6 +259,17 @@
         <xsl:if test="*/mri:defaultLocale">
           <xsl:variable name="dlTID" select="generate-id(*/mri:defaultLocale[1])"/>
           <eCH0271_1:defaultLocale ili:ref="DL_{$dlTID}"/>
+        </xsl:if>
+        <!-- basicGeodata flag -->
+        <xsl:if test="*/che:basicGeodata/gco:Boolean">
+          <eCH0271_1:basicGeodata>
+            <xsl:value-of select="normalize-space(*/che:basicGeodata/gco:Boolean)"/>
+          </eCH0271_1:basicGeodata>
+        </xsl:if>
+        <!-- basicGeodataInformation reference -->
+        <xsl:if test="*/che:basicGeodataInformation">
+          <xsl:variable name="bgdInfoTID" select="generate-id(*/che:basicGeodataInformation[1])"/>
+          <eCH0271_1:basicGeodataInformation ili:ref="BGDI_{$bgdInfoTID}"/>
         </xsl:if>
       </eCH0271_1:CHE_MD_DataIdentification>
     </xsl:for-each>
@@ -314,7 +383,7 @@
     </eCH0271_1:CHE_MD_Metadata>
   </xsl:template>
 
-  <!-- Generate CHE_CI_Organisation with contact info -->
+  <!-- Generate CHE_CI_Organisation with contact info and individual -->
   <xsl:template name="generate-organisation">
     <xsl:param name="elem"/>
     <xsl:variable name="partyTID" select="generate-id($elem)"/>
@@ -329,6 +398,11 @@
         <xsl:if test="($elem/che:CHE_CI_Organisation | $elem/cit:CI_Organisation)/cit:contactInfo/cit:CI_Contact">
           <xsl:variable name="contactTID" select="generate-id(($elem/che:CHE_CI_Organisation | $elem/cit:CI_Organisation)/cit:contactInfo/cit:CI_Contact)"/>
           <eCH0271_1:contactInfo ili:ref="CONTACT_{$contactTID}"/>
+        </xsl:if>
+        <!-- Individual: handle CI_Individual if present -->
+        <xsl:if test="($elem/che:CHE_CI_Organisation | $elem/cit:CI_Organisation)/cit:individual/cit:CI_Individual">
+          <xsl:variable name="individualTID" select="generate-id(($elem/che:CHE_CI_Organisation | $elem/cit:CI_Organisation)/cit:individual/cit:CI_Individual)"/>
+          <eCH0271_1:individual ili:ref="INDIVIDUAL_{$individualTID}"/>
         </xsl:if>
         <xsl:if test="($elem/che:CHE_CI_Organisation | $elem/cit:CI_Organisation)/che:organisationAcronym/gco:CharacterString">
           <eCH0271_1:organisationAcronym>
@@ -387,11 +461,35 @@
     </eCH0271_1:CI_Citation>
   </xsl:template>
 
+  <!-- Generate CI_Individual -->
+  <xsl:template name="generate-individual">
+    <xsl:param name="elem"/>
+    <xsl:variable name="individualTID" select="generate-id($elem)"/>
+    <eCH0271_1:CI_Individual ili:tid="INDIVIDUAL_{$individualTID}">
+      <xsl:if test="$elem/cit:name/gco:CharacterString">
+        <eCH0271_1:name>
+          <xsl:value-of select="normalize-space($elem/cit:name/gco:CharacterString)"/>
+        </eCH0271_1:name>
+      </xsl:if>
+      <xsl:if test="$elem/cit:positionName/gco:CharacterString">
+        <eCH0271_1:positionName>
+          <xsl:value-of select="normalize-space($elem/cit:positionName/gco:CharacterString)"/>
+        </eCH0271_1:positionName>
+      </xsl:if>
+    </eCH0271_1:CI_Individual>
+  </xsl:template>
+
   <!-- Generate EX_Extent -->
   <xsl:template name="generate-extent">
     <xsl:param name="elem"/>
     <xsl:variable name="extTID" select="generate-id($elem)"/>
     <eCH0271_1:EX_Extent ili:tid="EXT_{$extTID}">
+      <!-- Add description if present -->
+      <xsl:if test="$elem/gex:description/gco:CharacterString">
+        <eCH0271_1:description>
+          <xsl:value-of select="normalize-space($elem/gex:description/gco:CharacterString)"/>
+        </eCH0271_1:description>
+      </xsl:if>
       <xsl:for-each select="$elem/gex:geographicElement/gex:EX_GeographicBoundingBox">
         <xsl:variable name="bboxTID" select="generate-id(.)"/>
         <eCH0271_1:geographicElement ili:ref="BBOX_{$bboxTID}"/>
@@ -435,6 +533,18 @@
         <xsl:with-param name="elem" select="."/>
       </xsl:call-template>
     </xsl:for-each>
+    <!-- Generate MD_DigitalTransferOptions wrapper if there are transfer options -->
+    <xsl:if test="$elem/mrd:transferOptions/mrd:MD_DigitalTransferOptions">
+      <xsl:for-each select="$elem/mrd:transferOptions/mrd:MD_DigitalTransferOptions">
+        <xsl:variable name="transferTID" select="generate-id(.)"/>
+        <eCH0271_1:MD_DigitalTransferOptions ili:tid="DTO_{$transferTID}">
+          <xsl:for-each select="mrd:onLine/cit:CI_OnlineResource">
+            <xsl:variable name="orTID" select="generate-id(.)"/>
+            <eCH0271_1:transferOptions ili:ref="OR_{$orTID}"/>
+          </xsl:for-each>
+        </eCH0271_1:MD_DigitalTransferOptions>
+      </xsl:for-each>
+    </xsl:if>
   </xsl:template>
 
   <!-- Generate CI_OnlineResource -->
@@ -579,6 +689,96 @@
         </eCH0271_1:electronicMailAddress>
       </xsl:if>
     </eCH0271_1:CI_Address>
+  </xsl:template>
+
+  <!-- Generate CHE_MD_MaintenanceInformation -->
+  <xsl:template name="generate-maintenance-info">
+    <xsl:param name="elem"/>
+    <xsl:variable name="rmTID" select="generate-id($elem)"/>
+    <eCH0271_1:CHE_MD_MaintenanceInformation ili:tid="RM_{$rmTID}">
+      <xsl:if test="$elem/mmi:maintenanceAndUpdateFrequency/mmi:MD_MaintenanceFrequencyCode">
+        <eCH0271_1:maintenanceAndUpdateFrequency>
+          <xsl:value-of select="normalize-space(($elem/mmi:maintenanceAndUpdateFrequency/mmi:MD_MaintenanceFrequencyCode/@codeListValue | $elem/mmi:maintenanceAndUpdateFrequency/mmi:MD_MaintenanceFrequencyCode/text())[1])"/>
+        </eCH0271_1:maintenanceAndUpdateFrequency>
+      </xsl:if>
+      <xsl:if test="$elem/mmi:maintenanceNote/gco:CharacterString">
+        <eCH0271_1:maintenanceNote>
+          <xsl:value-of select="normalize-space($elem/mmi:maintenanceNote/gco:CharacterString)"/>
+        </eCH0271_1:maintenanceNote>
+      </xsl:if>
+    </eCH0271_1:CHE_MD_MaintenanceInformation>
+  </xsl:template>
+
+  <!-- Generate MD_BrowseGraphic -->
+  <xsl:template name="generate-browse-graphic">
+    <xsl:param name="elem"/>
+    <xsl:variable name="goTID" select="generate-id($elem)"/>
+    <eCH0271_1:MD_BrowseGraphic ili:tid="GO_{$goTID}">
+      <xsl:if test="$elem/mcc:fileName/gco:CharacterString">
+        <eCH0271_1:fileName>
+          <xsl:value-of select="normalize-space($elem/mcc:fileName/gco:CharacterString)"/>
+        </eCH0271_1:fileName>
+      </xsl:if>
+      <xsl:if test="$elem/mcc:fileDescription/gco:CharacterString">
+        <eCH0271_1:fileDescription>
+          <xsl:value-of select="normalize-space($elem/mcc:fileDescription/gco:CharacterString)"/>
+        </eCH0271_1:fileDescription>
+      </xsl:if>
+    </eCH0271_1:MD_BrowseGraphic>
+  </xsl:template>
+
+  <!-- Generate MD_LegalConstraints -->
+  <xsl:template name="generate-legal-constraints">
+    <xsl:param name="elem"/>
+    <xsl:variable name="rcTID" select="generate-id($elem)"/>
+    <eCH0271_1:CHE_MD_LegalConstraints ili:tid="RC_{$rcTID}">
+      <xsl:if test="$elem/mco:useConstraints/mco:MD_RestrictionCode">
+        <eCH0271_1:useConstraints>
+          <xsl:value-of select="normalize-space(($elem/mco:useConstraints/mco:MD_RestrictionCode/@codeListValue | $elem/mco:useConstraints/mco:MD_RestrictionCode/text())[1])"/>
+        </eCH0271_1:useConstraints>
+      </xsl:if>
+      <xsl:if test="$elem/mco:otherConstraints/gco:CharacterString">
+        <eCH0271_1:otherConstraints>
+          <xsl:value-of select="normalize-space($elem/mco:otherConstraints/gco:CharacterString)"/>
+        </eCH0271_1:otherConstraints>
+      </xsl:if>
+    </eCH0271_1:CHE_MD_LegalConstraints>
+  </xsl:template>
+
+  <!-- Generate PT_Locale (for defaultLocale in DataIdentification) -->
+  <xsl:template name="generate-default-locale">
+    <xsl:param name="elem"/>
+    <xsl:variable name="dlTID" select="generate-id($elem)"/>
+    <eCH0271_1:PT_Locale ili:tid="DL_{$dlTID}">
+      <xsl:if test="$elem/lan:language/lan:LanguageCode">
+        <eCH0271_1:language>
+          <xsl:value-of select="normalize-space(($elem/lan:language/lan:LanguageCode/@codeListValue | $elem/lan:language/lan:LanguageCode/text())[1])"/>
+        </eCH0271_1:language>
+      </xsl:if>
+      <xsl:if test="$elem/lan:characterEncoding/lan:MD_CharacterSetCode">
+        <eCH0271_1:characterEncoding>
+          <xsl:value-of select="normalize-space(($elem/lan:characterEncoding/lan:MD_CharacterSetCode/@codeListValue | $elem/lan:characterEncoding/lan:MD_CharacterSetCode/text())[1])"/>
+        </eCH0271_1:characterEncoding>
+      </xsl:if>
+    </eCH0271_1:PT_Locale>
+  </xsl:template>
+
+  <!-- Generate CHE_MD_BasicGeodataInformation -->
+  <xsl:template name="generate-basicgeodatainformation">
+    <xsl:param name="elem"/>
+    <xsl:variable name="bgdInfoTID" select="generate-id($elem)"/>
+    <eCH0271_1:CHE_MD_BasicGeodataInformation ili:tid="BGDI_{$bgdInfoTID}">
+      <xsl:if test="$elem/che:CHE_MD_BasicGeodataInformation/che:basicGeodataID/gco:CharacterString">
+        <eCH0271_1:basicGeodataID>
+          <xsl:value-of select="normalize-space($elem/che:CHE_MD_BasicGeodataInformation/che:basicGeodataID/gco:CharacterString)"/>
+        </eCH0271_1:basicGeodataID>
+      </xsl:if>
+      <xsl:if test="$elem/che:CHE_MD_BasicGeodataInformation/che:basicGeodataLegalLevel/che:CHE_MD_LevelCode">
+        <eCH0271_1:basicGeodataLegalLevel>
+          <xsl:value-of select="normalize-space(($elem/che:CHE_MD_BasicGeodataInformation/che:basicGeodataLegalLevel/che:CHE_MD_LevelCode/@codeListValue | $elem/che:CHE_MD_BasicGeodataInformation/che:basicGeodataLegalLevel/che:CHE_MD_LevelCode/text())[1])"/>
+        </eCH0271_1:basicGeodataLegalLevel>
+      </xsl:if>
+    </eCH0271_1:CHE_MD_BasicGeodataInformation>
   </xsl:template>
 
   <xsl:template match="text()|@*" priority="-10"/>

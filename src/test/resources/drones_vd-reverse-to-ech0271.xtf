@@ -15,36 +15,88 @@
       <eCH0271_1:CHE_CI_Organisation ili:tid="PARTY_d1e22">
         <eCH0271_1:name>Administration cantonale vaudoise</eCH0271_1:name>
         <eCH0271_1:contactInfo ili:ref="CONTACT_d1e27" />
+        <eCH0271_1:individual ili:ref="INDIVIDUAL_d1e41" />
       </eCH0271_1:CHE_CI_Organisation>
+      <eCH0271_1:CI_Contact ili:tid="CONTACT_d1e27">
+        <eCH0271_1:address ili:ref="ADDR_d1e29" />
+      </eCH0271_1:CI_Contact>
+      <eCH0271_1:CI_Address ili:tid="ADDR_d1e29">
+        <eCH0271_1:deliveryPoint>Chemin de la Lanterne 2</eCH0271_1:deliveryPoint>
+        <eCH0271_1:city>Lausanne</eCH0271_1:city>
+        <eCH0271_1:postalCode>1014</eCH0271_1:postalCode>
+        <eCH0271_1:country>CH</eCH0271_1:country>
+        <eCH0271_1:electronicMailAddress>sebastien.favre2@vd.ch</eCH0271_1:electronicMailAddress>
+      </eCH0271_1:CI_Address>
+      <eCH0271_1:CI_Individual ili:tid="INDIVIDUAL_d1e41">
+        <eCH0271_1:name>Sébastien Favre Police cantonale vaudoise</eCH0271_1:name>
+      </eCH0271_1:CI_Individual>
       <eCH0271_1:CI_Responsibility ili:tid="RESP_d1e18">
         <eCH0271_1:role>pointOfContact</eCH0271_1:role>
         <eCH0271_1:party ili:ref="PARTY_d1e22" />
         <eCH0271_1:organisationName>Administration cantonale vaudoise</eCH0271_1:organisationName>
       </eCH0271_1:CI_Responsibility>
-      <eCH0271_1:CI_Citation ili:tid="CIT_d1e59">
+      <eCH0271_1:CHE_CI_Organisation ili:tid="PARTY_d1e80">
+        <eCH0271_1:name>Administration cantonale vaudoise</eCH0271_1:name>
+        <eCH0271_1:contactInfo ili:ref="CONTACT_d1e85" />
+        <eCH0271_1:individual ili:ref="INDIVIDUAL_d1e99" />
+      </eCH0271_1:CHE_CI_Organisation>
+      <eCH0271_1:CI_Contact ili:tid="CONTACT_d1e85">
+        <eCH0271_1:address ili:ref="ADDR_d1e87" />
+      </eCH0271_1:CI_Contact>
+      <eCH0271_1:CI_Address ili:tid="ADDR_d1e87">
+        <eCH0271_1:deliveryPoint>Chemin de la Lanterne 2</eCH0271_1:deliveryPoint>
+        <eCH0271_1:city>Lausanne</eCH0271_1:city>
+        <eCH0271_1:postalCode>1014</eCH0271_1:postalCode>
+        <eCH0271_1:country>CH</eCH0271_1:country>
+        <eCH0271_1:electronicMailAddress>sebastien.favre2@vd.ch</eCH0271_1:electronicMailAddress>
+      </eCH0271_1:CI_Address>
+      <eCH0271_1:CI_Individual ili:tid="INDIVIDUAL_d1e99">
+        <eCH0271_1:name>Sébastien Favre Police cantonale vaudoise</eCH0271_1:name>
+      </eCH0271_1:CI_Individual>
+      <eCH0271_1:CI_Responsibility ili:tid="RESP_d1e76">
+        <eCH0271_1:role>pointOfContact</eCH0271_1:role>
+        <eCH0271_1:party ili:ref="PARTY_d1e80" />
+        <eCH0271_1:organisationName>Administration cantonale vaudoise</eCH0271_1:organisationName>
+      </eCH0271_1:CI_Responsibility>
+      <eCH0271_1:CHE_MD_MaintenanceInformation ili:tid="RM_d1e120">
+        <eCH0271_1:maintenanceAndUpdateFrequency>asNeeded</eCH0271_1:maintenanceAndUpdateFrequency>
+      </eCH0271_1:CHE_MD_MaintenanceInformation>
+      <eCH0271_1:MD_BrowseGraphic ili:tid="GO_d1e124">
+        <eCH0271_1:fileName>https://viageo.ch/uploads/resource_images/6123acce0c1aa832960775.png</eCH0271_1:fileName>
+      </eCH0271_1:MD_BrowseGraphic>
+      <eCH0271_1:CHE_MD_LegalConstraints ili:tid="RC_d1e128">
+        <eCH0271_1:useConstraints>otherRestrictions</eCH0271_1:useConstraints>
+        <eCH0271_1:otherConstraints>Les conditions d'utilisation des géodonnées de l'Etat de Vaud sont exposées dans la norme DCG 8401 : https://www.vd.ch/fileadmin/user_upload/dinf/8000/8401.pdf</eCH0271_1:otherConstraints>
+      </eCH0271_1:CHE_MD_LegalConstraints>
+      <eCH0271_1:PT_Locale ili:tid="DL_d1e134">
+        <eCH0271_1:language>fre</eCH0271_1:language>
+      </eCH0271_1:PT_Locale>
+      <eCH0271_1:CHE_MD_Legislation ili:tid="LEG_d1e128" />
+      <eCH0271_1:CI_Citation ili:tid="CIT_d1e63">
         <eCH0271_1:title>Zones restreintes aux modèles réduits d'aéronefs et aux drones</eCH0271_1:title>
       </eCH0271_1:CI_Citation>
-      <eCH0271_1:EX_Extent ili:tid="EXT_d1e98">
-        <eCH0271_1:geographicElement ili:ref="BBOX_d1e102" />
+      <eCH0271_1:CHE_MD_BasicGeodataInformation ili:tid="BGDI_d1e140">
+        <eCH0271_1:basicGeodataID>94-VD.1</eCH0271_1:basicGeodataID>
+        <eCH0271_1:basicGeodataLegalLevel>cantonal</eCH0271_1:basicGeodataLegalLevel>
+      </eCH0271_1:CHE_MD_BasicGeodataInformation>
+      <eCH0271_1:EX_Extent ili:tid="EXT_d1e106">
+        <eCH0271_1:description>Vaud</eCH0271_1:description>
+        <eCH0271_1:geographicElement ili:ref="BBOX_d1e110" />
       </eCH0271_1:EX_Extent>
-      <eCH0271_1:EX_GeographicBoundingBox ili:tid="BBOX_d1e102">
+      <eCH0271_1:EX_GeographicBoundingBox ili:tid="BBOX_d1e110">
         <eCH0271_1:westBoundLongitude>6.0638570706046</eCH0271_1:westBoundLongitude>
         <eCH0271_1:eastBoundLongitude>7.2491849005287</eCH0271_1:eastBoundLongitude>
         <eCH0271_1:southBoundLatitude>46.187071784982</eCH0271_1:southBoundLatitude>
         <eCH0271_1:northBoundLatitude>46.979619735449</eCH0271_1:northBoundLatitude>
       </eCH0271_1:EX_GeographicBoundingBox>
-      <eCH0271_1:CI_OnlineResource ili:tid="OR_d1e143">
+      <eCH0271_1:CI_OnlineResource ili:tid="OR_d1e151">
         <eCH0271_1:linkage>https://viageo.ch/catalogue/donnee/201333</eCH0271_1:linkage>
         <eCH0271_1:protocol>WWW:LINK</eCH0271_1:protocol>
         <eCH0271_1:function>information</eCH0271_1:function>
       </eCH0271_1:CI_OnlineResource>
-      <eCH0271_1:CI_OnlineResource ili:tid="OR_d1e153">
+      <eCH0271_1:CI_OnlineResource ili:tid="OR_d1e161">
         <eCH0271_1:linkage>https://www.geo.vd.ch/?center=2539000,1160000&amp;scale=377953&amp;wkid=2056&amp;theme=asitvd_couleur&amp;mapresources=GEO_THEME_SECURITE&amp;visiblelayers=%7B%22GEO_THEME_SECURITE%22:%5B%22Restrictions%20fédérales%22,%22Restrictions%20permanentes%22,%22Restrictions%20temporaires%22%5D%7D</eCH0271_1:linkage>
         <eCH0271_1:protocol>CHTOPO:specialised-geoportal</eCH0271_1:protocol>
-      </eCH0271_1:CI_OnlineResource>
-      <eCH0271_1:CI_OnlineResource ili:tid="OR_d1e161">
-        <eCH0271_1:linkage>https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?</eCH0271_1:linkage>
-        <eCH0271_1:protocol>OGC:WMS</eCH0271_1:protocol>
       </eCH0271_1:CI_OnlineResource>
       <eCH0271_1:CI_OnlineResource ili:tid="OR_d1e169">
         <eCH0271_1:linkage>https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?</eCH0271_1:linkage>
@@ -54,34 +106,52 @@
         <eCH0271_1:linkage>https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?</eCH0271_1:linkage>
         <eCH0271_1:protocol>OGC:WMS</eCH0271_1:protocol>
       </eCH0271_1:CI_OnlineResource>
-      <eCH0271_1:MD_ReferenceSystem ili:tid="REFSYS_d1e50" />
-      <eCH0271_1:CHE_CI_Organisation ili:tid="PARTY_d1e76">
-        <eCH0271_1:name>Administration cantonale vaudoise</eCH0271_1:name>
-        <eCH0271_1:contactInfo ili:ref="CONTACT_d1e81" />
-      </eCH0271_1:CHE_CI_Organisation>
-      <eCH0271_1:CI_Responsibility ili:tid="RESP_d1e72">
-        <eCH0271_1:role>pointOfContact</eCH0271_1:role>
-        <eCH0271_1:party ili:ref="PARTY_d1e76" />
-        <eCH0271_1:organisationName>Administration cantonale vaudoise</eCH0271_1:organisationName>
-      </eCH0271_1:CI_Responsibility>
-      <eCH0271_1:CHE_MD_DataIdentification ili:tid="DI_d1e56">
-        <eCH0271_1:MD_Metadata ili:ref="CIT_d1e58" />
+      <eCH0271_1:CI_OnlineResource ili:tid="OR_d1e185">
+        <eCH0271_1:linkage>https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?</eCH0271_1:linkage>
+        <eCH0271_1:protocol>OGC:WMS</eCH0271_1:protocol>
+      </eCH0271_1:CI_OnlineResource>
+      <eCH0271_1:MD_DigitalTransferOptions ili:tid="DTO_d1e149">
+        <eCH0271_1:transferOptions ili:ref="OR_d1e151" />
+      </eCH0271_1:MD_DigitalTransferOptions>
+      <eCH0271_1:MD_DigitalTransferOptions ili:tid="DTO_d1e159">
+        <eCH0271_1:transferOptions ili:ref="OR_d1e161" />
+      </eCH0271_1:MD_DigitalTransferOptions>
+      <eCH0271_1:MD_DigitalTransferOptions ili:tid="DTO_d1e167">
+        <eCH0271_1:transferOptions ili:ref="OR_d1e169" />
+      </eCH0271_1:MD_DigitalTransferOptions>
+      <eCH0271_1:MD_DigitalTransferOptions ili:tid="DTO_d1e175">
+        <eCH0271_1:transferOptions ili:ref="OR_d1e177" />
+      </eCH0271_1:MD_DigitalTransferOptions>
+      <eCH0271_1:MD_DigitalTransferOptions ili:tid="DTO_d1e183">
+        <eCH0271_1:transferOptions ili:ref="OR_d1e185" />
+      </eCH0271_1:MD_DigitalTransferOptions>
+      <eCH0271_1:MD_ReferenceSystem ili:tid="REFSYS_d1e55">
+        <eCH0271_1:referenceSystemIdentifier>
+          <eCH0271_1:MD_Identifier ili:tid="REFID_d1e56">
+            <eCH0271_1:code>MN95 - système suisse (CH1903+)</eCH0271_1:code>
+          </eCH0271_1:MD_Identifier>
+        </eCH0271_1:referenceSystemIdentifier>
+      </eCH0271_1:MD_ReferenceSystem>
+      <eCH0271_1:CHE_MD_DataIdentification ili:tid="DI_d1e60">
+        <eCH0271_1:MD_Metadata ili:ref="CIT_d1e62" />
         <eCH0271_1:abstract>Zones d’interdiction de survol permanentes ou temporaires sur le territoire vaudois par des aéronefs sans occupants de poids inférieur à 25kg. Plus d'information sur les données fédérales : https://www.geocat.ch/geonetwork/srv/fre/catalog.search#/metadata/c3ebd7ba-0fd5-411a-9074-3d0cdc46bc4d</eCH0271_1:abstract>
         <eCH0271_1:status>completed</eCH0271_1:status>
-        <eCH0271_1:pointOfContact ili:ref="RESP_d1e72" />
+        <eCH0271_1:pointOfContact ili:ref="RESP_d1e76" />
         <eCH0271_1:topicCategory>structure</eCH0271_1:topicCategory>
-        <eCH0271_1:extent ili:ref="EXT_d1e98" />
-        <eCH0271_1:resourceMaintenance ili:ref="RM_d1e111" />
-        <eCH0271_1:graphicOverview ili:ref="GO_d1e115" />
-        <eCH0271_1:resourceConstraints ili:ref="RC_d1e119" />
-        <eCH0271_1:defaultLocale ili:ref="DL_d1e125" />
+        <eCH0271_1:extent ili:ref="EXT_d1e106" />
+        <eCH0271_1:resourceMaintenance ili:ref="RM_d1e119" />
+        <eCH0271_1:graphicOverview ili:ref="GO_d1e123" />
+        <eCH0271_1:resourceConstraints ili:ref="RC_d1e127" />
+        <eCH0271_1:defaultLocale ili:ref="DL_d1e133" />
+        <eCH0271_1:basicGeodata>true</eCH0271_1:basicGeodata>
+        <eCH0271_1:basicGeodataInformation ili:ref="BGDI_d1e140" />
       </eCH0271_1:CHE_MD_DataIdentification>
-      <eCH0271_1:MD_Distribution ili:tid="DIST_d1e139">
-        <eCH0271_1:transferOptions ili:ref="OR_d1e143" />
-        <eCH0271_1:transferOptions ili:ref="OR_d1e153" />
+      <eCH0271_1:MD_Distribution ili:tid="DIST_d1e147">
+        <eCH0271_1:transferOptions ili:ref="OR_d1e151" />
         <eCH0271_1:transferOptions ili:ref="OR_d1e161" />
         <eCH0271_1:transferOptions ili:ref="OR_d1e169" />
         <eCH0271_1:transferOptions ili:ref="OR_d1e177" />
+        <eCH0271_1:transferOptions ili:ref="OR_d1e185" />
       </eCH0271_1:MD_Distribution>
       <eCH0271_1:CHE_MD_Metadata ili:tid="MD_d1e1">
         <eCH0271_1:fileIdentifier>2d0af163-1f59-9a24-35fa-1e03166e6188</eCH0271_1:fileIdentifier>
@@ -96,15 +166,15 @@
         <eCH0271_1:contact ili:ref="RESP_d1e18" />
         <eCH0271_1:pointOfContact ili:ref="RESP_d1e18" />
         <eCH0271_1:dateInfo>
-          <eCH0271_1:CI_Date ili:tid="DATE_d1e40">
+          <eCH0271_1:CI_Date ili:tid="DATE_d1e44">
             <eCH0271_1:date>2026-08-25</eCH0271_1:date>
             <eCH0271_1:dateType>revision</eCH0271_1:dateType>
           </eCH0271_1:CI_Date>
         </eCH0271_1:dateInfo>
         <eCH0271_1:metadataStandardName>GM03 2+</eCH0271_1:metadataStandardName>
-        <eCH0271_1:referenceSystemInfo ili:ref="REFSYS_d1e50" />
-        <eCH0271_1:identificationInfo ili:ref="DI_d1e56" />
-        <eCH0271_1:distributionInfo ili:ref="DIST_d1e139" />
+        <eCH0271_1:referenceSystemInfo ili:ref="REFSYS_d1e54" />
+        <eCH0271_1:identificationInfo ili:ref="DI_d1e60" />
+        <eCH0271_1:distributionInfo ili:ref="DIST_d1e147" />
       </eCH0271_1:CHE_MD_Metadata>
     </eCH0271_1:eCH0271>
   </ili:datasection>

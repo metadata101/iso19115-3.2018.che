@@ -62,7 +62,7 @@
   </xsl:template>
 
   <!-- ================================================================
-       CHE_CI_Organisation: name, contact info, acronym
+       CHE_CI_Organisation: name, contact info, individual, acronym
        ================================================================ -->
   <xsl:template match="eCH0271_1:CHE_CI_Organisation" mode="organisation">
     <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
@@ -81,6 +81,16 @@
           <cit:contactInfo>
             <xsl:apply-templates select="$contactObj" mode="contact-info"/>
           </cit:contactInfo>
+        </xsl:if>
+      </xsl:if>
+      <!-- Resolve individual reference (person associated with organisation) -->
+      <xsl:if test="eCH0271_1:individual[@ili:ref]">
+        <xsl:variable name="individualId" select="eCH0271_1:individual/@ili:ref"/>
+        <xsl:variable name="individualObj" select="key('byTID', $individualId)"/>
+        <xsl:if test="$individualObj/self::eCH0271_1:CI_Individual">
+          <cit:individual>
+            <xsl:apply-templates select="$individualObj" mode="individual"/>
+          </cit:individual>
         </xsl:if>
       </xsl:if>
       <!-- Swiss extension: organization acronym -->
@@ -110,6 +120,37 @@
         </xsl:if>
       </xsl:if>
     </cit:CI_Contact>
+  </xsl:template>
+
+  <!-- ================================================================
+       CI_Individual: person name and position
+       ================================================================ -->
+  <xsl:template match="eCH0271_1:CI_Individual" mode="individual">
+    <cit:CI_Individual>
+      <xsl:if test="eCH0271_1:name">
+        <cit:name>
+          <xsl:choose>
+            <xsl:when test="eCH0271_1:name/eCH0271_1:MultilingualMText">
+              <gco:CharacterString>
+                <xsl:value-of select="normalize-space(eCH0271_1:name/eCH0271_1:MultilingualMText)"/>
+              </gco:CharacterString>
+            </xsl:when>
+            <xsl:otherwise>
+              <gco:CharacterString>
+                <xsl:value-of select="normalize-space(eCH0271_1:name)"/>
+              </gco:CharacterString>
+            </xsl:otherwise>
+          </xsl:choose>
+        </cit:name>
+      </xsl:if>
+      <xsl:if test="eCH0271_1:positionName">
+        <cit:positionName>
+          <gco:CharacterString>
+            <xsl:value-of select="normalize-space(eCH0271_1:positionName)"/>
+          </gco:CharacterString>
+        </cit:positionName>
+      </xsl:if>
+    </cit:CI_Individual>
   </xsl:template>
 
   <!-- ================================================================
