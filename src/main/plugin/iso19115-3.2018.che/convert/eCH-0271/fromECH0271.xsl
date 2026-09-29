@@ -147,38 +147,67 @@
 
   <!-- ================================================================ -->
 
-  
   <xsl:template match="/">
     <!-- Locate the eCH0271_1.eCH0271 basket (XTF 2.4 format). -->
     <xsl:variable name="basket"
       select="/ili:transfer/ili:datasection/eCH0271_1:eCH0271[1]"/>
 
-    <xsl:if test="not($basket)">
-      <xsl:message terminate="yes">
-        ERROR: No eCH0271_1:eCH0271 basket found in XTF 2.4 format.
-      </xsl:message>
-    </xsl:if>
-
-    <xsl:variable name="mdRecords"
-      select="$basket/eCH0271_1:CHE_MD_Metadata"/>
-
-    <xsl:if test="not($mdRecords)">
-      <xsl:message terminate="yes">
-        ERROR: No eCH0271_1:CHE_MD_Metadata records found in the basket.
-      </xsl:message>
-    </xsl:if>
-
-    <!-- Handle single vs multiple metadata records -->
+    <!-- 
+      IMPORTANT: This XSLT may be applied to:
+      1. eCH0271 XTF files (source format) → transformation needed
+      2. CHE_MD_Metadata XML files (MEF v2 import) → pass through
+      
+      When GeoNetwork imports MEF v2 ZIP, it may auto-detect schema and 
+      apply this XSLT to metadata.xml files. Those contain CHE XML, not XTF,
+      so $basket will be empty. In that case, pass through the input unchanged.
+    -->
+    
     <xsl:choose>
-      <xsl:when test="count($mdRecords) = 1">
-        <xsl:apply-templates select="$mdRecords[1]" mode="md-metadata"/>
+      <xsl:when test="not($basket)">
+        <!-- Input is NOT XTF INTERLIS format (e.g., already CHE XML from MEF import) -->
+        <!-- Pass through unchanged (return the root element as-is) -->
+        <xsl:copy>
+          <xsl:copy-of select="@*"/>
+          <xsl:apply-templates mode="pass-through"/>
+        </xsl:copy>
       </xsl:when>
       <xsl:otherwise>
-        <che:CHE_MD_MetadataCollection>
-          <xsl:apply-templates select="$mdRecords" mode="md-metadata"/>
-        </che:CHE_MD_MetadataCollection>
+        <!-- Input IS XTF INTERLIS format → perform eCH0271 → CHE transformation -->
+        <xsl:variable name="mdRecords"
+          select="$basket/eCH0271_1:CHE_MD_Metadata"/>
+
+        <xsl:if test="not($mdRecords)">
+          <xsl:message terminate="yes">
+            ERROR: No eCH0271_1:CHE_MD_Metadata records found in the eCH0271 basket.
+          </xsl:message>
+        </xsl:if>
+
+        <!-- Handle single vs multiple metadata records
+             
+             WORKFLOW A - Single record: returns CHE_MD_Metadata (can be imported via XSLT transform)
+             WORKFLOW B - Multiple records: returns <root> wrapper (Java handles via MEF v2)
+        -->
+        <xsl:choose>
+          <xsl:when test="count($mdRecords) = 1">
+            <!-- Single record: return unwrapped CHE_MD_Metadata -->
+            <xsl:apply-templates select="$mdRecords[1]" mode="md-metadata"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <!-- Multiple records: wrap in temporary root container (Java will handle) -->
+            <root>
+              <xsl:apply-templates select="$mdRecords" mode="md-metadata"/>
+            </root>
+          </xsl:otherwise>
+        </xsl:choose>
       </xsl:otherwise>
     </xsl:choose>
+  </xsl:template>
+
+  <!-- Pass-through mode: copy input unchanged -->
+  <xsl:template match="node() | @*" mode="pass-through">
+    <xsl:copy>
+      <xsl:apply-templates select="node() | @*" mode="pass-through"/>
+    </xsl:copy>
   </xsl:template>
 
   <!-- dateInfo processor -->
