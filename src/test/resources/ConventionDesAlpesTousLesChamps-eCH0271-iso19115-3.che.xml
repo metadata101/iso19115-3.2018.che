@@ -1,0 +1,168 @@
+<che:CHE_MD_Metadata xmlns:che="http://geocat.ch/che" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" gco:isoType="mdb:MD_Metadata">
+  <mdb:metadataIdentifier xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
+    <mcc:MD_Identifier xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0">
+      <mcc:code>
+        <gco:CharacterString>8698bf0b-fceb-4f0f-989b-111e7c4af0a4</gco:CharacterString>
+      </mcc:code>
+    </mcc:MD_Identifier>
+  </mdb:metadataIdentifier>
+  <mdb:defaultLocale xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
+    <lan:PT_Locale xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" id="DE">
+      <lan:language>
+        <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="ger">ger</lan:LanguageCode>
+      </lan:language>
+      <lan:characterEncoding>
+        <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
+      </lan:characterEncoding>
+    </lan:PT_Locale>
+  </mdb:defaultLocale>
+  <mdb:otherLocale xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
+    <lan:PT_Locale xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" id="FR">
+      <lan:language>
+        <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="fre">fre</lan:LanguageCode>
+      </lan:language>
+      <lan:characterEncoding>
+        <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
+      </lan:characterEncoding>
+    </lan:PT_Locale>
+  </mdb:otherLocale>
+  <mdb:otherLocale xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
+    <lan:PT_Locale xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" id="IT">
+      <lan:language>
+        <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="ita">ita</lan:LanguageCode>
+      </lan:language>
+      <lan:characterEncoding>
+        <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
+      </lan:characterEncoding>
+    </lan:PT_Locale>
+  </mdb:otherLocale>
+  <mdb:otherLocale xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
+    <lan:PT_Locale xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" id="EN">
+      <lan:language>
+        <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="eng">eng</lan:LanguageCode>
+      </lan:language>
+      <lan:characterEncoding>
+        <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
+      </lan:characterEncoding>
+    </lan:PT_Locale>
+  </mdb:otherLocale>
+  <mdb:otherLocale xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
+    <lan:PT_Locale xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" id="RM">
+      <lan:language>
+        <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="roh">roh</lan:LanguageCode>
+      </lan:language>
+      <lan:characterEncoding>
+        <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
+      </lan:characterEncoding>
+    </lan:PT_Locale>
+  </mdb:otherLocale>
+  <mdb:metadataLinkage xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
+    <cit:CI_OnlineResource xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
+      <cit:linkage>
+        <gco:CharacterString>http://geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/</gco:CharacterString>
+      </cit:linkage>
+      <cit:function>
+        <cit:CI_OnLineFunctionCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="information">information</cit:CI_OnLineFunctionCode>
+      </cit:function>
+    </cit:CI_OnlineResource>
+  </mdb:metadataLinkage>
+  <mdb:metadataScope xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
+    <mdb:MD_MetadataScope>
+      <mdb:resourceScope>
+        <mcc:MD_ScopeCode xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" codeList="http://standards.iso.org/iso/19115/resources/Codelist/mcc/MD_ScopeCode.xml" codeListValue="dataset">dataset</mcc:MD_ScopeCode>
+      </mdb:resourceScope>
+    </mdb:MD_MetadataScope>
+  </mdb:metadataScope>
+  <mdb:contact xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
+    <cit:CI_Responsibility xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
+      <cit:role>
+        <cit:CI_RoleCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cit/CI_RoleCode.xml" codeListValue="pointOfContact">pointOfContact</cit:CI_RoleCode>
+      </cit:role>
+      <cit:party>
+        <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
+          <cit:name>
+            <gco:CharacterString>Bundesamt für Raumentwicklung</gco:CharacterString>
+          </cit:name>
+          <che:organisationAcronym>
+            <gco:CharacterString>ARE</gco:CharacterString>
+          </che:organisationAcronym>
+        </che:CHE_CI_Organisation>
+      </cit:party>
+    </cit:CI_Responsibility>
+  </mdb:contact>
+  <mdb:dateInfo xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
+    <cit:CI_Date xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
+      <cit:date>
+        <gco:Date>2021-04-12</gco:Date>
+      </cit:date>
+      <cit:dateType>
+        <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cit/CI_DateTypeCode.xml" codeListValue="creation">creation</cit:CI_DateTypeCode>
+      </cit:dateType>
+    </cit:CI_Date>
+  </mdb:dateInfo>
+  <mdb:dateInfo xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
+    <cit:CI_Date xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
+      <cit:date>
+        <gco:Date>2026-06-16</gco:Date>
+      </cit:date>
+      <cit:dateType>
+        <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cit/CI_DateTypeCode.xml" codeListValue="revision">revision</cit:CI_DateTypeCode>
+      </cit:dateType>
+    </cit:CI_Date>
+  </mdb:dateInfo>
+  <mdb:referenceSystemInfo xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
+    <mrs:MD_ReferenceSystem xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0">
+      <mrs:referenceSystemIdentifier>
+        <mcc:MD_Identifier xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0">
+          <mcc:code>
+            <gco:CharacterString>EPSG:2056</gco:CharacterString>
+          </mcc:code>
+        </mcc:MD_Identifier>
+      </mrs:referenceSystemIdentifier>
+    </mrs:MD_ReferenceSystem>
+  </mdb:referenceSystemInfo>
+  <mdb:identificationInfo xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
+    <che:CHE_MD_DataIdentification gco:isoType="mri:MD_DataIdentification">
+      <mri:citation xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0">
+        <cit:CI_Citation xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
+          <cit:title>
+            <gco:CharacterString>Alpenkonvention</gco:CharacterString>
+          </cit:title>
+        </cit:CI_Citation>
+      </mri:citation>
+      <mri:abstract xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0">
+        <gco:CharacterString>Perimeter der Alpenkonvention in der Schweiz. Die Alpenkonvention ist ein völkerrechtlicher Vertrag zwischen den acht Alpenländern Deutschland, Frankreich, Italien, Liechtenstein, Monaco, Österreich, Schweiz, Slowenien sowie der Europäischen Union. Das Ziel des Übereinkommens ist der Schutz der Alpen durch eine sektorübergreifende, ganzheitliche und nachhaltige Politik.</gco:CharacterString>
+      </mri:abstract>
+      <mri:status xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0">
+        <mcc:MD_ProgressCode xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" codeList="https://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue="completed">completed</mcc:MD_ProgressCode>
+      </mri:status>
+      <mri:spatialResolution xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" />
+      <mri:topicCategory xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0">
+        <mri:MD_TopicCategoryCode>planningCadastre</mri:MD_TopicCategoryCode>
+      </mri:topicCategory>
+      <mri:defaultLocale xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0">
+        <lan:PT_Locale xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
+          <lan:language>
+            <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="ger">ger</lan:LanguageCode>
+          </lan:language>
+          <lan:characterEncoding>
+            <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
+          </lan:characterEncoding>
+        </lan:PT_Locale>
+      </mri:defaultLocale>
+      <che:basicGeodata>
+        <gco:Boolean>true</gco:Boolean>
+      </che:basicGeodata>
+      <che:basicGeodataInformation>
+        <che:CHE_MD_BasicGeodataInformation>
+          <che:basicGeodataID>
+            <gco:CharacterString>3.1</gco:CharacterString>
+          </che:basicGeodataID>
+          <che:basicGeodataLegalLevel>
+            <che:CHE_MD_LevelCode codeList="mdLevelCode" codeListValue="federal" />
+          </che:basicGeodataLegalLevel>
+        </che:CHE_MD_BasicGeodataInformation>
+      </che:basicGeodataInformation>
+    </che:CHE_MD_DataIdentification>
+  </mdb:identificationInfo>
+</che:CHE_MD_Metadata>

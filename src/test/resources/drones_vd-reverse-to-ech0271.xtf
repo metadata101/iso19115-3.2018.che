@@ -1,0 +1,379 @@
+<ili:transfer xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS" xmlns:geom="http://www.interlis.ch/geometry/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1" xmlns:Localisation_V2="http://www.interlis.ch/xtf/2.4/Localisation_V2">
+  <ili:headersection>
+    <ili:models>
+      <ili:model>eCH0271_1</ili:model>
+    </ili:models>
+  </ili:headersection>
+  <ili:datasection>
+    <eCH0271_1:eCH0271 ili:bid="eCH0271_1.eCH0271">
+      <eCH0271_1:MD_Identifier ili:tid="MDID_d1e2">
+        <eCH0271_1:code>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>2d0af163-1f59-9a24-35fa-1e03166e6188</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:code>
+      </eCH0271_1:MD_Identifier>
+      <eCH0271_1:MD_Identifier ili:tid="REFID_d1e56">
+        <eCH0271_1:code>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>MN95 - système suisse (CH1903+)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:code>
+      </eCH0271_1:MD_Identifier>
+      <eCH0271_1:MD_MetadataScope ili:tid="SCOPE_d1e12">
+        <eCH0271_1:resourceScope>dataset</eCH0271_1:resourceScope>
+        <eCH0271_1:name>Géodonnée</eCH0271_1:name>
+      </eCH0271_1:MD_MetadataScope>
+      <eCH0271_1:CHE_CI_Organisation ili:tid="PARTY_d1e22">
+        <eCH0271_1:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Administration cantonale vaudoise</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:name>
+      </eCH0271_1:CHE_CI_Organisation>
+      <eCH0271_1:CI_Address ili:tid="ADDR_d1e29">
+        <eCH0271_1:deliveryPoint>Chemin de la Lanterne 2</eCH0271_1:deliveryPoint>
+        <eCH0271_1:city>Lausanne</eCH0271_1:city>
+        <eCH0271_1:postalCode>1014</eCH0271_1:postalCode>
+        <eCH0271_1:country>CHE</eCH0271_1:country>
+        <eCH0271_1:electronicMailAddress>sebastien.favre2@vd.ch</eCH0271_1:electronicMailAddress>
+      </eCH0271_1:CI_Address>
+      <eCH0271_1:CI_Individual ili:tid="INDIVIDUAL_d1e41">
+        <eCH0271_1:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Sébastien Favre Police cantonale vaudoise</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:name>
+      </eCH0271_1:CI_Individual>
+      <eCH0271_1:CI_Responsibility ili:tid="RESP_d1e18">
+        <eCH0271_1:role>pointOfContact</eCH0271_1:role>
+      </eCH0271_1:CI_Responsibility>
+      <eCH0271_1:CHE_CI_Organisation ili:tid="PARTY_d1e86">
+        <eCH0271_1:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Administration cantonale vaudoise</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:name>
+      </eCH0271_1:CHE_CI_Organisation>
+      <eCH0271_1:CI_Address ili:tid="ADDR_d1e93">
+        <eCH0271_1:deliveryPoint>Chemin de la Lanterne 2</eCH0271_1:deliveryPoint>
+        <eCH0271_1:city>Lausanne</eCH0271_1:city>
+        <eCH0271_1:postalCode>1014</eCH0271_1:postalCode>
+        <eCH0271_1:country>CHE</eCH0271_1:country>
+        <eCH0271_1:electronicMailAddress>sebastien.favre2@vd.ch</eCH0271_1:electronicMailAddress>
+      </eCH0271_1:CI_Address>
+      <eCH0271_1:CI_Individual ili:tid="INDIVIDUAL_d1e105">
+        <eCH0271_1:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Sébastien Favre Police cantonale vaudoise</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:name>
+      </eCH0271_1:CI_Individual>
+      <eCH0271_1:CI_Responsibility ili:tid="RESP_d1e82">
+        <eCH0271_1:role>pointOfContact</eCH0271_1:role>
+      </eCH0271_1:CI_Responsibility>
+      <eCH0271_1:CHE_MD_MaintenanceInformation ili:tid="RM_d1e127">
+        <eCH0271_1:maintenanceAndUpdateFrequency>asNeeded</eCH0271_1:maintenanceAndUpdateFrequency>
+      </eCH0271_1:CHE_MD_MaintenanceInformation>
+      <eCH0271_1:MD_BrowseGraphic ili:tid="GO_d1e131">
+        <eCH0271_1:fileName>https://viageo.ch/uploads/resource_images/6123acce0c1aa832960775.png</eCH0271_1:fileName>
+      </eCH0271_1:MD_BrowseGraphic>
+      <eCH0271_1:CHE_MD_LegalConstraints ili:tid="RC_d1e135">
+        <eCH0271_1:useConstraints>otherRestrictions</eCH0271_1:useConstraints>
+        <eCH0271_1:otherConstraints>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Les conditions d'utilisation des géodonnées de l'Etat de Vaud sont exposées dans la norme DCG 8401 :https://www.vd.ch/fileadmin/user_upload/dinf/8000/8401.pdf</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:otherConstraints>
+      </eCH0271_1:CHE_MD_LegalConstraints>
+      <eCH0271_1:CI_Citation ili:tid="CIT_d1e63">
+        <eCH0271_1:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Zones restreintes aux modèles réduits d'aéronefs et aux drones</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:title>
+        <eCH0271_1:date>
+          <eCH0271_1:CI_Date>
+            <eCH0271_1:date>2019-09-30T00:00:00</eCH0271_1:date>
+            <eCH0271_1:dateType>creation</eCH0271_1:dateType>
+          </eCH0271_1:CI_Date>
+        </eCH0271_1:date>
+        <eCH0271_1:date>
+          <eCH0271_1:CI_Date>
+            <eCH0271_1:date>2022-06-15T00:00:00</eCH0271_1:date>
+            <eCH0271_1:dateType>revision</eCH0271_1:dateType>
+          </eCH0271_1:CI_Date>
+        </eCH0271_1:date>
+      </eCH0271_1:CI_Citation>
+      <eCH0271_1:EX_Extent ili:tid="EXT_d1e112">
+        <eCH0271_1:description>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Vaud</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:description>
+      </eCH0271_1:EX_Extent>
+      <eCH0271_1:EX_GeographicBoundingBox ili:tid="BBOX_d1e116">
+        <eCH0271_1:westBoundLongitude>6.0638570706046</eCH0271_1:westBoundLongitude>
+        <eCH0271_1:eastBoundLongitude>7.2491849005287</eCH0271_1:eastBoundLongitude>
+        <eCH0271_1:southBoundLatitude>46.187071784982</eCH0271_1:southBoundLatitude>
+        <eCH0271_1:northBoundLatitude>46.979619735449</eCH0271_1:northBoundLatitude>
+      </eCH0271_1:EX_GeographicBoundingBox>
+      <eCH0271_1:CI_OnlineResource ili:tid="OR_d1e158">
+        <eCH0271_1:linkage>
+          <Localisation_V2:MultilingualUri>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>https://viageo.ch/catalogue/donnee/201333</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualUri>
+        </eCH0271_1:linkage>
+        <eCH0271_1:protocol>WWW:LINK</eCH0271_1:protocol>
+        <eCH0271_1:function>information</eCH0271_1:function>
+        <eCH0271_1:description>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Retrouvez toutes les informations sur viageo.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:description>
+        <eCH0271_1:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Fiche détaillée</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:name>
+      </eCH0271_1:CI_OnlineResource>
+      <eCH0271_1:CI_OnlineResource ili:tid="OR_d1e172">
+        <eCH0271_1:linkage>
+          <Localisation_V2:MultilingualUri>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>https://www.geo.vd.ch/?center=2539000,1160000&amp;scale=377953&amp;wkid=2056&amp;theme=asitvd_couleur&amp;mapresources=GEO_THEME_SECURITE&amp;visiblelayers=%7B%22GEO_THEME_SECURITE%22:%5B%22Restrictions%20f%C3%A9d%C3%A9rales%22,%22Restrictions%20permanentes%22,%22Restrictions%20temporaires%22%5D%7D</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualUri>
+        </eCH0271_1:linkage>
+        <eCH0271_1:protocol>CHTOPO:specialised-geoportal</eCH0271_1:protocol>
+        <eCH0271_1:description>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Consultation possible sur le guichet en ligne</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:description>
+        <eCH0271_1:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Guichet en ligne</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:name>
+      </eCH0271_1:CI_OnlineResource>
+      <eCH0271_1:CI_OnlineResource ili:tid="OR_d1e184">
+        <eCH0271_1:linkage>
+          <Localisation_V2:MultilingualUri>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualUri>
+        </eCH0271_1:linkage>
+        <eCH0271_1:protocol>OGC:WMS</eCH0271_1:protocol>
+        <eCH0271_1:description>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Zones restreintes aux modèles réduits d'aéronefs et aux drones (vd.restriction_temporaire)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:description>
+        <eCH0271_1:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>vd.restriction_temporaire</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:name>
+      </eCH0271_1:CI_OnlineResource>
+      <eCH0271_1:CI_OnlineResource ili:tid="OR_d1e196">
+        <eCH0271_1:linkage>
+          <Localisation_V2:MultilingualUri>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualUri>
+        </eCH0271_1:linkage>
+        <eCH0271_1:protocol>OGC:WMS</eCH0271_1:protocol>
+        <eCH0271_1:description>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Zones restreintes aux modèles réduits d'aéronefs et aux drones (vd.restriction_permanente)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:description>
+        <eCH0271_1:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>vd.restriction_permanente)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:name>
+      </eCH0271_1:CI_OnlineResource>
+      <eCH0271_1:CI_OnlineResource ili:tid="OR_d1e208">
+        <eCH0271_1:linkage>
+          <Localisation_V2:MultilingualUri>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>https://www.ogc.vd.ch/public/services/OGC/wmsVD/Mapserver/WMSServer?</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualUri>
+        </eCH0271_1:linkage>
+        <eCH0271_1:protocol>OGC:WMS</eCH0271_1:protocol>
+        <eCH0271_1:description>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Zones restreintes aux modèles réduits d'aéronefs et aux drones (vd.restriction_federale)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:description>
+        <eCH0271_1:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>vd.restriction_federale)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:name>
+      </eCH0271_1:CI_OnlineResource>
+      <eCH0271_1:MD_Distribution ili:tid="DIST_d1e154" />
+      <eCH0271_1:MD_ReferenceSystem ili:tid="REFSYS_d1e55">
+        <eCH0271_1:referenceSystemIdentifier ili:ref="REFID_d1e56" />
+      </eCH0271_1:MD_ReferenceSystem>
+      <eCH0271_1:CHE_MD_DataIdentification ili:tid="DI_d1e60">
+        <eCH0271_1:abstract>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Zones d’interdiction de survol permanentes ou temporaires sur le territoire vaudois par des aéronefs sans occupants de poids inférieur à 25kg. Plus d'information sur les données fédérales : https://www.geocat.ch/geonetwork/srv/fre/catalog.search#/metadata/c3ebd7ba-0fd5-411a-9074-3d0cdc46bc4d</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:abstract>
+        <eCH0271_1:status>completed</eCH0271_1:status>
+        <eCH0271_1:topicCategory>structure</eCH0271_1:topicCategory>
+        <eCH0271_1:defaultLocale>
+          <eCH0271_1:PT_Locale>
+            <eCH0271_1:language>fr</eCH0271_1:language>
+            <eCH0271_1:characterEncoding>utf8</eCH0271_1:characterEncoding>
+          </eCH0271_1:PT_Locale>
+        </eCH0271_1:defaultLocale>
+        <eCH0271_1:basicGeodata>true</eCH0271_1:basicGeodata>
+        <eCH0271_1:basicGeodataInformation>
+          <eCH0271_1:CHE_MD_BasicGeodataInformation>
+            <eCH0271_1:basicGeodataID>94-VD.1</eCH0271_1:basicGeodataID>
+            <eCH0271_1:basicGeodataLegalLevel>cantonal</eCH0271_1:basicGeodataLegalLevel>
+          </eCH0271_1:CHE_MD_BasicGeodataInformation>
+        </eCH0271_1:basicGeodataInformation>
+      </eCH0271_1:CHE_MD_DataIdentification>
+      <eCH0271_1:CHE_MD_Metadata ili:tid="MD_d1e1">
+        <eCH0271_1:defaultLocale>
+          <eCH0271_1:PT_Locale>
+            <eCH0271_1:language>fr</eCH0271_1:language>
+            <eCH0271_1:characterEncoding>utf8</eCH0271_1:characterEncoding>
+          </eCH0271_1:PT_Locale>
+        </eCH0271_1:defaultLocale>
+        <eCH0271_1:dateInfo>
+          <eCH0271_1:CI_Date>
+            <eCH0271_1:date>2026-08-25</eCH0271_1:date>
+            <eCH0271_1:dateType>revision</eCH0271_1:dateType>
+          </eCH0271_1:CI_Date>
+        </eCH0271_1:dateInfo>
+      </eCH0271_1:CHE_MD_Metadata>
+    </eCH0271_1:eCH0271>
+  </ili:datasection>
+</ili:transfer>
