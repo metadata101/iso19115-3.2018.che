@@ -1471,7 +1471,7 @@ For details, see the attached data description.</lan:LocalisedCharacterString>
                   </lan:textGroup>
                 </lan:PT_FreeText>
               </cit:name>
-              <cit:description gco:nilReason="missing" xsi:type="lan:PT_FreeText_PropertyType">
+              <cit:description xsi:type="lan:PT_FreeText_PropertyType">
                 <gco:CharacterString />
                 <lan:PT_FreeText>
                   <lan:textGroup>
@@ -1521,7 +1521,7 @@ For details, see the attached data description.</lan:LocalisedCharacterString>
                   </lan:textGroup>
                 </lan:PT_FreeText>
               </cit:name>
-              <cit:description gco:nilReason="missing" xsi:type="lan:PT_FreeText_PropertyType">
+              <cit:description xsi:type="lan:PT_FreeText_PropertyType">
                 <gco:CharacterString />
               </cit:description>
               <cit:function>
