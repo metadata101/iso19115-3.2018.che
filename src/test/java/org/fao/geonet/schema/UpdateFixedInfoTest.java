@@ -126,4 +126,17 @@ public class UpdateFixedInfoTest {
 		String amphibiansWithUpdatedFixedInfo = xmlOutputter.outputString(new Document(transformed));
 		TestSupport.assertGeneratedDataByteMatchExpected("lichen2014-with-updated-fixed-info-19115-3.che.xml", amphibiansWithUpdatedFixedInfo, GENERATE_EXPECTED_FILE);
 	}
+
+	@Test
+	public void geopotentielleHohe() throws Exception {
+		Path xslFile = getResourceInsideSchema("update-fixed-info.xsl");
+		Path xmlFile = getResource("geopotentielle-hohe-19115-3.che-as-processed.xml");
+		Element source = Xml.loadFile(xmlFile);
+
+		Element transformed = Xml.transform(source, xslFile);
+
+		XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
+		String amphibiansWithUpdatedFixedInfo = xmlOutputter.outputString(new Document(transformed));
+		TestSupport.assertGeneratedDataByteMatchExpected("geopotentielle-hohe-with-updated-fixed-info-19115-3.che.xml", amphibiansWithUpdatedFixedInfo, GENERATE_EXPECTED_FILE);
+	}
 }
