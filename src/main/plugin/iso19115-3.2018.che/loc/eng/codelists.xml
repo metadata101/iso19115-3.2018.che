@@ -2954,52 +2954,64 @@
     <definition>Justification for the correlation of two resources</definition>
     <entry>
       <code>crossReference</code>
-      <label>Reference from one resource to another</label>
+      <label>Cross Reference</label>
+      <description>Reference from one resource to another</description>
     </entry>
     <entry>
       <code>largerWorkCitation</code>
-      <label>Reference to a master resource of which this one is a part</label>
+      <label>Larger Work Citation</label>
+      <description>Reference to a master resource of which this one is a part</description>
     </entry>
     <entry>
       <code>partOfSeamlessDatabase</code>
-      <label>Part of same structured set of data held in a computer</label>
+      <label>Part of Seamless Database</label>
+      <description>Part of same structured set of data held in a computer</description>
     </entry>
     <entry>
       <code>stereoMate</code>
-      <label>Part of a set of imagery that, when used together, provides three-dimensional images</label>
+      <label>Stereo Mate</label>
+      <description>Part of a set of imagery that, when used together, provides three-dimensional images</description>
     </entry>
     <entry>
       <code>isComposedOf</code>
-      <label>Reference to resources that are parts of this resource</label>
+      <label>Is Composed Of</label>
+      <description>Reference to resources that are parts of this resource</description>
     </entry>
     <entry>
       <code>collectiveTitle</code>
-      <label>Common title for a collection of resources. NOTE: title identifies elements of a series collectively, combined with information about what volumes are available at the source cite</label>
+      <label>Collective Title</label>
+      <description>Common title for a collection of resources. NOTE: title identifies elements of a series collectively, combined with information about what volumes are available at the source cite</description>
     </entry>
     <entry>
       <code>series</code>
-      <label>Associated through a common heritage such as produced to a common product specification</label>
+      <label>Series</label>
+      <description>Associated through a common heritage such as produced to a common product specification</description>
     </entry>
     <entry>
       <code>dependency</code>
-      <label>Associated through a dependency</label>
+      <label>Dependency</label>
+      <description>Associated through a dependency</description>
     </entry>
     <entry>
       <code>revisionOf</code>
-      <label>Resource is a revision of associated resource</label>
+      <label>Revision Of</label>
+      <description>Resource is a revision of associated resource</description>
     </entry>
     <!-- che:CHE_DS_AssociationTypeCode -->
     <entry>
       <code>isTemporalStateOf</code>
-      <label>Resource is a temporal state of associated resource</label>
+      <label>Is Temporal State Of</label>
+      <description>Resource is a temporal state of associated resource</description>
     </entry>
     <entry>
       <code>isDescriptionOf</code>
-      <label>Resource is a description of associated resource</label>
+      <label>Is Description Of</label>
+      <description>Resource is a description of associated resource</description>
     </entry>
     <entry>
       <code>isDescribedBy</code>
-      <label>Resource is described by associated resource</label>
+      <label>Is Described By</label>
+      <description>Resource is described by associated resource</description>
     </entry>
   </codelist>
   <codelist name="che:CHE_MD_BasicGeodataAccessLevelCode" alias="basicGeodataAccessLevel">
