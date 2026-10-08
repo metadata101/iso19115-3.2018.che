@@ -447,11 +447,6 @@
       <description>Teil von einem gleichstrukturierten Satz von Daten, die in einem Computer sind</description>
     </entry>
     <entry>
-      <code>source</code>
-      <label>Quelle</label>
-      <description>Verweise auf die Quelle der Daten, die zur Erstellung der Karten verwendet wurden.</description>
-    </entry>
-    <entry>
       <code>stereoMate</code>
       <label>Stereobild</label>
       <description>Teil eines Bildpaketes, welches bei gleichzeitiger Verwendung, dreidimensionale Bilder liefert</description>
