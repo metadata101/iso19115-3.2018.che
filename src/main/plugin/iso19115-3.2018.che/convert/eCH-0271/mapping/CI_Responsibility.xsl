@@ -68,6 +68,22 @@
             <xsl:apply-templates select="$partyObj" mode="organisation"/>
           </cit:party>
         </xsl:when>
+        <!-- Priority 3: Via association CI_Responsibilityparty -->
+        <xsl:otherwise>
+          <xsl:variable name="respTID" select="@ili:tid"/>
+          <xsl:variable name="partyAssoc"
+            select="/ili:transfer/ili:datasection/eCH0271_1:eCH0271/eCH0271_1:CI_Responsibilityparty
+                    [eCH0271_1:CI_Responsibility/@ili:ref = $respTID]"/>
+          <xsl:if test="$partyAssoc">
+            <xsl:variable name="partyRef" select="$partyAssoc/eCH0271_1:party/@ili:ref"/>
+            <xsl:variable name="partyObj" select="key('byTID', $partyRef)"/>
+            <xsl:if test="$partyObj/self::eCH0271_1:CHE_CI_Organisation">
+              <cit:party>
+                <xsl:apply-templates select="$partyObj" mode="organisation"/>
+              </cit:party>
+            </xsl:if>
+          </xsl:if>
+        </xsl:otherwise>
       </xsl:choose>
     </cit:CI_Responsibility>
   </xsl:template>
@@ -85,7 +101,7 @@
               <gco:CharacterString>
                 <xsl:value-of select="normalize-space(
                   eCH0271_1:name/Localisation_V2:MultilingualMText/Localisation_V2:LocalisedText[1]/
-                  Localisation_V2:LocalisedMText/Localisation_V2:Text[1]
+                  Localisation_V2:LocalisedMText[1]/Localisation_V2:Text[1]
                 )"/>
               </gco:CharacterString>
             </xsl:when>
@@ -94,7 +110,7 @@
               <gco:CharacterString>
                 <xsl:value-of select="normalize-space(
                   eCH0271_1:name/LocalisationCH_V2:MultilingualMText/LocalisationCH_V2:LocalisedText[1]/
-                  LocalisationCH_V2:LocalisedMText/LocalisationCH_V2:Text[1]
+                  LocalisationCH_V2:LocalisedMText[1]/LocalisationCH_V2:Text[1]
                 )"/>
               </gco:CharacterString>
             </xsl:when>
@@ -149,7 +165,26 @@
       <xsl:if test="eCH0271_1:organisationAcronym">
         <che:organisationAcronym>
           <gco:CharacterString>
-            <xsl:value-of select="normalize-space(eCH0271_1:organisationAcronym)"/>
+            <xsl:choose>
+              <!-- Localisation_V2 structure -->
+              <xsl:when test="eCH0271_1:organisationAcronym/Localisation_V2:MultilingualMText/Localisation_V2:LocalisedText">
+                <xsl:value-of select="normalize-space(
+                  eCH0271_1:organisationAcronym/Localisation_V2:MultilingualMText/Localisation_V2:LocalisedText[1]/
+                  Localisation_V2:LocalisedMText[1]/Localisation_V2:Text[1]
+                )"/>
+              </xsl:when>
+              <!-- LocalisationCH_V2 structure -->
+              <xsl:when test="eCH0271_1:organisationAcronym/LocalisationCH_V2:MultilingualMText/LocalisationCH_V2:LocalisedText">
+                <xsl:value-of select="normalize-space(
+                  eCH0271_1:organisationAcronym/LocalisationCH_V2:MultilingualMText/LocalisationCH_V2:LocalisedText[1]/
+                  LocalisationCH_V2:LocalisedMText[1]/LocalisationCH_V2:Text[1]
+                )"/>
+              </xsl:when>
+              <!-- Fallback: direct text -->
+              <xsl:otherwise>
+                <xsl:value-of select="normalize-space(eCH0271_1:organisationAcronym)"/>
+              </xsl:otherwise>
+            </xsl:choose>
           </gco:CharacterString>
         </che:organisationAcronym>
       </xsl:if>

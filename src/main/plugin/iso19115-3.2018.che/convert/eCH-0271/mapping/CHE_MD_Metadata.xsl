@@ -57,6 +57,31 @@
         <xsl:apply-templates select="eCH0271_1:defaultLocale/eCH0271_1:PT_Locale" mode="locale"/>
       </xsl:if>
 
+      <!-- other locales (multilingual support) -->
+      <xsl:for-each select="eCH0271_1:otherLocale">
+        <mdb:otherLocale>
+          <xsl:choose>
+            <xsl:when test="eCH0271_1:PT_Locale">
+              <xsl:apply-templates select="eCH0271_1:PT_Locale" mode="other-locale"/>
+            </xsl:when>
+          </xsl:choose>
+        </mdb:otherLocale>
+      </xsl:for-each>
+
+      <!-- metadata linkage (reference to this metadata record online) -->
+      <mdb:metadataLinkage>
+        <cit:CI_OnlineResource>
+          <cit:linkage>
+            <gco:CharacterString>
+              <xsl:value-of select="concat('http://geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/', substring(eCH0271_1:metadataIdentifier/eCH0271_1:MD_Identifier/eCH0271_1:code/Localisation_V2:MultilingualMText/Localisation_V2:LocalisedText[1]/Localisation_V2:LocalisedMText/Localisation_V2:Text, 1, 36))"/>
+            </gco:CharacterString>
+          </cit:linkage>
+          <cit:function>
+            <cit:CI_OnLineFunctionCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="information">information</cit:CI_OnLineFunctionCode>
+          </cit:function>
+        </cit:CI_OnlineResource>
+      </mdb:metadataLinkage>
+
       <!-- Metadata scope (ili:ref reference OR direct object OR via association) -->
       <xsl:choose>
         <!-- Priority 1: Direct reference in CHE_MD_Metadata -->
@@ -115,7 +140,11 @@
           <xsl:if test="$contactAssoc">
             <xsl:variable name="contactRef" select="$contactAssoc/eCH0271_1:contact/@ili:ref"/>
             <xsl:variable name="contactObj" select="key('byTID', $contactRef)"/>
-            <xsl:apply-templates select="$contactObj" mode="contact"/>
+            <xsl:if test="$contactObj/self::eCH0271_1:CI_Responsibility">
+              <mdb:contact>
+                <xsl:apply-templates select="$contactObj" mode="responsibility"/>
+              </mdb:contact>
+            </xsl:if>
           </xsl:if>
         </xsl:otherwise>
       </xsl:choose>
@@ -164,15 +193,28 @@
         </xsl:otherwise>
       </xsl:choose>
 
-      <!-- Data identification (via MD_MetadataidentificationInfo association) -->
-      <xsl:variable name="dataIdAssoc"
-        select="/ili:transfer/ili:datasection/eCH0271_1:eCH0271/eCH0271_1:MD_MetadataidentificationInfo
-                [eCH0271_1:MD_Metadata/@ili:ref = $mdTID]"/>
-      <xsl:if test="$dataIdAssoc">
-        <xsl:variable name="dataIdRef" select="$dataIdAssoc/eCH0271_1:identificationInfo/@ili:ref"/>
-        <xsl:variable name="dataIdObj" select="key('byTID', $dataIdRef)"/>
-        <xsl:apply-templates select="$dataIdObj" mode="data-id"/>
-      </xsl:if>
+      <!-- Data identification (via MD_MetadataidentificationInfo association OR inverse reference) -->
+      <xsl:choose>
+        <xsl:when test="/ili:transfer/ili:datasection/eCH0271_1:eCH0271/eCH0271_1:MD_MetadataidentificationInfo
+                        [eCH0271_1:MD_Metadata/@ili:ref = $mdTID]">
+          <!-- Forward reference: Metadata → IdentificationInfo via association -->
+          <xsl:variable name="dataIdAssoc"
+            select="/ili:transfer/ili:datasection/eCH0271_1:eCH0271/eCH0271_1:MD_MetadataidentificationInfo
+                    [eCH0271_1:MD_Metadata/@ili:ref = $mdTID]"/>
+          <xsl:variable name="dataIdRef" select="$dataIdAssoc/eCH0271_1:identificationInfo/@ili:ref"/>
+          <xsl:variable name="dataIdObj" select="key('byTID', $dataIdRef)"/>
+          <xsl:apply-templates select="$dataIdObj" mode="data-id"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <!-- Inverse reference: CHE_MD_DataIdentification contains ref to this Metadata -->
+          <xsl:variable name="dataIdObj"
+            select="/ili:transfer/ili:datasection/eCH0271_1:eCH0271/eCH0271_1:CHE_MD_DataIdentification
+                    [eCH0271_1:MD_Metadata/@ili:ref = $mdTID]"/>
+          <xsl:if test="$dataIdObj">
+            <xsl:apply-templates select="$dataIdObj" mode="data-id"/>
+          </xsl:if>
+        </xsl:otherwise>
+      </xsl:choose>
 
       <!-- Distribution info (direct ref OR direct MD_Distribution object OR via association) -->
       <xsl:choose>

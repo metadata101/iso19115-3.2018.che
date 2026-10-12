@@ -16,11 +16,22 @@
        Converts eCH0271_1:PT_Locale to lan:PT_Locale within mdb:defaultLocale
        ================================================================ -->
   <xsl:template match="eCH0271_1:PT_Locale" mode="locale">
+    <xsl:variable name="langCode" select="normalize-space(eCH0271_1:language)"/>
+    <xsl:variable name="langId">
+      <xsl:choose>
+        <xsl:when test="$langCode = 'de'">DE</xsl:when>
+        <xsl:when test="$langCode = 'fr'">FR</xsl:when>
+        <xsl:when test="$langCode = 'it'">IT</xsl:when>
+        <xsl:when test="$langCode = 'en'">EN</xsl:when>
+        <xsl:when test="$langCode = 'rm'">RM</xsl:when>
+        <xsl:otherwise><xsl:value-of select="translate($langCode, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/></xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
     <mdb:defaultLocale xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
-      <lan:PT_Locale>
+      <lan:PT_Locale id="{$langId}">
         <lan:language>
           <xsl:call-template name="language-code">
-            <xsl:with-param name="value" select="normalize-space(eCH0271_1:language)"/>
+            <xsl:with-param name="value" select="$langCode"/>
           </xsl:call-template>
         </lan:language>
         <xsl:if test="eCH0271_1:country">
@@ -62,6 +73,51 @@
         <lan:country>
           <gco:CharacterString>
             <xsl:value-of select="eCH0271_1:country"/>
+          </gco:CharacterString>
+        </lan:country>
+      </xsl:if>
+      <!-- Character encoding: must be present (with nilReason if missing) -->
+      <xsl:choose>
+        <xsl:when test="eCH0271_1:characterEncoding">
+          <lan:characterEncoding>
+            <xsl:call-template name="character-set-code">
+              <xsl:with-param name="value" select="normalize-space(eCH0271_1:characterEncoding)"/>
+            </xsl:call-template>
+          </lan:characterEncoding>
+        </xsl:when>
+        <xsl:otherwise>
+          <lan:characterEncoding gco:nilReason="unknown" />
+        </xsl:otherwise>
+      </xsl:choose>
+    </lan:PT_Locale>
+  </xsl:template>
+
+  <!-- ================================================================
+       otherLocale processor (metadata level - without wrapper)
+       Used within mdb:otherLocale context - generates lan:PT_Locale with id
+       ================================================================ -->
+  <xsl:template match="eCH0271_1:PT_Locale" mode="other-locale">
+    <xsl:variable name="langCode" select="normalize-space(eCH0271_1:language)"/>
+    <xsl:variable name="langId">
+      <xsl:choose>
+        <xsl:when test="$langCode = 'de'">DE</xsl:when>
+        <xsl:when test="$langCode = 'fr'">FR</xsl:when>
+        <xsl:when test="$langCode = 'it'">IT</xsl:when>
+        <xsl:when test="$langCode = 'en'">EN</xsl:when>
+        <xsl:when test="$langCode = 'rm'">RM</xsl:when>
+        <xsl:otherwise><xsl:value-of select="translate($langCode, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/></xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <lan:PT_Locale id="{$langId}">
+      <lan:language>
+        <xsl:call-template name="language-code">
+          <xsl:with-param name="value" select="$langCode"/>
+        </xsl:call-template>
+      </lan:language>
+      <xsl:if test="eCH0271_1:country">
+        <lan:country>
+          <gco:CharacterString>
+            <xsl:value-of select="normalize-space(eCH0271_1:country)"/>
           </gco:CharacterString>
         </lan:country>
       </xsl:if>

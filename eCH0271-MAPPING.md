@@ -7,7 +7,7 @@ This document describes the **bijective mapping and transformation** for the pro
 ### Definitions
 
 **eCH0271-XTF**
-- [eCH-0271 Standard](https://www.ech.ch/sites/default/files/imce/eCH-Dossier/eCH-Dossier_PDF_Publikationen/Hauptdokument/STAN_f_REP_2025-01-21_eCH-0271_V1.0.0_Profil%20pour%20les%20g%C3%A9om%C3%A9tadonn%C3%A9es.pdf): Swiss federal standard for metadata in Switzerland.
+- [eCH-0271 Profile](https://www.ech.ch/sites/default/files/imce/eCH-Dossier/eCH-Dossier_PDF_Publikationen/Hauptdokument/STAN_f_REP_2025-01-21_eCH-0271_V1.0.0_Profil%20pour%20les%20g%C3%A9om%C3%A9tadonn%C3%A9es.pdf): Swiss federal profile based on iso19115 for metadata in Switzerland.
 - [INTERLIS Model for eCH-0271](https://www.ech.ch/sites/default/files/imce/eCH-Dossier/0271-0310/eCH-0271/1.0.0/Beilagen/eCH-0271-1-0-0%20ili.zip): `eCH-0271-1-0-0.ili` **v1.0.0** (INTERLIS/UML)
 - Format: `.xtf` (INTERLIS 2.4 transfer format) is technically an XML file using a specialized XML encoding with strict rules, governed by the INTERLIS standard, rather than free-form XML”
 - Source: Files exported from INTERLIS databases or tools
@@ -15,7 +15,7 @@ This document describes the **bijective mapping and transformation** for the pro
 - Use Case: Legacy metadata system, INTERLIS-based workflows
 
 **iso19115-3.2018.che**
-- [eCH-0271 Standard](https://www.ech.ch/sites/default/files/imce/eCH-Dossier/eCH-Dossier_PDF_Publikationen/Hauptdokument/STAN_f_REP_2025-01-21_eCH-0271_V1.0.0_Profil%20pour%20les%20g%C3%A9om%C3%A9tadonn%C3%A9es.pdf): Swiss federal standard for metadata in Switzerland.
+- [eCH-0271 Profile](https://www.ech.ch/sites/default/files/imce/eCH-Dossier/eCH-Dossier_PDF_Publikationen/Hauptdokument/STAN_f_REP_2025-01-21_eCH-0271_V1.0.0_Profil%20pour%20les%20g%C3%A9om%C3%A9tadonn%C3%A9es.pdf): Swiss federal profile based on iso19115 standard for metadata in Switzerland.
 - [Schema for eCH-0271](https://www.ech.ch/sites/default/files/imce/eCH-Dossier/0271-0310/eCH-0271/1.0.0/Beilagen/eCH-0271-1-0-0.zip): `eCH-0271-1-0-0.xsd` **v1.0.0** (XSD)
 - Format: `.xml` (iso19115-3.2018.che XML)
 - Location: GeoNetwork metadata catalog (processed through this plugin)

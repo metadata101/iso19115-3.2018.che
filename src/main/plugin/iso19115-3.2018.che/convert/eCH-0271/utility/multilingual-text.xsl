@@ -26,7 +26,7 @@
           <!-- Extract text from first language entry only (not Language code) -->
           <xsl:value-of select="normalize-space(
             Localisation_V2:MultilingualMText/Localisation_V2:LocalisedText[1]/
-            Localisation_V2:LocalisedMText/Localisation_V2:Text[1]
+            Localisation_V2:LocalisedMText[1]/Localisation_V2:Text[1]
           )"/>
         </gco:CharacterString>
       </xsl:when>
@@ -36,7 +36,7 @@
           <!-- Extract text from first language entry only (not Language code) -->
           <xsl:value-of select="normalize-space(
             LocalisationCH_V2:MultilingualMText/LocalisationCH_V2:LocalisedText[1]/
-            LocalisationCH_V2:LocalisedMText/LocalisationCH_V2:Text[1]
+            LocalisationCH_V2:LocalisedMText[1]/LocalisationCH_V2:Text[1]
           )"/>
         </gco:CharacterString>
       </xsl:when>
@@ -46,7 +46,7 @@
           <!-- Extract text from nested Localisation_V2 structure -->
           <xsl:value-of select="normalize-space(
             eCH0271_1:MultilingualMText/Localisation_V2:LocalisedText[1]/
-            Localisation_V2:LocalisedMText/Localisation_V2:Text[1]
+            Localisation_V2:LocalisedMText[1]/Localisation_V2:Text[1]
           )"/>
         </gco:CharacterString>
       </xsl:when>

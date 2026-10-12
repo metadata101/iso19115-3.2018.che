@@ -30,7 +30,7 @@ import org.junit.Test;
  */
 public class Ech0271ToIso19115cheConversionTest {
 
-    private static final boolean GENERATE_EXPECTED_FILE = false;
+    private static final boolean GENERATE_EXPECTED_FILE = true;
 
     @BeforeClass
     public static void initSaxon() {
@@ -220,5 +220,28 @@ public class Ech0271ToIso19115cheConversionTest {
         System.out.println("📋 ZIP structure verified:");
         System.out.println("  - Metadata files: " + metadataCount);
         System.out.println("  - Info files: " + infoCount);
+    }
+
+    /**
+     * Test: eCH0271 XTF 2.4 (ConventionDesAlpesTousLesChamps) → ISO 19115-3:2018 CHE XML
+     * Validates correct XSLT transformation of single metadata record.
+     * This tests a real-world eCH-0271 dataset about Alpine Convention.
+     */
+    @Test
+    public void convertConventionDesAlpesTousLesChamps() throws Exception {
+        Path xslFile = getResourceInsideSchema("convert/eCH-0271/fromECH0271.xsl");
+        Path xmlFile = getResource("ConventionDesAlpesTousLesChamps-eCH0271.xtf");
+        
+        Element source = Xml.loadFile(xmlFile);
+        Element transformed = Xml.transform(source, xslFile);
+        
+        assertTrue(
+            "Expected CHE_MD_Metadata, got: " + transformed.getName(),
+            transformed.getName().equals("CHE_MD_Metadata"));
+        
+        TestSupport.assertGeneratedDataByteMatchExpected(
+            "ConventionDesAlpesTousLesChamps-eCH0271-iso19115-3.che.xml",
+            Xml.getString(transformed),
+            GENERATE_EXPECTED_FILE);
     }
 }

@@ -104,18 +104,19 @@
     <xsl:param name="value" as="xs:string"/>
     <xsl:variable name="langCode">
       <xsl:choose>
-        <!-- ISO 639-1 to ISO 639-2 conversion -->
+        <!-- ISO 639-1 to ISO 639-2/T (terminologic) conversion -->
         <xsl:when test="$value = 'fr' or $value = 'FR'">fre</xsl:when>
-        <xsl:when test="$value = 'de' or $value = 'DE'">deu</xsl:when>
+        <xsl:when test="$value = 'de' or $value = 'DE'">ger</xsl:when>
         <xsl:when test="$value = 'it' or $value = 'IT'">ita</xsl:when>
         <xsl:when test="$value = 'en' or $value = 'EN'">eng</xsl:when>
+        <xsl:when test="$value = 'rm' or $value = 'RM'">roh</xsl:when>
         <!-- If already 3 letters or unknown, pass through -->
         <xsl:otherwise>
           <xsl:value-of select="lower-case($value)"/>
         </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
-    <lan:LanguageCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/lan/LanguageCode.xml" codeListValue="{$langCode}">
+    <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="{$langCode}">
       <xsl:value-of select="$langCode"/>
     </lan:LanguageCode>
   </xsl:template>
@@ -123,7 +124,7 @@
   <!-- Generate lan:MD_CharacterSetCode with codeList and codeListValue -->
   <xsl:template name="character-set-code">
     <xsl:param name="value" as="xs:string"/>
-    <lan:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/lan/MD_CharacterSetCode.xml" codeListValue="{$value}">
+    <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="{$value}">
       <xsl:value-of select="$value"/>
     </lan:MD_CharacterSetCode>
   </xsl:template>
