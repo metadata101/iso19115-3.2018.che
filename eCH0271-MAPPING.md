@@ -143,7 +143,7 @@ iso19115-3.2018.che requires code elements to include `codeList` and `codeListVa
 
 **XTF Source Example** (eCH-0271):
 ```xml
-<!-- Input from eCH-0271 XTF: -->
+<!-- Input from eCH-0271-XTF XTF: -->
 <eCH0271_1:defaultLocale>
   <eCH0271_1:PT_Locale>
     <eCH0271_1:language>fr</eCH0271_1:language>
@@ -319,7 +319,7 @@ iso19115-3.2018.che requires certain elements to be always present (even if empt
 **Current Status**:
 | Direction | File | Status |
 |-----------|------|--------|
-| XTF → ISO | [CI_Date.xsl](src/main/plugin/iso19115-3.2018.che/convert/eCH-0271/mapping/CI_Date.xsl) | ⚠️ Accepts ANY timestamp (no validation) |
+| XTF → ISO | [CI_Date.xsl](src/main/plugin/iso19115-3.2018.che/convert/eCH-0271-XTF/mapping/CI_Date.xsl) | ⚠️ Accepts ANY timestamp (no validation) |
 | ISO → XTF | toECH0271.xsl | ✅ Reconstructs date-only correctly |
 
 **Implementation Needed** (in CI_Date.xsl):
@@ -569,7 +569,7 @@ The `convert/eCH-0271/utility/` directory contains four hand-maintained XSLT hel
 
 **Template Mode**: `mode="multilingual-text"`
 
-**Inverse Direction (ISO→XTF)**: Not used. Instead, `toECH0271.xsl` reconstructs hardcoded Localisation_V2 structure with default language (French)
+**Inverse Direction (ISO→XTF)**: Not used. Instead, `toECH0271-XTF.xsl` reconstructs hardcoded Localisation_V2 structure with default language (French)
 
 ### 2. dateTime.xsl
 
@@ -585,7 +585,7 @@ The `convert/eCH-0271/utility/` directory contains four hand-maintained XSLT hel
 
 **Current eCH-0271 Date Handling**:
 - **XTF→ISO**: Handled inline in `mapping/CI_Date.xsl` (direct datetime formatting)
-- **ISO→XTF**: Handled inline in `toECH0271.xsl` (hardcoded Localisation_V2 structure reconstruction)
+- **ISO→XTF**: Handled inline in `toECH0271-XTF.xsl` (hardcoded Localisation_V2 structure reconstruction)
 
 **Recommendation**: Consider removing from eCH-0271/utility (consolidate with ISO19139 version)
 
@@ -616,7 +616,7 @@ The `convert/eCH-0271/utility/` directory contains four hand-maintained XSLT hel
 
 **Current eCH-0271 Multilingual Handling**:
 - **XTF→ISO**: `utility/multilingual-text.xsl` (extracts from Localisation_V2 → gco:CharacterString)
-- **ISO→XTF**: `toECH0271.xsl` inline (reconstructs hardcoded Localisation_V2 structure)
+- **ISO→XTF**: `toECH0271-XTF.xsl` inline (reconstructs hardcoded Localisation_V2 structure)
 
 **Recommendation**: Consider removing from eCH-0271/utility (consolidate with ISO19139 version)
 
@@ -631,7 +631,7 @@ The eCH-0271 ↔ iso19115-3.2018.che bidirectional transformations are **intenti
 | Aspect | Forward (XTF→ISO) | Reverse (ISO→XTF) |
 |--------|------|------|
 | **Input Structure** | eCH-0271 `Localisation_V2:MultilingualMText` (language-keyed, multi-language native) | ISO `gco:CharacterString` (primary string only) + `lan:PT_FreeText` (optional extended) |
-| **Transformation** | Extract first language only via `utility/multilingual-text.xsl` | **Hardcoded reconstruction** in `toECH0271.xsl` with default language (French) |
+| **Transformation** | Extract first language only via `utility/multilingual-text.xsl` | **Hardcoded reconstruction** in `toECH0271-XTF.xsl` with default language (French) |
 | **Information Loss** | **YES**: Only first language preserved; remaining languages discarded | **YES**: Cannot reconstruct multiple languages from ISO structure; forced to default |
 | **Rationale** | eCH-0271 multilingual model (per-language records) is richer than ISO; round-trip is impossible without external metadata | ISO does not encode language selection metadata; reconstruction requires assumptions |
 | **Consequence** | XTF→ISO→XTF cycle loses multilingual information | ISO→XTF→ISO cycle loses multilingual information |
@@ -643,7 +643,7 @@ The eCH-0271 ↔ iso19115-3.2018.che bidirectional transformations are **intenti
 | Aspect | Forward (XTF→ISO) | Reverse (ISO→XTF) |
 |--------|------|------|
 | **Utility Template** | Historical `dateTime.xsl` (unused) | Historical `dateTime.xsl` (unused) |
-| **Actual Implementation** | Inline in `mapping/CI_Date.xsl` (direct datetime to `gco:Date`/`gco:DateTime`) | Inline in `toECH0271.xsl` (hardcoded XTF datetime reconstruction) |
+| **Actual Implementation** | Inline in `mapping/CI_Date.xsl` (direct datetime to `gco:Date`/`gco:DateTime`) | Inline in `toECH0271-XTF.xsl` (hardcoded XTF datetime reconstruction) |
 | **Bijection Enforcement** | Validates timestamps are midnight-only (T00:00:00.0) or date-only → guarantees round-trip fidelity | Accepts any ISO datetime but may alter precision when encoding into XTF |
 
 #### 3. **Reference Resolution**
@@ -675,7 +675,7 @@ The eCH-0271 ↔ iso19115-3.2018.che bidirectional transformations are **intenti
 - See Bijection Constraint documentation (Section 6) for timestamp-specific round-trip requirements
 
 **2. Monolithic Reverse Engine**
-- `toECH0271.xsl` (~770 lines) intentionally avoids modular includes to:
+- `toECH0271-XTF.xsl` (~770 lines) intentionally avoids modular includes to:
   - Reduce template name collision risk across 12 mapping files
   - Ensure deterministic ID generation (generate-id functions are evaluated in single context)
   - Simplify deployment (single file to review vs 16 distributed files)

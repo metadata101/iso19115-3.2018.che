@@ -18,7 +18,7 @@ import org.junit.Test;
  * 
  * Uses minimal test case (single metadata record) to validate correct mapping.
  */
-public class Iso19115cheToEch0271ConversionTest {
+public class Iso19115cheToEch0271XtfConversionTest {
 
     private static final boolean GENERATE_EXPECTED_FILE = false;
 
@@ -31,8 +31,8 @@ public class Iso19115cheToEch0271ConversionTest {
      * Reverse: ISO 19115-3:2018 CHE XML (drones_vd) → eCH0271 XTF 2.4
      */
     @Test
-    public void convertDronesVdIso19115cheToEch0271() throws Exception {
-        Path xslFile = getResourceInsideSchema("convert/eCH-0271/toECH0271.xsl");
+    public void convertDronesVdIso19115cheToEch0271Xtf() throws Exception {
+        Path xslFile = getResourceInsideSchema("convert/eCH-0271-XTF/toECH0271-XTF.xsl");
         Path xmlFile = getResource("drones_vd-to-iso19115-3.che.xml");
         
         Element source = Xml.loadFile(xmlFile);

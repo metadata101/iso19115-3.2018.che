@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- eCH-0271 → ISO 19115-3:2018 CHE: CHE_MD_Metadata root mapping
+<!-- eCH-0271-XTF → ISO 19115-3:2018 CHE: CHE_MD_Metadata root mapping
      Handles root metadata element: identifiers, contacts, scopes, standards
      XSLT 2.0, Saxon HE 9.1+ compatible -->
 <xsl:stylesheet version="2.0"

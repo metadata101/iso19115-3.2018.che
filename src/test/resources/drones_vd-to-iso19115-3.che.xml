@@ -7,15 +7,25 @@
     </mcc:MD_Identifier>
   </mdb:metadataIdentifier>
   <mdb:defaultLocale xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
-    <lan:PT_Locale xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
+    <lan:PT_Locale xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" id="FR">
       <lan:language>
-        <lan:LanguageCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/lan/LanguageCode.xml" codeListValue="fre">fre</lan:LanguageCode>
+        <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="fre">fre</lan:LanguageCode>
       </lan:language>
       <lan:characterEncoding>
-        <lan:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/lan/MD_CharacterSetCode.xml" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
+        <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
       </lan:characterEncoding>
     </lan:PT_Locale>
   </mdb:defaultLocale>
+  <mdb:metadataLinkage xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
+    <cit:CI_OnlineResource xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
+      <cit:linkage>
+        <gco:CharacterString>http://geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/</gco:CharacterString>
+      </cit:linkage>
+      <cit:function>
+        <cit:CI_OnLineFunctionCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="information">information</cit:CI_OnLineFunctionCode>
+      </cit:function>
+    </cit:CI_OnlineResource>
+  </mdb:metadataLinkage>
   <mdb:metadataScope xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
     <mdb:MD_MetadataScope>
       <mdb:resourceScope>
@@ -232,7 +242,7 @@
       <mri:defaultLocale xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0">
         <lan:PT_Locale xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
           <lan:language>
-            <lan:LanguageCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/lan/LanguageCode.xml" codeListValue="fre">fre</lan:LanguageCode>
+            <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="fre">fre</lan:LanguageCode>
           </lan:language>
           <lan:characterEncoding gco:nilReason="unknown" />
         </lan:PT_Locale>

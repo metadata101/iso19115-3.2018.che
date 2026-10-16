@@ -28,9 +28,9 @@ import org.junit.Test;
  * - Multiple records: XTF → <root> wrapper (WORKFLOW B intermediate)
  * - Multiple records via MEF: XTF → MEF v2 ZIP for batch import
  */
-public class Ech0271ToIso19115cheConversionTest {
+public class Ech0271XtfToIso19115cheConversionTest {
 
-    private static final boolean GENERATE_EXPECTED_FILE = true;
+    private static final boolean GENERATE_EXPECTED_FILE = false;
 
     @BeforeClass
     public static void initSaxon() {
@@ -42,8 +42,8 @@ public class Ech0271ToIso19115cheConversionTest {
      * Validates correct XSLT transformation of single metadata record.
      */
     @Test
-    public void convertDronesVdEch0271() throws Exception {
-        Path xslFile = getResourceInsideSchema("convert/eCH-0271/fromECH0271.xsl");
+    public void convertDronesVdEch0271Xtf() throws Exception {
+        Path xslFile = getResourceInsideSchema("convert/eCH-0271-XTF/fromECH0271-XTF.xsl");
         Path xmlFile = getResource("drones_vd.xtf");
         
         Element source = Xml.loadFile(xmlFile);
@@ -65,8 +65,8 @@ public class Ech0271ToIso19115cheConversionTest {
      * Result should be wrapped in temporary <root> container for MEF processing.
      */
     @Test
-    public void convertTestMef3RecordsEch0271() throws Exception {
-        Path xslFile = getResourceInsideSchema("convert/eCH-0271/fromECH0271.xsl");
+    public void convertTestMef3RecordsEch0271Xtf() throws Exception {
+        Path xslFile = getResourceInsideSchema("convert/eCH-0271-XTF/fromECH0271-XTF.xsl");
         Path xmlFile = getResource("test_mef_xtf_3records.xtf");
         
         Element source = Xml.loadFile(xmlFile);
@@ -96,7 +96,7 @@ public class Ech0271ToIso19115cheConversionTest {
      */
     @Test
     public void transformMultipleRecordsToMefZip() throws Exception {
-        Path xslFile = getResourceInsideSchema("convert/eCH-0271/fromECH0271.xsl");
+        Path xslFile = getResourceInsideSchema("convert/eCH-0271-XTF/fromECH0271-XTF.xsl");
         Path xtfFile = getResource("test_mef_xtf_3records.xtf");
         
         // Transform XTF → MEF v2 ZIP
@@ -147,8 +147,8 @@ public class Ech0271ToIso19115cheConversionTest {
      * Result should be wrapped in temporary <root> container for MEF processing.
      */
     @Test
-    public void convertTestMef2RecordsEch0271() throws Exception {
-        Path xslFile = getResourceInsideSchema("convert/eCH-0271/fromECH0271.xsl");
+    public void convertTestMef2RecordsEch0271Xtf() throws Exception {
+        Path xslFile = getResourceInsideSchema("convert/eCH-0271-XTF/fromECH0271-XTF.xsl");
         Path xmlFile = getResource("test_mef_xtf_2records.xtf");
         
         Element source = Xml.loadFile(xmlFile);
@@ -177,7 +177,7 @@ public class Ech0271ToIso19115cheConversionTest {
      */
     @Test
     public void transformTestMef2RecordsToMefZip() throws Exception {
-        Path xslFile = getResourceInsideSchema("convert/eCH-0271/fromECH0271.xsl");
+        Path xslFile = getResourceInsideSchema("convert/eCH-0271-XTF/fromECH0271-XTF.xsl");
         Path xtfFile = getResource("test_mef_xtf_2records.xtf");
         
         // Transform XTF → MEF v2 ZIP
@@ -225,11 +225,11 @@ public class Ech0271ToIso19115cheConversionTest {
     /**
      * Test: eCH0271 XTF 2.4 (ConventionDesAlpesTousLesChamps) → ISO 19115-3:2018 CHE XML
      * Validates correct XSLT transformation of single metadata record.
-     * This tests a real-world eCH-0271 dataset about Alpine Convention.
+     * This tests a real-world eCH-0271-XTF dataset about Alpine Convention.
      */
     @Test
     public void convertConventionDesAlpesTousLesChamps() throws Exception {
-        Path xslFile = getResourceInsideSchema("convert/eCH-0271/fromECH0271.xsl");
+        Path xslFile = getResourceInsideSchema("convert/eCH-0271-XTF/fromECH0271-XTF.xsl");
         Path xmlFile = getResource("ConventionDesAlpesTousLesChamps-eCH0271.xtf");
         
         Element source = Xml.loadFile(xmlFile);

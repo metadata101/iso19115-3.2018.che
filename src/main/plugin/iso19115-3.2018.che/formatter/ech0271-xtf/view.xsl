@@ -17,7 +17,7 @@
   xmlns:che="http://geocat.ch/che"
   exclude-result-prefixes="#all">
 
-  <xsl:import href="../../convert/eCH-0271/toECH0271.xsl"/>
+  <xsl:import href="../../convert/eCH-0271-XTF/toECH0271-XTF.xsl"/>
 
   <xsl:output method="xml"
               indent="yes"
