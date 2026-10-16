@@ -44,7 +44,7 @@ public class Ech0271XtfToIso19115cheConversionTest {
     @Test
     public void convertDronesVdEch0271Xtf() throws Exception {
         Path xslFile = getResourceInsideSchema("convert/eCH-0271-XTF/fromECH0271-XTF.xsl");
-        Path xmlFile = getResource("drones_vd.xtf");
+        Path xmlFile = getResource("ech0271-xtf/drones_vd.xtf");
         
         Element source = Xml.loadFile(xmlFile);
         Element transformed = Xml.transform(source, xslFile);
@@ -54,7 +54,7 @@ public class Ech0271XtfToIso19115cheConversionTest {
             transformed.getName().equals("CHE_MD_Metadata"));
         
         TestSupport.assertGeneratedDataByteMatchExpected(
-            "drones_vd-to-iso19115-3.che.xml",
+                "ech0271-xtf/drones_vd-to-iso19115-3.che.xml",
             Xml.getString(transformed),
             GENERATE_EXPECTED_FILE);
     }
@@ -67,7 +67,7 @@ public class Ech0271XtfToIso19115cheConversionTest {
     @Test
     public void convertTestMef3RecordsEch0271Xtf() throws Exception {
         Path xslFile = getResourceInsideSchema("convert/eCH-0271-XTF/fromECH0271-XTF.xsl");
-        Path xmlFile = getResource("test_mef_xtf_3records.xtf");
+        Path xmlFile = getResource("ech0271-xtf/test_mef_xtf_3records.xtf");
         
         Element source = Xml.loadFile(xmlFile);
         Element transformed = Xml.transform(source, xslFile);
@@ -97,7 +97,7 @@ public class Ech0271XtfToIso19115cheConversionTest {
     @Test
     public void transformMultipleRecordsToMefZip() throws Exception {
         Path xslFile = getResourceInsideSchema("convert/eCH-0271-XTF/fromECH0271-XTF.xsl");
-        Path xtfFile = getResource("test_mef_xtf_3records.xtf");
+        Path xtfFile = getResource("ech0271-xtf/test_mef_xtf_3records.xtf");
         
         // Transform XTF → MEF v2 ZIP
         Ech0271ToMefImporter importer = new Ech0271ToMefImporter(xslFile);
@@ -149,7 +149,7 @@ public class Ech0271XtfToIso19115cheConversionTest {
     @Test
     public void convertTestMef2RecordsEch0271Xtf() throws Exception {
         Path xslFile = getResourceInsideSchema("convert/eCH-0271-XTF/fromECH0271-XTF.xsl");
-        Path xmlFile = getResource("test_mef_xtf_2records.xtf");
+        Path xmlFile = getResource("ech0271-xtf/test_mef_xtf_2records.xtf");
         
         Element source = Xml.loadFile(xmlFile);
         Element transformed = Xml.transform(source, xslFile);
@@ -178,7 +178,7 @@ public class Ech0271XtfToIso19115cheConversionTest {
     @Test
     public void transformTestMef2RecordsToMefZip() throws Exception {
         Path xslFile = getResourceInsideSchema("convert/eCH-0271-XTF/fromECH0271-XTF.xsl");
-        Path xtfFile = getResource("test_mef_xtf_2records.xtf");
+        Path xtfFile = getResource("ech0271-xtf/test_mef_xtf_2records.xtf");
         
         // Transform XTF → MEF v2 ZIP
         Ech0271ToMefImporter importer = new Ech0271ToMefImporter(xslFile);
@@ -230,7 +230,7 @@ public class Ech0271XtfToIso19115cheConversionTest {
     @Test
     public void convertConventionDesAlpesTousLesChamps() throws Exception {
         Path xslFile = getResourceInsideSchema("convert/eCH-0271-XTF/fromECH0271-XTF.xsl");
-        Path xmlFile = getResource("ConventionDesAlpesTousLesChamps-eCH0271.xtf");
+        Path xmlFile = getResource("ech0271-xtf/conventionDesAlpesTousLesChamps-eCH0271.xtf");
         
         Element source = Xml.loadFile(xmlFile);
         Element transformed = Xml.transform(source, xslFile);
@@ -240,7 +240,7 @@ public class Ech0271XtfToIso19115cheConversionTest {
             transformed.getName().equals("CHE_MD_Metadata"));
         
         TestSupport.assertGeneratedDataByteMatchExpected(
-            "ConventionDesAlpesTousLesChamps-eCH0271-iso19115-3.che.xml",
+                "ech0271-xtf/conventionDesAlpesTousLesChamps-eCH0271-iso19115-3.che.xml",
             Xml.getString(transformed),
             GENERATE_EXPECTED_FILE);
     }

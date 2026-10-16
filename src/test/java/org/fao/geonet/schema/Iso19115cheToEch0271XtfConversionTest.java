@@ -33,7 +33,7 @@ public class Iso19115cheToEch0271XtfConversionTest {
     @Test
     public void convertDronesVdIso19115cheToEch0271Xtf() throws Exception {
         Path xslFile = getResourceInsideSchema("convert/eCH-0271-XTF/toECH0271-XTF.xsl");
-        Path xmlFile = getResource("drones_vd-to-iso19115-3.che.xml");
+        Path xmlFile = getResource("ech0271-xtf/drones_vd-to-iso19115-3.che.xml");
         
         Element source = Xml.loadFile(xmlFile);
         Element transformed = Xml.transform(source, xslFile);
@@ -43,7 +43,7 @@ public class Iso19115cheToEch0271XtfConversionTest {
             transformed.getName().equals("transfer"));
         
         TestSupport.assertGeneratedDataByteMatchExpected(
-            "drones_vd-reverse-to-ech0271.xtf",
+            "ech0271-xtf/drones_vd-reverse-to-ech0271.xtf",
             Xml.getString(transformed),
             GENERATE_EXPECTED_FILE);
     }
