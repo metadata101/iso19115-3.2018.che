@@ -258,6 +258,50 @@
     </gco:CharacterString>
   </xsl:template>
 
+  <xsl:template match="gmd:CI_OnlineResource/gmd:name" mode="from19139to19115-3.2018">
+    <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+      <xsl:choose>
+        <xsl:when test="gmd:PT_FreeText">
+          <xsl:if test="gcoold:CharacterString">
+            <gco:CharacterString>
+              <xsl:value-of select="gcoold:CharacterString"/>
+            </gco:CharacterString>
+          </xsl:if>
+          <xsl:apply-templates select="gmd:PT_FreeText" mode="from19139to19115-3.2018"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:if test="gcoold:CharacterString">
+            <gco:CharacterString>
+              <xsl:value-of select="gcoold:CharacterString"/>
+            </gco:CharacterString>
+          </xsl:if>
+        </xsl:otherwise>
+      </xsl:choose>
+    </cit:name>
+  </xsl:template>
+
+  <xsl:template match="gmd:CI_OnlineResource/gmd:description" mode="from19139to19115-3.2018">
+    <cit:description xsi:type="lan:PT_FreeText_PropertyType">
+      <xsl:choose>
+        <xsl:when test="gmd:PT_FreeText">
+          <xsl:if test="gcoold:CharacterString">
+            <gco:CharacterString>
+              <xsl:value-of select="gcoold:CharacterString"/>
+            </gco:CharacterString>
+          </xsl:if>
+          <xsl:apply-templates select="gmd:PT_FreeText" mode="from19139to19115-3.2018"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:if test="gcoold:CharacterString">
+            <gco:CharacterString>
+              <xsl:value-of select="gcoold:CharacterString"/>
+            </gco:CharacterString>
+          </xsl:if>
+        </xsl:otherwise>
+      </xsl:choose>
+    </cit:description>
+  </xsl:template>
+
   <xsl:template match="oldche:PT_FreeURL" mode="from19139to19115-3.2018">
     <lan:PT_FreeText>
       <xsl:for-each select="oldche:URLGroup">
