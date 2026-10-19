@@ -659,7 +659,7 @@ Per infurmaziuns detagliadas davart il ISOS guardar www.isos.ch.</lan:LocalisedC
                       <cit:protocol>
                         <gco:CharacterString>WWW:LINK</gco:CharacterString>
                       </cit:protocol>
-                      <cit:name xsi:type="lan:PT_FreeText_PropertyType" gco:nilReason="missing">
+                      <cit:name xsi:type="lan:PT_FreeText_PropertyType">
                         <gco:CharacterString />
                         <lan:PT_FreeText>
                           <lan:textGroup>
@@ -667,7 +667,7 @@ Per infurmaziuns detagliadas davart il ISOS guardar www.isos.ch.</lan:LocalisedC
                           </lan:textGroup>
                         </lan:PT_FreeText>
                       </cit:name>
-                      <cit:description xsi:type="lan:PT_FreeText_PropertyType" gco:nilReason="missing">
+                      <cit:description xsi:type="lan:PT_FreeText_PropertyType">
                         <gco:CharacterString />
                         <lan:PT_FreeText>
                           <lan:textGroup>

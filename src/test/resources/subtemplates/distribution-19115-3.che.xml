@@ -9,10 +9,10 @@
           <cit:protocol>
             <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">WWW:LINK-1.0-http--link</gco:CharacterString>
           </cit:protocol>
-          <cit:name>
+          <cit:name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
             <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" />
           </cit:name>
-          <cit:description>
+          <cit:description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
             <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">Website description</gco:CharacterString>
           </cit:description>
         </cit:CI_OnlineResource>
@@ -29,10 +29,10 @@
           <cit:protocol>
             <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
           </cit:protocol>
-          <cit:name>
+          <cit:name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
             <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" />
           </cit:name>
-          <cit:description>
+          <cit:description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
             <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">Short description of the data</gco:CharacterString>
           </cit:description>
         </cit:CI_OnlineResource>
@@ -49,10 +49,10 @@
           <cit:protocol>
             <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">OGC:WMS-1.1.1-http-get-map</gco:CharacterString>
           </cit:protocol>
-          <cit:name>
+          <cit:name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
             <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">name_of_data_in_the_map_file</gco:CharacterString>
           </cit:name>
-          <cit:description>
+          <cit:description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
             <gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0">Short description of the data</gco:CharacterString>
           </cit:description>
         </cit:CI_OnlineResource>

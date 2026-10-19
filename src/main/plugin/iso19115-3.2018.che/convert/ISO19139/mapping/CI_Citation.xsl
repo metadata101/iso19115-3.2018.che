@@ -79,7 +79,7 @@
                         <cit:protocol gco:nilReason="missing">
                             <gco:CharacterString/>
                         </cit:protocol>
-                        <cit:name gco:nilReason="missing">
+                        <cit:name gco:nilReason="missing" xsi:type="lan:PT_FreeText_PropertyType">
                             <gco:CharacterString/>
                         </cit:name>
                         <cit:description gco:nilReason="missing" xsi:type="lan:PT_FreeText_PropertyType">

@@ -380,13 +380,13 @@
             <xsl:value-of select="$valueInPtFreeTextForMainLanguage"/>
           </xsl:element>
         </xsl:when>
-        <xsl:when test="not($isMultilingual) or
-                        $excluded">
+        <xsl:when test="(not($isMultilingual) or $excluded) and 
+                        not(self::cit:name or self::cit:description)">
           <!-- Copy gco:CharacterString only. PT_FreeText are removed if not multilingual. -->
           <xsl:apply-templates select="gco:CharacterString|gcx:Anchor"/>
         </xsl:when>
         <xsl:otherwise>
-          <!-- Add xsi:type for multilingual element. -->
+          <!-- Add xsi:type for multilingual element or for cit:name/description in CI_OnlineResource. -->
           <xsl:attribute name="xsi:type" select="'lan:PT_FreeText_PropertyType'"/>
 
           <!-- Is the default language value set in a PT_FreeText ? -->
