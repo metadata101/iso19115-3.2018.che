@@ -1049,7 +1049,7 @@
       "type": "parent",
       "label": "linkToParent",
       "config": {
-        "fields": {"associationType": "partOfSeamlessDatabase", "initiativeType": "" },
+        "xpath": "/che:CHE_MD_Metadata/mdb:parentMetadata",
         "sources": {
           "metadataStore": {
             "params": {
