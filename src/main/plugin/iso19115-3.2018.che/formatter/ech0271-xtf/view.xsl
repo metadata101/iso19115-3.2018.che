@@ -23,22 +23,4 @@
               indent="yes"
               encoding="UTF-8"/>
 
-  <!-- Return raw XTF/XML with proper ili:transfer structure (no HTML wrapper) -->
-  <xsl:template match="/" priority="10">
-    <ili:transfer xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS" 
-                   xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1" 
-                   xmlns:Localisation_V2="http://www.interlis.ch/xtf/2.4/Localisation_V2" 
-                   xmlns:geom="http://www.interlis.ch/geometry/1.0" 
-                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <ili:headersection>
-        <ili:models>
-          <ili:model Name="eCH0271_1" Version="2024-01-01"/>
-        </ili:models>
-      </ili:headersection>
-      <ili:datasection>
-        <xsl:apply-templates select="root/mdb:MD_Metadata|mdb:MD_Metadata|root/che:CHE_MD_Metadata|che:CHE_MD_Metadata" mode="iso19115-to-ech0271"/>
-      </ili:datasection>
-    </ili:transfer>
-  </xsl:template>
-
 </xsl:stylesheet>
