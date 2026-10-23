@@ -1,0 +1,68 @@
+package org.fao.geonet.schema;
+
+import java.nio.file.Path;
+
+import org.fao.geonet.utils.TransformerFactoryFactory;
+import org.fao.geonet.utils.Xml;
+import org.jdom.Element;
+
+import static org.fao.geonet.schema.TestSupport.getResource;
+import static org.fao.geonet.schema.TestSupport.getResourceInsideSchema;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+/**
+ * Test for ISO 19115-3:2018 CHE XML → eCH0271 XTF 2.4 reverse conversion.
+ * 
+ * Uses minimal test case (single metadata record) to validate correct mapping.
+ */
+public class Iso19115cheToEch0271XtfConversionTest {
+
+    private static final boolean GENERATE_EXPECTED_FILE = false;
+
+    @BeforeClass
+    public static void initSaxon() {
+        TransformerFactoryFactory.init("net.sf.saxon.TransformerFactoryImpl");
+    }
+
+    /**
+     * Reverse: ISO 19115-3:2018 CHE XML (drones_vd) → eCH0271 XTF 2.4
+     */
+    @Test
+    public void convertDronesVdIso19115cheToEch0271Xtf() throws Exception {
+        Path xslFile = getResourceInsideSchema("convert/eCH-0271-XTF/toECH0271-XTF.xsl");
+        Path xmlFile = getResource("ech0271-xtf/drones_vd-to-iso19115-3.che.xml");
+        
+        Element source = Xml.loadFile(xmlFile);
+        Element transformed = Xml.transform(source, xslFile);
+        
+        assertTrue(
+            "Expected root element 'transfer' (XTF 2.4), got: " + transformed.getName(),
+            transformed.getName().equals("transfer"));
+        
+        TestSupport.assertGeneratedDataByteMatchExpected(
+            "ech0271-xtf/drones_vd-reverse-to-ech0271.xtf",
+            Xml.getString(transformed),
+            GENERATE_EXPECTED_FILE);
+    }
+
+    @Test
+    public void convertConventionDesAlpesVdIso19115cheToEch0271Xtf() throws Exception {
+        Path xslFile = getResourceInsideSchema("convert/eCH-0271-XTF/toECH0271-XTF.xsl");
+        Path xmlFile = getResource("ech0271-xtf/conventionDesAlpesTousLesChamps-eCH0271-iso19115-3.che.xml");
+
+        Element source = Xml.loadFile(xmlFile);
+        Element transformed = Xml.transform(source, xslFile);
+
+        assertTrue(
+                "Expected root element 'transfer' (XTF 2.4), got: " + transformed.getName(),
+                transformed.getName().equals("transfer"));
+
+        TestSupport.assertGeneratedDataByteMatchExpected(
+                "ech0271-xtf/conventionDesAlpesTousLesChamps-reverse-to-ech0271.xtf",
+                Xml.getString(transformed),
+                GENERATE_EXPECTED_FILE);
+    }
+}
