@@ -68,7 +68,6 @@ This is only an implementation suggestion (maybe there is a more GN friendly imp
    - Input: INTERLIS `.xtf` files from eCH-0271 schema
    - Output: iso19115-3.2018.che XML with `che:CHE_MD_Metadata` root element
    - Single records produce direct `CHE_MD_Metadata` elements
-   - Multiple records are wrapped for batch processing via MEF v2 importer
    - Entry point: `convert/fromECH0271.xsl` (GeoNetwork integration wrapper)
 
 2. **Reverse** (iso19115-3.2018.che XML → eCH-0271 XTF)
@@ -77,13 +76,6 @@ This is only an implementation suggestion (maybe there is a more GN friendly imp
    - Generates flat basket structure with proper `@ili:tid`/`@ili:ref` linking
    - Ensures eCH0271_1 namespace compliance and INTERLIS structure
    - Uses: `convert/eCH-0271/toECH0271.xsl` (~770 lines, standalone)
-
-3. **Batch Import** (eCH-0271 XTF → MEF v2 ZIP)
-   - Input: Single or multiple eCH-0271 XTF records
-   - Output: GeoNetwork MEF v2 ZIP format (intermediate for batch import)
-   - Auto-detects record count and applies appropriate workflow
-   - Uses: Java class `Ech0271ToMefImporter` with embedded XSLT transformation
-   - Integrates seamlessly with GeoNetwork batch import pipeline
 
 All transformations are implemented in the XSLT stylesheet suite and produce output conforming to iso19115-3.2018.che specifications with proper namespace declarations.
 
@@ -117,7 +109,7 @@ eCH-0271 uses INTERLIS flat format with `@ili:tid` identifiers and `@ili:ref` re
 
 **Resolution**: Template matches `@ili:ref`, uses `key('byTID', @ili:ref)` to find the object, then processes it.
 
-### 2. Single vs Multiple Records Handling (WORKFLOW A/B)
+### 2. Single Record Handling (WORKFLOW A)
 
 **WORKFLOW A - Single Record** (direct XSLT import in GeoNetwork)
 ```xsl
@@ -125,16 +117,6 @@ eCH-0271 uses INTERLIS flat format with `@ili:tid` identifiers and `@ili:ref` re
   <!-- Returns unwrapped CHE_MD_Metadata element -->
   <xsl:apply-templates select="$mdRecords[1]" mode="md-metadata"/>
 </xsl:when>
-```
-
-**WORKFLOW B - Multiple Records** (MEF v2 ZIP via Java importer)
-```xsl
-<xsl:otherwise>
-  <!-- Wraps results in temporary <root> container -->
-  <root>
-    <xsl:apply-templates select="$mdRecords" mode="md-metadata"/>
-  </root>
-</xsl:otherwise>
 ```
 
 ### 3. Code Elements (with codeList Attributes)
@@ -476,12 +458,9 @@ src/main/plugin/iso19115-3.2018.che/
 │   └── standards.iso.org/19115/-3/
 │       └── eCH-0271-1-0-0.xsd             # eCH-0271 INTERLIS schema (authoritative source)
 │
-├── formatter/ech0271/
-│   ├── view.xsl                           # UI rendering template
-│   └── config.properties                  # Formatter configuration
-│
-└── java/src/org/fao/geonet/schema/
-    └── Ech0271ToMefImporter.java          # Batch importer: XTF records → MEF v2 ZIP
+└── formatter/ech0271/
+    ├── view.xsl                           # UI rendering template
+    └── config.properties                  # Formatter configuration
 ```
 
 ### File Organization Notes
@@ -524,25 +503,7 @@ src/main/plugin/iso19115-3.2018.che/
 - **Output**: eCH-0271 XTF (INTERLIS 2.4 format)
 - **Note**: Bijection constraint enforced for date handling (midnight timestamps only)
 
-**3. Ech0271ToMefImporter** - Transform to MEF v2 (eCH-0271 XTF → GeoNetwork MEF v2 Package) -> can be renamed as **Ech0271
-- **File**: `java/src/org/fao/geonet/schema/Ech0271ToMefImporter.java` (name is legacy; class exports MEF, not imports)
-- **Purpose**: Convert eCH-0271 XTF records into GeoNetwork MEF v2 ZIP packages
-  - **Input**: Single or multiple eCH-0271 XTF records (INTERLIS 2.4)
-  - **Output**: MEF v2 ZIP structure (ready for GeoNetwork batch import)
-- **Public Methods**:
-  - `transformSingle(Path xtfFile)`: Single XTF → CHE_MD_Metadata XML element
-  - `transformToMefZip(Path xtfFile)`: Single/Multiple XTF → MEF v2 ZIP bytes (auto-detects)
-  - `transformToMefZipFile(Path xtfFile, File output)`: Single/Multiple XTF → MEF v2 ZIP file
-- **MEF v2 Structure Generated**:
-  ```
-  mef.zip
-  └── {uuid}/
-      ├── metadata/metadata.xml  (CHE_MD_Metadata)
-      └── info.xml              (MEF metadata header)
-  ```
-- **Use Case**: Batch workflow to prepare eCH-0271 records for GeoNetwork import
-
-**4. Formatter** - Display & Configuration
+**3. Formatter** - Display & Configuration
 - **XSLT**: `formatter/ech0271/view.xsl` - Renders eCH-0271 metadata in GeoNetwork UI
 - **Config**: `formatter/ech0271/config.properties` - Formatter settings
 
@@ -694,11 +655,7 @@ The eCH-0271 ↔ iso19115-3.2018.che bidirectional transformations are **intenti
 **`Ech0271ToIso19115cheConversionTest.java`** - Forward transformation validation
 - Test Methods:
   - `convertDronesVdEch0271()` - Single record forward transformation
-  - `convertTestMef3RecordsEch0271()` - Multi-record (3 records) forward transformation
-  - `convertTestMef2RecordsEch0271()` - Multi-record (2 records: roads, forests) forward transformation
-  - `transformMultipleRecordsToMefZip()` - MEF v2 ZIP generation (3 records)
-  - `transformTestMef2RecordsToMefZip()` - MEF v2 ZIP generation (2 records)
-
+  
 **`Iso19115cheToEch0271ConversionTest.java`** - Reverse transformation validation
 - Test Methods:
   - `convertDronesVdIso19115cheToEch0271()` - Single record reverse transformation
@@ -713,8 +670,6 @@ All test data files are located in `src/test/resources/`:
 | `drones_vd-to-iso19115-3.che.xml` | **Output**: Result of `fromECH0271` transformation | Forward conversion validation (eCH0271 → iso19115-3.2018.che) |
 | `drones_vd-target-to-iso19115-3.che.xml` | **Reference**: Golden copy from geocat.ch | Byte-comparison validation against authoritative source |
 | `drones_vd-reverse-to-ech0271.xtf` | **Output**: Result of `toECH0271` transformation | Reverse conversion validation (ISO → eCH0271, round-trip) |
-| `test_mef_xtf_2records.xtf` | **Test**: Multi-record XTF basket | 2-record test: roads + forests datasets |
-| `test_mef_xtf_3records.xtf` | **Test**: Multi-record XTF basket | 3-record test: Multiple metadata records |
 
 **Reference**: The `drones_vd-target-to-iso19115-3.che.xml` corresponds to the geocat.ch metadata record:
 https://www.geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/2d0af163-1f59-9a24-35fa-1e03166e6188
