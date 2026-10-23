@@ -57,7 +57,7 @@
             <!-- ili:ref="referenceSystem-001"/> -->
 
         <!-- identificationInfo -->
-        <eCH0271_1:identificationInfo ili:ref="identification-001"/>
+        <eCH0271_1:metadataIdentifier ili:ref="identification-001"></eCH0271_1:metadataIdentifier>
 
         <!-- distributionInfo -->
         <!-- <eCH0271_1:distributionInfo -->
@@ -452,10 +452,6 @@
 
       <eCH0271_1:MD_DigitalTransferOptions
           ili:tid="transfer-options-001">
-
-        <eCH0271_1:onLine
-            ili:ref="online-resource-001"/>
-
       </eCH0271_1:MD_DigitalTransferOptions>
 
 
@@ -506,9 +502,6 @@
       <eCH0271_1:MD_DigitalTransferOptions
           ili:tid="transfer-options-002">
 
-        <eCH0271_1:onLine
-            ili:ref="online-resource-002"/>
-
       </eCH0271_1:MD_DigitalTransferOptions>
 
 
@@ -558,9 +551,6 @@
       <eCH0271_1:MD_DigitalTransferOptions
           ili:tid="transfer-options-003">
 
-        <eCH0271_1:onLine
-            ili:ref="online-resource-003"/>
-
       </eCH0271_1:MD_DigitalTransferOptions>
 
 
@@ -609,9 +599,6 @@
       <eCH0271_1:MD_DigitalTransferOptions
           ili:tid="transfer-options-004">
 
-        <eCH0271_1:onLine
-            ili:ref="online-resource-004"/>
-
       </eCH0271_1:MD_DigitalTransferOptions>
 
 
@@ -659,9 +646,6 @@
 
       <eCH0271_1:MD_DigitalTransferOptions
           ili:tid="transfer-options-005">
-
-        <eCH0271_1:onLine
-            ili:ref="online-resource-005"/>
 
       </eCH0271_1:MD_DigitalTransferOptions>
 
