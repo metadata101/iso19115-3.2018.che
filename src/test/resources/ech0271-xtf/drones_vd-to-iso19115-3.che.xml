@@ -385,16 +385,6 @@
           <cit:title>
             <gco:CharacterString>RÈGLEMENT concernant l'interdiction de survol de périmètres déterminés par des aéronefs sans occupants de poids inférieur à 25kg (RISA)</gco:CharacterString>
           </cit:title>
-          <cit:date>
-            <cit:CI_Date>
-              <cit:date>
-                <gco:Date>2019-07-15</gco:Date>
-              </cit:date>
-              <cit:dateType>
-                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cit/CI_DateTypeCode.xml" codeListValue="publication">publication</cit:CI_DateTypeCode>
-              </cit:dateType>
-            </cit:CI_Date>
-          </cit:date>
         </cit:CI_Citation>
       </che:legislationCitation>
     </che:CHE_MD_Legislation>

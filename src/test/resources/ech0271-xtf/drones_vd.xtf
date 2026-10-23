@@ -755,12 +755,6 @@
         <eCH0271_1:MD_Metadata ili:ref="2d0af163-1f59-9a24-35fa-1e03166e6188"/>
       </eCH0271_1:MD_MetadataidentificationInfo>
 
-      <!-- CI_Citationdate: links date to legislation citation -->
-      <eCH0271_1:CI_Citationdate>
-        <eCH0271_1:date ili:ref="legislation-date-001"/>
-        <eCH0271_1:CI_Citation ili:ref="legislation-citation-001"/>
-      </eCH0271_1:CI_Citationdate>
-
     </eCH0271_1:eCH0271>
 
   </ili:datasection>
