@@ -449,10 +449,7 @@ src/main/plugin/iso19115-3.2018.che/
 │       │   └── PT_Locale.xsl
 │       │
 │       └── utility/                       # Hand-maintained helper templates (4 files)
-│           ├── multilingual-text.xsl      # Localized text handling
-│           ├── dateTime.xsl               # Date/datetime formatting
-│           ├── multiLingualCharacterStrings.xsl  # Legacy multilingual support
-│           └── create19115-3Namespaces.xsl  # Namespace declarations
+│           └── multilingual-text.xsl      # Localized text handling
 │
 ├── schema/
 │   └── standards.iso.org/19115/-3/
@@ -532,55 +529,6 @@ The `convert/eCH-0271/utility/` directory contains four hand-maintained XSLT hel
 
 **Inverse Direction (ISO→XTF)**: Not used. Instead, `toECH0271-XTF.xsl` reconstructs hardcoded Localisation_V2 structure with default language (French)
 
-### 2. dateTime.xsl
-
-**Status**: Legacy/Unused - **NOT used by eCH-0271 transformations**
-
-**Purpose** (Historical): Transform ISO 19139 datetime formats to iso19115-3.2018.che (legacy schema conversion)
-
-**Context**: 
-- Designed for ISO 19139 → iso19115-3.2018.che transformations (`gcoold:` namespace → `gco:` namespace)
-- Separate from eCH-0271 workflow
-- eCH-0271 fromECH0271 and toECH0271 handle dates **inline** without referencing this utility
-- See `convert/ISO19139/utility/dateTime.xsl` for active ISO 19139 conversions
-
-**Current eCH-0271 Date Handling**:
-- **XTF→ISO**: Handled inline in `mapping/CI_Date.xsl` (direct datetime formatting)
-- **ISO→XTF**: Handled inline in `toECH0271-XTF.xsl` (hardcoded Localisation_V2 structure reconstruction)
-
-**Recommendation**: Consider removing from eCH-0271/utility (consolidate with ISO19139 version)
-
-### 3. create19115-3Namespaces.xsl
-
-**Purpose**: Centralizes all iso19115-3.2018.che module namespace declarations.
-
-**Key Functions**:
-- Defines 30+ namespace bindings for iso19115-3.2018.che modules: `mdb`, `mri`, `cit`, `gex`, `mcc`, `mco`, `mmi`, `lan`, `srv`, `mrs`, etc.
-- Includes XML Schema instance (`xsi`) namespace for type attributes
-- Provides single source of truth for namespace prefixes
-- Ensures consistent XML document structure across all outputs
-- **Critical for**: Proper iso19115-3.2018.che schema validation
-
-**Template Name**: `add-iso19115-3.2018-namespaces`
-
-### 4. multiLingualCharacterStrings.xsl
-
-**Status**: Legacy/Unused - **NOT used by eCH-0271 transformations**
-
-**Purpose** (Historical): Handle multilingual text in ISO 19139 → iso19115-3.2018.che conversions
-
-**Context**:
-- Designed for ISO 19139 → iso19115-3.2018.che legacy schema conversions
-- Transforms `gmd:` (ISO 19139) → `gco:` / `lan:` (iso19115-3.2018.che) namespaces
-- eCH-0271 transformations use dedicated **multilingual-text.xsl** instead (for eCH-0271 `Localisation_V2` structures)
-- See `convert/ISO19139/utility/multiLingualCharacterStrings.xsl` for active ISO 19139 conversions
-
-**Current eCH-0271 Multilingual Handling**:
-- **XTF→ISO**: `utility/multilingual-text.xsl` (extracts from Localisation_V2 → gco:CharacterString)
-- **ISO→XTF**: `toECH0271-XTF.xsl` inline (reconstructs hardcoded Localisation_V2 structure)
-
-**Recommendation**: Consider removing from eCH-0271/utility (consolidate with ISO19139 version)
-
 ## Asymmetric Transformation Design
 
 ### Why Forward and Reverse Transformations Differ
@@ -603,7 +551,6 @@ The eCH-0271 ↔ iso19115-3.2018.che bidirectional transformations are **intenti
 
 | Aspect | Forward (XTF→ISO) | Reverse (ISO→XTF) |
 |--------|------|------|
-| **Utility Template** | Historical `dateTime.xsl` (unused) | Historical `dateTime.xsl` (unused) |
 | **Actual Implementation** | Inline in `mapping/CI_Date.xsl` (direct datetime to `gco:Date`/`gco:DateTime`) | Inline in `toECH0271-XTF.xsl` (hardcoded XTF datetime reconstruction) |
 | **Bijection Enforcement** | Validates timestamps are midnight-only (T00:00:00.0) or date-only → guarantees round-trip fidelity | Accepts any ISO datetime but may alter precision when encoding into XTF |
 
