@@ -134,7 +134,7 @@
 
       <eCH0271_1:CI_Contact
           ili:tid="contact-001">
-        
+
         <!-- <eCH0271_1:address -->
             <!-- ili:ref="address-001"/> -->
 
@@ -167,7 +167,7 @@
             Police cantonale vaudoise</Localisation_V2:Text>
 							</Localisation_V2:LocalisedMText>
 						</Localisation_V2:LocalisedText>
-					</Localisation_V2:MultilingualMText>	
+					</Localisation_V2:MultilingualMText>
         </eCH0271_1:name>
 
       </eCH0271_1:CI_Individual>
@@ -192,9 +192,9 @@
 
 
 
-<eCH0271_1:MD_ReferenceSystem ili:tid="referenceSystem-001">
-    <eCH0271_1:referenceSystemIdentifier ili:ref="referenceSystemIdentifier-001"/>
-  </eCH0271_1:MD_ReferenceSystem>
+      <eCH0271_1:MD_ReferenceSystem ili:tid="referenceSystem-001">
+          <eCH0271_1:referenceSystemIdentifier ili:ref="referenceSystemIdentifier-001"/>
+      </eCH0271_1:MD_ReferenceSystem>
 
 
       <eCH0271_1:MD_Identifier
@@ -208,7 +208,7 @@
 				<Localisation_V2:Text>MN95 - système suisse (CH1903+)</Localisation_V2:Text>
 							</Localisation_V2:LocalisedMText>
 						</Localisation_V2:LocalisedText>
-					</Localisation_V2:MultilingualMText>		
+					</Localisation_V2:MultilingualMText>
         </eCH0271_1:code>
 
       </eCH0271_1:MD_Identifier>
@@ -234,7 +234,7 @@
             https://www.geocat.ch/geonetwork/srv/fre/catalog.search#/metadata/c3ebd7ba-0fd5-411a-9074-3d0cdc46bc4d</Localisation_V2:Text>
 							</Localisation_V2:LocalisedMText>
 						</Localisation_V2:LocalisedText>
-					</Localisation_V2:MultilingualMText>			
+					</Localisation_V2:MultilingualMText>
         </eCH0271_1:abstract>
 
 
@@ -305,7 +305,7 @@
 				<Localisation_V2:Text>Zones restreintes aux modèles réduits d'aéronefs et aux drones</Localisation_V2:Text>
 							</Localisation_V2:LocalisedMText>
 						</Localisation_V2:LocalisedText>
-					</Localisation_V2:MultilingualMText>			
+					</Localisation_V2:MultilingualMText>
         </eCH0271_1:title>
 
         <!-- <eCH0271_1:date -->
@@ -346,7 +346,7 @@
 				<Localisation_V2:Text>Vaud</Localisation_V2:Text>
 							</Localisation_V2:LocalisedMText>
 						</Localisation_V2:LocalisedText>
-					</Localisation_V2:MultilingualMText>		
+					</Localisation_V2:MultilingualMText>
         </eCH0271_1:description>
 
         <!-- <eCH0271_1:geographicElement -->
@@ -402,7 +402,7 @@
 				<Localisation_V2:Text>Les conditions d'utilisation des géodonnées de l'Etat de Vaud sont exposées dans la norme DCG 8401 :https://www.vd.ch/fileadmin/user_upload/dinf/8000/8401.pdf</Localisation_V2:Text>
 							</Localisation_V2:LocalisedMText>
 						</Localisation_V2:LocalisedText>
-					</Localisation_V2:MultilingualMText>		
+					</Localisation_V2:MultilingualMText>
 
         </eCH0271_1:otherConstraints>
 
@@ -479,7 +479,7 @@
 				<Localisation_V2:Text>Fiche détaillée</Localisation_V2:Text>
 							</Localisation_V2:LocalisedMText>
 						</Localisation_V2:LocalisedText>
-					</Localisation_V2:MultilingualMText>		
+					</Localisation_V2:MultilingualMText>
 </eCH0271_1:name>
 
         <eCH0271_1:description>
@@ -490,7 +490,7 @@
 				<Localisation_V2:Text>Retrouvez toutes les informations sur viageo.ch</Localisation_V2:Text>
 							</Localisation_V2:LocalisedMText>
 						</Localisation_V2:LocalisedText>
-					</Localisation_V2:MultilingualMText>			
+					</Localisation_V2:MultilingualMText>
 		</eCH0271_1:description>
 
         <eCH0271_1:function>information</eCH0271_1:function>
@@ -529,8 +529,8 @@
 				<Localisation_V2:Text>Guichet en ligne</Localisation_V2:Text>
 							</Localisation_V2:LocalisedMText>
 						</Localisation_V2:LocalisedText>
-					</Localisation_V2:MultilingualMText>		
-		
+					</Localisation_V2:MultilingualMText>
+
 		</eCH0271_1:name>
 
         <eCH0271_1:description>
@@ -541,7 +541,7 @@
 				<Localisation_V2:Text>Consultation possible sur le guichet en ligne</Localisation_V2:Text>
 							</Localisation_V2:LocalisedMText>
 						</Localisation_V2:LocalisedText>
-					</Localisation_V2:MultilingualMText>		
+					</Localisation_V2:MultilingualMText>
 	</eCH0271_1:description>
 
       </eCH0271_1:CI_OnlineResource>
@@ -637,8 +637,8 @@
 				<Localisation_V2:Text>Zones restreintes aux modèles réduits d'aéronefs et aux drones (vd.restriction_permanente)</Localisation_V2:Text>
 							</Localisation_V2:LocalisedMText>
 						</Localisation_V2:LocalisedText>
-					</Localisation_V2:MultilingualMText>		
-		
+					</Localisation_V2:MultilingualMText>
+
 		</eCH0271_1:description>
 
       </eCH0271_1:CI_OnlineResource>
@@ -717,7 +717,7 @@
 				<Localisation_V2:Text>RÈGLEMENT concernant l'interdiction de survol de périmètres déterminés par des aéronefs sans occupants de poids inférieur à 25kg (RISA)</Localisation_V2:Text>
 							</Localisation_V2:LocalisedMText>
 						</Localisation_V2:LocalisedText>
-					</Localisation_V2:MultilingualMText>		
+					</Localisation_V2:MultilingualMText>
         </eCH0271_1:title>
 
         <!-- <eCH0271_1:date -->
