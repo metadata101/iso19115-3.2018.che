@@ -369,7 +369,7 @@
         </eCH0271_1:defaultLocale>
         <eCH0271_1:dateInfo>
           <eCH0271_1:CI_Date>
-            <eCH0271_1:date>2026-08-25</eCH0271_1:date>
+            <eCH0271_1:date>2026-08-25T00:00:00.0</eCH0271_1:date>
             <eCH0271_1:dateType>revision</eCH0271_1:dateType>
           </eCH0271_1:CI_Date>
         </eCH0271_1:dateInfo>

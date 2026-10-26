@@ -300,7 +300,7 @@
             <!-- date: MANDATORY DateTime -->
             <xsl:if test="cit:date/gco:Date | cit:date/gco:DateTime">
               <eCH0271_1:date>
-                <xsl:value-of select="normalize-space((cit:date/gco:Date | cit:date/gco:DateTime)[1])"/>
+                <xsl:value-of select="concat(normalize-space((cit:date/gco:Date | cit:date/gco:DateTime)[1]), 'T00:00:00.0')" />
               </eCH0271_1:date>
             </xsl:if>
             <!-- dateType: MANDATORY CI_DateTypeCode -->

@@ -124,13 +124,13 @@
         </eCH0271_1:otherLocale>
         <eCH0271_1:dateInfo>
           <eCH0271_1:CI_Date>
-            <eCH0271_1:date>2021-04-12</eCH0271_1:date>
+            <eCH0271_1:date>2021-04-12T00:00:00.0</eCH0271_1:date>
             <eCH0271_1:dateType>creation</eCH0271_1:dateType>
           </eCH0271_1:CI_Date>
         </eCH0271_1:dateInfo>
         <eCH0271_1:dateInfo>
           <eCH0271_1:CI_Date>
-            <eCH0271_1:date>2026-06-16</eCH0271_1:date>
+            <eCH0271_1:date>2026-06-16T00:00:00.0</eCH0271_1:date>
             <eCH0271_1:dateType>revision</eCH0271_1:dateType>
           </eCH0271_1:CI_Date>
         </eCH0271_1:dateInfo>
