@@ -8,14 +8,16 @@ import org.jdom.Element;
 
 import static org.fao.geonet.schema.TestSupport.getResource;
 import static org.fao.geonet.schema.TestSupport.getResourceInsideSchema;
-import static org.junit.Assert.assertTrue;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import static org.xmlunit.assertj3.XmlAssert.assertThat;
+
+
 /**
  * Test for ISO 19115-3:2018 CHE XML → eCH0271 XTF 2.4 reverse conversion.
- * 
+ * <p>
  * Uses minimal test case (single metadata record) to validate correct mapping.
  */
 public class Iso19115cheToEch0271XtfConversionTest {
@@ -38,10 +40,8 @@ public class Iso19115cheToEch0271XtfConversionTest {
         Element source = Xml.loadFile(xmlFile);
         Element transformed = Xml.transform(source, xslFile);
         
-        assertTrue(
-            "Expected root element 'transfer' (XTF 2.4), got: " + transformed.getName(),
-            transformed.getName().equals("transfer"));
-        
+        assertThat(transformed.getName()).isEqualTo("transfer");
+
         TestSupport.assertGeneratedDataByteMatchExpected(
             "ech0271-xtf/drones_vd-reverse-to-ech0271.xtf",
             Xml.getString(transformed),
@@ -56,9 +56,7 @@ public class Iso19115cheToEch0271XtfConversionTest {
         Element source = Xml.loadFile(xmlFile);
         Element transformed = Xml.transform(source, xslFile);
 
-        assertTrue(
-                "Expected root element 'transfer' (XTF 2.4), got: " + transformed.getName(),
-                transformed.getName().equals("transfer"));
+        assertThat(transformed.getName()).isEqualTo("transfer");
 
         TestSupport.assertGeneratedDataByteMatchExpected(
                 "ech0271-xtf/conventionDesAlpesTousLesChamps-reverse-to-ech0271.xtf",

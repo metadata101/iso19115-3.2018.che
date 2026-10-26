@@ -23,7 +23,6 @@
 
 package org.fao.geonet.schema;
 
-import org.xmlunit.assertj.XmlAssert;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -32,13 +31,15 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Objects;
 
 import static org.junit.Assert.assertArrayEquals;
+import static org.xmlunit.assertj3.XmlAssert.assertThat;
 
 public class TestSupport {
 
     public static Path getResource(String name) throws URISyntaxException {
-        return Paths.get(TestSupport.class.getClassLoader().getResource(name).toURI());
+        return Paths.get(Objects.requireNonNull(TestSupport.class.getClassLoader().getResource(name)).toURI());
     }
 
     public static Path getResourceInsideSchema(String pathToResourceInsideSchema) throws URISyntaxException {
@@ -71,6 +72,6 @@ public class TestSupport {
         } else {
             expected = Files.readString(getResource(expectedFilename));
         }
-        XmlAssert.assertThat(actual).isEqualTo(expected);
+        assertThat(actual).isEqualTo(expected);
     }
 }
