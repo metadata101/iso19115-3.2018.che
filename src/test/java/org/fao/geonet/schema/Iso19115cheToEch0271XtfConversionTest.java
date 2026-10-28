@@ -69,8 +69,9 @@ public class Iso19115cheToEch0271XtfConversionTest {
                 .as("XML differences")
                 .isEmpty();
     }
+
     @Test
-    public void convertConventionDesAlpesVdIso19115cheToEch0271Xtf() throws Exception {
+    public void convertConventionDesAlpesIso19115cheToEch0271Xtf() throws Exception {
         Path xslFile = getResourceInsideSchema("convert/eCH-0271-XTF/toECH0271-XTF.xsl");
         Path xmlFile = getResource("ech0271-xtf/conventionDesAlpesTousLesChamps-eCH0271-iso19115-3.che.xml");
 
@@ -83,5 +84,42 @@ public class Iso19115cheToEch0271XtfConversionTest {
                 "ech0271-xtf/conventionDesAlpesTousLesChamps-reverse-to-ech0271.xtf",
                 Xml.getString(transformed),
                 GENERATE_EXPECTED_FILE);
+    }
+
+
+    @Test
+    public void convertConventionDesAlpesV2Iso19115cheToEch0271Xtf() throws Exception {
+        Path xslFile = getResourceInsideSchema("convert/eCH-0271-XTF/toECH0271-XTF.xsl");
+        Path xmlFile = getResource("ech0271-xtf/conventionDesAlpesTousLesChamps-eCH0271-V2-iso19115-3.che.xml");
+
+        Element source = Xml.loadFile(xmlFile);
+        Element transformed = Xml.transform(source, xslFile);
+
+        assertThat(transformed.getName()).isEqualTo("transfer");
+
+        TestSupport.assertGeneratedDataByteMatchExpected(
+                "ech0271-xtf/conventionDesAlpesTousLesChamps-V2-reverse-to-ech0271.xtf",
+                Xml.getString(transformed),
+                GENERATE_EXPECTED_FILE);
+    }
+
+    @Test
+    public void convertConventionDesAlpesV2ToReverseXtfComparison() throws Exception {
+        //conventionDesAlpesTousLesChamps-eCH0271v2-iso19115-3.che.xml
+        final Set<String> IGNORED_ELEMENTS = Set.of("ili:sender", "ili:comment");
+        String testXml = Xml.getString(Xml.loadFile(getResource("ech0271-xtf/conventionDesAlpesTousLesChamps-V2-reverse-to-ech0271.xtf")));
+        String controlXml = Xml.getString(Xml.loadFile(getResource("ech0271-xtf/conventionDesAlpesTousLesChamps-eCH0271-V2.xtf")));
+
+        Diff diff = DiffBuilder.compare(controlXml).withTest(testXml)
+                .ignoreComments()
+                .ignoreWhitespace()
+                .withNodeFilter(node -> !IGNORED_ELEMENTS.contains(node.getNodeName()))
+                .withAttributeFilter(attr -> !"ili:tid".equals(attr.getName()))
+                .checkForSimilar()
+                .build();
+
+        org.assertj.core.api.Assertions.assertThat(diff.getDifferences())
+                .as("XML differences")
+                .isEmpty();
     }
 }
