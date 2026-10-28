@@ -1,0 +1,82 @@
+<ili:transfer xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS" xmlns:geom="http://www.interlis.ch/geometry/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1" xmlns:Localisation_V2="http://www.interlis.ch/xtf/2.4/Localisation_V2">
+  <ili:headersection>
+    <ili:models>
+      <ili:model>Units</ili:model>
+      <ili:model>InternationalCodes_V2</ili:model>
+      <ili:model>Localisation_V2</ili:model>
+      <ili:model>eCH0271_1</ili:model>
+    </ili:models>
+  </ili:headersection>
+  <ili:datasection>
+    <eCH0271_1:eCH0271 ili:bid="eCH0271_1.eCH0271">
+      <eCH0271_1:MD_Identifier ili:tid="MDID_d1e2">
+        <eCH0271_1:code>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>8698bf0b-fceb-4f0f-989b-111e7c4af0a4</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:code>
+      </eCH0271_1:MD_Identifier>
+      <eCH0271_1:CHE_MD_DataIdentification ili:tid="DI_d1e54">
+        <eCH0271_1:abstract>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Perimeter der Alpenkonvention in der Schweiz. Die Alpenkonvention ist ein völkerrechtlicher Vertrag zwischen den acht Alpenländern Deutschland, Frankreich, Italien, Liechtenstein, Monaco, Österreich, Schweiz, Slowenien sowie der Europäischen Union. Das Ziel des Übereinkommens ist der Schutz der Alpen durch eine sektorübergreifende, ganzheitliche und nachhaltige Politik.</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:abstract>
+      </eCH0271_1:CHE_MD_DataIdentification>
+      <eCH0271_1:CHE_MD_Metadata ili:tid="MD_d1e1">
+        <eCH0271_1:defaultLocale>
+          <eCH0271_1:PT_Locale>
+            <eCH0271_1:language>ger</eCH0271_1:language>
+            <eCH0271_1:characterEncoding>utf8</eCH0271_1:characterEncoding>
+          </eCH0271_1:PT_Locale>
+        </eCH0271_1:defaultLocale>
+        <eCH0271_1:otherLocale>
+          <eCH0271_1:PT_Locale>
+            <eCH0271_1:language>fr</eCH0271_1:language>
+            <eCH0271_1:characterEncoding>utf8</eCH0271_1:characterEncoding>
+          </eCH0271_1:PT_Locale>
+        </eCH0271_1:otherLocale>
+        <eCH0271_1:otherLocale>
+          <eCH0271_1:PT_Locale>
+            <eCH0271_1:language>ita</eCH0271_1:language>
+            <eCH0271_1:characterEncoding>utf8</eCH0271_1:characterEncoding>
+          </eCH0271_1:PT_Locale>
+        </eCH0271_1:otherLocale>
+        <eCH0271_1:otherLocale>
+          <eCH0271_1:PT_Locale>
+            <eCH0271_1:language>eng</eCH0271_1:language>
+            <eCH0271_1:characterEncoding>utf8</eCH0271_1:characterEncoding>
+          </eCH0271_1:PT_Locale>
+        </eCH0271_1:otherLocale>
+        <eCH0271_1:otherLocale>
+          <eCH0271_1:PT_Locale>
+            <eCH0271_1:language>roh</eCH0271_1:language>
+            <eCH0271_1:characterEncoding>utf8</eCH0271_1:characterEncoding>
+          </eCH0271_1:PT_Locale>
+        </eCH0271_1:otherLocale>
+        <eCH0271_1:dateInfo>
+          <eCH0271_1:CI_Date>
+            <eCH0271_1:date>2021-04-12T00:00:00.0</eCH0271_1:date>
+            <eCH0271_1:dateType>creation</eCH0271_1:dateType>
+          </eCH0271_1:CI_Date>
+        </eCH0271_1:dateInfo>
+        <eCH0271_1:dateInfo>
+          <eCH0271_1:CI_Date>
+            <eCH0271_1:date>2026-06-16T00:00:00.0</eCH0271_1:date>
+            <eCH0271_1:dateType>revision</eCH0271_1:dateType>
+          </eCH0271_1:CI_Date>
+        </eCH0271_1:dateInfo>
+      </eCH0271_1:CHE_MD_Metadata>
+    </eCH0271_1:eCH0271>
+  </ili:datasection>
+</ili:transfer>

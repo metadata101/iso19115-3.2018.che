@@ -12,7 +12,7 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.xmlunit.assertj.XmlAssert;
+import org.xmlunit.assertj3.XmlAssert;
 
 import java.lang.reflect.Field;
 import java.nio.file.Path;
@@ -42,7 +42,7 @@ public class IndexationTest {
     }
 
     @AfterClass
-    public static void clearOasis() throws NoSuchFieldException, IllegalAccessException {
+    public static void clearOasis() throws IllegalAccessException {
         ((Map<?,?>) resolverMapField.get(null)).clear();
     }
 

@@ -1,0 +1,216 @@
+<ili:transfer xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS" xmlns:geom="http://www.interlis.ch/geometry/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1" xmlns:Localisation_V2="http://www.interlis.ch/xtf/2.4/Localisation_V2">
+  <ili:headersection>
+    <ili:models>
+      <ili:model>Units</ili:model>
+      <ili:model>InternationalCodes_V2</ili:model>
+      <ili:model>Localisation_V2</ili:model>
+      <ili:model>eCH0271_1</ili:model>
+    </ili:models>
+  </ili:headersection>
+  <ili:datasection>
+    <eCH0271_1:eCH0271 ili:bid="eCH0271_1.eCH0271">
+      <eCH0271_1:MD_Identifier ili:tid="MDID_d1e2">
+        <eCH0271_1:code>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>8698bf0b-fceb-4f0f-989b-111e7c4af0a4</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:code>
+      </eCH0271_1:MD_Identifier>
+      <eCH0271_1:MD_Identifier ili:tid="REFID_d1e133">
+        <eCH0271_1:code>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>EPSG:2056</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:code>
+      </eCH0271_1:MD_Identifier>
+      <eCH0271_1:MD_MetadataScope ili:tid="SCOPE_d1e42">
+        <eCH0271_1:resourceScope>dataset</eCH0271_1:resourceScope>
+      </eCH0271_1:MD_MetadataScope>
+      <eCH0271_1:CHE_CI_Organisation ili:tid="PARTY_d1e50">
+        <eCH0271_1:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Bundesamt für Raumentwicklung</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:name>
+        <eCH0271_1:organisationAcronym>ARE</eCH0271_1:organisationAcronym>
+      </eCH0271_1:CHE_CI_Organisation>
+      <eCH0271_1:CI_Address ili:tid="ADDR_d1e74">
+        <eCH0271_1:deliveryPoint>Worblentalstrasse 66</eCH0271_1:deliveryPoint>
+        <eCH0271_1:city>Ittigen</eCH0271_1:city>
+        <eCH0271_1:postalCode>3063</eCH0271_1:postalCode>
+        <eCH0271_1:country>CHE</eCH0271_1:country>
+        <eCH0271_1:electronicMailAddress>rolf.giezendanner@are.admin.ch</eCH0271_1:electronicMailAddress>
+      </eCH0271_1:CI_Address>
+      <eCH0271_1:CI_Individual ili:tid="INDIVIDUAL_d1e103">
+        <eCH0271_1:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Rolf Giezendanner</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:name>
+      </eCH0271_1:CI_Individual>
+      <eCH0271_1:CI_Responsibility ili:tid="RESP_d1e46">
+        <eCH0271_1:role>pointOfContact</eCH0271_1:role>
+      </eCH0271_1:CI_Responsibility>
+      <eCH0271_1:CHE_CI_Organisation ili:tid="PARTY_d1e173">
+        <eCH0271_1:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Bundesamt für Raumentwicklung</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:name>
+        <eCH0271_1:organisationAcronym>ARE</eCH0271_1:organisationAcronym>
+      </eCH0271_1:CHE_CI_Organisation>
+      <eCH0271_1:CI_Address ili:tid="ADDR_d1e197">
+        <eCH0271_1:deliveryPoint>Worblentalstrasse 66</eCH0271_1:deliveryPoint>
+        <eCH0271_1:city>Ittigen</eCH0271_1:city>
+        <eCH0271_1:postalCode>3063</eCH0271_1:postalCode>
+        <eCH0271_1:country>CHE</eCH0271_1:country>
+        <eCH0271_1:electronicMailAddress>rolf.giezendanner@are.admin.ch</eCH0271_1:electronicMailAddress>
+      </eCH0271_1:CI_Address>
+      <eCH0271_1:CI_Individual ili:tid="INDIVIDUAL_d1e226">
+        <eCH0271_1:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Rolf Giezendanner</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:name>
+      </eCH0271_1:CI_Individual>
+      <eCH0271_1:CI_Responsibility ili:tid="RESP_d1e169">
+        <eCH0271_1:role>pointOfContact</eCH0271_1:role>
+      </eCH0271_1:CI_Responsibility>
+      <eCH0271_1:CHE_CI_Organisation ili:tid="PARTY_d1e246">
+        <eCH0271_1:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Bundesamt für Raumentwicklung</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:name>
+        <eCH0271_1:organisationAcronym>ARE</eCH0271_1:organisationAcronym>
+      </eCH0271_1:CHE_CI_Organisation>
+      <eCH0271_1:CI_Address ili:tid="ADDR_d1e253">
+        <eCH0271_1:electronicMailAddress>info@are.admin.ch</eCH0271_1:electronicMailAddress>
+      </eCH0271_1:CI_Address>
+      <eCH0271_1:CI_Responsibility ili:tid="RESP_d1e242">
+        <eCH0271_1:role>owner</eCH0271_1:role>
+      </eCH0271_1:CI_Responsibility>
+      <eCH0271_1:CI_Citation ili:tid="CIT_d1e140">
+        <eCH0271_1:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Alpenkonvention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:title>
+      </eCH0271_1:CI_Citation>
+      <eCH0271_1:MD_ReferenceSystem ili:tid="REFSYS_d1e132">
+        <eCH0271_1:referenceSystemIdentifier ili:ref="REFID_d1e133" />
+      </eCH0271_1:MD_ReferenceSystem>
+      <eCH0271_1:CHE_MD_DataIdentification ili:tid="DI_d1e137">
+        <eCH0271_1:abstract>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Perimeter der Alpenkonvention in der Schweiz. Die Alpenkonvention ist ein völkerrechtlicher Vertrag zwischen den acht Alpenländern Deutschland, Frankreich, Italien, Liechtenstein, Monaco, Österreich, Schweiz, Slowenien sowie der Europäischen Union. Das Ziel des Übereinkommens ist der Schutz der Alpen durch eine sektorübergreifende, ganzheitliche und nachhaltige Politik.</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271_1:abstract>
+        <eCH0271_1:status>completed</eCH0271_1:status>
+        <eCH0271_1:topicCategory>planningCadastre</eCH0271_1:topicCategory>
+        <eCH0271_1:defaultLocale>
+          <eCH0271_1:PT_Locale>
+            <eCH0271_1:language>ger</eCH0271_1:language>
+            <eCH0271_1:characterEncoding>utf8</eCH0271_1:characterEncoding>
+          </eCH0271_1:PT_Locale>
+        </eCH0271_1:defaultLocale>
+        <eCH0271_1:basicGeodata>true</eCH0271_1:basicGeodata>
+        <eCH0271_1:basicGeodataInformation>
+          <eCH0271_1:CHE_MD_BasicGeodataInformation>
+            <eCH0271_1:basicGeodataID>3.1</eCH0271_1:basicGeodataID>
+            <eCH0271_1:basicGeodataLegalLevel>federal</eCH0271_1:basicGeodataLegalLevel>
+          </eCH0271_1:CHE_MD_BasicGeodataInformation>
+        </eCH0271_1:basicGeodataInformation>
+      </eCH0271_1:CHE_MD_DataIdentification>
+      <eCH0271_1:CHE_MD_Metadata ili:tid="MD_d1e1">
+        <eCH0271_1:defaultLocale>
+          <eCH0271_1:PT_Locale>
+            <eCH0271_1:language>ger</eCH0271_1:language>
+            <eCH0271_1:characterEncoding>utf8</eCH0271_1:characterEncoding>
+          </eCH0271_1:PT_Locale>
+        </eCH0271_1:defaultLocale>
+        <eCH0271_1:otherLocale>
+          <eCH0271_1:PT_Locale>
+            <eCH0271_1:language>fr</eCH0271_1:language>
+            <eCH0271_1:characterEncoding>utf8</eCH0271_1:characterEncoding>
+          </eCH0271_1:PT_Locale>
+        </eCH0271_1:otherLocale>
+        <eCH0271_1:otherLocale>
+          <eCH0271_1:PT_Locale>
+            <eCH0271_1:language>ita</eCH0271_1:language>
+            <eCH0271_1:characterEncoding>utf8</eCH0271_1:characterEncoding>
+          </eCH0271_1:PT_Locale>
+        </eCH0271_1:otherLocale>
+        <eCH0271_1:otherLocale>
+          <eCH0271_1:PT_Locale>
+            <eCH0271_1:language>eng</eCH0271_1:language>
+            <eCH0271_1:characterEncoding>utf8</eCH0271_1:characterEncoding>
+          </eCH0271_1:PT_Locale>
+        </eCH0271_1:otherLocale>
+        <eCH0271_1:otherLocale>
+          <eCH0271_1:PT_Locale>
+            <eCH0271_1:language>roh</eCH0271_1:language>
+            <eCH0271_1:characterEncoding>utf8</eCH0271_1:characterEncoding>
+          </eCH0271_1:PT_Locale>
+        </eCH0271_1:otherLocale>
+        <eCH0271_1:dateInfo>
+          <eCH0271_1:CI_Date>
+            <eCH0271_1:date>2021-04-12T00:00:00.0</eCH0271_1:date>
+            <eCH0271_1:dateType>creation</eCH0271_1:dateType>
+          </eCH0271_1:CI_Date>
+        </eCH0271_1:dateInfo>
+        <eCH0271_1:dateInfo>
+          <eCH0271_1:CI_Date>
+            <eCH0271_1:date>2026-06-16T00:00:00.0</eCH0271_1:date>
+            <eCH0271_1:dateType>revision</eCH0271_1:dateType>
+          </eCH0271_1:CI_Date>
+        </eCH0271_1:dateInfo>
+      </eCH0271_1:CHE_MD_Metadata>
+    </eCH0271_1:eCH0271>
+  </ili:datasection>
+</ili:transfer>

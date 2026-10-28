@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ili:transfer
+    xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS"
+	xmlns:Localisation_V2="http://www.interlis.ch/xtf/2.4/Localisation_V2"
+    xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1"
+    xmlns:geom="http://www.interlis.ch/geometry/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <ili:headersection>
+    <ili:models>
+      <ili:model>eCH0271_1</ili:model>
+    </ili:models>
+    <ili:sender>XML-to-XTF conversion</ili:sender>
+    <ili:comment>
+      Conversion du XML ISO 19115-3 vers INTERLIS 2.4 eCH-0271.
+    </ili:comment>
+  </ili:headersection>
+
+  <ili:datasection>
+
+    <eCH0271_1:eCH0271 ili:bid="eCH0271_1.eCH0271">
+
+      <eCH0271_1:CHE_MD_Metadata
+          ili:tid="2d0af163-1f59-9a24-35fa-1e03166e6188">
+
+        <!-- metadataIdentifier -->
+
+        <!-- defaultLocale -->
+        <eCH0271_1:defaultLocale>
+          <eCH0271_1:PT_Locale>
+            <eCH0271_1:language>fr</eCH0271_1:language>
+            <eCH0271_1:characterEncoding>utf8</eCH0271_1:characterEncoding>
+          </eCH0271_1:PT_Locale>
+        </eCH0271_1:defaultLocale>
+
+        <!-- metadataScope -->
+        <!-- <eCH0271_1:metadataScope ili:ref="metadataScope-001"/> -->
+
+        <!-- contact -->
+        <!-- <eCH0271_1:contact ili:ref="responsibility-001"/> -->
+
+        <!-- dateInfo -->
+        <eCH0271_1:dateInfo>
+          <eCH0271_1:CI_Date>
+            <eCH0271_1:date>2026-08-25T00:00:00.0</eCH0271_1:date>
+            <eCH0271_1:dateType>revision</eCH0271_1:dateType>
+          </eCH0271_1:CI_Date>
+        </eCH0271_1:dateInfo>
+
+        <!-- metadataStandard -->
+        <!-- <eCH0271_1:standardUsedBymetadataStandard -->
+            <!-- ili:ref="citation-metadata-standard-001"/> -->
+
+        <!-- referenceSystemInfo -->
+        <!-- <eCH0271_1:referenceSystemInfo -->
+            <!-- ili:ref="referenceSystem-001"/> -->
+
+        <!-- identificationInfo -->
+
+        <!-- distributionInfo -->
+        <!-- <eCH0271_1:distributionInfo -->
+            <!-- ili:ref="distribution-001"/> -->
+
+        <!-- legislationInformation -->
+        <!-- <eCH0271_1:legislationInformation -->
+            <!-- ili:ref="legislation-001"/> -->
+
+      </eCH0271_1:CHE_MD_Metadata>
+    </eCH0271_1:eCH0271>
+
+  </ili:datasection>
+
+</ili:transfer>
