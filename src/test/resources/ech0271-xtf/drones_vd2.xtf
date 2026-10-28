@@ -10,6 +10,10 @@
     <ili:models>
       <ili:model>eCH0271_1</ili:model>
     </ili:models>
+    <ili:sender>XML-to-XTF conversion</ili:sender>
+    <ili:comment>
+      Conversion du XML ISO 19115-3 vers INTERLIS 2.4 eCH-0271.
+    </ili:comment>
   </ili:headersection>
 
   <ili:datasection>
