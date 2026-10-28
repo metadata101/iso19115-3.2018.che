@@ -88,8 +88,25 @@
   </mdb:dateInfo>
   <mdb:identificationInfo xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
     <che:CHE_MD_DataIdentification gco:isoType="mri:MD_DataIdentification">
-      <mri:abstract xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0">
+      <mri:abstract xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
         <gco:CharacterString>Perimeter der Alpenkonvention in der Schweiz. Die Alpenkonvention ist ein völkerrechtlicher Vertrag zwischen den acht Alpenländern Deutschland, Frankreich, Italien, Liechtenstein, Monaco, Österreich, Schweiz, Slowenien sowie der Europäischen Union. Das Ziel des Übereinkommens ist der Schutz der Alpen durch eine sektorübergreifende, ganzheitliche und nachhaltige Politik.</gco:CharacterString>
+        <lan:PT_FreeText>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#DE">Perimeter der Alpenkonvention in der Schweiz. Die Alpenkonvention ist ein völkerrechtlicher Vertrag zwischen den acht Alpenländern Deutschland, Frankreich, Italien, Liechtenstein, Monaco, Österreich, Schweiz, Slowenien sowie der Europäischen Union. Das Ziel des Übereinkommens ist der Schutz der Alpen durch eine sektorübergreifende, ganzheitliche und nachhaltige Politik.</lan:LocalisedCharacterString>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#FR">Périmètre de la Convention alpine en Suisse. La Convention alpine est un traité de droit international conclu par huit Etats alpins (Allemagne, Autriche, France, Italie, Liechtenstein, Monaco, Suisse, Slovénie) et l`Union européenne. L`accord vise à assurer la préservation et la protection des Alpes à travers une politique plurisectorielle, globale et durable.</lan:LocalisedCharacterString>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#IT">Il perimetro della Convenzione delle Alpi. La Convenzione delle Alpi è un trattato internazionale tra gli otto Paesi alpini Germania, Francia, Italia, Liechtenstein, Monaco, Austria, Svizzera, Slovenia e l'Unione europea. Lo scopo della Convenzione è la conservazione e la protezione delle Alpi mediante una politica intersettoriale, globale e durevole.</lan:LocalisedCharacterString>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#RM">Perimeter da la Convenziun da las Alps en Svizra. La Convenziun da las Alps è in contract internaziunal tranter ils otg pajais alpins (Austria, Frantscha, Germania, Italia, Liechtenstein, Monaco, Slovenia, Svizra) e l'Uniun europeica. La convenziun ha la finamira da proteger las Alps cun agid d'ina politica intersecturiala, cumplessiva e duraivla.</lan:LocalisedCharacterString>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#EN">The perimeters of the Alpine Convention in Switzerland. The Alpine Convention is an international treaty between the eight Alpine countries: Germany, France, Italy, Liechtenstein, Monaco, Austria, Switzerland and Slovenia, plus the European Union. The aim of the treaty is to protect the Alps by means of cross-sectoral, integrated and sustainable policies.</lan:LocalisedCharacterString>
+          </lan:textGroup>
+        </lan:PT_FreeText>
       </mri:abstract>
       <mri:spatialResolution xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" />
     </che:CHE_MD_DataIdentification>

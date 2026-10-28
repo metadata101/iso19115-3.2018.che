@@ -37,6 +37,9 @@
                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <ili:headersection>
         <ili:models>
+          <ili:model>Units</ili:model>
+          <ili:model>InternationalCodes_V2</ili:model>
+          <ili:model>Localisation_V2</ili:model>
           <ili:model>eCH0271_1</ili:model>
         </ili:models>
       </ili:headersection>
