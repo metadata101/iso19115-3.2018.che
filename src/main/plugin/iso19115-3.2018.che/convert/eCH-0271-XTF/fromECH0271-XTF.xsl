@@ -72,6 +72,7 @@
   <xsl:include href="mapping/CHE_MD_Legislation.xsl"/>
   <!-- Utility templates -->
   <xsl:include href="utility/multilingual-text.xsl"/>
+  <xsl:include href="utility/references.xsl"/>
 
   <!-- Optional UUID override -->
   <xsl:param name="uuid" as="xs:string?"/>

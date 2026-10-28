@@ -122,11 +122,11 @@
 					</Localisation_V2:MultilingualMText>		
         </eCH0271_1:name>
 
-        <!-- <eCH0271_1:contactInfo -->
-            <!-- ili:ref="contact-001"/> -->
+        <eCH0271_1:contactInfo
+            ili:ref="contact-001"/>
 
-        <!-- <eCH0271_1:individual -->
-            <!-- ili:ref="individual-001"/> -->
+        <eCH0271_1:individual
+            ili:ref="individual-001"/>
 
       </eCH0271_1:CHE_CI_Organisation>
 
@@ -135,8 +135,8 @@
       <eCH0271_1:CI_Contact
           ili:tid="contact-001">
 
-        <!-- <eCH0271_1:address -->
-            <!-- ili:ref="address-001"/> -->
+        <eCH0271_1:address
+            ili:ref="address-001"/>
 
       </eCH0271_1:CI_Contact>
 
@@ -270,8 +270,8 @@
 
 
         <!-- pointOfContact -->
-        <!-- <eCH0271_1:pointOfContact -->
-        <!-- ili:ref="responsibility-001"/> -->
+        <eCH0271_1:pointOfContact
+        ili:ref="responsibility-001"/>
         <!-- extent -->
         <!-- <eCH0271_1:extent -->
             <!-- ili:ref="extent-001"/> -->

@@ -75,12 +75,10 @@
     <xsl:param name="orRecord" as="element()"/>
 
     <cit:CI_OnlineResource>
-      <!-- linkage: Plain text URL from eCH0271_1:linkage -->
+      <!-- linkage: plain text URL or MultilingualUri -->
       <xsl:if test="normalize-space($orRecord/eCH0271_1:linkage) != ''">
         <cit:linkage>
-          <gco:CharacterString>
-            <xsl:value-of select="normalize-space($orRecord/eCH0271_1:linkage)"/>
-          </gco:CharacterString>
+          <xsl:apply-templates select="$orRecord/eCH0271_1:linkage" mode="multilingual-text"/>
         </cit:linkage>
       </xsl:if>
 

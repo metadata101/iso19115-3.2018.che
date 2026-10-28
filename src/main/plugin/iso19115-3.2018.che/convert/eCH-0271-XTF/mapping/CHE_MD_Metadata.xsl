@@ -7,6 +7,7 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS"
   xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1"
+  xmlns:ech0271="urn:ech0271-functions"
   xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0"
   xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
   xmlns:che="http://geocat.ch/che"
@@ -121,33 +122,12 @@
         </xsl:otherwise>
       </xsl:choose>
 
-      <!-- Metadata contact (ili:ref reference OR direct object OR via association) -->
-      <xsl:choose>
-        <xsl:when test="eCH0271_1:contact[@ili:ref]">
-          <xsl:apply-templates select="eCH0271_1:contact" mode="contact"/>
-        </xsl:when>
-        <!-- Direct CI_Responsibility object (commented reference case) -->
-        <xsl:when test="//eCH0271_1:CI_Responsibility[@ili:tid='responsibility-001']">
-          <xsl:variable name="contactObj" select="//eCH0271_1:CI_Responsibility[@ili:tid='responsibility-001']"/>
-          <mdb:contact>
-            <xsl:apply-templates select="$contactObj" mode="responsibility"/>
-          </mdb:contact>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:variable name="contactAssoc"
-            select="/ili:transfer/ili:datasection/eCH0271_1:eCH0271/eCH0271_1:MD_Metadatacontact
-                    [eCH0271_1:MD_Metadata/@ili:ref = $mdTID]"/>
-          <xsl:if test="$contactAssoc">
-            <xsl:variable name="contactRef" select="$contactAssoc/eCH0271_1:contact/@ili:ref"/>
-            <xsl:variable name="contactObj" select="key('byTID', $contactRef)"/>
-            <xsl:if test="$contactObj/self::eCH0271_1:CI_Responsibility">
-              <mdb:contact>
-                <xsl:apply-templates select="$contactObj" mode="responsibility"/>
-              </mdb:contact>
-            </xsl:if>
-          </xsl:if>
-        </xsl:otherwise>
-      </xsl:choose>
+      <!-- Metadata contact -->
+      <xsl:for-each select="ech0271:related(., 'CI_Responsibility', 'contact')">
+        <mdb:contact>
+          <xsl:apply-templates select="." mode="responsibility"/>
+        </mdb:contact>
+      </xsl:for-each>
 
       <!-- Metadata date info (inline CI_Date child) -->
       <xsl:if test="eCH0271_1:dateInfo">

@@ -7,6 +7,7 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS"
   xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1"
+  xmlns:ech0271="urn:ech0271-functions"
   xmlns:Localisation_V2="http://www.interlis.ch/xtf/2.4/Localisation_V2"
   xmlns:che="http://geocat.ch/che"
   xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
@@ -47,40 +48,13 @@
           </mri:status>
         </xsl:if>
         
-        <!-- Point of Contact (dataset-level) - direct ref OR direct object OR via association -->
+        <!-- Point of Contact (dataset-level) -->
         <xsl:variable name="currentDataIdentId" select="@ili:tid"/>
-        <xsl:choose>
-          <!-- Priority 1: Direct reference -->
-          <xsl:when test="eCH0271_1:pointOfContact[@ili:ref]">
-            <xsl:variable name="pocRef" select="eCH0271_1:pointOfContact/@ili:ref"/>
-            <xsl:variable name="pocObj" select="key('byTID', $pocRef)"/>
-            <xsl:if test="$pocObj/self::eCH0271_1:CI_Responsibility">
-              <mri:pointOfContact>
-                <xsl:apply-templates select="$pocObj" mode="responsibility"/>
-              </mri:pointOfContact>
-            </xsl:if>
-          </xsl:when>
-          <!-- Priority 2: Direct CI_Responsibility object (commented reference case) -->
-          <xsl:when test="//eCH0271_1:CI_Responsibility[@ili:tid='responsibility-001']">
-            <xsl:variable name="pocObj" select="//eCH0271_1:CI_Responsibility[@ili:tid='responsibility-001']"/>
-            <mri:pointOfContact>
-              <xsl:apply-templates select="$pocObj" mode="responsibility"/>
-            </mri:pointOfContact>
-          </xsl:when>
-          <!-- Priority 3: Via association MD_DataIdentificationpointOfContact -->
-          <xsl:otherwise>
-            <xsl:variable name="pocAssoc" select="/ili:transfer/ili:datasection/eCH0271_1:eCH0271/eCH0271_1:MD_DataIdentificationpointOfContact[@ili:from=$currentDataIdentId]"/>
-            <xsl:if test="$pocAssoc">
-              <xsl:variable name="pocRef" select="$pocAssoc/@ili:to"/>
-              <xsl:variable name="pocObj" select="key('byTID', $pocRef)"/>
-              <xsl:if test="$pocObj/self::eCH0271_1:CI_Responsibility">
-                <mri:pointOfContact>
-                  <xsl:apply-templates select="$pocObj" mode="responsibility"/>
-                </mri:pointOfContact>
-              </xsl:if>
-            </xsl:if>
-          </xsl:otherwise>
-        </xsl:choose>
+        <xsl:for-each select="ech0271:related(., 'CI_Responsibility', 'pointOfContact')">
+          <mri:pointOfContact>
+            <xsl:apply-templates select="." mode="responsibility"/>
+          </mri:pointOfContact>
+        </xsl:for-each>
         
         <!-- Spatial Resolution (placeholder) -->
         <mri:spatialResolution/>

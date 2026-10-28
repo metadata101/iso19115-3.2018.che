@@ -7,39 +7,15 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS"
   xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1"
+  xmlns:ech0271="urn:ech0271-functions"
   xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
   xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
   xmlns:che="http://geocat.ch/che"
   exclude-result-prefixes="#all">
 
   <!-- ================================================================
-       contact processor (metadata level - wraps in mdb:contact)
-       ================================================================ -->
-  <xsl:template match="eCH0271_1:contact[@ili:ref]" mode="contact">
-    <xsl:variable name="respId" select="@ili:ref"/>
-    <xsl:variable name="respObj" select="key('byTID', $respId)"/>
-
-    <xsl:if test="$respObj/self::eCH0271_1:CI_Responsibility">
-      <mdb:contact xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
-        <xsl:apply-templates select="$respObj" mode="responsibility"/>
-      </mdb:contact>
-    </xsl:if>
-  </xsl:template>
-
-  <!-- ================================================================
-       pointOfContact processor (dataset level - for mri:pointOfContact)
-       ================================================================ -->
-  <xsl:template match="eCH0271_1:pointOfContact[@ili:ref]" mode="data-point-of-contact">
-    <xsl:variable name="respId" select="@ili:ref"/>
-    <xsl:variable name="respObj" select="key('byTID', $respId)"/>
-
-    <xsl:if test="$respObj/self::eCH0271_1:CI_Responsibility">
-      <xsl:apply-templates select="$respObj" mode="responsibility"/>
-    </xsl:if>
-  </xsl:template>
-
-  <!-- ================================================================
-       CI_Responsibility: role + party (organization) resolution
+       CI_Responsibility: role + party
+       Links are resolved with ech0271:related (any direction / association)
        ================================================================ -->
   <xsl:template match="eCH0271_1:CI_Responsibility" mode="responsibility">
     <cit:CI_Responsibility>
@@ -48,92 +24,30 @@
           <xsl:with-param name="value" select="normalize-space(eCH0271_1:role)"/>
         </xsl:call-template>
       </cit:role>
-      <!-- Resolve party reference (organisation) - Priority 1: active reference -->
-      <xsl:choose>
-        <xsl:when test="eCH0271_1:party[@ili:ref]">
-          <xsl:variable name="partyId" select="eCH0271_1:party/@ili:ref"/>
-          <xsl:variable name="partyObj" select="key('byTID', $partyId)"/>
-          <xsl:if test="$partyObj/self::eCH0271_1:CHE_CI_Organisation">
-            <cit:party>
-              <xsl:apply-templates select="$partyObj" mode="organisation"/>
-            </cit:party>
-          </xsl:if>
-        </xsl:when>
-        <!-- Priority 2: Direct TID search (commented reference case) -->
-        <xsl:when test="//eCH0271_1:CHE_CI_Organisation[@ili:tid='organisation-001']">
-          <xsl:variable name="partyObj" select="//eCH0271_1:CHE_CI_Organisation[@ili:tid='organisation-001']"/>
-          <cit:party>
-            <xsl:apply-templates select="$partyObj" mode="organisation"/>
-          </cit:party>
-        </xsl:when>
-        <!-- Priority 3: Via association CI_Responsibilityparty -->
-        <xsl:otherwise>
-          <xsl:variable name="respTID" select="@ili:tid"/>
-          <xsl:variable name="partyAssoc"
-            select="/ili:transfer/ili:datasection/eCH0271_1:eCH0271/eCH0271_1:CI_Responsibilityparty
-                    [eCH0271_1:CI_Responsibility/@ili:ref = $respTID]"/>
-          <xsl:if test="$partyAssoc">
-            <xsl:variable name="partyRef" select="$partyAssoc/eCH0271_1:party/@ili:ref"/>
-            <xsl:variable name="partyObj" select="key('byTID', $partyRef)"/>
-            <xsl:if test="$partyObj/self::eCH0271_1:CHE_CI_Organisation">
-              <cit:party>
-                <xsl:apply-templates select="$partyObj" mode="organisation"/>
-              </cit:party>
-            </xsl:if>
-          </xsl:if>
-        </xsl:otherwise>
-      </xsl:choose>
+      <xsl:for-each select="ech0271:related(., ('CHE_CI_Organisation', 'CI_Individual'))">
+        <cit:party>
+          <xsl:apply-templates select="." mode="party"/>
+        </cit:party>
+      </xsl:for-each>
     </cit:CI_Responsibility>
   </xsl:template>
 
   <!-- ================================================================
        CHE_CI_Organisation: name, contact info, individual, acronym
        ================================================================ -->
-  <xsl:template match="eCH0271_1:CHE_CI_Organisation" mode="organisation">
+  <xsl:template match="eCH0271_1:CHE_CI_Organisation" mode="party">
     <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
       <xsl:if test="eCH0271_1:name">
         <cit:name>
           <xsl:apply-templates select="eCH0271_1:name" mode="multilingual-text"/>
         </cit:name>
       </xsl:if>
-      <!-- Resolve contactInfo reference -->
-      <xsl:choose>
-        <xsl:when test="eCH0271_1:contactInfo[@ili:ref]">
-          <xsl:variable name="contactId" select="eCH0271_1:contactInfo/@ili:ref"/>
-          <xsl:variable name="contactObj" select="key('byTID', $contactId)"/>
-          <xsl:if test="$contactObj/self::eCH0271_1:CI_Contact">
-            <cit:contactInfo>
-              <xsl:apply-templates select="$contactObj" mode="contact-info"/>
-            </cit:contactInfo>
-          </xsl:if>
-        </xsl:when>
-        <!-- Direct TID search fallback (commented reference) -->
-        <xsl:when test="//eCH0271_1:CI_Contact[@ili:tid='contact-001']">
-          <xsl:variable name="contactObj" select="//eCH0271_1:CI_Contact[@ili:tid='contact-001']"/>
-          <cit:contactInfo>
-            <xsl:apply-templates select="$contactObj" mode="contact-info"/>
-          </cit:contactInfo>
-        </xsl:when>
-      </xsl:choose>
-      <!-- Resolve individual reference (person associated with organisation) -->
-      <xsl:choose>
-        <xsl:when test="eCH0271_1:individual[@ili:ref]">
-          <xsl:variable name="individualId" select="eCH0271_1:individual/@ili:ref"/>
-          <xsl:variable name="individualObj" select="key('byTID', $individualId)"/>
-          <xsl:if test="$individualObj/self::eCH0271_1:CI_Individual">
-            <cit:individual>
-              <xsl:apply-templates select="$individualObj" mode="individual"/>
-            </cit:individual>
-          </xsl:if>
-        </xsl:when>
-        <!-- Direct TID search fallback (commented reference) -->
-        <xsl:when test="//eCH0271_1:CI_Individual[@ili:tid='individual-001']">
-          <xsl:variable name="individualObj" select="//eCH0271_1:CI_Individual[@ili:tid='individual-001']"/>
-          <cit:individual>
-            <xsl:apply-templates select="$individualObj" mode="individual"/>
-          </cit:individual>
-        </xsl:when>
-      </xsl:choose>
+      <xsl:apply-templates select="ech0271:related(., 'CI_Contact')" mode="contact-info"/>
+      <xsl:for-each select="ech0271:related(., 'CI_Individual')">
+        <cit:individual>
+          <xsl:apply-templates select="." mode="party"/>
+        </cit:individual>
+      </xsl:for-each>
       <!-- Swiss extension: organization acronym -->
       <xsl:if test="eCH0271_1:organisationAcronym">
         <che:organisationAcronym>
@@ -144,51 +58,67 @@
   </xsl:template>
 
   <!-- ================================================================
-       CI_Contact: address information
-       3-priority: direct ref, TID search fallback
+       CI_Individual: person name, contact info and position
        ================================================================ -->
-  <xsl:template match="eCH0271_1:CI_Contact" mode="contact-info">
-    <cit:CI_Contact>
-      <!-- Resolve address reference - Priority 1: direct ref -->
-      <xsl:choose>
-        <xsl:when test="eCH0271_1:address[@ili:ref]">
-          <xsl:variable name="addressId" select="eCH0271_1:address/@ili:ref"/>
-          <xsl:variable name="addressObj" select="key('byTID', $addressId)"/>
-          <xsl:if test="$addressObj/self::eCH0271_1:CI_Address">
-            <cit:address>
-              <xsl:apply-templates select="$addressObj" mode="address"/>
-            </cit:address>
-          </xsl:if>
-        </xsl:when>
-        <!-- Priority 2: Direct TID search (commented reference case) -->
-        <xsl:when test="//eCH0271_1:CI_Address[@ili:tid='address-001']">
-          <xsl:variable name="addressObj" select="//eCH0271_1:CI_Address[@ili:tid='address-001']"/>
-          <cit:address>
-            <xsl:apply-templates select="$addressObj" mode="address"/>
-          </cit:address>
-        </xsl:when>
-      </xsl:choose>
-    </cit:CI_Contact>
-  </xsl:template>
-
-  <!-- ================================================================
-       CI_Individual: person name and position
-       ================================================================ -->
-  <xsl:template match="eCH0271_1:CI_Individual" mode="individual">
+  <xsl:template match="eCH0271_1:CI_Individual" mode="party">
     <cit:CI_Individual>
       <xsl:if test="eCH0271_1:name">
         <cit:name>
           <xsl:apply-templates select="eCH0271_1:name" mode="multilingual-text"/>
         </cit:name>
       </xsl:if>
+      <xsl:apply-templates select="ech0271:related(., 'CI_Contact')" mode="contact-info"/>
       <xsl:if test="eCH0271_1:positionName">
         <cit:positionName>
-          <gco:CharacterString>
-            <xsl:value-of select="normalize-space(eCH0271_1:positionName)"/>
-          </gco:CharacterString>
+          <xsl:apply-templates select="eCH0271_1:positionName" mode="multilingual-text"/>
         </cit:positionName>
       </xsl:if>
     </cit:CI_Individual>
+  </xsl:template>
+
+  <!-- ================================================================
+       CI_Contact: phone, address, online resource
+       ================================================================ -->
+  <xsl:template match="eCH0271_1:CI_Contact" mode="contact-info">
+    <cit:contactInfo>
+      <cit:CI_Contact>
+        <xsl:apply-templates select="ech0271:related(., 'CI_Telephone')" mode="phone"/>
+        <xsl:for-each select="ech0271:related(., 'CI_Address')">
+          <cit:address>
+            <xsl:apply-templates select="." mode="address"/>
+          </cit:address>
+        </xsl:for-each>
+        <xsl:for-each select="ech0271:related(., 'CI_OnlineResource')">
+          <cit:onlineResource>
+            <xsl:call-template name="ech0271:CI_OnlineResource">
+              <xsl:with-param name="orRecord" select="."/>
+            </xsl:call-template>
+          </cit:onlineResource>
+        </xsl:for-each>
+      </cit:CI_Contact>
+    </cit:contactInfo>
+  </xsl:template>
+
+  <!-- ================================================================
+       CI_Telephone: number and type
+       ================================================================ -->
+  <xsl:template match="eCH0271_1:CI_Telephone" mode="phone">
+    <cit:phone>
+      <cit:CI_Telephone>
+        <cit:number>
+          <gco:CharacterString>
+            <xsl:value-of select="normalize-space(eCH0271_1:number)"/>
+          </gco:CharacterString>
+        </cit:number>
+        <xsl:if test="normalize-space(eCH0271_1:numberType) != ''">
+          <cit:numberType>
+            <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="{normalize-space(eCH0271_1:numberType)}">
+              <xsl:value-of select="normalize-space(eCH0271_1:numberType)"/>
+            </cit:CI_TelephoneTypeCode>
+          </cit:numberType>
+        </xsl:if>
+      </cit:CI_Telephone>
+    </cit:phone>
   </xsl:template>
 
   <!-- ================================================================
