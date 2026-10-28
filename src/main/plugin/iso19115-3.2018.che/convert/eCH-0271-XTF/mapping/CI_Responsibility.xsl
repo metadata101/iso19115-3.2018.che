@@ -7,8 +7,6 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS"
   xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1"
-  xmlns:Localisation_V2="http://www.interlis.ch/xtf/2.4/Localisation_V2"
-  xmlns:LocalisationCH_V2="http://www.interlis.ch/xtf/2.4/LocalisationCH_V2"
   xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
   xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
   xmlns:che="http://geocat.ch/che"
@@ -95,32 +93,7 @@
     <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
       <xsl:if test="eCH0271_1:name">
         <cit:name>
-          <xsl:choose>
-            <!-- MultilingualMText structure: extract text from first language only -->
-            <xsl:when test="eCH0271_1:name/Localisation_V2:MultilingualMText/Localisation_V2:LocalisedText">
-              <gco:CharacterString>
-                <xsl:value-of select="normalize-space(
-                  eCH0271_1:name/Localisation_V2:MultilingualMText/Localisation_V2:LocalisedText[1]/
-                  Localisation_V2:LocalisedMText[1]/Localisation_V2:Text[1]
-                )"/>
-              </gco:CharacterString>
-            </xsl:when>
-            <!-- LocalisationCH_V2 structure: extract text from first language only -->
-            <xsl:when test="eCH0271_1:name/LocalisationCH_V2:MultilingualMText/LocalisationCH_V2:LocalisedText">
-              <gco:CharacterString>
-                <xsl:value-of select="normalize-space(
-                  eCH0271_1:name/LocalisationCH_V2:MultilingualMText/LocalisationCH_V2:LocalisedText[1]/
-                  LocalisationCH_V2:LocalisedMText[1]/LocalisationCH_V2:Text[1]
-                )"/>
-              </gco:CharacterString>
-            </xsl:when>
-            <!-- Plain text (fallback) -->
-            <xsl:otherwise>
-              <gco:CharacterString>
-                <xsl:value-of select="normalize-space(eCH0271_1:name)"/>
-              </gco:CharacterString>
-            </xsl:otherwise>
-          </xsl:choose>
+          <xsl:apply-templates select="eCH0271_1:name" mode="multilingual-text"/>
         </cit:name>
       </xsl:if>
       <!-- Resolve contactInfo reference -->
@@ -164,28 +137,7 @@
       <!-- Swiss extension: organization acronym -->
       <xsl:if test="eCH0271_1:organisationAcronym">
         <che:organisationAcronym>
-          <gco:CharacterString>
-            <xsl:choose>
-              <!-- Localisation_V2 structure -->
-              <xsl:when test="eCH0271_1:organisationAcronym/Localisation_V2:MultilingualMText/Localisation_V2:LocalisedText">
-                <xsl:value-of select="normalize-space(
-                  eCH0271_1:organisationAcronym/Localisation_V2:MultilingualMText/Localisation_V2:LocalisedText[1]/
-                  Localisation_V2:LocalisedMText[1]/Localisation_V2:Text[1]
-                )"/>
-              </xsl:when>
-              <!-- LocalisationCH_V2 structure -->
-              <xsl:when test="eCH0271_1:organisationAcronym/LocalisationCH_V2:MultilingualMText/LocalisationCH_V2:LocalisedText">
-                <xsl:value-of select="normalize-space(
-                  eCH0271_1:organisationAcronym/LocalisationCH_V2:MultilingualMText/LocalisationCH_V2:LocalisedText[1]/
-                  LocalisationCH_V2:LocalisedMText[1]/LocalisationCH_V2:Text[1]
-                )"/>
-              </xsl:when>
-              <!-- Fallback: direct text -->
-              <xsl:otherwise>
-                <xsl:value-of select="normalize-space(eCH0271_1:organisationAcronym)"/>
-              </xsl:otherwise>
-            </xsl:choose>
-          </gco:CharacterString>
+          <xsl:apply-templates select="eCH0271_1:organisationAcronym" mode="multilingual-text"/>
         </che:organisationAcronym>
       </xsl:if>
     </che:CHE_CI_Organisation>
@@ -226,41 +178,7 @@
     <cit:CI_Individual>
       <xsl:if test="eCH0271_1:name">
         <cit:name>
-          <xsl:choose>
-            <!-- MultilingualMText structure with Localisation_V2 -->
-            <xsl:when test="eCH0271_1:name/Localisation_V2:MultilingualMText/Localisation_V2:LocalisedText">
-              <gco:CharacterString>
-                <xsl:value-of select="normalize-space(
-                  eCH0271_1:name/Localisation_V2:MultilingualMText/Localisation_V2:LocalisedText[1]/
-                  Localisation_V2:LocalisedMText/Localisation_V2:Text[1]
-                )"/>
-              </gco:CharacterString>
-            </xsl:when>
-            <!-- MultilingualMText structure with LocalisationCH_V2 -->
-            <xsl:when test="eCH0271_1:name/LocalisationCH_V2:MultilingualMText/LocalisationCH_V2:LocalisedText">
-              <gco:CharacterString>
-                <xsl:value-of select="normalize-space(
-                  eCH0271_1:name/LocalisationCH_V2:MultilingualMText/LocalisationCH_V2:LocalisedText[1]/
-                  LocalisationCH_V2:LocalisedMText/LocalisationCH_V2:Text[1]
-                )"/>
-              </gco:CharacterString>
-            </xsl:when>
-            <!-- Direct eCH0271_1:MultilingualMText -->
-            <xsl:when test="eCH0271_1:name/eCH0271_1:MultilingualMText">
-              <gco:CharacterString>
-                <xsl:value-of select="normalize-space(
-                  eCH0271_1:name/eCH0271_1:MultilingualMText/Localisation_V2:LocalisedText[1]/
-                  Localisation_V2:LocalisedMText/Localisation_V2:Text[1]
-                )"/>
-              </gco:CharacterString>
-            </xsl:when>
-            <!-- Plain text (fallback) -->
-            <xsl:otherwise>
-              <gco:CharacterString>
-                <xsl:value-of select="normalize-space(eCH0271_1:name)"/>
-              </gco:CharacterString>
-            </xsl:otherwise>
-          </xsl:choose>
+          <xsl:apply-templates select="eCH0271_1:name" mode="multilingual-text"/>
         </cit:name>
       </xsl:if>
       <xsl:if test="eCH0271_1:positionName">
