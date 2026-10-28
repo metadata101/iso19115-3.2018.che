@@ -251,21 +251,4 @@
     </mco:MD_LegalConstraints>
   </xsl:template>
 
-  <!-- ================================================================
-       multilingual-text: Extract text from Localisation_V2:MultilingualMText
-       ================================================================ -->
-  <xsl:template match="Localisation_V2:MultilingualMText" mode="multilingual-text">
-    <gco:CharacterString>
-      <!-- Extract first available text (preferred: French, otherwise first available) -->
-      <xsl:choose>
-        <xsl:when test="Localisation_V2:LocalisedText/Localisation_V2:LocalisedMText[Localisation_V2:Language='fr']/Localisation_V2:Text">
-          <xsl:value-of select="Localisation_V2:LocalisedText/Localisation_V2:LocalisedMText[Localisation_V2:Language='fr']/Localisation_V2:Text/text()"/>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:value-of select="Localisation_V2:LocalisedText[1]/Localisation_V2:LocalisedMText/Localisation_V2:Text/text()"/>
-        </xsl:otherwise>
-      </xsl:choose>
-    </gco:CharacterString>
-  </xsl:template>
-
 </xsl:stylesheet>
