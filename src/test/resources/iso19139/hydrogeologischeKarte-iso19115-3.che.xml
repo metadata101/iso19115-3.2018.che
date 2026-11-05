@@ -1,0 +1,1499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<che:CHE_MD_Metadata xmlns:che="http://geocat.ch/che" xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0" xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0" xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:md1="http://standards.iso.org/iso/19115/-3/md1/2.0" xmlns:md2="http://standards.iso.org/iso/19115/-3/md2/2.0" xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/2.0" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0" xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0" xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0" xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0" xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0" xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0" xmlns:dqm="http://standards.iso.org/iso/19157/-2/dqm/1.0" xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gco:isoType="mdb:MD_Metadata" xsi:schemaLocation="http://geocat.ch/che http://share-ech.ch/xmlns/eCH-0271/1.0.0/standards.iso.org/iso/19115/-3/eCH-0271-1-0-0.xsd">
+  <mdb:metadataIdentifier xmlns:geonet="http://www.fao.org/geonetwork">
+    <mcc:MD_Identifier>
+      <mcc:code>
+        <gco:CharacterString>b01523a1-9f61-43a2-95cb-be843cc1b18a</gco:CharacterString>
+      </mcc:code>
+    </mcc:MD_Identifier>
+  </mdb:metadataIdentifier>
+  <mdb:defaultLocale xmlns:geonet="http://www.fao.org/geonetwork">
+    <lan:PT_Locale id="DE">
+      <lan:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
+      </lan:language>
+      <lan:characterEncoding>
+        <lan:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+      </lan:characterEncoding>
+    </lan:PT_Locale>
+  </mdb:defaultLocale>
+  <mdb:metadataScope xmlns:geonet="http://www.fao.org/geonetwork">
+    <mdb:MD_MetadataScope>
+      <mdb:resourceScope>
+        <mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ScopeCode" codeListValue="series" />
+      </mdb:resourceScope>
+      <mdb:name xsi:type="lan:PT_FreeText_PropertyType">
+        <gco:CharacterString>Kartenserie</gco:CharacterString>
+        <lan:PT_FreeText>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#DE">Kartenserie</lan:LocalisedCharacterString>
+          </lan:textGroup>
+        </lan:PT_FreeText>
+      </mdb:name>
+    </mdb:MD_MetadataScope>
+  </mdb:metadataScope>
+  <mdb:contact xmlns:geonet="http://www.fao.org/geonetwork" xlink:show="embed">
+    <cit:CI_Responsibility>
+      <cit:role>
+        <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</cit:CI_RoleCode>
+      </cit:role>
+      <cit:party>
+        <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
+          <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Bundesamt für Umwelt / Sektion Hydrogeologische Grundlagen</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">Hydrogeological Basics Section</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Bundesamt für Umwelt / Sektion Hydrogeologische Grundlagen</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">Section Bases hydrogéologiques</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">Sezione Basi idrogeologiche</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#RM">Bundesamt für Umwelt / Sektion Hydrogeologische Grundlagen</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:name>
+          <cit:contactInfo>
+            <cit:CI_Contact>
+              <cit:phone>
+                <cit:CI_Telephone>
+                  <cit:number>
+                    <gco:CharacterString>+41 58 464 71 87</gco:CharacterString>
+                  </cit:number>
+                  <cit:numberType>
+                    <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+                  </cit:numberType>
+                </cit:CI_Telephone>
+              </cit:phone>
+              <cit:phone>
+                <cit:CI_Telephone>
+                  <cit:number>
+                    <gco:CharacterString>+41 58 464 76 81</gco:CharacterString>
+                  </cit:number>
+                  <cit:numberType>
+                    <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="facsimile">facsimile</cit:CI_TelephoneTypeCode>
+                  </cit:numberType>
+                </cit:CI_Telephone>
+              </cit:phone>
+              <cit:address>
+                <cit:CI_Address>
+                  <cit:deliveryPoint>
+                    <gco:CharacterString />
+                  </cit:deliveryPoint>
+                  <cit:city>
+                    <gco:CharacterString>Bern</gco:CharacterString>
+                  </cit:city>
+                  <cit:postalCode>
+                    <gco:CharacterString>3003</gco:CharacterString>
+                  </cit:postalCode>
+                  <cit:country>
+                    <gco:CharacterString>CH</gco:CharacterString>
+                  </cit:country>
+                  <cit:electronicMailAddress>
+                    <gco:CharacterString>hydrogeologie@bafu.admin.ch</gco:CharacterString>
+                  </cit:electronicMailAddress>
+                </cit:CI_Address>
+              </cit:address>
+              <cit:onlineResource>
+                <cit:CI_OnlineResource>
+                  <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                    <gco:CharacterString>https://www.bafu.admin.ch/bafu/de/home/amt/geschaeftsleitung-des-bafu/direktionsbereich-naturgefahren-und-wald/abteilung-hydrologie.html</gco:CharacterString>
+                    <lan:PT_FreeText>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#EN">https://www.bafu.admin.ch/bafu/en/home/office/management-board/paul-steffen-deputy-director/hydrology-division.html</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#DE">https://www.bafu.admin.ch/bafu/de/home/amt/geschaeftsleitung-des-bafu/direktionsbereich-naturgefahren-und-wald/abteilung-hydrologie.html</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#FR">https://www.bafu.admin.ch/bafu/fr/home/office/direction/paul-steffen-directeur-suppleant/division-hydrologie.html</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#IT">https://www.bafu.admin.ch/bafu/it/home/ufficio/direzione/paul-steffen-direttore-supplente/divisione-idrologia.html</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                    </lan:PT_FreeText>
+                  </cit:linkage>
+                  <cit:protocol>
+                    <gco:CharacterString>WWW:LINK</gco:CharacterString>
+                  </cit:protocol>
+                </cit:CI_OnlineResource>
+              </cit:onlineResource>
+            </cit:CI_Contact>
+          </cit:contactInfo>
+          <cit:individual>
+            <cit:CI_Individual>
+              <cit:name>
+                <gco:CharacterString>BAFU Hydrogeologie</gco:CharacterString>
+              </cit:name>
+            </cit:CI_Individual>
+          </cit:individual>
+          <che:organisationAcronym xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>BAFU</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">FOEN</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">BAFU</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">OFEV</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">UFAM</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#RM">BAFU</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </che:organisationAcronym>
+        </che:CHE_CI_Organisation>
+      </cit:party>
+    </cit:CI_Responsibility>
+  </mdb:contact>
+  <mdb:contact xmlns:geonet="http://www.fao.org/geonetwork" xlink:show="embed" xlink:href="local://srv/api/registries/entries/e898da60-6d82-4dcc-b4a3-5f6fe97e6394?lang=ger,fre,ita,eng,roh&amp;process=cit:role/cit:CI_RoleCode/@codeListValue~pointOfContact&amp;schema=iso19115-3.2018.che" />
+  <mdb:dateInfo xmlns:geonet="http://www.fao.org/geonetwork">
+    <cit:CI_Date>
+      <cit:date>
+        <gco:DateTime>2009-10-13T12:00:00Z</gco:DateTime>
+      </cit:date>
+      <cit:dateType>
+        <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation" />
+      </cit:dateType>
+    </cit:CI_Date>
+  </mdb:dateInfo>
+  <mdb:dateInfo>
+    <cit:CI_Date>
+      <cit:date>
+        <gco:DateTime>2026-11-05T14:26:55.457428Z</gco:DateTime>
+      </cit:date>
+      <cit:dateType>
+        <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision" />
+      </cit:dateType>
+    </cit:CI_Date>
+  </mdb:dateInfo>
+  <mdb:metadataStandard xmlns:geonet="http://www.fao.org/geonetwork">
+    <cit:CI_Citation>
+      <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+        <gco:CharacterString>GM03 2+</gco:CharacterString>
+        <lan:PT_FreeText>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#DE">GM03 2+</lan:LocalisedCharacterString>
+          </lan:textGroup>
+        </lan:PT_FreeText>
+      </cit:title>
+    </cit:CI_Citation>
+  </mdb:metadataStandard>
+  <mdb:otherLocale xmlns:geonet="http://www.fao.org/geonetwork">
+    <lan:PT_Locale id="FR">
+      <lan:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="fre" />
+      </lan:language>
+      <lan:characterEncoding>
+        <lan:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+      </lan:characterEncoding>
+    </lan:PT_Locale>
+  </mdb:otherLocale>
+  <mdb:otherLocale xmlns:geonet="http://www.fao.org/geonetwork">
+    <lan:PT_Locale id="IT">
+      <lan:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ita" />
+      </lan:language>
+      <lan:characterEncoding>
+        <lan:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+      </lan:characterEncoding>
+    </lan:PT_Locale>
+  </mdb:otherLocale>
+  <mdb:otherLocale xmlns:geonet="http://www.fao.org/geonetwork">
+    <lan:PT_Locale id="EN">
+      <lan:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng" />
+      </lan:language>
+      <lan:characterEncoding>
+        <lan:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+      </lan:characterEncoding>
+    </lan:PT_Locale>
+  </mdb:otherLocale>
+  <mdb:otherLocale xmlns:geonet="http://www.fao.org/geonetwork">
+    <lan:PT_Locale id="RM">
+      <lan:language>
+        <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="roh" />
+      </lan:language>
+      <lan:characterEncoding>
+        <lan:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+      </lan:characterEncoding>
+    </lan:PT_Locale>
+  </mdb:otherLocale>
+  <mdb:metadataLinkage xmlns:geonet="http://www.fao.org/geonetwork">
+    <cit:CI_OnlineResource>
+      <cit:linkage>
+        <gco:CharacterString>https://geocat-dev.dev.bgdi.ch/geonetwork/srv/api/records/b01523a1-9f61-43a2-95cb-be843cc1b18a?language=all</gco:CharacterString>
+      </cit:linkage>
+      <cit:function>
+        <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="completeMetadata" />
+      </cit:function>
+    </cit:CI_OnlineResource>
+  </mdb:metadataLinkage>
+  <mdb:referenceSystemInfo xmlns:geonet="http://www.fao.org/geonetwork">
+    <mrs:MD_ReferenceSystem>
+      <mrs:referenceSystemIdentifier>
+        <mcc:MD_Identifier>
+          <mcc:code>
+            <gco:CharacterString>EPSG:2056</gco:CharacterString>
+          </mcc:code>
+        </mcc:MD_Identifier>
+      </mrs:referenceSystemIdentifier>
+    </mrs:MD_ReferenceSystem>
+  </mdb:referenceSystemInfo>
+  <mdb:identificationInfo xmlns:geonet="http://www.fao.org/geonetwork">
+    <che:CHE_MD_DataIdentification gco:isoType="mri:MD_DataIdentification">
+      <mri:citation>
+        <cit:CI_Citation>
+          <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Hydrogeologische Karte der Schweiz 1:100000</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Hydrogeologische Karte der Schweiz 1:100000</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">Carte hydrogéologique de la Suisse 1:100000</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">Carta idrogeologica della Svizzera 1:100000</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">Hydrogeological map of Switzerland 1:100000</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#RM">Charta idrogeologica da la Svizra 1:100000</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:title>
+          <cit:alternateTitle xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Hydrogeologische Karte 100</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Hydrogeologische Karte 100</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">Carte hydrogéologique au 100</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">Carta idrogeologica 100</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">Hydrogeological map 100</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#RM">Charta idrogeologica 100</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:alternateTitle>
+          <cit:date>
+            <cit:CI_Date>
+              <cit:date>
+                <gco:Date>2014-12-31</gco:Date>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:date>
+            <cit:CI_Date>
+              <cit:date>
+                <gco:DateTime>1972-01-01T00:00:00</gco:DateTime>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation" />
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+          <cit:identifier>
+            <mcc:MD_Identifier>
+              <mcc:code>
+                <gco:CharacterString>ch.bafu.hydrogeologische-karte_100</gco:CharacterString>
+              </mcc:code>
+            </mcc:MD_Identifier>
+          </cit:identifier>
+          <cit:identifier />
+          <cit:presentationForm>
+            <cit:CI_PresentationFormCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_PresentationFormCode" codeListValue="mapHardcopy" />
+          </cit:presentationForm>
+          <cit:onlineResource>
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>http://www.sgtk.ch/main.asp?content=inhalt/produkte/hydrogeologische_karten.htm&amp;nav=22</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">http://www.sgtk.ch/main.asp?content=inhalt/produkte/hydrogeologische_karten.htm&amp;nav=22</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">http://www.sgtk.ch/main.asp?content=inhalt/produkte/hydrogeologische_karten.htm&amp;nav=22</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">http://www.sgtk.ch/main.asp?content=inhalt/produkte/hydrogeologische_karten.htm&amp;nav=22</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">http://www.sgtk.ch/main.asp?content=inhalt/produkte/hydrogeologische_karten.htm&amp;nav=22</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#RM">http://www.sgtk.ch/main.asp?content=inhalt/produkte/hydrogeologische_karten.htm&amp;nav=22</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol gco:nilReason="missing">
+                <gco:CharacterString />
+              </cit:protocol>
+              <cit:name gco:nilReason="missing" xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString />
+              </cit:name>
+              <cit:description gco:nilReason="missing" xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString />
+              </cit:description>
+              <cit:function>
+                <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="" />
+              </cit:function>
+            </cit:CI_OnlineResource>
+          </cit:onlineResource>
+        </cit:CI_Citation>
+      </mri:citation>
+      <mri:abstract xsi:type="lan:PT_FreeText_PropertyType">
+        <gco:CharacterString>Herausgegeben vom Bundesamt für Umwelt BAFU, der zuständigen Fachstelle der Landesgeologie für die Hydrogeologie. Die Hydrogeologische Karte 1:100‘000 zeigt den Untergrund aus der Sicht von drei Fachbereichen: der Geologie, Hydrologie und Hydrogeologie. Der Untergrund ist nach lithologisch-petrografischen Kriterien und der Durchlässigkeit klassiert. Punkt- und Liniendaten (Quellen, Brunnen, hydraulische Verbindungen, Grundwasservorkommen etc.) zeigen die Zirkulationswege des Grundwassers und dessen Nutzung an Förderbrunnen und Quellfassungen. Die Darstellung im Massstab 100'000 gibt Einblick in die regionalen hydrogeologischen Gegebenheiten. Folgende Karten sind verfügbar: 1. Bözberg/Beromünster, 1972; 2. Bodensee, 1980; 3. Panixerpass, 1985; 4. Biel, 1991/92; 5. Toggenburg, 1993/94; 6. Saane, 1999; 8. Vallorbe - Léman nord, 2006; 7. Basel, 2014. Für die NW-Schweiz wurde ein blattschnittfreier Vektordatensatz der Kartenblätter 4, 6, 7, 8 erstellt. Die Daten können beim BAFU bezogen werden (www.bafu.admin.ch  Daten, Karten, Indikatoren).</gco:CharacterString>
+        <lan:PT_FreeText>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#DE">Herausgegeben vom Bundesamt für Umwelt BAFU, der zuständigen Fachstelle der Landesgeologie für die Hydrogeologie. Die Hydrogeologische Karte 1:100‘000 zeigt den Untergrund aus der Sicht von drei Fachbereichen: der Geologie, Hydrologie und Hydrogeologie. Der Untergrund ist nach lithologisch-petrografischen Kriterien und der Durchlässigkeit klassiert. Punkt- und Liniendaten (Quellen, Brunnen, hydraulische Verbindungen, Grundwasservorkommen etc.) zeigen die Zirkulationswege des Grundwassers und dessen Nutzung an Förderbrunnen und Quellfassungen. Die Darstellung im Massstab 100'000 gibt Einblick in die regionalen hydrogeologischen Gegebenheiten. Folgende Karten sind verfügbar: 1. Bözberg/Beromünster, 1972; 2. Bodensee, 1980; 3. Panixerpass, 1985; 4. Biel, 1991/92; 5. Toggenburg, 1993/94; 6. Saane, 1999; 8. Vallorbe - Léman nord, 2006; 7. Basel, 2014. Für die NW-Schweiz wurde ein blattschnittfreier Vektordatensatz der Kartenblätter 4, 6, 7, 8 erstellt. Die Daten können beim BAFU bezogen werden (www.bafu.admin.ch  Daten, Karten, Indikatoren).</lan:LocalisedCharacterString>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#FR">Publiée par l’Office fédéral de l’environnement (OFEV), office compétent du Service géologique national pour l’hydrogéologie.La carte hydrogéologique 1:100 000 présente le sous-sol dans la perspective des trois domaines spécialisés : géologie, hydrologie et hydrogéologie. Le sous-sol est classé d’après des critères lithologiques-pétrographiques et de perméabilité. Les données ponctuelles et linéaires (sources, puits, liaisons hydrauliques, nappes phréatiques, etc.) montrent les voies de circulation des eaux souterraines ainsi que l'utilisation actuelle de ces eaux et des eaux de source. La représentation à l’échelle 1:100 000 donne une vue d’ensemble des caractéristiques hydrogéologiques régionales. Voici les cartes disponibles : 1. Bözberg/Beromünster, 1972; 2. Bodensee, 1980; 3. Panixerpass, 1985; 4. Biel, 1991/92; 5. Toggenburg, 1993/94; 6. Saane, 1999; 8. Vallorbe - Léman nord, 2006; 7. Basel, 2014. Un jeu de données vectorielles, indépendant du découpage en feuilles, a été créé à partir des feuilles 4, 6, 7 et 8 pour le Nord-ouest de la Suisse. Les données peuvent être commandées à l’OFEV (www.bafu.admin.ch  Données, indicateurs, cartes).</lan:LocalisedCharacterString>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#IT">Pubblicata dall’Ufficio federale dell’ambiente (UFAM), il servizio specializzato del Servizio geologico nazionale competente per l’idrogeologia.La carta idrogeologica 1:100 000 rappresenta il sottosuolo dalla prospettiva di tre discipline: la geologia, l’idrologia e l’idrogeologia. Il sottosuolo è classificato secondo criteri litologico-petrografici e in funzione della permeabilità. I dati lineari e puntiformi (sorgenti, pozzi, relazioni idrauliche, falde freatiche ecc.) mostrano le vie di circolazione delle acque sotterranee come pure la loro utilizzazione in pozzi di pompaggio e captazioni di sorgenti. La rappresentazione in scala 1:100 000 fornisce una panoramica delle caratteristiche idrogeologiche regionali. Sono disponibili le seguenti carte: 1. Bözberg/Beromünster, 1972; 2. Bodensee, 1980; 3. Panixerpass, 1985; 4. Biel, 1991/92; 5. Toggenburg, 1993/94; 6. Saane, 1999; 8. Vallorbe - Léman nord, 2006; 7. Basel, 2014. Per la Svizzera nord-occidentale è stato creato un set di dati vettoriali senza suddivisioni a partire dai fogli 4, 6, 7, 8. I dati possono essere richiesti all’UFAM (www.bafu.admin.ch  Dati, carte, indicatori).</lan:LocalisedCharacterString>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#EN">Published by the Federal Office for the Environment FOEN, the specialist office of the Swiss Geological Survey responsible for hydrogeology.The hydrogeological map 1:100,000 shows the subsurface from the perspective of three disciplines: geology, hydrology and hydrogeology. The subsurface is classified according to lithological-petrographical criteria and permeability. Point and line data (springs, wells, hydraulic connections, groundwater resources, etc.) indicate the flow paths of groundwater and its exploitation at wells and tapped springs. The representation at a scale of 100,000 provides insight into the regional hydrogeological conditions. The following maps are available: 1. Bözberg/Beromünster, 1972; 2. Lake Constance, 1980; 3. Panixerpass, 1985; 4. Biel-Bienne, 1991/92; 5. Toggenburg, 1993/94; 6. Saane, 1999; 8. Vallorbe - Léman nord, 2006; 7. Basel, 2014. For North West Switzerland, a seamless vector data set of maps 4, 6, 7 and 8 was created. The data can be obtained from the FOEN (www.bafu.admin.ch Data, indicators, maps).</lan:LocalisedCharacterString>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#RM">Edì dal Uffizi federal d'ambient UFAM, il post spezialisà dal Servetsch geologic naziunal ch'è cumpetent per l'idrogeologia. La Charta idrogeologica 1:100'000 mussa il funs or da la vista da trais secturs spezials: geologia, idrologia ed idrogeologia. Il funs è classifitgà tenor criteris litologics-petrografics e tenor la permeabilitad. Datas en furma da puncts e da lingias (funtaunas, bigls, colliaziuns idraulicas, resursas d'aua sutterrana e.u.v.) mussan las vias da circulaziun da l'aua sutterrana e sia utilisaziun tar bigls d'alimentaziun e tar tschiffadas da funtauna. La represchentaziun a la scala 1:100'000 dat invista en las situaziuns idrogeologicas regiunalas. Las suandantas chartas èn disponiblas: 1. Bözberg/Beromünster, 1972; 2. Lai da Constanza, 1980; 3. Pass da Pigniu, 1985; 4. Bienna, 1991/92; 5. Toggenburg, 1993/94; 6. Saane, 1999; 8. Vallorbe - Léman nord, 2006; 7. Basilea, 2014. Per la Svizra dal nordvest è vegnida creada – sur ils tagls dals fegls ora – in'unitad da datas vectorialas dals fegls 4, 6, 7, 8. Las datas pon vegnir retratgas tar il UFAM (www.bafu.admin.ch Daten, Karten, Indikatoren).</lan:LocalisedCharacterString>
+          </lan:textGroup>
+        </lan:PT_FreeText>
+      </mri:abstract>
+      <mri:purpose xsi:type="lan:PT_FreeText_PropertyType">
+        <gco:CharacterString>Übersicht über die Hydrogeologie der Schweiz</gco:CharacterString>
+        <lan:PT_FreeText>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#DE">Übersicht über die Hydrogeologie der Schweiz</lan:LocalisedCharacterString>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#FR">Vue d'ensemble de l'hydrogéologie suisse</lan:LocalisedCharacterString>
+          </lan:textGroup>
+        </lan:PT_FreeText>
+      </mri:purpose>
+      <mri:status>
+        <mcc:MD_ProgressCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ProgressCode" codeListValue="completed" />
+      </mri:status>
+      <mri:pointOfContact xlink:show="embed">
+        <cit:CI_Responsibility>
+          <cit:role>
+            <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</cit:CI_RoleCode>
+          </cit:role>
+          <cit:party>
+            <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>Bundesamt für Umwelt / Sektion Hydrogeologische Grundlagen</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">Hydrogeological Basics Section</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Bundesamt für Umwelt / Sektion Hydrogeologische Grundlagen</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">Section Bases hydrogéologiques</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">Sezione Basi idrogeologiche</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#RM">Bundesamt für Umwelt / Sektion Hydrogeologische Grundlagen</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:name>
+              <cit:contactInfo>
+                <cit:CI_Contact>
+                  <cit:phone>
+                    <cit:CI_Telephone>
+                      <cit:number>
+                        <gco:CharacterString>+41 58 464 71 87</gco:CharacterString>
+                      </cit:number>
+                      <cit:numberType>
+                        <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+                      </cit:numberType>
+                    </cit:CI_Telephone>
+                  </cit:phone>
+                  <cit:phone>
+                    <cit:CI_Telephone>
+                      <cit:number>
+                        <gco:CharacterString>+41 58 464 76 81</gco:CharacterString>
+                      </cit:number>
+                      <cit:numberType>
+                        <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="facsimile">facsimile</cit:CI_TelephoneTypeCode>
+                      </cit:numberType>
+                    </cit:CI_Telephone>
+                  </cit:phone>
+                  <cit:address>
+                    <cit:CI_Address>
+                      <cit:deliveryPoint>
+                        <gco:CharacterString />
+                      </cit:deliveryPoint>
+                      <cit:city>
+                        <gco:CharacterString>Bern</gco:CharacterString>
+                      </cit:city>
+                      <cit:postalCode>
+                        <gco:CharacterString>3003</gco:CharacterString>
+                      </cit:postalCode>
+                      <cit:country>
+                        <gco:CharacterString>CH</gco:CharacterString>
+                      </cit:country>
+                      <cit:electronicMailAddress>
+                        <gco:CharacterString>hydrogeologie@bafu.admin.ch</gco:CharacterString>
+                      </cit:electronicMailAddress>
+                    </cit:CI_Address>
+                  </cit:address>
+                  <cit:onlineResource>
+                    <cit:CI_OnlineResource>
+                      <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                        <gco:CharacterString>https://www.bafu.admin.ch/bafu/de/home/amt/geschaeftsleitung-des-bafu/direktionsbereich-naturgefahren-und-wald/abteilung-hydrologie.html</gco:CharacterString>
+                        <lan:PT_FreeText>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#EN">https://www.bafu.admin.ch/bafu/en/home/office/management-board/paul-steffen-deputy-director/hydrology-division.html</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#DE">https://www.bafu.admin.ch/bafu/de/home/amt/geschaeftsleitung-des-bafu/direktionsbereich-naturgefahren-und-wald/abteilung-hydrologie.html</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#FR">https://www.bafu.admin.ch/bafu/fr/home/office/direction/paul-steffen-directeur-suppleant/division-hydrologie.html</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#IT">https://www.bafu.admin.ch/bafu/it/home/ufficio/direzione/paul-steffen-direttore-supplente/divisione-idrologia.html</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                        </lan:PT_FreeText>
+                      </cit:linkage>
+                      <cit:protocol>
+                        <gco:CharacterString>WWW:LINK</gco:CharacterString>
+                      </cit:protocol>
+                    </cit:CI_OnlineResource>
+                  </cit:onlineResource>
+                </cit:CI_Contact>
+              </cit:contactInfo>
+              <cit:individual>
+                <cit:CI_Individual>
+                  <cit:name>
+                    <gco:CharacterString>BAFU Hydrogeologie</gco:CharacterString>
+                  </cit:name>
+                </cit:CI_Individual>
+              </cit:individual>
+              <che:organisationAcronym xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>BAFU</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">FOEN</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">BAFU</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">OFEV</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">UFAM</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#RM">BAFU</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </che:organisationAcronym>
+            </che:CHE_CI_Organisation>
+          </cit:party>
+        </cit:CI_Responsibility>
+      </mri:pointOfContact>
+      <mri:pointOfContact xlink:show="embed">
+        <cit:CI_Responsibility>
+          <cit:role>
+            <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="owner">pointOfContact</cit:CI_RoleCode>
+          </cit:role>
+          <cit:party>
+            <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>Bundesamt für Umwelt</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">Federal Office for the Environment</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Bundesamt für Umwelt</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">Office fédéral de l'environnement</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">Ufficio federale dell'ambiente</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#RM">Bundesamt für Umwelt</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:name>
+              <cit:contactInfo>
+                <cit:CI_Contact>
+                  <cit:phone>
+                    <cit:CI_Telephone>
+                      <cit:number>
+                        <gco:CharacterString>+41 58 462 93 11</gco:CharacterString>
+                      </cit:number>
+                      <cit:numberType>
+                        <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+                      </cit:numberType>
+                    </cit:CI_Telephone>
+                  </cit:phone>
+                  <cit:phone>
+                    <cit:CI_Telephone>
+                      <cit:number>
+                        <gco:CharacterString />
+                      </cit:number>
+                      <cit:numberType>
+                        <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="facsimile">facsimile</cit:CI_TelephoneTypeCode>
+                      </cit:numberType>
+                    </cit:CI_Telephone>
+                  </cit:phone>
+                  <cit:address>
+                    <cit:CI_Address>
+                      <cit:deliveryPoint>
+                        <gco:CharacterString />
+                      </cit:deliveryPoint>
+                      <cit:city>
+                        <gco:CharacterString>Bern</gco:CharacterString>
+                      </cit:city>
+                      <cit:postalCode>
+                        <gco:CharacterString>3003</gco:CharacterString>
+                      </cit:postalCode>
+                      <cit:electronicMailAddress>
+                        <gco:CharacterString>info@bafu.admin.ch</gco:CharacterString>
+                      </cit:electronicMailAddress>
+                    </cit:CI_Address>
+                  </cit:address>
+                  <cit:onlineResource>
+                    <cit:CI_OnlineResource>
+                      <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                        <gco:CharacterString>https://www.bafu.admin.ch/bafu/de/home.html</gco:CharacterString>
+                        <lan:PT_FreeText>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#EN">https://www.bafu.admin.ch/bafu/de/home.html</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#DE">https://www.bafu.admin.ch/bafu/de/home.html</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#FR">https://www.bafu.admin.ch/bafu/fr/home.html</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#IT">https://www.bafu.admin.ch/bafu/it/home.html</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#RM">https://www.bafu.admin.ch/bafu/en/home.html</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                        </lan:PT_FreeText>
+                      </cit:linkage>
+                      <cit:protocol>
+                        <gco:CharacterString>WWW:LINK</gco:CharacterString>
+                      </cit:protocol>
+                    </cit:CI_OnlineResource>
+                  </cit:onlineResource>
+                </cit:CI_Contact>
+              </cit:contactInfo>
+              <che:organisationAcronym xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>BAFU</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">BAFU</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">BAFU</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">BAFU</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">BAFU</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#RM">BAFU</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </che:organisationAcronym>
+            </che:CHE_CI_Organisation>
+          </cit:party>
+        </cit:CI_Responsibility>
+      </mri:pointOfContact>
+      <mri:spatialRepresentationType>
+        <mcc:MD_SpatialRepresentationTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="paperMap" />
+      </mri:spatialRepresentationType>
+      <mri:spatialResolution>
+        <mri:MD_Resolution>
+          <mri:equivalentScale>
+            <mri:MD_RepresentativeFraction>
+              <mri:denominator>
+                <gco:Integer>100000</gco:Integer>
+              </mri:denominator>
+            </mri:MD_RepresentativeFraction>
+          </mri:equivalentScale>
+        </mri:MD_Resolution>
+      </mri:spatialResolution>
+      <mri:topicCategory>
+        <mri:MD_TopicCategoryCode>geoscientificInformation</mri:MD_TopicCategoryCode>
+      </mri:topicCategory>
+      <mri:topicCategory>
+        <mri:MD_TopicCategoryCode>inlandWaters</mri:MD_TopicCategoryCode>
+      </mri:topicCategory>
+      <mri:extent xlink:show="embed">
+        <gex:EX_Extent>
+          <gex:description xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Schweizerisches Mittelland</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">Swiss plateau</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Schweizerisches Mittelland</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">Plateau suisse</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">Altopiano svizzero</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#RM">Svizra bassa</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </gex:description>
+          <gex:geographicElement>
+            <gex:EX_GeographicDescription>
+              <gex:geographicIdentifier>
+                <mcc:MD_Identifier>
+                  <mcc:code xsi:type="lan:PT_FreeText_PropertyType">
+                    <gco:CharacterString>-</gco:CharacterString>
+                    <lan:PT_FreeText>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#EN">-</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#DE">-</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#FR">-</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#IT">-</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#RM">-</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                    </lan:PT_FreeText>
+                  </mcc:code>
+                </mcc:MD_Identifier>
+              </gex:geographicIdentifier>
+            </gex:EX_GeographicDescription>
+          </gex:geographicElement>
+          <gex:geographicElement>
+            <gex:EX_GeographicBoundingBox>
+              <gex:westBoundLongitude>
+                <gco:Decimal>6.010000</gco:Decimal>
+              </gex:westBoundLongitude>
+              <gex:eastBoundLongitude>
+                <gco:Decimal>9.669999</gco:Decimal>
+              </gex:eastBoundLongitude>
+              <gex:southBoundLatitude>
+                <gco:Decimal>46.459998</gco:Decimal>
+              </gex:southBoundLatitude>
+              <gex:northBoundLatitude>
+                <gco:Decimal>47.869998</gco:Decimal>
+              </gex:northBoundLatitude>
+            </gex:EX_GeographicBoundingBox>
+          </gex:geographicElement>
+          <gex:geographicElement>
+            <gex:EX_BoundingPolygon>
+              <gex:polygon>
+                <MultiSurface xmlns="http://www.opengis.net/gml/3.2" gml:id="d5834896e86">
+                  <gml:surfaceMember>
+                    <Polygon gml:id="d5834896e88">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList>6.010000005614447 47.86999800966697 9.669999009253482 47.86999800868714 9.669999009740437 46.459999008063974 6.010000005889736 46.45999800898742 6.010000005614447 47.86999800966697</gml:posList>
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </Polygon>
+                  </gml:surfaceMember>
+                </MultiSurface>
+              </gex:polygon>
+            </gex:EX_BoundingPolygon>
+          </gex:geographicElement>
+        </gex:EX_Extent>
+      </mri:extent>
+      <mri:resourceMaintenance>
+        <che:CHE_MD_MaintenanceInformation gco:isoType="mmi:MD_MaintenanceInformation">
+          <mmi:maintenanceAndUpdateFrequency>
+            <mmi:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_MaintenanceFrequencyCode" codeListValue="irregular" />
+          </mmi:maintenanceAndUpdateFrequency>
+          <che:appraisal>
+            <che:CHE_MD_Appraisal_AAP>
+              <che:durationOfConservation>
+                <gco:Integer>100</gco:Integer>
+              </che:durationOfConservation>
+              <che:appraisalOfArchivalValue>
+                <che:CHE_AppraisalOfArchivalValueCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_AppraisalOfArchivalValueCode" codeListValue="A" />
+              </che:appraisalOfArchivalValue>
+              <che:reasonForArchivingValue>
+                <che:CHE_ReasonForArchivingValueCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_ReasonForArchivingValueCode" codeListValue="evidenceOfBusinessPractice" />
+              </che:reasonForArchivingValue>
+            </che:CHE_MD_Appraisal_AAP>
+          </che:appraisal>
+        </che:CHE_MD_MaintenanceInformation>
+      </mri:resourceMaintenance>
+      <mri:descriptiveKeywords>
+        <mri:MD_Keywords>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Grundwasser</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">eaux souterraines</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">acqua sotterranea</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">groundwater</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#RM" />
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Grundwasserträger</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">aquifère</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">acquifero</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">aquifer</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#RM" />
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Hydrogeologie</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">hydrogéologie</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">idrogeologia</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">hydrogeology</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#RM" />
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:type>
+            <mri:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19115/-3/resources/codeList.xml#MD_KeywordTypeCode" codeListValue="theme" />
+          </mri:type>
+          <mri:thesaurusName>
+            <cit:CI_Citation>
+              <cit:title>
+                <gcx:Anchor xlink:href="http://geonetwork-opensource.org/gemet">GEMET</gcx:Anchor>
+              </cit:title>
+              <cit:date>
+                <cit:CI_Date>
+                  <cit:date>
+                    <gco:Date>2018-08-16</gco:Date>
+                  </cit:date>
+                  <cit:dateType>
+                    <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication" />
+                  </cit:dateType>
+                </cit:CI_Date>
+              </cit:date>
+              <cit:identifier>
+                <mcc:MD_Identifier>
+                  <mcc:code>
+                    <gcx:Anchor xlink:href="https://geocat-dev.dev.bgdi.ch/geonetwork/srv/api/registries/vocabularies/external.theme.gemet">geonetwork.thesaurus.external.theme.gemet</gcx:Anchor>
+                  </mcc:code>
+                </mcc:MD_Identifier>
+              </cit:identifier>
+            </cit:CI_Citation>
+          </mri:thesaurusName>
+        </mri:MD_Keywords>
+      </mri:descriptiveKeywords>
+      <mri:descriptiveKeywords>
+        <mri:MD_Keywords>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>BGDI Bundesgeodaten-Infrastruktur</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">IFDG l’Infrastructure Fédérale de données géographiques</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">IFDG Infrastruttura federale dei dati geografici</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">FSDI Federal Spatial Data Infrastructure</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#RM" />
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:type>
+            <mri:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19115/-3/resources/codeList.xml#MD_KeywordTypeCode" codeListValue="theme" />
+          </mri:type>
+          <mri:thesaurusName>
+            <cit:CI_Citation>
+              <cit:title>
+                <gcx:Anchor xlink:href="http://www.geocat.ch/concept">geocat.ch</gcx:Anchor>
+              </cit:title>
+              <cit:date>
+                <cit:CI_Date>
+                  <cit:date>
+                    <gco:Date>2026-03-13</gco:Date>
+                  </cit:date>
+                  <cit:dateType>
+                    <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication" />
+                  </cit:dateType>
+                </cit:CI_Date>
+              </cit:date>
+              <cit:identifier>
+                <mcc:MD_Identifier>
+                  <mcc:code>
+                    <gcx:Anchor xlink:href="https://geocat-dev.dev.bgdi.ch/geonetwork/srv/api/registries/vocabularies/local.theme.geocat.ch">geonetwork.thesaurus.local.theme.geocat.ch</gcx:Anchor>
+                  </mcc:code>
+                </mcc:MD_Identifier>
+              </cit:identifier>
+            </cit:CI_Citation>
+          </mri:thesaurusName>
+        </mri:MD_Keywords>
+      </mri:descriptiveKeywords>
+      <mri:descriptiveKeywords>
+        <mri:MD_Keywords>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Geobasisdaten</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">géodonnées de base</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">geodati di base</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">official geodata</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#RM" />
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Aufbewahrungs- und Archivierungsplanung AAP - Bund</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">Planification de la conservation et de l'archivage AAP - Conféderation</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">Pianificazione della conservazione e dell’archiviazione AAP - Confederazione</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">Conservation and archiving planning AAP - Confederation</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#RM" />
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:keyword xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>opendata.swiss</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">opendata.swiss</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">opendata.swiss</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">opendata.swiss</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#RM">opendata.swiss</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mri:keyword>
+          <mri:type>
+            <mri:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19115/-3/resources/codeList.xml#MD_KeywordTypeCode" codeListValue="theme" />
+          </mri:type>
+          <mri:thesaurusName>
+            <cit:CI_Citation>
+              <cit:title>
+                <gcx:Anchor xlink:href="http://www.geocat.ch/concept">geocat.ch</gcx:Anchor>
+              </cit:title>
+              <cit:date>
+                <cit:CI_Date>
+                  <cit:date>
+                    <gco:Date>2026-03-13</gco:Date>
+                  </cit:date>
+                  <cit:dateType>
+                    <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication" />
+                  </cit:dateType>
+                </cit:CI_Date>
+              </cit:date>
+              <cit:identifier>
+                <mcc:MD_Identifier>
+                  <mcc:code>
+                    <gcx:Anchor xlink:href="https://geocat-dev.dev.bgdi.ch/geonetwork/srv/api/registries/vocabularies/local.theme.geocat.ch">geonetwork.thesaurus.local.theme.geocat.ch</gcx:Anchor>
+                  </mcc:code>
+                </mcc:MD_Identifier>
+              </cit:identifier>
+            </cit:CI_Citation>
+          </mri:thesaurusName>
+        </mri:MD_Keywords>
+      </mri:descriptiveKeywords>
+      <mri:resourceConstraints>
+        <che:CHE_MD_LegalConstraints gco:isoType="mco:MD_LegalConstraints">
+          <mco:useConstraints>
+            <mco:MD_RestrictionCode codeListValue="otherRestrictions" codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_RestrictionCode" />
+          </mco:useConstraints>
+          <mco:otherConstraints xsi:type="lan:PT_FreeText_PropertyType">
+            <gcx:Anchor xlink:href="https://opendata.swiss/en/terms-of-use/#terms_by">Opendata BY: Freie Nutzung. Quellenangabe ist Pflicht.</gcx:Anchor>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Opendata BY: Freie Nutzung. Quellenangabe ist Pflicht.</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">Opendata BY: Utilisation libre. Obligation d’indiquer la source.</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#IT">Opendata BY: Libero utilizzo. Indicazione della fonte obbligatoria.</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">Opendata BY: Open use. Must provide the source.</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </mco:otherConstraints>
+        </che:CHE_MD_LegalConstraints>
+      </mri:resourceConstraints>
+      <mri:associatedResource>
+        <mri:MD_AssociatedResource>
+          <mri:name>
+            <cit:CI_Citation>
+              <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>Hydrologische Verhältnisse (Erhebungen von gesamtschweizerischem Interesse)</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Hydrologische Verhältnisse (Erhebungen von gesamtschweizerischem Interesse)</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">Conditions hydrologiques (relevés d’intérêt national)</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">Condizioni idrologiche (rilevamenti di interesse nazionale)</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:title>
+            </cit:CI_Citation>
+          </mri:name>
+          <mri:associationType>
+            <mri:DS_AssociationTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#DS_AssociationTypeCode" codeListValue="largerWorkCitation" />
+          </mri:associationType>
+        </mri:MD_AssociatedResource>
+      </mri:associatedResource>
+      <mri:defaultLocale>
+        <lan:PT_Locale>
+          <lan:language>
+            <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
+          </lan:language>
+          <lan:characterEncoding>
+            <lan:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+          </lan:characterEncoding>
+        </lan:PT_Locale>
+      </mri:defaultLocale>
+      <mri:otherLocale>
+        <lan:PT_Locale>
+          <lan:language>
+            <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="fre" />
+          </lan:language>
+          <lan:characterEncoding>
+            <lan:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+          </lan:characterEncoding>
+        </lan:PT_Locale>
+      </mri:otherLocale>
+      <che:subTopicCategory>
+        <che:CHE_MD_SubTopicCategoryCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_SubTopicCategoryCode" codeListValue="geoscientificInformation_Geology" />
+      </che:subTopicCategory>
+      <che:basicGeodata>
+        <gco:Boolean>true</gco:Boolean>
+      </che:basicGeodata>
+      <che:basicGeodataInformation>
+        <che:CHE_MD_BasicGeodataInformation>
+          <che:basicGeodataID xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>135.5</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">135.5</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </che:basicGeodataID>
+          <che:basicGeodataLegalLevel>
+            <che:CHE_MD_LevelCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CHE_MD_LevelCode" codeListValue="federal" />
+          </che:basicGeodataLegalLevel>
+        </che:CHE_MD_BasicGeodataInformation>
+      </che:basicGeodataInformation>
+    </che:CHE_MD_DataIdentification>
+  </mdb:identificationInfo>
+  <mdb:distributionInfo xmlns:geonet="http://www.fao.org/geonetwork">
+    <mrd:MD_Distribution>
+      <mrd:distributionFormat>
+        <mrd:MD_Format uuid="4d61e0e1-59f1-44e1-aa0f-fb30429a7373">
+          <mrd:formatSpecificationCitation>
+            <cit:CI_Citation>
+              <cit:title>
+                <gco:CharacterString>Cloud Optimized GeoTIFF (TIFF / TIF)</gco:CharacterString>
+              </cit:title>
+              <cit:date gco:nilReason="unknown" />
+              <cit:edition gco:nilReason="unknown">
+                <gco:CharacterString>-</gco:CharacterString>
+              </cit:edition>
+            </cit:CI_Citation>
+          </mrd:formatSpecificationCitation>
+        </mrd:MD_Format>
+      </mrd:distributionFormat>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
+          <mrd:unitsOfDistribution gco:nilReason="missing">
+            <gco:CharacterString />
+          </mrd:unitsOfDistribution>
+          <mrd:onLine>
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://map.geo.admin.ch/?layers=ch.bafu.hydrogeologische-karte_100</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">https://map.geo.admin.ch/?layers=ch.bafu.hydrogeologische-karte_100</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">https://map.geo.admin.ch/?layers=ch.bafu.hydrogeologische-karte_100</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">https://map.geo.admin.ch/?layers=ch.bafu.hydrogeologische-karte_100</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">https://map.geo.admin.ch/?layers=ch.bafu.hydrogeologische-karte_100</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#RM">https://map.geo.admin.ch/?layers=ch.bafu.hydrogeologische-karte_100</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>MAP:Preview</gco:CharacterString>
+              </cit:protocol>
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>Vorschau map.geo.admin.ch</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Vorschau map.geo.admin.ch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:name>
+              <cit:description xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>Vorschau map.geo.admin.ch</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Vorschau map.geo.admin.ch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">Aperçu map.geo.admin.ch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">Previsione map.geo.admin.ch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">Preview map.geo.admin.ch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:description>
+            </cit:CI_OnlineResource>
+          </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
+          <mrd:onLine>
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=de</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=de</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=fr</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=it</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=en</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#RM">https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=de</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>OGC:WMS</gco:CharacterString>
+              </cit:protocol>
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>ch.bafu.hydrogeologische-karte_100</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">ch.bafu.hydrogeologische-karte_100</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:name>
+              <cit:description xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>WMS-BGDI Dienst, Layer "Hydrogeologische Karte 100"</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">WMS-BGDI Dienst, Layer "Hydrogeologische Karte 100"</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">Service WMS-IFDG, couche "Carte hydrogéologique au 100"</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">Servizio WMS-IFDG, strato "Carta idrogeologica 100"</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">WMS-FSDI service, layer "Hydrogeological map 100"</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#RM">WMS-BGDI Dienst, Layer "Hydrogeologische Karte 100"</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:description>
+            </cit:CI_OnlineResource>
+          </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
+          <mrd:onLine>
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=de</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=de</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=fr</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=it</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=en</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#RM">https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=de</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>OGC:WMTS</gco:CharacterString>
+              </cit:protocol>
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>ch.bafu.hydrogeologische-karte_100</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">ch.bafu.hydrogeologische-karte_100</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:name>
+              <cit:description xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>WMTS-BGDI Dienst, Layer "Hydrogeologische Karte 100"</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">WMTS-BGDI Dienst, Layer "Hydrogeologische Karte 100"</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">Service WMTS-IFDG, couche , Layer "Carte hydrogéologique au 100"</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">Servizio WMTS-IFDG, strato "Carta idrogeologica 100"</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">WMTS-FSDI service, layer "Hydrogeological map 100"</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#RM">WMTS-BGDI Dienst, Layer "Hydrogeologische Karte 100"</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:description>
+            </cit:CI_OnlineResource>
+          </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
+          <mrd:onLine>
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://www.bafu.admin.ch/de/grundwasser-karten</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">https://www.bafu.admin.ch/de/grundwasser-karten</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">https://www.bafu.admin.ch/fr/cartes-des-eaux-souterraines</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">https://www.bafu.admin.ch/it/geodati-idrogeologici</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">https://www.bafu.admin.ch/en/groundwater-maps</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>WWW:LINK</gco:CharacterString>
+              </cit:protocol>
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>Grundwasser-Karten</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Grundwasser-Karten</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:name>
+              <cit:description xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>Link zu Detailbeschreibung</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Link zu Detailbeschreibung</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">Lien vers la description détaillée des données</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">Link per la descrizione dei dettagli</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">Link to description</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:description>
+              <cit:function>
+                <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="information" />
+              </cit:function>
+            </cit:CI_OnlineResource>
+          </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
+          <mrd:onLine>
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://data.geo.admin.ch/browser/index.html#/collections/ch.bafu.hydrogeologische-karte_100?.language=en</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">https://data.geo.admin.ch/browser/index.html#/collections/ch.bafu.hydrogeologische-karte_100?.language=en</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>WWW:DOWNLOAD-URL</gco:CharacterString>
+              </cit:protocol>
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>STAC Browser</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">STAC Browser</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:name>
+              <cit:description xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>Download Server von geo.admin.ch</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Download Server von geo.admin.ch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">Serveur de téléchargement de geo.admin.ch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">Server di download di geo.admin.ch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">Download server from geo.admin.ch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:description>
+            </cit:CI_OnlineResource>
+          </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
+          <mrd:onLine>
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>http://map.bafu.admin.ch</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">http://map.bafu.admin.ch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">http://map.bafu.admin.ch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">http://map.bafu.admin.ch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">http://map.bafu.admin.ch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>CHTOPO:specialised-geoportal</gco:CharacterString>
+              </cit:protocol>
+              <cit:description xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>Link zum Fachportal</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Link zum Fachportal</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">Lien vers le portail</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">Link per il portale</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">Link to portal</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:description>
+              <cit:function>
+                <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="information" />
+              </cit:function>
+            </cit:CI_OnlineResource>
+          </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+      <mrd:transferOptions>
+        <mrd:MD_DigitalTransferOptions>
+          <mrd:onLine>
+            <cit:CI_OnlineResource>
+              <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.hydrogeologische-karte_100</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.hydrogeologische-karte_100</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.hydrogeologische-karte_100</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.hydrogeologische-karte_100</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.hydrogeologische-karte_100</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#RM">https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.hydrogeologische-karte_100</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:linkage>
+              <cit:protocol>
+                <gco:CharacterString>ESRI:REST</gco:CharacterString>
+              </cit:protocol>
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>RESTful API von geo.admin.ch</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">RESTful API von geo.admin.ch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:name>
+              <cit:description xsi:type="lan:PT_FreeText_PropertyType">
+                <gco:CharacterString>RESTful API von geo.admin.ch</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">RESTful API von geo.admin.ch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#FR">RESTful API de geo.admin.ch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#IT">RESTful API da geo.admin.ch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">RESTful API from geo.admin.ch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#RM">RESTful API dad geo.admin.ch</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
+              </cit:description>
+            </cit:CI_OnlineResource>
+          </mrd:onLine>
+        </mrd:MD_DigitalTransferOptions>
+      </mrd:transferOptions>
+    </mrd:MD_Distribution>
+  </mdb:distributionInfo>
+  <mdb:resourceLineage xmlns:geonet="http://www.fao.org/geonetwork">
+    <mrl:LI_Lineage>
+      <mrl:statement xsi:type="lan:PT_FreeText_PropertyType">
+        <gco:CharacterString>Der geologische Untergund wurde auf der Basis des Geologischen Atlas 25'000 kompiliert. Gebiete, in denen dieser bei Erstellung nicht vorhanden war, wurden auf Grund geologischer Spezialkarten und weiterer publizierter Unterlagen ergänzt. Die Daten wurden durch aktuelle, zum Teil unpublizierte Studien ergänzt. Die Auflösung am Boden kann bei abgeleitetet Themenkarten nicht exakt bestimmt werden, da die Lage der geologischen Objekte der Interpretation des kartierenden Geologen unterliegt. Sie weichen zusätzlich durch Gewichtung und Generalisierung vom eigentlichen Ort ab.</gco:CharacterString>
+        <lan:PT_FreeText>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#DE">Der geologische Untergund wurde auf der Basis des Geologischen Atlas 25'000 kompiliert. Gebiete, in denen dieser bei Erstellung nicht vorhanden war, wurden auf Grund geologischer Spezialkarten und weiterer publizierter Unterlagen ergänzt. Die Daten wurden durch aktuelle, zum Teil unpublizierte Studien ergänzt. Die Auflösung am Boden kann bei abgeleitetet Themenkarten nicht exakt bestimmt werden, da die Lage der geologischen Objekte der Interpretation des kartierenden Geologen unterliegt. Sie weichen zusätzlich durch Gewichtung und Generalisierung vom eigentlichen Ort ab.</lan:LocalisedCharacterString>
+          </lan:textGroup>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#FR">Le sous-sol géologique a été compilé sur la base de l'Atlas géologique au 1:25000. Pour les zones auxquelles l'atlas n'était pas disponible lors de la réalisation, les carte géologiques spéciales et d'autres publications ont été consultées. Les données ont été complétées par des études non publiées. La résolution au sol ne peut être définie de manière exacte, la position des objets géologiques dépend de l'interprétation du géologue-cartographe. D'autres imprécisions sont dues à la pondération et à la généralisation de la carte de base.</lan:LocalisedCharacterString>
+          </lan:textGroup>
+        </lan:PT_FreeText>
+      </mrl:statement>
+      <mrl:scope>
+        <mcc:MD_Scope>
+          <mcc:level>
+            <mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ScopeCode" codeListValue="series" />
+          </mcc:level>
+        </mcc:MD_Scope>
+      </mrl:scope>
+    </mrl:LI_Lineage>
+  </mdb:resourceLineage>
+</che:CHE_MD_Metadata>
+

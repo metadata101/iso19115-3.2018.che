@@ -38,6 +38,7 @@
                 xmlns:mai="http://standards.iso.org/iso/19115/-3/mai/1.0"
                 xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0"
                 xmlns:gco2="http://standards.iso.org/iso/19115/-3/gco/1.0"
+                xmlns:che="http://geocat.ch/che"
                 xmlns:gml="http://www.opengis.net/gml/3.2"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -79,7 +80,19 @@
     <xsl:namespace name="xlink" select="'http://www.w3.org/1999/xlink'"/>
   </xsl:template>
 
-  <xsl:template match="/" name="toISO19139">
+  <!-- ============================================================ -->
+  <!-- Root template with CHE post-processing                        -->
+  <!-- ============================================================ -->
+  <xsl:template match="/" priority="300">
+    <xsl:variable name="iso19139">
+      <xsl:call-template name="toISO19139"/>
+    </xsl:variable>
+    <!-- Apply CHE post-processing templates to result -->
+    <xsl:apply-templates select="$iso19139/*"/>
+  </xsl:template>
+
+  <!-- Core ISO19139 transformation (internal) -->
+  <xsl:template name="toISO19139">
     <!--
     root element (MD_Metadata or MI_Metadata)
     -->
@@ -88,7 +101,15 @@
         <xsl:call-template name="getNamespacePrefix"/>
       </xsl:variable>
 
-      <xsl:element name="{concat($nameSpacePrefix,':',local-name(.))}">
+      <!-- CHE_MD_Metadata → MD_Metadata -->
+      <xsl:variable name="elementName">
+        <xsl:choose>
+          <xsl:when test="local-name() = 'CHE_MD_Metadata'">MD_Metadata</xsl:when>
+          <xsl:otherwise><xsl:value-of select="local-name()"/></xsl:otherwise>
+        </xsl:choose>
+      </xsl:variable>
+
+      <xsl:element name="{concat($nameSpacePrefix,':',$elementName)}">
         <xsl:call-template name="add-namespaces"/>
 
         <xsl:apply-templates select="mdb:metadataIdentifier"/>
@@ -216,6 +237,21 @@
     </gmd:metadataStandardVersion>
   </xsl:template>
 
+  <!-- Convert mdb:contact (ISO19115-3) to gmd:contact (ISO19139) -->
+  <xsl:template match="mdb:contact" priority="10">
+    <gmd:contact>
+      <xsl:apply-templates select="cit:CI_Responsibility"/>
+    </gmd:contact>
+  </xsl:template>
+
+  <!-- Convert gcx:Anchor (ISO19115-3) to gco:CharacterString (ISO19139) -->
+  <!-- Anchor elements from ISO19115-3 (gcx namespace) are converted to simple CharacterString 
+       in ISO19139 since ISO19139 schema doesn't support Anchor in gmd:code context -->
+  <xsl:template match="gcx:Anchor" priority="5">
+    <gco:CharacterString>
+      <xsl:value-of select="."/>
+    </gco:CharacterString>
+  </xsl:template>
 
   <xsl:template match="mdb:identificationInfo">
     <gmd:identificationInfo>
@@ -434,17 +470,8 @@
     <gmd:aggregateDataSetIdentifier>
       <gmd:MD_Identifier>
         <gmd:code>
-          <xsl:choose>
-            <xsl:when test="@xlink:href">
-              <gmx:Anchor>
-                <xsl:copy-of select="@xlink:*"/>
-                <xsl:value-of select="@uuidref"/>
-              </gmx:Anchor>
-            </xsl:when>
-            <xsl:otherwise>
-              <gco:CharacterString><xsl:value-of select="@uuidref"/></gco:CharacterString>
-            </xsl:otherwise>
-          </xsl:choose>
+          <!-- Use gco:CharacterString only; gmx:Anchor not allowed in ISO19139 schema for gmd:code -->
+          <gco:CharacterString><xsl:value-of select="@uuidref"/></gco:CharacterString>
         </gmd:code>
       </gmd:MD_Identifier>
     </gmd:aggregateDataSetIdentifier>
@@ -706,11 +733,12 @@
 
   <xsl:template match="cit:CI_Responsibility" priority="5">
     <xsl:choose>
-      <xsl:when test="count(cit:party/cit:CI_Organisation/cit:individual/cit:CI_Individual/cit:name/gco2:CharacterString) +
-        count(cit:party/cit:CI_Organisation/cit:individual/cit:CI_Individual/cit:positionName/gco2:CharacterString) +
-        count(cit:party/cit:CI_Individual/cit:name/gco2:CharacterString) +
-        count(cit:party/cit:CI_Individual/cit:positionName/gco2:CharacterString) +
-        count(cit:party/cit:CI_Organisation/cit:name/gco2:CharacterString) > 0">
+      <xsl:when test="count(cit:party/cit:CI_Organisation/cit:individual/cit:CI_Individual/cit:name/*[local-name()='CharacterString']) +
+        count(cit:party/cit:CI_Organisation/cit:individual/cit:CI_Individual/cit:positionName/*[local-name()='CharacterString']) +
+        count(cit:party/cit:CI_Individual/cit:name/*[local-name()='CharacterString']) +
+        count(cit:party/cit:CI_Individual/cit:positionName/*[local-name()='CharacterString']) +
+        count(cit:party/cit:CI_Organisation/cit:name/*[local-name()='CharacterString']) +
+        count(cit:party/che:CHE_CI_Organisation/cit:name/*[local-name()='CharacterString']) > 0">
         <!--
           CI_ResponsibleParties that include name elements (individualName, organisationName, or positionName) are translated to CI_Responsibilities.
           CI_ResponsibleParties without name elements are assummed to be placeholders for CI_OnlineResources. They are transformed later in the process
@@ -718,10 +746,10 @@
         -->
 
         <!-- Create as many responsible parties as the number of individual + organisation (with no individual) + individuals in an organisation -->
-        <xsl:for-each select="cit:party/(cit:CI_Individual|cit:CI_Organisation[not(cit:individual)]|cit:CI_Organisation/*/cit:CI_Individual)">
+        <xsl:for-each select="cit:party/(cit:CI_Individual|cit:CI_Organisation[not(cit:individual)]|che:CHE_CI_Organisation[not(cit:individual)]|cit:CI_Organisation/*/cit:CI_Individual|che:CHE_CI_Organisation/*/cit:CI_Individual)">
         <xsl:element name="gmd:CI_ResponsibleParty">
           <xsl:apply-templates select="@*"/>
-          <xsl:if test="name() = 'cit:CI_Individual' and cit:name != ''">
+          <xsl:if test="self::cit:CI_Individual and cit:name != ''">
             <xsl:call-template name="writeCharacterStringElement">
               <xsl:with-param name="elementName" select="'gmd:individualName'"/>
                 <xsl:with-param name="nodeWithStringToWrite" select="cit:name"/>
@@ -729,13 +757,13 @@
           </xsl:if>
 
           <xsl:choose>
-            <xsl:when test="name() = 'cit:CI_Organisation' and cit:name != ''">
+            <xsl:when test="(self::cit:CI_Organisation or self::che:CHE_CI_Organisation) and cit:name != ''">
               <xsl:call-template name="writeCharacterStringElement">
                 <xsl:with-param name="elementName" select="'gmd:organisationName'"/>
                     <xsl:with-param name="nodeWithStringToWrite" select="cit:name"/>
               </xsl:call-template>
             </xsl:when>
-            <xsl:when test="name() = 'cit:CI_Individual' and ../../cit:name != ''">
+            <xsl:when test="self::cit:CI_Individual and ../../cit:name != ''">
               <xsl:call-template name="writeCharacterStringElement">
                 <xsl:with-param name="elementName" select="'gmd:organisationName'"/>
                 <xsl:with-param name="nodeWithStringToWrite" select="../../cit:name"/>
@@ -752,13 +780,13 @@
 
           <!-- contactInformation comes before individual/position -->
           <xsl:choose>
-            <xsl:when test="name() = 'cit:CI_Individual' and cit:contactInfo[normalize-space(.) != '']">
+            <xsl:when test="self::cit:CI_Individual and cit:contactInfo[normalize-space(.) != '']">
               <xsl:for-each select="cit:contactInfo[normalize-space(.) != '']">
                 <xsl:call-template name="writeContactInformation"/>
               </xsl:for-each>
             </xsl:when>
             <!-- Individual gets contact info from the parent organisation -->
-            <xsl:when test="name() = 'cit:CI_Individual' and ../../cit:contactInfo[normalize-space(.) != '']">
+            <xsl:when test="self::cit:CI_Individual and ../../cit:contactInfo[normalize-space(.) != '']">
               <xsl:for-each select="../../cit:contactInfo[normalize-space(.) != '']">
                 <xsl:call-template name="writeContactInformation"/>
               </xsl:for-each>
@@ -823,6 +851,32 @@
       Transform only the CI_OnlineResource element of the CI_ResponsibleParty
     -->
     <xsl:apply-templates select=".//gmd:onlineResource"/>
+  </xsl:template>
+
+  <!-- Convert ISO19115-3 linkage to ISO19139 gmd:URL -->
+  <xsl:template match="cit:CI_OnlineResource/cit:linkage">
+    <gmd:linkage>
+      <xsl:choose>
+        <xsl:when test="gco2:CharacterString">
+          <gmd:URL>
+            <xsl:value-of select="gco2:CharacterString"/>
+          </gmd:URL>
+        </xsl:when>
+        <xsl:when test="gmd:URL">
+          <!-- Already in correct format -->
+          <xsl:copy-of select="gmd:URL"/>
+        </xsl:when>
+        <xsl:when test="gco:CharacterString">
+          <!-- Handle legacy gco namespace -->
+          <gmd:URL>
+            <xsl:value-of select="gco:CharacterString"/>
+          </gmd:URL>
+        </xsl:when>
+        <xsl:otherwise>
+          <gmd:URL/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </gmd:linkage>
   </xsl:template>
 
   <xsl:template match="cit:CI_OnlineResource/cit:linkage/gco2:CharacterString">
@@ -1005,7 +1059,7 @@
         <xsl:when test="starts-with(name(),'gts:')">
           <xsl:text>gts</xsl:text>
         </xsl:when>
-        <xsl:when test="starts-with(name(),'srv:') and not(name()='srv:extent')">
+        <xsl:when test="starts-with(name(),'srv:') and not(local-name()='extent')">
           <xsl:text>srv</xsl:text>
         </xsl:when>
         <xsl:when test="ancestor-or-self::mco:MD_Constraints
@@ -1121,4 +1175,195 @@
                        mrl:sourceSpatialResolution|
                        mdq:derivedElement|
                        mri:graphicOverview/mcc:MD_BrowseGraphic/mcc:linkage" priority="2"/>
+
+  <!-- ============================================================ -->
+  <!-- CHE POST-PROCESSING TEMPLATES (from view.xsl)                -->
+  <!-- ============================================================ -->
+
+  <!-- ============================================================ -->
+  <!-- A. Remove gco:isoType everywhere                             -->
+  <!-- ============================================================ -->
+  <xsl:template match="@gco:isoType" priority="200"/>
+  
+  <!-- Also remove gco:isoType from renamed MD_* elements -->
+  <xsl:template match="gmd:MD_DataIdentification/@gco:isoType
+                     | gmd:MD_MaintenanceInformation/@gco:isoType
+                     | gmd:MD_LegalConstraints/@gco:isoType" priority="300"/>
+
+  <!-- ============================================================ -->
+  <!-- B. Remove CHE elements without ISO19139 equivalent            -->
+  <!-- ============================================================ -->
+  <xsl:template match="*[local-name() = 'CHE_MD_Appraisal_AAP']
+                     | *[local-name() = 'CHE_MD_Legislation']
+                     | *[local-name() = 'CHE_MD_BasicGeodataInformation']
+                     | *[local-name() = 'appraisal']
+                     | *[local-name() = 'subTopicCategory']"
+                priority="50"/>
+
+  <!-- ============================================================ -->
+  <!-- C. identificationInfo: rename CHE_MD_* → MD_* + cleanup      -->
+  <!--    (Keep order from toISO19139.xsl)                           -->
+  <!-- ============================================================ -->
+  <xsl:template match="gmd:identificationInfo" priority="300">
+    <gmd:identificationInfo>
+      <xsl:for-each select="*">
+        <xsl:choose>
+          <xsl:when test="local-name() = 'CHE_MD_DataIdentification'">
+            <gmd:MD_DataIdentification>
+              <xsl:apply-templates select="@* except @gco:isoType"/>
+              <!-- Keep order from toISO19139.xsl -->
+              <xsl:apply-templates select="*"/>
+            </gmd:MD_DataIdentification>
+          </xsl:when>
+          <xsl:when test="local-name() = 'CHE_MD_ServiceIdentification'">
+            <srv:SV_ServiceIdentification>
+              <xsl:apply-templates select="@* except @gco:isoType"/>
+              <xsl:apply-templates select="*"/>
+            </srv:SV_ServiceIdentification>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:apply-templates select="."/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:for-each>
+    </gmd:identificationInfo>
+  </xsl:template>
+
+  <!-- ============================================================ -->
+  <!-- D. resourceMaintenance: rename CHE_MD_* → MD_*               -->
+  <!-- ============================================================ -->
+  <xsl:template match="gmd:resourceMaintenance[gmd:CHE_MD_MaintenanceInformation]" priority="200">
+    <gmd:resourceMaintenance>
+      <gmd:MD_MaintenanceInformation>
+        <xsl:apply-templates select="gmd:CHE_MD_MaintenanceInformation/@* except @gco:isoType"/>
+        <xsl:apply-templates select="gmd:CHE_MD_MaintenanceInformation/*"/>
+      </gmd:MD_MaintenanceInformation>
+    </gmd:resourceMaintenance>
+  </xsl:template>
+
+  <!-- metadataMaintenance: rename CHE_MD_* → MD_* -->
+  <xsl:template match="gmd:metadataMaintenance[gmd:CHE_MD_MaintenanceInformation]" priority="200">
+    <gmd:metadataMaintenance>
+      <gmd:MD_MaintenanceInformation>
+        <xsl:apply-templates select="gmd:CHE_MD_MaintenanceInformation/@* except @gco:isoType"/>
+        <xsl:apply-templates select="gmd:CHE_MD_MaintenanceInformation/*"/>
+      </gmd:MD_MaintenanceInformation>
+    </gmd:metadataMaintenance>
+  </xsl:template>
+
+  <!-- ============================================================ -->
+  <!-- E. resourceConstraints: rename CHE_MD_* → MD_*               -->
+  <!-- ============================================================ -->
+  <xsl:template match="gmd:resourceConstraints[gmd:CHE_MD_LegalConstraints]" priority="200">
+    <gmd:resourceConstraints>
+      <gmd:MD_LegalConstraints>
+        <xsl:apply-templates select="gmd:CHE_MD_LegalConstraints/@* except @gco:isoType"/>
+        <xsl:apply-templates select="gmd:CHE_MD_LegalConstraints/*"/>
+      </gmd:MD_LegalConstraints>
+    </gmd:resourceConstraints>
+  </xsl:template>
+
+  <!-- metadataConstraints: rename CHE_MD_* → MD_* -->
+  <xsl:template match="gmd:metadataConstraints[gmd:CHE_MD_LegalConstraints]" priority="200">
+    <gmd:metadataConstraints>
+      <gmd:MD_LegalConstraints>
+        <xsl:apply-templates select="gmd:CHE_MD_LegalConstraints/@* except @gco:isoType"/>
+        <xsl:apply-templates select="gmd:CHE_MD_LegalConstraints/*"/>
+      </gmd:MD_LegalConstraints>
+    </gmd:metadataConstraints>
+  </xsl:template>
+
+  <!-- ============================================================ -->
+  <!-- F. linkage: gco:CharacterString → gmd:URL                    -->
+  <!-- ============================================================ -->
+  <!-- Convert any remaining gco:CharacterString in linkage to gmd:URL -->
+  <xsl:template match="gmd:linkage[gco:CharacterString]" priority="200">
+    <gmd:linkage>
+      <gmd:URL>
+        <xsl:value-of select="gco:CharacterString"/>
+      </gmd:URL>
+    </gmd:linkage>
+  </xsl:template>
+  
+  <!-- Also handle legacy gco2 namespace if present -->
+  <xsl:template match="gmd:linkage[gco2:CharacterString]" priority="200">
+    <gmd:linkage>
+      <gmd:URL>
+        <xsl:value-of select="gco2:CharacterString"/>
+      </gmd:URL>
+    </gmd:linkage>
+  </xsl:template>
+  
+  <!-- Already in gmd:URL, keep as is -->
+  <xsl:template match="gmd:linkage[gmd:URL]" priority="200">
+    <xsl:copy-of select="."/>
+  </xsl:template>
+
+  <!-- ============================================================ -->
+  <!-- G. PT_Locale: fix empty id with generate-id()                -->
+  <!-- ============================================================ -->
+  <xsl:template match="gmd:PT_Locale" priority="200">
+    <gmd:PT_Locale>
+      <xsl:attribute name="id">
+        <xsl:choose>
+          <xsl:when test="string-length(@id) > 0">
+            <xsl:value-of select="@id"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="generate-id()"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:attribute>
+      <gmd:languageCode>
+        <xsl:choose>
+          <xsl:when test="gmd:languageCode">
+            <xsl:copy-of select="gmd:languageCode/*"/>
+          </xsl:when>
+          <xsl:when test="gmd:language">
+            <xsl:copy-of select="gmd:language/*"/>
+          </xsl:when>
+        </xsl:choose>
+      </gmd:languageCode>
+      <xsl:apply-templates select="gmd:characterEncoding"/>
+    </gmd:PT_Locale>
+  </xsl:template>
+
+  <!-- ============================================================ -->
+  <!-- H. defaultLocale / otherLocale: gmd:locale/PT_Locale         -->
+  <!-- ============================================================ -->
+  <xsl:template match="gmd:defaultLocale" priority="200">
+    <gmd:defaultLocale>
+      <xsl:apply-templates select="node()"/>
+    </gmd:defaultLocale>
+  </xsl:template>
+
+  <xsl:template match="gmd:otherLocale" priority="200">
+    <gmd:otherLocale>
+      <xsl:apply-templates select="node()"/>
+    </gmd:otherLocale>
+  </xsl:template>
+
+  <!-- ============================================================ -->
+  <!-- I. MD_FeatureCatalogueDescription: remove gmd:locale         -->
+  <!--    (not at this location in schema)                          -->
+  <!-- ============================================================ -->
+  <xsl:template match="gmd:MD_FeatureCatalogueDescription" priority="200">
+    <gmd:MD_FeatureCatalogueDescription>
+      <xsl:apply-templates select="gmd:complianceCode"/>
+      <xsl:apply-templates select="gmd:language"/>
+      <xsl:apply-templates select="gmd:includedWithDataset"/>
+      <xsl:apply-templates select="gmd:featureTypes"/>
+      <xsl:apply-templates select="gmd:featureCatalogueCitation"/>
+    </gmd:MD_FeatureCatalogueDescription>
+  </xsl:template>
+
+  <!-- ============================================================ -->
+  <!-- J. polygon: keep only element children                       -->
+  <!-- ============================================================ -->
+  <xsl:template match="gmd:polygon" priority="50">
+    <gmd:polygon>
+      <xsl:apply-templates select="*"/>
+    </gmd:polygon>
+  </xsl:template>
+
 </xsl:stylesheet>
