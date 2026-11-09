@@ -33,7 +33,7 @@
                 xmlns:gss="http://www.isotc211.org/2005/gss"
                 xmlns:gts="http://www.isotc211.org/2005/gts"
                 xmlns:srv="http://www.isotc211.org/2005/srv"
-                xmlns:gml="http://www.opengis.net/gml"
+                xmlns:gml="http://www.opengis.net/gml/3.2"
                 xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0"
                 xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
                 xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0"
@@ -65,6 +65,7 @@
                 xmlns:gml32="http://www.opengis.net/gml/3.2"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+                xmlns:che="http://geocat.ch/che"
                 exclude-result-prefixes="#all">
 
   <xsl:import href="../../convert/ISO19139/toISO19139.xsl"/>
@@ -72,41 +73,10 @@
   <xsl:output method="xml"
               indent="yes"/>
 
-  <xsl:variable name="metadata"
-                select="//mdb:MD_Metadata"/>
-
-  <xsl:template match="/" priority="99">
-    <xsl:for-each select="$metadata">
-      <xsl:variable name="nameSpacePrefix">
-        <xsl:call-template name="getNamespacePrefix"/>
-      </xsl:variable>
-      <xsl:element name="{concat($nameSpacePrefix,':',local-name(.))}">
-        <xsl:call-template name="add-namespaces"/>
-
-        <xsl:apply-templates select="mdb:metadataIdentifier"/>
-        <xsl:apply-templates select="mdb:defaultLocale"/>
-        <xsl:apply-templates select="mdb:parentMetadata"/>
-        <xsl:apply-templates select="mdb:metadataScope"/>
-        <xsl:apply-templates select="mdb:contact"/>
-        <xsl:apply-templates select="mdb:dateInfo"/>
-        <xsl:apply-templates select="mdb:metadataStandard"/>
-        <xsl:apply-templates select="mdb:metadataProfile"/>
-        <xsl:apply-templates select="mdb:alternativeMetadataReference"/>
-        <xsl:apply-templates select="mdb:otherLocale"/>
-        <xsl:apply-templates select="mdb:metadataLinkage"/>
-        <xsl:apply-templates select="mdb:spatialRepresentationInfo"/>
-        <xsl:apply-templates select="mdb:referenceSystemInfo"/>
-        <xsl:apply-templates select="mdb:metadataExtensionInfo"/>
-        <xsl:apply-templates select="mdb:identificationInfo"/>
-        <xsl:apply-templates select="mdb:contentInfo"/>
-        <xsl:apply-templates select="mdb:distributionInfo"/>
-        <xsl:apply-templates select="mdb:dataQualityInfo"/>
-        <xsl:apply-templates select="mdb:resourceLineage"/>
-        <xsl:apply-templates select="mdb:portrayalCatalogueInfo"/>
-        <xsl:apply-templates select="mdb:metadataConstraints"/>
-        <xsl:apply-templates select="mdb:applicationSchemaInfo"/>
-        <xsl:apply-templates select="mdb:metadataMaintenance"/>
-      </xsl:element>
-    </xsl:for-each>
+  <xsl:template match="/" priority="500">
+    <xsl:variable name="iso19139">
+      <xsl:call-template name="toISO19139"/>
+    </xsl:variable>
+    <xsl:apply-templates select="$iso19139/*"/>
   </xsl:template>
 </xsl:stylesheet>
