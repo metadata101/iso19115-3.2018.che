@@ -128,13 +128,9 @@
       </xsl:choose>
 
       <!-- other locales (multilingual support) -->
-      <xsl:for-each select="eCH0271:otherLocale">
+      <xsl:for-each select="eCH0271:otherLocale/eCH0271:PT_Locale">
         <mdb:otherLocale>
-          <xsl:choose>
-            <xsl:when test="eCH0271:PT_Locale">
-              <xsl:apply-templates select="eCH0271:PT_Locale" mode="other-locale"/>
-            </xsl:when>
-          </xsl:choose>
+          <xsl:apply-templates select="." mode="other-locale"/>
         </mdb:otherLocale>
       </xsl:for-each>
 

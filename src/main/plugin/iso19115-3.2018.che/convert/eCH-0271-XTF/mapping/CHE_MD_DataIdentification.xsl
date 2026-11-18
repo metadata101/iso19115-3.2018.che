@@ -156,6 +156,13 @@
             <xsl:apply-templates select="eCH0271:defaultLocale" mode="data-locale"/>
           </mri:defaultLocale>
         </xsl:if>
+
+        <!-- Other Locales: one mri:otherLocale per PT_Locale -->
+        <xsl:for-each select="eCH0271:otherLocale/eCH0271:PT_Locale">
+          <mri:otherLocale>
+            <xsl:apply-templates select="." mode="data-locale"/>
+          </mri:otherLocale>
+        </xsl:for-each>
         
         <!-- CHE: Basic Geodata flag -->
         <xsl:if test="eCH0271:basicGeodata">

@@ -1,13 +1,18 @@
-<che:CHE_MD_Metadata xmlns:che="http://geocat.ch/che" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" gco:isoType="mdb:MD_Metadata">
-  <mdb:metadataIdentifier xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
-    <mcc:MD_Identifier xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0">
-      <mcc:code>
+<che:CHE_MD_Metadata xmlns:che="http://geocat.ch/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0" xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0" xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:md1="http://standards.iso.org/iso/19115/-3/md1/2.0" xmlns:md2="http://standards.iso.org/iso/19115/-3/md2/2.0" xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/2.0" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0" xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0" xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0" xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0" xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0" xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0" xmlns:dqm="http://standards.iso.org/iso/19157/-2/dqm/1.0" xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" gco:isoType="mdb:MD_Metadata">
+  <mdb:metadataIdentifier>
+    <mcc:MD_Identifier>
+      <mcc:code xsi:type="lan:PT_FreeText_PropertyType">
         <gco:CharacterString>8698bf0b-fceb-4f0f-989b-111e7c4af0a4</gco:CharacterString>
+        <lan:PT_FreeText>
+          <lan:textGroup>
+            <lan:LocalisedCharacterString locale="#DE">8698bf0b-fceb-4f0f-989b-111e7c4af0a4</lan:LocalisedCharacterString>
+          </lan:textGroup>
+        </lan:PT_FreeText>
       </mcc:code>
     </mcc:MD_Identifier>
   </mdb:metadataIdentifier>
-  <mdb:defaultLocale xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
-    <lan:PT_Locale xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" id="DE">
+  <mdb:defaultLocale>
+    <lan:PT_Locale id="DE">
       <lan:language>
         <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="ger">ger</lan:LanguageCode>
       </lan:language>
@@ -16,75 +21,28 @@
       </lan:characterEncoding>
     </lan:PT_Locale>
   </mdb:defaultLocale>
-  <mdb:otherLocale xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
-    <lan:PT_Locale xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" id="FR">
-      <lan:language>
-        <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="fre">fre</lan:LanguageCode>
-      </lan:language>
-      <lan:characterEncoding>
-        <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
-      </lan:characterEncoding>
-    </lan:PT_Locale>
-  </mdb:otherLocale>
-  <mdb:otherLocale xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
-    <lan:PT_Locale xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" id="IT">
-      <lan:language>
-        <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="ita">ita</lan:LanguageCode>
-      </lan:language>
-      <lan:characterEncoding>
-        <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
-      </lan:characterEncoding>
-    </lan:PT_Locale>
-  </mdb:otherLocale>
-  <mdb:otherLocale xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
-    <lan:PT_Locale xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" id="EN">
-      <lan:language>
-        <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="eng">eng</lan:LanguageCode>
-      </lan:language>
-      <lan:characterEncoding>
-        <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
-      </lan:characterEncoding>
-    </lan:PT_Locale>
-  </mdb:otherLocale>
-  <mdb:otherLocale xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
-    <lan:PT_Locale xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" id="RM">
-      <lan:language>
-        <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="roh">roh</lan:LanguageCode>
-      </lan:language>
-      <lan:characterEncoding>
-        <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
-      </lan:characterEncoding>
-    </lan:PT_Locale>
-  </mdb:otherLocale>
-  <mdb:metadataLinkage xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
-    <cit:CI_OnlineResource xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
-      <cit:linkage>
-        <gco:CharacterString>http://geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/</gco:CharacterString>
-      </cit:linkage>
-      <cit:function>
-        <cit:CI_OnLineFunctionCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="information">information</cit:CI_OnLineFunctionCode>
-      </cit:function>
-    </cit:CI_OnlineResource>
-  </mdb:metadataLinkage>
-  <mdb:metadataScope xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
+  <mdb:metadataScope>
     <mdb:MD_MetadataScope>
       <mdb:resourceScope>
-        <mcc:MD_ScopeCode xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" codeList="http://standards.iso.org/iso/19115/resources/Codelist/mcc/MD_ScopeCode.xml" codeListValue="dataset">dataset</mcc:MD_ScopeCode>
+        <mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/mcc/MD_ScopeCode.xml" codeListValue="dataset">dataset</mcc:MD_ScopeCode>
       </mdb:resourceScope>
     </mdb:MD_MetadataScope>
   </mdb:metadataScope>
-  <mdb:contact xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
-    <cit:CI_Responsibility xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
+  <mdb:contact>
+    <cit:CI_Responsibility>
       <cit:role>
         <cit:CI_RoleCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cit/CI_RoleCode.xml" codeListValue="pointOfContact">pointOfContact</cit:CI_RoleCode>
       </cit:role>
       <cit:party>
         <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
-          <cit:name xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
+          <cit:name xsi:type="lan:PT_FreeText_PropertyType">
             <gco:CharacterString>Bundesamt für Raumentwicklung</gco:CharacterString>
             <lan:PT_FreeText>
               <lan:textGroup>
                 <lan:LocalisedCharacterString locale="#DE">Bundesamt für Raumentwicklung</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">Federal Office for Spatial Development</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
                 <lan:LocalisedCharacterString locale="#FR">Office fédéral du développement territorial</lan:LocalisedCharacterString>
@@ -94,9 +52,6 @@
               </lan:textGroup>
               <lan:textGroup>
                 <lan:LocalisedCharacterString locale="#RM">Bundesamt für Raumentwicklung</lan:LocalisedCharacterString>
-              </lan:textGroup>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#EN">Federal Office for Spatial Development</lan:LocalisedCharacterString>
               </lan:textGroup>
             </lan:PT_FreeText>
           </cit:name>
@@ -133,11 +88,14 @@
               </cit:address>
               <cit:onlineResource>
                 <cit:CI_OnlineResource>
-                  <cit:linkage xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
+                  <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
                     <gco:CharacterString>http://www.are.admin.ch</gco:CharacterString>
                     <lan:PT_FreeText>
                       <lan:textGroup>
                         <lan:LocalisedCharacterString locale="#DE">http://www.are.admin.ch</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#EN">http://www.are.admin.ch</lan:LocalisedCharacterString>
                       </lan:textGroup>
                       <lan:textGroup>
                         <lan:LocalisedCharacterString locale="#FR">http://www.are.admin.ch</lan:LocalisedCharacterString>
@@ -147,9 +105,6 @@
                       </lan:textGroup>
                       <lan:textGroup>
                         <lan:LocalisedCharacterString locale="#RM">http://www.are.admin.ch</lan:LocalisedCharacterString>
-                      </lan:textGroup>
-                      <lan:textGroup>
-                        <lan:LocalisedCharacterString locale="#EN">http://www.are.admin.ch</lan:LocalisedCharacterString>
                       </lan:textGroup>
                     </lan:PT_FreeText>
                   </cit:linkage>
@@ -162,16 +117,24 @@
           </cit:contactInfo>
           <cit:individual>
             <cit:CI_Individual>
-              <cit:name>
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
                 <gco:CharacterString>Rolf Giezendanner</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Rolf Giezendanner</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
               </cit:name>
             </cit:CI_Individual>
           </cit:individual>
-          <che:organisationAcronym xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
+          <che:organisationAcronym xsi:type="lan:PT_FreeText_PropertyType">
             <gco:CharacterString>ARE</gco:CharacterString>
             <lan:PT_FreeText>
               <lan:textGroup>
                 <lan:LocalisedCharacterString locale="#DE">ARE</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#EN">ARE</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
                 <lan:LocalisedCharacterString locale="#FR">ARE</lan:LocalisedCharacterString>
@@ -182,17 +145,14 @@
               <lan:textGroup>
                 <lan:LocalisedCharacterString locale="#RM">ARE</lan:LocalisedCharacterString>
               </lan:textGroup>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#EN">ARE</lan:LocalisedCharacterString>
-              </lan:textGroup>
             </lan:PT_FreeText>
           </che:organisationAcronym>
         </che:CHE_CI_Organisation>
       </cit:party>
     </cit:CI_Responsibility>
   </mdb:contact>
-  <mdb:dateInfo xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
-    <cit:CI_Date xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
+  <mdb:dateInfo>
+    <cit:CI_Date>
       <cit:date>
         <gco:Date>2021-04-12</gco:Date>
       </cit:date>
@@ -201,32 +161,87 @@
       </cit:dateType>
     </cit:CI_Date>
   </mdb:dateInfo>
-  <mdb:dateInfo xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
-    <cit:CI_Date xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
+  <mdb:dateInfo>
+    <cit:CI_Date>
       <cit:date>
-        <gco:Date>2026-06-16</gco:Date>
+        <gco:Date>2026-11-03</gco:Date>
       </cit:date>
       <cit:dateType>
         <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cit/CI_DateTypeCode.xml" codeListValue="revision">revision</cit:CI_DateTypeCode>
       </cit:dateType>
     </cit:CI_Date>
   </mdb:dateInfo>
-  <mdb:referenceSystemInfo xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
-    <mrs:MD_ReferenceSystem xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0">
+  <mdb:otherLocale>
+    <lan:PT_Locale id="FR">
+      <lan:language>
+        <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="fre">fre</lan:LanguageCode>
+      </lan:language>
+      <lan:characterEncoding>
+        <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
+      </lan:characterEncoding>
+    </lan:PT_Locale>
+  </mdb:otherLocale>
+  <mdb:otherLocale>
+    <lan:PT_Locale id="IT">
+      <lan:language>
+        <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="ita">ita</lan:LanguageCode>
+      </lan:language>
+      <lan:characterEncoding>
+        <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
+      </lan:characterEncoding>
+    </lan:PT_Locale>
+  </mdb:otherLocale>
+  <mdb:otherLocale>
+    <lan:PT_Locale id="EN">
+      <lan:language>
+        <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="eng">eng</lan:LanguageCode>
+      </lan:language>
+      <lan:characterEncoding>
+        <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
+      </lan:characterEncoding>
+    </lan:PT_Locale>
+  </mdb:otherLocale>
+  <mdb:otherLocale>
+    <lan:PT_Locale id="RM">
+      <lan:language>
+        <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="roh">roh</lan:LanguageCode>
+      </lan:language>
+      <lan:characterEncoding>
+        <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
+      </lan:characterEncoding>
+    </lan:PT_Locale>
+  </mdb:otherLocale>
+  <mdb:metadataLinkage>
+    <cit:CI_OnlineResource>
+      <cit:linkage>
+        <gco:CharacterString>http://geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/de8698bf0b-fceb-4f0f-989b-111e7c4af0a4</gco:CharacterString>
+      </cit:linkage>
+      <cit:function>
+        <cit:CI_OnLineFunctionCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="information">information</cit:CI_OnLineFunctionCode>
+      </cit:function>
+    </cit:CI_OnlineResource>
+  </mdb:metadataLinkage>
+  <mdb:referenceSystemInfo>
+    <mrs:MD_ReferenceSystem>
       <mrs:referenceSystemIdentifier>
-        <mcc:MD_Identifier xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0">
-          <mcc:code>
+        <mcc:MD_Identifier>
+          <mcc:code xsi:type="lan:PT_FreeText_PropertyType">
             <gco:CharacterString>EPSG:2056</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">EPSG:2056</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
           </mcc:code>
         </mcc:MD_Identifier>
       </mrs:referenceSystemIdentifier>
     </mrs:MD_ReferenceSystem>
   </mdb:referenceSystemInfo>
-  <mdb:identificationInfo xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
+  <mdb:identificationInfo>
     <che:CHE_MD_DataIdentification gco:isoType="mri:MD_DataIdentification">
-      <mri:citation xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0">
-        <cit:CI_Citation xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
-          <cit:title xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
+      <mri:citation>
+        <cit:CI_Citation>
+          <cit:title xsi:type="lan:PT_FreeText_PropertyType">
             <gco:CharacterString>Alpenkonvention</gco:CharacterString>
             <lan:PT_FreeText>
               <lan:textGroup>
@@ -239,16 +254,16 @@
                 <lan:LocalisedCharacterString locale="#IT">Convenzione delle alpi</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#RM">Convenziun da las Alps</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#EN">Alpine Convention</lan:LocalisedCharacterString>
               </lan:textGroup>
               <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#EN">Alpine Convention</lan:LocalisedCharacterString>
+                <lan:LocalisedCharacterString locale="#RM">Convenziun da las Alps</lan:LocalisedCharacterString>
               </lan:textGroup>
             </lan:PT_FreeText>
           </cit:title>
         </cit:CI_Citation>
       </mri:citation>
-      <mri:abstract xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
+      <mri:abstract xsi:type="lan:PT_FreeText_PropertyType">
         <gco:CharacterString>Perimeter der Alpenkonvention in der Schweiz. Die Alpenkonvention ist ein völkerrechtlicher Vertrag zwischen den acht Alpenländern Deutschland, Frankreich, Italien, Liechtenstein, Monaco, Österreich, Schweiz, Slowenien sowie der Europäischen Union. Das Ziel des Übereinkommens ist der Schutz der Alpen durch eine sektorübergreifende, ganzheitliche und nachhaltige Politik.</gco:CharacterString>
         <lan:PT_FreeText>
           <lan:textGroup>
@@ -261,28 +276,31 @@
             <lan:LocalisedCharacterString locale="#IT">Il perimetro della Convenzione delle Alpi. La Convenzione delle Alpi è un trattato internazionale tra gli otto Paesi alpini Germania, Francia, Italia, Liechtenstein, Monaco, Austria, Svizzera, Slovenia e l'Unione europea. Lo scopo della Convenzione è la conservazione e la protezione delle Alpi mediante una politica intersettoriale, globale e durevole.</lan:LocalisedCharacterString>
           </lan:textGroup>
           <lan:textGroup>
-            <lan:LocalisedCharacterString locale="#RM">Perimeter da la Convenziun da las Alps en Svizra. La Convenziun da las Alps è in contract internaziunal tranter ils otg pajais alpins (Austria, Frantscha, Germania, Italia, Liechtenstein, Monaco, Slovenia, Svizra) e l'Uniun europeica. La convenziun ha la finamira da proteger las Alps cun agid d'ina politica intersecturiala, cumplessiva e duraivla.</lan:LocalisedCharacterString>
+            <lan:LocalisedCharacterString locale="#EN">The perimeters of the Alpine Convention in Switzerland. The Alpine Convention is an international treaty between the eight Alpine countries: Germany, France, Italy, Liechtenstein, Monaco, Austria, Switzerland and Slovenia, plus the European Union. The aim of the treaty is to protect the Alps by means of cross-sectoral, integrated and sustainable policies.</lan:LocalisedCharacterString>
           </lan:textGroup>
           <lan:textGroup>
-            <lan:LocalisedCharacterString locale="#EN">The perimeters of the Alpine Convention in Switzerland. The Alpine Convention is an international treaty between the eight Alpine countries: Germany, France, Italy, Liechtenstein, Monaco, Austria, Switzerland and Slovenia, plus the European Union. The aim of the treaty is to protect the Alps by means of cross-sectoral, integrated and sustainable policies.</lan:LocalisedCharacterString>
+            <lan:LocalisedCharacterString locale="#RM">Perimeter da la Convenziun da las Alps en Svizra. La Convenziun da las Alps è in contract internaziunal tranter ils otg pajais alpins (Austria, Frantscha, Germania, Italia, Liechtenstein, Monaco, Slovenia, Svizra) e l'Uniun europeica. La convenziun ha la finamira da proteger las Alps cun agid d'ina politica intersecturiala, cumplessiva e duraivla.</lan:LocalisedCharacterString>
           </lan:textGroup>
         </lan:PT_FreeText>
       </mri:abstract>
-      <mri:status xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0">
-        <mcc:MD_ProgressCode xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" codeList="https://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue="completed">completed</mcc:MD_ProgressCode>
+      <mri:status>
+        <mcc:MD_ProgressCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue="completed">completed</mcc:MD_ProgressCode>
       </mri:status>
-      <mri:pointOfContact xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0">
-        <cit:CI_Responsibility xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
+      <mri:pointOfContact>
+        <cit:CI_Responsibility>
           <cit:role>
             <cit:CI_RoleCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cit/CI_RoleCode.xml" codeListValue="pointOfContact">pointOfContact</cit:CI_RoleCode>
           </cit:role>
           <cit:party>
             <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
-              <cit:name xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
                 <gco:CharacterString>Bundesamt für Raumentwicklung</gco:CharacterString>
                 <lan:PT_FreeText>
                   <lan:textGroup>
                     <lan:LocalisedCharacterString locale="#DE">Bundesamt für Raumentwicklung</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">Federal Office for Spatial Development</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
                     <lan:LocalisedCharacterString locale="#FR">Office fédéral du développement territorial</lan:LocalisedCharacterString>
@@ -292,9 +310,6 @@
                   </lan:textGroup>
                   <lan:textGroup>
                     <lan:LocalisedCharacterString locale="#RM">Bundesamt für Raumentwicklung</lan:LocalisedCharacterString>
-                  </lan:textGroup>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#EN">Federal Office for Spatial Development</lan:LocalisedCharacterString>
                   </lan:textGroup>
                 </lan:PT_FreeText>
               </cit:name>
@@ -331,11 +346,14 @@
                   </cit:address>
                   <cit:onlineResource>
                     <cit:CI_OnlineResource>
-                      <cit:linkage xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
+                      <cit:linkage xsi:type="lan:PT_FreeText_PropertyType">
                         <gco:CharacterString>http://www.are.admin.ch</gco:CharacterString>
                         <lan:PT_FreeText>
                           <lan:textGroup>
                             <lan:LocalisedCharacterString locale="#DE">http://www.are.admin.ch</lan:LocalisedCharacterString>
+                          </lan:textGroup>
+                          <lan:textGroup>
+                            <lan:LocalisedCharacterString locale="#EN">http://www.are.admin.ch</lan:LocalisedCharacterString>
                           </lan:textGroup>
                           <lan:textGroup>
                             <lan:LocalisedCharacterString locale="#FR">http://www.are.admin.ch</lan:LocalisedCharacterString>
@@ -345,9 +363,6 @@
                           </lan:textGroup>
                           <lan:textGroup>
                             <lan:LocalisedCharacterString locale="#RM">http://www.are.admin.ch</lan:LocalisedCharacterString>
-                          </lan:textGroup>
-                          <lan:textGroup>
-                            <lan:LocalisedCharacterString locale="#EN">http://www.are.admin.ch</lan:LocalisedCharacterString>
                           </lan:textGroup>
                         </lan:PT_FreeText>
                       </cit:linkage>
@@ -360,16 +375,24 @@
               </cit:contactInfo>
               <cit:individual>
                 <cit:CI_Individual>
-                  <cit:name>
+                  <cit:name xsi:type="lan:PT_FreeText_PropertyType">
                     <gco:CharacterString>Rolf Giezendanner</gco:CharacterString>
+                    <lan:PT_FreeText>
+                      <lan:textGroup>
+                        <lan:LocalisedCharacterString locale="#DE">Rolf Giezendanner</lan:LocalisedCharacterString>
+                      </lan:textGroup>
+                    </lan:PT_FreeText>
                   </cit:name>
                 </cit:CI_Individual>
               </cit:individual>
-              <che:organisationAcronym xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lan:PT_FreeText_PropertyType">
+              <che:organisationAcronym xsi:type="lan:PT_FreeText_PropertyType">
                 <gco:CharacterString>ARE</gco:CharacterString>
                 <lan:PT_FreeText>
                   <lan:textGroup>
                     <lan:LocalisedCharacterString locale="#DE">ARE</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#EN">ARE</lan:LocalisedCharacterString>
                   </lan:textGroup>
                   <lan:textGroup>
                     <lan:LocalisedCharacterString locale="#FR">ARE</lan:LocalisedCharacterString>
@@ -380,24 +403,26 @@
                   <lan:textGroup>
                     <lan:LocalisedCharacterString locale="#RM">ARE</lan:LocalisedCharacterString>
                   </lan:textGroup>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#EN">ARE</lan:LocalisedCharacterString>
-                  </lan:textGroup>
                 </lan:PT_FreeText>
               </che:organisationAcronym>
             </che:CHE_CI_Organisation>
           </cit:party>
         </cit:CI_Responsibility>
       </mri:pointOfContact>
-      <mri:pointOfContact xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0">
-        <cit:CI_Responsibility xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0">
+      <mri:pointOfContact>
+        <cit:CI_Responsibility>
           <cit:role>
             <cit:CI_RoleCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cit/CI_RoleCode.xml" codeListValue="owner">owner</cit:CI_RoleCode>
           </cit:role>
           <cit:party>
             <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
-              <cit:name>
+              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
                 <gco:CharacterString>Bundesamt für Raumentwicklung</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">Bundesamt für Raumentwicklung</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
               </cit:name>
               <cit:contactInfo>
                 <cit:CI_Contact>
@@ -410,19 +435,24 @@
                   </cit:address>
                 </cit:CI_Contact>
               </cit:contactInfo>
-              <che:organisationAcronym>
+              <che:organisationAcronym xsi:type="lan:PT_FreeText_PropertyType">
                 <gco:CharacterString>ARE</gco:CharacterString>
+                <lan:PT_FreeText>
+                  <lan:textGroup>
+                    <lan:LocalisedCharacterString locale="#DE">ARE</lan:LocalisedCharacterString>
+                  </lan:textGroup>
+                </lan:PT_FreeText>
               </che:organisationAcronym>
             </che:CHE_CI_Organisation>
           </cit:party>
         </cit:CI_Responsibility>
       </mri:pointOfContact>
-      <mri:spatialResolution xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" />
-      <mri:topicCategory xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0">
+      <mri:spatialResolution />
+      <mri:topicCategory>
         <mri:MD_TopicCategoryCode>planningCadastre</mri:MD_TopicCategoryCode>
       </mri:topicCategory>
-      <mri:defaultLocale xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0">
-        <lan:PT_Locale xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0">
+      <mri:defaultLocale>
+        <lan:PT_Locale>
           <lan:language>
             <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="ger">ger</lan:LanguageCode>
           </lan:language>
@@ -431,6 +461,26 @@
           </lan:characterEncoding>
         </lan:PT_Locale>
       </mri:defaultLocale>
+      <mri:otherLocale>
+        <lan:PT_Locale>
+          <lan:language>
+            <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="fre">fre</lan:LanguageCode>
+          </lan:language>
+          <lan:characterEncoding>
+            <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
+          </lan:characterEncoding>
+        </lan:PT_Locale>
+      </mri:otherLocale>
+      <mri:otherLocale>
+        <lan:PT_Locale>
+          <lan:language>
+            <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="ita">ita</lan:LanguageCode>
+          </lan:language>
+          <lan:characterEncoding>
+            <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
+          </lan:characterEncoding>
+        </lan:PT_Locale>
+      </mri:otherLocale>
       <che:basicGeodata>
         <gco:Boolean>true</gco:Boolean>
       </che:basicGeodata>
