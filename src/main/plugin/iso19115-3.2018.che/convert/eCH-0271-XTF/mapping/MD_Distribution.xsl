@@ -114,7 +114,7 @@
       <!-- function (CI_OnLineFunctionCode) -->
       <xsl:if test="normalize-space($orRecord/eCH0271:function) != ''">
         <cit:function>
-          <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="{normalize-space($orRecord/eCH0271:function)}">
+          <cit:CI_OnLineFunctionCode codeList="{$CL}CI_OnLineFunctionCode" codeListValue="{normalize-space($orRecord/eCH0271:function)}">
             <xsl:value-of select="normalize-space($orRecord/eCH0271:function)"/>
           </cit:CI_OnLineFunctionCode>
         </cit:function>

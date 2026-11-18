@@ -42,7 +42,7 @@
         <!-- Status -->
         <xsl:if test="eCH0271:status">
           <mri:status>
-            <mcc:MD_ProgressCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue="{normalize-space(eCH0271:status)}">
+            <mcc:MD_ProgressCode codeList="{$CL}MD_ProgressCode" codeListValue="{normalize-space(eCH0271:status)}">
               <xsl:value-of select="normalize-space(eCH0271:status)"/>
             </mcc:MD_ProgressCode>
           </mri:status>
@@ -218,7 +218,7 @@
       <!-- useConstraints -->
       <xsl:if test="eCH0271:useConstraints">
         <mco:useConstraints>
-          <mco:MD_RestrictionCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_RestrictionCode" codeListValue="{normalize-space(eCH0271:useConstraints)}">
+          <mco:MD_RestrictionCode codeList="{$CL}MD_RestrictionCode" codeListValue="{normalize-space(eCH0271:useConstraints)}">
             <xsl:value-of select="normalize-space(eCH0271:useConstraints)"/>
           </mco:MD_RestrictionCode>
         </mco:useConstraints>

@@ -112,7 +112,7 @@
         </cit:number>
         <xsl:if test="normalize-space(eCH0271:numberType) != ''">
           <cit:numberType>
-            <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="{normalize-space(eCH0271:numberType)}">
+            <cit:CI_TelephoneTypeCode codeList="{$CL}CI_TelephoneTypeCode" codeListValue="{normalize-space(eCH0271:numberType)}">
               <xsl:value-of select="normalize-space(eCH0271:numberType)"/>
             </cit:CI_TelephoneTypeCode>
           </cit:numberType>

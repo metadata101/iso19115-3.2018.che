@@ -24,7 +24,7 @@
   <mdb:metadataScope>
     <mdb:MD_MetadataScope>
       <mdb:resourceScope>
-        <mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/mcc/MD_ScopeCode.xml" codeListValue="dataset">dataset</mcc:MD_ScopeCode>
+        <mcc:MD_ScopeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</mcc:MD_ScopeCode>
       </mdb:resourceScope>
       <mdb:name>
         <gco:CharacterString>Géodonnée</gco:CharacterString>
@@ -34,7 +34,7 @@
   <mdb:contact>
     <cit:CI_Responsibility>
       <cit:role>
-        <cit:CI_RoleCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cit/CI_RoleCode.xml" codeListValue="pointOfContact">pointOfContact</cit:CI_RoleCode>
+        <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</cit:CI_RoleCode>
       </cit:role>
       <cit:party>
         <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
@@ -101,7 +101,7 @@
         <gco:Date>2026-10-27</gco:Date>
       </cit:date>
       <cit:dateType>
-        <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cit/CI_DateTypeCode.xml" codeListValue="revision">revision</cit:CI_DateTypeCode>
+        <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision">revision</cit:CI_DateTypeCode>
       </cit:dateType>
     </cit:CI_Date>
   </mdb:dateInfo>
@@ -154,12 +154,12 @@
         </lan:PT_FreeText>
       </mri:abstract>
       <mri:status>
-        <mcc:MD_ProgressCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue="completed">completed</mcc:MD_ProgressCode>
+        <mcc:MD_ProgressCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ProgressCode" codeListValue="completed">completed</mcc:MD_ProgressCode>
       </mri:status>
       <mri:pointOfContact>
         <cit:CI_Responsibility>
           <cit:role>
-            <cit:CI_RoleCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cit/CI_RoleCode.xml" codeListValue="pointOfContact">pointOfContact</cit:CI_RoleCode>
+            <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</cit:CI_RoleCode>
           </cit:role>
           <cit:party>
             <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">

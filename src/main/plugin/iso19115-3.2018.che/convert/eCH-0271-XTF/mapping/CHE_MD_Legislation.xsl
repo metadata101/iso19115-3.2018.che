@@ -15,7 +15,7 @@
   xmlns:xsi  ="http://www.w3.org/2001/XMLSchema-instance"
   exclude-result-prefixes="#all">
 
-  <!-- NOTE: $CL variable is defined in the parent stylesheet (fromGM03.xsl) -->
+  <!-- NOTE: $CL variable is defined in the parent stylesheet (fromECH0271-XTF.xsl) -->
   <!-- Do not redefine it here to avoid XSLT duplicate global variable error -->
 
   <!-- CHE_MD_Legislation -->
@@ -27,7 +27,7 @@
       <!-- country (ISO 3166) -->
       <xsl:if test="normalize-space($legisRecord/eCH0271:country) != ''">
         <che:country>
-          <lan:CountryCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#Country" codeListValue="{normalize-space($legisRecord/eCH0271:country)}"/>
+          <lan:CountryCode codeList="{$CL}CountryCode" codeListValue="{normalize-space($legisRecord/eCH0271:country)}"/>
         </che:country>
       </xsl:if>
 

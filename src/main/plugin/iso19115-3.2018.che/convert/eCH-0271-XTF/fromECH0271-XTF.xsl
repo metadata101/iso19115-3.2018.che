@@ -90,12 +90,6 @@
   <!-- ISO codelist base URLs -->
   <xsl:variable name="CL"
     select="'https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#'"/>
-  <xsl:variable name="CL_lan"
-    select="'http://standards.iso.org/iso/19115/resources/Codelist/lan/'"/>
-  <xsl:variable name="CL_cit"
-    select="'http://standards.iso.org/iso/19115/resources/Codelist/cit/'"/>
-  <xsl:variable name="CL_mcc"
-    select="'http://standards.iso.org/iso/19115/resources/Codelist/mcc/'"/>
 
   <!-- ================================================================
        Named templates for code elements with attributes
@@ -105,7 +99,7 @@
   <xsl:template name="language-code">
     <xsl:param name="value" as="xs:string"/>
     <xsl:variable name="langCode" select="f271:iso639-2($value)"/>
-    <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="{$langCode}">
+    <lan:LanguageCode codeList="{$CL}LanguageCode" codeListValue="{$langCode}">
       <xsl:value-of select="$langCode"/>
     </lan:LanguageCode>
   </xsl:template>
@@ -113,7 +107,7 @@
   <!-- Generate lan:MD_CharacterSetCode with codeList and codeListValue -->
   <xsl:template name="character-set-code">
     <xsl:param name="value" as="xs:string"/>
-    <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="{$value}">
+    <lan:MD_CharacterSetCode codeList="{$CL}MD_CharacterSetCode" codeListValue="{$value}">
       <xsl:value-of select="$value"/>
     </lan:MD_CharacterSetCode>
   </xsl:template>
@@ -121,7 +115,7 @@
   <!-- Generate mcc:MD_ScopeCode with codeList and codeListValue -->
   <xsl:template name="scope-code">
     <xsl:param name="value" as="xs:string"/>
-    <mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/mcc/MD_ScopeCode.xml" codeListValue="{$value}">
+    <mcc:MD_ScopeCode codeList="{$CL}MD_ScopeCode" codeListValue="{$value}">
       <xsl:value-of select="$value"/>
     </mcc:MD_ScopeCode>
   </xsl:template>
@@ -129,7 +123,7 @@
   <!-- Generate cit:CI_RoleCode with codeList and codeListValue -->
   <xsl:template name="role-code">
     <xsl:param name="value" as="xs:string"/>
-    <cit:CI_RoleCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cit/CI_RoleCode.xml" codeListValue="{$value}">
+    <cit:CI_RoleCode codeList="{$CL}CI_RoleCode" codeListValue="{$value}">
       <xsl:value-of select="$value"/>
     </cit:CI_RoleCode>
   </xsl:template>
@@ -137,7 +131,7 @@
   <!-- Generate cit:CI_DateTypeCode with codeList and codeListValue -->
   <xsl:template name="date-type-code">
     <xsl:param name="value" as="xs:string"/>
-    <cit:CI_DateTypeCode codeList="http://standards.iso.org/iso/19115/resources/Codelist/cit/CI_DateTypeCode.xml" codeListValue="{$value}">
+    <cit:CI_DateTypeCode codeList="{$CL}CI_DateTypeCode" codeListValue="{$value}">
       <xsl:value-of select="$value"/>
     </cit:CI_DateTypeCode>
   </xsl:template>
@@ -145,7 +139,7 @@
   <!-- Generate mdb:MD_MaintenanceFrequencyCode with codeList and codeListValue -->
   <xsl:template name="frequency-code">
     <xsl:param name="value" as="xs:string"/>
-    <mmi:MD_MaintenanceFrequencyCode codeList="https://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="{$value}">
+    <mmi:MD_MaintenanceFrequencyCode codeList="{$CL}MD_MaintenanceFrequencyCode" codeListValue="{$value}">
       <xsl:value-of select="$value"/>
     </mmi:MD_MaintenanceFrequencyCode>
   </xsl:template>

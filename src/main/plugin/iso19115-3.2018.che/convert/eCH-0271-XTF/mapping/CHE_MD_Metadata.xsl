@@ -143,7 +143,7 @@
             </gco:CharacterString>
           </cit:linkage>
           <cit:function>
-            <cit:CI_OnLineFunctionCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="information">information</cit:CI_OnLineFunctionCode>
+            <cit:CI_OnLineFunctionCode codeList="{$CL}CI_OnLineFunctionCode" codeListValue="information">information</cit:CI_OnLineFunctionCode>
           </cit:function>
         </cit:CI_OnlineResource>
       </mdb:metadataLinkage>
@@ -418,7 +418,7 @@
                 <xsl:otherwise><xsl:value-of select="$countryCode"/></xsl:otherwise>
               </xsl:choose>
             </xsl:variable>
-            <lan:CountryCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#Country" codeListValue="{$mappedCountry}"/>
+            <lan:CountryCode codeList="{$CL}CountryCode" codeListValue="{$mappedCountry}"/>
           </che:country>
         </xsl:if>
 
@@ -536,7 +536,7 @@
       <!-- function (optional, code value) -->
       <xsl:if test="normalize-space(eCH0271:function) != ''">
         <cit:function>
-          <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="{normalize-space(eCH0271:function)}">
+          <cit:CI_OnLineFunctionCode codeList="{$CL}CI_OnLineFunctionCode" codeListValue="{normalize-space(eCH0271:function)}">
             <xsl:value-of select="normalize-space(eCH0271:function)"/>
           </cit:CI_OnLineFunctionCode>
         </cit:function>
