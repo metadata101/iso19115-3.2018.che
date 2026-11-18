@@ -7,7 +7,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS"
-  xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1"
+  xmlns:eCH0271="http://www.interlis.ch/xtf/2.4/eCH0271"
   xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
   xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -16,15 +16,15 @@
 
   <!-- Metadata default language (e.g. 'de'), used to fill gco:CharacterString -->
   <xsl:variable name="mdDefaultLanguage" as="xs:string"
-    select="lower-case(normalize-space((/ili:transfer/ili:datasection/eCH0271_1:eCH0271/
-      eCH0271_1:CHE_MD_Metadata/eCH0271_1:defaultLocale/eCH0271_1:PT_Locale/eCH0271_1:language)[1]))"/>
+    select="lower-case(normalize-space((/ili:transfer/ili:datasection/eCH0271:eCH0271/
+      eCH0271:CHE_MD_Metadata/eCH0271:defaultLocale/eCH0271:PT_Locale/eCH0271:language)[1]))"/>
 
   <!-- ================================================================
        Multilingual text mode template
        Localised entries are matched by structure (an element holding a
        Language and a Text child) whatever their namespace (Localisation_V2,
        LocalisationCH_V2, ...) or wrapper (MultilingualText, MultilingualMText,
-       MultilingualUri, eCH0271_1:MultilingualMText).
+       MultilingualUri, eCH0271:MultilingualMText).
        - no localised entry: plain gco:CharacterString
        - only the default language: plain gco:CharacterString
        - otherwise: gco:CharacterString (default language) + lan:PT_FreeText

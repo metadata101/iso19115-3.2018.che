@@ -139,7 +139,7 @@
         <cit:CI_OnlineResource>
           <cit:linkage>
             <gco:CharacterString>
-              <xsl:value-of select="concat('http://geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/', normalize-space(f271:related(., 'MD_Identifier', 'metadataIdentifier')))"/>
+              <xsl:value-of select="concat('http://geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/', normalize-space((f271:related(., 'MD_Identifier', 'metadataIdentifier')/eCH0271:code//*[local-name() = 'Text'])[1]))"/>
             </gco:CharacterString>
           </cit:linkage>
           <cit:function>

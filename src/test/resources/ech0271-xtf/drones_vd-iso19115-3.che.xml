@@ -1,13 +1,8 @@
 <che:CHE_MD_Metadata xmlns:che="http://geocat.ch/che" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0" xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0" xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:md1="http://standards.iso.org/iso/19115/-3/md1/2.0" xmlns:md2="http://standards.iso.org/iso/19115/-3/md2/2.0" xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/2.0" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0" xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0" xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0" xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0" xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0" xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0" xmlns:dqm="http://standards.iso.org/iso/19157/-2/dqm/1.0" xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" gco:isoType="mdb:MD_Metadata">
   <mdb:metadataIdentifier>
     <mcc:MD_Identifier>
-      <mcc:code xsi:type="lan:PT_FreeText_PropertyType">
+      <mcc:code>
         <gco:CharacterString>2d0af163-1f59-9a24-35fa-1e03166e6188</gco:CharacterString>
-        <lan:PT_FreeText>
-          <lan:textGroup>
-            <lan:LocalisedCharacterString locale="#FR">2d0af163-1f59-9a24-35fa-1e03166e6188</lan:LocalisedCharacterString>
-          </lan:textGroup>
-        </lan:PT_FreeText>
       </mcc:code>
     </mcc:MD_Identifier>
   </mdb:metadataIdentifier>
@@ -38,13 +33,8 @@
       </cit:role>
       <cit:party>
         <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
-          <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+          <cit:name>
             <gco:CharacterString>Administration cantonale vaudoise</gco:CharacterString>
-            <lan:PT_FreeText>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#FR">Administration cantonale vaudoise</lan:LocalisedCharacterString>
-              </lan:textGroup>
-            </lan:PT_FreeText>
           </cit:name>
           <cit:contactInfo>
             <cit:CI_Contact>
@@ -81,13 +71,8 @@
           </cit:contactInfo>
           <cit:individual>
             <cit:CI_Individual>
-              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+              <cit:name>
                 <gco:CharacterString>Guillaume Cherpillod</gco:CharacterString>
-                <lan:PT_FreeText>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#FR">Guillaume Cherpillod</lan:LocalisedCharacterString>
-                  </lan:textGroup>
-                </lan:PT_FreeText>
               </cit:name>
             </cit:CI_Individual>
           </cit:individual>
@@ -108,7 +93,7 @@
   <mdb:metadataLinkage>
     <cit:CI_OnlineResource>
       <cit:linkage>
-        <gco:CharacterString>http://geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/fr2d0af163-1f59-9a24-35fa-1e03166e6188</gco:CharacterString>
+        <gco:CharacterString>http://geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/2d0af163-1f59-9a24-35fa-1e03166e6188</gco:CharacterString>
       </cit:linkage>
       <cit:function>
         <cit:CI_OnLineFunctionCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="information">information</cit:CI_OnLineFunctionCode>
@@ -119,13 +104,8 @@
     <mrs:MD_ReferenceSystem>
       <mrs:referenceSystemIdentifier>
         <mcc:MD_Identifier>
-          <mcc:code xsi:type="lan:PT_FreeText_PropertyType">
+          <mcc:code>
             <gco:CharacterString>MN95 - système suisse (CH1903+)</gco:CharacterString>
-            <lan:PT_FreeText>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#FR">MN95 - système suisse (CH1903+)</lan:LocalisedCharacterString>
-              </lan:textGroup>
-            </lan:PT_FreeText>
           </mcc:code>
         </mcc:MD_Identifier>
       </mrs:referenceSystemIdentifier>
@@ -135,23 +115,13 @@
     <che:CHE_MD_DataIdentification gco:isoType="mri:MD_DataIdentification">
       <mri:citation>
         <cit:CI_Citation>
-          <cit:title xsi:type="lan:PT_FreeText_PropertyType">
+          <cit:title>
             <gco:CharacterString>Zones restreintes aux modèles réduits d'aéronefs et aux drones</gco:CharacterString>
-            <lan:PT_FreeText>
-              <lan:textGroup>
-                <lan:LocalisedCharacterString locale="#FR">Zones restreintes aux modèles réduits d'aéronefs et aux drones</lan:LocalisedCharacterString>
-              </lan:textGroup>
-            </lan:PT_FreeText>
           </cit:title>
         </cit:CI_Citation>
       </mri:citation>
-      <mri:abstract xsi:type="lan:PT_FreeText_PropertyType">
+      <mri:abstract>
         <gco:CharacterString>Zones d’interdiction de survol permanentes ou temporaires sur le territoire vaudois par des aéronefs sans occupants de poids inférieur à 25kg. Plus d'information sur les données fédérales : https://www.geocat.ch/geonetwork/srv/fre/catalog.search#/metadata/c3ebd7ba-0fd5-411a-9074-3d0cdc46bc4d</gco:CharacterString>
-        <lan:PT_FreeText>
-          <lan:textGroup>
-            <lan:LocalisedCharacterString locale="#FR">Zones d’interdiction de survol permanentes ou temporaires sur le territoire vaudois par des aéronefs sans occupants de poids inférieur à 25kg. Plus d'information sur les données fédérales : https://www.geocat.ch/geonetwork/srv/fre/catalog.search#/metadata/c3ebd7ba-0fd5-411a-9074-3d0cdc46bc4d</lan:LocalisedCharacterString>
-          </lan:textGroup>
-        </lan:PT_FreeText>
       </mri:abstract>
       <mri:status>
         <mcc:MD_ProgressCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ProgressCode" codeListValue="completed">completed</mcc:MD_ProgressCode>
@@ -163,13 +133,8 @@
           </cit:role>
           <cit:party>
             <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
-              <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+              <cit:name>
                 <gco:CharacterString>Administration cantonale vaudoise</gco:CharacterString>
-                <lan:PT_FreeText>
-                  <lan:textGroup>
-                    <lan:LocalisedCharacterString locale="#FR">Administration cantonale vaudoise</lan:LocalisedCharacterString>
-                  </lan:textGroup>
-                </lan:PT_FreeText>
               </cit:name>
               <cit:contactInfo>
                 <cit:CI_Contact>
@@ -206,13 +171,8 @@
               </cit:contactInfo>
               <cit:individual>
                 <cit:CI_Individual>
-                  <cit:name xsi:type="lan:PT_FreeText_PropertyType">
+                  <cit:name>
                     <gco:CharacterString>Guillaume Cherpillod</gco:CharacterString>
-                    <lan:PT_FreeText>
-                      <lan:textGroup>
-                        <lan:LocalisedCharacterString locale="#FR">Guillaume Cherpillod</lan:LocalisedCharacterString>
-                      </lan:textGroup>
-                    </lan:PT_FreeText>
                   </cit:name>
                 </cit:CI_Individual>
               </cit:individual>
