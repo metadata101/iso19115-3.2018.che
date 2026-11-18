@@ -21,7 +21,7 @@
           </Localisation_V2:MultilingualMText>
         </eCH0271_1:code>
       </eCH0271_1:MD_Identifier>
-      <eCH0271_1:MD_Identifier ili:tid="REFID_d1e133">
+      <eCH0271_1:MD_Identifier ili:tid="REFID_d1e139">
         <eCH0271_1:code>
           <Localisation_V2:MultilingualMText>
             <Localisation_V2:LocalisedText>
@@ -33,10 +33,10 @@
           </Localisation_V2:MultilingualMText>
         </eCH0271_1:code>
       </eCH0271_1:MD_Identifier>
-      <eCH0271_1:MD_MetadataScope ili:tid="SCOPE_d1e42">
+      <eCH0271_1:MD_MetadataScope ili:tid="SCOPE_d1e15">
         <eCH0271_1:resourceScope>dataset</eCH0271_1:resourceScope>
       </eCH0271_1:MD_MetadataScope>
-      <eCH0271_1:CHE_CI_Organisation ili:tid="PARTY_d1e50">
+      <eCH0271_1:CHE_CI_Organisation ili:tid="PARTY_d1e23">
         <eCH0271_1:name>
           <Localisation_V2:MultilingualMText>
             <Localisation_V2:LocalisedText>
@@ -49,14 +49,14 @@
         </eCH0271_1:name>
         <eCH0271_1:organisationAcronym>ARE</eCH0271_1:organisationAcronym>
       </eCH0271_1:CHE_CI_Organisation>
-      <eCH0271_1:CI_Address ili:tid="ADDR_d1e74">
+      <eCH0271_1:CI_Address ili:tid="ADDR_d1e47">
         <eCH0271_1:deliveryPoint>Worblentalstrasse 66</eCH0271_1:deliveryPoint>
         <eCH0271_1:city>Ittigen</eCH0271_1:city>
         <eCH0271_1:postalCode>3063</eCH0271_1:postalCode>
         <eCH0271_1:country>CHE</eCH0271_1:country>
         <eCH0271_1:electronicMailAddress>rolf.giezendanner@are.admin.ch</eCH0271_1:electronicMailAddress>
       </eCH0271_1:CI_Address>
-      <eCH0271_1:CI_Individual ili:tid="INDIVIDUAL_d1e103">
+      <eCH0271_1:CI_Individual ili:tid="INDIVIDUAL_d1e76">
         <eCH0271_1:name>
           <Localisation_V2:MultilingualMText>
             <Localisation_V2:LocalisedText>
@@ -68,10 +68,10 @@
           </Localisation_V2:MultilingualMText>
         </eCH0271_1:name>
       </eCH0271_1:CI_Individual>
-      <eCH0271_1:CI_Responsibility ili:tid="RESP_d1e46">
+      <eCH0271_1:CI_Responsibility ili:tid="RESP_d1e19">
         <eCH0271_1:role>pointOfContact</eCH0271_1:role>
       </eCH0271_1:CI_Responsibility>
-      <eCH0271_1:CHE_CI_Organisation ili:tid="PARTY_d1e173">
+      <eCH0271_1:CHE_CI_Organisation ili:tid="PARTY_d1e182">
         <eCH0271_1:name>
           <Localisation_V2:MultilingualMText>
             <Localisation_V2:LocalisedText>
@@ -84,14 +84,14 @@
         </eCH0271_1:name>
         <eCH0271_1:organisationAcronym>ARE</eCH0271_1:organisationAcronym>
       </eCH0271_1:CHE_CI_Organisation>
-      <eCH0271_1:CI_Address ili:tid="ADDR_d1e197">
+      <eCH0271_1:CI_Address ili:tid="ADDR_d1e206">
         <eCH0271_1:deliveryPoint>Worblentalstrasse 66</eCH0271_1:deliveryPoint>
         <eCH0271_1:city>Ittigen</eCH0271_1:city>
         <eCH0271_1:postalCode>3063</eCH0271_1:postalCode>
         <eCH0271_1:country>CHE</eCH0271_1:country>
         <eCH0271_1:electronicMailAddress>rolf.giezendanner@are.admin.ch</eCH0271_1:electronicMailAddress>
       </eCH0271_1:CI_Address>
-      <eCH0271_1:CI_Individual ili:tid="INDIVIDUAL_d1e226">
+      <eCH0271_1:CI_Individual ili:tid="INDIVIDUAL_d1e235">
         <eCH0271_1:name>
           <Localisation_V2:MultilingualMText>
             <Localisation_V2:LocalisedText>
@@ -103,10 +103,10 @@
           </Localisation_V2:MultilingualMText>
         </eCH0271_1:name>
       </eCH0271_1:CI_Individual>
-      <eCH0271_1:CI_Responsibility ili:tid="RESP_d1e169">
+      <eCH0271_1:CI_Responsibility ili:tid="RESP_d1e178">
         <eCH0271_1:role>pointOfContact</eCH0271_1:role>
       </eCH0271_1:CI_Responsibility>
-      <eCH0271_1:CHE_CI_Organisation ili:tid="PARTY_d1e246">
+      <eCH0271_1:CHE_CI_Organisation ili:tid="PARTY_d1e258">
         <eCH0271_1:name>
           <Localisation_V2:MultilingualMText>
             <Localisation_V2:LocalisedText>
@@ -119,13 +119,13 @@
         </eCH0271_1:name>
         <eCH0271_1:organisationAcronym>ARE</eCH0271_1:organisationAcronym>
       </eCH0271_1:CHE_CI_Organisation>
-      <eCH0271_1:CI_Address ili:tid="ADDR_d1e253">
+      <eCH0271_1:CI_Address ili:tid="ADDR_d1e268">
         <eCH0271_1:electronicMailAddress>info@are.admin.ch</eCH0271_1:electronicMailAddress>
       </eCH0271_1:CI_Address>
-      <eCH0271_1:CI_Responsibility ili:tid="RESP_d1e242">
+      <eCH0271_1:CI_Responsibility ili:tid="RESP_d1e254">
         <eCH0271_1:role>owner</eCH0271_1:role>
       </eCH0271_1:CI_Responsibility>
-      <eCH0271_1:CI_Citation ili:tid="CIT_d1e140">
+      <eCH0271_1:CI_Citation ili:tid="CIT_d1e149">
         <eCH0271_1:title>
           <Localisation_V2:MultilingualMText>
             <Localisation_V2:LocalisedText>
@@ -137,10 +137,10 @@
           </Localisation_V2:MultilingualMText>
         </eCH0271_1:title>
       </eCH0271_1:CI_Citation>
-      <eCH0271_1:MD_ReferenceSystem ili:tid="REFSYS_d1e132">
-        <eCH0271_1:referenceSystemIdentifier ili:ref="REFID_d1e133" />
+      <eCH0271_1:MD_ReferenceSystem ili:tid="REFSYS_d1e138">
+        <eCH0271_1:referenceSystemIdentifier ili:ref="REFID_d1e139" />
       </eCH0271_1:MD_ReferenceSystem>
-      <eCH0271_1:CHE_MD_DataIdentification ili:tid="DI_d1e137">
+      <eCH0271_1:CHE_MD_DataIdentification ili:tid="DI_d1e146">
         <eCH0271_1:abstract>
           <Localisation_V2:MultilingualMText>
             <Localisation_V2:LocalisedText>
@@ -206,7 +206,7 @@
         </eCH0271_1:dateInfo>
         <eCH0271_1:dateInfo>
           <eCH0271_1:CI_Date>
-            <eCH0271_1:date>2026-06-16T00:00:00.0</eCH0271_1:date>
+            <eCH0271_1:date>2026-11-03T00:00:00.0</eCH0271_1:date>
             <eCH0271_1:dateType>revision</eCH0271_1:dateType>
           </eCH0271_1:CI_Date>
         </eCH0271_1:dateInfo>
