@@ -22,10 +22,8 @@
  */
 package org.fao.geonet.schema;
 
-import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
@@ -40,24 +38,16 @@ import static org.fao.geonet.schema.TestSupport.getResourceInsideSchema;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
-import org.jdom.Namespace;
 import org.jdom.output.Format;
 import org.jdom.output.XMLOutputter;
 import org.jdom.xpath.XPath;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.xml.sax.SAXException;
 import org.xmlunit.builder.DiffBuilder;
 import org.xmlunit.builder.Input;
 import org.xmlunit.diff.DefaultNodeMatcher;
 import org.xmlunit.diff.Diff;
 import org.xmlunit.diff.ElementSelectors;
-import javax.xml.XMLConstants;
-import javax.xml.transform.Source;
-import javax.xml.transform.stream.StreamSource;
-import javax.xml.validation.Schema;
-import javax.xml.validation.SchemaFactory;
-import javax.xml.validation.Validator;
 
 public class Iso19139cheToIso19115cheConversionTest {
 
@@ -303,7 +293,7 @@ public class Iso19139cheToIso19115cheConversionTest {
         Element gruenflaechen = Xml.loadFile(xmlFile);
 
         Element gruenflaechenIso19115che = Xml.transform(gruenflaechen, xslFile);
-        isValid(gruenflaechenIso19115che);
+        TestSupport.isValid(gruenflaechenIso19115che);
         XPath xPath = XPath.newInstance(".//srv:serviceType");
         xPath.addNamespace("srv", "http://standards.iso.org/iso/19115/-3/srv/2.0");
         List<?> nodes = xPath.selectNodes(gruenflaechenIso19115che);
@@ -316,15 +306,6 @@ public class Iso19139cheToIso19115cheConversionTest {
         transformAndCompare("giebenach", true);
     }
 
-    private void assertNamespacePresent(List<?> namespaces, String nsLocation, String prefix) {
-        Namespace ns = namespaces.stream() //
-                .filter(n -> prefix.equals(((Namespace) n).getPrefix()))
-                .map(Namespace.class::cast)//
-                .findFirst() //
-                .orElseThrow(() -> new AssertionError(String.format("prefix not found: %s", prefix)));
-        assertEquals(nsLocation, ns.getURI());
-    }
-
     private void assertStrictByteEquality(String expectedFileName, Element element, boolean requireXmlHeader) throws IOException, URISyntaxException {
         XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat().setLineSeparator("\n"));
         String actual;
@@ -335,23 +316,6 @@ public class Iso19139cheToIso19115cheConversionTest {
         }
         String actualReplaced = actual.replaceAll("gml:TimeInstant gml:id=\".*\"", "gml:TimeInstant gml:id=\"\"");
         TestSupport.assertGeneratedDataByteMatchExpected(expectedFileName, actualReplaced, GENERATE_EXPECTED_FILE);
-    }
-
-    private void isValid(Element xmlIso19115che) throws SAXException, IOException, URISyntaxException {
-        SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-        Source schemaFile = new StreamSource(getResourceInsideSchema("schema.xsd").toString());
-
-        Schema schema = factory.newSchema(schemaFile);
-        Validator validator = schema.newValidator();
-        validator.validate(new StreamSource(new ByteArrayInputStream(Xml.getString(xmlIso19115che).getBytes(StandardCharsets.UTF_8))));
-
-        List<?> namespaces = xmlIso19115che.getAdditionalNamespaces();
-
-        assertNamespacePresent(namespaces, "http://standards.iso.org/iso/19115/-3/md1/2.0", "md1");
-        assertNamespacePresent(namespaces, "http://standards.iso.org/iso/19115/-3/md2/2.0", "md2");
-        assertNamespacePresent(namespaces, "http://standards.iso.org/iso/19115/-3/mda/2.0", "mda");
-        assertNamespacePresent(namespaces, "http://standards.iso.org/iso/19115/-3/mds/2.0", "mds");
-        assertNamespacePresent(namespaces, "http://standards.iso.org/iso/19115/-3/mdt/2.0", "mdt");
     }
 
     private void isGNValid(Element amphibiansIso19115che) throws Exception {
@@ -374,6 +338,6 @@ public class Iso19139cheToIso19115cheConversionTest {
     }
 
     private void transformValidateAndCompare(String mdNameRoot) throws Exception {
-        isValid(transformAndCompare(mdNameRoot, true));
+        TestSupport.isValid(transformAndCompare(mdNameRoot, true));
     }
 }
