@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ili:transfer xmlns:Localisation_V2="http://www.interlis.ch/xtf/2.4/Localisation_V2" xmlns:eCH0271="http://www.interlis.ch/xtf/2.4/eCH0271" xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS">
+  <ili:headersection>
+    <ili:models>
+      <ili:model>eCH0271</ili:model>
+    </ili:models>
+    <ili:sender>ISO19115-3 XML to XTF conversion</ili:sender>
+    <ili:comment>Test simple - Administrative boundaries dataset</ili:comment>
+  </ili:headersection>
+  <ili:datasection>
+    <eCH0271:eCH0271 ili:bid="eCH0271.eCH0271">
+      <eCH0271:CHE_MD_Metadata ili:tid="metadata_main_001">
+        <eCH0271:defaultLocale>
+          <eCH0271:PT_Locale>
+            <eCH0271:language>de</eCH0271:language>
+            <eCH0271:characterEncoding>utf8</eCH0271:characterEncoding>
+          </eCH0271:PT_Locale>
+        </eCH0271:defaultLocale>
+        <eCH0271:dateInfo>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2023-04-17T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>creation</eCH0271:dateType>
+          </eCH0271:CI_Date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2026-11-04T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>revision</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:dateInfo>
+        <eCH0271:metadataIdentifier ili:ref="metadataIdentifier_001"/>
+      </eCH0271:CHE_MD_Metadata>
+      <eCH0271:MD_Identifier ili:tid="metadataIdentifier_001">
+        <eCH0271:code>
+          <Localisation_V2:MultilingualText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>ee4b372c-d4a6-415f-bd09-427542152932</Localisation_V2:Text>
+              </Localisation_V2:LocalisedText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualText>
+        </eCH0271:code>
+      </eCH0271:MD_Identifier>
+      <eCH0271:MD_MetadataScope ili:tid="metadataScope_001">
+        <eCH0271:resourceScope>dataset</eCH0271:resourceScope>
+      </eCH0271:MD_MetadataScope>
+      <eCH0271:CI_Responsibility ili:tid="responsibility_001">
+        <eCH0271:role>pointOfContact</eCH0271:role>
+      </eCH0271:CI_Responsibility>
+      <eCH0271:CHE_CI_Organisation ili:tid="organisation_001">
+        <eCH0271:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>swisstopo</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:name>
+        <eCH0271:organisationAcronym>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>swisstopo</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:organisationAcronym>
+      </eCH0271:CHE_CI_Organisation>
+      <eCH0271:CI_Contact ili:tid="contact_001">
+        <eCH0271:CI_ResponsibleParty ili:ref="organisation_001"/>
+      </eCH0271:CI_Contact>
+      <eCH0271:CI_Address ili:tid="address_001_001">
+        <eCH0271:deliveryPoint>Seftigenstrasse 264</eCH0271:deliveryPoint>
+        <eCH0271:postalCode>3084</eCH0271:postalCode>
+        <eCH0271:city>Wabern</eCH0271:city>
+        <eCH0271:country>CHE</eCH0271:country>
+        <eCH0271:electronicMailAddress>raphaelle.arnaud@swisstopo.ch</eCH0271:electronicMailAddress>
+        <eCH0271:CI_ResponsibleParty ili:ref="contact_001"/>
+      </eCH0271:CI_Address>
+      <eCH0271:CI_Telephone ili:tid="telephone_001">
+        <eCH0271:number>+41 58 46 76940</eCH0271:number>
+        <eCH0271:numberType>voice</eCH0271:numberType>
+        <eCH0271:CI_ResponsibleParty ili:ref="contact_001"/>
+      </eCH0271:CI_Telephone>
+      <eCH0271:CI_Citation ili:tid="citation_metadata_standard_001">
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>eCH-0271</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+        <eCH0271:standardUsedBy ili:ref="metadata_main_001"/>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_ReferenceSystem ili:tid="referenceSystem_001">
+        <eCH0271:referenceSystemIdentifier ili:ref="referenceSystemIdentifier_001"/>
+      </eCH0271:MD_ReferenceSystem>
+      <eCH0271:MD_Identifier ili:tid="referenceSystemIdentifier_001">
+        <eCH0271:code>
+          <Localisation_V2:MultilingualText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>EPSG:2056</Localisation_V2:Text>
+              </Localisation_V2:LocalisedText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualText>
+        </eCH0271:code>
+      </eCH0271:MD_Identifier>
+      <eCH0271:CHE_MD_DataIdentification ili:tid="identification_001">
+        <eCH0271:status>completed</eCH0271:status>
+        <eCH0271:spatialRepresentationType>vector</eCH0271:spatialRepresentationType>
+        <eCH0271:topicCategory>imageryBaseMapsEarthCover</eCH0271:topicCategory>
+        <eCH0271:abstract>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>-- résumé --</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:abstract>
+        <eCH0271:defaultLocale>
+          <eCH0271:PT_Locale>
+            <eCH0271:language>de</eCH0271:language>
+            <eCH0271:characterEncoding>utf8</eCH0271:characterEncoding>
+          </eCH0271:PT_Locale>
+        </eCH0271:defaultLocale>
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+        <eCH0271:citation ili:ref="dataset_citation_001"/>
+      </eCH0271:CHE_MD_DataIdentification>
+      <eCH0271:CI_Citation ili:tid="dataset_citation_001">
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Test simple</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+        <eCH0271:date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2023-04-17T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>creation</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:date>
+        <eCH0271:date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2026-11-04T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>revision</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:date>
+      </eCH0271:CI_Citation>
+      <eCH0271:EX_Extent ili:tid="extent_001">
+        <eCH0271:description>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Rivaz</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:description>
+        <eCH0271:MD_DataIdentification ili:ref="identification_001"/>
+      </eCH0271:EX_Extent>
+      <eCH0271:EX_GeographicBoundingBox ili:tid="bbox_001">
+        <eCH0271:extentTypeCode>true</eCH0271:extentTypeCode>
+        <eCH0271:northBoundLatitude>47.8085</eCH0271:northBoundLatitude>
+        <eCH0271:southBoundLatitude>45.8179</eCH0271:southBoundLatitude>
+        <eCH0271:eastBoundLongitude>10.4921</eCH0271:eastBoundLongitude>
+        <eCH0271:westBoundLongitude>5.9560</eCH0271:westBoundLongitude>
+      </eCH0271:EX_GeographicBoundingBox>
+      <eCH0271:CHE_MD_MaintenanceInformation ili:tid="maintenance_001">
+        <eCH0271:maintenanceAndUpdateFrequency>unknown</eCH0271:maintenanceAndUpdateFrequency>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:CHE_MD_MaintenanceInformation>
+      <eCH0271:MD_DigitalTransferOptions ili:tid="transfer_options_001">
+      </eCH0271:MD_DigitalTransferOptions>
+      <eCH0271:MD_Distribution ili:tid="distribution_001">
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+      </eCH0271:MD_Distribution>
+      <eCH0271:LI_Lineage ili:tid="lineage_001">
+        <eCH0271:statement>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Données test</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:statement>
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+      </eCH0271:LI_Lineage>
+      <eCH0271:MD_Metadatacontact>
+        <eCH0271:contact ili:ref="responsibility_001"/>
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+      </eCH0271:MD_Metadatacontact>
+      <eCH0271:CI_Responsibilityparty>
+        <eCH0271:party ili:ref="organisation_001"/>
+        <eCH0271:CI_Responsibility ili:ref="responsibility_001"/>
+      </eCH0271:CI_Responsibilityparty>
+      <eCH0271:MD_MetadatametadataScope>
+        <eCH0271:metadataScope ili:ref="metadataScope_001"/>
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+      </eCH0271:MD_MetadatametadataScope>
+      <eCH0271:referenceSystemInfoMD_Metadata>
+        <eCH0271:referenceSystemInfo ili:ref="referenceSystem_001"/>
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+      </eCH0271:referenceSystemInfoMD_Metadata>
+      <eCH0271:EX_ExtentgeographicElement>
+        <eCH0271:geographicElement ili:ref="bbox_001"/>
+        <eCH0271:EX_Extent ili:ref="extent_001"/>
+      </eCH0271:EX_ExtentgeographicElement>
+      <eCH0271:MD_IdentificationpointOfContact>
+        <eCH0271:pointOfContact ili:ref="responsibility_001"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:MD_IdentificationpointOfContact>
+    </eCH0271:eCH0271>
+  </ili:datasection>
+</ili:transfer>
