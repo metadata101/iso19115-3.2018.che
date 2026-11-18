@@ -37,20 +37,7 @@ public class Ech0271XtfToIso19115cheConversionTest {
      */
     @Test
     public void convertDronesVdEch0271Xtf() throws Exception {
-        Path xslFile = getResourceInsideSchema("convert/eCH-0271-XTF/fromECH0271-XTF.xsl");
-        Path xmlFile = getResource("ech0271-xtf/drones_vd.xtf");
-        
-        Element source = Xml.loadFile(xmlFile);
-        Element transformed = Xml.transform(source, xslFile);
-        
-        assertTrue(
-            "Expected CHE_MD_Metadata, got: " + transformed.getName(),
-            transformed.getName().equals("CHE_MD_Metadata"));
-        
-        TestSupport.assertGeneratedDataByteMatchExpected(
-                "ech0271-xtf/drones_vd-to-iso19115-3.che.xml",
-            Xml.getString(transformed),
-            GENERATE_EXPECTED_FILE);
+        transformToIsoCompareValidate("drones_vd");
     }
 
     /**
