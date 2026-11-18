@@ -6,7 +6,7 @@
   xmlns:xs   ="http://www.w3.org/2001/XMLSchema"
   xmlns:ili  ="http://www.interlis.ch/xtf/2.4/INTERLIS"
   xmlns:eCH0271="http://www.interlis.ch/xtf/2.4/eCH0271"
-  xmlns:ech0271 ="urn:ech0271-functions"
+  xmlns:f271 ="urn:ech0271-functions"
   xmlns:che  ="http://geocat.ch/che"
   xmlns:cit  ="http://standards.iso.org/iso/19115/-3/cit/2.0"
   xmlns:gco  ="http://standards.iso.org/iso/19115/-3/gco/1.0"
@@ -19,7 +19,7 @@
   <!-- Do not redefine it here to avoid XSLT duplicate global variable error -->
 
   <!-- CHE_MD_Legislation -->
-  <xsl:template name="ech0271:CHE_MD_Legislation">
+  <xsl:template name="f271:CHE_MD_Legislation">
     <xsl:param name="legisRecord" as="element()"/>
     <xsl:param name="basket"      as="element()"/>
 

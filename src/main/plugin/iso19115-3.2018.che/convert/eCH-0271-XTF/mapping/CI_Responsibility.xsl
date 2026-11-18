@@ -7,7 +7,7 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS"
   xmlns:eCH0271="http://www.interlis.ch/xtf/2.4/eCH0271"
-  xmlns:ech0271="urn:ech0271-functions"
+  xmlns:f271="urn:ech0271-functions"
   xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
   xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
   xmlns:che="http://geocat.ch/che"
@@ -15,7 +15,7 @@
 
   <!-- ================================================================
        CI_Responsibility: role + party
-       Links are resolved with ech0271:related (any direction / association)
+       Links are resolved with f271:related (any direction / association)
        ================================================================ -->
   <xsl:template match="eCH0271:CI_Responsibility" mode="responsibility">
     <cit:CI_Responsibility>
@@ -24,7 +24,7 @@
           <xsl:with-param name="value" select="normalize-space(eCH0271:role)"/>
         </xsl:call-template>
       </cit:role>
-      <xsl:for-each select="ech0271:related(., ('CHE_CI_Organisation', 'CI_Individual'))">
+      <xsl:for-each select="f271:related(., ('CHE_CI_Organisation', 'CI_Individual'))">
         <cit:party>
           <xsl:apply-templates select="." mode="party"/>
         </cit:party>
@@ -42,8 +42,8 @@
           <xsl:apply-templates select="eCH0271:name" mode="multilingual-text"/>
         </cit:name>
       </xsl:if>
-      <xsl:apply-templates select="ech0271:related(., 'CI_Contact')" mode="contact-info"/>
-      <xsl:for-each select="ech0271:related(., 'CI_Individual')">
+      <xsl:apply-templates select="f271:related(., 'CI_Contact')" mode="contact-info"/>
+      <xsl:for-each select="f271:related(., 'CI_Individual')">
         <cit:individual>
           <xsl:apply-templates select="." mode="party"/>
         </cit:individual>
@@ -67,7 +67,7 @@
           <xsl:apply-templates select="eCH0271:name" mode="multilingual-text"/>
         </cit:name>
       </xsl:if>
-      <xsl:apply-templates select="ech0271:related(., 'CI_Contact')" mode="contact-info"/>
+      <xsl:apply-templates select="f271:related(., 'CI_Contact')" mode="contact-info"/>
       <xsl:if test="eCH0271:positionName">
         <cit:positionName>
           <xsl:apply-templates select="eCH0271:positionName" mode="multilingual-text"/>
@@ -82,15 +82,15 @@
   <xsl:template match="eCH0271:CI_Contact" mode="contact-info">
     <cit:contactInfo>
       <cit:CI_Contact>
-        <xsl:apply-templates select="ech0271:related(., 'CI_Telephone')" mode="phone"/>
-        <xsl:for-each select="ech0271:related(., 'CI_Address')">
+        <xsl:apply-templates select="f271:related(., 'CI_Telephone')" mode="phone"/>
+        <xsl:for-each select="f271:related(., 'CI_Address')">
           <cit:address>
             <xsl:apply-templates select="." mode="address"/>
           </cit:address>
         </xsl:for-each>
-        <xsl:for-each select="ech0271:related(., 'CI_OnlineResource')">
+        <xsl:for-each select="f271:related(., 'CI_OnlineResource')">
           <cit:onlineResource>
-            <xsl:call-template name="ech0271:CI_OnlineResource">
+            <xsl:call-template name="f271:CI_OnlineResource">
               <xsl:with-param name="orRecord" select="."/>
             </xsl:call-template>
           </cit:onlineResource>

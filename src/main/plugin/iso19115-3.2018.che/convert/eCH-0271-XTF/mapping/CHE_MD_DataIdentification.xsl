@@ -7,7 +7,7 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS"
   xmlns:eCH0271="http://www.interlis.ch/xtf/2.4/eCH0271"
-  xmlns:ech0271="urn:ech0271-functions"
+  xmlns:f271="urn:ech0271-functions"
   xmlns:Localisation_V2="http://www.interlis.ch/xtf/2.4/Localisation_V2"
   xmlns:che="http://geocat.ch/che"
   xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
@@ -50,7 +50,7 @@
         
         <!-- Point of Contact (dataset-level) -->
         <xsl:variable name="currentDataIdentId" select="@ili:tid"/>
-        <xsl:for-each select="ech0271:related(., 'CI_Responsibility', 'pointOfContact')">
+        <xsl:for-each select="f271:related(., 'CI_Responsibility', 'pointOfContact')">
           <mri:pointOfContact>
             <xsl:apply-templates select="." mode="responsibility"/>
           </mri:pointOfContact>

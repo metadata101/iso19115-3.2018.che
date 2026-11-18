@@ -7,7 +7,7 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS"
   xmlns:eCH0271="http://www.interlis.ch/xtf/2.4/eCH0271"
-  xmlns:ech0271="urn:ech0271-functions"
+  xmlns:f271="urn:ech0271-functions"
   xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0"
   xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
   xmlns:che="http://geocat.ch/che"
@@ -99,7 +99,7 @@
       </xsl:choose>
 
       <!-- Metadata contact -->
-      <xsl:for-each select="ech0271:related(., 'CI_Responsibility', 'contact')">
+      <xsl:for-each select="f271:related(., 'CI_Responsibility', 'contact')">
         <mdb:contact>
           <xsl:apply-templates select="." mode="responsibility"/>
         </mdb:contact>
@@ -139,7 +139,7 @@
         <cit:CI_OnlineResource>
           <cit:linkage>
             <gco:CharacterString>
-              <xsl:value-of select="concat('http://geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/', normalize-space(ech0271:related(., 'MD_Identifier', 'metadataIdentifier')))"/>
+              <xsl:value-of select="concat('http://geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/', normalize-space(f271:related(., 'MD_Identifier', 'metadataIdentifier')))"/>
             </gco:CharacterString>
           </cit:linkage>
           <cit:function>

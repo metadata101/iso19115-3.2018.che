@@ -6,7 +6,7 @@
   xmlns:xs   ="http://www.w3.org/2001/XMLSchema"
   xmlns:ili  ="http://www.interlis.ch/xtf/2.4/INTERLIS"
   xmlns:eCH0271="http://www.interlis.ch/xtf/2.4/eCH0271"
-  xmlns:ech0271 ="urn:ech0271-functions"
+  xmlns:f271 ="urn:ech0271-functions"
   xmlns:cit  ="http://standards.iso.org/iso/19115/-3/cit/2.0"
   xmlns:gco  ="http://standards.iso.org/iso/19115/-3/gco/1.0"
   xmlns:lan  ="http://standards.iso.org/iso/19115/-3/lan/1.0"
@@ -16,7 +16,7 @@
   exclude-result-prefixes="#all">
 
   <!-- MD_Distribution -->
-  <xsl:template name="ech0271:MD_Distribution">
+  <xsl:template name="f271:MD_Distribution">
     <xsl:param name="distRecord" as="element()"/>
     <xsl:param name="basket"     as="element()"/>
 
@@ -27,7 +27,7 @@
         <xsl:variable name="fmtRecord" select="key('byTID', @ili:ref)"/>
         <xsl:if test="$fmtRecord/self::eCH0271:MD_Format">
           <mrd:distributionFormat>
-            <xsl:call-template name="ech0271:MD_Format">
+            <xsl:call-template name="f271:MD_Format">
               <xsl:with-param name="fmtRecord" select="$fmtRecord"/>
             </xsl:call-template>
           </mrd:distributionFormat>
@@ -39,7 +39,7 @@
         <xsl:variable name="dtoRecord" select="key('byTID', @ili:ref)"/>
         <xsl:if test="$dtoRecord/self::eCH0271:MD_DigitalTransferOptions">
           <mrd:transferOptions>
-            <xsl:call-template name="ech0271:MD_DigitalTransferOptions">
+            <xsl:call-template name="f271:MD_DigitalTransferOptions">
               <xsl:with-param name="dtoRecord" select="$dtoRecord"/>
               <xsl:with-param name="basket"    select="$basket"/>
             </xsl:call-template>
@@ -51,7 +51,7 @@
   </xsl:template>
 
   <!-- MD_DigitalTransferOptions -->
-  <xsl:template name="ech0271:MD_DigitalTransferOptions">
+  <xsl:template name="f271:MD_DigitalTransferOptions">
     <xsl:param name="dtoRecord" as="element()"/>
     <xsl:param name="basket"    as="element()"/>
 
@@ -61,7 +61,7 @@
         <xsl:variable name="orRecord" select="key('byTID', @ili:ref)"/>
         <xsl:if test="$orRecord/self::eCH0271:CI_OnlineResource">
           <mrd:onLine>
-            <xsl:call-template name="ech0271:CI_OnlineResource">
+            <xsl:call-template name="f271:CI_OnlineResource">
               <xsl:with-param name="orRecord" select="$orRecord"/>
             </xsl:call-template>
           </mrd:onLine>
@@ -71,7 +71,7 @@
   </xsl:template>
 
   <!-- CI_OnlineResource -->
-  <xsl:template name="ech0271:CI_OnlineResource">
+  <xsl:template name="f271:CI_OnlineResource">
     <xsl:param name="orRecord" as="element()"/>
 
     <cit:CI_OnlineResource>
@@ -123,7 +123,7 @@
   </xsl:template>
 
   <!-- MD_Format -->
-  <xsl:template name="ech0271:MD_Format">
+  <xsl:template name="f271:MD_Format">
     <xsl:param name="fmtRecord" as="element()"/>
 
     <mrd:MD_Format>

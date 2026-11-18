@@ -7,7 +7,7 @@
   xmlns:ili  ="http://www.interlis.ch/xtf/2.4/INTERLIS"
   xmlns:eCH0271="http://www.interlis.ch/xtf/2.4/eCH0271"
   xmlns:Localisation_V2="http://www.interlis.ch/xtf/2.4/Localisation_V2"
-  xmlns:ech0271 ="urn:ech0271-functions"
+  xmlns:f271 ="urn:ech0271-functions"
   xmlns:gex  ="http://standards.iso.org/iso/19115/-3/gex/1.0"
   xmlns:gco  ="http://standards.iso.org/iso/19115/-3/gco/1.0"
   xmlns:xsi  ="http://www.w3.org/2001/XMLSchema-instance"
@@ -122,7 +122,7 @@
        Legacy named templates (preserved for backward compatibility)
        ================================================================ -->
   <!-- EX_Extent -->
-  <xsl:template name="ech0271:EX_Extent">
+  <xsl:template name="f271:EX_Extent">
     <xsl:param name="extRecord" as="element()"/>
     <xsl:param name="basket"    as="element()"/>
 
@@ -143,7 +143,7 @@
 
         <xsl:if test="$geoElem/self::eCH0271:EX_GeographicBoundingBox">
           <gex:geographicElement>
-            <xsl:call-template name="ech0271:EX_GeographicBoundingBox">
+            <xsl:call-template name="f271:EX_GeographicBoundingBox">
               <xsl:with-param name="bboxRecord" select="$geoElem"/>
             </xsl:call-template>
           </gex:geographicElement>
@@ -153,7 +153,7 @@
   </xsl:template>
 
   <!-- EX_GeographicBoundingBox -->
-  <xsl:template name="ech0271:EX_GeographicBoundingBox">
+  <xsl:template name="f271:EX_GeographicBoundingBox">
     <xsl:param name="bboxRecord" as="element()"/>
 
     <gex:EX_GeographicBoundingBox>
