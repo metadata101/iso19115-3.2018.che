@@ -5,7 +5,7 @@
   xmlns:xsl  ="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs   ="http://www.w3.org/2001/XMLSchema"
   xmlns:ili  ="http://www.interlis.ch/xtf/2.4/INTERLIS"
-  xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1"
+  xmlns:eCH0271="http://www.interlis.ch/xtf/2.4/eCH0271"
   xmlns:ech0271 ="urn:ech0271-functions"
   xmlns:che  ="http://geocat.ch/che"
   xmlns:cit  ="http://standards.iso.org/iso/19115/-3/cit/2.0"
@@ -25,34 +25,34 @@
 
     <che:CHE_MD_Legislation>
       <!-- country (ISO 3166) -->
-      <xsl:if test="normalize-space($legisRecord/eCH0271_1:country) != ''">
+      <xsl:if test="normalize-space($legisRecord/eCH0271:country) != ''">
         <che:country>
-          <lan:CountryCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#Country" codeListValue="{normalize-space($legisRecord/eCH0271_1:country)}"/>
+          <lan:CountryCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#Country" codeListValue="{normalize-space($legisRecord/eCH0271:country)}"/>
         </che:country>
       </xsl:if>
 
       <!-- legislationType (cantonal, federal, international) -->
-      <xsl:if test="normalize-space($legisRecord/eCH0271_1:legislationType) != ''">
+      <xsl:if test="normalize-space($legisRecord/eCH0271:legislationType) != ''">
         <che:legislationType>
-          <che:CHE_CI_LegislationTypeCode codeList="legislationCode" codeListValue="{normalize-space($legisRecord/eCH0271_1:legislationType)}"/>
+          <che:CHE_CI_LegislationTypeCode codeList="legislationCode" codeListValue="{normalize-space($legisRecord/eCH0271:legislationType)}"/>
         </che:legislationType>
       </xsl:if>
 
       <!-- internalReference (e.g., BLV 740.24) -->
-      <xsl:if test="normalize-space($legisRecord/eCH0271_1:internalReference) != ''">
+      <xsl:if test="normalize-space($legisRecord/eCH0271:internalReference) != ''">
         <che:internalReference>
           <gco:CharacterString>
-            <xsl:value-of select="normalize-space($legisRecord/eCH0271_1:internalReference)"/>
+            <xsl:value-of select="normalize-space($legisRecord/eCH0271:internalReference)"/>
           </gco:CharacterString>
         </che:internalReference>
       </xsl:if>
 
       <!-- language (ISO 639-2/T) -->
-      <xsl:if test="normalize-space($legisRecord/eCH0271_1:language) != ''">
+      <xsl:if test="normalize-space($legisRecord/eCH0271:language) != ''">
         <che:language>
           <mcc:MD_LanguageCode codeList="{$CL}MD_LanguageCode"
-            codeListValue="{normalize-space($legisRecord/eCH0271_1:language)}">
-            <xsl:value-of select="normalize-space($legisRecord/eCH0271_1:language)"/>
+            codeListValue="{normalize-space($legisRecord/eCH0271:language)}">
+            <xsl:value-of select="normalize-space($legisRecord/eCH0271:language)"/>
           </mcc:MD_LanguageCode>
         </che:language>
       </xsl:if>
@@ -60,21 +60,21 @@
       <!-- legislationCitation via CHE_MD_LegislationlegislationCitation association -->
       <xsl:variable name="legTID" select="$legisRecord/@ili:tid"/>
       <!-- Priority 1: Check association table -->
-      <xsl:variable name="citAssoc" select="/ili:transfer/ili:datasection/eCH0271_1:eCH0271/eCH0271_1:CHE_MD_LegislationlegislationCitation
-                                           [eCH0271_1:CHE_MD_Legislation/@ili:ref = $legTID]"/>
+      <xsl:variable name="citAssoc" select="/ili:transfer/ili:datasection/eCH0271:eCH0271/eCH0271:CHE_MD_LegislationlegislationCitation
+                                           [eCH0271:CHE_MD_Legislation/@ili:ref = $legTID]"/>
       <xsl:choose>
         <xsl:when test="$citAssoc">
-          <xsl:variable name="citRef" select="$citAssoc/eCH0271_1:legislationCitation/@ili:ref"/>
+          <xsl:variable name="citRef" select="$citAssoc/eCH0271:legislationCitation/@ili:ref"/>
           <xsl:variable name="citRecord" select="key('byTID', $citRef)"/>
-          <xsl:if test="$citRecord/self::eCH0271_1:CI_Citation">
+          <xsl:if test="$citRecord/self::eCH0271:CI_Citation">
             <che:legislationCitation>
               <xsl:apply-templates select="$citRecord" mode="citation"/>
             </che:legislationCitation>
           </xsl:if>
         </xsl:when>
         <!-- Priority 2: Direct TID search (commented reference case) -->
-        <xsl:when test="//eCH0271_1:CI_Citation[@ili:tid='legislation-citation-001']">
-          <xsl:variable name="citRecord" select="//eCH0271_1:CI_Citation[@ili:tid='legislation-citation-001']"/>
+        <xsl:when test="//eCH0271:CI_Citation[@ili:tid='legislation-citation-001']">
+          <xsl:variable name="citRecord" select="//eCH0271:CI_Citation[@ili:tid='legislation-citation-001']"/>
           <che:legislationCitation>
             <xsl:apply-templates select="$citRecord" mode="citation"/>
           </che:legislationCitation>

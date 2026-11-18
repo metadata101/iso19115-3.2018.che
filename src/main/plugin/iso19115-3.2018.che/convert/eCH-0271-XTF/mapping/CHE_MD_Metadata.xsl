@@ -6,7 +6,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS"
-  xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1"
+  xmlns:eCH0271="http://www.interlis.ch/xtf/2.4/eCH0271"
   xmlns:ech0271="urn:ech0271-functions"
   xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0"
   xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
@@ -32,7 +32,7 @@
 
   <!-- ================================================================
        CHE_MD_Metadata root processor
-       Maps eCH0271_1:CHE_MD_Metadata to ISO 19115-3:2018 che:CHE_MD_Metadata
+       Maps eCH0271:CHE_MD_Metadata to ISO 19115-3:2018 che:CHE_MD_Metadata
        
        Input structure handling:
        - metadataIdentifier: ili:ref reference → resolves via key()
@@ -46,63 +46,39 @@
        - distributionInfo: ili:ref reference
        - legislationInformation: ili:ref reference
        ================================================================ -->
-  <xsl:template match="eCH0271_1:CHE_MD_Metadata" mode="md-metadata">
+  <xsl:import href="../../ISO19139/utility/create19115-3Namespaces.xsl"/>
+  <xsl:template match="eCH0271:CHE_MD_Metadata" mode="md-metadata">
     <xsl:variable name="mdTID" select="@ili:tid"/>
     <che:CHE_MD_Metadata gco:isoType="mdb:MD_Metadata">
-      
+      <xsl:call-template name="add-iso19115-3.2018-namespaces"/>
       <!-- metadata identifier (ili:ref reference) -->
-      <xsl:apply-templates select="eCH0271_1:metadataIdentifier[@ili:ref]" mode="identifier"/>
+      <xsl:apply-templates select="eCH0271:metadataIdentifier[@ili:ref]" mode="identifier"/>
 
       <!-- default locale (inline PT_Locale child) -->
-      <xsl:if test="eCH0271_1:defaultLocale">
-        <xsl:apply-templates select="eCH0271_1:defaultLocale/eCH0271_1:PT_Locale" mode="locale"/>
+      <xsl:if test="eCH0271:defaultLocale">
+        <xsl:apply-templates select="eCH0271:defaultLocale/eCH0271:PT_Locale" mode="locale"/>
       </xsl:if>
-
-      <!-- other locales (multilingual support) -->
-      <xsl:for-each select="eCH0271_1:otherLocale">
-        <mdb:otherLocale>
-          <xsl:choose>
-            <xsl:when test="eCH0271_1:PT_Locale">
-              <xsl:apply-templates select="eCH0271_1:PT_Locale" mode="other-locale"/>
-            </xsl:when>
-          </xsl:choose>
-        </mdb:otherLocale>
-      </xsl:for-each>
-
-      <!-- metadata linkage (reference to this metadata record online) -->
-      <mdb:metadataLinkage>
-        <cit:CI_OnlineResource>
-          <cit:linkage>
-            <gco:CharacterString>
-              <xsl:value-of select="concat('http://geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/', substring(eCH0271_1:metadataIdentifier/eCH0271_1:MD_Identifier/eCH0271_1:code/Localisation_V2:MultilingualMText/Localisation_V2:LocalisedText[1]/Localisation_V2:LocalisedMText/Localisation_V2:Text, 1, 36))"/>
-            </gco:CharacterString>
-          </cit:linkage>
-          <cit:function>
-            <cit:CI_OnLineFunctionCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="information">information</cit:CI_OnLineFunctionCode>
-          </cit:function>
-        </cit:CI_OnlineResource>
-      </mdb:metadataLinkage>
 
       <!-- Metadata scope (ili:ref reference OR direct object OR via association) -->
       <xsl:choose>
         <!-- Priority 1: Direct reference in CHE_MD_Metadata -->
-        <xsl:when test="eCH0271_1:metadataScope[@ili:ref]">
-          <xsl:apply-templates select="eCH0271_1:metadataScope" mode="metadata-scope"/>
+        <xsl:when test="eCH0271:metadataScope[@ili:ref]">
+          <xsl:apply-templates select="eCH0271:metadataScope" mode="metadata-scope"/>
         </xsl:when>
         <!-- Priority 2: Direct MD_MetadataScope object (commented reference case) -->
-        <xsl:when test="//eCH0271_1:MD_MetadataScope">
-          <xsl:variable name="scopeObj" select="//eCH0271_1:MD_MetadataScope[1]"/>
+        <xsl:when test="//eCH0271:MD_MetadataScope">
+          <xsl:variable name="scopeObj" select="//eCH0271:MD_MetadataScope[1]"/>
           <mdb:metadataScope>
             <mdb:MD_MetadataScope>
               <mdb:resourceScope>
                 <xsl:call-template name="scope-code">
-                  <xsl:with-param name="value" select="normalize-space($scopeObj/eCH0271_1:resourceScope)"/>
+                  <xsl:with-param name="value" select="normalize-space($scopeObj/eCH0271:resourceScope)"/>
                 </xsl:call-template>
               </mdb:resourceScope>
-              <xsl:if test="$scopeObj/eCH0271_1:name">
+              <xsl:if test="$scopeObj/eCH0271:name">
                 <mdb:name>
                   <gco:CharacterString>
-                    <xsl:value-of select="$scopeObj/eCH0271_1:name"/>
+                    <xsl:value-of select="$scopeObj/eCH0271:name"/>
                   </gco:CharacterString>
                 </mdb:name>
               </xsl:if>
@@ -112,10 +88,10 @@
         <!-- Priority 3: Via association MD_MetadataMetadataScope -->
         <xsl:otherwise>
           <xsl:variable name="scopeAssoc"
-            select="/ili:transfer/ili:datasection/eCH0271_1:eCH0271/eCH0271_1:MD_MetadataMetadataScope
-                    [eCH0271_1:MD_Metadata/@ili:ref = $mdTID]"/>
+            select="/ili:transfer/ili:datasection/eCH0271:eCH0271/eCH0271:MD_MetadataMetadataScope
+                    [eCH0271:MD_Metadata/@ili:ref = $mdTID]"/>
           <xsl:if test="$scopeAssoc">
-            <xsl:variable name="scopeRef" select="$scopeAssoc/eCH0271_1:metadataScope/@ili:ref"/>
+            <xsl:variable name="scopeRef" select="$scopeAssoc/eCH0271:metadataScope/@ili:ref"/>
             <xsl:variable name="scopeObj" select="key('byTID', $scopeRef)"/>
             <xsl:apply-templates select="$scopeObj" mode="metadata-scope"/>
           </xsl:if>
@@ -130,43 +106,68 @@
       </xsl:for-each>
 
       <!-- Metadata date info (inline CI_Date child) -->
-      <xsl:if test="eCH0271_1:dateInfo">
-        <xsl:apply-templates select="eCH0271_1:dateInfo/eCH0271_1:CI_Date" mode="date-info"/>
+      <xsl:if test="eCH0271:dateInfo">
+        <xsl:apply-templates select="eCH0271:dateInfo/eCH0271:CI_Date" mode="date-info"/>
       </xsl:if>
 
       <!-- Metadata standard citation (via association OR direct CI_Citation object) -->
       <xsl:variable name="mdStandardAssoc"
-        select="/ili:transfer/ili:datasection/eCH0271_1:eCH0271/eCH0271_1:MD_MetadataStandardUsedBymetadataStandard
-                [eCH0271_1:MD_Metadata/@ili:ref = $mdTID]"/>
+        select="/ili:transfer/ili:datasection/eCH0271:eCH0271/eCH0271:MD_MetadataStandardUsedBymetadataStandard
+                [eCH0271:MD_Metadata/@ili:ref = $mdTID]"/>
       <xsl:choose>
         <xsl:when test="$mdStandardAssoc">
-          <xsl:variable name="standardRef" select="$mdStandardAssoc/eCH0271_1:standardUsedBymetadataStandard/@ili:ref"/>
+          <xsl:variable name="standardRef" select="$mdStandardAssoc/eCH0271:standardUsedBymetadataStandard/@ili:ref"/>
           <xsl:variable name="standardObj" select="key('byTID', $standardRef)"/>
           <xsl:apply-templates select="$standardObj" mode="metadata-standard"/>
         </xsl:when>
         <!-- Direct CI_Citation with 'standard' in TID (commented reference case) -->
-        <xsl:when test="//eCH0271_1:CI_Citation[@ili:tid='citation-metadata-standard-001']">
-          <xsl:variable name="standardObj" select="//eCH0271_1:CI_Citation[@ili:tid='citation-metadata-standard-001']"/>
+        <xsl:when test="//eCH0271:CI_Citation[@ili:tid='citation-metadata-standard-001']">
+          <xsl:variable name="standardObj" select="//eCH0271:CI_Citation[@ili:tid='citation-metadata-standard-001']"/>
           <xsl:apply-templates select="$standardObj" mode="metadata-standard"/>
         </xsl:when>
       </xsl:choose>
 
+      <!-- other locales (multilingual support) -->
+      <xsl:for-each select="eCH0271:otherLocale">
+        <mdb:otherLocale>
+          <xsl:choose>
+            <xsl:when test="eCH0271:PT_Locale">
+              <xsl:apply-templates select="eCH0271:PT_Locale" mode="other-locale"/>
+            </xsl:when>
+          </xsl:choose>
+        </mdb:otherLocale>
+      </xsl:for-each>
+
+      <!-- metadata linkage (reference to this metadata record online) -->
+      <mdb:metadataLinkage>
+        <cit:CI_OnlineResource>
+          <cit:linkage>
+            <gco:CharacterString>
+              <xsl:value-of select="concat('http://geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/', normalize-space(ech0271:related(., 'MD_Identifier', 'metadataIdentifier')))"/>
+            </gco:CharacterString>
+          </cit:linkage>
+          <cit:function>
+            <cit:CI_OnLineFunctionCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="information">information</cit:CI_OnLineFunctionCode>
+          </cit:function>
+        </cit:CI_OnlineResource>
+      </mdb:metadataLinkage>
+
       <!-- Reference system info (direct ref OR direct MD_ReferenceSystem object OR via association) -->
       <xsl:choose>
-        <xsl:when test="eCH0271_1:referenceSystemInfo[@ili:ref]">
-          <xsl:apply-templates select="eCH0271_1:referenceSystemInfo" mode="reference-system"/>
+        <xsl:when test="eCH0271:referenceSystemInfo[@ili:ref]">
+          <xsl:apply-templates select="eCH0271:referenceSystemInfo" mode="reference-system"/>
         </xsl:when>
         <!-- Direct MD_ReferenceSystem object (commented reference case) -->
-        <xsl:when test="//eCH0271_1:MD_ReferenceSystem">
-          <xsl:variable name="refSysObj" select="//eCH0271_1:MD_ReferenceSystem[1]"/>
+        <xsl:when test="//eCH0271:MD_ReferenceSystem">
+          <xsl:variable name="refSysObj" select="//eCH0271:MD_ReferenceSystem[1]"/>
           <xsl:apply-templates select="$refSysObj" mode="reference-system"/>
         </xsl:when>
         <xsl:otherwise>
           <xsl:variable name="refSysAssoc"
-            select="/ili:transfer/ili:datasection/eCH0271_1:eCH0271/eCH0271_1:MD_MetadataReferenceSystemInfo
-                    [eCH0271_1:MD_Metadata/@ili:ref = $mdTID]"/>
+            select="/ili:transfer/ili:datasection/eCH0271:eCH0271/eCH0271:MD_MetadataReferenceSystemInfo
+                    [eCH0271:MD_Metadata/@ili:ref = $mdTID]"/>
           <xsl:if test="$refSysAssoc">
-            <xsl:variable name="refSysRef" select="$refSysAssoc/eCH0271_1:referenceSystemInfo/@ili:ref"/>
+            <xsl:variable name="refSysRef" select="$refSysAssoc/eCH0271:referenceSystemInfo/@ili:ref"/>
             <xsl:variable name="refSysObj" select="key('byTID', $refSysRef)"/>
             <xsl:apply-templates select="$refSysObj" mode="reference-system"/>
           </xsl:if>
@@ -175,21 +176,21 @@
 
       <!-- Data identification (via MD_MetadataidentificationInfo association OR inverse reference) -->
       <xsl:choose>
-        <xsl:when test="/ili:transfer/ili:datasection/eCH0271_1:eCH0271/eCH0271_1:MD_MetadataidentificationInfo
-                        [eCH0271_1:MD_Metadata/@ili:ref = $mdTID]">
+        <xsl:when test="/ili:transfer/ili:datasection/eCH0271:eCH0271/eCH0271:MD_MetadataidentificationInfo
+                        [eCH0271:MD_Metadata/@ili:ref = $mdTID]">
           <!-- Forward reference: Metadata → IdentificationInfo via association -->
           <xsl:variable name="dataIdAssoc"
-            select="/ili:transfer/ili:datasection/eCH0271_1:eCH0271/eCH0271_1:MD_MetadataidentificationInfo
-                    [eCH0271_1:MD_Metadata/@ili:ref = $mdTID]"/>
-          <xsl:variable name="dataIdRef" select="$dataIdAssoc/eCH0271_1:identificationInfo/@ili:ref"/>
+            select="/ili:transfer/ili:datasection/eCH0271:eCH0271/eCH0271:MD_MetadataidentificationInfo
+                    [eCH0271:MD_Metadata/@ili:ref = $mdTID]"/>
+          <xsl:variable name="dataIdRef" select="$dataIdAssoc/eCH0271:identificationInfo/@ili:ref"/>
           <xsl:variable name="dataIdObj" select="key('byTID', $dataIdRef)"/>
           <xsl:apply-templates select="$dataIdObj" mode="data-id"/>
         </xsl:when>
         <xsl:otherwise>
           <!-- Inverse reference: CHE_MD_DataIdentification contains ref to this Metadata -->
           <xsl:variable name="dataIdObj"
-            select="/ili:transfer/ili:datasection/eCH0271_1:eCH0271/eCH0271_1:CHE_MD_DataIdentification
-                    [eCH0271_1:MD_Metadata/@ili:ref = $mdTID]"/>
+            select="/ili:transfer/ili:datasection/eCH0271:eCH0271/eCH0271:CHE_MD_DataIdentification
+                    [eCH0271:MD_Metadata/@ili:ref = $mdTID]"/>
           <xsl:if test="$dataIdObj">
             <xsl:apply-templates select="$dataIdObj" mode="data-id"/>
           </xsl:if>
@@ -198,20 +199,20 @@
 
       <!-- Distribution info (direct ref OR direct MD_Distribution object OR via association) -->
       <xsl:choose>
-        <xsl:when test="eCH0271_1:distributionInfo[@ili:ref]">
-          <xsl:apply-templates select="eCH0271_1:distributionInfo" mode="distribution"/>
+        <xsl:when test="eCH0271:distributionInfo[@ili:ref]">
+          <xsl:apply-templates select="eCH0271:distributionInfo" mode="distribution"/>
         </xsl:when>
         <!-- Direct MD_Distribution object (commented reference case) -->
-        <xsl:when test="//eCH0271_1:MD_Distribution[@ili:tid='distribution-001']">
-          <xsl:variable name="distObj" select="//eCH0271_1:MD_Distribution[@ili:tid='distribution-001']"/>
+        <xsl:when test="//eCH0271:MD_Distribution[@ili:tid='distribution-001']">
+          <xsl:variable name="distObj" select="//eCH0271:MD_Distribution[@ili:tid='distribution-001']"/>
           <xsl:apply-templates select="$distObj" mode="distribution"/>
         </xsl:when>
         <xsl:otherwise>
           <xsl:variable name="distAssoc"
-            select="/ili:transfer/ili:datasection/eCH0271_1:eCH0271/eCH0271_1:MD_MetadataDistributionInfo
-                    [eCH0271_1:MD_Metadata/@ili:ref = $mdTID]"/>
+            select="/ili:transfer/ili:datasection/eCH0271:eCH0271/eCH0271:MD_MetadataDistributionInfo
+                    [eCH0271:MD_Metadata/@ili:ref = $mdTID]"/>
           <xsl:if test="$distAssoc">
-            <xsl:variable name="distRef" select="$distAssoc/eCH0271_1:distributionInfo/@ili:ref"/>
+            <xsl:variable name="distRef" select="$distAssoc/eCH0271:distributionInfo/@ili:ref"/>
             <xsl:variable name="distObj" select="key('byTID', $distRef)"/>
             <xsl:apply-templates select="$distObj" mode="distribution"/>
           </xsl:if>
@@ -220,20 +221,20 @@
 
       <!-- Legislative/governance info (direct ref OR direct CHE_MD_Legislation object OR via association) -->
       <xsl:choose>
-        <xsl:when test="eCH0271_1:legislationInformation[@ili:ref]">
-          <xsl:apply-templates select="eCH0271_1:legislationInformation" mode="legislation"/>
+        <xsl:when test="eCH0271:legislationInformation[@ili:ref]">
+          <xsl:apply-templates select="eCH0271:legislationInformation" mode="legislation"/>
         </xsl:when>
         <!-- Direct CHE_MD_Legislation object (commented reference case) -->
-        <xsl:when test="//eCH0271_1:CHE_MD_Legislation[@ili:tid='legislation-001']">
-          <xsl:variable name="legObj" select="//eCH0271_1:CHE_MD_Legislation[@ili:tid='legislation-001']"/>
+        <xsl:when test="//eCH0271:CHE_MD_Legislation[@ili:tid='legislation-001']">
+          <xsl:variable name="legObj" select="//eCH0271:CHE_MD_Legislation[@ili:tid='legislation-001']"/>
           <xsl:apply-templates select="$legObj" mode="legislation"/>
         </xsl:when>
         <xsl:otherwise>
           <xsl:variable name="legAssoc"
-            select="/ili:transfer/ili:datasection/eCH0271_1:eCH0271/eCH0271_1:MD_MetadataLegislationInformation
-                    [eCH0271_1:MD_Metadata/@ili:ref = $mdTID]"/>
+            select="/ili:transfer/ili:datasection/eCH0271:eCH0271/eCH0271:MD_MetadataLegislationInformation
+                    [eCH0271:MD_Metadata/@ili:ref = $mdTID]"/>
           <xsl:if test="$legAssoc">
-            <xsl:variable name="legRef" select="$legAssoc/eCH0271_1:legislationInformation/@ili:ref"/>
+            <xsl:variable name="legRef" select="$legAssoc/eCH0271:legislationInformation/@ili:ref"/>
             <xsl:variable name="legObj" select="key('byTID', $legRef)"/>
             <xsl:apply-templates select="$legObj" mode="legislation"/>
           </xsl:if>
@@ -245,31 +246,31 @@
   <!-- ================================================================
        metadata-standard: Direct CI_Citation processing (resolved object)
        ================================================================ -->
-  <xsl:template match="eCH0271_1:CI_Citation" mode="metadata-standard">
+  <xsl:template match="eCH0271:CI_Citation" mode="metadata-standard">
     <mdb:metadataStandard>
       <cit:CI_Citation>
-        <xsl:if test="eCH0271_1:title">
+        <xsl:if test="eCH0271:title">
           <cit:title>
-            <xsl:apply-templates select="eCH0271_1:title" mode="multilingual-text"/>
+            <xsl:apply-templates select="eCH0271:title" mode="multilingual-text"/>
           </cit:title>
         </xsl:if>
-        <xsl:if test="eCH0271_1:date[@ili:ref]">
-          <xsl:variable name="dateRef" select="eCH0271_1:date/@ili:ref"/>
+        <xsl:if test="eCH0271:date[@ili:ref]">
+          <xsl:variable name="dateRef" select="eCH0271:date/@ili:ref"/>
           <xsl:variable name="dateObj" select="key('byTID', $dateRef)"/>
-          <xsl:if test="$dateObj/self::eCH0271_1:CI_Date">
+          <xsl:if test="$dateObj/self::eCH0271:CI_Date">
             <cit:date>
               <cit:CI_Date>
-                <xsl:if test="normalize-space($dateObj/eCH0271_1:date) != ''">
+                <xsl:if test="normalize-space($dateObj/eCH0271:date) != ''">
                   <cit:date>
                     <gco:Date>
-                      <xsl:value-of select="substring(normalize-space($dateObj/eCH0271_1:date), 1, 10)"/>
+                      <xsl:value-of select="substring(normalize-space($dateObj/eCH0271:date), 1, 10)"/>
                     </gco:Date>
                   </cit:date>
                 </xsl:if>
-                <xsl:if test="$dateObj/eCH0271_1:dateType">
+                <xsl:if test="$dateObj/eCH0271:dateType">
                   <cit:dateType>
                     <xsl:call-template name="date-type-code">
-                      <xsl:with-param name="value" select="normalize-space($dateObj/eCH0271_1:dateType)"/>
+                      <xsl:with-param name="value" select="normalize-space($dateObj/eCH0271:dateType)"/>
                     </xsl:call-template>
                   </cit:dateType>
                 </xsl:if>
@@ -284,17 +285,17 @@
   <!-- ================================================================
        reference-system: Direct MD_ReferenceSystem processing (resolved object)
        ================================================================ -->
-  <xsl:template match="eCH0271_1:MD_ReferenceSystem" mode="reference-system">
+  <xsl:template match="eCH0271:MD_ReferenceSystem" mode="reference-system">
     <mdb:referenceSystemInfo>
       <mrs:MD_ReferenceSystem>
-        <xsl:if test="eCH0271_1:referenceSystemIdentifier[@ili:ref]">
-          <xsl:variable name="rsIdentId" select="eCH0271_1:referenceSystemIdentifier/@ili:ref"/>
+        <xsl:if test="eCH0271:referenceSystemIdentifier[@ili:ref]">
+          <xsl:variable name="rsIdentId" select="eCH0271:referenceSystemIdentifier/@ili:ref"/>
           <xsl:variable name="rsIdentObj" select="key('byTID', $rsIdentId)"/>
           <xsl:if test="$rsIdentObj">
             <mrs:referenceSystemIdentifier>
               <mcc:MD_Identifier>
                 <mcc:code>
-                  <xsl:apply-templates select="$rsIdentObj/eCH0271_1:code" mode="multilingual-text"/>
+                  <xsl:apply-templates select="$rsIdentObj/eCH0271:code" mode="multilingual-text"/>
                 </mcc:code>
               </mcc:MD_Identifier>
             </mrs:referenceSystemIdentifier>
@@ -307,18 +308,18 @@
   <!-- ================================================================
        distribution: Direct MD_Distribution processing (resolved object)
        ================================================================ -->
-  <xsl:template match="eCH0271_1:MD_Distribution" mode="distribution">
+  <xsl:template match="eCH0271:MD_Distribution" mode="distribution">
     <mdb:distributionInfo>
       <mrd:MD_Distribution>
         <!-- Process transferOptions: Priority 1 - associations, Priority 2 - direct TID search -->
         <xsl:variable name="distTID" select="@ili:tid"/>
         <xsl:choose>
           <!-- Direct transferOptions children (if any uncommented) -->
-          <xsl:when test="eCH0271_1:transferOptions[@ili:ref]">
-            <xsl:for-each select="eCH0271_1:transferOptions[@ili:ref]">
+          <xsl:when test="eCH0271:transferOptions[@ili:ref]">
+            <xsl:for-each select="eCH0271:transferOptions[@ili:ref]">
               <xsl:variable name="toRef" select="@ili:ref"/>
               <xsl:variable name="toObj" select="key('byTID', $toRef)"/>
-              <xsl:if test="$toObj/self::eCH0271_1:MD_DigitalTransferOptions">
+              <xsl:if test="$toObj/self::eCH0271:MD_DigitalTransferOptions">
                 <mrd:transferOptions>
                   <xsl:apply-templates select="$toObj" mode="transfer-options"/>
                 </mrd:transferOptions>
@@ -326,13 +327,13 @@
             </xsl:for-each>
           </xsl:when>
           <!-- Association-based (MD_DistributionDistributionTransferOptions) -->
-          <xsl:when test="/ili:transfer/ili:datasection/eCH0271_1:eCH0271/eCH0271_1:MD_DistributionDistributionTransferOptions
-                          [eCH0271_1:MD_Distribution/@ili:ref = $distTID]">
-            <xsl:for-each select="/ili:transfer/ili:datasection/eCH0271_1:eCH0271/eCH0271_1:MD_DistributionDistributionTransferOptions
-                                 [eCH0271_1:MD_Distribution/@ili:ref = $distTID]">
-              <xsl:variable name="toRef" select="eCH0271_1:distributionTransferOptions/@ili:ref"/>
+          <xsl:when test="/ili:transfer/ili:datasection/eCH0271:eCH0271/eCH0271:MD_DistributionDistributionTransferOptions
+                          [eCH0271:MD_Distribution/@ili:ref = $distTID]">
+            <xsl:for-each select="/ili:transfer/ili:datasection/eCH0271:eCH0271/eCH0271:MD_DistributionDistributionTransferOptions
+                                 [eCH0271:MD_Distribution/@ili:ref = $distTID]">
+              <xsl:variable name="toRef" select="eCH0271:distributionTransferOptions/@ili:ref"/>
               <xsl:variable name="toObj" select="key('byTID', $toRef)"/>
-              <xsl:if test="$toObj/self::eCH0271_1:MD_DigitalTransferOptions">
+              <xsl:if test="$toObj/self::eCH0271:MD_DigitalTransferOptions">
                 <mrd:transferOptions>
                   <xsl:apply-templates select="$toObj" mode="transfer-options"/>
                 </mrd:transferOptions>
@@ -341,7 +342,7 @@
           </xsl:when>
           <!-- Direct TID search fallback (commented references case) -->
           <xsl:otherwise>
-            <xsl:for-each select="//eCH0271_1:MD_DigitalTransferOptions">
+            <xsl:for-each select="//eCH0271:MD_DigitalTransferOptions">
               <mrd:transferOptions>
                 <xsl:apply-templates select="." mode="transfer-options"/>
               </mrd:transferOptions>
@@ -355,18 +356,18 @@
   <!-- ================================================================
        transfer-options: Process MD_DigitalTransferOptions
        ================================================================ -->
-  <xsl:template match="eCH0271_1:MD_DigitalTransferOptions" mode="transfer-options">
+  <xsl:template match="eCH0271:MD_DigitalTransferOptions" mode="transfer-options">
     <mrd:MD_DigitalTransferOptions>
       <!-- Process onLine resources: Priority 1 - direct refs, Priority 2 - associations, Priority 3 - direct TID search -->
       <xsl:variable name="toTID" select="@ili:tid"/>
       
       <xsl:choose>
         <!-- Direct onLine children (if any uncommented) -->
-        <xsl:when test="eCH0271_1:onLine[@ili:ref]">
-          <xsl:for-each select="eCH0271_1:onLine[@ili:ref]">
+        <xsl:when test="eCH0271:onLine[@ili:ref]">
+          <xsl:for-each select="eCH0271:onLine[@ili:ref]">
             <xsl:variable name="olRef" select="@ili:ref"/>
             <xsl:variable name="olObj" select="key('byTID', $olRef)"/>
-            <xsl:if test="$olObj/self::eCH0271_1:CI_OnlineResource">
+            <xsl:if test="$olObj/self::eCH0271:CI_OnlineResource">
               <mrd:onLine>
                 <xsl:apply-templates select="$olObj" mode="online-resource"/>
               </mrd:onLine>
@@ -374,13 +375,13 @@
           </xsl:for-each>
         </xsl:when>
         <!-- Association-based (MD_DigitalTransferOptionsOnLine) -->
-        <xsl:when test="/ili:transfer/ili:datasection/eCH0271_1:eCH0271/eCH0271_1:MD_DigitalTransferOptionsOnLine
-                        [eCH0271_1:MD_DigitalTransferOptions/@ili:ref = $toTID]">
-          <xsl:for-each select="/ili:transfer/ili:datasection/eCH0271_1:eCH0271/eCH0271_1:MD_DigitalTransferOptionsOnLine
-                               [eCH0271_1:MD_DigitalTransferOptions/@ili:ref = $toTID]">
-            <xsl:variable name="olRef" select="eCH0271_1:onLine/@ili:ref"/>
+        <xsl:when test="/ili:transfer/ili:datasection/eCH0271:eCH0271/eCH0271:MD_DigitalTransferOptionsOnLine
+                        [eCH0271:MD_DigitalTransferOptions/@ili:ref = $toTID]">
+          <xsl:for-each select="/ili:transfer/ili:datasection/eCH0271:eCH0271/eCH0271:MD_DigitalTransferOptionsOnLine
+                               [eCH0271:MD_DigitalTransferOptions/@ili:ref = $toTID]">
+            <xsl:variable name="olRef" select="eCH0271:onLine/@ili:ref"/>
             <xsl:variable name="olObj" select="key('byTID', $olRef)"/>
-            <xsl:if test="$olObj/self::eCH0271_1:CI_OnlineResource">
+            <xsl:if test="$olObj/self::eCH0271:CI_OnlineResource">
               <mrd:onLine>
                 <xsl:apply-templates select="$olObj" mode="online-resource"/>
               </mrd:onLine>
@@ -394,7 +395,7 @@
           <xsl:if test="$toSuffix != ''">
             <xsl:variable name="expectedOlTID" select="concat('online-resource-', $toSuffix)"/>
             <xsl:variable name="matchingOlObj" select="key('byTID', $expectedOlTID)"/>
-            <xsl:if test="$matchingOlObj/self::eCH0271_1:CI_OnlineResource">
+            <xsl:if test="$matchingOlObj/self::eCH0271:CI_OnlineResource">
               <mrd:onLine>
                 <xsl:apply-templates select="$matchingOlObj" mode="online-resource"/>
               </mrd:onLine>
@@ -408,13 +409,13 @@
   <!-- ================================================================
        legislation: Direct CHE_MD_Legislation processing (resolved object)
        ================================================================ -->
-  <xsl:template match="eCH0271_1:CHE_MD_Legislation" mode="legislation">
+  <xsl:template match="eCH0271:CHE_MD_Legislation" mode="legislation">
     <che:legislationInformation>
       <che:CHE_MD_Legislation>
         <!-- country (ISO 3166) - convert CHE to CH -->
-        <xsl:if test="normalize-space(eCH0271_1:country) != ''">
+        <xsl:if test="normalize-space(eCH0271:country) != ''">
           <che:country>
-            <xsl:variable name="countryCode" select="normalize-space(eCH0271_1:country)"/>
+            <xsl:variable name="countryCode" select="normalize-space(eCH0271:country)"/>
             <xsl:variable name="mappedCountry">
               <xsl:choose>
                 <xsl:when test="$countryCode = 'CHE'">CH</xsl:when>
@@ -426,9 +427,9 @@
         </xsl:if>
 
         <!-- legislationType - convert otherLegalProvision to cantonalLaw -->
-        <xsl:if test="normalize-space(eCH0271_1:legislationType) != ''">
+        <xsl:if test="normalize-space(eCH0271:legislationType) != ''">
           <che:legislationType>
-            <xsl:variable name="legType" select="normalize-space(eCH0271_1:legislationType)"/>
+            <xsl:variable name="legType" select="normalize-space(eCH0271:legislationType)"/>
             <xsl:variable name="mappedType">
               <xsl:choose>
                 <xsl:when test="$legType = 'otherLegalProvision'">cantonalLaw</xsl:when>
@@ -440,47 +441,47 @@
         </xsl:if>
 
         <!-- internalReference (e.g., BLV 740.24) -->
-        <xsl:if test="normalize-space(eCH0271_1:internalReference) != ''">
+        <xsl:if test="normalize-space(eCH0271:internalReference) != ''">
           <che:internalReference>
             <gco:CharacterString>
-              <xsl:value-of select="normalize-space(eCH0271_1:internalReference)"/>
+              <xsl:value-of select="normalize-space(eCH0271:internalReference)"/>
             </gco:CharacterString>
           </che:internalReference>
         </xsl:if>
 
         <!-- legislationCitation (direct ili:ref child element) -->
-        <xsl:if test="eCH0271_1:legislationCitation[@ili:ref]">
-          <xsl:variable name="citRef" select="eCH0271_1:legislationCitation/@ili:ref"/>
+        <xsl:if test="eCH0271:legislationCitation[@ili:ref]">
+          <xsl:variable name="citRef" select="eCH0271:legislationCitation/@ili:ref"/>
           <xsl:variable name="citRecord" select="key('byTID', $citRef)"/>
-          <xsl:if test="$citRecord/self::eCH0271_1:CI_Citation">
+          <xsl:if test="$citRecord/self::eCH0271:CI_Citation">
             <che:legislationCitation>
               <cit:CI_Citation>
-                <xsl:if test="$citRecord/eCH0271_1:title">
+                <xsl:if test="$citRecord/eCH0271:title">
                   <cit:title>
-                    <xsl:apply-templates select="$citRecord/eCH0271_1:title" mode="multilingual-text"/>
+                    <xsl:apply-templates select="$citRecord/eCH0271:title" mode="multilingual-text"/>
                   </cit:title>
                 </xsl:if>
                 <!-- Get date via CI_Citationdate association -->
                 <xsl:variable name="citTID" select="$citRecord/@ili:tid"/>
-                <xsl:variable name="dateAssoc" select="/ili:transfer/ili:datasection/eCH0271_1:eCH0271/eCH0271_1:CI_Citationdate
-                                                       [eCH0271_1:CI_Citation/@ili:ref = $citTID]"/>
+                <xsl:variable name="dateAssoc" select="/ili:transfer/ili:datasection/eCH0271:eCH0271/eCH0271:CI_Citationdate
+                                                       [eCH0271:CI_Citation/@ili:ref = $citTID]"/>
                 <xsl:if test="$dateAssoc">
-                  <xsl:variable name="dateRef" select="$dateAssoc/eCH0271_1:date/@ili:ref"/>
+                  <xsl:variable name="dateRef" select="$dateAssoc/eCH0271:date/@ili:ref"/>
                   <xsl:variable name="dateObj" select="key('byTID', $dateRef)"/>
-                  <xsl:if test="$dateObj/self::eCH0271_1:CI_Date">
+                  <xsl:if test="$dateObj/self::eCH0271:CI_Date">
                     <cit:date>
                       <cit:CI_Date>
-                        <xsl:if test="normalize-space($dateObj/eCH0271_1:date) != ''">
+                        <xsl:if test="normalize-space($dateObj/eCH0271:date) != ''">
                           <cit:date>
                             <gco:Date>
-                              <xsl:value-of select="substring(normalize-space($dateObj/eCH0271_1:date), 1, 10)"/>
+                              <xsl:value-of select="substring(normalize-space($dateObj/eCH0271:date), 1, 10)"/>
                             </gco:Date>
                           </cit:date>
                         </xsl:if>
-                        <xsl:if test="$dateObj/eCH0271_1:dateType">
+                        <xsl:if test="$dateObj/eCH0271:dateType">
                           <cit:dateType>
                             <xsl:call-template name="date-type-code">
-                              <xsl:with-param name="value" select="normalize-space($dateObj/eCH0271_1:dateType)"/>
+                              <xsl:with-param name="value" select="normalize-space($dateObj/eCH0271:dateType)"/>
                             </xsl:call-template>
                           </cit:dateType>
                         </xsl:if>
@@ -499,14 +500,14 @@
   <!-- ================================================================
        online-resource: Process CI_OnlineResource
        ================================================================ -->
-  <xsl:template match="eCH0271_1:CI_OnlineResource" mode="online-resource">
+  <xsl:template match="eCH0271:CI_OnlineResource" mode="online-resource">
     <cit:CI_OnlineResource>
       <!-- linkage (MultilingualUri -> CharacterString, extract first fr text) -->
-      <xsl:if test="eCH0271_1:linkage">
+      <xsl:if test="eCH0271:linkage">
         <cit:linkage>
           <gco:CharacterString>
             <xsl:value-of select="normalize-space(
-              eCH0271_1:linkage/Localisation_V2:MultilingualUri/Localisation_V2:LocalisedText[1]/
+              eCH0271:linkage/Localisation_V2:MultilingualUri/Localisation_V2:LocalisedText[1]/
               Localisation_V2:LocalisedUri/Localisation_V2:Text[1]
             )"/>
           </gco:CharacterString>
@@ -514,33 +515,33 @@
       </xsl:if>
       
       <!-- protocol (text or code value) -->
-      <xsl:if test="normalize-space(eCH0271_1:protocol) != ''">
+      <xsl:if test="normalize-space(eCH0271:protocol) != ''">
         <cit:protocol>
           <gco:CharacterString>
-            <xsl:value-of select="normalize-space(eCH0271_1:protocol)"/>
+            <xsl:value-of select="normalize-space(eCH0271:protocol)"/>
           </gco:CharacterString>
         </cit:protocol>
       </xsl:if>
       
       <!-- name (optional, MultilingualMText) -->
-      <xsl:if test="eCH0271_1:name">
+      <xsl:if test="eCH0271:name">
         <cit:name>
-          <xsl:apply-templates select="eCH0271_1:name" mode="multilingual-text"/>
+          <xsl:apply-templates select="eCH0271:name" mode="multilingual-text"/>
         </cit:name>
       </xsl:if>
       
       <!-- description (optional, MultilingualMText) -->
-      <xsl:if test="eCH0271_1:description">
+      <xsl:if test="eCH0271:description">
         <cit:description>
-          <xsl:apply-templates select="eCH0271_1:description" mode="multilingual-text"/>
+          <xsl:apply-templates select="eCH0271:description" mode="multilingual-text"/>
         </cit:description>
       </xsl:if>
       
       <!-- function (optional, code value) -->
-      <xsl:if test="normalize-space(eCH0271_1:function) != ''">
+      <xsl:if test="normalize-space(eCH0271:function) != ''">
         <cit:function>
-          <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="{normalize-space(eCH0271_1:function)}">
-            <xsl:value-of select="normalize-space(eCH0271_1:function)"/>
+          <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="{normalize-space(eCH0271:function)}">
+            <xsl:value-of select="normalize-space(eCH0271:function)"/>
           </cit:CI_OnLineFunctionCode>
         </cit:function>
       </xsl:if>

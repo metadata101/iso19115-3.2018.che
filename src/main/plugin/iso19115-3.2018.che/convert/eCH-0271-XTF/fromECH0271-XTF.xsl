@@ -6,10 +6,10 @@
   xmlns:xsl  ="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs   ="http://www.w3.org/2001/XMLSchema"
   xmlns:ili  ="http://www.interlis.ch/xtf/2.4/INTERLIS"
-  xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1"
+  xmlns:eCH0271="http://www.interlis.ch/xtf/2.4/eCH0271"
   xmlns:Localisation_V2="http://www.interlis.ch/xtf/2.4/Localisation_V2"
   xmlns:LocalisationCH_V2="http://www.interlis.ch/xtf/2.4/LocalisationCH_V2"
-  xmlns:ech0271 ="urn:ech0271-functions"
+  xmlns:f271 ="urn:ech0271-functions"
   xmlns:che  ="http://geocat.ch/che"
   xmlns:cat  ="http://standards.iso.org/iso/19115/-3/cat/1.0"
   xmlns:cit  ="http://standards.iso.org/iso/19115/-3/cit/2.0"
@@ -79,12 +79,12 @@
 
   <!-- Keys for reference resolution -->
   <xsl:key name="byTID"
-    match="/ili:transfer/ili:datasection/eCH0271_1:eCH0271//*[@ili:tid]"
+    match="/ili:transfer/ili:datasection/eCH0271:eCH0271//*[@ili:tid]"
     use="@ili:tid"/>
 
   <xsl:key name="dataIdentByMetadataRef"
-    match="//eCH0271_1:CHE_MD_DataIdentification"
-    use="eCH0271_1:MD_Metadata/@ili:ref"/>
+    match="//eCH0271:CHE_MD_DataIdentification"
+    use="eCH0271:MD_Metadata/@ili:ref"/>
 
   <!-- ISO codelist base URLs -->
   <xsl:variable name="CL"
@@ -165,9 +165,9 @@
   <!-- ================================================================ -->
 
   <xsl:template match="/">
-    <!-- Locate the eCH0271_1.eCH0271 basket (XTF 2.4 format). -->
+    <!-- Locate the eCH0271.eCH0271 basket (XTF 2.4 format). -->
     <xsl:variable name="basket"
-      select="/ili:transfer/ili:datasection/eCH0271_1:eCH0271[1]"/>
+      select="/ili:transfer/ili:datasection/eCH0271:eCH0271[1]"/>
 
     <!-- 
       IMPORTANT: This XSLT may be applied to:
@@ -191,11 +191,11 @@
       <xsl:otherwise>
         <!-- Input IS XTF INTERLIS format → perform eCH0271 → CHE transformation -->
         <xsl:variable name="mdRecords"
-          select="$basket/eCH0271_1:CHE_MD_Metadata"/>
+          select="$basket/eCH0271:CHE_MD_Metadata"/>
 
         <xsl:if test="not($mdRecords)">
           <xsl:message terminate="yes">
-            ERROR: No eCH0271_1:CHE_MD_Metadata records found in the eCH0271 basket.
+            ERROR: No eCH0271:CHE_MD_Metadata records found in the eCH0271 basket.
           </xsl:message>
         </xsl:if>
 
@@ -228,14 +228,14 @@
   </xsl:template>
 
   <!-- dateInfo processor -->
-  <xsl:template match="eCH0271_1:CI_Date" mode="date-info">
+  <xsl:template match="eCH0271:CI_Date" mode="date-info">
     <mdb:dateInfo>
       <cit:CI_Date>
         <cit:date>
           <xsl:choose>
-            <xsl:when test="normalize-space(eCH0271_1:date) != ''">
+            <xsl:when test="normalize-space(eCH0271:date) != ''">
               <gco:Date>
-                <xsl:value-of select="substring(string(eCH0271_1:date), 1, 10)"/>
+                <xsl:value-of select="substring(string(eCH0271:date), 1, 10)"/>
               </gco:Date>
             </xsl:when>
             <xsl:otherwise>
@@ -245,10 +245,10 @@
             </xsl:otherwise>
           </xsl:choose>
         </cit:date>
-        <xsl:if test="eCH0271_1:dateType">
+        <xsl:if test="eCH0271:dateType">
           <cit:dateType>
             <xsl:call-template name="date-type-code">
-              <xsl:with-param name="value" select="normalize-space(eCH0271_1:dateType)"/>
+              <xsl:with-param name="value" select="normalize-space(eCH0271:dateType)"/>
             </xsl:call-template>
           </cit:dateType>
         </xsl:if>
@@ -259,23 +259,23 @@
   <!-- ================================================================
        metadataStandard: CI_Citation → mdb:metadataStandard
        ================================================================ -->
-  <xsl:template match="eCH0271_1:standardUsedBymetadataStandard[@ili:ref]" mode="metadata-standard">
+  <xsl:template match="eCH0271:standardUsedBymetadataStandard[@ili:ref]" mode="metadata-standard">
     <xsl:variable name="citId" select="@ili:ref"/>
     <xsl:variable name="citObj" select="key('byTID', $citId)"/>
 
-    <xsl:if test="$citObj/self::eCH0271_1:CI_Citation">
+    <xsl:if test="$citObj/self::eCH0271:CI_Citation">
       <mdb:metadataStandard>
         <cit:CI_Citation>
-          <xsl:if test="$citObj/eCH0271_1:title">
+          <xsl:if test="$citObj/eCH0271:title">
             <cit:title>
-              <xsl:apply-templates select="$citObj/eCH0271_1:title" mode="multilingual-text"/>
+              <xsl:apply-templates select="$citObj/eCH0271:title" mode="multilingual-text"/>
             </cit:title>
           </xsl:if>
-          <xsl:if test="$citObj/eCH0271_1:date">
+          <xsl:if test="$citObj/eCH0271:date">
             <cit:date>
               <cit:CI_Date>
                 <cit:date>
-                  <xsl:value-of select="$citObj/eCH0271_1:date"/>
+                  <xsl:value-of select="$citObj/eCH0271:date"/>
                 </cit:date>
               </cit:CI_Date>
             </cit:date>
@@ -288,24 +288,24 @@
   <!-- ================================================================
        referenceSystemInfo: MD_ReferenceSystem inline to mdb:referenceSystemInfo
        ================================================================ -->
-  <xsl:template match="eCH0271_1:referenceSystemInfo[not(@ili:ref)]" mode="reference-system">
-    <xsl:if test="eCH0271_1:MD_ReferenceSystem">
-      <xsl:apply-templates select="eCH0271_1:MD_ReferenceSystem" mode="reference-system-inline"/>
+  <xsl:template match="eCH0271:referenceSystemInfo[not(@ili:ref)]" mode="reference-system">
+    <xsl:if test="eCH0271:MD_ReferenceSystem">
+      <xsl:apply-templates select="eCH0271:MD_ReferenceSystem" mode="reference-system-inline"/>
     </xsl:if>
   </xsl:template>
 
   <!-- MD_ReferenceSystem (inline processing) -->
-  <xsl:template match="eCH0271_1:MD_ReferenceSystem" mode="reference-system-inline">
+  <xsl:template match="eCH0271:MD_ReferenceSystem" mode="reference-system-inline">
     <mdb:referenceSystemInfo>
       <mrs:MD_ReferenceSystem>
-        <xsl:if test="eCH0271_1:referenceSystemIdentifier[@ili:ref]">
-          <xsl:variable name="rsIdentId" select="eCH0271_1:referenceSystemIdentifier/@ili:ref"/>
+        <xsl:if test="eCH0271:referenceSystemIdentifier[@ili:ref]">
+          <xsl:variable name="rsIdentId" select="eCH0271:referenceSystemIdentifier/@ili:ref"/>
           <xsl:variable name="rsIdentObj" select="key('byTID', $rsIdentId)"/>
           <xsl:if test="$rsIdentObj">
             <mrs:referenceSystemIdentifier>
               <mcc:RS_Identifier>
                 <mcc:code>
-                  <xsl:apply-templates select="$rsIdentObj/eCH0271_1:code" mode="multilingual-text"/>
+                  <xsl:apply-templates select="$rsIdentObj/eCH0271:code" mode="multilingual-text"/>
                 </mcc:code>
               </mcc:RS_Identifier>
             </mrs:referenceSystemIdentifier>
@@ -318,21 +318,21 @@
   <!-- ================================================================
        referenceSystemInfo: MD_ReferenceSystem reference (with ili:ref)
        ================================================================ -->
-  <xsl:template match="eCH0271_1:referenceSystemInfo[@ili:ref]" mode="reference-system">
+  <xsl:template match="eCH0271:referenceSystemInfo[@ili:ref]" mode="reference-system">
     <xsl:variable name="refSysId" select="@ili:ref"/>
     <xsl:variable name="refSysObj" select="key('byTID', $refSysId)"/>
 
-    <xsl:if test="$refSysObj/self::eCH0271_1:MD_ReferenceSystem">
+    <xsl:if test="$refSysObj/self::eCH0271:MD_ReferenceSystem">
       <mdb:referenceSystemInfo>
         <mrs:MD_ReferenceSystem>
-          <xsl:if test="$refSysObj/eCH0271_1:referenceSystemIdentifier[@ili:ref]">
-            <xsl:variable name="rsIdentId" select="$refSysObj/eCH0271_1:referenceSystemIdentifier/@ili:ref"/>
+          <xsl:if test="$refSysObj/eCH0271:referenceSystemIdentifier[@ili:ref]">
+            <xsl:variable name="rsIdentId" select="$refSysObj/eCH0271:referenceSystemIdentifier/@ili:ref"/>
             <xsl:variable name="rsIdentObj" select="key('byTID', $rsIdentId)"/>
             <xsl:if test="$rsIdentObj">
               <mrs:referenceSystemIdentifier>
                 <mcc:MD_Identifier>
                   <mcc:code>
-                    <xsl:apply-templates select="$rsIdentObj/eCH0271_1:code" mode="multilingual-text"/>
+                    <xsl:apply-templates select="$rsIdentObj/eCH0271:code" mode="multilingual-text"/>
                   </mcc:code>
                 </mcc:MD_Identifier>
               </mrs:referenceSystemIdentifier>
@@ -346,15 +346,15 @@
   <!-- ================================================================
        distribution: resolve @ili:ref → MD_Distribution via modular mapping
        ================================================================ -->
-  <xsl:template match="eCH0271_1:distributionInfo[@ili:ref]" mode="distribution">
+  <xsl:template match="eCH0271:distributionInfo[@ili:ref]" mode="distribution">
     <xsl:variable name="distId" select="@ili:ref"/>
     <xsl:variable name="distObj" select="key('byTID', $distId)"/>
 
-    <xsl:if test="$distObj/self::eCH0271_1:MD_Distribution">
+    <xsl:if test="$distObj/self::eCH0271:MD_Distribution">
       <mdb:distributionInfo>
-        <xsl:call-template name="ech0271:MD_Distribution">
+        <xsl:call-template name="f271:MD_Distribution">
           <xsl:with-param name="distRecord" select="$distObj"/>
-          <xsl:with-param name="basket" select="/ili:transfer/ili:datasection/eCH0271_1:eCH0271[1]"/>
+          <xsl:with-param name="basket" select="/ili:transfer/ili:datasection/eCH0271:eCH0271[1]"/>
         </xsl:call-template>
       </mdb:distributionInfo>
     </xsl:if>
@@ -363,15 +363,15 @@
   <!-- ================================================================
        legislation: resolve @ili:ref → CHE_MD_Legislation via modular mapping
        ================================================================ -->
-  <xsl:template match="eCH0271_1:legislationInformation[@ili:ref]" mode="legislation">
+  <xsl:template match="eCH0271:legislationInformation[@ili:ref]" mode="legislation">
     <xsl:variable name="legisId" select="@ili:ref"/>
     <xsl:variable name="legisObj" select="key('byTID', $legisId)"/>
 
-    <xsl:if test="$legisObj/self::eCH0271_1:CHE_MD_Legislation">
+    <xsl:if test="$legisObj/self::eCH0271:CHE_MD_Legislation">
       <che:legislationInformation>
-        <xsl:call-template name="ech0271:CHE_MD_Legislation">
+        <xsl:call-template name="f271:CHE_MD_Legislation">
           <xsl:with-param name="legisRecord" select="$legisObj"/>
-          <xsl:with-param name="basket" select="/ili:transfer/ili:datasection/eCH0271_1:eCH0271[1]"/>
+          <xsl:with-param name="basket" select="/ili:transfer/ili:datasection/eCH0271:eCH0271[1]"/>
         </xsl:call-template>
       </che:legislationInformation>
     </xsl:if>
@@ -380,22 +380,22 @@
   <!-- ================================================================
        extent: resolve @ili:ref → EX_Extent
        ================================================================ -->
-  <xsl:template match="eCH0271_1:extent[@ili:ref]" mode="extent">
+  <xsl:template match="eCH0271:extent[@ili:ref]" mode="extent">
     <xsl:variable name="extentId" select="@ili:ref"/>
     <xsl:variable name="extentObj" select="key('byTID', $extentId)"/>
     
-    <xsl:if test="$extentObj/self::eCH0271_1:EX_Extent">
+    <xsl:if test="$extentObj/self::eCH0271:EX_Extent">
       <gex:EX_Extent>
-        <xsl:if test="$extentObj/eCH0271_1:description">
+        <xsl:if test="$extentObj/eCH0271:description">
           <gex:description>
             <gco:CharacterString>
-              <xsl:value-of select="normalize-space($extentObj/eCH0271_1:description)"/>
+              <xsl:value-of select="normalize-space($extentObj/eCH0271:description)"/>
             </gco:CharacterString>
           </gex:description>
         </xsl:if>
-        <xsl:if test="$extentObj/eCH0271_1:geographicElement[@ili:ref]">
+        <xsl:if test="$extentObj/eCH0271:geographicElement[@ili:ref]">
           <gex:geographicElement>
-            <xsl:apply-templates select="$extentObj/eCH0271_1:geographicElement[@ili:ref]" mode="geographic-element"/>
+            <xsl:apply-templates select="$extentObj/eCH0271:geographicElement[@ili:ref]" mode="geographic-element"/>
           </gex:geographicElement>
         </xsl:if>
       </gex:EX_Extent>
@@ -405,30 +405,30 @@
   <!-- ================================================================
        geographic-element: resolve @ili:ref → EX_GeographicBoundingBox
        ================================================================ -->
-  <xsl:template match="eCH0271_1:geographicElement[@ili:ref]" mode="geographic-element">
+  <xsl:template match="eCH0271:geographicElement[@ili:ref]" mode="geographic-element">
     <xsl:variable name="bboxId" select="@ili:ref"/>
     <xsl:variable name="bboxObj" select="key('byTID', $bboxId)"/>
     
-    <xsl:if test="$bboxObj/self::eCH0271_1:EX_GeographicBoundingBox">
+    <xsl:if test="$bboxObj/self::eCH0271:EX_GeographicBoundingBox">
       <gex:EX_GeographicBoundingBox>
         <gex:westBoundLongitude>
           <gco:Decimal>
-            <xsl:value-of select="normalize-space($bboxObj/eCH0271_1:westBoundLongitude)"/>
+            <xsl:value-of select="normalize-space($bboxObj/eCH0271:westBoundLongitude)"/>
           </gco:Decimal>
         </gex:westBoundLongitude>
         <gex:eastBoundLongitude>
           <gco:Decimal>
-            <xsl:value-of select="normalize-space($bboxObj/eCH0271_1:eastBoundLongitude)"/>
+            <xsl:value-of select="normalize-space($bboxObj/eCH0271:eastBoundLongitude)"/>
           </gco:Decimal>
         </gex:eastBoundLongitude>
         <gex:southBoundLatitude>
           <gco:Decimal>
-            <xsl:value-of select="normalize-space($bboxObj/eCH0271_1:southBoundLatitude)"/>
+            <xsl:value-of select="normalize-space($bboxObj/eCH0271:southBoundLatitude)"/>
           </gco:Decimal>
         </gex:southBoundLatitude>
         <gex:northBoundLatitude>
           <gco:Decimal>
-            <xsl:value-of select="normalize-space($bboxObj/eCH0271_1:northBoundLatitude)"/>
+            <xsl:value-of select="normalize-space($bboxObj/eCH0271:northBoundLatitude)"/>
           </gco:Decimal>
         </gex:northBoundLatitude>
       </gex:EX_GeographicBoundingBox>
@@ -438,16 +438,16 @@
   <!-- ================================================================
        browse-graphic: resolve @ili:ref → MD_BrowseGraphic
        ================================================================ -->
-  <xsl:template match="eCH0271_1:graphicOverview[@ili:ref]" mode="browse-graphic">
+  <xsl:template match="eCH0271:graphicOverview[@ili:ref]" mode="browse-graphic">
     <xsl:variable name="graphicId" select="@ili:ref"/>
     <xsl:variable name="graphicObj" select="key('byTID', $graphicId)"/>
     
-    <xsl:if test="$graphicObj/self::eCH0271_1:MD_BrowseGraphic">
+    <xsl:if test="$graphicObj/self::eCH0271:MD_BrowseGraphic">
       <mcc:MD_BrowseGraphic>
-        <xsl:if test="$graphicObj/eCH0271_1:fileName">
+        <xsl:if test="$graphicObj/eCH0271:fileName">
           <mcc:fileName>
             <gco:CharacterString>
-              <xsl:value-of select="normalize-space($graphicObj/eCH0271_1:fileName)"/>
+              <xsl:value-of select="normalize-space($graphicObj/eCH0271:fileName)"/>
             </gco:CharacterString>
           </mcc:fileName>
         </xsl:if>
@@ -458,23 +458,23 @@
   <!-- ================================================================
        legal-constraints: resolve @ili:ref → MD_LegalConstraints
        ================================================================ -->
-  <xsl:template match="eCH0271_1:resourceConstraints[@ili:ref]" mode="legal-constraints">
+  <xsl:template match="eCH0271:resourceConstraints[@ili:ref]" mode="legal-constraints">
     <xsl:variable name="constraintId" select="@ili:ref"/>
     <xsl:variable name="constraintObj" select="key('byTID', $constraintId)"/>
     
-    <xsl:if test="$constraintObj/self::eCH0271_1:CHE_MD_LegalConstraints">
+    <xsl:if test="$constraintObj/self::eCH0271:CHE_MD_LegalConstraints">
       <mco:MD_LegalConstraints>
-        <xsl:if test="$constraintObj/eCH0271_1:useConstraints">
+        <xsl:if test="$constraintObj/eCH0271:useConstraints">
           <mco:useConstraints>
-            <mco:MD_RestrictionCode codeList="{$CL}MD_RestrictionCode" codeListValue="{normalize-space($constraintObj/eCH0271_1:useConstraints)}">
-              <xsl:value-of select="normalize-space($constraintObj/eCH0271_1:useConstraints)"/>
+            <mco:MD_RestrictionCode codeList="{$CL}MD_RestrictionCode" codeListValue="{normalize-space($constraintObj/eCH0271:useConstraints)}">
+              <xsl:value-of select="normalize-space($constraintObj/eCH0271:useConstraints)"/>
             </mco:MD_RestrictionCode>
           </mco:useConstraints>
         </xsl:if>
-        <xsl:if test="$constraintObj/eCH0271_1:otherConstraints">
+        <xsl:if test="$constraintObj/eCH0271:otherConstraints">
           <mco:otherConstraints>
             <gco:CharacterString>
-              <xsl:value-of select="normalize-space($constraintObj/eCH0271_1:otherConstraints)"/>
+              <xsl:value-of select="normalize-space($constraintObj/eCH0271:otherConstraints)"/>
             </gco:CharacterString>
           </mco:otherConstraints>
         </xsl:if>
@@ -487,20 +487,20 @@
   <!-- ================================================================
        basic-geodata-info: CHE_MD_BasicGeodataInformation
        ================================================================ -->
-  <xsl:template match="eCH0271_1:basicGeodataInformation" mode="basic-geodata-info">
+  <xsl:template match="eCH0271:basicGeodataInformation" mode="basic-geodata-info">
     <che:basicGeodataInformation>
-      <xsl:if test="eCH0271_1:CHE_MD_BasicGeodataInformation">
+      <xsl:if test="eCH0271:CHE_MD_BasicGeodataInformation">
         <che:CHE_MD_BasicGeodataInformation>
-          <xsl:if test="eCH0271_1:CHE_MD_BasicGeodataInformation/eCH0271_1:basicGeodataID">
+          <xsl:if test="eCH0271:CHE_MD_BasicGeodataInformation/eCH0271:basicGeodataID">
             <che:basicGeodataID>
               <gco:CharacterString>
-                <xsl:value-of select="normalize-space(eCH0271_1:CHE_MD_BasicGeodataInformation/eCH0271_1:basicGeodataID)"/>
+                <xsl:value-of select="normalize-space(eCH0271:CHE_MD_BasicGeodataInformation/eCH0271:basicGeodataID)"/>
               </gco:CharacterString>
             </che:basicGeodataID>
           </xsl:if>
-          <xsl:if test="eCH0271_1:CHE_MD_BasicGeodataInformation/eCH0271_1:basicGeodataLegalLevel">
+          <xsl:if test="eCH0271:CHE_MD_BasicGeodataInformation/eCH0271:basicGeodataLegalLevel">
             <che:basicGeodataLegalLevel>
-              <che:CHE_MD_LevelCode codeList="mdLevelCode" codeListValue="{normalize-space(eCH0271_1:CHE_MD_BasicGeodataInformation/eCH0271_1:basicGeodataLegalLevel)}"/>
+              <che:CHE_MD_LevelCode codeList="mdLevelCode" codeListValue="{normalize-space(eCH0271:CHE_MD_BasicGeodataInformation/eCH0271:basicGeodataLegalLevel)}"/>
             </che:basicGeodataLegalLevel>
           </xsl:if>
         </che:CHE_MD_BasicGeodataInformation>

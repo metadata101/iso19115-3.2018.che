@@ -5,7 +5,7 @@
   xmlns:xsl  ="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs   ="http://www.w3.org/2001/XMLSchema"
   xmlns:ili  ="http://www.interlis.ch/xtf/2.4/INTERLIS"
-  xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1"
+  xmlns:eCH0271="http://www.interlis.ch/xtf/2.4/eCH0271"
   xmlns:ech0271 ="urn:ech0271-functions"
   xmlns:cit  ="http://standards.iso.org/iso/19115/-3/cit/2.0"
   xmlns:gco  ="http://standards.iso.org/iso/19115/-3/gco/1.0"
@@ -22,10 +22,10 @@
 
     <mrd:MD_Distribution>
 
-      <!-- distributionFormat: Find MD_Format records via eCH0271_1:distributionFormat/@ili:ref -->
-      <xsl:for-each select="$distRecord/eCH0271_1:distributionFormat[@ili:ref]">
+      <!-- distributionFormat: Find MD_Format records via eCH0271:distributionFormat/@ili:ref -->
+      <xsl:for-each select="$distRecord/eCH0271:distributionFormat[@ili:ref]">
         <xsl:variable name="fmtRecord" select="key('byTID', @ili:ref)"/>
-        <xsl:if test="$fmtRecord/self::eCH0271_1:MD_Format">
+        <xsl:if test="$fmtRecord/self::eCH0271:MD_Format">
           <mrd:distributionFormat>
             <xsl:call-template name="ech0271:MD_Format">
               <xsl:with-param name="fmtRecord" select="$fmtRecord"/>
@@ -34,10 +34,10 @@
         </xsl:if>
       </xsl:for-each>
 
-      <!-- transferOptions: Find MD_DigitalTransferOptions records via eCH0271_1:transferOptions/@ili:ref -->
-      <xsl:for-each select="$distRecord/eCH0271_1:transferOptions[@ili:ref]">
+      <!-- transferOptions: Find MD_DigitalTransferOptions records via eCH0271:transferOptions/@ili:ref -->
+      <xsl:for-each select="$distRecord/eCH0271:transferOptions[@ili:ref]">
         <xsl:variable name="dtoRecord" select="key('byTID', @ili:ref)"/>
-        <xsl:if test="$dtoRecord/self::eCH0271_1:MD_DigitalTransferOptions">
+        <xsl:if test="$dtoRecord/self::eCH0271:MD_DigitalTransferOptions">
           <mrd:transferOptions>
             <xsl:call-template name="ech0271:MD_DigitalTransferOptions">
               <xsl:with-param name="dtoRecord" select="$dtoRecord"/>
@@ -57,9 +57,9 @@
 
     <mrd:MD_DigitalTransferOptions>
       <!-- online resources: Only process active references (if uncommented) -->
-      <xsl:for-each select="$dtoRecord/eCH0271_1:onLine[@ili:ref]">
+      <xsl:for-each select="$dtoRecord/eCH0271:onLine[@ili:ref]">
         <xsl:variable name="orRecord" select="key('byTID', @ili:ref)"/>
-        <xsl:if test="$orRecord/self::eCH0271_1:CI_OnlineResource">
+        <xsl:if test="$orRecord/self::eCH0271:CI_OnlineResource">
           <mrd:onLine>
             <xsl:call-template name="ech0271:CI_OnlineResource">
               <xsl:with-param name="orRecord" select="$orRecord"/>
@@ -76,24 +76,24 @@
 
     <cit:CI_OnlineResource>
       <!-- linkage: plain text URL or MultilingualUri -->
-      <xsl:if test="normalize-space($orRecord/eCH0271_1:linkage) != ''">
+      <xsl:if test="normalize-space($orRecord/eCH0271:linkage) != ''">
         <cit:linkage>
-          <xsl:apply-templates select="$orRecord/eCH0271_1:linkage" mode="multilingual-text"/>
+          <xsl:apply-templates select="$orRecord/eCH0271:linkage" mode="multilingual-text"/>
         </cit:linkage>
       </xsl:if>
 
       <!-- protocol -->
-      <xsl:if test="normalize-space($orRecord/eCH0271_1:protocol) != ''">
+      <xsl:if test="normalize-space($orRecord/eCH0271:protocol) != ''">
         <cit:protocol>
           <gco:CharacterString>
-            <xsl:value-of select="normalize-space($orRecord/eCH0271_1:protocol)"/>
+            <xsl:value-of select="normalize-space($orRecord/eCH0271:protocol)"/>
           </gco:CharacterString>
         </cit:protocol>
       </xsl:if>
 
       <!-- name (optional, via reference) -->
-      <xsl:if test="$orRecord/eCH0271_1:name[@ili:ref]">
-        <xsl:variable name="nameRecord" select="key('byTID', $orRecord/eCH0271_1:name/@ili:ref)"/>
+      <xsl:if test="$orRecord/eCH0271:name[@ili:ref]">
+        <xsl:variable name="nameRecord" select="key('byTID', $orRecord/eCH0271:name/@ili:ref)"/>
         <xsl:if test="$nameRecord">
           <cit:name>
             <xsl:apply-templates select="$nameRecord" mode="multilingual-text"/>
@@ -102,8 +102,8 @@
       </xsl:if>
 
       <!-- description (optional, via reference) -->
-      <xsl:if test="$orRecord/eCH0271_1:description[@ili:ref]">
-        <xsl:variable name="descRecord" select="key('byTID', $orRecord/eCH0271_1:description/@ili:ref)"/>
+      <xsl:if test="$orRecord/eCH0271:description[@ili:ref]">
+        <xsl:variable name="descRecord" select="key('byTID', $orRecord/eCH0271:description/@ili:ref)"/>
         <xsl:if test="$descRecord">
           <cit:description>
             <xsl:apply-templates select="$descRecord" mode="multilingual-text"/>
@@ -112,10 +112,10 @@
       </xsl:if>
 
       <!-- function (CI_OnLineFunctionCode) -->
-      <xsl:if test="normalize-space($orRecord/eCH0271_1:function) != ''">
+      <xsl:if test="normalize-space($orRecord/eCH0271:function) != ''">
         <cit:function>
-          <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="{normalize-space($orRecord/eCH0271_1:function)}">
-            <xsl:value-of select="normalize-space($orRecord/eCH0271_1:function)"/>
+          <cit:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_OnLineFunctionCode" codeListValue="{normalize-space($orRecord/eCH0271:function)}">
+            <xsl:value-of select="normalize-space($orRecord/eCH0271:function)"/>
           </cit:CI_OnLineFunctionCode>
         </cit:function>
       </xsl:if>
@@ -129,9 +129,9 @@
     <mrd:MD_Format>
       <mrd:formatSpecificationCitation>
         <cit:CI_Citation>
-          <xsl:if test="$fmtRecord/eCH0271_1:name">
+          <xsl:if test="$fmtRecord/eCH0271:name">
             <cit:title>
-              <xsl:apply-templates select="$fmtRecord/eCH0271_1:name" mode="multilingual-text"/>
+              <xsl:apply-templates select="$fmtRecord/eCH0271:name" mode="multilingual-text"/>
             </cit:title>
           </xsl:if>
         </cit:CI_Citation>

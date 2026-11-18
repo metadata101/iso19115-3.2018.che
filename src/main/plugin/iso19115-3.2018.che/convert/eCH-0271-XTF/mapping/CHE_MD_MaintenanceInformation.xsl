@@ -6,7 +6,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS"
-  xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1"
+  xmlns:eCH0271="http://www.interlis.ch/xtf/2.4/eCH0271"
   xmlns:che="http://geocat.ch/che"
   xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
   xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0"
@@ -16,7 +16,7 @@
        resourceMaintenance: CHE_MD_MaintenanceInformation → mri:resourceMaintenance
        
        Maps eCH0271 resource maintenance to ISO 19115-3:2018 CHE structure:
-       - Source: eCH0271_1:CHE_MD_MaintenanceInformation
+       - Source: eCH0271:CHE_MD_MaintenanceInformation
        - Output wrapper: che:CHE_MD_MaintenanceInformation with gco:isoType="mmi:MD_MaintenanceInformation"
        - Children: mmi: namespace (maintenance info module)
        
@@ -25,30 +25,30 @@
        - Must be wrapped in che: container with isoType pointing to mmi:
        - All child elements use mmi: namespace prefix
        ================================================================ -->
-  <xsl:template match="eCH0271_1:resourceMaintenance[@ili:ref]" mode="resource-maintenance">
+  <xsl:template match="eCH0271:resourceMaintenance[@ili:ref]" mode="resource-maintenance">
     <xsl:variable name="maintId" select="@ili:ref"/>
     <xsl:variable name="maintObj" select="key('byTID', $maintId)"/>
 
-    <xsl:if test="$maintObj/self::eCH0271_1:CHE_MD_MaintenanceInformation">
+    <xsl:if test="$maintObj/self::eCH0271:CHE_MD_MaintenanceInformation">
       <xsl:apply-templates select="$maintObj" mode="maintenance-object"/>
     </xsl:if>
   </xsl:template>
 
   <!-- Process CHE_MD_MaintenanceInformation object (used by both reference and TID modes) -->
-  <xsl:template match="eCH0271_1:CHE_MD_MaintenanceInformation" mode="maintenance-object">
+  <xsl:template match="eCH0271:CHE_MD_MaintenanceInformation" mode="maintenance-object">
     <che:CHE_MD_MaintenanceInformation gco:isoType="mmi:MD_MaintenanceInformation">
       <!-- Maintenance and update frequency -->
-      <xsl:if test="eCH0271_1:maintenanceAndUpdateFrequency">
+      <xsl:if test="eCH0271:maintenanceAndUpdateFrequency">
         <mmi:maintenanceAndUpdateFrequency>
           <xsl:call-template name="frequency-code">
-            <xsl:with-param name="value" select="normalize-space(eCH0271_1:maintenanceAndUpdateFrequency)"/>
+            <xsl:with-param name="value" select="normalize-space(eCH0271:maintenanceAndUpdateFrequency)"/>
           </xsl:call-template>
         </mmi:maintenanceAndUpdateFrequency>
       </xsl:if>
       <!-- Maintenance note -->
-      <xsl:if test="eCH0271_1:maintenanceNote">
+      <xsl:if test="eCH0271:maintenanceNote">
         <mmi:maintenanceNote>
-          <xsl:apply-templates select="eCH0271_1:maintenanceNote" mode="multilingual-text"/>
+          <xsl:apply-templates select="eCH0271:maintenanceNote" mode="multilingual-text"/>
         </mmi:maintenanceNote>
       </xsl:if>
     </che:CHE_MD_MaintenanceInformation>
@@ -57,7 +57,7 @@
   <!-- Named template for direct TID-based processing (direct usage) -->
   <xsl:template name="process-maintenance-by-tid">
     <xsl:param name="tidValue" select="'maintenance-001'"/>
-    <xsl:variable name="maintObj" select="//eCH0271_1:CHE_MD_MaintenanceInformation[@ili:tid=$tidValue]"/>
+    <xsl:variable name="maintObj" select="//eCH0271:CHE_MD_MaintenanceInformation[@ili:tid=$tidValue]"/>
     <xsl:if test="$maintObj">
       <xsl:apply-templates select="$maintObj" mode="maintenance-object"/>
     </xsl:if>

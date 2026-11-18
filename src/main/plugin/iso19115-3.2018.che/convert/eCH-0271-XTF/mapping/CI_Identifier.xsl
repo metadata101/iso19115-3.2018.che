@@ -6,7 +6,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS"
-  xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1"
+  xmlns:eCH0271="http://www.interlis.ch/xtf/2.4/eCH0271"
   xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0"
   xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0"
   xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
@@ -14,19 +14,19 @@
 
   <!-- ================================================================
        metadataIdentifier processor
-       Resolves eCH0271_1:metadataIdentifier[@ili:ref] to MD_Identifier
+       Resolves eCH0271:metadataIdentifier[@ili:ref] to MD_Identifier
        ================================================================ -->
-  <xsl:template match="eCH0271_1:metadataIdentifier[@ili:ref]" mode="identifier">
+  <xsl:template match="eCH0271:metadataIdentifier[@ili:ref]" mode="identifier">
     <xsl:variable name="id" select="@ili:ref"/>
     <xsl:variable name="idObj" select="key('byTID', $id)"/>
 
-    <xsl:if test="$idObj/self::eCH0271_1:MD_Identifier">
+    <xsl:if test="$idObj/self::eCH0271:MD_Identifier">
       <mdb:metadataIdentifier>
         <mcc:MD_Identifier>
           <mcc:code>
             <xsl:choose>
-              <xsl:when test="$idObj/eCH0271_1:code">
-                <xsl:apply-templates select="$idObj/eCH0271_1:code" mode="multilingual-text"/>
+              <xsl:when test="$idObj/eCH0271:code">
+                <xsl:apply-templates select="$idObj/eCH0271:code" mode="multilingual-text"/>
               </xsl:when>
               <xsl:otherwise>
                 <gco:CharacterString>
@@ -42,24 +42,24 @@
 
   <!-- ================================================================
        metadataScope processor
-       Resolves eCH0271_1:metadataScope[@ili:ref] to MD_MetadataScope
+       Resolves eCH0271:metadataScope[@ili:ref] to MD_MetadataScope
        ================================================================ -->
-  <xsl:template match="eCH0271_1:metadataScope[@ili:ref]" mode="metadata-scope">
+  <xsl:template match="eCH0271:metadataScope[@ili:ref]" mode="metadata-scope">
     <xsl:variable name="scopeId" select="@ili:ref"/>
     <xsl:variable name="scopeObj" select="key('byTID', $scopeId)"/>
 
-    <xsl:if test="$scopeObj/self::eCH0271_1:MD_MetadataScope">
+    <xsl:if test="$scopeObj/self::eCH0271:MD_MetadataScope">
       <mdb:metadataScope>
         <mdb:MD_MetadataScope>
           <mdb:resourceScope>
             <xsl:call-template name="scope-code">
-              <xsl:with-param name="value" select="normalize-space($scopeObj/eCH0271_1:resourceScope)"/>
+              <xsl:with-param name="value" select="normalize-space($scopeObj/eCH0271:resourceScope)"/>
             </xsl:call-template>
           </mdb:resourceScope>
-          <xsl:if test="$scopeObj/eCH0271_1:name">
+          <xsl:if test="$scopeObj/eCH0271:name">
             <mdb:name>
               <gco:CharacterString>
-                <xsl:value-of select="$scopeObj/eCH0271_1:name"/>
+                <xsl:value-of select="$scopeObj/eCH0271:name"/>
               </gco:CharacterString>
             </mdb:name>
           </xsl:if>

@@ -6,7 +6,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS"
-  xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1"
+  xmlns:eCH0271="http://www.interlis.ch/xtf/2.4/eCH0271"
   xmlns:ech0271="urn:ech0271-functions"
   xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
   xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
@@ -17,11 +17,11 @@
        CI_Responsibility: role + party
        Links are resolved with ech0271:related (any direction / association)
        ================================================================ -->
-  <xsl:template match="eCH0271_1:CI_Responsibility" mode="responsibility">
+  <xsl:template match="eCH0271:CI_Responsibility" mode="responsibility">
     <cit:CI_Responsibility>
       <cit:role>
         <xsl:call-template name="role-code">
-          <xsl:with-param name="value" select="normalize-space(eCH0271_1:role)"/>
+          <xsl:with-param name="value" select="normalize-space(eCH0271:role)"/>
         </xsl:call-template>
       </cit:role>
       <xsl:for-each select="ech0271:related(., ('CHE_CI_Organisation', 'CI_Individual'))">
@@ -35,11 +35,11 @@
   <!-- ================================================================
        CHE_CI_Organisation: name, contact info, individual, acronym
        ================================================================ -->
-  <xsl:template match="eCH0271_1:CHE_CI_Organisation" mode="party">
+  <xsl:template match="eCH0271:CHE_CI_Organisation" mode="party">
     <che:CHE_CI_Organisation gco:isoType="cit:CI_Organisation">
-      <xsl:if test="eCH0271_1:name">
+      <xsl:if test="eCH0271:name">
         <cit:name>
-          <xsl:apply-templates select="eCH0271_1:name" mode="multilingual-text"/>
+          <xsl:apply-templates select="eCH0271:name" mode="multilingual-text"/>
         </cit:name>
       </xsl:if>
       <xsl:apply-templates select="ech0271:related(., 'CI_Contact')" mode="contact-info"/>
@@ -49,9 +49,9 @@
         </cit:individual>
       </xsl:for-each>
       <!-- Swiss extension: organization acronym -->
-      <xsl:if test="eCH0271_1:organisationAcronym">
+      <xsl:if test="eCH0271:organisationAcronym">
         <che:organisationAcronym>
-          <xsl:apply-templates select="eCH0271_1:organisationAcronym" mode="multilingual-text"/>
+          <xsl:apply-templates select="eCH0271:organisationAcronym" mode="multilingual-text"/>
         </che:organisationAcronym>
       </xsl:if>
     </che:CHE_CI_Organisation>
@@ -60,17 +60,17 @@
   <!-- ================================================================
        CI_Individual: person name, contact info and position
        ================================================================ -->
-  <xsl:template match="eCH0271_1:CI_Individual" mode="party">
+  <xsl:template match="eCH0271:CI_Individual" mode="party">
     <cit:CI_Individual>
-      <xsl:if test="eCH0271_1:name">
+      <xsl:if test="eCH0271:name">
         <cit:name>
-          <xsl:apply-templates select="eCH0271_1:name" mode="multilingual-text"/>
+          <xsl:apply-templates select="eCH0271:name" mode="multilingual-text"/>
         </cit:name>
       </xsl:if>
       <xsl:apply-templates select="ech0271:related(., 'CI_Contact')" mode="contact-info"/>
-      <xsl:if test="eCH0271_1:positionName">
+      <xsl:if test="eCH0271:positionName">
         <cit:positionName>
-          <xsl:apply-templates select="eCH0271_1:positionName" mode="multilingual-text"/>
+          <xsl:apply-templates select="eCH0271:positionName" mode="multilingual-text"/>
         </cit:positionName>
       </xsl:if>
     </cit:CI_Individual>
@@ -79,7 +79,7 @@
   <!-- ================================================================
        CI_Contact: phone, address, online resource
        ================================================================ -->
-  <xsl:template match="eCH0271_1:CI_Contact" mode="contact-info">
+  <xsl:template match="eCH0271:CI_Contact" mode="contact-info">
     <cit:contactInfo>
       <cit:CI_Contact>
         <xsl:apply-templates select="ech0271:related(., 'CI_Telephone')" mode="phone"/>
@@ -102,18 +102,18 @@
   <!-- ================================================================
        CI_Telephone: number and type
        ================================================================ -->
-  <xsl:template match="eCH0271_1:CI_Telephone" mode="phone">
+  <xsl:template match="eCH0271:CI_Telephone" mode="phone">
     <cit:phone>
       <cit:CI_Telephone>
         <cit:number>
           <gco:CharacterString>
-            <xsl:value-of select="normalize-space(eCH0271_1:number)"/>
+            <xsl:value-of select="normalize-space(eCH0271:number)"/>
           </gco:CharacterString>
         </cit:number>
-        <xsl:if test="normalize-space(eCH0271_1:numberType) != ''">
+        <xsl:if test="normalize-space(eCH0271:numberType) != ''">
           <cit:numberType>
-            <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="{normalize-space(eCH0271_1:numberType)}">
-              <xsl:value-of select="normalize-space(eCH0271_1:numberType)"/>
+            <cit:CI_TelephoneTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_TelephoneTypeCode" codeListValue="{normalize-space(eCH0271:numberType)}">
+              <xsl:value-of select="normalize-space(eCH0271:numberType)"/>
             </cit:CI_TelephoneTypeCode>
           </cit:numberType>
         </xsl:if>
@@ -152,42 +152,42 @@
   <!-- ================================================================
        CI_Address: delivery point, city, postal code, country, email
        ================================================================ -->
-  <xsl:template match="eCH0271_1:CI_Address" mode="address">
+  <xsl:template match="eCH0271:CI_Address" mode="address">
     <cit:CI_Address>
-      <xsl:if test="eCH0271_1:deliveryPoint">
+      <xsl:if test="eCH0271:deliveryPoint">
         <cit:deliveryPoint>
           <gco:CharacterString>
-            <xsl:value-of select="normalize-space(eCH0271_1:deliveryPoint)"/>
+            <xsl:value-of select="normalize-space(eCH0271:deliveryPoint)"/>
           </gco:CharacterString>
         </cit:deliveryPoint>
       </xsl:if>
-      <xsl:if test="eCH0271_1:city">
+      <xsl:if test="eCH0271:city">
         <cit:city>
           <gco:CharacterString>
-            <xsl:value-of select="normalize-space(eCH0271_1:city)"/>
+            <xsl:value-of select="normalize-space(eCH0271:city)"/>
           </gco:CharacterString>
         </cit:city>
       </xsl:if>
-      <xsl:if test="eCH0271_1:postalCode">
+      <xsl:if test="eCH0271:postalCode">
         <cit:postalCode>
           <gco:CharacterString>
-            <xsl:value-of select="normalize-space(eCH0271_1:postalCode)"/>
+            <xsl:value-of select="normalize-space(eCH0271:postalCode)"/>
           </gco:CharacterString>
         </cit:postalCode>
       </xsl:if>
-      <xsl:if test="eCH0271_1:country">
+      <xsl:if test="eCH0271:country">
         <cit:country>
           <gco:CharacterString>
             <xsl:call-template name="country-code">
-              <xsl:with-param name="value" select="normalize-space(eCH0271_1:country)"/>
+              <xsl:with-param name="value" select="normalize-space(eCH0271:country)"/>
             </xsl:call-template>
           </gco:CharacterString>
         </cit:country>
       </xsl:if>
-      <xsl:if test="eCH0271_1:electronicMailAddress">
+      <xsl:if test="eCH0271:electronicMailAddress">
         <cit:electronicMailAddress>
           <gco:CharacterString>
-            <xsl:value-of select="normalize-space(eCH0271_1:electronicMailAddress)"/>
+            <xsl:value-of select="normalize-space(eCH0271:electronicMailAddress)"/>
           </gco:CharacterString>
         </cit:electronicMailAddress>
       </xsl:if>

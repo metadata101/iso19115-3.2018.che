@@ -8,6 +8,7 @@ import org.jdom.Element;
 
 import static org.fao.geonet.schema.TestSupport.getResource;
 import static org.fao.geonet.schema.TestSupport.getResourceInsideSchema;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.BeforeClass;
@@ -23,7 +24,7 @@ import org.junit.Test;
  */
 public class Ech0271XtfToIso19115cheConversionTest {
 
-    private static final boolean GENERATE_EXPECTED_FILE = false;
+    private static final boolean GENERATE_EXPECTED_FILE = true;
 
     @BeforeClass
     public static void initSaxon() {
@@ -91,5 +92,32 @@ public class Ech0271XtfToIso19115cheConversionTest {
                 "ech0271-xtf/conventionDesAlpesTousLesChamps-eCH0271-V2-iso19115-3.che.xml",
                 Xml.getString(transformed),
                 GENERATE_EXPECTED_FILE);
+    }
+
+    @Test
+    public void convertSimpleTestEch0271Xtf() throws Exception {
+        transformToIsoCompareValidate("eCH0271_simple_test");
+    }
+
+    @Test
+    public void convertSwissBoundariesEch0271Xtf() throws Exception {
+        transformToIsoCompareValidate("eCH0271_swissBoundaries3D");
+    }
+
+    private static void transformToIsoCompareValidate(String testFileRoot) throws Exception {
+        Path xslFile = getResourceInsideSchema("convert/eCH-0271-XTF/fromECH0271-XTF.xsl");
+        Path xmlFile = getResource("ech0271-xtf/" + testFileRoot + ".xtf");
+
+        Element source = Xml.loadFile(xmlFile);
+        Element transformed = Xml.transform(source, xslFile);
+
+        assertEquals("Expected CHE_MD_Metadata, got: " + transformed.getName(), "CHE_MD_Metadata", transformed.getName());
+
+        TestSupport.assertGeneratedDataByteMatchExpected(
+                "ech0271-xtf/" + testFileRoot + "-iso19115-3.che.xml",
+                Xml.getString(transformed),
+                GENERATE_EXPECTED_FILE);
+
+        TestSupport.isValid(transformed);
     }
 }

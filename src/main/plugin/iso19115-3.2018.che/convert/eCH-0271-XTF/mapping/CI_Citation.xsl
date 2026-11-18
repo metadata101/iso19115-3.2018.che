@@ -6,7 +6,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS"
-  xmlns:eCH0271_1="http://www.interlis.ch/xtf/2.4/eCH0271_1"
+  xmlns:eCH0271="http://www.interlis.ch/xtf/2.4/eCH0271"
   xmlns:Localisation_V2="http://www.interlis.ch/xtf/2.4/Localisation_V2"
   xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0"
   xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
@@ -14,17 +14,17 @@
 
   <!-- ================================================================
        citation: CI_Citation reference resolver
-       Resolves eCH0271_1:citation[@ili:ref] to CI_Citation object
+       Resolves eCH0271:citation[@ili:ref] to CI_Citation object
        ================================================================ -->
-  <xsl:template match="eCH0271_1:citation[@ili:ref]" mode="citation">
+  <xsl:template match="eCH0271:citation[@ili:ref]" mode="citation">
     <xsl:variable name="citationId" select="@ili:ref"/>
     <xsl:variable name="citationObj" select="key('byTID', $citationId)"/>
     
-    <xsl:if test="$citationObj/self::eCH0271_1:CI_Citation">
+    <xsl:if test="$citationObj/self::eCH0271:CI_Citation">
       <cit:CI_Citation>
-        <xsl:if test="$citationObj/eCH0271_1:title">
+        <xsl:if test="$citationObj/eCH0271:title">
           <cit:title>
-            <xsl:apply-templates select="$citationObj/eCH0271_1:title" mode="multilingual-text"/>
+            <xsl:apply-templates select="$citationObj/eCH0271:title" mode="multilingual-text"/>
           </cit:title>
         </xsl:if>
         <xsl:call-template name="process-citation-dates">
@@ -38,11 +38,11 @@
   <!-- ================================================================
        citation: CI_Citation (direct - fallback for inline citations)
        ================================================================ -->
-  <xsl:template match="eCH0271_1:CI_Citation" mode="citation">
+  <xsl:template match="eCH0271:CI_Citation" mode="citation">
     <cit:CI_Citation>
-      <xsl:if test="eCH0271_1:title">
+      <xsl:if test="eCH0271:title">
         <cit:title>
-          <xsl:apply-templates select="eCH0271_1:title" mode="multilingual-text"/>
+          <xsl:apply-templates select="eCH0271:title" mode="multilingual-text"/>
         </cit:title>
       </xsl:if>
       <xsl:call-template name="process-citation-dates">
@@ -62,11 +62,11 @@
     
     <!-- Priority 1: Direct reference -->
     <xsl:choose>
-      <xsl:when test="$citationObj/eCH0271_1:date[@ili:ref]">
-        <xsl:for-each select="$citationObj/eCH0271_1:date[@ili:ref]">
+      <xsl:when test="$citationObj/eCH0271:date[@ili:ref]">
+        <xsl:for-each select="$citationObj/eCH0271:date[@ili:ref]">
           <xsl:variable name="dateRef" select="@ili:ref"/>
           <xsl:variable name="dateObj" select="key('byTID', $dateRef)"/>
-          <xsl:if test="$dateObj/self::eCH0271_1:CI_Date">
+          <xsl:if test="$dateObj/self::eCH0271:CI_Date">
             <cit:date>
               <xsl:apply-templates select="$dateObj" mode="date"/>
             </cit:date>
@@ -74,11 +74,11 @@
         </xsl:for-each>
       </xsl:when>
       <!-- Priority 2: Association table (CI_Citationdate) -->
-      <xsl:when test="$citObjTid and //eCH0271_1:CI_Citationdate[@ili:from=$citObjTid]">
-        <xsl:for-each select="//eCH0271_1:CI_Citationdate[@ili:from=$citObjTid]">
+      <xsl:when test="$citObjTid and //eCH0271:CI_Citationdate[@ili:from=$citObjTid]">
+        <xsl:for-each select="//eCH0271:CI_Citationdate[@ili:from=$citObjTid]">
           <xsl:variable name="dateRef" select="@ili:to"/>
           <xsl:variable name="dateObj" select="key('byTID', $dateRef)"/>
-          <xsl:if test="$dateObj/self::eCH0271_1:CI_Date">
+          <xsl:if test="$dateObj/self::eCH0271:CI_Date">
             <cit:date>
               <xsl:apply-templates select="$dateObj" mode="date"/>
             </cit:date>
@@ -87,12 +87,12 @@
       </xsl:when>
       <!-- Priority 3: CI_Date following-sibling (fallback for inline dates) - support multiple consecutive dates -->
       <xsl:otherwise>
-        <xsl:variable name="datesAfter" select="$citationObj/following-sibling::eCH0271_1:CI_Date"/>
+        <xsl:variable name="datesAfter" select="$citationObj/following-sibling::eCH0271:CI_Date"/>
         <xsl:for-each select="$datesAfter">
           <xsl:variable name="pos" select="position()"/>
           <xsl:variable name="prevSibling" select="preceding-sibling::*[1]"/>
           <!-- Process first CI_Date or any CI_Date immediately following another CI_Date -->
-          <xsl:if test="($pos = 1 or $prevSibling/self::eCH0271_1:CI_Date) and eCH0271_1:date">
+          <xsl:if test="($pos = 1 or $prevSibling/self::eCH0271:CI_Date) and eCH0271:date">
             <cit:date>
               <xsl:apply-templates select="." mode="date"/>
             </cit:date>
