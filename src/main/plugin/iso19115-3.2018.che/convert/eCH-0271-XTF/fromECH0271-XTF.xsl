@@ -73,6 +73,7 @@
   <!-- Utility templates -->
   <xsl:include href="utility/multilingual-text.xsl"/>
   <xsl:include href="utility/references.xsl"/>
+  <xsl:include href="utility/languages.xsl"/>
 
   <!-- Optional UUID override -->
   <xsl:param name="uuid" as="xs:string?"/>
@@ -103,20 +104,7 @@
   <!-- Generate lan:LanguageCode with codeList and codeListValue -->
   <xsl:template name="language-code">
     <xsl:param name="value" as="xs:string"/>
-    <xsl:variable name="langCode">
-      <xsl:choose>
-        <!-- ISO 639-1 to ISO 639-2/T (terminologic) conversion -->
-        <xsl:when test="$value = 'fr' or $value = 'FR'">fre</xsl:when>
-        <xsl:when test="$value = 'de' or $value = 'DE'">ger</xsl:when>
-        <xsl:when test="$value = 'it' or $value = 'IT'">ita</xsl:when>
-        <xsl:when test="$value = 'en' or $value = 'EN'">eng</xsl:when>
-        <xsl:when test="$value = 'rm' or $value = 'RM'">roh</xsl:when>
-        <!-- If already 3 letters or unknown, pass through -->
-        <xsl:otherwise>
-          <xsl:value-of select="lower-case($value)"/>
-        </xsl:otherwise>
-      </xsl:choose>
-    </xsl:variable>
+    <xsl:variable name="langCode" select="f271:iso639-2($value)"/>
     <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="{$langCode}">
       <xsl:value-of select="$langCode"/>
     </lan:LanguageCode>

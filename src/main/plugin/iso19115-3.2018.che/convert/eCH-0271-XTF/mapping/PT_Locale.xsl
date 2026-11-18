@@ -9,6 +9,7 @@
   xmlns:eCH0271="http://www.interlis.ch/xtf/2.4/eCH0271"
   xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0"
   xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
+  xmlns:ech0271="urn:ech0271-functions"
   exclude-result-prefixes="#all">
 
   <!-- ================================================================
@@ -17,16 +18,7 @@
        ================================================================ -->
   <xsl:template match="eCH0271:PT_Locale" mode="locale">
     <xsl:variable name="langCode" select="normalize-space(eCH0271:language)"/>
-    <xsl:variable name="langId">
-      <xsl:choose>
-        <xsl:when test="$langCode = 'de'">DE</xsl:when>
-        <xsl:when test="$langCode = 'fr'">FR</xsl:when>
-        <xsl:when test="$langCode = 'it'">IT</xsl:when>
-        <xsl:when test="$langCode = 'en'">EN</xsl:when>
-        <xsl:when test="$langCode = 'rm'">RM</xsl:when>
-        <xsl:otherwise><xsl:value-of select="translate($langCode, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/></xsl:otherwise>
-      </xsl:choose>
-    </xsl:variable>
+    <xsl:variable name="langId" select="ech0271:locale-id($langCode)"/>
     <mdb:defaultLocale xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0">
       <lan:PT_Locale id="{$langId}">
         <lan:language>
@@ -98,16 +90,7 @@
        ================================================================ -->
   <xsl:template match="eCH0271:PT_Locale" mode="other-locale">
     <xsl:variable name="langCode" select="normalize-space(eCH0271:language)"/>
-    <xsl:variable name="langId">
-      <xsl:choose>
-        <xsl:when test="$langCode = 'de'">DE</xsl:when>
-        <xsl:when test="$langCode = 'fr'">FR</xsl:when>
-        <xsl:when test="$langCode = 'it'">IT</xsl:when>
-        <xsl:when test="$langCode = 'en'">EN</xsl:when>
-        <xsl:when test="$langCode = 'rm'">RM</xsl:when>
-        <xsl:otherwise><xsl:value-of select="translate($langCode, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/></xsl:otherwise>
-      </xsl:choose>
-    </xsl:variable>
+    <xsl:variable name="langId" select="ech0271:locale-id($langCode)"/>
     <lan:PT_Locale id="{$langId}">
       <lan:language>
         <xsl:call-template name="language-code">

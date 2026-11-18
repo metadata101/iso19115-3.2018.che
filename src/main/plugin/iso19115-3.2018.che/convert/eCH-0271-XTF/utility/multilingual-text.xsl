@@ -11,6 +11,7 @@
   xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
   xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:ech0271="urn:ech0271-functions"
   exclude-result-prefixes="#all">
 
   <!-- Metadata default language (e.g. 'de'), used to fill gco:CharacterString -->
@@ -60,7 +61,7 @@
             <xsl:for-each select="$entries">
               <lan:textGroup>
                 <lan:LocalisedCharacterString
-                  locale="#{upper-case(normalize-space(*[local-name() = 'Language']))}">
+                  locale="#{ech0271:locale-id(*[local-name() = 'Language'])}">
                   <xsl:value-of select="normalize-space(*[local-name() = 'Text'])"/>
                 </lan:LocalisedCharacterString>
               </lan:textGroup>
