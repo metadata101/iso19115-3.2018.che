@@ -235,37 +235,7 @@
        ================================================================ -->
   <xsl:template match="eCH0271:CI_Citation" mode="metadata-standard">
     <mdb:metadataStandard>
-      <cit:CI_Citation>
-        <xsl:if test="eCH0271:title">
-          <cit:title>
-            <xsl:apply-templates select="eCH0271:title" mode="multilingual-text"/>
-          </cit:title>
-        </xsl:if>
-        <xsl:if test="eCH0271:date[@ili:ref]">
-          <xsl:variable name="dateRef" select="eCH0271:date/@ili:ref"/>
-          <xsl:variable name="dateObj" select="key('byTID', $dateRef)"/>
-          <xsl:if test="$dateObj/self::eCH0271:CI_Date">
-            <cit:date>
-              <cit:CI_Date>
-                <xsl:if test="normalize-space($dateObj/eCH0271:date) != ''">
-                  <cit:date>
-                    <gco:Date>
-                      <xsl:value-of select="substring(normalize-space($dateObj/eCH0271:date), 1, 10)"/>
-                    </gco:Date>
-                  </cit:date>
-                </xsl:if>
-                <xsl:if test="$dateObj/eCH0271:dateType">
-                  <cit:dateType>
-                    <xsl:call-template name="date-type-code">
-                      <xsl:with-param name="value" select="normalize-space($dateObj/eCH0271:dateType)"/>
-                    </xsl:call-template>
-                  </cit:dateType>
-                </xsl:if>
-              </cit:CI_Date>
-            </cit:date>
-          </xsl:if>
-        </xsl:if>
-      </cit:CI_Citation>
+      <xsl:apply-templates select="." mode="citation"/>
     </mdb:metadataStandard>
   </xsl:template>
 
@@ -442,41 +412,7 @@
           <xsl:variable name="citRecord" select="key('byTID', $citRef)"/>
           <xsl:if test="$citRecord/self::eCH0271:CI_Citation">
             <che:legislationCitation>
-              <cit:CI_Citation>
-                <xsl:if test="$citRecord/eCH0271:title">
-                  <cit:title>
-                    <xsl:apply-templates select="$citRecord/eCH0271:title" mode="multilingual-text"/>
-                  </cit:title>
-                </xsl:if>
-                <!-- Get date via CI_Citationdate association -->
-                <xsl:variable name="citTID" select="$citRecord/@ili:tid"/>
-                <xsl:variable name="dateAssoc" select="/ili:transfer/ili:datasection/eCH0271:eCH0271/eCH0271:CI_Citationdate
-                                                       [eCH0271:CI_Citation/@ili:ref = $citTID]"/>
-                <xsl:if test="$dateAssoc">
-                  <xsl:variable name="dateRef" select="$dateAssoc/eCH0271:date/@ili:ref"/>
-                  <xsl:variable name="dateObj" select="key('byTID', $dateRef)"/>
-                  <xsl:if test="$dateObj/self::eCH0271:CI_Date">
-                    <cit:date>
-                      <cit:CI_Date>
-                        <xsl:if test="normalize-space($dateObj/eCH0271:date) != ''">
-                          <cit:date>
-                            <gco:Date>
-                              <xsl:value-of select="substring(normalize-space($dateObj/eCH0271:date), 1, 10)"/>
-                            </gco:Date>
-                          </cit:date>
-                        </xsl:if>
-                        <xsl:if test="$dateObj/eCH0271:dateType">
-                          <cit:dateType>
-                            <xsl:call-template name="date-type-code">
-                              <xsl:with-param name="value" select="normalize-space($dateObj/eCH0271:dateType)"/>
-                            </xsl:call-template>
-                          </cit:dateType>
-                        </xsl:if>
-                      </cit:CI_Date>
-                    </cit:date>
-                  </xsl:if>
-                </xsl:if>
-              </cit:CI_Citation>
+              <xsl:apply-templates select="$citRecord" mode="citation"/>
             </che:legislationCitation>
           </xsl:if>
         </xsl:if>

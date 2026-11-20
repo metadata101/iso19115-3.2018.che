@@ -125,6 +125,16 @@
           <cit:title>
             <gco:CharacterString>Zones restreintes aux modèles réduits d'aéronefs et aux drones</gco:CharacterString>
           </cit:title>
+          <cit:date>
+            <cit:CI_Date>
+              <cit:date>
+                <gco:DateTime>2019-09-30T00:00:00</gco:DateTime>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
         </cit:CI_Citation>
       </mri:citation>
       <mri:abstract>
