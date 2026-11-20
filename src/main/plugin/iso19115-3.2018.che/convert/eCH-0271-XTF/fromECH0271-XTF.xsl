@@ -314,55 +314,6 @@
   </xsl:template>
 
   <!-- ================================================================
-       browse-graphic: resolve @ili:ref → MD_BrowseGraphic
-       ================================================================ -->
-  <xsl:template match="eCH0271:graphicOverview[@ili:ref]" mode="browse-graphic">
-    <xsl:variable name="graphicId" select="@ili:ref"/>
-    <xsl:variable name="graphicObj" select="key('byTID', $graphicId)"/>
-    
-    <xsl:if test="$graphicObj/self::eCH0271:MD_BrowseGraphic">
-      <mcc:MD_BrowseGraphic>
-        <xsl:if test="$graphicObj/eCH0271:fileName">
-          <mcc:fileName>
-            <gco:CharacterString>
-              <xsl:value-of select="normalize-space($graphicObj/eCH0271:fileName)"/>
-            </gco:CharacterString>
-          </mcc:fileName>
-        </xsl:if>
-      </mcc:MD_BrowseGraphic>
-    </xsl:if>
-  </xsl:template>
-
-  <!-- ================================================================
-       legal-constraints: resolve @ili:ref → MD_LegalConstraints
-       ================================================================ -->
-  <xsl:template match="eCH0271:resourceConstraints[@ili:ref]" mode="legal-constraints">
-    <xsl:variable name="constraintId" select="@ili:ref"/>
-    <xsl:variable name="constraintObj" select="key('byTID', $constraintId)"/>
-    
-    <xsl:if test="$constraintObj/self::eCH0271:CHE_MD_LegalConstraints">
-      <mco:MD_LegalConstraints>
-        <xsl:if test="$constraintObj/eCH0271:useConstraints">
-          <mco:useConstraints>
-            <mco:MD_RestrictionCode codeList="{$CL}MD_RestrictionCode" codeListValue="{normalize-space($constraintObj/eCH0271:useConstraints)}">
-              <xsl:value-of select="normalize-space($constraintObj/eCH0271:useConstraints)"/>
-            </mco:MD_RestrictionCode>
-          </mco:useConstraints>
-        </xsl:if>
-        <xsl:if test="$constraintObj/eCH0271:otherConstraints">
-          <mco:otherConstraints>
-            <gco:CharacterString>
-              <xsl:value-of select="normalize-space($constraintObj/eCH0271:otherConstraints)"/>
-            </gco:CharacterString>
-          </mco:otherConstraints>
-        </xsl:if>
-      </mco:MD_LegalConstraints>
-    </xsl:if>
-  </xsl:template>
-
-
-
-  <!-- ================================================================
        basic-geodata-info: CHE_MD_BasicGeodataInformation
        ================================================================ -->
   <xsl:template match="eCH0271:basicGeodataInformation" mode="basic-geodata-info">

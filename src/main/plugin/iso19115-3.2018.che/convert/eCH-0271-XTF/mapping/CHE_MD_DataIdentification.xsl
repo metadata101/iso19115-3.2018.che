@@ -81,43 +81,20 @@
           </mri:resourceMaintenance>
         </xsl:for-each>
 
-        <!-- Graphic Overview - Priority 1: direct ref (follow reference), Priority 2: TID search -->
-        <xsl:choose>
-          <xsl:when test="eCH0271:graphicOverview[@ili:ref]">
-            <xsl:variable name="graphicRef" select="eCH0271:graphicOverview/@ili:ref"/>
-            <xsl:variable name="graphicObj" select="key('byTID', $graphicRef)"/>
-            <xsl:if test="$graphicObj/self::eCH0271:MD_BrowseGraphic">
-              <mri:graphicOverview>
-                <xsl:apply-templates select="$graphicObj" mode="browse-graphic"/>
-              </mri:graphicOverview>
-            </xsl:if>
-          </xsl:when>
-          <xsl:when test="//eCH0271:MD_BrowseGraphic[@ili:tid='browseGraphic-001']">
-            <mri:graphicOverview>
-              <xsl:apply-templates select="//eCH0271:MD_BrowseGraphic[@ili:tid='browseGraphic-001']" mode="browse-graphic"/>
-            </mri:graphicOverview>
-          </xsl:when>
-        </xsl:choose>
-        
-        <!-- Resource Constraints - Priority 1: direct ref, Priority 2: TID search -->
-        <xsl:choose>
-          <xsl:when test="eCH0271:resourceConstraints[@ili:ref]">
-            <xsl:variable name="constraintId" select="eCH0271:resourceConstraints/@ili:ref"/>
-            <xsl:variable name="constraint" select="key('byTID', $constraintId)"/>
-            <xsl:if test="$constraint/self::eCH0271:CHE_MD_LegalConstraints">
-              <mri:resourceConstraints>
-                <xsl:apply-templates select="$constraint" mode="legal-constraints"/>
-              </mri:resourceConstraints>
-            </xsl:if>
-          </xsl:when>
-          <xsl:when test="//eCH0271:CHE_MD_LegalConstraints[@ili:tid='legalConstraints-001']">
-            <xsl:variable name="constraint" select="//eCH0271:CHE_MD_LegalConstraints[@ili:tid='legalConstraints-001']"/>
-            <mri:resourceConstraints>
-              <xsl:apply-templates select="$constraint" mode="legal-constraints"/>
-            </mri:resourceConstraints>
-          </xsl:when>
-        </xsl:choose>
-        
+        <!-- Graphic Overview -->
+        <xsl:for-each select="f271:related(., 'MD_BrowseGraphic', 'graphicOverview', 'MD_Identification')">
+          <mri:graphicOverview>
+            <xsl:apply-templates select="." mode="browse-graphic"/>
+          </mri:graphicOverview>
+        </xsl:for-each>
+
+        <!-- Resource Constraints -->
+        <xsl:for-each select="f271:related(., 'CHE_MD_LegalConstraints', 'resourceConstraints', 'MD_Identification')">
+          <mri:resourceConstraints>
+            <xsl:apply-templates select="." mode="legal-constraints"/>
+          </mri:resourceConstraints>
+        </xsl:for-each>
+
         <!-- Default Locale -->
         <xsl:if test="eCH0271:defaultLocale">
           <mri:defaultLocale>

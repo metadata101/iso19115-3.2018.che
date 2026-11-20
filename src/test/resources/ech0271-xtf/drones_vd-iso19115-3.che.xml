@@ -231,6 +231,23 @@
           </mmi:maintenanceAndUpdateFrequency>
         </che:CHE_MD_MaintenanceInformation>
       </mri:resourceMaintenance>
+      <mri:graphicOverview>
+        <mcc:MD_BrowseGraphic>
+          <mcc:fileName>
+            <gco:CharacterString>https://viageo.ch/uploads/resource_images/6123acce0c1aa832960775.png</gco:CharacterString>
+          </mcc:fileName>
+        </mcc:MD_BrowseGraphic>
+      </mri:graphicOverview>
+      <mri:resourceConstraints>
+        <mco:MD_LegalConstraints>
+          <mco:useConstraints>
+            <mco:MD_RestrictionCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</mco:MD_RestrictionCode>
+          </mco:useConstraints>
+          <mco:otherConstraints>
+            <gco:CharacterString>Les conditions d'utilisation des géodonnées de l'Etat de Vaud sont exposées dans la norme DCG 8401 : https://www.vd.ch/fileadmin/user_upload/dinf/8000/8401.pdf</gco:CharacterString>
+          </mco:otherConstraints>
+        </mco:MD_LegalConstraints>
+      </mri:resourceConstraints>
       <mri:defaultLocale>
         <lan:PT_Locale>
           <lan:language>
