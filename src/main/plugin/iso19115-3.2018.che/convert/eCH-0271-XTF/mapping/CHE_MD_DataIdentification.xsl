@@ -55,8 +55,35 @@
           </mri:pointOfContact>
         </xsl:for-each>
         
-        <!-- Spatial Resolution (placeholder) -->
-        <mri:spatialResolution/>
+        <!-- Spatial Representation Type -->
+        <xsl:for-each select="eCH0271:spatialRepresentationType[normalize-space() != '']">
+          <mri:spatialRepresentationType>
+            <mcc:MD_SpatialRepresentationTypeCode codeList="{$CL}MD_SpatialRepresentationTypeCode" codeListValue="{normalize-space()}">
+              <xsl:value-of select="normalize-space()"/>
+            </mcc:MD_SpatialRepresentationTypeCode>
+          </mri:spatialRepresentationType>
+        </xsl:for-each>
+
+        <!-- Spatial Resolution: equivalent scale (1:denominator) -->
+        <xsl:for-each select="f271:related(., 'MD_Resolution', 'spatialResolution', ('MD_DataIdentification', 'MD_Identification'))">
+          <xsl:variable name="denominator"
+            select="normalize-space(f271:related(., 'MD_RepresentativeFraction', 'equivalentScale')[1]/eCH0271:denominator)"/>
+          <xsl:if test="$denominator != ''">
+            <mri:spatialResolution>
+              <mri:MD_Resolution>
+                <mri:equivalentScale>
+                  <mri:MD_RepresentativeFraction>
+                    <mri:denominator>
+                      <gco:Integer>
+                        <xsl:value-of select="$denominator"/>
+                      </gco:Integer>
+                    </mri:denominator>
+                  </mri:MD_RepresentativeFraction>
+                </mri:equivalentScale>
+              </mri:MD_Resolution>
+            </mri:spatialResolution>
+          </xsl:if>
+        </xsl:for-each>
         
         <!-- Topic Category -->
         <xsl:if test="eCH0271:topicCategory">

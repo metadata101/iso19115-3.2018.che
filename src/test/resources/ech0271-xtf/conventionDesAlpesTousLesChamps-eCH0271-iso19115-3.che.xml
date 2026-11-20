@@ -144,7 +144,7 @@
   <mdb:dateInfo>
     <cit:CI_Date>
       <cit:date>
-        <gco:Date>2021-04-12</gco:Date>
+        <gco:DateTime>2021-04-12T07:50:54</gco:DateTime>
       </cit:date>
       <cit:dateType>
         <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
@@ -154,7 +154,7 @@
   <mdb:dateInfo>
     <cit:CI_Date>
       <cit:date>
-        <gco:Date>2026-11-03</gco:Date>
+        <gco:DateTime>2026-11-03T16:20:45</gco:DateTime>
       </cit:date>
       <cit:dateType>
         <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision">revision</cit:CI_DateTypeCode>
@@ -256,7 +256,7 @@
           <cit:date>
             <cit:CI_Date>
               <cit:date>
-                <gco:DateTime>2009-01-01T00:00:00</gco:DateTime>
+                <gco:Date>2009-01-01</gco:Date>
               </cit:date>
               <cit:dateType>
                 <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision">revision</cit:CI_DateTypeCode>
@@ -266,7 +266,7 @@
           <cit:date>
             <cit:CI_Date>
               <cit:date>
-                <gco:DateTime>1999-01-01T00:00:00</gco:DateTime>
+                <gco:Date>1999-01-01</gco:Date>
               </cit:date>
               <cit:dateType>
                 <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
@@ -444,7 +444,20 @@
           </cit:party>
         </cit:CI_Responsibility>
       </mri:pointOfContact>
-      <mri:spatialResolution />
+      <mri:spatialRepresentationType>
+        <mcc:MD_SpatialRepresentationTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector">vector</mcc:MD_SpatialRepresentationTypeCode>
+      </mri:spatialRepresentationType>
+      <mri:spatialResolution>
+        <mri:MD_Resolution>
+          <mri:equivalentScale>
+            <mri:MD_RepresentativeFraction>
+              <mri:denominator>
+                <gco:Integer>25000</gco:Integer>
+              </mri:denominator>
+            </mri:MD_RepresentativeFraction>
+          </mri:equivalentScale>
+        </mri:MD_Resolution>
+      </mri:spatialResolution>
       <mri:topicCategory>
         <mri:MD_TopicCategoryCode>planningCadastre</mri:MD_TopicCategoryCode>
       </mri:topicCategory>
@@ -577,7 +590,7 @@
           <cit:date>
             <cit:CI_Date>
               <cit:date>
-                <gco:DateTime>2008-05-21T00:00:00</gco:DateTime>
+                <gco:Date>2008-05-21</gco:Date>
               </cit:date>
               <cit:dateType>
                 <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
@@ -587,7 +600,7 @@
           <cit:date>
             <cit:CI_Date>
               <cit:date>
-                <gco:DateTime>2008-07-01T00:00:00</gco:DateTime>
+                <gco:Date>2008-07-01</gco:Date>
               </cit:date>
               <cit:dateType>
                 <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</cit:CI_DateTypeCode>
@@ -628,7 +641,7 @@
           <cit:date>
             <cit:CI_Date>
               <cit:date>
-                <gco:DateTime>1991-11-07T00:00:00</gco:DateTime>
+                <gco:Date>1991-11-07</gco:Date>
               </cit:date>
               <cit:dateType>
                 <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>

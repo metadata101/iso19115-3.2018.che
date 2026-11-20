@@ -125,7 +125,7 @@
       <eCH0271_1:CI_Responsibility ili:tid="RESP_d1e258">
         <eCH0271_1:role>owner</eCH0271_1:role>
       </eCH0271_1:CI_Responsibility>
-      <eCH0271_1:CHE_MD_MaintenanceInformation ili:tid="RM_d1e303">
+      <eCH0271_1:CHE_MD_MaintenanceInformation ili:tid="RM_d1e310">
         <eCH0271_1:maintenanceAndUpdateFrequency>asNeeded</eCH0271_1:maintenanceAndUpdateFrequency>
       </eCH0271_1:CHE_MD_MaintenanceInformation>
       <eCH0271_1:CI_Citation ili:tid="CIT_d1e144">
@@ -141,18 +141,18 @@
         </eCH0271_1:title>
         <eCH0271_1:date>
           <eCH0271_1:CI_Date>
-            <eCH0271_1:date>2009-01-01T00:00:00</eCH0271_1:date>
+            <eCH0271_1:date>2009-01-01T00:00:00.0</eCH0271_1:date>
             <eCH0271_1:dateType>revision</eCH0271_1:dateType>
           </eCH0271_1:CI_Date>
         </eCH0271_1:date>
         <eCH0271_1:date>
           <eCH0271_1:CI_Date>
-            <eCH0271_1:date>1999-01-01T00:00:00</eCH0271_1:date>
+            <eCH0271_1:date>1999-01-01T00:00:00.0</eCH0271_1:date>
             <eCH0271_1:dateType>creation</eCH0271_1:dateType>
           </eCH0271_1:CI_Date>
         </eCH0271_1:date>
       </eCH0271_1:CI_Citation>
-      <eCH0271_1:EX_Extent ili:tid="EXT_d1e278">
+      <eCH0271_1:EX_Extent ili:tid="EXT_d1e285">
         <eCH0271_1:description>
           <Localisation_V2:MultilingualMText>
             <Localisation_V2:LocalisedText>
@@ -164,7 +164,7 @@
           </Localisation_V2:MultilingualMText>
         </eCH0271_1:description>
       </eCH0271_1:EX_Extent>
-      <eCH0271_1:EX_GeographicBoundingBox ili:tid="BBOX_d1e291">
+      <eCH0271_1:EX_GeographicBoundingBox ili:tid="BBOX_d1e298">
         <eCH0271_1:westBoundLongitude>6.7559</eCH0271_1:westBoundLongitude>
         <eCH0271_1:eastBoundLongitude>10.5419</eCH0271_1:eastBoundLongitude>
         <eCH0271_1:southBoundLatitude>45.7887</eCH0271_1:southBoundLatitude>
@@ -233,13 +233,13 @@
         </eCH0271_1:otherLocale>
         <eCH0271_1:dateInfo>
           <eCH0271_1:CI_Date>
-            <eCH0271_1:date>2021-04-12T00:00:00.0</eCH0271_1:date>
+            <eCH0271_1:date>2021-04-12T07:50:54</eCH0271_1:date>
             <eCH0271_1:dateType>creation</eCH0271_1:dateType>
           </eCH0271_1:CI_Date>
         </eCH0271_1:dateInfo>
         <eCH0271_1:dateInfo>
           <eCH0271_1:CI_Date>
-            <eCH0271_1:date>2026-11-03T00:00:00.0</eCH0271_1:date>
+            <eCH0271_1:date>2026-11-03T16:20:45</eCH0271_1:date>
             <eCH0271_1:dateType>revision</eCH0271_1:dateType>
           </eCH0271_1:CI_Date>
         </eCH0271_1:dateInfo>

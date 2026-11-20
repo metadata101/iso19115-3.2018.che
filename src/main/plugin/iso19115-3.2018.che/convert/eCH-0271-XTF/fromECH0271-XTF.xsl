@@ -212,29 +212,7 @@
   <!-- dateInfo processor -->
   <xsl:template match="eCH0271:CI_Date" mode="date-info">
     <mdb:dateInfo>
-      <cit:CI_Date>
-        <cit:date>
-          <xsl:choose>
-            <xsl:when test="normalize-space(eCH0271:date) != ''">
-              <gco:Date>
-                <xsl:value-of select="substring(string(eCH0271:date), 1, 10)"/>
-              </gco:Date>
-            </xsl:when>
-            <xsl:otherwise>
-              <gco:Date>
-                <xsl:value-of select="substring(string(current-date()), 1, 10)"/>
-              </gco:Date>
-            </xsl:otherwise>
-          </xsl:choose>
-        </cit:date>
-        <xsl:if test="eCH0271:dateType">
-          <cit:dateType>
-            <xsl:call-template name="date-type-code">
-              <xsl:with-param name="value" select="normalize-space(eCH0271:dateType)"/>
-            </xsl:call-template>
-          </cit:dateType>
-        </xsl:if>
-      </cit:CI_Date>
+      <xsl:apply-templates select="." mode="date"/>
     </mdb:dateInfo>
   </xsl:template>
 
@@ -258,7 +236,9 @@
             <mrs:referenceSystemIdentifier>
               <mcc:RS_Identifier>
                 <mcc:code>
-                  <xsl:apply-templates select="$rsIdentObj/eCH0271:code" mode="multilingual-text"/>
+                  <gco:CharacterString>
+                    <xsl:value-of select="f271:text($rsIdentObj/eCH0271:code)"/>
+                  </gco:CharacterString>
                 </mcc:code>
               </mcc:RS_Identifier>
             </mrs:referenceSystemIdentifier>
@@ -285,7 +265,9 @@
               <mrs:referenceSystemIdentifier>
                 <mcc:MD_Identifier>
                   <mcc:code>
-                    <xsl:apply-templates select="$rsIdentObj/eCH0271:code" mode="multilingual-text"/>
+                    <gco:CharacterString>
+                      <xsl:value-of select="f271:text($rsIdentObj/eCH0271:code)"/>
+                    </gco:CharacterString>
                   </mcc:code>
                 </mcc:MD_Identifier>
               </mrs:referenceSystemIdentifier>

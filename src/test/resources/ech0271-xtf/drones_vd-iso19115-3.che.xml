@@ -128,7 +128,7 @@
           <cit:date>
             <cit:CI_Date>
               <cit:date>
-                <gco:DateTime>2019-09-30T00:00:00</gco:DateTime>
+                <gco:Date>2019-09-30</gco:Date>
               </cit:date>
               <cit:dateType>
                 <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
@@ -197,7 +197,6 @@
           </cit:party>
         </cit:CI_Responsibility>
       </mri:pointOfContact>
-      <mri:spatialResolution />
       <mri:topicCategory>
         <mri:MD_TopicCategoryCode>structure</mri:MD_TopicCategoryCode>
       </mri:topicCategory>
@@ -292,7 +291,7 @@
           <cit:date>
             <cit:CI_Date>
               <cit:date>
-                <gco:DateTime>2019-07-15T00:00:00</gco:DateTime>
+                <gco:Date>2019-07-15</gco:Date>
               </cit:date>
               <cit:dateType>
                 <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</cit:CI_DateTypeCode>

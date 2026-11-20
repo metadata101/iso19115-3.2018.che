@@ -21,12 +21,21 @@
   xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0"
   xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0"
   xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0"
-  exclude-result-prefixes="xsl xs che mdb mri mrd cit gex mdq mcc lan gco mrl mrs mco mmi">
+  xmlns:f271="urn:ech0271-functions"
+  exclude-result-prefixes="xsl xs f271 che mdb mri mrd cit gex mdq mcc lan gco mrl mrs mco mmi">
 
   <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
   <xsl:strip-space elements="*"/>
 
   <xsl:param name="uuid" as="xs:string?"/>
+
+  <!-- INTERLIS XMLDateTime of an ISO cit:date (gco:Date or gco:DateTime):
+       a date alone is completed with midnight -->
+  <xsl:function name="f271:xtf-datetime" as="xs:string">
+    <xsl:param name="isoDate" as="element()"/>
+    <xsl:variable name="value" select="normalize-space(($isoDate/gco:DateTime, $isoDate/gco:Date)[1])"/>
+    <xsl:sequence select="if (contains($value, 'T')) then $value else concat($value, 'T00:00:00.0')"/>
+  </xsl:function>
 
   <!-- Root template: generate XTF transfer with flat basket -->
   <xsl:template match="/">
@@ -303,7 +312,7 @@
             <!-- date: MANDATORY DateTime -->
             <xsl:if test="cit:date/gco:Date | cit:date/gco:DateTime">
               <eCH0271_1:date>
-                <xsl:value-of select="concat(normalize-space((cit:date/gco:Date | cit:date/gco:DateTime)[1]), 'T00:00:00.0')" />
+                <xsl:value-of select="f271:xtf-datetime(cit:date)"/>
               </eCH0271_1:date>
             </xsl:if>
             <!-- dateType: MANDATORY CI_DateTypeCode -->
@@ -398,7 +407,7 @@
           <eCH0271_1:CI_Date>
             <xsl:if test="cit:date/gco:Date | cit:date/gco:DateTime">
               <eCH0271_1:date>
-                <xsl:value-of select="normalize-space((cit:date/gco:DateTime | cit:date/gco:Date)[1])"/>
+                <xsl:value-of select="f271:xtf-datetime(cit:date)"/>
               </eCH0271_1:date>
             </xsl:if>
             <xsl:if test="cit:dateType">

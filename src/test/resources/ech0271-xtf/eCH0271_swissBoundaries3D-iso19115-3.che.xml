@@ -131,7 +131,7 @@
           <cit:date>
             <cit:CI_Date>
               <cit:date>
-                <gco:DateTime>2011-01-24T00:00:00</gco:DateTime>
+                <gco:Date>2011-01-24</gco:Date>
               </cit:date>
               <cit:dateType>
                 <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
@@ -141,7 +141,7 @@
           <cit:date>
             <cit:CI_Date>
               <cit:date>
-                <gco:DateTime>2026-11-04T00:00:00</gco:DateTime>
+                <gco:Date>2026-11-04</gco:Date>
               </cit:date>
               <cit:dateType>
                 <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision">revision</cit:CI_DateTypeCode>
@@ -206,7 +206,9 @@
           </cit:party>
         </cit:CI_Responsibility>
       </mri:pointOfContact>
-      <mri:spatialResolution />
+      <mri:spatialRepresentationType>
+        <mcc:MD_SpatialRepresentationTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector">vector</mcc:MD_SpatialRepresentationTypeCode>
+      </mri:spatialRepresentationType>
       <mri:topicCategory>
         <mri:MD_TopicCategoryCode>boundaries</mri:MD_TopicCategoryCode>
       </mri:topicCategory>

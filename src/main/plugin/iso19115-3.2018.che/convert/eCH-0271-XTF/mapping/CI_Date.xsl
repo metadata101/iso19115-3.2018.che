@@ -26,26 +26,29 @@
     <xsl:param name="dateObj" as="element()"/>
     
     <cit:CI_Date>
-      <xsl:if test="$dateObj/eCH0271:date">
-        <cit:date>
-          <xsl:variable name="dateValue" select="normalize-space($dateObj/eCH0271:date)"/>
-          <!-- Handle both date and datetime formats -->
-          <xsl:choose>
-            <xsl:when test="contains($dateValue, 'T')">
-              <!-- DateTime format (ISO 8601) -->
-              <gco:DateTime>
-                <xsl:value-of select="substring($dateValue, 1, 19)"/>
-              </gco:DateTime>
-            </xsl:when>
-            <xsl:otherwise>
-              <!-- Date format (YYYY-MM-DD) -->
-              <gco:Date>
-                <xsl:value-of select="$dateValue"/>
-              </gco:Date>
-            </xsl:otherwise>
-          </xsl:choose>
-        </cit:date>
-      </xsl:if>
+      <xsl:variable name="dateValue" select="normalize-space($dateObj/eCH0271:date)"/>
+      <!-- INTERLIS XMLDateTime: a time at midnight (T00:00:00, T00:00:00.0)
+           only pads a date, so output a gco:Date; keep a real time as
+           gco:DateTime. cit:date is mandatory: an empty source date is
+           marked as missing. -->
+      <cit:date>
+        <xsl:choose>
+          <xsl:when test="$dateValue = ''">
+            <xsl:attribute name="gco:nilReason" select="'missing'"/>
+          </xsl:when>
+          <xsl:when test="contains($dateValue, 'T')
+                          and not(matches(substring-after($dateValue, 'T'), '^00:00:00(\.0+)?$'))">
+            <gco:DateTime>
+              <xsl:value-of select="substring($dateValue, 1, 19)"/>
+            </gco:DateTime>
+          </xsl:when>
+          <xsl:otherwise>
+            <gco:Date>
+              <xsl:value-of select="substring($dateValue, 1, 10)"/>
+            </gco:Date>
+          </xsl:otherwise>
+        </xsl:choose>
+      </cit:date>
       <xsl:if test="$dateObj/eCH0271:dateType">
         <cit:dateType>
           <xsl:call-template name="date-type-code">
