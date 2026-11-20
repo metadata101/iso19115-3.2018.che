@@ -71,7 +71,7 @@
       <eCH0271_1:CI_Responsibility ili:tid="RESP_d1e16">
         <eCH0271_1:role>pointOfContact</eCH0271_1:role>
       </eCH0271_1:CI_Responsibility>
-      <eCH0271_1:CHE_CI_Organisation ili:tid="PARTY_d1e177">
+      <eCH0271_1:CHE_CI_Organisation ili:tid="PARTY_d1e189">
         <eCH0271_1:name>
           <Localisation_V2:MultilingualMText>
             <Localisation_V2:LocalisedText>
@@ -84,14 +84,14 @@
         </eCH0271_1:name>
         <eCH0271_1:organisationAcronym>ARE</eCH0271_1:organisationAcronym>
       </eCH0271_1:CHE_CI_Organisation>
-      <eCH0271_1:CI_Address ili:tid="ADDR_d1e201">
+      <eCH0271_1:CI_Address ili:tid="ADDR_d1e213">
         <eCH0271_1:deliveryPoint>Worblentalstrasse 66</eCH0271_1:deliveryPoint>
         <eCH0271_1:city>Ittigen</eCH0271_1:city>
         <eCH0271_1:postalCode>3063</eCH0271_1:postalCode>
         <eCH0271_1:country>CHE</eCH0271_1:country>
         <eCH0271_1:electronicMailAddress>rolf.giezendanner@are.admin.ch</eCH0271_1:electronicMailAddress>
       </eCH0271_1:CI_Address>
-      <eCH0271_1:CI_Individual ili:tid="INDIVIDUAL_d1e230">
+      <eCH0271_1:CI_Individual ili:tid="INDIVIDUAL_d1e242">
         <eCH0271_1:name>
           <Localisation_V2:MultilingualMText>
             <Localisation_V2:LocalisedText>
@@ -103,10 +103,10 @@
           </Localisation_V2:MultilingualMText>
         </eCH0271_1:name>
       </eCH0271_1:CI_Individual>
-      <eCH0271_1:CI_Responsibility ili:tid="RESP_d1e173">
+      <eCH0271_1:CI_Responsibility ili:tid="RESP_d1e185">
         <eCH0271_1:role>pointOfContact</eCH0271_1:role>
       </eCH0271_1:CI_Responsibility>
-      <eCH0271_1:CHE_CI_Organisation ili:tid="PARTY_d1e250">
+      <eCH0271_1:CHE_CI_Organisation ili:tid="PARTY_d1e262">
         <eCH0271_1:name>
           <Localisation_V2:MultilingualMText>
             <Localisation_V2:LocalisedText>
@@ -119,13 +119,13 @@
         </eCH0271_1:name>
         <eCH0271_1:organisationAcronym>ARE</eCH0271_1:organisationAcronym>
       </eCH0271_1:CHE_CI_Organisation>
-      <eCH0271_1:CI_Address ili:tid="ADDR_d1e257">
+      <eCH0271_1:CI_Address ili:tid="ADDR_d1e269">
         <eCH0271_1:electronicMailAddress>info@are.admin.ch</eCH0271_1:electronicMailAddress>
       </eCH0271_1:CI_Address>
-      <eCH0271_1:CI_Responsibility ili:tid="RESP_d1e246">
+      <eCH0271_1:CI_Responsibility ili:tid="RESP_d1e258">
         <eCH0271_1:role>owner</eCH0271_1:role>
       </eCH0271_1:CI_Responsibility>
-      <eCH0271_1:CHE_MD_MaintenanceInformation ili:tid="RM_d1e291">
+      <eCH0271_1:CHE_MD_MaintenanceInformation ili:tid="RM_d1e303">
         <eCH0271_1:maintenanceAndUpdateFrequency>asNeeded</eCH0271_1:maintenanceAndUpdateFrequency>
       </eCH0271_1:CHE_MD_MaintenanceInformation>
       <eCH0271_1:CI_Citation ili:tid="CIT_d1e144">
@@ -139,8 +139,20 @@
             </Localisation_V2:LocalisedText>
           </Localisation_V2:MultilingualMText>
         </eCH0271_1:title>
+        <eCH0271_1:date>
+          <eCH0271_1:CI_Date>
+            <eCH0271_1:date>2009-01-01T00:00:00</eCH0271_1:date>
+            <eCH0271_1:dateType>revision</eCH0271_1:dateType>
+          </eCH0271_1:CI_Date>
+        </eCH0271_1:date>
+        <eCH0271_1:date>
+          <eCH0271_1:CI_Date>
+            <eCH0271_1:date>1999-01-01T00:00:00</eCH0271_1:date>
+            <eCH0271_1:dateType>creation</eCH0271_1:dateType>
+          </eCH0271_1:CI_Date>
+        </eCH0271_1:date>
       </eCH0271_1:CI_Citation>
-      <eCH0271_1:EX_Extent ili:tid="EXT_d1e266">
+      <eCH0271_1:EX_Extent ili:tid="EXT_d1e278">
         <eCH0271_1:description>
           <Localisation_V2:MultilingualMText>
             <Localisation_V2:LocalisedText>
@@ -152,7 +164,7 @@
           </Localisation_V2:MultilingualMText>
         </eCH0271_1:description>
       </eCH0271_1:EX_Extent>
-      <eCH0271_1:EX_GeographicBoundingBox ili:tid="BBOX_d1e279">
+      <eCH0271_1:EX_GeographicBoundingBox ili:tid="BBOX_d1e291">
         <eCH0271_1:westBoundLongitude>6.7559</eCH0271_1:westBoundLongitude>
         <eCH0271_1:eastBoundLongitude>10.5419</eCH0271_1:eastBoundLongitude>
         <eCH0271_1:southBoundLatitude>45.7887</eCH0271_1:southBoundLatitude>

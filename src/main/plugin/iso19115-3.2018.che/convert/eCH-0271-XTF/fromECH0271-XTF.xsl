@@ -70,8 +70,6 @@
   <xsl:include href="mapping/EX_Extent.xsl"/>
   <!-- Resource lineage -->
   <xsl:include href="mapping/LI_Lineage.xsl"/>
-  <!-- Legislative information -->
-  <xsl:include href="mapping/CHE_MD_Legislation.xsl"/>
   <!-- Utility templates -->
   <xsl:include href="utility/multilingual-text.xsl"/>
   <xsl:include href="utility/references.xsl"/>
@@ -312,23 +310,6 @@
           <xsl:with-param name="basket" select="/ili:transfer/ili:datasection/eCH0271:eCH0271[1]"/>
         </xsl:call-template>
       </mdb:distributionInfo>
-    </xsl:if>
-  </xsl:template>
-
-  <!-- ================================================================
-       legislation: resolve @ili:ref → CHE_MD_Legislation via modular mapping
-       ================================================================ -->
-  <xsl:template match="eCH0271:legislationInformation[@ili:ref]" mode="legislation">
-    <xsl:variable name="legisId" select="@ili:ref"/>
-    <xsl:variable name="legisObj" select="key('byTID', $legisId)"/>
-
-    <xsl:if test="$legisObj/self::eCH0271:CHE_MD_Legislation">
-      <che:legislationInformation>
-        <xsl:call-template name="f271:CHE_MD_Legislation">
-          <xsl:with-param name="legisRecord" select="$legisObj"/>
-          <xsl:with-param name="basket" select="/ili:transfer/ili:datasection/eCH0271:eCH0271[1]"/>
-        </xsl:call-template>
-      </che:legislationInformation>
     </xsl:if>
   </xsl:template>
 

@@ -206,27 +206,10 @@
       <!-- Resource lineage -->
       <xsl:apply-templates select="f271:related(., 'LI_Lineage', 'resourceLineage', 'MD_Metadata')" mode="lineage"/>
 
-      <!-- Legislative/governance info (direct ref OR direct CHE_MD_Legislation object OR via association) -->
-      <xsl:choose>
-        <xsl:when test="eCH0271:legislationInformation[@ili:ref]">
-          <xsl:apply-templates select="eCH0271:legislationInformation" mode="legislation"/>
-        </xsl:when>
-        <!-- Direct CHE_MD_Legislation object (commented reference case) -->
-        <xsl:when test="//eCH0271:CHE_MD_Legislation[@ili:tid='legislation-001']">
-          <xsl:variable name="legObj" select="//eCH0271:CHE_MD_Legislation[@ili:tid='legislation-001']"/>
-          <xsl:apply-templates select="$legObj" mode="legislation"/>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:variable name="legAssoc"
-            select="/ili:transfer/ili:datasection/eCH0271:eCH0271/eCH0271:MD_MetadataLegislationInformation
-                    [eCH0271:MD_Metadata/@ili:ref = $mdTID]"/>
-          <xsl:if test="$legAssoc">
-            <xsl:variable name="legRef" select="$legAssoc/eCH0271:legislationInformation/@ili:ref"/>
-            <xsl:variable name="legObj" select="key('byTID', $legRef)"/>
-            <xsl:apply-templates select="$legObj" mode="legislation"/>
-          </xsl:if>
-        </xsl:otherwise>
-      </xsl:choose>
+      <!-- Legislation information -->
+      <xsl:apply-templates
+        select="f271:related(., 'CHE_MD_Legislation', 'legislationInformation', 'MD_Metadata')"
+        mode="legislation"/>
     </che:CHE_MD_Metadata>
   </xsl:template>
 
@@ -406,16 +389,12 @@
           </che:internalReference>
         </xsl:if>
 
-        <!-- legislationCitation (direct ili:ref child element) -->
-        <xsl:if test="eCH0271:legislationCitation[@ili:ref]">
-          <xsl:variable name="citRef" select="eCH0271:legislationCitation/@ili:ref"/>
-          <xsl:variable name="citRecord" select="key('byTID', $citRef)"/>
-          <xsl:if test="$citRecord/self::eCH0271:CI_Citation">
-            <che:legislationCitation>
-              <xsl:apply-templates select="$citRecord" mode="citation"/>
-            </che:legislationCitation>
-          </xsl:if>
-        </xsl:if>
+        <!-- legislationCitation -->
+        <xsl:for-each select="f271:related(., 'CI_Citation', 'legislationCitation', 'CHE_MD_Legislation')">
+          <che:legislationCitation>
+            <xsl:apply-templates select="." mode="citation"/>
+          </che:legislationCitation>
+        </xsl:for-each>
       </che:CHE_MD_Legislation>
     </che:legislationInformation>
   </xsl:template>

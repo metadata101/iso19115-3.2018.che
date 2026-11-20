@@ -256,4 +256,34 @@
       </che:basicGeodataInformation>
     </che:CHE_MD_DataIdentification>
   </mdb:identificationInfo>
+  <che:legislationInformation>
+    <che:CHE_MD_Legislation>
+      <che:country>
+        <lan:CountryCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CountryCode" codeListValue="CH" />
+      </che:country>
+      <che:legislationType>
+        <che:CHE_CI_LegislationTypeCode codeList="legislationCode" codeListValue="law" />
+      </che:legislationType>
+      <che:internalReference>
+        <gco:CharacterString>BLV 740.24</gco:CharacterString>
+      </che:internalReference>
+      <che:legislationCitation>
+        <cit:CI_Citation>
+          <cit:title>
+            <gco:CharacterString>RÈGLEMENT concernant l'interdiction de survol de périmètres déterminés par des aéronefs sans occupants de poids inférieur à 25kg (RISA)</gco:CharacterString>
+          </cit:title>
+          <cit:date>
+            <cit:CI_Date>
+              <cit:date>
+                <gco:DateTime>2019-07-15T00:00:00</gco:DateTime>
+              </cit:date>
+              <cit:dateType>
+                <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</cit:CI_DateTypeCode>
+              </cit:dateType>
+            </cit:CI_Date>
+          </cit:date>
+        </cit:CI_Citation>
+      </che:legislationCitation>
+    </che:CHE_MD_Legislation>
+  </che:legislationInformation>
 </che:CHE_MD_Metadata>
