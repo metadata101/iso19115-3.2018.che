@@ -36,13 +36,26 @@
     <xsl:param name="obj" as="element()"/>
     <xsl:param name="types" as="xs:string+"/>
     <xsl:param name="roles" as="xs:string*"/>
+    <xsl:sequence select="f271:related($obj, $types, $roles, ())"/>
+  </xsl:function>
+
+  <!-- Same, also following references to $obj made through one of the
+       given inverse roles: local name of the element of the linked object
+       that holds the reference to $obj (e.g. 'standardUsedBy' for the
+       metadataStandard of an MD_Metadata, 'MD_Metadata' for its
+       resourceLineage). -->
+  <xsl:function name="f271:related" as="element()*">
+    <xsl:param name="obj" as="element()"/>
+    <xsl:param name="types" as="xs:string+"/>
+    <xsl:param name="roles" as="xs:string*"/>
+    <xsl:param name="inverseRoles" as="xs:string*"/>
     <xsl:variable name="root" select="root($obj)"/>
-    <xsl:variable name="referrers" select="key('refsTo', $obj/@ili:tid, $root)/.."/>
+    <xsl:variable name="refsToObj" select="key('refsTo', $obj/@ili:tid, $root)"/>
     <xsl:variable name="linked" select="
         $obj/*[empty($roles) or local-name() = $roles]/*
       | key('byTID', $obj/*[empty($roles) or local-name() = $roles]/@ili:ref, $root)
-      | $referrers[@ili:tid][empty($roles)]
-      | key('byTID', $referrers[not(@ili:tid)]/*[empty($roles) or local-name() = $roles]/@ili:ref, $root)"/>
+      | $refsToObj[empty($roles) or local-name() = $inverseRoles]/parent::*[@ili:tid]
+      | key('byTID', $refsToObj/parent::*[not(@ili:tid)]/*[empty($roles) or local-name() = $roles]/@ili:ref, $root)"/>
     <xsl:sequence select="($linked except $obj)[local-name() = $types]"/>
   </xsl:function>
 

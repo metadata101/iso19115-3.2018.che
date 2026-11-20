@@ -110,22 +110,10 @@
         <xsl:apply-templates select="eCH0271:dateInfo/eCH0271:CI_Date" mode="date-info"/>
       </xsl:if>
 
-      <!-- Metadata standard citation (via association OR direct CI_Citation object) -->
-      <xsl:variable name="mdStandardAssoc"
-        select="/ili:transfer/ili:datasection/eCH0271:eCH0271/eCH0271:MD_MetadataStandardUsedBymetadataStandard
-                [eCH0271:MD_Metadata/@ili:ref = $mdTID]"/>
-      <xsl:choose>
-        <xsl:when test="$mdStandardAssoc">
-          <xsl:variable name="standardRef" select="$mdStandardAssoc/eCH0271:standardUsedBymetadataStandard/@ili:ref"/>
-          <xsl:variable name="standardObj" select="key('byTID', $standardRef)"/>
-          <xsl:apply-templates select="$standardObj" mode="metadata-standard"/>
-        </xsl:when>
-        <!-- Direct CI_Citation with 'standard' in TID (commented reference case) -->
-        <xsl:when test="//eCH0271:CI_Citation[@ili:tid='citation-metadata-standard-001']">
-          <xsl:variable name="standardObj" select="//eCH0271:CI_Citation[@ili:tid='citation-metadata-standard-001']"/>
-          <xsl:apply-templates select="$standardObj" mode="metadata-standard"/>
-        </xsl:when>
-      </xsl:choose>
+      <!-- Metadata standard citation -->
+      <xsl:apply-templates
+        select="f271:related(., 'CI_Citation', ('metadataStandard', 'standardUsedBymetadataStandard'), 'standardUsedBy')"
+        mode="metadata-standard"/>
 
       <!-- other locales (multilingual support) -->
       <xsl:for-each select="eCH0271:otherLocale/eCH0271:PT_Locale">
@@ -214,6 +202,9 @@
           </xsl:if>
         </xsl:otherwise>
       </xsl:choose>
+
+      <!-- Resource lineage -->
+      <xsl:apply-templates select="f271:related(., 'LI_Lineage', 'resourceLineage', 'MD_Metadata')" mode="lineage"/>
 
       <!-- Legislative/governance info (direct ref OR direct CHE_MD_Legislation object OR via association) -->
       <xsl:choose>

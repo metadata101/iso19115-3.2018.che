@@ -49,7 +49,6 @@
         </xsl:if>
         
         <!-- Point of Contact (dataset-level) -->
-        <xsl:variable name="currentDataIdentId" select="@ili:tid"/>
         <xsl:for-each select="f271:related(., 'CI_Responsibility', 'pointOfContact')">
           <mri:pointOfContact>
             <xsl:apply-templates select="." mode="responsibility"/>
@@ -68,51 +67,20 @@
           </mri:topicCategory>
         </xsl:if>
         
-        <!-- Extent (geographic/temporal) - direct ref OR direct object OR via association -->
-        <xsl:choose>
-          <!-- Priority 1: Direct reference -->
-          <xsl:when test="eCH0271:extent[@ili:ref]">
-            <mri:extent>
-              <xsl:apply-templates select="eCH0271:extent[@ili:ref]" mode="extent"/>
-            </mri:extent>
-          </xsl:when>
-          <!-- Priority 2: Direct EX_Extent object (commented reference case) -->
-          <xsl:when test="//eCH0271:EX_Extent[@ili:tid='extent-001']">
-            <xsl:variable name="extObj" select="//eCH0271:EX_Extent[@ili:tid='extent-001']"/>
-            <mri:extent>
-              <xsl:apply-templates select="$extObj" mode="extent"/>
-            </mri:extent>
-          </xsl:when>
-          <!-- Priority 3: Via association MD_DataIdentificationExtentExtent -->
-          <xsl:otherwise>
-            <xsl:variable name="extAssoc" select="/ili:transfer/ili:datasection/eCH0271:eCH0271/eCH0271:MD_DataIdentificationExtentExtent[@ili:from=$currentDataIdentId]"/>
-            <xsl:if test="$extAssoc">
-              <xsl:variable name="extRef" select="$extAssoc/@ili:to"/>
-              <xsl:variable name="extObj" select="key('byTID', $extRef)"/>
-              <xsl:if test="$extObj">
-                <mri:extent>
-                  <xsl:apply-templates select="$extObj" mode="extent"/>
-                </mri:extent>
-              </xsl:if>
-            </xsl:if>
-          </xsl:otherwise>
-        </xsl:choose>
-        
-        <!-- Resource Maintenance - Priority 1: direct ref, Priority 2: TID search -->
-        <xsl:choose>
-          <xsl:when test="eCH0271:resourceMaintenance[@ili:ref]">
-            <mri:resourceMaintenance>
-              <xsl:apply-templates select="eCH0271:resourceMaintenance[@ili:ref]" mode="resource-maintenance"/>
-            </mri:resourceMaintenance>
-          </xsl:when>
-          <!-- Direct TID search (commented reference case) -->
-          <xsl:when test="//eCH0271:CHE_MD_MaintenanceInformation[@ili:tid='maintenance-001']">
-            <mri:resourceMaintenance>
-              <xsl:apply-templates select="//eCH0271:CHE_MD_MaintenanceInformation[@ili:tid='maintenance-001']" mode="maintenance-object"/>
-            </mri:resourceMaintenance>
-          </xsl:when>
-        </xsl:choose>
-        
+        <!-- Extent -->
+        <xsl:for-each select="f271:related(., 'EX_Extent', 'extent', ('MD_DataIdentification', 'MD_Identification'))">
+          <mri:extent>
+            <xsl:apply-templates select="." mode="extent"/>
+          </mri:extent>
+        </xsl:for-each>
+
+        <!-- Resource Maintenance -->
+        <xsl:for-each select="f271:related(., 'CHE_MD_MaintenanceInformation', 'resourceMaintenance', 'MD_Identification')">
+          <mri:resourceMaintenance>
+            <xsl:apply-templates select="." mode="maintenance-object"/>
+          </mri:resourceMaintenance>
+        </xsl:for-each>
+
         <!-- Graphic Overview - Priority 1: direct ref (follow reference), Priority 2: TID search -->
         <xsl:choose>
           <xsl:when test="eCH0271:graphicOverview[@ili:ref]">

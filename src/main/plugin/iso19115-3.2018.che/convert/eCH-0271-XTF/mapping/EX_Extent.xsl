@@ -19,48 +19,19 @@
        ================================================================ -->
   <xsl:template match="eCH0271:EX_Extent" mode="extent">
     <gex:EX_Extent>
-      <!-- description from multilingual structure -->
+      <!-- description -->
       <xsl:if test="eCH0271:description">
         <gex:description>
-          <gco:CharacterString>
-            <xsl:choose>
-              <xsl:when test="eCH0271:description/Localisation_V2:MultilingualMText/Localisation_V2:LocalisedText">
-                <xsl:value-of select="normalize-space(
-                  eCH0271:description/Localisation_V2:MultilingualMText/Localisation_V2:LocalisedText[1]/
-                  Localisation_V2:LocalisedMText/Localisation_V2:Text[1]
-                )"/>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:value-of select="normalize-space(eCH0271:description)"/>
-              </xsl:otherwise>
-            </xsl:choose>
-          </gco:CharacterString>
+          <xsl:apply-templates select="eCH0271:description" mode="multilingual-text"/>
         </gex:description>
       </xsl:if>
 
-      <!-- geographicElement: Priority 1 - direct ref, Priority 2 - TID search -->
-      <xsl:choose>
-        <!-- Direct references (if uncommented) -->
-        <xsl:when test="eCH0271:geographicElement[@ili:ref]">
-          <xsl:for-each select="eCH0271:geographicElement[@ili:ref]">
-            <xsl:variable name="geoElemRef" select="@ili:ref"/>
-            <xsl:variable name="geoElem" select="key('byTID', $geoElemRef)"/>
-            <xsl:if test="$geoElem/self::eCH0271:EX_GeographicBoundingBox">
-              <gex:geographicElement>
-                <xsl:apply-templates select="$geoElem" mode="geographic-bbox"/>
-              </gex:geographicElement>
-            </xsl:if>
-          </xsl:for-each>
-        </xsl:when>
-        <!-- Direct TID search (commented reference case) -->
-        <xsl:otherwise>
-          <xsl:for-each select="//eCH0271:EX_GeographicBoundingBox">
-            <gex:geographicElement>
-              <xsl:apply-templates select="." mode="geographic-bbox"/>
-            </gex:geographicElement>
-          </xsl:for-each>
-        </xsl:otherwise>
-      </xsl:choose>
+      <!-- geographicElement -->
+      <xsl:for-each select="f271:related(., 'EX_GeographicBoundingBox', 'geographicElement', 'EX_Extent')">
+        <gex:geographicElement>
+          <xsl:apply-templates select="." mode="geographic-bbox"/>
+        </gex:geographicElement>
+      </xsl:for-each>
     </gex:EX_Extent>
   </xsl:template>
 
@@ -72,7 +43,9 @@
       <!-- extentTypeCode (optional) -->
       <xsl:if test="normalize-space(eCH0271:extentTypeCode) != ''">
         <gex:extentTypeCode>
-          <xsl:value-of select="normalize-space(eCH0271:extentTypeCode)"/>
+          <gco:Boolean>
+            <xsl:value-of select="normalize-space(eCH0271:extentTypeCode)"/>
+          </gco:Boolean>
         </gex:extentTypeCode>
       </xsl:if>
 
@@ -108,94 +81,6 @@
 
       <!-- northBoundLatitude -->
       <xsl:variable name="north" select="normalize-space(eCH0271:northBoundLatitude)"/>
-      <xsl:if test="$north != ''">
-        <gex:northBoundLatitude>
-          <gco:Decimal>
-            <xsl:value-of select="$north"/>
-          </gco:Decimal>
-        </gex:northBoundLatitude>
-      </xsl:if>
-    </gex:EX_GeographicBoundingBox>
-  </xsl:template>
-
-  <!-- ================================================================
-       Legacy named templates (preserved for backward compatibility)
-       ================================================================ -->
-  <!-- EX_Extent -->
-  <xsl:template name="f271:EX_Extent">
-    <xsl:param name="extRecord" as="element()"/>
-    <xsl:param name="basket"    as="element()"/>
-
-    <gex:EX_Extent>
-      <!-- description -->
-      <xsl:if test="normalize-space($extRecord/eCH0271:description) != ''">
-        <gex:description>
-          <gco:CharacterString>
-            <xsl:value-of select="normalize-space($extRecord/eCH0271:description)"/>
-          </gco:CharacterString>
-        </gex:description>
-      </xsl:if>
-
-      <!-- geographicElement (bounding box references) -->
-      <xsl:for-each select="$extRecord/eCH0271:geographicElement[@ili:ref]">
-        <xsl:variable name="geoElemRef" select="@ili:ref"/>
-        <xsl:variable name="geoElem" select="key('byTID', $geoElemRef)"/>
-
-        <xsl:if test="$geoElem/self::eCH0271:EX_GeographicBoundingBox">
-          <gex:geographicElement>
-            <xsl:call-template name="f271:EX_GeographicBoundingBox">
-              <xsl:with-param name="bboxRecord" select="$geoElem"/>
-            </xsl:call-template>
-          </gex:geographicElement>
-        </xsl:if>
-      </xsl:for-each>
-    </gex:EX_Extent>
-  </xsl:template>
-
-  <!-- EX_GeographicBoundingBox -->
-  <xsl:template name="f271:EX_GeographicBoundingBox">
-    <xsl:param name="bboxRecord" as="element()"/>
-
-    <gex:EX_GeographicBoundingBox>
-      <!-- extentTypeCode (optional) -->
-      <xsl:if test="normalize-space($bboxRecord/eCH0271:extentTypeCode) != ''">
-        <gex:extentTypeCode>
-          <xsl:value-of select="normalize-space($bboxRecord/eCH0271:extentTypeCode)"/>
-        </gex:extentTypeCode>
-      </xsl:if>
-
-      <!-- westBoundLongitude -->
-      <xsl:variable name="west" select="normalize-space($bboxRecord/eCH0271:westBoundLongitude)"/>
-      <xsl:if test="$west != ''">
-        <gex:westBoundLongitude>
-          <gco:Decimal>
-            <xsl:value-of select="$west"/>
-          </gco:Decimal>
-        </gex:westBoundLongitude>
-      </xsl:if>
-
-      <!-- eastBoundLongitude -->
-      <xsl:variable name="east" select="normalize-space($bboxRecord/eCH0271:eastBoundLongitude)"/>
-      <xsl:if test="$east != ''">
-        <gex:eastBoundLongitude>
-          <gco:Decimal>
-            <xsl:value-of select="$east"/>
-          </gco:Decimal>
-        </gex:eastBoundLongitude>
-      </xsl:if>
-
-      <!-- southBoundLatitude -->
-      <xsl:variable name="south" select="normalize-space($bboxRecord/eCH0271:southBoundLatitude)"/>
-      <xsl:if test="$south != ''">
-        <gex:southBoundLatitude>
-          <gco:Decimal>
-            <xsl:value-of select="$south"/>
-          </gco:Decimal>
-        </gex:southBoundLatitude>
-      </xsl:if>
-
-      <!-- northBoundLatitude -->
-      <xsl:variable name="north" select="normalize-space($bboxRecord/eCH0271:northBoundLatitude)"/>
       <xsl:if test="$north != ''">
         <gex:northBoundLatitude>
           <gco:Decimal>

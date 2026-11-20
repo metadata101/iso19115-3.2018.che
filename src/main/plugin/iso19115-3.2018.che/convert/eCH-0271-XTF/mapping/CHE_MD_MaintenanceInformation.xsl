@@ -25,16 +25,6 @@
        - Must be wrapped in che: container with isoType pointing to mmi:
        - All child elements use mmi: namespace prefix
        ================================================================ -->
-  <xsl:template match="eCH0271:resourceMaintenance[@ili:ref]" mode="resource-maintenance">
-    <xsl:variable name="maintId" select="@ili:ref"/>
-    <xsl:variable name="maintObj" select="key('byTID', $maintId)"/>
-
-    <xsl:if test="$maintObj/self::eCH0271:CHE_MD_MaintenanceInformation">
-      <xsl:apply-templates select="$maintObj" mode="maintenance-object"/>
-    </xsl:if>
-  </xsl:template>
-
-  <!-- Process CHE_MD_MaintenanceInformation object (used by both reference and TID modes) -->
   <xsl:template match="eCH0271:CHE_MD_MaintenanceInformation" mode="maintenance-object">
     <che:CHE_MD_MaintenanceInformation gco:isoType="mmi:MD_MaintenanceInformation">
       <!-- Maintenance and update frequency -->
@@ -52,15 +42,6 @@
         </mmi:maintenanceNote>
       </xsl:if>
     </che:CHE_MD_MaintenanceInformation>
-  </xsl:template>
-
-  <!-- Named template for direct TID-based processing (direct usage) -->
-  <xsl:template name="process-maintenance-by-tid">
-    <xsl:param name="tidValue" select="'maintenance-001'"/>
-    <xsl:variable name="maintObj" select="//eCH0271:CHE_MD_MaintenanceInformation[@ili:tid=$tidValue]"/>
-    <xsl:if test="$maintObj">
-      <xsl:apply-templates select="$maintObj" mode="maintenance-object"/>
-    </xsl:if>
   </xsl:template>
 
 </xsl:stylesheet>

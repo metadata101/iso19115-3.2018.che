@@ -68,6 +68,8 @@
   <xsl:include href="mapping/MD_Distribution.xsl"/>
   <!-- Geographic and temporal extent -->
   <xsl:include href="mapping/EX_Extent.xsl"/>
+  <!-- Resource lineage -->
+  <xsl:include href="mapping/LI_Lineage.xsl"/>
   <!-- Legislative information -->
   <xsl:include href="mapping/CHE_MD_Legislation.xsl"/>
   <!-- Utility templates -->
@@ -239,35 +241,6 @@
   </xsl:template>
 
   <!-- ================================================================
-       metadataStandard: CI_Citation → mdb:metadataStandard
-       ================================================================ -->
-  <xsl:template match="eCH0271:standardUsedBymetadataStandard[@ili:ref]" mode="metadata-standard">
-    <xsl:variable name="citId" select="@ili:ref"/>
-    <xsl:variable name="citObj" select="key('byTID', $citId)"/>
-
-    <xsl:if test="$citObj/self::eCH0271:CI_Citation">
-      <mdb:metadataStandard>
-        <cit:CI_Citation>
-          <xsl:if test="$citObj/eCH0271:title">
-            <cit:title>
-              <xsl:apply-templates select="$citObj/eCH0271:title" mode="multilingual-text"/>
-            </cit:title>
-          </xsl:if>
-          <xsl:if test="$citObj/eCH0271:date">
-            <cit:date>
-              <cit:CI_Date>
-                <cit:date>
-                  <xsl:value-of select="$citObj/eCH0271:date"/>
-                </cit:date>
-              </cit:CI_Date>
-            </cit:date>
-          </xsl:if>
-        </cit:CI_Citation>
-      </mdb:metadataStandard>
-    </xsl:if>
-  </xsl:template>
-
-  <!-- ================================================================
        referenceSystemInfo: MD_ReferenceSystem inline to mdb:referenceSystemInfo
        ================================================================ -->
   <xsl:template match="eCH0271:referenceSystemInfo[not(@ili:ref)]" mode="reference-system">
@@ -356,64 +329,6 @@
           <xsl:with-param name="basket" select="/ili:transfer/ili:datasection/eCH0271:eCH0271[1]"/>
         </xsl:call-template>
       </che:legislationInformation>
-    </xsl:if>
-  </xsl:template>
-
-  <!-- ================================================================
-       extent: resolve @ili:ref → EX_Extent
-       ================================================================ -->
-  <xsl:template match="eCH0271:extent[@ili:ref]" mode="extent">
-    <xsl:variable name="extentId" select="@ili:ref"/>
-    <xsl:variable name="extentObj" select="key('byTID', $extentId)"/>
-    
-    <xsl:if test="$extentObj/self::eCH0271:EX_Extent">
-      <gex:EX_Extent>
-        <xsl:if test="$extentObj/eCH0271:description">
-          <gex:description>
-            <gco:CharacterString>
-              <xsl:value-of select="normalize-space($extentObj/eCH0271:description)"/>
-            </gco:CharacterString>
-          </gex:description>
-        </xsl:if>
-        <xsl:if test="$extentObj/eCH0271:geographicElement[@ili:ref]">
-          <gex:geographicElement>
-            <xsl:apply-templates select="$extentObj/eCH0271:geographicElement[@ili:ref]" mode="geographic-element"/>
-          </gex:geographicElement>
-        </xsl:if>
-      </gex:EX_Extent>
-    </xsl:if>
-  </xsl:template>
-
-  <!-- ================================================================
-       geographic-element: resolve @ili:ref → EX_GeographicBoundingBox
-       ================================================================ -->
-  <xsl:template match="eCH0271:geographicElement[@ili:ref]" mode="geographic-element">
-    <xsl:variable name="bboxId" select="@ili:ref"/>
-    <xsl:variable name="bboxObj" select="key('byTID', $bboxId)"/>
-    
-    <xsl:if test="$bboxObj/self::eCH0271:EX_GeographicBoundingBox">
-      <gex:EX_GeographicBoundingBox>
-        <gex:westBoundLongitude>
-          <gco:Decimal>
-            <xsl:value-of select="normalize-space($bboxObj/eCH0271:westBoundLongitude)"/>
-          </gco:Decimal>
-        </gex:westBoundLongitude>
-        <gex:eastBoundLongitude>
-          <gco:Decimal>
-            <xsl:value-of select="normalize-space($bboxObj/eCH0271:eastBoundLongitude)"/>
-          </gco:Decimal>
-        </gex:eastBoundLongitude>
-        <gex:southBoundLatitude>
-          <gco:Decimal>
-            <xsl:value-of select="normalize-space($bboxObj/eCH0271:southBoundLatitude)"/>
-          </gco:Decimal>
-        </gex:southBoundLatitude>
-        <gex:northBoundLatitude>
-          <gco:Decimal>
-            <xsl:value-of select="normalize-space($bboxObj/eCH0271:northBoundLatitude)"/>
-          </gco:Decimal>
-        </gex:northBoundLatitude>
-      </gex:EX_GeographicBoundingBox>
     </xsl:if>
   </xsl:template>
 
