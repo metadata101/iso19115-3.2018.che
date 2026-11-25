@@ -371,6 +371,7 @@ iso19115-3.2018.che requires certain elements to be always present (even if empt
 | `graphicOverview[@ili:ref]` | `mri:graphicOverview` → `mrd:MD_BrowseGraphic` | Thumbnail URL |
 | `resourceConstraints[@ili:ref]` | `mri:resourceConstraints` → `mco:MD_LegalConstraints` | Legal/access constraints |
 | `defaultLocale` | `mri:defaultLocale` → `lan:PT_Locale` | Dataset language |
+| `subTopicCategory` | `che:subTopicCategory` → `che:CHE_MD_SubTopicCategoryCode` | `codeList="subTopicCategory"`, value in `@codeListValue`; one per occurrence |
 | `basicGeodata` | `che:basicGeodata` → `gco:Boolean` | Swiss flag |
 | `basicGeodataInformation` | `che:basicGeodataInformation` → `che:CHE_MD_BasicGeodataInformation` | Swiss extension |
 

@@ -86,13 +86,13 @@
         </xsl:for-each>
         
         <!-- Topic Category -->
-        <xsl:if test="eCH0271:topicCategory">
+        <xsl:for-each select="eCH0271:topicCategory[normalize-space()]">
           <mri:topicCategory>
             <mri:MD_TopicCategoryCode>
-              <xsl:value-of select="normalize-space(eCH0271:topicCategory)"/>
+              <xsl:value-of select="normalize-space()"/>
             </mri:MD_TopicCategoryCode>
           </mri:topicCategory>
-        </xsl:if>
+        </xsl:for-each>
         
         <!-- Extent -->
         <xsl:for-each select="f271:related(., 'EX_Extent', 'extent', ('MD_DataIdentification', 'MD_Identification'))">
@@ -136,6 +136,14 @@
           </mri:otherLocale>
         </xsl:for-each>
         
+        <!-- CHE: Sub Topic Categories -->
+        <xsl:for-each select="eCH0271:subTopicCategory[normalize-space()]">
+          <che:subTopicCategory>
+            <che:CHE_MD_SubTopicCategoryCode codeList="subTopicCategory"
+                                             codeListValue="{normalize-space()}"/>
+          </che:subTopicCategory>
+        </xsl:for-each>
+
         <!-- CHE: Basic Geodata flag -->
         <xsl:if test="eCH0271:basicGeodata">
           <che:basicGeodata>

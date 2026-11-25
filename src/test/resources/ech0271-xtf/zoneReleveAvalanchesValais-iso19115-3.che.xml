@@ -500,6 +500,9 @@
           </lan:characterEncoding>
         </lan:PT_Locale>
       </mri:otherLocale>
+      <che:subTopicCategory>
+        <che:CHE_MD_SubTopicCategoryCode codeList="subTopicCategory" codeListValue="geoscientificInformation_NaturalHazards" />
+      </che:subTopicCategory>
       <che:basicGeodata>
         <gco:Boolean>true</gco:Boolean>
       </che:basicGeodata>
