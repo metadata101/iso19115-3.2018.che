@@ -236,9 +236,7 @@
             <mrs:referenceSystemIdentifier>
               <mcc:RS_Identifier>
                 <mcc:code>
-                  <gco:CharacterString>
-                    <xsl:value-of select="f271:text($rsIdentObj/eCH0271:code)"/>
-                  </gco:CharacterString>
+                  <xsl:apply-templates select="$rsIdentObj/eCH0271:code" mode="multilingual-text"/>
                 </mcc:code>
               </mcc:RS_Identifier>
             </mrs:referenceSystemIdentifier>
@@ -265,9 +263,7 @@
               <mrs:referenceSystemIdentifier>
                 <mcc:MD_Identifier>
                   <mcc:code>
-                    <gco:CharacterString>
-                      <xsl:value-of select="f271:text($rsIdentObj/eCH0271:code)"/>
-                    </gco:CharacterString>
+                    <xsl:apply-templates select="$rsIdentObj/eCH0271:code" mode="multilingual-text"/>
                   </mcc:code>
                 </mcc:MD_Identifier>
               </mrs:referenceSystemIdentifier>

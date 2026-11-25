@@ -127,7 +127,7 @@
         <cit:CI_OnlineResource>
           <cit:linkage>
             <gco:CharacterString>
-              <xsl:value-of select="concat('http://geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/', f271:text(f271:related(., 'MD_Identifier', 'metadataIdentifier')[1]/eCH0271:code))"/>
+              <xsl:value-of select="concat('http://geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/', normalize-space(f271:related(., 'MD_Identifier', 'metadataIdentifier')/eCH0271:code//*[local-name() = 'Text']))"/>
             </gco:CharacterString>
           </cit:linkage>
           <cit:function>
@@ -235,9 +235,7 @@
             <mrs:referenceSystemIdentifier>
               <mcc:MD_Identifier>
                 <mcc:code>
-                  <gco:CharacterString>
-                    <xsl:value-of select="f271:text($rsIdentObj/eCH0271:code)"/>
-                  </gco:CharacterString>
+                  <xsl:apply-templates select="$rsIdentObj/eCH0271:code" mode="multilingual-text"/>
                 </mcc:code>
               </mcc:MD_Identifier>
             </mrs:referenceSystemIdentifier>

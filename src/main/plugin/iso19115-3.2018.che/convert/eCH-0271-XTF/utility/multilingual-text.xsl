@@ -82,22 +82,4 @@
     </gco:CharacterString>
   </xsl:template>
 
-  <!-- ================================================================
-       f271:text($elem)
-       Single string value of a possibly multilingual element: the text in
-       the metadata default language, else the first localised text, else
-       the element value. For values that are not translatable (codes,
-       identifiers) and must not become a PT_FreeText.
-       ================================================================ -->
-  <xsl:function name="f271:text" as="xs:string">
-    <xsl:param name="elem" as="element()?"/>
-    <xsl:variable name="entries"
-      select="$elem//*[*[local-name() = 'Language'] and *[local-name() = 'Text']]
-                      [normalize-space(*[local-name() = 'Text']) != '']"/>
-    <xsl:variable name="entry"
-      select="($entries[lower-case(normalize-space(*[local-name() = 'Language'])) = $mdDefaultLanguage],
-               $entries)[1]"/>
-    <xsl:sequence select="normalize-space(if ($entry) then $entry/*[local-name() = 'Text'] else $elem)"/>
-  </xsl:function>
-
 </xsl:stylesheet>

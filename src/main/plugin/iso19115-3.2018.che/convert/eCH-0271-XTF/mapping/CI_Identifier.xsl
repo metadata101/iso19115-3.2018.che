@@ -9,7 +9,6 @@
   xmlns:eCH0271="http://www.interlis.ch/xtf/2.4/eCH0271"
   xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0"
   xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0"
-  xmlns:f271="urn:ech0271-functions"
   xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
   exclude-result-prefixes="#all">
 
@@ -27,9 +26,7 @@
           <mcc:code>
             <xsl:choose>
               <xsl:when test="$idObj/eCH0271:code">
-                <gco:CharacterString>
-                  <xsl:value-of select="f271:text($idObj/eCH0271:code)"/>
-                </gco:CharacterString>
+                <xsl:apply-templates select="$idObj/eCH0271:code" mode="multilingual-text"/>
               </xsl:when>
               <xsl:otherwise>
                 <gco:CharacterString>
