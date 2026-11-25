@@ -1650,8 +1650,10 @@
       </eCH0271:descriptiveKeywordsMD_Identification>
       <eCH0271:CHE_MD_Appraisal_AAP ili:tid="appraisal_001">
         <eCH0271:durationOfConservation>45</eCH0271:durationOfConservation>
+        <eCH0271:commentOnDurationOfConservation>Bemerkung zur Aufbewahrungsdauer</eCH0271:commentOnDurationOfConservation>
         <eCH0271:appraisalOfArchivalValue>A</eCH0271:appraisalOfArchivalValue>
         <eCH0271:reasonForArchivingValue>evidenceOfBusinessPractice</eCH0271:reasonForArchivingValue>
+        <eCH0271:commentOnArchivalValue>Bemerkung zum Archivwert</eCH0271:commentOnArchivalValue>
         <eCH0271:CHE_MD_MaintenanceInformation ili:ref="maintenance_001"/>
       </eCH0271:CHE_MD_Appraisal_AAP>
       <eCH0271:CI_Citation ili:tid="citation_format_001">

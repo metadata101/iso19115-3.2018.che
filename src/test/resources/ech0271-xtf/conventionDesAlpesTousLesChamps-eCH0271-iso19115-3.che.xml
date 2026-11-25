@@ -538,12 +538,18 @@
               <che:durationOfConservation>
                 <gco:Integer>45</gco:Integer>
               </che:durationOfConservation>
+              <che:commentOnDurationOfConservation>
+                <gco:CharacterString>Bemerkung zur Aufbewahrungsdauer</gco:CharacterString>
+              </che:commentOnDurationOfConservation>
               <che:appraisalOfArchivalValue>
                 <che:CHE_AppraisalOfArchivalValueCode codeList="appraisalOfArchivalValueCode" codeListValue="A" />
               </che:appraisalOfArchivalValue>
               <che:reasonForArchivingValue>
                 <che:CHE_ReasonForArchivingValueCode codeList="reasonForArchivingValueCode" codeListValue="evidenceOfBusinessPractice" />
               </che:reasonForArchivingValue>
+              <che:commentOnArchivalValue>
+                <gco:CharacterString>Bemerkung zum Archivwert</gco:CharacterString>
+              </che:commentOnArchivalValue>
             </che:CHE_MD_Appraisal_AAP>
           </che:appraisal>
         </che:CHE_MD_MaintenanceInformation>
