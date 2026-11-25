@@ -251,6 +251,17 @@
               </lan:textGroup>
             </lan:PT_FreeText>
           </cit:title>
+          <cit:alternateTitle xsi:type="lan:PT_FreeText_PropertyType">
+            <gco:CharacterString>Zone de relevé (avalanches)</gco:CharacterString>
+            <lan:PT_FreeText>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#FR">Zone de relevé (avalanches)</lan:LocalisedCharacterString>
+              </lan:textGroup>
+              <lan:textGroup>
+                <lan:LocalisedCharacterString locale="#DE">Erhebungsgebiet (Lawinen)</lan:LocalisedCharacterString>
+              </lan:textGroup>
+            </lan:PT_FreeText>
+          </cit:alternateTitle>
           <cit:date>
             <cit:CI_Date>
               <cit:date>

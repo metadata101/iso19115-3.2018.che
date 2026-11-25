@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- eCH-0271-XTF → ISO 19115-3:2018 CHE: CI_Citation mapping
-     Handles citation (title + dates) transformation
+     Handles citation (title + alternateTitle + dates) transformation
      XSLT 2.0, Saxon HE 9.1+ compatible -->
 <xsl:stylesheet version="2.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -28,6 +28,11 @@
             <xsl:apply-templates select="$citationObj/eCH0271:title" mode="multilingual-text"/>
           </cit:title>
         </xsl:if>
+        <xsl:for-each select="$citationObj/eCH0271:alternateTitle">
+          <cit:alternateTitle>
+            <xsl:apply-templates select="." mode="multilingual-text"/>
+          </cit:alternateTitle>
+        </xsl:for-each>
         <xsl:call-template name="process-citation-dates">
           <xsl:with-param name="citationObj" select="$citationObj"/>
         </xsl:call-template>
@@ -45,6 +50,11 @@
           <xsl:apply-templates select="eCH0271:title" mode="multilingual-text"/>
         </cit:title>
       </xsl:if>
+      <xsl:for-each select="eCH0271:alternateTitle">
+        <cit:alternateTitle>
+          <xsl:apply-templates select="." mode="multilingual-text"/>
+        </cit:alternateTitle>
+      </xsl:for-each>
       <xsl:call-template name="process-citation-dates">
         <xsl:with-param name="citationObj" select="."/>
       </xsl:call-template>
