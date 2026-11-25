@@ -60,6 +60,21 @@ public class Ech0271XtfToIso19115cheConversionTest {
         transformToIsoCompareValidate("eCH0271_swissBoundaries3D");
     }
 
+    @Test
+    public void convertReleveAvalanchesValaisEch0271Xtf() throws Exception {
+        transformToIsoCompareValidate("zoneReleveAvalanchesValais");
+    }
+
+    @Test
+    public void convertZeckenModellEch0271Xtf() throws Exception {
+        transformToIsoCompareValidate("zeckenmodell");
+    }
+
+    @Test
+    public void convertSpritzasbestkatasterUsterEch0271Xtf() throws Exception {
+        transformToIsoCompareValidate("spritzasbestkatasterUster");
+    }
+
     private static void transformToIsoCompareValidate(String testFileRoot) throws Exception {
         Path xslFile = getResourceInsideSchema("convert/eCH-0271-XTF/fromECH0271-XTF.xsl");
         Path xmlFile = getResource("ech0271-xtf/" + testFileRoot + ".xtf");

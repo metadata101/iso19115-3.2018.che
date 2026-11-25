@@ -154,13 +154,13 @@
        ================================================================ -->
   <xsl:template match="eCH0271:CI_Address" mode="address">
     <cit:CI_Address>
-      <xsl:if test="eCH0271:deliveryPoint">
+      <xsl:for-each select="eCH0271:deliveryPoint">
         <cit:deliveryPoint>
           <gco:CharacterString>
-            <xsl:value-of select="normalize-space(eCH0271:deliveryPoint)"/>
+            <xsl:value-of select="normalize-space(.)"/>
           </gco:CharacterString>
         </cit:deliveryPoint>
-      </xsl:if>
+      </xsl:for-each>
       <xsl:if test="eCH0271:city">
         <cit:city>
           <gco:CharacterString>
@@ -184,13 +184,13 @@
           </gco:CharacterString>
         </cit:country>
       </xsl:if>
-      <xsl:if test="eCH0271:electronicMailAddress">
+      <xsl:for-each select="eCH0271:electronicMailAddress">
         <cit:electronicMailAddress>
           <gco:CharacterString>
-            <xsl:value-of select="normalize-space(eCH0271:electronicMailAddress)"/>
+            <xsl:value-of select="normalize-space(.)"/>
           </gco:CharacterString>
         </cit:electronicMailAddress>
-      </xsl:if>
+      </xsl:for-each>
     </cit:CI_Address>
   </xsl:template>
 
