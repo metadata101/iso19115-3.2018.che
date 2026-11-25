@@ -369,6 +369,7 @@ iso19115-3.2018.che requires certain elements to be always present (even if empt
 | `extent[@ili:ref]` | `mri:extent` → `gex:EX_Extent` | Geographic + temporal bounds |
 | `resourceMaintenance[@ili:ref]` | `mri:resourceMaintenance` → `mmi:MD_MaintenanceInformation` | Use mmi: namespace |
 | `graphicOverview[@ili:ref]` | `mri:graphicOverview` → `mrd:MD_BrowseGraphic` | Thumbnail URL |
+| `MD_Keywords` (via `descriptiveKeywordsMD_Identification`) | `mri:descriptiveKeywords` → `mri:MD_Keywords` | One per thesaurus (same identifier code = same thesaurus): keywords merged, `mri:thesaurusName` last; keywords without thesaurus (free text) kept as one `mri:descriptiveKeywords` each (`mapping/MD_Keywords.xsl`) |
 | `resourceConstraints[@ili:ref]` | `mri:resourceConstraints` → `mco:MD_LegalConstraints` | Legal/access constraints |
 | `defaultLocale` | `mri:defaultLocale` → `lan:PT_Locale` | Dataset language |
 | `subTopicCategory` | `che:subTopicCategory` → `che:CHE_MD_SubTopicCategoryCode` | `codeList="subTopicCategory"`, value in `@codeListValue`; one per occurrence |

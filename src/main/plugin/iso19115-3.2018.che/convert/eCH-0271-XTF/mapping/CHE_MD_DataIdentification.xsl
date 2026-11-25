@@ -115,6 +115,9 @@
           </mri:graphicOverview>
         </xsl:for-each>
 
+        <!-- Descriptive Keywords, grouped by thesaurus -->
+        <xsl:call-template name="descriptive-keywords"/>
+
         <!-- Resource Constraints -->
         <xsl:for-each select="f271:related(., 'CHE_MD_LegalConstraints', 'resourceConstraints', 'MD_Identification')">
           <mri:resourceConstraints>

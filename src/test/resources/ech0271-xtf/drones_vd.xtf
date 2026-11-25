@@ -297,6 +297,30 @@ Plus d'information sur les données fédérales : https://www.geocat.ch/geonetwo
         <eCH0271:descriptiveKeywords ili:ref="keywords_001"/>
         <eCH0271:MD_Identification ili:ref="identification_001"/>
       </eCH0271:descriptiveKeywordsMD_Identification>
+      <eCH0271:MD_Keywords ili:tid="keywords_002">
+        <eCH0271:keyword>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Rhin Supérieur</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Oberrhein</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>Upper Rhine</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:keyword>
+      </eCH0271:MD_Keywords>
+      <eCH0271:descriptiveKeywordsMD_Identification>
+        <eCH0271:descriptiveKeywords ili:ref="keywords_002"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:descriptiveKeywordsMD_Identification>
       <eCH0271:CHE_MD_LegalConstraints ili:tid="constraints_001">
         <eCH0271:useConstraints>otherRestrictions</eCH0271:useConstraints>
         <eCH0271:otherConstraints>

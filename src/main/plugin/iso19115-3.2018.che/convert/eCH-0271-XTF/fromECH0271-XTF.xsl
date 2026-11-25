@@ -65,6 +65,8 @@
   <!-- Resource maintenance (frequency codes, notes) -->
   <xsl:include href="mapping/CHE_MD_MaintenanceInformation.xsl"/>
   <xsl:include href="mapping/CHE_MD_Appraisal_AAP.xsl"/>
+  <!-- Descriptive keywords, grouped by thesaurus -->
+  <xsl:include href="mapping/MD_Keywords.xsl"/>
   <!-- Distribution and online resources -->
   <xsl:include href="mapping/MD_Distribution.xsl"/>
   <!-- Geographic and temporal extent -->
