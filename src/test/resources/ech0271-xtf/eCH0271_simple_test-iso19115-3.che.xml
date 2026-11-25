@@ -212,6 +212,9 @@
       <mri:topicCategory>
         <mri:MD_TopicCategoryCode>imageryBaseMapsEarthCover</mri:MD_TopicCategoryCode>
       </mri:topicCategory>
+      <mri:topicCategory>
+        <mri:MD_TopicCategoryCode>planningCadastre</mri:MD_TopicCategoryCode>
+      </mri:topicCategory>
       <mri:extent>
         <gex:EX_Extent>
           <gex:description>

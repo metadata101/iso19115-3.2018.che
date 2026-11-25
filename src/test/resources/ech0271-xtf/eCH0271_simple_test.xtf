@@ -116,6 +116,7 @@
         <eCH0271:status>completed</eCH0271:status>
         <eCH0271:spatialRepresentationType>vector</eCH0271:spatialRepresentationType>
         <eCH0271:topicCategory>imageryBaseMapsEarthCover</eCH0271:topicCategory>
+        <eCH0271:topicCategory>planningCadastre</eCH0271:topicCategory>
         <eCH0271:abstract>
           <Localisation_V2:MultilingualMText>
             <Localisation_V2:LocalisedText>
