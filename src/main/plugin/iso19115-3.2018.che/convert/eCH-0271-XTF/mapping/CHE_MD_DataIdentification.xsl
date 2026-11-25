@@ -25,12 +25,12 @@
   <xsl:template match="eCH0271:CHE_MD_DataIdentification" mode="data-id">
     <mdb:identificationInfo>
       <che:CHE_MD_DataIdentification gco:isoType="mri:MD_DataIdentification">
-        <!-- Citation (with date resolution) -->
-        <xsl:if test="eCH0271:citation[@ili:ref]">
+        <!-- Citation -->
+        <xsl:for-each select="f271:related(., 'CI_Citation', 'citation')">
           <mri:citation>
-            <xsl:apply-templates select="eCH0271:citation[@ili:ref]" mode="citation"/>
+            <xsl:apply-templates select="." mode="citation"/>
           </mri:citation>
-        </xsl:if>
+        </xsl:for-each>
         
         <!-- Abstract -->
         <xsl:if test="eCH0271:abstract">

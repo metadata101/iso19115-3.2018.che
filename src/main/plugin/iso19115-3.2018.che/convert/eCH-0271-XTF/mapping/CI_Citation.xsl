@@ -15,87 +15,37 @@
   exclude-result-prefixes="#all">
 
   <!-- ================================================================
-       citation: CI_Citation reference resolver
-       Resolves eCH0271:citation[@ili:ref] to CI_Citation object
-       ================================================================ -->
-  <xsl:template match="eCH0271:citation[@ili:ref]" mode="citation">
-    <xsl:variable name="citationId" select="@ili:ref"/>
-    <xsl:variable name="citationObj" select="key('byTID', $citationId)"/>
-    
-    <xsl:if test="$citationObj/self::eCH0271:CI_Citation">
-      <cit:CI_Citation>
-        <xsl:if test="$citationObj/eCH0271:title">
-          <cit:title>
-            <xsl:apply-templates select="$citationObj/eCH0271:title" mode="multilingual-text"/>
-          </cit:title>
-        </xsl:if>
-        <xsl:for-each select="$citationObj/eCH0271:alternateTitle">
-          <cit:alternateTitle>
-            <xsl:apply-templates select="." mode="multilingual-text"/>
-          </cit:alternateTitle>
-        </xsl:for-each>
-        <xsl:call-template name="process-citation-dates">
-          <xsl:with-param name="citationObj" select="$citationObj"/>
-        </xsl:call-template>
-        <xsl:call-template name="process-citation-identifiers">
-          <xsl:with-param name="citationObj" select="$citationObj"/>
-        </xsl:call-template>
-      </cit:CI_Citation>
-    </xsl:if>
-  </xsl:template>
-
-  <!-- ================================================================
-       citation: CI_Citation (direct - fallback for inline citations)
+       citation: CI_Citation
+       Callers select the citation object with f271:related, so nested
+       structures and ili:ref references are handled the same way.
        ================================================================ -->
   <xsl:template match="eCH0271:CI_Citation" mode="citation">
     <cit:CI_Citation>
-      <xsl:if test="eCH0271:title">
+      <xsl:for-each select="eCH0271:title">
         <cit:title>
-          <xsl:apply-templates select="eCH0271:title" mode="multilingual-text"/>
+          <xsl:apply-templates select="." mode="multilingual-text"/>
         </cit:title>
-      </xsl:if>
+      </xsl:for-each>
       <xsl:for-each select="eCH0271:alternateTitle">
         <cit:alternateTitle>
           <xsl:apply-templates select="." mode="multilingual-text"/>
         </cit:alternateTitle>
       </xsl:for-each>
-      <xsl:call-template name="process-citation-dates">
-        <xsl:with-param name="citationObj" select="."/>
-      </xsl:call-template>
-      <xsl:call-template name="process-citation-identifiers">
-        <xsl:with-param name="citationObj" select="."/>
-      </xsl:call-template>
+      <xsl:for-each select="f271:related(., 'CI_Date', 'date')">
+        <cit:date>
+          <xsl:apply-templates select="." mode="date"/>
+        </cit:date>
+      </xsl:for-each>
+      <xsl:for-each select="f271:related(., 'MD_Identifier', 'identifier')[eCH0271:code]">
+        <cit:identifier>
+          <mcc:MD_Identifier>
+            <mcc:code>
+              <xsl:apply-templates select="eCH0271:code" mode="multilingual-text"/>
+            </mcc:code>
+          </mcc:MD_Identifier>
+        </cit:identifier>
+      </xsl:for-each>
     </cit:CI_Citation>
-  </xsl:template>
-
-  <!-- ================================================================
-       Citation dates: CI_Date linked to the citation through its 'date'
-       role (nested structure, reference or association)
-       ================================================================ -->
-  <xsl:template name="process-citation-dates">
-    <xsl:param name="citationObj" as="element()"/>
-    <xsl:for-each select="f271:related($citationObj, 'CI_Date', 'date')">
-      <cit:date>
-        <xsl:apply-templates select="." mode="date"/>
-      </cit:date>
-    </xsl:for-each>
-  </xsl:template>
-
-  <!-- ================================================================
-       Citation identifiers: MD_Identifier linked to the citation through
-       its 'identifier' role (e.g. CI_Citationidentifier association)
-       ================================================================ -->
-  <xsl:template name="process-citation-identifiers">
-    <xsl:param name="citationObj" as="element()"/>
-    <xsl:for-each select="f271:related($citationObj, 'MD_Identifier', 'identifier')[eCH0271:code]">
-      <cit:identifier>
-        <mcc:MD_Identifier>
-          <mcc:code>
-            <xsl:apply-templates select="eCH0271:code" mode="multilingual-text"/>
-          </mcc:code>
-        </mcc:MD_Identifier>
-      </cit:identifier>
-    </xsl:for-each>
   </xsl:template>
 
 </xsl:stylesheet>
