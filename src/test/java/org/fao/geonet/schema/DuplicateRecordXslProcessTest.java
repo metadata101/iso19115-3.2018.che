@@ -27,7 +27,7 @@ import org.fao.geonet.schemas.XslProcessTest;
 import org.fao.geonet.utils.Xml;
 import static org.hamcrest.CoreMatchers.equalTo;
 import org.jdom.Element;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
 import org.junit.Test;
 
 public class DuplicateRecordXslProcessTest extends XslProcessTest {

@@ -1,0 +1,1144 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ili:transfer xmlns:Localisation_V2="http://www.interlis.ch/xtf/2.4/Localisation_V2" xmlns:eCH0271="http://www.interlis.ch/xtf/2.4/eCH0271" xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS">
+  <ili:headersection>
+    <ili:models>
+      <ili:model>eCH0271</ili:model>
+    </ili:models>
+    <ili:sender>ISO19115-3 XML to XTF conversion</ili:sender>
+    <ili:comment>From iso19115-3.2018.che to INTERLIS 2.4 eCH-0271.</ili:comment>
+  </ili:headersection>
+  <ili:datasection>
+    <eCH0271:eCH0271 ili:bid="eCH0271.eCH0271">
+      <eCH0271:CHE_MD_Metadata ili:tid="metadata_main_001">
+        <eCH0271:defaultLocale>
+          <eCH0271:PT_Locale>
+            <eCH0271:language>fr</eCH0271:language>
+            <eCH0271:characterEncoding>utf8</eCH0271:characterEncoding>
+          </eCH0271:PT_Locale>
+        </eCH0271:defaultLocale>
+        <eCH0271:otherLocale>
+          <eCH0271:PT_Locale>
+            <eCH0271:language>it</eCH0271:language>
+            <eCH0271:characterEncoding>utf8</eCH0271:characterEncoding>
+          </eCH0271:PT_Locale>
+          <eCH0271:PT_Locale>
+            <eCH0271:language>en</eCH0271:language>
+            <eCH0271:characterEncoding>utf8</eCH0271:characterEncoding>
+          </eCH0271:PT_Locale>
+          <eCH0271:PT_Locale>
+            <eCH0271:language>rm</eCH0271:language>
+            <eCH0271:characterEncoding>utf8</eCH0271:characterEncoding>
+          </eCH0271:PT_Locale>
+          <eCH0271:PT_Locale>
+            <eCH0271:language>de</eCH0271:language>
+            <eCH0271:characterEncoding>utf8</eCH0271:characterEncoding>
+          </eCH0271:PT_Locale>
+        </eCH0271:otherLocale>
+        <eCH0271:dateInfo>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2020-08-28T09:10:57.0</eCH0271:date>
+            <eCH0271:dateType>creation</eCH0271:dateType>
+          </eCH0271:CI_Date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2026-11-12T07:16:36.267</eCH0271:date>
+            <eCH0271:dateType>revision</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:dateInfo>
+        <eCH0271:metadataIdentifier ili:ref="metadataIdentifier_001"/>
+      </eCH0271:CHE_MD_Metadata>
+      <eCH0271:MD_Identifier ili:tid="metadataIdentifier_001">
+        <eCH0271:code>
+          <Localisation_V2:MultilingualText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>593073e5-a96d-4758-8d4d-237b240bf9fd</Localisation_V2:Text>
+              </Localisation_V2:LocalisedText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualText>
+        </eCH0271:code>
+      </eCH0271:MD_Identifier>
+      <eCH0271:MD_MetadataScope ili:tid="metadataScope_001">
+        <eCH0271:resourceScope>dataset</eCH0271:resourceScope>
+      </eCH0271:MD_MetadataScope>
+      <eCH0271:MD_MetadatametadataScope>
+        <eCH0271:metadataScope ili:ref="metadataScope_001"/>
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+      </eCH0271:MD_MetadatametadataScope>
+      <eCH0271:CI_Responsibility ili:tid="responsibility_001">
+        <eCH0271:role>distributor</eCH0271:role>
+      </eCH0271:CI_Responsibility>
+      <eCH0271:CHE_CI_Organisation ili:tid="organisation_001">
+        <eCH0271:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Canton du Valais - Service de la géoinformation</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>Kanton Wallis - Dienststelle für Geoinformation</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Kanton Wallis - Dienststelle für Geoinformation</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>Canton du Valais - Service de la géoinformation</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>rm</Localisation_V2:Language>
+                <Localisation_V2:Text>Kanton Wallis - Dienststelle für Geoinformation</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:name>
+        <eCH0271:organisationAcronym>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>SGI</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>DGI</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>DGI</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>rm</Localisation_V2:Language>
+                <Localisation_V2:Text>DGI</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>SGI</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:organisationAcronym>
+      </eCH0271:CHE_CI_Organisation>
+      <eCH0271:CI_Responsibilityparty>
+        <eCH0271:party ili:ref="organisation_001"/>
+        <eCH0271:CI_Responsibility ili:ref="responsibility_001"/>
+      </eCH0271:CI_Responsibilityparty>
+      <eCH0271:CI_Contact ili:tid="contact_001">
+        <eCH0271:CI_ResponsibleParty ili:ref="organisation_001"/>
+      </eCH0271:CI_Contact>
+      <eCH0271:CI_Telephone ili:tid="telephone_001">
+        <eCH0271:number>+41 27 606 28 00</eCH0271:number>
+        <eCH0271:numberType>voice</eCH0271:numberType>
+        <eCH0271:CI_ResponsibleParty ili:ref="contact_001"/>
+      </eCH0271:CI_Telephone>
+      <eCH0271:CI_Address ili:tid="address_001">
+        <eCH0271:deliveryPoint>Service de la géoinformation</eCH0271:deliveryPoint>
+        <eCH0271:deliveryPoint>CC GEO</eCH0271:deliveryPoint>
+        <eCH0271:deliveryPoint>Rue du Scex 4</eCH0271:deliveryPoint>
+        <eCH0271:postalCode>1950</eCH0271:postalCode>
+        <eCH0271:city>Sion</eCH0271:city>
+        <eCH0271:country>CHE</eCH0271:country>
+        <eCH0271:electronicMailAddress>sitvs@admin.vs.ch</eCH0271:electronicMailAddress>
+        <eCH0271:CI_ResponsibleParty ili:ref="contact_001"/>
+      </eCH0271:CI_Address>
+      <eCH0271:CI_OnlineResource ili:tid="online_resource_001">
+        <eCH0271:protocol>WWW:LINK</eCH0271:protocol>
+        <eCH0271:linkage>
+          <Localisation_V2:MultilingualUri>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>https://geo.vs.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>https://geo.vs.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>https://geo.vs.ch/de</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>https://geo.vs.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>rm</Localisation_V2:Language>
+                <Localisation_V2:Text>https://geo.vs.ch/de</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualUri>
+        </eCH0271:linkage>
+        <eCH0271:CI_Contact ili:ref="contact_001"/>
+      </eCH0271:CI_OnlineResource>
+      <eCH0271:MD_BrowseGraphic ili:tid="graphic_001">
+        <eCH0271:fileName>https://www.geocat.ch/geonetwork/images/harvesting/3c656d53-970e-410b-b91a-712c953a08b5.png</eCH0271:fileName>
+        <eCH0271:CI_Organisation ili:ref="organisation_001"/>
+      </eCH0271:MD_BrowseGraphic>
+      <eCH0271:MD_Metadatacontact>
+        <eCH0271:contact ili:ref="responsibility_001"/>
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+      </eCH0271:MD_Metadatacontact>
+      <eCH0271:CI_Citation ili:tid="citation_001">
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>eCH-0271</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>eCH-0271</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+        <eCH0271:standardUsedBy ili:ref="metadata_main_001"/>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_ReferenceSystem ili:tid="referenceSystem_001">
+        <eCH0271:referenceSystemIdentifier ili:ref="referenceSystemIdentifier_001"/>
+      </eCH0271:MD_ReferenceSystem>
+      <eCH0271:MD_Identifier ili:tid="referenceSystemIdentifier_001">
+        <eCH0271:code>
+          <Localisation_V2:MultilingualText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>CH1903+_LV95</Localisation_V2:Text>
+              </Localisation_V2:LocalisedText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualText>
+        </eCH0271:code>
+        <eCH0271:codeSpace>EPSG:2056</eCH0271:codeSpace>
+      </eCH0271:MD_Identifier>
+      <eCH0271:referenceSystemInfoMD_Metadata>
+        <eCH0271:referenceSystemInfo ili:ref="referenceSystem_001"/>
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+      </eCH0271:referenceSystemInfoMD_Metadata>
+      <eCH0271:CHE_MD_DataIdentification ili:tid="identification_001">
+        <eCH0271:status>onGoing</eCH0271:status>
+        <eCH0271:spatialRepresentationType>vector</eCH0271:spatialRepresentationType>
+        <eCH0271:topicCategory>geoscientificInformation</eCH0271:topicCategory>
+        <eCH0271:abstract>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Inventaire géographique des zones pour lesquelles le danger d'avalanche a été évalué.</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Geographische Bestandsaufnahme von Gebieten, für die Lawinengefahr festgestellt wurde.</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:abstract>
+        <eCH0271:otherLocale>
+          <eCH0271:PT_Locale>
+            <eCH0271:language>fr</eCH0271:language>
+            <eCH0271:characterEncoding>utf8</eCH0271:characterEncoding>
+          </eCH0271:PT_Locale>
+        </eCH0271:otherLocale>
+        <eCH0271:subTopicCategory>geoscientificInformation_NaturalHazards</eCH0271:subTopicCategory>
+        <eCH0271:basicGeodata>true</eCH0271:basicGeodata>
+        <eCH0271:basicGeodataInformation>
+          <eCH0271:CHE_MD_BasicGeodataInformation>
+            <eCH0271:basicGeodataID>166&gt;A.1</eCH0271:basicGeodataID>
+            <eCH0271:basicGeodataLegalLevel>cantonal</eCH0271:basicGeodataLegalLevel>
+          </eCH0271:CHE_MD_BasicGeodataInformation>
+        </eCH0271:basicGeodataInformation>
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+        <eCH0271:citation ili:ref="dataset_citation_001"/>
+      </eCH0271:CHE_MD_DataIdentification>
+      <eCH0271:CI_Citation ili:tid="dataset_citation_001">
+        <eCH0271:date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2018-01-01T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>creation</eCH0271:dateType>
+          </eCH0271:CI_Date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2024-10-14T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>revision</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:date>
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Zone de relevé (avalanches)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Erhebungsgebiet (Lawinen)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+        <eCH0271:alternateTitle>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Zone de relevé (avalanches)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Erhebungsgebiet (Lawinen)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:alternateTitle>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_Identifier ili:tid="citation_identifier_001">
+        <eCH0271:code>
+          <Localisation_V2:MultilingualText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>426</Localisation_V2:Text>
+              </Localisation_V2:LocalisedText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualText>
+        </eCH0271:code>
+      </eCH0271:MD_Identifier>
+      <eCH0271:CI_Citationidentifier>
+        <eCH0271:identifier ili:ref="citation_identifier_001"/>
+        <eCH0271:CI_Citation ili:ref="dataset_citation_001"/>
+      </eCH0271:CI_Citationidentifier>
+      <eCH0271:CI_Responsibility ili:tid="responsibility_002">
+        <eCH0271:role>custodian</eCH0271:role>
+      </eCH0271:CI_Responsibility>
+      <eCH0271:CHE_CI_Organisation ili:tid="organisation_002">
+        <eCH0271:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Canton du Valais - Service des dangers naturels</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Kanton Wallis - Dienststelle Naturgefahren</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:name>
+        <eCH0271:organisationAcronym>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>SDANA</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>DNAGE</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:organisationAcronym>
+      </eCH0271:CHE_CI_Organisation>
+      <eCH0271:CI_Responsibilityparty>
+        <eCH0271:party ili:ref="organisation_002"/>
+        <eCH0271:CI_Responsibility ili:ref="responsibility_002"/>
+      </eCH0271:CI_Responsibilityparty>
+      <eCH0271:CI_Contact ili:tid="contact_002">
+        <eCH0271:CI_ResponsibleParty ili:ref="organisation_002"/>
+      </eCH0271:CI_Contact>
+      <eCH0271:CI_Telephone ili:tid="telephone_002">
+        <eCH0271:number>+41 27 606 35 20</eCH0271:number>
+        <eCH0271:numberType>voice</eCH0271:numberType>
+        <eCH0271:CI_ResponsibleParty ili:ref="contact_002"/>
+      </eCH0271:CI_Telephone>
+      <eCH0271:CI_Address ili:tid="address_002">
+        <eCH0271:deliveryPoint>Service des dangers naturels</eCH0271:deliveryPoint>
+        <eCH0271:deliveryPoint>Dangers naturels</eCH0271:deliveryPoint>
+        <eCH0271:deliveryPoint>Rue des Creusets 5</eCH0271:deliveryPoint>
+        <eCH0271:postalCode>1950</eCH0271:postalCode>
+        <eCH0271:city>Sion</eCH0271:city>
+        <eCH0271:country>CHE</eCH0271:country>
+        <eCH0271:electronicMailAddress>sdana@admin.vs.ch</eCH0271:electronicMailAddress>
+        <eCH0271:electronicMailAddress>toto@admin.vs.ch</eCH0271:electronicMailAddress>
+        <eCH0271:CI_ResponsibleParty ili:ref="contact_002"/>
+      </eCH0271:CI_Address>
+      <eCH0271:CI_OnlineResource ili:tid="online_resource_002">
+        <eCH0271:protocol>WWW:LINK</eCH0271:protocol>
+        <eCH0271:linkage>
+          <Localisation_V2:MultilingualUri>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>https://www.vs.ch/sdana</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>https://www.vs.ch/de/web/sdana/</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualUri>
+        </eCH0271:linkage>
+        <eCH0271:CI_Contact ili:ref="contact_002"/>
+      </eCH0271:CI_OnlineResource>
+      <eCH0271:MD_BrowseGraphic ili:tid="graphic_002">
+        <eCH0271:fileName>https://www.geocat.ch/geonetwork/images/harvesting/3c656d53-970e-410b-b91a-712c953a08b5.png</eCH0271:fileName>
+        <eCH0271:CI_Organisation ili:ref="organisation_002"/>
+      </eCH0271:MD_BrowseGraphic>
+      <eCH0271:MD_IdentificationpointOfContact>
+        <eCH0271:pointOfContact ili:ref="responsibility_002"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:MD_IdentificationpointOfContact>
+      <eCH0271:MD_Resolution ili:tid="resolution_001">
+        <eCH0271:equivalentScale ili:ref="representative_fraction_001"/>
+        <eCH0271:MD_DataIdentification ili:ref="identification_001"/>
+      </eCH0271:MD_Resolution>
+      <eCH0271:MD_RepresentativeFraction ili:tid="representative_fraction_001">
+        <eCH0271:denominator>10000</eCH0271:denominator>
+      </eCH0271:MD_RepresentativeFraction>
+      <eCH0271:EX_Extent ili:tid="extent_001">
+        <eCH0271:description>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Canton du Valais (VS)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>Canton of Valais (VS)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Kanton Wallis (VS)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>Cantone Vallese (VS)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>rm</Localisation_V2:Language>
+                <Localisation_V2:Text>Chantun Vallais (VS)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:description>
+        <eCH0271:MD_DataIdentification ili:ref="identification_001"/>
+      </eCH0271:EX_Extent>
+      <eCH0271:EX_GeographicBoundingBox ili:tid="bbox_001">
+        <eCH0271:northBoundLatitude>46.6553</eCH0271:northBoundLatitude>
+        <eCH0271:southBoundLatitude>45.8562</eCH0271:southBoundLatitude>
+        <eCH0271:eastBoundLongitude>8.4777</eCH0271:eastBoundLongitude>
+        <eCH0271:westBoundLongitude>6.7690</eCH0271:westBoundLongitude>
+      </eCH0271:EX_GeographicBoundingBox>
+      <eCH0271:EX_ExtentgeographicElement>
+        <eCH0271:EX_Extent ili:ref="extent_001"/>
+        <eCH0271:geographicElement ili:ref="bbox_001"/>
+      </eCH0271:EX_ExtentgeographicElement>
+      <eCH0271:CHE_MD_MaintenanceInformation ili:tid="maintenance_001">
+        <eCH0271:maintenanceAndUpdateFrequency>asNeeded</eCH0271:maintenanceAndUpdateFrequency>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:CHE_MD_MaintenanceInformation>
+      <eCH0271:MD_Format ili:tid="format_001">
+        <eCH0271:formatSpecificationCitation ili:ref="format_citation_001"/>
+      </eCH0271:MD_Format>
+      <eCH0271:CI_Citation ili:tid="format_citation_001">
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>ESRI Enterprise Geodatabase</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+      </eCH0271:CI_Citation>
+      <eCH0271:resourceFormatMD_Identification>
+        <eCH0271:resourceFormat ili:ref="format_001"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:resourceFormatMD_Identification>
+      <eCH0271:MD_BrowseGraphic ili:tid="graphic_003">
+        <eCH0271:fileName>https://www.geocat.ch/geonetwork/srv/api/records/593073e5-a96d-4758-8d4d-237b240bf9fd/attachments/Zone_releve_AVA.png</eCH0271:fileName>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:MD_BrowseGraphic>
+      <eCH0271:MD_Keywords ili:tid="keywords_001">
+        <eCH0271:type>theme</eCH0271:type>
+        <eCH0271:keyword>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>catastrophes, accidents, risques</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Katastrophen, Unfälle, Risiken</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>disastri, incidenti, rischi</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>disasters, accidents, risk</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:keyword>
+        <eCH0271:thesaurusName ili:ref="citation_002"/>
+      </eCH0271:MD_Keywords>
+      <eCH0271:CI_Citation ili:tid="citation_002">
+        <eCH0271:date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2009-09-22T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>publication</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:date>
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>GEMET themes</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_Identifier ili:tid="citation_identifier_002">
+        <eCH0271:code>
+          <Localisation_V2:MultilingualText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>geonetwork.thesaurus.external.theme.gemet-theme</Localisation_V2:Text>
+              </Localisation_V2:LocalisedText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualText>
+        </eCH0271:code>
+      </eCH0271:MD_Identifier>
+      <eCH0271:CI_Citationidentifier>
+        <eCH0271:identifier ili:ref="citation_identifier_002"/>
+        <eCH0271:CI_Citation ili:ref="citation_002"/>
+      </eCH0271:CI_Citationidentifier>
+      <eCH0271:descriptiveKeywordsMD_Identification>
+        <eCH0271:descriptiveKeywords ili:ref="keywords_001"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:descriptiveKeywordsMD_Identification>
+      <eCH0271:MD_Keywords ili:tid="keywords_002">
+        <eCH0271:type>theme</eCH0271:type>
+        <eCH0271:keyword>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Zones à risque naturel</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Gebiete mit naturbedingten Risiken</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>Zone a rischio naturale</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>Natural risk zones</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:keyword>
+        <eCH0271:thesaurusName ili:ref="citation_003"/>
+      </eCH0271:MD_Keywords>
+      <eCH0271:CI_Citation ili:tid="citation_003">
+        <eCH0271:date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2008-06-01T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>publication</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:date>
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>GEMET - INSPIRE themes, version 1.0</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_Identifier ili:tid="citation_identifier_003">
+        <eCH0271:code>
+          <Localisation_V2:MultilingualText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>geonetwork.thesaurus.external.theme.httpinspireeceuropaeutheme-theme</Localisation_V2:Text>
+              </Localisation_V2:LocalisedText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualText>
+        </eCH0271:code>
+      </eCH0271:MD_Identifier>
+      <eCH0271:CI_Citationidentifier>
+        <eCH0271:identifier ili:ref="citation_identifier_003"/>
+        <eCH0271:CI_Citation ili:ref="citation_003"/>
+      </eCH0271:CI_Citationidentifier>
+      <eCH0271:descriptiveKeywordsMD_Identification>
+        <eCH0271:descriptiveKeywords ili:ref="keywords_002"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:descriptiveKeywordsMD_Identification>
+      <eCH0271:MD_Keywords ili:tid="keywords_003">
+        <eCH0271:type>theme</eCH0271:type>
+        <eCH0271:keyword>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>danger</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Gefahren</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>pericoli</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>hazard</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:keyword>
+        <eCH0271:thesaurusName ili:ref="citation_004"/>
+      </eCH0271:MD_Keywords>
+      <eCH0271:CI_Citation ili:tid="citation_004">
+        <eCH0271:date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2018-08-16T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>publication</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:date>
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>GEMET</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_Identifier ili:tid="citation_identifier_004">
+        <eCH0271:code>
+          <Localisation_V2:MultilingualText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>geonetwork.thesaurus.external.theme.gemet</Localisation_V2:Text>
+              </Localisation_V2:LocalisedText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualText>
+        </eCH0271:code>
+      </eCH0271:MD_Identifier>
+      <eCH0271:CI_Citationidentifier>
+        <eCH0271:identifier ili:ref="citation_identifier_004"/>
+        <eCH0271:CI_Citation ili:ref="citation_004"/>
+      </eCH0271:CI_Citationidentifier>
+      <eCH0271:descriptiveKeywordsMD_Identification>
+        <eCH0271:descriptiveKeywords ili:ref="keywords_003"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:descriptiveKeywordsMD_Identification>
+      <eCH0271:MD_Keywords ili:tid="keywords_004">
+        <eCH0271:type>theme</eCH0271:type>
+        <eCH0271:keyword>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>avalanche</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Lawine</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>valanga</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>avalanche</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:keyword>
+        <eCH0271:thesaurusName ili:ref="citation_005"/>
+      </eCH0271:MD_Keywords>
+      <eCH0271:CI_Citation ili:tid="citation_005">
+        <eCH0271:date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2018-08-16T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>publication</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:date>
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>GEMET</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_Identifier ili:tid="citation_identifier_005">
+        <eCH0271:code>
+          <Localisation_V2:MultilingualText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>geonetwork.thesaurus.external.theme.gemet</Localisation_V2:Text>
+              </Localisation_V2:LocalisedText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualText>
+        </eCH0271:code>
+      </eCH0271:MD_Identifier>
+      <eCH0271:CI_Citationidentifier>
+        <eCH0271:identifier ili:ref="citation_identifier_005"/>
+        <eCH0271:CI_Citation ili:ref="citation_005"/>
+      </eCH0271:CI_Citationidentifier>
+      <eCH0271:descriptiveKeywordsMD_Identification>
+        <eCH0271:descriptiveKeywords ili:ref="keywords_004"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:descriptiveKeywordsMD_Identification>
+      <eCH0271:MD_Keywords ili:tid="keywords_005">
+        <eCH0271:type>theme</eCH0271:type>
+        <eCH0271:keyword>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>cartographie (cartes)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Kartierung</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>mappatura</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>mapping</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:keyword>
+        <eCH0271:thesaurusName ili:ref="citation_006"/>
+      </eCH0271:MD_Keywords>
+      <eCH0271:CI_Citation ili:tid="citation_006">
+        <eCH0271:date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2018-08-16T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>publication</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:date>
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>GEMET</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_Identifier ili:tid="citation_identifier_006">
+        <eCH0271:code>
+          <Localisation_V2:MultilingualText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>geonetwork.thesaurus.external.theme.gemet</Localisation_V2:Text>
+              </Localisation_V2:LocalisedText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualText>
+        </eCH0271:code>
+      </eCH0271:MD_Identifier>
+      <eCH0271:CI_Citationidentifier>
+        <eCH0271:identifier ili:ref="citation_identifier_006"/>
+        <eCH0271:CI_Citation ili:ref="citation_006"/>
+      </eCH0271:CI_Citationidentifier>
+      <eCH0271:descriptiveKeywordsMD_Identification>
+        <eCH0271:descriptiveKeywords ili:ref="keywords_005"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:descriptiveKeywordsMD_Identification>
+      <eCH0271:MD_Keywords ili:tid="keywords_006">
+        <eCH0271:type>theme</eCH0271:type>
+        <eCH0271:keyword>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>géodonnées de base</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Geobasisdaten</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>geodati di base</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>official geodata</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:keyword>
+        <eCH0271:thesaurusName ili:ref="citation_007"/>
+      </eCH0271:MD_Keywords>
+      <eCH0271:CI_Citation ili:tid="citation_007">
+        <eCH0271:date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2026-10-22T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>publication</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:date>
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>geocat.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_Identifier ili:tid="citation_identifier_007">
+        <eCH0271:code>
+          <Localisation_V2:MultilingualText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>geonetwork.thesaurus.local.theme.geocat.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualText>
+        </eCH0271:code>
+      </eCH0271:MD_Identifier>
+      <eCH0271:CI_Citationidentifier>
+        <eCH0271:identifier ili:ref="citation_identifier_007"/>
+        <eCH0271:CI_Citation ili:ref="citation_007"/>
+      </eCH0271:CI_Citationidentifier>
+      <eCH0271:descriptiveKeywordsMD_Identification>
+        <eCH0271:descriptiveKeywords ili:ref="keywords_006"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:descriptiveKeywordsMD_Identification>
+      <eCH0271:MD_Constraints ili:tid="constraints_001">
+        <eCH0271:useLimitation>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Il n'est pas possible de garantir l'exactitude, l'exhaustivité, la fiabilité et l'actualité des données. Toutes les données sont par conséquent dépourvues de foi publique.</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Die Richtigkeit, Vollständigkeit, Zuverlässigkeit und Aktualität der Daten kann nicht garantiert werden. Die Daten sind somit nicht rechtsverbindlich.</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:useLimitation>
+      </eCH0271:MD_Constraints>
+      <eCH0271:resourceConstraintsMD_Identification>
+        <eCH0271:resourceConstraints ili:ref="constraints_001"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:resourceConstraintsMD_Identification>
+      <eCH0271:CHE_MD_LegalConstraints ili:tid="constraints_002">
+        <eCH0271:accessConstraints>otherRestrictions</eCH0271:accessConstraints>
+        <eCH0271:otherConstraints>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Géodonnées accessibles au public (niveau A selon l'OGéo)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Die Geodaten sind öffentlich zugänglich. (Zugangsberechtigungsstufe A nach KGeoIG)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Les conditions générales d'utilisation des géodonnées du Canton du Valais font foi (https://www.vs.ch/fr/web/guest/information-legale).</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Es gelten die Nutzungsbedingungen für Geodaten des Kantons Wallis (https://www.vs.ch/de/web/guest/rechtliches).</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:otherConstraints>
+      </eCH0271:CHE_MD_LegalConstraints>
+      <eCH0271:resourceConstraintsMD_Identification>
+        <eCH0271:resourceConstraints ili:ref="constraints_002"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:resourceConstraintsMD_Identification>
+      <eCH0271:MD_AssociatedResource ili:tid="associated_resource_001">
+        <eCH0271:associationType>crossReference</eCH0271:associationType>
+      </eCH0271:MD_AssociatedResource>
+      <eCH0271:CI_Citation ili:tid="associated_citation_001">
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>fbfbf191-c568-49fb-91d5-6a38b142dd20</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+        <eCH0271:MD_AssociatedResource ili:ref="associated_resource_001"/>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_Identifier ili:tid="citation_identifier_008">
+        <eCH0271:code>
+          <Localisation_V2:MultilingualText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>fbfbf191-c568-49fb-91d5-6a38b142dd20</Localisation_V2:Text>
+              </Localisation_V2:LocalisedText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualText>
+        </eCH0271:code>
+      </eCH0271:MD_Identifier>
+      <eCH0271:CI_Citationidentifier>
+        <eCH0271:identifier ili:ref="citation_identifier_008"/>
+        <eCH0271:CI_Citation ili:ref="associated_citation_001"/>
+      </eCH0271:CI_Citationidentifier>
+      <eCH0271:associatedResource_MD_Identification>
+        <eCH0271:associatedResource ili:ref="associated_resource_001"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:associatedResource_MD_Identification>
+      <eCH0271:MD_AssociatedResource ili:tid="associated_resource_002">
+        <eCH0271:associationType>isDescribedBy</eCH0271:associationType>
+      </eCH0271:MD_AssociatedResource>
+      <eCH0271:CI_Citation ili:tid="associated_citation_002">
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>b86b205a-a850-495b-b66e-08213a8b452c</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+        <eCH0271:MD_AssociatedResource ili:ref="associated_resource_002"/>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_Identifier ili:tid="citation_identifier_009">
+        <eCH0271:code>
+          <Localisation_V2:MultilingualText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>b86b205a-a850-495b-b66e-08213a8b452c</Localisation_V2:Text>
+              </Localisation_V2:LocalisedText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualText>
+        </eCH0271:code>
+      </eCH0271:MD_Identifier>
+      <eCH0271:CI_Citationidentifier>
+        <eCH0271:identifier ili:ref="citation_identifier_009"/>
+        <eCH0271:CI_Citation ili:ref="associated_citation_002"/>
+      </eCH0271:CI_Citationidentifier>
+      <eCH0271:associatedResource_MD_Identification>
+        <eCH0271:associatedResource ili:ref="associated_resource_002"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:associatedResource_MD_Identification>
+      <eCH0271:MD_AssociatedResource ili:tid="associated_resource_003">
+        <eCH0271:associationType>isDescribedBy</eCH0271:associationType>
+      </eCH0271:MD_AssociatedResource>
+      <eCH0271:CI_Citation ili:tid="associated_citation_003">
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>ed5f5d13-e974-4c1c-a482-a3e222428d4e</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+        <eCH0271:MD_AssociatedResource ili:ref="associated_resource_003"/>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_Identifier ili:tid="citation_identifier_010">
+        <eCH0271:code>
+          <Localisation_V2:MultilingualText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>ed5f5d13-e974-4c1c-a482-a3e222428d4e</Localisation_V2:Text>
+              </Localisation_V2:LocalisedText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualText>
+        </eCH0271:code>
+      </eCH0271:MD_Identifier>
+      <eCH0271:CI_Citationidentifier>
+        <eCH0271:identifier ili:ref="citation_identifier_010"/>
+        <eCH0271:CI_Citation ili:ref="associated_citation_003"/>
+      </eCH0271:CI_Citationidentifier>
+      <eCH0271:associatedResource_MD_Identification>
+        <eCH0271:associatedResource ili:ref="associated_resource_003"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:associatedResource_MD_Identification>
+      <eCH0271:MD_FeatureCatalogueDescription ili:tid="feature_catalogue_description_001">
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+      </eCH0271:MD_FeatureCatalogueDescription>
+      <eCH0271:CI_Citation ili:tid="citation_008">
+        <eCH0271:date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2024-01-15T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>creation</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:date>
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Catalogue d'objets: Secteurs de danger avalanche, géodonnées de base No. 166.1</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Catalogue d'objets: Secteurs de danger avalanche, géodonnées de base No. 166.1</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+        <eCH0271:MD_FeatureCatalogueDescription ili:ref="feature_catalogue_description_001"/>
+      </eCH0271:CI_Citation>
+      <eCH0271:CI_OnlineResource ili:tid="online_resource_003">
+        <eCH0271:linkage>
+          <Localisation_V2:MultilingualUri>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>https://www.vs.ch/documents/17311/472431/Catalogue_Objet_Avalanche_Secteur_Danger_DANAT_SDANA</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>https://www.vs.ch/documents/17311/472431/Catalogue_Objet_Avalanche_Secteur_Danger_DANAT_SDANA</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualUri>
+        </eCH0271:linkage>
+        <eCH0271:CI_Citation ili:ref="citation_008"/>
+      </eCH0271:CI_OnlineResource>
+      <eCH0271:MD_Distribution ili:tid="distribution_001">
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+      </eCH0271:MD_Distribution>
+      <eCH0271:MD_Format ili:tid="format_002">
+        <eCH0271:formatSpecificationCitation ili:ref="format_citation_002"/>
+      </eCH0271:MD_Format>
+      <eCH0271:CI_Citation ili:tid="format_citation_002">
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>ESRI Shapefile (SHP)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_DistributiondistributionFormat>
+        <eCH0271:distributionFormat ili:ref="format_002"/>
+        <eCH0271:MD_Distribution ili:ref="distribution_001"/>
+      </eCH0271:MD_DistributiondistributionFormat>
+      <eCH0271:MD_Format ili:tid="format_003">
+        <eCH0271:formatSpecificationCitation ili:ref="format_citation_003"/>
+      </eCH0271:MD_Format>
+      <eCH0271:CI_Citation ili:tid="format_citation_003">
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>autres formats sur demande / andere Formate auf Anfrage</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+        <eCH0271:edition>-</eCH0271:edition>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_DistributiondistributionFormat>
+        <eCH0271:distributionFormat ili:ref="format_003"/>
+        <eCH0271:MD_Distribution ili:ref="distribution_001"/>
+      </eCH0271:MD_DistributiondistributionFormat>
+      <eCH0271:MD_Distributor ili:tid="distributor_001">
+        <eCH0271:distributorContact ili:ref="responsibility_001"/>
+      </eCH0271:MD_Distributor>
+      <eCH0271:MD_Distributiondistributor>
+        <eCH0271:distributor ili:ref="distributor_001"/>
+        <eCH0271:MD_Distribution ili:ref="distribution_001"/>
+      </eCH0271:MD_Distributiondistributor>
+      <eCH0271:LI_Lineage ili:tid="lineage_001">
+        <eCH0271:statement>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Carte produite à partir d'une étude sur les secteurs évalués</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Karte, die aus einer Studie der überprüften Sektoren erstellt wurde.</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:statement>
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+      </eCH0271:LI_Lineage>
+      <eCH0271:LI_Source ili:tid="lineage_source_001">
+        <eCH0271:description>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Détermination par analyse spatiale</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Bestimmung durch Raumanalyse</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:description>
+      </eCH0271:LI_Source>
+      <eCH0271:sourceLI_Lineage>
+        <eCH0271:source ili:ref="lineage_source_001"/>
+        <eCH0271:LI_Lineage ili:ref="lineage_001"/>
+      </eCH0271:sourceLI_Lineage>
+    </eCH0271:eCH0271>
+  </ili:datasection>
+</ili:transfer>

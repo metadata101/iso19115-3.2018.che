@@ -63,7 +63,9 @@ public class SchematronBasicGeodataAapMandatoryTest extends AbstractSchematronTe
 		Element md = Xml.loadFile(xmlFile);
 		XPath xp = XPath.newInstance("*//che:basicGeodataID");
 		xp.addNamespace("che", "http://geocat.ch/che");
-		xp.selectNodes(md).forEach(e -> ((Element)e).setText(""));
+		for (Object o : xp.selectNodes(md)) {
+			((Element) o).setText("");
+		}
 
 		String report = applySchematronAndCompare("waldenburgAmtlicheVermessungGeodataIdEmpty", false, md);
 
@@ -86,7 +88,9 @@ public class SchematronBasicGeodataAapMandatoryTest extends AbstractSchematronTe
 		xp.addNamespace("che", "http://geocat.ch/che");
 		xp.addNamespace("mri", "http://standards.iso.org/iso/19115/-3/mri/1.0");
 
-		xp.selectNodes(md).forEach(e -> ((Element)e).detach());
+		for (Object o : xp.selectNodes(md)) {
+			((Element) o).detach();
+		}
 
 		String report = applySchematronAndCompare("swissBOUNDARIES3D_misplaced_AAP_alone", false, md);
 

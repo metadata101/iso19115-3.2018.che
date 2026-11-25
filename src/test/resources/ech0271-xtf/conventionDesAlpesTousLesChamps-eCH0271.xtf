@@ -1,0 +1,1768 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ili:transfer xmlns:Localisation_V2="http://www.interlis.ch/xtf/2.4/Localisation_V2" xmlns:eCH0271="http://www.interlis.ch/xtf/2.4/eCH0271" xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS">
+  <ili:headersection>
+    <ili:models>
+      <ili:model>eCH0271</ili:model>
+    </ili:models>
+    <ili:sender>XML-to-XTF conversion</ili:sender>
+    <ili:comment>From iso19115-3.2018.che to INTERLIS 2.4 eCH-0271.</ili:comment>
+  </ili:headersection>
+  <ili:datasection>
+    <eCH0271:eCH0271 ili:bid="eCH0271.eCH0271">
+      <eCH0271:CHE_MD_Metadata ili:tid="metadata_main_001">
+        <eCH0271:defaultLocale>
+          <eCH0271:PT_Locale>
+            <eCH0271:language>de</eCH0271:language>
+            <eCH0271:characterEncoding>utf8</eCH0271:characterEncoding>
+          </eCH0271:PT_Locale>
+        </eCH0271:defaultLocale>
+        <eCH0271:dateInfo>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2021-04-12T07:50:54.0</eCH0271:date>
+            <eCH0271:dateType>creation</eCH0271:dateType>
+          </eCH0271:CI_Date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2026-11-03T16:20:45.708</eCH0271:date>
+            <eCH0271:dateType>revision</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:dateInfo>
+        <eCH0271:metadataIdentifier ili:ref="metadataIdentifier_001"/>
+        <eCH0271:otherLocale>
+          <eCH0271:PT_Locale>
+            <eCH0271:language>fr</eCH0271:language>
+            <eCH0271:characterEncoding>utf8</eCH0271:characterEncoding>
+          </eCH0271:PT_Locale>
+          <eCH0271:PT_Locale>
+            <eCH0271:language>it</eCH0271:language>
+            <eCH0271:characterEncoding>utf8</eCH0271:characterEncoding>
+          </eCH0271:PT_Locale>
+          <eCH0271:PT_Locale>
+            <eCH0271:language>en</eCH0271:language>
+            <eCH0271:characterEncoding>utf8</eCH0271:characterEncoding>
+          </eCH0271:PT_Locale>
+          <eCH0271:PT_Locale>
+            <eCH0271:language>rm</eCH0271:language>
+            <eCH0271:characterEncoding>utf8</eCH0271:characterEncoding>
+          </eCH0271:PT_Locale>
+        </eCH0271:otherLocale>
+      </eCH0271:CHE_MD_Metadata>
+      <eCH0271:MD_Identifier ili:tid="metadataIdentifier_001">
+        <eCH0271:code>
+          <Localisation_V2:MultilingualText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>8698bf0b-fceb-4f0f-989b-111e7c4af0a4</Localisation_V2:Text>
+              </Localisation_V2:LocalisedText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualText>
+        </eCH0271:code>
+      </eCH0271:MD_Identifier>
+      <eCH0271:MD_MetadataScope ili:tid="metadataScope_001">
+        <eCH0271:resourceScope>dataset</eCH0271:resourceScope>
+      </eCH0271:MD_MetadataScope>
+      <eCH0271:CI_Responsibility ili:tid="responsibility_001">
+        <eCH0271:role>pointOfContact</eCH0271:role>
+      </eCH0271:CI_Responsibility>
+      <eCH0271:CI_Responsibility ili:tid="responsibility_002">
+        <eCH0271:role>owner</eCH0271:role>
+      </eCH0271:CI_Responsibility>
+      <eCH0271:CHE_CI_Organisation ili:tid="organisation_001">
+        <eCH0271:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Bundesamt für Raumentwicklung</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>Federal Office for Spatial Development</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Office fédéral du développement territorial</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>Ufficio federale dello sviluppo territoriale</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>rm</Localisation_V2:Language>
+                <Localisation_V2:Text>Bundesamt für Raumentwicklung</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:name>
+        <eCH0271:organisationAcronym>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>ARE</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>ARE</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>ARE</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>ARE</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>rm</Localisation_V2:Language>
+                <Localisation_V2:Text>ARE</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:organisationAcronym>
+      </eCH0271:CHE_CI_Organisation>
+      <eCH0271:CHE_CI_Organisation ili:tid="organisation_002">
+        <eCH0271:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Bundesamt für Raumentwicklung</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:name>
+        <eCH0271:organisationAcronym>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>ARE</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:organisationAcronym>
+      </eCH0271:CHE_CI_Organisation>
+      <eCH0271:CI_Contact ili:tid="contact_001">
+        <eCH0271:CI_ResponsibleParty ili:ref="organisation_001"/>
+      </eCH0271:CI_Contact>
+      <eCH0271:CI_Address ili:tid="address_001_001">
+        <eCH0271:deliveryPoint>Worblentalstrasse 66</eCH0271:deliveryPoint>
+        <eCH0271:postalCode>3063</eCH0271:postalCode>
+        <eCH0271:city>Ittigen</eCH0271:city>
+        <eCH0271:country>CHE</eCH0271:country>
+        <eCH0271:electronicMailAddress>rolf.giezendanner@are.admin.ch</eCH0271:electronicMailAddress>
+        <eCH0271:CI_ResponsibleParty ili:ref="contact_001"/>
+      </eCH0271:CI_Address>
+      <eCH0271:CI_Contact ili:tid="contact_002">
+        <eCH0271:CI_ResponsibleParty ili:ref="organisation_002"/>
+      </eCH0271:CI_Contact>
+      <eCH0271:CI_Address ili:tid="address_002_001">
+        <eCH0271:electronicMailAddress>info@are.admin.ch</eCH0271:electronicMailAddress>
+        <eCH0271:CI_ResponsibleParty ili:ref="contact_002"/>
+      </eCH0271:CI_Address>
+      <eCH0271:CI_Individual ili:tid="individual_001">
+        <eCH0271:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Rolf Giezendanner</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:name>
+      </eCH0271:CI_Individual>
+      <eCH0271:CI_Telephone ili:tid="telephone_001">
+        <eCH0271:number>+41 58 462 01 43</eCH0271:number>
+        <eCH0271:numberType>voice</eCH0271:numberType>
+        <eCH0271:CI_ResponsibleParty ili:ref="contact_001"/>
+      </eCH0271:CI_Telephone>
+      <eCH0271:CI_OnlineResource ili:tid="contact_online_resource_001">
+        <eCH0271:linkage>
+          <Localisation_V2:MultilingualUri>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>http://www.are.admin.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>http://www.are.admin.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>http://www.are.admin.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>http://www.are.admin.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>rm</Localisation_V2:Language>
+                <Localisation_V2:Text>http://www.are.admin.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualUri>
+        </eCH0271:linkage>
+        <eCH0271:protocol>WWW:LINK</eCH0271:protocol>
+        <eCH0271:CI_Contact ili:ref="contact_001"/>
+      </eCH0271:CI_OnlineResource>
+      <eCH0271:CI_Citation ili:tid="citation_metadata_standard_001">
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>eCH-0271</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+        <eCH0271:standardUsedBy ili:ref="metadata_main_001"/>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_ReferenceSystem ili:tid="referenceSystem_001">
+        <eCH0271:referenceSystemIdentifier ili:ref="referenceSystemIdentifier_001"/>
+      </eCH0271:MD_ReferenceSystem>
+      <eCH0271:MD_Identifier ili:tid="referenceSystemIdentifier_001">
+        <eCH0271:code>
+          <Localisation_V2:MultilingualText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>EPSG:2056</Localisation_V2:Text>
+              </Localisation_V2:LocalisedText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualText>
+        </eCH0271:code>
+      </eCH0271:MD_Identifier>
+      <eCH0271:CHE_MD_DataIdentification ili:tid="identification_001">
+        <eCH0271:status>completed</eCH0271:status>
+        <eCH0271:spatialRepresentationType>vector</eCH0271:spatialRepresentationType>
+        <eCH0271:topicCategory>planningCadastre</eCH0271:topicCategory>
+        <eCH0271:abstract>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Perimeter der Alpenkonvention in der Schweiz. Die Alpenkonvention ist ein völkerrechtlicher Vertrag zwischen den acht Alpenländern Deutschland, Frankreich, Italien, Liechtenstein, Monaco, Österreich, Schweiz, Slowenien sowie der Europäischen Union. Das Ziel des Übereinkommens ist der Schutz der Alpen durch eine sektorübergreifende, ganzheitliche und nachhaltige Politik.</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Périmètre de la Convention alpine en Suisse. La Convention alpine est un traité de droit international conclu par huit Etats alpins (Allemagne, Autriche, France, Italie, Liechtenstein, Monaco, Suisse, Slovénie) et l`Union européenne. L`accord vise à assurer la préservation et la protection des Alpes à travers une politique plurisectorielle, globale et durable.</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>Il perimetro della Convenzione delle Alpi. La Convenzione delle Alpi è un trattato internazionale tra gli otto Paesi alpini Germania, Francia, Italia, Liechtenstein, Monaco, Austria, Svizzera, Slovenia e l'Unione europea. Lo scopo della Convenzione è la conservazione e la protezione delle Alpi mediante una politica intersettoriale, globale e durevole.</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>The perimeters of the Alpine Convention in Switzerland. The Alpine Convention is an international treaty between the eight Alpine countries: Germany, France, Italy, Liechtenstein, Monaco, Austria, Switzerland and Slovenia, plus the European Union. The aim of the treaty is to protect the Alps by means of cross-sectoral, integrated and sustainable policies.</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>rm</Localisation_V2:Language>
+                <Localisation_V2:Text>Perimeter da la Convenziun da las Alps en Svizra. La Convenziun da las Alps è in contract internaziunal tranter ils otg pajais alpins (Austria, Frantscha, Germania, Italia, Liechtenstein, Monaco, Slovenia, Svizra) e l'Uniun europeica. La convenziun ha la finamira da proteger las Alps cun agid d'ina politica intersecturiala, cumplessiva e duraivla.</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:abstract>
+        <eCH0271:defaultLocale>
+          <eCH0271:PT_Locale>
+            <eCH0271:language>de</eCH0271:language>
+            <eCH0271:characterEncoding>utf8</eCH0271:characterEncoding>
+          </eCH0271:PT_Locale>
+        </eCH0271:defaultLocale>
+        <eCH0271:basicGeodata>true</eCH0271:basicGeodata>
+        <eCH0271:basicGeodataInformation>
+          <eCH0271:CHE_MD_BasicGeodataInformation>
+            <eCH0271:basicGeodataID>3.1</eCH0271:basicGeodataID>
+            <eCH0271:basicGeodataLegalLevel>federal</eCH0271:basicGeodataLegalLevel>
+          </eCH0271:CHE_MD_BasicGeodataInformation>
+        </eCH0271:basicGeodataInformation>
+        <eCH0271:subTopicCategory>planningCadastre_Planning</eCH0271:subTopicCategory>
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+        <eCH0271:citation ili:ref="dataset_citation_001"/>
+        <eCH0271:otherLocale>
+          <eCH0271:PT_Locale>
+            <eCH0271:language>fr</eCH0271:language>
+            <eCH0271:characterEncoding>utf8</eCH0271:characterEncoding>
+          </eCH0271:PT_Locale>
+          <eCH0271:PT_Locale>
+            <eCH0271:language>it</eCH0271:language>
+            <eCH0271:characterEncoding>utf8</eCH0271:characterEncoding>
+          </eCH0271:PT_Locale>
+        </eCH0271:otherLocale>
+      </eCH0271:CHE_MD_DataIdentification>
+      <eCH0271:CI_Citation ili:tid="dataset_citation_001">
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Alpenkonvention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Convention des Alpes</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>Convenzione delle alpi</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>Alpine Convention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>rm</Localisation_V2:Language>
+                <Localisation_V2:Text>Convenziun da las Alps</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+        <eCH0271:alternateTitle>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Alpenkonvention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Convention des Alpes</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>Convenzione delle alpi</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>Alpine Convention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>rm</Localisation_V2:Language>
+                <Localisation_V2:Text>Convenziun da las Alps</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:alternateTitle>
+        <eCH0271:date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2009-01-01T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>revision</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:date>
+        <eCH0271:date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>1999-01-01T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>creation</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:date>
+      </eCH0271:CI_Citation>
+      <eCH0271:EX_Extent ili:tid="extent_001">
+        <eCH0271:description>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Alpenkonvention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>Alpine Convention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Convention des Alpes</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>Convenzione delle alpi</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:description>
+        <eCH0271:MD_DataIdentification ili:ref="identification_001"/>
+      </eCH0271:EX_Extent>
+      <eCH0271:EX_GeographicBoundingBox ili:tid="bbox_001">
+        <eCH0271:extentTypeCode>true</eCH0271:extentTypeCode>
+        <eCH0271:northBoundLatitude>47.5176</eCH0271:northBoundLatitude>
+        <eCH0271:southBoundLatitude>45.7887</eCH0271:southBoundLatitude>
+        <eCH0271:eastBoundLongitude>10.5419</eCH0271:eastBoundLongitude>
+        <eCH0271:westBoundLongitude>6.7559</eCH0271:westBoundLongitude>
+      </eCH0271:EX_GeographicBoundingBox>
+      <eCH0271:CHE_MD_MaintenanceInformation ili:tid="maintenance_001">
+        <eCH0271:maintenanceAndUpdateFrequency>asNeeded</eCH0271:maintenanceAndUpdateFrequency>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:CHE_MD_MaintenanceInformation>
+      <eCH0271:MD_Resolution ili:tid="resolution_001">
+        <eCH0271:equivalentScale ili:ref="representative_fraction_001"/>
+        <eCH0271:MD_DataIdentification ili:ref="identification_001"/>
+      </eCH0271:MD_Resolution>
+      <eCH0271:MD_RepresentativeFraction ili:tid="representative_fraction_001">
+        <eCH0271:denominator>25000</eCH0271:denominator>
+      </eCH0271:MD_RepresentativeFraction>
+      <eCH0271:MD_Distribution ili:tid="distribution_001">
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+      </eCH0271:MD_Distribution>
+      <eCH0271:MD_DigitalTransferOptions ili:tid="transfer_options_001">
+        <eCH0271:MD_Distribution ili:ref="distribution_001"/>
+      </eCH0271:MD_DigitalTransferOptions>
+      <eCH0271:MD_DigitalTransferOptions ili:tid="transfer_options_002">
+        <eCH0271:MD_Distribution ili:ref="distribution_001"/>
+      </eCH0271:MD_DigitalTransferOptions>
+      <eCH0271:MD_DigitalTransferOptions ili:tid="transfer_options_003">
+        <eCH0271:MD_Distribution ili:ref="distribution_001"/>
+      </eCH0271:MD_DigitalTransferOptions>
+      <eCH0271:MD_DigitalTransferOptions ili:tid="transfer_options_004">
+        <eCH0271:MD_Distribution ili:ref="distribution_001"/>
+      </eCH0271:MD_DigitalTransferOptions>
+      <eCH0271:MD_DigitalTransferOptions ili:tid="transfer_options_005">
+        <eCH0271:MD_Distribution ili:ref="distribution_001"/>
+      </eCH0271:MD_DigitalTransferOptions>
+      <eCH0271:MD_DigitalTransferOptions ili:tid="transfer_options_006">
+        <eCH0271:MD_Distribution ili:ref="distribution_001"/>
+      </eCH0271:MD_DigitalTransferOptions>
+      <eCH0271:MD_DigitalTransferOptions ili:tid="transfer_options_007">
+        <eCH0271:MD_Distribution ili:ref="distribution_001"/>
+      </eCH0271:MD_DigitalTransferOptions>
+      <eCH0271:MD_DigitalTransferOptions ili:tid="transfer_options_008">
+        <eCH0271:MD_Distribution ili:ref="distribution_001"/>
+      </eCH0271:MD_DigitalTransferOptions>
+      <eCH0271:MD_DigitalTransferOptions ili:tid="transfer_options_009">
+        <eCH0271:MD_Distribution ili:ref="distribution_001"/>
+      </eCH0271:MD_DigitalTransferOptions>
+      <eCH0271:MD_DigitalTransferOptions ili:tid="transfer_options_010">
+        <eCH0271:MD_Distribution ili:ref="distribution_001"/>
+      </eCH0271:MD_DigitalTransferOptions>
+      <eCH0271:MD_DigitalTransferOptions ili:tid="transfer_options_011">
+        <eCH0271:MD_Distribution ili:ref="distribution_001"/>
+      </eCH0271:MD_DigitalTransferOptions>
+      <eCH0271:CI_OnlineResource ili:tid="online_resource_001">
+        <eCH0271:linkage>
+          <Localisation_V2:MultilingualUri>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>https://map.geo.admin.ch/?layers=ch.are.alpenkonvention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>https://map.geo.admin.ch/?layers=ch.are.alpenkonvention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>https://map.geo.admin.ch/?layers=ch.are.alpenkonvention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>https://map.geo.admin.ch/?layers=ch.are.alpenkonvention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>rm</Localisation_V2:Language>
+                <Localisation_V2:Text>https://map.geo.admin.ch/?layers=ch.are.alpenkonvention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualUri>
+        </eCH0271:linkage>
+        <eCH0271:protocol>MAP:Preview</eCH0271:protocol>
+        <eCH0271:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Vorschau map.geo.admin.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:name>
+        <eCH0271:description>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Vorschau map.geo.admin.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Aperçu map.geo.admin.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>Previsione map.geo.admin.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>Preview map.geo.admin.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:description>
+        <eCH0271:MD_DigitalTransferOptions ili:ref="transfer_options_001"/>
+      </eCH0271:CI_OnlineResource>
+      <eCH0271:CI_OnlineResource ili:tid="online_resource_002">
+        <eCH0271:linkage>
+          <Localisation_V2:MultilingualUri>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=de</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=fr</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=it</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=en</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>rm</Localisation_V2:Language>
+                <Localisation_V2:Text>https://wms.geo.admin.ch/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities&amp;lang=de</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualUri>
+        </eCH0271:linkage>
+        <eCH0271:protocol>OGC:WMS</eCH0271:protocol>
+        <eCH0271:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>ch.are.alpenkonvention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:name>
+        <eCH0271:description>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>WMS-BGDI Dienst, Layer "Alpenkonvention"</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Service WMS-IFDG, couche "Convention des Alpes"</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>Servizio WMS-IFDG, strato "Convenzione delle alpi"</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>WMS-FSDI service, layer "Alpine Convention"</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>rm</Localisation_V2:Language>
+                <Localisation_V2:Text>WMS-BGDI Dienst, Layer "Alpenkonvention"</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:description>
+        <eCH0271:MD_DigitalTransferOptions ili:ref="transfer_options_002"/>
+      </eCH0271:CI_OnlineResource>
+      <eCH0271:CI_OnlineResource ili:tid="online_resource_003">
+        <eCH0271:linkage>
+          <Localisation_V2:MultilingualUri>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=de</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=fr</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=it</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=en</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>rm</Localisation_V2:Language>
+                <Localisation_V2:Text>https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=de</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualUri>
+        </eCH0271:linkage>
+        <eCH0271:protocol>OGC:WMTS</eCH0271:protocol>
+        <eCH0271:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>ch.are.alpenkonvention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:name>
+        <eCH0271:description>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>WMTS-BGDI Dienst, Layer "Alpenkonvention"</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Service WMTS-IFDG, couche "Convention des Alpes"</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>Servizio WMTS-IFDG, strato "Convenzione delle alpi"</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>WMTS-FSDI service, layer "Alpine Convention"</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>rm</Localisation_V2:Language>
+                <Localisation_V2:Text>WMTS-BGDI Dienst, Layer "Alpenkonvention"</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:description>
+        <eCH0271:MD_DigitalTransferOptions ili:ref="transfer_options_003"/>
+      </eCH0271:CI_OnlineResource>
+      <eCH0271:CI_OnlineResource ili:tid="online_resource_004">
+        <eCH0271:linkage>
+          <Localisation_V2:MultilingualUri>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>https://www.are.admin.ch/de/alpenkonvention-2</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>https://www.are.admin.ch/fr/convention-alpine-2</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>https://www.are.admin.ch/it/convenzione-alpi</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>https://www.are.admin.ch/en/alpine-convention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualUri>
+        </eCH0271:linkage>
+        <eCH0271:protocol>WWW:LINK</eCH0271:protocol>
+        <eCH0271:description>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Webseite des ARE über die Alpenkonvention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Page web de l'ARE sur la Convention alpine</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:description>
+        <eCH0271:MD_DigitalTransferOptions ili:ref="transfer_options_004"/>
+      </eCH0271:CI_OnlineResource>
+      <eCH0271:CI_OnlineResource ili:tid="online_resource_005">
+        <eCH0271:linkage>
+          <Localisation_V2:MultilingualUri>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>https://data.geo.admin.ch/browser/index.html#/collections/ch.are.alpenkonvention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualUri>
+        </eCH0271:linkage>
+        <eCH0271:protocol>WWW:DOWNLOAD-URL</eCH0271:protocol>
+        <eCH0271:description>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Download von data.geo.admin.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Serveur de téléchargement de geo.admin.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>Server di download di geo.admin.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>Download server from geo.admin.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:description>
+        <eCH0271:function>download</eCH0271:function>
+        <eCH0271:MD_DigitalTransferOptions ili:ref="transfer_options_005"/>
+      </eCH0271:CI_OnlineResource>
+      <eCH0271:CI_OnlineResource ili:tid="online_resource_006">
+        <eCH0271:linkage>
+          <Localisation_V2:MultilingualUri>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>https://www.are.admin.ch/de/alpenkonvention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>https://www.are.admin.ch/fr/convention-alpine</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>https://www.are.admin.ch/it/convenzione-delle-alpi</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualUri>
+        </eCH0271:linkage>
+        <eCH0271:protocol>WWW:DOWNLOAD-URL</eCH0271:protocol>
+        <eCH0271:description>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Minimales Geodatenmodell in INTERLIS 2.3</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Modèle de données minimal en INTERLIS 2.3</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:description>
+        <eCH0271:MD_DigitalTransferOptions ili:ref="transfer_options_006"/>
+      </eCH0271:CI_OnlineResource>
+      <eCH0271:CI_OnlineResource ili:tid="online_resource_007">
+        <eCH0271:linkage>
+          <Localisation_V2:MultilingualUri>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>http://map.are.admin.ch/?Y=660000&amp;X=190000&amp;zoom=1&amp;bgLayer=ch.swisstopo.pixelkarte-grau&amp;layers=ch.are.alpenkonvention&amp;layers_opacity=0.2&amp;layers_visibility=true&amp;lang=de</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>http://map.are.admin.ch/?Y=660000&amp;X=190000&amp;zoom=1&amp;bgLayer=ch.swisstopo.pixelkarte-grau&amp;layers=ch.are.alpenkonvention&amp;layers_opacity=0.2&amp;layers_visibility=true&amp;lang=fr</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualUri>
+        </eCH0271:linkage>
+        <eCH0271:protocol>CHTOPO:specialised-geoportal</eCH0271:protocol>
+        <eCH0271:description>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Web-GIS ARE</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Web-SIG ARE</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:description>
+        <eCH0271:MD_DigitalTransferOptions ili:ref="transfer_options_007"/>
+      </eCH0271:CI_OnlineResource>
+      <eCH0271:CI_OnlineResource ili:tid="online_resource_008">
+        <eCH0271:linkage>
+          <Localisation_V2:MultilingualUri>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>http://www.alpconv.org</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>http://www.alpconv.org</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>http://www.alpconv.org</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>http://www.alpconv.org</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>rm</Localisation_V2:Language>
+                <Localisation_V2:Text>http://www.alpconv.org</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualUri>
+        </eCH0271:linkage>
+        <eCH0271:protocol>WWW:LINK</eCH0271:protocol>
+        <eCH0271:description>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Offizielle Homepage der Alpenkonvention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Site web officiel de la Convention alpine</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>Pagina web ufficiale della Convenzione delle alpi</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>Official Website of the Alpine Convention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:description>
+        <eCH0271:function>information</eCH0271:function>
+        <eCH0271:MD_DigitalTransferOptions ili:ref="transfer_options_008"/>
+      </eCH0271:CI_OnlineResource>
+      <eCH0271:CI_OnlineResource ili:tid="online_resource_009">
+        <eCH0271:linkage>
+          <Localisation_V2:MultilingualUri>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>http://map.geo.admin.ch/?selectedNode=LT1_1&amp;Y=660000&amp;X=190000&amp;zoom=1&amp;bgLayer=ch.swisstopo.pixelkarte-farbe&amp;layers=ch.are.alpenkonvention&amp;layers_opacity=0.6&amp;layers_visibility=true&amp;lang=de</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>http://map.geo.admin.ch/?selectedNode=LT1_1&amp;Y=660000&amp;X=190000&amp;zoom=1&amp;bgLayer=ch.swisstopo.pixelkarte-farbe&amp;layers=ch.are.alpenkonvention&amp;layers_opacity=0.56&amp;layers_visibility=true&amp;lang=fr</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualUri>
+        </eCH0271:linkage>
+        <eCH0271:protocol>WWW:LINK</eCH0271:protocol>
+        <eCH0271:description>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Die Alpenkonvention im Bundesgeoportal</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>La convention alpine dans le géoportail fédéral</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:description>
+        <eCH0271:function>information</eCH0271:function>
+        <eCH0271:MD_DigitalTransferOptions ili:ref="transfer_options_009"/>
+      </eCH0271:CI_OnlineResource>
+      <eCH0271:CI_OnlineResource ili:tid="online_resource_010">
+        <eCH0271:linkage>
+          <Localisation_V2:MultilingualUri>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>https://www.fedlex.admin.ch/eli/cc/2003/389/de#app1</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>https://www.fedlex.admin.ch/eli/cc/2003/389/fr#app1</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>https://www.fedlex.admin.ch/eli/cc/2003/389/it#app1</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualUri>
+        </eCH0271:linkage>
+        <eCH0271:protocol>WWW:LINK</eCH0271:protocol>
+        <eCH0271:description>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Liste der administrativen Einheiten des Alpenraumes in der schweizerischen Eidgenossenschaft</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Liste des unités administratives de l'espace alpin dans la Confédération suisse</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>Elenco delle unità amministrative dello spazio alpino nella Confederazione Svizzera</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:description>
+        <eCH0271:function>information</eCH0271:function>
+        <eCH0271:MD_DigitalTransferOptions ili:ref="transfer_options_010"/>
+      </eCH0271:CI_OnlineResource>
+      <eCH0271:CI_OnlineResource ili:tid="online_resource_011">
+        <eCH0271:linkage>
+          <Localisation_V2:MultilingualUri>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>https://api3.geo.admin.ch/rest/services/api/MapServer/ch.are.alpenkonvention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>https://api3.geo.admin.ch/rest/services/api/MapServer/ch.are.alpenkonvention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>https://api3.geo.admin.ch/rest/services/api/MapServer/ch.are.alpenkonvention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>https://api3.geo.admin.ch/rest/services/api/MapServer/ch.are.alpenkonvention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+              <Localisation_V2:LocalisedUri>
+                <Localisation_V2:Language>rm</Localisation_V2:Language>
+                <Localisation_V2:Text>https://api3.geo.admin.ch/rest/services/api/MapServer/ch.are.alpenkonvention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedUri>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualUri>
+        </eCH0271:linkage>
+        <eCH0271:protocol>ESRI:REST</eCH0271:protocol>
+        <eCH0271:name>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>RESTful API von geo.admin.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:name>
+        <eCH0271:description>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>RESTful API von geo.admin.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>RESTful API de geo.admin.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>RESTful API da geo.admin.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>RESTful API from geo.admin.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>rm</Localisation_V2:Language>
+                <Localisation_V2:Text>RESTful API dad geo.admin.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:description>
+        <eCH0271:MD_DigitalTransferOptions ili:ref="transfer_options_011"/>
+      </eCH0271:CI_OnlineResource>
+      <eCH0271:LI_Lineage ili:tid="lineage_001">
+        <eCH0271:statement>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Digitalisiert nach den administrativen Einheiten der Schweiz, die im Anhang des Übereinkommens erscheinen.</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:statement>
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+      </eCH0271:LI_Lineage>
+      <eCH0271:CHE_MD_Legislation ili:tid="legislation_002">
+        <eCH0271:country>CHE</eCH0271:country>
+        <eCH0271:legislationType>ordinance</eCH0271:legislationType>
+        <eCH0271:internalReference>510.620</eCH0271:internalReference>
+        <eCH0271:legislationCitation ili:ref="legislation_citation_002"/>
+        <eCH0271:legislationLevel>federal</eCH0271:legislationLevel>
+      </eCH0271:CHE_MD_Legislation>
+      <eCH0271:CHE_MD_Legislation ili:tid="legislation_001">
+        <eCH0271:country>CHE</eCH0271:country>
+        <eCH0271:legislationType>otherLegalProvision</eCH0271:legislationType>
+        <eCH0271:internalReference>0.700.1</eCH0271:internalReference>
+        <eCH0271:legislationCitation ili:ref="legislation_citation_001"/>
+      </eCH0271:CHE_MD_Legislation>
+      <eCH0271:CI_Citation ili:tid="legislation_citation_001">
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Übereinkommen zum Schutz der Alpen</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Convention sur la protection des Alpes</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>Convenzione per la protezione delle Alpi</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+        <eCH0271:alternateTitle>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Alpenkonvention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Convention alpine</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>Convenzione delle Alpi</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:alternateTitle>
+        <eCH0271:date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>1991-11-07T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>creation</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:date>
+      </eCH0271:CI_Citation>
+      <eCH0271:CI_Citation ili:tid="legislation_citation_002">
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Verordnung über Geoinformation : Anhang 1, Katalog der Geobasisdaten des Bundesrechts</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Ordonnance sur la géoinformation : Annexe 1, Catalogue des géodonnées de base relevant du droit fédéral</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>Ordinanza sulla geoinformazione : Allegato 1, Catalogo dei geodati di base del diritto federale</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+        <eCH0271:alternateTitle>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Geoinformationsverordnung GeoIV</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>OGéo</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>OGI</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:alternateTitle>
+        <eCH0271:date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2008-05-21T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>creation</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:date>
+        <eCH0271:date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2008-07-01T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>publication</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:date>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_Metadatacontact>
+        <eCH0271:contact ili:ref="responsibility_001"/>
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+      </eCH0271:MD_Metadatacontact>
+      <eCH0271:CI_Responsibilityparty>
+        <eCH0271:party ili:ref="organisation_001"/>
+        <eCH0271:CI_Responsibility ili:ref="responsibility_001"/>
+      </eCH0271:CI_Responsibilityparty>
+      <eCH0271:CI_Responsibilityparty>
+        <eCH0271:party ili:ref="organisation_002"/>
+        <eCH0271:CI_Responsibility ili:ref="responsibility_002"/>
+      </eCH0271:CI_Responsibilityparty>
+      <eCH0271:MD_MetadatametadataScope>
+        <eCH0271:metadataScope ili:ref="metadataScope_001"/>
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+      </eCH0271:MD_MetadatametadataScope>
+      <eCH0271:referenceSystemInfoMD_Metadata>
+        <eCH0271:referenceSystemInfo ili:ref="referenceSystem_001"/>
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+      </eCH0271:referenceSystemInfoMD_Metadata>
+      <eCH0271:MD_IdentificationpointOfContact>
+        <eCH0271:pointOfContact ili:ref="responsibility_001"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:MD_IdentificationpointOfContact>
+      <eCH0271:MD_IdentificationpointOfContact>
+        <eCH0271:pointOfContact ili:ref="responsibility_002"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:MD_IdentificationpointOfContact>
+      <eCH0271:EX_ExtentgeographicElement>
+        <eCH0271:geographicElement ili:ref="bbox_001"/>
+        <eCH0271:EX_Extent ili:ref="extent_001"/>
+      </eCH0271:EX_ExtentgeographicElement>
+      <eCH0271:MD_MetadatalegislationInformation>
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+        <eCH0271:legislationInformation ili:ref="legislation_001"/>
+      </eCH0271:MD_MetadatalegislationInformation>
+      <eCH0271:MD_MetadatalegislationInformation>
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+        <eCH0271:legislationInformation ili:ref="legislation_002"/>
+      </eCH0271:MD_MetadatalegislationInformation>
+      <eCH0271:individualorganisation>
+        <eCH0271:individual ili:ref="individual_001"/>
+        <eCH0271:organisation ili:ref="organisation_001"/>
+      </eCH0271:individualorganisation>
+      <eCH0271:MD_Identifier ili:tid="citation_identifier_001">
+        <eCH0271:code>
+          <Localisation_V2:MultilingualText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>ch.are.alpenkonvention</Localisation_V2:Text>
+              </Localisation_V2:LocalisedText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualText>
+        </eCH0271:code>
+      </eCH0271:MD_Identifier>
+      <eCH0271:CI_Citationidentifier>
+        <eCH0271:identifier ili:ref="citation_identifier_001"/>
+        <eCH0271:CI_Citation ili:ref="dataset_citation_001"/>
+      </eCH0271:CI_Citationidentifier>
+      <eCH0271:MD_Keywords ili:tid="keywords_001">
+        <eCH0271:keyword>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>opendata.swiss</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>opendata.swiss</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>opendata.swiss</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>opendata.swiss</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>rm</Localisation_V2:Language>
+                <Localisation_V2:Text>opendata.swiss</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:keyword>
+        <eCH0271:keyword>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Geobasisdaten</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>géodonnées de base</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>geodati di base</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>official geodata</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:keyword>
+        <eCH0271:keyword>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>e-geo.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>e-geo.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>e-geo.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>e-geo.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:keyword>
+        <eCH0271:keyword>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Aufbewahrungs- und Archivierungsplanung AAP - Bund</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Planification de la conservation et de l'archivage AAP - Conféderation</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>Pianificazione della conservazione e dell’archiviazione AAP - Confederazione</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>Conservation and archiving planning AAP - Confederation</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:keyword>
+        <eCH0271:type>theme</eCH0271:type>
+        <eCH0271:thesaurusName ili:ref="thesaurus_001"/>
+      </eCH0271:MD_Keywords>
+      <eCH0271:CI_Citation ili:tid="thesaurus_001">
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>geocat.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+        <eCH0271:date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2026-10-22T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>publication</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:date>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_Identifier ili:tid="thesaurus_identifier_001">
+        <eCH0271:code>
+          <Localisation_V2:MultilingualText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>geonetwork.thesaurus.local.theme.geocat.ch</Localisation_V2:Text>
+              </Localisation_V2:LocalisedText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualText>
+        </eCH0271:code>
+      </eCH0271:MD_Identifier>
+      <eCH0271:CI_Citationidentifier>
+        <eCH0271:identifier ili:ref="thesaurus_identifier_001"/>
+        <eCH0271:CI_Citation ili:ref="thesaurus_001"/>
+      </eCH0271:CI_Citationidentifier>
+      <eCH0271:descriptiveKeywordsMD_Identification>
+        <eCH0271:descriptiveKeywords ili:ref="keywords_001"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:descriptiveKeywordsMD_Identification>
+      <eCH0271:MD_Keywords ili:tid="keywords_002">
+        <eCH0271:keyword>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Nachhaltige Entwicklung</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>développement durable</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>sviluppo sostenibile</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>sustainable development</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:keyword>
+        <eCH0271:type>theme</eCH0271:type>
+        <eCH0271:thesaurusName ili:ref="thesaurus_002"/>
+      </eCH0271:MD_Keywords>
+      <eCH0271:CI_Citation ili:tid="thesaurus_002">
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>GEMET</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+        <eCH0271:date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2018-08-16T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>publication</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:date>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_Identifier ili:tid="thesaurus_identifier_002">
+        <eCH0271:code>
+          <Localisation_V2:MultilingualText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>geonetwork.thesaurus.external.theme.gemet</Localisation_V2:Text>
+              </Localisation_V2:LocalisedText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualText>
+        </eCH0271:code>
+      </eCH0271:MD_Identifier>
+      <eCH0271:CI_Citationidentifier>
+        <eCH0271:identifier ili:ref="thesaurus_identifier_002"/>
+        <eCH0271:CI_Citation ili:ref="thesaurus_002"/>
+      </eCH0271:CI_Citationidentifier>
+      <eCH0271:descriptiveKeywordsMD_Identification>
+        <eCH0271:descriptiveKeywords ili:ref="keywords_002"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:descriptiveKeywordsMD_Identification>
+      <eCH0271:MD_Keywords ili:tid="keywords_003">
+        <eCH0271:keyword>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Raumplanung</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>planification de l'espace physique</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>pianificazione dello spazio fisico</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>physical planning</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:keyword>
+        <eCH0271:type>theme</eCH0271:type>
+        <eCH0271:thesaurusName ili:ref="thesaurus_002"/>
+      </eCH0271:MD_Keywords>
+      <eCH0271:descriptiveKeywordsMD_Identification>
+        <eCH0271:descriptiveKeywords ili:ref="keywords_003"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:descriptiveKeywordsMD_Identification>
+      <eCH0271:MD_Keywords ili:tid="keywords_004">
+        <eCH0271:keyword>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Bergschutz</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>protection de la montagne</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>protezione della montagna</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>mountain protection</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:keyword>
+        <eCH0271:type>theme</eCH0271:type>
+        <eCH0271:thesaurusName ili:ref="thesaurus_002"/>
+      </eCH0271:MD_Keywords>
+      <eCH0271:descriptiveKeywordsMD_Identification>
+        <eCH0271:descriptiveKeywords ili:ref="keywords_004"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:descriptiveKeywordsMD_Identification>
+      <eCH0271:MD_Keywords ili:tid="keywords_005">
+        <eCH0271:keyword>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Bodenschutz</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>conservation du sol</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>conservazione del suolo</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>soil conservation</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:keyword>
+        <eCH0271:type>theme</eCH0271:type>
+        <eCH0271:thesaurusName ili:ref="thesaurus_002"/>
+      </eCH0271:MD_Keywords>
+      <eCH0271:descriptiveKeywordsMD_Identification>
+        <eCH0271:descriptiveKeywords ili:ref="keywords_005"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:descriptiveKeywordsMD_Identification>
+      <eCH0271:MD_Keywords ili:tid="keywords_006">
+        <eCH0271:keyword>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Umweltpolitik</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>politique environnementale</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>politica ambientale</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>environmental policy</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:keyword>
+        <eCH0271:type>theme</eCH0271:type>
+        <eCH0271:thesaurusName ili:ref="thesaurus_002"/>
+      </eCH0271:MD_Keywords>
+      <eCH0271:descriptiveKeywordsMD_Identification>
+        <eCH0271:descriptiveKeywords ili:ref="keywords_006"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:descriptiveKeywordsMD_Identification>
+      <eCH0271:MD_Keywords ili:tid="keywords_007">
+        <eCH0271:keyword>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Verkehr</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>transport</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>trasporti</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>transport</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:keyword>
+        <eCH0271:type>theme</eCH0271:type>
+        <eCH0271:thesaurusName ili:ref="thesaurus_002"/>
+      </eCH0271:MD_Keywords>
+      <eCH0271:descriptiveKeywordsMD_Identification>
+        <eCH0271:descriptiveKeywords ili:ref="keywords_007"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:descriptiveKeywordsMD_Identification>
+      <eCH0271:MD_Keywords ili:tid="keywords_008">
+        <eCH0271:keyword>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Umweltüberwachung</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Installations de suivi environnemental</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>Impianti di monitoraggio ambientale</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>Environmental monitoring facilities</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:keyword>
+        <eCH0271:type>theme</eCH0271:type>
+        <eCH0271:thesaurusName ili:ref="thesaurus_003"/>
+      </eCH0271:MD_Keywords>
+      <eCH0271:CI_Citation ili:tid="thesaurus_003">
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>GEMET - INSPIRE themes, version 1.0</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+        <eCH0271:date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2008-06-01T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>publication</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:date>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_Identifier ili:tid="thesaurus_identifier_003">
+        <eCH0271:code>
+          <Localisation_V2:MultilingualText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>geonetwork.thesaurus.external.theme.httpinspireeceuropaeutheme-theme</Localisation_V2:Text>
+              </Localisation_V2:LocalisedText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualText>
+        </eCH0271:code>
+      </eCH0271:MD_Identifier>
+      <eCH0271:CI_Citationidentifier>
+        <eCH0271:identifier ili:ref="thesaurus_identifier_003"/>
+        <eCH0271:CI_Citation ili:ref="thesaurus_003"/>
+      </eCH0271:CI_Citationidentifier>
+      <eCH0271:descriptiveKeywordsMD_Identification>
+        <eCH0271:descriptiveKeywords ili:ref="keywords_008"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:descriptiveKeywordsMD_Identification>
+      <eCH0271:MD_Keywords ili:tid="keywords_009">
+        <eCH0271:keyword>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Verwaltungseinheiten</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>Unités administratives</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>Unità amministrative</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>Administrative units</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:keyword>
+        <eCH0271:type>theme</eCH0271:type>
+        <eCH0271:thesaurusName ili:ref="thesaurus_003"/>
+      </eCH0271:MD_Keywords>
+      <eCH0271:descriptiveKeywordsMD_Identification>
+        <eCH0271:descriptiveKeywords ili:ref="keywords_009"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:descriptiveKeywordsMD_Identification>
+      <eCH0271:MD_Keywords ili:tid="keywords_010">
+        <eCH0271:keyword>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>opendata.swiss</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>opendata.swiss</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>opendata.swiss</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>opendata.swiss</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>rm</Localisation_V2:Language>
+                <Localisation_V2:Text>opendata.swiss</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:keyword>
+        <eCH0271:keyword>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>BGDI Bundesgeodaten-Infrastruktur</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>fr</Localisation_V2:Language>
+                <Localisation_V2:Text>IFDG l’Infrastructure Fédérale de données géographiques</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>it</Localisation_V2:Language>
+                <Localisation_V2:Text>IFDG Infrastruttura federale dei dati geografici</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>en</Localisation_V2:Language>
+                <Localisation_V2:Text>FSDI Federal Spatial Data Infrastructure</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:keyword>
+        <eCH0271:type>theme</eCH0271:type>
+        <eCH0271:thesaurusName ili:ref="thesaurus_001"/>
+      </eCH0271:MD_Keywords>
+      <eCH0271:descriptiveKeywordsMD_Identification>
+        <eCH0271:descriptiveKeywords ili:ref="keywords_010"/>
+        <eCH0271:MD_Identification ili:ref="identification_001"/>
+      </eCH0271:descriptiveKeywordsMD_Identification>
+      <eCH0271:CHE_MD_Appraisal_AAP ili:tid="appraisal_001">
+        <eCH0271:durationOfConservation>45</eCH0271:durationOfConservation>
+        <eCH0271:commentOnDurationOfConservation>Bemerkung zur Aufbewahrungsdauer</eCH0271:commentOnDurationOfConservation>
+        <eCH0271:appraisalOfArchivalValue>A</eCH0271:appraisalOfArchivalValue>
+        <eCH0271:reasonForArchivingValue>evidenceOfBusinessPractice</eCH0271:reasonForArchivingValue>
+        <eCH0271:commentOnArchivalValue>Bemerkung zum Archivwert</eCH0271:commentOnArchivalValue>
+        <eCH0271:CHE_MD_MaintenanceInformation ili:ref="maintenance_001"/>
+      </eCH0271:CHE_MD_Appraisal_AAP>
+      <eCH0271:CI_Citation ili:tid="citation_format_001">
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>ESRI Shapefile (SHP)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_Format ili:tid="format_001">
+        <eCH0271:formatSpecificationCitation ili:ref="citation_format_001"/>
+      </eCH0271:MD_Format>
+      <eCH0271:MD_DistributiondistributionFormat>
+        <eCH0271:MD_Distribution ili:ref="distribution_001"/>
+        <eCH0271:distributionFormat ili:ref="format_001"/>
+      </eCH0271:MD_DistributiondistributionFormat>
+      <eCH0271:MD_FeatureCatalogueDescription ili:tid="featurecatalogue_001">
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+      </eCH0271:MD_FeatureCatalogueDescription>
+      <eCH0271:CI_Citation ili:tid="citation_featurecatalogue_001">
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Alpenkonvention (INTERLIS 2)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+        <eCH0271:date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2009-09-18T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>creation</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:date>
+        <eCH0271:MD_FeatureCatalogueDescription ili:ref="featurecatalogue_001"/>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_FeatureCatalogueDescription ili:tid="featurecatalogue_002">
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+      </eCH0271:MD_FeatureCatalogueDescription>
+      <eCH0271:CI_Citation ili:tid="citation_featurecatalogue_002">
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Alpenkonvention (INTERLIS 1)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+        <eCH0271:date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2009-09-18T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>creation</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:date>
+        <eCH0271:MD_FeatureCatalogueDescription ili:ref="featurecatalogue_002"/>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_FeatureCatalogueDescription ili:tid="featurecatalogue_003">
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+      </eCH0271:MD_FeatureCatalogueDescription>
+      <eCH0271:CI_Citation ili:tid="citation_featurecatalogue_003">
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Alpenkonvention (UML)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+        <eCH0271:date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2009-09-18T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>creation</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:date>
+        <eCH0271:MD_FeatureCatalogueDescription ili:ref="featurecatalogue_003"/>
+      </eCH0271:CI_Citation>
+      <eCH0271:MD_FeatureCatalogueDescription ili:tid="featurecatalogue_004">
+        <eCH0271:MD_Metadata ili:ref="metadata_main_001"/>
+      </eCH0271:MD_FeatureCatalogueDescription>
+      <eCH0271:CI_Citation ili:tid="citation_featurecatalogue_004">
+        <eCH0271:title>
+          <Localisation_V2:MultilingualMText>
+            <Localisation_V2:LocalisedText>
+              <Localisation_V2:LocalisedMText>
+                <Localisation_V2:Language>de</Localisation_V2:Language>
+                <Localisation_V2:Text>Alpenkonvention (Objektkatalog)</Localisation_V2:Text>
+              </Localisation_V2:LocalisedMText>
+            </Localisation_V2:LocalisedText>
+          </Localisation_V2:MultilingualMText>
+        </eCH0271:title>
+        <eCH0271:date>
+          <eCH0271:CI_Date>
+            <eCH0271:date>2009-09-18T00:00:00.0</eCH0271:date>
+            <eCH0271:dateType>creation</eCH0271:dateType>
+          </eCH0271:CI_Date>
+        </eCH0271:date>
+        <eCH0271:MD_FeatureCatalogueDescription ili:ref="featurecatalogue_004"/>
+      </eCH0271:CI_Citation>
+    </eCH0271:eCH0271>
+  </ili:datasection>
+</ili:transfer>
