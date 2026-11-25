@@ -10,6 +10,7 @@
   xmlns:che="http://geocat.ch/che"
   xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
   xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0"
+  xmlns:f271="urn:ech0271-functions"
   exclude-result-prefixes="#all">
 
   <!-- ================================================================
@@ -41,6 +42,10 @@
           <xsl:apply-templates select="eCH0271:maintenanceNote" mode="multilingual-text"/>
         </mmi:maintenanceNote>
       </xsl:if>
+      <!-- CHE: AAP (the appraisal object references this maintenance) -->
+      <xsl:apply-templates
+        select="f271:related(., 'CHE_MD_Appraisal_AAP', 'appraisal', 'CHE_MD_MaintenanceInformation')[1]"
+        mode="appraisal"/>
     </che:CHE_MD_MaintenanceInformation>
   </xsl:template>
 

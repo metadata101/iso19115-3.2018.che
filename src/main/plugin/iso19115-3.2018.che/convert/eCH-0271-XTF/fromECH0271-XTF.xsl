@@ -64,6 +64,7 @@
   <xsl:include href="mapping/PT_Locale.xsl"/>
   <!-- Resource maintenance (frequency codes, notes) -->
   <xsl:include href="mapping/CHE_MD_MaintenanceInformation.xsl"/>
+  <xsl:include href="mapping/CHE_MD_Appraisal_AAP.xsl"/>
   <!-- Distribution and online resources -->
   <xsl:include href="mapping/MD_Distribution.xsl"/>
   <!-- Geographic and temporal extent -->

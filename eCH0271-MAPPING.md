@@ -395,6 +395,7 @@ Implementation structure for resource maintenance with iso19115-3.2018.che compl
 - Wrapper element: `che:CHE_MD_MaintenanceInformation` with `gco:isoType="mmi:MD_MaintenanceInformation"`
 - Child elements use `mmi:` namespace (maintenance info module)
 - Frequency code uses `mmi:MD_MaintenanceFrequencyCode`
+- AAP: the XTF `CHE_MD_Appraisal_AAP` object references its `CHE_MD_MaintenanceInformation`; it is nested as `che:appraisal/che:CHE_MD_Appraisal_AAP` after the `mmi:` elements (`mapping/CHE_MD_Appraisal_AAP.xsl`)
 
 ## Namespace Declarations
 
